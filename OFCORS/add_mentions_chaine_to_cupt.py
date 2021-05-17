@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # usage :
-# python add_mentions_chaine_to_cupt.py chemin/vers/mentions_output.json chemin/vers/cupt chemin/vers/resulting_chains.json
+# python add_mentions_chaine_to_cupt.py chemin/vers/mentions_output.json chemin/vers/cupt chemin/vers/resulting_chains.json chemin/vers/fichier_sortie
 # exemple:
-# python add_mentions_chaine_to_cupt.py ofcors_outputs/mentions_detection/mentions_output.json blabla_config48.cupt ofcors_outputs/resulting_chains.json
+# python add_mentions_chaine_to_cupt.py ofcors_outputs/mentions_detection/mentions_output.json blabla_config48.cupt ofcors_outputs/resulting_chains.json fichier.cuptmc
 
 import json
 import sys
@@ -38,7 +39,8 @@ def ajout_mentions(lignes_cupt, mentions):
     new = {}
     numero_ligne = 0
     token_i = -1
-    token_repete = []
+
+    token_repete = [] # liste pour stocker les id comme 2-4
 
     # ajouter l'indice de tokens
     for ligne in lignes_cupt:
@@ -73,9 +75,13 @@ def ajout_mentions(lignes_cupt, mentions):
 
 def lecture_chaine_coref(fichier_chaine, file=True):
     """
-    sortie:
-    1) {id_mention:no_cluster}  {"1":"0", "2":"0"}
-    2) None
+    Peut prendre un dico ou un fichier dans l'entrée, restructurer l'info
+    Args:
+        fichier chaine: resulting_chain.json
+        file: booleen pour montrer si l'entrée est un file ou un dico (file par défault)
+    Returns:
+        dico_mention_cluster : quand on trouve les chaînes: dico sous forme: {id_mention:no_cluster}  {"1":"0", "2":"0"}
+        None : rien est trouvé
     """
     if file:
         with open(fichier_chaine) as f:
@@ -136,8 +142,6 @@ if __name__ == "__main__":
         lignes_cupt = f.readlines()
     nombre_ligne = len(lignes_cupt)
 
-    fichier_sortie = f"{fichier_cupt}mc"
-
     fichier_chaine = sys.argv[3]
     dico_chaine = lecture_chaine_coref(fichier_chaine)   # can be none
 
@@ -153,9 +157,9 @@ if __name__ == "__main__":
     # 17 {'token_i': 10, 'content': '2\tvit\tvivre\tVERB\t_\tMood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin\t0\troot\t_\t_\t*', 'mentions': ['5', '6'], 'chaine_coref': ['4:5', '4:6']}
     # 18 {'token_i': 11, 'content': '3\tà\tà\tADP\t_\t_\t4\tcase\t_\t_\t*', 'mentions': ['6', '7'], 'chaine_coref': ['4:6']}
 
-
     # -------------------------------------------------------
     # formatter la ligne et ecrire dans le fichier
+    fichier_sortie = sys.argv[4]                           ##################################################################
     ecrit_dans_fichier(fichier_sortie, lignes_mention_coref)
 
 
