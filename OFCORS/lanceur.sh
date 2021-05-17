@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ./lanceur.sh phrases/ -os
+# ./lanceur.sh -os phrases/ 
 # Dans phrases/ se trouve les fichiers txt à analyser par OFCORS
 # La sortie d'OFCORS se trouve dans phrases/ofcors_outputs/
 
@@ -35,22 +35,22 @@ mwecoref()
         done
 }
 
-if [ $2 == "-os" ]
+if [ $1 == "-os" ]
 then
     mkdir ./$1ofcors_outputs/
     echo "OFCORS"
-    ofcors "$1"
+    ofcors "$2"
     echo "PYTHON"
-    mwecoref "$1"
+    mwecoref "$2"
     python3 statistiques.py $1mwecoref_outputs/
-elif [ $2 == "-o" ]
+elif [ $1 == "-o" ]
 then
     mkdir ./$1ofcors_outputs/
-    ofcors "$1"
-elif [ $2 == "-s" ]
+    ofcors "$2"
+elif [ $1 == "-s" ]
 then
     mkdir ./$1mwecoref_outputs/
-    mwecoref "$1"
+    mwecoref "$2"
     python3 statistiques.py $1mwecoref_outputs/
 else
     echo "Cette option n'existe pas. "
