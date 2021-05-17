@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Anaëlle Pierredon
+# Anaëlle Pierredon et Jianying Liu
 
 """
 Production de statistiques sur la totalité des MWE des différents fichiers.

@@ -1,0 +1,27 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = LVCFull2.txt
+# source_sent_id = http://my/newcorpus/uri LVCFull2.txt 1
+# text = La poursuite des études nous apporte une réponse sur cette problématique, et nous sommes satisfaits de cette réponse.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	1	0:1
+2	poursuite	poursuite	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	1	0:1
+3-4	des	_	_	_	_	_	_	_	_	*	1;2	0:1
+3	de	de	ADP	_	_	5	case	_	_	*	1;2	0:1
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*	1;2	0:1
+5	études	étude	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	1;2	0:1
+6	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	7	iobj	_	_	*	3	*
+7	apporte	apporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	4	0:4
+9	réponse	réponse	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	1	4	0:4
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	_	_	*	5;6	0:5;0:6
+12	problématique	problématique	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	5;6	0:5;0:6
+13	,	,	PUNCT	_	_	17	punct	_	_	*	6	0:6
+14	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+15	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	17	nsubj	_	_	*	7	*
+16	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	cop	_	_	*	*	*
+17	satisfaits	satisfait	ADJ	_	Gender=Masc|Number=Plur	7	conj	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	*	*
+19	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_	*	8;9	0:8;0:9
+20	réponse	réponse	NOUN	_	Gender=Fem|Number=Sing	17	obl:arg	_	SpaceAfter=No	*	8;9	0:8;0:9
+21	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*	9	0:9
+

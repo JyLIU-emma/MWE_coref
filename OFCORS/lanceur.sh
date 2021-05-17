@@ -1,4 +1,5 @@
 #!/bin/bash
+# Anaëlle Pierredon et Jianying Liu
 
 # ./lanceur.sh -os phrases/ 
 # Dans phrases/ se trouve les fichiers txt à analyser par OFCORS
@@ -31,7 +32,7 @@ mwecoref()
             new_fichier=(${new_fichier[1]//./ })
             echo ${new_fichier[0]}
 
-            python3 mwe_coref.py ./$1ofcors_outputs/${new_fichier[0]}_mentions_output.json ./$1${new_fichier[0]}annote.config48.cupt
+            python3 add_mentions_chaine_to_cupt.py ./$1ofcors_outputs/${new_fichier[0]}_mentions_output.json ./$1${new_fichier[0]}annote.config48.cupt ./$1ofcors_outputs/${new_fichier[0]}_resulting_chains.json ./$1mwecoref_outputs/${new_fichier[0]}_mwe_coref.cupt
         done
 }
 
@@ -42,19 +43,19 @@ then
     ofcors "$2"
     echo "PYTHON"
     mwecoref "$2"
-    python3 statistiques.py $1mwecoref_outputs/
+    python3 statistiques.py $2mwecoref_outputs/
 elif [ $1 == "-o" ]
 then
-    mkdir ./$1ofcors_outputs/
+    mkdir ./$2ofcors_outputs/
     ofcors "$2"
 elif [ $1 == "-s" ]
 then
-    mkdir ./$1mwecoref_outputs/
+    mkdir ./$2mwecoref_outputs/
     mwecoref "$2"
-    python3 statistiques.py $1mwecoref_outputs/
+    python3 statistiques.py $2mwecoref_outputs/
 else
-    echo "Cette option n'existe pas. "
-    echo "-o : lance ofcors-infer"
-    echo "-s : lance mwe_coref.py"
-    echo "-os : lance ofcors-infer et mwe_coref.py"
+    echo " Cette option n'existe pas. "
+    echo " -o : lance ofcors-infer "
+    echo " -s : lance add_mentions_chaine_to_cupt.py et statistiques.py "
+    echo " -os : lance ofcors-infer, mwe_coref.py et statistiques.py "
 fi
