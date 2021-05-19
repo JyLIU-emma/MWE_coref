@@ -29,7 +29,7 @@ def lecture_mentions(mentions):
 
     mentions = []
     for cle, ment in dico_mentions.items():
-        span = [i for i in range(ment["START"], ment["END"]+1)]
+        span = [i for i in range(int(ment["START"]), int(ment["END"])+1)]
         mentions.append((cle, ment["CONTENT"], span))
     return mentions
 

@@ -19,6 +19,7 @@ ofcors()
 
             mv ./ofcors_outputs/resulting_chains.json ./$1ofcors_outputs/${new_fichier[0]}_resulting_chains.json
             mv ./ofcors_outputs/mentions_detection/mentions_output.json ./$1ofcors_outputs/${new_fichier[0]}_mentions_output.json
+            mv ./ofcors_outputs/mentions_detection/tokens.json ./$1ofcors_outputs/${new_fichier[0]}_tokens.json
         done
 }
 
@@ -38,7 +39,7 @@ mwecoref()
 
 if [ $1 == "-os" ]
 then
-    mkdir ./$1ofcors_outputs/
+    mkdir ./$2ofcors_outputs/
     echo "OFCORS"
     ofcors "$2"
     echo "PYTHON"
