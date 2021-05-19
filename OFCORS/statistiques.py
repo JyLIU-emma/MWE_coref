@@ -21,7 +21,7 @@ def lecture(entree):
     return filein
 
 
-def dico_phrase(phrase):
+def dico_phrase_mwe(phrase):
     """
     Dictionnaire des MWE par phrases
     Entrée : phrase, la liste des lignes de la phrase
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     dico_mwe_all = {}
     for sent in liste_phrase:
-        dico_mwe_phrase = dico_phrase(sent)
+        dico_mwe_phrase = dico_phrase_mwe(sent)
         dico_mwe_all = dico_complet(dico_mwe_phrase, dico_mwe_all)
 
     affichage_dico(dico_mwe_all)
