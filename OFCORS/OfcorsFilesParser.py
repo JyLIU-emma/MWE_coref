@@ -1,7 +1,5 @@
 #/usr/bin/python
 import json
-import sys
-import re
 
 
 class Mention():
@@ -36,7 +34,7 @@ class Token():
         i_ofcors (str): l'indice de token distribuée par l'ofcors (commence par 0)
         is_mention (bool): montre si le token fait partie d'une mention
         ment_list (list): une liste des Mention objets liés à ce token
-        ment_coref_list (list): une liste des dict contenant l'id de mention et l'id de coref
+        ment_coref_list (dict): un dictionnaire des dict contenant l'id de mention et l'id de coref
             clé dans le dict: ment_id, coref_id
     """
     def __init__(self, i_ofcors, text):
@@ -44,7 +42,7 @@ class Token():
         self.i_ofcors = i_ofcors
         self.is_mention = False
         self.ment_list = []  #mention object
-        self.ment_coref_list =[]
+        self.ment_coref_list = {}
 
 class Mentions():
     """
@@ -165,13 +163,15 @@ class OfcorsOutput():
                 token.is_mention = True
                 ment_ids = mentions.tokens[token.i_ofcors]
                 for ment_id in ment_ids:
-                    token.ment_list.append(mentions.mentions[ment_id])
-                token.ment_coref_list = [{"ment_id":ment.id, "coref_id":ment.chaine_id} for ment in token.ment_list]
+                    mention = mentions.mentions[ment_id]
+                    token.ment_list.append(mention)
+                # token.ment_coref_list = [{"ment_id":ment.id, "coref_id":ment.chaine_id} for ment in token.ment_list]
+                    token.ment_coref_list[ment_id] = {"ment_id":mention.id, "coref_id":mention.chaine_id}
 
 
 if __name__ == "__main__":
     # exemple d'usage
-    mention_file = "/Users/liujianying/Desktop/stage/MWE_coref/OFCORS/blabla/ofcors_outputs/blabla_mentions_output.json"
+    mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
     mentions = Mentions(mention_file)
     # print(mentions.mentions[1].span)
     # for token_id, mention in mentions.tokens.items():
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     
     print("-"*30)
 
-    coref_file = "/Users/liujianying/Desktop/stage/MWE_coref/OFCORS/blabla/ofcors_outputs/blabla_resulting_chains.json"
+    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
     coref = CorefChaines(coref_file)
     # print(coref.ment_cluster)
     # print(coref.clusters['0'])
@@ -189,9 +189,9 @@ if __name__ == "__main__":
 
     print("-"*30)
 
-    token_file = "/Users/liujianying/Desktop/stage/MWE_coref/OFCORS/blabla/ofcors_outputs/blabla_tokens.json"
+    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
     ofcors_out = OfcorsOutput(token_file)
     ofcors_out.merge_result(mentions)
 
     for indice, token in ofcors_out.tokens.items():
-        print(indice, token.i_ofcors, token.text, token.ment_coref_list)
+        print(indice, token.i_ofcors, token.text, [ment.id for ment in token.ment_list], token.ment_coref_list)
