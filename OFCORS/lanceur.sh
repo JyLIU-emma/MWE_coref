@@ -4,6 +4,7 @@
 # ./lanceur.sh -os phrases/ 
 # Dans phrases/ se trouve les fichiers txt à analyser par OFCORS
 # La sortie d'OFCORS se trouve dans phrases/ofcors_outputs/
+# La sortie de merge_s2s_ofcors se trouve dans phrases/mwecoref_outputs/
 
 ofcors()
 {
