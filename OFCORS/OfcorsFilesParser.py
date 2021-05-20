@@ -138,7 +138,7 @@ class OfcorsOutput():
     Classe sert à fusionner tous les sortie de l'ofcors.
     
     Attributes:
-        tokens (list): une liste des Token objets.
+        tokens (dict): un dictionnaire des Token objets, ayant token id comme clé
     """
 
     def __init__(self, filepath):
@@ -146,13 +146,13 @@ class OfcorsOutput():
         Args:
             filepath (str): chemin vers fichier tokens.json de l'ofcors
         """
-        self.tokens = []
+        self.tokens = {}
         with open(filepath, encoding="utf8") as tokens_file:
             text = tokens_file.read()
         dico_json = json.loads(text)
         for i, t in dico_json.items():
             token = Token(i,t)
-            self.tokens.append(token)
+            self.tokens[i] = token
         
     def merge_result(self, mentions):
         """
@@ -160,7 +160,7 @@ class OfcorsOutput():
         Args:
             mentions (Mentions): l'objet Mentions déjà contenant l'info de coréférence
         """
-        for token in self.tokens:
+        for token in self.tokens.values():
             if token.i_ofcors in mentions.tokens.keys():
                 token.is_mention = True
                 ment_ids = mentions.tokens[token.i_ofcors]
@@ -193,5 +193,5 @@ if __name__ == "__main__":
     ofcors_out = OfcorsOutput(token_file)
     ofcors_out.merge_result(mentions)
 
-    for token in ofcors_out.tokens:
-        print(token.i_ofcors, token.text, token.ment_coref_list)
+    for indice, token in ofcors_out.tokens.items():
+        print(indice, token.i_ofcors, token.text, token.ment_coref_list)
