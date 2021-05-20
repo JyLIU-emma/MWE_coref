@@ -1,4 +1,4 @@
-#/usr/bin/python
+#/usr/bin/python3
 
 #TODO: maintenant: 1 cupt -- 1 fichier; on a besoin de 1 cupt -- plusieurs fichier ?
 #TODO: Paris. à la fin et Mr. ?
@@ -149,5 +149,3 @@ if __name__ == "__main__":
 
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
-
-
