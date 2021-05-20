@@ -33,7 +33,7 @@ mwecoref()
             new_fichier=(${new_fichier[1]//./ })
             echo ${new_fichier[0]}
 
-            python3 add_mentions_chaine_to_cupt.py ./$1ofcors_outputs/${new_fichier[0]}_mentions_output.json ./$1${new_fichier[0]}annote.config48.cupt ./$1ofcors_outputs/${new_fichier[0]}_resulting_chains.json ./$1mwecoref_outputs/${new_fichier[0]}_mwe_coref.cupt
+            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}annote.config48.cupt
         done
 }
 
@@ -57,6 +57,6 @@ then
 else
     echo " Cette option n'existe pas. "
     echo " -o : lance ofcors-infer "
-    echo " -s : lance add_mentions_chaine_to_cupt.py et statistiques.py "
-    echo " -os : lance ofcors-infer, mwe_coref.py et statistiques.py "
+    echo " -s : lance merge_s2s_ofcors.py et statistiques.py "
+    echo " -os : lance ofcors-infer, merge_s2s_ofcors.py et statistiques.py "
 fi
