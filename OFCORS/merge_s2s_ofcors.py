@@ -8,7 +8,6 @@ print("#"*30)
 rep_corpus = sys.argv[1] # "./blabla/
 filename = sys.argv[2]  # blabla
 cupt_file = sys.argv[3] # "./blabla/blabla.cupt"
-# cupt_file = rep_corpus + filename + ".cupt"
 
 ofcors_rep = rep_corpus + "ofcors_outputs/"
 output_rep = rep_corpus + "mwecoref_outputs/"
