@@ -22,29 +22,31 @@ class ExprPoly():
         self.tokens = [tokens]
         self.coref = [coref]
         self.type_mwe = type_mwe
-        self.cas = "?"
+        self.schema_mwe = []
+        self.schema_mention = []
+        self.cas = ""
 
     def append_schemas(self, schema_mwe, schema_mention):
-        self.schema_mwe = []
         for indice in schema_mwe:
             liste_indices = [element.split(":")[0] for element in indice.split(";")]
             if str(self.identifiant) not in liste_indices:
                 # Ce n'est pas la MWE qu'on est en train de définir
                 self.schema_mwe.append("*")
             else:
-                self.schema_mwe.append(indice)
+                self.schema_mwe.append('1')
 
-        self.schema_mention = schema_mention
-        self.cas =  self.determiner_cas()
+        self.schema_mention.extend(schema_mention)
+        self.cas = self.determiner_cas()
+
+        print(self.texte)
+        print(f"MWE : {self.schema_mwe}")
+        print(f"MENTIONS : {self.schema_mention}")
+        print(f"CAS : {self.cas}\n\n")
 
     def determiner_cas(self):
-        if set(self.schema_mwe) == {'*'}:  # Il n'y a pas de MWE
-            return "None"
-
         encours = False
         for num, (mwe, actuel) in enumerate(zip(self.schema_mwe,
                                             self.schema_mention)):
-
             # DEBUT DE MWE
             if mwe != '*'and not encours:
                 encours = True
@@ -52,7 +54,7 @@ class ExprPoly():
                 if (prec and actuel) != '*' and prec == actuel:
                     # la mention commence avant : cas 1
                     debut = -1
-                elif prec != actuel and actuel != '*':
+                elif actuel not in (prec, '*'):
                     # la mention commence en même temps : cas 1, 2, 3
                     debut = 0
                 elif (prec and actuel) == '*':
@@ -60,11 +62,11 @@ class ExprPoly():
                     debut = 1
 
             # FIN DE MWE
-            elif mwe == "*" and encours:
+            if (mwe == "*" and encours) or (mwe != "*" and num == len(self.schema_mwe)-1):
                 encours = False
                 prec = self.schema_mention[num-1]
                 if prec == '*':
-                    # la mention se fini avant ou pas de mention : cas 3, 4 ou None
+                    # la mention se fini avant/pas de mention : cas 3, 4, None
                     fin = -1
                 elif prec != '*' and actuel == '*':
                     # la mention se fini en même temps : cas 1, 2, 3
@@ -73,6 +75,7 @@ class ExprPoly():
                     # la mention n'est pas encore fini : cas 1 ou rien
                     fin = 1
 
+                # Déterminer le cas
                 if (debut == 0 and fin == 1) or (debut == -1 and fin == 0):
                     cas = "1"
                 elif debut == 0 and fin == 0:
@@ -80,8 +83,11 @@ class ExprPoly():
                 elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1):
                     cas = "3"
                 else:
-                    cas = "4 ou None"
-        return cas
+                    cas = "4"
+                return cas
+
+        return "None"
+
 
 class TypeExpr():
     """
@@ -162,7 +168,7 @@ def phrase_mwe(phrase):
 
     for expoly in liste_expoly:
         expoly.append_schemas(schema_mwe, schema_mention)
-        
+
     return liste_expoly
 
 
@@ -247,12 +253,9 @@ def main():
 
     repertoire = Repertoire(args.rep)
 
-    affichage_infos(repertoire.liste_type)
-    affichage_stats_globales(repertoire.liste_type)
-    affichage_stats_coref(repertoire.liste_type)
-
-    # Debug des cas
-    
+    # affichage_infos(repertoire.liste_type)
+    # affichage_stats_globales(repertoire.liste_type)
+    # affichage_stats_coref(repertoire.liste_type)
 
 
 if __name__ == "__main__":
