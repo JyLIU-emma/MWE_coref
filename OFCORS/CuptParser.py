@@ -1,12 +1,26 @@
 #/usr/bin/python
 
 #TODO: maintenant: 1 cupt -- 1 fichier; on a besoin de 1 cupt -- plusieurs fichier ?
+#TODO: Paris. à la fin et Mr. ?
 import re
 from OfcorsFilesParser import *
 
 class Cupt():
+    """
+    Classe sert à parser fichier cupt
 
+    Attributes:
+        type (str): "cupt" ou "cupt+coref", définit automatiquement par le script
+        lignes (dict): un dictionnaire de Ligne objets regroupant tous les infos 
+            clé (int): l'indice de ligne
+            valeur (Ligne)
+    """
     def __init__(self, filepath):
+        """
+        Initialiser l'objet à partir d'un fichier cupt
+        Args:
+            filepath (str): chemin vers le fichier cupt
+        """
         self.type = "cupt"  #########TODO
         self.lignes = {}
         numero_ligne = 0
@@ -30,6 +44,13 @@ class Cupt():
             numero_ligne += 1
     
     def add_ofcors_output(self, ofcors_out):
+        """
+        Fusionner la sortie de l'ofcors dans notre Cupt objet selon l'indice de token.
+        Tester en même temps la forme de token pour vérifier c'est les mêmes tokens.
+
+        Args:
+            ofcors_out (OfcorsOutput)
+        """
         self.type = "cupt+coref"
         for ligne in self.lignes.values():
             if ligne.i_token == -1 or "-" in ligne.i_token: #si c'est u commentaire ou au/du
@@ -38,7 +59,7 @@ class Cupt():
             token_coref = ofcors_out.tokens.get(ligne.i_token)  # Token objet
             if token_coref != None:   # None : mot pas dans sortie ofcors (mot non mention)
                 token_coref_form = token_coref.text
-                token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.
+                token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.  mais Mr.   ####################################
                 if ligne.token_form == token_coref_form:
                     # pour les commentaire : ligne.coref == None
                     ligne.coref = token_coref.ment_coref_list
@@ -48,11 +69,16 @@ class Cupt():
                     break
     
     def write_to_file(self, filepath):
-        # if self.type == "cupt":   ##########
-        nombre_ligne = len(self.lignes)
+        """
+        Écrire l'info dans Cupt objet complétée par la sortie Ofcors dans un fichier.
+
+        Args:
+            filepath (str) : chemin vers fichier sortie
+        """
         with open(filepath, "w") as file_out:
             for ligne in self.lignes.values():
-                if ligne.i_token != -1 :  #c'est un token
+                #c'est un token
+                if ligne.i_token != -1 :
                     # token n'est pas une mention
                     if ligne.coref == {}:
                         print(ligne.content + "\t*\t*", file=file_out)                    
@@ -70,6 +96,7 @@ class Cupt():
                             col_coref = ";".join(col_coref)
                             ligne.content = ligne.content + "\t" + col_coref
                         print(ligne.content, file=file_out)
+                # c'est pas un token
                 else:
                     if ligne.indice == 0:
                         ligne.content = ligne.content + " MENTION COREF"
@@ -77,6 +104,18 @@ class Cupt():
 
 
 class Ligne():
+    """
+    Classe représentée chaque ligne.
+
+    Attributes:
+        indice (int): l'indice de cette ligne dans tout le fichier, commence par 0
+        i_token (str): l'indice du token, -1 pour tous les lignes non-token
+        token_form (str): forme de token sur 2e colonne, sera "#commentaire" si la ligne est une ligne de commentaire/ligne vide
+        token_ofcors (Token): None par défaut
+        content (str): contenu de toute la ligne
+        coref (dict): dictionnaire des dict de mention_id et sa chaine_id
+        is_token (bool): montre si c'est une ligne de commentaire/ligne vide, ou une de token 
+    """
     def __init__(self, indice, i_token, content, token_form="#commentaire"):
         self.indice = indice
         self.i_token = i_token
@@ -84,7 +123,6 @@ class Ligne():
         self.token_ofcors = None
         self.content = content
         self.coref = {}  #dict de dict (ment--coref)
-
         self.is_token = False if self.i_token == -1 else True
 
 
@@ -92,20 +130,22 @@ if __name__ == "__main__":
     # exemple d'usage
     print("#"*30)
     mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
+    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
+    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
+    cupt_file = "./blabla/blabla.cupt"
+    output_file = "./blabla/test_out.cuptmc"
+
     mentions = Mentions(mention_file)
 
-    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
     coref = CorefChaines(coref_file)
     mentions.chainer(coref.ment_cluster)
-
-    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
+ 
     ofcors_out = OfcorsOutput(token_file)
     ofcors_out.merge_result(mentions)
-
-    cupt_file = "./blabla/blabla.cupt"
+    
     cupt = Cupt(cupt_file)
     cupt.add_ofcors_output(ofcors_out)
-    cupt.write_to_file("./blabla/test_out.cuptmc")
+    cupt.write_to_file(output_file)
 
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)

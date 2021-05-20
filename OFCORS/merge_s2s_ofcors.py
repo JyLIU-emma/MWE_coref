@@ -1,20 +1,25 @@
 #/usr/bin/python3
+
+"""
+usage :
+python merge_s2s_ofcors.py répertoire_corpus txtfilename chemin/vers/cupt
+exemple: (on a blabla.txt et blabla.cupt dans ./blabla)
+python merge_s2s_ofcors.py ./blabla/ blabla ./blabla/blabla.cupt
+"""
 import sys
 from CuptParser import *
 from OfcorsFilesParser import *
 
-print("#"*30)
-# "./blabla/ofcors_outputs/blabla_mentions_output.json"
-rep_corpus = sys.argv[1] # "./blabla/
-filename = sys.argv[2]  # blabla
-cupt_file = sys.argv[3] # "./blabla/blabla.cupt"
+rep_corpus = sys.argv[1]
+filename = sys.argv[2]
+cupt_file = sys.argv[3]
 
 ofcors_rep = rep_corpus + "ofcors_outputs/"
 output_rep = rep_corpus + "mwecoref_outputs/"
 
 mention_file = f'{ofcors_rep}{filename}_mentions_output.json'
-coref_file = f'{ofcors_rep}{filename}_resulting_chains.json' # "./blabla/ofcors_outputs/blabla_resulting_chains.json"
-token_file = f'{ofcors_rep}{filename}_tokens.json' # "./blabla/ofcors_outputs/blabla_tokens.json"
+coref_file = f'{ofcors_rep}{filename}_resulting_chains.json'
+token_file = f'{ofcors_rep}{filename}_tokens.json'
 
 mentions = Mentions(mention_file)
 coref = CorefChaines(coref_file)
