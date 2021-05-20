@@ -9,7 +9,7 @@ Argument : répertoire où se trouvent les cupt+
 import glob
 import argparse
 
-# ----------------------- CLASSES -----------------------
+# -------------------------- CLASSES --------------------------
 
 
 class ExprPoly():
@@ -36,83 +36,84 @@ class TypeExpr():
 
 class Repertoire():
     """
-    Lis chaque fichier du répertoire et crée des listes de MWES.
+    Une liste des MWEs globale et une liste des MWEs par type contenues
+    dans tous les fichiers du répertoire.
     """
 
     def __init__(self, repertoire):
         self.repertoire = repertoire
+        self.liste_phrases = self.lecture()
 
-        liste_phrases = []
-        for fichier in glob.glob(f"{repertoire}*"):
-            sortie = self.lecture(fichier)
-            liste_phrases.extend(sortie)
+        self.liste_mwes = []
+        for phrase in self.liste_phrases:
+            self.liste_mwes.extend(phrase_mwe(phrase))
 
-        liste_expoly = []
-        for phrase in liste_phrases:
-            liste_expoly.extend(self.phrase_mwe(phrase))
-        self.liste_mwes = liste_expoly
+        self.liste_type = complet_type(self.liste_mwes)
 
-        liste_typexp = self.complet_type(liste_expoly)
-        self.liste_type = liste_typexp
-
-
-    def lecture(self, fichier):
+    def lecture(self):
         """
         Lecture des fichiers.
         Entrée : entree, un nom de fichier
         sortie : filein, une liste des phrases du fichier
         """
-        with open(fichier, 'r') as entree:
-            entree = entree.read().split('\n\n')
-        return entree
+        liste_phrases = []
+        for fichier in glob.glob(f"{self.repertoire}*"):
+            with open(fichier, 'r') as entree:
+                sortie = entree.read().split('\n\n')
+            liste_phrases.extend(sortie)
+        return liste_phrases
 
 
-    def phrase_mwe(self, phrase):
-        """
-        Liste des MWE par phrases
+# ----------------------- FONCTIONS (CONSTRUCTION) -----------------------
 
-        Entrée : phrase, la liste des lignes de la phrase
-        Sortie : liste_expoly, la liste des MWE de la phrase (ExprPoly())
-        """
-        liste_expoly = []
 
-        for ligne in phrase.split('\n'):
-            if ligne.startswith('# text'):
-                texte = ligne.split(' = ')[1]
-            if ligne.startswith("#") or ligne.strip() == "":
-                continue
-            ligne = ligne.strip().split('\t')
-            mwes = ligne[10]
-            if mwes != "*":
-                for mwe in mwes.split(';'):
-                    infos = mwe.split(':')
-                    id_mwe = int(infos[0])
-                    if len(infos) == 2:
-                        expoly = ExprPoly(id_mwe, infos[1], texte, ligne[1],
-                                          ligne[12], "?")
-                        liste_expoly.append(expoly)
-                    else:
-                        for expoly in liste_expoly:
-                            if expoly.identifiant == id_mwe:
-                                expoly.tokens.append(ligne[1])
-                                expoly.coref.append(ligne[12])
-        return liste_expoly
+def phrase_mwe(phrase):
+    """
+    Liste des MWE par phrases
 
-    def complet_type(self, liste_expoly):
-        """
-        Entrée : liste_expoly, la liste des MWE de la phrase (ExprPoly())
-        Sortie : liste_typexp, la liste des types existants dans le fichier et
-                 les expressions polylexicales qui correspondent à ce type.
-                 (TypeExpr())
-        """
-        liste_typexp = list(set(expoly.type_mwe for expoly in liste_expoly))
-        liste_typexp = [TypeExpr(type_mwe) for type_mwe in liste_typexp]
+    Entrée : phrase, la liste des lignes de la phrase
+    Sortie : liste_expoly, la liste des MWE de la phrase (ExprPoly())
+    """
+    liste_expoly = []
 
-        for expoly in liste_expoly:
-            for type_item in liste_typexp:
-                if type_item.type_mwe == expoly.type_mwe:
-                    type_item.mwes.append(expoly)
-        return liste_typexp
+    for ligne in phrase.split('\n'):
+        if ligne.startswith('# text'):
+            texte = ligne.split(' = ')[1]
+        if ligne.startswith("#") or ligne.strip() == "":
+            continue
+        ligne = ligne.strip().split('\t')
+        mwes = ligne[10]
+        if mwes != "*":
+            for mwe in mwes.split(';'):
+                infos = mwe.split(':')
+                id_mwe = int(infos[0])
+                if len(infos) == 2:
+                    expoly = ExprPoly(id_mwe, infos[1], texte, ligne[1],
+                                      ligne[12], "?")
+                    liste_expoly.append(expoly)
+                else:
+                    for expoly in liste_expoly:
+                        if expoly.identifiant == id_mwe:
+                            expoly.tokens.append(ligne[1])
+                            expoly.coref.append(ligne[12])
+    return liste_expoly
+
+
+def complet_type(liste_expoly):
+    """
+    Entrée : liste_expoly, la liste des MWE de la phrase (ExprPoly())
+    Sortie : liste_typexp, la liste des types existants dans le fichier et
+             les expressions polylexicales qui correspondent à ce type.
+             (TypeExpr())
+    """
+    liste_typexp = list(set(expoly.type_mwe for expoly in liste_expoly))
+    liste_typexp = [TypeExpr(type_mwe) for type_mwe in liste_typexp]
+
+    for expoly in liste_expoly:
+        for type_item in liste_typexp:
+            if type_item.type_mwe == expoly.type_mwe:
+                type_item.mwes.append(expoly)
+    return liste_typexp
 
 
 # ----------------------- FONCTIONS (AFFICHAGE) -----------------------
@@ -163,6 +164,9 @@ def affichage_stats_coref(liste_typexp):
                       f"cas : {expoly.cas}")
         print(f"====>{nb_coref}/{len(typexp.mwes)}\n")
     print(f"TOTAL\n====>{nb_coref_total}/{total}\n")
+
+
+# --------------------------- MAIN ---------------------------
 
 
 def main():
