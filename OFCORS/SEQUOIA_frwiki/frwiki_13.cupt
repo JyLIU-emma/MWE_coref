@@ -443,8 +443,8 @@
 46	auraient	avoir	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	47	aux:tense	_	_	*
 47	bénéficié	bénéficier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	43	acl:relcl	_	_	*
 48	de	de	ADP	_	_	49	case	_	_	*
-49	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	47	obl:arg	_	_	*
-50	passés	passer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	49	acl	_	_	*
+49	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	47	obl:arg	_	_	1:LVC.full
+50	passés	passer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	49	acl	_	_	1
 51	par	par	ADP	_	_	53	case	_	_	*
 52	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	53	det	_	SpaceAfter=No	*
 53	OPAC	OPAC	PROPN	_	Number=Sing	50	obl:agent	_	_	*
@@ -772,9 +772,9 @@
 5	personne	personne	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
 6	désireuse	désireux	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
 7	de	de	ADP	_	_	8	mark	_	_	*
-8	garder	garder	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	garder	garder	VERB	_	VerbForm=Inf	6	xcomp	_	_	1:LVC.full
 9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
-10	anonymat	anonymat	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No	*
+10	anonymat	anonymat	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No	1
 11	.	.	PUNCT	_	_	3	punct	_	_	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00616
@@ -1010,11 +1010,11 @@
 8	coeur	coeur	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	1
 9	net	net	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No	1
 10	,	,	PUNCT	_	_	11	punct	_	_	*
-11	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2:LVC.full
 12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
 13	série	série	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
 14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
-15	initiatives	initiative	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No	*
+15	initiatives	initiative	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No	2
 16	.	.	PUNCT	_	_	11	punct	_	_	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00626
@@ -1696,11 +1696,11 @@
 24	Halphen	Halphen	PROPN	_	_	23	flat:name	_	SpaceAfter=No	*
 25	,	,	PUNCT	_	_	22	punct	_	_	*
 26	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*
-27	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*
+27	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	2:LVC.full
 28	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	29	det	_	_	*
 29	jours	jour	NOUN	_	Gender=Masc|Number=Plur	27	obj	_	_	*
 30	de	de	ADP	_	_	31	case	_	_	*
-31	vacances	vacances	NOUN	_	Gender=Fem|Number=Plur	29	nmod	_	SpaceAfter=No	*
+31	vacances	vacances	NOUN	_	Gender=Fem|Number=Plur	29	nmod	_	SpaceAfter=No	2
 32	.	.	PUNCT	_	_	14	punct	_	_	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00654
@@ -2503,9 +2503,9 @@
 8	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	_	*
 9	Chirac	Chirac	PROPN	_	Gender=Masc|Number=Sing	8	flat:name	_	_	*
 10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*
-11	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	2:VID
-12	en	en	ADP	_	_	13	case	_	_	2
-13	cause	cause	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	2
+11	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
+12	en	en	ADP	_	_	13	case	_	_	1
+13	cause	cause	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	1
 14	par	par	ADP	_	_	15	case	_	_	*
 15	François	François	PROPN	_	Gender=Masc|Number=Sing	11	obl:agent	_	_	*
 16	Ciolina	Ciolina	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
@@ -2527,8 +2527,8 @@
 32	publics	public	ADJ	_	Gender=Masc|Number=Plur	31	amod	_	SpaceAfter=No	*
 33	,	,	PUNCT	_	_	11	punct	_	_	*
 34	ne	ne	ADV	_	Polarity=Neg	36	advmod	_	_	*
-35	se	se	PRON	_	Person=3|Reflex=Yes	36	expl:comp	_	_	1:IRV
-36	rend	rendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	1
+35	se	se	PRON	_	Person=3|Reflex=Yes	36	expl:comp	_	_	2:IRV
+36	rend	rendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	2
 37	pas	pas	ADV	_	Polarity=Neg	36	advmod	_	_	*
 38	chez	chez	ADP	_	_	40	case	_	_	*
 39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
@@ -2546,8 +2546,8 @@
 7	juge	juge	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
 8	Éric	Éric	PROPN	_	_	7	appos	_	_	*
 9	Halphen	Halphen	PROPN	_	_	8	flat:name	_	_	*
-10	se	se	PRON	_	Person=3|Reflex=Yes	11	obj	_	_	1:IRV
-11	déclare	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+10	se	se	PRON	_	Person=3|Reflex=Yes	11	obj	_	_	*
+11	déclare	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
 12	incompétent	incompétent	ADJ	_	Gender=Masc|Number=Sing	11	xcomp	_	_	*
 13	pour	pour	ADP	_	_	14	mark	_	_	*
 14	instruire	instruire	VERB	_	VerbForm=Inf	12	advcl	_	_	*
@@ -2669,9 +2669,9 @@
 12	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
 13	Armand	Armand	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	_	*
 14	Riberolles	Riberolles	PROPN	_	_	13	flat:name	_	_	*
-15	s'	se	PRON	_	Person=3|Reflex=Yes	17	expl:comp	_	SpaceAfter=No	*
+15	s'	se	PRON	_	Person=3|Reflex=Yes	17	expl:comp	_	SpaceAfter=No	1:IRV
 16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
-17	évertué	évertuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	évertué	évertuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
 18	à	à	ADP	_	_	19	mark	_	_	*
 19	reprendre	reprendre	VERB	_	VerbForm=Inf	17	xcomp	_	_	*
 20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*
@@ -3557,13 +3557,13 @@
 6	,	,	PUNCT	_	_	4	punct	_	_	*
 7	lui	lui	PRON	_	Number=Sing|Person=3	9	iobj	_	_	*
 8	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*
-9	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
 10	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
-11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
-12	couteau	couteau	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
-13	sous	sous	ADP	_	_	15	case	_	_	*
-14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
-15	gorge	gorge	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	SpaceAfter=No	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	1
+12	couteau	couteau	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	1
+13	sous	sous	ADP	_	_	15	case	_	_	1
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	1
+15	gorge	gorge	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	SpaceAfter=No	1
 16	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
 17	.	.	PUNCT	_	_	9	punct	_	_	*
 
@@ -3612,10 +3612,10 @@
 39	,	,	PUNCT	_	_	25	punct	_	_	*
 40	dont	dont	PRON	_	PronType=Rel	42	nmod	_	_	*
 41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
-42	paiement	paiement	NOUN	_	Gender=Masc|Number=Sing	43	nsubj	_	_	*
+42	paiement	paiement	NOUN	_	Gender=Masc|Number=Sing	43	nsubj	_	_	2:LVC.full
 43	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	acl:relcl	_	_	*
 44	s'	se	PRON	_	Person=3|Reflex=Yes	45	expl:pass	_	SpaceAfter=No	*
-45	effectuer	effectuer	VERB	_	VerbForm=Inf	43	xcomp	_	_	*
+45	effectuer	effectuer	VERB	_	VerbForm=Inf	43	xcomp	_	_	2
 46	à	à	ADP	_	_	48	case	_	_	*
 47	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	48	det	_	SpaceAfter=No	*
 48	étranger	étranger	NOUN	_	Gender=Masc|Number=Sing	45	obl:mod	_	SpaceAfter=No	*

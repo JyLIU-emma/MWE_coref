@@ -4,6 +4,7 @@
 # ./lanceur.sh -os phrases/ 
 # Dans phrases/ se trouve les fichiers txt à analyser par OFCORS
 # La sortie d'OFCORS se trouve dans phrases/ofcors_outputs/
+# La sortie de merge_s2s_ofcors se trouve dans phrases/mwecoref_outputs/
 
 ofcors()
 {
@@ -33,7 +34,8 @@ mwecoref()
             new_fichier=(${new_fichier[1]//./ })
             echo ${new_fichier[0]}
 
-            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}annote.config48.cupt
+            # python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}annote.config48.cupt
+            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}.cupt
         done
 }
 

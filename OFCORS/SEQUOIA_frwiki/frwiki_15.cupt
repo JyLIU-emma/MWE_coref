@@ -194,9 +194,9 @@
 4	échanges	échange	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	SpaceAfter=No	*
 5	,	,	PUNCT	_	_	7	punct	_	_	*
 6	Moggi	Moggi	PROPN	_	_	7	nsubj	_	_	*
-7	donnait	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+7	donnait	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:LVC.full
 8	ses	son	DET	_	Number=Plur|Poss=Yes	9	det	_	_	*
-9	instructions	instruction	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_	*
+9	instructions	instruction	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_	1
 10	pour	pour	ADP	_	_	12	case	_	_	*
 11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
 12	désignation	désignation	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
@@ -362,8 +362,8 @@
 1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
 2	procureur	procureur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
 3	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
-4	avoir	avoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	2:VID
-5	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	2
+4	avoir	avoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	1:VID
+5	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
 6	à	à	ADP	_	_	9	case	_	_	*
 7	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
 8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
@@ -374,8 +374,8 @@
 13	visant	viser	VERB	_	Tense=Pres|VerbForm=Part	9	acl	_	_	*
 14	justement	justement	ADV	_	_	13	advmod	_	_	*
 15	à	à	ADP	_	_	17	mark	_	_	*
-16	se	se	PRON	_	Person=3|Reflex=Yes	17	obj	_	_	1:IRV
-17	rendre	rendre	VERB	_	VerbForm=Inf	13	xcomp	_	_	1
+16	se	se	PRON	_	Person=3|Reflex=Yes	17	obj	_	_	*
+17	rendre	rendre	VERB	_	VerbForm=Inf	13	xcomp	_	_	*
 18	invisible	invisible	ADJ	_	Number=Sing	17	xcomp	_	_	*
 19-20	aux	_	_	_	_	_	_	_	_	*
 19	à	à	ADP	_	_	21	case	_	_	*
@@ -627,9 +627,9 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00813
 # text = Ils mettent en avant le manque de témoignages les concernant.
 1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	2	nsubj	_	_	*
-2	mettent	mettre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
-3	en	en	ADP	_	_	2	obl:arg	_	EXTPOS=ADV|MWE=en_avant	*
-4	avant	avant	ADV	_	_	3	fixed	_	_	*
+2	mettent	mettre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID
+3	en	en	ADP	_	_	2	obl:arg	_	EXTPOS=ADV|MWE=en_avant	1
+4	avant	avant	ADV	_	_	3	fixed	_	_	1
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
 6	manque	manque	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
 7	de	de	ADP	_	_	8	case	_	_	*

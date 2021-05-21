@@ -139,15 +139,15 @@
 18	,	,	PUNCT	_	_	8	punct	_	_	*
 19	comme	comme	ADP	_	_	21	mark	_	_	*
 20	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	21	aux:tense	_	_	*
-21	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	advcl	_	_	1:LVC.full
+21	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	advcl	_	_	1:LVC.full;2:LVC.full
 22	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	24	det	_	SpaceAfter=No	*
 23	importantes	important	ADJ	_	Gender=Fem|Number=Plur	24	amod	_	_	*
 24	retouches	retouche	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	1
 25	ou	ou	CCONJ	_	_	27	cc	_	_	*
 26	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	27	det	_	_	*
-27	mises	mise	NOUN	_	Gender=Fem|Number=Plur	24	conj	_	_	*
-28	en	en	ADP	_	_	29	case	_	_	*
-29	scène	scène	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*
+27	mises	mise	NOUN	_	Gender=Fem|Number=Plur	24	conj	_	_	2
+28	en	en	ADP	_	_	29	case	_	_	2
+29	scène	scène	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	2
 30	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
 31	2	2	NUM	_	NumType=Card	8	obl:mod	_	SpaceAfter=No	*
 32	]	]	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
@@ -167,9 +167,9 @@
 10	par	par	ADP	_	_	11	case	_	_	*
 11	Reuters	Reuters	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
 12	,	,	PUNCT	_	_	15	punct	_	_	*
-13	il	il	PRON	_	Number=Sing|Person=3	15	expl:subj	_	_	1:VID
-14	y	y	PRON	_	Person=3	15	expl:comp	_	_	1
-15	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+13	il	il	PRON	_	Number=Sing|Person=3	15	expl:subj	_	_	*
+14	y	y	PRON	_	Person=3	15	expl:comp	_	_	*
+15	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
 16	notamment	notamment	ADV	_	_	15	advmod	_	_	*
 17	deux	deux	NUM	_	NumType=Card	18	nummod	_	_	*
 18	clichés	cliché	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*
@@ -324,9 +324,9 @@
 18	de	de	ADP	_	_	19	case	_	_	*
 19	Beyrouth	Beyrouth	PROPN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
 20	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	21	aux:tense	_	_	*
-21	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*
+21	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	1:LVC.full
 22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
-23	attaque	attaque	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	*
+23	attaque	attaque	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	1
 24	aérienne	aérien	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No	*
 25	.	.	PUNCT	_	_	9	punct	_	_	*
 
@@ -370,9 +370,9 @@
 # text = Après la mise en évidence de certaines de ces "anomalies" par les blogs américains Little Green Footballs et My Pet Jawa, l'agence Reuters a retiré les clichés et a admis que des photos avaient subi des modifications [5][6].
 1	Après	après	ADP	_	_	3	case	_	_	*
 2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
-3	mise	mise	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	_	*
-4	en	en	ADP	_	_	5	case	_	_	*
-5	évidence	évidence	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+3	mise	mise	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	_	1:VID
+4	en	en	ADP	_	_	5	case	_	_	1
+5	évidence	évidence	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	1
 6	de	de	ADP	_	_	7	case	_	_	*
 7	certaines	certain	PRON	_	Gender=Fem|Number=Plur|Person=3	3	nmod	_	_	*
 8	de	de	ADP	_	_	11	case	_	_	*
@@ -406,9 +406,9 @@
 36	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	37	det	_	_	*
 37	photos	photo	NOUN	_	Gender=Fem|Number=Plur	39	nsubj	_	_	*
 38	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	39	aux:tense	_	_	*
-39	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	34	ccomp	_	_	1:LVC.full
+39	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	34	ccomp	_	_	2:LVC.full
 40	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	41	det	_	_	*
-41	modifications	modification	NOUN	_	Gender=Fem|Number=Plur	39	obj	_	_	1
+41	modifications	modification	NOUN	_	Gender=Fem|Number=Plur	39	obj	_	_	2
 42	[	[	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
 43	5	5	NUM	_	NumType=Card	29	obl:mod	_	SpaceAfter=No	*
 44	]	]	PUNCT	_	_	29	punct	_	SpaceAfter=No	*

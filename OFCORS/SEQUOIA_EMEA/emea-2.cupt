@@ -386,7 +386,7 @@
 43	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_	*
 44	hanche	hanche	NOUN	_	Gender=Fem|Number=Sing	41	nmod	_	_	*
 45	doivent	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	_	*
-46	recevoir	recevoir	VERB	_	VerbForm=Inf	45	xcomp	_	_	3:LVC.full
+46	recevoir	recevoir	VERB	_	VerbForm=Inf	45	xcomp	_	_	*
 47	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_	*
 48	large	large	ADJ	_	Number=Sing	49	amod	_	_	*
 49	dose	dose	NOUN	_	Gender=Fem|Number=Sing	46	obj	_	_	*
@@ -410,7 +410,7 @@
 67	avant	avant	ADP	_	_	70	case	_	_	*
 68	leur	son	DET	_	Number=Sing|Poss=Yes	70	det	_	_	*
 69	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	70	amod	_	_	*
-70	perfusion	perfusion	NOUN	_	Gender=Fem|Number=Sing	46	obl:mod	_	SpaceAfter=No	3
+70	perfusion	perfusion	NOUN	_	Gender=Fem|Number=Sing	46	obl:mod	_	SpaceAfter=No	*
 71	.	.	PUNCT	_	_	12	punct	_	_	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00020
@@ -805,13 +805,13 @@
 9	8 000	8 000	DET	_	_	10	det	_	_	*
 10	femmes	femme	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	_	*
 11	âgées	âgé	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
-12	souffrant	souffrir	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	2:LVC.full
-13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	2
-14	ostéoporose	ostéoporose	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	SpaceAfter=No	2
+12	souffrant	souffrir	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	1:LVC.full
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	1
+14	ostéoporose	ostéoporose	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	SpaceAfter=No	1
 15	et	et	CCONJ	_	_	17	cc	_	_	*
 16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
-17	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	1:VID
-18	compte	compte	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	1
+17	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	2:VID
+18	compte	compte	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	2
 19-20	du	_	_	_	_	_	_	_	_	*
 19	de	de	ADP	_	_	21	case	_	_	*
 20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
@@ -1367,11 +1367,11 @@
 7	associés	associer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	5	acl	_	_	*
 8	à	à	ADP	_	_	9	case	_	_	*
 9	Aclasta	Aclasta	PROPN	_	_	7	obl:arg	_	_	*
-10	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2:LVC.full
-11	tendance	tendance	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	2
+10	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+11	tendance	tendance	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	1
 12	à	à	ADP	_	_	14	mark	_	_	*
-13	se	se	PRON	_	Person=3|Reflex=Yes	14	expl:comp	_	_	1:IRV
-14	produire	produire	VERB	_	VerbForm=Inf	10	xcomp	_	_	1
+13	se	se	PRON	_	Person=3|Reflex=Yes	14	expl:comp	_	_	2:IRV
+14	produire	produire	VERB	_	VerbForm=Inf	10	xcomp	_	_	2
 15	dans	dans	ADP	_	_	18	case	_	_	*
 16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
 17	trois	trois	NUM	_	NumType=Card	18	nummod	_	_	*
@@ -1491,9 +1491,9 @@
 7	chez	chez	ADP	_	_	9	case	_	_	*
 8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
 9	patients	patient	NOUN	_	Gender=Masc|Number=Plur	5	obl:mod	_	_	*
-10	présentant	présenter	VERB	_	Tense=Pres|VerbForm=Part	9	acl	_	_	*
+10	présentant	présenter	VERB	_	Tense=Pres|VerbForm=Part	9	acl	_	_	1:LVC.full
 11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
-12	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+12	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	1
 13	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
 14	taux	taux	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*
 15	de	de	ADP	_	_	16	case	_	_	*
@@ -1605,10 +1605,10 @@
 21-22	aux	_	_	_	_	_	_	_	_	*
 21	à	à	ADP	_	_	23	case	_	_	*
 22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*
-23	risques	risque	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	2:LVC.full
+23	risques	risque	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	1:LVC.full
 24	qu'	que	PRON	_	PronType=Rel	26	obj	_	SpaceAfter=No	*
 25	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_	*
-26	comporte	comporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_	2
+26	comporte	comporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_	1
 27	dans	dans	ADP	_	_	29	case	_	_	*
 28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
 29	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
@@ -1624,9 +1624,9 @@
 39	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	40	det	_	_	*
 40	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	35	conj	_	SpaceAfter=No	*
 41	,	,	PUNCT	_	_	40	punct	_	_	*
-42	présentant	présenter	VERB	_	Tense=Pres|VerbForm=Part	40	acl	_	_	1:LVC.full
+42	présentant	présenter	VERB	_	Tense=Pres|VerbForm=Part	40	acl	_	_	2:LVC.full
 43	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
-44	risque	risque	NOUN	_	Gender=Masc|Number=Sing	42	obj	_	_	1
+44	risque	risque	NOUN	_	Gender=Masc|Number=Sing	42	obj	_	_	2
 45	accru	accroître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	44	acl	_	_	*
 46	de	de	ADP	_	_	47	case	_	_	*
 47	fracture	fracture	NOUN	_	Gender=Fem|Number=Sing	44	nmod	_	SpaceAfter=No	*
@@ -1783,9 +1783,9 @@
 2	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
 3	européenne	européen	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
 4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
-5	délivré	délivrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	délivré	délivrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
 6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
-7	autorisation	autorisation	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+7	autorisation	autorisation	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1
 8	de	de	ADP	_	_	9	case	_	_	*
 9	mise	mise	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
 10	sur	sur	ADP	_	_	12	case	_	_	*
@@ -1915,8 +1915,8 @@
 2	états	état	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
 3	membres	membre	ADJ	_	_	2	amod	_	_	*
 4	doivent	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
-5	s'	se	PRON	_	Person=3|Reflex=Yes	6	expl:comp	_	SpaceAfter=No	2:IRV
-6	assurer	assurer	VERB	_	VerbForm=Inf	4	xcomp	_	_	2
+5	s'	se	PRON	_	Person=3|Reflex=Yes	6	expl:comp	_	SpaceAfter=No	1:IRV
+6	assurer	assurer	VERB	_	VerbForm=Inf	4	xcomp	_	_	1
 7	que	que	SCONJ	_	_	30	mark	_	_	*
 8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
 9	programme	programme	NOUN	_	Gender=Masc|Number=Sing	30	nsubj:pass	_	_	*
@@ -1978,9 +1978,9 @@
 63	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	64	det	_	_	*
 64	patients	patient	NOUN	_	Gender=Masc|Number=Plur	41	nmod	_	_	*
 65	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	66	aux:tense	_	_	*
-66	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	64	acl	_	_	1:LVC.full
+66	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	64	acl	_	_	2:LVC.full
 67	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	68	det	_	_	*
-68	fracture	fracture	NOUN	_	Gender=Fem|Number=Sing	66	obj	_	_	1
+68	fracture	fracture	NOUN	_	Gender=Fem|Number=Sing	66	obj	_	_	2
 69	de	de	ADP	_	_	70	case	_	_	*
 70	hanche	hanche	NOUN	_	Gender=Fem|Number=Sing	68	nmod	_	_	*
 71	récente	récent	ADJ	_	Gender=Fem|Number=Sing	68	amod	_	_	*
@@ -2798,13 +2798,13 @@
 # text = Aclasta est contre-indiqué chez les patients ayant une hypocalcémie (voir rubrique 4.4).
 1	Aclasta	Aclasta	PROPN	_	_	3	nsubj:pass	_	_	*
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
-3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
 4	chez	chez	ADP	_	_	6	case	_	_	*
 5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
 6	patients	patient	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	_	*
-7	ayant	avoir	VERB	_	Tense=Pres|VerbForm=Part	6	acl	_	_	*
+7	ayant	avoir	VERB	_	Tense=Pres|VerbForm=Part	6	acl	_	_	2:LVC.full
 8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
-9	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+9	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	2
 10	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
 11	voir	voir	VERB	_	VerbForm=Inf	3	parataxis	_	_	*
 12	rubrique	rubrique	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
@@ -2816,7 +2816,7 @@
 # text = Aclasta est contre-indiqué chez la femme enceinte ou qui allaite (voir rubrique 4.6).
 1	Aclasta	Aclasta	PROPN	_	_	3	nsubj:pass	_	_	*
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
-3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
 4	chez	chez	ADP	_	_	6	case	_	_	*
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
 6	femme	femme	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
@@ -3202,12 +3202,12 @@
 10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
 11	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
 12	et	et	CCONJ	_	_	13	cc	_	_	*
-13	faire	faire	VERB	_	VerbForm=Inf	5	conj	_	_	1:LVC.full;2:VID
+13	faire	faire	VERB	_	VerbForm=Inf	5	conj	_	_	1:VID;2:LVC.full
 14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	1;2
 15	objet	objet	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1;2
 16	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
 17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
-18	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	1
+18	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	2
 19	clinique	clinique	ADJ	_	Number=Sing	18	amod	_	_	*
 20	appropriée	approprié	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
 21	pendant	pendant	ADP	_	_	23	case	_	_	*
@@ -3592,7 +3592,7 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00135
 # text = Aucune étude spécifique d'interaction médicamenteuse n'a été conduite avec l'acide zolédronique.
 1	Aucune	aucun	DET	_	Gender=Fem|Number=Sing	2	det	_	_	*
-2	étude	étude	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	*
+2	étude	étude	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	1:LVC.full
 3	spécifique	spécifique	ADJ	_	Number=Sing	2	amod	_	_	*
 4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
 5	interaction	interaction	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
@@ -3600,7 +3600,7 @@
 7	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
 8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
 9	été	être	AUX	_	Tense=Past|VerbForm=Part	10	aux:pass	_	_	*
-10	conduite	conduire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+10	conduite	conduire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1
 11	avec	avec	ADP	_	_	13	case	_	_	*
 12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
 13	acide	acide	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
@@ -3771,8 +3771,8 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu emea-fr-test_00143
 # text = Des études effectuées chez l'animal avec l'acide zolédronique ont mis en évidence une toxicité sur la reproduction, dont des malformations (voir rubrique 5.3).
 1	Des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	_	*
-2	études	étude	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	_	2:LVC.full
-3	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	2
+2	études	étude	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	_	1:LVC.full
+3	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	1
 4	chez	chez	ADP	_	_	6	case	_	_	*
 5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
 6	animal	animal	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
@@ -3781,9 +3781,9 @@
 9	acide	acide	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
 10	zolédronique	zolédronique	ADJ	_	_	9	amod	_	_	*
 11	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
-12	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
-13	en	en	ADP	_	_	14	case	_	_	1
-14	évidence	évidence	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	1
+12	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	2:VID
+13	en	en	ADP	_	_	14	case	_	_	2
+14	évidence	évidence	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	2
 15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
 16	toxicité	toxicité	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
 17	sur	sur	ADP	_	_	19	case	_	_	*
@@ -3837,7 +3837,7 @@
 # text = Aclasta est contre-indiqué pendant la grossesse et chez la femme qui allaite (voir rubrique 4.3).
 1	Aclasta	Aclasta	PROPN	_	_	3	nsubj:pass	_	_	*
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
-3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+3	contre-indiqué	contre-indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
 4	pendant	pendant	ADP	_	_	6	case	_	_	*
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
 6	grossesse	grossesse	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
@@ -4316,7 +4316,7 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00159
 # text = Les effets indésirables très fréquents (1/10), fréquents (1/100, < 1/10), peu fréquents (1/1000, < 1/100) et rares (1/10 000, < 1/1 000) sont présentés dans le Tableau 1.
 1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
-2	effets	effet	NOUN	_	Gender=Masc|Number=Plur	41	nsubj:pass	_	_	1:LVC.full
+2	effets	effet	NOUN	_	Gender=Masc|Number=Plur	41	nsubj:pass	_	_	*
 3	indésirables	indésirable	ADJ	_	Number=Plur	2	amod	_	_	*
 4	très	très	ADV	_	_	5	advmod	_	_	*
 5	fréquents	fréquent	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
@@ -4355,7 +4355,7 @@
 38	000	000	PRON	_	_	35	fixed	_	SpaceAfter=No	*
 39	)	)	PUNCT	_	_	27	punct	_	_	*
 40	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	aux:pass	_	_	*
-41	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1
+41	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
 42	dans	dans	ADP	_	_	44	case	_	_	*
 43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	SpaceAfter=No	*
 44	Tableau	tableau	NOUN	_	Gender=Masc|Number=Sing	41	obl:mod	_	_	*
@@ -4375,10 +4375,10 @@
 8	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
 9	,	,	PUNCT	_	_	14	punct	_	_	*
 10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*
-11	effets	effet	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:pass	_	_	1:LVC.full
+11	effets	effet	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:pass	_	_	*
 12	indésirables	indésirable	ADJ	_	Number=Plur	11	amod	_	_	*
 13	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	_	_	*
-14	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1
+14	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
 15	suivant	suivant	ADP	_	_	17	case	_	_	*
 16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
 17	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
@@ -4747,9 +4747,9 @@
 16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	17	det	_	_	*
 17	patientes	patient	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*
 18	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
-19	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
 20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
-21	diminution	diminution	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+21	diminution	diminution	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	1
 22	notable	notable	ADJ	_	Number=Sing	21	amod	_	_	*
 23	de	de	ADP	_	_	25	case	_	_	*
 24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
@@ -5153,9 +5153,9 @@
 12	cancer	cancer	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	_	_	1
 13	et	et	CCONJ	_	_	15	cc	_	_	*
 14	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	15	aux:tense	_	_	*
-15	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	conj	_	_	*
+15	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	conj	_	_	2:LVC.full
 16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
-17	extraction	extraction	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+17	extraction	extraction	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	2
 18	dentaire	dentaire	ADJ	_	Number=Sing	17	amod	_	_	*
 19	ou	ou	CCONJ	_	_	22	cc	_	_	*
 20	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	22	det	_	SpaceAfter=No	*
@@ -5675,12 +5675,12 @@
 2	femmes	femme	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	_	_	*
 3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
 4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
-5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	1:LVC.full;2:VID
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	1:VID;2:LVC.full
 6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	1;2
 7	objet	objet	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1;2
 8	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
 9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
-10	évaluation	évaluation	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	1
+10	évaluation	évaluation	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	2
 11	pour	pour	ADP	_	_	13	case	_	_	*
 12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
 13	incidence	incidence	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
@@ -6311,11 +6311,11 @@
 10	annuelle	annuel	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No	*
 11	,	,	PUNCT	_	_	17	punct	_	_	*
 12	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	13	det	_	_	*
-13	biopsies	biopsie	NOUN	_	Gender=Fem|Number=Plur	17	nsubj:pass	_	_	2:LVC.full
+13	biopsies	biopsie	NOUN	_	Gender=Fem|Number=Plur	17	nsubj:pass	_	_	1:LVC.full
 14	osseuses	osseux	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*
 15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
 16	été	être	AUX	_	Tense=Past|VerbForm=Part	17	aux:pass	_	_	*
-17	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	2
+17	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1
 18-19	au	_	_	_	_	_	_	_	_	*
 18	à	à	ADP	_	_	20	case	_	_	*
 19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
@@ -6327,9 +6327,9 @@
 25	chez	chez	ADP	_	_	27	case	_	_	*
 26	152	152	NUM	_	NumType=Card	27	nummod	_	_	*
 27	patientes	patient	NOUN	_	Gender=Fem|Number=Plur	17	obl:mod	_	_	*
-28	atteintes	atteindre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	27	acl	_	_	1:LVC.full
+28	atteintes	atteindre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	27	acl	_	_	2:LVC.full
 29	d'	de	ADP	_	_	30	case	_	SpaceAfter=No	*
-30	ostéoporose	ostéoporose	NOUN	_	Gender=Fem|Number=Sing	28	obl:agent	_	_	1
+30	ostéoporose	ostéoporose	NOUN	_	Gender=Fem|Number=Sing	28	obl:agent	_	_	2
 31	post-ménopausique	post-ménopausique	ADJ	_	_	30	amod	_	_	*
 32	traitées	traiter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	30	acl	_	_	*
 33	par	par	ADP	_	_	34	case	_	_	*
@@ -7179,7 +7179,7 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00262
 # text = Les taux d'incidence des fractures cliniques sont présentés dans le Tableau 4.
 1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
-2	taux	taux	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	_	_	1:LVC.full
+2	taux	taux	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	_	_	*
 3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
 4	incidence	incidence	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
 5-6	des	_	_	_	_	_	_	_	_	*
@@ -7188,7 +7188,7 @@
 7	fractures	fracture	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
 8	cliniques	clinique	ADJ	_	Number=Plur	7	amod	_	_	*
 9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
-10	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1
+10	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
 11	dans	dans	ADP	_	_	13	case	_	_	*
 12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
 13	Tableau	tableau	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
@@ -8957,9 +8957,9 @@
 1	-	-	PUNCT	_	_	4	punct	_	_	*
 2	si	si	SCONJ	_	_	4	mark	_	_	*
 3	vous	il	PRON	_	Number=Plur|Person=2	4	nsubj	_	_	*
-4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
 5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
-6	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+6	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
 7	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
 8	cela	cela	PRON	_	Number=Sing|PronType=Dem	9	nsubj	_	_	*
 9	signifie	signifier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	_	_	*
@@ -9046,9 +9046,9 @@
 8	ou	ou	CCONJ	_	_	13	cc	_	_	*
 9	si	si	SCONJ	_	_	13	mark	_	_	*
 10	vous	il	PRON	_	Number=Plur|Person=2	13	nsubj	_	_	*
-11	en	en	PRON	_	Person=3	13	obj	_	_	2:VID
+11	en	en	PRON	_	Person=3	13	obj	_	_	*
 12	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
-13	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	SpaceAfter=No	2
+13	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	SpaceAfter=No	*
 14	.	.	PUNCT	_	_	4	punct	_	_	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00431
@@ -9077,9 +9077,9 @@
 3	vous	il	PRON	_	Number=Plur|Person=2	6	nsubj	_	_	*
 4	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
 5	déjà	déjà	ADV	_	_	6	advmod	_	_	*
-6	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
 7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
-8	ablation	ablation	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+8	ablation	ablation	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	1
 9	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
 10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
 11	partie	partie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
@@ -9096,9 +9096,9 @@
 4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
 5	ou	ou	CCONJ	_	_	7	cc	_	_	*
 6	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
-7	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_	*
+7	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_	1:LVC.full
 8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
-9	douleur	douleur	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No	*
+9	douleur	douleur	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No	1
 10	,	,	PUNCT	_	_	12	punct	_	_	*
 11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
 12	gonflement	gonflement	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
@@ -9866,10 +9866,10 @@
 # text = Si vous avez d'autres questions sur l'utilisation de ce médicament, demandez plus d'informations à votre médecin, à votre pharmacien ou à votre infirmière.
 1	Si	si	SCONJ	_	_	3	mark	_	_	*
 2	vous	il	PRON	_	Number=Plur|Person=2	3	nsubj	_	_	*
-3	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	14	advcl	_	_	1:LVC.full
+3	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	14	advcl	_	_	*
 4	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	6	det	_	SpaceAfter=No	*
 5	autres	autre	ADJ	_	Number=Plur	6	amod	_	_	*
-6	questions	question	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	1
+6	questions	question	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*
 7	sur	sur	ADP	_	_	9	case	_	_	*
 8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
 9	utilisation	utilisation	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
@@ -10123,9 +10123,9 @@
 9	jour	jour	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
 10	qu'	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*
 11	Aclasta	Aclasta	PROPN	_	_	12	nsubj	_	_	*
-12	entraîne	entraîner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_	2:LVC.cause
+12	entraîne	entraîner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_	1:LVC.cause
 13	ces	ce	DET	_	Number=Plur|PronType=Dem	14	det	_	_	*
-14	irrégularités	irrégularité	NOUN	_	Gender=Fem|Number=Plur	12	obj	_	_	2
+14	irrégularités	irrégularité	NOUN	_	Gender=Fem|Number=Plur	12	obj	_	_	1
 15-16	du	_	_	_	_	_	_	_	_	*
 15	de	de	ADP	_	_	17	case	_	_	*
 16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
@@ -10146,8 +10146,8 @@
 31	vous	il	PRON	_	Number=Plur|Person=2	32	nsubj	_	_	*
 32	devez	devoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	12	conj	_	_	*
 33	en	en	PRON	_	Person=3	34	iobj	_	_	*
-34	faire	faire	VERB	_	VerbForm=Inf	32	xcomp	_	_	1:VID
-35	part	part	NOUN	_	Number=Sing	34	obj	_	_	1
+34	faire	faire	VERB	_	VerbForm=Inf	32	xcomp	_	_	2:VID
+35	part	part	NOUN	_	Number=Sing	34	obj	_	_	2
 36	à	à	ADP	_	_	38	case	_	_	*
 37	votre	son	DET	_	Number=Sing|Poss=Yes	38	det	_	_	*
 38	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	34	obl:arg	_	SpaceAfter=No	*
@@ -11458,12 +11458,12 @@
 10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
 11	hypocalcémie	hypocalcémie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
 12	et	et	CCONJ	_	_	13	cc	_	_	*
-13	faire	faire	VERB	_	VerbForm=Inf	5	conj	_	_	1:LVC.full;2:VID
+13	faire	faire	VERB	_	VerbForm=Inf	5	conj	_	_	1:VID;2:LVC.full
 14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	1;2
 15	objet	objet	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1;2
 16	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
 17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
-18	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	1
+18	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	2
 19	clinique	clinique	ADJ	_	Number=Sing	18	amod	_	_	*
 20	appropriée	approprié	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
 21	pendant	pendant	ADP	_	_	23	case	_	_	*
@@ -11661,13 +11661,13 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu emea-fr-test_00537
 # text = La perfusion doit être effectuée selon les procédures médicales standards.
 1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
-2	perfusion	perfusion	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+2	perfusion	perfusion	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	1:LVC.full
 3	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
 4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	_	*
-5	effectuée	effectuer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	3	xcomp	_	_	1:LVC.full
+5	effectuée	effectuer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	3	xcomp	_	_	1
 6	selon	selon	ADP	_	_	8	case	_	_	*
 7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
-8	procédures	procédure	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	1
+8	procédures	procédure	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*
 9	médicales	médical	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
 10	standards	standard	ADJ	_	_	8	amod	_	SpaceAfter=No	*
 11	.	.	PUNCT	_	_	3	punct	_	_	*
