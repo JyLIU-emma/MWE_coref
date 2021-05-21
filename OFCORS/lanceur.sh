@@ -34,8 +34,8 @@ mwecoref()
             new_fichier=(${new_fichier[1]//./ })
             echo ${new_fichier[0]}
 
-            # python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}annote.config48.cupt
-            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}.cupt
+            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}annote.config48.cupt
+            # python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}.cupt
         done
 }
 
