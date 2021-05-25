@@ -17,13 +17,13 @@ class ExprPoly():
     Expressions polylexicales.
     """
     def __init__(self, identifiant, type_mwe, texte, tokens, coref):
-        self.identifiant = identifiant
-        self.texte = texte
-        self.tokens = [tokens]
-        self.coref = [coref]
-        self.type_mwe = type_mwe
-        self.schema_mwe = []
-        self.schema_mention = []
+        self.identifiant = identifiant  # 1 ou 2 (par phrase)
+        self.texte = texte  # Merci de me donner l'occasion de...
+        self.tokens = [tokens]  # ['me', 'donner']
+        self.coref = [coref]  # ['*', '3']
+        self.type_mwe = type_mwe  # LVC.full
+        self.schema_mwe = []  # ["*", "*", "1", "1", "*", "*", "*", "*", ...]
+        self.schema_mention = []  # ["*", "*", "*", "1", "*", "*", "*", "*", ...]
         self.cas = ""
 
     def append_schemas(self, schema_mwe, schema_mention):
@@ -35,9 +35,9 @@ class ExprPoly():
             else:
                 self.schema_mwe.append('1')
 
-        self.schema_mention.extend(schema_mention)
+        self.schema_mention.extend(schema_mention)  #TODO utiliser les mentions écrites dans self.coref ?
 
-        if len(list(set(self.coref))) == 1 and self.coref[0] == "*":
+        if len(list(set(self.coref))) == 1 and self.coref[0] == "*":  # ['*', '*']
             self.cas = "None"
         else:
             self.cas = self.determiner_cas()
@@ -53,10 +53,10 @@ class ExprPoly():
                                             self.schema_mention)):
 
             # DEBUT DE MWE
-            if mwe != '*'and not encours:
+            if mwe != '*'and not encours:  #TODO cas pas très bien géré à vérifier :  mwe 1, *, *, *, 1
                 encours = True
                 prec = self.schema_mention[num-1]
-                if (prec and actuel) != '*' and prec == actuel:
+                if (prec and actuel) != '*' and prec == actuel: #TODO cas pas géré : mention 3;4 puis 3 ...
                     # la mention commence avant : cas 1
                     debut = -1
                 elif actuel not in (prec, '*'):
@@ -85,7 +85,7 @@ class ExprPoly():
                     cas = "1"
                 elif debut == 0 and fin == 0:
                     cas = "2"
-                elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1):
+                elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1): #TODO mention :  * 1 1 * et mwe : 1 1 1 1
                     cas = "3"
                 else:
                     cas = "4"
@@ -160,8 +160,8 @@ def phrase_mwe(phrase):
         if mwes != "*":
             for mwe in mwes.split(';'):
                 infos = mwe.split(':')
-                id_mwe = int(infos[0])
-                if len(infos) == 2:
+                id_mwe = int(infos[0]) 
+                if len(infos) == 2: 
                     expoly = ExprPoly(id_mwe, infos[1], texte, ligne[1],
                                       ligne[12])
                     liste_expoly.append(expoly)
