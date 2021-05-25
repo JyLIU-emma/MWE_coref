@@ -10,6 +10,19 @@ Un repository sert à collecter les travaux faits pour étudier les expressions 
     |-- README.md
     |-- seen2seen
     |   |-- udpipe_annote.py
+    |-- SEQUOIA
+    |   |-- EMEA_cupt
+    |   |-- EMEA_txt
+    |   |-- frwiki_cupt
+    |   |-- frwiki_txt
+    |   |-- z_fichier_intermediaire
+    |   |-- get_text_brut.py
+    |   |-- corpus_split2text.py
+    |   |-- couper_emea.py
+    |   |-- get_MWE_from_cupt.py
+    |   |-- mwe_all.py
+    |   |-- MWE_decompte_*.json
+    |   |-- ...
     |-- OFCORS
         |-- CuptParser.py
         |-- OfcorsFilesParser.py
@@ -35,10 +48,10 @@ Un repository sert à collecter les travaux faits pour étudier les expressions 
 2. Utiliser le corpus SEQUOIA dans PARSEME, séparer ses sous-corpus EMEA et frwiki par les articles;
 
     - lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
-    - sélectionner manuellement les parties "emea" et "frwiki" dans le fichier `sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `emea.conllu` et `frwiki.conllu`, utiliser script "get_text_brut.py" pour extraître d'abord le texte brut et leurs sent_id dans fichiers `emea_textbrut.txt` et `frwiki_textbrut.txt`
+    - sélectionner manuellement les parties "emea" et "frwiki" dans le fichier `sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `emea.conllu` et `frwiki.conllu`, utiliser script `get_text_brut.py` pour extraître d'abord le texte brut et leurs sent_id dans fichiers `emea_textbrut.txt` et `frwiki_textbrut.txt`
     - diviser manuellement le corpus en article, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `emea_textbrut.txt` et `frwiki_textbrut.txt`
-    - À partir du contenu dans cupt, former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
-    - répertoire de corpus obtenu: `./OFCORS/SEQUOIA_EMEA` et `./OFCORS/SEQUOIA_frwiki`
+    - À partir du contenu dans cupt, utiliser `corpus_split2text.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
+    - répertoire de corpus obtenu: `./OFCORS/SEQUOIA_EMEA` et `./OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
 
 3. Fusionner le résultat de l'OFCORS au format cupt : ajout de 2 colonnes : colonne des mentions et colonne des coréférences;
 
