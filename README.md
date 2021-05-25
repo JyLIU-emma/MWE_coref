@@ -1,6 +1,6 @@
 # MWE_coref
 
-Un repository sert à collecter les travaux faits pour étudier les expressions polylexicales et les coréférences.
+Ce repository sert à collecter les travaux faits pour étudier les expressions polylexicales et la coréférence.
 
 ## Structure du repository
 
@@ -39,23 +39,24 @@ Un repository sert à collecter les travaux faits pour étudier les expressions 
 
 ## Processus de travail
 
-1. Modifier le script de seen2seen, pour qu'il puisse faire seulement l'étape d'annotation;
+1. Modification du script de Seen2seen, pour qu'il puisse faire seulement l'étape d'annotation;
 
-    - script `udpipe_annote.py` pour transformer un fichier txt en `cupt.blind`;
-    - modifier le script `seen2seen.py` (**à compléter**)
+    - Script `udpipe_annote.py` pour transformer un fichier txt en `cupt.blind`;
+    - Modification du script `seen2seen.py` en créant un mode "annotation_ONLY" qui permet de ne faire que l'annotation sans refaire l'entraînement. Ce mode est à spécifier dans le fichier de config (`config.cfg`) avec "annotation_ONLY = True".
 
 
-2. Utiliser le corpus SEQUOIA dans PARSEME, séparer ses sous-corpus EMEA et frwiki par les articles;
+2. Utilisation du corpus SEQUOIA dans PARSEME, séparation des sous-corpus EMEA et frwiki selon les articles;
 
-    - lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
-    - sélectionner manuellement les parties "emea" et "frwiki" dans le fichier `sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `emea.conllu` et `frwiki.conllu`, utiliser script `get_text_brut.py` pour extraître d'abord le texte brut et leurs sent_id dans fichiers `emea_textbrut.txt` et `frwiki_textbrut.txt`
-    - diviser manuellement le corpus en article, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `emea_textbrut.txt` et `frwiki_textbrut.txt`
-    - À partir du contenu dans cupt, utiliser `corpus_split2text.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
-    - répertoire de corpus obtenu: `./OFCORS/SEQUOIA_EMEA` et `./OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
+    - Lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
+    - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `emea.conllu` et `frwiki.conllu`, utilisation du script `get_text_brut.py` pour extraire d'abord le texte brut et leurs sent_id dans fichiers `emea_textbrut.txt` et `frwiki_textbrut.txt`
+    - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `emea_textbrut.txt` et `frwiki_textbrut.txt`
+    - À partir du contenu du fichier cupt, utilisation de `corpus_split2text.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
+    - Répertoire du corpus obtenu: `./OFCORS/SEQUOIA_EMEA` et `./OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
 
-3. Fusionner le résultat de l'OFCORS au format cupt : ajout de 2 colonnes : colonne des mentions et colonne des coréférences;
+3. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
-    - format : colonne des mentions : id de mentions séparés par `;` ; colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`, exemple :
+    - Format : colonne des mentions : id de mentions séparés par `;`
+               colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`Exemple :
 
         ```
         ...
@@ -68,8 +69,29 @@ Un repository sert à collecter les travaux faits pour étudier les expressions 
         ...
         ```
 
-    - script pour les fusionner : `CuptParser.py`, `OfcorsFilesParser.py` et `merge_s2s_ofcors.py`
-    - script pour lancer tout :`lanceur.sh`
-    - script pour étudier le résultat :  `statistiques.py`
-    - répertoire de test : `blabla`, `phrases`, `SEQUOIA_EMEA`, `SEQUOIA_frwiki`
-    - anciens script : `z_oldies`
+    - Scripts pour les fusionner : `CuptParser.py`, `OfcorsFilesParser.py` et `merge_s2s_ofcors.py`
+    - Script pour lancer tout :`lanceur.sh`
+    - Script pour étudier le résultat :  `statistiques.py`
+    - Répertoires de test : `blabla`, `phrases`, `SEQUOIA_EMEA`, `SEQUOIA_frwiki`
+    - Anciens scripts : `z_oldies`
+
+## Exemples de lancement:
+
+    ```
+    ./lanceur.sh -os blabla/
+    ```
+    
+Cette commande lance tout le processus sur les fichiers contenus dans le répertoire `blabla/`. Ce répertoire doit contenir les fichiers textes et les fichiers cupt annotés en MWEs (passés dans Seen2seen) du corpus.
+Les fichiers textes sont d'abord passés dans OFCORS et les fichiers résultats (`{nom}_resulting_chains.json`, `{nom}_mentions_output.json` et `{nom}_token.json`) sont créés dans `blabla/ofcors_outputs`. Ensuite, le script `merge_s2s_ofcors.py` est appelé pour créer les fichiers cupt avec les deux colonnes supplémentaires dans le dossier `blabla/mwecoref_outputs` à partir des sorties d'OFCORS et des fichiers cupt. Enfin, le script `statistiques.py` affiche les résultats dans le terminal.
+
+    ```
+    ./lanceur.sh -o blabla/
+    ```
+
+Cette commande ne lance que la partie OFCORS.
+
+    ```
+    ./lanceur.sh -s blabla/
+    ```
+
+Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS se trouvent dans `blabla/mwecoref_outputs`.
