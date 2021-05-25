@@ -77,21 +77,20 @@ Ce repository sert à collecter les travaux faits pour étudier les expressions 
 
 ## Exemples de lancement:
 
-    ```
+
     ./lanceur.sh -os blabla/
-    ```
     
 Cette commande lance tout le processus sur les fichiers contenus dans le répertoire `blabla/`. Ce répertoire doit contenir les fichiers textes et les fichiers cupt annotés en MWEs (passés dans Seen2seen) du corpus.
 Les fichiers textes sont d'abord passés dans OFCORS et les fichiers résultats (`{nom}_resulting_chains.json`, `{nom}_mentions_output.json` et `{nom}_token.json`) sont créés dans `blabla/ofcors_outputs`. Ensuite, le script `merge_s2s_ofcors.py` est appelé pour créer les fichiers cupt avec les deux colonnes supplémentaires dans le dossier `blabla/mwecoref_outputs` à partir des sorties d'OFCORS et des fichiers cupt. Enfin, le script `statistiques.py` affiche les résultats dans le terminal.
 
-    ```
+
     ./lanceur.sh -o blabla/
-    ```
+
 
 Cette commande ne lance que la partie OFCORS.
 
-    ```
+
     ./lanceur.sh -s blabla/
-    ```
+
 
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS se trouvent dans `blabla/mwecoref_outputs`.
