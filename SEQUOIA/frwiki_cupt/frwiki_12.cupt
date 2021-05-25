@@ -1,0 +1,980 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00561
+# text = Affaire des HLM des Hauts-de-Seine
+1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*
+4	HLM	HLM	NOUN	_	Number=Plur	1	nmod	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00562
+# text = Chronologie
+1	Chronologie	chronologie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00563
+# text = - 1994 : Le juge Eric Halphen enquête sur une banale affaire de fausses factures concernant la SAR, une entreprise de travaux publics.
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	1994	1994	NUM	_	NumType=Card	8	obl:mod	_	_	*
+3	:	:	PUNCT	_	_	8	punct	_	_	*
+4	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	juge	juge	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+6	Eric	Eric	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	_	*
+7	Halphen	Halphen	PROPN	_	_	6	flat:name	_	_	*
+8	enquête	enquêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	sur	sur	ADP	_	_	12	case	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+11	banale	banal	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	fausses	faux	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*
+15	factures	facture	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+16	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	SAR	SAR	PROPN	_	Gender=Fem|Number=Sing	16	obj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	18	punct	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	18	appos	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_	*
+24	publics	public	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00564
+# text = Après avoir exploré le volet parisien de ce dossier (affaire des HLM de Paris), le magistrat du tribunal de Créteil s'intéresse à ses ramifications dans les Hauts-de-Seine.
+1	Après	après	ADP	_	_	3	mark	_	_	*
+2	avoir	avoir	AUX	_	VerbForm=Inf	3	aux:tense	_	_	*
+3	exploré	explorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	27	advcl	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	volet	volet	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	parisien	parisien	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+10	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+11	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	5	appos	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*
+14	HLM	HLM	NOUN	_	Number=Plur	11	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	27	punct	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	magistrat	magistrat	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	_	_	*
+21-22	du	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Créteil	Créteil	PROPN	_	_	23	nmod	_	_	*
+26	s'	se	PRON	_	Person=3|Reflex=Yes	27	expl:comp	_	SpaceAfter=No	*
+27	intéresse	intéresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	ses	son	DET	_	Number=Plur|Poss=Yes	30	det	_	_	*
+30	ramifications	ramification	NOUN	_	Gender=Fem|Number=Plur	27	obl:arg	_	_	*
+31	dans	dans	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_	*
+33	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	30	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	27	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00565
+# text = - Eric Halphen soupçonne un système de commissions occultes au sein de l'office HLM des Hauts-de-Seine, présidé par Patrick Balkany et dirigé par Didier Schuller, qui seront tous deux mis en examen.
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Eric	Eric	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	Halphen	Halphen	PROPN	_	_	2	flat:name	_	_	*
+4	soupçonne	soupçonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	système	système	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	commissions	commission	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+9	occultes	occulte	ADJ	_	Number=Plur	8	amod	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	sein	sein	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	office	office	NOUN	_	Number=Sing	12	nmod	_	_	*
+16	HLM	HLM	NOUN	_	_	15	nmod	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*
+19	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	15	punct	_	_	*
+21	présidé	présider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	acl	_	_	*
+22	par	par	ADP	_	_	23	case	_	_	*
+23	Patrick	Patrick	PROPN	_	Gender=Masc|Number=Sing	21	obl:agent	_	_	*
+24	Balkany	Balkany	PROPN	_	_	23	flat:name	_	_	*
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	dirigé	diriger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	conj	_	_	*
+27	par	par	ADP	_	_	28	case	_	_	*
+28	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	26	obl:agent	_	_	*
+29	Schuller	Schuller	PROPN	_	_	28	flat:name	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	26	punct	_	_	*
+31	qui	qui	PRON	_	PronType=Rel	35	nsubj:pass	_	_	*
+32	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	35	aux:pass	_	_	*
+33	tous	tout	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	_	*
+34	deux	deux	PRON	_	NumType=Card	35	iobj	_	_	*
+35	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	23	acl:relcl	_	_	1:VID
+36	en	en	ADP	_	_	37	case	_	_	1
+37	examen	examen	NOUN	_	Gender=Masc|Number=Sing	35	obl:arg	_	SpaceAfter=No	1
+38	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00566
+# text = Il s'étonne également des tarifs -100 000 francs la page (15 000)- demandés aux entreprises qui passent des publicités dans Le Clichois, modeste journal électoral de Didier Schuller.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|Reflex=Yes	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	étonne	étonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	tarifs	tarif	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*
+8	-	-	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+9	100 000	100 000	DET	_	_	10	det	_	_	*
+10	francs	franc	NOUN	_	Gender=Masc|Number=Plur	7	appos	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	page	page	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+14	15 000	15 000	NOUN	_	NumType=Card	10	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+16	-	-	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+17	demandés	demander	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+22	passent	passer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_	*
+23	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	24	det	_	_	*
+24	publicités	publicité	NOUN	_	Gender=Fem|Number=Plur	22	obj	_	_	*
+25	dans	dans	ADP	_	_	27	case	_	_	*
+26	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	Clichois	Clichois	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	27	punct	_	_	*
+29	modeste	modeste	ADJ	_	Number=Sing	30	amod	_	SpaceAfter=No	*
+30	journal	journal	NOUN	_	Gender=Masc|Number=Sing	27	appos	_	_	*
+31	électoral	électoral	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34	Schuller	Schuller	PROPN	_	_	33	flat:name	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00567
+# text = - 21 décembre 1994 : le Dr Jean-Pierre Maréchal, beau-père du juge Eric Halphen, est mis en examen pour trafic d'influence et extorsion de fonds.
+1	-	-	PUNCT	_	_	19	punct	_	_	*
+2	21	21	NUM	_	NumType=Card	19	obl:mod	_	_	*
+3	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	1994	1994	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	19	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Dr	Docteur	NOUN	_	Gender=Masc|Number=Sing	19	nsubj:pass	_	_	*
+8	Jean-Pierre	Jean-Pierre	PROPN	_	_	7	flat:name	_	_	*
+9	Maréchal	Maréchal	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	7	punct	_	_	*
+11	beau-père	beau-père	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	juge	juge	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	Eric	Eric	PROPN	_	Gender=Masc|Number=Sing	14	appos	_	_	*
+16	Halphen	Halphen	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_	*
+19	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
+20	en	en	ADP	_	_	21	case	_	_	1
+21	examen	examen	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	_	1
+22	pour	pour	ADP	_	_	23	case	_	_	*
+23	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	influence	influence	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+26	et	et	CCONJ	_	_	27	cc	_	_	*
+27	extorsion	extorsion	NOUN	_	Gender=Fem|Number=Sing	23	conj	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	fonds	fonds	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00568
+# text = Il est accusé d'avoir voulu soutirer une importante somme d'argent au conseiller général des Hauts-de-Seine, Didier Schuller, menacé par l'enquête, pour solliciter la clémence de son gendre.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj:pass	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
+3	accusé	accuser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+4	d'	de	ADP	_	_	6	mark	_	SpaceAfter=No	*
+5	avoir	avoir	AUX	_	VerbForm=Inf	6	aux:tense	_	_	*
+6	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*
+7	soutirer	soutirer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	importante	important	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	somme	somme	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	argent	argent	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	conseiller	conseiller	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+16	général	général	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*
+19	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	15	punct	_	_	*
+21	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	_	*
+22	Schuller	Schuller	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	15	punct	_	_	*
+24	menacé	menacer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	acl	_	_	*
+25	par	par	ADP	_	_	27	case	_	_	*
+26	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*
+27	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	24	obl:agent	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	7	punct	_	_	*
+29	pour	pour	ADP	_	_	30	mark	_	_	*
+30	solliciter	solliciter	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	clémence	clémence	NOUN	_	Gender=Fem|Number=Sing	30	obj	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	son	son	DET	_	Number=Sing|Poss=Yes	35	det	_	_	*
+35	gendre	gendre	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00569
+# text = à la demande du Conseil supérieur de la magistrature, saisi par le président François Mitterrand, le juge Halphen est dessaisi du volet Hauts-de-Seine de l'affaire, confié aux juges Philippe Vandingenen et Serge Portelli, mais conserve le volet parisien.
+1	à	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	demande	demande	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	supérieur	supérieur	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	magistrature	magistrature	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	6	punct	_	_	*
+12	saisi	saisir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+13	par	par	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	président	président	NOUN	_	Gender=Masc|Number=Sing	12	obl:agent	_	_	*
+16	François	François	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	_	*
+17	Mitterrand	Mitterrand	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	23	punct	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	juge	juge	NOUN	_	Gender=Masc|Number=Sing	23	nsubj:pass	_	_	*
+21	Halphen	Halphen	PROPN	_	_	20	flat:name	_	_	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:pass	_	_	*
+23	dessaisi	dessaisir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+24-25	du	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	volet	volet	NOUN	_	Gender=Masc|Number=Sing	23	obl:arg	_	_	*
+27	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	26	punct	_	_	*
+32	confié	confier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	acl	_	_	*
+33-34	aux	_	_	_	_	_	_	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	35	det	_	_	*
+35	juges	juge	NOUN	_	Gender=Masc|Number=Plur	32	obl:arg	_	_	*
+36	Philippe	Philippe	PROPN	_	Gender=Masc|Number=Sing	35	flat:name	_	_	*
+37	Vandingenen	Vandingenen	PROPN	_	_	36	flat:name	_	_	*
+38	et	et	CCONJ	_	_	39	cc	_	_	*
+39	Serge	Serge	PROPN	_	Gender=Masc|Number=Sing	36	conj	_	_	*
+40	Portelli	Portelli	PROPN	_	_	39	flat:name	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	23	punct	_	_	*
+42	mais	mais	CCONJ	_	_	43	cc	_	_	*
+43	conserve	conserver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_	*
+44	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_	*
+45	volet	volet	NOUN	_	Gender=Masc|Number=Sing	43	obj	_	_	*
+46	parisien	parisien	ADJ	_	Gender=Masc|Number=Sing	45	amod	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00570
+# text = - 1er février 1995 : Jean-Paul Schimpf, un ami intime de Didier Schuller, est arrêté sur un parking, alors que la dirigeante d'une entreprise d'assainissement disait vouloir lui remettre une somme d'argent en liquide.
+1	-	-	PUNCT	_	_	17	punct	_	_	*
+2	1er	1er	ADJ	_	NumType=Ord	17	obl:mod	_	_	*
+3	février	février	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	1995	1995	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	17	punct	_	_	*
+6	Jean-Paul	Jean-Paul	PROPN	_	_	17	nsubj:pass	_	_	*
+7	Schimpf	Schimpf	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	6	punct	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	ami	ami	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	_	*
+11	intime	intime	ADJ	_	Number=Sing	10	amod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	Schuller	Schuller	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:pass	_	_	*
+17	arrêté	arrêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+18	sur	sur	ADP	_	_	20	case	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	parking	parking	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	17	punct	_	_	*
+22	alors	alors	ADV	_	_	31	mark	_	EXTPOS=SCONJ|MWE=alors_que	*
+23	que	que	SCONJ	_	_	22	fixed	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	dirigeante	dirigeant	NOUN	_	Gender=Fem|Number=Sing	31	nsubj	_	_	*
+26	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+27	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	d'	de	ADP	_	_	30	case	_	SpaceAfter=No	*
+30	assainissement	assainissement	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*
+31	disait	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	_	_	*
+32	vouloir	vouloir	VERB	_	VerbForm=Inf	31	xcomp	_	_	*
+33	lui	lui	PRON	_	_	34	iobj	_	_	*
+34	remettre	remettre	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+35	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	somme	somme	NOUN	_	Gender=Fem|Number=Sing	34	obj	_	_	*
+37	d'	de	ADP	_	_	38	case	_	SpaceAfter=No	*
+38	argent	argent	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_	*
+39	en	en	ADP	_	_	40	case	_	_	*
+40	liquide	liquide	NOUN	_	Number=Sing	36	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00571
+# text = Celle-ci déclarera qu'il s'agissait d'une commission pour obtenir les marchés de l'office HLM des Hauts-de-Seine.
+1	Celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_	*
+2	déclarera	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	qu'	que	SCONJ	_	_	6	mark	_	SpaceAfter=No	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	6	expl:subj	_	_	1:VID
+5	s'	se	PRON	_	Person=3|Reflex=Yes	6	expl:comp	_	SpaceAfter=No	1
+6	agissait	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	_	_	1
+7	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	commission	commission	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	obtenir	obtenir	VERB	_	VerbForm=Inf	9	acl	_	_	*
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*
+13	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	11	obj	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	office	office	NOUN	_	Number=Sing	13	nmod	_	_	*
+17	HLM	HLM	NOUN	_	_	16	nmod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00572
+# text = Huit jours après, Didier Schuller prenait la fuite en République dominicaine sur les conseil de son avocat Me Francis Szpiner et de la cellule juridique de l'Elysée (le 'cabinet noir ').
+1	Huit	huit	NUM	_	NumType=Card	2	nummod	_	_	*
+2	jours	jour	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	_	*
+3	après	après	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*
+5	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+6	Schuller	Schuller	PROPN	_	_	5	flat:name	_	_	*
+7	prenait	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:LVC.full
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	1
+9	fuite	fuite	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	1
+10	en	en	ADP	_	_	11	case	_	_	*
+11	République	République	PROPN	_	_	7	obl:arg	_	_	*
+12	dominicaine	dominicain	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	sur	sur	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	son	son	DET	_	Number=Sing|Poss=Yes	18	det	_	_	*
+18	avocat	avocat	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	Me	Me	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+20	Francis	Francis	PROPN	_	Number=Sing	18	appos	_	_	*
+21	Szpiner	Szpiner	PROPN	_	_	20	flat:name	_	_	*
+22	et	et	CCONJ	_	_	25	cc	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	cellule	cellule	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+26	juridique	juridique	ADJ	_	Number=Sing	25	amod	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+29	Elysée	Élysée	PROPN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+30	(	(	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+32	'	'	PUNCT	_	_	33	punct	_	SpaceAfter=No	*
+33	cabinet	cabinet	NOUN	_	Gender=Masc|Number=Sing	25	appos	_	_	*
+34	noir	noir	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No	*
+35	'	'	PUNCT	_	_	33	punct	_	SpaceAfter=No	*
+36	)	)	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00573
+# text = - 26 juin 1995 : Les juges Philippe Vandingenen et Serge Portelli perquisitionnent au siège de l'office HLM des Hauts-de-Seine, à Levallois-Perret.
+1	-	-	PUNCT	_	_	13	punct	_	_	*
+2	26	26	NUM	_	NumType=Card	13	obl:mod	_	_	*
+3	juin	juin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	1995	1995	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	13	punct	_	_	*
+6	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	juges	juge	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+8	Philippe	Philippe	PROPN	_	Gender=Masc|Number=Sing	7	flat:name	_	_	*
+9	Vandingenen	Vandingenen	PROPN	_	_	8	flat:name	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	Serge	Serge	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	_	*
+12	Portelli	Portelli	PROPN	_	_	11	flat:name	_	_	*
+13	perquisitionnent	perquisitionner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	siège	siège	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	office	office	NOUN	_	Number=Sing	16	nmod	_	_	*
+20	HLM	HLM	NOUN	_	_	19	nmod	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*
+23	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	13	punct	_	_	*
+25	à	à	ADP	_	_	26	case	_	_	*
+26	Levallois-Perret	Levallois-Perret	PROPN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00574
+# text = Depuis le 9 juin 1995, ils disposent d'un réquisitoire supplétif pour "trafic d'influence, complicité et recel" visant Didier Schuller, en fuite depuis le 10 février 1995, et depuis le 23 juin 1995, d'un mandat d'arrêt international contre l'ancien directeur général de l'organisme pour "trafic d'influence" et "abus de biens sociaux".
+1	Depuis	depuis	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	9	9	NUM	_	NumType=Card	8	obl:mod	_	_	*
+4	juin	juin	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+5	1995	1995	NUM	_	NumType=Card	4	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	8	nsubj	_	_	*
+8	disposent	disposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	réquisitoire	réquisitoire	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*
+12	supplétif	supplétif	ADJ	_	_	11	amod	_	_	*
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	influence	influence	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	complicité	complicité	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	recel	recel	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No	*
+22	"	"	PUNCT	_	_	15	punct	_	_	*
+23	visant	viser	VERB	_	Tense=Pres|VerbForm=Part	11	acl	_	_	*
+24	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	23	obj	_	_	*
+25	Schuller	Schuller	PROPN	_	_	24	flat:name	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	24	punct	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	fuite	fuite	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+29	depuis	depuis	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	10	10	NUM	_	NumType=Card	28	nmod	_	_	*
+32	février	février	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+33	1995	1995	NUM	_	NumType=Card	32	nmod	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	11	punct	_	_	*
+35	et	et	CCONJ	_	_	38	cc	_	_	*
+36	depuis	depuis	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	23	23	NUM	_	NumType=Card	11	conj	_	_	*
+39	juin	juin	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	_	*
+40	1995	1995	NUM	_	NumType=Card	39	nmod	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	38	punct	_	_	*
+42	d'	de	ADP	_	_	44	case	_	SpaceAfter=No	*
+43	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	mandat	mandat	NOUN	_	Gender=Masc|Number=Sing	38	orphan	_	_	*
+45	d'	de	ADP	_	_	46	case	_	SpaceAfter=No	*
+46	arrêt	arrêt	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+47	international	international	ADJ	_	Gender=Masc|Number=Sing	44	amod	_	_	*
+48	contre	contre	ADP	_	_	51	case	_	_	*
+49	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	51	det	_	SpaceAfter=No	*
+50	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	51	amod	_	_	*
+51	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+52	général	général	ADJ	_	Gender=Masc|Number=Sing	51	amod	_	_	*
+53	de	de	ADP	_	_	55	case	_	_	*
+54	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	55	det	_	SpaceAfter=No	*
+55	organisme	organisme	NOUN	_	Gender=Masc|Number=Sing	51	nmod	_	_	*
+56	pour	pour	ADP	_	_	58	case	_	_	*
+57	"	"	PUNCT	_	_	58	punct	_	SpaceAfter=No	*
+58	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+59	d'	de	ADP	_	_	60	case	_	SpaceAfter=No	*
+60	influence	influence	NOUN	_	Gender=Fem|Number=Sing	58	nmod	_	SpaceAfter=No	*
+61	"	"	PUNCT	_	_	58	punct	_	_	*
+62	et	et	CCONJ	_	_	64	cc	_	_	*
+63	"	"	PUNCT	_	_	64	punct	_	SpaceAfter=No	*
+64	abus	abus	NOUN	_	Gender=Masc|Number=Sing	58	conj	_	_	*
+65	de	de	ADP	_	_	66	case	_	_	*
+66	biens	bien	NOUN	_	Gender=Masc|Number=Plur	64	nmod	_	_	*
+67	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	66	amod	_	SpaceAfter=No	*
+68	"	"	PUNCT	_	_	64	punct	_	SpaceAfter=No	*
+69	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00575
+# text = - 12 février 1996 : La police judiciaire parisienne perquisitionne les locaux de l'office HLM départemental des Hauts-de-Seine, sur commission rogatoire des juges Philippe Vandingenen et Serge Portelli.
+1	-	-	PUNCT	_	_	10	punct	_	_	*
+2	12	12	NUM	_	NumType=Card	10	obl:mod	_	_	*
+3	février	février	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	1996	1996	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	10	punct	_	_	*
+6	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	police	police	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+8	judiciaire	judiciaire	ADJ	_	Number=Sing	7	amod	_	_	*
+9	parisienne	parisien	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+10	perquisitionne	perquisitionner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	_	*
+12	locaux	local	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	office	office	NOUN	_	Number=Sing	12	nmod	_	_	*
+16	HLM	HLM	NOUN	_	_	15	nmod	_	_	*
+17	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	10	punct	_	_	*
+22	sur	sur	ADP	_	_	23	case	_	_	*
+23	commission	commission	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*
+24	rogatoire	rogatoire	ADJ	_	_	23	amod	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*
+27	juges	juge	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+28	Philippe	Philippe	PROPN	_	Gender=Masc|Number=Sing	27	flat:name	_	_	*
+29	Vandingenen	Vandingenen	PROPN	_	_	28	flat:name	_	_	*
+30	et	et	CCONJ	_	_	31	cc	_	_	*
+31	Serge	Serge	PROPN	_	Gender=Masc|Number=Sing	28	conj	_	_	*
+32	Portelli	Portelli	PROPN	_	_	31	flat:name	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00576
+# text = Les enquêteurs placent sous scellés 170 cartons de documents, essentiellement relatifs à la passation des marchés publics et aux appels d'offre de l'organisme.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	enquêteurs	enquêteur	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	placent	placer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	sous	sous	ADP	_	_	5	case	_	_	*
+5	scellés	scellé	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*
+6	170	170	NUM	_	NumType=Card	7	nummod	_	_	*
+7	cartons	carton	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	documents	document	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	essentiellement	essentiellement	ADV	_	_	12	advmod	_	_	*
+12	relatifs	relatif	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	passation	passation	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+18	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	publics	public	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+20	et	et	CCONJ	_	_	23	cc	_	_	*
+21-22	aux	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*
+23	appels	appel	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	offre	offre	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	organisme	organisme	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00577
+# text = Il s'agit d'un tournant dans l'instruction, qui s'était jusque-là cantonnée aux investigations sur les entreprises prestataires de services.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	expl:subj	_	_	1:VID
+2	s'	se	PRON	_	Person=3|Reflex=Yes	3	expl:comp	_	SpaceAfter=No	1
+3	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1
+4	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	tournant	tournant	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*
+12	s'	se	PRON	_	Person=3|Reflex=Yes	15	expl:pass	_	SpaceAfter=No	*
+13	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux:tense	_	_	*
+14	jusque-là	jusque-là	ADV	_	_	15	advmod	_	_	*
+15	cantonnée	cantonner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_	*
+16-17	aux	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+18	investigations	investigation	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*
+21	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*
+22	prestataires	prestataire	NOUN	_	Number=Plur	21	nmod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	services	service	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00578
+# text = - octobre 1997 : Demande d'extradition de Didier Schuller, localisé aux Bahamas, puis en République Dominicaine
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+3	1997	1997	NUM	_	NumType=Card	2	nmod	_	_	*
+4	:	:	PUNCT	_	_	2	punct	_	_	*
+5	Demande	demande	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	extradition	extradition	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+10	Schuller	Schuller	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	9	punct	_	_	*
+12	localisé	localiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+13-14	aux	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	Bahamas	Bahamas	PROPN	_	Gender=Fem|Number=Plur	12	obl:arg	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	15	punct	_	_	*
+17	puis	puis	CCONJ	_	_	19	cc	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	République	République	PROPN	_	_	15	conj	_	_	*
+20	Dominicaine	dominicain	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00579
+# text = - 16 mars 2000 : Mise en examen de Patrick Balkany pour "trafic d'influence".
+1	-	-	PUNCT	_	_	6	punct	_	_	*
+2	16	16	NUM	_	NumType=Card	6	nmod	_	_	*
+3	mars	mars	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2000	2000	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	Mise	mise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	examen	examen	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Patrick	Patrick	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	Balkany	Balkany	PROPN	_	_	10	flat:name	_	_	*
+12	pour	pour	ADP	_	_	14	case	_	_	*
+13	"	"	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	influence	influence	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	"	"	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00580
+# text = - 5 février 2002 : Didier Schuller rentre en France au terme de sept ans de cavale aux Caraïbes.
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	5	5	NUM	_	NumType=Card	8	obl:mod	_	_	*
+3	février	février	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2002	2002	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	8	punct	_	_	*
+6	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+7	Schuller	Schuller	PROPN	_	_	6	flat:name	_	_	*
+8	rentre	rentrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	France	France	PROPN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	terme	terme	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	sept	sept	NUM	_	NumType=Card	16	nummod	_	_	*
+16	ans	an	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	cavale	cavale	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19-20	aux	_	_	_	_	_	_	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*
+21	Caraïbes	Caraïbes	PROPN	_	_	18	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00581
+# text = Il est mis en examen et écroué, pour "trafic d'influence et abus de biens sociaux".
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj:pass	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
+3	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1:VID
+4	en	en	ADP	_	_	5	case	_	_	1
+5	examen	examen	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	1
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	écroué	écrouer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+11	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	influence	influence	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	abus	abus	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	biens	bien	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+18	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	SpaceAfter=No	*
+19	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00582
+# text = - avril 2004 : Fin de l'enquête.
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	avril	avril	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+3	2004	2004	NUM	_	NumType=Card	2	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Fin	fin	NOUN	_	Number=Sing	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00583
+# text = - février 2005 : Didier Schuller et Patrick Balkany sont renvoyés devant le tribunal correctionnel de Créteil aux côtés de huit autres prévenus.
+1	-	-	PUNCT	_	_	11	punct	_	_	*
+2	février	février	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*
+3	2005	2005	NUM	_	NumType=Card	2	nmod	_	_	*
+4	:	:	PUNCT	_	_	11	punct	_	_	*
+5	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	11	nsubj:pass	_	_	*
+6	Schuller	Schuller	PROPN	_	_	5	flat:name	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	Patrick	Patrick	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+9	Balkany	Balkany	PROPN	_	_	8	flat:name	_	_	*
+10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*
+11	renvoyés	renvoyer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+12	devant	devant	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*
+15	correctionnel	correctionnel	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Créteil	Créteil	PROPN	_	_	14	nmod	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	côtés	côté	NOUN	_	Gender=Masc|Number=Plur	11	obl:mod	_	_	*
+21	de	de	ADP	_	_	24	case	_	_	*
+22	huit	huit	NUM	_	NumType=Card	24	nummod	_	_	*
+23	autres	autre	ADJ	_	Number=Plur	24	amod	_	_	*
+24	prévenus	prévenu	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00584
+# text = M. Schuller est poursuivi pour "recel d'abus de biens sociaux et trafic d'influence".
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	*
+2	Schuller	Schuller	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	poursuivi	poursuivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	"	"	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+7	recel	recel	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	abus	abus	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	biens	bien	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+12	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	influence	influence	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	"	"	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00585
+# text = M. Balkany est renvoyé par le juge d'instruction pour "complicité de trafic d'influence", en désaccord avec le parquet, qui concluait à son innocence et au non-lieu.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	*
+2	Balkany	Balkany	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	renvoyé	renvoyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	juge	juge	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	pour	pour	ADP	_	_	12	case	_	_	*
+11	"	"	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	complicité	complicité	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	influence	influence	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	"	"	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	4	punct	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	désaccord	désaccord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+21	avec	avec	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	parquet	parquet	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	23	punct	_	_	*
+25	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*
+26	concluait	conclure	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	23	acl:relcl	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	son	son	DET	_	Number=Sing|Poss=Yes	29	det	_	_	*
+29	innocence	innocence	NOUN	_	Gender=Fem|Number=Sing	26	obl:arg	_	_	*
+30	et	et	CCONJ	_	_	33	cc	_	_	*
+31-32	au	_	_	_	_	_	_	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	non-lieu	non-lieu	NOUN	_	Gender=Masc|Number=Sing	29	conj	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00586
+# text = - 21 juin 2005 : Début du procès.
+1	-	-	PUNCT	_	_	6	punct	_	_	*
+2	21	21	NUM	_	NumType=Card	6	nmod	_	_	*
+3	juin	juin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2005	2005	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	Début	début	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	procès	procès	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00587
+# text = - 15 juillet 2005 : Réquisitoire du parquet, qui demande quatre ans de prison dont un an ferme contre Didier Schuller, qualifié de "fanfaron", et la relaxe pour Patrick Balkany.
+1	-	-	PUNCT	_	_	6	punct	_	_	*
+2	15	15	NUM	_	NumType=Card	6	nmod	_	_	*
+3	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2005	2005	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	Réquisitoire	réquisitoire	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	parquet	parquet	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+12	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	*
+13	quatre	quatre	NUM	_	NumType=Card	14	nummod	_	_	*
+14	ans	an	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	prison	prison	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	dont	dont	PRON	_	PronType=Rel	19	nmod	_	_	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	an	an	NOUN	_	Gender=Masc|Number=Sing	14	acl:relcl	_	_	*
+20	ferme	ferme	ADJ	_	Number=Sing	19	amod	_	_	*
+21	contre	contre	ADP	_	_	22	case	_	_	*
+22	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+23	Schuller	Schuller	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	22	punct	_	_	*
+25	qualifié	qualifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	"	"	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	fanfaron	fanfaron	NOUN	_	Gender=Masc|Number=Sing	25	xcomp	_	SpaceAfter=No	*
+29	"	"	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	14	punct	_	_	*
+31	et	et	CCONJ	_	_	33	cc	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	relaxe	relaxe	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+34	pour	pour	ADP	_	_	35	case	_	_	*
+35	Patrick	Patrick	PROPN	_	Gender=Masc|Number=Sing	33	orphan	_	_	*
+36	Balkany	Balkany	PROPN	_	_	35	flat:name	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00588
+# text = - 18 octobre 2005 : A l'issue du procès, Didier Schuller est condamné à cinq ans de prison, dont trois avec sursis, ainsi qu'à une amende de 150.000 euros, pour trafic d'influence, recel et complicité d'abus de biens sociaux.
+1	-	-	PUNCT	_	_	16	punct	_	_	*
+2	18	18	NUM	_	NumType=Card	16	obl:mod	_	_	*
+3	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2005	2005	NUM	_	NumType=Card	3	nmod	_	_	*
+5	:	:	PUNCT	_	_	16	punct	_	_	*
+6	A	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	issue	issue	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	procès	procès	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	16	punct	_	_	*
+13	Didier	Didier	PROPN	_	Gender=Masc|Number=Sing	16	nsubj:pass	_	_	*
+14	Schuller	Schuller	PROPN	_	_	13	flat:name	_	_	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_	*
+16	condamné	condamner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	cinq	cinq	NUM	_	NumType=Card	19	nummod	_	_	*
+19	ans	an	NOUN	_	Gender=Masc|Number=Plur	16	obl:arg	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	prison	prison	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	19	punct	_	_	*
+23	dont	dont	PRON	_	PronType=Rel	24	nmod	_	_	*
+24	trois	trois	PRON	_	NumType=Card	19	acl:relcl	_	_	*
+25	avec	avec	ADP	_	_	26	case	_	_	*
+26	sursis	sursis	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	19	punct	_	_	*
+28	ainsi	ainsi	ADV	_	_	32	cc	_	EXTPOS=CCONJ|MWE=ainsi_que	*
+29	qu'	que	SCONJ	_	_	28	fixed	_	SpaceAfter=No	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	amende	amende	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	150.000	150.000	NUM	_	NumType=Card	35	nummod	_	_	*
+35	euros	euro	NOUN	_	Gender=Masc|Number=Plur	32	nmod	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	16	punct	_	_	*
+37	pour	pour	ADP	_	_	38	case	_	_	*
+38	trafic	trafic	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*
+39	d'	de	ADP	_	_	40	case	_	SpaceAfter=No	*
+40	influence	influence	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	42	punct	_	_	*
+42	recel	recel	NOUN	_	Gender=Masc|Number=Sing	38	conj	_	_	*
+43	et	et	CCONJ	_	_	44	cc	_	_	*
+44	complicité	complicité	NOUN	_	Gender=Fem|Number=Sing	38	conj	_	_	*
+45	d'	de	ADP	_	_	46	case	_	SpaceAfter=No	*
+46	abus	abus	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+47	de	de	ADP	_	_	48	case	_	_	*
+48	biens	bien	NOUN	_	Gender=Masc|Number=Plur	46	nmod	_	_	*
+49	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	48	amod	_	SpaceAfter=No	*
+50	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00589
+# text = Patrick Balkany est disculpé et relaxé.
+1	Patrick	Patrick	PROPN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	*
+2	Balkany	Balkany	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	disculpé	disculper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	relaxé	relaxer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00590
+# text = Voir aussi
+1	Voir	voir	VERB	_	VerbForm=Inf	0	root	_	_	*
+2	aussi	aussi	ADV	_	_	1	advmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00591
+# text = - Affaires politico-financières
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Affaires	affaires	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	politico-financières	politico-financier	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	SpaceAfter=No	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00592
+# text = - Affaire des HLM de Paris
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*
+5	HLM	HLM	NOUN	_	Number=Plur	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00593
+# text = Catégories : Affaire politico-financière française
+1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*
+3	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	politico-financière	politico-financier	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	française	français	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00594
+# text = - Financement illégal du RPR
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Financement	financement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	RPR	RPR	PROPN	_	_	2	nmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00595
+# text = - Financement illégal des partis politiques français
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Financement	financement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	partis	parti	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+7	politiques	politique	ADJ	_	Number=Plur	6	amod	_	_	*
+8	français	français	ADJ	_	Gender=Masc	6	amod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00596
+# text = - Hauts-de-Seine
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+
