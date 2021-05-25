@@ -1,9 +1,10 @@
 #/usr/bin/python3
+# Jianying Liu et Anaëlle Pierredon
 
 #TODO: maintenant: 1 cupt -- 1 fichier; on a besoin de 1 cupt -- plusieurs fichier ?
 #TODO: Paris. à la fin et Mr. ?
 import re
-from OfcorsFilesParser import *
+from OfcorsFilesParser import Mentions, CorefChaines, OfcorsOutput
 
 class Cupt():
     """
@@ -60,6 +61,8 @@ class Cupt():
             if token_coref != None:   # None : mot pas dans sortie ofcors (mot non mention)
                 token_coref_form = token_coref.text
                 token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.  mais Mr.   ####################################
+                
+                # TODO: token de cupt > token de ofcors    et    token de cupt < token de ofcors  ==unifier=> forme de token de cupt (token1(m1,c1), token2(m2,c2))
                 if ligne.token_form == token_coref_form:
                     # pour les commentaire : ligne.coref == None
                     ligne.coref = token_coref.ment_coref_list
@@ -75,18 +78,19 @@ class Cupt():
         Args:
             filepath (str) : chemin vers fichier sortie
         """
+        #TODO: unifier traitement de ligne.content
         with open(filepath, "w") as file_out:
             for ligne in self.lignes.values():
                 #c'est un token
                 if ligne.i_token != -1 :
                     # token n'est pas une mention
                     if ligne.coref == {}:
-                        print(ligne.content + "\t*\t*", file=file_out)                    
+                        print(ligne.content + "\t*\t*", file=file_out)                 
                     # token est une mention
                     else:
                         # ajouter la colonne de mentions
                         ment_list = ligne.token_ofcors.ment_list
-                        ligne.content = ligne.content + "\t" + ";".join([m.id for m in ment_list])
+                        ligne.content = ligne.content + "\t" + ";".join([m.mid for m in ment_list])
 
                         # ajouter la colonne de coreference
                         col_coref = [f"{mention['coref_id']}:{m_id}" for m_id, mention in ligne.coref.items() if mention['coref_id'] !='']
@@ -125,9 +129,11 @@ class Ligne():
         self.coref = {}  #dict de dict (ment--coref)
         self.is_token = False if self.i_token == -1 else True
 
+def main():
+    """
+    exemple d'usage
+    """
 
-if __name__ == "__main__":
-    # exemple d'usage
     print("#"*30)
     mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
     coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
@@ -149,3 +155,6 @@ if __name__ == "__main__":
 
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
+
+if __name__ == "__main__":
+    main()

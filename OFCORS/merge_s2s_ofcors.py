@@ -1,4 +1,5 @@
-#/usr/bin/python3
+# -*- coding: utf-8 -*-
+# Jianying Liu et Anaëlle Pierredon
 
 """
 usage :
@@ -7,8 +8,8 @@ exemple: (on a blabla.txt et blabla.cupt dans ./blabla)
 python merge_s2s_ofcors.py ./blabla/ blabla ./blabla/blabla.cupt
 """
 import sys
-from CuptParser import *
-from OfcorsFilesParser import *
+from CuptParser import Cupt
+from OfcorsFilesParser import Mentions, CorefChaines, OfcorsOutput
 
 rep_corpus = sys.argv[1]
 filename = sys.argv[2]
