@@ -1,4 +1,4 @@
-# Jianying Liu 
+# Jianying Liu
 
 """
 exemple of use in terminal:
@@ -108,7 +108,7 @@ def file_txt2cupt(input_path, output_path, corpus_uri):
     parent_dir = "/".join(parent_dir)
     for file_path in find_all_files_path(input_path):
         corpus_intern_path = re.sub(parent_dir+"/", "", file_path)
-        write_to_file(f"# newdoc = {corpus_intern_path}\n", output_path)     # do we need this line?
+        write_to_file(f"# newdoc = {corpus_intern_path}\n", output_path)  # do we need this line?
         text = load_file(file_path)
         text_conllu = annote_with_udpipe(text)
         text_cupt, sent_id = transform_to_cupt_blind(text_conllu, corpus_uri,
