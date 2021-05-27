@@ -26,12 +26,13 @@ class ExprPoly():
                               pour chaque token ("*" = pas dans une chaîne)
         schema_mwe (liste de str): Liste représentant les tokens de la phrase
                                 - "*": ce token n'appartient pas à une MWE
-                                - "1": ce token appartient à une MWE
-        schema_mention (liste de str): représente les tokens de la phrase
-                                - "*": ce token n'appartient pas à une mention
-                                - "1": ce token appartient à une mention
-        cas (str): Les différents cas possible de chevauchement ou d'inclusion
-                   d'une mention dans une MWE
+                                - indice: ce token appartient à une MWE
+        schema_mention (dict): représente les tokens de la phrase
+                    - "*": token n'appartient pas à une mention de la chaine
+                    - indice: token appartient à une mention de la chaine
+                    Avec en clé la mention concernée
+        cas (dict): Les différents cas possible de chevauchement ou d'inclusion
+                   d'une mention dans une MWE avec en clé la mention concernée
         chaines (liste de dict): Les chaines de coreférences de la MWE
     """
     def __init__(self, identifiant, type_mwe, texte, tokens, coref):
@@ -44,8 +45,8 @@ class ExprPoly():
 
         # Définis plus tard
         self.schema_mwe = []  # ["*", "*", "1", "1", "*", "*", "*", "*", ...]
-        self.schema_mention = []  # ["*", "*", "*", "1", "*", "*", "*", "*", ...]
-        self.cas = ""
+        self.schema_mention = {}  # {18: ["*", "*", "*", "18", "*", ...]}
+        self.cas = {}  # {18: "1"}
         self.chaines = []
 
     def append_schemas(self, schema_mwe, schema_mention):
@@ -53,6 +54,8 @@ class ExprPoly():
         Ajoute des attributs schema_mwe, schema_mention et cas à partir des
         attributs déjà existants (identifiant et coref).
         """
+
+        # Schema MWE
         for indice in schema_mwe:
             liste_indices = [element.split(":")[0] for element in indice.split(";")]
             if str(self.identifiant) not in liste_indices:
@@ -61,17 +64,31 @@ class ExprPoly():
             else:
                 self.schema_mwe.append('1')
 
-        self.schema_mention.extend(schema_mention)  # TODO utiliser les mentions écrites dans self.coref ?
+        # Mentions
+        coref = []
+        for element in self.coref:
+            if element != "*":
+                coref.extend(element.split(";"))
+        coref = list({element.split(':')[1] for element in coref if element != "*"})
 
-        if len(list(set(self.coref))) == 1 and self.coref[0] == "*":  # ['*', '*']
-            self.cas = "None"
-        else:
-            self.cas = self.determiner_cas()
+        if len(set(coref)) > 0:  # tout sauf ["*", "*"]
+            for ment_cor in coref:
+                self.schema_mention[ment_cor] = []
+                for ment_sch in schema_mention:
+                    if ment_cor in ment_sch.split(';'):
+                        self.schema_mention[ment_cor].append(ment_cor)
+                    else:
+                        self.schema_mention[ment_cor].append("*")
+                self.cas[ment_cor] = self.determiner_cas(ment_cor)
 
-        # print(self.texte)
-        # print(f"MWE :\t\t{self.schema_mwe}")
-        # print(f"MENTIONS :\t{self.schema_mention}")
-        # print(f"CAS : {self.cas}\n\n")
+        # VÉRIFICATIONS
+        if len(set(coref)) > 0:
+            print(self.texte)
+            print(f"MWE :\n{self.schema_mwe}")
+            print(f"MENTIONS ET CAS:")
+            for mention in self.schema_mention:
+                print(f"{mention}\t- {self.schema_mention[mention]}")
+                print(f"  \t- {self.cas[mention]}\n")
 
     def append_chaine(self, dico_coref):
         """
@@ -87,7 +104,7 @@ class ExprPoly():
                     if dico_coref[id_coref] not in self.chaines:
                         self.chaines.append(dico_coref[id_coref])
 
-    def determiner_cas(self):
+    def determiner_cas(self, ment):
         """
         Détermine le cas selon le chevauchement ou d'inclusion
         d'une mention dans une MWE.
@@ -98,15 +115,16 @@ class ExprPoly():
         CAS 4 : MWE   =   se(1) faire(1) des(*) soucis(1)
                 MENTION = se(*) faire(*) des(1) soucis(1)
         """
+        schema_mention = self.schema_mention[ment]
         encours = False
         for num, (mwe, actuel) in enumerate(zip(self.schema_mwe,
-                                            self.schema_mention)):
+                                                schema_mention)):
 
             # DEBUT DE MWE
             if mwe != '*'and not encours:  # TODO cas pas très bien géré à vérifier :  mwe 1, *, *, *, 1
                 encours = True
-                prec = self.schema_mention[num-1]
-                if (prec and actuel) != '*' and prec == actuel:  # TODO cas pas géré : mention 3;4 puis 3 ...
+                prec = schema_mention[num-1]
+                if (prec and actuel) != '*' and prec == actuel:
                     # la mention commence avant : cas 1
                     debut = -1
                 elif actuel not in (prec, '*'):
@@ -119,7 +137,7 @@ class ExprPoly():
             # FIN DE MWE
             if (mwe == "*" and encours) or (mwe != "*" and num == len(self.schema_mwe)-1):
                 encours = False
-                prec = self.schema_mention[num-1]
+                prec = schema_mention[num-1]
                 if prec == '*':
                     # la mention se fini avant/pas de mention : cas 3, 4, None
                     fin = -1
@@ -281,19 +299,18 @@ def affichage_infos(liste_typexp):
     """
     Affiche les tokens, la coref et le cas par MWE classées selon leur type.
     """
-    print("-"*30)
+    print("-"*50)
     for typexp in liste_typexp:
         print(typexp.type_mwe)
         for expoly in typexp.mwes:
-            print(f"tokens : {expoly.tokens}, coref : {expoly.coref}, "
-                  f"cas : {expoly.cas}")
+            print(f"tokens : {expoly.tokens}, coref : {expoly.coref}")
 
 
 def affichage_stats_globales(liste_typexp):
     """
     Affiche le nombre de MWEs par type et le nombre de MWEs total.
     """
-    print("-"*30)
+    print("-"*50)
     total = 0
     for typexp in liste_typexp:
         print(f"{typexp.type_mwe} : {len(typexp.mwes)}")
@@ -307,7 +324,7 @@ def affichage_stats_coref(liste_typexp):
     type et total, ainsi que les information sur ces MWEs (texte, tokens,
     coref, cas et chaines).
     """
-    print("-"*30)
+    print("-"*50)
     total = 0
     nb_coref_total = 0
     for typexp in liste_typexp:
@@ -326,8 +343,8 @@ def affichage_stats_coref(liste_typexp):
                 for chaine in expoly.chaines:
                     print(f"\t   -{chaine}")
                 print("\n")
-        print(f"====>{nb_coref}/{len(typexp.mwes)}\n\n")
-    print(f"TOTAL\n====>{nb_coref_total}/{total}\n")
+        print(f"==========>{nb_coref}/{len(typexp.mwes)}\n\n")
+    print(f"TOTAL\n==========>{nb_coref_total}/{total}\n")
 
 
 # --------------------------- MAIN ---------------------------

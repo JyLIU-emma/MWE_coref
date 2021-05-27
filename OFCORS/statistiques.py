@@ -31,7 +31,7 @@ class ExprPoly():
                     - "*": token n'appartient pas à une mention de la chaine
                     - indice: token appartient à une mention de la chaine
                     Avec en clé la mention concernée
-        cas (dict): Les différents cas possible de chevauchement ou d'inclusion
+        cas (dict): Les différents cas possible de débordement ou d'inclusion
                    d'une mention dans une MWE avec en clé la mention concernée
         chaines (liste de dict): Les chaines de coreférences de la MWE
     """
@@ -57,7 +57,7 @@ class ExprPoly():
 
         # Schema MWE
         for indice in schema_mwe:
-            liste_indices = [element.split(":")[0] for element in indice.split(";")]
+            liste_indices = [elt.split(":")[0] for elt in indice.split(";")]
             if str(self.identifiant) not in liste_indices:
                 # Ce n'est pas la MWE qu'on est en train de définir
                 self.schema_mwe.append("*")
@@ -66,10 +66,10 @@ class ExprPoly():
 
         # Mentions
         coref = []
-        for element in self.coref:
-            if element != "*":
-                coref.extend(element.split(";"))
-        coref = list({element.split(':')[1] for element in coref if element != "*"})
+        for elt in self.coref:
+            if elt != "*":
+                coref.extend(elt.split(";"))
+        coref = list({elt.split(':')[1] for elt in coref if elt != "*"})
 
         if len(set(coref)) > 0:  # tout sauf ["*", "*"]
             for ment_cor in coref:
@@ -80,15 +80,6 @@ class ExprPoly():
                     else:
                         self.schema_mention[ment_cor].append("*")
                 self.cas[ment_cor] = self.determiner_cas(ment_cor)
-
-        # VÉRIFICATIONS
-        # if len(set(coref)) > 0:
-        #     print(self.texte)
-        #     print(f"MWE :\n{self.schema_mwe}")
-        #     print(f"MENTIONS ET CAS:")
-        #     for mention in self.mentions:
-        #         print(f"{mention}\t- {self.mentions[mention]['schema']}")
-        #         print(f"  \t- {self.mentions[mention]['cas']}\n")
 
     def append_chaine(self, dico_coref):
         """
@@ -109,57 +100,85 @@ class ExprPoly():
         Détermine le cas selon le chevauchement ou d'inclusion
         d'une mention dans une MWE.
 
-        CAS 1 : La mention déborde de la MWE
-        CAS 2 : La mention et la MWE sont identiques
-        CAS 3 : La mention correspond à une partie de la MWE
-        CAS 4 : MWE   =   se(1) faire(1) des(*) soucis(1)
-                MENTION = se(*) faire(*) des(1) soucis(1)
+        Args:
+            ment (str), l'identifiant de la mention à étudier
+        Returns:
+            cas (int), le cas correspondant aux schémas de la mention et
+                       de la MWE:
+        - CAS 1 -> La mention déborde de la MWE
+        - CAS 2 -> La mention et la MWE sont identiques
+        - CAS 3 -> La mention correspond à une partie de la MWE
+        - CAS 4 -> MWE   =   se(1) faire(1) des(*) soucis(1)
+                   MENTION = se(*) faire(*) des(1) soucis(1)
         """
-        schema_mention = self.schema_mention[ment]
-        encours = False
-        for num, (mwe, actuel) in enumerate(zip(self.schema_mwe,
-                                                schema_mention)):
+        # Récupérer indices de fin et de début
+        ind_mentions = span_schema(self.schema_mention[ment])[0]
+        ind_mwes = span_schema(self.schema_mwe)
 
-            # DEBUT DE MWE
-            if mwe != '*'and not encours:  # TODO cas pas très bien géré à vérifier :  mwe 1, *, *, *, 1
-                encours = True
-                prec = schema_mention[num-1]
-                if (prec and actuel) != '*' and prec == actuel:
-                    # la mention commence avant : cas 1
-                    debut = -1
-                elif actuel not in (prec, '*'):
-                    # la mention commence en même temps : cas 1, 2, 3
-                    debut = 0
-                elif (prec and actuel) == '*':
-                    # la mention n'a pas encore commencé : cas 3, 4 ou rien
-                    debut = 1
-
-            # FIN DE MWE
-            if (mwe == "*" and encours) or (mwe != "*" and num == len(self.schema_mwe)-1):
-                encours = False
-                prec = schema_mention[num-1]
-                if prec == '*':
-                    # la mention se fini avant/pas de mention : cas 3, 4, None
-                    fin = -1
-                elif prec != '*' and actuel == '*':
-                    # la mention se fini en même temps : cas 1, 2, 3
-                    fin = 0
-                elif (prec and actuel) != '*':
-                    # la mention n'est pas encore fini : cas 1 ou rien
-                    fin = 1
-
-                # Déterminer le cas
-                if (debut == 0 and fin == 1) or (debut == -1 and fin == 0):
-                    cas = "1"
-                elif debut == 0 and fin == 0:
-                    cas = "2"
-                elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1):  # TODO mention :  * 1 1 * et mwe : 1 1 1 1
-                    cas = "3"
+        # Comparaisons
+        liste_cas = []
+        for morceau_mwe in ind_mwes:
+            debut_mwe, fin_mwe = morceau_mwe
+            debut_ment, fin_ment = ind_mentions
+            # DÉBORDEMENTS DE LA MENTION
+            # MWE:[*, 1, 1]MENT:[1, 1, 1] || MWE:[1, 1, *, 1]MENT:[*, *, 1, 1]
+            if debut_mwe > debut_ment and fin_mwe == fin_ment:
+                if len(liste_cas) > 0:  # La MWE est en plusieurs parties
+                    cas = 4
                 else:
-                    cas = "4"
-                return cas
+                    cas = 1
+            # MWE:[1, 1, *]MENT:[1, 1, 1]
+            elif debut_mwe == debut_ment and fin_mwe < fin_ment:
+                cas = 1
+            # MWE:[*, 1, 1]MENT:[1, 1, *] || MWE:[1, *, 1, 1]MENT:[*, 1, 1, *]
+            elif fin_mwe > fin_ment >= debut_mwe > debut_ment:
+                if len(liste_cas) > 0:  # La MWE est en plusieurs parties
+                    cas = 4
+                else:
+                    cas = 1
+            # MWE:[1, 1, *]MENT:[*, 1, 1]
+            elif debut_mwe < debut_ment <= fin_mwe < fin_ment:
+                cas = 1
+            # MWE:[*, 1, *]MENT:[1, 1, 1] || MWE:[1, *, 1, *]MENT:[*, 1, 1, 1]
+            elif debut_mwe > debut_ment and fin_mwe < fin_ment:
+                if len(liste_cas) > 0:  # La MWE est en plusieurs parties
+                    cas = 4
+                else:
+                    cas = 1
 
-        return "None"
+            # SCHÉMAS IDENTIQUES
+            # MWE:[1, 1, 1]MENT:[1, 1, 1]
+            elif debut_mwe == debut_ment and fin_mwe == fin_ment:
+                cas = 2
+
+            # INCLUSION D'UNE MENTION PLUS PETITE
+            # MWE:[1, 1, 1]MENT:[*, 1, 1]
+            elif debut_mwe < debut_ment and fin_mwe == fin_ment:
+                cas = 3
+            # MWE:[1, 1, 1]MENT:[1, 1, *]
+            elif debut_mwe == debut_ment and fin_mwe > fin_ment:
+                cas = 3
+            # MWE:[1, 1, 1]MENT:[*, 1, *]
+            elif debut_mwe < debut_ment and fin_mwe > fin_ment:
+                cas = 3
+
+            else:
+                cas = "*"
+            liste_cas.append(cas)
+
+        # On prend le dernier cas trouvé s'il y en a un
+        if cas == "*":
+            for element in liste_cas:
+                if element != "*":
+                    cas = element
+
+        # Vérifications
+        # print(ind_mentions)
+        # print(ind_mwes)
+        # print(f"LISTE : {liste_cas}")
+        # print(f"CAS : {cas}")
+
+        return cas
 
 
 class TypeExpr():
@@ -290,6 +309,34 @@ def complet_type(liste_expoly):
             if type_item.type_mwe == expoly.type_mwe:
                 type_item.mwes.append(expoly)
     return liste_typexp
+
+
+def span_schema(schema):
+    """
+    Récupère les identifiant de début et de fin des éléments d'un schéma.
+
+    Args:
+        schema(liste de str)
+    Returns:
+        liste_ind (liste de liste de int): les identifiants de début et de fin
+        pour chaque partie
+        ex: [*, 1, 1, *] -> [[1,2]]
+            [1, *, 1, 1] -> [[0,0], [2,3]]
+    """
+    encours = False
+    liste_ind = []
+    for indice, element in enumerate(schema):
+        if element != "*" and not encours:
+            # L'élément vient de commencer
+            encours = True
+            debut = indice
+        elif element == "*" and encours:
+            # l'élément vient de se finir
+            encours = False
+            fin = indice - 1
+            liste_ind.append([debut, fin])
+
+    return liste_ind
 
 
 # ----------------------- FONCTIONS (AFFICHAGE) -----------------------
