@@ -2,8 +2,9 @@
 # Anaëlle Pierredon et Jianying Liu
 
 """
-Production de statistiques sur la totalité des MWE des différents fichiers.
-Argument : répertoire où se trouvent les cupt+
+Production de statistiques sur la totalité des MWEs des différents fichiers.
+Args:
+    Répertoire où se trouvent les cupt+
 """
 
 import glob
@@ -15,18 +16,43 @@ import argparse
 class ExprPoly():
     """
     Expressions polylexicales.
+
+    Attributs:
+        identifiant (int): Identifiant de la MWE dans la phrase (commence à 1)
+        type_mwe (str): Type de la MWE (LVC.full, VID...)
+        texte (str): Texte de la phrase où se trouve la MWE
+        tokens (liste de str): Liste des tokens composant la MWE
+        coref (liste de str): Appartenance ou non à une chaîne de coréférence
+                              pour chaque token ("*" = pas dans une chaîne)
+        schema_mwe (liste de str): Liste représentant les tokens de la phrase
+                                - "*": ce token n'appartient pas à une MWE
+                                - "1": ce token appartient à une MWE
+        schema_mention (liste de str): représente les tokens de la phrase
+                                - "*": ce token n'appartient pas à une mention
+                                - "1": ce token appartient à une mention
+        cas (str): Les différents cas possible de chevauchement ou d'inclusion
+                   d'une mention dans une MWE
+        chaines (liste de dict): Les chaines de coreférences de la MWE
     """
     def __init__(self, identifiant, type_mwe, texte, tokens, coref):
+        # Définis immédiatement
         self.identifiant = identifiant  # 1 ou 2 (par phrase)
+        self.type_mwe = type_mwe  # LVC.full
         self.texte = texte  # Merci de me donner l'occasion de...
         self.tokens = [tokens]  # ['me', 'donner']
         self.coref = [coref]  # ['*', '3']
-        self.type_mwe = type_mwe  # LVC.full
+
+        # Définis plus tard
         self.schema_mwe = []  # ["*", "*", "1", "1", "*", "*", "*", "*", ...]
         self.schema_mention = []  # ["*", "*", "*", "1", "*", "*", "*", "*", ...]
         self.cas = ""
+        self.chaines = []
 
     def append_schemas(self, schema_mwe, schema_mention):
+        """
+        Ajoute des attributs schema_mwe, schema_mention et cas à partir des
+        attributs déjà existants (identifiant et coref).
+        """
         for indice in schema_mwe:
             liste_indices = [element.split(":")[0] for element in indice.split(";")]
             if str(self.identifiant) not in liste_indices:
@@ -35,7 +61,7 @@ class ExprPoly():
             else:
                 self.schema_mwe.append('1')
 
-        self.schema_mention.extend(schema_mention)  #TODO utiliser les mentions écrites dans self.coref ?
+        self.schema_mention.extend(schema_mention)  # TODO utiliser les mentions écrites dans self.coref ?
 
         if len(list(set(self.coref))) == 1 and self.coref[0] == "*":  # ['*', '*']
             self.cas = "None"
@@ -47,16 +73,40 @@ class ExprPoly():
         # print(f"MENTIONS :\t{self.schema_mention}")
         # print(f"CAS : {self.cas}\n\n")
 
+    def append_chaine(self, dico_coref):
+        """
+        Ajoute l'attribut chaines.
+
+        Args:
+            dico_coref (dict): Toutes les chaînes du répertoire
+        """
+        for corefs in self.coref:
+            if corefs != "*":
+                for coref in corefs.split(";"):
+                    id_coref = coref.split(":")[0]
+                    if dico_coref[id_coref] not in self.chaines:
+                        self.chaines.append(dico_coref[id_coref])
+
     def determiner_cas(self):
+        """
+        Détermine le cas selon le chevauchement ou d'inclusion
+        d'une mention dans une MWE.
+
+        CAS 1 : La mention déborde de la MWE
+        CAS 2 : La mention et la MWE sont identiques
+        CAS 3 : La mention correspond à une partie de la MWE
+        CAS 4 : MWE   =   se(1) faire(1) des(*) soucis(1)
+                MENTION = se(*) faire(*) des(1) soucis(1)
+        """
         encours = False
         for num, (mwe, actuel) in enumerate(zip(self.schema_mwe,
                                             self.schema_mention)):
 
             # DEBUT DE MWE
-            if mwe != '*'and not encours:  #TODO cas pas très bien géré à vérifier :  mwe 1, *, *, *, 1
+            if mwe != '*'and not encours:  # TODO cas pas très bien géré à vérifier :  mwe 1, *, *, *, 1
                 encours = True
                 prec = self.schema_mention[num-1]
-                if (prec and actuel) != '*' and prec == actuel: #TODO cas pas géré : mention 3;4 puis 3 ...
+                if (prec and actuel) != '*' and prec == actuel:  # TODO cas pas géré : mention 3;4 puis 3 ...
                     # la mention commence avant : cas 1
                     debut = -1
                 elif actuel not in (prec, '*'):
@@ -85,7 +135,7 @@ class ExprPoly():
                     cas = "1"
                 elif debut == 0 and fin == 0:
                     cas = "2"
-                elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1): #TODO mention :  * 1 1 * et mwe : 1 1 1 1
+                elif (debut == 1 and fin == 0) or (debut == 0 and fin == -1):  # TODO mention :  * 1 1 * et mwe : 1 1 1 1
                     cas = "3"
                 else:
                     cas = "4"
@@ -97,6 +147,10 @@ class ExprPoly():
 class TypeExpr():
     """
     Liste d'expressions polylexicales par type.
+
+    Attributs:
+        type_mwe (str): Type des MWEs (LVC.full, VID...)
+        mwes (liste de ExprPoly): La liste des MWEs de ce type
     """
     def __init__(self, type_mwe):
         self.type_mwe = type_mwe
@@ -105,25 +159,36 @@ class TypeExpr():
 
 class Repertoire():
     """
-    Une liste des MWEs globale et une liste des MWEs par type contenues
-    dans tous les fichiers du répertoire.
+    Informations globales sur tous les fichiers du répertoire donné.
+
+    Attributs:
+        repertoire (str): le nom du répertoire
+        liste_phrases (liste de str): liste des phrases de tous les fichiers
+        liste_mwes (liste de ExprPoly): liste des MWEs de tous les fichiers
+        chaines (dict): liste des chaines de coréférence de tous les fichiers
+        liste_type (liste de TypeExpr): liste des MWEs par type
     """
 
     def __init__(self, repertoire):
         self.repertoire = repertoire
         self.liste_phrases = self.lecture()
 
+        coref = {}
         self.liste_mwes = []
         for phrase in self.liste_phrases:
-            self.liste_mwes.extend(phrase_mwe(phrase))
+            mwes, coref = phrase_mwe(phrase, coref)
+            self.liste_mwes.extend(mwes)
 
+        self.chaines = coref
         self.liste_type = complet_type(self.liste_mwes)
 
     def lecture(self):
         """
         Lecture des fichiers.
-        Entrée : entree, un nom de fichier
-        sortie : filein, une liste des phrases du fichier
+
+        Returns:
+            liste_phrases (liste de str), la liste des phrases de tous les
+            fichiers du répertoire.
         """
         liste_phrases = []
         for fichier in glob.glob(f"{self.repertoire}*"):
@@ -136,12 +201,17 @@ class Repertoire():
 # ----------------------- FONCTIONS (CONSTRUCTION) -----------------------
 
 
-def phrase_mwe(phrase):
+def phrase_mwe(phrase, dico_coref):
     """
-    Liste des MWE par phrases
+    Liste des MWEs par phrases
 
-    Entrée : phrase, la liste des lignes de la phrase
-    Sortie : liste_expoly, la liste des MWE de la phrase (ExprPoly())
+    Args:
+        phrase (str), les lignes de la phrase
+        dico_coref (dict), les chaînes de coréférence trouvées dans les
+                           phrases précédentes
+    Returns:
+        liste_expoly (liste de ExprPoly), la liste des MWEs de la phrase
+        dico_coref (dict), complété par les nouvelles chaînes éventuelles
     """
     liste_expoly = []
     schema_mwe = []
@@ -155,13 +225,14 @@ def phrase_mwe(phrase):
         ligne = ligne.strip().split('\t')
         mwes = ligne[10]
         mention = ligne[11]
+        corefs = ligne[12]
         schema_mwe.append(mwes)
         schema_mention.append(mention)
         if mwes != "*":
             for mwe in mwes.split(';'):
                 infos = mwe.split(':')
-                id_mwe = int(infos[0]) 
-                if len(infos) == 2: 
+                id_mwe = int(infos[0])
+                if len(infos) == 2:
                     expoly = ExprPoly(id_mwe, infos[1], texte, ligne[1],
                                       ligne[12])
                     liste_expoly.append(expoly)
@@ -170,19 +241,28 @@ def phrase_mwe(phrase):
                         if expoly.identifiant == id_mwe:
                             expoly.tokens.append(ligne[1])
                             expoly.coref.append(ligne[12])
+        if corefs != "*":
+            for coref in corefs.split(';'):
+                coref_id, coref_mention = coref.split(':')
+                if coref_id not in dico_coref:
+                    dico_coref[coref_id] = {}
+                if coref_mention not in dico_coref[coref_id]:
+                    dico_coref[coref_id][coref_mention] = []
+                dico_coref[coref_id][coref_mention].append(ligne[1])
 
     for expoly in liste_expoly:
         expoly.append_schemas(schema_mwe, schema_mention)
 
-    return liste_expoly
+    return liste_expoly, dico_coref
 
 
 def complet_type(liste_expoly):
     """
-    Entrée : liste_expoly, la liste des MWE de la phrase (ExprPoly())
-    Sortie : liste_typexp, la liste des types existants dans le fichier et
-             les expressions polylexicales qui correspondent à ce type.
-             (TypeExpr())
+    Args:
+        liste_expoly (liste de ExprPoly), la liste des MWEs de la phrase
+    Returns:
+        liste_typexp (liste de TypeExpr), la liste des types existants et les
+                    expressions polylexicales qui correspondent à ce type.
     """
     liste_typexp = list(set(expoly.type_mwe for expoly in liste_expoly))
     liste_typexp = [TypeExpr(type_mwe) for type_mwe in liste_typexp]
@@ -199,7 +279,7 @@ def complet_type(liste_expoly):
 
 def affichage_infos(liste_typexp):
     """
-    Afficher les tokens, la coref et le cas par MWE classées selon leur type.
+    Affiche les tokens, la coref et le cas par MWE classées selon leur type.
     """
     print("-"*30)
     for typexp in liste_typexp:
@@ -211,7 +291,7 @@ def affichage_infos(liste_typexp):
 
 def affichage_stats_globales(liste_typexp):
     """
-    Afficher le nombre de MWE par type et le nombre de MWE total.
+    Affiche le nombre de MWEs par type et le nombre de MWEs total.
     """
     print("-"*30)
     total = 0
@@ -223,8 +303,9 @@ def affichage_stats_globales(liste_typexp):
 
 def affichage_stats_coref(liste_typexp):
     """
-    Afficher le nombre de MWE faisant partie d'une chaîne de coréférence
-    par type et total.
+    Affiche le nombre de MWEs faisant partie d'une chaîne de coréférence par
+    type et total, ainsi que les information sur ces MWEs (texte, tokens,
+    coref, cas et chaines).
     """
     print("-"*30)
     total = 0
@@ -238,9 +319,14 @@ def affichage_stats_coref(liste_typexp):
             if coref > 0:
                 nb_coref += 1
                 nb_coref_total += 1
-                print(f"tokens : {expoly.tokens}, coref : {expoly.coref}, "
-                      f"cas : {expoly.cas}")
-        print(f"====>{nb_coref}/{len(typexp.mwes)}\n")
+                print(f"\tTEXTE : {expoly.texte}")
+                print(f"\tINFOS : tokens : {expoly.tokens}, "
+                      f"coref : {expoly.coref}, cas : {expoly.cas}")
+                print("\tCHAÎNE(S) : ")
+                for chaine in expoly.chaines:
+                    print(f"\t   -{chaine}")
+                print("\n")
+        print(f"====>{nb_coref}/{len(typexp.mwes)}\n\n")
     print(f"TOTAL\n====>{nb_coref_total}/{total}\n")
 
 
@@ -257,6 +343,9 @@ def main():
     args = parser.parse_args()
 
     repertoire = Repertoire(args.rep)
+
+    for expoly in repertoire.liste_mwes:
+        ExprPoly.append_chaine(expoly, repertoire.chaines)
 
     affichage_infos(repertoire.liste_type)
     affichage_stats_globales(repertoire.liste_type)
