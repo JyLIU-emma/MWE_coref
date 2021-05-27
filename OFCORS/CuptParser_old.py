@@ -2,6 +2,7 @@
 # Jianying Liu et Anaëlle Pierredon
 
 #TODO: maintenant: 1 cupt -- 1 fichier; on a besoin de 1 cupt -- plusieurs fichier ?
+#TODO: Paris. à la fin et Mr. ?
 import re
 from OfcorsFilesParser import Mentions, CorefChaines, OfcorsOutput
 
@@ -14,7 +15,6 @@ class Cupt():
         lignes (dict): un dictionnaire de Ligne objets regroupant tous les infos 
             clé (int): l'indice de ligne
             valeur (Ligne)
-        tokens
     """
     def __init__(self, filepath):
         """
@@ -24,48 +24,26 @@ class Cupt():
         """
         self.type = "cupt"  #########TODO
         self.lignes = {}
-        self.tokens = {} #NEW
         numero_ligne = 0
         token_i = -1
         with open(filepath, encoding="utf8") as f:
             liste_lignes = f.readlines()
-        token_repete = []  #NEW liste pour stocker les id comme 2-4
         for ligne in liste_lignes:
             if ligne[0] != "#" and ligne != "\n":
                 cols = ligne.split("\t")
                 no_token_sent = cols[0]
                 token = cols[1]
-                #NEW
-                if no_token_sent in token_repete:
-                    token_repete.remove(no_token_sent)
-                else:
+                if "-" not in no_token_sent:
                     token_i += 1
-                    self.tokens[str(token_i)] = token
-
-                self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
-
-                # stocker les 2 lignes suivantes répétés
-                match_index = re.match(r"^([0-9]+)-([0-9]+)$", no_token_sent)
-                if match_index:
-                    token_repete = [match_index.group(1), match_index.group(2)]
-                ###fin
-                #OLD
-                # if "-" not in no_token_sent:
-                #     token_i += 1
-                #     self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
-                # else:
-                #     self.lignes[numero_ligne] = Ligne(numero_ligne, f"{token_i}-{token_i+1}", ligne.strip(), token)
-                ###fin
+                    self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
+                else:
+                    self.lignes[numero_ligne] = Ligne(numero_ligne, f"{token_i}-{token_i+1}", ligne.strip(), token)
             else:
                 # pour ligne de commentaire: numéro de token : -1
                 # TODO: peut etre elargir si on veut traiter sent_id, newdoc
                 self.lignes[numero_ligne] = Ligne(numero_ligne, -1, ligne.strip())
             numero_ligne += 1
-
-    # def get_token_list(self):
-    #     for ligne in self.lignes.values():
-    #         if ligne.i_token != -1 or "-" not in
-
+    
     def add_ofcors_output(self, ofcors_out):
         """
         Fusionner la sortie de l'ofcors dans notre Cupt objet selon l'indice de token.
@@ -76,23 +54,22 @@ class Cupt():
         """
         self.type = "cupt+coref"
         for ligne in self.lignes.values():
-            if ligne.i_token == -1:  ##NEW
-            # if ligne.i_token == -1 or "-" in ligne.i_token: #si c'est u commentaire ou au/du ##OLD
+            if ligne.i_token == -1 or "-" in ligne.i_token: #si c'est u commentaire ou au/du
                 continue
 
             token_coref = ofcors_out.tokens.get(ligne.i_token)  # Token objet
             if token_coref != None:   # None : mot pas dans sortie ofcors (mot non mention)
-                # token_coref_form = token_coref.text
-                # token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.  mais Mr.   #####
+                token_coref_form = token_coref.text
+                token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.  mais Mr.   ####################################
                 
                 # TODO: token de cupt > token de ofcors    et    token de cupt < token de ofcors  ==unifier=> forme de token de cupt (token1(m1,c1), token2(m2,c2))
-                # if ligne.token_form == token_coref_form:
+                if ligne.token_form == token_coref_form:
                     # pour les commentaire : ligne.coref == None
-                ligne.coref = token_coref.ment_coref_list
-                ligne.token_ofcors = token_coref
-                # else:
-                    # print(f'Incohérence pour token "{ligne.token_form}" de ligne {ligne.indice}')
-                    # break
+                    ligne.coref = token_coref.ment_coref_list
+                    ligne.token_ofcors = token_coref
+                else:
+                    print(f'Incohérence pour token "{ligne.token_form}" de ligne {ligne.indice}')
+                    break
     
     def write_to_file(self, filepath):
         """
@@ -152,24 +129,9 @@ class Ligne():
         self.coref = {}  #dict de dict (ment--coref)
         self.is_token = False if self.i_token == -1 else True
 
-
-def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
-    """
-    exemple d'usage
-    """
-    cupt = Cupt(cupt_file)
-    ofcors_out = OfcorsOutput(token_file, cupt.tokens)
-    mentions = Mentions(mention_file, ofcors_out)
-    coref = CorefChaines(coref_file)
-    mentions.chainer(coref.ment_cluster)
-    ofcors_out.merge_result(mentions)
-    cupt.add_ofcors_output(ofcors_out)
-    return cupt
-
-
 def main():
     """
-    exemple d'usage (ancien)
+    exemple d'usage
     """
 
     print("#"*30)
@@ -194,28 +156,5 @@ def main():
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
 
-def main2():
-    """
-    Tester dictionnaire tokens
-    """
-    cupt_file = "./blabla/blablaannote.config48.cupt"
-    cupt = Cupt(cupt_file)
-    print(cupt.tokens)
-
-    # for i_ligne, ligne in cupt.lignes.items():
-    #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
-
-
-def main3():
-    """
-    exemple d'usage
-    """
-    cupt_file = "./blabla/blablaannote.config48.cupt"
-    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
-    mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
-    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
-    cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
-    cupt.write_to_file("./blabla/test_out.cuptmc")
-
 if __name__ == "__main__":
-    main3()
+    main()
