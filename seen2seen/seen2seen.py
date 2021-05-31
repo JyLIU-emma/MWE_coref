@@ -692,8 +692,9 @@ for langue in pbar:
         print(f"Configuration {langue}{best_config}: {filtres}")
         thisCorpusPath = {}
         if len(sys.argv) > 1:
-            nomCorpus = sys.argv[1].split('/')[-1]
-            pathCORPUS = str(repParent) + "/INPUT/" + str(langue) + "/" + nomCorpus  # Au cas où ils précisent le chemin
+            nomCorpus = re.sub("/$", "", sys.argv[1]) # Au cas où ils précisent le chemin
+            nomCorpus = nomCorpus.split('/')[-1] 
+            pathCORPUS = str(repParent) + "/INPUT/" + str(langue) + "/" + nomCorpus  
             thisCorpusPath[langue] = []  # CHANGEMENT
             for fichier in glob.glob(f"{pathCORPUS}/*.txt"):  # TODO: no need? thisCorpusPath is for ?
                 corpus_uri = "http://my/newcorpus/uri"
@@ -716,8 +717,8 @@ for langue in pbar:
             dicoPhrases = cupt2phrases(thisCorpusPath[langue][corpus])
             dev_localisation_candidat = NEW_localise_cands(dicoPhrases, cands_allcorpus[corpus])
             pathIN = str(repParent) + "/INPUT/" + str(langue) + "/" + str(nomCorpus) + "/" + str(nomFichier)
-            chemin_dev_annot = str(repParent) + "/OUTPUT_seen/EVAL_allLanguages/" + str(langue) + "/ANNOT/" + str(nomCorpus) + "/" + str(nomFichier).split('.cupt')[0] + "annote.config" + str(best_config) + ".cupt"
-            rep_dev_annot = str(repParent) + "/OUTPUT_seen/EVAL_allLanguages/" + str(langue) + "/ANNOT/" + str(nomCorpus) + "/"
+            chemin_dev_annot = str(repParent) + "/OUTPUT_seen/ANNOTATIONS/" + str(langue) + "/" + str(nomCorpus) + "/" + str(nomFichier).split('.cupt')[0] + "_annote.config" + str(best_config) + ".cupt"
+            rep_dev_annot = str(repParent) + "/OUTPUT_seen/ANNOTATIONS/" + str(langue) + "/" + str(nomCorpus) + "/"
             if not os.path.exists(rep_dev_annot):
                 os.makedirs(rep_dev_annot)
             annotation_cupt_test(langue, pathIN, chemin_dev_annot, dev_localisation_candidat, NF2categ)
