@@ -6,7 +6,7 @@ Ce repository sert à collecter les travaux faits pour étudier les expressions 
 
 Ce repository a été créé dans le cadre d'un stage dont l'objectif est de vérifer de manière expérimentale l'hypothèse selon laquelle les composants individuels d'une expression polylexicale sont rarement susceptibles d'appartenir à des chaînes de coréférences.
 
-**Expressions polylexicales** : Termes complexes composés de plusieurs mots tels que "blanc d'œuf", "mémoire vive", "prendre une pause", "prendre le temps", "retourner sa veste" ou "prendre le taureau par les cornes" etc. Elles présentent des comportements linguistiques irréguliers et notamment la non-compositionnalité sémantique, qui signifie que le sens global de l'expression n'est pas déductible de manière régulière à partir des sens des composants et des liens syntaxiques qui les relient.
+**Expressions polylexicales** : Termes complexes composés de plusieurs mots tels que "blanc d'œuf", "mémoire vive", "prendre une pause", "prendre le temps", "retourner sa veste" ou "prendre le taureau par les cornes" etc. Elles présentent des comportements linguistiques irréguliers et notamment la non-compositionnalité sémantique, qui signifie que le sens global de l'expression n'est pas déductible de manière régulière à partir des sens des composants et des liens syntaxiques qui les relient.  
 **Chaînes de coréférence** : Procédé linguistique dans lequel plusieurs éléments d'un discours réfèrent à un même élément du discours.
 
 Exemple : "Il a retourné sa veste et l'a suspendue dans l'armoire." Ici le groupe nominal _la veste_ est ce que l'on appelle une **mention**, c'est-à-dire un élément qui réfère d'une entité du monde du discours (la veste qui appartient à la personne décrite dans l'énoncé). De même, le pronom _l'_ est lui-même une mention qui réfère à cette même entité du discours. On dit alors que _sa veste_ et _l'_ sont coréférents, c'est-à-dire qu'ils désignent la même entité.
@@ -36,7 +36,7 @@ Pour plus de détails, référez-vous au README d'OFCORS : [Lien vers OFCORS](ht
 * Installez flit si besoin : `pip install flit`
 * Rendez-vous dans le répertoire ofcors : `cd ofcors`
 * `flit build --format wheel`
-* `pip install dist/ofcors-X.Y.Z-py3-none-any.whl`
+* `pip install dist/ofcors-X.Y.Z-py3-none-any.whl`  
 Ofcors est installé!
 * Sortez d'Ofcors : `cd ..`
 * Si vous n'avez pas cloné notre repository : `git clone https://github.com/anaelle-p/MWE_coref`
@@ -123,21 +123,21 @@ _(Expliquer pourquoi on a retrouvé l'ordre des phrases de SEQUOIA...)_
 ## Utilisation
 
 ### Lancement de Seen2seen en version Train et Test
-Si vous n'avez jamais lancé Seen2seen vous pouvez commencer par lancer l'entrainement et le test. Attention, c'est assez long.
-Vous aurez besoin du fichier `test.cupt`. Si vous ne l'avez pas téléchargez-le [ici](https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/) et déplacez-le dans le répertoire `Seen2Seen/INPUT/FR/`.
-Le mode annotation_ONLY doit être désactivé (`annotation_ONLY = False` ligne 13 du fichier `Seen2Seen/config.cfg`)
-Vous devez vous trouver dans `Seen2Seen/CODE/`.
+Si vous n'avez jamais lancé Seen2seen vous pouvez commencer par lancer l'entrainement et le test. Attention, c'est assez long.  
+Vous aurez besoin du fichier `test.cupt`. Si vous ne l'avez pas téléchargez-le [ici](https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/) et déplacez-le dans le répertoire `Seen2Seen/INPUT/FR/`.  
+Le mode annotation_ONLY doit être désactivé (`annotation_ONLY = False` ligne 13 du fichier `Seen2Seen/config.cfg`)  
+Vous devez vous trouver dans `Seen2Seen/CODE/`.  
 
     python3 seen2seen.py
 
 À la fin du traitement, la meilleure configuration de filtres pour le français est donnée. Si elle est différente de 48 alors vous pouvez modifier la ligne 15 du `Seen2Seen/config.cfg` en remplaçant '48' par la nouvelle configuration.
 
 ### Lancement de Seen2seen en version annotation_ONLY
-Le répertoire du corpus à analyser doit se trouver dans `Seen2seen/INPUT/FR/`.
-Les fichiers du corpus sont donc dans `Seen2seen/INPUT/FR/{nom_repertoire_corpus}/`
-Ils doivent être soit au format .cupt soit au format .txt.
-Le mode annotation_ONLY doit être activé (`annotation_ONLY = True` ligne 13 du fichier `Seen2Seen/config.cfg`)
-Vous devez vous trouver dans `Seen2Seen/CODE/`.
+Le répertoire du corpus à analyser doit se trouver dans `Seen2seen/INPUT/FR/`.  
+Les fichiers du corpus sont donc dans `Seen2seen/INPUT/FR/{nom_repertoire_corpus}/`  
+Ils doivent être soit au format .cupt soit au format .txt.  
+Le mode annotation_ONLY doit être activé (`annotation_ONLY = True` ligne 13 du fichier `Seen2Seen/config.cfg`)  
+Vous devez vous trouver dans `Seen2Seen/CODE/`.  
 
     python3 seen2seen.py {nom_repertoire_corpus}
 
@@ -149,7 +149,7 @@ Dans les deux cas seul le nom du répertoire sera pris en compte.
 Les résultats de l'annotation se trouvent dans `Seen2Seen/OUTPUT_seen/ANNOTATIONS/FR/{nom_repertoire_corpus}/` et se terminent par`_annote.config48.cupt`.
 
 ### Lancement d'OFCORS et de la fusion:
-Vous devez vous trouvez dans `MWE_coref/OFCORS/`.
+Vous devez vous trouvez dans `MWE_coref/OFCORS/`.  
 
     ./lanceur.sh -os blabla/
     
