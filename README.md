@@ -2,6 +2,28 @@
 
 Ce repository sert à collecter les travaux faits pour étudier les expressions polylexicales et la coréférence.
 
+## Sujet
+
+Ce repository a été créé dans le cadre d'un stage dont l'objectif est de vérifer de manière expérimentale l'hypothèse selon laquelle les composants individuels d'une expression polylexicale sont rarement susceptibles d'appartenir à des chaînes de coréférences.
+
+**Expressions polylexicales** : Termes complexes composés de plusieurs mots tels que "blanc d'œuf", "mémoire vive", "prendre une pause", "prendre le temps", "tourner sa veste" ou "prendre le taureau par les cornes" etc. Elles présentent des comportements linguistiques irréguliers et notamment la non-compositionnalité sémantique, qui signifie que le sens global de l'expression n'est pas déductible de manière régulière à partir des sens des composants et des liens syntaxiques qui les relient.
+**Chaînes de coréférence** : Procédé linguistique dans lequel plusieurs
+éléments d'un discours réfèrent à un même élément du discours.
+
+Exemple : "Il a retourné sa veste et l'a suspendue dans l'armoire."
+Ici le groupe nominal _la veste_ est ce que l'on appelle une **mention**,
+c'est à dire un élément qui réfère d'une entité du monde du discours
+(la veste qui appartient à la personne décrite dans l'énoncé). De même,
+le pronom _l'_ est lui-même une mention qui réfère à cette même entité
+du discours. On dit alors que _sa veste_ et _l'_ sont coréférents,
+c'est-à-dire qu'ils désignent la même entité.
+
+Pour vérifier cette hypothèse, nous avons à disposition un outil qui nous permet de 
+
+## Pré-requis
+
+Installation OFCORS/Seen2seen
+
 ## Structure du repository
 
 ```
@@ -75,6 +97,8 @@ Ce repository sert à collecter les travaux faits pour étudier les expressions 
     - Répertoires de test : `blabla`, `phrases`, `SEQUOIA_EMEA`, `SEQUOIA_frwiki`
     - Anciens scripts : `z_oldies`
 
+# UTILISATION : Partie OFCORS
+
 ## Exemples de lancement:
 
 
@@ -94,3 +118,11 @@ Cette commande ne lance que la partie OFCORS.
 
 
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS se trouvent dans `blabla/mwecoref_outputs`.
+
+# UTILISATION : Partie Seen2seen
+
+## Lancement ...
+
+# RÉSULTATS
+
+## Expliquer stats ...
