@@ -1,6 +1,6 @@
 # MWE_coref
 
-Ce repository sert à collecter les travaux faits pour étudier les expressions polylexicales et la coréférence.
+Ce repository sert à collecter les travaux réalisés pour étudier les expressions polylexicales et la coréférence.
 
 ## Sujet
 
@@ -9,11 +9,11 @@ Ce repository a été créé dans le cadre d'un stage dont l'objectif est de vé
 **Expressions polylexicales** : Termes complexes composés de plusieurs mots tels que "blanc d'œuf", "mémoire vive", "prendre une pause", "prendre le temps", "retourner sa veste" ou "prendre le taureau par les cornes" etc. Elles présentent des comportements linguistiques irréguliers et notamment la non-compositionnalité sémantique, qui signifie que le sens global de l'expression n'est pas déductible de manière régulière à partir des sens des composants et des liens syntaxiques qui les relient.  
 **Chaînes de coréférence** : Procédé linguistique dans lequel plusieurs éléments d'un discours réfèrent à un même élément du discours.
 
-Exemple : "Il a retourné sa veste et l'a suspendue dans l'armoire." Ici le groupe nominal _la veste_ est ce que l'on appelle une **mention**, c'est-à-dire un élément qui réfère d'une entité du monde du discours (la veste qui appartient à la personne décrite dans l'énoncé). De même, le pronom _l'_ est lui-même une mention qui réfère à cette même entité du discours. On dit alors que _sa veste_ et _l'_ sont coréférents, c'est-à-dire qu'ils désignent la même entité.
+Exemple : "Il a retourné sa veste et l'a suspendue dans l'armoire."   Ici le groupe nominal _la veste_ est ce que l'on appelle une **mention**, c'est-à-dire un élément qui réfère d'une entité du monde du discours (la veste qui appartient à la personne décrite dans l'énoncé). De même, le pronom _l'_ est lui-même une mention qui réfère à cette même entité du discours. On dit alors que _sa veste_ et _l'_ sont **coréférents**, c'est-à-dire qu'ils désignent la même entité.
 
 Dans l'exemple précédent, la coréférence entre le pronom et _sa veste_ n'est possible que parce que nous ne sommes pas en présence de l'expression polylexicale "retourner sa veste" ("changer d'opinion"). Si la phrase "Il a retourné sa veste" avait été une EP, la non-compositionnalité de celle-ci aurait empêché de rendre le composant _sa veste_ accessible à une coréférence. C'est ce type de restriction que nous souhaitons étudier au cours de ce stage.
 
-Pour vérifier cette hypothèse, nous avons à disposition un outil pour l'annotation en expressions polylexicales ([Seen2seen](https://gitlab.com/cpasquer/st_2020)) et un outil pour l'annotation en coréférence ([OFCORS](https://gitlab.com/Stanoy/ofcors/-/tree/master), qui utilise [DECOFRE](https://github.com/LoicGrobol/decofre) pour la reconnaissance de mentions). Les entrées et les sorties diffèrent d'un outil à l'autre.
+Pour vérifier cette hypothèse, nous avons à disposition un outil pour l'annotation en expressions polylexicales ([Seen2seen](https://gitlab.com/cpasquer/st_2020)) et un outil pour la résolution de coréférences ([OFCORS](https://gitlab.com/Stanoy/ofcors/-/tree/master), qui utilise [DECOFRE](https://github.com/LoicGrobol/decofre) pour la reconnaissance de mentions). Les entrées et les sorties diffèrent d'un outil à l'autre.
 
 ## Installation des outils
 
@@ -27,7 +27,7 @@ Pour plus de détails, référez-vous au README de Seen2seen : [Lien vers Seen2s
 * Copiez-collez le nouveau code : `cp MWE_coref/seen2seen/seen2seen.py Seen2Seen/CODE/seen2seen.py`
 * Copiez-collez le nouveau fichier config : `cp MWE_coref/seen2seen/config.cfg Seen2Seen/config.cfg`
 * Ajoutez le script de conversion udpipe : `cp MWE_coref/seen2seen/udpipe_annote.py Seen2Seen/CODE/udpipe_annote.py`
-* Ajoutez le modèle utilisé par le script de conversion : `cp -r MWE_coref/seen2seen/model_udpipe Seen2Seen/CODE/model_udpipe/`
+* Ajoutez le modèle utilisé par le script de conversion : `cp -r MWE_coref/seen2seen/model_udpipe Seen2Seen/CODE/model_udpipe/`  
 Vous pouvez maintenant utiliser Seen2seen pour l'annotation ! Le lancement est expliqué plus bas.
 
 ### Installation d'OFCORS
@@ -128,7 +128,7 @@ Nous avons donc isolé les différents documents présents dans le corpus SEQUOI
 
 ### Lancement de Seen2seen en version Train et Test
 Si vous n'avez jamais lancé Seen2seen vous pouvez commencer par lancer l'entrainement et le test. Attention, c'est assez long.  
-Vous aurez besoin du fichier `test.cupt`. Si vous ne l'avez pas téléchargez-le [ici](https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/) et déplacez-le dans le répertoire `Seen2Seen/INPUT/FR/`.  
+Vous aurez besoin du fichier `test.cupt`. Si vous ne l'avez pas, téléchargez-le [ici](https://gitlab.com/parseme/sharedtask-data/-/tree/master/1.2/) et déplacez-le dans le répertoire `Seen2Seen/INPUT/FR/`.  
 Le mode annotation_ONLY doit être désactivé (`annotation_ONLY = False` ligne 13 du fichier `Seen2Seen/config.cfg`)  
 Vous devez vous trouver dans `Seen2Seen/CODE/`.  
 
@@ -181,13 +181,13 @@ Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.p
        - 13 : {'69': ['une', 'promotion'], '70': ['une', 'employée', 'municipale'], '72': ['Madeleine', 'Farrad', ',']}
 
 ```
-Les différentes expressions polylexicales faisant parties d'une chaîne de coréférence sont regroupées par type (VID, LVC.full ...). Pour chaque type sont ensuite affiché les informations sur les expressions polylexicales comme ci-dessus.
+Les différentes expressions polylexicales faisant parties d'une chaîne de coréférence sont regroupées par type (VID, LVC.full ...). Pour chaque type sont ensuite affichées les informations sur les expressions polylexicales comme ci-dessus.
 * FICHIER :  le fichier où se trouve l'EP.
 * PHRASE :  La phrase où se trouve l' EP.
 * INFOS : 
-    - Les tokens qui composent l'EP
-    - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si "\*" alors il n'appartient pas à une chaîne, sinon indice de chaine : indice de mention. Dans l'exemple ci-dessus, "promotion" correspond à la mention 69 et fait partie de la chaîne de coréférence 13.
+    - Les tokens qui composent l'EP.
+    - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si `*` alors il n'appartient pas à une chaîne, sinon `indice de chaine : indice de mention`. Dans l'exemple ci-dessus, "promotion" correspond à la mention 69 et fait partie de la chaîne de coréférence 13.
     - Le cas correspondant pour chaque mention. (CAS 1 : la mention déborde de l'EP, CAS 2 : la mention et l'EP sont identiques, CAS 3 : la mention correspond à un élément de l'EP et CAS 4 : MWE = accorder(1) une(\*) promotion(1)/MENTION = accorder(\*) une(1) promotion(1))
 * CHAINE(S) : Pour chaque chaîne à laquelle l'EP appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 13 qui contient les mentions 69 ("une promotion"), 70 ("une employée municipale") et 72 ("Madeleine Farrad").
 
-_Les résultats ne sont pas encore parfaits. La chaîne de coréférence présentée ici n'est pas correcte et ne sert que d'exemple pour les explications_
+_Les résultats ne sont pas encore parfaits. La chaîne de coréférence présentée ici n'est pas correcte et ne sert que d'exemple pour les explications._
