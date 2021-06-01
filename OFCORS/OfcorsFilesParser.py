@@ -214,9 +214,9 @@ class OfcorsOutput():
             # multi-word token, comme article contracte
             elif token_mwt != []:
                 incoherent = False
-                i_mwt = 1
+                i_mwt = 1  ##TODO
                 for i_item, item_mwt in enumerate(token_mwt):
-                    if item_mwt == token_o:
+                    if item_mwt.lower() == token_o.lower():  ##NEW i
                         # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] ##
                         dico_o[str(i_o)] = [str(i)]
                         if i_item != len(token_mwt)-1:
