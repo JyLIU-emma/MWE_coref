@@ -77,8 +77,6 @@ class Mentions():
 
         ##NEW: transformer en l'indice de token de cupt
         dico_paral = ofcors_output.tokens_i_paral
-        for i,j in dico_paral.items():
-            print(i,j)
         for ment in dico_mentions.values():
             i_start = min([int(i) for i in dico_paral.get(ment["START"])])
             ment["START"] = i_start
@@ -86,7 +84,6 @@ class Mentions():
             ment["END"] = i_end
 
         for cle, ment in dico_mentions.items():
-            print(ment["CONTENT"], ment["START"], ment["END"], cle)
             mention = Mention(ment["CONTENT"], ment["START"], ment["END"], cle) ##START & END : int
             self.mentions[mention.mid] = mention
         self.tokens2mentions()   ##NEW: indice de cupt
@@ -205,34 +202,15 @@ class OfcorsOutput():
         i_o = 0
         dico_o = {}
         while i < len(tokens_cupt):
-            token = tokens_cupt.get(str(i))["token_form"]
-            token_mwt = tokens_cupt.get(str(i))["MWT"]
+            token = tokens_cupt.get(str(i))
             token_o = tokens_ofcors.get(str(i_o))
             # chaine identique
             if token == token_o:
                 dico_o[str(i_o)] = [str(i)]
-            # multi-word token, comme article contracte
-            elif token_mwt != []:
-                incoherent = False
-                i_mwt = 1
-                for i_item, item_mwt in enumerate(token_mwt):
-                    if item_mwt == token_o:
-                        # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] ##
-                        dico_o[str(i_o)] = [str(i)]
-                        if i_item != len(token_mwt)-1:
-                            i_o += 1
-                            token_o = tokens_ofcors.get(str(i_o))
-                    else:
-                        print(f"Le composant ('{token_o}' et '{item_mwt}') du MWT '{token}' à l'indice {i_o} de l'ofcors ne se décompose pas de la même manière")
-                        incoherent = True
-                        break  # arrêter la comparaison des MWT
-                
-                if incoherent:
-                    break  # arrêter l'alignement, pas besoin de continuer
             # chaine non identique
             else:
                 if len(token) == len(token_o):
-                    print(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
+                    print("chaine de caractere differente, ne peut rien faire")
                     break
                 else:  # longueur differentes
                     if len(token) > len(token_o):
@@ -254,7 +232,7 @@ class OfcorsOutput():
                             else:
                                 dico_o[str(i_o)].append(str(i))
                             i += 1
-                            token = token + tokens_cupt.get(str(i))["token_form"]
+                            token = token + tokens_cupt.get(str(i))
                         
                         if len(token) != len(token_o) or token != token_o:
                             print(f"token:{token}\ttoken_o:{token_o}")

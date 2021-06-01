@@ -38,18 +38,16 @@ class Cupt():
                 #NEW
                 if no_token_sent in token_repete:
                     token_repete.remove(no_token_sent)
-                    self.tokens[str(token_i)]["MWT"].append(token)    ##NEW add token of MWT in liste
                 else:
                     token_i += 1
-                    self.tokens[str(token_i)] = {"token_form":token, "MWT":[]}  ##NEW pour un token: {'token': 'au', 'MWT': ['à', 'le']}
+                    self.tokens[str(token_i)] = token
 
                 self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
 
                 # stocker les 2 lignes suivantes répétés
                 match_index = re.match(r"^([0-9]+)-([0-9]+)$", no_token_sent)
                 if match_index:
-                    # token_repete = [match_index.group(1), match_index.group(2)]
-                    token_repete = [str(i) for i in range(int(match_index.group(1)), int(match_index.group(2))+1)]  ##NEW permet plus de 2 indices
+                    token_repete = [match_index.group(1), match_index.group(2)]
                 ###fin
                 #OLD
                 # if "-" not in no_token_sent:
@@ -160,10 +158,6 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     exemple d'usage
     """
     cupt = Cupt(cupt_file)
-
-    for key, value in cupt.tokens.items():
-        print(key, value)
-
     ofcors_out = OfcorsOutput(token_file, cupt.tokens)
     mentions = Mentions(mention_file, ofcors_out)
     coref = CorefChaines(coref_file)
@@ -207,10 +201,6 @@ def main2():
     cupt_file = "./blabla/blablaannote.config48.cupt"
     cupt = Cupt(cupt_file)
     print(cupt.tokens)
-
-    # for key, value in cupt.tokens.items():
-    #     print(key, value)
-
 
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
