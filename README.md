@@ -40,12 +40,16 @@ Pour plus de détails, référez-vous au README d'OFCORS : [Lien vers OFCORS](ht
 Ofcors est installé!
 * Sortez d'Ofcors : `cd ..`
 * Si vous n'avez pas cloné notre repository : `git clone https://github.com/anaelle-p/MWE_coref`
-* Récupérez les fichiers dont OFCORS a besoin : `cp -r ofcors/ofcors_outputs/ MWE_coref/OFCORS/ofcors_outputs`
+* Récupérez les fichiers dont OFCORS a besoin : `cp -r ofcors/ofcors_outputs/ MWE_coref/OFCORS/ofcors_outputs`  
 Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est expliqué plus bas.
 
-## Choix d'un corpus
+## Choix de corpus
 
-_(Expliquer pourquoi on a retrouvé l'ordre des phrases de SEQUOIA...)_
+Pour traiter correctement la coréférence, il est nécessaire de connaître les frontières de textes dans un corpus. En effet, la coréférence ne peut être traitée qu'à l'intérieur d'une même unité discursive.  
+Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429).  
+Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA :
+* 2 documents de l'agence européenne du médicament pour la partie EMEA (\~ 1000 phrases en tout)
+* 19 pages Wikipédia pour la partie frwiki (\~ 1000 phrases en tout)
 
 ## Structure du repository
 
@@ -169,4 +173,21 @@ Cette commande ne lance que la partie OFCORS.
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS sur les fichiers de `blabla/` se trouvent dans `blabla/ofcors_outputs`.
 
 ## Résultats
-_(Expliquer l'affichage de stats...)_
+```
+    FICHIER : frwiki_7_mwe_coref.cupt
+    PHRASE : L'instruction a révélé l'existence d'une lettre datée de décembre 1993 et signée par Jacques Chirac, qui demande à son administration d'accorder une promotion à une employée municipale, Madeleine Farrad, qui, bien que rémunérée par la ville, travaille en fait au siège du RPR.
+    INFOS : tokens : ['accorder', 'promotion'], coref : ['*', '13:69'], cas : {'69': 4}
+    CHAÎNE(S) : 
+       - 13 : {'69': ['une', 'promotion'], '70': ['une', 'employée', 'municipale'], '72': ['Madeleine', 'Farrad', ',']}
+
+```
+Les différentes expressions polylexicales faisant parties d'une chaîne de coréférence sont regroupées par type (VID, LVC.full ...). Pour chaque type sont ensuite affiché les informations sur les expressions polylexicales comme ci-dessus.
+* FICHIER :  le fichier où se trouve l'EP.
+* PHRASE :  La phrase où se trouve l' EP.
+* INFOS : 
+    - Les tokens qui composent l'EP
+    - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si "\*" alors il n'appartient pas à une chaîne, sinon indice de chaine : indice de mention. Dans l'exemple ci-dessus, "promotion" correspond à la mention 69 et fait partie de la chaîne de coréférence 13.
+    - Le cas correspondant pour chaque mention. (CAS 1 : la mention déborde de l'EP, CAS 2 : la mention et l'EP sont identiques, CAS 3 : la mention correspond à un élément de l'EP et CAS 4 : MWE = accorder(1) une(\*) promotion(1)/MENTION = accorder(\*) une(1) promotion(1))
+* CHAINE(S) : Pour chaque chaîne à laquelle l'EP appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 13 qui contient les mentions 69 ("une promotion"), 70 ("une employée municipale") et 72 ("Madeleine Farrad").
+
+_Les résultats ne sont pas encore parfaits. La chaîne de coréférence présentée ici n'est pas correcte et ne sert que d'exemple pour les explications_
