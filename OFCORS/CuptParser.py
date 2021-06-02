@@ -14,7 +14,13 @@ class Cupt():
         lignes (dict): un dictionnaire de Ligne objets regroupant tous les infos 
             clé (int): l'indice de ligne
             valeur (Ligne)
-        tokens
+        tokens (dict): une liste des tokens de tout le fichier
+            clé (str): indice redéfinie pour chaque token, 
+            unique dans un seul fichier cupt; 
+            pour MWT, e.g. du de le, seulement "du" a une indice.
+            valeur (dict): stocker la forme de token et 
+            ses composants s'il est un MWT (sinon liste vide), exemple:
+            {'token': 'au', 'MWT': ['à', 'le']}
     """
     def __init__(self, filepath):
         """
@@ -79,7 +85,7 @@ class Cupt():
         Args:
             filepath (str) : chemin vers fichier sortie
         """
-        #TODO: unifier traitement de ligne.content
+        #TODO: Spécifier cette fonction à cupt? (pas cupt+)
         with open(filepath, "w") as file_out:
             for ligne in self.lignes.values():
                 #c'est un token
@@ -149,51 +155,24 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     cupt.add_ofcors_output(ofcors_out)
     return cupt
 
-
-def main():
-    """
-    exemple d'usage (ancien)
-    """
-
-    print("#"*30)
-    mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
-    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
-    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
-    cupt_file = "./blabla/blabla.cupt"
-    output_file = "./blabla/test_out.cuptmc"
-
-    mentions = Mentions(mention_file)
-
-    coref = CorefChaines(coref_file)
-    mentions.chainer(coref.ment_cluster)
- 
-    ofcors_out = OfcorsOutput(token_file)
-    ofcors_out.merge_result(mentions)
-    
-    cupt = Cupt(cupt_file)
-    cupt.add_ofcors_output(ofcors_out)
-    cupt.write_to_file(output_file)
-
-    # for i_ligne, ligne in cupt.lignes.items():
-    #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
-
 def main2():
     """
-    Tester dictionnaire tokens
+    Tester dictionnaire Cupt.tokens
     """
     cupt_file = "./blabla/blablaannote.config48.cupt"
     cupt = Cupt(cupt_file)
     print(cupt.tokens)
 
+    # Cupt.tokens
     # for key, value in cupt.tokens.items():
     #     print(key, value)
 
-
+    # Cupt.lignes
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
 
 
-def main3():
+def main():
     """
     exemple d'usage
     """
@@ -205,4 +184,4 @@ def main3():
     cupt.write_to_file("./frwiki_test.cuptmc")
 
 if __name__ == "__main__":
-    main3()
+    main()

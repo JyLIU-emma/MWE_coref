@@ -75,7 +75,7 @@ class Mentions():
             text = mentions_file.read()
         dico_mentions = json.loads(text)
 
-        ##NEW: transformer en l'indice de token de cupt
+        # NEW_V2 : transformer en l'indice de token de cupt
         dico_paral = ofcors_output.tokens_i_paral
 
         ##NEW PRINT
@@ -182,7 +182,7 @@ class OfcorsOutput():
             text = tokens_file.read()
         dico_json = json.loads(text)
         self.tokenisation_unify(dico_json, cupt_tokens)
-        for i, t_form in cupt_tokens.items():  ##NEW change to cupt token
+        for i, t_form in cupt_tokens.items():  # NEW_V2 change to cupt token
             token = Token(i, t_form)
             self.tokens[i] = token
 
@@ -213,7 +213,7 @@ class OfcorsOutput():
             token = tokens_cupt.get(str(i))["token_form"]
             token_mwt = tokens_cupt.get(str(i))["MWT"]
             token_o = tokens_ofcors.get(str(i_o))
-            ## NEW si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
+            # NEW si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
             if token_o == "\n":
                 i_o += 1
                 continue
@@ -225,8 +225,8 @@ class OfcorsOutput():
                 incoherent = False
                 i_mwt = 1  ##TODO
                 for i_item, item_mwt in enumerate(token_mwt):
-                    if item_mwt.lower() == token_o.lower():  ##NEW i
-                        # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] ##
+                    if item_mwt.lower() == token_o.lower():  # NEW i
+                        # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] #TODO: différencier l'indice des MWT et ses tokens?
                         dico_o[str(i_o)] = [str(i)]
                         if i_item != len(token_mwt)-1:
                             i_o += 1
@@ -277,7 +277,7 @@ class OfcorsOutput():
 
 # def main():
 #     """
-#     exemple d'usage
+#     exemple d'usage (ne fonctionne plus)
 #     """
 #     cupt_file = "./blabla/blablaannote.config48.cupt"
 #     cupt = Cupt(cupt_file)
@@ -302,7 +302,6 @@ class OfcorsOutput():
 #     # print(mentions.mentions[22].mid, mentions.mentions[22].chaine_id)
 
 #     print("-"*30)
-
 
 #     ofcors_out.merge_result(mentions)
 
