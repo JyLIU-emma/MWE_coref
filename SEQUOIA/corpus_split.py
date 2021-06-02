@@ -17,7 +17,7 @@ def get_liste_of_sentid(corpus):
     """
     Récupère la liste des sent_id par fichiers.
     """
-    with open(f"z_fichiers_intermediaires/{corpus}_textbrut.txt", "r") as file:
+    with open(f"z_fichiers_intermediaires/{corpus}_textbrut_annote.txt", "r") as file:
         liste_lignes = file.readlines()
     all_text = []
     for ligne in liste_lignes:

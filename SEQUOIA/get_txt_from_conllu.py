@@ -18,8 +18,8 @@ with open(f"z_fichiers_intermediaires/{corpus}.conllu", "r") as f:
 liste = []
 for i in range(len(liste_texte)):
     if liste_texte[i][:9] == "# sent_id":
-        sent_id = liste_texte[i].split(" = ")[1]
-        sent = liste_texte[i+1].split(" = ")[1]
+        sent_id = liste_texte[i].split("# sent_id = ")[1]
+        sent = liste_texte[i+1].split("# text = ")[1]
         liste.append((sent_id, sent))
 
 with open(f"z_fichiers_intermediaires/{corpus}_textbrut.txt", "w") as f:
