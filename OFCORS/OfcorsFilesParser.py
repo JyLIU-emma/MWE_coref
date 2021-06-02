@@ -79,8 +79,8 @@ class Mentions():
         dico_paral = ofcors_output.tokens_i_paral
 
         ##NEW PRINT
-        for i,j in dico_paral.items():
-            print(i,j)
+        # for i,j in dico_paral.items():
+        #     print(i,j)
 
         for ment in dico_mentions.values():
             i_start = min([int(i) for i in dico_paral.get(ment["START"])])
@@ -90,7 +90,7 @@ class Mentions():
 
         for cle, ment in dico_mentions.items():
             ##NEW PRINT
-            print(ment["CONTENT"], ment["START"], ment["END"], cle)
+            # print(ment["CONTENT"], ment["START"], ment["END"], cle)
 
             mention = Mention(ment["CONTENT"], ment["START"], ment["END"], cle) ##START & END : int
             self.mentions[mention.mid] = mention

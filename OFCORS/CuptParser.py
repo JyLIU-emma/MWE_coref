@@ -162,8 +162,8 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     cupt = Cupt(cupt_file)
 
     ##NEW PRINT
-    for key, value in cupt.tokens.items():
-        print(key, value)
+    # for key, value in cupt.tokens.items():
+    #     print(key, value)
 
     ofcors_out = OfcorsOutput(token_file, cupt.tokens)
     mentions = Mentions(mention_file, ofcors_out)
