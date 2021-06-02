@@ -149,9 +149,16 @@ class ExprPoly():
                     cas = 1
 
             # SCHÉMAS IDENTIQUES
-            # MWE:[1, 1, 1]MENT:[1, 1, 1]
+            # MWE:[1, 1, 1]MENT:[1, 1, 1] || MWE:[1, *, 1, 1]MENT:[1, *, 1, 1]
             elif debut_mwe == debut_ment and fin_mwe == fin_ment:
-                cas = 2
+                print(liste_cas)
+                if len(liste_cas) > 0:  # La MWE est en plusieurs parties
+                    if liste_cas[-1] == 2:  # MWE:[1, *, 1]MENT:[1, *, 1]
+                        cas = 2
+                    else:
+                        cas = 3
+                else:
+                    cas = 2
 
             # INCLUSION D'UNE MENTION PLUS PETITE
             # MWE:[1, 1, 1]MENT:[*, 1, 1]
