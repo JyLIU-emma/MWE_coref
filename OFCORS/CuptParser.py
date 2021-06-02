@@ -24,49 +24,36 @@ class Cupt():
         """
         self.type = "cupt"  #########TODO
         self.lignes = {}
-        self.tokens = {} #NEW
+        self.tokens = {} # NEW_V2
         numero_ligne = 0
         token_i = -1
         with open(filepath, encoding="utf8") as f:
             liste_lignes = f.readlines()
-        token_repete = []  #NEW liste pour stocker les id comme 2-4
+        token_repete = []  # NEW_V2 liste pour stocker les id comme 2-4
         for ligne in liste_lignes:
             if ligne[0] != "#" and ligne != "\n":
                 cols = ligne.split("\t")
                 no_token_sent = cols[0]
                 token = cols[1]
-                #NEW
+                # NEW_V2
                 if no_token_sent in token_repete:
                     token_repete.remove(no_token_sent)
-                    self.tokens[str(token_i)]["MWT"].append(token)    ##NEW add token of MWT in liste
+                    self.tokens[str(token_i)]["MWT"].append(token)    # NEW_V3 add token of MWT in liste
                 else:
                     token_i += 1
-                    self.tokens[str(token_i)] = {"token_form":token, "MWT":[]}  ##NEW pour un token: {'token': 'au', 'MWT': ['à', 'le']}
+                    self.tokens[str(token_i)] = {"token_form":token, "MWT":[]}  # NEW_V3  forme exemple pour un token: {'token': 'au', 'MWT': ['à', 'le']}
 
                 self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
 
                 # stocker les 2 lignes suivantes répétés
                 match_index = re.match(r"^([0-9]+)-([0-9]+)$", no_token_sent)
                 if match_index:
-                    # token_repete = [match_index.group(1), match_index.group(2)]
-                    token_repete = [str(i) for i in range(int(match_index.group(1)), int(match_index.group(2))+1)]  ##NEW permet plus de 2 indices
-                ###fin
-                #OLD
-                # if "-" not in no_token_sent:
-                #     token_i += 1
-                #     self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
-                # else:
-                #     self.lignes[numero_ligne] = Ligne(numero_ligne, f"{token_i}-{token_i+1}", ligne.strip(), token)
-                ###fin
+                    token_repete = [str(i) for i in range(int(match_index.group(1)), int(match_index.group(2))+1)]  # permet plus de 2 indices
             else:
                 # pour ligne de commentaire: numéro de token : -1
                 # TODO: peut etre elargir si on veut traiter sent_id, newdoc
                 self.lignes[numero_ligne] = Ligne(numero_ligne, -1, ligne.strip())
             numero_ligne += 1
-
-    # def get_token_list(self):
-    #     for ligne in self.lignes.values():
-    #         if ligne.i_token != -1 or "-" not in
 
     def add_ofcors_output(self, ofcors_out):
         """
@@ -78,23 +65,12 @@ class Cupt():
         """
         self.type = "cupt+coref"
         for ligne in self.lignes.values():
-            if ligne.i_token == -1:  ##NEW
-            # if ligne.i_token == -1 or "-" in ligne.i_token: #si c'est u commentaire ou au/du ##OLD
+            if ligne.i_token == -1:  # NEW_V2
                 continue
-
             token_coref = ofcors_out.tokens.get(ligne.i_token)  # Token objet
             if token_coref != None:   # None : mot pas dans sortie ofcors (mot non mention)
-                # token_coref_form = token_coref.text
-                # token_coref_form = re.sub(r"(.+)[\.,:;\"]$", "\\1", token_coref_form) #traiter ponctuation collé après token, e.g.: Paris.  mais Mr.   #####
-                
-                # TODO: token de cupt > token de ofcors    et    token de cupt < token de ofcors  ==unifier=> forme de token de cupt (token1(m1,c1), token2(m2,c2))
-                # if ligne.token_form == token_coref_form:
-                    # pour les commentaire : ligne.coref == None
                 ligne.coref = token_coref.ment_coref_list
                 ligne.token_ofcors = token_coref
-                # else:
-                    # print(f'Incohérence pour token "{ligne.token_form}" de ligne {ligne.indice}')
-                    # break
     
     def write_to_file(self, filepath):
         """
