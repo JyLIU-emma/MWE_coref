@@ -12,7 +12,7 @@ ofcors()
         do
             echo "--------------------------------------"
             echo $fichier
-            ofcors-infer -f -p window $fichier
+            ofcors-infer -f -k stanza $fichier
 
             new_fichier=(${fichier//\// })
             new_fichier=(${new_fichier[1]//./ })
@@ -34,8 +34,7 @@ mwecoref()
             new_fichier=(${new_fichier[1]//./ })
             echo ${new_fichier[0]}
 
-            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}_annote.config48.cupt
-            # python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}*.cupt
+            python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}*.cupt
         done
 }
 
@@ -45,6 +44,7 @@ then
     echo "OFCORS"
     ofcors "$2"
     echo "PYTHON"
+    mkdir ./$2mwecoref_outputs/
     mwecoref "$2"
     python3 statistiques.py $2mwecoref_outputs/
 elif [ $1 == "-o" ]
