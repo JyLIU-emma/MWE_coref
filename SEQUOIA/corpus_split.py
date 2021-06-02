@@ -50,7 +50,7 @@ def get_sents_dico():
         lignes = sent_bloc.split("\n")
         sent_id = lignes[0].split(" ")[-1]
         text = lignes[1]
-        text = text.split(" = ")[1]
+        text = text.split("# text = ")[1]
         dico_sents[sent_id] = (text, sent_bloc)
     return dico_sents
 
