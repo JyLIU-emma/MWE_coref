@@ -77,8 +77,11 @@ class Mentions():
 
         ##NEW: transformer en l'indice de token de cupt
         dico_paral = ofcors_output.tokens_i_paral
-        # for i,j in dico_paral.items():
-        #     print(i,j)
+
+        ##NEW PRINT
+        for i,j in dico_paral.items():
+            print(i,j)
+
         for ment in dico_mentions.values():
             i_start = min([int(i) for i in dico_paral.get(ment["START"])])
             ment["START"] = i_start
@@ -86,7 +89,9 @@ class Mentions():
             ment["END"] = i_end
 
         for cle, ment in dico_mentions.items():
-            # print(ment["CONTENT"], ment["START"], ment["END"], cle)
+            ##NEW PRINT
+            print(ment["CONTENT"], ment["START"], ment["END"], cle)
+
             mention = Mention(ment["CONTENT"], ment["START"], ment["END"], cle) ##START & END : int
             self.mentions[mention.mid] = mention
         self.tokens2mentions()   ##NEW: indice de cupt
@@ -208,8 +213,12 @@ class OfcorsOutput():
             token = tokens_cupt.get(str(i))["token_form"]
             token_mwt = tokens_cupt.get(str(i))["MWT"]
             token_o = tokens_ofcors.get(str(i_o))
+            ## NEW si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
+            if token_o == "\n":
+                i_o += 1
+                continue
             # chaine identique
-            if token == token_o:
+            elif token == token_o:
                 dico_o[str(i_o)] = [str(i)]
             # multi-word token, comme article contracte
             elif token_mwt != []:
@@ -241,7 +250,7 @@ class OfcorsOutput():
                             i_o += 1
                             token_o = token_o + tokens_ofcors.get(str(i_o))
                         if len(token) != len(token_o) or token != token_o:
-                            print(f"token:{token}\ttoken_o:{token_o}")
+                            print(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})")
                             print("chaine de caractere combinee toujours differente, ne peut rien faire")
                             break
                         elif token == token_o:

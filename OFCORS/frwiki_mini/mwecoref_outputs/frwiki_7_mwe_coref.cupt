@@ -2,8 +2,8 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00199
 # text = Affaire des emplois fictifs de la mairie de Paris
 1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1;2	31:2
-2-3	des	_	_	_	_	_	_	_	_	*	*	*
-2	de	de	ADP	_	_	4	case	_	_	*	2	31:2
+2-3	des	_	_	_	_	_	_	_	_	*	2;3	31:2;34:3
+2	de	de	ADP	_	_	4	case	_	_	*	2;3	31:2;34:3
 3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	2;3	31:2;34:3
 4	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*	2;3	31:2;34:3
 5	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*	2;3	31:2;34:3
@@ -17,8 +17,8 @@
 # text = L'affaire des emplois fictifs de la Mairie de Paris, ou "affaire des emplois fictifs du RPR", instruite par le juge Patrick Desmure, concerne sept employés permanents du RPR, dont le salaire a été payé par la mairie de Paris.
 1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	6	*
 2	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	32	nsubj	_	_	*	6	*
-3-4	des	_	_	_	_	_	_	_	_	*	*	*
-3	de	de	ADP	_	_	5	case	_	_	*	*	*
+3-4	des	_	_	_	_	_	_	_	_	*	7	34:7
+3	de	de	ADP	_	_	5	case	_	_	*	7	34:7
 4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	7	34:7
 5	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	7	34:7
 6	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_	*	7	34:7
@@ -31,13 +31,13 @@
 13	ou	ou	CCONJ	_	_	15	cc	_	_	*	*	*
 14	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	11	*
 15	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*	11	*
-16-17	des	_	_	_	_	_	_	_	_	*	*	*
-16	de	de	ADP	_	_	18	case	_	_	*	*	*
+16-17	des	_	_	_	_	_	_	_	_	*	12	*
+16	de	de	ADP	_	_	18	case	_	_	*	12	*
 17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*	12	*
 18	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*	12	*
 19	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*	12	*
-20-21	du	_	_	_	_	_	_	_	_	*	*	*
-20	de	de	ADP	_	_	22	case	_	_	*	12	*
+20-21	du	_	_	_	_	_	_	_	_	*	12;13;14	15:13;15:14
+20	de	de	ADP	_	_	22	case	_	_	*	12;13;14	15:13;15:14
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	12;13;14	15:13;15:14
 22	RPR	RPR	PROPN	_	_	18	nmod	_	SpaceAfter=No	*	12;13;14	15:13;15:14
 23	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	12;14	15:14
@@ -53,8 +53,8 @@
 33	sept	sept	NUM	_	NumType=Card	34	nummod	_	_	*	17;18	*
 34	employés	employé	NOUN	_	Gender=Masc|Number=Plur	32	obj	_	_	*	17;18	*
 35	permanents	permanent	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	_	*	17;18	*
-36-37	du	_	_	_	_	_	_	_	_	*	*	*
-36	de	de	ADP	_	_	38	case	_	_	*	18	*
+36-37	du	_	_	_	_	_	_	_	_	*	18;19;20	15:19;15:20
+36	de	de	ADP	_	_	38	case	_	_	*	18;19;20	15:19;15:20
 37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	18;19;20	15:19;15:20
 38	RPR	RPR	PROPN	_	_	34	nmod	_	SpaceAfter=No	*	18;19;20	15:19;15:20
 39	,	,	PUNCT	_	_	34	punct	_	_	*	18;20	15:20
@@ -226,12 +226,12 @@
 46	travaille	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	acl:relcl	_	_	*	*	*
 47	en	en	ADP	_	_	48	case	_	_	*	*	*
 48	fait	fait	NOUN	_	Gender=Masc|Number=Sing	46	obl:mod	_	_	*	*	*
-49-50	au	_	_	_	_	_	_	_	_	*	*	*
-49	à	à	ADP	_	_	51	case	_	_	*	*	*
+49-50	au	_	_	_	_	_	_	_	_	*	76	3:76
+49	à	à	ADP	_	_	51	case	_	_	*	76	3:76
 50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_	*	76	3:76
 51	siège	siège	NOUN	_	Gender=Masc|Number=Sing	46	obl:arg	_	_	*	76	3:76
-52-53	du	_	_	_	_	_	_	_	_	*	*	*
-52	de	de	ADP	_	_	54	case	_	_	*	76	3:76
+52-53	du	_	_	_	_	_	_	_	_	*	76;77;78	3:76;3:77;3:78
+52	de	de	ADP	_	_	54	case	_	_	*	76;77;78	3:76;3:77;3:78
 53	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_	*	76;77;78	3:76;3:77;3:78
 54	RPR	RPR	PROPN	_	_	51	nmod	_	SpaceAfter=No	*	76;77;78	3:76;3:77;3:78
 55	.	.	PUNCT	_	_	4	punct	_	_	*	78	3:78
@@ -276,8 +276,8 @@
 36	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	37	det	_	_	*	91	*
 37	participation	participation	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	_	*	91	*
 38	"	"	PUNCT	_	_	37	punct	_	SpaceAfter=No	*	*	*
-39-40	aux	_	_	_	_	_	_	_	_	*	*	*
-39	à	à	ADP	_	_	41	case	_	_	*	*	*
+39-40	aux	_	_	_	_	_	_	_	_	*	92	*
+39	à	à	ADP	_	_	41	case	_	_	*	92	*
 40	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	41	det	_	_	*	92	*
 41	faits	fait	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*	92	*
 42	de	de	ADP	_	_	43	case	_	_	*	92	*
@@ -333,8 +333,8 @@
 12	par	par	ADP	_	_	13	case	_	_	*	*	*
 13	ailleurs	ailleurs	ADV	_	_	2	advmod	_	_	*	*	*
 14	proche	proche	ADJ	_	Number=Sing	2	amod	_	_	*	*	*
-15-16	du	_	_	_	_	_	_	_	_	*	*	*
-15	de	de	ADP	_	_	17	case	_	_	*	*	*
+15-16	du	_	_	_	_	_	_	_	_	*	113	23:113
+15	de	de	ADP	_	_	17	case	_	_	*	113	23:113
 16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	113	23:113
 17	Chef	chef	NOUN	_	Number=Sing	14	obl:arg	_	_	*	113	23:113
 18	de	de	ADP	_	_	20	case	_	_	*	113	23:113
@@ -371,8 +371,8 @@
 10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*	*	*
 11	estimé	estimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
 12	qu'	que	SCONJ	_	_	32	mark	_	SpaceAfter=No	*	*	*
-13-14	au	_	_	_	_	_	_	_	_	*	*	*
-13	à	à	ADP	_	_	15	case	_	_	*	*	*
+13-14	au	_	_	_	_	_	_	_	_	*	123;124	11:123;11:124
+13	à	à	ADP	_	_	15	case	_	_	*	123;124	11:123;11:124
 14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	123;124	11:123;11:124
 15	total	total	NOUN	_	Gender=Masc|Number=Sing	32	obl:mod	_	SpaceAfter=No	*	123;124	11:123;11:124
 16	,	,	PUNCT	_	_	32	punct	_	_	*	124	11:124
@@ -384,8 +384,8 @@
 22	ville	ville	NOUN	_	Gender=Fem|Number=Sing	19	obl:agent	_	_	*	126;127;128;129	12:126;12:127
 23	de	de	ADP	_	_	24	case	_	_	*	126;127;128;129	12:126;12:127
 24	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	126;127;128;129;130	12:126;12:127
-25-26	au	_	_	_	_	_	_	_	_	*	*	*
-25	à	à	ADP	_	_	27	case	_	_	*	127;129	12:127
+25-26	au	_	_	_	_	_	_	_	_	*	127;129;131	12:127
+25	à	à	ADP	_	_	27	case	_	_	*	127;129;131	12:127
 26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*	127;129;131	12:127
 27	RPR	RPR	PROPN	_	_	19	obl:arg	_	_	*	127;129;131	12:127
 28	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	18	acl	_	_	*	*	*
@@ -421,41 +421,41 @@
 18	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*	*	*
 19	été	être	AUX	_	Tense=Past|VerbForm=Part	20	aux:pass	_	_	*	*	*
 20	retiré	retirer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	conj	_	_	*	*	*
-21-22	des	_	_	_	_	_	_	_	_	*	*	*
-21	de	de	ADP	_	_	23	case	_	_	*	*	*
-22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	*	*
-23	champs	champs	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	*	*	*
-24	de	de	ADP	_	_	25	case	_	_	*	*	*
-25	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	*	*
+21-22	des	_	_	_	_	_	_	_	_	*	140	5:140
+21	de	de	ADP	_	_	23	case	_	_	*	140	5:140
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	140	5:140
+23	champs	champs	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	*	140	5:140
+24	de	de	ADP	_	_	25	case	_	_	*	140	5:140
+25	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	140;141	5:140
 26	par	par	ADP	_	_	28	case	_	_	*	*	*
-27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	*	*
-28	loi	loi	NOUN	_	Gender=Fem|Number=Sing	20	obl:agent	_	SpaceAfter=No	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	142	*
+28	loi	loi	NOUN	_	Gender=Fem|Number=Sing	20	obl:agent	_	SpaceAfter=No	*	142	*
 29	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
 30	ce	ce	PRON	_	_	20	iobj	_	_	*	*	*
 31	qui	qui	PRON	_	PronType=Rel	32	nsubj	_	_	*	*	*
 32	signifie	signifier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	_	_	*	*	*
 33	en	en	ADP	_	_	34	case	_	_	*	*	*
-34	pratique	pratique	NOUN	_	Gender=Fem|Number=Sing	32	obl:mod	_	_	*	*	*
+34	pratique	pratique	NOUN	_	Gender=Fem|Number=Sing	32	obl:mod	_	_	*	143	*
 35	que	que	SCONJ	_	_	56	mark	_	_	*	*	*
-36	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	37	det	_	_	*	*	*
-37	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	56	nsubj	_	_	*	*	*
+36	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	37	det	_	_	*	144	27:144
+37	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	56	nsubj	_	_	*	144	27:144
 38	à	à	ADP	_	_	40	case	_	_	*	*	*
-39	tous	tout	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_	*	*	*
-40	types	type	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*	*	*
-41	d'	de	ADP	_	_	42	case	_	SpaceAfter=No	*	*	*
-42	activités	activité	NOUN	_	Gender=Fem|Number=Plur	40	nmod	_	SpaceAfter=No	*	*	*
-43	,	,	PUNCT	_	_	42	punct	_	_	*	*	*
-44	y	y	PRON	_	Person=3	46	advmod	_	EXTPOS=ADV|MWE=y_compris	*	*	*
-45	compris	compris	ADJ	_	Gender=Masc	44	fixed	_	_	*	*	*
-46	politiques	politique	ADJ	_	Number=Plur	42	amod	_	SpaceAfter=No	*	*	*
-47	,	,	PUNCT	_	_	42	punct	_	_	*	*	*
-48-49	au	_	_	_	_	_	_	_	_	*	*	*
-48	à	à	ADP	_	_	50	case	_	_	*	*	*
-49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*	*	*
-50	profit	profit	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	*	*
-51	d'	de	ADP	_	_	53	case	_	SpaceAfter=No	*	*	*
-52	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_	*	*	*
-53	maire	maire	NOUN	_	Gender=Masc|Number=Sing	50	nmod	_	_	*	*	*
+39	tous	tout	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_	*	145	*
+40	types	type	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*	145	*
+41	d'	de	ADP	_	_	42	case	_	SpaceAfter=No	*	145	*
+42	activités	activité	NOUN	_	Gender=Fem|Number=Plur	40	nmod	_	SpaceAfter=No	*	145	*
+43	,	,	PUNCT	_	_	42	punct	_	_	*	145	*
+44	y	y	PRON	_	Person=3	46	advmod	_	EXTPOS=ADV|MWE=y_compris	*	145	*
+45	compris	compris	ADJ	_	Gender=Masc	44	fixed	_	_	*	145	*
+46	politiques	politique	ADJ	_	Number=Plur	42	amod	_	SpaceAfter=No	*	145	*
+47	,	,	PUNCT	_	_	42	punct	_	_	*	145	*
+48-49	au	_	_	_	_	_	_	_	_	*	146	4:146
+48	à	à	ADP	_	_	50	case	_	_	*	146	4:146
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*	146	4:146
+50	profit	profit	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	146	4:146
+51	d'	de	ADP	_	_	53	case	_	SpaceAfter=No	*	146	4:146
+52	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_	*	146;147	4:146;4:147
+53	maire	maire	NOUN	_	Gender=Masc|Number=Sing	50	nmod	_	_	*	146;147	4:146;4:147
 54	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	56	cop	_	_	*	*	*
 55	désormais	désormais	ADV	_	_	56	advmod	_	_	*	*	*
 56	légaux	légal	ADJ	_	Gender=Masc|Number=Plur	32	ccomp	_	SpaceAfter=No	*	*	*
@@ -463,45 +463,45 @@
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00211
 # text = Chronologie de l'affaire
-1	Chronologie	chronologie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-2	de	de	ADP	_	_	4	case	_	_	*	*	*
-3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	*	*
-4	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	*	*
+1	Chronologie	chronologie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	148;149	*
+2	de	de	ADP	_	_	4	case	_	_	*	148;149	*
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	148;149;150;151	*
+4	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	148;149;150;151	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00212
 # text = .. /..
-1	..	..	PUNCT	_	_	0	root	_	SpaceAfter=No	*	*	*
-2	/	/	SYM	_	_	1	dep	_	SpaceAfter=No	*	*	*
-3	..	..	PUNCT	_	_	1	punct	_	_	*	*	*
+1	..	..	PUNCT	_	_	0	root	_	SpaceAfter=No	*	149;151	*
+2	/	/	SYM	_	_	1	dep	_	SpaceAfter=No	*	149;151	*
+3	..	..	PUNCT	_	_	1	punct	_	_	*	149;151	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00213
 # text = - Vendredi 30 janvier 2004 : le tribunal correctionnel de Nanterre a prononcé un jugement de culpabilité pour les protagonistes.
-1	-	-	PUNCT	_	_	13	punct	_	_	*	*	*
-2	Vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	*	*
-3	30	30	NUM	_	NumType=Card	2	nmod	_	_	*	*	*
-4	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	*	*
-5	2004	2004	NUM	_	NumType=Card	4	nmod	_	_	*	*	*
+1	-	-	PUNCT	_	_	13	punct	_	_	*	149;151	*
+2	Vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	149;151;152	*
+3	30	30	NUM	_	NumType=Card	2	nmod	_	_	*	149;151;152	*
+4	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	149;151;152	*
+5	2004	2004	NUM	_	NumType=Card	4	nmod	_	_	*	149;151;152	*
 6	:	:	PUNCT	_	_	13	punct	_	_	*	*	*
-7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	*	*
-8	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*	*	*
-9	correctionnel	correctionnel	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	*	*
-10	de	de	ADP	_	_	11	case	_	_	*	*	*
-11	Nanterre	Nanterre	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	153	*
+8	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*	153	*
+9	correctionnel	correctionnel	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	153	*
+10	de	de	ADP	_	_	11	case	_	_	*	153	*
+11	Nanterre	Nanterre	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	153;154	*
 12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
 13	prononcé	prononcer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
-14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	*	*
-15	jugement	jugement	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*	*	*
-16	de	de	ADP	_	_	17	case	_	_	*	*	*
-17	culpabilité	culpabilité	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	*	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	155	*
+15	jugement	jugement	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*	155	*
+16	de	de	ADP	_	_	17	case	_	_	*	155	*
+17	culpabilité	culpabilité	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	155;156	*
 18	pour	pour	ADP	_	_	20	case	_	_	*	*	*
-19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*	*	*
-20	protagonistes	protagoniste	NOUN	_	Number=Plur	15	nmod	_	SpaceAfter=No	*	*	*
-21	.	.	PUNCT	_	_	13	punct	_	_	*	*	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*	157;158	*
+20	protagonistes	protagoniste	NOUN	_	Number=Plur	15	nmod	_	SpaceAfter=No	*	157;158	*
+21	.	.	PUNCT	_	_	13	punct	_	_	*	158	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00214
 # text = Appel interjeté ce qui suspend son application.
-1	Appel	appel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1:VID	*	*
-2	interjeté	interjeter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	1	*	*
+1	Appel	appel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1:VID	159	*
+2	interjeté	interjeter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	1	159	*
 3	ce	ce	PRON	_	_	1	nmod	_	_	*	*	*
 4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*	*	*
 5	suspend	suspendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
@@ -512,63 +512,63 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00215
 # text = - Dimanche 1er février 2004 : Le président Jacques Chirac demande la création d'une commission d'enquête sur les effractions et les pressions dont auraient eu à subir les magistrats de Nanterre ayant eu à suivre le dossier de l'Affaire des emplois fictifs de la mairie de Paris dans lequel est impliqué Alain Juppé.
 1	-	-	PUNCT	_	_	11	punct	_	_	*	*	*
-2	Dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*	*	*
-3	1er	1er	ADJ	_	NumType=Ord	2	nmod	_	_	*	*	*
-4	février	février	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	*	*
-5	2004	2004	NUM	_	NumType=Card	4	nmod	_	_	*	*	*
+2	Dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*	160	*
+3	1er	1er	ADJ	_	NumType=Ord	2	nmod	_	_	*	160	*
+4	février	février	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	160	*
+5	2004	2004	NUM	_	NumType=Card	4	nmod	_	_	*	160	*
 6	:	:	PUNCT	_	_	11	punct	_	_	*	*	*
-7	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	*	*
-8	président	président	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*	*	*
-9	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	8	appos	_	_	*	*	*
-10	Chirac	Chirac	PROPN	_	Gender=Masc|Number=Sing	9	flat:name	_	_	*	*	*
+7	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	161	*
+8	président	président	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*	161	*
+9	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	8	appos	_	_	*	161;162	*
+10	Chirac	Chirac	PROPN	_	Gender=Masc|Number=Sing	9	flat:name	_	_	*	161;162	*
 11	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	*	*
-13	création	création	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*	*	*
-14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*	*	*
-15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	*	*
-16	commission	commission	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	*	*
-17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*	*	*
-18	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	*	*
-19	sur	sur	ADP	_	_	21	case	_	_	*	*	*
-20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*	*	*
-21	effractions	effraction	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*	*	*
-22	et	et	CCONJ	_	_	24	cc	_	_	*	*	*
-23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	*	*
-24	pressions	pression	NOUN	_	Gender=Fem|Number=Plur	21	conj	_	_	1:LVC.full	*	*
-25	dont	dont	PRON	_	PronType=Rel	29	obj	_	_	*	*	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	163;164;165	1:165
+13	création	création	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*	163;164;165	1:165
+14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*	163;164;165	1:165
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	163;164;165;166;167	1:165;1:166;1:167
+16	commission	commission	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	163;164;165;166;167	1:165;1:166;1:167
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*	163;164;165;166;167	1:165;1:166;1:167
+18	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	163;164;165;166;167;168	1:165;1:166;1:167;1:168
+19	sur	sur	ADP	_	_	21	case	_	_	*	164;165;167	1:165;1:167
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*	164;165;167;169;170	1:165;1:167;0:170
+21	effractions	effraction	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*	164;165;167;169;170	1:165;1:167;0:170
+22	et	et	CCONJ	_	_	24	cc	_	_	*	165;170	1:165;0:170
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	165;170;171	1:165;0:170;0:171
+24	pressions	pression	NOUN	_	Gender=Fem|Number=Plur	21	conj	_	_	1:LVC.full	165;170;171	1:165;0:170;0:171
+25	dont	dont	PRON	_	PronType=Rel	29	obj	_	_	*	172	*
 26	auraient	avoir	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	aux:tense	_	_	*	*	*
 27	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	acl:relcl	_	_	*	*	*
 28	à	à	ADP	_	_	29	mark	_	_	*	*	*
 29	subir	subir	VERB	_	VerbForm=Inf	27	xcomp	_	_	1	*	*
-30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*	*	*
-31	magistrats	magistrat	NOUN	_	Gender=Masc|Number=Plur	27	nsubj	_	_	*	*	*
-32	de	de	ADP	_	_	33	case	_	_	*	*	*
-33	Nanterre	Nanterre	PROPN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*	*	*
+30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*	173	30:173
+31	magistrats	magistrat	NOUN	_	Gender=Masc|Number=Plur	27	nsubj	_	_	*	173	30:173
+32	de	de	ADP	_	_	33	case	_	_	*	173	30:173
+33	Nanterre	Nanterre	PROPN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*	173;174	30:173;29:174
 34	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	35	aux:tense	_	_	*	*	*
 35	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_	*	*	*
 36	à	à	ADP	_	_	37	mark	_	_	*	*	*
 37	suivre	suivre	VERB	_	VerbForm=Inf	35	xcomp	_	_	*	*	*
-38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*	*	*
-39	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	37	obj	_	_	*	*	*
-40	de	de	ADP	_	_	42	case	_	_	*	*	*
-41	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No	*	*	*
-42	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	_	*	*	*
-43-44	des	_	_	_	_	_	_	_	_	*	*	*
-43	de	de	ADP	_	_	45	case	_	_	*	*	*
-44	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	45	det	_	_	*	*	*
-45	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*	*	*
-46	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	45	amod	_	_	*	*	*
-47	de	de	ADP	_	_	49	case	_	_	*	*	*
-48	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_	*	*	*
-49	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	45	nmod	_	_	*	*	*
-50	de	de	ADP	_	_	51	case	_	_	*	*	*
-51	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	49	nmod	_	_	*	*	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*	175	6:175
+39	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	37	obj	_	_	*	175	6:175
+40	de	de	ADP	_	_	42	case	_	_	*	175	6:175
+41	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No	*	175;176	6:175
+42	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	_	*	175;176	6:175
+43-44	des	_	_	_	_	_	_	_	_	*	175;176;177	6:175;30:177
+43	de	de	ADP	_	_	45	case	_	_	*	175;176;177	6:175;30:177
+44	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	45	det	_	_	*	175;176;177	6:175;30:177
+45	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*	175;176;177	6:175;30:177
+46	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	45	amod	_	_	*	175;176;177	6:175;30:177
+47	de	de	ADP	_	_	49	case	_	_	*	175;176;177	6:175;30:177
+48	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_	*	175;176;177;178	6:175;30:177
+49	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	45	nmod	_	_	*	175;176;177;178	6:175;30:177
+50	de	de	ADP	_	_	51	case	_	_	*	175;176;177;178	6:175;30:177
+51	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	49	nmod	_	_	*	175;176;177;178;179	6:175;30:177;29:179
 52	dans	dans	ADP	_	_	53	case	_	_	*	*	*
-53	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	55	obl:arg	_	_	*	*	*
+53	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	55	obl:arg	_	_	*	180	6:180
 54	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	aux:pass	_	_	*	*	*
 55	impliqué	impliquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	39	acl:relcl	_	_	*	*	*
-56	Alain	Alain	PROPN	_	Gender=Masc|Number=Sing	55	nsubj:pass	_	_	*	*	*
-57	Juppé	Juppé	PROPN	_	_	56	flat:name	_	SpaceAfter=No	*	*	*
+56	Alain	Alain	PROPN	_	Gender=Masc|Number=Sing	55	nsubj:pass	_	_	*	181	*
+57	Juppé	Juppé	PROPN	_	_	56	flat:name	_	SpaceAfter=No	*	181	*
 58	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00216
@@ -585,64 +585,64 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00218
 # text = - Mairie de Paris
 1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
-2	Mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-3	de	de	ADP	_	_	4	case	_	_	*	*	*
-4	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	*	*
+2	Mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	182;183	2:183
+3	de	de	ADP	_	_	4	case	_	_	*	182;183	2:183
+4	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	182;183;184	2:183;29:184
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00219
 # text = - Affaire des HLM de Paris
-1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
-2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-3-4	des	_	_	_	_	_	_	_	_	*	*	*
-3	de	de	ADP	_	_	5	case	_	_	*	*	*
-4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	*	*
-5	HLM	HLM	NOUN	_	Number=Plur	2	nmod	_	_	*	*	*
-6	de	de	ADP	_	_	7	case	_	_	*	*	*
-7	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	*	*
+1	-	-	PUNCT	_	_	2	punct	_	_	*	183	2:183
+2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	183;185	2:183;2:185
+3-4	des	_	_	_	_	_	_	_	_	*	183;185;186	2:183;2:185
+3	de	de	ADP	_	_	5	case	_	_	*	183;185;186	2:183;2:185
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	183;185;186	2:183;2:185
+5	HLM	HLM	NOUN	_	Number=Plur	2	nmod	_	_	*	183;185;186	2:183;2:185
+6	de	de	ADP	_	_	7	case	_	_	*	183;185;186	2:183;2:185
+7	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	183;185;186;187	2:183;2:185;29:187
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00220
 # text = - Affaire des faux chargés de mission
 1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
-2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-3-4	des	_	_	_	_	_	_	_	_	*	*	*
-3	de	de	ADP	_	_	6	case	_	_	*	*	*
-4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	*	*
-5	faux	faux	ADJ	_	Gender=Masc	6	amod	_	_	*	*	*
-6	chargés	chargé	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	*	*
-7	de	de	ADP	_	_	8	case	_	_	*	*	*
-8	mission	mission	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	*	*
+2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	188	2:188
+3-4	des	_	_	_	_	_	_	_	_	*	188;189	2:188
+3	de	de	ADP	_	_	6	case	_	_	*	188;189	2:188
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	188;189	2:188
+5	faux	faux	ADJ	_	Gender=Masc	6	amod	_	_	*	188;189	2:188
+6	chargés	chargé	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	188;189	2:188
+7	de	de	ADP	_	_	8	case	_	_	*	188;189	2:188
+8	mission	mission	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	188;189;190	2:188;2:190
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00221
 # text = - Affaire de la SEMPAP (SEMPAP)
 1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
-2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-3	de	de	ADP	_	_	5	case	_	_	*	*	*
-4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	*	*
-5	SEMPAP	SEMPAP	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	*	*
-6	(	(	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
-7	SEMPAP	SEMPAP	PROPN	_	_	2	appos	_	SpaceAfter=No	*	*	*
+2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	191;192	2:191;2:192
+3	de	de	ADP	_	_	5	case	_	_	*	191;192	2:191;2:192
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	191;192;193;194	2:191;2:192;2:193;2:194
+5	SEMPAP	SEMPAP	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	191;192;193;194	2:191;2:192;2:193;2:194
+6	(	(	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	192;194;195	2:192;2:194
+7	SEMPAP	SEMPAP	PROPN	_	_	2	appos	_	SpaceAfter=No	*	192;194;195;196	2:192;2:194
 8	)	)	PUNCT	_	_	2	punct	_	_	*	*	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00222
 # text = Catégories : Financement illégal du RPR.
-1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	*	*
+1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	197	*
 2	:	:	PUNCT	_	_	1	punct	_	_	*	*	*
-3	Financement	financement	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
-4	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
-5-6	du	_	_	_	_	_	_	_	_	*	*	*
-5	de	de	ADP	_	_	7	case	_	_	*	*	*
-6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	*	*
-7	RPR	RPR	PROPN	_	_	3	nmod	_	SpaceAfter=No	*	*	*
+3	Financement	financement	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	198	21:198
+4	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	198	21:198
+5-6	du	_	_	_	_	_	_	_	_	*	199	21:199
+5	de	de	ADP	_	_	7	case	_	_	*	199	21:199
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	199	21:199
+7	RPR	RPR	PROPN	_	_	3	nmod	_	SpaceAfter=No	*	199	21:199
 8	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00223
 # text = Paris
-1	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+1	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_	*	200;201	33:200;21:201
 
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00224
 # text = - Histoire de Paris
-1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
-2	Histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
-3	de	de	ADP	_	_	4	case	_	_	*	*	*
-4	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	*	*
+1	-	-	PUNCT	_	_	2	punct	_	_	*	201	21:201
+2	Histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	201;202	21:201
+3	de	de	ADP	_	_	4	case	_	_	*	201;202	21:201
+4	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	201;202;203	21:201;33:203
 

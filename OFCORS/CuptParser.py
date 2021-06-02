@@ -161,8 +161,9 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     """
     cupt = Cupt(cupt_file)
 
-    # for key, value in cupt.tokens.items():
-    #     print(key, value)
+    ##NEW PRINT
+    for key, value in cupt.tokens.items():
+        print(key, value)
 
     ofcors_out = OfcorsOutput(token_file, cupt.tokens)
     mentions = Mentions(mention_file, ofcors_out)
@@ -220,12 +221,12 @@ def main3():
     """
     exemple d'usage
     """
-    cupt_file = "./blabla/blablaannote.config48.cupt"
-    token_file = "./blabla/ofcors_outputs/blabla_tokens.json"
-    mention_file = "./blabla/ofcors_outputs/blabla_mentions_output.json"
-    coref_file = "./blabla/ofcors_outputs/blabla_resulting_chains.json"
+    cupt_file = "./frwiki_mini/frwiki_5.cupt"
+    token_file = "./frwiki_mini/ofcors_outputs/frwiki_5_tokens.json"
+    mention_file = "./frwiki_mini/ofcors_outputs/frwiki_5_mentions_output.json"
+    coref_file = "./frwiki_mini/ofcors_outputs/frwiki_5_resulting_chains.json"
     cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
-    cupt.write_to_file("./blabla/test_out.cuptmc")
+    cupt.write_to_file("./frwiki_test.cuptmc")
 
 if __name__ == "__main__":
     main3()
