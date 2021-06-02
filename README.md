@@ -134,7 +134,7 @@ Vous devez vous trouver dans `Seen2Seen/CODE/`.
 
     python3 seen2seen.py
 
-À la fin du traitement, la meilleure configuration de filtres pour le français est donnée. Si elle est différente de 48 alors vous pouvez modifier la ligne 15 du `Seen2Seen/config.cfg` en remplaçant '48' par la nouvelle configuration.
+À la fin du traitement, la meilleure configuration de filtres pour le français est mise à jour automatiquement dans le fichier `Seen2Seen/config.cfg`.
 
 ### Lancement de Seen2seen en version annotation_ONLY
 Le répertoire du corpus à analyser doit se trouver dans `Seen2seen/INPUT/FR/`.  
