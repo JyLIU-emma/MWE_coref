@@ -214,6 +214,11 @@ class OfcorsOutput():
             token = tokens_cupt.get(str(i))["token_form"]
             token_mwt = tokens_cupt.get(str(i))["MWT"]
             token_o = tokens_ofcors.get(str(i_o))
+
+            ##NEW chiffre
+            token = delete_num_space(token)
+            token_o = delete_num_space(token_o)
+
             # NEW si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
             if token_o == "\n":
                 i_o += 1
@@ -226,7 +231,7 @@ class OfcorsOutput():
                 incoherent = False
                 i_mwt = 1  ##TODO
                 for i_item, item_mwt in enumerate(token_mwt):
-                    if item_mwt.lower() == token_o.lower():  # NEW i
+                    if item_mwt.lower() == token_o.lower():  # NEW
                         # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] #TODO: différencier l'indice des MWT et ses tokens?
                         dico_o[str(i_o)] = [str(i)]
                         if i_item != len(token_mwt)-1:
@@ -245,13 +250,17 @@ class OfcorsOutput():
                     print(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
                     break
                 else:  # longueur differentes
-                    if re.match("[0-9 ]", ): ##TODO
-                        pass
-                    elif len(token) > len(token_o):
+                    # if re.match("[0-9 ]", token_o): ##TODO
+                    #     token_o
+                    if len(token) > len(token_o):
                         while len(token) > len(token_o):
                             dico_o[str(i_o)] = [str(i)]
                             i_o += 1
-                            token_o = token_o + tokens_ofcors.get(str(i_o))
+                            # token_o = token_o + tokens_ofcors.get(str(i_o))
+
+                            ##NEW chiffre
+                            token_o = token_o + delete_num_space(tokens_ofcors.get(str(i_o)))
+
                         if len(token) != len(token_o) or token != token_o:
                             print(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})")
                             print("chaine de caractere combinee toujours differente, ne peut rien faire")
@@ -266,7 +275,9 @@ class OfcorsOutput():
                             else:
                                 dico_o[str(i_o)].append(str(i))
                             i += 1
-                            token = token + tokens_cupt.get(str(i))["token_form"]
+
+                            ##NEW chiffre
+                            token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
                         
                         if len(token) != len(token_o) or token != token_o:
                             print(f"token:{token}\ttoken_o:{token_o}")
@@ -277,6 +288,12 @@ class OfcorsOutput():
             i += 1
             i_o += 1
         self.tokens_i_paral = dico_o  # {'0': ['0'], '1': ['1'], '2': ['1'], '3': ['1'], '4': ['2'], '5': ['3'], '6': ['4'], '7': ['5', '6'], '8': ['7'], '9': ['8', '9']}
+
+def delete_num_space(string):
+    if re.match("[0-9 ]+", string):
+        string = re.sub(" ", "", string)
+    return string
+
 
 # def main():
 #     """
