@@ -151,7 +151,6 @@ class ExprPoly():
             # SCHÉMAS IDENTIQUES
             # MWE:[1, 1, 1]MENT:[1, 1, 1] || MWE:[1, *, 1, 1]MENT:[1, *, 1, 1]
             elif debut_mwe == debut_ment and fin_mwe == fin_ment:
-                print(liste_cas)
                 if len(liste_cas) > 0:  # La MWE est en plusieurs parties
                     if liste_cas[-1] == 2:  # MWE:[1, *, 1]MENT:[1, *, 1]
                         cas = 2
@@ -349,7 +348,11 @@ def span_schema(schema):
             encours = False
             fin = indice - 1
             liste_ind.append([debut, fin])
-
+        elif encours and indice == len(schema)-1:
+            # L'élément se finit en même temps que le schema
+            encours = False
+            fin = indice
+            liste_ind.append([debut, fin])
     return liste_ind
 
 
