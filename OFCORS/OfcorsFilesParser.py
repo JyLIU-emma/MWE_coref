@@ -4,6 +4,7 @@
 parser et unifier les 3 fichiers sorties de l'OFCORS
 """
 import json
+import re
 
 
 class Mention():
@@ -244,7 +245,9 @@ class OfcorsOutput():
                     print(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
                     break
                 else:  # longueur differentes
-                    if len(token) > len(token_o):
+                    if re.match("[0-9 ]", ): ##TODO
+                        pass
+                    elif len(token) > len(token_o):
                         while len(token) > len(token_o):
                             dico_o[str(i_o)] = [str(i)]
                             i_o += 1

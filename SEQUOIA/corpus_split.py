@@ -42,7 +42,8 @@ def get_sents_dico():
     for fic in files:
         with open(fic, "r") as filein:
             filein.readline()
-            texte = texte + filein.read().strip()
+            texte = texte + filein.read()
+    texte = texte[:-2]
 
     liste_sents = texte.split("\n\n")
     dico_sents = {}
