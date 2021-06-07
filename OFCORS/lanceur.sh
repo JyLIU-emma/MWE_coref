@@ -12,7 +12,7 @@ ofcors()
         do
             echo "--------------------------------------"
             echo $fichier
-            ofcors-infer -f -k stanza $fichier
+            ofcors-infer -f -k stanza -p combinations $fichier
 
             new_fichier=(${fichier//\// })
             new_fichier=(${new_fichier[1]//./ })

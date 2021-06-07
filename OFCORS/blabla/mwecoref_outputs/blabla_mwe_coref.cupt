@@ -8,8 +8,8 @@
 4	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
 5	garçon	garçon	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
 6	de	de	ADP	_	_	8	case	_	_	*	*	*
-7	14	14	NUM	_	_	8	nummod	_	_	*	2	*
-8	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*	2	*
+7	14	14	NUM	_	_	8	nummod	_	_	*	2	2:2
+8	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*	2	2:2
 9	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 2
@@ -19,40 +19,40 @@
 3	à	à	ADP	_	_	4	case	_	_	*	*	*
 4	Paris	Paris	PROPN	_	_	2	obl:arg	_	_	*	4	*
 5	avec	avec	ADP	_	_	7	case	_	_	*	*	*
-6	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*	5;6	6:5;6:6
-7	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	obl:mod	_	_	*	5;6	6:5;6:6
-8	et	et	CCONJ	_	_	11	cc	_	_	*	6	6:6
-9	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*	6;7	6:6;5:7
-10	petite	petit	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	6;7	6:6;5:7
-11	sœur	sœur	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	6;7	6:6;5:7
+6	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*	5;6	*
+7	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	obl:mod	_	_	*	5;6	*
+8	et	et	CCONJ	_	_	11	cc	_	_	*	6	*
+9	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*	6;7	7:7
+10	petite	petit	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	6;7	7:7
+11	sœur	sœur	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	6;7	7:7
 12	Julie	Julie	PROPN	_	_	11	appos	_	SpaceAfter=No	*	8	*
 13	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
 14	âgée	âgé	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	*	*
 15	de	de	ADP	_	_	17	case	_	_	*	*	*
-16	8	8	NUM	_	_	17	nummod	_	_	*	9	*
-17	ans	an	NOUN	_	Gender=Masc|Number=Plur	14	obl:arg	_	SpaceAfter=No	*	9	*
+16	8	8	NUM	_	_	17	nummod	_	_	*	9	2:9
+17	ans	an	NOUN	_	Gender=Masc|Number=Plur	14	obl:arg	_	SpaceAfter=No	*	9	2:9
 18	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 3
 # text = Toute la petite famille habite dans un grand appartement au 3ème étage d'un immeuble situé près de la Tour Eiffel.
-1	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	10	5:10
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	10	5:10
-3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	10	5:10
-4	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	10	5:10
+1	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	10	7:10
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	10	7:10
+3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	10	7:10
+4	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	10	7:10
 5	habite	habiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 6	dans	dans	ADP	_	_	9	case	_	_	*	*	*
-7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	11	0:11
-8	grand	grand	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	11	0:11
-9	appartement	appartement	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	11	0:11
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	11	3:11
+8	grand	grand	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	11	3:11
+9	appartement	appartement	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	11	3:11
 10-11	au	_	_	_	_	_	_	_	_	*	*	*
 10	à	à	ADP	_	_	13	case	_	_	*	*	*
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	*	*
 12	3ème	3ème	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*	*	*
 13	étage	étage	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	*	*
 14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*	*	*
-15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	12;13	0:12;0:13
-16	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	12;13	0:12;0:13
-17	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	_	*	13	0:13
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	12;13	3:12;3:13
+16	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	12;13	3:12;3:13
+17	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	_	*	13	3:13
 18	près	près	ADV	_	_	17	obl	_	_	*	*	*
 19	de	de	ADP	_	_	21	case	_	_	*	*	*
 20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	14;15	*
@@ -70,21 +70,21 @@
 6	privilège	privilège	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	1	17	*
 7	d'	de	ADP	_	_	8	mark	_	SpaceAfter=No	*	*	*
 8	admirer	admirer	VERB	_	VerbForm=Inf	6	acl	_	_	*	*	*
-9	chaque	chaque	DET	_	Gender=Masc|Number=Sing	10	det	_	_	*	18	3:18
-10	jour	jour	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*	18	3:18
+9	chaque	chaque	DET	_	Gender=Masc|Number=Sing	10	det	_	_	*	18	5:18
+10	jour	jour	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*	18	5:18
 11	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	19	*
-12	un	un	PRON	_	Gender=Masc|Number=Sing	8	obj	_	_	*	19;20	3:20
-13-14	des	_	_	_	_	_	_	_	_	*	19;20;21	3:20
-13	de	de	ADP	_	_	15	case	_	_	*	19;20;21	3:20
-14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	19;20;21	3:20
-15	monuments	monument	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*	19;20;21	3:20
-16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	advmod	_	_	*	19;20;21	3:20
-17	plus	plus	ADV	_	_	16	fixed	_	_	*	19;20;21	3:20
-18	visités	visiter	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*	19;20;21	3:20
-19-20	au	_	_	_	_	_	_	_	_	*	19;20;21;22	3:20;3:22
-19	à	à	ADP	_	_	21	case	_	_	*	19;20;21;22	3:20;3:22
-20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	19;20;21;22	3:20;3:22
-21	monde	monde	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	19;20;21;22	3:20;3:22
+12	un	un	PRON	_	Gender=Masc|Number=Sing	8	obj	_	_	*	19;20	5:20
+13-14	des	_	_	_	_	_	_	_	_	*	19;20;21	5:20
+13	de	de	ADP	_	_	15	case	_	_	*	19;20;21	5:20
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	19;20;21	5:20
+15	monuments	monument	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*	19;20;21	5:20
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	advmod	_	_	*	19;20;21	5:20
+17	plus	plus	ADV	_	_	16	fixed	_	_	*	19;20;21	5:20
+18	visités	visiter	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*	19;20;21	5:20
+19-20	au	_	_	_	_	_	_	_	_	*	19;20;21;22	5:20;1:22
+19	à	à	ADP	_	_	21	case	_	_	*	19;20;21;22	5:20;1:22
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	19;20;21;22	5:20;1:22
+21	monde	monde	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	19;20;21;22	5:20;1:22
 22	!	!	PUNCT	_	_	4	punct	_	SpacesAfter=\n\n	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 5
@@ -92,15 +92,15 @@
 1	Pour	pour	ADP	_	_	3	mark	_	_	*	*	*
 2	se	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	_	1:IRV	*	*
 3	rendre	rendre	VERB	_	VerbForm=Inf	9	advcl	_	_	1	*	*
-4-5	au	_	_	_	_	_	_	_	_	*	23;24	3:23;3:24
-4	à	à	ADP	_	_	6	case	_	_	*	23;24	3:23;3:24
-5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	23;24	3:23;3:24
-6	collège	collège	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No	*	23;24	3:23;3:24
-7	,	,	PUNCT	_	_	3	punct	_	_	*	24	3:24
-8	Pierre	Pierre	PROPN	_	_	9	nsubj	_	_	*	24;25	3:24
+4-5	au	_	_	_	_	_	_	_	_	*	23;24	1:23;1:24
+4	à	à	ADP	_	_	6	case	_	_	*	23;24	1:23;1:24
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	23;24	1:23;1:24
+6	collège	collège	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No	*	23;24	1:23;1:24
+7	,	,	PUNCT	_	_	3	punct	_	_	*	24	1:24
+8	Pierre	Pierre	PROPN	_	_	9	nsubj	_	_	*	24;25	1:24
 9	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	26	3:26
-11	métro	métro	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*	26	3:26
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	26	*
+11	métro	métro	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*	26	*
 12	à	à	ADP	_	_	14	case	_	_	*	*	*
 13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	27	*
 14	station	station	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*	27	*
@@ -108,18 +108,18 @@
 16	Militaire	militaire	PROPN	_	_	15	flat:name	_	_	*	27;28	*
 17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
 18	sort	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	*	*	*
-19-20	au	_	_	_	_	_	_	_	_	*	29	3:29
-19	à	à	ADP	_	_	21	case	_	_	*	29	3:29
-20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	29	3:29
-21	collège	collège	NOUN	_	Gender=Masc|Number=Sing	18	obl:arg	_	_	*	29	3:29
-22	Claude	Claude	PROPN	_	_	21	appos	_	_	*	29;30	3:29
-23	Debussy	Debussy	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*	29;30	3:29
+19-20	au	_	_	_	_	_	_	_	_	*	29	1:29
+19	à	à	ADP	_	_	21	case	_	_	*	29	1:29
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	29	1:29
+21	collège	collège	NOUN	_	Gender=Masc|Number=Sing	18	obl:arg	_	_	*	29	1:29
+22	Claude	Claude	PROPN	_	_	21	appos	_	_	*	29;30	1:29
+23	Debussy	Debussy	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*	29;30	1:29
 24	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 6
 # text = Le trajet ne dure que 20 minutes !
-1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	31	7:31
-2	trajet	trajet	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	31	7:31
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	31	4:31
+2	trajet	trajet	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	31	4:31
 3	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
 4	dure	durer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 5	que	que	ADV	_	_	7	advmod	_	_	*	*	*
@@ -129,10 +129,10 @@
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 7
 # text = Le week-end, Pierre aime passer du temps en famille.
-1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	33;34	7:33;7:34
-2	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	33;34	7:33;7:34
-3	,	,	PUNCT	_	_	2	punct	_	_	*	34	7:34
-4	Pierre	Pierre	PROPN	_	_	5	nsubj	_	_	*	34;35	7:34
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	33;34	4:33;4:34
+2	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	33;34	4:33;4:34
+3	,	,	PUNCT	_	_	2	punct	_	_	*	34	4:34
+4	Pierre	Pierre	PROPN	_	_	5	nsubj	_	_	*	34;35	4:34
 5	aime	aimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 6	passer	passer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
 7-8	du	_	_	_	_	_	_	_	_	*	36	*
@@ -140,7 +140,7 @@
 8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	36	*
 9	temps	temps	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*	36	*
 10	en	en	ADP	_	_	11	case	_	_	*	*	*
-11	famille	famille	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	37	*
+11	famille	famille	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	37	7:37
 12	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 8
@@ -207,31 +207,31 @@
 19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*	48	*
 20	vivent	vivre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_	*	*	*
 21	dans	dans	ADP	_	_	23	case	_	_	*	*	*
-22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	49	2:49
-23	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	20	obl:arg	_	_	*	49	2:49
-24	de	de	ADP	_	_	26	case	_	_	*	49	2:49
-25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	49;50	2:49;2:50
-26	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*	49;50	2:49;2:50
-27	normande	normand	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	SpaceAfter=No	*	49;50	2:49;2:50
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	49	*
+23	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	20	obl:arg	_	_	*	49	*
+24	de	de	ADP	_	_	26	case	_	_	*	49	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	49;50	*
+26	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*	49;50	*
+27	normande	normand	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	SpaceAfter=No	*	49;50	*
 28	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri blabla.txt 10
 # text = Toute la petite famille apprécie alors l'air pur, la nature et le calme pendant quelques semaines avant de rentrer à Paris.
-1	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	51	1:51
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	51	1:51
-3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	51	1:51
-4	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	51	1:51
+1	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	51	0:51
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	51	0:51
+3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	51	0:51
+4	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	51	0:51
 5	apprécie	apprécier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 6	alors	alors	ADV	_	_	5	advmod	_	_	*	*	*
 7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	52	*
 8	air	air	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	52	*
 9	pur	pur	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No	*	52	*
 10	,	,	PUNCT	_	_	12	punct	_	_	*	52	*
-11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	52;53;54	1:53;1:54
-12	nature	nature	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	52;53;54	1:53;1:54
-13	et	et	CCONJ	_	_	15	cc	_	_	*	52;54	1:54
-14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	52;54;55	1:54;4:55
-15	calme	calme	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*	52;54;55	1:54;4:55
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	52;53;54	0:53
+12	nature	nature	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	52;53;54	0:53
+13	et	et	CCONJ	_	_	15	cc	_	_	*	52;54	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	52;54;55	6:55
+15	calme	calme	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*	52;54;55	6:55
 16	pendant	pendant	ADP	_	_	18	case	_	_	*	*	*
 17	quelques	quelque	DET	_	Gender=Fem|Number=Plur	18	det	_	_	*	56	*
 18	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*	56	*
@@ -239,5 +239,5 @@
 20	de	de	ADP	_	_	21	mark	_	_	*	*	*
 21	rentrer	rentrer	VERB	_	VerbForm=Inf	19	ccomp	_	_	*	*	*
 22	à	à	ADP	_	_	23	case	_	_	*	*	*
-23	Paris	Paris	PROPN	_	_	21	obl:arg	_	SpaceAfter=No	*	57	4:57
-24	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*	57	4:57
+23	Paris	Paris	PROPN	_	_	21	obl:arg	_	SpaceAfter=No	*	57	6:57
+24	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*	57	6:57
