@@ -47,7 +47,7 @@ class Cupt():
                     self.tokens[str(token_i)]["MWT"].append(token)    # NEW_V3 add token of MWT in liste
                 else:
                     token_i += 1
-                    self.tokens[str(token_i)] = {"token_form":token, "MWT":[]}  # NEW_V3  forme exemple pour un token: {'token': 'au', 'MWT': ['à', 'le']}
+                    self.tokens[str(token_i)] = {"token_form":token, "MWT":[], "indice_cupt":no_token_sent}  # NEW_V3  forme exemple pour un token: {'token': 'au', 'MWT': ['à', 'le']}
 
                 self.lignes[numero_ligne] = Ligne(numero_ligne, str(token_i), ligne.strip(), token)
 
@@ -159,13 +159,13 @@ def main2():
     """
     Tester dictionnaire Cupt.tokens
     """
-    cupt_file = "./blabla/blablaannote.config48.cupt"
+    cupt_file = "./blabla/blabla_annote.config48.cupt"
     cupt = Cupt(cupt_file)
     print(cupt.tokens)
 
     # Cupt.tokens
-    # for key, value in cupt.tokens.items():
-    #     print(key, value)
+    for key, value in cupt.tokens.items():
+        print(key, value)
 
     # Cupt.lignes
     # for i_ligne, ligne in cupt.lignes.items():
@@ -191,4 +191,4 @@ def main():
     cupt.write_to_file("./a_debug_test.cuptmc")
 
 if __name__ == "__main__":
-    main()
+    main2()
