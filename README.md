@@ -35,16 +35,14 @@ Pour plus de détails, référez-vous au README d'OFCORS : [Lien vers OFCORS](ht
 * Clonez le repository d'OFCORS : `git clone https://gitlab.com/Stanoy/ofcors.git`
 * Installez flit si besoin : `pip install flit`
 * Rendez-vous dans le répertoire ofcors : `cd ofcors`
+* `pip install -r requirements.txt`
 * `flit build --format wheel`
-* `pip install dist/ofcors-X.Y.Z-py3-none-any.whl`  
-Ofcors est installé!
-* Téléchargez les modèles d'OFCORS : [models.zip](https://gitlab.com/Stanoy/ofcors/-/releases/v0.4.4)
+* `pip install dist/ofcors-X.Y.Z-py3-none-any.whl`
+* Téléchargez les modèles d'OFCORS : [models.zip](https://gitlab.com/Stanoy/ofcors/-/releases/)
 * Déplacez le dossier `models` dans `ofcors/models`
-* N'oubliez pas d'installer les modèles de Spacy (`python -m spacy download fr_core_news_lg`) et de Stanza (`python3`, `import stanza`, `stanza.download('fr')`)
-* Lancez ofcors sur une phrase : `ofcors-infer "Ainsi, Pierre a le privilège d'admirer chaque jour l'un des monuments les plus visités au monde !"`
-* Sortez d'Ofcors : `cd ..`
-* Si vous n'avez pas cloné notre repository : `git clone https://github.com/anaelle-p/MWE_coref`
-* Récupérez les fichiers dont OFCORS a besoin : `cp -r ofcors/ofcors_outputs/ MWE_coref/OFCORS/ofcors_outputs`  
+* N'oubliez pas d'installer les modèles de Spacy (`python -m spacy download fr_core_news_lg`) et de Stanza (`python3`, `import stanza`, `stanza.download('fr')`)  
+Ofcors est installé!
+* Si vous n'avez pas cloné notre repository : sortez du repository d'OFCORS et `git clone https://github.com/anaelle-p/MWE_coref`  
 Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est expliqué plus bas.
 
 ## Choix de corpus
