@@ -9,6 +9,8 @@ Args:
 
 import glob
 import argparse
+import re
+import json
 
 # -------------------------- CLASSES --------------------------
 
@@ -276,8 +278,9 @@ def phrase_mwe(phrase, id_fichier, dico_coref):
         mwes = ligne[10]
         mention = ligne[11]
         corefs = ligne[12]
-        schema_mwe.append(mwes)
-        schema_mention.append(mention)
+        if not re.search(r"^([0-9]+)-([0-9]+)$", ligne[0]):
+            schema_mwe.append(mwes)
+            schema_mention.append(mention)
         if mwes != "*":
             for mwe in mwes.split(';'):
                 infos = mwe.split(':')
@@ -356,7 +359,7 @@ def span_schema(schema):
     return liste_ind
 
 
-# ----------------------- FONCTIONS (AFFICHAGE) -----------------------
+# -------------------- FONCTIONS (AFFICHAGE et ECRITURE) --------------------
 
 
 def affichage_infos(liste_typexp):
@@ -412,6 +415,41 @@ def affichage_stats_coref(liste_typexp):
     print(f"TOTAL\n==========>{nb_coref_total}/{total}\n")
 
 
+def ecriture_stats_coref(liste_typexp, fichier):
+    """
+    Écrit le nombre de MWEs faisant partie d'une chaîne de coréférence par
+    type et total, ainsi que les information sur ces MWEs (texte, tokens,
+    coref, cas et chaines) dans un fichier json.
+    """
+    dico_final = {}
+    for typexp in liste_typexp:
+        dico_final[typexp.type_mwe] = {"TYPE": typexp.type_mwe,
+                                       "COREF": "",
+                                       "MWES": []}
+        nb_coref = 0
+        for expoly in typexp.mwes:
+            coref = len([el for el in expoly.coref if el != "*"])
+            if coref > 0:
+                nb_coref += 1
+                infos_chaines = {}
+                for cle, chaine in expoly.chaines.items():
+                    infos_chaines[cle] = str(chaine)
+                infos_mwe = {
+                             "FICHIER": expoly.id_fichier,
+                             "PHRASE": expoly.phrase,
+                             "TOKENS": str(expoly.tokens),
+                             "COREF": str(expoly.coref),
+                             "CAS": str(expoly.cas),
+                             "CHAINE(S)": infos_chaines
+                            }
+                dico_final[typexp.type_mwe]["MWES"].append(infos_mwe)
+            dico_final[typexp.type_mwe]["COREF"] = f"{nb_coref}/{len(typexp.mwes)}"
+
+    with open(fichier, 'w') as fileout:
+        json.dump(dico_final, fileout, indent=4, ensure_ascii=False,
+                  sort_keys=False)
+
+
 # --------------------------- MAIN ---------------------------
 
 
@@ -422,6 +460,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description="fichier")
     parser.add_argument("rep", help="répertoire des cupt+")
+    parser.add_argument("-out", help="fichier sortie pour les résultats")
     args = parser.parse_args()
 
     repertoire = Repertoire(args.rep)
@@ -432,6 +471,8 @@ def main():
     affichage_infos(repertoire.liste_type)
     affichage_stats_globales(repertoire.liste_type)
     affichage_stats_coref(repertoire.liste_type)
+    if args.out:
+        ecriture_stats_coref(repertoire.liste_type, args.out)
 
 
 if __name__ == "__main__":

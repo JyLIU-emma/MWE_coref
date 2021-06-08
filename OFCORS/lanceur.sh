@@ -1,10 +1,11 @@
 #!/bin/bash
 # Anaëlle Pierredon et Jianying Liu
 
-# ./lanceur.sh -os phrases/ 
+# ./lanceur.sh -os phrases/ [fichier_resultats]
 # Dans phrases/ se trouve les fichiers txt à analyser par OFCORS
 # La sortie d'OFCORS se trouve dans phrases/ofcors_outputs/
 # La sortie de merge_s2s_ofcors se trouve dans phrases/mwecoref_outputs/
+# Le fichier de résultats est optionnel
 
 ofcors()
 {
@@ -50,7 +51,12 @@ then
     echo "PYTHON"
     mkdir ./$2mwecoref_outputs/
     mwecoref "$2"
-    python3 statistiques.py $2mwecoref_outputs/
+    if [ $3 ]
+    then
+        python3 statistiques.py $2mwecoref_outputs/ -out $3
+    else
+        python3 statistiques.py $2mwecoref_outputs/
+    fi
 elif [ $1 == "-o" ]
 then
     mkdir ./$2ofcors_outputs/
@@ -59,7 +65,12 @@ elif [ $1 == "-s" ]
 then
     mkdir ./$2mwecoref_outputs/
     mwecoref "$2"
-    python3 statistiques.py $2mwecoref_outputs/
+    if [ $3 ]
+    then
+        python3 statistiques.py $2mwecoref_outputs/ -out $3
+    else
+        python3 statistiques.py $2mwecoref_outputs/
+    fi
 else
     echo " Cette option n'existe pas. "
     echo " -o : lance ofcors-infer "
