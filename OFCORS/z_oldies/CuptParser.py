@@ -91,7 +91,7 @@ class Cupt():
                 #c'est un token
                 if ligne.i_token != -1 :
                     # token n'est pas une mention
-                    if ligne.coref == {} or re.search(r"^([0-9]+)-([0-9]+)$", ligne.content.split('\t')[0]):  # NEW_A1 : pas d'annotation sur le contracté
+                    if ligne.coref == {}:
                         print(ligne.content + "\t*\t*", file=file_out)                 
                     # token est une mention
                     else:
@@ -191,4 +191,4 @@ def main():
     cupt.write_to_file("./a_debug_test.cuptmc")
 
 if __name__ == "__main__":
-    main()
+    main2()
