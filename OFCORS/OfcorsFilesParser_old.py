@@ -220,94 +220,73 @@ class OfcorsOutput():
             token_o = delete_num_space(token_o)
 
             # NEW si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
-            try:
-                if token_o == "\n":
-                    i_o += 1
-                    continue
-                # chaine identique
-                elif token == token_o:
-                    dico_o[str(i_o)] = [str(i)]
-                # multi-word token, comme article contracte
-                elif token_mwt != []:
-                    # incoherent = False
-                    i_mwt = 1  ##TODO
-                    for i_item, item_mwt in enumerate(token_mwt):
-                        if item_mwt.lower() == token_o.lower():  # NEW
-                            # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] #TODO: différencier l'indice des MWT et ses tokens?
-                            dico_o[str(i_o)] = [str(i)]
-                            if i_item != len(token_mwt)-1:
-                                i_o += 1
-                                token_o = tokens_ofcors.get(str(i_o))
-                        else:
-                            # print(f"Le composant ('{token_o}' et '{item_mwt}') du MWT '{token}' à l'indice {i_o} de l'ofcors ne se décompose pas de la même manière")
-                            raise Alignementerror(f"Le composant ('{token_o}' et '{item_mwt}') du MWT '{token}' à l'indice {i_o} de l'ofcors ne se décompose pas de la même manière")
-                            # incoherent = True
-                            # break  # arrêter la comparaison des MWT
-                    
-                    # if incoherent:
-                    #     break  # arrêter l'alignement, pas besoin de continuer
-                # chaine non identique
-                else:
-                    if len(token) == len(token_o):
-                        # print(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
-                        raise Alignementerror(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
-                        # break
-                    else:  # longueur differentes
-                        # if re.match("[0-9 ]", token_o): ##TODO
-                        #     token_o
-                        if len(token) > len(token_o):
-                            while len(token) > len(token_o):
-                                dico_o[str(i_o)] = [str(i)]
-                                i_o += 1
-                                # token_o = token_o + tokens_ofcors.get(str(i_o))
-
-                                ##NEW chiffre
-                                token_o = token_o + delete_num_space(tokens_ofcors.get(str(i_o)))
-
-                            if len(token) != len(token_o) or token != token_o:
-                                raise Alignementerror(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})\nchaine de caractere combinee toujours differente, ne peut rien faire")
-                                # print(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})")
-                                # print("chaine de caractere combinee toujours differente, ne peut rien faire")
-                                # break
-                            elif token == token_o:
-                                dico_o[str(i_o)] = [str(i)]
-
-                        else:  #  len(token) < len(token_o)
-                            while len(token) < len(token_o):
-                                if not dico_o.get(str(i_o)):
-                                    dico_o[str(i_o)] = [str(i)]
-                                else:
-                                    dico_o[str(i_o)].append(str(i))
-                                i += 1
-
-                                ##NEW chiffre
-                                token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
-                            
-                            if len(token) != len(token_o) or token != token_o:
-                                raise Alignementerror(f"token:{token}\ttoken_o:{token_o}\nchaine de caractere combinee toujours differente, ne peut rien faire")
-                                # print(f"token:{token}\ttoken_o:{token_o}")
-                                # print("chaine de caractere combinee toujours differente, ne peut rien faire")
-                                # break
-                            elif token == token_o:
-                                dico_o[str(i_o)].append(str(i))
-                    # print("here1")
-                # dans la branche try
-                i += 1
+            if token_o == "\n":
                 i_o += 1
-
-            except Alignementerror as e:
-                print(e.msg)
-                print("recommencer depuis la phrase suivante")
-                while tokens_cupt.get(str(i))["indice_cupt"] != "1":
-                    i += 1
-                token = delete_num_space(tokens_cupt.get(str(i))["token_form"])
+                continue
+            # chaine identique
+            elif token == token_o:
+                dico_o[str(i_o)] = [str(i)]
+            # multi-word token, comme article contracte
+            elif token_mwt != []:
+                incoherent = False
+                i_mwt = 1  ##TODO
+                for i_item, item_mwt in enumerate(token_mwt):
+                    if item_mwt.lower() == token_o.lower():  # NEW
+                        # dico_o[str(i_o)] = [f"{str(i)}-{str(i_mwt)}"] #TODO: différencier l'indice des MWT et ses tokens?
+                        dico_o[str(i_o)] = [str(i)]
+                        if i_item != len(token_mwt)-1:
+                            i_o += 1
+                            token_o = tokens_ofcors.get(str(i_o))
+                    else:
+                        print(f"Le composant ('{token_o}' et '{item_mwt}') du MWT '{token}' à l'indice {i_o} de l'ofcors ne se décompose pas de la même manière")
+                        incoherent = True
+                        break  # arrêter la comparaison des MWT
                 
-                while token != token_o:
-                    i_o += 1
-                    token_o = delete_num_space(tokens_ofcors.get(str(i_o)))
+                if incoherent:
+                    break  # arrêter l'alignement, pas besoin de continuer
+            # chaine non identique
+            else:
+                if len(token) == len(token_o):
+                    print(f"chaine de caractere differente (cupt: {token}, ofcors: {token_o}), ne peut rien faire")
+                    break
+                else:  # longueur differentes
+                    # if re.match("[0-9 ]", token_o): ##TODO
+                    #     token_o
+                    if len(token) > len(token_o):
+                        while len(token) > len(token_o):
+                            dico_o[str(i_o)] = [str(i)]
+                            i_o += 1
+                            # token_o = token_o + tokens_ofcors.get(str(i_o))
 
-                print(f"here: token ({token}, {i}), token_o ({token_o}, {i_o})")
-            
+                            ##NEW chiffre
+                            token_o = token_o + delete_num_space(tokens_ofcors.get(str(i_o)))
+
+                        if len(token) != len(token_o) or token != token_o:
+                            print(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})")
+                            print("chaine de caractere combinee toujours differente, ne peut rien faire")
+                            break
+                        elif token == token_o:
+                            dico_o[str(i_o)] = [str(i)]
+
+                    else:  #  len(token) < len(token_o)
+                        while len(token) < len(token_o):
+                            if not dico_o.get(str(i_o)):
+                                dico_o[str(i_o)] = [str(i)]
+                            else:
+                                dico_o[str(i_o)].append(str(i))
+                            i += 1
+
+                            ##NEW chiffre
+                            token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
+                        
+                        if len(token) != len(token_o) or token != token_o:
+                            print(f"token:{token}\ttoken_o:{token_o}")
+                            print("chaine de caractere combinee toujours differente, ne peut rien faire")
+                            break
+                        elif token == token_o:
+                            dico_o[str(i_o)].append(str(i))
+            i += 1
+            i_o += 1
         self.tokens_i_paral = dico_o  # {'0': ['0'], '1': ['1'], '2': ['1'], '3': ['1'], '4': ['2'], '5': ['3'], '6': ['4'], '7': ['5', '6'], '8': ['7'], '9': ['8', '9']}
 
 def delete_num_space(string):
@@ -315,9 +294,6 @@ def delete_num_space(string):
         string = re.sub(" ", "", string)
     return string
 
-class Alignementerror(Exception):
-    def __init__(self, msg):
-        self.msg = msg
 
 # def main():
 #     """
