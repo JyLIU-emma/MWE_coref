@@ -149,10 +149,10 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
 
     ofcors_out = OfcorsOutput(token_file, cupt.tokens)
     mentions = Mentions(mention_file, ofcors_out)
-    
+
     ##NEW PRINT
     print("Mentions omis:")
-    for i, m in mentions.omit_ments.items():
+    for i, m in mentions.ments_omis.items():
         print(i, ":", m["CONTENT"])
     
     coref = CorefChaines(coref_file)
@@ -182,9 +182,9 @@ def main():
     """
     exemple d'usage
     """
-    cupt_file = "./SEQUOIA_emea/emea_1.cupt"
-    token_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_tokens.json"
-    mention_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_mentions_output.json"
+    cupt_file = "./SEQUOIA_emea/emea_2.cupt"
+    token_file = "./SEQUOIA_emea/ofcors_outputs/emea_2_tokens.json"
+    mention_file = "./SEQUOIA_emea/ofcors_outputs/emea_2_mentions_output.json"
     coref_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_resulting_chains.json"
     cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
     cupt.write_to_file("./a_debug_test.cuptmc")
