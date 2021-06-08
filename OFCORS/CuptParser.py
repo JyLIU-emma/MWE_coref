@@ -151,9 +151,10 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     mentions = Mentions(mention_file, ofcors_out)
 
     ##NEW PRINT
-    print("Mentions omis:")
-    for i, m in mentions.ments_omis.items():
-        print(i, ":", m["CONTENT"])
+    if mentions.ments_omis != {}:
+        print("Mentions omises:")
+        for i, m in mentions.ments_omis.items():
+            print(i, ":", m["CONTENT"])
     
     coref = CorefChaines(coref_file)
     mentions.chainer(coref.ment_cluster)

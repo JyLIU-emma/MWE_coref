@@ -2,7 +2,7 @@
 # source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00225
 # text = Affaire des faux chargés de mission
 1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1	*
-2-3	des	_	_	_	_	_	_	_	_	*	1;2	*
+2-3	des	_	_	_	_	_	_	_	_	*	*	*
 2	de	de	ADP	_	_	5	case	_	_	*	1;2	*
 3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	1;2	*
 4	faux	faux	ADJ	_	Gender=Masc	5	amod	_	_	*	1;2	*
@@ -14,18 +14,18 @@
 # text = L'affaire des faux chargés de mission du cabinet du maire de Paris est une affaire d'emplois fictifs connexe aux différentes affaires politico-financières de la ville de Paris et du financement illégal du RPR.
 1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	5	*
 2	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*	5	*
-3-4	des	_	_	_	_	_	_	_	_	*	5;6	1:6
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
 3	de	de	ADP	_	_	6	case	_	_	*	5;6	1:6
 4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	5;6	1:6
 5	faux	faux	ADJ	_	Gender=Masc	6	amod	_	_	*	5;6	1:6
 6	chargés	chargé	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	5;6	1:6
 7	de	de	ADP	_	_	8	case	_	_	*	5;6	1:6
 8	mission	mission	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	5;6;7;8	1:6;5:8
-9-10	du	_	_	_	_	_	_	_	_	*	5;6;8;9	1:6;5:8
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
 9	de	de	ADP	_	_	11	case	_	_	*	5;6;8;9	1:6;5:8
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	5;6;8;9	1:6;5:8
 11	cabinet	cabinet	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	5;6;8;9	1:6;5:8
-12-13	du	_	_	_	_	_	_	_	_	*	5;6;8;9;10	1:6;5:8
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
 12	de	de	ADP	_	_	14	case	_	_	*	5;6;8;9;10	1:6;5:8
 13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	5;6;8;9;10	1:6;5:8
 14	maire	maire	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	5;6;8;9;10	1:6;5:8
@@ -38,7 +38,7 @@
 21	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_	*	12;13;14	*
 22	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*	12;13;14	*
 23	connexe	connexe	ADJ	_	Number=Sing	19	amod	_	_	*	*	*
-24-25	aux	_	_	_	_	_	_	_	_	*	15	*
+24-25	aux	_	_	_	_	_	_	_	_	*	*	*
 24	à	à	ADP	_	_	27	case	_	_	*	15	*
 25	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*	15	*
 26	différentes	différent	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	_	*	15	*
@@ -50,12 +50,12 @@
 32	de	de	ADP	_	_	33	case	_	_	*	15;16	*
 33	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*	15;16;17	*
 34	et	et	CCONJ	_	_	37	cc	_	_	*	*	*
-35-36	du	_	_	_	_	_	_	_	_	*	18	*
+35-36	du	_	_	_	_	_	_	_	_	*	*	*
 35	de	de	ADP	_	_	37	case	_	_	*	18	*
 36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*	18	*
 37	financement	financement	NOUN	_	Gender=Masc|Number=Sing	31	conj	_	_	*	18	*
 38	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	37	amod	_	_	*	18	*
-39-40	du	_	_	_	_	_	_	_	_	*	18;19	*
+39-40	du	_	_	_	_	_	_	_	_	*	*	*
 39	de	de	ADP	_	_	41	case	_	_	*	18;19	*
 40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	18;19	*
 41	RPR	RPR	PROPN	_	_	37	nmod	_	SpaceAfter=No	*	18;19	*
@@ -127,11 +127,11 @@
 17	Debré	Debré	PROPN	_	_	16	flat:name	_	_	*	48;49;50	12:48;3:49;3:50
 18	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	49;50;51	3:49;3:50
 19	frère	frère	NOUN	_	Gender=Masc|Number=Sing	16	appos	_	_	*	49;50;51	3:49;3:50
-20-21	du	_	_	_	_	_	_	_	_	*	49;50;51;52;53	3:49;3:50;11:52;3:53
+20-21	du	_	_	_	_	_	_	_	_	*	*	*
 20	de	de	ADP	_	_	22	case	_	_	*	49;50;51;52;53	3:49;3:50;11:52;3:53
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	49;50;51;52;53	3:49;3:50;11:52;3:53
 22	président	président	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*	49;50;51;52;53	3:49;3:50;11:52;3:53
-23-24	du	_	_	_	_	_	_	_	_	*	49;50;51;52;53;54;55	3:49;3:50;11:52;3:53;11:55
+23-24	du	_	_	_	_	_	_	_	_	*	*	*
 23	de	de	ADP	_	_	25	case	_	_	*	49;50;51;52;53;54;55	3:49;3:50;11:52;3:53;11:55
 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	49;50;51;52;53;54;55	3:49;3:50;11:52;3:53;11:55
 25	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	49;50;51;52;53;54;55	3:49;3:50;11:52;3:53;11:55
@@ -168,12 +168,12 @@
 5	de	de	ADP	_	_	7	case	_	_	*	*	*
 6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	66	*
 7	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	66	*
-8-9	des	_	_	_	_	_	_	_	_	*	66;67	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
 8	de	de	ADP	_	_	10	case	_	_	*	66;67	*
 9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	66;67	*
 10	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*	66;67	*
 11	fictifs	fictif	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*	66;67	*
-12-13	du	_	_	_	_	_	_	_	_	*	66;67;68	2:68
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
 12	de	de	ADP	_	_	14	case	_	_	*	66;67;68	2:68
 13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	66;67;68	2:68
 14	RPR	RPR	PROPN	_	_	10	nmod	_	_	*	66;67;68	2:68
@@ -224,7 +224,7 @@
 7	de	de	ADP	_	_	9	case	_	_	*	79	4:79
 8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	79;80	4:79
 9	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	79;80	4:79
-10-11	du	_	_	_	_	_	_	_	_	*	79;80;81	4:79
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
 10	de	de	ADP	_	_	12	case	_	_	*	79;80;81	4:79
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	79;80;81	4:79
 12	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	79;80;81	4:79
@@ -236,7 +236,7 @@
 18	mise	mise	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*	83;84	4:83;4:84
 19	en	en	ADP	_	_	20	case	_	_	*	83;84	4:83;4:84
 20	examen	examen	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*	83;84	4:83;4:84
-21-22	des	_	_	_	_	_	_	_	_	*	83;84;85;86;87	4:83;4:84
+21-22	des	_	_	_	_	_	_	_	_	*	*	*
 21	de	de	ADP	_	_	23	case	_	_	*	83;84;85;86;87	4:83;4:84
 22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	83;84;85;86;87	4:83;4:84
 23	directeurs	directeur	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*	83;84;85;86;87	4:83;4:84
@@ -281,7 +281,7 @@
 # text = - Affaire des emplois fictifs de la mairie de Paris
 1	-	-	PUNCT	_	_	2	punct	_	_	*	101	*
 2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	101;102	*
-3-4	des	_	_	_	_	_	_	_	_	*	101;102;103	*
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
 3	de	de	ADP	_	_	5	case	_	_	*	101;102;103	*
 4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	101;102;103	*
 5	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	101;102;103	*
@@ -298,7 +298,7 @@
 2	:	:	PUNCT	_	_	1	punct	_	_	*	106	*
 3	Financement	financement	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	106;107	*
 4	illégal	illégal	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	106;107	*
-5-6	du	_	_	_	_	_	_	_	_	*	106;107;108	0:108
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
 5	de	de	ADP	_	_	7	case	_	_	*	106;107;108	0:108
 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	106;107;108	0:108
 7	RPR	RPR	PROPN	_	_	3	nmod	_	SpaceAfter=No	*	*	*
