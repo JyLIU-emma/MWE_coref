@@ -13,7 +13,7 @@ ofcors()
         do
             echo "--------------------------------------"
             echo $fichier
-            ofcors-infer -f -k stanza -p window $fichier
+            ofcors-infer -f -k stanza -p window --window-size 8 $fichier
 
             new_fichier=(${fichier//\// })
             new_fichier=(${new_fichier[1]//./ })
