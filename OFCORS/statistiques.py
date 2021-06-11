@@ -241,7 +241,7 @@ class Repertoire():
             fichiers du répertoire.
         """
         liste_phrases = {}
-        for fichier in glob.glob(f"{self.repertoire}*"):
+        for fichier in glob.glob(f"{self.repertoire}*.cupt"):
             id_fichier = fichier.split('/')[-1]
             with open(fichier, 'r') as entree:
                 sortie = entree.read().split('\n\n')
