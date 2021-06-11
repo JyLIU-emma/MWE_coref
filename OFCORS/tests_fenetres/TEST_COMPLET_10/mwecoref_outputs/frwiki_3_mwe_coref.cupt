@@ -1,0 +1,925 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00079
+# text = Affaire des couveuses au Koweït
+1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1;2	6:1;9:2
+2-3	des	_	_	_	_	_	_	_	_	*	*	*
+2	de	de	ADP	_	_	4	case	_	_	*	1;2;3;4	6:1;9:2;6:4
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	1;2;3;4	6:1;9:2;6:4
+4	couveuses	couveuse	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*	1;2;3;4	6:1;9:2;6:4
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	2;4;5	9:2;6:4
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	2;4;5	9:2;6:4
+7	Koweït	Koweït	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	2;4;5	9:2;6:4
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00080
+# text = L'affaire des couveuses en Irak s'est déroulée le 10 octobre 1990, lors de l'invasion du Koweït par les armées de Saddam Hussein et était destinée à justifier l'entrée en guerre des puissances occidentales contre l'Irak auprès de l'opinion publique.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	6	9:6
+2	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	6	9:6
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	6;7;8	9:6;6:7;6:8
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	6;7;8	9:6;6:7;6:8
+5	couveuses	couveuse	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	6;7;8	9:6;6:7;6:8
+6	en	en	ADP	_	_	7	case	_	_	*	6;8	9:6;6:8
+7	Irak	Irak	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	6;8;9	9:6;6:8
+8	s'	se	PRON	_	Person=3|Reflex=Yes	10	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	déroulée	dérouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	10	*
+12	10	10	NUM	_	NumType=Card	10	obl:mod	_	_	*	10	*
+13	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	10	*
+14	1990	1990	NUM	_	NumType=Card	13	nmod	_	SpaceAfter=No	*	10	*
+15	,	,	PUNCT	_	_	10	punct	_	_	*	10	*
+16	lors	lors	ADV	_	_	10	obl:arg	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	*	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*	11	*
+19	invasion	invasion	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*	11	*
+20-21	du	_	_	_	_	_	_	_	_	*	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	11;12	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	11;12	*
+22	Koweït	Koweït	PROPN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*	11;12	*
+23	par	par	ADP	_	_	25	case	_	_	*	*	*
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	_	*	13	*
+25	armées	armée	NOUN	_	Gender=Fem|Number=Plur	22	nmod	_	_	*	13	*
+26	de	de	ADP	_	_	27	case	_	_	*	13	*
+27	Saddam	Saddam	PROPN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*	13;14	*
+28	Hussein	Hussein	PROPN	_	Gender=Masc|Number=Sing	27	flat:name	_	_	*	13;14	*
+29	et	et	CCONJ	_	_	31	cc	_	_	*	*	*
+30	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	31	aux:pass	_	_	*	*	*
+31	destinée	destiner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	10	conj	_	_	*	*	*
+32	à	à	ADP	_	_	33	mark	_	_	*	*	*
+33	justifier	justifier	VERB	_	VerbForm=Inf	31	xcomp	_	_	*	*	*
+34	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*	15	*
+35	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	33	obj	_	_	*	15	*
+36	en	en	ADP	_	_	37	case	_	_	*	15	*
+37	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	_	*	15;16	6:16
+38-39	des	_	_	_	_	_	_	_	_	*	*	*
+38	de	de	ADP	_	_	40	case	_	_	*	15;16;17;18	6:16
+39	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	40	det	_	_	*	15;16;17;18	6:16
+40	puissances	puissance	NOUN	_	Gender=Fem|Number=Plur	35	nmod	_	_	*	15;16;17;18	6:16
+41	occidentales	occidental	ADJ	_	Gender=Fem|Number=Plur	40	amod	_	_	*	15;16;17;18	6:16
+42	contre	contre	ADP	_	_	44	case	_	_	*	18	*
+43	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	44	det	_	SpaceAfter=No	*	18;19	*
+44	Irak	Irak	PROPN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*	18;19	*
+45	auprès	auprès	ADV	_	_	33	advmod	_	_	*	*	*
+46	de	de	ADP	_	_	48	case	_	_	*	*	*
+47	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	48	det	_	SpaceAfter=No	*	*	*
+48	opinion	opinion	NOUN	_	Gender=Fem|Number=Sing	45	obl:arg	_	_	*	*	*
+49	publique	public	ADJ	_	Gender=Fem|Number=Sing	48	amod	_	SpaceAfter=No	*	*	*
+50	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00081
+# text = Une jeune femme témoigne, les larmes au yeux, devant le congrès américain.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	20	*
+2	jeune	jeune	ADJ	_	Number=Sing	3	amod	_	_	*	20	*
+3	femme	femme	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	20	*
+4	témoigne	témoigner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	*	*
+7	larmes	larme	NOUN	_	Gender=Fem|Number=Plur	4	obl:mod	_	_	*	*	*
+8-9	au	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	21	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	21	*
+10	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*	21	*
+11	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+12	devant	devant	ADP	_	_	14	case	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	22;23	*
+14	congrès	congrès	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	22;23	*
+15	américain	américain	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*	22;23	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*	23	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00082
+# text = L'évènement est retransmis rapidement par les télévisions du monde entier :
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	24	*
+2	évènement	évènement	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	*	24	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*	*	*
+4	retransmis	retransmettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+5	rapidement	rapidement	ADV	_	_	4	advmod	_	_	*	*	*
+6	par	par	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	25	*
+8	télévisions	télévision	NOUN	_	Gender=Fem|Number=Plur	4	obl:agent	_	_	*	25	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	25;26	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	25;26	*
+11	monde	monde	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	25;26	*
+12	entier	entier	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	25;26	*
+13	:	:	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00083
+# text = "Monsieur le président, messieurs les membres de ce comité, je m'appelle Nayirah et je reviens du Koweit.
+1	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	*	*
+2	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	15	vocative	_	_	*	27;28	18:27
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	27;28	18:27
+4	président	président	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*	27;28	18:27
+5	,	,	PUNCT	_	_	6	punct	_	_	*	28	*
+6	messieurs	monsieur	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	_	*	29	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	29;30	21:30
+8	membres	membre	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*	29;30	21:30
+9	de	de	ADP	_	_	11	case	_	_	*	29;30	21:30
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*	29;30;31	21:30
+11	comité	comité	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*	29;30;31	21:30
+12	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+13	je	il	PRON	_	Number=Sing|Person=1	15	nsubj	_	_	*	32	18:32
+14	m'	se	PRON	_	Number=Sing|Person=1|Reflex=Yes	15	expl:comp	_	SpaceAfter=No	*	*	*
+15	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+16	Nayirah	Nayirah	PROPN	_	_	15	xcomp	_	_	*	33	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*	*	*
+18	je	il	PRON	_	Number=Sing|Person=1	19	nsubj	_	_	*	34	21:34
+19	reviens	revenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	conj	_	_	*	*	*
+20-21	du	_	_	_	_	_	_	_	_	*	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	35	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	35	*
+22	Koweit	Koweit	PROPN	_	_	19	obl:arg	_	SpaceAfter=No	*	35	*
+23	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00084
+# text = Ma mère et moi étions au Koweit le 2 août pour passer de paisibles vacances.
+1	Ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	2	det	_	_	*	36;37	12:36;17:37
+2	mère	mère	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	36;37	12:36;17:37
+3	et	et	CCONJ	_	_	4	cc	_	_	*	37	17:37
+4	moi	soi	PRON	_	Number=Sing|Person=1|PronType=Prs	2	conj	_	_	*	37;38	17:37;12:38
+5	étions	être	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	37	17:37
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	37;39	17:37;18:39
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	37;39	17:37;18:39
+8	Koweit	Koweit	PROPN	_	_	5	obl:arg	_	_	*	37;39	17:37;18:39
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	40	17:40
+10	2	2	NUM	_	NumType=Card	5	obl:mod	_	_	*	40	17:40
+11	août	août	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	40	17:40
+12	pour	pour	ADP	_	_	13	mark	_	_	*	*	*
+13	passer	passer	VERB	_	VerbForm=Inf	5	advcl	_	_	*	*	*
+14	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	16	det	_	_	*	41	2:41
+15	paisibles	paisible	ADJ	_	Number=Plur	16	amod	_	_	*	41	2:41
+16	vacances	vacances	NOUN	_	Gender=Fem|Number=Plur	13	obj	_	SpaceAfter=No	*	41	2:41
+17	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00085
+# text = Ma soeur aînée avait accouché le 29 juillet et nous voulions passer quelques temps au Koweit auprès d'elle.
+1	Ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	2	det	_	_	*	42	12:42
+2	soeur	soeur	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	42	12:42
+3	aînée	aîné	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	42	12:42
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	accouché	accoucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	43	18:43
+7	29	29	NUM	_	NumType=Card	5	obl:mod	_	_	*	43	18:43
+8	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	43	18:43
+9	et	et	CCONJ	_	_	11	cc	_	_	*	*	*
+10	nous	il	PRON	_	Number=Plur|Person=1	11	nsubj	_	_	*	44	2:44
+11	voulions	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	5	conj	_	_	*	*	*
+12	passer	passer	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+13	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	14	det	_	_	*	45	*
+14	temps	temps	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*	45	*
+15-16	au	_	_	_	_	_	_	_	_	*	*	*
+15	à	à	ADP	_	_	17	case	_	_	*	46	12:46
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	46	12:46
+17	Koweit	Koweit	PROPN	_	_	12	obl:mod	_	_	*	46	12:46
+18	auprès	auprès	ADV	_	_	12	obl:arg	_	_	*	*	*
+19	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*	*	*
+20	elle	soi	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	obl:arg	_	SpaceAfter=No	*	47	12:47
+21	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00086
+# text = [...] Pendant que j'étais là, j'ai vu les soldats irakiens entrer dans l'hôpital avec leurs armes.
+1	[	[	PUNCT	_	_	12	punct	_	SpaceAfter=No	*	*	*
+2	...	...	PUNCT	_	_	12	punct	_	SpaceAfter=No	*	*	*
+3	]	]	PUNCT	_	_	12	punct	_	_	*	*	*
+4	Pendant	pendant	ADP	_	_	7	mark	_	_	*	*	*
+5	que	que	SCONJ	_	_	7	mark	_	_	*	*	*
+6	j'	il	PRON	_	Number=Sing|Person=1	7	nsubj	_	SpaceAfter=No	*	48	*
+7	étais	être	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	12	advcl	_	_	*	*	*
+8	là	là	ADV	_	_	7	obl:arg	_	SpaceAfter=No	*	*	*
+9	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+10	j'	il	PRON	_	Number=Sing|Person=1	12	nsubj	_	SpaceAfter=No	*	49	*
+11	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*	*	*
+12	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*	50	1:50
+14	soldats	soldat	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*	50	1:50
+15	irakiens	irakien	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*	50	1:50
+16	entrer	entrer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*	*	*
+17	dans	dans	ADP	_	_	19	case	_	_	*	*	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*	51	*
+19	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*	51	*
+20	avec	avec	ADP	_	_	22	case	_	_	*	*	*
+21	leurs	son	DET	_	Number=Plur|Poss=Yes	22	det	_	_	*	52	*
+22	armes	arme	NOUN	_	Gender=Fem|Number=Plur	16	obl:mod	_	SpaceAfter=No	*	52	*
+23	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00087
+# text = Ils ont tiré sur les bébés des couveuses, ils ont pris les couveuses et ont laissé mourir les bébés sur le sol froid.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_	*	53	1:53
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	tiré	tirer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	sur	sur	ADP	_	_	6	case	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	54	1:54
+6	bébés	bébé	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*	54	1:54
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	54;55	1:54
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*	54;55	1:54
+9	couveuses	couveuse	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	SpaceAfter=No	*	54;55	1:54
+10	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+11	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	13	nsubj	_	_	*	56	1:56
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+13	pris	prendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	3	advcl	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	57	*
+15	couveuses	couveuse	NOUN	_	Gender=Fem|Number=Plur	13	obj	_	_	*	57	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+17	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	conj	_	_	*	*	*
+19	mourir	mourir	VERB	_	VerbForm=Inf	18	xcomp	_	_	*	*	*
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*	58	1:58
+21	bébés	bébé	NOUN	_	Gender=Masc|Number=Plur	18	obj	_	_	*	58	1:58
+22	sur	sur	ADP	_	_	24	case	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	*	*
+24	sol	sol	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	_	*	*	*
+25	froid	froid	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00088
+# text = J'étais horrifiée.
+1	J'	il	PRON	_	Number=Sing|Person=1	3	nsubj:pass	_	SpaceAfter=No	*	59	29:59
+2	étais	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin	3	aux:pass	_	_	*	*	*
+3	horrifiée	horrifier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	*	*	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00089
+# text = Je ne pouvais rien faire et je pensais à mon neveu qui était né prématuré et aurait pu mourir ce jour-là lui aussi.
+1	Je	il	PRON	_	Number=Sing|Person=1	3	nsubj	_	_	*	60	1:60
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+3	pouvais	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+4	rien	rien	PRON	_	Number=Sing	5	obj	_	_	*	*	*
+5	faire	faire	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+7	je	il	PRON	_	Number=Sing|Person=1	8	nsubj	_	_	*	61	1:61
+8	pensais	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	conj	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	mon	son	DET	_	Number=Sing|Poss=Yes	11	det	_	_	*	62	8:62
+11	neveu	neveu	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*	62	8:62
+12	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*	63	29:63
+13	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	aux:tense	_	_	*	*	*
+14	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl:relcl	_	_	*	*	*
+15	prématuré	prématuré	ADJ	_	Gender=Masc|Number=Sing	14	advmod	_	_	*	*	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+17	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	14	conj	_	_	*	*	*
+19	mourir	mourir	VERB	_	VerbForm=Inf	18	xcomp	_	_	*	*	*
+20	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	21	det	_	_	*	64	30:64
+21	jour	jour	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	SpaceAfter=No	*	64	30:64
+22	-là	-là	ADV	_	_	21	advmod	_	_	*	64	30:64
+23	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	iobj	_	_	*	65	30:65
+24	aussi	aussi	ADV	_	_	23	advmod	_	SpaceAfter=No	*	*	*
+25	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00090
+# text = [...] Les Irakiens ont tout détruit au Koweit.
+1	[	[	PUNCT	_	_	8	punct	_	SpaceAfter=No	*	*	*
+2	...	...	PUNCT	_	_	8	punct	_	SpaceAfter=No	*	*	*
+3	]	]	PUNCT	_	_	8	punct	_	_	*	*	*
+4	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	66	10:66
+5	Irakiens	irakien	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	*	66	10:66
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+7	tout	tout	PRON	_	Gender=Masc|Number=Sing	8	obj	_	_	*	67	8:67
+8	détruit	détruire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+9-10	au	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	68	1:68
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	68	1:68
+11	Koweit	Koweit	PROPN	_	_	8	obl:mod	_	SpaceAfter=No	*	68	1:68
+12	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00091
+# text = Ils ont vidé les supermarchés de nourriture, les pharmacies de médicaments, les usines de matériel médical, ils ont cambriolé les maisons et torturé des voisins et des amis.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_	*	69	10:69
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	vidé	vider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	70	10:70
+5	supermarchés	supermarché	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*	70	10:70
+6	de	de	ADP	_	_	7	case	_	_	*	70	10:70
+7	nourriture	nourriture	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	SpaceAfter=No	*	70;71	10:70
+8	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	72	11:72
+10	pharmacies	pharmacie	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	_	*	72	11:72
+11	de	de	ADP	_	_	12	case	_	_	*	72;73	11:72;10:73
+12	médicaments	médicament	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	SpaceAfter=No	*	72;73;74	11:72;10:73;10:74
+13	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	75	11:75
+15	usines	usine	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	_	*	75	11:75
+16	de	de	ADP	_	_	17	case	_	_	*	75	11:75
+17	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*	75;76	11:75;0:76
+18	médical	médical	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*	75;76	11:75;0:76
+19	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+20	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	22	nsubj	_	_	*	77	10:77
+21	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*	*	*
+22	cambriolé	cambrioler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	*	*	*
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	78	11:78
+24	maisons	maison	NOUN	_	Gender=Fem|Number=Plur	22	obj	_	_	*	78	11:78
+25	et	et	CCONJ	_	_	26	cc	_	_	*	*	*
+26	torturé	torturer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	conj	_	_	*	*	*
+27	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	28	det	_	_	*	79	10:79
+28	voisins	voisins	NOUN	_	Gender=Masc|Number=Plur	26	obj	_	_	*	79	10:79
+29	et	et	CCONJ	_	_	31	cc	_	_	*	*	*
+30	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	31	det	_	_	*	80	10:80
+31	amis	ami	NOUN	_	Gender=Masc|Number=Plur	28	conj	_	SpaceAfter=No	*	80	10:80
+32	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00092
+# text = J'ai vu un de mes amis après qu'il ait été torturé par les Irakiens.
+1	J'	il	PRON	_	Number=Sing|Person=1	3	nsubj	_	SpaceAfter=No	*	81	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	un	un	PRON	_	Gender=Masc|Number=Sing	3	obj	_	_	*	82	0:82
+5	de	de	ADP	_	_	7	case	_	_	*	82	0:82
+6	mes	son	DET	_	Number=Plur|Poss=Yes	7	det	_	_	*	82;83	0:82;10:83
+7	amis	ami	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	82;83	0:82;10:83
+8	après	après	ADP	_	_	13	mark	_	_	*	*	*
+9	qu'	que	SCONJ	_	_	13	mark	_	SpaceAfter=No	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	13	nsubj:pass	_	_	*	84	0:84
+11	ait	avoir	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+12	été	être	AUX	_	Tense=Past|VerbForm=Part	13	aux:pass	_	_	*	*	*
+13	torturé	torturer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	3	advcl	_	_	*	*	*
+14	par	par	ADP	_	_	16	case	_	_	*	*	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*	85;86	10:85;27:86
+16	Irakiens	irakien	NOUN	_	Gender=Masc|Number=Plur	13	obl:agent	_	SpaceAfter=No	*	85;86	10:85;27:86
+17	.	.	PUNCT	_	_	3	punct	_	_	*	86	27:86
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00093
+# text = Il a 22 ans mais on aurait dit un vieillard.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	87	0:87
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	22	22	NUM	_	NumType=Card	4	nummod	_	_	*	88	*
+4	ans	an	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*	88	*
+5	mais	mais	CCONJ	_	_	8	cc	_	_	*	*	*
+6	on	il	PRON	_	Number=Sing|Person=3	8	nsubj	_	_	*	89	10:89
+7	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+8	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	90	0:90
+10	vieillard	vieillard	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No	*	90	0:90
+11	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00094
+# text = Les Irakiens lui avaient plongé la tête dans un bassin, jusqu'à ce qu'il soit presque noyé.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	91	27:91
+2	Irakiens	irakien	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*	91	27:91
+3	lui	lui	PRON	_	Number=Sing|Person=3	5	iobj	_	_	*	92	0:92
+4	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	plongé	plonger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	93	*
+7	tête	tête	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	93	*
+8	dans	dans	ADP	_	_	10	case	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	94;95	0:94;0:95
+10	bassin	bassin	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*	94;95	0:94;0:95
+11	,	,	PUNCT	_	_	5	punct	_	_	*	95	0:95
+12	jusqu'	jusque	ADP	_	_	14	case	_	SpaceAfter=No	*	*	*
+13	à	à	ADP	_	_	14	case	_	_	*	*	*
+14	ce	ce	PRON	_	_	5	obl:mod	_	_	*	*	*
+15	qu'	que	SCONJ	_	_	19	mark	_	SpaceAfter=No	*	*	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj:pass	_	_	*	96	0:96
+17	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_	*	*	*
+18	presque	presque	ADV	_	_	19	advmod	_	_	*	*	*
+19	noyé	noyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	14	acl	_	SpaceAfter=No	*	*	*
+20	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00095
+# text = Ils lui ont arraché les ongles.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	4	nsubj	_	_	*	97	27:97
+2	lui	lui	PRON	_	Number=Sing|Person=3	4	iobj	_	_	*	98	0:98
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	arraché	arracher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	99	27:99
+6	ongles	ongle	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	SpaceAfter=No	*	99	27:99
+7	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00096
+# text = Ils lui ont fait subir des chocs électriques sur les parties sensibles de son corps.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	5	nsubj:caus	_	_	*	100	27:100
+2	lui	lui	PRON	_	Number=Sing|Person=3	5	iobj:agent	_	_	*	101	0:101
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:caus	_	_	*	*	*
+5	subir	subir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+6	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	7	det	_	_	*	102	27:102
+7	chocs	choc	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*	102	27:102
+8	électriques	électrique	ADJ	_	Number=Plur	7	amod	_	_	*	102	27:102
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	*	*
+11	parties	partie	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*	*	*
+12	sensibles	sensible	ADJ	_	Number=Plur	11	amod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	son	son	DET	_	Number=Sing|Poss=Yes	15	det	_	_	*	103	0:103
+15	corps	corps	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	103	0:103
+16	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00097
+# text = Il a beaucoup de chance d'avoir survécu."
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	104	0:104
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+3	beaucoup	beaucoup	ADV	_	_	2	obj	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	105	*
+5	chance	chance	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	1	105;106	*
+6	d'	de	ADP	_	_	8	mark	_	SpaceAfter=No	*	*	*
+7	avoir	avoir	AUX	_	VerbForm=Inf	8	aux:tense	_	_	*	*	*
+8	survécu	survivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
+10	"	"	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00098
+# text = Ce témoignage a beaucoup ému l'opinion publique internationale et amena celle-ci à soutenir l'action des puissances occidentales contre les armées de Saddam Hussein lors de la première guerre du Golfe.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*	107	0:107
+2	témoignage	témoignage	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	107	0:107
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	beaucoup	beaucoup	ADV	_	_	5	advmod	_	_	*	*	*
+5	ému	émouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	108	22:108
+7	opinion	opinion	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	108	22:108
+8	publique	public	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	108	22:108
+9	internationale	international	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	108	22:108
+10	et	et	CCONJ	_	_	11	cc	_	_	*	*	*
+11	amena	amener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_	*	*	*
+12	celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	11	obj	_	_	*	109	22:109
+13	à	à	ADP	_	_	14	mark	_	_	*	*	*
+14	soutenir	soutenir	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*	110	26:110
+16	action	action	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	*	110	26:110
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	110;111	26:110
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	110;111	26:110
+19	puissances	puissance	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*	110;111	26:110
+20	occidentales	occidental	ADJ	_	Gender=Fem|Number=Plur	19	amod	_	_	*	110;111	26:110
+21	contre	contre	ADP	_	_	23	case	_	_	*	*	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	112	*
+23	armées	armée	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*	112	*
+24	de	de	ADP	_	_	25	case	_	_	*	112	*
+25	Saddam	Saddam	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	112;113	*
+26	Hussein	Hussein	PROPN	_	Gender=Masc|Number=Sing	25	flat:name	_	_	*	112;113	*
+27	lors	lors	ADV	_	_	14	advmod	_	_	*	*	*
+28	de	de	ADP	_	_	31	case	_	_	*	*	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*	114	22:114
+30	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	31	amod	_	_	*	114	22:114
+31	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	27	obl:arg	_	_	*	114	22:114
+32-33	du	_	_	_	_	_	_	_	_	*	*	*
+32	de	de	ADP	_	_	34	case	_	_	*	114;115	22:114;26:115
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	114;115	22:114;26:115
+34	Golfe	Golfe	PROPN	_	_	31	nmod	_	SpaceAfter=No	*	114;115	22:114;26:115
+35	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00099
+# text = En fait, ce témoignage était entièrement faux.
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	fait	fait	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*	116	15:116
+5	témoignage	témoignage	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	116	15:116
+6	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_	*	*	*
+7	entièrement	entièrement	ADV	_	_	8	advmod	_	_	*	*	*
+8	faux	faux	ADJ	_	Gender=Masc	0	root	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00100
+# text = La jeune fille était la fille de l'ambassadeur du Koweït à Washington.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	117	22:117
+2	jeune	jeune	ADJ	_	Number=Sing	3	amod	_	_	*	117	22:117
+3	fille	fille	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	117	22:117
+4	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	118	22:118
+6	fille	fille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	118	22:118
+7	de	de	ADP	_	_	9	case	_	_	*	118	22:118
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	118;119	22:118
+9	ambassadeur	ambassadeur	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	118;119	22:118
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	118;119;120	22:118;15:120
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	118;119;120	22:118;15:120
+12	Koweït	Koweït	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	118;119;120	22:118;15:120
+13	à	à	ADP	_	_	14	case	_	_	*	*	*
+14	Washington	Washington	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*	121;122	25:121;15:122
+15	.	.	PUNCT	_	_	6	punct	_	_	*	122	15:122
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00101
+# text = L'association Citizens for a Free Kuwait, organisée par le gouvernement du Koweit exilé avait commandé cette campagne à la compagnie de relations publiques Hill & Knowlton (pour la somme de 10 millions de dollars [1]).
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	123	15:123
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	_	_	*	123	15:123
+3	Citizens	Citizens	X	_	_	2	dep	_	_	*	123;124	15:123;25:124
+4	for	for	X	_	_	2	dep	_	_	*	*	*
+5	a	a	X	_	_	2	dep	_	_	*	125;126	15:125;15:126
+6	Free	Free	X	_	_	2	dep	_	_	*	125;126	15:125;15:126
+7	Kuwait	Kuwait	X	_	_	2	dep	_	SpaceAfter=No	*	125;126	15:125;15:126
+8	,	,	PUNCT	_	_	2	punct	_	_	*	126	15:126
+9	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+10	par	par	ADP	_	_	12	case	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	127	15:127
+12	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	_	_	*	127	15:127
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	127;128;129	15:127
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	127;128;129	15:127
+15	Koweit	Koweit	NOUN	_	Number=Sing	12	nmod	_	_	*	127;128;129	15:127
+16	exilé	exiler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	_	*	127;129	15:127
+17	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	commandé	commander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+19	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_	*	130	*
+20	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*	130	*
+21	à	à	ADP	_	_	23	case	_	_	*	*	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	131;132	33:131;28:132
+23	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	_	*	131;132	33:131;28:132
+24	de	de	ADP	_	_	25	case	_	_	*	131;132	33:131;28:132
+25	relations	relation	NOUN	_	Gender=Fem|Number=Plur	23	nmod	_	_	*	131;132;133;134;135	33:131;28:132;33:134
+26	publiques	public	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*	131;132;133;134;135	33:131;28:132;33:134
+27	Hill	Hill	PROPN	_	_	23	nmod	_	_	*	132;134;135;136	28:132;33:134
+28	&	et	CCONJ	_	_	29	cc	_	_	*	132;134;135;136	28:132;33:134
+29	Knowlton	Knowlton	PROPN	_	_	27	conj	_	_	*	132;135;136;137	28:132
+30	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	*	*
+31	pour	pour	ADP	_	_	33	case	_	_	*	*	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*	138	28:138
+33	somme	somme	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	138	28:138
+34	de	de	ADP	_	_	36	case	_	_	*	138	28:138
+35	10	10	NUM	_	NumType=Card	36	nummod	_	_	*	138;139	28:138
+36	millions	million	NOUN	_	Gender=Masc|Number=Plur|NumType=Card	33	nmod	_	_	*	138;139	28:138
+37	de	de	ADP	_	_	38	case	_	_	*	138;139;140	28:138
+38	dollars	dollar	NOUN	_	Gender=Masc|Number=Plur	36	nmod	_	_	*	138;139;140;141	28:138
+39	[	[	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	*	*
+40	1	1	NUM	_	NumType=Card	18	obl:mod	_	SpaceAfter=No	*	*	*
+41	]	]	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	*	*
+42	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	*	*
+43	.	.	PUNCT	_	_	18	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00102
+# text = Il est surprenant que le congrès américain n'ait pas fait une enquête préalable sur l'identité de la jeune fille avant de la laisser "témoigner" devant leur assemblée.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	expl:subj	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	surprenant	surprenant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	que	que	SCONJ	_	_	11	mark	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	142	*
+6	congrès	congrès	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*	142	*
+7	américain	américain	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	142	*
+8	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	SpaceAfter=No	*	*	*
+9	ait	avoir	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+10	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*	*	*
+11	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	_	1:LVC.full	*	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	143	*
+13	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	1	143	*
+14	préalable	préalable	ADJ	_	Number=Sing	13	amod	_	_	*	143	*
+15	sur	sur	ADP	_	_	17	case	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	144	28:144
+17	identité	identité	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	144	28:144
+18	de	de	ADP	_	_	21	case	_	_	*	144	28:144
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	144;145	28:144;3:145
+20	jeune	jeune	ADJ	_	Number=Sing	21	amod	_	_	*	144;145	28:144;3:145
+21	fille	fille	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	144;145	28:144;3:145
+22	avant	avant	ADP	_	_	25	mark	_	_	*	*	*
+23	de	de	ADP	_	_	25	mark	_	_	*	*	*
+24	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3	25	obj	_	_	*	146	3:146
+25	laisser	laisser	VERB	_	VerbForm=Inf	11	advcl	_	_	*	*	*
+26	"	"	PUNCT	_	_	27	punct	_	SpaceAfter=No	*	*	*
+27	témoigner	témoigner	VERB	_	VerbForm=Inf	25	xcomp	_	SpaceAfter=No	*	*	*
+28	"	"	PUNCT	_	_	27	punct	_	_	*	*	*
+29	devant	devant	ADP	_	_	31	case	_	_	*	*	*
+30	leur	son	DET	_	Number=Sing|Poss=Yes	31	det	_	_	*	147	3:147
+31	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	27	obl:mod	_	SpaceAfter=No	*	147	3:147
+32	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00103
+# text = La machination a fonctionné grâce à l'intervention de Lauri Fitz-Pegado, qui a convaincu les députés que l'identité n'était pas révélée pour protéger la famille de la jeune femme [2].
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	148	3:148
+2	machination	machination	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	148	3:148
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	fonctionné	fonctionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	grâce	grâce	NOUN	_	Gender=Fem|Number=Sing	8	case	_	EXTPOS=ADP|MWE=grâce_à	*	*	*
+6	à	à	ADP	_	_	5	fixed	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	149	*
+8	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	149	*
+9	de	de	ADP	_	_	10	case	_	_	*	149	*
+10	Lauri	Lauri	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	149;150;151	23:151
+11	Fitz-Pegado	Fitz-Pegado	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*	149;150;151	23:151
+12	,	,	PUNCT	_	_	10	punct	_	_	*	151	23:151
+13	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*	152	23:152
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+15	convaincu	convaincre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*	*	*
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	17	det	_	_	*	153	*
+17	députés	député	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*	153	*
+18	que	que	SCONJ	_	_	24	mark	_	_	*	*	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*	154	24:154
+20	identité	identité	NOUN	_	Gender=Fem|Number=Sing	24	nsubj:pass	_	_	*	154	24:154
+21	n'	ne	ADV	_	Polarity=Neg	24	advmod	_	SpaceAfter=No	*	*	*
+22	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	aux:pass	_	_	*	*	*
+23	pas	pas	ADV	_	Polarity=Neg	24	advmod	_	_	*	*	*
+24	révélée	révéler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	15	ccomp	_	_	*	*	*
+25	pour	pour	ADP	_	_	26	mark	_	_	*	*	*
+26	protéger	protéger	VERB	_	VerbForm=Inf	24	advcl	_	_	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	155	32:155
+28	famille	famille	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	_	*	155	32:155
+29	de	de	ADP	_	_	32	case	_	_	*	155	32:155
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*	155;156	32:155;32:156
+31	jeune	jeune	ADJ	_	Number=Sing	32	amod	_	_	*	155;156	32:155;32:156
+32	femme	femme	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	_	*	155;156	32:155;32:156
+33	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	156	32:156
+34	2	2	NUM	_	NumType=Card	4	obl:mod	_	SpaceAfter=No	*	156	32:156
+35	]	]	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	156	32:156
+36	.	.	PUNCT	_	_	4	punct	_	_	*	156	32:156
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00104
+# text = Lauri Fitz-Pegado avait travaillé pour le gouvernement auparavant, dans l'Agence de l'Information [3].
+1	Lauri	Lauri	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	157	*
+2	Fitz-Pegado	Fitz-Pegado	PROPN	_	_	1	flat:name	_	_	*	157	*
+3	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	travaillé	travailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	pour	pour	ADP	_	_	7	case	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	158	23:158
+7	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	158	23:158
+8	auparavant	auparavant	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+10	dans	dans	ADP	_	_	12	case	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	*	*
+12	Agence	agence	NOUN	_	Number=Sing	4	obl:mod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	159;160;161	24:159;24:160
+15	Information	information	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	159;160;161	24:159;24:160
+16	[	[	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	160;161	24:160
+17	3	3	NUM	_	NumType=Card	4	obl:mod	_	SpaceAfter=No	*	160;161	24:160
+18	]	]	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	161	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*	161	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00105
+# text = Par ailleurs, le gouvernement américain aurait selon plusieurs sources [4] payé 14 millions de dollars à cette compagnie pour l'avoir aidée à médiatiser la guerre du Golfe sous un jour favorable à l'intervention occidentale.
+1	Par	par	ADP	_	_	2	case	_	_	*	*	*
+2	ailleurs	ailleurs	ADV	_	_	14	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	162	23:162
+5	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*	162	23:162
+6	américain	américain	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	162	23:162
+7	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*	*	*
+8	selon	selon	ADP	_	_	10	case	_	_	*	*	*
+9	plusieurs	plusieurs	DET	_	Number=Plur	10	det	_	_	*	163;164;165	23:165
+10	sources	source	NOUN	_	Gender=Fem|Number=Plur	14	obl:mod	_	_	*	163;164;165	23:165
+11	[	[	PUNCT	_	_	10	punct	_	SpaceAfter=No	*	163;164;165	23:165
+12	4	4	NUM	_	NumType=Card	10	nummod	_	SpaceAfter=No	*	163;164;165	23:165
+13	]	]	PUNCT	_	_	10	punct	_	_	*	164;165	23:165
+14	payé	payer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	165	23:165
+15	14	14	NUM	_	NumType=Card	16	nummod	_	_	*	165;166;167	23:165;23:167
+16	millions	million	NOUN	_	Gender=Masc|Number=Plur|NumType=Card	14	obj	_	_	*	165;166;167	23:165;23:167
+17	de	de	ADP	_	_	18	case	_	_	*	165;166;167;168	23:165;23:167
+18	dollars	dollar	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*	165;166;167;168;169	23:165;23:167
+19	à	à	ADP	_	_	21	case	_	_	*	167	23:167
+20	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	21	det	_	_	*	167;170	23:167
+21	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*	167;170	23:167
+22	pour	pour	ADP	_	_	25	mark	_	_	*	*	*
+23	l'	le	PRON	_	Number=Sing|Person=3	25	obj	_	SpaceAfter=No	*	171	14:171
+24	avoir	avoir	AUX	_	VerbForm=Inf	25	aux:tense	_	_	*	*	*
+25	aidée	aider	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	advcl	_	_	*	*	*
+26	à	à	ADP	_	_	27	mark	_	_	*	*	*
+27	médiatiser	médiatiser	VERB	_	VerbForm=Inf	25	xcomp	_	_	*	*	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	172	*
+29	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	27	obj	_	_	*	172	*
+30-31	du	_	_	_	_	_	_	_	_	*	*	*
+30	de	de	ADP	_	_	32	case	_	_	*	172;173	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*	172;173	*
+32	Golfe	Golfe	PROPN	_	_	29	nmod	_	_	*	172;173	*
+33	sous	sous	ADP	_	_	35	case	_	_	*	*	*
+34	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*	174	*
+35	jour	jour	NOUN	_	Gender=Masc|Number=Sing	27	obl:mod	_	_	*	174	*
+36	favorable	favorable	ADJ	_	Number=Sing	35	amod	_	_	*	*	*
+37	à	à	ADP	_	_	39	case	_	_	*	*	*
+38	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	39	det	_	SpaceAfter=No	*	175	14:175
+39	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	36	obl:arg	_	_	*	175	14:175
+40	occidentale	occidental	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	SpaceAfter=No	*	175	14:175
+41	.	.	PUNCT	_	_	14	punct	_	_	*	175	14:175
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00106
+# text = Lien interne
+1	Lien	lien	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	176;177	*
+2	interne	interne	ADJ	_	Number=Sing	1	amod	_	_	*	176;177	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00107
+# text = - Propagande
+1	-	-	PUNCT	_	_	2	punct	_	_	*	177	*
+2	Propagande	propagande	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	177;178;179	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00108
+# text = Références
+1	Références	référence	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	179;180	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00109
+# text = - ^ (en) Phillip Knightley, The disinformation campaign, The Guardian, October 4, 2001.
+1	-	-	PUNCT	_	_	4	punct	_	_	*	*	*
+2	^	^	PUNCT	_	_	4	punct	_	_	*	*	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
+4	en	en	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*	*	*
+6	Phillip	Phillip	PROPN	_	Gender=Masc|Number=Sing	4	dep	_	_	*	181	34:181
+7	Knightley	Knightley	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*	181	34:181
+8	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+9	The	The	X	_	_	4	dep	_	_	*	182	14:182
+10	disinformation	disinformation	X	_	_	9	flat:foreign	_	_	*	182	14:182
+11	campaign	campaign	X	_	_	9	flat:foreign	_	SpaceAfter=No	*	*	*
+12	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+13	The	The	X	_	_	4	dep	_	_	*	183	*
+14	Guardian	Guardian	X	_	_	13	flat:foreign	_	SpaceAfter=No	*	183	*
+15	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+16	October	October	NOUN	_	_	4	dep	_	_	*	*	*
+17	4	4	NUM	_	NumType=Card	16	nummod	_	SpaceAfter=No	*	*	*
+18	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+19	2001	2001	NUM	_	NumType=Card	16	nummod	_	SpaceAfter=No	*	*	*
+20	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00110
+# text = - ^ (en) Brian Eno, Lessons in how to lie about Iraq, The Observer, August 17, 2003.
+1	-	-	PUNCT	_	_	4	punct	_	_	*	*	*
+2	^	^	PUNCT	_	_	4	punct	_	_	*	*	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
+4	en	en	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*	*	*
+6	Brian	Brian	PROPN	_	Gender=Masc|Number=Sing	4	dep	_	_	*	184;185	34:184;20:185
+7	Eno	Eno	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*	184;185	34:184;20:185
+8	,	,	PUNCT	_	_	4	punct	_	_	*	185	20:185
+9	Lessons	Lessons	X	_	_	4	dep	_	_	*	185;186	20:185
+10	in	in	X	_	_	9	flat:foreign	_	_	*	*	*
+11	how	how	X	_	_	9	flat:foreign	_	_	*	*	*
+12	to	to	X	_	_	9	flat:foreign	_	_	*	*	*
+13	lie	lie	X	_	_	9	flat:foreign	_	_	*	*	*
+14	about	about	X	_	_	9	flat:foreign	_	_	*	*	*
+15	Iraq	Iraq	X	_	_	9	flat:foreign	_	SpaceAfter=No	*	187	20:187
+16	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+17	The	The	X	_	_	4	dep	_	_	*	188	*
+18	Observer	Observer	X	_	_	17	flat:foreign	_	SpaceAfter=No	*	188	*
+19	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+20	August	August	X	_	_	21	dep	_	_	*	189	20:189
+21	17	17	NUM	_	NumType=Card	4	dep	_	SpaceAfter=No	*	189	20:189
+22	,	,	PUNCT	_	_	21	punct	_	_	*	189	20:189
+23	2003	2003	NUM	_	NumType=Card	21	nummod	_	SpaceAfter=No	*	189	20:189
+24	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00111
+# text = Sources
+1	Sources	source	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	190;191	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00112
+# text = - (fr) Une analyse de ce scandale vue par un site internet Stop USA
+1	-	-	PUNCT	_	_	3	punct	_	_	*	191	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	191	*
+3	fr	fr	NOUN	_	_	0	root	_	SpaceAfter=No	*	191	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	191	*
+5	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	192	*
+6	analyse	analyse	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	192	*
+7	de	de	ADP	_	_	9	case	_	_	*	192	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*	192;193	20:193
+9	scandale	scandale	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	192;193	20:193
+10	vue	voir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*	*	*
+11	par	par	ADP	_	_	13	case	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	194	20:194
+13	site	site	NOUN	_	Gender=Masc|Number=Sing	10	obl:agent	_	_	*	194	20:194
+14	internet	internet	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*	194	20:194
+15	Stop	Stop	X	_	_	13	nmod	_	_	*	195	*
+16	USA	USA	X	_	_	15	flat:foreign	_	_	*	195;196	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00113
+# text = - (fr) L'Humanité, 11 mars 1991 [1]
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+3	fr	fr	NOUN	_	_	0	root	_	SpaceAfter=No	*	*	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	*	*
+5	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	197;198;199	5:199
+6	Humanité	Humanité	PROPN	_	Number=Sing	3	nmod	_	SpaceAfter=No	*	197;198;199	5:199
+7	,	,	PUNCT	_	_	3	punct	_	_	*	198;199	5:199
+8	11	11	NUM	_	NumType=Card	3	nmod	_	_	*	199;200	5:199;20:200
+9	mars	mars	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	199;200	5:199;20:200
+10	1991	1991	NUM	_	NumType=Card	9	nmod	_	_	*	199;200	5:199;20:200
+11	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+12	1	1	NUM	_	NumType=Card	3	nummod	_	SpaceAfter=No	*	*	*
+13	]	]	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00114
+# text = - (fr) L'Humanité, 10 juin 1993, analyse de l'impact médiatique [2]
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+3	fr	fr	NOUN	_	_	0	root	_	SpaceAfter=No	*	*	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	*	*
+5	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	201	5:201
+6	Humanité	Humanité	PROPN	_	Number=Sing	3	nmod	_	SpaceAfter=No	*	201	5:201
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	10	10	NUM	_	NumType=Card	3	nmod	_	_	*	202	20:202
+9	juin	juin	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	202	20:202
+10	1993	1993	NUM	_	NumType=Card	9	nmod	_	SpaceAfter=No	*	202	20:202
+11	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+12	analyse	analyse	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	203	*
+13	de	de	ADP	_	_	15	case	_	_	*	203	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	203;204	7:204
+15	impact	impact	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	203;204	7:204
+16	médiatique	médiatique	ADJ	_	Number=Sing	15	amod	_	_	*	203;204	7:204
+17	[	[	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+18	2	2	NUM	_	NumType=Card	3	nummod	_	SpaceAfter=No	*	*	*
+19	]	]	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00115
+# text = - (en) Ameen Izzadeen, Lies, damn lies and war, Daily Mirror of Sri Lanka, 2001 (no more precise date provided), accessed 27 Feb 2006..
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+3	en	en	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	*	*
+5	Ameen	Ameen	PROPN	_	_	3	dep	_	_	*	205	*
+6	Izzadeen	Izzadeen	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*	205	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	Lies	Lies	X	_	_	3	dep	_	SpaceAfter=No	*	*	*
+9	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+10	damn	damn	X	_	_	8	flat:foreign	_	_	*	*	*
+11	lies	lies	X	_	_	8	flat:foreign	_	_	*	*	*
+12	and	and	X	_	_	8	flat:foreign	_	_	*	*	*
+13	war	war	X	_	_	8	flat:foreign	_	SpaceAfter=No	*	*	*
+14	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+15	Daily	Daily	PROPN	_	_	3	dep	_	_	*	*	*
+16	Mirror	Mirror	PROPN	_	_	15	nmod	_	_	*	*	*
+17	of	of	ADP	_	_	18	case	_	_	*	*	*
+18	Sri	Sri	PROPN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	206	*
+19	Lanka	Lanka	PROPN	_	_	18	flat:name	_	SpaceAfter=No	*	206	*
+20	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+21	2001	2001	NUM	_	NumType=Card	3	dep	_	_	*	207	7:207
+22	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+23	no	no	X	_	_	3	dep	_	_	*	208	7:208
+24	more	more	X	_	_	23	flat:foreign	_	_	*	208	7:208
+25	precise	precise	X	_	_	23	flat:foreign	_	_	*	208	7:208
+26	date	date	X	_	_	23	flat:foreign	_	_	*	209;210	*
+27	provided	provided	X	_	_	23	flat:foreign	_	SpaceAfter=No	*	210	*
+28	)	)	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+29	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+30	accessed	accessed	X	_	_	32	dep	_	_	*	*	*
+31	27	27	NUM	_	NumType=Card	32	nummod	_	_	*	211	*
+32	Feb	Feb	NOUN	_	_	3	dep	_	_	*	211	*
+33	2006	2006	NUM	_	NumType=Card	32	nummod	_	SpaceAfter=No	*	211;212	*
+34	..	..	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00116
+# text = - (en) Maggie O'Kane, This time I 'm scared, The Guardian, December 5, 2002.
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+3	en	en	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	*	*
+5	Maggie	Maggie	PROPN	_	Gender=Fem|Number=Sing	3	dep	_	_	*	213	*
+6	O'Kane	O'Kane	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*	213	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	This	This	X	_	_	3	dep	_	_	*	214	13:214
+9	time	time	X	_	_	8	flat:foreign	_	_	*	214	13:214
+10	I	I	X	_	_	8	flat:foreign	_	_	*	215	*
+11	'	'	PUNCT	_	_	8	punct	_	SpaceAfter=No	*	*	*
+12	m	m	X	_	_	8	flat:foreign	_	_	*	*	*
+13	scared	scared	X	_	_	8	flat:foreign	_	SpaceAfter=No	*	*	*
+14	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+15	The	The	X	_	_	3	dep	_	_	*	216	31:216
+16	Guardian	Guardian	X	_	_	15	flat:foreign	_	SpaceAfter=No	*	216	31:216
+17	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+18	December	December	NOUN	_	_	3	dep	_	_	*	217	*
+19	5	5	NUM	_	NumType=Card	18	nummod	_	SpaceAfter=No	*	217	*
+20	,	,	PUNCT	_	_	18	punct	_	_	*	217	*
+21	2002	2002	NUM	_	NumType=Card	18	nummod	_	SpaceAfter=No	*	217	*
+22	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00117
+# text = - (en) Ian Urbina, HBO adds disclaimer to Gulf War movie, Asia Times, Nov 13, 2002.
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+3	en	en	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*	*	*
+5	Ian	Ian	PROPN	_	Gender=Masc|Number=Sing	3	dep	_	_	*	218;219	*
+6	Urbina	Urbina	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*	218;219	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*	219	*
+8	HBO	HBO	PROPN	_	_	3	dep	_	_	*	219;220	31:220
+9	adds	adds	X	_	_	8	dep	_	_	*	*	*
+10	disclaimer	disclaimer	X	_	_	8	dep	_	_	*	221	*
+11	to	to	X	_	_	8	dep	_	_	*	*	*
+12	Gulf	Gulf	X	_	_	8	dep	_	_	*	222	13:222
+13	War	War	X	_	_	8	dep	_	_	*	222	13:222
+14	movie	movie	X	_	_	8	dep	_	SpaceAfter=No	*	*	*
+15	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+16	Asia	Asia	PROPN	_	Number=Sing	3	dep	_	_	*	*	*
+17	Times	Times	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*	*	*
+18	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+19	Nov	Nov	NOUN	_	_	3	dep	_	_	*	*	*
+20	13	13	NUM	_	NumType=Card	19	nummod	_	SpaceAfter=No	*	*	*
+21	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+22	2002	2002	NUM	_	NumType=Card	19	nummod	_	SpaceAfter=No	*	*	*
+23	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00118
+# text = Catégories : Désinformation
+1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	223;224	19:224
+2	:	:	PUNCT	_	_	1	punct	_	_	*	224	19:224
+3	Désinformation	désinformation	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	224;225;226	19:224;4:226
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00119
+# text = - Communication
+1	-	-	PUNCT	_	_	2	punct	_	_	*	226	4:226
+2	Communication	communication	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	226;227;228	4:226;4:228
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00120
+# text = - Médias
+1	-	-	PUNCT	_	_	2	punct	_	_	*	228	4:228
+2	Médias	média	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	228;229;230	4:228
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00121
+# text = - Guerre du Koweït (1990-1991)
+1	-	-	PUNCT	_	_	2	punct	_	_	*	230;231	4:231
+2	Guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	230;231;232	4:231;19:232
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	230;231;232;233	4:231;19:232;16:233
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	230;231;232;233	4:231;19:232;16:233
+5	Koweït	Koweït	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	230;231;232;233	4:231;19:232;16:233
+6	(	(	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	234	16:234
+7	1990-1991	1990-1991	NOUN	_	NumType=Card	2	nmod	_	SpaceAfter=No	*	234;235	16:234
+8	)	)	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00122
+# text = - Manipulation
+1	-	-	PUNCT	_	_	2	punct	_	_	*	236	4:236
+2	Manipulation	manipulation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	236;237	4:236
+

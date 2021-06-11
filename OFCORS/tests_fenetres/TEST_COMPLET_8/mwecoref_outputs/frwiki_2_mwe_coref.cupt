@@ -1,0 +1,334 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00059
+# text = Affaire des charniers de Timisoara
+1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1	*
+2-3	des	_	_	_	_	_	_	_	_	*	*	*
+2	de	de	ADP	_	_	4	case	_	_	*	1;2	5:2
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	1;2	5:2
+4	charniers	charnier	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*	1;2	5:2
+5	de	de	ADP	_	_	6	case	_	_	*	1;2	5:2
+6	Timisoara	Timisoara	PROPN	_	_	4	nmod	_	_	*	1;2;3	5:2
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00060
+# text = Les charniers de Timisoara est une affaire médiatique, aboutissant à une massive désinformation du public sur la réalité des évènements survenus en Roumanie.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	4	*
+2	charniers	charnier	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*	4	*
+3	de	de	ADP	_	_	4	case	_	_	*	4	*
+4	Timisoara	Timisoara	PROPN	_	_	2	nmod	_	_	*	4;5	12:5
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	6	*
+7	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	6	*
+8	médiatique	médiatique	ADJ	_	Number=Sing	7	amod	_	SpaceAfter=No	*	6	*
+9	,	,	PUNCT	_	_	7	punct	_	_	*	6	*
+10	aboutissant	aboutir	VERB	_	Tense=Pres|VerbForm=Part	7	acl	_	_	*	*	*
+11	à	à	ADP	_	_	14	case	_	_	*	*	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	7	8:7
+13	massive	massif	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*	7	8:7
+14	désinformation	désinformation	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*	7	8:7
+15-16	du	_	_	_	_	_	_	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	7;8	8:7
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	7;8	8:7
+17	public	public	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*	7;8	8:7
+18	sur	sur	ADP	_	_	20	case	_	_	*	*	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	*	*
+20	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	*	*
+21-22	des	_	_	_	_	_	_	_	_	*	*	*
+21	de	de	ADP	_	_	23	case	_	_	*	9;10;11	5:9;5:10;0:11
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	9;10;11	5:9;5:10;0:11
+23	évènements	évènement	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*	9;10;11	5:9;5:10;0:11
+24	survenus	survenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	23	acl	_	_	*	10;11	5:10;0:11
+25	en	en	ADP	_	_	26	case	_	_	*	11	0:11
+26	Roumanie	Roumanie	PROPN	_	Gender=Fem|Number=Sing	24	obl:mod	_	SpaceAfter=No	*	11;12;13	0:11;12:12;8:13
+27	.	.	PUNCT	_	_	7	punct	_	_	*	11;13	0:11;8:13
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00061
+# text = Elle semble essentiellement due à une compétition des médias entre eux, chacun reprenant l'information du concurrent en l'amplifiant.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	2	nsubj	_	_	*	14	8:14
+2	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	essentiellement	essentiellement	ADV	_	_	2	advmod	_	_	*	*	*
+4	due	dû	ADJ	_	Gender=Fem|Number=Sing	2	xcomp	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	15	8:15
+7	compétition	compétition	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	15	8:15
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	15;16	8:15;0:16
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	15;16	8:15;0:16
+10	médias	média	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*	15;16	8:15;0:16
+11	entre	entre	ADP	_	_	12	case	_	_	*	*	*
+12	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nmod	_	SpaceAfter=No	*	17	0:17
+13	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+14	chacun	chacun	PRON	_	Gender=Masc	15	nsubj	_	_	*	18	*
+15	reprenant	reprendre	VERB	_	Tense=Pres|VerbForm=Part	2	advcl	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	19	9:19
+17	information	information	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*	19	9:19
+18-19	du	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	19;20	9:19
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	19;20	9:19
+20	concurrent	concurrent	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*	19;20	9:19
+21	en	en	ADP	_	_	23	mark	_	_	*	*	*
+22	l'	le	PRON	_	Number=Sing|Person=3	23	obj	_	SpaceAfter=No	*	21	9:21
+23	amplifiant	amplifier	VERB	_	Tense=Pres|VerbForm=Part	15	advcl	_	SpaceAfter=No	*	*	*
+24	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00062
+# text = Le sociologue Pierre Bourdieu a appelé ce phénomène "la circulation circulaire de l'information".
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	22;23	3:23
+2	sociologue	sociologue	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	22;23	3:23
+3	Pierre	Pierre	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	_	*	23;24	3:23
+4	Bourdieu	Bourdieu	PROPN	_	_	3	flat:name	_	_	*	23;24	3:23
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	appelé	appeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*	25	*
+8	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	25	*
+9	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	26	*
+11	circulation	circulation	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	_	_	*	26	*
+12	circulaire	circulaire	ADJ	_	Number=Sing	11	amod	_	_	*	26	*
+13	de	de	ADP	_	_	15	case	_	_	*	26	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	26;27	9:27
+15	information	information	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*	26;27	9:27
+16	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*	*	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00063
+# text = Le phénomène eut lieu en décembre 1989, lors de la chute du régime Ceausescu.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	28	3:28
+2	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	28	3:28
+3	eut	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1:VID	*	*
+4	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1	*	*
+5	en	en	ADP	_	_	6	case	_	_	*	*	*
+6	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	29	*
+7	1989	1989	NUM	_	NumType=Card	6	nmod	_	SpaceAfter=No	*	29	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*	29	*
+9	lors	lors	ADV	_	_	3	advmod	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	30	*
+12	chute	chute	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*	30	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	30;31	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	30;31	*
+15	régime	régime	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	30;31	*
+16	Ceausescu	Ceausescu	PROPN	_	_	15	nmod	_	SpaceAfter=No	*	30;31;32	*
+17	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00064
+# text = D'abord de quelques centaines de morts annoncés, les télévisions ont annoncé quelques 70 000 morts quelques jours plus tard, trouvés dans des charniers.
+1	D'	de	ADP	_	_	13	advmod	_	EXTPOS=ADV|MWE=d'abord|SpaceAfter=No	*	*	*
+2	abord	abord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	*	*
+4	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	_	*	33	*
+5	centaines	centaine	NOUN	_	Gender=Fem|Number=Plur	13	obl:mod	_	_	*	33	*
+6	de	de	ADP	_	_	7	case	_	_	*	33;34	11:34
+7	morts	mort	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	33;34	11:34
+8	annoncés	annoncer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	SpaceAfter=No	*	33	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	35	*
+11	télévisions	télévision	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	_	_	*	35	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+13	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+14	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	16	det	_	_	*	36	11:36
+15	70 000	70 000	NUM	_	NumType=Card	16	nummod	_	_	*	36	11:36
+16	morts	mort	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	_	*	36	11:36
+17	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	18	det	_	_	*	37	11:37
+18	jours	jour	NOUN	_	Gender=Masc|Number=Plur	13	obl:mod	_	_	*	37	11:37
+19	plus	plus	ADV	_	_	20	advmod	_	_	*	*	*
+20	tard	tard	ADV	_	_	18	advmod	_	SpaceAfter=No	*	*	*
+21	,	,	PUNCT	_	_	13	punct	_	SpaceAfter=No	*	*	*
+22	trouvés	trouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	13	advcl	_	_	*	*	*
+23	dans	dans	ADP	_	_	25	case	_	_	*	*	*
+24	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	25	det	_	_	*	38	*
+25	charniers	charnier	NOUN	_	Gender=Masc|Number=Plur	22	obl:mod	_	SpaceAfter=No	*	38	*
+26	.	.	PUNCT	_	_	13	punct	_	SpaceAfter=No	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00065
+# text = Le journal L'Évènement du jeudi du 28 décembre 1989 a même titré "Dracula était communiste."
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	39	*
+2	journal	journal	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*	39	*
+3	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	39;40	*
+4	Évènement	évènement	NOUN	_	Number=Sing	2	nmod	_	_	*	39;40	*
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	39;40;41	6:41
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	39;40;41	6:41
+7	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	39;40;41	6:41
+8-9	du	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	39;40;41;42	6:41
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	39;40;41;42	6:41
+10	28	28	NUM	_	NumType=Card	2	nmod	_	_	*	39;40;41;42	6:41
+11	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	39;40;41;42	6:41
+12	1989	1989	NUM	_	NumType=Card	11	nmod	_	_	*	39;40;41;42	6:41
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+14	même	même	ADV	_	_	15	advmod	_	_	*	*	*
+15	titré	titrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+16	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	43	6:43
+17	Dracula	Dracula	PROPN	_	_	19	nsubj	_	_	*	43;44	6:43
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	cop	_	_	*	*	*
+19	communiste	communiste	ADJ	_	Number=Sing	15	ccomp	_	SpaceAfter=No	*	*	*
+20	.	.	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	*	*
+21	"	"	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00066
+# text = En fait, l'histoire retient aujourd'hui quelques centaines de morts dans toute la Roumanie, et moins de 200 à Timisoara (seulement 96 selon les décomptes officiels).
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	fait	fait	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	45	*
+5	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	45	*
+6	retient	retenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	aujourd'hui	aujourd'hui	ADV	_	_	6	advmod	_	SpaceAfter=No	*	*	*
+8	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	9	det	_	_	*	46	*
+9	centaines	centaine	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*	46	*
+10	de	de	ADP	_	_	11	case	_	_	*	46;47	*
+11	morts	mort	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*	46;47;48	*
+12	dans	dans	ADP	_	_	15	case	_	_	*	*	*
+13	toute	tout	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*	49;50	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	49;50	*
+15	Roumanie	Roumanie	PROPN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	49;50	*
+16	,	,	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	50	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+18	moins	moins	ADV	_	_	9	conj	_	_	*	*	*
+19	de	de	ADP	_	_	20	case	_	_	*	*	*
+20	200	200	PRON	_	NumType=Card	18	obl:arg	_	_	*	*	*
+21	à	à	ADP	_	_	22	case	_	_	*	*	*
+22	Timisoara	Timisoara	PROPN	_	_	18	orphan	_	_	*	51	*
+23	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*	*	*
+24	seulement	seulement	ADV	_	_	25	advmod	_	SpaceAfter=No	*	*	*
+25	96	96	PRON	_	NumType=Card	20	nmod	_	_	*	*	*
+26	selon	selon	ADP	_	_	28	case	_	_	*	*	*
+27	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	28	det	_	_	*	52	7:52
+28	décomptes	décompte	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	_	*	52	7:52
+29	officiels	officiel	ADJ	_	Gender=Masc|Number=Plur	28	amod	_	SpaceAfter=No	*	52	7:52
+30	)	)	PUNCT	_	_	25	punct	_	SpaceAfter=No	*	*	*
+31	.	.	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00067
+# text = Les cadavres, dont les images avaient fait le tour du monde, avaient en réalité été sortis de la morgue d'un hôpital local ;
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	53;54	13:54
+2	cadavres	cadavre	NOUN	_	Gender=Masc|Number=Plur	19	nsubj:pass	_	SpaceAfter=No	*	53;54	13:54
+3	,	,	PUNCT	_	_	2	punct	_	_	*	54	13:54
+4	dont	dont	PRON	_	PronType=Rel	6	nmod	_	_	*	55	7:55
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	56	*
+6	images	image	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	_	_	*	56	*
+7	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+8	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	1:VID	*	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	1	57	*
+10	tour	tour	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	1	57	*
+11-12	du	_	_	_	_	_	_	_	_	*	*	*
+11	de	de	ADP	_	_	13	case	_	_	1	57;58	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	1	57;58	*
+13	monde	monde	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No	1	57;58	*
+14	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+15	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	19	aux:tense	_	_	*	*	*
+16	en	en	ADP	_	_	17	case	_	_	*	*	*
+17	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*	*	*
+18	été	être	AUX	_	Tense=Past|VerbForm=Part	19	aux:pass	_	_	*	*	*
+19	sortis	sortir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	*	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	59	*
+22	morgue	morgue	NOUN	_	Gender=Fem|Number=Sing	19	obl:arg	_	_	*	59	*
+23	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*	59	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	59;60	*
+25	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	59;60	*
+26	local	local	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	SpaceAfter=No	*	59;60	*
+27	;	;	PUNCT	_	_	19	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00068
+# text = ils étaient issus du fonctionnement habituel de l'établissement, mais avaient été présentés comme trouvés dans des charniers résultant de tortures et de massacres du régime en place.
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_	*	61	13:61
+2	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_	*	*	*
+3	issus	issu	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*	*	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	62	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	62	*
+6	fonctionnement	fonctionnement	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*	62	*
+7	habituel	habituel	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	62	*
+8	de	de	ADP	_	_	10	case	_	_	*	62	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*	62;63;64	1:64
+10	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*	62;63;64	1:64
+11	,	,	PUNCT	_	_	3	punct	_	_	*	62;64	1:64
+12	mais	mais	CCONJ	_	_	15	cc	_	_	*	*	*
+13	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+14	été	être	AUX	_	Tense=Past|VerbForm=Part	15	aux:pass	_	_	*	*	*
+15	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	_	*	*	*
+16	comme	comme	ADP	_	_	17	mark	_	_	*	*	*
+17	trouvés	trouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	xcomp	_	_	*	*	*
+18	dans	dans	ADP	_	_	20	case	_	_	*	*	*
+19	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	_	*	65	13:65
+20	charniers	charnier	NOUN	_	Gender=Masc|Number=Plur	17	obl:mod	_	_	*	65	13:65
+21	résultant	résulter	VERB	_	Tense=Pres|VerbForm=Part	20	acl	_	_	*	*	*
+22	de	de	ADP	_	_	23	case	_	_	*	66	10:66
+23	tortures	torture	NOUN	_	Gender=Fem|Number=Plur	21	obl:arg	_	_	*	66;67	10:66
+24	et	et	CCONJ	_	_	26	cc	_	_	*	*	*
+25	de	de	ADP	_	_	26	case	_	_	*	*	*
+26	massacres	massacre	NOUN	_	Gender=Masc|Number=Plur	23	conj	_	_	*	*	*
+27-28	du	_	_	_	_	_	_	_	_	*	*	*
+27	de	de	ADP	_	_	29	case	_	_	*	68	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	68	*
+29	régime	régime	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	68	*
+30	en	en	ADP	_	_	31	case	_	_	*	68	*
+31	place	place	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	SpaceAfter=No	*	68	*
+32	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00069
+# text = Voir aussi
+1	Voir	voir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+2	aussi	aussi	ADV	_	_	1	advmod	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00070
+# text = - Révolution roumaine de 1989
+1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
+2	Révolution	révolution	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	69;70	10:69
+3	roumaine	roumain	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	69;70	10:69
+4	de	de	ADP	_	_	5	case	_	_	*	69;70	10:69
+5	1989	1989	NUM	_	NumType=Card	2	nmod	_	_	*	69;70;71;72	10:69;1:71;1:72
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00071
+# text = - Ceausescu
+1	-	-	PUNCT	_	_	2	punct	_	_	*	70;72;73	1:72;10:73
+2	Ceausescu	Ceausescu	PROPN	_	_	0	root	_	_	*	70;72;73;74	1:72;10:73
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00072
+# text = - Timisoara
+1	-	-	PUNCT	_	_	2	punct	_	_	*	*	*
+2	Timisoara	Timisoara	PROPN	_	_	0	root	_	_	*	75;76	4:75;1:76
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00073
+# text = Sources
+1	Sources	source	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	76	1:76
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00074
+# text = - Une analyse du phénomène
+1	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+2	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	77	*
+3	analyse	analyse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	77	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	77;78	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	77;78	*
+6	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	77;78	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00075
+# text = Catégories : Wikipédia : ébauche Roumanie.
+1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	79	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*	*	*
+3	Wikipédia	Wikipédia	PROPN	_	_	1	nmod	_	_	*	*	*
+4	:	:	PUNCT	_	_	3	punct	_	_	*	*	*
+5	ébauche	ébauche	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	80	*
+6	Roumanie	Roumanie	PROPN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*	81	4:81
+7	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00076
+# text = Désinformation.
+1	Désinformation	désinformation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*	82	2:82
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00077
+# text = Médias.
+1	Médias	média	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*	83	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00078
+# text = Histoire de la Roumanie
+1	Histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	84	*
+2	de	de	ADP	_	_	4	case	_	_	*	84	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	84;85	2:85
+4	Roumanie	Roumanie	PROPN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	84;85	2:85
+

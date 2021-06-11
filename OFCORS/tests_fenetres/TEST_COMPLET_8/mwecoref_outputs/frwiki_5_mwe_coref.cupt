@@ -1,0 +1,515 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00151
+# text = Affaire des disparus du Beach
+1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1	*
+2-3	des	_	_	_	_	_	_	_	_	*	*	*
+2	de	de	ADP	_	_	4	case	_	_	*	1;2	11:2
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	1;2	11:2
+4	disparus	disparu	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*	1;2	11:2
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	1;2;3	11:2;16:3
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	1;2;3	11:2;16:3
+7	Beach	Beach	PROPN	_	_	4	nmod	_	_	*	1;2;3	11:2;16:3
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00152
+# text = L'Affaire des disparus du Beach est une affaire congolaise sous le régime de Denis Sassou-Nguesso.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	4	16:4
+2	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	4	16:4
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	4;5	16:4
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	4;5	16:4
+5	disparus	disparu	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	4;5	16:4
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	4;5;6	16:4;11:6
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	4;5;6	16:4;11:6
+8	Beach	Beach	PROPN	_	_	5	nmod	_	_	*	4;5;6	16:4;11:6
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	7	*
+11	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	7	*
+12	congolaise	congolais	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	7	*
+13	sous	sous	ADP	_	_	15	case	_	_	*	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	8	*
+15	régime	régime	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*	8	*
+16	de	de	ADP	_	_	17	case	_	_	*	8	*
+17	Denis	Denis	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	8;9	2:9
+18	Sassou-Nguesso	Sassou-Nguesso	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*	8;9	2:9
+19	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00153
+# text = Contexte
+1	Contexte	contexte	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	10	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00154
+# text = En 1999, dans un soucis d'apaisement, Denis Sassou annonce la reconciliation nationale.
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	1999	1999	NUM	_	NumType=Card	12	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+4	dans	dans	ADP	_	_	6	case	_	_	*	*	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	11;12	*
+6	soucis	soucis	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	11;12	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	11;12	*
+8	apaisement	apaisement	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*	11;12;13;14	2:13;2:14
+9	,	,	PUNCT	_	_	12	punct	_	_	*	11;12;14	2:14
+10	Denis	Denis	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*	12;15	*
+11	Sassou	Sassou	PROPN	_	_	10	flat:name	_	_	*	12;15	*
+12	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	16	*
+14	reconciliation	reconciliation	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*	16	*
+15	nationale	national	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No	*	16	*
+16	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00155
+# text = Il signe des accords avec la République démocratique du Congo et le HCR pour le retour des réfugiés qui avaient fui la guerre civile en se réfugiant à Kinshasa.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	17	2:17
+2	signe	signer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+3	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	4	det	_	_	*	18	8:18
+4	accords	accord	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	1	18	8:18
+5	avec	avec	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	19;20	10:20
+7	République	république	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	_	*	19;20	10:20
+8	démocratique	démocratique	ADJ	_	Number=Sing	7	amod	_	_	*	19;20	10:20
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	19;20;21;22	10:20;2:21;2:22
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	19;20;21;22	10:20;2:21;2:22
+11	Congo	Congo	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	19;20;21;22	10:20;2:21;2:22
+12	et	et	CCONJ	_	_	14	cc	_	_	*	20;22	10:20;2:22
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	20;22;23	10:20;2:22;2:23
+14	HCR	HCR	PROPN	_	Gender=Masc|Number=Sing	7	conj	_	_	*	20;22;23	10:20;2:22;2:23
+15	pour	pour	ADP	_	_	17	case	_	_	*	*	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	24	2:24
+17	retour	retour	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*	24	2:24
+18-19	des	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	24;25	2:24;8:25
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*	24;25	2:24;8:25
+20	réfugiés	réfugié	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*	24;25	2:24;8:25
+21	qui	qui	PRON	_	PronType=Rel	23	nsubj	_	_	*	26	2:26
+22	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	23	aux:tense	_	_	*	*	*
+23	fui	fuir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl:relcl	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	27	10:27
+25	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*	27	10:27
+26	civile	civil	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*	27	10:27
+27	en	en	ADP	_	_	29	mark	_	_	*	*	*
+28	se	se	PRON	_	Person=3|Reflex=Yes	29	expl:comp	_	_	2:IRV	*	*
+29	réfugiant	réfugier	VERB	_	Tense=Pres|VerbForm=Part	23	advcl	_	_	2	*	*
+30	à	à	ADP	_	_	31	case	_	_	*	*	*
+31	Kinshasa	Kinshasa	PROPN	_	Gender=Masc|Number=Sing	29	obl:arg	_	SpaceAfter=No	*	28;29	2:29
+32	.	.	PUNCT	_	_	2	punct	_	_	*	29	2:29
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00156
+# text = Le premier retour de familles (adultes, femmes, enfants) a lieu par la "traversée du Beach" (navette fluviale qui effectue les liaisons Brazzaville-Kinshasa), et comprend environ 1500 personnes, sous le contrôle du HCR.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	30	2:30
+2	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	_	*	30	2:30
+3	retour	retour	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*	30	2:30
+4	de	de	ADP	_	_	5	case	_	_	*	30;31	2:30
+5	familles	famille	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*	30;31;32	2:30
+6	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	30	2:30
+7	adultes	adulte	NOUN	_	Number=Plur	5	appos	_	SpaceAfter=No	*	30	2:30
+8	,	,	PUNCT	_	_	9	punct	_	_	*	30	2:30
+9	femmes	femme	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	SpaceAfter=No	*	30;33	2:30
+10	,	,	PUNCT	_	_	11	punct	_	_	*	30;33;34	2:30
+11	enfants	enfant	NOUN	_	Number=Plur	7	conj	_	SpaceAfter=No	*	30;33;34	2:30
+12	)	)	PUNCT	_	_	5	punct	_	_	*	*	*
+13	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+14	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1	*	*
+15	par	par	ADP	_	_	18	case	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	35	10:35
+17	"	"	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	35	10:35
+18	traversée	traversée	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*	35	10:35
+19-20	du	_	_	_	_	_	_	_	_	*	*	*
+19	de	de	ADP	_	_	21	case	_	_	*	35;36;37	10:35;2:36;2:37
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	35;36;37	10:35;2:36;2:37
+21	Beach	Beach	PROPN	_	_	18	nmod	_	SpaceAfter=No	*	35;36;37	10:35;2:36;2:37
+22	"	"	PUNCT	_	_	21	punct	_	_	*	37	2:37
+23	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*	37;38	2:37;10:38
+24	navette	navette	NOUN	_	Gender=Fem|Number=Sing	21	appos	_	_	*	37;38;39	2:37;10:38
+25	fluviale	fluvial	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	_	*	37;38;39	2:37;10:38
+26	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*	40	2:40
+27	effectue	effectuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	_	_	2:LVC.full	*	*
+28	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	29	det	_	_	*	41;42	*
+29	liaisons	liaison	NOUN	_	Gender=Fem|Number=Plur	27	obj	_	_	2	41;42	*
+30	Brazzaville-Kinshasa	Brazzaville-Kinshasa	PROPN	_	_	29	nmod	_	SpaceAfter=No	*	42;43	7:43
+31	)	)	PUNCT	_	_	21	punct	_	SpaceAfter=No	*	*	*
+32	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+33	et	et	CCONJ	_	_	34	cc	_	_	*	*	*
+34	comprend	comprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_	*	*	*
+35	environ	environ	ADV	_	_	37	advmod	_	_	*	44	0:44
+36	1500	1500	NUM	_	NumType=Card	37	nummod	_	_	*	44	0:44
+37	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	34	obj	_	SpaceAfter=No	*	44	0:44
+38	,	,	PUNCT	_	_	37	punct	_	_	*	44	0:44
+39	sous	sous	ADP	_	_	41	case	_	_	*	*	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	*	*
+41	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	*	*
+42-43	du	_	_	_	_	_	_	_	_	*	*	*
+42	de	de	ADP	_	_	44	case	_	_	*	45;46	2:45;7:46
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*	45;46	2:45;7:46
+44	HCR	HCR	PROPN	_	_	41	nmod	_	SpaceAfter=No	*	45;46	2:45;7:46
+45	.	.	PUNCT	_	_	13	punct	_	_	*	46	7:46
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00157
+# text = Ces personnes sont interpellées dès leur arrivée à Brazzaville, acheminées par convois dans des camps ou vers la Présidence selon les sources.
+1	Ces	ce	DET	_	Number=Plur|PronType=Dem	2	det	_	_	*	47	0:47
+2	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	_	_	*	47	0:47
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*	*	*
+4	interpellées	interpeller	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+5	dès	dès	ADP	_	_	7	case	_	_	*	*	*
+6	leur	son	DET	_	Number=Sing|Poss=Yes	7	det	_	_	*	48	*
+7	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	48	*
+8	à	à	ADP	_	_	9	case	_	_	*	*	*
+9	Brazzaville	Brazzaville	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*	49;50	7:50
+10	,	,	PUNCT	_	_	4	punct	_	_	*	50	7:50
+11	acheminées	acheminer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	4	advcl	_	_	*	*	*
+12	par	par	ADP	_	_	13	case	_	_	*	*	*
+13	convois	convoi	NOUN	_	Gender=Masc|Number=Plur	11	obl:mod	_	_	*	51	*
+14	dans	dans	ADP	_	_	16	case	_	_	*	*	*
+15	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	16	det	_	_	*	52	3:52
+16	camps	camp	NOUN	_	Gender=Masc|Number=Plur	11	obl:arg	_	_	*	52	3:52
+17	ou	ou	CCONJ	_	_	20	cc	_	_	*	*	*
+18	vers	vers	ADP	_	_	20	case	_	_	*	*	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	53	*
+20	Présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*	53	*
+21	selon	selon	ADP	_	_	23	case	_	_	*	*	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	54;55	4:55
+23	sources	source	NOUN	_	Gender=Fem|Number=Plur	11	obl:mod	_	SpaceAfter=No	*	54;55	4:55
+24	.	.	PUNCT	_	_	4	punct	_	_	*	55	4:55
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00158
+# text = A partir de ce moment, toutes les traces seront perdues.
+1	A	à	ADP	_	_	11	advmod	_	EXTPOS=ADV|MWE=à_partir	*	*	*
+2	partir	partir	VERB	_	VerbForm=Inf	1	fixed	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	*	*
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*	56	7:56
+5	moment	moment	NOUN	_	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No	*	56	7:56
+6	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+7	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*	57	4:57
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*	57	4:57
+9	traces	trace	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	_	_	*	57	4:57
+10	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	_	_	*	*	*
+11	perdues	perdre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00159
+# text = Certaines rumeurs parlent de personnes entassées vivantes dans des containers, qui auraient été soudés et jetés dans le fleuve.
+1	Certaines	certain	DET	_	Gender=Fem|Number=Plur	2	det	_	_	*	58	*
+2	rumeurs	rumeur	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*	58	*
+3	parlent	parler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	59	9:59
+5	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*	59	9:59
+6	entassées	entasser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	acl	_	_	*	59	9:59
+7	vivantes	vivant	ADJ	_	Gender=Fem|Number=Plur	6	advmod	_	_	*	59	9:59
+8	dans	dans	ADP	_	_	10	case	_	_	*	*	*
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	_	*	60;61	3:60
+10	containers	container	NOUN	_	Gender=Masc|Number=Plur	6	obl:mod	_	SpaceAfter=No	*	60;61	3:60
+11	,	,	PUNCT	_	_	10	punct	_	_	*	61	*
+12	qui	qui	PRON	_	PronType=Rel	15	nsubj:pass	_	_	*	62	7:62
+13	auraient	avoir	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+14	été	être	AUX	_	Tense=Past|VerbForm=Part	15	aux:pass	_	_	*	*	*
+15	soudés	souder	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	10	acl:relcl	_	_	*	*	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+17	jetés	jeter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	conj	_	_	*	*	*
+18	dans	dans	ADP	_	_	20	case	_	_	*	*	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	63	*
+20	fleuve	fleuve	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	SpaceAfter=No	*	63	*
+21	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00160
+# text = Quelques personnes pourront échapper à ce destin tragique, et viendront témoigner.
+1	Quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	_	*	64	9:64
+2	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*	64	9:64
+3	pourront	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+4	échapper	échapper	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*	65	6:65
+7	destin	destin	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	65	6:65
+8	tragique	tragique	ADJ	_	Number=Sing	7	amod	_	SpaceAfter=No	*	65	6:65
+9	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*	*	*
+11	viendront	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	conj	_	_	*	*	*
+12	témoigner	témoigner	VERB	_	VerbForm=Inf	11	xcomp	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00161
+# text = On parle entre autre d'un métis qui dès son arrivée à Brazzaville a été autorisé à sortir de la file d'attente.
+1	On	il	PRON	_	Number=Sing|Person=3	2	nsubj	_	_	*	66	6:66
+2	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	entre	entre	ADP	_	_	2	advmod	_	EXTPOS=ADV|MWE=entre_autre	*	*	*
+4	autre	autre	PRON	_	Number=Sing	3	fixed	_	_	*	*	*
+5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	67	6:67
+7	métis	métis	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	67	6:67
+8	qui	qui	PRON	_	PronType=Rel	16	nsubj:pass	_	_	*	68	6:68
+9	dès	dès	ADP	_	_	11	case	_	_	*	*	*
+10	son	son	DET	_	Number=Sing|Poss=Yes	11	det	_	_	*	69	*
+11	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	_	*	69	*
+12	à	à	ADP	_	_	13	case	_	_	*	*	*
+13	Brazzaville	Brazzaville	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	70	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*	*	*
+15	été	être	AUX	_	Tense=Past|VerbForm=Part	16	aux:pass	_	_	*	*	*
+16	autorisé	autoriser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	acl:relcl	_	_	*	*	*
+17	à	à	ADP	_	_	18	mark	_	_	*	*	*
+18	sortir	sortir	VERB	_	VerbForm=Inf	16	xcomp	_	_	*	*	*
+19	de	de	ADP	_	_	21	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	71	*
+21	file	file	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	_	*	71	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*	71	*
+23	attente	attente	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*	71;72	*
+24	.	.	PUNCT	_	_	2	punct	_	_	*	71	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00162
+# text = Procès
+1	Procès	procès	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	73;74	6:73;6:74
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00163
+# text = À Brazzaville
+1	À	à	ADP	_	_	2	case	_	_	*	74	6:74
+2	Brazzaville	Brazzaville	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_	*	74;75	6:74
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00164
+# text = Seules quelques familles oseront porter plainte pour la disparition de 353 personnes.
+1	Seules	seul	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*	*	*
+2	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	3	det	_	_	*	76	17:76
+3	familles	famille	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	_	_	*	76	17:76
+4	oseront	oser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+5	porter	porter	VERB	_	VerbForm=Inf	4	xcomp	_	_	1:LVC.full	*	*
+6	plainte	plainte	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1	*	*
+7	pour	pour	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	77	*
+9	disparition	disparition	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*	77	*
+10	de	de	ADP	_	_	12	case	_	_	*	77	*
+11	353	353	NUM	_	NumType=Card	12	nummod	_	_	*	77;78	*
+12	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No	*	77;78	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu frwiki_50.1000_00165
+# text = Le procès a lieu à Brazzaville en 2005.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	79	*
+2	procès	procès	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	79	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+4	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1	*	*
+5	à	à	ADP	_	_	6	case	_	_	*	*	*
+6	Brazzaville	Brazzaville	PROPN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*	80	*
+7	en	en	ADP	_	_	8	case	_	_	*	*	*
+8	2005	2005	NUM	_	NumType=Card	3	obl:mod	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00166
+# text = Du côté du pouvoir, plusieurs responsables seront soutenu par des avocats congolais, mais aussi le Français Maître Vergès.
+1-2	Du	_	_	_	_	_	_	_	_	*	*	*
+1	De	de	ADP	_	_	3	case	_	_	*	81	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	81	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*	81	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	81;82	1:82
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	81;82	1:82
+6	pouvoir	pouvoir	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*	81;82	1:82
+7	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+8	plusieurs	plusieurs	DET	_	Number=Plur	9	det	_	_	*	83	17:83
+9	responsables	responsable	NOUN	_	Number=Plur	11	nsubj:pass	_	_	*	83	17:83
+10	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	_	_	*	*	*
+11	soutenu	soutenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+12	par	par	ADP	_	_	14	case	_	_	*	*	*
+13	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	14	det	_	_	*	84;85	*
+14	avocats	avocat	NOUN	_	Gender=Masc|Number=Plur	11	obl:agent	_	_	*	84;85	*
+15	congolais	congolais	ADJ	_	Gender=Masc	14	amod	_	SpaceAfter=No	*	84;85	*
+16	,	,	PUNCT	_	_	14	punct	_	_	*	85	*
+17	mais	mais	CCONJ	_	_	20	cc	_	_	*	*	*
+18	aussi	aussi	ADV	_	_	20	advmod	_	_	*	*	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	86	*
+20	Français	français	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*	86	*
+21	Maître	Maître	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*	87;88	*
+22	Vergès	Vergès	PROPN	_	_	20	nmod	_	SpaceAfter=No	*	87;88	*
+23	.	.	PUNCT	_	_	11	punct	_	_	*	88	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00167
+# text = Le déroulement du procès sera retransmis sur la télévision congolaise pendant quelques semaines.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	89	1:89
+2	déroulement	déroulement	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*	89	1:89
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	89;90	1:89;1:90
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	89;90	1:89;1:90
+5	procès	procès	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	89;90	1:89;1:90
+6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+7	retransmis	retransmettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+8	sur	sur	ADP	_	_	10	case	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	91	*
+10	télévision	télévision	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*	91	*
+11	congolaise	congolais	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*	91	*
+12	pendant	pendant	ADP	_	_	14	case	_	_	*	*	*
+13	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	14	det	_	_	*	92;93	*
+14	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	7	obl:mod	_	SpaceAfter=No	*	92;93	*
+15	.	.	PUNCT	_	_	7	punct	_	_	*	93	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00168
+# text = Quelques heures avant le verdict, les militaires menacent, dans le cas où leur hiérarchie serait condamnée, de faire une descente et des exactions dans le quartier de Poto-Poto.
+1	Quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	_	*	94	*
+2	heures	heure	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*	94	*
+3	avant	avant	ADP	_	_	5	case	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	95;96	14:96
+5	verdict	verdict	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*	95;96	14:96
+6	,	,	PUNCT	_	_	9	punct	_	_	*	96	14:96
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	96;97	14:96
+8	militaires	militaire	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*	96;97	14:96
+9	menacent	menacer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+11	dans	dans	ADP	_	_	13	case	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	98	14:98
+13	cas	cas	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	98	14:98
+14	où	où	PRON	_	PronType=Rel	18	iobj	_	_	*	99	14:99
+15	leur	son	DET	_	Number=Sing|Poss=Yes	16	det	_	_	*	100	*
+16	hiérarchie	hiérarchie	NOUN	_	Gender=Fem|Number=Sing	18	nsubj:pass	_	_	*	100	*
+17	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_	*	*	*
+18	condamnée	condamner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	13	acl:relcl	_	SpaceAfter=No	*	*	*
+19	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+20	de	de	ADP	_	_	21	mark	_	_	*	*	*
+21	faire	faire	VERB	_	VerbForm=Inf	9	xcomp	_	_	1:LVC.full;2:LVC.full	*	*
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	101;102	*
+23	descente	descente	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	1	101;102	*
+24	et	et	CCONJ	_	_	26	cc	_	_	*	102	*
+25	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	26	det	_	_	*	102;103	15:103
+26	exactions	exaction	NOUN	_	Gender=Fem|Number=Plur	23	conj	_	_	2	102;103	15:103
+27	dans	dans	ADP	_	_	29	case	_	_	*	*	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	104	14:104
+29	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	_	*	104	14:104
+30	de	de	ADP	_	_	31	case	_	_	*	104	14:104
+31	Poto-Poto	Poto-Poto	PROPN	_	_	29	nmod	_	SpaceAfter=No	*	104;105	14:104
+32	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00169
+# text = Le verdict reconnaîtra coupables plusieurs dirigeants, accompagné de différentes condamnations.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	106	*
+2	verdict	verdict	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	106	*
+3	reconnaîtra	reconnaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+4	coupables	coupable	ADJ	_	Number=Plur	3	xcomp	_	_	*	*	*
+5	plusieurs	plusieurs	DET	_	Number=Plur	6	det	_	_	*	*	*
+6	dirigeants	dirigeant	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	SpaceAfter=No	*	*	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	accompagné	accompagner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	*	*
+10	différentes	différentes	DET	_	_	11	det	_	_	*	*	*
+11	condamnations	condamnation	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00170
+# text = Cependant, ces responsables, vu leurs fonctions au sein du gouvernement, seront dispensés de peine, et reprendront leur activité normale, en toute quiétude.
+1	Cependant	cependant	ADV	_	_	17	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+3	ces	ce	DET	_	Number=Plur|PronType=Dem	4	det	_	_	*	107	15:107
+4	responsables	responsable	NOUN	_	Number=Plur	17	nsubj:pass	_	SpaceAfter=No	*	107	15:107
+5	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+6	vu	vu	ADP	_	_	8	case	_	_	*	*	*
+7	leurs	son	DET	_	Number=Plur|Poss=Yes	8	det	_	_	*	108;109	*
+8	fonctions	fonction	NOUN	_	Gender=Fem|Number=Plur	17	obl:mod	_	_	*	108;109	*
+9-10	au	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	109;110	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	109;110	*
+11	sein	sein	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	109;110	*
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	109;110;111	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	109;110;111	*
+14	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	109;110;111	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+16	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	17	aux:pass	_	_	*	*	*
+17	dispensés	dispenser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+18	de	de	ADP	_	_	19	case	_	_	*	*	*
+19	peine	peine	NOUN	_	Gender=Fem|Number=Sing	17	obl:arg	_	SpaceAfter=No	*	112	*
+20	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*	*	*
+22	reprendront	reprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	17	conj	_	_	*	*	*
+23	leur	son	DET	_	Number=Sing|Poss=Yes	24	det	_	_	*	113	*
+24	activité	activité	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*	113	*
+25	normale	normal	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No	*	113	*
+26	,	,	PUNCT	_	_	22	punct	_	_	*	*	*
+27	en	en	ADP	_	_	29	case	_	_	*	*	*
+28	toute	tout	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	114	*
+29	quiétude	quiétude	NOUN	_	Gender=Fem|Number=Sing	22	obl:mod	_	SpaceAfter=No	*	114	*
+30	.	.	PUNCT	_	_	17	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00171
+# text = En France
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	France	France	PROPN	_	Gender=Fem|Number=Sing	0	root	_	_	*	115	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00172
+# text = Les plaintes déposées en France se heurtent à des difficultés.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	116;117;118	*
+2	plaintes	plainte	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	_	1:LVC.full	116;117;118	*
+3	déposées	déposer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	1	117;118	*
+4	en	en	ADP	_	_	5	case	_	_	*	118	*
+5	France	France	PROPN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*	118;119	*
+6	se	se	PRON	_	Person=3|Reflex=Yes	7	expl:comp	_	_	2:IRV	*	*
+7	heurtent	heurter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	*	*
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	_	*	120	*
+10	difficultés	difficulté	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	SpaceAfter=No	*	120	*
+11	.	.	PUNCT	_	_	7	punct	_	_	*	120	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00173
+# text = Cependant, le 10 Janvier 2007 la cour de Cassation française a en effet ordonné la poursuite de l'instruction annulée en 2004 par la Cour d'appel de Paris pour vice de forme.
+1	Cependant	cependant	ADV	_	_	15	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	121	*
+4	10	10	NUM	_	NumType=Card	15	obl:mod	_	_	*	121	*
+5	Janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	121	*
+6	2007	2007	NUM	_	NumType=Card	5	nmod	_	_	*	121	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	122	5:122
+8	cour	cour	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*	122	5:122
+9	de	de	ADP	_	_	10	case	_	_	*	122	5:122
+10	Cassation	cassation	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	122;123	5:122
+11	française	français	ADJ	_	_	8	amod	_	_	*	122;123	5:122
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+13	en	en	ADP	_	_	14	case	_	_	*	*	*
+14	effet	effet	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*	*	*
+15	ordonné	ordonner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	124	5:124
+17	poursuite	poursuite	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*	124	5:124
+18	de	de	ADP	_	_	20	case	_	_	*	124	5:124
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*	124;125;126	5:124
+20	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	124;125;126	5:124
+21	annulée	annuler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	_	*	124;126	5:124
+22	en	en	ADP	_	_	23	case	_	_	*	124;126	5:124
+23	2004	2004	NUM	_	NumType=Card	21	obl:mod	_	_	*	124;126;127	5:124
+24	par	par	ADP	_	_	26	case	_	_	*	*	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	128	5:128
+26	Cour	cour	NOUN	_	Gender=Fem|Number=Sing	21	obl:agent	_	_	*	128	5:128
+27	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*	128	5:128
+28	appel	appel	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*	128;129	5:128;13:129
+29	de	de	ADP	_	_	30	case	_	_	*	128;129	5:128;13:129
+30	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*	128;129;130	5:128;13:129;12:130
+31	pour	pour	ADP	_	_	32	case	_	_	*	*	*
+32	vice	vice	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	_	*	131	13:131
+33	de	de	ADP	_	_	34	case	_	_	*	131	13:131
+34	forme	forme	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No	*	131	13:131
+35	.	.	PUNCT	_	_	15	punct	_	_	*	131	13:131
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu frwiki_50.1000_00174
+# text = Catégories : Wikipédia : ébauche République du Congo.
+1	Catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	132;133	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*	133	*
+3	Wikipédia	Wikipédia	PROPN	_	_	1	nmod	_	_	*	133;134	*
+4	:	:	PUNCT	_	_	1	punct	_	_	*	135	13:135
+5	ébauche	ébauche	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	135;136	13:135
+6	République	République	PROPN	_	_	5	nmod	_	_	*	137	12:137
+7-8	du	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	137;138	12:137;13:138
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	137;138	12:137;13:138
+9	Congo	Congo	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*	137;138	12:137;13:138
+10	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00175
+# text = Wikipédia : ébauche histoire.
+1	Wikipédia	Wikipédia	PROPN	_	_	0	root	_	_	*	139;140	13:140
+2	:	:	PUNCT	_	_	1	punct	_	_	*	140	13:140
+3	ébauche	ébauche	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	140;141	13:140
+4	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*	142	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu frwiki_50.1000_00176
+# text = Histoire de la République du Congo
+1	Histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	143	*
+2	de	de	ADP	_	_	4	case	_	_	*	143	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	143;144	*
+4	République	République	PROPN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	143;144	*
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	143;144;145	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	143;144;145	*
+7	Congo	Congo	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	143;144;145	*
+
