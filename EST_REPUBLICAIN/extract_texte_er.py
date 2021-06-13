@@ -1,3 +1,15 @@
+"""
+Script pour diviser les fichiers xml du corpus Est Républicain en articles 
+permettre un simple fitrage par la taille (nombre de mots) de chaque article
+résultat de sortie: un répertoire de txt et un json file
+
+usage:
+    python extract_texte_er.py rep_corpus taille [-f jsonfile]
+Ayant déjà un json file:
+    python extract_texte_er.py TXT2003 300 -f TXT2003.json
+Ayant seulement le répertoire dézippé du corpus:
+    python extract_texte_er.py TXT2003 400
+"""
 import re
 import glob
 import os
