@@ -1,0 +1,518 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_115.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 1
+# text = Réformer LES vœux présidentiels imposent un propos convenu.
+1	Réformer	réformer	VERB	_	VerbForm=Inf	0	root	_	SpacesAfter=\n	*	*	*
+2	LES	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*	1	*
+3	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	1	obj	_	_	*	1	*
+4	présidentiels	présidentiel	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*	1	*
+5	imposent	imposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	2	*
+7	propos	propos	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	2	*
+8	convenu	convenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	SpaceAfter=No	*	2	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 2
+# text = Jacques Chirac, mercredi soir, n'a pas contrevenu à la règle, même s'il a enfin revêtu les habits de chef d'Etat rassembleur, rassurant et en charge de l'essentiel, selon la formule consacrée.
+1	Jacques	Jacques	PROPN	_	_	10	nsubj	_	_	*	3	*
+2	Chirac	Chirac	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	3	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+4	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	4;5	8:5
+5	soir	soir	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	4;5	8:5
+6	,	,	PUNCT	_	_	1	punct	_	_	*	5	8:5
+7	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*	*	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+9	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+10	contrevenu	contrevenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	6	12:6
+13	règle	règle	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	SpaceAfter=No	*	6	12:6
+14	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+15	même	même	ADV	_	_	20	advmod	_	_	*	*	*
+16	s'	si	SCONJ	_	_	20	mark	_	SpaceAfter=No	*	*	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_	*	7	8:7
+18	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*	*	*
+19	enfin	enfin	ADV	_	_	20	advmod	_	_	*	*	*
+20	revêtu	revêtre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_	*	*	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*	*	*
+22	habits	habit	NOUN	_	Gender=Masc|Number=Plur	20	obj	_	_	*	*	*
+23	de	de	ADP	_	_	24	case	_	_	*	*	*
+24	chef	chef	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	*	*
+25	d'	de	ADP	_	_	26	case	_	SpaceAfter=No	*	*	*
+26	Etat	état	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*	*	*
+27	rassembleur	rassembleur	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No	*	*	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*	*	*
+29	rassurant	rassurer	VERB	_	Tense=Pres|VerbForm=Part	10	advcl	_	_	*	*	*
+30	et	et	CCONJ	_	_	32	cc	_	_	*	*	*
+31	en	en	ADP	_	_	32	case	_	_	*	*	*
+32	charge	charge	NOUN	_	Gender=Fem|Number=Sing	29	conj	_	_	*	8	*
+33	de	de	ADP	_	_	35	case	_	_	*	8	*
+34	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*	8;9;10	*
+35	essentiel	essentiel	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	SpaceAfter=No	*	8;9;10	*
+36	,	,	PUNCT	_	_	39	punct	_	_	*	10	*
+37	selon	selon	ADP	_	_	39	case	_	_	*	*	*
+38	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*	11	12:11
+39	formule	formule	NOUN	_	Gender=Fem|Number=Sing	29	obl	_	_	*	11	12:11
+40	consacrée	consacrer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	39	acl	_	SpaceAfter=No	*	11	12:11
+41	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 3
+# text = Il est vrai que le «sursaut républicain» du printemps dernier lui a redonné les pouvoirs qu'une cohabitation de cinq longues années avait écornés.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	que	que	SCONJ	_	_	7	case	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	12	8:12
+6	«	«	PUNCT	_	_	7	punct	_	SpaceAfter=No	*	12	8:12
+7	sursaut	sursaut	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	12	8:12
+8	républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No	*	12	8:12
+9	»	»	PUNCT	_	_	7	punct	_	_	*	12	8:12
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	12;13	8:12;1:13
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	12;13	8:12;1:13
+12	printemps	printemps	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	12;13	8:12;1:13
+13	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*	12;13	8:12;1:13
+14	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	16	iobj	_	_	*	14	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*	*	*
+16	redonné	redonner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	*	*	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*	15	*
+18	pouvoirs	pouvoir	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_	*	15	*
+19	qu'	que	SCONJ	_	_	27	mark	_	SpaceAfter=No	*	16	1:16
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	17	*
+21	cohabitation	cohabitation	NOUN	_	Gender=Fem|Number=Sing	27	nsubj	_	_	*	17	*
+22	de	de	ADP	_	_	25	case	_	_	*	17	*
+23	cinq	cinq	NUM	_	_	25	nummod	_	_	*	17;18	*
+24	longues	long	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*	17;18	*
+25	années	année	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	_	*	17;18	*
+26	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	aux:tense	_	_	*	*	*
+27	écornés	écorner	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	18	acl	_	SpaceAfter=No	*	*	*
+28	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 4
+# text = Sa parole a semblé plus ferme.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	19	7:19
+2	parole	parole	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	19	7:19
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	semblé	sembler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	plus	plus	ADV	_	_	6	advmod	_	_	*	*	*
+6	ferme	ferme	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	SpaceAfter=No	*	*	*
+7	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 5
+# text = Elle vaut feuille de route au gouvernement «de mission» de Jean-Pierre Raffarin.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	20	7:20
+2	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	feuille	feuille	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	21	7:21
+4	de	de	ADP	_	_	5	case	_	_	*	21	7:21
+5	route	route	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	21;22	7:21;7:22
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	23	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	23	*
+8	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	23	*
+9	«	«	PUNCT	_	_	11	punct	_	SpaceAfter=No	*	23	*
+10	de	de	ADP	_	_	11	case	_	_	*	23	*
+11	mission	mission	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*	23	*
+12	»	»	PUNCT	_	_	11	punct	_	_	*	23	*
+13	de	de	ADP	_	_	14	case	_	_	*	23	*
+14	Jean-Pierre	Jean-Pierre	PROPN	_	_	11	nmod	_	_	*	23;24	*
+15	Raffarin	Raffarin	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*	23;24	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 6
+# text = «2003 sera une année d'action résolue et équitable».
+1	«2003	«2003	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*	25	7:25
+2	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_	*	*	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	26	*
+4	année	année	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	26	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*	26	*
+6	action	action	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	26;27	*
+7	résolue	résolu	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	26;27	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*	26;27	*
+9	équitable	équitable	ADJ	_	Gender=Fem|Number=Sing	7	conj	_	SpaceAfter=No	*	26;27	*
+10	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 7
+# text = L'autorité de l'Etat réaffirmée, il convient de mettre en œuvre les réformes nécessaires.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	28	13:28
+2	autorité	autorité	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*	28	13:28
+3	de	de	ADP	_	_	5	case	_	_	*	28	13:28
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	28;29;30	13:28;9:30
+5	Etat	Etat	PROPN	_	_	2	nmod	_	_	*	28;29;30	13:28;9:30
+6	réaffirmée	réaffirmer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No	*	30	9:30
+7	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	1:VID	*	*
+9	convient	convenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+10	de	de	ADP	_	_	11	mark	_	_	*	*	*
+11	mettre	mettre	VERB	_	VerbForm=Inf	9	xcomp	_	_	2:VID	*	*
+12	en	en	ADP	_	_	13	case	_	_	2	*	*
+13	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	2	*	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*	31	*
+15	réformes	réforme	NOUN	_	Gender=Fem|Number=Plur	11	obj	_	_	*	31	*
+16	nécessaires	nécessaire	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	SpaceAfter=No	*	31	*
+17	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 8
+# text = La liste dressée par le chef de l'Etat est longue : retraites, école, système de santé, modernisation de l'Etat, protection de l'environnement, dynamisme de l'économie.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	32;33	13:33
+2	liste	liste	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	32;33	13:33
+3	dressée	dresser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	32;33	13:33
+4	par	par	ADP	_	_	6	case	_	_	*	33	13:33
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	33;34	13:33;3:34
+6	chef	chef	NOUN	_	Gender=Masc|Number=Sing	3	obl:agent	_	_	*	33;34	13:33;3:34
+7	de	de	ADP	_	_	9	case	_	_	*	33;34	13:33;3:34
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	33;34;35	13:33;3:34;9:35
+9	Etat	Etat	PROPN	_	_	6	nmod	_	_	*	33;34;35	13:33;3:34;9:35
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+11	longue	long	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+12	:	:	PUNCT	_	_	13	punct	_	_	*	*	*
+13	retraites	retraite	NOUN	_	Gender=Fem|Number=Plur	11	parataxis	_	SpaceAfter=No	*	*	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+15	école	école	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	SpaceAfter=No	*	*	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+17	système	système	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*	*	*
+18	de	de	ADP	_	_	19	case	_	_	*	*	*
+19	santé	santé	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*	36	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+21	modernisation	modernisation	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*	37	13:37
+22	de	de	ADP	_	_	24	case	_	_	*	37	13:37
+23	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*	37;38	13:37;3:38
+24	Etat	Etat	PROPN	_	_	21	nmod	_	SpaceAfter=No	*	37;38	13:37;3:38
+25	,	,	PUNCT	_	_	26	punct	_	_	*	*	*
+26	protection	protection	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*	39	13:39
+27	de	de	ADP	_	_	29	case	_	_	*	39	13:39
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*	39;40	13:39;9:40
+29	environnement	environnement	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*	39;40	13:39;9:40
+30	,	,	PUNCT	_	_	31	punct	_	_	*	*	*
+31	dynamisme	dynamisme	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*	41	*
+32	de	de	ADP	_	_	34	case	_	_	*	41	*
+33	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*	41;42	3:42
+34	économie	économie	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No	*	41;42	3:42
+35	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 9
+# text = Pour cette tâche, la droite dispose des moyens institutionnels, puisqu'elle dirige les principaux centres de décision.
+1	Pour	pour	ADP	_	_	3	case	_	_	*	*	*
+2	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*	43;44	*
+3	tâche	tâche	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	SpaceAfter=No	*	43;44	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*	44	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	44;45	5:45
+6	droite	droite	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	44;45	5:45
+7	dispose	disposer	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	46;47	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*	46;47	*
+10	moyens	moyen	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_	*	46;47	*
+11	institutionnels	institutionnel	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No	*	46;47	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*	47	*
+13	puisqu'	puisque	SCONJ	_	_	15	mark	_	SpaceAfter=No	*	*	*
+14	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*	48	5:48
+15	dirige	diriger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_	*	*	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*	49	*
+17	principaux	principal	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*	49	*
+18	centres	centre	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*	49	*
+19	de	de	ADP	_	_	20	case	_	_	*	49	*
+20	décision	décision	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*	49;50;51	5:50;5:51
+21	.	.	PUNCT	_	_	7	punct	_	_	*	49;51	5:51
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 10
+# text = L'expérience du gouvernement Juppé a prouvé qu'il lui faut encore élaborer une pédagogie du changement.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	52	*
+2	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	52	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	52;53	0:53
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	52;53	0:53
+5	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	52;53	0:53
+6	Juppé	Juppé	PROPN	_	_	5	appos	_	_	*	52;53	0:53
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+8	prouvé	prouver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+9	qu'	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl:subj	_	_	1:VID	*	*
+11	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	12	iobj	_	_	*	54	0:54
+12	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	1	*	*
+13	encore	encore	ADV	_	_	12	advmod	_	_	*	*	*
+14	élaborer	élaborer	VERB	_	VerbForm=Inf	12	ccomp	_	_	*	*	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	55	*
+16	pédagogie	pédagogie	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	*	55	*
+17-18	du	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	55;56	0:56
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	55;56	0:56
+19	changement	changement	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*	55;56	0:56
+20	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 11
+# text = Jacques Chirac s'y est essayé en expliquant que le temps des «blocs antagonistes» était dépassé et qu'il s'agissait de travailler «avec tous et dans l'intérêt de tous».
+1	Jacques	Jacques	PROPN	_	_	6	nsubj	_	_	*	57	*
+2	Chirac	Chirac	PROPN	_	_	1	flat:name	_	_	*	57	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	SpaceAfter=No	2:IRV	*	*
+4	y	y	PRON	_	_	6	obl:mod	_	_	*	58	0:58
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	essayé	essayer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	2	*	*
+7	en	en	ADP	_	_	8	mark	_	_	*	*	*
+8	expliquant	expliquer	VERB	_	Tense=Pres|VerbForm=Part	6	advcl	_	_	*	*	*
+9	que	que	SCONJ	_	_	19	mark	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	59	0:59
+11	temps	temps	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*	59	0:59
+12-13	des	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	15	case	_	_	*	59;60;61	0:59;0:61
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	59;60;61	0:59;0:61
+14	«	«	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	59;60;61	0:59;0:61
+15	blocs	bloc	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*	59;60;61	0:59;0:61
+16	antagonistes	antagoniste	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	SpaceAfter=No	*	59;60;61	0:59;0:61
+17	»	»	PUNCT	_	_	15	punct	_	_	*	61	0:61
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux:tense	_	_	*	*	*
+19	dépassé	dépasser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	ccomp	_	_	*	*	*
+20	et	et	CCONJ	_	_	24	cc	_	_	*	*	*
+21	qu'	que	SCONJ	_	_	24	mark	_	SpaceAfter=No	*	*	*
+22	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	expl:subj	_	_	1:VID	*	*
+23	s'	se	PRON	_	Person=3|PronType=Prs	24	expl:comp	_	SpaceAfter=No	1	*	*
+24	agissait	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	conj	_	_	1	*	*
+25	de	de	ADP	_	_	26	mark	_	_	*	*	*
+26	travailler	travailler	VERB	_	VerbForm=Inf	24	xcomp	_	_	*	*	*
+27	«	«	PUNCT	_	_	29	punct	_	SpaceAfter=No	*	*	*
+28	avec	avec	ADP	_	_	29	case	_	_	*	*	*
+29	tous	tout	PRON	_	Gender=Masc|Number=Plur	26	obl:mod	_	_	*	62	0:62
+30	et	et	CCONJ	_	_	33	cc	_	_	*	*	*
+31	dans	dans	ADP	_	_	33	case	_	_	*	*	*
+32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*	63	*
+33	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	29	conj	_	_	*	63	*
+34	de	de	ADP	_	_	35	case	_	_	*	63	*
+35	tous	tout	PRON	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*	63;64	0:64
+36	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	*	*
+37	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 12
+# text = Il restera au gouvernement d'en convaincre les catégories de Français concernées par l'effort qui sera demandé.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	1:VID	*	*
+2	restera	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1	*	*
+3-4	au	_	_	_	_	_	_	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	65	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	65	*
+5	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	65	*
+6	d'	de	ADP	_	_	8	mark	_	SpaceAfter=No	*	*	*
+7	en	en	PRON	_	Person=3	10	nmod	_	_	*	*	*
+8	convaincre	convaincre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*	66;67	*
+10	catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*	66;67	*
+11	de	de	ADP	_	_	12	case	_	_	*	66;67;68	0:68
+12	Français	Français	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	66;67;68;69	0:68
+13	concernées	concerner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_	*	67	*
+14	par	par	ADP	_	_	16	case	_	_	*	67	*
+15	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*	67;70	2:70
+16	effort	effort	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	_	_	*	67;70	2:70
+17	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*	71	0:71
+18	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	aux:tense	_	_	*	*	*
+19	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl:relcl	_	SpaceAfter=No	*	*	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 13
+# text = Les intérêts particuliers et contradictoires risquent alors de s'exprimer.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	72	14:72
+2	intérêts	intérêt	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*	72	14:72
+3	particuliers	particulier	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*	72	14:72
+4	et	et	CCONJ	_	_	5	cc	_	_	*	72	14:72
+5	contradictoires	contradictoire	ADJ	_	Gender=Masc|Number=Plur	3	conj	_	_	*	72	14:72
+6	risquent	riscre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	alors	alors	ADV	_	_	6	advmod	_	_	*	*	*
+8	de	de	ADP	_	_	10	mark	_	_	*	*	*
+9	s'	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+10	exprimer	exprimer	VERB	_	VerbForm=Inf	6	xcomp	_	SpaceAfter=No	1	*	*
+11	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 14
+# text = Le 5 mai dernier ne doit pas faire oublier le 21 avril.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	73	2:73
+2	5	5	NUM	_	_	6	nsubj	_	_	*	73	2:73
+3	mai	mai	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	73;74	2:73
+4	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	73;74	2:73
+5	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+6	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+8	faire	faire	AUX	_	VerbForm=Inf	9	aux:caus	_	_	*	*	*
+9	oublier	oublier	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	75	14:75
+11	21	21	NUM	_	_	9	obl	_	_	*	75	14:75
+12	avril	avril	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	75	14:75
+13	.	.	PUNCT	_	_	6	punct	_	_	*	75	14:75
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 15
+# text = Au terme d'une séquence électorale inattendue, le chef de l'Etat peut croire en sa bonne étoile et mieux vaut sa confiance qu'un pessimisme démobilisateur.
+1-2	Au	_	_	_	_	_	_	_	_	*	*	*
+1	À	à	ADP	_	_	3	case	_	_	*	76;77	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	76;77	*
+3	terme	terme	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*	76;77	*
+4	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*	76;77	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	76;77;78;79	*
+6	séquence	séquence	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	76;77;78;79	*
+7	électorale	électoral	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	76;77;78;79	*
+8	inattendue	inattendu	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No	*	76;77;78;79	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*	77;79	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	77;79;80	*
+11	chef	chef	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*	77;79;80	*
+12	de	de	ADP	_	_	14	case	_	_	*	77;79;80	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	77;79;80;81	*
+14	Etat	Etat	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	77;79;80;81	*
+15	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+16	croire	croire	VERB	_	VerbForm=Inf	15	xcomp	_	_	*	*	*
+17	en	en	ADP	_	_	20	case	_	_	*	*	*
+18	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*	82	15:82
+19	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*	82	15:82
+20	étoile	étoile	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	_	*	82	15:82
+21	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+22	mieux	mieux	ADV	_	_	23	advmod	_	_	*	*	*
+23	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*	*	*
+24	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*	83	15:83
+25	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*	83	15:83
+26	qu'	que	SCONJ	_	_	28	case	_	SpaceAfter=No	*	*	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*	84	6:84
+28	pessimisme	pessimisme	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*	84	6:84
+29	démobilisateur	démobilisateur	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No	*	84	6:84
+30	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 16
+# text = Ses vœux laissent toutefois sur leur faim ceux qui attendaient qu'il parle des grands défis de l'heure : la menace de guerre en Irak ;
+1	Ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*	85	4:85
+2	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*	85	4:85
+3	laissent	laisser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	toutefois	toutefois	ADV	_	_	3	advmod	_	_	*	*	*
+5	sur	sur	ADP	_	_	7	case	_	_	*	*	*
+6	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*	86	*
+7	faim	faim	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*	86	*
+8	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	7	appos	_	_	*	87	4:87
+9	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*	88	*
+10	attendaient	attendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+11	qu'	que	SCONJ	_	_	13	mark	_	SpaceAfter=No	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*	89	6:89
+13	parle	parler	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_	*	*	*
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	17	case	_	_	*	90	4:90
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*	90	4:90
+16	grands	grand	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*	90	4:90
+17	défis	défi	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_	*	90	4:90
+18	de	de	ADP	_	_	20	case	_	_	*	90	4:90
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*	90;91	4:90
+20	heure	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	90;91	4:90
+21	:	:	PUNCT	_	_	23	punct	_	_	*	*	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	92	*
+23	menace	menace	NOUN	_	Gender=Fem|Number=Sing	17	appos	_	_	*	92	*
+24	de	de	ADP	_	_	25	case	_	_	*	92	*
+25	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*	92;93;94	*
+26	en	en	ADP	_	_	27	case	_	_	*	92;94	*
+27	Irak	Irak	PROPN	_	_	23	nmod	_	_	*	92;94;95	*
+28	;	;	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 17
+# text = les dangers du terrorisme ; l'Europe élargie et la question de la Turquie; les langueurs de l'économie...
+1	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	96	*
+2	dangers	danger	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	_	*	96	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	96;97	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	96;97	*
+5	terrorisme	terrorisme	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	96;97	*
+6	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	98;99	*
+8	Europe	Europe	PROPN	_	_	9	nsubj	_	_	*	98;99	*
+9	élargie	élargier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	98;99	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*	99	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	99;100	*
+12	question	question	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*	99;100	*
+13	de	de	ADP	_	_	15	case	_	_	*	99;100	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	99;100;101	*
+15	Turquie	Turquie	PROPN	_	_	12	nmod	_	SpaceAfter=No	*	99;100;101	*
+16	;	;	PUNCT	_	_	9	punct	_	_	*	*	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*	102	*
+18	langueurs	langueur	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*	102	*
+19	de	de	ADP	_	_	21	case	_	_	*	102	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*	102;103	16:103
+21	économie	économie	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*	102;103	16:103
+22	...	...	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 18
+# text = Jacques Chirac s'est contenté d'y faire allusion sans en donner sa vision.
+1	Jacques	Jacques	PROPN	_	_	5	nsubj	_	_	*	104	*
+2	Chirac	Chirac	PROPN	_	_	1	flat:name	_	_	*	104	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	contenté	contenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+6	d'	de	ADP	_	_	8	mark	_	SpaceAfter=No	*	*	*
+7	y	y	PRON	_	_	8	iobj	_	_	*	105	16:105
+8	faire	faire	VERB	_	VerbForm=Inf	5	xcomp	_	_	2:LVC.full	*	*
+9	allusion	allusion	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	2	*	*
+10	sans	sans	ADP	_	_	12	mark	_	_	*	*	*
+11	en	en	PRON	_	Person=3	14	nmod	_	_	*	106	16:106
+12	donner	donner	VERB	_	VerbForm=Inf	8	advcl	_	_	*	*	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*	107	11:107
+14	vision	vision	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	SpaceAfter=No	*	107	11:107
+15	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 19
+# text = «Plus la France sera dynamique, plus elle sera écoutée», a affirmé le président de la République.
+1	«	«	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	*	*
+2	Plus	plus	ADV	_	_	6	advmod	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	108	*
+4	France	France	PROPN	_	_	6	nsubj	_	_	*	108	*
+5	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	cop	_	_	*	*	*
+6	dynamique	dynamique	ADJ	_	Gender=Fem|Number=Sing	15	ccomp	_	SpaceAfter=No	*	*	*
+7	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+8	plus	plus	ADV	_	_	11	advmod	_	_	*	*	*
+9	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	nsubj:pass	_	_	*	109	11:109
+10	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	_	_	*	*	*
+11	écoutée	écouter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	SpaceAfter=No	*	*	*
+12	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	*	*
+13	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+15	affirmé	affirmer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	110	*
+17	président	président	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*	110	*
+18	de	de	ADP	_	_	20	case	_	_	*	110	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	110;111	11:111
+20	République	république	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*	110;111	11:111
+21	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 20
+# text = Certes.
+1	Certes	certes	ADV	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 21
+# text = Il eût été utile de préciser ce qu'elle avait à dire.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	*	*	*
+2	eût	avoir	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	cop	_	_	*	*	*
+4	utile	utile	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	6	mark	_	_	*	*	*
+6	préciser	préciser	VERB	_	VerbForm=Inf	4	csubj	_	_	*	*	*
+7	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	obj	_	_	*	*	*
+8	qu'	que	PRON	_	PronType=Rel	10	obj	_	SpaceAfter=No	*	*	*
+9	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*	112	11:112
+10	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_	*	*	*
+11	à	à	ADP	_	_	12	mark	_	_	*	*	*
+12	dire	dire	VERB	_	VerbForm=Inf	10	xcomp	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 22
+# text = Chantal DIDIER
+1	Chantal	Chantal	PROPN	_	_	0	root	_	_	*	113	*
+2	DIDIER	Didier	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s\s	*	113	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_115.txt 23
+# text = Les « Saint-Bernard » ont raccompagné 89 fêtards de Besançon et du haut Doubs En Doubs
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*	114	11:114
+2	«	«	PUNCT	_	_	3	punct	_	_	*	114	11:114
+3	Saint-Bernard	Saint-Bernard	PROPN	_	_	6	nsubj	_	_	*	114	11:114
+4	»	»	PUNCT	_	_	3	punct	_	_	*	114	11:114
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	raccompagné	raccompagner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	89	89	NUM	_	_	8	nummod	_	_	*	115	*
+8	fêtards	fêtard	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*	115	*
+9	de	de	ADP	_	_	10	case	_	_	*	*	*
+10	Besançon	Besançon	PROPN	_	_	8	nmod	_	_	*	116;117	10:116
+11	et	et	CCONJ	_	_	14	cc	_	_	*	117	*
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	117;118	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	117;118	*
+14	haut	haut	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*	117;118	*
+15	Doubs	Doubs	PROPN	_	_	14	appos	_	_	*	117;118	*
+16	En	en	ADP	_	_	17	case	_	_	*	*	*
+17	Doubs	Doubs	PROPN	_	_	6	obl	_	SpacesAfter=\n	*	119	10:119
+

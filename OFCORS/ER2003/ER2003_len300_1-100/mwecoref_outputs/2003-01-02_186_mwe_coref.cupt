@@ -1,0 +1,594 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_186.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 1
+# text = Carnet de deuil : Robert Guichon
+1	Carnet	carnet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	1;2	*
+2	de	de	ADP	_	_	3	case	_	_	*	1;2	*
+3	deuil	deuil	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	1;2;3	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*	2	*
+5	Robert	Robert	PROPN	_	_	1	appos	_	_	*	2;4	*
+6	Guichon	Guichon	PROPN	_	_	5	flat:name	_	SpacesAfter=\n	*	2;4	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 2
+# text = Un ancien commerçant de Rougemont vient de s'éteindre.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	5	*
+2	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	5	*
+3	commerçant	commerçant	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	5	*
+4	de	de	ADP	_	_	5	case	_	_	*	5	*
+5	Rougemont	Rougemont	PROPN	_	_	3	nmod	_	_	*	5;6	*
+6	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	de	de	ADP	_	_	9	mark	_	_	*	*	*
+8	s'	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+9	éteindre	éteindre	VERB	_	VerbForm=Inf	6	xcomp	_	SpaceAfter=No	1	*	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 3
+# text = Robert Guichon a tenu un commerce de graines de 1933 à 1974, commerce installé rue du Pont, puis repris par son fils Jean, route de Bonnal, jusqu'en 1997.
+1	Robert	Robert	PROPN	_	_	4	nsubj	_	_	*	7	*
+2	Guichon	Guichon	PROPN	_	_	1	flat:name	_	_	*	7	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	8	12:8
+6	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	8	12:8
+7	de	de	ADP	_	_	8	case	_	_	*	8;9	12:8
+8	graines	graine	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*	8;9;10	12:8
+9	de	de	ADP	_	_	10	case	_	_	*	*	*
+10	1933	1933	NUM	_	_	6	nmod	_	_	*	11	*
+11	à	à	ADP	_	_	12	case	_	_	*	*	*
+12	1974	1974	NUM	_	_	4	obl:mod	_	SpaceAfter=No	*	12	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+14	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*	13	12:13
+15	installé	installer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_	*	*	*
+16	rue	rue	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*	14	*
+17-18	du	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	14;15	12:15
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	14;15	12:15
+19	Pont	Pont	PROPN	_	_	16	nmod	_	SpaceAfter=No	*	14;15	12:15
+20	,	,	PUNCT	_	_	22	punct	_	_	*	14;15	12:15
+21	puis	puis	ADV	_	_	22	cc	_	_	*	*	*
+22	repris	reprendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	conj	_	_	*	*	*
+23	par	par	ADP	_	_	25	case	_	_	*	*	*
+24	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*	16;17	*
+25	fils	fils	NOUN	_	Gender=Masc|Number=Sing	22	obl:agent	_	_	*	16;17	*
+26	Jean	Jean	PROPN	_	_	25	appos	_	SpaceAfter=No	*	17;18	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*	*	*
+28	route	route	NOUN	_	Gender=Fem|Number=Sing	26	appos	_	_	*	19;20	*
+29	de	de	ADP	_	_	30	case	_	_	*	19;20	*
+30	Bonnal	Bonnal	PROPN	_	_	28	nmod	_	SpaceAfter=No	*	19;20;21;22	*
+31	,	,	PUNCT	_	_	28	punct	_	_	*	20;22	*
+32	jusqu'	jusque	ADV	_	_	34	advmod	_	SpaceAfter=No	*	*	*
+33	en	en	ADP	_	_	34	case	_	_	*	*	*
+34	1997	1997	NUM	_	_	22	obl	_	SpaceAfter=No	*	23	9:23
+35	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 4
+# text = Robert Guichon est né le 10 juin 1908 à La Garenne-Colombe (Hauts-de-Seine).
+1	Robert	Robert	PROPN	_	_	4	nsubj	_	_	*	24	*
+2	Guichon	Guichon	PROPN	_	_	1	flat:name	_	_	*	24	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	25	9:25
+6	10	10	NUM	_	_	4	obl:arg	_	_	*	25	9:25
+7	juin	juin	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	25	9:25
+8	1908	1908	NUM	_	_	7	nmod	_	_	*	25;26	9:25
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	La	La	DET	_	_	11	det	_	_	*	27;28	17:27
+11	Garenne-Colombe	Garenne-Colombe	PROPN	_	_	4	obl:arg	_	_	*	27;28	17:27
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*	28;29	17:29
+13	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	_	11	appos	_	SpaceAfter=No	*	28;29;30	17:29
+14	)	)	PUNCT	_	_	13	punct	_	SpaceAfter=No	*	*	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 5
+# text = Il était le fils de Léon Guichon, né à Moirans (Jura) et de Marguerite Baverel, de Lons-le-Saunier.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*	31	6:31
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	*	*
+4	fils	fils	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	6	case	_	_	*	*	*
+6	Léon	Léon	PROPN	_	_	4	nmod	_	_	*	32;33	6:33
+7	Guichon	Guichon	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*	32;33	6:33
+8	,	,	PUNCT	_	_	9	punct	_	_	*	33	6:33
+9	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*	*	*
+10	à	à	ADP	_	_	11	case	_	_	*	*	*
+11	Moirans	Moirans	PROPN	_	_	9	obl:arg	_	_	*	34	*
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*	34;35	6:35
+13	Jura	jura	PROPN	_	_	11	appos	_	SpaceAfter=No	*	34;35;36	6:35;16:36
+14	)	)	PUNCT	_	_	13	punct	_	_	*	*	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+16	de	de	ADP	_	_	17	case	_	_	*	*	*
+17	Marguerite	Marguerite	PROPN	_	_	9	obl:arg	_	_	*	37	*
+18	Baverel	Baverel	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*	37	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+20	de	de	ADP	_	_	21	case	_	_	*	*	*
+21	Lons-le-Saunier	Lons-le-Saunier	PROPN	_	_	17	nmod	_	SpaceAfter=No	*	38	16:38
+22	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 6
+# text = Il passe toute sa jeunesse à Paris, dans le XVIIe arrondissement.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	39	5:39
+2	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	toute	tout	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*	40	*
+4	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*	40	*
+5	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	40	*
+6	à	à	ADP	_	_	7	case	_	_	*	*	*
+7	Paris	Paris	PROPN	_	_	2	obl:arg	_	SpaceAfter=No	*	41	5:41
+8	,	,	PUNCT	_	_	12	punct	_	_	*	41	5:41
+9	dans	dans	ADP	_	_	12	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	42	5:42
+11	XVIIe	XVIIe	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_	*	42	5:42
+12	arrondissement	arrondissement	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	SpaceAfter=No	*	42	5:42
+13	.	.	PUNCT	_	_	2	punct	_	_	*	42	5:42
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 7
+# text = Après le certificat obtenu avec la mention bien en 1920, il entre à l'école Saint-Nicolas puis à l'école d'horticulture d'Igny (Seine-et-Oise) en avril 1921.
+1	Après	après	ADP	_	_	3	case	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	43;44	5:43;5:44
+3	certificat	certificat	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	43;44	5:43;5:44
+4	obtenu	obtenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*	44	5:44
+5	avec	avec	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	45	*
+7	mention	mention	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	45	*
+8	bien	bien	ADV	_	_	10	advmod	_	_	*	45	*
+9	en	en	ADP	_	_	10	case	_	_	*	*	*
+10	1920	1920	NUM	_	_	3	nmod	_	SpaceAfter=No	*	46	*
+11	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*	47	5:47
+13	entre	entrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*	48	*
+16	école	école	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*	48	*
+17	Saint-Nicolas	Saint-Nicolas	PROPN	_	_	16	appos	_	_	*	48;49	*
+18	puis	puis	ADV	_	_	21	cc	_	_	*	*	*
+19	à	à	ADP	_	_	21	case	_	_	*	*	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*	50	*
+21	école	école	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*	50	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*	50	*
+23	horticulture	horticulture	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*	50;51;52	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*	50;52	*
+25	Igny	Igny	PROPN	_	_	23	nmod	_	_	*	50;52;53	11:53
+26	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No	*	50;52;53;54	11:53
+27	Seine-et-Oise	Seine-et-Oise	PROPN	_	_	21	appos	_	SpaceAfter=No	*	50;52;53;54;55	11:53
+28	)	)	PUNCT	_	_	27	punct	_	_	*	*	*
+29	en	en	ADP	_	_	30	case	_	_	*	*	*
+30	avril	avril	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*	56;57	11:56;11:57
+31	1921	1921	NUM	_	_	30	nmod	_	SpaceAfter=No	*	56;57	11:56;11:57
+32	.	.	PUNCT	_	_	13	punct	_	_	*	57	11:57
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 8
+# text = Il en sort 1er de sa promotion le 27 juillet 1924.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*	58	11:58
+2	en	en	PRON	_	Person=3	3	expl:comp	_	_	*	59	*
+3	sort	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	1er	1er	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	_	*	60	*
+5	de	de	ADP	_	_	7	case	_	_	*	60	*
+6	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*	60;61	10:61
+7	promotion	promotion	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	60;61	10:61
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	*	*
+9	27	27	NUM	_	_	3	obl	_	_	*	*	*
+10	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	*	*
+11	1924	1924	NUM	_	_	10	nmod	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 9
+# text = Sa carrière professionnelle commence en décembre 1925 chez Cayeux Leclerc, le plus grand magasin de graines de Paris.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	62	*
+2	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	62	*
+3	professionnelle	professionnel	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	62	*
+4	commence	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	en	en	ADP	_	_	6	case	_	_	*	*	*
+6	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*	63	11:63
+7	1925	1925	NUM	_	_	6	nmod	_	_	*	63;64	11:63;10:64
+8	chez	chez	ADP	_	_	9	case	_	_	*	*	*
+9	Cayeux	Cayeux	PROPN	_	_	4	obl	_	_	*	65	*
+10	Leclerc	Leclerc	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*	65	*
+11	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	66	3:66
+13	plus	plus	ADV	_	_	14	advmod	_	_	*	66	3:66
+14	grand	grand	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	66	3:66
+15	magasin	magasin	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	66	3:66
+16	de	de	ADP	_	_	17	case	_	_	*	66;67	3:66
+17	graines	graine	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*	66;67;68	3:66
+18	de	de	ADP	_	_	19	case	_	_	*	66;67;68	3:66
+19	Paris	Paris	PROPN	_	_	15	nmod	_	SpaceAfter=No	*	66;67;68;69;70	3:66
+20	.	.	PUNCT	_	_	4	punct	_	_	*	66;67;68;70	3:66
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 10
+# text = Il est premier vendeur en tant que grainetier-horticulteur.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*	71	3:71
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*	72	3:72
+4	vendeur	vendeur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	72	3:72
+5	en	en	ADP	_	_	8	case	_	_	*	*	*
+6	tant	tant	ADV	_	_	5	fixed	_	_	*	*	*
+7	que	que	SCONJ	_	_	5	fixed	_	_	*	*	*
+8	grainetier-horticulteur	grainetier-horticulteur	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	73	3:73
+9	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 11
+# text = Son service militaire en avril 1927 l'emmène à Tunis.
+1	Son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	74	3:74
+2	service	service	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	74	3:74
+3	militaire	militaire	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	74	3:74
+4	en	en	ADP	_	_	5	case	_	_	*	*	*
+5	avril	avril	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	75	3:75
+6	1927	1927	NUM	_	_	5	nmod	_	_	*	75	3:75
+7	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No	*	76	*
+8	emmène	emmener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+9	à	à	ADP	_	_	10	case	_	_	*	*	*
+10	Tunis	Tunis	PROPN	_	_	8	obl:mod	_	SpaceAfter=No	*	77	3:77
+11	.	.	PUNCT	_	_	8	punct	_	_	*	77	3:77
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 12
+# text = Il fait partie du 26e train des équipages militaires.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	78	3:78
+2	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+3	partie	partie	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	1	*	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	7	case	_	_	*	79	3:79
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	79	3:79
+6	26e	26e	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*	79	3:79
+7	train	train	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	79	3:79
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	79;80	3:79;13:80
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*	79;80	3:79;13:80
+10	équipages	équipage	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*	79;80	3:79;13:80
+11	militaires	militaire	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No	*	79;80	3:79;13:80
+12	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 13
+# text = Il sera nommé brigadier puis maréchal des Logis en 1928.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_	*	81	3:81
+2	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	_	_	*	*	*
+3	nommé	nommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	brigadier	brigadier	NOUN	_	Gender=Masc|Number=Sing	3	xcomp	_	_	*	82	3:82
+5	puis	puis	ADV	_	_	6	cc	_	_	*	*	*
+6	maréchal	maréchal	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	_	*	83	*
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	83;84	13:84
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	83;84	13:84
+9	Logis	logis	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	83;84	13:84
+10	en	en	ADP	_	_	11	case	_	_	*	*	*
+11	1928	1928	NUM	_	_	3	obl	_	SpaceAfter=No	*	85	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*	85	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 14
+# text = En novembre 1930, il entre comme agent commercial à la compagnie Singer de Besançon et est chargé des cantons de Rougemont et Clerval.
+1	En	en	ADP	_	_	2	case	_	_	*	86	3:86
+2	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	86;87	3:86
+3	1930	1930	NUM	_	_	2	nmod	_	SpaceAfter=No	*	86;87	3:86
+4	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*	88	2:88
+6	entre	entrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	comme	comme	ADP	_	_	8	case	_	_	*	*	*
+8	agent	agent	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*	89	2:89
+9	commercial	commercial	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	89	2:89
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	90	*
+12	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	90	*
+13	Singer	Singer	PROPN	_	_	12	appos	_	_	*	90;91	2:91
+14	de	de	ADP	_	_	15	case	_	_	*	90;91	2:91
+15	Besançon	Besançon	PROPN	_	_	12	nmod	_	_	*	90;91;92	2:91;4:92
+16	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	chargé	charger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*	*	*
+19-20	des	_	_	_	_	_	_	_	_	*	*	*
+19	de	de	ADP	_	_	21	case	_	_	*	93	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*	93	*
+21	cantons	canton	NOUN	_	Gender=Masc|Number=Plur	18	obl:arg	_	_	*	93	*
+22	de	de	ADP	_	_	23	case	_	_	*	93	*
+23	Rougemont	Rougemont	PROPN	_	_	21	nmod	_	_	*	93;94;95	4:94;2:95
+24	et	et	CCONJ	_	_	25	cc	_	_	*	93;95	2:95
+25	Clerval	Clerval	PROPN	_	_	23	conj	_	SpaceAfter=No	*	93;95;96	2:95;4:96
+26	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 15
+# text = Il réside alors comme pensionnaire à l'hôtel du Vieux-Portail à Rougemont, où il fait connaissance de Denise Piotte, propriétaire avec son frère de l'établissement.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	97	2:97
+2	réside	résider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	alors	alors	ADV	_	_	2	advmod	_	_	*	*	*
+4	comme	comme	ADP	_	_	5	case	_	_	*	*	*
+5	pensionnaire	pensionnaire	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*	98	*
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	99	*
+8	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	99	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	99;100	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	99;100	*
+11	Vieux-Portail	Vieux-Portail	PROPN	_	_	8	nmod	_	_	*	99;100	*
+12	à	à	ADP	_	_	13	case	_	_	*	*	*
+13	Rougemont	Rougemont	PROPN	_	_	8	nmod	_	SpaceAfter=No	*	101;102	2:102
+14	,	,	PUNCT	_	_	17	punct	_	_	*	102	2:102
+15	où	où	ADV	_	PronType=Rel	17	advmod	_	_	*	103	2:103
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*	104	2:104
+17	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	1:VID	*	*
+18	connaissance	connaissance	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	1	*	*
+19	de	de	ADP	_	_	20	case	_	_	*	*	*
+20	Denise	Denise	PROPN	_	_	18	nmod	_	_	*	105	*
+21	Piotte	Piotte	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*	105	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*	*	*
+23	propriétaire	propriétaire	NOUN	_	Gender=Masc|Number=Sing	20	appos	_	_	*	106	*
+24	avec	avec	ADP	_	_	26	case	_	_	*	*	*
+25	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*	107;108	2:107;2:108
+26	frère	frère	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	107;108	2:107;2:108
+27	de	de	ADP	_	_	29	case	_	_	*	108	2:108
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*	108;109	2:108;7:109
+29	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*	108;109	2:108;7:109
+30	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 16
+# text = Ils se marient le 24 novembre 1931.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	110	*
+2	se	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	_	*	*	*
+3	marient	marier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	111	7:111
+5	24	24	NUM	_	_	3	obl	_	_	*	111	7:111
+6	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	111	7:111
+7	1931	1931	NUM	_	_	6	nmod	_	SpaceAfter=No	*	111	7:111
+8	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 17
+# text = Dès janvier 33, toujours passionné par les graines, il crée un fonds de commerce à Rougemont, qu'il dirigera avec succès jusqu'au 1er janvier 1974, date de sa retraite.
+1	Dès	dès	ADP	_	_	2	case	_	_	*	*	*
+2	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	112	1:112
+3	33	33	NUM	_	_	2	nmod	_	SpaceAfter=No	*	112	1:112
+4	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+5	toujours	toujours	ADV	_	_	6	advmod	_	_	*	*	*
+6	passionné	passionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+7	par	par	ADP	_	_	9	case	_	_	*	*	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*	113	*
+9	graines	graine	NOUN	_	Gender=Fem|Number=Plur	6	obl:agent	_	SpaceAfter=No	*	113	*
+10	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	*	114	1:114
+12	crée	créer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	115;116;117	1:115;1:116;1:117
+14	fonds	fonds	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	115;116;117	1:115;1:116;1:117
+15	de	de	ADP	_	_	16	case	_	_	*	115;116;117	1:115;1:116;1:117
+16	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*	115;116;117;118	1:115;1:116;1:117;1:118
+17	à	à	ADP	_	_	18	case	_	_	*	116;117	1:116;1:117
+18	Rougemont	Rougemont	PROPN	_	_	12	obl:mod	_	SpaceAfter=No	*	116;117;119;120	1:116;1:117;1:120
+19	,	,	PUNCT	_	_	22	punct	_	_	*	117;120	1:117;1:120
+20	qu'	que	PRON	_	PronType=Rel	22	obj	_	SpaceAfter=No	*	121	1:121
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	*	122	1:122
+22	dirigera	diriger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	acl:relcl	_	_	*	*	*
+23	avec	avec	ADP	_	_	24	case	_	_	*	*	*
+24	succès	succès	NOUN	_	Gender=Masc|Number=Sing	22	obl:arg	_	_	*	123	*
+25	jusqu'	jusque	ADV	_	_	28	advmod	_	SpaceAfter=No	*	*	*
+26-27	au	_	_	_	_	_	_	_	_	*	*	*
+26	à	à	ADP	_	_	28	case	_	_	*	*	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*	*	*
+28	1er	1er	NUM	_	_	22	obl:mod	_	_	*	*	*
+29	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*	*	*
+30	1974	1974	NUM	_	_	29	nmod	_	SpaceAfter=No	*	*	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*	*	*
+32	date	date	NOUN	_	Gender=Fem|Number=Sing	28	appos	_	_	*	124	*
+33	de	de	ADP	_	_	35	case	_	_	*	124	*
+34	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	35	det	_	_	*	124;125	*
+35	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No	*	124;125	*
+36	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 18
+# text = Ce premier fonds de commerce est installé dans les locaux de l'hôtel du Vieux-Portail.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*	126	*
+2	premier	premier	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	126	*
+3	fonds	fonds	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*	126	*
+4	de	de	ADP	_	_	5	case	_	_	*	126	*
+5	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	126;127	1:127
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+7	installé	installer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	dans	dans	ADP	_	_	10	case	_	_	*	*	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*	128	*
+10	locaux	local	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_	*	128	*
+11	de	de	ADP	_	_	13	case	_	_	*	128	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	128;129	*
+13	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	128;129	*
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	128;129;130	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	128;129;130	*
+16	Vieux-Portail	Vieux-Portail	PROPN	_	_	13	nmod	_	SpaceAfter=No	*	128;129;130	*
+17	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 19
+# text = En 1934, il rachète une maison au 13 de la rue du Pont, et ouvre un magasin.
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	1934	1934	NUM	_	_	5	obl:mod	_	SpaceAfter=No	*	131	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	132	1:132
+5	rachète	racheter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	133	*
+7	maison	maison	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	133	*
+8-9	au	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	134	1:134
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	134	1:134
+10	13	13	NUM	_	_	5	obl:mod	_	_	*	134	1:134
+11	de	de	ADP	_	_	13	case	_	_	*	134	1:134
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	134;135;136	1:134
+13	rue	rue	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	134;135;136	1:134
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	134;135;136;137;138	1:134;1:137;8:138
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	134;135;136;137;138	1:134;1:137;8:138
+16	Pont	Pont	PROPN	_	_	13	nmod	_	SpaceAfter=No	*	134;135;136;137;138	1:134;1:137;8:138
+17	,	,	PUNCT	_	_	19	punct	_	_	*	136;138	8:138
+18	et	et	CCONJ	_	_	19	cc	_	_	*	*	*
+19	ouvre	ouvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*	*	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	139	8:139
+21	magasin	magasin	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	SpaceAfter=No	*	139	8:139
+22	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 20
+# text = Là, il réunit sa famille, deux filles puis quelques années plus tard un fils, Jean, qui lui succédera en 1974.
+1	Là	là	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*	140	8:140
+4	réunit	réunir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*	141;142	*
+6	famille	famille	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No	*	141;142	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*	142	*
+8	deux	deux	NUM	_	_	9	nummod	_	_	*	142;143	*
+9	filles	fille	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*	142;143	*
+10	puis	puis	ADV	_	_	12	cc	_	_	*	*	*
+11	quelques	quelque	DET	_	Gender=Fem|Number=Plur	12	det	_	_	*	144;145	*
+12	années	année	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*	144;145	*
+13	plus	plus	ADV	_	_	14	advmod	_	_	*	145	*
+14	tard	tard	ADV	_	_	12	advmod	_	_	*	145	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	146	0:146
+16	fils	fils	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	SpaceAfter=No	*	146	0:146
+17	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+18	Jean	Jean	PROPN	_	_	16	appos	_	SpaceAfter=No	*	147;148	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*	148	*
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	149	*
+21	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	22	iobj	_	_	*	150	0:150
+22	succédera	succéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	acl:relcl	_	_	*	*	*
+23	en	en	ADP	_	_	24	case	_	_	*	*	*
+24	1974	1974	NUM	_	_	22	obl	_	SpaceAfter=No	*	151	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 21
+# text = Sept petits-enfants et douze arrière-petits-enfants agrandissent le cercle familial dont il restera toujours à la tête.
+1	Sept	Sept	NUM	_	_	2	nummod	_	_	*	152;153	18:152
+2	petits-enfants	petits-enfant	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*	152;153	18:152
+3	et	et	CCONJ	_	_	5	cc	_	_	*	153	*
+4	douze	douze	NUM	_	_	5	nummod	_	_	*	153;154	18:154
+5	arrière-petits-enfants	arrière-petits-enfant	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	_	*	153;154	18:154
+6	agrandissent	agrandir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	155	0:155
+8	cercle	cercle	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	155	0:155
+9	familial	familial	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	155	0:155
+10	dont	dont	PRON	_	PronType=Rel	12	iobj	_	_	*	156	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	1:VID	157	0:157
+12	restera	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	acl:relcl	_	_	1	*	*
+13	toujours	toujours	ADV	_	_	12	advmod	_	_	*	*	*
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	158	*
+16	tête	tête	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	SpaceAfter=No	*	158	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 22
+# text = Il aimait les retrouver tous autour de lui.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	159	0:159
+2	aimait	aimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+3	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	*	160	*
+4	retrouver	retrouver	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	tous	tout	PRON	_	Gender=Masc|Number=Plur	4	obl	_	_	*	161	19:161
+6	autour	autour	ADV	_	_	5	advmod	_	_	*	*	*
+7	de	de	ADP	_	_	8	case	_	_	*	*	*
+8	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	6	obl:arg	_	SpaceAfter=No	*	162	0:162
+9	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 23
+# text = Discret, un peu secret, il ne se livre pas facilement.
+1	Discret	discret	PROPN	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	advmod	_	_	*	*	*
+4	peu	peu	ADV	_	_	3	fixed	_	_	*	*	*
+5	secret	secret	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No	*	*	*
+6	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*	163	0:163
+8	ne	ne	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	_	1:IRV	*	*
+10	livre	livrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_	1	*	*
+11	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+12	facilement	facilement	ADV	_	_	10	advmod	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 24
+# text = Sa grande passion fut son travail qu'il effectua avec le souci de bien le faire, et sa famille.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*	164	*
+2	grande	grand	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*	164	*
+3	passion	passion	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	164	*
+4	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	_	*	*	*
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*	165	0:165
+6	travail	travail	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1:LVC.full	165	0:165
+7	qu'	que	PRON	_	PronType=Rel	9	obj	_	SpaceAfter=No	*	166	19:166
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*	167	0:167
+9	effectua	effectuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl:relcl	_	_	1	*	*
+10	avec	avec	ADP	_	_	12	case	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	168	0:168
+12	souci	souci	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	168	0:168
+13	de	de	ADP	_	_	14	case	_	_	*	*	*
+14	bien	bien	ADV	_	_	12	nmod	_	_	*	*	*
+15	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	_	*	169	0:169
+16	faire	faire	VERB	_	VerbForm=Inf	9	xcomp	_	SpaceAfter=No	*	*	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+18	et	et	CCONJ	_	_	20	cc	_	_	*	*	*
+19	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*	170	*
+20	famille	famille	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No	*	170	*
+21	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 25
+# text = Une ancienne figure du commerce local vient de disparaître ;
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	171	*
+2	ancienne	ancien	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*	171	*
+3	figure	figure	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	171	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	171;172	0:172
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	171;172	0:172
+6	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	171;172	0:172
+7	local	local	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	171;172	0:172
+8	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+9	de	de	ADP	_	_	10	mark	_	_	*	*	*
+10	disparaître	disparaître	VERB	_	VerbForm=Inf	8	xcomp	_	_	*	*	*
+11	;	;	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 26
+# text = son souvenir est encore très vivant dans la mémoire du bourg et du canton.
+1	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	173	0:173
+2	souvenir	souvenir	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	173	0:173
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	encore	encore	ADV	_	_	6	advmod	_	_	*	*	*
+5	très	très	ADV	_	_	6	advmod	_	_	*	*	*
+6	vivant	vivant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+7	dans	dans	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	174	*
+9	mémoire	mémoire	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*	174	*
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	174;175;176	0:175;0:176
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	174;175;176	0:175;0:176
+12	bourg	bourg	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	174;175;176	0:175;0:176
+13	et	et	CCONJ	_	_	16	cc	_	_	*	174;176	0:176
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	174;176;177	0:176;0:177
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	174;176;177	0:176;0:177
+16	canton	canton	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No	*	174;176;177	0:176;0:177
+17	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 27
+# text = Ses obsèques seront célébrées vendredi 3 janvier, à 15 h, en l'église de Rougemont.
+1	Ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*	178	*
+2	obsèques	obsèque	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	_	_	*	178	*
+3	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*	*	*
+4	célébrées	célébrer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*	179	14:179
+6	3	3	NUM	_	_	5	nmod	_	_	*	179	14:179
+7	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*	179	14:179
+8	,	,	PUNCT	_	_	11	punct	_	_	*	179	14:179
+9	à	à	ADP	_	_	11	case	_	_	*	179	14:179
+10	15	15	NUM	_	_	11	nummod	_	_	*	179;180	14:179
+11	h	heure	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	SpaceAfter=No	*	179;180	14:179
+12	,	,	PUNCT	_	_	15	punct	_	_	*	179;180	14:179
+13	en	en	ADP	_	_	15	case	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	181	*
+15	église	église	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*	181	*
+16	de	de	ADP	_	_	17	case	_	_	*	181	*
+17	Rougemont	Rougemont	PROPN	_	_	15	nmod	_	SpaceAfter=No	*	181;182;183	14:183
+18	.	.	PUNCT	_	_	4	punct	_	_	*	183	14:183
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_186.txt 28
+# text = A son épouse, ses enfants et sa famille, nous présentons nos sincères condoléances.
+1	A	à	ADP	_	_	3	case	_	_	*	*	*
+2	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*	184	*
+3	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	SpaceAfter=No	*	184	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+5	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*	185	15:185
+6	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	_	*	185	15:185
+7	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*	186;187	*
+9	famille	famille	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No	*	186;187	*
+10	,	,	PUNCT	_	_	3	punct	_	_	*	187	*
+11	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_	*	188	15:188
+12	présentons	présenter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	_	*	189	*
+14	sincères	sincer	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*	189	*
+15	condoléances	condoléance	NOUN	_	Gender=Fem|Number=Plur	12	obj	_	SpaceAfter=No	*	189	*
+16	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\n	*	*	*
+
