@@ -124,34 +124,31 @@ class ExprPoly():
         for morceau_mwe in ind_mwes:
             debut_mwe, fin_mwe = morceau_mwe
             debut_ment, fin_ment = ind_mentions
-            # DÉBORDEMENTS DE LA MENTION
+            # MWE INCLUE DANS MENTION
             # MWE:[*, 1, 1]MENT:[1, 1, 1] || MWE:[1, 1, *, 1]MENT:[*, *, 1, 1]
             if debut_mwe > debut_ment and fin_mwe == fin_ment:
                 if len(liste_cas) > 0:  # La MWE est en plusieurs parties
-                    cas = 4
+                    if liste_cas[-1] == 1:  # MWE:[1, *, 1, 1]MENT:[1, 1, 1, 1]
+                        cas = 1
+                    else:
+                        cas = 4
                 else:
                     cas = 1
-            # MWE:[1, 1, *]MENT:[1, 1, 1]
+            # MWE:[1, 1, *]MENT:[1, 1, 1] ||
             elif debut_mwe == debut_ment and fin_mwe < fin_ment:
-                cas = 1
-            # MWE:[*, 1, 1]MENT:[1, 1, *] || MWE:[1, *, 1, 1]MENT:[*, 1, 1, *]
-            elif fin_mwe > fin_ment >= debut_mwe > debut_ment:
-                if len(liste_cas) > 0:  # La MWE est en plusieurs parties
-                    cas = 4
-                else:
-                    cas = 1
-            # MWE:[1, 1, *]MENT:[*, 1, 1]
-            elif debut_mwe < debut_ment <= fin_mwe < fin_ment:
                 cas = 1
             # MWE:[*, 1, *]MENT:[1, 1, 1] || MWE:[1, *, 1, *]MENT:[*, 1, 1, 1]
             elif debut_mwe > debut_ment and fin_mwe < fin_ment:
                 if len(liste_cas) > 0:  # La MWE est en plusieurs parties
-                    cas = 4
+                    if liste_cas[-1] == 1:  # MWE:[1, *, 1, *]MENT:[1, 1, 1, 1]
+                        cas = 1
+                    else:
+                        cas = 4
                 else:
                     cas = 1
-
+    
             # SCHÉMAS IDENTIQUES
-            # MWE:[1, 1, 1]MENT:[1, 1, 1] || MWE:[1, *, 1, 1]MENT:[1, *, 1, 1]
+            # MWE:[1, 1, 1]MENT:[1, 1, 1] || MWE:[1, *, 1, 1]MENT:[*, *, 1, 1]
             elif debut_mwe == debut_ment and fin_mwe == fin_ment:
                 if len(liste_cas) > 0:  # La MWE est en plusieurs parties
                     if liste_cas[-1] == 2:  # MWE:[1, *, 1]MENT:[1, *, 1]
@@ -161,7 +158,7 @@ class ExprPoly():
                 else:
                     cas = 2
 
-            # INCLUSION D'UNE MENTION PLUS PETITE
+            # MENTION INCLUE DANS MWE
             # MWE:[1, 1, 1]MENT:[*, 1, 1]
             elif debut_mwe < debut_ment and fin_mwe == fin_ment:
                 cas = 3
@@ -171,6 +168,14 @@ class ExprPoly():
             # MWE:[1, 1, 1]MENT:[*, 1, *]
             elif debut_mwe < debut_ment and fin_mwe > fin_ment:
                 cas = 3
+
+            # CHEVAUCHEMENT
+            # MWE:[*, 1, 1]MENT:[1, 1, *] || MWE:[1, *, 1, 1]MENT:[*, 1, 1, *]
+            elif fin_mwe > fin_ment >= debut_mwe > debut_ment:
+                cas = 4
+            # MWE:[1, 1, *]MENT:[*, 1, 1]
+            elif debut_mwe < debut_ment <= fin_mwe < fin_ment:
+                cas = 4
 
             else:
                 cas = "*"
@@ -183,10 +188,10 @@ class ExprPoly():
                     cas = element
 
         # Vérifications
-        # print(ind_mentions)
-        # print(ind_mwes)
-        # print(f"LISTE : {liste_cas}")
-        # print(f"CAS : {cas}")
+        print(ind_mentions)
+        print(ind_mwes)
+        print(f"LISTE : {liste_cas}")
+        print(f"CAS : {cas}")
 
         return cas
 
