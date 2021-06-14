@@ -1,0 +1,575 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-21_62223.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 1
+# text = Europe et U.S.A.
+1	Europe	Europe	PROPN	_	_	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	U.S.A.	U.S.A.	PROPN	_	_	1	conj	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 2
+# text = « Pour le lancement du produit, 4.000 pièces ont été réalisées.
+1	«	«	PUNCT	_	_	13	punct	_	_	*
+2	Pour	pour	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	lancement	lancement	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	produit	produit	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	4.000	4.000	NUM	_	_	10	nummod	_	_	*
+10	pièces	pièce	NOUN	_	Gender=Fem|Number=Plur	13	nsubj:pass	_	_	*
+11	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+12	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	aux:pass	_	_	*
+13	réalisées	réaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 3
+# text = Cela peut paraître peu, mais c'est aussi un test », ajoute t-il.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	*
+2	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	paraître	paraître	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	peu	peu	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	11	punct	_	_	*
+6	mais	mais	CCONJ	_	_	11	cc	_	_	*
+7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	SpaceAfter=No	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+9	aussi	aussi	ADV	_	_	11	advmod	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	test	test	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+12	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	ajoute	ajouter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+15	t-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 4
+# text = Les sorties en Allemagne, Belgique, Suisse, Hollande, Irlande, Canada, puis dans une deuxième vague aux U.S.A. seront bientôt planifiées.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	sorties	sortie	NOUN	_	Gender=Fem|Number=Plur	26	nsubj:pass	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	Allemagne	Allemagne	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	Belgique	Belgique	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Suisse	Suisse	PROPN	_	_	6	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	Hollande	Hollande	PROPN	_	_	6	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Irlande	Irlande	PROPN	_	_	6	conj	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Canada	Canada	PROPN	_	_	6	conj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	20	punct	_	_	*
+16	puis	puis	ADV	_	_	20	cc	_	_	*
+17	dans	dans	ADP	_	_	20	case	_	_	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+19	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+20	vague	vague	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+21-22	aux	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*
+23	U.S.A.	U.S.A.	PROPN	_	_	20	nmod	_	_	*
+24	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	26	aux:pass	_	_	*
+25	bientôt	bientôt	ADV	_	_	26	advmod	_	_	*
+26	planifiées	planifier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 5
+# text = Bel exemple de réussite pour ces anciens étudiants passionnés et déterminés.
+1	Bel	beau	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	réussite	réussite	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	pour	pour	ADP	_	_	8	case	_	_	*
+6	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_	*
+7	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+8	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+9	passionnés	passionné	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	déterminés	déterminé	ADJ	_	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 6
+# text = D'autant plus que la presse spécialisée, comme le magazine « Photo », vante les mérites de « Labo Photo Express » Destiné au grand public, le logiciel permettra entre autres, de faire du morphing (déformation des images), d'enlever les yeux rouges, d'utiliser des systèmes de caches ou encore des effets spéciaux.
+1	D'	de	ADP	_	_	16	advmod	_	SpaceAfter=No	*
+2	autant	autant	ADV	_	_	1	fixed	_	_	*
+3	plus	plus	ADV	_	_	1	fixed	_	_	*
+4	que	que	SCONJ	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	presse	presse	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*
+7	spécialisée	spécialisé	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	comme	comme	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	magazine	magazine	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+12	«	«	PUNCT	_	_	13	punct	_	_	*
+13	Photo	Photo	PROPN	_	_	11	appos	_	_	*
+14	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	1	punct	_	_	*
+16	vante	vanter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	mérites	mérite	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	«	«	PUNCT	_	_	21	punct	_	_	*
+21	Labo	Labo	PROPN	_	_	18	nmod	_	_	*
+22	Photo	Photo	PROPN	_	_	21	flat:name	_	_	*
+23	Express	Express	PROPN	_	_	21	flat:name	_	_	*
+24	»	»	PUNCT	_	_	21	punct	_	_	*
+25	Destiné	Destiné	PROPN	_	_	21	flat:name	_	_	*
+26-27	au	_	_	_	_	_	_	_	_	*
+26	à	à	ADP	_	_	29	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+28	grand	grand	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+29	public	public	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	33	punct	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	logiciel	logiciel	NOUN	_	Gender=Masc|Number=Sing	33	nsubj	_	_	*
+33	permettra	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	conj	_	_	*
+34	entre	entre	ADP	_	_	35	case	_	_	*
+35	autres	autre	PRON	_	Number=Plur	33	obl	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	38	punct	_	_	*
+37	de	de	ADP	_	_	38	mark	_	_	*
+38	faire	faire	VERB	_	VerbForm=Inf	33	conj	_	_	*
+39-40	du	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	morphing	morphing	NOUN	_	Gender=Masc|Number=Sing	38	obl:arg	_	_	*
+42	(	(	PUNCT	_	_	43	punct	_	SpaceAfter=No	*
+43	déformation	déformation	NOUN	_	Gender=Fem|Number=Sing	41	appos	_	_	*
+44-45	des	_	_	_	_	_	_	_	_	*
+44	de	de	ADP	_	_	46	case	_	_	*
+45	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	46	det	_	_	*
+46	images	image	NOUN	_	Gender=Fem|Number=Plur	43	nmod	_	SpaceAfter=No	*
+47	)	)	PUNCT	_	_	43	punct	_	SpaceAfter=No	*
+48	,	,	PUNCT	_	_	50	punct	_	_	*
+49	d'	de	ADP	_	_	50	mark	_	SpaceAfter=No	*
+50	enlever	enlever	VERB	_	VerbForm=Inf	33	conj	_	_	*
+51	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_	*
+52	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	50	obj	_	_	*
+53	rouges	rouge	ADJ	_	Gender=Masc|Number=Plur	52	amod	_	SpaceAfter=No	*
+54	,	,	PUNCT	_	_	56	punct	_	_	*
+55	d'	de	ADP	_	_	56	mark	_	SpaceAfter=No	*
+56	utiliser	utiliser	VERB	_	VerbForm=Inf	16	conj	_	_	*
+57-58	des	_	_	_	_	_	_	_	_	*
+57	de	de	ADP	_	_	59	case	_	_	*
+58	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	59	det	_	_	*
+59	systèmes	système	NOUN	_	Gender=Masc|Number=Plur	56	obl:arg	_	_	*
+60	de	de	ADP	_	_	61	case	_	_	*
+61	caches	cache	NOUN	_	Gender=Fem|Number=Plur	59	nmod	_	_	*
+62	ou	ou	CCONJ	_	_	66	cc	_	_	*
+63	encore	encore	ADV	_	_	66	advmod	_	_	*
+64-65	des	_	_	_	_	_	_	_	_	*
+64	de	de	ADP	_	_	66	case	_	_	*
+65	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	66	det	_	_	*
+66	effets	effet	NOUN	_	Gender=Masc|Number=Plur	59	conj	_	_	*
+67	spéciaux	spécial	ADJ	_	Gender=Masc|Number=Plur	66	amod	_	SpaceAfter=No	*
+68	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 7
+# text = A la fois complet et facile d'utilisation, « Labo Photo Express » sera vendu 35 €, « un tarif très intéressant lorsque l'on sait qu'il contient plusieurs outils ».
+1	A	à	ADP	_	_	4	advmod	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	fois	fois	NOUN	_	Gender=Fem|Number=Sing	1	fixed	_	_	*
+4	complet	complet	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	facile	facile	ADJ	_	Gender=Masc|Number=Sing	4	conj	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	utilisation	utilisation	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	«	«	PUNCT	_	_	11	punct	_	_	*
+11	Labo	Labo	PROPN	_	_	16	nsubj:pass	_	_	*
+12	Photo	Photo	PROPN	_	_	11	flat:name	_	_	*
+13	Express	Express	PROPN	_	_	11	flat:name	_	_	*
+14	»	»	PUNCT	_	_	11	punct	_	_	*
+15	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux:pass	_	_	*
+16	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	35	35	NUM	_	_	18	nummod	_	_	*
+18	€	€	SYM	_	_	16	obl	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	«	«	PUNCT	_	_	22	punct	_	_	*
+21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	tarif	tarif	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+23	très	très	ADV	_	_	24	advmod	_	_	*
+24	intéressant	intéressant	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+25	lorsque	lorsque	SCONJ	_	_	28	mark	_	_	*
+26	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	28	nsubj	_	SpaceAfter=No	*
+27	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	26	fixed	_	_	*
+28	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl	_	_	*
+29	qu'	que	SCONJ	_	_	31	mark	_	SpaceAfter=No	*
+30	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_	*
+31	contient	contenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	ccomp	_	_	*
+32	plusieurs	plusieurs	DET	_	Gender=Masc|Number=Plur	33	det	_	_	*
+33	outils	outil	NOUN	_	Gender=Masc|Number=Plur	31	obj	_	_	*
+34	»	»	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 8
+# text = Orphée a d'autres projets dans son chapeau (voir encadré), et « même si au niveau local, il n'y a pas de concurrence, nous devons avoir les reins solides », conclut Mathieu Chénebit.
+1	Orphée	Orphée	PROPN	_	_	2	nsubj	_	_	*
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	ccomp	_	_	2:LVC.full
+3	d'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	5	det	_	SpaceAfter=No	*
+4	autres	autre	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_	*
+5	projets	projet	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	2
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	chapeau	chapeau	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+10	voir	voir	VERB	_	VerbForm=Inf	2	parataxis	_	_	*
+11	encadré	encadrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	xcomp	_	SpaceAfter=No	*
+12	)	)	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	26	punct	_	_	*
+14	et	et	CCONJ	_	_	26	cc	_	_	*
+15	«	«	PUNCT	_	_	26	punct	_	_	*
+16	même	même	ADV	_	_	26	advmod	_	_	*
+17	si	si	SCONJ	_	_	26	mark	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
+21	local	local	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	20	punct	_	_	*
+23	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	expl:subj	_	_	1:VID
+24	n'	ne	ADV	_	Polarity=Neg	26	advmod	_	SpaceAfter=No	*
+25	y	y	PRON	_	_	26	expl:comp	_	_	1
+26	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	1
+27	pas	pas	ADV	_	Polarity=Neg	26	advmod	_	_	*
+28	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	concurrence	concurrence	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	32	nsubj	_	_	*
+32	devons	devoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+33	avoir	avoir	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*
+35	reins	rein	NOUN	_	Gender=Masc|Number=Plur	33	obj	_	_	*
+36	solides	solide	ADJ	_	Gender=Masc|Number=Plur	35	amod	_	_	*
+37	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	2	punct	_	_	*
+39	conclut	conclure	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+40	Mathieu	Mathieu	PROPN	_	_	39	nsubj	_	_	*
+41	Chénebit	Chénebit	PROPN	_	_	40	flat:name	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	39	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 9
+# text = Le principal atout de la société reste sa réactivité, « plus aisée pour modifier des produits, car notre structure est plus souple que les grands programmateurs ».
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	principal	principal	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	atout	atout	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	société	société	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	réactivité	réactivité	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	«	«	PUNCT	_	_	13	punct	_	_	*
+12	plus	plus	ADV	_	_	13	advmod	_	_	*
+13	aisée	aiser	ADJ	_	Gender=Fem|Number=Sing	7	xcomp	_	_	*
+14	pour	pour	ADP	_	_	15	mark	_	_	*
+15	modifier	modifier	VERB	_	VerbForm=Inf	13	advcl	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	produits	produit	NOUN	_	Gender=Masc|Number=Plur	15	obl:arg	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	25	punct	_	_	*
+20	car	car	CCONJ	_	_	25	cc	_	_	*
+21	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	structure	structure	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	_	_	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	*
+24	plus	plus	ADV	_	_	25	advmod	_	_	*
+25	souple	souple	ADJ	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+26	que	que	SCONJ	_	_	29	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+28	grands	grand	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	_	*
+29	programmateurs	programmateur	NOUN	_	Gender=Masc|Number=Plur	25	obl:mod	_	_	*
+30	»	»	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 10
+# text = Nicolas CHATEAU Labo Photo Express, dans les rayons informatique des grandes surfaces.
+1	Nicolas	Nicolas	PROPN	_	_	0	root	_	_	*
+2	CHATEAU	Chateau	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s	*
+3	Labo	Labo	PROPN	_	_	1	flat:name	_	_	*
+4	Photo	Photo	PROPN	_	_	1	flat:name	_	_	*
+5	Express	Express	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	rayons	rayon	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+10	informatique	informatique	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	14	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+13	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	_	*
+14	surfaces	surface	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 11
+# text = Les Français se passionnent pour la photo numérique.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	Français	français	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	obj	_	_	*
+4	passionnent	passiondre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	photo	photo	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+8	numérique	numérique	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 12
+# text = Pour preuve, en 2002, un million d'appareils numériques ont été achetés.
+1	Pour	pour	ADP	_	_	2	case	_	_	*
+2	preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	2002	2002	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	million	million	NOUN	_	Gender=Masc|Number=Sing	14	nsubj:pass	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	appareils	appareil	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+11	numériques	numérique	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	aux:pass	_	_	*
+14	achetés	acheter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 13
+# text = En apprenant à maîtriser leur appareil, les photographes découvrent l'intérêt des logiciels de retouches.
+1	En	en	ADP	_	_	2	mark	_	_	*
+2	apprenant	apprendre	VERB	_	Tense=Pres|VerbForm=Part	10	advcl	_	_	*
+3	à	à	ADP	_	_	4	mark	_	_	*
+4	maîtriser	maîtriser	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	appareil	appareil	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	2	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	photographes	photographe	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+10	découvrent	découvrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	logiciels	logiciel	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	retouches	retouche	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 14
+# text = Partant d'un constat simple que « sur le marché actuel il n'existe pas de logiciels regroupant les différents outils nécessaires à ce travail d'exploitation des images », trois étudiants de l'ESIAL (Ecole supérieure d'informatique et d'applications de Lorraine) ont conçu de A à Z un outil performant et convivial.
+1	Partant	partir	VERB	_	Tense=Pres|VerbForm=Part	50	advcl	_	_	*
+2	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	constat	constat	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+5	simple	simple	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	que	que	SCONJ	_	_	14	mark	_	_	*
+7	«	«	PUNCT	_	_	14	punct	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	marché	marché	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+11	actuel	actuel	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	_	*
+13	n'	ne	ADV	_	Polarity=Neg	14	advmod	_	SpaceAfter=No	*
+14	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	_	*
+16	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	logiciels	logiciel	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	_	*
+18	regroupant	regrouper	VERB	_	Tense=Pres|VerbForm=Part	17	acl	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+20	différents	différent	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+21	outils	outil	NOUN	_	Gender=Masc|Number=Plur	18	obj	_	_	*
+22	nécessaires	nécessaire	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	25	det	_	_	*
+25	travail	travail	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+26	d'	de	ADP	_	_	27	case	_	SpaceAfter=No	*
+27	exploitation	exploitation	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*
+30	images	image	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	_	*
+31	»	»	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	1	punct	_	_	*
+33	trois	trois	NUM	_	_	34	nummod	_	_	*
+34	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	50	nsubj	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	37	det	_	SpaceAfter=No	*
+37	ESIAL	ESIAL	PROPN	_	_	34	nmod	_	_	*
+38	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No	*
+39	Ecole	Ecole	PROPN	_	_	34	appos	_	_	*
+40	supérieure	supérieur	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	_	*
+41	d'	de	ADP	_	_	42	case	_	SpaceAfter=No	*
+42	informatique	informatique	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	_	*
+43	et	et	CCONJ	_	_	45	cc	_	_	*
+44	d'	de	ADP	_	_	45	case	_	SpaceAfter=No	*
+45	applications	application	NOUN	_	Gender=Fem|Number=Plur	39	conj	_	_	*
+46	de	de	ADP	_	_	47	case	_	_	*
+47	Lorraine	Lorraine	PROPN	_	_	45	nmod	_	SpaceAfter=No	*
+48	)	)	PUNCT	_	_	39	punct	_	_	*
+49	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	50	aux:tense	_	_	*
+50	conçu	concevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+51	de	de	ADP	_	_	52	case	_	_	*
+52	A	A	PROPN	_	_	50	obl:arg	_	_	*
+53	à	à	ADP	_	_	54	case	_	_	*
+54	Z	Z	PROPN	_	_	50	obl:mod	_	_	*
+55	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_	*
+56	outil	outil	NOUN	_	Gender=Masc|Number=Sing	50	obj	_	_	*
+57	performant	performant	ADJ	_	Gender=Masc|Number=Sing	56	amod	_	_	*
+58	et	et	CCONJ	_	_	59	cc	_	_	*
+59	convivial	convivial	ADJ	_	Gender=Masc|Number=Sing	57	conj	_	SpaceAfter=No	*
+60	.	.	PUNCT	_	_	50	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 15
+# text = Nommé « Photo Studio » à sa création en 2001, le logiciel distribué par l'un des éditeurs parisiens les plus en vogue actuellement (Mindscape) sera disponible dans les rayons informatiques des grandes surfaces dès aujourd'hui.
+1	Nommé	nommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	advcl	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Photo	Photo	PROPN	_	_	1	obj	_	_	*
+4	Studio	Studio	PROPN	_	_	3	flat:name	_	_	*
+5	»	»	PUNCT	_	_	3	punct	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	création	création	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	2001	2001	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	1	punct	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	logiciel	logiciel	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	_	_	*
+14	distribué	distribuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15	par	par	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	un	un	PRON	_	Gender=Masc|Number=Sing	14	obl:agent	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	éditeurs	éditeur	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*
+21	parisiens	parisien	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	_	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	advmod	_	_	*
+23	plus	plus	ADV	_	_	22	fixed	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	vogue	vogue	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+26	actuellement	actuellement	ADV	_	_	25	advmod	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	Mindscape	Mindscape	PROPN	_	_	20	appos	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	28	punct	_	_	*
+30	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	cop	_	_	*
+31	disponible	disponible	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+32	dans	dans	ADP	_	_	34	case	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_	*
+34	rayons	rayon	NOUN	_	Gender=Fem|Number=Plur	31	obl:mod	_	_	*
+35	informatiques	informatique	ADJ	_	Gender=Fem|Number=Plur	34	amod	_	_	*
+36-37	des	_	_	_	_	_	_	_	_	*
+36	de	de	ADP	_	_	39	case	_	_	*
+37	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	_	*
+38	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	39	amod	_	_	*
+39	surfaces	surface	NOUN	_	Gender=Fem|Number=Plur	34	nmod	_	_	*
+40	dès	dès	ADP	_	_	41	case	_	_	*
+41	aujourd'hui	aujourd'hui	ADV	_	_	31	advmod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	31	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 16
+# text = « J'ai un peu un sentiment de dépossession depuis que l'éditeur a pris en main notre contrat.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	2:LVC.full
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	_	*
+5	peu	peu	ADV	_	_	4	fixed	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	sentiment	sentiment	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	2
+8	de	de	ADP	_	_	9	case	_	_	*
+9	dépossession	dépossession	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	depuis	depuis	ADP	_	_	15	mark	_	_	*
+11	que	que	SCONJ	_	_	15	mark	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	éditeur	éditeur	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	1:VID
+16	en	en	ADP	_	_	17	case	_	_	1
+17	main	main	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	_	1
+18	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	contrat	contrat	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 17
+# text = Mais c'est un vrai bonheur qu'il sorte enfin.
+1	Mais	mais	CCONJ	_	_	6	cc	_	_	*
+2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	bonheur	bonheur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	qu'	que	PRON	_	PronType=Rel	9	obj	_	SpaceAfter=No	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+9	sorte	sorter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	*
+10	enfin	enfin	ADV	_	_	9	advmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 18
+# text = Bien entendu, je vais me rendre dans les magasins pour voir comment il est présenté » A 23 ans, en tout jeune chef d'entreprise, Mathieu Chénebit gère déjà cinq salariés dans la société qu'il a créee.
+1	Bien	bien	ADV	_	_	5	advmod	_	_	*
+2	entendu	entendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	7	expl:comp	_	_	1:IRV
+7	rendre	rendre	VERB	_	VerbForm=Inf	5	xcomp	_	_	1
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	magasins	magasin	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_	*
+11	pour	pour	ADP	_	_	12	mark	_	_	*
+12	voir	voir	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+13	comment	comment	ADV	_	_	16	advmod	_	_	*
+14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj:pass	_	_	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_	*
+16	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	ccomp	_	_	*
+17	»	»	PUNCT	_	_	16	punct	_	_	*
+18	A	à	ADP	_	_	20	case	_	_	*
+19	23	23	NUM	_	_	20	nummod	_	_	*
+20	ans	an	NOUN	_	Gender=Masc|Number=Plur	16	obl	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	25	punct	_	_	*
+22	en	en	ADP	_	_	25	case	_	_	*
+23	tout	tout	DET	_	Gender=Masc|Number=Sing	25	det	_	_	*
+24	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*
+25	chef	chef	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+26	d'	de	ADP	_	_	27	case	_	SpaceAfter=No	*
+27	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	31	punct	_	_	*
+29	Mathieu	Mathieu	PROPN	_	_	31	nsubj	_	_	*
+30	Chénebit	Chénebit	PROPN	_	_	29	flat:name	_	_	*
+31	gère	gérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*
+32	déjà	déjà	ADV	_	_	31	advmod	_	_	*
+33	cinq	cinq	NUM	_	_	34	nummod	_	_	*
+34	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	31	obj	_	_	*
+35	dans	dans	ADP	_	_	37	case	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	société	société	NOUN	_	Gender=Fem|Number=Sing	31	obl:mod	_	_	*
+38	qu'	que	PRON	_	PronType=Rel	40	obj	_	SpaceAfter=No	*
+39	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	nsubj	_	_	*
+40	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	acl:relcl	_	_	*
+41	créee	créee	NOUN	_	Gender=Fem|Number=Sing	40	obl	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62223.txt 19
+# text = « Orphée Développement », dont le siège social est sur la Z.A.C. de Villers, est donc en pleine expansion.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Orphée	Orphée	PROPN	_	_	21	nsubj	_	_	*
+3	Développement	développement	PROPN	_	_	2	flat:name	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	10	punct	_	_	*
+6	dont	dont	PRON	_	PronType=Rel	8	nmod	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	siège	siège	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+9	social	social	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+11	sur	sur	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Z.A.C.	Z.A.C.	PROPN	_	_	10	obl	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Villers	Villers	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	10	punct	_	_	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*
+18	donc	donc	ADV	_	_	21	advmod	_	_	*
+19	en	en	ADP	_	_	21	case	_	_	*
+20	pleine	plein	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+21	expansion	expansion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	21	punct	_	SpacesAfter=\n	*
+

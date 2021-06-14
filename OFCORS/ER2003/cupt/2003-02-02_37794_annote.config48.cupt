@@ -1,0 +1,741 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-02_37794.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 1
+# text = La présidente et le chef de musique.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	présidente	président	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	et	et	CCONJ	_	_	5	cc	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	chef	chef	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	musique	musique	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 2
+# text = Entourée des membres de son bureau, Lucette Pelletier présidait vendredi soir, l'assemblée générale des Jeunesses musicales Liffoloises.
+1	Entourée	entourer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	membres	membre	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	Lucette	Lucette	PROPN	_	_	11	nsubj	_	_	*
+10	Pelletier	Pelletier	PROPN	_	_	9	flat:name	_	_	*
+11	présidait	présider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+12	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	_	*
+13	soir	soir	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+17	générale	général	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	Jeunesses	Jeunesse	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*
+21	musicales	musical	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_	*
+22	Liffoloises	Liffolois	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 3
+# text = Suite aux rituels des vœux auxquels se sont joints par courrier, le Recteur Mangin et l'abbé Saint-Dizier, en présence des membres de l'harmonie, de la chorale, des parents de jeunes musiciens, bilan d'activités et financier ont été présentés.
+1	Suite	suite	ADV	_	_	51	advmod	_	_	*
+2-3	aux	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	rituels	rituel	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+8-9	auxquels	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	lesquels	lequel	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	12	obl:mod	_	_	*
+10	se	se	PRON	_	Person=3|PronType=Prs	12	obj	_	_	1:IRV
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	joints	joindre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl:relcl	_	_	1
+13	par	par	ADP	_	_	14	case	_	_	*
+14	courrier	courrier	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	1	punct	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	Recteur	Recteur	NOUN	_	Gender=Masc|Number=Sing	51	nsubj:pass	_	_	*
+18	Mangin	Mangin	PROPN	_	_	17	appos	_	_	*
+19	et	et	CCONJ	_	_	21	cc	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	abbé	abbé	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	_	*
+22	Saint-Dizier	Saint-Dizier	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	présence	présence	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	membres	membre	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	harmonie	hharmonie	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	35	punct	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	chorale	chorale	NOUN	_	Gender=Fem|Number=Sing	31	conj	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	39	punct	_	_	*
+37-38	des	_	_	_	_	_	_	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_	*
+39	parents	parent	NOUN	_	Gender=Masc|Number=Plur	31	conj	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	42	amod	_	_	*
+42	musiciens	musicien	NOUN	_	Gender=Masc|Number=Plur	39	nmod	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	44	punct	_	_	*
+44	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	17	appos	_	_	*
+45	d'	de	ADP	_	_	46	case	_	SpaceAfter=No	*
+46	activités	activité	NOUN	_	Gender=Fem|Number=Plur	44	nmod	_	_	*
+47	et	et	CCONJ	_	_	48	cc	_	_	*
+48	financier	financier	NOUN	_	Gender=Masc|Number=Sing	46	conj	_	_	*
+49	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	51	aux:tense	_	_	*
+50	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	51	aux:pass	_	_	*
+51	présentés	présenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+52	.	.	PUNCT	_	_	51	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 4
+# text = Diverses prestations sont au compte de l'harmonie : festival en mars, fête de la musique, concert de Sainte-Cécile et de Noël, fêtes patriotiques, congrès départemental des pompiers...
+1	Diverses	divers	DET	_	Gender=Fem|Number=Plur	2	det	_	_	*
+2	prestations	prestation	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	compte	compte	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	harmonie	hharmonie	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	:	:	PUNCT	_	_	11	punct	_	_	*
+11	festival	festival	NOUN	_	Gender=Masc|Number=Sing	6	parataxis	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	mars	mars	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	fête	fête	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	musique	musique	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	concert	concert	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	Sainte-Cécile	Sainte-Cécile	PROPN	_	_	20	nmod	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Noël	Noël	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	11	conj	_	_	*
+28	patriotiques	patriotique	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	congrès	congrès	ADP	_	_	31	case	_	_	*
+31	départemental	départemental	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+32-33	des	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+34	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No	*
+35	...	...	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 5
+# text = La chorale Musicanote s'est déplacée à Attignéville, Contrexéville, au festival de chorales pour « Rétina », fêtes de fin d'année mais aussi pour les animations de messes de mariages.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	chorale	chorale	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	Musicanote	Musicanote	PROPN	_	_	2	appos	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	6	obj	_	SpaceAfter=No	1:IRV
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	déplacée	déplacer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Attignéville	Attignéville	PROPN	_	_	6	obl:arg	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	Contrexéville	Contrexéville	PROPN	_	_	8	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	festival	festival	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	chorales	chorale	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*
+17	pour	pour	ADP	_	_	19	case	_	_	*
+18	«	«	PUNCT	_	_	19	punct	_	_	*
+19	Rétina	Rétina	PROPN	_	_	14	nmod	_	_	*
+20	»	»	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	fin	fin	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25	d'	de	ADP	_	_	26	case	_	SpaceAfter=No	*
+26	année	année	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+27	mais	mais	CCONJ	_	_	31	cc	_	_	*
+28	aussi	aussi	ADV	_	_	31	advmod	_	_	*
+29	pour	pour	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_	*
+31	animations	animation	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	messes	messe	NOUN	_	Gender=Fem|Number=Plur	31	nmod	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	mariages	mariage	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 6
+# text = Les deux ensembles sont appréciés du public et se sont retrouvés pour un week-end à Vigneulles-les-Matonchatel pour deux jours de travail.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	deux	deux	NUM	_	_	3	nummod	_	_	*
+3	ensembles	ensemble	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	_	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	appréciés	apprécier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	public	public	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*
+10	se	se	PRON	_	Person=3|PronType=Prs	12	expl:pass	_	_	1:IRV
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	retrouvés	retrouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	5	conj	_	_	1
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	Vigneulles-les-Matonchatel	Vigneulles-les-Matonchatel	PROPN	_	_	15	nmod	_	_	*
+18	pour	pour	ADP	_	_	20	case	_	_	*
+19	deux	deux	NUM	_	_	20	nummod	_	_	*
+20	jours	jour	NOUN	_	Gender=Masc|Number=Plur	12	obl	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	travail	travail	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 7
+# text = Un moment privilégié de septembre, où l'utile est joint à l'agréable.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	moment	moment	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	privilégié	privilégié	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	11	punct	_	_	*
+7	où	où	ADV	_	PronType=Rel	11	advmod	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	utile	utile	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*
+11	joint	joindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	agréable	agréable	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 8
+# text = La trésorière, Marie-Claude Bruneau, a fait état d'un compte financier en bonne santé.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	trésorière	trésorier	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	Marie-Claude	Marie-Claude	PROPN	_	_	2	appos	_	_	*
+5	Bruneau	Bruneau	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+9	état	état	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	1
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	compte	compte	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*
+13	financier	financier	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	en	en	ADP	_	_	16	case	_	_	*
+15	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+16	santé	santé	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 9
+# text = Si sur l'exercice 2002, un léger déficit de 618,14 € apparaît, il n'en reste pas moins 8.695,19 € en caisse.
+1	Si	si	SCONJ	_	_	13	mark	_	_	*
+2	sur	sur	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	exercice	exercice	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+5	2002	2002	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	léger	léger	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	déficit	déficit	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	618,14	618,14	NUM	_	_	12	nummod	_	_	*
+12	€	€	SYM	_	_	9	nmod	_	_	*
+13	apparaît	apparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	13	punct	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	expl:subj	_	_	1:VID
+16	n'	ne	ADV	_	Polarity=Neg	18	advmod	_	SpaceAfter=No	1
+17	en	en	PRON	_	Person=3	18	expl:comp	_	_	1
+18	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+19	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	1
+20	moins	moins	ADV	_	_	18	advmod	_	_	1
+21	8.695,19	8.695,19	NUM	_	_	22	nummod	_	_	*
+22	€	€	SYM	_	_	18	obj	_	_	*
+23	en	en	ADP	_	_	24	case	_	_	*
+24	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 10
+# text = « Econome, la fourmi des JML !
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Econome	Econome	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	fourmi	fourmi	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	JML	JML	PROPN	_	_	5	nmod	_	_	*
+9	!	!	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 11
+# text = »
+1	»	»	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 12
+# text = Les dépenses se sont concentrées sur le matériel d'enregistrement, une table de mixage.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	dépenses	dépense	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	_	1:IRV
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	concentrées	concentrer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	sur	sur	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	enregistrement	enregistrement	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	table	table	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	mixage	mixage	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 13
+# text = Un investissement de 6.000 € appréciable.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	investissement	investissement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	6.000	6.000	NUM	_	_	5	nummod	_	_	*
+5	€	€	SYM	_	_	2	nmod	_	_	*
+6	appréciable	appréciable	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 14
+# text = La secrétaire Christine Louro a présenté les projets 2003.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	secrétaire	secrétaire	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	Christine	Christine	PROPN	_	_	2	appos	_	_	*
+4	Louro	Louro	PROPN	_	_	3	flat:name	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	projets	projet	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*
+9	2003	2003	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 15
+# text = Le 15 février, festival de chorales à Liffol.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	15	15	NUM	_	_	5	nummod	_	_	*
+3	février	février	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	festival	festival	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	chorales	chorale	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Liffol	Liffol	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 16
+# text = Concert « Rétina » à Mirecourt, le 15 mars.
+1	Concert	Concert	PROPN	_	_	0	root	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Rétina	Rétina	PROPN	_	_	1	appos	_	_	*
+4	»	»	PUNCT	_	_	3	punct	_	_	*
+5	à	à	ADP	_	_	6	case	_	_	*
+6	Mirecourt	Mirecourt	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	15	15	NUM	_	_	1	nmod	_	_	*
+10	mars	mars	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 17
+# text = L'harmonie concert à Liffol le 5 avril et à Chalindrey le 10 mai.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	harmonie	hharmonie	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	concert	concrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Liffol	Liffol	PROPN	_	_	3	obl:arg	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	5	5	NUM	_	_	3	obl	_	_	*
+8	avril	avril	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	à	à	ADP	_	_	11	case	_	_	*
+11	Chalindrey	Chalindrey	PROPN	_	_	3	conj	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	10	10	NUM	_	_	11	orphan	_	_	*
+14	mai	mai	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 18
+# text = Dans l'immédiat, il sera acheté un tuba et une clarinette.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	immédiat	immédiat	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj:pass	_	_	*
+6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*
+7	acheté	acheter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	tuba	tuba	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	clarinette	clarinette	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 19
+# text = D'autres investissement se feront en cours d'année, selon les besoins.
+1	D'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	3	det	_	SpaceAfter=No	*
+2	autres	autre	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	investissement	investissement	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	1:LVC.full
+4	se	se	PRON	_	Person=3|PronType=Prs	5	expl:pass	_	_	*
+5	feront	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+6	en	en	ADP	_	_	7	case	_	_	*
+7	cours	cours	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	année	année	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	selon	selon	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	besoins	besoin	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 20
+# text = Questions diverses :
+1	Questions	question	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	diverses	divers	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	_	*
+3	:	:	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 21
+# text = Une location de bus pour les sorties chorales est demandée.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	location	location	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	bus	bus	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	sorties	sortie	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+8	chorales	choral	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
+10	demandée	demander	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 22
+# text = U devis pour Contrexéville s'élève à 375 € et apparaît trop onéreux pour le transport de 25 personnes.
+1	U	U	X	_	_	2	nsubj	_	_	*
+2	devis	devir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_	*
+3	pour	pour	ADP	_	_	4	case	_	_	*
+4	Contrexéville	Contrexéville	PROPN	_	_	2	obl	_	_	*
+5	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:pass	_	SpaceAfter=No	1:IRV
+6	élève	élever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	xcomp	_	_	1
+7	à	à	ADP	_	_	9	case	_	_	*
+8	375	375	NUM	_	_	9	nummod	_	_	*
+9	€	€	SYM	_	_	6	obl:arg	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	apparaît	apparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+12	trop	trop	ADV	_	_	13	advmod	_	_	*
+13	onéreux	onéreux	ADJ	_	Gender=Masc|Number=Sing	11	xcomp	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	transport	transport	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	25	25	NUM	_	_	19	nummod	_	_	*
+19	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 23
+# text = Une choriste se fait l'écho de 2-3 personnes qui aimeraient pouvoir choisir les chants.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	choriste	choriste	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:pass	_	_	*
+4	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	écho	écho	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	1
+7	de	de	ADP	_	_	9	case	_	_	*
+8	2-3	2-3	NUM	_	_	9	nummod	_	_	*
+9	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+11	aimeraient	aimer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	acl:relcl	_	_	*
+12	pouvoir	pouvoir	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	choisir	choisir	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	chants	chant	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 24
+# text = L'imposition par le chef de chorale leur parait trop arbitraire.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	imposition	imposition	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	par	par	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	chef	chef	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	chorale	chorale	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	leur	lui	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	parait	paraître	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+10	trop	trop	ADV	_	_	11	advmod	_	_	*
+11	arbitraire	arbitraire	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 25
+# text = « De la dictature », entendra-t-on.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	De	de	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	dictature	dictature	NOUN	_	Gender=Fem|Number=Sing	7	ccomp	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	entendra	entendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+8	-t	t	PART	_	_	9	dep	_	SpaceAfter=No	*
+9	-on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 26
+# text = Ce qui a fait bondir Daniel Felly qui estime que la chorale se doit d'être un lieu de convivialité et de détente et qui exclu totalement un esprit arbitraire, quel qu'il soit.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+2	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl:relcl	_	_	*
+5	bondir	bondir	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+6	Daniel	Daniel	PROPN	_	_	5	appos	_	_	*
+7	Felly	Felly	PROPN	_	_	6	flat:name	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	estime	estimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+10	que	que	SCONJ	_	_	14	mark	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	chorale	chorale	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_	*
+13	se	se	PRON	_	Person=3|PronType=Prs	14	expl:comp	_	_	1:IRV
+14	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_	1
+15	d'	de	ADP	_	_	18	mark	_	SpaceAfter=No	*
+16	être	être	AUX	_	VerbForm=Inf	18	cop	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	14	xcomp	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	convivialité	convivialité	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	détente	détente	NOUN	_	Gender=Fem|Number=Sing	20	conj	_	_	*
+24	et	et	CCONJ	_	_	26	cc	_	_	*
+25	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*
+26	exclu	exclure	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	conj	_	_	*
+27	totalement	totalement	ADV	_	_	26	advmod	_	_	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	26	obj	_	_	*
+30	arbitraire	arbitraire	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	quel	quel	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+33	qu'	que	SCONJ	_	_	35	mark	_	SpaceAfter=No	*
+34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_	*
+35	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 27
+# text = « Si la discipline n'est pas toujours de rigueur, ceci n'empêche en rien le plaisir de chanter et de bien chanter ».
+1	«	«	PUNCT	_	_	14	punct	_	_	*
+2	Si	si	SCONJ	_	_	10	mark	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	discipline	discipline	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+5	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+7	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+8	toujours	toujours	ADV	_	_	10	advmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	rigueur	rigueur	NOUN	_	Gender=Fem|Number=Sing	14	advcl	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	10	punct	_	_	*
+12	ceci	ceci	PRON	_	Number=Sing	14	nsubj	_	_	*
+13	n'	ne	ADV	_	Polarity=Neg	14	advmod	_	SpaceAfter=No	*
+14	empêche	empêcher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	rien	rien	PRON	_	Number=Sing	14	obl	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	plaisir	plaisir	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+19	de	de	ADP	_	_	20	mark	_	_	*
+20	chanter	chanter	VERB	_	VerbForm=Inf	18	acl	_	_	*
+21	et	et	CCONJ	_	_	24	cc	_	_	*
+22	de	de	ADP	_	_	24	mark	_	_	*
+23	bien	bien	ADV	_	_	24	advmod	_	_	*
+24	chanter	chanter	VERB	_	VerbForm=Inf	20	conj	_	_	*
+25	»	»	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 28
+# text = La direction par un chef de chorale compétent se veut le maillon fort de Musicanotes, « même si un chant ne fait pas l'unanimité, il suffit de s'en référer aux applaudissement du public ».
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	direction	direction	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+3	par	par	ADP	_	_	5	case	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	chef	chef	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	chorale	chorale	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	compétent	compétent	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	_	*
+10	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	maillon	maillon	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	fort	fort	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Musicanotes	Musicanotes	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	23	punct	_	_	*
+17	«	«	PUNCT	_	_	23	punct	_	_	*
+18	même	même	ADV	_	_	23	advmod	_	_	*
+19	si	si	SCONJ	_	_	23	mark	_	_	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	chant	chant	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+22	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	_	*
+23	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_	*
+24	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	23	punct	_	_	*
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_	2:VID
+29	suffit	suffire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2
+30	de	de	ADP	_	_	33	mark	_	_	*
+31	s'	se	PRON	_	Person=3|PronType=Prs	33	expl:comp	_	SpaceAfter=No	1:IRV
+32	en	en	PRON	_	Person=3	33	expl:comp	_	_	*
+33	référer	référer	VERB	_	VerbForm=Inf	29	xcomp	_	_	1
+34-35	aux	_	_	_	_	_	_	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_	*
+36	applaudissement	applaudissement	NOUN	_	Gender=Masc|Number=Sing	33	obl:arg	_	_	*
+37-38	du	_	_	_	_	_	_	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	public	public	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_	*
+40	»	»	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 29
+# text = Trois personne intègrent le conseil d'administration : Damien Forgerit, choriste.
+1	Trois	Trois	NUM	_	_	2	nummod	_	_	*
+2	personne	personne	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	intègrent	intégrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	administration	administration	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	:	:	PUNCT	_	_	9	punct	_	_	*
+9	Damien	Damien	PROPN	_	_	5	appos	_	_	*
+10	Forgerit	Forgerit	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	choriste	choriste	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 30
+# text = Clément Cotteny, musicien et Marcel Toraille, sympathisant.
+1	Clément	Clément	PROPN	_	_	0	root	_	_	*
+2	Cotteny	Cotteny	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	musicien	musicien	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Marcel	Marcel	PROPN	_	_	1	conj	_	_	*
+7	Toraille	Toraille	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	sympathisant	sympathisant	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 31
+# text = Une sortie, Anne-Marie Foulain, musicienne.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	Anne-Marie	Anne-Marie	PROPN	_	_	2	appos	_	_	*
+5	Foulain	Foulain	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	musicienne	musicien	NOUN	_	Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 32
+# text = Le conseil se compose de 25 membres : Lucette Pelletier, présidente.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	1:IRV
+4	compose	composer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5	de	de	ADP	_	_	7	case	_	_	*
+6	25	25	NUM	_	_	7	nummod	_	_	*
+7	membres	membre	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8	:	:	PUNCT	_	_	9	punct	_	_	*
+9	Lucette	Lucette	PROPN	_	_	7	appos	_	_	*
+10	Pelletier	Pelletier	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	présidente	présidente	NOUN	_	Gender=Fem|Number=Sing	9	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 33
+# text = Jean-Pierre Lengrand, vice-présidente.
+1	Jean-Pierre	Jean-Pierre	PROPN	_	_	0	root	_	_	*
+2	Lengrand	Lengrand	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	vice-présidente	vice-président	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 34
+# text = Christine Louro, secrétaire, secondée par Dominique Raclot.
+1	Christine	Christine	PROPN	_	_	0	root	_	_	*
+2	Louro	Louro	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	secondée	seconder	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+7	par	par	ADP	_	_	8	case	_	_	*
+8	Dominique	Dominique	PROPN	_	_	6	obl:agent	_	_	*
+9	Raclot	Raclot	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 35
+# text = Trésorière, Marie-Claude Bruneau.
+1	Trésorière	Trésorière	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	Marie-Claude	Marie-Claude	PROPN	_	_	1	conj	_	_	*
+4	Bruneau	Bruneau	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 36
+# text = Dominique Chateau fait son entrée, succédant pour la responsabilité de matériel à Serge Cannaux qui reste au CA.
+1	Dominique	Dominique	PROPN	_	_	3	nsubj	_	_	*
+2	Chateau	Chateau	PROPN	_	_	1	flat:name	_	_	*
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+4	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	1
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	succédant	succéder	VERB	_	Tense=Pres|VerbForm=Part	3	advcl	_	_	*
+8	pour	pour	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	responsabilité	responsabilité	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Serge	Serge	PROPN	_	_	10	nmod	_	_	*
+15	Cannaux	Cannaux	PROPN	_	_	14	flat:name	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+17	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	CA	CA	PROPN	_	_	17	obl:arg	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-02_37794.txt 37
+# text = Toute l'assemblée a ensuite partagé la galette des rois.
+1	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	ensuite	ensuite	ADV	_	_	6	advmod	_	_	*
+6	partagé	partager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	galette	galette	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	rois	roi	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n	*
+

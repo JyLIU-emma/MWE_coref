@@ -1,0 +1,909 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-22_24752.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 1
+# text = Carton plein du Bac
+1	Carton	carton	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	plein	plein	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 2
+# text = Les éliminatoires de la coupe de Meuse se sont déroulés dans les salles de Bar-le-Duc et Stenay.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	éliminatoires	éliminatoire	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Meuse	Meuse	PROPN	_	_	5	nmod	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	_	1:IRV
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	déroulés	dérouler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+11	dans	dans	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	salles	salle	NOUN	_	Gender=Fem|Number=Plur	10	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	13	nmod	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	Stenay	Stenay	PROPN	_	_	15	conj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 3
+# text = Les trois premiers de chaque groupe sont qualifiés pour la finale qui aura lieu dimanche 26 janvier, à la Côte Sainte-Catherine, à Bar-le-Duc.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	trois	trois	NUM	_	_	3	nummod	_	_	*
+3	premiers	premier	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	chaque	chaque	DET	_	Gender=Masc|Number=Sing	6	det	_	_	*
+6	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*
+8	qualifiés	qualifier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	finale	finale	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+13	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	acl:relcl	_	_	1:VID
+14	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1
+15	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*
+16	26	26	NUM	_	_	15	nmod	_	_	*
+17	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	Côte	Côte	PROPN	_	_	13	obl:mod	_	_	*
+22	Sainte-Catherine	Sainte-Catherine	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	à	à	ADP	_	_	25	case	_	_	*
+25	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	13	obl:mod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 4
+# text = Le Bac a réussi un tour de force, plaçant quatre équipes en phase finale.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	réussi	réussir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	tour	tour	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	force	force	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	plaçant	placer	VERB	_	Tense=Pres|VerbForm=Part	4	advcl	_	_	*
+11	quatre	quatre	NUM	_	_	12	nummod	_	_	*
+12	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	phase	phase	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*
+15	finale	finale	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 5
+# text = Bar-le-Duc - Matin : 1.
+1	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	0	root	_	_	*
+2	-	-	PUNCT	_	_	3	punct	_	_	*
+3	Matin	matin	PROPN	_	_	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 6
+# text = Ligny ; 2.
+1	Ligny	Ligny	PROPN	_	_	0	root	_	_	*
+2	;	;	PUNCT	_	_	3	punct	_	_	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 7
+# text = Tronville (1) ; 3.
+1	Tronville	Tronville	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 8
+# text = Bac (2) ; 4.
+1	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	4	4	NUM	_	_	1	appos	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 9
+# text = Commercy (2) ; 5.
+1	Commercy	Commercy	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	5	5	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 10
+# text = PTT Bar (1) ; 6.
+1	PTT	PTT	PROPN	_	_	0	root	_	_	*
+2	Bar	Bar	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	;	;	PUNCT	_	_	7	punct	_	_	*
+7	6	6	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 11
+# text = Ancerville.
+1	Ancerville	Ancerville	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 12
+# text = - Après-midi : 1.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	2	punct	_	_	*
+4	1	1	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 13
+# text = Bac (3) ; 2.
+1	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	2	2	PRON	_	Number=Plur	1	parataxis	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 14
+# text = PTT Bar (2) ; 3.
+1	PTT	PTT	PROPN	_	_	0	root	_	_	*
+2	Bar	Bar	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	;	;	PUNCT	_	_	7	punct	_	_	*
+7	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 15
+# text = Bac (1) ; 4.
+1	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	4	4	NUM	_	_	1	appos	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 16
+# text = Commercy (1) ; 5.
+1	Commercy	Commercy	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	5	5	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 17
+# text = Vaucouleurs ; 6.
+1	Vaucouleurs	Vaucouleurs	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	;	;	PUNCT	_	_	1	punct	_	_	*
+3	6	6	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 18
+# text = Tronville (2).
+1	Tronville	Tronville	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 19
+# text = Stenay - Matin : 1.
+1	Stenay	Stenay	PROPN	_	_	0	root	_	_	*
+2	-	-	PUNCT	_	_	3	punct	_	_	*
+3	Matin	matin	PROPN	_	_	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 20
+# text = Bac (4) ; 2.
+1	Bac	Bac	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	4	4	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	1	punct	_	_	*
+6	2	2	PRON	_	Number=Plur	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 21
+# text = Dugny (1) ; 3.
+1	Dugny	Dugny	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 22
+# text = Verdun-Belleville (2) ; 4.
+1	Verdun-Belleville	Verdun-Belleville	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	4	4	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 23
+# text = Saint-Mihiel (1) ;
+1	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 24
+# text = 5.
+1	5	5	NUM	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 25
+# text = Saint-Mihiel (2) ; 6.
+1	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	6	6	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 26
+# text = Lérouville.
+1	Lérouville	Lérouville	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 27
+# text = - Après-midi : 1.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	2	punct	_	_	*
+4	1	1	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 28
+# text = Verdun-Belleville (1) 2.
+1	Verdun-Belleville	Verdun-Belleville	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 29
+# text = Stenay-Mouzay (1) ; 3.
+1	Stenay-Mouzay	Stenay-Mouzay	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 30
+# text = Beausite ; 4.
+1	Beausite	Beausite	PROPN	_	_	0	root	_	_	*
+2	;	;	PUNCT	_	_	3	punct	_	_	*
+3	4	4	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 31
+# text = Contrisson (1) ; 5.
+1	Contrisson	Contrisson	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	1	1	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	;	;	PUNCT	_	_	6	punct	_	_	*
+6	5	5	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 32
+# text = Revigny.
+1	Revigny	Revigny	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 33
+# text = Qualifiés : Bac (1, 2, 3 et 4), Verdun-Belleville (1 et 2), Ligny, Tronville, Dugny, ASPTT Bar-le-Duc, Beausite et Steany-Mouzay.
+1	Qualifiés	qualifiés	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	Bac	Bac	PROPN	_	_	1	obl	_	_	*
+4	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	1	1	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	2	2	NUM	_	_	5	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	3	3	NUM	_	_	5	conj	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	4	4	NUM	_	_	5	conj	_	SpaceAfter=No	*
+12	)	)	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Verdun-Belleville	Verdun-Belleville	PROPN	_	_	1	obl	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	1	1	NUM	_	_	14	nmod	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	2	2	NUM	_	_	16	conj	_	SpaceAfter=No	*
+19	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Ligny	Ligny	PROPN	_	_	14	conj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Tronville	Tronville	PROPN	_	_	14	conj	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Dugny	Dugny	PROPN	_	_	14	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	ASPTT	ASPTT	PROPN	_	_	14	conj	_	_	*
+28	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	27	flat:name	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	Beausite	Beausite	PROPN	_	_	14	conj	_	_	*
+31	et	et	CCONJ	_	_	32	cc	_	_	*
+32	Steany-Mouzay	Steany-Mouzay	PROPN	_	_	14	conj	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 34
+# text = Les résultats Concours tête-à-tête : L. Lalevée (Saint-Mihiel) bat Millet (Dunkerque) 13-7 ;
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	Concours	concours	PROPN	_	_	2	appos	_	_	*
+4	tête-à-tête	tête-à-tête	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	L.	L.	PROPN	_	_	2	appos	_	_	*
+7	Lalevée	Lalevée	PROPN	_	_	6	flat:name	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	bat	battre	NOUN	_	Gender=Masc|Number=Sing	6	flat:name	_	_	*
+12	Millet	Millet	PROPN	_	_	6	flat:name	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	Dunkerque	Dunkerque	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	_	*
+16	13-7	13-7	NUM	_	_	6	nmod	_	_	*
+17	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 35
+# text = Bodo (D) bat D. Sarro (SM) 13-9 ; D.
+1	Bodo	Bodo	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	D.	D.	PROPN	_	_	5	obj	_	_	*
+7	Sarro	Sarro	PROPN	_	_	6	flat:name	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	SM	Sm	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	13-9	13-9	NUM	_	_	6	nmod	_	_	*
+12	;	;	PUNCT	_	_	13	punct	_	_	*
+13	D.	D.	X	_	_	5	xcomp	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 36
+# text = Sarro (SM) bat Th.
+1	Sarro	Sarro	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Th	Th	PROPN	_	_	5	obj	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 37
+# text = Boutelier (D) 13-7 ;
+1	Boutelier	Boutelier	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	13-7	13-7	NUM	_	_	1	nmod	_	_	*
+6	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 38
+# text = Bieth (SM) bat Lassus (D) 13-6 ;
+1	Bieth	Bieth	INTJ	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	SM	Sm	SYM	_	_	1	parataxis	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Lassus	Lassus	PROPN	_	_	5	obj	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	D	D	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	13-6	13-6	NUM	_	_	5	obl	_	_	*
+11	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 39
+# text = Haverland (D) bat Th.
+1	Haverland	Haverland	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Th.	Th.	PROPN	_	_	5	obj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 40
+# text = Lalevée (SM) 13-8 ;
+1	Lalevée	Lalevée	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	13-8	13-8	NUM	_	_	1	nmod	_	_	*
+6	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 41
+# text = A.
+1	A.	A.	ADV	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 42
+# text = Boutelier (D) bar Nicolas (SM) 13-12.
+1	Boutelier	Boutelier	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bar	bar	NOUN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*
+6	Nicolas	Nicolas	PROPN	_	_	1	flat:name	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	13-12	13-12	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 43
+# text = Doublettes : L. Lalevée-D. Sarro (SM) bat Millet-Th.
+1	Doublettes	Doublette	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	L.	L.	PROPN	_	_	1	appos	_	_	*
+4	Lalevée	Lalevée	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+5	-D.	-D.	PROPN	_	_	3	flat:name	_	_	*
+6	Sarro	Sarro	PROPN	_	_	3	flat:name	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	SM	Sm	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	Millet-Th	Millet-Th	PROPN	_	_	10	obj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 44
+# text = Boutelier (D) 13-8 ;
+1	Boutelier	Boutelier	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	13-8	13-8	NUM	_	_	1	nmod	_	_	*
+6	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 45
+# text = Bodo-Haverland (D) bat D. Sarro-Th.
+1	Bodo-Haverland	Bodo-Haverland	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	D.	D.	PROPN	_	_	5	obj	_	_	*
+7	Sarro-Th	Sarro-Th	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 46
+# text = Lalevée (SM) 13-5 ;
+1	Lalevée	Lalevée	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	13-5	13-5	NUM	_	_	1	nmod	_	_	*
+6	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 47
+# text = Nicolas-Bieth (SM) bat A.
+1	Nicolas-Bieth	Nicolas-Bieth	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	A.	A.	PROPN	_	_	5	obj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 48
+# text = Boutelier-Lassus (D) 13-11 Triplettes : Lalevée-Nicolas-Bieth (SM) bat Millet-Bodo-Haverland (D) 13-8 ;
+1	Boutelier-Lassus	Boutelier-Lassus	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	13-11	13-11	NUM	_	_	1	nmod	_	_	*
+6	Triplettes	Triplettes	PROPN	_	_	1	flat:name	_	_	*
+7	:	:	PUNCT	_	_	8	punct	_	_	*
+8	Lalevée-Nicolas-Bieth	Lalevée-Nicolas-Bieth	PROPN	_	_	1	appos	_	_	*
+9	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+10	SM	Sm	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+11	)	)	PUNCT	_	_	10	punct	_	_	*
+12	bat	battre	NOUN	_	Gender=Masc|Number=Sing	8	flat:name	_	_	*
+13	Millet-Bodo-Haverland	Millet-Bodo-Haverland	PROPN	_	_	8	flat:name	_	_	*
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	D	D	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	15	punct	_	_	*
+17	13-8	13-8	NUM	_	_	8	nmod	_	_	*
+18	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 49
+# text = Lassus-Boutelier-Boutelier (D) bat Sarro-Sarro-Lalevée (SM) 13-11.
+1	Lassus-Boutelier-Boutelier	Lassus-Boutelier-Boutelier	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	D	D	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	NOUN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*
+6	Sarro-Sarro-Lalevée	Sarro-Sarro-Lalevée	PROPN	_	_	1	flat:name	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	SM	Sm	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	13-11	13-11	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 50
+# text = SAINT-MIHIEL.
+1	SAINT-MIHIEL	SAINT-MIHIEL	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 51
+# text = - Saint-Mihiel bat Dunkerque 17-14.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	3	nsubj	_	_	*
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	Dunkerque	Dunkerque	PROPN	_	_	3	xcomp	_	_	*
+5	17-14	17-14	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 52
+# text = Les débats ont été âprement disputés et animés, dans un excellent fair-play, dans le hall du marché couvert de Saint-Mihiel, transformé pour un temps en boulodrome.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	débats	débat	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+5	âprement	âprement	ADV	_	_	6	advmod	_	_	*
+6	disputés	disputer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	animés	animer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	dans	dans	ADP	_	_	13	case	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+12	excellent	excellent	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+13	fair-play	fair-play	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	13	punct	_	_	*
+15	dans	dans	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	hall	hall	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	marché	marché	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	couvert	couvert	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	transformé	transformer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*
+26	pour	pour	ADP	_	_	28	case	_	_	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	temps	temps	NOUN	_	Gender=Masc|Number=Sing	25	obl	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	boulodrome	boulodrome	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 53
+# text = Saint-Mihiel et l'Union sportive de Dunkerque s'affrontaient à l'occasion des 8e de finale de zone de la coupe de France des clubs.
+1	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	9	nsubj	_	_	*
+2	et	et	CCONJ	_	_	4	cc	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	Union	union	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+5	sportive	sportif	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Dunkerque	Dunkerque	PROPN	_	_	4	nmod	_	_	*
+8	s'	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	SpaceAfter=No	*
+9	affrontaient	affront	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	8e	8e	ADJ	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	finale	finale	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	zone	zone	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	France	France	PROPN	_	_	22	nmod	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	clubs	club	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 54
+# text = Thierry Nicolas et Denis Sarro n'ont pas manqué ce rendez-vous dunkerquois, en arrachant leur qualification aux dépens d'une formation visiteuse solide et homogène, d'un bon niveau technique, à l'image de leur chef de file, le vice-champion de France de tête à tête 2001, Arnaud Boutelier.
+1	Thierry	Thierry	PROPN	_	_	9	nsubj	_	_	*
+2	Nicolas	Nicolas	PROPN	_	_	1	flat:name	_	_	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*
+4	Denis	Denis	PROPN	_	_	1	conj	_	_	*
+5	Sarro	Sarro	PROPN	_	_	4	flat:name	_	_	*
+6	n'	ne	ADV	_	Polarity=Neg	9	advmod	_	SpaceAfter=No	*
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+8	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	_	*
+9	manqué	manquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*
+11	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	dunkerquois	dunkerquois	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	en	en	ADP	_	_	15	mark	_	_	*
+15	arrachant	arracher	VERB	_	Tense=Pres|VerbForm=Part	9	advcl	_	_	*
+16	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	qualification	qualification	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	dépens	dépens	NOUN	_	Gender=Masc|Number=Plur	15	obl:arg	_	_	*
+21	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	formation	formation	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+24	visiteuse	visiteux	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+25	solide	solide	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+26	et	et	CCONJ	_	_	27	cc	_	_	*
+27	homogène	homogène	ADJ	_	Gender=Fem|Number=Sing	25	conj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	32	punct	_	_	*
+29	d'	de	ADP	_	_	32	case	_	SpaceAfter=No	*
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+31	bon	bon	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	_	*
+32	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	9	obl	_	_	*
+33	technique	technique	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	32	punct	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	SpaceAfter=No	*
+37	image	image	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	40	det	_	_	*
+40	chef	chef	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*
+41	de	de	ADP	_	_	42	case	_	_	*
+42	file	file	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	45	punct	_	_	*
+44	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_	*
+45	vice-champion	vice-champion	NOUN	_	Gender=Masc|Number=Sing	40	conj	_	_	*
+46	de	de	ADP	_	_	47	case	_	_	*
+47	France	France	PROPN	_	_	45	nmod	_	_	*
+48	de	de	ADP	_	_	49	case	_	_	*
+49	tête	tête	NOUN	_	Gender=Fem|Number=Sing	45	nmod	_	_	*
+50	à	à	ADP	_	_	51	case	_	_	*
+51	tête	tête	NOUN	_	Gender=Fem|Number=Sing	49	nmod	_	_	*
+52	2001	2001	NUM	_	_	51	nmod	_	SpaceAfter=No	*
+53	,	,	PUNCT	_	_	54	punct	_	_	*
+54	Arnaud	Arnaud	PROPN	_	_	37	appos	_	_	*
+55	Boutelier	Boutelier	PROPN	_	_	54	flat:name	_	SpaceAfter=No	*
+56	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 55
+# text = Après la présentation des équipes et la remise des présents aux visiteurs, des mains de Pierre Degritot, adjoint aux sports de la ville, cette confrontation pouvait débuter sous les regards d'un public avisé qui allait être le témoin d'un suspens de près de cinq heures non-stop.
+1	Après	après	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	34	obl:mod	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	remise	remise	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	présents	présent	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13-14	aux	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	visiteurs	visiteur	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	mains	main	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Pierre	pierre	PROPN	_	_	19	nmod	_	_	*
+22	Degritot	Degritot	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	adjoint	adjoindre	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	_	*
+25-26	aux	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	sports	sport	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	ville	ville	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	3	punct	_	_	*
+32	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	33	det	_	_	*
+33	confrontation	confrontation	NOUN	_	Gender=Fem|Number=Sing	34	nsubj	_	_	*
+34	pouvait	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+35	débuter	débuter	VERB	_	VerbForm=Inf	34	xcomp	_	_	*
+36	sous	sous	ADP	_	_	38	case	_	_	*
+37	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_	*
+38	regards	regard	NOUN	_	Gender=Masc|Number=Plur	35	obl	_	_	*
+39	d'	de	ADP	_	_	41	case	_	SpaceAfter=No	*
+40	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	public	public	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	_	*
+42	avisé	aviser	ADJ	_	Gender=Masc|Number=Sing	41	amod	_	_	*
+43	qui	qui	PRON	_	PronType=Rel	44	nsubj	_	_	*
+44	allait	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	41	acl:relcl	_	_	*
+45	être	être	AUX	_	VerbForm=Inf	47	cop	_	_	1:VID
+46	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_	*
+47	témoin	témoin	NOUN	_	Gender=Masc|Number=Sing	44	xcomp	_	_	1
+48	d'	de	ADP	_	_	50	case	_	SpaceAfter=No	*
+49	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*
+50	suspens	suspens	NOUN	_	Gender=Masc|Number=Sing	47	nmod	_	_	*
+51	de	de	ADP	_	_	52	case	_	_	*
+52	près	près	ADV	_	_	50	nmod	_	_	*
+53	de	de	ADP	_	_	55	case	_	_	*
+54	cinq	cinq	NUM	_	_	55	nummod	_	_	*
+55	heures	heure	NOUN	_	Gender=Fem|Number=Plur	52	obl:arg	_	_	*
+56	non-stop	non-stop	ADJ	_	Gender=Fem|Number=Sing	55	amod	_	SpaceAfter=No	*
+57	.	.	PUNCT	_	_	34	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 56
+# text = Suite à une égalité parfaite à l'issue des six parties disputées en tête-à-tête, trois remportées par chacune des formations, c'était en doublettes que les Sammiellois parvenaient à creuser un léger écart en glanant deux confrontations sur trois.
+1	Suite	suite	ADV	_	_	28	advmod	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*
+5	parfaite	parfait	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	issue	issue	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	12	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+11	six	six	NUM	_	_	12	nummod	_	_	*
+12	parties	partie	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	1:LVC.full
+13	disputées	disputer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_	1
+14	en	en	ADP	_	_	15	case	_	_	*
+15	tête-à-tête	tête-à-tête	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	trois	trois	NUM	_	_	12	appos	_	_	*
+18	remportées	remporter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	17	acl	_	_	*
+19	par	par	ADP	_	_	20	case	_	_	*
+20	chacune	chacun	PRON	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	formations	formation	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	1	punct	_	_	*
+25	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	28	expl:subj	_	SpaceAfter=No	*
+26	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	28	cop	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	doublettes	doublette	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+29	que	que	SCONJ	_	_	32	mark	_	_	*
+30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*
+31	Sammiellois	Sammiellois	PROPN	_	_	32	nsubj	_	_	*
+32	parvenaient	parven	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	28	advcl:cleft	_	_	*
+33	à	à	ADP	_	_	34	mark	_	_	*
+34	creuser	creuser	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+35	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+36	léger	léger	ADJ	_	Gender=Masc|Number=Sing	37	amod	_	_	*
+37	écart	écart	NOUN	_	Gender=Masc|Number=Sing	34	obj	_	_	*
+38	en	en	ADP	_	_	39	mark	_	_	*
+39	glanant	glaner	VERB	_	Tense=Pres|VerbForm=Part	32	advcl	_	_	*
+40	deux	deux	NUM	_	_	41	nummod	_	_	*
+41	confrontations	confrontation	NOUN	_	Gender=Fem|Number=Plur	39	obj	_	_	*
+42	sur	sur	ADP	_	_	43	case	_	_	*
+43	trois	trois	NUM	_	_	39	obl	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	28	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 57
+# text = Il restait néanmoins aux locaux à s'imposer dans l'une des deux dernières rencontres programmées en triplette.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	2:VID
+2	restait	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	2
+3	néanmoins	néanmoins	ADV	_	_	2	advmod	_	_	*
+4-5	aux	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	locaux	local	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	_	*
+7	à	à	ADP	_	_	9	mark	_	_	*
+8	s'	se	PRON	_	Person=3|PronType=Prs	9	obj	_	SpaceAfter=No	1:IRV
+9	imposer	imposer	VERB	_	VerbForm=Inf	2	xcomp	_	_	1
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	une	un	PRON	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	17	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*
+15	deux	deux	NUM	_	_	17	nummod	_	_	*
+16	dernières	dernier	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	_	*
+17	rencontres	rencontre	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+18	programmées	programmer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	17	acl	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	triplette	triplette	NOUN	_	Gender=Fem|Number=Sing	18	obl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 58
+# text = Le suspens durait, dès les premiers échanges en triplette mixte, Thierry Nicolas sortait le grand jeu en noyant le but, évitant ainsi le pire à ses deux partenaires.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	suspens	suspens	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+3	durait	durer	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	8	punct	_	_	*
+5	dès	dès	ADP	_	_	8	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+7	premiers	premier	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+8	échanges	échange	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	triplette	triplette	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	mixte	mixte	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Thierry	Thierry	PROPN	_	_	2	appos	_	_	*
+14	Nicolas	Nicolas	PROPN	_	_	13	flat:name	_	_	*
+15	sortait	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+17	grand	grand	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+18	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*
+19	en	en	ADP	_	_	20	mark	_	_	*
+20	noyant	noyer	VERB	_	Tense=Pres|VerbForm=Part	15	advcl	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	but	but	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	évitant	évitre	VERB	_	Tense=Pres|VerbForm=Part	20	advcl	_	_	*
+25	ainsi	ainsi	ADV	_	_	24	advmod	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	pire	pire	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*
+28	à	à	ADP	_	_	31	case	_	_	*
+29	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	31	det	_	_	*
+30	deux	deux	NUM	_	_	31	nummod	_	_	*
+31	partenaires	partenaire	NOUN	_	Gender=Masc|Number=Plur	24	obl:arg	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24752.txt 59
+# text = Peu à peu, la formation locale prenait la mesure de sa rivale pour finalement apporter les points nécessaires à la victoire finale et de propulser le club de Saint-Mihiel au tour souvent, exceptionnel !
+1	Peu	peu	ADV	_	_	8	advmod	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	peu	peu	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	formation	formation	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+7	locale	local	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	prenait	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:LVC.full
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	1
+11	de	de	ADP	_	_	13	case	_	_	*
+12	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	rivale	rivale	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	pour	pour	ADP	_	_	16	mark	_	_	*
+15	finalement	finalement	ADV	_	_	16	advmod	_	_	*
+16	apporter	apporter	VERB	_	VerbForm=Inf	8	advcl	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	points	point	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_	*
+19	nécessaires	nécessaire	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	victoire	victoire	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*
+23	finale	final	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+24	et	et	CCONJ	_	_	26	cc	_	_	*
+25	de	de	ADP	_	_	26	mark	_	_	*
+26	propulser	propulser	VERB	_	VerbForm=Inf	22	conj	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	club	club	NOUN	_	Gender=Masc|Number=Sing	26	obj	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	28	nmod	_	_	*
+31-32	au	_	_	_	_	_	_	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	tour	tour	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
+34	souvent	souvent	ADV	_	_	33	advmod	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	exceptionnel	exceptionnel	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+37	!	!	PUNCT	_	_	8	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,592 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-27_29955.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 1
+# text = Bonjour tristesse !
+1	Bonjour	bonjour	INTJ	_	_	2	amod	_	_	*
+2	tristesse	tristesse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	!	!	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 2
+# text = AMNEVILLE (B) BAT BLAINVILLE : 2-0 Arbogast (88'), Lenoir (92' sp) AMNEVILLE.
+1	AMNEVILLE	AMNEVILLE	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	B	B	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	BAT	bat	PROPN	_	_	1	flat:name	_	_	*
+6	BLAINVILLE	Blainville	PROPN	_	_	1	flat:name	_	_	*
+7	:	:	PUNCT	_	_	8	punct	_	_	*
+8	2-0	2-0	NUM	_	_	1	appos	_	_	*
+9	Arbogast	Arbogast	PROPN	_	_	8	flat:name	_	_	*
+10	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+11	88	88	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	Lenoir	Lenoir	PROPN	_	_	8	conj	_	_	*
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+17	92	92	NUM	_	_	15	nmod	_	SpaceAfter=No	*
+18	'	'	PUNCT	_	_	19	punct	_	_	*
+19	sp	sp	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	SpaceAfter=No	*
+20	)	)	PUNCT	_	_	17	punct	_	_	*
+21	AMNEVILLE	AMNEVILLE	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 3
+# text = _ Blainville s'est logiquement inclinée face à la réserve du CSO Amnéville à l'issue d'un match à oublier au plus vite.
+1	_	_	PUNCT	_	_	6	punct	_	_	*
+2	Blainville	Blainville	PROPN	_	_	6	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	6	obj	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	logiquement	logiquement	ADV	_	_	6	advmod	_	_	*
+6	inclinée	incliner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+7	face	face	ADV	_	_	6	advmod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	réserve	réserve	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	CSO	CSO	PROPN	_	_	10	nmod	_	_	*
+14	Amnéville	Amnéville	PROPN	_	_	13	flat:name	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	issue	issue	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+18	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	match	match	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	à	à	ADP	_	_	22	mark	_	_	*
+22	oublier	oublier	VERB	_	VerbForm=Inf	20	acl	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	22	advmod	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	fixed	_	_	*
+25	plus	plus	ADV	_	_	23	fixed	_	_	*
+26	vite	vite	ADV	_	_	20	advmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 4
+# text = La rencontre débutait pourtant plutôt bien.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	débutait	débuter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	pourtant	pourtant	ADV	_	_	3	advmod	_	_	*
+5	plutôt	plutôt	ADV	_	_	6	advmod	_	_	*
+6	bien	bien	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 5
+# text = Dès la 2', Chaomleffel tentait sa chance de 20 m pour les visiteurs, mais sa frappe, pourtant peu puissante, était relâchée en corner par Zink.
+1	Dès	dès	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	2'	2e	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	Chaomleffel	Chaomleffel	PROPN	_	_	6	nsubj	_	_	*
+6	tentait	tenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:VID
+7	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	1
+8	chance	chance	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	1
+9	de	de	ADP	_	_	11	case	_	_	*
+10	20	20	NUM	_	_	11	nummod	_	_	*
+11	m	m	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+12	pour	pour	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	visiteurs	visiteur	NOUN	_	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	25	punct	_	_	*
+16	mais	mais	CCONJ	_	_	25	cc	_	_	*
+17	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	18	det	_	_	*
+18	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	25	nsubj:pass	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	pourtant	pourtant	ADV	_	_	21	advmod	_	_	*
+21	peu	peu	ADV	_	_	22	advmod	_	_	*
+22	puissante	puissant	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	18	punct	_	_	*
+24	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	aux:pass	_	_	*
+25	relâchée	relâcher	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*
+26	en	en	ADP	_	_	27	case	_	_	*
+27	corner	corner	NOUN	_	Gender=Masc|Number=Sing	25	obl	_	_	*
+28	par	par	ADP	_	_	29	case	_	_	*
+29	Zink	Zink	PROPN	_	_	25	obl:agent	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 6
+# text = La minute suivante, ce fut au tour des locaux de se mettre en évidence, mais la frappe de 30 m de Willette passait au-dessus des cages du portier blainvillois.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	minute	minute	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+3	suivante	suivant	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	_	1:VID
+6	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_	1
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	1
+9	tour	tour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	locaux	local	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	de	de	ADP	_	_	15	mark	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	15	obj	_	_	2:IRV
+15	mettre	mettre	VERB	_	VerbForm=Inf	12	acl	_	_	2
+16	en	en	ADP	_	_	17	case	_	_	*
+17	évidence	évidence	PROPN	_	_	15	obl	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	27	punct	_	_	*
+19	mais	mais	CCONJ	_	_	27	cc	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	27	nsubj	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	30	30	NUM	_	_	24	nummod	_	_	*
+24	m	m	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	Willette	Willette	PROPN	_	_	21	nmod	_	_	*
+27	passait	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	conj	_	_	*
+28	au-dessus	au-dessus	ADV	_	_	27	advmod	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_	*
+31	cages	cage	NOUN	_	Gender=Masc|Number=Plur	28	obl:arg	_	_	*
+32-33	du	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	portier	portier	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+35	blainvillois	blainvillois	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 7
+# text = Les Meurthe-et-Mosellans peinaient à trouver leurs marques sur le terrain synthétique du club amnévillois et à la 18' se faisaient déborder par un joli mouvement collectif des locaux :
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	Meurthe-et-Mosellans	Meurthe-et-Mosellans	PROPN	_	_	3	nsubj	_	_	*
+3	peinaient	pein	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	trouver	trouver	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	marques	marque	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+11	synthétique	synthétique	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	club	club	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+15	amnévillois	amnévillois	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	et	et	CCONJ	_	_	23	cc	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	18	18	NUM	_	_	23	obl:mod	_	SpaceAfter=No	*
+20	'	'	PUNCT	_	_	19	punct	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	23	obj	_	_	*
+22	faisaient	faire	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	23	aux:caus	_	_	*
+23	déborder	déborder	VERB	_	VerbForm=Inf	3	conj	_	_	*
+24	par	par	ADP	_	_	27	case	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+26	joli	joli	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+27	mouvement	mouvement	NOUN	_	Gender=Masc|Number=Sing	23	obl:agent	_	_	*
+28	collectif	collectif	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_	*
+31	locaux	local	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*
+32	:	:	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 8
+# text = Wujek s'en allait côté gauche, avant de décaler Arbogast qui centrait instantanément pour la tête de Willette, mais celle-ci fuyait à nouveau le cadre.
+1	Wujek	Wujek	PROPN	_	_	4	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:VID
+3	en	en	PRON	_	Person=3	4	iobj	_	_	1
+4	allait	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+5	côté	côté	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+6	gauche	gauche	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	avant	avant	ADV	_	_	4	advmod	_	_	*
+9	de	de	ADP	_	_	10	mark	_	_	*
+10	décaler	décaler	VERB	_	VerbForm=Inf	8	ccomp	_	_	*
+11	Arbogast	Arbogast	PROPN	_	_	10	obj	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+13	centrait	centrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	acl:relcl	_	_	*
+14	instantanément	instantanément	ADV	_	_	13	advmod	_	_	*
+15	pour	pour	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	tête	tête	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Willette	Willette	PROPN	_	_	17	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	23	punct	_	_	*
+21	mais	mais	CCONJ	_	_	23	cc	_	_	*
+22	celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	23	nsubj	_	_	*
+23	fuyait	fuir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	_	_	*
+24	à	à	ADP	_	_	23	advmod	_	_	*
+25	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	24	fixed	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 9
+# text = Les Verts dominaient alors nettement mais sans se créer de nouvelles occasions.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	Verts	Verts	PROPN	_	_	3	nsubj	_	_	*
+3	dominaient	dominer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	alors	alors	ADV	_	_	5	advmod	_	_	*
+5	nettement	nettement	ADV	_	_	3	advmod	_	_	*
+6	mais	mais	CCONJ	_	_	9	cc	_	_	*
+7	sans	sans	ADP	_	_	9	mark	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	_	*
+9	créer	créer	VERB	_	VerbForm=Inf	3	conj	_	_	*
+10	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+11	nouvelles	nouveau	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_	*
+12	occasions	occasion	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 10
+# text = La première frappe cadrée en faveur d'Amnéville fut d'ailleurs l'oeuvre de...
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	première	premier	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_	*
+4	cadrée	cadrer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	faveur	faveur	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	Amnéville	Amnéville	PROPN	_	_	6	nmod	_	_	*
+9	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_	*
+10	d'	de	ADP	_	_	13	advmod	_	SpaceAfter=No	*
+11	ailleurs	ailleurs	ADV	_	_	10	fixed	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	oeuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+14	de	de	ADP	_	_	13	appos	_	SpaceAfter=No	*
+15	...	...	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 11
+# text = Mansuy dont la tête obligeait son gardien à sortir le ballon de la lucarne d'une belle claquette.
+1	Mansuy	Mansuy	PROPN	_	_	0	root	_	_	*
+2	dont	dont	PRON	_	PronType=Rel	4	nmod	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	tête	tête	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+5	obligeait	obliger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	_	_	*
+6	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	gardien	gardien	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	à	à	ADP	_	_	9	mark	_	_	*
+9	sortir	sortir	VERB	_	VerbForm=Inf	7	acl	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	lucarne	lucarne	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+17	belle	beau	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+18	claquette	claquette	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 12
+# text = On jouait la 33' et il fallut alors attendre la 61' pour voir une nouvelle occasion des locaux par Willette, mais sa tentative manquait une nouvelle fois le cadre.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	jouait	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	33	33	NUM	_	_	2	obj	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	2	punct	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	1:VID
+8	fallut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_	1
+9	alors	alors	ADV	_	_	8	advmod	_	_	*
+10	attendre	attendre	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	61	61	NUM	_	_	10	obj	_	SpaceAfter=No	*
+13	'	'	PUNCT	_	_	12	punct	_	_	*
+14	pour	pour	ADP	_	_	15	mark	_	_	*
+15	voir	voir	VERB	_	VerbForm=Inf	10	advcl	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+17	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+18	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	locaux	local	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+22	par	par	ADP	_	_	23	case	_	_	*
+23	Willette	Willette	PROPN	_	_	15	obl:mod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	28	punct	_	_	*
+25	mais	mais	CCONJ	_	_	28	cc	_	_	*
+26	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	tentative	tentative	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	_	_	*
+28	manquait	manquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_	*
+29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+30	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+31	fois	fois	NOUN	_	Gender=Fem|Number=Sing	28	obl	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	28	obj	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 13
+# text = En fait, le premier vrai tir cadré d'Amnéville survint à la 66', mais la frappe de Lenoir était captée sans difficulté par Osty.
+1	En	en	ADP	_	_	11	advmod	_	_	*
+2	fait	fait	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+5	premier	premier	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+6	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	tir	tir	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+8	cadré	cadrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	Amnéville	Amnéville	PROPN	_	_	8	obl:arg	_	_	*
+11	survint	survenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	66	66	NUM	_	_	11	obl:arg	_	SpaceAfter=No	*
+15	'	'	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	23	punct	_	_	*
+17	mais	mais	CCONJ	_	_	23	cc	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	23	nsubj:pass	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Lenoir	Lenoir	PROPN	_	_	19	nmod	_	_	*
+22	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	23	aux:pass	_	_	*
+23	captée	capter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	conj	_	_	*
+24	sans	sans	ADP	_	_	25	case	_	_	*
+25	difficulté	difficulté	NOUN	_	Gender=Fem|Number=Sing	23	obl	_	_	*
+26	par	par	ADP	_	_	27	case	_	_	*
+27	Osty	Osty	PROPN	_	_	23	obl:agent	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 14
+# text = Et Blainville dans tout ça ?
+1	Et	et	CCONJ	_	_	2	cc	_	_	*
+2	Blainville	Blainville	PROPN	_	_	0	root	_	_	*
+3	dans	dans	ADP	_	_	5	case	_	_	*
+4	tout	tout	DET	_	Gender=Masc|Number=Sing	5	det	_	_	*
+5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obl:mod	_	_	*
+6	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 15
+# text = Rien, si ce n'est une frappe dévissée de Grimon qui ne fit peur qu'au poteau de corner !
+1	Rien	rien	PRON	_	_	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	si	si	SCONJ	_	_	8	mark	_	_	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	_	*
+5	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	1	ccomp	_	_	*
+9	dévissée	dévisser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Grimon	Grimon	PROPN	_	_	8	nmod	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+13	ne	ne	ADV	_	Polarity=Neg	14	advmod	_	_	*
+14	fit	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	_	_	1:VID
+15	peur	peur	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	1
+16	qu'	que	SCONJ	_	_	19	cc	_	SpaceAfter=No	*
+17-18	au	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	poteau	poteau	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_	*
+20	de	de	ADP	_	_	21	mark	_	_	*
+21	corner	corner	VERB	_	VerbForm=Inf	14	xcomp	_	_	*
+22	!	!	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 16
+# text = La plus grosse occasion survint à la 70' lorsque Willette se présentait seul devant Osty, mais c'est le gardien qui gagnait son duel face à l'attaquant amnévillois.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+2	plus	plus	ADV	_	_	3	advmod	_	_	*
+3	grosse	gros	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+4	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+5	survint	survenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	70	70	NUM	_	_	5	obl:arg	_	SpaceAfter=No	*
+9	'	'	PUNCT	_	_	13	punct	_	_	*
+10	lorsque	lorsque	SCONJ	_	_	13	mark	_	_	*
+11	Willette	Willette	PROPN	_	_	13	nsubj	_	_	*
+12	se	se	PRON	_	Person=3|PronType=Prs	13	expl:comp	_	_	1:IRV
+13	présentait	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	_	_	1
+14	seul	seul	ADJ	_	Gender=Masc|Number=Sing	13	xcomp	_	_	*
+15	devant	devant	ADP	_	_	16	case	_	_	*
+16	Osty	Osty	PROPN	_	_	13	obl	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	22	punct	_	_	*
+18	mais	mais	CCONJ	_	_	22	cc	_	_	*
+19	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	22	nsubj	_	SpaceAfter=No	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	gardien	gardien	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	24	nsubj	_	_	*
+24	gagnait	gagner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	acl:relcl	_	_	*
+25	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	duel	duel	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*
+27	face	face	ADV	_	_	24	advmod	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	attaquant	attaquant	NOUN	_	Gender=Masc|Number=Sing	27	obl:arg	_	_	*
+31	amnévillois	amnévillois	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 17
+# text = On se dirigeait alors vers ce que tout le monde aurait parié, un bon vieux 0-0.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	se	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	_	1:IRV
+3	dirigeait	diriger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+4	alors	alors	ADV	_	_	3	advmod	_	_	*
+5	vers	vers	ADP	_	_	6	case	_	_	*
+6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obl	_	_	*
+7	que	que	PRON	_	PronType=Rel	12	obj	_	_	*
+8	tout	tout	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+11	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	parié	parier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl:relcl	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	bon	bon	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+16	vieux	vieux	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	0-0	0-0	NUM	_	_	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 18
+# text = Mais à la 88', un long centre d'Arbogast de 40 m passait devant tout le monde et finissait sa course au fond des filets blainvillois.
+1	Mais	mais	CCONJ	_	_	15	cc	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	88	88	NUM	_	_	15	obl:mod	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	long	long	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	centre	centre	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	Arbogast	Arbogast	PROPN	_	_	9	nmod	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	40	40	NUM	_	_	14	nummod	_	_	*
+14	m	m	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+15	passait	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+16	devant	devant	ADP	_	_	19	case	_	_	*
+17	tout	tout	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	monde	monde	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	finissait	finir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	conj	_	_	*
+22	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	23	det	_	_	*
+23	course	course	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	fond	fond	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+27-28	des	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+29	filets	filet	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+30	blainvillois	blainvillois	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 19
+# text = A l'ultime seconde, un Amnévillois était fauché en pleine surface.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	ultime	ultime	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+4	seconde	second	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Amnévillois	Amnévillois	PROPN	_	_	9	nsubj:pass	_	_	*
+8	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:pass	_	_	*
+9	fauché	faucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	en	en	ADP	_	_	12	case	_	_	*
+11	pleine	plein	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	surface	surface	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 20
+# text = Lenoir se chargeait de la sentence et prenait Osty à contre-pied sans trembler.
+1	Lenoir	Lenoir	PROPN	_	_	3	nsubj	_	_	*
+2	se	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	_	*
+3	chargeait	charger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	sentence	sentence	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	prenait	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	conj	_	_	*
+9	Osty	Osty	PROPN	_	_	8	obj	_	_	*
+10	à	à	ADP	_	_	11	case	_	_	*
+11	contre-pied	contre-pied	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*
+12	sans	sans	ADP	_	_	13	mark	_	_	*
+13	trembler	trembler	VERB	_	VerbForm=Inf	8	advcl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 21
+# text = LES RÉSULTATS Quarts de finale : Hottelart (Levallois) bat Gamier (Racing Club de France) 15-13 ; Gusten (RCF) bat Le Mailler (Levallois) 12-11 ; Daninthe (Levallois) bat Geneviève (RCF) 15-8 ;
+1	LES	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	RÉSULTATS	résultats	PROPN	_	_	0	root	_	_	*
+3	Quarts	quarts	PROPN	_	_	2	flat:name	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	finale	finale	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	:	:	PUNCT	_	_	7	punct	_	_	*
+7	Hottelart	Hottelart	PROPN	_	_	11	nsubj	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	Levallois	Levallois	PROPN	_	_	7	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*
+12	Gamier	Gamier	PROPN	_	_	11	xcomp	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	Racing	Racing	PROPN	_	_	12	appos	_	_	*
+15	Club	Club	PROPN	_	_	14	flat:name	_	_	*
+16	de	de	ADP	_	_	14	flat:name	_	_	*
+17	France	France	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	14	punct	_	_	*
+19	15-13	15-13	NUM	_	_	11	obl	_	_	*
+20	;	;	PUNCT	_	_	25	punct	_	_	*
+21	Gusten	Gusten	PROPN	_	_	25	nsubj	_	_	*
+22	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+23	RCF	RCF	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+24	)	)	PUNCT	_	_	23	punct	_	_	*
+25	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	*
+26	Le	le	DET	_	_	27	det	_	_	*
+27	Mailler	Mailler	PROPN	_	_	25	obj	_	_	*
+28	(	(	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+29	Levallois	Levallois	PROPN	_	_	27	appos	_	SpaceAfter=No	*
+30	)	)	PUNCT	_	_	29	punct	_	_	*
+31	12-11	12-11	NUM	_	_	27	nmod	_	_	*
+32	;	;	PUNCT	_	_	33	punct	_	_	*
+33	Daninthe	Daninthe	PROPN	_	_	37	nsubj	_	_	*
+34	(	(	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+35	Levallois	Levallois	PROPN	_	_	33	appos	_	SpaceAfter=No	*
+36	)	)	PUNCT	_	_	35	punct	_	_	*
+37	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_	*
+38	Geneviève	Geneviève	PROPN	_	_	37	xcomp	_	_	*
+39	(	(	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+40	RCF	RCF	PROPN	_	_	38	appos	_	SpaceAfter=No	*
+41	)	)	PUNCT	_	_	40	punct	_	_	*
+42	15-8	15-8	NUM	_	_	37	obl	_	_	*
+43	;	;	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 22
+# text = Duchnowski (Aulnay) bat soiron (RCF) 15-8.
+1	Duchnowski	Duchnowski	PROPN	_	_	5	nsubj	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	Aulnay	Aulnay	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	soiron	soiron	ADV	_	_	5	advmod	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	RCF	RCF	PROPN	_	_	5	obj	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	15-8	15-8	NUM	_	_	5	obl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 23
+# text = Demi-finales : Hottelart bat Gustin 15-10 ;
+1	Demi-finales	demi-finale	PROPN	_	_	4	nsubj	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	Hottelart	Hottelart	PROPN	_	_	1	appos	_	_	*
+4	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	Gustin	Gustin	PROPN	_	_	4	obj	_	_	*
+6	15-10	15-10	NUM	_	_	5	nmod	_	_	*
+7	;	;	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 24
+# text = Daninthe bat Duchnowski 15-8.
+1	Daninthe	Daninthe	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	Duchnowski	Duchnowski	PROPN	_	_	2	xcomp	_	_	*
+4	15-8	15-8	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-27_29955.txt 25
+# text = Finale : Daninthe bat Hottelart 15-7.
+1	Finale	Finale	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	Daninthe	Daninthe	PROPN	_	_	4	nsubj	_	_	*
+4	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+5	Hottelart	Hottelart	PROPN	_	_	4	xcomp	_	_	*
+6	15-7	15-7	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

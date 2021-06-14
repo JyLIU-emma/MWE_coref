@@ -1,0 +1,757 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-19_59025.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 1
+# text = « TAXI 3 » De Gérard Krawczyk, avec Samy Nacéri, Frédéric Diefenthal, Marion Cotillard.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	TAXI	taxi	PROPN	_	_	0	root	_	_	*
+3	3	3	NUM	_	_	2	nmod	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+5	De	de	ADP	_	_	6	case	_	_	*
+6	Gérard	Gérard	PROPN	_	_	2	nmod	_	_	*
+7	Krawczyk	Krawczyk	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	avec	avec	ADP	_	_	10	case	_	_	*
+10	Samy	Samy	PROPN	_	_	6	nmod	_	_	*
+11	Nacéri	Nacéri	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Frédéric	Frédéric	PROPN	_	_	6	conj	_	_	*
+14	Diefenthal	Diefenthal	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Marion	Marion	PROPN	_	_	6	conj	_	_	*
+17	Cotillard	Cotillard	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 2
+# text = En décembre, à Marseille.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Marseille	Marseille	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 3
+# text = Le jeune flic se surpasse à nouveau en tentant de démasquer seul une bande de malfrats, mais rien ne se passe pas comme il voudrait.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	flic	flic	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	se	se	PRON	_	Person=3|PronType=Prs	5	obj	_	_	*
+5	surpasse	surpasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	à	à	ADP	_	_	5	advmod	_	_	*
+7	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	6	fixed	_	_	*
+8	en	en	ADP	_	_	9	mark	_	_	*
+9	tentant	tenter	VERB	_	Tense=Pres|VerbForm=Part	5	advcl	_	_	*
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	démasquer	démasquer	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	seul	seul	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	bande	bande	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	malfrats	malfrat	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	22	punct	_	_	*
+18	mais	mais	CCONJ	_	_	22	cc	_	_	*
+19	rien	rien	PRON	_	Number=Sing	22	nsubj	_	_	*
+20	ne	ne	ADV	_	Polarity=Neg	22	advmod	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	22	expl:comp	_	_	1:IRV
+22	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	1
+23	pas	pas	ADV	_	Polarity=Neg	22	advmod	_	_	*
+24	comme	comme	SCONJ	_	_	26	mark	_	_	*
+25	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_	*
+26	voudrait	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	advcl	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 4
+# text = Comme d'habitude Daniel n'est pas loin.
+1	Comme	comme	SCONJ	_	_	8	mark	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	habitude	habitude	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+4	Daniel	Daniel	PROPN	_	_	3	appos	_	_	*
+5	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	loin	loin	ADV	_	_	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 5
+# text = De Marseille à Tignes, l'aventure peut recommencer.
+1	De	de	ADP	_	_	2	case	_	_	*
+2	Marseille	Marseille	PROPN	_	_	8	obl:mod	_	_	*
+3	à	à	ADP	_	_	4	case	_	_	*
+4	Tignes	Tignes	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	aventure	aventure	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+8	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	recommencer	recommencer	VERB	_	VerbForm=Inf	8	xcomp	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 6
+# text = Mercredi, mardi 14 h, 16 h, 20 h 30 ; jeudi 14 h, 16 h 15 ; vendredi 14 h, 16 h 15, 20 h 30 ; samedi 14 h, 16 h 15, 20 h ; dimanche 14 h, 16 h, 18 h ; lundi 14 h, 20 h 30.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	14	14	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	16	16	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	20	20	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	30	30	NUM	_	_	11	nmod	_	_	*
+13	;	;	PUNCT	_	_	1	punct	_	_	*
+14	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+15	14	14	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	1	punct	_	_	*
+18	16	16	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+20	15	15	NUM	_	_	19	nmod	_	_	*
+21	;	;	PUNCT	_	_	1	punct	_	_	*
+22	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+23	14	14	NUM	_	_	24	nummod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	1	punct	_	_	*
+26	16	16	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+28	15	15	NUM	_	_	27	conj	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	20	20	NUM	_	_	28	nmod	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+32	30	30	NUM	_	_	31	nmod	_	_	*
+33	;	;	PUNCT	_	_	34	punct	_	_	*
+34	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	27	conj	_	_	*
+35	14	14	NUM	_	_	36	nummod	_	_	*
+36	h	heure	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	1	punct	_	_	*
+38	16	16	NUM	_	_	39	nummod	_	_	*
+39	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+40	15	15	NUM	_	_	39	nmod	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	43	punct	_	_	*
+42	20	20	NUM	_	_	43	nummod	_	_	*
+43	h	heure	NOUN	_	Gender=Fem|Number=Sing	40	conj	_	_	*
+44	;	;	PUNCT	_	_	1	punct	_	_	*
+45	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+46	14	14	NUM	_	_	47	nummod	_	_	*
+47	h	heure	NOUN	_	Gender=Fem|Number=Sing	45	nmod	_	SpaceAfter=No	*
+48	,	,	PUNCT	_	_	50	punct	_	_	*
+49	16	16	NUM	_	_	50	nummod	_	_	*
+50	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No	*
+51	,	,	PUNCT	_	_	53	punct	_	_	*
+52	18	18	NUM	_	_	53	nummod	_	_	*
+53	h	heure	NOUN	_	Gender=Fem|Number=Sing	50	conj	_	_	*
+54	;	;	PUNCT	_	_	1	punct	_	_	*
+55	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+56	14	14	NUM	_	_	57	nummod	_	_	*
+57	h	heure	NOUN	_	Gender=Fem|Number=Sing	55	nmod	_	SpaceAfter=No	*
+58	,	,	PUNCT	_	_	1	punct	_	_	*
+59	20	20	NUM	_	_	60	nummod	_	_	*
+60	h	heure	NOUN	_	Gender=Fem|Number=Sing	61	nmod	_	_	*
+61	30	30	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+62	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 7
+# text = « MONSIEUR N » De Antoine de Caunes avec Philippe Torreton, Roschdy Zem.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	MONSIEUR	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	N	N	X	_	_	2	appos	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	_	*
+5	De	de	ADP	_	_	6	case	_	_	*
+6	Antoine	Antoine	PROPN	_	_	2	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Caunes	Caunes	PROPN	_	_	6	nmod	_	_	*
+9	avec	avec	ADP	_	_	10	case	_	_	*
+10	Philippe	Philippe	PROPN	_	_	2	nmod	_	_	*
+11	Torreton	Torreton	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Roschdy	Roschdy	PROPN	_	_	10	conj	_	_	*
+14	Zem	Zem	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 8
+# text = Les six années d'emprisonnement de Napoléon à Sainte-Hélène où il mourrut en 1821.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+2	six	six	NUM	_	_	3	nummod	_	_	*
+3	années	année	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	emprisonnement	emprisonnement	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Napoléon	Napoléon	PROPN	_	_	3	nmod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Sainte-Hélène	Sainte-Hélène	PROPN	_	_	7	nmod	_	_	*
+10	où	où	ADV	_	PronType=Rel	12	advmod	_	_	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	*
+12	mourrut	mourraître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	1821	1821	NUM	_	_	12	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 9
+# text = Mercredi, dimanche 18 h ; vendredi, samedi 14 h. « 18 ANS APRES » De Coline Serreau, avec Roland Giraud, michel Boujenah, André Dussollier, Philippine Leroy-Beaulieu.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	18	18	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	;	;	PUNCT	_	_	1	punct	_	_	*
+7	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+10	14	14	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+13	«	«	PUNCT	_	_	15	punct	_	_	*
+14	18	18	NUM	_	_	15	nummod	_	_	*
+15	ANS	Ans	PROPN	_	_	1	appos	_	_	*
+16	APRES	apres	PROPN	_	_	15	flat:name	_	_	*
+17	»	»	PUNCT	_	_	15	punct	_	_	*
+18	De	de	ADP	_	_	19	case	_	_	*
+19	Coline	Coline	PROPN	_	_	15	nmod	_	_	*
+20	Serreau	Serreau	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	avec	avec	ADP	_	_	23	case	_	_	*
+23	Roland	Roland	PROPN	_	_	15	nmod	_	_	*
+24	Giraud	Giraud	PROPN	_	_	23	flat:name	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	michel	michel	PROPN	_	_	15	conj	_	_	*
+27	Boujenah	Boujenah	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	André	André	PROPN	_	_	15	conj	_	_	*
+30	Dussollier	Dussollier	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Philippine	philippine	PROPN	_	_	15	conj	_	_	*
+33	Leroy-Beaulieu	Leroy-Beaulieu	PROPN	_	_	32	flat:name	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 10
+# text = Dix-huit après trois hommes et un couffin, Coline Serreau retrouve son trio d'acteurs et la petite Marie qui a grandi.
+1	Dix-huit	Dix-huit	NUM	_	_	11	obl:mod	_	_	*
+2	après	après	ADP	_	_	4	case	_	_	*
+3	trois	trois	NUM	_	_	4	nummod	_	_	*
+4	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+5	et	et	CCONJ	_	_	7	cc	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	couffin	couffin	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	Coline	Coline	PROPN	_	_	11	nsubj	_	_	*
+10	Serreau	Serreau	PROPN	_	_	9	flat:name	_	_	*
+11	retrouve	retrouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	trio	trio	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	acteurs	acteur	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+18	petite	petit	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+19	Marie	Marie	PROPN	_	_	13	conj	_	_	*
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+21	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	grandi	grandir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl:relcl	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 11
+# text = Mercredi, lundi, mardi 16 h ; jeudi 14 h ; samedi 16 h 15 ; dimanche 18 h. « MARIAGE A LA GRECQUE » De Joël Zwick, avec Nia Vardelos, John Corbett, Michael Constantine.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+6	16	16	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+10	14	14	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	;	;	PUNCT	_	_	1	punct	_	_	*
+13	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+14	16	16	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+16	15	15	NUM	_	_	15	nmod	_	_	*
+17	;	;	PUNCT	_	_	1	punct	_	_	*
+18	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+19	18	18	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+22	«	«	PUNCT	_	_	23	punct	_	_	*
+23	MARIAGE	mariage	PROPN	_	_	1	appos	_	_	*
+24	A	a	PROPN	_	_	23	flat:name	_	_	*
+25	LA	La	PROPN	_	_	23	flat:name	_	_	*
+26	GRECQUE	grecque	PROPN	_	_	23	flat:name	_	_	*
+27	»	»	PUNCT	_	_	23	punct	_	_	*
+28	De	de	ADP	_	_	29	case	_	_	*
+29	Joël	Joël	PROPN	_	_	23	nmod	_	_	*
+30	Zwick	Zwick	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	33	punct	_	_	*
+32	avec	avec	ADP	_	_	33	case	_	_	*
+33	Nia	Nia	PROPN	_	_	23	nmod	_	_	*
+34	Vardelos	Vardelos	PROPN	_	_	33	flat:name	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	John	John	PROPN	_	_	23	conj	_	_	*
+37	Corbett	Corbett	PROPN	_	_	36	flat:name	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	39	punct	_	_	*
+39	Michael	Michael	PROPN	_	_	23	conj	_	_	*
+40	Constantine	Constantine	PROPN	_	_	39	flat:name	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 12
+# text = A 30 ans Toula, célibataire, Américaine d'origine Grecque, ressemble, selon son papa, « Ó une vieille ».
+1	A	à	ADP	_	_	3	case	_	_	*
+2	30	30	NUM	_	_	3	nummod	_	_	*
+3	ans	an	NOUN	_	Gender=Masc|Number=Plur	13	obl:mod	_	_	*
+4	Toula	Toula	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	célibataire	célibataire	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Américaine	américaine	PROPN	_	_	4	appos	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	origine	origine	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	Grecque	grec	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	3	punct	_	_	*
+13	ressemble	ressembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	selon	selon	ADP	_	_	17	case	_	_	*
+16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	papa	papa	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	17	punct	_	_	*
+19	«	«	PUNCT	_	_	20	punct	_	_	*
+20	Ó	Ó	PROPN	_	_	17	appos	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	vieille	vieux	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+23	»	»	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 13
+# text = Elle repart à l'université et change de look afin de séduire un professeur, Ian Miller.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	repart	repartir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	université	université	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	change	changer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	look	look	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+10	afin	afin	ADV	_	_	7	advmod	_	_	*
+11	de	de	ADP	_	_	12	mark	_	_	*
+12	séduire	séduire	VERB	_	VerbForm=Inf	10	ccomp	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	professeur	professeur	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Ian	Ian	PROPN	_	_	14	appos	_	_	*
+17	Miller	Miller	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 14
+# text = Ils tombent amoureux, mais Ian n'est pas grec.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	tombent	tomber	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID
+3	amoureux	amoureux	ADJ	_	Gender=Masc|Number=Sing	2	xcomp	_	SpaceAfter=No	1
+4	,	,	PUNCT	_	_	10	punct	_	_	*
+5	mais	mais	CCONJ	_	_	10	cc	_	_	*
+6	Ian	Ian	PROPN	_	_	10	nsubj	_	_	*
+7	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+10	grec	grec	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 15
+# text = Mercredi 18 h ; jeudi, vendredi 16 h ; samedi 22 h ; dimanche, lundi 14 h. « LA BEUZE » De François Desagnat, Thomas Sorriaux, avec Michaël Youn, Vincent Desagnat.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+2	18	18	NUM	_	_	3	nummod	_	_	*
+3	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	;	;	PUNCT	_	_	1	punct	_	_	*
+5	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+8	16	16	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+10	;	;	PUNCT	_	_	1	punct	_	_	*
+11	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+12	22	22	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	;	;	PUNCT	_	_	1	punct	_	_	*
+15	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	1	punct	_	_	*
+17	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+18	14	14	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+21	«	«	PUNCT	_	_	1	punct	_	_	*
+22	LA	le	PROPN	_	_	0	root	_	_	*
+23	BEUZE	BEUZE	PROPN	_	_	22	flat:name	_	_	*
+24	»	»	PUNCT	_	_	22	punct	_	_	*
+25	De	de	ADP	_	_	26	case	_	_	*
+26	François	François	PROPN	_	_	22	nmod	_	_	*
+27	Desagnat	Desagnat	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Thomas	Thomas	PROPN	_	_	26	conj	_	_	*
+30	Sorriaux	Sorriaux	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	33	punct	_	_	*
+32	avec	avec	ADP	_	_	33	case	_	_	*
+33	Michaël	Michaël	PROPN	_	_	29	nmod	_	_	*
+34	Youn	Youn	PROPN	_	_	33	flat:name	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	Vincent	Vincent	PROPN	_	_	26	conj	_	_	*
+37	Desagnat	Desagnat	PROPN	_	_	36	flat:name	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 16
+# text = Alphonse Brown et Scotch, amis d'enfance, vivent au Havre de deals minables.
+1	Alphonse	Alphonse	PROPN	_	_	10	nsubj	_	_	*
+2	Brown	Brown	PROPN	_	_	1	flat:name	_	_	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*
+4	Scotch	scotch	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	amis	ami	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	enfance	enfance	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	vivent	vivre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	Havre	Havre	PROPN	_	_	10	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	deals	deal	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+16	minables	minable	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 17
+# text = Après un an de prison, le soir de la libération d'Alphonse, ils découvrent dans un bunker, une vieille malle au contenu mystérieux : de la pure « beuze » aux pouvoirs hallucinogènes.
+1	Après	après	ADP	_	_	3	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	an	an	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	prison	prison	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	soir	soir	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	libération	libération	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	Alphonse	Alphonse	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	8	punct	_	_	*
+15	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_	*
+16	découvrent	découvrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	bunker	bunker	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	23	punct	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+22	vieille	vieux	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+23	malle	malle	NOUN	_	Gender=Fem|Number=Sing	19	appos	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	contenu	contenu	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+27	mystérieux	mystérieux	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	_	*
+28	:	:	PUNCT	_	_	31	punct	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	pure	pure	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+32	«	«	PUNCT	_	_	33	punct	_	_	*
+33	beuze	beuze	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+34	»	»	PUNCT	_	_	33	punct	_	_	*
+35-36	aux	_	_	_	_	_	_	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	pouvoirs	pouvoir	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	_	*
+38	hallucinogènes	hallucinogène	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 18
+# text = Mercredi, vendredi, lundi 14 h ; jeudi 20 h 30 ; samedi 14 h, 22 h ; dimanche 16 h ; mardi 20 h 30.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+10	20	20	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	30	30	NUM	_	_	11	nmod	_	_	*
+13	;	;	PUNCT	_	_	1	punct	_	_	*
+14	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+15	14	14	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	1	punct	_	_	*
+18	22	22	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+20	;	;	PUNCT	_	_	1	punct	_	_	*
+21	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+22	16	16	NUM	_	_	23	nummod	_	_	*
+23	h	heure	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+24	;	;	PUNCT	_	_	1	punct	_	_	*
+25	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+26	20	20	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	_	*
+28	30	30	NUM	_	_	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 19
+# text = « LE LIVRE DE LA JUNGLE 2 » De Steve Trenbirth.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	LE	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	_	*
+3	LIVRE	Livre	PROPN	_	_	0	root	_	_	*
+4	DE	de	PROPN	_	_	3	appos	_	_	*
+5	LA	La	PROPN	_	_	4	flat:name	_	_	*
+6	JUNGLE	jungle	PROPN	_	_	4	flat:name	_	_	*
+7	2	2	NUM	_	_	4	nmod	_	_	*
+8	»	»	PUNCT	_	_	3	punct	_	_	*
+9	De	de	ADP	_	_	10	case	_	_	*
+10	Steve	Steve	PROPN	_	_	3	nmod	_	_	*
+11	Trenbirth	Trenbirth	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 20
+# text = Mowgli est de retour pour de nouvelles aventures.
+1	Mowgli	Mowgli	PROPN	_	_	4	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	retour	retour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	pour	pour	ADP	_	_	8	case	_	_	*
+6	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+7	nouvelles	nouveau	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+8	aventures	aventure	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 21
+# text = Mercredi, dimanche 14 h, 15 h 45 ; jeudi, vendredi, samedi 14 h, 16 h 15 ; lundi, mardi 14 h, 16 h. « L'AMOUR SANS PREAVIS » De Marc Lawrence avec Sandra Bullock et Hugh Grant.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	14	14	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	15	15	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+9	45	45	NUM	_	_	1	nmod	_	_	*
+10	;	;	PUNCT	_	_	1	punct	_	_	*
+11	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	1	punct	_	_	*
+13	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	1	punct	_	_	*
+15	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+16	14	14	NUM	_	_	17	nummod	_	_	*
+17	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	1	punct	_	_	*
+19	16	16	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+21	15	15	NUM	_	_	20	nmod	_	_	*
+22	;	;	PUNCT	_	_	1	punct	_	_	*
+23	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	1	punct	_	_	*
+25	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+26	14	14	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	16	16	NUM	_	_	30	nummod	_	_	*
+30	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+32	«	«	PUNCT	_	_	34	punct	_	_	*
+33	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*
+34	AMOUR	amour	PROPN	_	_	1	appos	_	_	*
+35	SANS	sans	PROPN	_	_	34	appos	_	_	*
+36	PREAVIS	PREAVIS	PROPN	_	_	35	flat:name	_	_	*
+37	»	»	PUNCT	_	_	34	punct	_	_	*
+38	De	de	ADP	_	_	39	case	_	_	*
+39	Marc	Marc	PROPN	_	_	34	nmod	_	_	*
+40	Lawrence	Lawrence	PROPN	_	_	39	flat:name	_	_	*
+41	avec	avec	ADP	_	_	42	case	_	_	*
+42	Sandra	Sandra	PROPN	_	_	39	nmod	_	_	*
+43	Bullock	Bullock	PROPN	_	_	42	flat:name	_	_	*
+44	et	et	CCONJ	_	_	45	cc	_	_	*
+45	Hugh	Hugh	PROPN	_	_	39	conj	_	_	*
+46	Grant	Grant	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 22
+# text = Le millonnaire Georges Wade ne prend aucune décision sans consulter Lucy, brillante avocate.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	millonnaire	millonnaire	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	Georges	Georges	PROPN	_	_	2	appos	_	_	*
+4	Wade	Wade	PROPN	_	_	3	flat:name	_	_	*
+5	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+7	aucune	aucun	DET	_	Gender=Fem|Number=Sing|Polarity=Neg|PronType=Neg	8	det	_	_	*
+8	décision	décision	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	1
+9	sans	sans	ADP	_	_	10	mark	_	_	*
+10	consulter	consulter	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+11	Lucy	Lucy	PROPN	_	_	10	obj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	brillante	brillant	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+14	avocate	avocat	NOUN	_	Gender=Fem|Number=Sing	11	appos	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 23
+# text = Or elle décide de démissionner et trouve une remplaçante, June Carter, jeune avocate ambitieuse, qui ne cache pas ses visées sur son riche nouveau patron.
+1	Or	or	CCONJ	_	_	3	cc	_	_	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+3	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	démissionner	démissionner	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	remplaçante	remplaçant	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	June	June	PROPN	_	_	9	appos	_	_	*
+12	Carter	Carter	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	jeune	jeune	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	avocate	avocat	NOUN	_	Gender=Fem|Number=Sing	11	appos	_	_	*
+16	ambitieuse	ambitieur	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+19	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+20	cache	cacher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	*
+21	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*
+22	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	23	det	_	_	*
+23	visées	visée	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*
+24	sur	sur	ADP	_	_	28	case	_	_	*
+25	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+26	riche	riche	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	_	*
+27	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	_	*
+28	patron	patron	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 24
+# text = Mercredi 14 h, 20 h 30 ; jeudi, vendredi, lundi 20 h 30 ; samedi 20 h ; dimanche 16 h, 20 h 15 ; mardi 14 h, 20 h 30.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	14	14	NUM	_	_	3	nummod	_	_	*
+3	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	20	20	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	30	30	NUM	_	_	6	nmod	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	1	punct	_	_	*
+11	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	1	punct	_	_	*
+13	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+14	20	20	NUM	_	_	13	nmod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+16	30	30	NUM	_	_	15	nmod	_	_	*
+17	;	;	PUNCT	_	_	1	punct	_	_	*
+18	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+19	20	20	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+21	;	;	PUNCT	_	_	1	punct	_	_	*
+22	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+23	16	16	NUM	_	_	24	nummod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	1	punct	_	_	*
+26	20	20	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+28	15	15	NUM	_	_	27	nmod	_	_	*
+29	;	;	PUNCT	_	_	1	punct	_	_	*
+30	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+31	14	14	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	1	punct	_	_	*
+34	20	20	NUM	_	_	35	nummod	_	_	*
+35	h	heure	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+36	30	30	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 25
+# text = « ESPION ET DEMI » De Betty Thomas avec Eddie Murphy, Owen Wilson.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	ESPION	ESPION	PROPN	_	_	0	root	_	_	*
+3	ET	ET	PROPN	_	_	2	flat:name	_	_	*
+4	DEMI	demi	PROPN	_	_	2	flat:name	_	_	*
+5	»	»	PUNCT	_	_	2	punct	_	_	*
+6	De	de	ADP	_	_	7	case	_	_	*
+7	Betty	Betty	PROPN	_	_	2	nmod	_	_	*
+8	Thomas	Thomas	PROPN	_	_	7	flat:name	_	_	*
+9	avec	avec	ADP	_	_	10	case	_	_	*
+10	Eddie	Eddie	PROPN	_	_	7	nmod	_	_	*
+11	Murphy	Murphy	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Owen	Owen	PROPN	_	_	7	conj	_	_	*
+14	Wilson	Wilson	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 26
+# text = Afin d'infiltrer une soirée VIP, Scott, agent spécial, doit s'associer avec le boxeur invicible Kelly Robinson.
+1	Afin	afin	ADV	_	_	13	advmod	_	_	*
+2	d'	de	ADP	_	_	3	mark	_	SpaceAfter=No	*
+3	infiltrer	infiltrer	VERB	_	VerbForm=Inf	1	ccomp	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	VIP	VIP	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Scott	Scott	PROPN	_	_	3	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	agent	agent	NOUN	_	Gender=Masc|Number=Sing	8	appos	_	_	*
+11	spécial	spécial	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	1	punct	_	_	*
+13	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	s'	se	PRON	_	Person=3|PronType=Prs	15	expl:comp	_	SpaceAfter=No	*
+15	associer	associer	VERB	_	VerbForm=Inf	13	xcomp	_	_	*
+16	avec	avec	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	boxeur	boxeur	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+19	invicible	invicible	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+20	Kelly	Kelly	PROPN	_	_	18	appos	_	_	*
+21	Robinson	Robinson	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 27
+# text = Mais leur collaboration ne va pas être des plus aisées.
+1	Mais	mais	CCONJ	_	_	5	cc	_	_	*
+2	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	collaboration	collaboration	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+7	être	être	AUX	_	VerbForm=Inf	11	cop	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*
+10	plus	plus	ADV	_	_	11	advmod	_	_	*
+11	aisées	aisé	ADJ	_	Gender=Fem|Number=Plur	5	xcomp	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59025.txt 28
+# text = Mercredi 16 h, 20 h 30 ; jeudi, mardi 14 h ; vendredi, lundi 20 h 30 ; samedi 20 h ; dimanche 14 h, 20 h 15.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	16	16	NUM	_	_	3	nummod	_	_	*
+3	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	20	20	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	30	30	NUM	_	_	6	nmod	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	1	punct	_	_	*
+11	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+12	14	14	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	;	;	PUNCT	_	_	1	punct	_	_	*
+15	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	1	punct	_	_	*
+17	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+18	20	20	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	30	30	NUM	_	_	19	nmod	_	_	*
+21	;	;	PUNCT	_	_	22	punct	_	_	*
+22	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	20	20	NUM	_	_	24	nummod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25	;	;	PUNCT	_	_	1	punct	_	_	*
+26	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+27	14	14	NUM	_	_	28	nummod	_	_	*
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	1	punct	_	_	*
+30	20	20	NUM	_	_	31	nummod	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	_	*
+32	15	15	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

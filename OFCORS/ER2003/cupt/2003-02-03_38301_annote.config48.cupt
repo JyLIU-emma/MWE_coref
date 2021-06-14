@@ -1,0 +1,583 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-03_38301.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 1
+# text = Le maire entouré de son conseil.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	maire	maire	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	entouré	entourer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 2
+# text = Les habitants avaient répondu nombreux à l'invitation de Michel Baudin, maire et de son conseil municipal, qui ont présenté leurs vœux de bonne et heureuse année à tous, samedi, à la salle des fêtes.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*
+4	répondu	répondre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	4	xcomp	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	invitation	invitation	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Michel	Michel	PROPN	_	_	8	nmod	_	_	*
+11	Baudin	Baudin	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	maire	maire	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	_	*
+14	et	et	CCONJ	_	_	17	cc	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*
+18	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+21	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl:relcl	_	_	*
+23	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	de	de	ADP	_	_	29	case	_	_	*
+26	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_	*
+27	et	et	CCONJ	_	_	28	cc	_	_	*
+28	heureuse	heureux	ADJ	_	Gender=Fem|Number=Sing	26	conj	_	_	*
+29	année	année	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+30	à	à	ADP	_	_	31	case	_	_	*
+31	tous	tout	PRON	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	31	punct	_	_	*
+33	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	22	obl	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	37	punct	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	salle	salle	NOUN	_	Gender=Fem|Number=Sing	22	obl:mod	_	_	*
+38-39	des	_	_	_	_	_	_	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	40	det	_	_	*
+40	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	37	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 3
+# text = Le maire a présenté les projets pour 2003 : la réhabilitation intérieure de l'église (sol, peinture, électricité et mobilier) ;
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	maire	maire	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	projets	projet	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+7	pour	pour	ADP	_	_	8	case	_	_	*
+8	2003	2003	NUM	_	_	6	nmod	_	_	*
+9	:	:	PUNCT	_	_	11	punct	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	réhabilitation	réhabilitation	NOUN	_	Gender=Fem|Number=Sing	4	parataxis	_	_	*
+12	intérieure	intérieur	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	église	église	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+17	sol	sol	NOUN	_	Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	peinture	peinture	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	électricité	électricité	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*
+22	et	et	CCONJ	_	_	23	cc	_	_	*
+23	mobilier	mobilier	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	SpaceAfter=No	*
+24	)	)	PUNCT	_	_	17	punct	_	_	*
+25	;	;	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 4
+# text = l'aménagement de la place ;
+1	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	aménagement	aménagement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	place	place	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 5
+# text = la réfection des allées du cimetière, puis il a souhaité un prompt rétablissement aux habitants hospitalisés et en particulier Hugues Berthelon, conseiller municipal.
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	réfection	réfection	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*
+5	allées	allée	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	cimetière	cimetière	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	puis	puis	ADV	_	_	13	cc	_	_	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+15	prompt	prompt	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+16	rétablissement	rétablissement	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+17-18	aux	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*
+20	hospitalisés	hospitaliser	ADJ	_	Gender=Masc|Number=Plur	19	amod	_	_	*
+21	et	et	CCONJ	_	_	24	cc	_	_	*
+22	en	en	ADP	_	_	24	advmod	_	_	*
+23	particulier	particulier	NOUN	_	Gender=Masc|Number=Sing	22	fixed	_	_	*
+24	Hugues	Hugues	PROPN	_	_	19	conj	_	_	*
+25	Berthelon	Berthelon	PROPN	_	_	24	flat:name	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	conseiller	conseiller	NOUN	_	Gender=Masc|Number=Sing	24	appos	_	_	*
+28	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 6
+# text = Enfin, il a souhaité la bienvenue aux nouveaux habitants : M. et Mme Arnaud et Sabine Morlot, Murielle Hervé et Bruno Voillemin, avant de partager la galette des rois et le verre de l'amitié.
+1	Enfin	enfin	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	bienvenue	bienvenue	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+10	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+11	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*
+12	:	:	PUNCT	_	_	13	punct	_	_	*
+13	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	11	appos	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*
+16	Arnaud	Arnaud	PROPN	_	_	15	flat:name	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	Sabine	Sabine	PROPN	_	_	13	conj	_	_	*
+19	Morlot	Morlot	PROPN	_	_	18	flat:name	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Murielle	Murielle	PROPN	_	_	13	conj	_	_	*
+22	Hervé	Hervé	PROPN	_	_	21	flat:name	_	_	*
+23	et	et	CCONJ	_	_	24	cc	_	_	*
+24	Bruno	Bruno	PROPN	_	_	13	conj	_	_	*
+25	Voillemin	Voillemin	PROPN	_	_	24	flat:name	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	avant	avant	ADV	_	_	13	advmod	_	_	*
+28	de	de	ADP	_	_	29	mark	_	_	*
+29	partager	partager	VERB	_	VerbForm=Inf	27	ccomp	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	galette	galette	NOUN	_	Gender=Fem|Number=Sing	29	obj	_	_	*
+32-33	des	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+34	rois	roi	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	_	*
+35	et	et	CCONJ	_	_	37	cc	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	verre	verre	NOUN	_	Gender=Masc|Number=Sing	31	conj	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	SpaceAfter=No	*
+40	amitié	amitié	NOUN	_	Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 7
+# text = Les résultats Brevet : 1.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	Brevet	brevet	PROPN	_	_	2	appos	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	1	1	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 8
+# text = M. Naudin, avec Ryan (86 points).
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Naudin	Naudin	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	avec	avec	ADP	_	_	5	case	_	_	*
+5	Ryan	Ryan	PROPN	_	_	1	nmod	_	_	*
+6	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+7	86	86	NUM	_	_	8	nummod	_	_	*
+8	points	point	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 9
+# text = Piste B chaude : 1.
+1	Piste	piste	PROPN	_	_	0	root	_	_	*
+2	B	B	PROPN	_	_	1	flat:name	_	_	*
+3	chaude	chaude	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	1	1	NUM	_	_	1	appos	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 10
+# text = Mlle Gillet avec Ragnar (98) ; 2.
+1	Mlle	Mlle	PROPN	_	_	9	nsubj	_	_	*
+2	Gillet	Gillet	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Ragnar	Ragnar	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	98	98	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	9	punct	_	_	*
+9	2	2	PRON	_	Number=Plur	0	root	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 11
+# text = M. Cosquer avec Pierson (91) ; 3.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Cosquer	Cosquer	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Pierson	Pierson	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	91	91	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	9	punct	_	_	*
+9	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 12
+# text = M.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 13
+# text = Blaise avec Shyrka (86).
+1	Blaise	Blais	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	avec	avec	ADP	_	_	3	case	_	_	*
+3	Shyrka	Shyrka	PROPN	_	_	1	obl:mod	_	_	*
+4	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	86	86	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 14
+# text = Trait de limier : 1.
+1	Trait	tr	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	limier	limier	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	1	1	NUM	_	_	1	appos	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 15
+# text = Mlle Gillet avec Ragnar (95) ; 2.
+1	Mlle	Mlle	PROPN	_	_	0	root	_	_	*
+2	Gillet	Gillet	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Ragnar	Ragnar	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	95	95	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	9	punct	_	_	*
+9	2	2	PRON	_	Number=Plur	1	parataxis	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 16
+# text = Mme Hounan avec Latche (93) ; 3.
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	Hounan	Hounan	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Latche	Latche	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	93	93	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 17
+# text = Mme Rolet avec Pharuk (88).
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	Rolet	Rolet	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Pharuk	Pharuk	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	88	88	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 18
+# text = Piste froide : 1.
+1	Piste	piste	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	froide	froide	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	1	1	NUM	_	_	1	appos	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 19
+# text = M. Cosquer avec Pierson (97) ; 2.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Cosquer	Cosquer	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Pierson	Pierson	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	97	97	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	9	punct	_	_	*
+9	2	2	PRON	_	Number=Plur	1	parataxis	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 20
+# text = M. Feve avec Phebus (96) ; 3.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Feve	Feve	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Phebus	Phebus	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	96	96	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 21
+# text = M. Olivier avec Sheba (95,5).
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Olivier	Olivier	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Sheba	Sheba	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	95,5	95,5	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 22
+# text = Combiné brevet plus trait de limier : 1.
+1	Combiné	combiné	PROPN	_	_	2	nsubj	_	_	*
+2	brevet	brevettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	plus	plus	ADV	_	_	2	advmod	_	_	*
+4	trait	trait	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	limier	limier	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	:	:	PUNCT	_	_	8	punct	_	_	*
+8	1	1	NUM	_	_	2	parataxis	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 23
+# text = Mlle Gillet avec Ragnar (193 points/200) ; 2.
+1	Mlle	Mlle	PROPN	_	_	0	root	_	_	*
+2	Gillet	Gillet	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Ragnar	Ragnar	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+6	193	193	NUM	_	_	7	nummod	_	_	*
+7	points	point	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No	*
+8	/	/	SYM	_	_	9	cc	_	SpaceAfter=No	*
+9	200	200	NUM	_	_	7	conj	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	7	punct	_	_	*
+11	;	;	PUNCT	_	_	12	punct	_	_	*
+12	2	2	PRON	_	Number=Plur	1	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 24
+# text = M. Olivier avec Sheba (178) ; 3.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Olivier	Olivier	PROPN	_	_	1	flat:name	_	_	*
+3	avec	avec	ADP	_	_	4	case	_	_	*
+4	Sheba	Sheba	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	178	178	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+9	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 25
+# text = M.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 26
+# text = Cosquer avec Pierson (173,5).
+1	Cosquer	Cosquer	VERB	_	VerbForm=Inf	0	root	_	_	*
+2	avec	avec	ADP	_	_	3	case	_	_	*
+3	Pierson	Pierson	PROPN	_	_	1	obl:mod	_	_	*
+4	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	173,5	173,5	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 27
+# text = Le club canin UJB de Saint-Dizier a organisé son troisième concours de pistage français, sur deux jours, avec la participation de dix-neuf concurrents, sur trois disciplines : Piste froide : départ du chien une heure après celui du traceur, parcours de 600 à 700 m avec quatre angles et trois objets à trouver (mis en place par le traceur) ;
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	club	club	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+3	canin	canin	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	UJB	UJB	PROPN	_	_	2	appos	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Saint-Dizier	Saint-Dizier	PROPN	_	_	2	nmod	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	organisé	organiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+10	troisième	troisième	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	concours	concours	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	pistage	pistage	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+14	français	français	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16	sur	sur	ADP	_	_	18	case	_	_	*
+17	deux	deux	NUM	_	_	18	nummod	_	_	*
+18	jours	jour	NOUN	_	Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	avec	avec	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	participation	participation	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	dix-neuf	dix-neuf	NUM	_	_	25	nummod	_	_	*
+25	concurrents	concurrent	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	sur	sur	ADP	_	_	29	case	_	_	*
+28	trois	trois	NUM	_	_	29	nummod	_	_	*
+29	disciplines	discipline	NOUN	_	Gender=Fem|Number=Plur	8	obl	_	_	*
+30	:	:	PUNCT	_	_	31	punct	_	_	*
+31	Piste	piste	PROPN	_	_	29	appos	_	_	*
+32	froide	froide	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+33	:	:	PUNCT	_	_	34	punct	_	_	*
+34	départ	départ	NOUN	_	Gender=Masc|Number=Sing	29	appos	_	_	*
+35-36	du	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	chien	chien	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+38	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+39	heure	heure	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	_	*
+40	après	après	ADP	_	_	41	case	_	_	*
+41	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	39	nmod	_	_	*
+42-43	du	_	_	_	_	_	_	_	_	*
+42	de	de	ADP	_	_	44	case	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	traceur	traceur	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No	*
+45	,	,	PUNCT	_	_	46	punct	_	_	*
+46	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	44	conj	_	_	*
+47	de	de	ADP	_	_	48	case	_	_	*
+48	600	600	NUM	_	_	46	nmod	_	_	*
+49	à	à	ADP	_	_	51	case	_	_	*
+50	700	700	NUM	_	_	51	nummod	_	_	*
+51	m	m	NOUN	_	Gender=Masc|Number=Plur	46	nmod	_	_	*
+52	avec	avec	ADP	_	_	54	case	_	_	*
+53	quatre	quatre	NUM	_	_	54	nummod	_	_	*
+54	angles	angle	NOUN	_	Gender=Masc|Number=Plur	51	nmod	_	_	*
+55	et	et	CCONJ	_	_	57	cc	_	_	*
+56	trois	trois	NUM	_	_	57	nummod	_	_	*
+57	objets	objet	NOUN	_	Gender=Masc|Number=Plur	41	conj	_	_	*
+58	à	à	ADP	_	_	59	mark	_	_	*
+59	trouver	trouver	VERB	_	VerbForm=Inf	57	acl	_	_	*
+60	(	(	PUNCT	_	_	61	punct	_	SpaceAfter=No	*
+61	mis	mettre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	59	parataxis	_	_	*
+62	en	en	ADP	_	_	63	case	_	_	*
+63	place	place	NOUN	_	Gender=Fem|Number=Sing	61	obl	_	_	*
+64	par	par	ADP	_	_	66	case	_	_	*
+65	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	66	det	_	_	*
+66	traceur	traceur	NOUN	_	Gender=Masc|Number=Sing	61	obl:arg	_	SpaceAfter=No	*
+67	)	)	PUNCT	_	_	61	punct	_	_	*
+68	;	;	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 28
+# text = 20 mn pour faire la piste en longe (grande laisse) de 10 m.
+1	20	20	NUM	_	_	2	nummod	_	_	*
+2	mn	mn	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	pour	pour	ADP	_	_	4	mark	_	_	*
+4	faire	faire	VERB	_	VerbForm=Inf	2	acl	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	piste	piste	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	longe	longe	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+9	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+10	grande	grand	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+11	laisse	laisse	NOUN	_	Gender=Fem|Number=Sing	8	appos	_	SpaceAfter=No	*
+12	)	)	PUNCT	_	_	11	punct	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	10	10	NUM	_	_	15	nummod	_	_	*
+15	m	m	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 29
+# text = Trait de limier : piste chaude 5 angles, 800 à 900 m, trois objets ;
+1	Trait	tr	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	limier	limier	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	piste	piste	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+6	chaude	chaudier	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	5	5	NUM	_	_	8	nummod	_	_	*
+8	angles	angle	NOUN	_	Gender=Masc|Number=Plur	5	appos	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	800	800	NUM	_	_	8	conj	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	900	900	NUM	_	_	13	nummod	_	_	*
+13	m	m	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	trois	trois	NUM	_	_	16	nummod	_	_	*
+16	objets	objet	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+17	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 30
+# text = une fausse piste est tracée et à 10 m de la fin du parcours, le chien est lâché et doit retrouver le traceur.
+1	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	fausse	faux	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	piste	piste	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	tracée	tracer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	et	et	CCONJ	_	_	9	cc	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	10	10	NUM	_	_	9	nummod	_	_	*
+9	m	m	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	fin	fin	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	20	punct	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	chien	chien	NOUN	_	Gender=Masc|Number=Sing	20	nsubj:pass	_	_	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	_	_	*
+20	lâché	lâcher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+23	retrouver	retrouver	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	traceur	traceur	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 31
+# text = Piste B chaude : un seul objet, cinq angles, le chien fait le parcours seul et doit éviter une fausse piste ;
+1	Piste	piste	PROPN	_	_	0	root	_	_	*
+2	B	B	PROPN	_	_	1	flat:name	_	_	*
+3	chaude	chaude	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	seul	seul	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	objet	objet	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	cinq	cinq	NUM	_	_	10	nummod	_	_	*
+10	angles	angle	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	chien	chien	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+14	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+17	seul	seul	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_	*
+20	éviter	éviter	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+22	fausse	fausse	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+23	piste	piste	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	*
+24	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38301.txt 32
+# text = le parcours fait 500 m et il doit rapporter l'objet à son maître sans le laisser tomber.
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	500	500	NUM	_	_	5	nummod	_	_	*
+5	m	m	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+9	rapporter	rapporter	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	objet	objet	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	maître	maître	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	_	*
+15	sans	sans	ADP	_	_	17	mark	_	_	*
+16	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	obj	_	_	*
+17	laisser	laisser	VERB	_	VerbForm=Inf	9	advcl	_	_	1:MVC
+18	tomber	tomber	VERB	_	VerbForm=Inf	17	xcomp	_	SpaceAfter=No	1
+19	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

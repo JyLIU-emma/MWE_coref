@@ -1,0 +1,447 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_33898.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 1
+# text = Lambourde pour cinq mois SIGNATURE.
+1	Lambourde	lambourde	PROPN	_	_	0	root	_	_	*
+2	pour	pour	ADP	_	_	4	case	_	_	*
+3	cinq	cinq	NUM	_	_	4	nummod	_	_	*
+4	mois	mois	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	SpacesAfter=\n	*
+5	SIGNATURE	signature	PROPN	_	_	4	appos	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 2
+# text = Le Bastiais Bernard Lambourde a donné son accord à l'ASNL.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Bastiais	Bastiais	PROPN	_	_	6	nsubj	_	_	*
+3	Bernard	Bernard	PROPN	_	_	2	flat:name	_	_	*
+4	Lambourde	lambourde	PROPN	_	_	2	flat:name	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	accord	accord	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	1
+9	à	à	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	ASNL	ASNL	PROPN	_	_	6	obl:arg	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 3
+# text = Il arrivera aujourd'hui et signera son contrat en fin d'après-midi après la traditionnelle visite médicale.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	arrivera	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	aujourd'hui	aujourd'hui	ADV	_	_	2	advmod	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	signera	signer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	conj	_	_	1:LVC.full
+6	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	contrat	contrat	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1
+8	en	en	ADP	_	_	9	case	_	_	*
+9	fin	fin	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	après	après	ADP	_	_	15	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+14	traditionnelle	traditionnel	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	visite	visite	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+16	médicale	médical	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 4
+# text = Dès demain matin, Lambourde s'entraînera avec le groupe et sera qualifié pour la venue de Clermont le 5 février.
+1	Dès	dès	ADP	_	_	2	case	_	_	*
+2	demain	demain	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+3	matin	matin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Lambourde	lambourde	PROPN	_	_	7	nsubj	_	_	*
+6	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	SpaceAfter=No	*
+7	entraînera	entraîner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+8	avec	avec	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux:pass	_	_	*
+13	qualifié	qualifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	conj	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	venue	venue	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Clermont	Clermont	PROPN	_	_	16	nmod	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	5	5	NUM	_	_	13	obl	_	_	*
+21	février	février	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 5
+# text = De son côté, Crucet a réglé hier après-midi les détails administratifs de sa résiliation de contrat avec Jean-Claude Plessis, le président de Sochaux.
+1	De	de	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	Crucet	Crucet	PROPN	_	_	7	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	réglé	régler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	hier	hier	ADV	_	_	9	advmod	_	_	*
+9	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	détails	détail	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*
+12	administratifs	administratif	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	résiliation	résiliation	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	contrat	contrat	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	avec	avec	ADP	_	_	19	case	_	_	*
+19	Jean-Claude	Jean-Claude	PROPN	_	_	11	nmod	_	_	*
+20	Plessis	Plessis	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	président	président	NOUN	_	Gender=Masc|Number=Sing	19	appos	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Sochaux	Sochaux	PROPN	_	_	23	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 6
+# text = Il ne lui reste plus qu'à se mettre d'accord avec l'ASNL ou un autre des clubs intéressés.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	2:VID
+2	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+3	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	4	iobj	_	_	*
+4	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2
+5	plus	plus	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	qu'	que	ADV	_	_	9	advmod	_	SpaceAfter=No	*
+7	à	à	ADP	_	_	9	mark	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	obj	_	_	1:IRV
+9	mettre	mettre	VERB	_	VerbForm=Inf	4	xcomp	_	_	1
+10	d'	de	ADP	_	_	9	xcomp	_	SpaceAfter=No	*
+11	accord	accord	NOUN	_	Gender=Masc|Number=Sing	10	fixed	_	_	*
+12	avec	avec	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	ASNL	ASNL	PROPN	_	_	9	obl:arg	_	_	*
+15	ou	ou	CCONJ	_	_	17	cc	_	_	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	autre	autre	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	clubs	club	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*
+21	intéressés	intéresser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	20	acl	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 7
+# text = CRITIQUE.
+1	CRITIQUE	critique	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 8
+# text = A son arrivée au stade, Eric Rabésandratana est venu saluer Pablo Correa et Paul Fischer.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	stade	stade	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	Eric	Eric	PROPN	_	_	11	nsubj	_	_	*
+9	Rabésandratana	Rabésandratana	PROPN	_	_	8	flat:name	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	venu	venir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	saluer	saluer	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	Pablo	Pablo	PROPN	_	_	12	obj	_	_	*
+14	Correa	Correa	PROPN	_	_	13	flat:name	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	Paul	Paul	PROPN	_	_	13	conj	_	_	*
+17	Fischer	Fischer	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 9
+# text = En découvrant la nouvelle enceinte, « Rico » a commenté : « Les vestiaires et les tribunes sont magnifiques.
+1	En	en	ADP	_	_	2	mark	_	_	*
+2	découvrant	découvrir	VERB	_	Tense=Pres|VerbForm=Part	11	advcl	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	enceinte	enceinte	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	«	«	PUNCT	_	_	8	punct	_	_	*
+8	Rico	Rico	PROPN	_	_	11	nsubj	_	_	*
+9	»	»	PUNCT	_	_	8	punct	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	commenté	commenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	:	:	PUNCT	_	_	20	punct	_	_	*
+13	«	«	PUNCT	_	_	20	punct	_	_	*
+14	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	vestiaires	vestiaire	NOUN	_	Gender=Masc|Number=Plur	20	nsubj	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*
+18	tribunes	tribune	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_	*
+19	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+20	magnifiques	magnifique	ADJ	_	Gender=Fem|Number=Plur	11	parataxis	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 10
+# text = Je reprocherai une seule chose.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	reprocherai	reprocher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	seule	seul	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	chose	chose	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 11
+# text = Vu de l'extérieur, il est rectangulaire.
+1	Vu	vu	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	advcl	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	extérieur	extérieur	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj:pass	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*
+8	rectangulaire	rectangulaire	VERB	_	VerbForm=Inf	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 12
+# text = J'aurais mieux vu les virages arrondis ».
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+2	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	mieux	mieux	ADV	_	_	4	advmod	_	_	*
+4	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	virages	virage	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+7	arrondis	arrondi	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 13
+# text = FIFA.
+1	FIFA	FIFA	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 14
+# text = L'ASNL a reçu un fax de la FIFA l'invitant à prendre des mesures disciplinaires à l'encontre de Pape Diakhate, parti sans le consentement du club pour disputer une épreuve qui n'entre pas au calendrier de l'instance internationale.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ASNL	ASNL	PROPN	_	_	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	fax	fax	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	FIFA	FIFA	PROPN	_	_	6	nmod	_	_	*
+10	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	11	obj	_	SpaceAfter=No	*
+11	invitant	inviter	VERB	_	Tense=Pres|VerbForm=Part	6	acl	_	_	*
+12	à	à	ADP	_	_	13	mark	_	_	*
+13	prendre	prendre	VERB	_	VerbForm=Inf	11	xcomp	_	_	1:LVC.full
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	mesures	mesure	NOUN	_	Gender=Fem|Number=Plur	13	obl:arg	_	_	1
+17	disciplinaires	disciplinaire	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	encontre	encontre	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	Pape	pape	PROPN	_	_	20	nmod	_	_	*
+23	Diakhate	Diakhate	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	parti	partir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+26	sans	sans	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	consentement	consentement	NOUN	_	Gender=Masc|Number=Sing	25	obl	_	_	*
+29-30	du	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	club	club	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*
+32	pour	pour	ADP	_	_	33	mark	_	_	*
+33	disputer	disputer	VERB	_	VerbForm=Inf	25	advcl	_	_	2:LVC.full
+34	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	épreuve	épreuve	NOUN	_	Gender=Fem|Number=Sing	33	obj	_	_	2
+36	qui	qui	PRON	_	PronType=Rel	38	nsubj	_	_	*
+37	n'	ne	ADV	_	Polarity=Neg	38	advmod	_	SpaceAfter=No	*
+38	entre	entrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	_	*
+39	pas	pas	ADV	_	Polarity=Neg	38	advmod	_	_	*
+40-41	au	_	_	_	_	_	_	_	_	*
+40	à	à	ADP	_	_	42	case	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	calendrier	calendrier	NOUN	_	Gender=Masc|Number=Sing	38	obl:arg	_	_	*
+43	de	de	ADP	_	_	45	case	_	_	*
+44	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	SpaceAfter=No	*
+45	instance	instance	NOUN	_	Gender=Fem|Number=Sing	42	nmod	_	_	*
+46	internationale	international	ADJ	_	Gender=Fem|Number=Sing	45	amod	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 15
+# text = Une copie du fax a été adressée à la fédération sénégalaise.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	copie	copie	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	fax	fax	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_	*
+8	adressée	adresser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+12	sénégalaise	sénégalais	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 16
+# text = POISSE.
+1	POISSE	POISSE	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 17
+# text = Alors qu'il venait de gagner ses galons de titulaire à Charleroi, Bertrand Laquait, qui jouait samedi son quatrième match en première division belge a été victime d'un nouveau coup dur.
+1	Alors	alors	ADV	_	_	4	mark	_	_	*
+2	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+4	venait	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	29	advcl	_	_	*
+5	de	de	ADP	_	_	6	mark	_	_	*
+6	gagner	gagner	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	galons	galon	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	titulaire	titulaire	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	Charleroi	Charleroi	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	4	punct	_	_	*
+14	Bertrand	Bertrand	PROPN	_	_	29	nsubj	_	_	*
+15	Laquait	laquait	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+18	jouait	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl:relcl	_	_	1:LVC.full
+19	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	*
+20	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+21	quatrième	quatrième	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+22	match	match	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	_	1
+23	en	en	ADP	_	_	25	case	_	_	*
+24	première	premier	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	division	division	NOUN	_	Gender=Fem|Number=Sing	18	obl	_	_	*
+26	belge	belge	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+27	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux:tense	_	_	*
+28	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	cop	_	_	*
+29	victime	victime	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+30	d'	de	ADP	_	_	33	case	_	SpaceAfter=No	*
+31	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+32	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	_	*
+33	coup	coup	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+34	dur	dur	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 18
+# text = Dans un choc avec Goossens, l'ancien international du Standard, le gardien a mis ses mains en opposition sur le ballon au moment de la frappe.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	choc	choc	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+4	avec	avec	ADP	_	_	5	case	_	_	*
+5	Goossens	Goossens	PROPN	_	_	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+8	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	international	international	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	Standard	standard	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	3	punct	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	gardien	gardien	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	mains	main	NOUN	_	Gender=Fem|Number=Plur	17	obj	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	opposition	opposition	NOUN	_	Gender=Fem|Number=Sing	17	obl	_	_	*
+22	sur	sur	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_	*
+25-26	au	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	moment	moment	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	frappe	frappe	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 19
+# text = Victime d'une fracture du cinquième métacarpien de la main droite, Laquait a été opéré lundi : « Je suis plâtré pour quatre semaines et je compte au moins autant de temps pour la rééducation » Bertrand Laquait, qui s'est lié avec Charleroi début décembre pour six mois, avait été arrêté dix mois la saison dernière, à la suite d'une blessure au genou.
+1	Victime	victime	NOUN	_	Gender=Fem|Number=Sing	17	advcl	_	_	*
+2	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	fracture	fracture	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	8	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+7	cinquième	cinquième	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+8	métacarpien	métacarpien	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	main	main	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	droite	droit	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	1	punct	_	_	*
+14	Laquait	laquait	PROPN	_	_	17	nsubj:pass	_	_	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+16	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	aux:pass	_	_	*
+17	opéré	opérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	57	nsubj:pass	_	_	*
+18	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_	*
+19	:	:	PUNCT	_	_	23	punct	_	_	*
+20	«	«	PUNCT	_	_	23	punct	_	_	*
+21	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	23	nsubj	_	_	*
+22	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	plâtré	plâtrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	parataxis	_	_	*
+24	pour	pour	ADP	_	_	26	case	_	_	*
+25	quatre	quatre	NUM	_	_	26	nummod	_	_	*
+26	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	23	obl	_	_	*
+27	et	et	CCONJ	_	_	29	cc	_	_	*
+28	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	29	nsubj	_	_	*
+29	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_	*
+30-31	au	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	33	advmod	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	fixed	_	_	*
+32	moins	moins	ADV	_	_	30	fixed	_	_	*
+33	autant	autant	ADV	_	_	29	advmod	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	temps	temps	NOUN	_	Gender=Masc|Number=Sing	33	obl:arg	_	_	*
+36	pour	pour	ADP	_	_	38	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	rééducation	rééducation	NOUN	_	Gender=Fem|Number=Sing	29	obl	_	_	*
+39	»	»	PUNCT	_	_	23	punct	_	_	*
+40	Bertrand	Bertrand	PROPN	_	_	23	appos	_	_	*
+41	Laquait	laquait	PROPN	_	_	40	flat:name	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	46	punct	_	_	*
+43	qui	qui	PRON	_	PronType=Rel	46	nsubj	_	_	*
+44	s'	se	PRON	_	Person=3|PronType=Prs	46	expl:comp	_	SpaceAfter=No	*
+45	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	aux:tense	_	_	*
+46	lié	lier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	40	acl:relcl	_	_	*
+47	avec	avec	ADP	_	_	48	case	_	_	*
+48	Charleroi	Charleroi	PROPN	_	_	46	obl:arg	_	_	*
+49	début	début	NOUN	_	Gender=Masc|Number=Sing	46	obl	_	_	*
+50	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	49	nmod	_	_	*
+51	pour	pour	ADP	_	_	53	case	_	_	*
+52	six	six	NUM	_	_	53	nummod	_	_	*
+53	mois	mois	NOUN	_	Gender=Masc|Number=Plur	49	nmod	_	SpaceAfter=No	*
+54	,	,	PUNCT	_	_	23	punct	_	_	*
+55	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	57	aux:tense	_	_	*
+56	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	57	aux:pass	_	_	*
+57	arrêté	arrêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+58	dix	dix	NUM	_	_	59	nummod	_	_	*
+59	mois	mois	NOUN	_	Gender=Masc|Number=Plur	57	obl	_	_	*
+60	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	61	det	_	_	*
+61	saison	saison	NOUN	_	Gender=Fem|Number=Sing	57	obl	_	_	*
+62	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	61	amod	_	SpaceAfter=No	*
+63	,	,	PUNCT	_	_	66	punct	_	_	*
+64	à	à	ADP	_	_	66	case	_	_	*
+65	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	66	det	_	_	*
+66	suite	suite	NOUN	_	Gender=Fem|Number=Sing	57	obl:mod	_	_	*
+67	d'	de	ADP	_	_	69	case	_	SpaceAfter=No	*
+68	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	69	det	_	_	*
+69	blessure	blessure	NOUN	_	Gender=Fem|Number=Sing	66	nmod	_	_	*
+70-71	au	_	_	_	_	_	_	_	_	*
+70	à	à	ADP	_	_	72	case	_	_	*
+71	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	72	det	_	_	*
+72	genou.	genou.	NOUN	_	Gender=Masc|Number=Sing	69	nmod	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33898.txt 20
+# text = J. -P.H.
+1	J.	J.	PROPN	_	_	0	root	_	_	*
+2	-P.H.	-P.H.	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*
+

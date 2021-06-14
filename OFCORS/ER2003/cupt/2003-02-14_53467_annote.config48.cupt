@@ -1,0 +1,861 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-14_53467.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 1
+# text = « The Crunch »..
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	The	The	X	_	Foreign=Yes	0	root	_	_	*
+3	Crunch	Crunch	X	_	Foreign=Yes	2	flat:foreign	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+5	..	..	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 2
+# text = Richard Pool-Jones, le plus « frenchie » des joueurs anglais, troisième ligne aile au Stade Français, apporte un autre éclairage : « Tout a été modifié par l'arrivée du professionnalisme.
+1	Richard	Richard	PROPN	_	_	22	nsubj	_	_	*
+2	Pool-Jones	Pool-Jones	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	7	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+5	plus	plus	ADV	_	_	7	advmod	_	_	*
+6	«	«	PUNCT	_	_	7	punct	_	_	*
+7	frenchie	frenchie	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+8	»	»	PUNCT	_	_	7	punct	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+12	anglais	anglais	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	troisième	troisième	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+16	aile	aile	NOUN	_	Gender=Fem|Number=Sing	15	appos	_	_	*
+17-18	au	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	Stade	stade	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+20	Français	français	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	1	punct	_	_	*
+22	apporte	apporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+24	autre	autre	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*
+25	éclairage	éclairage	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*
+26	:	:	PUNCT	_	_	31	punct	_	_	*
+27	«	«	PUNCT	_	_	31	punct	_	_	*
+28	Tout	tout	PRON	_	Gender=Masc|Number=Sing	31	nsubj:pass	_	_	*
+29	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux:tense	_	_	*
+30	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	aux:pass	_	_	*
+31	modifié	modifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	parataxis	_	_	*
+32	par	par	ADP	_	_	34	case	_	_	*
+33	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*
+34	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	31	obl:agent	_	_	*
+35-36	du	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	professionnalisme	professionnalisme	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 3
+# text = Avec les signatures dans des clubs anglais de Sella, Castaignède, Benazzi, Califano et Tournaire, les échanges se sont multipliés.
+1	Avec	avec	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	signatures	signature	NOUN	_	Gender=Fem|Number=Plur	24	obl:mod	_	_	*
+4	dans	dans	ADP	_	_	7	case	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	clubs	club	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+8	anglais	anglais	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Sella	Sella	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Castaignède	Castaignède	PROPN	_	_	10	conj	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Benazzi	Benazzi	PROPN	_	_	10	conj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Califano	Califano	PROPN	_	_	10	conj	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	Tournaire	Tournaire	PROPN	_	_	10	conj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	3	punct	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	échanges	échange	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	_	_	*
+22	se	se	PRON	_	Person=3|PronType=Prs	24	obj	_	_	*
+23	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+24	multipliés	multiplier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 4
+# text = La coupe d'Europe a amplifié le rapprochement des deux nations.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	Europe	Europe	PROPN	_	_	2	nmod	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	amplifié	amplifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	rapprochement	rapprochement	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	12	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+11	deux	deux	NUM	_	_	12	nummod	_	_	*
+12	nations	nation	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 5
+# text = Bref, les relations entre joueurs des deux pays sont de bien meilleur goût et un France - Angleterre ne porte plus aujourd'hui en lui cette dramatisation poussée à l'extrême » Les Anglais continuent toutefois de l'appeler « The Crunch » (le choc, le moment de vérité...).
+1	Bref	bref	INTJ	_	_	15	discourse	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	relations	relation	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	_	_	*
+5	entre	entre	ADP	_	_	6	case	_	_	*
+6	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	10	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	deux	deux	NUM	_	_	10	nummod	_	_	*
+10	pays	pays	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*
+12	de	de	ADP	_	_	15	case	_	_	*
+13	bien	bien	ADV	_	_	14	advmod	_	_	*
+14	meilleur	meilleur	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	goût	goût	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	France	France	PROPN	_	_	15	conj	_	_	*
+19	-	-	PUNCT	_	_	20	punct	_	_	*
+20	Angleterre	Angleterre	PROPN	_	_	18	nmod	_	_	*
+21	ne	ne	ADV	_	Polarity=Neg	22	advmod	_	_	*
+22	porte	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	advcl	_	_	*
+23	plus	plus	ADV	_	_	22	advmod	_	_	*
+24	aujourd'hui	aujourd'hui	ADV	_	_	22	advmod	_	_	*
+25	en	en	ADP	_	_	26	case	_	_	*
+26	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	22	obl	_	_	*
+27	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	_	_	*
+28	dramatisation	dramatisation	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+29	poussée	pousser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	28	acl	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	SpaceAfter=No	*
+32	extrême	extrême	NOUN	_	Gender=Masc|Number=Sing	29	obl:arg	_	_	*
+33	»	»	PUNCT	_	_	22	punct	_	_	*
+34	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*
+35	Anglais	anglais	NOUN	_	Gender=Masc|Number=Plur	36	nsubj	_	_	*
+36	continuent	continuer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+37	toutefois	toutefois	ADV	_	_	36	advmod	_	_	*
+38	de	de	ADP	_	_	40	mark	_	_	*
+39	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	40	obj	_	SpaceAfter=No	*
+40	appeler	appeler	VERB	_	VerbForm=Inf	36	xcomp	_	_	*
+41	«	«	PUNCT	_	_	42	punct	_	_	*
+42	The	The	X	_	Foreign=Yes	36	xcomp	_	_	*
+43	Crunch	Crunch	X	_	Foreign=Yes	42	flat:foreign	_	_	*
+44	»	»	PUNCT	_	_	42	punct	_	_	*
+45	(	(	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+46	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_	*
+47	choc	choc	NOUN	_	Gender=Masc|Number=Sing	42	appos	_	SpaceAfter=No	*
+48	,	,	PUNCT	_	_	50	punct	_	_	*
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*
+50	moment	moment	NOUN	_	Gender=Masc|Number=Sing	47	conj	_	_	*
+51	de	de	ADP	_	_	52	case	_	_	*
+52	vérité	vérité	NOUN	_	Gender=Fem|Number=Sing	50	nmod	_	SpaceAfter=No	*
+53	...	...	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+54	)	)	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+55	.	.	PUNCT	_	_	36	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 6
+# text = Cela ne s'invente pas.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	4	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	*
+4	invente	inventer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 7
+# text = Mais la rencontre entre les deux sélections vaut désormais plus par la place de numéro un de l'hémisphère nord qu'elle octroie à son vainqueur, que par la fierté engendrée par l'inestimable succès acquis dans la bataille de l'année.
+1	Mais	mais	CCONJ	_	_	8	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+4	entre	entre	ADP	_	_	7	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+6	deux	deux	NUM	_	_	7	nummod	_	_	*
+7	sélections	sélection	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+8	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	désormais	désormais	ADV	_	_	10	advmod	_	_	*
+10	plus	plus	ADV	_	_	8	advmod	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	place	place	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+16	un	un	PRON	_	Gender=Masc|Number=Sing	13	appos	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	hémisphère	hémisphère	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	nord	nord	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+21	qu'	que	PRON	_	PronType=Rel	23	obj	_	SpaceAfter=No	*
+22	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_	*
+23	octroie	octroyer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	vainqueur	vainqueur	NOUN	_	Gender=Masc|Number=Sing	23	obl:arg	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	31	punct	_	_	*
+28	que	que	SCONJ	_	_	31	advmod	_	_	*
+29	par	par	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	fierté	fierté	NOUN	_	Gender=Fem|Number=Sing	26	appos	_	_	*
+32	engendrée	engendrer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_	*
+33	par	par	ADP	_	_	36	case	_	_	*
+34	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	SpaceAfter=No	*
+35	inestimable	inestimable	ADJ	_	Gender=Masc|Number=Sing	36	amod	_	_	*
+36	succès	succès	NOUN	_	Gender=Masc|Number=Sing	32	obl:agent	_	_	*
+37	acquis	acquérir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	36	acl	_	_	*
+38	dans	dans	ADP	_	_	40	case	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	bataille	bataille	NOUN	_	Gender=Fem|Number=Sing	37	obl:mod	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	SpaceAfter=No	*
+43	année	année	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 8
+# text = Il faut dire aussi que les différences se sont estompées entre les deux rugbys.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	dire	dire	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+4	aussi	aussi	ADV	_	_	3	advmod	_	_	*
+5	que	que	SCONJ	_	_	10	mark	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	différences	différence	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	estompées	estomper	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	ccomp	_	_	*
+11	entre	entre	ADP	_	_	14	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+13	deux	deux	NUM	_	_	14	nummod	_	_	*
+14	rugbys	rugbys	NOUN	_	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 9
+# text = Côté tricolore, le « french-flair » et l'aspect imprévisible ont quelque peu disparu.
+1	Côté	côté	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+2	tricolore	tricolore	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	french-flair	french-flair	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+7	»	»	PUNCT	_	_	6	punct	_	_	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	aspect	aspect	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+11	imprévisible	imprévisible	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+13	quelque	quelque	DET	_	Number=Sing	15	advmod	_	_	*
+14	peu	peu	ADV	_	_	13	fixed	_	_	*
+15	disparu	disparaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 10
+# text = Avec l'arrivée de Bernard Laporte, le jeu a même carrément viré à la partie d'échec.
+1	Avec	avec	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Bernard	Bernard	PROPN	_	_	3	nmod	_	_	*
+6	Laporte	laporte	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+11	même	même	ADV	_	_	12	advmod	_	_	*
+12	carrément	carrément	ADV	_	_	13	advmod	_	_	*
+13	viré	virer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	partie	partie	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	échec	échec	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 11
+# text = Plus rien n'est laissé au hasard.
+1	Plus	plus	ADV	_	_	5	advmod	_	_	*
+2	rien	rien	PRON	_	Number=Sing	5	nsubj:pass	_	_	*
+3	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	hasard	hasard	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 12
+# text = De l'autre côté, l'équipe d'Angleterre a abandonné son rugby de costauds, basé sur un pack dévastateur, pour adopter un style plus moderne.
+1	De	de	ADP	_	_	4	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+3	autre	autre	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	côté	côté	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	Angleterre	Angleterre	PROPN	_	_	7	nmod	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	abandonné	abandonner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	rugby	rugby	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	costauds	costaud	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	basé	baser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	conj	_	_	*
+18	sur	sur	ADP	_	_	20	case	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	pack	pack	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_	*
+21	dévastateur	dévastateur	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	24	punct	_	_	*
+23	pour	pour	ADP	_	_	24	mark	_	_	*
+24	adopter	adopter	VERB	_	VerbForm=Inf	17	advcl	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	style	style	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*
+27	plus	plus	ADV	_	_	28	advmod	_	_	*
+28	moderne	moderne	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 13
+# text = « C'est même les trois-quarts anglais qui font référence.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	même	même	ADV	_	_	6	advmod	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	trois-quarts	trois-quarts	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+7	anglais	anglais	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	1:LVC.full
+10	référence	référence	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	SpaceAfter=No	1
+11	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 14
+# text = On parle aujourd'hui de l'english-flair.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	aujourd'hui	aujourd'hui	ADV	_	_	2	advmod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	english-flair	english-flair	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 15
+# text = Un comble ! », lance Richard Pool-Jones.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	comble	comble	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	!	!	PUNCT	_	_	2	punct	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	lance	lancer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	Richard	Richard	PROPN	_	_	6	obj	_	_	*
+8	Pool-Jones	Pool-Jones	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 16
+# text = Les temps changent.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	temps	temps	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	changent	changer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 17
+# text = La médiatisation et le professionnalisme ont fortement contribué à aplanir les différents.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	médiatisation	médiatisation	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+3	et	et	CCONJ	_	_	5	cc	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	professionnalisme	professionnalisme	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	fortement	fortement	ADV	_	_	8	advmod	_	_	*
+8	contribué	contribuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	à	à	ADP	_	_	10	mark	_	_	*
+10	aplanir	aplanir	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	différents	différent	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 18
+# text = Et puis, surtout, une quête commune guide les deux frères ennemis européens.
+1	Et	et	CCONJ	_	_	9	cc	_	_	*
+2	puis	puis	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	surtout	surtout	ADV	_	_	9	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	quête	quête	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+8	commune	commun	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	guide	guider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+11	deux	deux	NUM	_	_	12	nummod	_	_	*
+12	frères	frère	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+13	ennemis	ennemi	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+14	européens	européen	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 19
+# text = Français comme Anglais courent toujours après leur premier titre de champion du Monde.
+1	Français	français	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	comme	comme	ADP	_	_	3	case	_	_	*
+3	Anglais	Anglais	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+4	courent	courir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	toujours	toujours	ADV	_	_	4	advmod	_	_	*
+6	après	après	ADP	_	_	9	case	_	_	*
+7	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+8	premier	premier	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	titre	titre	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	champion	champion	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 20
+# text = Et le premier à l'obtenir le restera à jamais.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	à	à	ADP	_	_	6	mark	_	_	*
+5	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No	*
+6	obtenir	obtenir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+7	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+8	restera	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	jamais	jamais	ADV	_	_	8	obl:arg	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 21
+# text = Bien au-delà de toutes les victoires hivernales dans le tournoi des six nations.
+1	Bien	bien	ADV	_	_	2	advmod	_	_	*
+2	au-delà	au-delà	ADV	_	_	0	root	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	victoires	victoire	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*
+7	hivernales	hivernal	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_	*
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	14	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+13	six	six	NUM	_	_	14	nummod	_	_	*
+14	nations	nation	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 22
+# text = P.H.W. EPINAL.
+1	P.H.W.	P.H.W.	ADP	_	_	2	case	_	SpacesAfter=\s\s\s\s\s\s	*
+2	EPINAL	EPINAL	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 23
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 24
+# text = C'est toujours un choc au sommet.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	toujours	toujours	ADV	_	_	5	advmod	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	choc	choc	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	sommet	sommet	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 25
+# text = Le grand duel entre les deux nations majeures du vieux continent.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	grand	grand	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	duel	duel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	entre	entre	ADP	_	_	7	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+6	deux	deux	NUM	_	_	7	nummod	_	_	*
+7	nations	nation	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+8	majeures	majeur	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	12	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+11	vieux	vieux	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	continent	continent	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 26
+# text = Mais la portée et l'intérêt des oppositions entre l'équipe de France et le XV de la Rose se sont déplacés sur un autre terrain que par le passé.
+1	Mais	mais	CCONJ	_	_	23	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	portée	portée	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	oppositions	opposition	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+10	entre	entre	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	France	France	PROPN	_	_	12	nmod	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	XV	XV	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	Rose	rose	PROPN	_	_	17	nmod	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	23	obj	_	_	1:IRV
+22	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	déplacés	déplacer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+24	sur	sur	ADP	_	_	27	case	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+26	autre	autre	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+27	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	23	obl	_	_	*
+28	que	que	SCONJ	_	_	31	mark	_	_	*
+29	par	par	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	passé	passé	NOUN	_	Gender=Masc|Number=Sing	23	obl:mod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 27
+# text = Un terrain sportif.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	sportif	sportif	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 28
+# text = Il y a bien encore des divergences.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	bien	bien	ADV	_	_	5	advmod	_	_	*
+5	encore	encore	ADV	_	_	3	advmod	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	divergences	divergence	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 29
+# text = Des querelles.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	querelles	querelle	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 30
+# text = Mais elles sont politiques et demeurent désormais confinées aux coulisses.
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	politiques	politique	ADJ	_	Gender=Fem|Number=Plur	0	root	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	demeurent	demeurer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+7	désormais	désormais	ADV	_	_	6	advmod	_	_	*
+8	confinées	confiner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	6	xcomp	_	_	*
+9-10	aux	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	coulisses	coulisse	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 31
+# text = Là où se joue par exemple actuellement la future désignation du pays organisateur de la coupe du Monde 2007.
+1	Là	là	ADV	_	_	0	root	_	_	*
+2	où	où	ADV	_	PronType=Rel	4	advmod	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:pass	_	_	*
+4	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+5	par	par	ADP	_	_	4	advmod	_	_	*
+6	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	5	fixed	_	_	*
+7	actuellement	actuellement	ADV	_	_	4	advmod	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	future	futur	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	désignation	désignation	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	pays	pays	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	organisateur	organisateur	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	2007	2007	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 32
+# text = Entre l'Angleterre et la France... Oubliés donc les remakes de la guerre de Cent Ans, à une époque où joueurs français et anglais ne se croisaient qu'une fois dans l'année.
+1	Entre	entre	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	Angleterre	Angleterre	PROPN	_	_	29	obl:mod	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	France	France	PROPN	_	_	3	conj	_	SpaceAfter=No	*
+7	...	...	PUNCT	_	_	8	punct	_	_	*
+8	Oubliés	Oublier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	*
+9	donc	donc	ADV	_	_	8	advmod	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	remakes	remake	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	Cent	Cent	NUM	_	_	17	nummod	_	_	*
+17	Ans	Ans	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	époque	époque	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+22	où	où	ADV	_	PronType=Rel	23	advmod	_	_	*
+23	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	21	appos	_	_	*
+24	français	français	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	anglais	anglais	ADJ	_	Gender=Masc|Number=Plur	24	conj	_	_	*
+27	ne	ne	ADV	_	Polarity=Neg	29	advmod	_	_	*
+28	se	se	PRON	_	Person=3|PronType=Prs	29	expl:comp	_	_	*
+29	croisaient	crois	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+30	qu'	que	ADV	_	_	32	advmod	_	SpaceAfter=No	*
+31	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	fois	fois	NOUN	_	Gender=Fem|Number=Sing	29	obl	_	_	*
+33	dans	dans	ADP	_	_	35	case	_	_	*
+34	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*
+35	année	année	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 33
+# text = Des affrontements malsains, précédés de provocations en tous genres, émaillés d'injures et de coups bas.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	affrontements	affrontement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+4	malsains	malsain	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	précédés	précéder	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	provocations	provocation	NOUN	_	Gender=Fem|Number=Plur	6	obl:arg	_	_	*
+9	en	en	ADP	_	_	11	case	_	_	*
+10	tous	tout	DET	_	Gender=Masc|Number=Plur	11	det	_	_	*
+11	genres	genre	NOUN	_	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	émaillés	émailler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	conj	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	injures	injure	NOUN	_	Gender=Fem|Number=Plur	13	obl:arg	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	coups	coup	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	_	*
+19	bas	bas	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 34
+# text = Le tout sur fond de haine réciproque entretenue par les différences, les rumeurs et les préjugés.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	tout	tout	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	sur	sur	ADP	_	_	4	case	_	_	*
+4	fond	fond	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	haine	hain	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7	réciproque	réciproque	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	entretenue	entretenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	différences	différence	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+14	rumeurs	rumeur	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	préjugés	préjugé	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 35
+# text = La presse tabloïd anglaise s'en donnait à cœur joie.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	presse	presse	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	tabloïd	tabloïdre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	anglaise	anglais	ADJ	_	Gender=Fem|Number=Sing	3	xcomp	_	_	*
+5	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	SpaceAfter=No	1:IRV
+6	en	en	PRON	_	Person=3	7	expl:comp	_	_	*
+7	donnait	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	advcl	_	_	1
+8	à	à	ADP	_	_	9	case	_	_	*
+9	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+10	joie	joie	NOUN	_	Gender=Fem|Number=Sing	7	xcomp	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 36
+# text = En 1977, les Bleus furent « The Animals » et accueillis par les crachats à Twickenham.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1977	1977	NUM	_	_	8	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*
+5	Bleus	Bleus	PROPN	_	_	8	nsubj	_	_	*
+6	furent	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_	*
+7	«	«	PUNCT	_	_	8	punct	_	_	*
+8	The	The	X	_	Foreign=Yes	0	root	_	_	*
+9	Animals	Animals	X	_	Foreign=Yes	8	flat:foreign	_	_	*
+10	»	»	PUNCT	_	_	8	punct	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	accueillis	accueillir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	conj	_	_	*
+13	par	par	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	crachats	crachat	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	Twickenham	Twickenham	PROPN	_	_	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 37
+# text = Rives et compagnie l'emportèrent 4-3 à l'issue d'un match resté dans les mémoires.
+1	Rives	Rives	PROPN	_	_	5	nsubj	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	compagnie	compagnier	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+4	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No	1:VID
+5	emportèrent	emporter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1
+6	4-3	4-3	NUM	_	_	5	xcomp	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	issue	issue	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	match	match	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	resté	rester	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	mémoires	mémoire	NOUN	_	Gender=Fem|Number=Plur	13	obl:arg	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 38
+# text = C'est paraît-il un soir de match pour la troisième place de la coupe du Monde 1995 à Pretoria que tout a changé.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	paraît	paraître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+4	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	soir	soir	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	match	match	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+9	pour	pour	ADP	_	_	12	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+11	troisième	troisième	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	1995	1995	NUM	_	_	18	nmod	_	_	*
+20	à	à	ADP	_	_	21	case	_	_	*
+21	Pretoria	Pretoria	PROPN	_	_	12	nmod	_	_	*
+22	que	que	SCONJ	_	_	25	mark	_	_	*
+23	tout	tout	PRON	_	Gender=Masc|Number=Sing	25	nsubj	_	_	*
+24	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	changé	changer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 39
+# text = « La rencontre avait été quelconque, sans intérêt, ni passion.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	cop	_	_	*
+6	quelconque	quelconque	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	sans	sans	ADP	_	_	9	case	_	_	*
+9	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	ni	ni	CCONJ	_	_	12	cc	_	_	*
+12	passion	passion	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 40
+# text = Les joueurs des deux équipes se sont retrouvés dans un bar.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+7	se	se	PRON	_	Person=3|PronType=Prs	9	obj	_	_	1:IRV
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	retrouvés	retrouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	bar	bar	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 41
+# text = L'alcool aidant, on a commencé à se rapprocher.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	alcool	alcool	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+3	aidant	aidant	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	commencé	commencer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	à	à	ADP	_	_	10	mark	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	obj	_	_	1:IRV
+10	rapprocher	rapprocher	VERB	_	VerbForm=Inf	7	xcomp	_	SpaceAfter=No	1
+11	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-14_53467.txt 42
+# text = A la fin de la soirée, nous étions tous saouls et chacun tapait sur le ventre de celui qui avait été, durant des années, son pire ennemi », raconte l'ancien international anglais et « casseur » de Français Brian Moore
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	fin	fin	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	_	*
+9	étions	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	11	cop	_	_	*
+10	tous	tout	PRON	_	Gender=Masc|Number=Plur	11	obl:mod	_	_	*
+11	saouls	saoul	ADJ	_	Gender=Masc|Number=Plur	34	ccomp	_	_	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*
+13	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+14	tapait	taper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	conj	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	ventre	ventre	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	17	nmod	_	_	*
+20	qui	qui	PRON	_	PronType=Rel	30	nsubj	_	_	*
+21	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	aux:tense	_	_	*
+22	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	cop	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	27	punct	_	_	*
+24	durant	durant	ADP	_	_	27	case	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	un	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_	*
+27	années	année	NOUN	_	Gender=Fem|Number=Plur	22	obl	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	27	punct	_	_	*
+29	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	30	det	_	_	*
+30	pire	pire	NOUN	_	Gender=Masc|Number=Sing	19	acl:relcl	_	_	*
+31	ennemi	ennemi	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+32	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	11	punct	_	_	*
+34	raconte	raconter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+35	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	SpaceAfter=No	*
+36	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	45	amod	_	_	*
+37	international	international	ADJ	_	Gender=Masc|Number=Sing	36	amod	_	_	*
+38	anglais	anglais	ADJ	_	Gender=Masc|Number=Sing	37	amod	_	_	*
+39	et	et	CCONJ	_	_	41	cc	_	_	*
+40	«	«	PUNCT	_	_	41	punct	_	_	*
+41	casseur	casseur	NOUN	_	Gender=Masc|Number=Sing	38	conj	_	_	*
+42	»	»	PUNCT	_	_	41	punct	_	_	*
+43	de	de	ADP	_	_	44	case	_	_	*
+44	Français	français	PROPN	_	_	41	nmod	_	_	*
+45	Brian	Brian	PROPN	_	_	34	nsubj	_	_	*
+46	Moore	Moore	PROPN	_	_	45	flat:name	_	SpacesAfter=\n	*
+

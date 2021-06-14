@@ -1,0 +1,503 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-22_25001.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 1
+# text = Robert de Niro et de Billy Crystal.
+1	Robert	Robert	PROPN	_	_	0	root	_	_	*
+2	de	de	ADP	_	_	1	flat:name	_	_	*
+3	Niro	Niro	PROPN	_	_	1	flat:name	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Billy	Billy	PROPN	_	_	1	conj	_	_	*
+7	Crystal	Crystal	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 2
+# text = L'ennui avec les suites, c'est qu'elles ne bénéficient plus de l'effet de surprise.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ennui	ennui	NOUN	_	Gender=Masc|Number=Sing	8	dislocated	_	_	*
+3	avec	avec	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*
+5	suites	suite	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*
+8	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	qu'	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*
+10	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	_	*
+11	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*
+12	bénéficient	bénéficier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*
+13	plus	plus	ADV	_	Polarity=Neg	12	advmod	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	effet	effet	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	surprise	surprise	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 3
+# text = « Mafia blues » était une gentille parodie du Parrain, dans laquelle un mafioso, Paul Vitti (alias Robert de Niro) faisait appel à un psychiatre pour résoudre ses problèmes existentiels.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Mafia	mafia	X	_	Foreign=Yes	7	nsubj	_	_	*
+3	blues	blues	X	_	Foreign=Yes	2	flat:foreign	_	_	*
+4	»	»	PUNCT	_	_	2	punct	_	_	*
+5	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	cop	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	gentille	gentille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+8	parodie	parodi	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Parrain	parrain	PROPN	_	_	8	obl:arg	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	26	punct	_	_	*
+13	dans	dans	ADP	_	_	14	case	_	_	*
+14	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	26	obl:mod	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	mafioso	mafioso	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	Paul	Paul	PROPN	_	_	16	appos	_	_	*
+19	Vitti	Vitti	PROPN	_	_	18	flat:name	_	_	*
+20	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+21	alias	alias	ADP	_	_	22	case	_	_	*
+22	Robert	Robert	PROPN	_	_	18	nmod	_	_	*
+23	de	de	ADP	_	_	22	flat:name	_	_	*
+24	Niro	Niro	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+25	)	)	PUNCT	_	_	22	punct	_	_	*
+26	faisait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_	1:LVC.full
+27	appel	appel	NOUN	_	Gender=Masc|Number=Sing	26	obj	_	_	1
+28	à	à	ADP	_	_	30	case	_	_	*
+29	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	psychiatre	psychiatre	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	_	*
+31	pour	pour	ADP	_	_	32	mark	_	_	*
+32	résoudre	résoudre	VERB	_	VerbForm=Inf	26	advcl	_	_	*
+33	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	34	det	_	_	*
+34	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	32	obj	_	_	*
+35	existentiels	existentiel	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 4
+# text = Le gros dur pleurant dans les bras de son psy : c'était sympathique.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	gros	gros	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	dur	dur	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	pleurant	pleurer	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	*
+5	dans	dans	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	bras	bras	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	psy	p	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	:	:	PUNCT	_	_	14	punct	_	_	*
+12	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*
+13	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	_	_	*
+14	sympathique	sympathique	ADJ	_	Gender=Masc|Number=Sing	2	parataxis	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 5
+# text = Mais voilà, le talent de Robert de Niro et de Billy Crystal (le médecin) ne suffit pas à donner de la consistance à cette reprise.
+1	Mais	mais	CCONJ	_	_	2	cc	_	_	*
+2	voilà	voilà	VERB	_	_	19	advcl	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	talent	talent	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Robert	Robert	PROPN	_	_	5	nmod	_	_	*
+8	de	de	ADP	_	_	7	flat:name	_	_	*
+9	Niro	Niro	PROPN	_	_	7	flat:name	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Billy	Billy	PROPN	_	_	7	conj	_	_	*
+13	Crystal	Crystal	PROPN	_	_	12	flat:name	_	_	*
+14	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	16	punct	_	_	*
+18	ne	ne	ADV	_	Polarity=Neg	19	advmod	_	_	*
+19	suffit	suffire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+20	pas	pas	ADV	_	Polarity=Neg	19	advmod	_	_	*
+21	à	à	ADP	_	_	22	mark	_	_	*
+22	donner	donner	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	consistance	consistance	NOUN	_	Gender=Fem|Number=Sing	22	obl:arg	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	_	_	*
+28	reprise	reprise	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 6
+# text = Et le gangster, cette fois, en fait un peu trop.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	gangster	gangster	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_	*
+6	fois	fois	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	12	punct	_	_	*
+8	en	en	ADP	_	_	12	advmod	_	_	*
+9	fait	fait	NOUN	_	Gender=Masc|Number=Sing	8	fixed	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	advmod	_	_	*
+11	peu	peu	ADV	_	_	10	fixed	_	_	*
+12	trop	trop	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 7
+# text = Enfermé dans la prison de Sing Sing, l'ancien caïd est l'objet de deux tentatives de meurtres de la part de ses concurrents.
+1	Enfermé	enfermer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+2	dans	dans	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	prison	prison	NOUN	_	Gender=Fem|Number=Sing	1	obl:mod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Sing	Sing	PROPN	_	_	4	nmod	_	_	*
+7	Sing	Sing	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+10	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	caïd	caïd	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	1:VID
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	1
+14	objet	objet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1
+15	de	de	ADP	_	_	17	case	_	_	*
+16	deux	deux	NUM	_	_	17	nummod	_	_	*
+17	tentatives	tentative	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	meurtres	meurtre	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	part	part	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	concurrents	concurrent	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 8
+# text = C'est suffisant pour le faire sombrer à nouveau dans la déprime.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	suffisant	suffisant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	pour	pour	ADP	_	_	7	mark	_	_	*
+5	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*
+6	faire	faire	AUX	_	VerbForm=Inf	7	aux:caus	_	_	*
+7	sombrer	sombrer	VERB	_	VerbForm=Inf	3	advcl	_	_	*
+8	à	à	ADP	_	_	7	advmod	_	_	*
+9	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	8	fixed	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	déprime	déprime	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 9
+# text = Totalement apathique, il ne sort de sa léthargie que pour beugler quelques airs de « West side story ».
+1	Totalement	totalement	ADV	_	_	2	advmod	_	_	*
+2	apathique	apathique	ADJ	_	Gender=Masc|Number=Sing	6	advcl	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+5	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	sort	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	léthargie	léthargie	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*
+10	que	que	SCONJ	_	_	12	mark	_	_	*
+11	pour	pour	ADP	_	_	12	mark	_	_	*
+12	beugler	beugler	VERB	_	VerbForm=Inf	6	advcl	_	_	*
+13	quelques	quelque	DET	_	Gender=Masc|Number=Plur	14	det	_	_	*
+14	airs	airs	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	«	«	PUNCT	_	_	17	punct	_	_	*
+17	West	West	PROPN	_	_	14	nmod	_	_	*
+18	side	side	PROPN	_	Foreign=Yes	17	flat:name	_	_	*
+19	story	story	PROPN	_	_	17	flat:name	_	_	*
+20	»	»	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 10
+# text = (Pour le prix de la comédie musicale, Robert de Niro repassera).
+1	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+2	Pour	pour	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	prix	prix	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	comédie	comédie	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	musicale	musical	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*
+10	Robert	Robert	PROPN	_	_	13	nsubj	_	_	*
+11	de	de	ADP	_	_	10	flat:name	_	_	*
+12	Niro	Niro	PROPN	_	_	10	flat:name	_	_	*
+13	repassera	repassera	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 11
+# text = Pour savoir si Vitti simule, afin d'accélérer sa remise en liberté, ou s'il est réellement atteint de schizophrénie, le FBI fait appel à son ancien thérapeute, Bob Sobel.
+1	Pour	pour	ADP	_	_	2	mark	_	_	*
+2	savoir	savoir	VERB	_	VerbForm=Inf	26	advcl	_	_	*
+3	si	si	SCONJ	_	_	4	case	_	_	*
+4	Vitti	Vitti	PROPN	_	_	2	obl:arg	_	_	*
+5	simule	simule	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	afin	afin	ADV	_	_	2	advmod	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	accélérer	accélérer	VERB	_	VerbForm=Inf	7	ccomp	_	_	*
+10	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	remise	remise	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	liberté	liberté	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	20	punct	_	_	*
+15	ou	ou	CCONJ	_	_	20	cc	_	_	*
+16	s'	si	SCONJ	_	_	20	mark	_	SpaceAfter=No	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj:pass	_	_	*
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	_	_	*
+19	réellement	réellement	ADV	_	_	20	advmod	_	_	*
+20	atteint	atteindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	schizophrénie	schizophrénie	NOUN	_	Gender=Fem|Number=Sing	20	obl:mod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	20	punct	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	FBI	FBI	PROPN	_	_	26	nsubj	_	_	*
+26	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+27	appel	appel	NOUN	_	Gender=Masc|Number=Sing	26	obj	_	_	1
+28	à	à	ADP	_	_	31	case	_	_	*
+29	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	31	det	_	_	*
+30	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	_	*
+31	thérapeute	thérapeute	NOUN	_	Gender=Masc|Number=Sing	26	obl:arg	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	33	punct	_	_	*
+33	Bob	Bob	PROPN	_	_	31	appos	_	_	*
+34	Sobel	Sobel	PROPN	_	_	33	flat:name	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 12
+# text = Ainsi, le duo de choc peut à nouveau opérer ses facéties pour le reste du film.
+1	Ainsi	ainsi	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	duo	duo	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	choc	choc	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	à	à	ADP	_	_	10	advmod	_	_	*
+9	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	8	fixed	_	_	*
+10	opérer	opérer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+11	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	facéties	facétie	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	_	*
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	reste	reste	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	film	film	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 13
+# text = Présents à l'hôtel Crillon à Paris, il y a quelques jours, les deux acteurs ont confié qu'Harold Ramis, le réalisateur, ne les avait pas bridés, les laissant improviser au moment de l'écriture du scénario.
+1	Présents	présent	NOUN	_	Gender=Masc|Number=Plur	19	obl:mod	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	Crillon	Crillon	PROPN	_	_	4	appos	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	Paris	Paris	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	case	_	_	1:VID
+10	y	y	PRON	_	_	9	fixed	_	_	1
+11	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	fixed	_	_	1
+12	quelques	quelque	DET	_	Gender=Masc|Number=Plur	13	det	_	_	*
+13	jours	jour	NOUN	_	Gender=Masc|Number=Plur	1	obl:mod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	1	punct	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+16	deux	deux	NUM	_	_	17	nummod	_	_	*
+17	acteurs	acteur	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*
+18	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+19	confié	confier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+20	qu'	que	SCONJ	_	_	31	mark	_	SpaceAfter=No	*
+21	Harold	Harold	PROPN	_	_	31	nsubj	_	_	*
+22	Ramis	Ramis	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	réalisateur	réalisateur	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	21	punct	_	_	*
+27	ne	ne	ADV	_	Polarity=Neg	31	advmod	_	_	*
+28	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	31	obj	_	_	*
+29	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	31	aux:tense	_	_	*
+30	pas	pas	ADV	_	Polarity=Neg	31	advmod	_	_	*
+31	bridés	bridé	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	19	ccomp	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	34	punct	_	_	*
+33	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	34	obj	_	_	*
+34	laissant	laisser	VERB	_	Tense=Pres|VerbForm=Part	31	advcl	_	_	*
+35	improviser	improviser	VERB	_	VerbForm=Inf	34	xcomp	_	_	*
+36-37	au	_	_	_	_	_	_	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	moment	moment	NOUN	_	Gender=Masc|Number=Sing	35	obl:mod	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	SpaceAfter=No	*
+41	écriture	écriture	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	_	*
+42-43	du	_	_	_	_	_	_	_	_	*
+42	de	de	ADP	_	_	44	case	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	scénario	scénario	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No	*
+45	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 14
+# text = Ces deux là s'amusent : c'est sûr.
+1	Ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_	*
+2	deux	deux	NUM	_	_	5	nsubj	_	_	*
+3	là	là	ADV	_	_	5	advmod	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:IRV
+5	amusent	amuser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+6	:	:	PUNCT	_	_	9	punct	_	_	*
+7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	SpaceAfter=No	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+9	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	5	parataxis	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 15
+# text = Et pour en témoigner, le réalisateur a accepté d'ajouter au générique de fin le bêtisier du tournage.
+1	Et	et	CCONJ	_	_	9	cc	_	_	*
+2	pour	pour	ADP	_	_	4	mark	_	_	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*
+4	témoigner	témoigner	VERB	_	VerbForm=Inf	9	advcl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	réalisateur	réalisateur	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	accepté	accepter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	d'	de	ADP	_	_	11	mark	_	SpaceAfter=No	*
+11	ajouter	ajouter	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	générique	générique	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	fin	fin	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	bêtisier	bêtisier	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	tournage	tournage	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 16
+# text = La parodie ne serait pas complète sans le chauffeur, homme de confiance et gros bras du patron.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	parodie	parodie	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*
+4	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	complète	compléter	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	sans	sans	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	chauffeur	chauffeur	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	homme	homme	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	et	et	CCONJ	_	_	16	cc	_	_	*
+15	gros	gros	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_	*
+16	bras	bras	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	patron	patron	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 17
+# text = Une carrure impressionnante et un cerveau de la taille d'un pois chiche.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	carrure	carrure	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	impressionnante	impressionnant	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	cerveau	cerveau	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	taille	taille	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	pois	pois	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	chiche	chiche	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 18
+# text = Joe Viterelli est parfait dans le rôle.
+1	Joe	Joe	PROPN	_	_	4	nsubj	_	_	*
+2	Viterelli	Viterelli	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	parfait	parfait	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	dans	dans	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	rôle	rôle	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 19
+# text = Robert de Niro avait été appelé par son ami Martin Scorsese pour incarner le personnage principal dans « Gangs of New York » L'acteur a décliné, en raison d'un agenda trop rempli.
+1	Robert	Robert	PROPN	_	_	6	nsubj:pass	_	_	*
+2	de	de	ADP	_	_	1	flat:name	_	_	*
+3	Niro	Niro	PROPN	_	_	1	flat:name	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	appelé	appeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	par	par	ADP	_	_	9	case	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	ami	ami	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	_	_	*
+10	Martin	Martin	PROPN	_	_	9	appos	_	_	*
+11	Scorsese	Scorsese	PROPN	_	_	10	flat:name	_	_	*
+12	pour	pour	ADP	_	_	13	mark	_	_	*
+13	incarner	incarner	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	personnage	personnage	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+16	principal	principal	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	«	«	PUNCT	_	_	19	punct	_	_	*
+19	Gangs	Gangs	X	_	Foreign=Yes	13	obl:mod	_	_	*
+20	of	of	X	_	Foreign=Yes	19	flat:foreign	_	_	*
+21	New	New	X	_	Foreign=Yes	19	flat:foreign	_	_	*
+22	York	York	X	_	Foreign=Yes	19	flat:foreign	_	_	*
+23	»	»	PUNCT	_	_	19	punct	_	_	*
+24	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	acteur	acteur	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	_	_	*
+26	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:tense	_	_	*
+27	décliné	déclinaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	conj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	en	en	ADP	_	_	27	advmod	_	_	*
+30	raison	raison	NOUN	_	Gender=Fem|Number=Sing	27	obj	_	_	*
+31	d'	de	ADP	_	_	33	case	_	SpaceAfter=No	*
+32	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	agenda	agenda	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34	trop	trop	ADV	_	_	35	advmod	_	_	*
+35	rempli	remplir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	33	acl	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 20
+# text = Il a été remplacé par Daniel Day Lewis.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	aux:pass	_	_	*
+4	remplacé	remplacer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	par	par	ADP	_	_	6	case	_	_	*
+6	Daniel	Daniel	PROPN	_	_	4	obl:agent	_	_	*
+7	Day	Day	PROPN	_	_	6	flat:name	_	_	*
+8	Lewis	Lewis	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_25001.txt 21
+# text = A choisir entre deux rôles de méchants, celui proposé par Scorsese avait beaucoup plus d'épaisseur.
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	choisir	choisir	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	entre	entre	ADP	_	_	5	case	_	_	*
+4	deux	deux	NUM	_	_	5	nummod	_	_	*
+5	rôles	rôle	NOUN	_	Gender=Masc|Number=Plur	2	obl	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	méchants	méchant	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	appos	_	_	*
+10	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+11	par	par	ADP	_	_	12	case	_	_	*
+12	Scorsese	Scorsese	PROPN	_	_	10	obl:agent	_	_	*
+13	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux:tense	_	_	*
+14	beaucoup	beaucoup	ADV	_	_	15	advmod	_	_	*
+15	plus	plus	ADV	_	_	2	advmod	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	épaisseur	épaisseur	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	15	punct	_	SpacesAfter=\n	*
+

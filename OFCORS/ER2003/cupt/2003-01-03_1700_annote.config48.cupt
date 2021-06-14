@@ -1,0 +1,505 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-03_1700.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 1
+# text = Trois blessées BESANÇON.
+1	Trois	Trois	NUM	_	_	2	nummod	_	_	*
+2	blessées	blesser	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpacesAfter=\n	*
+3	BESANÇON	Besançon	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 2
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 3
+# text = Les retrouvailles entre Christophe Maréchal et les handballeuses de l'ESB (F) se sont effectuées hier soir au palais des sports.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	retrouvailles	retrouvaille	NOUN	_	Gender=Fem|Number=Plur	17	nsubj	_	_	*
+3	entre	entre	ADP	_	_	4	case	_	_	*
+4	Christophe	Christophe	PROPN	_	_	2	nmod	_	_	*
+5	Maréchal	maréchal	PROPN	_	_	4	flat:name	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	handballeuses	handballeuse	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	ESB	ESB	X	_	_	8	nmod	_	_	*
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+13	F	F	X	_	_	8	appos	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	13	punct	_	_	*
+15	se	se	PRON	_	Person=3|PronType=Prs	17	expl:pass	_	_	*
+16	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	hier	hier	ADV	_	_	17	advmod	_	_	*
+19	soir	soir	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	*
+20-21	au	_	_	_	_	_	_	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	palais	palais	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	sports	sport	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 4
+# text = Mais le coach ententiste aurait sans doute préféré voir ses troupes dans un meilleur état de santé puisque Sandrine Delerce (entorse de la cheville), Sophie Herbrecht (problème dorsal) et Carmen Amariei (grosse blessure à l'épaule) sont d'ores et déjà forfait pour le déplacement à Chypre.
+1	Mais	mais	CCONJ	_	_	5	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	coach	coach	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	ententiste	ententiste	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	aurait	avoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	sans	sans	ADP	_	_	8	advmod	_	_	*
+7	doute	doute	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	_	*
+8	préféré	préféré	ADJ	_	Gender=Masc|Number=Sing	5	advcl	_	_	*
+9	voir	voir	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	troupes	troupe	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	_	*
+12	dans	dans	ADP	_	_	15	case	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+14	meilleur	meilleur	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	état	état	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	santé	santé	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+18	puisque	puisque	SCONJ	_	_	49	mark	_	_	*
+19	Sandrine	Sandrine	PROPN	_	_	49	nsubj	_	_	*
+20	Delerce	Delerce	PROPN	_	_	19	flat:name	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	entorse	entorse	NOUN	_	Gender=Fem|Number=Sing	19	appos	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	cheville	cheville	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*
+28	Sophie	Sophie	PROPN	_	_	19	conj	_	_	*
+29	Herbrecht	Herbrecht	PROPN	_	_	28	flat:name	_	_	*
+30	(	(	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+31	problème	problème	NOUN	_	Gender=Masc|Number=Sing	28	appos	_	_	*
+32	dorsal	dorsal	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No	*
+33	)	)	PUNCT	_	_	31	punct	_	_	*
+34	et	et	CCONJ	_	_	35	cc	_	_	*
+35	Carmen	Carmen	PROPN	_	_	19	conj	_	_	*
+36	Amariei	Amariei	PROPN	_	_	35	flat:name	_	_	*
+37	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No	*
+38	grosse	gros	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	_	*
+39	blessure	blessure	NOUN	_	Gender=Fem|Number=Sing	35	appos	_	_	*
+40	à	à	ADP	_	_	42	case	_	_	*
+41	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No	*
+42	épaule	épaule	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	SpaceAfter=No	*
+43	)	)	PUNCT	_	_	39	punct	_	_	*
+44	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	cop	_	_	*
+45	d'	de	ADP	_	_	49	advmod	_	SpaceAfter=No	*
+46	ores	ores	ADV	_	_	45	fixed	_	_	*
+47	et	et	CCONJ	_	_	45	fixed	_	_	*
+48	déjà	déjà	ADV	_	_	45	fixed	_	_	*
+49	forfait	forfait	ADJ	_	Gender=Masc|Number=Sing	9	advcl	_	_	*
+50	pour	pour	ADP	_	_	52	case	_	_	*
+51	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_	*
+52	déplacement	déplacement	NOUN	_	Gender=Masc|Number=Sing	49	obl	_	_	*
+53	à	à	ADP	_	_	54	case	_	_	*
+54	Chypre	Chypre	PROPN	_	_	52	nmod	_	SpaceAfter=No	*
+55	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 5
+# text = « On va donc se déplacer à sept joueuses de champ et deux gardiennes », pestait Maréchal, contraint plus que jamais de gérer au plu juste son effectif.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_	*
+4	donc	donc	ADV	_	_	3	advmod	_	_	*
+5	se	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	_	1:IRV
+6	déplacer	déplacer	VERB	_	VerbForm=Inf	3	xcomp	_	_	1
+7	à	à	ADP	_	_	9	case	_	_	*
+8	sept	sept	NUM	_	_	9	nummod	_	_	*
+9	joueuses	joueur	NOUN	_	Gender=Fem|Number=Plur	6	obl:arg	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	champ	champ	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*
+13	deux	deux	NUM	_	_	14	nummod	_	_	*
+14	gardiennes	gardien	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_	*
+15	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	3	punct	_	_	*
+17	pestait	pester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+18	Maréchal	maréchal	PROPN	_	_	17	nsubj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	contraint	contraindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	_	*
+21	plus	plus	ADV	_	_	23	advmod	_	_	*
+22	que	que	ADV	_	_	23	advmod	_	_	*
+23	jamais	jamais	ADV	_	_	20	advmod	_	_	*
+24	de	de	ADP	_	_	25	mark	_	_	*
+25	gérer	gérer	VERB	_	VerbForm=Inf	23	ccomp	_	_	*
+26-27	au	_	_	_	_	_	_	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	plu	plu	X	_	_	25	obl:arg	_	_	*
+29	juste	juste	ADV	_	_	31	advmod	_	_	*
+30	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	31	det	_	_	*
+31	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	28	appos	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 6
+# text = Départ :
+1	Départ	départ	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 7
+# text = Les Bisontines partent ce matin à 8h20 pour Chypre.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	Bisontines	Bisontines	PROPN	_	_	3	nsubj	_	_	*
+3	partent	partir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*
+5	matin	matin	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	8	8	NUM	_	_	8	nummod	_	SpaceAfter=No	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	SpaceAfter=No	*
+9	20	20	NUM	_	_	8	nummod	_	_	*
+10	pour	pour	ADP	_	_	11	case	_	_	*
+11	Chypre	Chypre	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 8
+# text = Au total, le voyage durera la bagatelle de... 14 heures pour rejoindre leur hôtel, l'arrivée étant prévue aux alentours de 22 heures, locales...
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	total	total	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+7	durera	durer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	bagatelle	bagatelle	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+10	de	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+11	...	...	PUNCT	_	_	13	punct	_	_	*
+12	14	14	NUM	_	_	13	nummod	_	_	*
+13	heures	heure	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	_	*
+14	pour	pour	ADP	_	_	15	mark	_	_	*
+15	rejoindre	rejoindre	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+16	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	22	punct	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+21	étant	être	AUX	_	Tense=Pres|VerbForm=Part	22	aux:tense	_	_	*
+22	prévue	prévoir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	advcl	_	_	*
+23-24	aux	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	alentours	alentours	NOUN	_	Gender=Masc|Number=Plur	22	obl:mod	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	22	22	NUM	_	_	28	nummod	_	_	*
+28	heures	heure	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	locales	local	ADJ	_	Gender=Fem|Number=Plur	28	amod	_	SpaceAfter=No	*
+31	...	...	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 9
+# text = Entraînement : Samedi matin, les Ententistes découvriront la salle où elles joueront le soir même.
+1	Entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	Samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	matin	matin	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Ententistes	Ententiste	PROPN	_	_	3	conj	_	_	*
+8	découvriront	découvrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	salle	salle	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	où	où	ADV	_	PronType=Rel	13	advmod	_	_	*
+12	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_	*
+13	joueront	jouer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	10	acl:relcl	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	soir	soir	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+16	même	même	ADV	_	_	13	advmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 10
+# text = De 10h à 11h, les Doubiennes effectueront une légère séance d'entraînement, histoire de prendre leurs repères.
+1	De	de	ADP	_	_	2	case	_	_	*
+2	10h	10h	NUM	_	_	9	obl:mod	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	11	11	NUM	_	_	5	nummod	_	SpaceAfter=No	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Doubiennes	Doubiennes	PROPN	_	_	9	nsubj	_	_	*
+9	effectueront	effectuer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+11	légère	léger	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	séance	séance	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	12	appos	_	_	*
+17	de	de	ADP	_	_	18	mark	_	_	*
+18	prendre	prendre	VERB	_	VerbForm=Inf	16	acl	_	_	*
+19	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	20	det	_	_	*
+20	repères	repère	NOUN	_	Gender=Fem|Number=Plur	18	obj	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 11
+# text = Les rencontres Critérium espoirs I.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	rencontres	rencontre	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	Critérium	Critérium	PROPN	_	_	2	appos	_	_	*
+4	espoirs	espoir	NOUN	_	Gender=Masc|Number=Plur	3	flat:name	_	_	*
+5	I.	I.	NUM	_	_	3	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 12
+# text = Sid (ROB) -Touati (Wasquehal)
+1	Sid	Sid	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	ROB	Rob	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	-	-	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Touati	Touati	PROPN	_	_	1	conj	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	Wasquehal	Wasquehal	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 13
+# text = Demi-finales du championnat de Franche-Comté Saoud (Sochaux) -Farguette (Lons) Bajrami (Dole) -Guerrida (Futuris Besançon) R. Hakkar (ROB) -Aalam (Sochaux) Ferchichi (ROB) -Bellhassan (Valentigney)
+1	Demi-finales	demi-finale	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Franche-Comté	Franche-Comté	PROPN	_	_	4	nmod	_	_	*
+7	Saoud	Saoud	PROPN	_	_	4	appos	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	Sochaux	Sochaux	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	-Farguette	-farguette	PROPN	_	_	1	appos	_	_	*
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+13	Lons	Lons	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	13	punct	_	_	*
+15	Bajrami	Bajrami	PROPN	_	_	11	flat:name	_	_	*
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+17	Dole	Dole	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	17	punct	_	_	*
+19	-	-	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+20	Guerrida	Guerrida	PROPN	_	_	11	conj	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	Futuris	Futuris	PROPN	_	_	20	appos	_	_	*
+23	Besançon	Besançon	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	)	)	PUNCT	_	_	22	punct	_	_	*
+25	R.	R.	PROPN	_	_	20	flat:name	_	_	*
+26	Hakkar	Hakkar	PROPN	_	_	20	flat:name	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	ROB	Rob	PROPN	_	_	20	appos	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	28	punct	_	_	*
+30	-	-	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+31	Aalam	Aalam	PROPN	_	_	11	conj	_	_	*
+32	(	(	PUNCT	_	_	33	punct	_	SpaceAfter=No	*
+33	Sochaux	Sochaux	PROPN	_	_	31	appos	_	SpaceAfter=No	*
+34	)	)	PUNCT	_	_	33	punct	_	_	*
+35	Ferchichi	Ferchichi	PROPN	_	_	31	flat:name	_	_	*
+36	(	(	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+37	ROB	Rob	PROPN	_	_	31	appos	_	SpaceAfter=No	*
+38	)	)	PUNCT	_	_	37	punct	_	_	*
+39	-	-	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+40	Bellhassan	Bellhassan	PROPN	_	_	31	conj	_	_	*
+41	(	(	PUNCT	_	_	42	punct	_	SpaceAfter=No	*
+42	Valentigney	Valentigney	PROPN	_	_	40	appos	_	SpaceAfter=No	*
+43	)	)	PUNCT	_	_	42	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 14
+# text = Ibrahem (Sochaux) -Us (Valentigney) Benabdallah (Sochaux) -Besançon (Pontarlier) Combats hors championat F. Sid (ROB) -Bouyarden (Valentigney) Tahir (ROB) -Boudet (Valentigney) Oumri (ROB) -adversaire à déterminer Saliku (ROB) -Khedim (Sochaux)
+1	Ibrahem	Ibrahem	PROPN	_	_	0	root	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	Sochaux	Sochaux	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	-	-	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Us	Us	PROPN	_	_	1	appos	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	Valentigney	Valentigney	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	Benabdallah	Benabdallah	PROPN	_	_	6	flat:name	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	Sochaux	Sochaux	PROPN	_	_	10	appos	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	12	punct	_	_	*
+14	-Besançon	-Besançon	PROPN	_	_	6	flat:name	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	Pontarlier	Pontarlier	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	16	punct	_	_	*
+18	Combats	combats	PROPN	_	_	6	flat:name	_	_	*
+19	hors	hors	ADP	_	_	20	case	_	_	*
+20	championat	champioat	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+21	F.	F.	PROPN	_	_	20	appos	_	_	*
+22	Sid	Sid	PROPN	_	_	21	flat:name	_	_	*
+23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+24	ROB	Rob	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+25	)	)	PUNCT	_	_	24	punct	_	_	*
+26	-Bouyarden	-Bouyarden	PROPN	_	_	21	flat:name	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	Valentigney	Valentigney	PROPN	_	_	26	appos	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	28	punct	_	_	*
+30	Tahir	Tahir	PROPN	_	_	21	flat:name	_	_	*
+31	(	(	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+32	ROB	Rob	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+33	)	)	PUNCT	_	_	32	punct	_	_	*
+34	-	-	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+35	Boudet	Boudet	PROPN	_	_	21	conj	_	_	*
+36	(	(	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+37	Valentigney	Valentigney	PROPN	_	_	35	appos	_	SpaceAfter=No	*
+38	)	)	PUNCT	_	_	37	punct	_	_	*
+39	Oumri	Oumri	PROPN	_	_	35	flat:name	_	_	*
+40	(	(	PUNCT	_	_	41	punct	_	SpaceAfter=No	*
+41	ROB	Rob	PROPN	_	_	35	appos	_	SpaceAfter=No	*
+42	)	)	PUNCT	_	_	41	punct	_	_	*
+43	-	-	PUNCT	_	_	44	punct	_	SpaceAfter=No	*
+44	adversaire	adversaire	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	_	*
+45	à	à	ADP	_	_	46	mark	_	_	*
+46	déterminer	déterminer	VERB	_	VerbForm=Inf	44	acl	_	_	*
+47	Saliku	Saliku	PROPN	_	_	46	obj	_	_	*
+48	(	(	PUNCT	_	_	49	punct	_	SpaceAfter=No	*
+49	ROB	Rob	PROPN	_	_	47	appos	_	SpaceAfter=No	*
+50	)	)	PUNCT	_	_	49	punct	_	_	*
+51	-	-	PUNCT	_	_	52	punct	_	SpaceAfter=No	*
+52	Khedim	Khedim	PROPN	_	_	47	conj	_	_	*
+53	(	(	PUNCT	_	_	54	punct	_	SpaceAfter=No	*
+54	Sochaux	Sochaux	PROPN	_	_	52	appos	_	SpaceAfter=No	*
+55	)	)	PUNCT	_	_	54	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 15
+# text = Coup d'envoi de la réunion samedi 20h30 au gymnase Jean-Zay.
+1	Coup	coup	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	envoi	envoi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+8	20h	20h	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+9	30	30	NUM	_	_	8	nmod	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+13	Jean-Zay	Jean-Zay	PROPN	_	_	12	appos	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 16
+# text = BESANÇON.
+1	BESANÇON	Besançon	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 17
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 18
+# text = Le Bisontin Ibrahim Sid cristallisera tous les regards, demain soir au gymnase Jean-Zay.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Bisontin	Bisontin	PROPN	_	_	5	nsubj	_	_	*
+3	Ibrahim	Ibrahim	PROPN	_	_	2	flat:name	_	_	*
+4	Sid	Sid	PROPN	_	_	2	flat:name	_	_	*
+5	cristallisera	cristalliser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+6	tous	tout	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	regards	regard	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	demain	demain	ADV	_	_	11	advmod	_	_	*
+11	soir	soir	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+15	Jean-Zay	Jean-Zay	PROPN	_	_	14	appos	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 19
+# text = Le boxeur du ROB boxera en effet devant son public en huiitème de finale du Critérium espoirs.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	boxeur	boxeur	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	ROB	Rob	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	boxera	boxer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+7	en	en	ADP	_	_	6	advmod	_	_	*
+8	effet	effet	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	_	*
+9	devant	devant	ADP	_	_	11	case	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	public	public	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	huiitème	huiitème	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	finale	finale	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	Critérium	Critérium	PROPN	_	_	11	nmod	_	_	*
+19	espoirs	espoir	NOUN	_	Gender=Masc|Number=Plur	18	appos	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 20
+# text = Le protégé de... Morrade Hakkar sera opposé au Nordiste Rabah Touati dans un combat prévu en quatre rounds de trois minutes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	protégé	protégé	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+4	...	...	PUNCT	_	_	5	punct	_	_	*
+5	Morrade	Morrade	PROPN	_	_	2	nmod	_	_	*
+6	Hakkar	Hakkar	PROPN	_	_	5	flat:name	_	_	*
+7	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:tense	_	_	*
+8	opposé	opposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9-10	au	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Nordiste	nordiste	PROPN	_	_	8	obl:arg	_	_	*
+12	Rabah	Rabah	PROPN	_	_	11	flat:name	_	_	*
+13	Touati	Touati	PROPN	_	_	11	flat:name	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	combat	combat	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+17	prévu	prévoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	_	*
+18	en	en	ADP	_	_	20	case	_	_	*
+19	quatre	quatre	NUM	_	_	20	nummod	_	_	*
+20	rounds	round	NOUN	_	Gender=Masc|Number=Plur	17	obl	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	trois	trois	NUM	_	_	23	nummod	_	_	*
+23	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1700.txt 21
+# text = La réunion bisontine servira également de supports aux différentes demi-finales du championnat de Franche-Comté, mais aussi à d'autres combats puiqu'au total, pas moins de 11 oppositions sont programmées.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	bisontine	bisontin	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	servira	servir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	35	nsubj:pass	_	_	*
+5	également	également	ADV	_	_	4	advmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	supports	support	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+10	différentes	différent	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_	*
+11	demi-finales	demi-finale	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Franche-Comté	Franche-Comté	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	23	punct	_	_	*
+18	mais	mais	CCONJ	_	_	23	cc	_	_	*
+19	aussi	aussi	ADV	_	_	23	advmod	_	_	*
+20	à	à	ADP	_	_	23	case	_	_	*
+21	d'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	23	det	_	SpaceAfter=No	*
+22	autres	autre	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*
+23	combats	combat	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	_	*
+24	puiqu'	puique	ADV	_	_	23	advmod	_	SpaceAfter=No	*
+25-26	au	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	total	total	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	pas	pas	ADV	_	Polarity=Neg	30	advmod	_	_	*
+30	moins	moins	ADV	_	_	23	appos	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	11	11	NUM	_	_	33	nummod	_	_	*
+33	oppositions	opposition	NOUN	_	Gender=Fem|Number=Plur	30	obl:arg	_	_	*
+34	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	aux:pass	_	_	*
+35	programmées	programmer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	35	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,486 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-03_1423.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 1
+# text = TOURNOI EN SALLE POUSSINS Dimanche, l'ACBD organisera un tournoi en salle réservé aux poussins salle des Sports du Haut-des-Places.
+1	TOURNOI	tournoi	PROPN	_	_	9	nsubj	_	_	*
+2	EN	en	PROPN	_	_	1	flat:name	_	_	*
+3	SALLE	salle	PROPN	_	_	1	flat:name	_	_	*
+4	POUSSINS	POUSSINS	PROPN	_	_	1	appos	_	SpacesAfter=\n	*
+5	Dimanche	dimanche	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	ACBD	ACBD	PROPN	_	_	4	appos	_	_	*
+9	organisera	organiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	salle	salle	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	réservé	réserver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+15-16	aux	_	_	_	_	_	_	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	poussins	poussin	NOUN	_	Gender=Masc|Number=Plur	14	obl:arg	_	_	*
+18	salle	salle	NOUN	_	Gender=Fem|Number=Sing	17	appos	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	Sports	sport	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+22-23	du	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	Haut-des-Places	Haut-des-Places	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 2
+# text = Douze équipes répertoriées en deux groupes le disputeront.
+1	Douze	douze	NUM	_	_	2	nummod	_	_	*
+2	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	_	_	*
+3	répertoriées	répertorier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	en	en	ADP	_	_	6	case	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	groupes	groupe	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*
+7	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+8	disputeront	disputer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 3
+# text = Blainville A, Vandœuvre B, Heillecourt A, Charmes, l'UST Lunéville et Houdemont ont été rangés en poule A. Blainville B, Vandœuvre A, Heillecourt B, Glonville-Baccarat, Jarville et Richardménil composeront la poule B.
+1	Blainville	Blainville	PROPN	_	_	19	nsubj:pass	_	_	*
+2	A	A	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	Vandœuvre	Vandœuvre	PROPN	_	_	1	conj	_	_	*
+5	B	B	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Heillecourt	Heillecourt	PROPN	_	_	1	conj	_	_	*
+8	A	a	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	Charmes	charmes	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	UST	UST	PROPN	_	_	1	conj	_	_	*
+14	Lunéville	Lunéville	PROPN	_	_	13	flat:name	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	Houdemont	Houdemont	PROPN	_	_	1	conj	_	_	*
+17	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+18	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	aux:pass	_	_	*
+19	rangés	ranger	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	poule	poule	NOUN	_	Gender=Fem|Number=Sing	19	obl	_	_	*
+22	A.	A.	PROPN	_	_	21	appos	_	_	*
+23	Blainville	Blainville	PROPN	_	_	22	flat:name	_	_	*
+24	B	B	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	Vandœuvre	Vandœuvre	PROPN	_	_	22	conj	_	_	*
+27	A	A	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Heillecourt	Heillecourt	PROPN	_	_	22	conj	_	_	*
+30	B	B	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Glonville-Baccarat	Glonville-Baccarat	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	Jarville	Jarville	PROPN	_	_	22	conj	_	_	*
+35	et	et	CCONJ	_	_	36	cc	_	_	*
+36	Richardménil	Richardménil	PROPN	_	_	22	conj	_	_	*
+37	composeront	composer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	xcomp	_	_	*
+38	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+39	poule	poule	NOUN	_	Gender=Fem|Number=Sing	37	obj	_	_	*
+40	B.	B.	PROPN	_	_	39	appos	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 4
+# text = Horaires et programme des éliminatoires : 13 h, Blainville 1 - Vandœuvre 2 ; 13 h 08, Blainville 2 - Vandœuvre 1 ; 13 h 16, Heillecourt 1 - Charmes ; 13 h 24, Heillecourt 2 - Glonville Bac Az ; 13 h 32, USTL - Houdemont ;
+1	Horaires	horaires	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	programme	programme	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	éliminatoires	éliminatoire	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+7	:	:	PUNCT	_	_	9	punct	_	_	*
+8	13	13	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	Blainville	Blainville	PROPN	_	_	9	conj	_	_	*
+12	1	1	NUM	_	_	11	nmod	_	_	*
+13	-	-	PUNCT	_	_	14	punct	_	_	*
+14	Vandœuvre	Vandœuvre	PROPN	_	_	9	conj	_	_	*
+15	2	2	NUM	_	_	14	nmod	_	_	*
+16	;	;	PUNCT	_	_	18	punct	_	_	*
+17	13	13	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+19	08	08	NUM	_	_	18	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Blainville	Blainville	PROPN	_	_	9	conj	_	_	*
+22	2	2	NUM	_	_	21	nmod	_	_	*
+23	-	-	PUNCT	_	_	24	punct	_	_	*
+24	Vandœuvre	Vandœuvre	PROPN	_	_	9	conj	_	_	*
+25	1	1	NUM	_	_	24	nmod	_	_	*
+26	;	;	PUNCT	_	_	28	punct	_	_	*
+27	13	13	NUM	_	_	28	nummod	_	_	*
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+29	16	16	NUM	_	_	28	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Heillecourt	Heillecourt	PROPN	_	_	9	conj	_	_	*
+32	1	1	NUM	_	_	31	nmod	_	_	*
+33	-	-	PUNCT	_	_	34	punct	_	_	*
+34	Charmes	charmes	PROPN	_	_	9	conj	_	_	*
+35	;	;	PUNCT	_	_	37	punct	_	_	*
+36	13	13	NUM	_	_	37	nummod	_	_	*
+37	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+38	24	24	NUM	_	_	37	nmod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	40	punct	_	_	*
+40	Heillecourt	Heillecourt	PROPN	_	_	9	conj	_	_	*
+41	2	2	NUM	_	_	40	nmod	_	_	*
+42	-	-	PUNCT	_	_	43	punct	_	_	*
+43	Glonville	Glonville	PROPN	_	_	9	conj	_	_	*
+44	Bac	Bac	PROPN	_	_	43	flat:name	_	_	*
+45	Az	Az	PROPN	_	_	43	flat:name	_	_	*
+46	;	;	PUNCT	_	_	48	punct	_	_	*
+47	13	13	NUM	_	_	48	nummod	_	_	*
+48	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+49	32	32	NUM	_	_	48	nmod	_	SpaceAfter=No	*
+50	,	,	PUNCT	_	_	51	punct	_	_	*
+51	USTL	USTL	PROPN	_	_	9	conj	_	_	*
+52	-	-	PUNCT	_	_	53	punct	_	_	*
+53	Houdemont	Houdemont	PROPN	_	_	9	conj	_	_	*
+54	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 5
+# text = 13 h 40, Jarville - Richardménil ;
+1	13	13	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	40	40	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Jarville	Jarville	PROPN	_	_	0	root	_	_	*
+6	-	-	PUNCT	_	_	7	punct	_	_	*
+7	Richardménil	Richardménil	PROPN	_	_	5	flat:name	_	_	*
+8	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 6
+# text = 13 h 48, Blainville 1 - Charmes ; 13 h 56, Blainville 2 - Glonville Bac Az ; 14 h 01, Vandœuvre 2 - USTL ; 14 h 12, Vandœuvre 1 - Jarville ;
+1	13	13	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	48	48	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Blainville	Blainville	PROPN	_	_	0	root	_	_	*
+6	1	1	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Charmes	charmes	PROPN	_	_	5	flat:name	_	_	*
+9	;	;	PUNCT	_	_	11	punct	_	_	*
+10	13	13	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+12	56	56	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Blainville	Blainville	PROPN	_	_	5	conj	_	_	*
+15	2	2	NUM	_	_	14	nmod	_	_	*
+16	-	-	PUNCT	_	_	17	punct	_	_	*
+17	Glonville	Glonville	PROPN	_	_	5	conj	_	_	*
+18	Bac	Bac	PROPN	_	_	17	flat:name	_	_	*
+19	Az	Az	PROPN	_	_	17	flat:name	_	_	*
+20	;	;	PUNCT	_	_	22	punct	_	_	*
+21	14	14	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+23	01	01	NUM	_	_	22	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+26	2	2	NUM	_	_	25	nmod	_	_	*
+27	-	-	PUNCT	_	_	28	punct	_	_	*
+28	USTL	USTL	PROPN	_	_	5	conj	_	_	*
+29	;	;	PUNCT	_	_	30	punct	_	_	*
+30	14	14	NUM	_	_	5	conj	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+32	12	12	NUM	_	_	31	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+35	1	1	NUM	_	_	34	nmod	_	_	*
+36	-	-	PUNCT	_	_	37	punct	_	_	*
+37	Jarville	Jarville	PROPN	_	_	34	flat:name	_	_	*
+38	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 7
+# text = 14 H 20, Heillecourt 1 - Houdemont ;
+1	14	14	NUM	_	_	2	nummod	_	_	*
+2	H	heure	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	20	20	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Heillecourt	Heillecourt	PROPN	_	_	2	appos	_	_	*
+6	1	1	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Houdemont	Houdemont	PROPN	_	_	5	flat:name	_	_	*
+9	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 8
+# text = 14 h 28, Heillecourt 2 - Richardménil ;
+1	14	14	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	28	28	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Heillecourt	Heillecourt	PROPN	_	_	0	root	_	_	*
+6	2	2	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Richardménil	Richardménil	PROPN	_	_	5	flat:name	_	_	*
+9	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 9
+# text = 14 h 36, Blainville 1 - Heillecourt 1 ; 14 h 44, Blainville 2 - Heillecourt 2 ; 14 h 52, Charmes - USTL ; 15 h, Glonville Bac Az - Jarville ;
+1	14	14	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	36	36	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Blainville	Blainville	PROPN	_	_	0	root	_	_	*
+6	1	1	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Heillecourt	Heillecourt	PROPN	_	_	5	flat:name	_	_	*
+9	1	1	NUM	_	_	5	nmod	_	_	*
+10	;	;	PUNCT	_	_	12	punct	_	_	*
+11	14	14	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+13	44	44	NUM	_	_	12	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	Blainville	Blainville	PROPN	_	_	5	conj	_	_	*
+16	2	2	NUM	_	_	15	nmod	_	_	*
+17	-	-	PUNCT	_	_	18	punct	_	_	*
+18	Heillecourt	Heillecourt	PROPN	_	_	5	conj	_	_	*
+19	2	2	NUM	_	_	18	nmod	_	_	*
+20	;	;	PUNCT	_	_	22	punct	_	_	*
+21	14	14	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+23	52	52	NUM	_	_	22	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Charmes	charmes	PROPN	_	_	5	conj	_	_	*
+26	-	-	PUNCT	_	_	27	punct	_	_	*
+27	USTL	USTL	PROPN	_	_	5	conj	_	_	*
+28	;	;	PUNCT	_	_	30	punct	_	_	*
+29	15	15	NUM	_	_	30	nummod	_	_	*
+30	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Glonville	Glonville	PROPN	_	_	5	conj	_	_	*
+33	Bac	Bac	PROPN	_	_	32	flat:name	_	_	*
+34	Az	Az	PROPN	_	_	32	flat:name	_	_	*
+35	-	-	PUNCT	_	_	36	punct	_	_	*
+36	Jarville	Jarville	PROPN	_	_	5	conj	_	_	*
+37	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 10
+# text = 15 h 08, Vandœuvre 2 - Houdemont ; 15 h 16, Vandœuvre 1 - Richardménil ;
+1	15	15	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	08	08	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Vandœuvre	Vandœuvre	PROPN	_	_	0	root	_	_	*
+6	2	2	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Houdemont	Houdemont	PROPN	_	_	5	nmod	_	_	*
+9	;	;	PUNCT	_	_	11	punct	_	_	*
+10	15	15	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+12	16	16	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+15	1	1	NUM	_	_	14	nmod	_	_	*
+16	-	-	PUNCT	_	_	17	punct	_	_	*
+17	Richardménil	Richardménil	PROPN	_	_	14	flat:name	_	_	*
+18	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 11
+# text = 15 h 24, Blainville 1 - USTL ; 15 h 32, Blainville 2 - Jarville ; 15 h 40, Houdemont - Charmes ;
+1	15	15	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	24	24	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Blainville	Blainville	PROPN	_	_	0	root	_	_	*
+6	1	1	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	USTL	USTL	PROPN	_	_	5	flat:name	_	_	*
+9	;	;	PUNCT	_	_	5	punct	_	_	*
+10	15	15	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+12	32	32	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Blainville	Blainville	PROPN	_	_	5	conj	_	_	*
+15	2	2	NUM	_	_	14	nmod	_	_	*
+16	-	-	PUNCT	_	_	17	punct	_	_	*
+17	Jarville	Jarville	PROPN	_	_	5	conj	_	_	*
+18	;	;	PUNCT	_	_	20	punct	_	_	*
+19	15	15	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+21	40	40	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Houdemont	Houdemont	PROPN	_	_	5	conj	_	_	*
+24	-	-	PUNCT	_	_	25	punct	_	_	*
+25	Charmes	charmes	PROPN	_	_	5	conj	_	_	*
+26	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 12
+# text = 15 h 48, Richardménil - Glonville Bac Az ; 15 h 56, Vandœuvre 2 - Heillecourt 1 ; 16 h 04, Vandœuvre 1 - Heillecourt 2 ; 16 h 12, Blainville 1 - Houdemont ;
+1	15	15	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	48	48	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Richardménil	Richardménil	PROPN	_	_	0	root	_	_	*
+6	-	-	PUNCT	_	_	7	punct	_	_	*
+7	Glonville	Glonville	PROPN	_	_	5	flat:name	_	_	*
+8	Bac	Bac	PROPN	_	_	5	flat:name	_	_	*
+9	Az	Az	PROPN	_	_	5	flat:name	_	_	*
+10	;	;	PUNCT	_	_	5	punct	_	_	*
+11	15	15	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+13	56	56	NUM	_	_	12	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+16	2	2	NUM	_	_	15	nmod	_	_	*
+17	-	-	PUNCT	_	_	18	punct	_	_	*
+18	Heillecourt	Heillecourt	PROPN	_	_	5	conj	_	_	*
+19	1	1	NUM	_	_	18	nmod	_	_	*
+20	;	;	PUNCT	_	_	22	punct	_	_	*
+21	16	16	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+23	04	04	NUM	_	_	22	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+26	1	1	NUM	_	_	25	nmod	_	_	*
+27	-	-	PUNCT	_	_	28	punct	_	_	*
+28	Heillecourt	Heillecourt	PROPN	_	_	5	conj	_	_	*
+29	2	2	NUM	_	_	28	nmod	_	_	*
+30	;	;	PUNCT	_	_	32	punct	_	_	*
+31	16	16	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+33	12	12	NUM	_	_	32	nmod	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	35	punct	_	_	*
+35	Blainville	Blainville	PROPN	_	_	5	conj	_	_	*
+36	1	1	NUM	_	_	35	nmod	_	_	*
+37	-	-	PUNCT	_	_	38	punct	_	_	*
+38	Houdemont	Houdemont	PROPN	_	_	5	conj	_	_	*
+39	;	;	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 13
+# text = 16 h 20, Blainville 2 - Richardménil ; 16 h 28, Vandœuvre 2 - Charmes ; 16 h 36, Vandœuvre 1 - Glonville Bac Az ; 16 h 44, Heillecourt 1 - USTL ; 16 h 52, Heillecourt 2 - Jarville.
+1	16	16	NUM	_	_	2	nummod	_	_	*
+2	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+3	20	20	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Blainville	Blainville	PROPN	_	_	0	root	_	_	*
+6	2	2	NUM	_	_	5	nmod	_	_	*
+7	-	-	PUNCT	_	_	8	punct	_	_	*
+8	Richardménil	Richardménil	PROPN	_	_	5	flat:name	_	_	*
+9	;	;	PUNCT	_	_	11	punct	_	_	*
+10	16	16	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+12	28	28	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+15	2	2	NUM	_	_	14	nmod	_	_	*
+16	-	-	PUNCT	_	_	17	punct	_	_	*
+17	Charmes	charmes	PROPN	_	_	5	conj	_	_	*
+18	;	;	PUNCT	_	_	20	punct	_	_	*
+19	16	16	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+21	36	36	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Vandœuvre	Vandœuvre	PROPN	_	_	5	conj	_	_	*
+24	1	1	NUM	_	_	23	nmod	_	_	*
+25	-	-	PUNCT	_	_	26	punct	_	_	*
+26	Glonville	Glonville	PROPN	_	_	5	conj	_	_	*
+27	Bac	Bac	PROPN	_	_	26	flat:name	_	_	*
+28	Az	Az	PROPN	_	_	26	flat:name	_	_	*
+29	;	;	PUNCT	_	_	31	punct	_	_	*
+30	16	16	NUM	_	_	31	nummod	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+32	44	44	NUM	_	_	31	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	Heillecourt	Heillecourt	PROPN	_	_	5	conj	_	_	*
+35	1	1	NUM	_	_	34	nmod	_	_	*
+36	-	-	PUNCT	_	_	37	punct	_	_	*
+37	USTL	USTL	PROPN	_	_	5	conj	_	_	*
+38	;	;	PUNCT	_	_	40	punct	_	_	*
+39	16	16	NUM	_	_	40	nummod	_	_	*
+40	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+41	52	52	NUM	_	_	40	nmod	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	43	punct	_	_	*
+43	Heillecourt	Heillecourt	PROPN	_	_	5	conj	_	_	*
+44	2	2	NUM	_	_	43	nmod	_	_	*
+45	-	-	PUNCT	_	_	46	punct	_	_	*
+46	Jarville	Jarville	PROPN	_	_	5	conj	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 14
+# text = Demi-finales à 17 heures et à 17 h 11.
+1	Demi-finales	demi-finale	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	17	17	NUM	_	_	4	nummod	_	_	*
+4	heures	heure	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+5	et	et	CCONJ	_	_	8	cc	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	17	17	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+9	11	11	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 15
+# text = Match pour la 11ème place à 17 h 22 ;
+1	Match	match	PROPN	_	_	0	root	_	_	*
+2	pour	pour	ADP	_	_	5	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	11ème	11ème	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	place	place	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	17	17	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+9	22	22	NUM	_	_	1	nmod	_	_	*
+10	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 16
+# text = pour la 9ème à 17 h 31 ; pour la 7ème à 17 h 40 ; pour la 5ème à 17 h 46 ; pour la 3ème à 17 h 58.
+1	pour	pour	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	9ème	9ème	X	_	_	0	root	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	17	17	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	31	31	NUM	_	_	6	nummod	_	_	*
+8	;	;	PUNCT	_	_	3	punct	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	7ème	7ème	X	_	_	3	nmod	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	17	17	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	40	40	NUM	_	_	11	nmod	_	_	*
+16	;	;	PUNCT	_	_	19	punct	_	_	*
+17	pour	pour	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	5ème	5ème	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	17	17	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	46	46	NUM	_	_	22	nmod	_	_	*
+24	;	;	PUNCT	_	_	27	punct	_	_	*
+25	pour	pour	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	3ème	3ème	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	17	17	NUM	_	_	30	nummod	_	_	*
+30	h	heure	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*
+31	58	58	NUM	_	_	30	nummod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-03_1423.txt 17
+# text = Finale de 10 minutes à 18 h 09, suivie de la remise des récompenses.
+1	Finale	finale	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	10	10	NUM	_	_	4	nummod	_	_	*
+4	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	18	18	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	09	09	NUM	_	_	7	nummod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	suivie	suivre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	remise	remise	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	récompenses	récompense	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

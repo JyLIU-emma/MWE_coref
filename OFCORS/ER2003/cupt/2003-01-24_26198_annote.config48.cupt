@@ -1,0 +1,430 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-24_26198.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 1
+# text = Passage par l'escadron 2/3 « Champagne » « Je voudrais vous dire tout le plaisir qui est le mien de vous recevoir sur cette base prestigieuse.
+1	Passage	Passage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	par	par	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	escadron	escadron	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+6	/	/	SYM	_	_	7	cc	_	SpaceAfter=No	*
+7	3	3	NUM	_	_	5	conj	_	_	*
+8	«	«	PUNCT	_	_	9	punct	_	_	*
+9	Champagne	Champagne	PROPN	_	_	1	appos	_	_	*
+10	»	»	PUNCT	_	_	9	punct	_	SpacesAfter=\n	*
+11	«	«	PUNCT	_	_	13	punct	_	_	*
+12	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_	*
+13	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	1:VID
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*
+15	dire	dire	VERB	_	VerbForm=Inf	13	xcomp	_	_	1
+16	tout	tout	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	plaisir	plaisir	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	mien	mien	NOUN	_	Gender=Masc|Number=Sing	18	acl:relcl	_	_	*
+23	de	de	ADP	_	_	25	mark	_	_	*
+24	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	25	obj	_	_	*
+25	recevoir	recevoir	VERB	_	VerbForm=Inf	22	acl	_	_	*
+26	sur	sur	ADP	_	_	28	case	_	_	*
+27	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	_	_	*
+28	base	base	NOUN	_	Gender=Fem|Number=Sing	25	obl	_	_	*
+29	prestigieuse	prestigieux	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 2
+# text = » Le colonel Metz a accueilli hier sur la base aérienne Henry-Jeandet 135 maires et élus issus des communes environnantes.
+1	»	»	PUNCT	_	_	6	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	colonel	colonel	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+4	Metz	Metz	PROPN	_	_	3	appos	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	accueilli	accueillir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	hier	hier	ADV	_	_	6	advmod	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	base	base	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+11	aérienne	aérien	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	Henry-Jeandet	Henry-Jeandet	PROPN	_	_	10	appos	_	_	*
+13	135	135	NUM	_	_	14	nummod	_	_	*
+14	maires	maire	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	élus	élu	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+17	issus	issu	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	communes	commune	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+21	environnantes	environnant	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 3
+# text = « J'ai souhaité établir un contact plus direct avec vous dans le but de renforcer le lien Armée-Nation.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	établir	établir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	contact	contact	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	plus	plus	ADV	_	_	9	advmod	_	_	*
+9	direct	direct	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+10	avec	avec	ADP	_	_	11	case	_	_	*
+11	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obl:mod	_	_	*
+12	dans	dans	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	but	but	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+15	de	de	ADP	_	_	16	mark	_	_	*
+16	renforcer	renforcer	VERB	_	VerbForm=Inf	14	acl	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	lien	lien	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*
+19	Armée-Nation	Armée-Nation	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 4
+# text = J'ai la crainte en effet que nos concitoyens pensent que la Défense est uniquement l'affaire de spécialistes.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	crainte	crainte	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	en	en	ADP	_	_	2	advmod	_	_	*
+6	effet	effet	NOUN	_	Gender=Masc|Number=Sing	5	fixed	_	_	*
+7	que	que	SCONJ	_	_	10	mark	_	_	*
+8	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	concitoyens	concitoyen	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+10	pensent	penser	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+11	que	que	SCONJ	_	_	17	mark	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Défense	défense	PROPN	_	_	17	nsubj	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+15	uniquement	uniquement	ADV	_	_	17	advmod	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	10	ccomp	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	spécialistes	spécialiste	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 5
+# text = C'est en réalité l'affaire de tous.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	tous	tout	PRON	_	Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 6
+# text = J'espère trouver auprès de vous des relais pour sensibiliser la population aux questions de Défense.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No	*
+2	espère	espérer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	trouver	trouver	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	auprès	auprès	ADV	_	_	3	advmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	obl:arg	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	relais	relais	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	sensibiliser	sensibiliser	VERB	_	VerbForm=Inf	9	acl	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	population	population	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14-15	aux	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	questions	question	NOUN	_	Gender=Fem|Number=Plur	11	obl:mod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Défense	défense	PROPN	_	_	16	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 7
+# text = » Le commandant de la BA 133, après quelques mots d'accueil, a présenté la base et expliquer ses missions nombreuses et variées.
+1	»	»	PUNCT	_	_	16	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	commandant	commandant	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	BA	BA	PROPN	_	_	3	nmod	_	_	*
+7	133	133	NUM	_	_	6	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	après	après	ADP	_	_	11	case	_	_	*
+10	quelques	quelque	DET	_	Gender=Masc|Number=Plur	11	det	_	_	*
+11	mots	mot	NOUN	_	Gender=Masc|Number=Plur	16	obl:mod	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	11	punct	_	_	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	base	base	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*
+20	expliquer	expliquer	VERB	_	VerbForm=Inf	16	conj	_	_	*
+21	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	missions	mission	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*
+23	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	22	amod	_	_	*
+24	et	et	CCONJ	_	_	25	cc	_	_	*
+25	variées	varié	ADJ	_	Gender=Fem|Number=Plur	23	conj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 8
+# text = Insistant sur ses qualités de flexibilité, réactivité, et modularité.
+1	Insistant	Insister	VERB	_	Tense=Pres|VerbForm=Part	0	root	_	_	*
+2	sur	sur	ADP	_	_	4	case	_	_	*
+3	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	qualités	qualité	NOUN	_	Gender=Fem|Number=Plur	1	obl	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	flexibilité	flexibilité	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	réactivité	réactivité	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	modularité	modularité	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 9
+# text = « Vue la situation internationale, le Président de la République nous a demandé de nous tenir prêts.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Vue	vue	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	advcl	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	situation	situation	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	internationale	international	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	Président	Président	PROPN	_	_	14	nsubj	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	République	république	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	14	iobj	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+15	de	de	ADP	_	_	17	mark	_	_	*
+16	nous	le	PRON	_	Number=Plur|Person=1|PronType=Prs	17	iobj	_	_	*
+17	tenir	tenir	VERB	_	VerbForm=Inf	14	xcomp	_	_	*
+18	prêts	prêt	NOUN	_	Gender=Masc|Number=Plur	17	obj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 10
+# text = Nous tenir prêts pour nous, c'est notre quotidien.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	tenir	tenir	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	prêts	prêt	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+4	pour	pour	ADP	_	_	5	case	_	_	*
+5	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	2	obl	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	10	punct	_	_	*
+7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+9	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	quotidien	quotidien	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 11
+# text = Notre dispositif est adapté à la situation à laquelle nous avons à faire.
+1	Notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	dispositif	dispositif	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	adapté	adapter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	situation	situation	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	11	obl:mod	_	_	*
+10	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	_	*
+11	avons	avoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+12	à	à	ADP	_	_	13	mark	_	_	*
+13	faire	faire	VERB	_	VerbForm=Inf	11	ccomp	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 12
+# text = » Les invités ont appris que la base, dotée de 60 Mirage 2000 D, fonctionne avec un budget de 60 millions d'euros (dont 42 millions destinés à la masse salariale), et compte une population de 2.000 personnes dont 1.300 sous-officiers, 250 officiers, et 400 militaires du rang.
+1	»	»	PUNCT	_	_	5	punct	_	_	*
+2	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	invités	invité	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	appris	apprendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	que	que	SCONJ	_	_	17	mark	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	base	base	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	dotée	doter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	60	60	NUM	_	_	13	nummod	_	_	*
+13	Mirage	Mirage	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+14	2000	2000	NUM	_	_	13	nmod	_	_	*
+15	D	D	X	_	_	13	appos	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	8	punct	_	_	*
+17	fonctionne	fonctionner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+18	avec	avec	ADP	_	_	20	case	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	budget	budget	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	60	60	NUM	_	_	23	nummod	_	_	*
+23	millions	million	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	euros	euro	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+26	(	(	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+27	dont	dont	PRON	_	PronType=Rel	29	nmod	_	_	*
+28	42	42	NUM	_	_	29	nummod	_	_	*
+29	millions	million	NOUN	_	Gender=Masc|Number=Plur	20	appos	_	_	*
+30	destinés	destiner	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	29	acl	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	masse	masse	NOUN	_	Gender=Fem|Number=Sing	30	obl:arg	_	_	*
+34	salariale	salarial	ADJ	_	Gender=Fem|Number=Sing	33	amod	_	SpaceAfter=No	*
+35	)	)	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	38	punct	_	_	*
+37	et	et	CCONJ	_	_	38	cc	_	_	*
+38	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+39	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	population	population	NOUN	_	Gender=Fem|Number=Sing	38	obj	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	2.000	2.000	NUM	_	_	43	nummod	_	_	*
+43	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	40	nmod	_	_	*
+44	dont	dont	PRON	_	PronType=Rel	46	nmod	_	_	*
+45	1.300	1.300	NUM	_	_	46	nummod	_	_	*
+46	sous-officiers	sous-officier	NOUN	_	Gender=Masc|Number=Plur	40	appos	_	SpaceAfter=No	*
+47	,	,	PUNCT	_	_	49	punct	_	_	*
+48	250	250	NUM	_	_	49	nummod	_	_	*
+49	officiers	officier	NOUN	_	Gender=Masc|Number=Plur	46	conj	_	SpaceAfter=No	*
+50	,	,	PUNCT	_	_	53	punct	_	_	*
+51	et	et	CCONJ	_	_	53	cc	_	_	*
+52	400	400	NUM	_	_	53	nummod	_	_	*
+53	militaires	militaire	NOUN	_	Gender=Masc|Number=Plur	46	conj	_	_	*
+54-55	du	_	_	_	_	_	_	_	_	*
+54	de	de	ADP	_	_	56	case	_	_	*
+55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_	*
+56	rang	rang	NOUN	_	Gender=Masc|Number=Sing	53	nmod	_	SpaceAfter=No	*
+57	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 13
+# text = Le colonel Metz a évoqué les chantiers de l'année 2003 : l'entraînement des jeunes, l'arrivée des missiles SCALP, les réserves « qu'il nous faut réinventer pour attirer les jeunes, la reconversion des personnels... » Après les explications, les élus, répartis en groupe ont pu visiter le simulateur de vol, la tour de contrôle et le service météorologique, les escadrons de soutien technique spécialisé, de chasse 03.0003 « Ardennes », de défense sol-air, assister à des collages...
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	colonel	colonel	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	Metz	Metz	PROPN	_	_	2	appos	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	évoqué	évoquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	chantiers	chantier	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	année	année	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	2003	2003	NUM	_	_	10	nmod	_	_	*
+12	:	:	PUNCT	_	_	14	punct	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	57	nsubj	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	missiles	missile	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+24	SCALP	SCALP	X	_	_	23	appos	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_	*
+27	réserves	réserve	NOUN	_	Gender=Fem|Number=Plur	14	conj	_	_	*
+28	«	«	PUNCT	_	_	32	punct	_	_	*
+29	qu'	que	PRON	_	PronType=Rel	32	obj	_	SpaceAfter=No	*
+30	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	expl:subj	_	_	1:VID
+31	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	32	iobj	_	_	*
+32	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_	1
+33	réinventer	réinventer	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+34	pour	pour	ADP	_	_	35	mark	_	_	*
+35	attirer	attirer	VERB	_	VerbForm=Inf	33	advcl	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	35	obj	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	40	punct	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	reconversion	reconversion	NOUN	_	Gender=Fem|Number=Sing	37	conj	_	_	*
+41-42	des	_	_	_	_	_	_	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	43	det	_	_	*
+43	personnels	personnel	NOUN	_	Gender=Masc|Number=Plur	40	nmod	_	SpaceAfter=No	*
+44	...	...	PUNCT	_	_	48	punct	_	_	*
+45	»	»	PUNCT	_	_	48	punct	_	_	*
+46	Après	après	ADP	_	_	48	case	_	_	*
+47	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	_	_	*
+48	explications	explication	NOUN	_	Gender=Fem|Number=Plur	33	obj	_	SpaceAfter=No	*
+49	,	,	PUNCT	_	_	51	punct	_	_	*
+50	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	_	_	*
+51	élus	élu	NOUN	_	Gender=Masc|Number=Plur	48	conj	_	SpaceAfter=No	*
+52	,	,	PUNCT	_	_	53	punct	_	_	*
+53	répartis	répartir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	48	acl	_	_	*
+54	en	en	ADP	_	_	55	case	_	_	*
+55	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	53	obl	_	_	*
+56	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	57	aux:tense	_	_	*
+57	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	parataxis	_	_	*
+58	visiter	visiter	VERB	_	VerbForm=Inf	57	xcomp	_	_	*
+59	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_	*
+60	simulateur	simulateur	NOUN	_	Gender=Masc|Number=Sing	58	obj	_	_	*
+61	de	de	ADP	_	_	62	case	_	_	*
+62	vol	vol	NOUN	_	Gender=Masc|Number=Sing	60	nmod	_	SpaceAfter=No	*
+63	,	,	PUNCT	_	_	65	punct	_	_	*
+64	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_	*
+65	tour	tour	NOUN	_	Gender=Fem|Number=Sing	57	obl	_	_	*
+66	de	de	ADP	_	_	67	case	_	_	*
+67	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	65	nmod	_	_	*
+68	et	et	CCONJ	_	_	70	cc	_	_	*
+69	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	70	det	_	_	*
+70	service	service	NOUN	_	Gender=Masc|Number=Sing	65	conj	_	_	*
+71	météorologique	météorologique	ADJ	_	Gender=Masc|Number=Sing	70	amod	_	SpaceAfter=No	*
+72	,	,	PUNCT	_	_	74	punct	_	_	*
+73	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	74	det	_	_	*
+74	escadrons	escadron	NOUN	_	Gender=Masc|Number=Plur	65	conj	_	_	*
+75	de	de	ADP	_	_	76	case	_	_	*
+76	soutien	soutien	NOUN	_	Gender=Masc|Number=Sing	74	nmod	_	_	*
+77	technique	technique	ADJ	_	Gender=Masc|Number=Sing	76	amod	_	_	*
+78	spécialisé	spécialisé	ADJ	_	Gender=Masc|Number=Sing	76	amod	_	SpaceAfter=No	*
+79	,	,	PUNCT	_	_	81	punct	_	_	*
+80	de	de	ADP	_	_	81	case	_	_	*
+81	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	76	conj	_	_	*
+82	03.0003	03.0003	NUM	_	_	81	nmod	_	_	*
+83	«	«	PUNCT	_	_	84	punct	_	_	*
+84	Ardennes	Ardennes	PROPN	_	_	82	appos	_	_	*
+85	»	»	PUNCT	_	_	84	punct	_	SpaceAfter=No	*
+86	,	,	PUNCT	_	_	88	punct	_	_	*
+87	de	de	ADP	_	_	88	case	_	_	*
+88	défense	défense	NOUN	_	Gender=Fem|Number=Sing	65	conj	_	_	*
+89	sol-air	sol-air	NOUN	_	Gender=Masc|Number=Sing	88	nmod	_	SpaceAfter=No	*
+90	,	,	PUNCT	_	_	91	punct	_	_	*
+91	assister	assister	VERB	_	VerbForm=Inf	65	conj	_	_	*
+92	à	à	ADP	_	_	95	case	_	_	*
+93-94	des	_	_	_	_	_	_	_	_	*
+93	de	de	ADP	_	_	95	case	_	_	*
+94	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	95	det	_	_	*
+95	collages	collage	NOUN	_	Gender=Masc|Number=Plur	91	obl:arg	_	SpaceAfter=No	*
+96	...	...	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_26198.txt 14
+# text = Une journée instructive entrecoupée par un dîner au mess des officiers qui s'est terminée à 23 h.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	journée	journée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	instructive	instructif	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	entrecoupée	entrecouper	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	dîner	dîner	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	mess	mess	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	officiers	officier	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+15	s'	se	PRON	_	Person=3|PronType=Prs	17	expl:comp	_	SpaceAfter=No	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	terminée	terminer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	23	23	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+

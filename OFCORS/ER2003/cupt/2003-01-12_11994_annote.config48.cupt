@@ -1,0 +1,791 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-12_11994.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 1
+# text = Un pas vers la simplification Jean-Luc Chevry : « Possible de faire plus simple ».
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	pas	pas	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	vers	vers	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	simplification	simplification	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpacesAfter=\n	*
+6	Jean-Luc	Jean-Luc	PROPN	_	_	5	appos	_	_	*
+7	Chevry	Chevry	PROPN	_	_	6	flat:name	_	_	*
+8	:	:	PUNCT	_	_	10	punct	_	_	*
+9	«	«	PUNCT	_	_	10	punct	_	_	*
+10	Possible	possible	ADJ	_	Gender=Masc|Number=Sing	6	parataxis	_	_	*
+11	de	de	ADP	_	_	12	mark	_	_	*
+12	faire	faire	VERB	_	VerbForm=Inf	10	acl	_	_	*
+13	plus	plus	ADV	_	_	14	advmod	_	_	*
+14	simple	simple	ADJ	_	Gender=Masc|Number=Sing	12	xcomp	_	_	*
+15	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 2
+# text = Les propositions concrètes pour les simplifications des bulletins de paie et des déclarations sociales, mises sur pied en Lorraine par les fédérations patronales MEDEF, CGPME, UNAPL, FFB et experts-comptables de France, avec l'appui des députés, seront présentées à Paris au secrétaire d'Etat aux PME, au Commerce et à l'Artisanat, Renaud Dutreil, mardi 14 janvier.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	47	nsubj:pass	_	_	*
+3	concrètes	concret	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	simplifications	simplification	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	paie	paie	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	et	et	CCONJ	_	_	15	cc	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	11	conj	_	_	*
+16	sociales	social	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	mises	mettre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	1:VID
+19	sur	sur	ADP	_	_	20	case	_	_	1
+20	pied	pied	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	1
+21	en	en	ADP	_	_	22	case	_	_	*
+22	Lorraine	Lorraine	PROPN	_	_	18	obl	_	_	*
+23	par	par	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	fédérations	fédération	NOUN	_	Gender=Fem|Number=Plur	18	obl:agent	_	_	*
+26	patronales	patronal	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*
+27	MEDEF	MEDEF	PROPN	_	_	25	appos	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	CGPME	CGPME	PROPN	_	_	27	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	UNAPL	UNAPL	PROPN	_	_	27	conj	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	33	punct	_	_	*
+33	FFB	FFB	PROPN	_	_	27	conj	_	_	*
+34	et	et	CCONJ	_	_	35	cc	_	_	*
+35	experts-comptables	experts-comptable	ADJ	_	Gender=Masc|Number=Plur	27	conj	_	_	*
+36	de	de	ADP	_	_	37	case	_	_	*
+37	France	France	PROPN	_	_	35	nmod	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	41	punct	_	_	*
+39	avec	avec	ADP	_	_	41	case	_	_	*
+40	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	SpaceAfter=No	*
+41	appui	appui	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+42-43	des	_	_	_	_	_	_	_	_	*
+42	de	de	ADP	_	_	44	case	_	_	*
+43	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_	*
+44	députés	député	NOUN	_	Gender=Masc|Number=Plur	41	nmod	_	SpaceAfter=No	*
+45	,	,	PUNCT	_	_	41	punct	_	_	*
+46	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	47	aux:pass	_	_	*
+47	présentées	présenter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+48	à	à	ADP	_	_	49	case	_	_	*
+49	Paris	Paris	PROPN	_	_	47	obl:mod	_	_	*
+50-51	au	_	_	_	_	_	_	_	_	*
+50	à	à	ADP	_	_	52	case	_	_	*
+51	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_	*
+52	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	47	obl:mod	_	_	*
+53	d'	de	ADP	_	_	54	case	_	SpaceAfter=No	*
+54	Etat	Etat	PROPN	_	_	52	nmod	_	_	*
+55-56	aux	_	_	_	_	_	_	_	_	*
+55	à	à	ADP	_	_	57	case	_	_	*
+56	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	57	det	_	_	*
+57	PME	PME	PROPN	_	_	52	nmod	_	SpaceAfter=No	*
+58	,	,	PUNCT	_	_	61	punct	_	_	*
+59-60	au	_	_	_	_	_	_	_	_	*
+59	à	à	ADP	_	_	61	case	_	_	*
+60	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_	*
+61	Commerce	commerce	PROPN	_	_	52	conj	_	_	*
+62	et	et	CCONJ	_	_	65	cc	_	_	*
+63	à	à	ADP	_	_	65	case	_	_	*
+64	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	det	_	SpaceAfter=No	*
+65	Artisanat	artisanat	NOUN	_	Gender=Masc|Number=Sing	52	conj	_	SpaceAfter=No	*
+66	,	,	PUNCT	_	_	67	punct	_	_	*
+67	Renaud	Renaud	PROPN	_	_	52	conj	_	_	*
+68	Dutreil	Dutreil	PROPN	_	_	67	flat:name	_	SpaceAfter=No	*
+69	,	,	PUNCT	_	_	70	punct	_	_	*
+70	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	52	nmod	_	_	*
+71	14	14	NUM	_	_	70	nmod	_	_	*
+72	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	71	nmod	_	SpaceAfter=No	*
+73	.	.	PUNCT	_	_	47	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 3
+# text = Explications de Jean-Luc Chevry, président régional des experts-comptables de France.
+1	Explications	explication	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	Jean-Luc	Jean-Luc	PROPN	_	_	1	nmod	_	_	*
+4	Chevry	Chevry	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	président	président	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_	*
+7	régional	régional	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	experts-comptables	experts-comptable	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	France	France	PROPN	_	_	10	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 4
+# text = - Prenons l'exemple des feuilles de paie.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Prenons	prendre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	feuilles	feuille	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	paie	paie	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 5
+# text = Quelles sont vos propositions pour arriver à des bulletins plus lisibles ? - Notre groupe propose des simplifications basiques, faciles à mettre en œuvre.
+1	Quelles	quel	PRON	_	Gender=Fem|Number=Plur	4	nsubj	_	_	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	vos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+5	pour	pour	ADP	_	_	6	mark	_	_	*
+6	arriver	arriver	VERB	_	VerbForm=Inf	4	acl	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*
+11	plus	plus	ADV	_	_	12	advmod	_	_	*
+12	lisibles	lisible	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+13	?	?	PUNCT	_	_	17	punct	_	_	*
+14	-	-	PUNCT	_	_	17	punct	_	_	*
+15	Notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+17	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	simplifications	simplification	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+21	basiques	basique	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	faciles	facile	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_	*
+24	à	à	ADP	_	_	25	mark	_	_	*
+25	mettre	mettre	VERB	_	VerbForm=Inf	23	xcomp	_	_	1:VID
+26	en	en	ADP	_	_	27	case	_	_	1
+27	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	25	obl	_	SpaceAfter=No	1
+28	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 6
+# text = Pour alléger la présentation de la feuille de paie, nous suggérons une réduction du nombre des bases.
+1	Pour	pour	ADP	_	_	2	mark	_	_	*
+2	alléger	alléger	VERB	_	VerbForm=Inf	12	advcl	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	feuille	feuille	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	paie	paie	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	2	punct	_	_	*
+11	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_	*
+12	suggérons	suggérer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	réduction	réduction	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	bases	base	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 7
+# text = Actuellement, il existe quatre bases différentes auxquelles viennent s'ajouter des bases supplémentaires correspondant à chaque mesure législative nouvelle, comme la CSG par exemple.
+1	Actuellement	actuellement	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	*
+4	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	quatre	quatre	NUM	_	_	6	nummod	_	_	*
+6	bases	base	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+7	différentes	différent	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_	*
+8-9	auxquelles	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	lesquelles	lequel	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	10	obl:arg	_	_	*
+10	viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*
+11	s'	se	PRON	_	Person=3|PronType=Prs	12	expl:comp	_	SpaceAfter=No	*
+12	ajouter	ajouter	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	bases	base	NOUN	_	Gender=Fem|Number=Plur	12	obl:arg	_	_	*
+16	supplémentaires	supplémentaire	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*
+17	correspondant	correspondre	VERB	_	Tense=Pres|VerbForm=Part	15	acl	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	chaque	chaque	DET	_	Gender=Fem|Number=Sing	20	det	_	_	*
+20	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*
+21	législative	législatif	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+22	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24	comme	comme	ADP	_	_	26	case	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	CSG	CSG	PROPN	_	_	15	nmod	_	_	*
+27	par	par	ADP	_	_	26	advmod	_	_	*
+28	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	27	fixed	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 8
+# text = Nos députés furent les artisans de la complexité.
+1	Nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	députés	député	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	furent	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	artisans	artisan	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	complexité	complexité	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 9
+# text = Il s'agit de réduire le nombre de bases, à égalité de ressources pour les organismes sociaux.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1
+3	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	réduire	réduire	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	bases	base	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	ressources	ressource	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+15	pour	pour	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	organismes	organisme	NOUN	_	Gender=Masc|Number=Plur	5	obl	_	_	*
+18	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 10
+# text = Le bulletin de salaire comporte le salaire brut et tout le détail des cotisations prélevées, part salariale et part patronale.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	bulletin	bulletin	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	comporte	comporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	brut	brut	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*
+10	tout	tout	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	détail	détail	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+16	prélevées	prélevé	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	15	acl	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	part	part	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+19	salariale	salarial	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	part	part	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+22	patronale	patronal	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 11
+# text = Personne ne lit cela.
+1	Personne	personne	PRON	_	Number=Sing|PronType=Neg	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	lit	lire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	cela	cela	PRON	_	Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 12
+# text = Nous proposons de supprimer la colonne des cotisations patronales et de la remplacer par une seule ligne en pied de bulletin qui ferait apparaître le coût global pour l'entreprise moins les cotisations salariales et patronales, avec le net à payer.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	proposons	proposer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	supprimer	supprimer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	colonne	colonne	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+10	patronales	patronal	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	de	de	ADP	_	_	14	mark	_	_	*
+13	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	obj	_	_	*
+14	remplacer	remplacer	VERB	_	VerbForm=Inf	4	conj	_	_	*
+15	par	par	ADP	_	_	18	case	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+17	seule	seul	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+18	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	pied	pied	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	bulletin	bulletin	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	25	nsubj:caus	_	_	*
+24	ferait	faire	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:caus	_	_	*
+25	apparaître	apparaître	VERB	_	VerbForm=Inf	14	xcomp	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	coût	coût	NOUN	_	Gender=Masc|Number=Sing	25	obj	_	_	*
+28	global	global	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29	pour	pour	ADP	_	_	31	case	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	25	obl	_	_	*
+32	moins	moins	ADV	_	_	34	advmod	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_	*
+34	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	31	appos	_	_	*
+35	salariales	salarial	ADJ	_	Gender=Fem|Number=Plur	34	amod	_	_	*
+36	et	et	CCONJ	_	_	37	cc	_	_	*
+37	patronales	patronal	ADJ	_	Gender=Fem|Number=Plur	35	conj	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	41	punct	_	_	*
+39	avec	avec	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	net	net	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+42	à	à	ADP	_	_	43	mark	_	_	*
+43	payer	payer	VERB	_	VerbForm=Inf	34	acl	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 13
+# text = - Vous luttez aussi contre les multiples déclarations aux organismes sociaux auxquelles sont astreints les patrons.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	luttez	lutter	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	aussi	aussi	ADV	_	_	3	advmod	_	_	*
+5	contre	contre	ADP	_	_	8	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+7	multiples	multiple	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+8	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	3	obl	_	_	*
+9-10	aux	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	organismes	organisme	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+12	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13-14	auxquelles	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	lesquelles	lequel	PRON	_	Gender=Fem|Number=Plur|PronType=Rel	16	obl:mod	_	_	*
+15	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_	*
+16	astreints	astreindre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	patrons	patron	NOUN	_	Gender=Masc|Number=Plur	16	nsubj:pass	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 14
+# text = Comment faire plus simple ?
+1	Comment	comment	ADV	_	_	4	advmod	_	_	*
+2	faire	faire	AUX	_	VerbForm=Inf	4	cop	_	_	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*
+4	simple	simple	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 15
+# text = - A l'embauche, l'entreprise doit adresser une déclaration unique d'embauche (DUE) à l'URSSAF et un courrier aux caisses de retraite.
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	embauche	embauche	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+8	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	adresser	adresser	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	unique	unique	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	embauche	embauche	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	DUE	devoir	NOUN	_	Gender=Fem|Number=Sing	11	appos	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	16	punct	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	URSSAF	URSSAF	PROPN	_	_	9	obl:mod	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	courrier	courrier	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+24-25	aux	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_	*
+26	caisses	caisse	NOUN	_	Gender=Fem|Number=Plur	23	nmod	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 16
+# text = Il suffirait d'indiquer la caisse de retraite et le régime de retraite à l'URSSAF pour que cet organisme se charge de transmettre l'information à la caisse de retraite adéquate.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	1:VID
+2	suffirait	suffire	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	d'	de	ADP	_	_	4	mark	_	SpaceAfter=No	*
+4	indiquer	indiquer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	régime	régime	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	URSSAF	URSSAF	PROPN	_	_	4	obl:mod	_	_	*
+17	pour	pour	ADP	_	_	22	mark	_	_	*
+18	que	que	SCONJ	_	_	22	mark	_	_	*
+19	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	20	det	_	_	*
+20	organisme	organisme	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	22	expl:comp	_	_	*
+22	charge	charger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*
+23	de	de	ADP	_	_	24	mark	_	_	*
+24	transmettre	transmettre	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	information	information	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	24	obl:mod	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*
+32	adéquate	adéquat	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 17
+# text = Ce serait plus simple.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*
+2	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*
+4	simple	simple	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 18
+# text = Mais, le plus important concerne les déclarations de cotisations sociales.
+1	Mais	mais	CCONJ	_	_	6	cc	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+4	plus	plus	ADV	_	_	5	advmod	_	_	*
+5	important	important	ADJ	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+11	sociales	social	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 19
+# text = Une entreprise de moins de 10 salariés doit adresser une déclaration chaque trimestre à cinq organismes (URSSAF, ASSEDIC, caisse de prévoyance, caisse des cadres, caisse de retraite des non-cadres).
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	moins	moins	ADV	_	_	2	nmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	10	10	NUM	_	_	7	nummod	_	_	*
+7	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	adresser	adresser	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	chaque	chaque	DET	_	Gender=Masc|Number=Sing	13	det	_	_	*
+13	trimestre	trimestre	NOUN	_	Gender=Masc|Number=Sing	9	obl	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	cinq	cinq	NUM	_	_	16	nummod	_	_	*
+16	organismes	organisme	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	_	*
+17	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+18	URSSAF	URSSAF	PROPN	_	_	16	appos	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	ASSEDIC	ASSEDIC	PROPN	_	_	18	conj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	prévoyance	prévoyance	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+27-28	des	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+29	cadres	cadre	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+34-35	des	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_	*
+36	non-cadres	non-cadre	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*
+37	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 20
+# text = Cela fait 20 déclarations par an plus un récapitulatif pour l'ASSEDIC et une déclaration annuelle des salaires (DADS) à la caisse régionale d'assurance maladie (CRAM).
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	1:VID
+2	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	20	20	NUM	_	_	4	nummod	_	_	*
+4	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	_	*
+5	par	par	ADP	_	_	6	case	_	_	*
+6	an	an	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	plus	plus	ADV	_	_	9	advmod	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	récapitulatif	récapitulatif	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	_	*
+10	pour	pour	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	ASSEDIC	ASSEDIC	PROPN	_	_	9	nmod	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+16	annuelle	annuel	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	salaires	salaire	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+20	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+21	DADS	DADS	PROPN	_	_	9	appos	_	SpaceAfter=No	*
+22	)	)	PUNCT	_	_	21	punct	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+26	régionale	régional	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+27	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+28	assurance	assurance	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	25	appos	_	_	*
+30	(	(	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+31	CRAM	CRAM	PROPN	_	_	29	appos	_	SpaceAfter=No	*
+32	)	)	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 21
+# text = Dans les entreprises de plus de 10 salariés, ces déclarations sont mensuelles.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	13	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	plus	plus	ADV	_	_	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	10	10	NUM	_	_	8	nummod	_	_	*
+8	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	11	det	_	_	*
+11	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	13	nsubj	_	_	*
+12	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+13	mensuelles	mensuel	ADJ	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 22
+# text = Viennent s'y ajouter la déclaration de taxe d'apprentissage, la déclaration de contribution à l'effort de construction et la déclaration pour la formation professionnelle.
+1	Viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:pass	_	SpaceAfter=No	*
+3	y	y	PRON	_	_	4	iobj	_	_	*
+4	ajouter	ajouter	VERB	_	VerbForm=Inf	1	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	1	nsubj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	taxe	taxe	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	apprentissage	apprentissage	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	contribution	contribution	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	effort	effort	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	construction	construction	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+24	pour	pour	ADP	_	_	26	case	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	formation	formation	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+27	professionnelle	professionnel	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 23
+# text = A chaque déclaration, il faut recopier les mêmes informations.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	chaque	chaque	DET	_	Gender=Fem|Number=Sing	3	det	_	_	*
+3	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+6	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+7	recopier	recopier	VERB	_	VerbForm=Inf	6	ccomp	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+9	mêmes	même	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
+10	informations	information	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 24
+# text = Nous suggérons de faire une seule déclaration sur laquelle chaque organisme aurait son cadre.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	suggérons	suggérer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	faire	faire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	seule	seul	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	sur	sur	ADP	_	_	9	case	_	_	*
+9	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	12	obl	_	_	*
+10	chaque	chaque	DET	_	Gender=Masc|Number=Sing	11	det	_	_	*
+11	organisme	organisme	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+12	aurait	avoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+13	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 25
+# text = Il suffirait de faire des copies, d'agrafer le chèque correspondant et d'envoyer le tout.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	1:VID
+2	suffirait	suffire	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	faire	faire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	copies	copie	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	d'	de	ADP	_	_	10	mark	_	SpaceAfter=No	*
+10	agrafer	agrafer	VERB	_	VerbForm=Inf	4	conj	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	chèque	chèque	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	correspondant	correspondant	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	et	et	CCONJ	_	_	16	cc	_	_	*
+15	d'	de	ADP	_	_	16	mark	_	SpaceAfter=No	*
+16	envoyer	envoyer	VERB	_	VerbForm=Inf	4	conj	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	tout	tout	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 26
+# text = Nous avons calculé que ces propositions permettraient de passer de 22 déclarations annuelles à 4.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	calculé	calculer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	que	que	SCONJ	_	_	7	mark	_	_	*
+5	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	6	det	_	_	*
+6	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	_	*
+7	permettraient	permettr	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	passer	passer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	22	22	NUM	_	_	12	nummod	_	_	*
+12	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	9	obl:arg	_	_	*
+13	annuelles	annuel	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_	*
+14	à	à	ADP	_	_	15	case	_	_	*
+15	4	4	NUM	_	_	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 27
+# text = Avec les mêmes informations pour les organismes sociaux et, bien sûr, les mêmes cotisations.
+1	Avec	avec	ADP	_	_	4	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+3	mêmes	même	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	_	*
+4	informations	information	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	organismes	organisme	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+8	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+9	et	et	CCONJ	_	_	16	cc	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	bien	bien	ADV	_	_	16	advmod	_	_	*
+12	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	11	fixed	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	11	punct	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+15	mêmes	même	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*
+16	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 28
+# text = - Pensez-vous que le gouvernement va suivre ?
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Pensez-vous	pensez-vous	PROPN	_	_	0	root	_	_	*
+3	que	que	SCONJ	_	_	6	mark	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*
+7	suivre	suivre	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	?	?	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 29
+# text = Quels sont les freins à une telle simplification ?
+1	Quels	quel	PRON	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	freins	freins	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+5	à	à	ADP	_	_	8	case	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	telle	tel	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	simplification	simplification	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+9	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 30
+# text = - Je crois que nous sommes sur la bonne voie.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	que	que	SCONJ	_	_	6	mark	_	_	*
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	sommes	être	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+7	sur	sur	ADP	_	_	10	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	voie	voie	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 31
+# text = Les députés lorrains nous appuient.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	députés	député	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	lorrains	lorrain	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	5	obj	_	_	*
+5	appuient	appuyer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 32
+# text = C'est une décision à prendre par voie réglementaire.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	décision	décision	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	1:LVC.full
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	prendre	prendre	VERB	_	VerbForm=Inf	4	acl	_	_	1
+7	par	par	ADP	_	_	8	case	_	_	*
+8	voie	voie	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*
+9	réglementaire	réglementaire	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 33
+# text = Les seuls freins, ce sont les habitudes.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	seuls	seul	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	freins	freins	NOUN	_	Gender=Masc|Number=Plur	8	dislocated	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	_	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	habitudes	habitude	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 34
+# text = Nos mesures permettraient de faire économiser de l'argent et du travail à tout le monde.
+1	Nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	mesures	mesure	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*
+3	permettraient	permettr	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	6	mark	_	_	*
+5	faire	faire	AUX	_	VerbForm=Inf	6	aux:caus	_	_	*
+6	économiser	économiser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	argent	argent	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*
+10	et	et	CCONJ	_	_	13	cc	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	travail	travail	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+14	à	à	ADP	_	_	17	case	_	_	*
+15	tout	tout	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	monde	monde	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11994.txt 35
+# text = Propos recueillis par Ludovic BASSAND
+1	Propos	propos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	recueillis	recueillir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+3	par	par	ADP	_	_	4	case	_	_	*
+4	Ludovic	Ludovic	PROPN	_	_	2	obl:agent	_	_	*
+5	BASSAND	BASSAND	PROPN	_	_	4	flat:name	_	SpacesAfter=\n	*
+

@@ -1,0 +1,646 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-17_17628.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 1
+# text = Le président de la FNSEA à Besançon
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	FNSEA	FNSEA	PROPN	_	_	2	nmod	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	Besançon	Besançon	PROPN	_	_	2	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 2
+# text = L'assemblée générale de la Fédération des syndicats d'exploitants agricoles (FDSEA) aura lieu, jeudi 30 janvier à 9 h 30, au palais des congrès Micropolis, à Besançon.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+3	générale	général	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	Fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	exploitants	exploitant	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+12	agricoles	agricole	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	FDSEA	FDSEA	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	_	*
+16	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+17	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No	1
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+20	30	30	NUM	_	_	19	nmod	_	_	*
+21	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	9	9	NUM	_	_	24	nummod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+25	30	30	NUM	_	_	21	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27-28	au	_	_	_	_	_	_	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	palais	palais	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+30-31	des	_	_	_	_	_	_	_	_	*
+30	de	de	ADP	_	_	32	case	_	_	*
+31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_	*
+32	congrès	congrès	NOUN	_	Gender=Masc|Number=Plur	29	nmod	_	_	*
+33	Micropolis	Micropolis	PROPN	_	_	32	appos	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	36	punct	_	_	*
+35	à	à	ADP	_	_	36	case	_	_	*
+36	Besançon	Besançon	PROPN	_	_	29	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 3
+# text = Cette réunion sera marquée par la présence de Jean-Michel Lemétayer, président de la FNSEA.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	_	_	*
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*
+4	marquée	marquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	présence	présence	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Jean-Michel	Jean-Michel	PROPN	_	_	7	nmod	_	_	*
+10	Lemétayer	Lemétayer	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	président	président	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	FNSEA	FNSEA	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 4
+# text = Il s'exprimera sur les enjeux actuels de l'agriculture et les orientations prises par la FNSEA.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	exprimera	exprimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	enjeux	enjeu	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*
+7	actuels	actuel	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	agriculture	agriculture	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	orientations	orientation	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*
+14	prises	prendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15	par	par	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	FNSEA	FNSEA	PROPN	_	_	14	obl:agent	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 5
+# text = L'AG donnera également lieu à une intéressante table ronde entre producteurs, transformateurs et distributeurs avec la participation de : Guy Belot, patron de l'abattoir SICA GAB ;
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	AG	AG	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	donnera	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+6	à	à	ADP	_	_	9	case	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	intéressante	intéressant	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	table	table	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+10	ronde	rond	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	entre	entre	ADP	_	_	12	case	_	_	*
+12	producteurs	producteur	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	transformateurs	transformateur	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	distributeurs	distributeur	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+17	avec	avec	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	participation	participation	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	:	:	PUNCT	_	_	22	punct	_	_	*
+22	Guy	Guy	PROPN	_	_	19	nmod	_	_	*
+23	Belot	Belot	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	patron	patron	NOUN	_	Gender=Masc|Number=Sing	22	appos	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	abattoir	abattoir	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+29	SICA	SICA	PROPN	_	_	28	appos	_	_	*
+30	GAB	GAB	PROPN	_	_	29	flat:name	_	_	*
+31	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 6
+# text = Alain Cannard, des Monts de Joux ;
+1	Alain	Alain	PROPN	_	_	0	root	_	_	*
+2	Cannard	Cannard	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	Monts	Monts	PROPN	_	_	1	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Joux	Joux	PROPN	_	_	6	nmod	_	_	*
+9	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 7
+# text = Antoine Arab, directeur du Carrefour de Chalezeule et un responsable d'une centrale d'achat de la grande distribution.
+1	Antoine	Antoine	PROPN	_	_	0	root	_	_	*
+2	Arab	Arab	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Carrefour	carrefour	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Chalezeule	Chalezeule	PROPN	_	_	7	nmod	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	responsable	responsable	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	centrale	centrale	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	achat	achat	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	de	de	ADP	_	_	21	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+20	grande	grand	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+21	distribution	distribution	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 8
+# text = A SAVOIR...
+1	A	à	ADP	_	_	2	case	_	_	*
+2	SAVOIR	savoir	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	...	...	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 9
+# text = Allegria'Danse : l'association organise un stage de flamenco samedi 18 et dimanche 19 janvier, animé par « La Rubia », danseuse et professeur de flamenco.
+1	Allegria'Danse	Allegria'Danse	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	association	association	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+5	organise	organiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	stage	stage	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	flamenco	flamenco	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	18	18	NUM	_	_	10	nmod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+14	19	19	NUM	_	_	13	nmod	_	_	*
+15	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	animé	animer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+18	par	par	ADP	_	_	21	case	_	_	*
+19	«	«	PUNCT	_	_	21	punct	_	_	*
+20	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	Rubia	Rubia	PROPN	_	_	17	obl:agent	_	_	*
+22	»	»	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	danseuse	danseur	NOUN	_	Gender=Fem|Number=Sing	21	conj	_	_	*
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	professeur	professeur	NOUN	_	Gender=Masc|Number=Sing	21	conj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	flamenco	flamencoration	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 10
+# text = Ce stage s'adresse aux personnes de niveaux avancés, 2e et 3e année et aux débutants de septembre.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	stage	stage	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:IRV
+4	adresse	adresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5-6	aux	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	niveaux	niveau	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+10	avancés	avancé	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	2e	2e	ADJ	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	3e	3e	ADJ	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+15	année	année	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*
+17-18	aux	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	débutants	débutant	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 11
+# text = Il se déroulera au Centre de danse Melikchahian, 15 bis, rue de Dole.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	se	se	PRON	_	Person=3|PronType=Prs	3	obj	_	_	1:IRV
+3	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Centre	centre	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	danse	danse	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	Melikchahian	Melikchahian	PROPN	_	_	6	appos	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	15	15	NUM	_	_	12	nummod	_	_	*
+12	bis	bis	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	rue	rue	NOUN	_	Gender=Fem|Number=Sing	12	appos	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Dole	Dole	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 12
+# text = Renseignements et inscriptions au 03.81.82.17.36 ou 03.81.52.47.13.
+1	Renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	inscriptions	inscription	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	03.81.82.17.36	03.81.82.17.36	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+7	ou	ou	CCONJ	_	_	8	cc	_	_	*
+8	03.81.52.47.13	03.81.52.47.13	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 13
+# text = Les Invités au festin : l'association propose une exposition intitulée « Mythes, naufrages, espérance », salle de l'Ancienne-Poste, du samedi 18 au vendredi 24 janvier, de 10 h à 19 h (lundi, de 10 h à 16 h).
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	Invités	invité	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	festin	festin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	:	:	PUNCT	_	_	9	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	association	association	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+9	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	intitulée	intituler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+13	«	«	PUNCT	_	_	14	punct	_	_	*
+14	Mythes	mythes	PROPN	_	_	12	xcomp	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	naufrages	naufrage	NOUN	_	Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	espérance	espérance	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+19	»	»	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	salle	salle	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	Ancienne-Poste	Ancienne-Poste	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	28	punct	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+29	18	18	NUM	_	_	28	nmod	_	_	*
+30-31	au	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+33	24	24	NUM	_	_	21	nmod	_	_	*
+34	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	33	nmod	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	38	punct	_	_	*
+36	de	de	ADP	_	_	38	case	_	_	*
+37	10	10	NUM	_	_	38	nummod	_	_	*
+38	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+39	à	à	ADP	_	_	41	case	_	_	*
+40	19	19	NUM	_	_	41	nummod	_	_	*
+41	h	heure	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	_	*
+42	(	(	PUNCT	_	_	43	punct	_	SpaceAfter=No	*
+43	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	14	parataxis	_	SpaceAfter=No	*
+44	,	,	PUNCT	_	_	47	punct	_	_	*
+45	de	de	ADP	_	_	47	case	_	_	*
+46	10	10	NUM	_	_	47	nummod	_	_	*
+47	h	heure	NOUN	_	Gender=Fem|Number=Sing	43	nmod	_	_	*
+48	à	à	ADP	_	_	50	case	_	_	*
+49	16	16	NUM	_	_	50	nummod	_	_	*
+50	h	heure	NOUN	_	Gender=Fem|Number=Sing	47	nmod	_	SpaceAfter=No	*
+51	)	)	PUNCT	_	_	43	punct	_	SpaceAfter=No	*
+52	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 14
+# text = Elle présente des créations artistiques émanant des mains, du regard et de l'âme des personnes transitant ou accueillies dans différents lieux de Besançon : les Invités au festin, la Buanderie, la Boutique accueil de jour et l'Antenne sociale du centre-ville.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	présente	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*
+5	créations	création	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*
+6	artistiques	artistique	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_	*
+7	émanant	émaner	VERB	_	Tense=Pres|VerbForm=Part	5	acl	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	mains	main	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	regard	regard	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	âme	âme	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*
+21	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*
+22	transitant	transiter	VERB	_	Tense=Pres|VerbForm=Part	21	acl	_	_	*
+23	ou	ou	CCONJ	_	_	24	cc	_	_	*
+24	accueillies	accueillie	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	22	conj	_	_	*
+25	dans	dans	ADP	_	_	27	case	_	_	*
+26	différents	différent	DET	_	Gender=Masc|Number=Plur	27	det	_	_	*
+27	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	22	obl:arg	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	Besançon	Besançon	PROPN	_	_	27	nmod	_	_	*
+30	:	:	PUNCT	_	_	32	punct	_	_	*
+31	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	32	det	_	_	*
+32	Invités	invité	PROPN	_	_	5	appos	_	_	*
+33-34	au	_	_	_	_	_	_	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	festin	festin	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	38	punct	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	Buanderie	Buanderie	PROPN	_	_	32	conj	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	41	punct	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	Boutique	boutique	PROPN	_	_	32	conj	_	_	*
+42	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	_	*
+43	de	de	ADP	_	_	44	case	_	_	*
+44	jour	jour	NOUN	_	Gender=Masc|Number=Sing	42	nmod	_	_	*
+45	et	et	CCONJ	_	_	47	cc	_	_	*
+46	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	47	det	_	SpaceAfter=No	*
+47	Antenne	Antenne	PROPN	_	_	32	conj	_	_	*
+48	sociale	social	ADJ	_	Gender=Fem|Number=Sing	47	amod	_	_	*
+49-50	du	_	_	_	_	_	_	_	_	*
+49	de	de	ADP	_	_	51	case	_	_	*
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_	*
+51	centre-ville	centre-ville	NOUN	_	Gender=Masc|Number=Sing	47	nmod	_	SpaceAfter=No	*
+52	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 15
+# text = Un PAS avec les Frères Jaccard : l'association tiendra sa rencontre annuelle dimanche 19 janvier, de 9 h à 17 h, au lycée Saint-Joseph, 28, avenue Fontaine-Argent.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	PAS	Pas	PROPN	_	_	0	root	_	_	*
+3	avec	avec	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*
+5	Frères	Frères	PROPN	_	_	2	nmod	_	_	*
+6	Jaccard	Jaccard	PROPN	_	_	5	flat:name	_	_	*
+7	:	:	PUNCT	_	_	10	punct	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	association	association	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+10	tiendra	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	parataxis	_	_	*
+11	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13	annuelle	annuel	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15	19	19	NUM	_	_	14	nmod	_	_	*
+16	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	9	9	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	17	17	NUM	_	_	23	nummod	_	_	*
+23	h	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	20	punct	_	_	*
+25-26	au	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	lycée	lycée	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+28	Saint-Joseph	Saint-Joseph	PROPN	_	_	27	appos	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	28	28	NUM	_	_	27	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	avenue	avenir	NOUN	_	Gender=Fem|Number=Sing	27	appos	_	_	*
+33	Fontaine-Argent	Fontaine-Argent	PROPN	_	_	32	appos	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 16
+# text = Assemblée générale à 9 h, messe à 11 h, puis repas tiré du sac.
+1	Assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+2	générale	général	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	9	9	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	messe	messer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	11	11	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	puis	puis	ADV	_	_	13	cc	_	_	*
+13	repas	repas	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+14	tiré	tirer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	sac.	sac.	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 17
+# text = Conférence et témoignages de 14 h à 17 h. Les Enfants de l'espoir : ils animeront une messe en souvenir du Père Ragazzi, missionnaire en Thaïlande et curé du village de Ban Bua Thaa, dimanche 19 janvier, en l'église Saint-Martin des Chaprais, à 10 h 30.
+1	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	témoignages	témoignage	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	14	14	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	17	17	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+11	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	Enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	espoir	espoir	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	:	:	PUNCT	_	_	18	punct	_	_	*
+17	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_	*
+18	animeront	animer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	parataxis	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	messe	messe	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*
+21	en	en	ADP	_	_	22	case	_	_	*
+22	souvenir	souvenir	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	Père	Père	PROPN	_	_	22	nmod	_	_	*
+26	Ragazzi	Ragazzi	PROPN	_	_	25	flat:name	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*
+28	missionnaire	missionnaire	NOUN	_	Gender=Masc|Number=Sing	25	appos	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	Thaïlande	Thaïlande	PROPN	_	_	28	nmod	_	_	*
+31	et	et	CCONJ	_	_	32	cc	_	_	*
+32	curé	curer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	conj	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	village	village	NOUN	_	Gender=Masc|Number=Sing	32	obl:arg	_	_	*
+36	de	de	ADP	_	_	37	case	_	_	*
+37	Ban	Ban	PROPN	_	_	35	nmod	_	_	*
+38	Bua	Bua	PROPN	_	_	37	flat:name	_	_	*
+39	Thaa	Thaa	PROPN	_	_	37	flat:name	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	41	punct	_	_	*
+41	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	32	obl	_	_	*
+42	19	19	NUM	_	_	41	nmod	_	_	*
+43	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	42	nmod	_	SpaceAfter=No	*
+44	,	,	PUNCT	_	_	47	punct	_	_	*
+45	en	en	ADP	_	_	47	case	_	_	*
+46	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	SpaceAfter=No	*
+47	église	église	NOUN	_	Gender=Fem|Number=Sing	32	obl	_	_	*
+48	Saint-Martin	Saint-Martin	PROPN	_	_	47	appos	_	_	*
+49-50	des	_	_	_	_	_	_	_	_	*
+49	de	de	ADP	_	_	51	case	_	_	*
+50	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	51	det	_	_	*
+51	Chaprais	chaprais	PROPN	_	_	47	nmod	_	SpaceAfter=No	*
+52	,	,	PUNCT	_	_	55	punct	_	_	*
+53	à	à	ADP	_	_	55	case	_	_	*
+54	10	10	NUM	_	_	55	nummod	_	_	*
+55	h	heure	NOUN	_	Gender=Fem|Number=Sing	32	obl:mod	_	_	*
+56	30	30	NUM	_	_	55	nummod	_	SpaceAfter=No	*
+57	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 18
+# text = Le Père Ragazzi, décédé en décembre dernier, fut le premier relais de l'action humanitaire de l'association.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Père	Père	PROPN	_	_	13	nsubj	_	_	*
+3	Ragazzi	Ragazzi	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	décédé	décéder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+8	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	5	punct	_	_	*
+10	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+12	premier	premier	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+13	relais	relais	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	action	action	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	humanitaire	humanitaire	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	association	association	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 19
+# text = Les jeudis de l'UFCS : l'Union féminine civique et sociale tiendra une réunion, à la maison de quartier de Saint-Claude, 5, rue Jean-Wyrsch, jeudi 23 janvier, à 14 h 30.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	jeudis	jeudi	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	UFCS	UFCS	PROPN	_	_	2	nmod	_	_	*
+6	:	:	PUNCT	_	_	8	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	Union	union	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+9	féminine	féminin	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	civique	civique	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	sociale	social	ADJ	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+13	tiendra	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:LVC.full
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	SpaceAfter=No	1
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	maison	maison	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Saint-Claude	Saint-Claude	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	5	5	NUM	_	_	19	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	rue	rue	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	_	*
+28	Jean-Wyrsch	Jean-Wyrsch	PROPN	_	_	27	appos	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*
+31	23	23	NUM	_	_	30	nmod	_	_	*
+32	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	36	punct	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	14	14	NUM	_	_	36	nummod	_	_	*
+36	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+37	30	30	NUM	_	_	36	nummod	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 20
+# text = Présentation du jeu « Pièges à consommer » sous forme ludique, par Colette Lagarde, de l'UFCS Vesoul.
+1	Présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	Pièges	pièges	PROPN	_	_	1	appos	_	_	*
+7	à	à	ADP	_	_	8	mark	_	_	*
+8	consommer	consommer	VERB	_	VerbForm=Inf	6	acl	_	_	*
+9	»	»	PUNCT	_	_	6	punct	_	_	*
+10	sous	sous	ADP	_	_	11	case	_	_	*
+11	forme	forme	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	ludique	ludique	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	par	par	ADP	_	_	15	case	_	_	*
+15	Colette	Colette	PROPN	_	_	1	nmod	_	_	*
+16	Lagarde	Lagarde	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	UFCS	UFCS	PROPN	_	_	1	nmod	_	_	*
+21	Vesoul	Vesoul	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 21
+# text = Contact : 03.81.50.32.53.
+1	Contact	contact	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	03.81.50.32.53	03.81.50.32.53	SYM	_	_	1	parataxis	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_17628.txt 22
+# text = Croisade des aveugles : l'association convie les personnes aveugles et malvoyantes à sa réunion du mardi 28 janvier, au 18, avenue Villarceau, à 14 h 15.
+1	Croisade	croisade	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	aveugles	aveugle	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+5	:	:	PUNCT	_	_	8	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	association	association	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+8	convie	convier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*
+11	aveugles	aveugle	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	malvoyantes	malvoyant	ADJ	_	Gender=Fem|Number=Plur	11	conj	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	28	28	NUM	_	_	19	nmod	_	_	*
+21	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	18	18	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	25	punct	_	_	*
+27	avenue	avenue	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+28	Villarceau	Villarceau	PROPN	_	_	27	appos	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	32	punct	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	14	14	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*
+33	15	15	NUM	_	_	27	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

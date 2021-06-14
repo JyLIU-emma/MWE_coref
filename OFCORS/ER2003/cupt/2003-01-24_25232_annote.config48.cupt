@@ -1,0 +1,499 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-24_25232.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 1
+# text = Terrain synthétique : à court terme
+1	Terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	synthétique	synthétique	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	court	court	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	terme	terme	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 2
+# text = L'entraînement quotidien, considère Gilles Claude, « est un élément d'équilibre chez ces jeunes ».
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	quotidien	quotidien	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	considère	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Gilles	Gilles	PROPN	_	_	5	obj	_	_	*
+7	Claude	Claude	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	12	punct	_	_	*
+9	«	«	PUNCT	_	_	12	punct	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	élément	élément	NOUN	_	Gender=Masc|Number=Sing	5	xcomp	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	équilibre	équilibre	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15	chez	chez	ADP	_	_	17	case	_	_	*
+16	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	17	det	_	_	*
+17	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+18	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 3
+# text = D'autant qu'autour d'eux gravitent en permanence Jean-Louis Wolff et Etienne Jungo, les médecins à demeure : « Tous deux font partie intégrante de la section.
+1	D'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+2	autant	autant	ADV	_	_	1	fixed	_	_	*
+3	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+4	autour	autour	ADV	_	_	7	advmod	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	4	obl:arg	_	_	*
+7	gravitent	gravitre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+10	Jean-Louis	Jean-Louis	PROPN	_	_	9	appos	_	_	*
+11	Wolff	Wolff	PROPN	_	_	10	flat:name	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	Etienne	Etienne	PROPN	_	_	10	conj	_	_	*
+14	Jungo	Jungo	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	médecins	médecin	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*
+18	à	à	ADP	_	_	19	case	_	_	*
+19	demeure	demeure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	:	:	PUNCT	_	_	24	punct	_	_	*
+21	«	«	PUNCT	_	_	24	punct	_	_	*
+22	Tous	tout	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*
+23	deux	deux	PRON	_	Number=Plur	24	nsubj	_	_	*
+24	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	parataxis	_	_	1:VID
+25	partie	partie	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	1
+26	intégrante	intégrant	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	section	section	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 4
+# text = Ce suivi médical est essentiel ».
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	suivi	suivi	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	médical	médical	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	essentiel	essentiel	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 5
+# text = Mais la section foot du Follereau, c'est surtout le label fidélité avec le FC Sochaux : « Le FC est le partenaire des premiers instants et ça persiste », renchérit en ancien de la « maison » Gilles Claude.
+1	Mais	mais	CCONJ	_	_	13	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	section	section	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+4	foot	foot	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Follereau	Follereau	PROPN	_	_	3	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+11	surtout	surtout	ADV	_	_	13	advmod	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	label	label	NOUN	_	Gender=Masc|Number=Sing	35	nsubj	_	_	*
+14	fidélité	fidéliter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15	avec	avec	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	FC	FC	PROPN	_	_	14	obl:arg	_	_	*
+18	Sochaux	Sochaux	PROPN	_	_	17	flat:name	_	_	*
+19	:	:	PUNCT	_	_	25	punct	_	_	*
+20	«	«	PUNCT	_	_	25	punct	_	_	*
+21	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	FC	FC	PROPN	_	_	25	nsubj	_	_	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	partenaire	partenaire	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	29	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+28	premiers	premiers	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	_	*
+29	instants	instant	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	_	*
+30	et	et	CCONJ	_	_	32	cc	_	_	*
+31	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	32	nsubj	_	_	*
+32	persiste	persiste	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_	*
+33	»	»	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	13	punct	_	_	*
+35	renchérit	renchérire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+36	en	en	ADP	_	_	35	advmod	_	_	*
+37	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	36	fixed	_	_	*
+38	de	de	ADP	_	_	41	case	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+40	«	«	PUNCT	_	_	41	punct	_	_	*
+41	maison	maison	NOUN	_	Gender=Fem|Number=Sing	36	obl:arg	_	_	*
+42	»	»	PUNCT	_	_	41	punct	_	_	*
+43	Gilles	Gilles	PROPN	_	_	41	appos	_	_	*
+44	Claude	Claude	PROPN	_	_	43	flat:name	_	SpaceAfter=No	*
+45	.	.	PUNCT	_	_	35	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 6
+# text = Alors que la section va se doter à court terme d'un terrain synthétique nouvelle génération, elle va avant tout renouer avec les clubs du district : « Afin de participer avec d'autres équipes à des matches d'opposition suivis de réunions où parents et dirigeants seront conviés » Autrement dit un planning bien rempli d'avance...
+1	Alors	alors	ADV	_	_	5	mark	_	_	*
+2	que	que	SCONJ	_	_	1	fixed	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	section	section	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	_	_	*
+6	se	se	PRON	_	Person=3|PronType=Prs	7	obj	_	_	*
+7	doter	doter	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	court	court	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+10	terme	terme	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+11	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+14	synthétique	synthétique	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+16	génération	génération	NOUN	_	Gender=Fem|Number=Sing	13	appos	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	5	punct	_	_	*
+18	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+19	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+20	avant	avant	ADP	_	_	22	mark	_	_	*
+21	tout	tout	PRON	_	Gender=Masc|Number=Sing	22	obj	_	_	*
+22	renouer	renouer	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+23	avec	avec	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	clubs	club	NOUN	_	Gender=Masc|Number=Plur	22	obl:arg	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	district	district	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+29	:	:	PUNCT	_	_	31	punct	_	_	*
+30	«	«	PUNCT	_	_	31	punct	_	_	*
+31	Afin	afin	ADV	_	_	19	advmod	_	_	*
+32	de	de	ADP	_	_	33	mark	_	_	*
+33	participer	participer	VERB	_	VerbForm=Inf	31	ccomp	_	_	*
+34	avec	avec	ADP	_	_	37	case	_	_	*
+35	d'	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	37	det	_	SpaceAfter=No	*
+36	autres	autre	ADJ	_	Gender=Fem|Number=Plur	37	amod	_	_	*
+37	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	33	obl:arg	_	_	*
+38	à	à	ADP	_	_	41	case	_	_	*
+39-40	des	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_	*
+41	matches	match	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*
+42	d'	de	ADP	_	_	43	case	_	SpaceAfter=No	*
+43	opposition	opposition	NOUN	_	Gender=Fem|Number=Sing	41	nmod	_	_	*
+44	suivis	suivre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	43	acl	_	_	*
+45	de	de	ADP	_	_	46	case	_	_	*
+46	réunions	réunion	NOUN	_	Gender=Fem|Number=Plur	44	obl:arg	_	_	*
+47	où	où	ADV	_	PronType=Rel	52	advmod	_	_	*
+48	parents	parent	NOUN	_	Gender=Masc|Number=Plur	52	nsubj:pass	_	_	*
+49	et	et	CCONJ	_	_	50	cc	_	_	*
+50	dirigeants	dirigeant	NOUN	_	Gender=Masc|Number=Plur	48	conj	_	_	*
+51	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	52	aux:pass	_	_	*
+52	conviés	convier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	46	acl:relcl	_	_	*
+53	»	»	PUNCT	_	_	37	punct	_	_	*
+54	Autrement	autrement	ADV	_	_	55	advmod	_	_	*
+55	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	37	acl	_	_	*
+56	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_	*
+57	planning	planning	NOUN	_	Gender=Masc|Number=Sing	55	obj	_	_	*
+58	bien	bien	ADV	_	_	59	advmod	_	_	*
+59	rempli	remplir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	55	conj	_	_	*
+60	d'	de	ADP	_	_	61	case	_	SpaceAfter=No	*
+61	avance	avance	NOUN	_	Gender=Fem|Number=Sing	59	obl:mod	_	SpaceAfter=No	*
+62	...	...	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 7
+# text = Mais auparavant, place au concours d'entrée dans la section.
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	auparavant	auparavant	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	place	place	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	concours	concours	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	section	section	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 8
+# text = Il s'adresse jeunes de Seconde nés en 1988.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	adresse	adresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	3	xcomp	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Seconde	seconde	PROPN	_	_	4	nmod	_	_	*
+7	nés	naître	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	4	acl	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	1988	1988	NUM	_	_	7	obl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 9
+# text = Alain GUYOT Concours d'entrée en section sportive du Follereau : dossiers à retirer fin avril-début mai 2003.
+1	Alain	Alain	PROPN	_	_	0	root	_	_	*
+2	GUYOT	Guyot	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s	*
+3	Concours	concours	PROPN	_	_	1	flat:name	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	section	section	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	sportive	sportif	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Follereau	Follereau	PROPN	_	_	5	nmod	_	_	*
+12	:	:	PUNCT	_	_	13	punct	_	_	*
+13	dossiers	dossier	NOUN	_	Gender=Masc|Number=Plur	5	appos	_	_	*
+14	à	à	ADP	_	_	15	mark	_	_	*
+15	retirer	retirer	VERB	_	VerbForm=Inf	13	acl	_	_	*
+16	fin	fin	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+17	avril-début	avril-début	ADP	_	_	18	case	_	_	*
+18	mai	mai	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+19	2003	2003	NUM	_	_	18	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 10
+# text = Renseignements au Lycée Follereau, 3 rue Marchal, 90000 Belfort.
+1	Renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	Lycée	lycée	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	Follereau	Follereau	PROPN	_	_	4	appos	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	3	3	NUM	_	_	8	nummod	_	_	*
+8	rue	rue	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+9	Marchal	Marchal	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	90000	90000	NUM	_	_	12	nummod	_	_	*
+12	Belfort	Belfort	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 11
+# text = Tel : 03.84.90.16.00.
+1	Tel	tel	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	03.84.90.16.00	03.84.90.16.00	NUM	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 12
+# text = Fax : 03.84.90.16.32.
+1	Fax	Fax	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	03.84.90.16.32	03.84.90.16.32	X	_	_	1	appos	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 13
+# text = Même si l'on évoque l'élimination de la section foot du lycée Follereau en Challenge Jean Leroy, on ne remuera pas le couteau dans plaie.
+1	Même	même	ADV	_	_	5	advmod	_	_	*
+2	si	si	SCONJ	_	_	5	mark	_	_	*
+3	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	5	nsubj	_	SpaceAfter=No	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	fixed	_	_	*
+5	évoque	évoquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	élimination	élimination	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	section	section	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	foot	foot	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	lycée	lycée	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+15	Follereau	Follereau	PROPN	_	_	14	appos	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	Challenge	Challenge	PROPN	_	_	7	nmod	_	_	*
+18	Jean	Jean	PROPN	_	_	17	flat:name	_	_	*
+19	Leroy	Leroy	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	5	punct	_	_	*
+21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_	*
+22	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	_	*
+23	remuera	remuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+24	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	couteau	couteau	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_	*
+27	dans	dans	ADP	_	_	28	case	_	_	*
+28	plaie	plaie	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 14
+# text = D'autant qu'à deux reprises, les protégés de Gilles Claude se sont retrouvés finalistes à Auxerre en 1999 et à Clairefontaine en 2001 de cette épreuve nationale.
+1	D'	de	ADP	_	_	15	mark	_	SpaceAfter=No	*
+2	autant	autant	ADV	_	_	1	fixed	_	_	*
+3	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	reprises	reprise	NOUN	_	Gender=Fem|Number=Plur	15	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	6	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	protégés	protégé	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Gilles	Gilles	PROPN	_	_	9	nmod	_	_	*
+12	Claude	Claude	PROPN	_	_	11	flat:name	_	_	*
+13	se	se	PRON	_	Person=3|PronType=Prs	15	obj	_	_	1:IRV
+14	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	retrouvés	retrouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+16	finalistes	finaliste	ADJ	_	Gender=Masc|Number=Plur	15	xcomp	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Auxerre	Auxerre	PROPN	_	_	16	obl:arg	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	1999	1999	NUM	_	_	15	obl	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	Clairefontaine	Clairefontaine	PROPN	_	_	20	conj	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	2001	2001	NUM	_	_	15	obl	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	_	_	*
+28	épreuve	épreuve	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	nationale	national	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 15
+# text = Cette nouvelle édition, pour la petite histoire, s'est achevée comme on le sait par une élimination à l'issue du premier tour : « Bien sur qu'une telle compétition est un petit plus pour une section sportive.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*
+2	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	édition	édition	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	8	punct	_	_	*
+5	pour	pour	ADP	_	_	8	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	petite	petit	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	12	expl:pass	_	SpaceAfter=No	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*
+12	achevée	achever	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	comme	comme	SCONJ	_	_	16	mark	_	_	*
+14	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_	*
+15	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	_	*
+16	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*
+17	par	par	ADP	_	_	19	case	_	_	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	élimination	élimination	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	issue	issue	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	26	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+25	premier	premier	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	_	*
+26	tour	tour	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+27	:	:	PUNCT	_	_	41	punct	_	_	*
+28	«	«	PUNCT	_	_	41	punct	_	_	*
+29	Bien	bien	ADV	_	_	41	advmod	_	_	*
+30	sur	sur	ADP	_	_	41	case	_	_	*
+31	qu'	que	SCONJ	_	_	41	mark	_	SpaceAfter=No	*
+32	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+33	telle	tel	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_	*
+34	compétition	compétition	NOUN	_	Gender=Fem|Number=Sing	41	nsubj	_	_	*
+35	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	_	*
+36	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+37	petit	petit	ADJ	_	Gender=Masc|Number=Sing	41	advmod	_	_	*
+38	plus	plus	ADV	_	_	37	fixed	_	_	*
+39	pour	pour	ADP	_	_	41	case	_	_	*
+40	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	section	section	NOUN	_	Gender=Fem|Number=Sing	12	parataxis	_	_	*
+42	sportive	sportif	ADJ	_	Gender=Fem|Number=Sing	41	amod	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 16
+# text = Mais le plus important pour ces 15/17 ans, c'est qu'ils puissent s'entraîner, s'étalonner et surtout évoluer » Gilles Claude, le coach en charge de cette section régionale de foot créée en 1989, s'y implique totalement.
+1	Mais	mais	CCONJ	_	_	13	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	advmod	_	_	*
+3	plus	plus	ADV	_	_	2	fixed	_	_	*
+4	important	important	ADJ	_	Gender=Masc|Number=Sing	13	advcl	_	_	*
+5	pour	pour	ADP	_	_	10	case	_	_	*
+6	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_	*
+7	15	15	NUM	_	_	10	nummod	_	SpaceAfter=No	*
+8	/	/	SYM	_	_	9	cc	_	SpaceAfter=No	*
+9	17	17	NUM	_	_	7	conj	_	_	*
+10	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	4	punct	_	_	*
+12	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*
+13	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	ccomp	_	_	*
+14	qu'	que	SCONJ	_	_	16	mark	_	SpaceAfter=No	*
+15	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_	*
+16	puissent	pouvoir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	18	obj	_	SpaceAfter=No	*
+18	entraîner	entraîner	VERB	_	VerbForm=Inf	16	xcomp	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	s'	se	PRON	_	Person=3|PronType=Prs	21	obj	_	SpaceAfter=No	*
+21	étalonner	étalonner	VERB	_	VerbForm=Inf	13	conj	_	_	*
+22	et	et	CCONJ	_	_	24	cc	_	_	*
+23	surtout	surtout	ADV	_	_	24	advmod	_	_	*
+24	évoluer	évoluer	VERB	_	VerbForm=Inf	21	conj	_	_	*
+25	»	»	PUNCT	_	_	13	punct	_	_	*
+26	Gilles	Gilles	PROPN	_	_	13	nsubj	_	_	*
+27	Claude	Claude	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	coach	coach	NOUN	_	Gender=Masc|Number=Sing	26	appos	_	_	*
+31	en	en	ADP	_	_	32	case	_	_	*
+32	charge	charge	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	35	det	_	_	*
+35	section	section	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	_	*
+36	régionale	régional	ADJ	_	Gender=Fem|Number=Sing	35	amod	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	foot	foot	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+39	créée	créer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	30	acl	_	_	*
+40	en	en	ADP	_	_	41	case	_	_	*
+41	1989	1989	NUM	_	_	39	obl	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	13	punct	_	_	*
+43	s'	se	PRON	_	Person=3|PronType=Prs	45	expl:comp	_	SpaceAfter=No	1:IRV
+44	y	y	PRON	_	_	45	iobj	_	_	*
+45	implique	impliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+46	totalement	totalement	ADV	_	_	45	advmod	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	45	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 17
+# text = Le football est un sujet qu'il maîtrise très bien : il a été entraîneur des moins de 17 ans du FC Sochaux.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	football	football	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	qu'	que	PRON	_	PronType=Rel	8	obj	_	SpaceAfter=No	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	maîtrise	maîtriser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+9	très	très	ADV	_	_	10	advmod	_	_	*
+10	bien	bien	ADV	_	_	8	advmod	_	_	*
+11	:	:	PUNCT	_	_	15	punct	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+14	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	cop	_	_	*
+15	entraîneur	entraîneur	NOUN	_	Gender=Masc|Number=Sing	5	parataxis	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	moins	moins	ADV	_	_	15	nmod	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	17	17	NUM	_	_	21	nummod	_	_	*
+21	ans	an	NOUN	_	Gender=Masc|Number=Plur	18	obl:arg	_	_	*
+22-23	du	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	FC	FC	PROPN	_	_	21	nmod	_	_	*
+25	Sochaux	Sochaux	PROPN	_	_	24	flat:name	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25232.txt 18
+# text = « L'intérêt d'une telle section, c'est de voir les entraînements de foot intégrés dans les heures de cours ».
+1	«	«	PUNCT	_	_	10	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	_	_	*
+4	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	telle	tel	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	section	section	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*
+10	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	de	de	ADP	_	_	12	mark	_	_	*
+12	voir	voir	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	entraînements	entraînement	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	foot	foot	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	intégrés	intégrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	14	acl	_	_	*
+18	dans	dans	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	heures	heure	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	cours	cours	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n	*
+

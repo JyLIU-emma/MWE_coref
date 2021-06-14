@@ -1,0 +1,655 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-15_15932.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 1
+# text = Scouts toujours Dix-huit mois d'attente et les voilà enfin scouts.
+1	Scouts	Scouts	PROPN	_	_	0	root	_	_	*
+2	toujours	toujours	ADV	_	_	3	advmod	_	SpacesAfter=\n	*
+3	Dix-huit	Dix-huit	NUM	_	_	1	nmod	_	_	*
+4	mois	mois	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	attente	attente	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	9	obj	_	_	*
+9	voilà	voilà	VERB	_	_	4	conj	_	_	*
+10	enfin	enfin	ADV	_	_	11	advmod	_	_	*
+11	scouts	scout	NOUN	_	Gender=Masc|Number=Plur	9	xcomp	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 2
+# text = La température, frôlant les moins 10 degrés, n'a pas perturbé, samedi, la cérémonie des scouts qui s'est déroulée dans la parc François-Verdun, jouxtant le local de la troupe Saint-Martin d'Etain.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	température	température	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	frôlant	frôler	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+6	moins	moins	ADV	_	_	7	advmod	_	_	*
+7	10	10	NUM	_	_	8	nummod	_	_	*
+8	degrés	degré	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	2	punct	_	_	*
+10	n'	ne	ADV	_	Polarity=Neg	13	advmod	_	SpaceAfter=No	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+12	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	perturbé	perturber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	cérémonie	cérémonie	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	scouts	scout	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+22	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*
+23	s'	se	PRON	_	Person=3|PronType=Prs	25	expl:comp	_	SpaceAfter=No	1:IRV
+24	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	déroulée	dérouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	21	acl:relcl	_	_	1
+26	dans	dans	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	parc	parc	NOUN	_	Gender=Masc|Number=Sing	25	obl:mod	_	_	*
+29	François-Verdun	François-Verdun	PROPN	_	_	28	appos	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	jouxtant	jouxter	VERB	_	Tense=Pres|VerbForm=Part	13	conj	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	local	local	NOUN	_	Gender=Masc|Number=Sing	31	obj	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_	*
+37	Saint-Martin	Saint-Martin	PROPN	_	_	36	appos	_	_	*
+38	d'	de	ADP	_	_	39	case	_	SpaceAfter=No	*
+39	Etain	Etain	PROPN	_	_	37	nmod	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 3
+# text = Deux feux de camp tranchaient dans la nuit, l'un pour préparer les jambons à la broche, le second pour donner un peu de clarté et de gaieté à une soixantaine de personnes.
+1	Deux	Deux	NUM	_	_	2	nummod	_	_	*
+2	feux	feu	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	camp	camp	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	tranchaient	tranch	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	un	un	PRON	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+12	pour	pour	ADP	_	_	13	mark	_	_	*
+13	préparer	préparer	VERB	_	VerbForm=Inf	5	advcl	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	jambons	jambon	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	broche	broche	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	second	second	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+22	pour	pour	ADP	_	_	23	mark	_	_	*
+23	donner	donner	VERB	_	VerbForm=Inf	21	acl	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	obj	_	_	*
+25	peu	peu	ADV	_	_	24	fixed	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	clarté	clarté	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+28	et	et	CCONJ	_	_	30	cc	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	gaieté	gaieté	NOUN	_	Gender=Fem|Number=Sing	27	conj	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	soixantaine	soixantaine	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	33	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 4
+# text = Un moment particulier pour six jeunes cinq louveteaux - Paul, Etienne, Nicolas, Ludovic et Jean-Jacques - et une jeannette - Nathalie -, âgés entre 8 et 12 ans, venus promettre de la main gauche sur le drapeau, en saluant de la main droite, de respecter la loi scout.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	moment	moment	NOUN	_	Gender=Masc|Number=Sing	55	nsubj	_	_	*
+3	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	six	six	NUM	_	_	6	nummod	_	_	*
+6	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+7	cinq	cinq	NUM	_	_	8	nummod	_	_	*
+8	louveteaux	louveteau	NOUN	_	Gender=Masc|Number=Plur	6	appos	_	_	*
+9	-	-	PUNCT	_	_	10	punct	_	_	*
+10	Paul	Paul	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Etienne	Etienne	PROPN	_	_	10	conj	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Nicolas	Nicolas	PROPN	_	_	10	conj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Ludovic	Ludovic	PROPN	_	_	10	conj	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	Jean-Jacques	Jean-Jacques	PROPN	_	_	10	conj	_	_	*
+19	-	-	PUNCT	_	_	22	punct	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	jeannette	jeannette	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+23	-	-	PUNCT	_	_	24	punct	_	_	*
+24	Nathalie	Nathalie	PROPN	_	_	10	conj	_	_	*
+25	-	-	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	âgés	âger	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	*
+28	entre	entre	ADP	_	_	29	case	_	_	*
+29	8	8	NUM	_	_	27	obl	_	_	*
+30	et	et	CCONJ	_	_	31	cc	_	_	*
+31	12	12	NUM	_	_	29	conj	_	_	*
+32	ans	an	NOUN	_	Gender=Masc|Number=Plur	27	obl	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	venus	venir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*
+35	promettre	promettre	VERB	_	VerbForm=Inf	34	xcomp	_	_	*
+36	de	de	ADP	_	_	38	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	main	main	NOUN	_	Gender=Fem|Number=Sing	35	obl:arg	_	_	*
+39	gauche	gauche	ADJ	_	Gender=Fem|Number=Sing	38	amod	_	_	*
+40	sur	sur	ADP	_	_	42	case	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	drapeau	drapeau	NOUN	_	Gender=Masc|Number=Sing	35	obl	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	34	punct	_	_	*
+44	en	en	ADP	_	_	45	mark	_	_	*
+45	saluant	saluer	VERB	_	Tense=Pres|VerbForm=Part	34	advcl	_	_	*
+46	de	de	ADP	_	_	48	case	_	_	*
+47	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_	*
+48	main	main	NOUN	_	Gender=Fem|Number=Sing	45	obl:arg	_	_	*
+49	droite	droit	ADJ	_	Gender=Fem|Number=Sing	48	amod	_	SpaceAfter=No	*
+50	,	,	PUNCT	_	_	52	punct	_	_	*
+51	de	de	ADP	_	_	52	mark	_	_	*
+52	respecter	respecter	VERB	_	VerbForm=Inf	45	xcomp	_	_	*
+53	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_	*
+54	loi	loi	NOUN	_	Gender=Fem|Number=Sing	52	obj	_	_	*
+55	scout	scoût	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+56	.	.	PUNCT	_	_	55	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 5
+# text = Un moment très attendu depuis dix-huit mois qu'ils fréquentent la troupe.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	moment	moment	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	très	très	ADV	_	_	4	advmod	_	_	*
+4	attendu	attendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	depuis	depuis	ADP	_	_	7	case	_	_	*
+6	dix-huit	dix-huit	NUM	_	_	7	nummod	_	_	*
+7	mois	mois	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	_	*
+8	qu'	que	PRON	_	PronType=Rel	10	obj	_	SpaceAfter=No	*
+9	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_	*
+10	fréquentent	fréquenter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	10	xcomp	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 6
+# text = Une promesse fait devant parents, amis, chef de troupe, assistant au chef de troupe, louveteaux, jeannettes, scouts unitaires, guides, les abbés Yves Gérard et Jean-Pierre Hacquin.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	promesse	promesse	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	devant	devant	ADP	_	_	5	case	_	_	*
+5	parents	parent	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	amis	ami	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	chef	chef	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	assistant	assistant	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	chef	chef	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	louveteaux	louveteau	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	jeannettes	jeannette	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	scouts	scout	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+25	unitaires	unitaire	ADJ	_	Gender=Masc|Number=Plur	24	amod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	guides	guide	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+30	abbés	abbé	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+31	Yves	Yves	PROPN	_	_	30	appos	_	_	*
+32	Gérard	Gérard	PROPN	_	_	31	flat:name	_	_	*
+33	et	et	CCONJ	_	_	34	cc	_	_	*
+34	Jean-Pierre	Jean-Pierre	PROPN	_	_	31	conj	_	_	*
+35	Hacquin	Hacquin	PROPN	_	_	34	flat:name	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 7
+# text = Claire, cheftaine, a animé la manifestation : « Pourquoi veux-tu être Louveteau ? », leur a-t-elle demandé.
+1	Claire	Claire	PROPN	_	_	6	nsubj	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	cheftaine	cheftaine	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	animé	animer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9	:	:	PUNCT	_	_	15	punct	_	_	*
+10	«	«	PUNCT	_	_	15	punct	_	_	*
+11	Pourquoi	pourquoi	ADV	_	_	15	advmod	_	_	*
+12	veux	vouloir	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No	*
+13	-tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	15	nsubj	_	_	*
+14	être	être	AUX	_	VerbForm=Inf	15	cop	_	_	*
+15	Louveteau	louveteau	PROPN	_	_	6	parataxis	_	_	*
+16	?	?	PUNCT	_	_	15	punct	_	_	*
+17	»	»	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	23	punct	_	_	*
+19	leur	lui	PRON	_	Number=Plur|Person=3|PronType=Prs	23	iobj	_	_	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	SpaceAfter=No	*
+21	-t	t	PART	_	_	22	dep	_	SpaceAfter=No	*
+22	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_	*
+23	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	parataxis	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 8
+# text = Avant de leur ordonner : « Va demander à tes petits copains s'ils veulent t'accepter.
+1	Avant	avant	ADV	_	_	0	root	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	ordonner	ordonner	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+5	:	:	PUNCT	_	_	8	punct	_	_	*
+6	«	«	PUNCT	_	_	8	punct	_	_	*
+7	Va	aller	PROPN	_	_	8	nsubj	_	_	*
+8	demander	demander	VERB	_	VerbForm=Inf	1	parataxis	_	_	*
+9	à	à	ADP	_	_	12	case	_	_	*
+10	tes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+11	petits	petit	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+12	copains	copain	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	_	*
+13	s'	se	SCONJ	_	_	15	mark	_	SpaceAfter=No	*
+14	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_	*
+15	veulent	vouloir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*
+16	t'	le	PRON	_	Number=Sing|Person=2|PronType=Prs	17	obj	_	SpaceAfter=No	*
+17	accepter	accepter	VERB	_	VerbForm=Inf	15	xcomp	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 9
+# text = Va demander à tes parents s'ils sont d'accord.
+1	Va	aller	PROPN	_	_	10	nsubj	_	_	*
+2	demander	demander	VERB	_	VerbForm=Inf	1	xcomp	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	tes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	_	*
+6	s'	si	PRON	_	Person=3|PronType=Prs	10	iobj	_	SpaceAfter=No	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_	*
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 10
+# text = Présente-toi devant l'abbé Jean-Pierre Hacquin qui te donnera la bénédiction » Une fois ce rituel effectué, il était temps de rentrer ;
+1	Présente	présent	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+2	-toi	-toi	PRON	_	Number=Sing|Person=2	1	nsubj	_	_	*
+3	devant	devant	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	abbé	abbé	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*
+6	Jean-Pierre	Jean-Pierre	PROPN	_	_	5	appos	_	_	*
+7	Hacquin	Hacquin	PROPN	_	_	6	flat:name	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*
+9	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	10	iobj	_	_	*
+10	donnera	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	acl:relcl	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	bénédiction	bénédiction	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13	»	»	PUNCT	_	_	12	punct	_	_	*
+14	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+15	fois	fois	NOUN	_	Gender=Fem|Number=Sing	14	fixed	_	_	*
+16	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	17	det	_	_	*
+17	rituel	rituel	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*
+18	effectué	effectuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	advcl	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	18	punct	_	_	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	1:VID
+21	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	_	1
+22	temps	temps	NOUN	_	Gender=Masc|Number=Sing	17	acl:relcl	_	_	1
+23	de	de	ADP	_	_	24	mark	_	_	*
+24	rentrer	rentrer	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+25	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 11
+# text = le froid commençait à pénétrer les vêtements.
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	froid	froid	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	commençait	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	pénétrer	pénétrer	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	vêtements	vêtement	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 12
+# text = Là, les couverts étaient dressés, Lionnel avait préparé les pâtés en croûte et Hervé menait à point les jambons à la broche.
+1	Là	là	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	couverts	couvert	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*
+5	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	6	aux:pass	_	_	*
+6	dressés	dresser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	Lionnel	Lionnel	PROPN	_	_	10	nsubj	_	_	*
+9	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux:tense	_	_	*
+10	préparé	préparer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	pâtés	pâté	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	croûte	croûte	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	Hervé	Hervé	PROPN	_	_	17	nsubj	_	_	*
+17	menait	mener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	conj	_	_	*
+18	à	à	ADP	_	_	19	case	_	_	*
+19	point	point	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	jambons	jambon	NOUN	_	Gender=Masc|Number=Plur	17	obj	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	broche	broche	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 13
+# text = Et pour couronner cette si belle soirée, un spectacle de sketchs et de marionnettes était organisé, et la galette des rois était partagées.
+1	Et	et	CCONJ	_	_	17	cc	_	_	*
+2	pour	pour	ADP	_	_	3	mark	_	_	*
+3	couronner	couronner	VERB	_	VerbForm=Inf	17	advcl	_	_	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_	*
+5	si	si	ADV	_	_	6	advmod	_	_	*
+6	belle	beau	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	sketchs	sketch	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	marionnettes	marionnette	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+16	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	cop	_	_	*
+17	organisé	organiser	ADJ	_	Gender=Masc|Number=Sing	26	nsubj:pass	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	et	et	CCONJ	_	_	21	cc	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	galette	galette	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	rois	roi	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_	*
+25	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	aux:pass	_	_	*
+26	partagées	partager	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	26	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 14
+# text = L'Est Républicain : Claude Mangin, tél.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Est	est	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Claude	Claude	PROPN	_	_	2	appos	_	_	*
+6	Mangin	Mangin	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	tél	tél	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 15
+# text = 03.29.87.13.59 ou 06.09.26.22.63 ; fax 03.29.87.01.40.
+1	03.29.87.13.59	03.29.87.13.59	NUM	_	_	5	nummod	_	_	*
+2	ou	ou	CCONJ	_	_	3	cc	_	_	*
+3	06.09.26.22.63	06.09.26.22.63	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+4	;	;	PUNCT	_	_	5	punct	_	_	*
+5	fax	fax	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+6	03.29.87.01.40	03.29.87.01.40	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 16
+# text = Mairie : secrétariat ouvert de 9 h à 12 h et de 14 h à 17 h. Permanence en mairie de Robert Voisin (travaux) de 14 h à 17 h. Gym volontaire : enfants au gymnase de la Codecom de 10 h à 12 h ; adultes à la salle de judo de 18 h 45 à 19 h 45.
+1	Mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	secrétariat	secrétariat	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	9	9	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Plur	4	obl:mod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	12	12	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	14	14	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	17	17	NUM	_	_	7	nmod	_	_	*
+17	h.	h.	ADP	_	_	18	case	_	_	*
+18	Permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	Robert	Robert	PROPN	_	_	20	nmod	_	_	*
+23	Voisin	voisin	PROPN	_	_	22	flat:name	_	_	*
+24	(	(	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+25	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	22	appos	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	25	punct	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	14	14	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	17	17	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	4	punct	_	_	*
+34	Gym	Gym	PROPN	_	_	1	appos	_	_	*
+35	volontaire	volontaire	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*
+36	:	:	PUNCT	_	_	37	punct	_	_	*
+37	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	34	appos	_	_	*
+38-39	au	_	_	_	_	_	_	_	_	*
+38	à	à	ADP	_	_	40	case	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*
+43	Codecom	Codecom	PROPN	_	_	40	nmod	_	_	*
+44	de	de	ADP	_	_	46	case	_	_	*
+45	10	10	NUM	_	_	46	nummod	_	_	*
+46	h	heure	NOUN	_	Gender=Fem|Number=Plur	37	nmod	_	_	*
+47	à	à	ADP	_	_	49	case	_	_	*
+48	12	12	NUM	_	_	49	nummod	_	_	*
+49	h	heure	NOUN	_	Gender=Masc|Number=Plur	46	nmod	_	_	*
+50	;	;	PUNCT	_	_	51	punct	_	_	*
+51	adultes	adulte	NOUN	_	Gender=Masc|Number=Plur	37	conj	_	_	*
+52	à	à	ADP	_	_	54	case	_	_	*
+53	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_	*
+54	salle	salle	NOUN	_	Gender=Fem|Number=Sing	51	nmod	_	_	*
+55	de	de	ADP	_	_	56	case	_	_	*
+56	judo	judo	NOUN	_	Gender=Masc|Number=Sing	54	nmod	_	_	*
+57	de	de	ADP	_	_	59	case	_	_	*
+58	18	18	NUM	_	_	59	nummod	_	_	*
+59	h	heure	NOUN	_	Gender=Fem|Number=Plur	54	nmod	_	_	*
+60	45	45	NUM	_	_	63	nummod	_	_	*
+61	à	à	ADP	_	_	62	case	_	_	*
+62	19	19	NUM	_	_	60	nmod	_	_	*
+63	h	heure	NOUN	_	Gender=Fem|Number=Sing	59	conj	_	_	*
+64	45	45	NUM	_	_	63	nmod	_	SpaceAfter=No	*
+65	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 17
+# text = Oxygène : activités au local, place du Bosquet, de 10 h à 12 h et de 14 h à 18 h. Office du tourisme : ouvert de 13 h 30 à 17 h 30 ; tél.
+1	Oxygène	oxygène	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	8	punct	_	_	*
+3	activités	activiter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	local	local	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	place	place	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Bosquet	bosquet	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	10	10	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	12	12	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19	et	et	CCONJ	_	_	22	cc	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	14	14	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	18	18	NUM	_	_	25	nummod	_	_	*
+25	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	27	punct	_	_	*
+27	Office	office	PROPN	_	_	1	appos	_	_	*
+28-29	du	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	_	*
+31	:	:	PUNCT	_	_	32	punct	_	_	*
+32	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	27	parataxis	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	13	13	NUM	_	_	35	nummod	_	_	*
+35	h	heure	NOUN	_	Gender=Fem|Number=Plur	32	obl:arg	_	_	*
+36	30	30	NUM	_	_	39	nummod	_	_	*
+37	à	à	ADP	_	_	38	case	_	_	*
+38	17	17	NUM	_	_	36	nmod	_	_	*
+39	h	heure	NOUN	_	Gender=Fem|Number=Sing	35	conj	_	_	*
+40	30	30	NUM	_	_	39	nmod	_	_	*
+41	;	;	PUNCT	_	_	42	punct	_	_	*
+42	tél	tél	NOUN	_	Gender=Masc|Number=Plur	35	conj	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 18
+# text = 03.29.87.20.80.
+1	03.29.87.20.80	03.29.87.20.80	NUM	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 19
+# text = Centre de loisirs : au centre social et culturel, 14 h à 17 h.
+1	Centre	centre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	centre	centre	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+8	social	social	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	culturel	culturel	ADJ	_	Gender=Masc|Number=Sing	8	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	14	14	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	17	17	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 20
+# text = Décharge municipale : ouverte de 13 h 30 à 16 h. Bibliothèque : au pavillon François-Verdun de 14 h à 17 h. Judo : baby-judo à la salle de 14 h à 15 h.
+1	Décharge	Décharge	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	municipale	municipal	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	ouverte	ouvrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	13	13	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	30	30	NUM	_	_	7	conj	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	16	16	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	13	punct	_	_	*
+13	Bibliothèque	bibliothèque	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	_	_	*
+14	:	:	PUNCT	_	_	13	punct	_	_	*
+15-16	au	_	_	_	_	_	_	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	pavillon	pavillon	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+18	François-Verdun	François-Verdun	PROPN	_	_	17	appos	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	14	14	NUM	_	_	21	nummod	_	_	*
+21	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	17	17	NUM	_	_	24	nummod	_	_	*
+24	h.	h.	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+25	Judo	judo	PROPN	_	_	24	appos	_	_	*
+26	:	:	PUNCT	_	_	30	punct	_	_	*
+27	baby-judo	baby-judo	ADV	_	_	30	advmod	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	salle	salle	NOUN	_	Gender=Fem|Number=Sing	13	parataxis	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	14	14	NUM	_	_	33	nummod	_	_	*
+33	h	heure	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	15	15	NUM	_	_	36	nummod	_	_	*
+36	h	heure	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 21
+# text = Avant-garde : école de tir de 16 h à 18 h.
+1	Avant-garde	avant-garde	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	école	école	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	tir	tir	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	16	16	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	18	18	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 22
+# text = Aïkido : pour les enfants, à la salle de judo de 17 h 30 à 18 h 30.
+1	Aïkido	Aïkido	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	pour	pour	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	salle	salle	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	judo	judo	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	17	17	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+15	30	30	NUM	_	_	18	nummod	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	18	18	NUM	_	_	15	nmod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+19	30	30	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_15932.txt 23
+# text = Tennis de table : au gymnase de l'école primaire de 17 h 30 à 19 h. Fléchettes : entraînement au local à 20 h 30.
+1	Tennis	tennis	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	table	table	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	école	école	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	primaire	primaire	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	17	17	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+15	30	30	NUM	_	_	14	nmod	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	19	19	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	20	punct	_	_	*
+20	Fléchettes	Fléchettes	PROPN	_	_	1	appos	_	_	*
+21	:	:	PUNCT	_	_	22	punct	_	_	*
+22	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	20	appos	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	local	local	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	20	20	NUM	_	_	28	nummod	_	_	*
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+29	30	30	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

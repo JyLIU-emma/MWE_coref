@@ -1,0 +1,659 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-19_59993.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 1
+# text = Une assemblée générale bien suivie.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	générale	général	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	bien	bien	ADV	_	_	5	advmod	_	_	*
+5	suivie	suivre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 2
+# text = François Raguin, médaillé de Jeunesse et Sports.
+1	François	François	PROPN	_	_	0	root	_	_	*
+2	Raguin	Raguin	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	médaillé	médailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Jeunesse	Jeunesse	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	Sports	Sports	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 3
+# text = Serge Laurent a présidé l'assemblée générale annuelle du club nautique de Montbozon tout en déplorant que pour l'année 2002, il y eu très peu de compétitions.
+1	Serge	Serge	PROPN	_	_	4	nsubj	_	_	*
+2	Laurent	Laurent	PROPN	_	_	1	flat:name	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	présidé	présider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	générale	général	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	annuelle	annuel	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	club	club	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+12	nautique	nautique	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Montbozon	Montbozon	PROPN	_	_	11	nmod	_	_	*
+15	tout	tout	ADV	_	_	17	mark	_	_	*
+16	en	en	ADP	_	_	15	fixed	_	_	*
+17	déplorant	déplorer	VERB	_	Tense=Pres|VerbForm=Part	4	advcl	_	_	*
+18	que	que	SCONJ	_	_	26	mark	_	_	*
+19	pour	pour	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	année	année	NOUN	_	Gender=Fem|Number=Sing	26	obl:mod	_	_	*
+22	2002	2002	NUM	_	_	21	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	21	punct	_	_	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	expl:subj	_	_	1:VID
+25	y	y	PRON	_	_	26	expl:comp	_	_	1
+26	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	ccomp	_	_	1
+27	très	très	ADV	_	_	28	advmod	_	_	*
+28	peu	peu	ADV	_	_	26	obj	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	compétitions	compétition	NOUN	_	Gender=Fem|Number=Plur	28	obl:arg	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 4
+# text = Le 19 mai, le club s'est rendu à Conflans-sur-Lanterne pour une journée familiale de canoë.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	19	19	NUM	_	_	9	obl:mod	_	_	*
+3	mai	mai	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	club	club	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+7	s'	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	SpaceAfter=No	1:IRV
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	rendu	rendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+10	à	à	ADP	_	_	11	case	_	_	*
+11	Conflans-sur-Lanterne	Conflans-sur-Lanterne	PROPN	_	_	9	obl:arg	_	_	*
+12	pour	pour	ADP	_	_	14	case	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	journée	journée	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+15	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	canoë	canoë	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 5
+# text = Quant au marathon qui a eu lieu en Ardèche, ils étaient six compétiteurs à se déplacer avec le club de Villersexel.
+1	Quant	quant	ADV	_	_	4	case	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	marathon	marathon	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl:relcl	_	_	1:VID
+8	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	1
+9	en	en	ADP	_	_	10	case	_	_	*
+10	Ardèche	Ardèche	PROPN	_	_	7	obl	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	4	punct	_	_	*
+12	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_	*
+13	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	15	cop	_	_	*
+14	six	six	NUM	_	_	15	nummod	_	_	*
+15	compétiteurs	compétiteur	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+16	à	à	ADP	_	_	18	mark	_	_	*
+17	se	se	PRON	_	Person=3|PronType=Prs	18	expl:comp	_	_	2:IRV
+18	déplacer	déplacer	VERB	_	VerbForm=Inf	15	acl	_	_	2
+19	avec	avec	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	club	club	NOUN	_	Gender=Masc|Number=Sing	18	obl:arg	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Villersexel	Villersexel	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 6
+# text = Avant d'aborder le programme 2003, le club a tenu à féliciter François Raguin qui a reçu la médaille d'argent par Jeunesse et Sports pour son dévouement au sein du club.
+1	Avant	avant	ADV	_	_	11	advmod	_	_	*
+2	d'	de	ADP	_	_	3	mark	_	SpaceAfter=No	*
+3	aborder	aborder	VERB	_	VerbForm=Inf	1	ccomp	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	programme	programme	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	2003	2003	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	1	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	club	club	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	à	à	ADP	_	_	13	mark	_	_	*
+13	féliciter	féliciter	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	François	François	PROPN	_	_	13	obj	_	_	*
+15	Raguin	Raguin	PROPN	_	_	14	flat:name	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*
+18	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl:relcl	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	médaille	médaille	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*
+21	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+22	argent	argent	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	par	par	ADP	_	_	24	case	_	_	*
+24	Jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	Sports	Sports	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	_	*
+27	pour	pour	ADP	_	_	29	case	_	_	*
+28	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	29	det	_	_	*
+29	dévouement	dévouement	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+30-31	au	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	sein	sein	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	club	club	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 7
+# text = Prix des licences : 43 € (inchangé par rapport à 2002).
+1	Prix	Prix	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	licences	licence	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+5	:	:	PUNCT	_	_	7	punct	_	_	*
+6	43	43	NUM	_	_	7	nummod	_	_	*
+7	€	€	SYM	_	_	1	parataxis	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	inchangé	inchanger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+10	par	par	ADP	_	_	11	case	_	_	*
+11	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	2002	2002	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 8
+# text = A noter, un nouveau président du comité départemental vient d'être nommé.
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	noter	noter	VERB	_	VerbForm=Inf	11	advcl	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	président	président	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	comité	comité	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+11	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	d'	de	ADP	_	_	14	mark	_	SpaceAfter=No	*
+13	être	être	AUX	_	VerbForm=Inf	14	aux:pass	_	_	*
+14	nommé	nommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	xcomp	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 9
+# text = Il s'agit de Patrick Ségura.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1
+3	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Patrick	Patrick	PROPN	_	_	3	obl:arg	_	_	*
+6	Ségura	Ségura	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 10
+# text = Prévisions 2003 : la descente de l'Ognon se déroulera dimanche 16 mars.
+1	Prévisions	Prévisions	PROPN	_	_	10	nsubj	_	_	*
+2	2003	2003	NUM	_	_	1	nmod	_	_	*
+3	:	:	PUNCT	_	_	5	punct	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	descente	descente	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	Ognon	Ognon	PROPN	_	_	5	nmod	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	_	1:IRV
+10	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+11	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	_	*
+12	16	16	NUM	_	_	11	nmod	_	_	*
+13	mars	mars	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 11
+# text = Départ à 14 h, des Forges de Montagney pour les petits et 15 h, pour les grands à Bouhans.
+1	Départ	départ	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	14	14	NUM	_	_	4	nummod	_	_	*
+4	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Forges	forge	PROPN	_	_	1	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Montagney	Montagney	PROPN	_	_	8	nmod	_	_	*
+11	pour	pour	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	petits	petit	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+14	et	et	CCONJ	_	_	16	cc	_	_	*
+15	15	15	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	pour	pour	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	grands	grand	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	Bouhans	Bouhans	PROPN	_	_	20	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 12
+# text = Le club participera à l'organisation du championnat de France de course en ligne (monoplace) les 29 et 30 mars, à Vesoul.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	club	club	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	participera	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	organisation	organisation	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	France	France	PROPN	_	_	9	nmod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	course	course	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+17	monoplace	monoplace	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	17	punct	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	29	29	NUM	_	_	3	obl	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	30	30	NUM	_	_	20	conj	_	_	*
+23	mars	mar	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	26	punct	_	_	*
+25	à	à	ADP	_	_	26	case	_	_	*
+26	Vesoul	Vesoul	PROPN	_	_	3	obl:mod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 13
+# text = Les personnes désireuses de participer au marathon en Ardèche, peuvent toujours s'inscrire.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	_	*
+3	désireuses	désireux	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	participer	participer	VERB	_	VerbForm=Inf	2	acl	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	marathon	marathon	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	Ardèche	Ardèche	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	2	punct	_	_	*
+12	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	toujours	toujours	ADV	_	_	12	advmod	_	_	*
+14	s'	se	PRON	_	Person=3|PronType=Prs	15	obj	_	SpaceAfter=No	*
+15	inscrire	inscrire	VERB	_	VerbForm=Inf	12	xcomp	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 14
+# text = Dragon boat : une grande manifestation « Mille Pagaies » aura lieu à Port-sur-Saône, les 28 et 29 juin (le long du canal).
+1	Dragon	dragon	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+2	boat	boat	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+5	grande	grand	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+7	«	«	PUNCT	_	_	9	punct	_	_	*
+8	Mille	mille	NUM	_	_	9	nummod	_	_	*
+9	Pagaies	Pagaies	NOUN	_	Gender=Fem|Number=Plur	6	appos	_	_	*
+10	»	»	PUNCT	_	_	9	punct	_	_	*
+11	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+12	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	1
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Port-sur-Saône	Port-sur-Saône	PROPN	_	_	11	obl:arg	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	28	28	NUM	_	_	11	obl	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	29	29	NUM	_	_	17	conj	_	_	*
+20	juin	juin	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	long	long	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	_	*
+24-25	du	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	canal	canal	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+27	)	)	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 15
+# text = Une première au niveau national.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	première	premier	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	national	national	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 16
+# text = Cette course se déroulera par série de trois bateaux (appelée Dragon boat) sur une distance de 200 m.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	course	course	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:pass	_	_	1:IRV
+4	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+5	par	par	ADP	_	_	6	case	_	_	*
+6	série	série	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	trois	trois	NUM	_	_	9	nummod	_	_	*
+9	bateaux	bateau	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+11	appelée	appeler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+12	Dragon	dragon	X	_	Foreign=Yes	11	xcomp	_	_	*
+13	boat	boat	X	_	Foreign=Yes	12	flat:foreign	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	11	punct	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	distance	distance	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	200	200	NUM	_	_	20	nummod	_	_	*
+20	m	m	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 17
+# text = Chaque bateau mesure 12 m pour un poids de 350 kg avec 18 pagayeurs à bord, 1 personne donne le rythme et 1 barreur (il serait souhaitable de se costumer).
+1	Chaque	chaque	DET	_	Gender=Masc|Number=Sing	2	det	_	_	*
+2	bateau	bateau	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	mesure	mesurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	12	12	NUM	_	_	5	nummod	_	_	*
+5	m	m	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+6	pour	pour	ADP	_	_	8	case	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	poids	poids	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	350	350	NUM	_	_	11	nummod	_	_	*
+11	kg	kg	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+12	avec	avec	ADP	_	_	14	case	_	_	*
+13	18	18	NUM	_	_	14	nummod	_	_	*
+14	pagayeurs	pagayeur	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	bord	bord	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	1	1	NUM	_	_	19	nummod	_	_	*
+19	personne	personne	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	_	*
+20	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	rythme	rythme	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	1	1	NUM	_	_	25	nummod	_	_	*
+25	barreur	barreur	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*
+26	(	(	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+27	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_	*
+28	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	_	_	*
+29	souhaitable	souhaitable	ADJ	_	Gender=Masc|Number=Sing	20	parataxis	_	_	*
+30	de	de	ADP	_	_	32	mark	_	_	*
+31	se	se	PRON	_	Person=3|PronType=Prs	32	expl:comp	_	_	*
+32	costumer	costumer	VERB	_	VerbForm=Inf	29	xcomp	_	SpaceAfter=No	*
+33	)	)	PUNCT	_	_	29	punct	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 18
+# text = Le « Dragon boat » est une embarcation ancestrale qui nous vient de la Chine antique.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Dragon	dragon	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	boat	boat	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	»	»	PUNCT	_	_	3	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	embarcation	embarcation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+9	ancestrale	ancestral	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+11	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	12	iobj	_	_	*
+12	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	Chine	Chine	PROPN	_	_	12	obl:arg	_	_	*
+16	antique	antique	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 19
+# text = Le but de la manifestation est aussi de faire découvrir le canoë-kayak en général permettant ainsi au club de recruter de nouveaux adeptes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	but	but	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	aussi	aussi	ADV	_	_	0	root	_	_	*
+8	de	de	ADP	_	_	10	mark	_	_	*
+9	faire	faire	AUX	_	VerbForm=Inf	10	aux:caus	_	_	*
+10	découvrir	découvrir	VERB	_	VerbForm=Inf	7	ccomp	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	canoë-kayak	canoë-kayak	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	en	en	ADP	_	_	10	advmod	_	_	*
+14	général	général	NOUN	_	Gender=Masc|Number=Sing	13	fixed	_	_	*
+15	permettant	permettre	VERB	_	Tense=Pres|VerbForm=Part	10	advcl	_	_	*
+16	ainsi	ainsi	ADV	_	_	15	advmod	_	_	*
+17-18	au	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	club	club	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+20	de	de	ADP	_	_	21	mark	_	_	*
+21	recruter	recruter	VERB	_	VerbForm=Inf	19	acl	_	_	*
+22	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+23	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	24	amod	_	_	*
+24	adeptes	adepte	NOUN	_	Gender=Masc|Number=Plur	21	obj	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 20
+# text = Toute personne désireuse de participer (licencié ou non) amicale d'entreprise, comité d'établissement, associations ou autres peuvent s'inscrire auprès de Serge Laurent, à Bouhans-lès-Montbozon (tél.03.84.92.34.25) ou au Comité départemental 70.
+1	Toute	tout	DET	_	Gender=Fem|Number=Sing	2	det	_	_	*
+2	personne	personne	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+3	désireuse	désireux	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	participer	participer	VERB	_	VerbForm=Inf	2	acl	_	_	*
+6	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+7	licencié	licencier	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+8	ou	ou	CCONJ	_	_	9	cc	_	_	*
+9	non	non	ADV	_	_	7	conj	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	7	punct	_	_	*
+11	amicale	amicale	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	comité	comité	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	associations	association	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	_	*
+20	ou	ou	CCONJ	_	_	21	cc	_	_	*
+21	autres	autre	ADJ	_	Gender=Masc|Number=Plur	7	conj	_	_	*
+22	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	s'	se	PRON	_	Person=3|PronType=Prs	24	expl:pass	_	SpaceAfter=No	*
+24	inscrire	inscrire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	xcomp	_	_	*
+25	auprès	auprès	ADV	_	_	24	advmod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Serge	Serge	PROPN	_	_	25	obl:arg	_	_	*
+28	Laurent	Laurent	PROPN	_	_	27	flat:name	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	à	à	ADP	_	_	31	case	_	_	*
+31	Bouhans-lès-Montbozon	Bouhans-lès-Montbozon	PROPN	_	_	27	conj	_	_	*
+32	(	(	PUNCT	_	_	33	punct	_	SpaceAfter=No	*
+33	tél.03.84.92.34.25	tél.03.84.92.34.25	NUM	_	_	31	nmod	_	SpaceAfter=No	*
+34	)	)	PUNCT	_	_	33	punct	_	_	*
+35	ou	ou	CCONJ	_	_	38	cc	_	_	*
+36-37	au	_	_	_	_	_	_	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	Comité	comité	NOUN	_	Gender=Masc|Number=Sing	27	conj	_	_	*
+39	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	38	amod	_	_	*
+40	70	70	NUM	_	_	38	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	22	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 21
+# text = AUTHOISON Réunion : le club du 3e âge « Aux Toisons d'Argent », tiendra son assemblée générale ce mercredi, à 11 h 30, à la salle polyvalente.
+1	AUTHOISON	AUTHOISON	PROPN	_	_	18	nsubj	_	_	*
+2	Réunion	Réunion	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	5	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	club	club	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	9	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	3e	3e	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	âge	âge	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+10	«	«	PUNCT	_	_	13	punct	_	_	*
+11-12	Aux	_	_	_	_	_	_	_	_	*
+11	À	à	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*
+13	Toisons	Toisons	PROPN	_	_	1	nmod	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	Argent	argent	PROPN	_	_	13	nmod	_	_	*
+16	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	1	punct	_	_	*
+18	tiendra	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:LVC.full
+19	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*
+20	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	1
+21	générale	général	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+22	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_	*
+23	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	11	11	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*
+28	30	30	NUM	_	_	27	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	32	punct	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	salle	salle	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*
+33	polyvalente	polyvalent	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	18	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 22
+# text = FONTENOIS-LES-MONTBOZON Concours de tarot : l'association « Les Fontaines » organise samedi 15 mars, à 20 h 30, un concours de tarot à la salle des fêtes.
+1	FONTENOIS-LES-MONTBOZON	FONTENOIS-LES-MONTBOZON	ADP	_	_	2	case	_	_	*
+2	Concours	concours	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	tarot	tarot	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	:	:	PUNCT	_	_	7	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	association	association	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+8	«	«	PUNCT	_	_	10	punct	_	_	*
+9	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*
+10	Fontaines	fontaines	PROPN	_	_	7	appos	_	_	*
+11	»	»	PUNCT	_	_	10	punct	_	_	*
+12	organise	organiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	_	*
+14	15	15	NUM	_	_	13	nmod	_	_	*
+15	mars	mar	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	20	20	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+20	30	30	NUM	_	_	19	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	concours	concours	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	tarot	tarot	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	salle	salle	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_	*
+31	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	28	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 23
+# text = Inscription sur place à partir de 20 h. Participation : 10 €.
+1	Inscription	inscription	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	sur	sur	ADP	_	_	3	case	_	_	*
+3	place	place	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	à	à	ADP	_	_	1	advmod	_	_	*
+5	partir	partir	VERB	_	VerbForm=Inf	4	fixed	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	20	20	NUM	_	_	8	nummod	_	_	*
+8	h.	h.	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+9	Participation	participation	PROPN	_	_	8	appos	_	_	*
+10	:	:	PUNCT	_	_	12	punct	_	_	*
+11	10	10	NUM	_	_	12	nummod	_	_	*
+12	€	€	SYM	_	_	1	parataxis	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 24
+# text = Une soupe à l'oignon sera offerte en fin de concours.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	soupe	soupe	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	oignon	oignon	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*
+7	offerte	offrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	fin	fin	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	concours	concours	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59993.txt 25
+# text = Architecte-conseiller : permanences gratuites de l'architecte-conseiller du Conseil d'architecture d'urbanisme et de l'environnement de Haute-Saône (CAUE), Gilbert Loux, le vendredi 28 février, de 15 h à 17 h, uniquement sur rendez-vous à la mairie au 2, rue de Loulans, à Montbozon (tél.03.84.96.97.97).
+1	Architecte-conseiller	Architecte-conseiller	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	permanences	permanence	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	_	*
+4	gratuites	gratuit	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	architecte-conseiller	architecte-conseiller	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	architecture	architecture	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	urbanisme	urbanisme	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	environnement	environnement	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	Haute-Saône	Haute-Saône	PROPN	_	_	18	nmod	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	CAUE	CAUE	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+23	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Gilbert	Gilbert	PROPN	_	_	3	conj	_	_	*
+26	Loux	Loux	PROPN	_	_	25	flat:name	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	29	punct	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+30	28	28	NUM	_	_	29	nmod	_	_	*
+31	février	février	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	35	punct	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	15	15	NUM	_	_	35	nummod	_	_	*
+35	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	17	17	NUM	_	_	38	nummod	_	_	*
+38	h	heure	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	42	punct	_	_	*
+40	uniquement	uniquement	ADV	_	_	42	advmod	_	_	*
+41	sur	sur	ADP	_	_	42	case	_	_	*
+42	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+43	à	à	ADP	_	_	45	case	_	_	*
+44	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_	*
+45	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	42	nmod	_	_	*
+46-47	au	_	_	_	_	_	_	_	_	*
+46	à	à	ADP	_	_	48	case	_	_	*
+47	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_	*
+48	2	2	NUM	_	_	42	nmod	_	SpaceAfter=No	*
+49	,	,	PUNCT	_	_	50	punct	_	_	*
+50	rue	rue	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+51	de	de	ADP	_	_	52	case	_	_	*
+52	Loulans	Loulans	PROPN	_	_	50	nmod	_	SpaceAfter=No	*
+53	,	,	PUNCT	_	_	55	punct	_	_	*
+54	à	à	ADP	_	_	55	case	_	_	*
+55	Montbozon	Montbozon	PROPN	_	_	3	conj	_	_	*
+56	(	(	PUNCT	_	_	57	punct	_	SpaceAfter=No	*
+57	tél.03.84.96.97.97	tél.03.84.96.97.97	NUM	_	_	55	nmod	_	SpaceAfter=No	*
+58	)	)	PUNCT	_	_	57	punct	_	SpaceAfter=No	*
+59	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

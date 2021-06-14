@@ -1,0 +1,564 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-02_81.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 1
+# text = Tout à coup...
+1	Tout	tout	ADV	_	_	2	advmod	_	_	*
+2	à	à	ADP	_	_	0	root	_	_	*
+3	coup	coup	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	SpaceAfter=No	*
+4	...	...	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 2
+# text = Les témoignages des voisins.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	témoignages	témoignage	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	voisins	voisin	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 3
+# text = « De la fuméepartout » Elvira Dos Santos Matos : « Je devais partir à mon travail à la CTRB.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	De	de	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	fuméepartout	fuméepartout	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	_	*
+6	Elvira	Elvira	PROPN	_	_	4	appos	_	_	*
+7	Dos	dos	PROPN	_	_	6	flat:name	_	_	*
+8	Santos	Santos	PROPN	_	_	6	flat:name	_	_	*
+9	Matos	Matos	PROPN	_	_	6	flat:name	_	_	*
+10	:	:	PUNCT	_	_	13	punct	_	_	*
+11	«	«	PUNCT	_	_	13	punct	_	_	*
+12	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_	*
+13	devais	devoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	parataxis	_	_	*
+14	partir	partir	VERB	_	VerbForm=Inf	13	xcomp	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	travail	travail	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	CTRB	CTRB	PROPN	_	_	17	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 4
+# text = Je commence à 4 h 30.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	commence	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	4	4	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*
+6	30	30	NUM	_	_	5	nummod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 5
+# text = Il y a eu un bruit infernal.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	4	expl:comp	_	_	1
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	bruit	bruit	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	infernal	infernal	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 6
+# text = Une cloison est tombée à quelques centimètres de moi dans le salon où je dormais.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	cloison	cloison	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	tombée	tomber	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	quelques	quelque	DET	_	Gender=Masc|Number=Plur	7	det	_	_	*
+7	centimètres	centimètre	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	moi	soi	PRON	_	Number=Sing|Person=1	7	nmod	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	salon	salon	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+13	où	où	ADV	_	PronType=Rel	15	advmod	_	_	*
+14	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_	*
+15	dormais	dormais	CCONJ	_	_	12	acl:relcl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 7
+# text = J'ai été légèrement touchée à un pied.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj:pass	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+4	légèrement	légèrement	ADV	_	_	5	advmod	_	_	*
+5	touchée	toucher	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	pied	pied	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 8
+# text = J'ai vu le voisin.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	voisin	voisin	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 9
+# text = Il partait.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	partait	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 10
+# text = Il a juste dit : il y a eu une explosion.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	juste	juste	ADV	_	_	4	advmod	_	_	*
+4	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	:	:	PUNCT	_	_	9	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	1:VID
+7	y	y	PRON	_	_	9	expl:comp	_	_	1
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	parataxis	_	_	1
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 11
+# text = Il y avait de la fumée partout.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	fumée	fumée	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+7	partout	partout	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 12
+# text = » « On voyait chez notre voisin » Roxane Herbrecht et Nicolas Burcey : « Une explosion nous a réveillés.
+1	»	»	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*
+2	«	«	PUNCT	_	_	4	punct	_	_	*
+3	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*
+4	voyait	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+5	chez	chez	ADP	_	_	7	case	_	_	*
+6	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	voisin	voisin	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+8	»	»	PUNCT	_	_	4	punct	_	_	*
+9	Roxane	Roxane	PROPN	_	_	4	obj	_	_	*
+10	Herbrecht	Herbrecht	PROPN	_	_	9	flat:name	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	Nicolas	Nicolas	PROPN	_	_	9	conj	_	_	*
+13	Burcey	Burcey	PROPN	_	_	12	flat:name	_	_	*
+14	:	:	PUNCT	_	_	20	punct	_	_	*
+15	«	«	PUNCT	_	_	20	punct	_	_	*
+16	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	_	*
+18	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	20	obj	_	_	*
+19	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*
+20	réveillés	réveiller	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	parataxis	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 13
+# text = Le plancher et notre lit se sont soulevés.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	plancher	plancher	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+3	et	et	CCONJ	_	_	5	cc	_	_	*
+4	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	lit	lit	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+6	se	se	PRON	_	Person=3|PronType=Prs	8	obj	_	_	1:IRV
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	soulevés	soulever	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 14
+# text = Une porte est tombée.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	porte	porte	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	tombée	tomber	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 15
+# text = Cela sentait le brûlé.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	*
+2	sentait	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	brûlé	brûlé	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 16
+# text = Nous avons allumé la lumière.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	allumé	allumer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 17
+# text = On voyait chez notre voisin du dessous.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	voyait	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	chez	chez	ADP	_	_	5	case	_	_	*
+4	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	voisin	voisin	NOUN	_	Gender=Masc|Number=Sing	2	obl	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	dessous	dessous	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 18
+# text = C'est ensuite que nous avons compris que l'explosion venait de chez lui.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ensuite	ensuite	ADV	_	_	0	root	_	_	*
+4	que	que	SCONJ	_	_	7	mark	_	_	*
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+6	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	compris	comprendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl:cleft	_	_	*
+8	que	que	SCONJ	_	_	11	mark	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+11	venait	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	ccomp	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	chez	chez	ADP	_	_	14	case	_	_	*
+14	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	11	obl:arg	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 19
+# text = Nous avons pris peur.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	peur	peur	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 20
+# text = Nous avons voulu quitter notre appartement mais il n'y avait plus d'escaliers sur le palier.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	quitter	quitter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	appartement	appartement	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	mais	mais	CCONJ	_	_	11	cc	_	_	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl:subj	_	_	1:VID
+9	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	SpaceAfter=No	*
+10	y	y	PRON	_	_	11	expl:comp	_	_	1
+11	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	conj	_	_	1
+12	plus	plus	ADV	_	_	11	obj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	escaliers	escalier	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	palier	palier	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 21
+# text = Alors nous nous sommes mis au balcon et nous avons appelé au secours.
+1	Alors	alors	ADV	_	_	5	advmod	_	_	*
+2	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_	*
+3	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	5	obj	_	_	*
+4	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	balcon	balcon	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*
+10	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_	*
+11	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	appelé	appeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	1:VID
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	1
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	secours	secours	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	SpaceAfter=No	1
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 22
+# text = » « Peur pour ma fille » Coralie Mondoloni : « J'ai redouté une seconde explosion.
+1	»	»	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Peur	peur	PROPN	_	_	14	parataxis	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	fille	fille	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	»	»	PUNCT	_	_	3	punct	_	_	*
+8	Coralie	Coralie	PROPN	_	_	3	flat:name	_	_	*
+9	Mondoloni	Mondoloni	PROPN	_	_	3	flat:name	_	_	*
+10	:	:	PUNCT	_	_	3	punct	_	_	*
+11	«	«	PUNCT	_	_	3	punct	_	_	*
+12	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	SpaceAfter=No	*
+13	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	redouté	redouter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+16	seconde	second	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*
+17	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 23
+# text = J'ai pris Lina, ma fille de 5 ans.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	Lina	Lina	PROPN	_	_	3	obj	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	fille	fille	NOUN	_	Gender=Fem|Number=Sing	3	parataxis	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	5	5	NUM	_	_	10	nummod	_	_	*
+10	ans	an	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 24
+# text = J'ai demandé à des gens sur le trottoir de la récupérer.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	à	à	ADP	_	_	7	case	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	gens	gens	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	trottoir	trottoir	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+11	de	de	ADP	_	_	13	mark	_	_	*
+12	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	obj	_	_	*
+13	récupérer	récupérer	VERB	_	VerbForm=Inf	10	acl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 25
+# text = Je ne voulais pas qu'il lui arrive quelque chose.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+5	qu'	que	SCONJ	_	_	8	mark	_	SpaceAfter=No	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+7	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	8	iobj	_	_	*
+8	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+9	quelque	quelque	DET	_	Gender=Fem|Number=Sing	10	det	_	_	*
+10	chose	chose	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 26
+# text = Elle n'a pas l'air trop perturbée par la nuit.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	3	advmod	_	SpaceAfter=No	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	1
+6	air	air	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+7	trop	trop	ADV	_	_	8	advmod	_	_	*
+8	perturbée	perturber	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 27
+# text = Elle a juste peu dormi.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+3	juste	juste	ADV	_	_	4	advmod	_	_	*
+4	peu	peu	ADV	_	_	5	advmod	_	_	*
+5	dormi	dormir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 28
+# text = Mais elle en parle facilement.
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+3	en	en	PRON	_	Person=3	4	iobj	_	_	*
+4	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	facilement	facilement	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 29
+# text = Le pire dans cette histoire : je devais déménager samedi... » « Tout a bougé » Benoit Gaillot : « Cela m'a fait drôle d'être réveillé à 4 h du matin par une explosion.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	pire	pire	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	dans	dans	ADP	_	_	5	case	_	_	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*
+5	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	:	:	PUNCT	_	_	8	punct	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	devais	devoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	2	parataxis	_	_	*
+9	déménager	déménager	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No	*
+11	...	...	PUNCT	_	_	16	punct	_	_	*
+12	»	»	PUNCT	_	_	16	punct	_	SpacesAfter=\s\s\s	*
+13	«	«	PUNCT	_	_	16	punct	_	_	*
+14	Tout	Tout	PRON	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	bougé	bouger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	*
+17	»	»	PUNCT	_	_	16	punct	_	_	*
+18	Benoit	Benoit	PROPN	_	_	16	obj	_	_	*
+19	Gaillot	Gaillot	PROPN	_	_	18	flat:name	_	_	*
+20	:	:	PUNCT	_	_	25	punct	_	_	*
+21	«	«	PUNCT	_	_	25	punct	_	_	*
+22	Cela	cela	PRON	_	Number=Sing|PronType=Dem	25	nsubj	_	_	1:VID
+23	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	25	iobj	_	SpaceAfter=No	*
+24	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	parataxis	_	_	1
+26	drôle	drôle	ADJ	_	Gender=Fem|Number=Sing	25	obj	_	_	*
+27	d'	de	ADP	_	_	29	mark	_	SpaceAfter=No	*
+28	être	être	AUX	_	VerbForm=Inf	29	aux:tense	_	_	*
+29	réveillé	réveiller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	xcomp	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	4	4	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	matin	matin	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	_	*
+36	par	par	ADP	_	_	38	case	_	_	*
+37	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	29	obl:arg	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 30
+# text = Des portes ont sauté de leurs gonds.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	portes	porte	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	sauté	sauter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	gonds	gond	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 31
+# text = Tout a bougé chez moi.
+1	Tout	tout	PRON	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	bougé	bouger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	chez	chez	ADP	_	_	5	case	_	_	*
+5	moi	soi	PRON	_	Number=Sing|Person=1	3	obl	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 32
+# text = Je me suis demandé ce qui arrivait.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	4	iobj	_	_	1:IRV
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	obj	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+7	arrivait	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl:relcl	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 33
+# text = J'ai pensé à un tremblement de terre.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	pensé	penser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	tremblement	tremblement	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	terre	terre	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 34
+# text = Puis j'ai senti le gaz.
+1	Puis	puis	ADV	_	_	4	cc	_	_	*
+2	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	senti	sentir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	gaz	gaz	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 35
+# text = » « Peur » Gérard Herbrecht : « J'ai entendu l'explosion.
+1	»	»	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Peur	peur	PROPN	_	_	11	parataxis	_	_	*
+4	»	»	PUNCT	_	_	3	punct	_	_	*
+5	Gérard	Gérard	PROPN	_	_	3	flat:name	_	_	*
+6	Herbrecht	Herbrecht	PROPN	_	_	3	flat:name	_	_	*
+7	:	:	PUNCT	_	_	3	punct	_	_	*
+8	«	«	PUNCT	_	_	3	punct	_	_	*
+9	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	SpaceAfter=No	*
+10	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	entendu	entendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	explosion	explosion	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 36
+# text = Une fenêtre de toit s'est envolée.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	fenêtre	fenêtre	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	toit	toit	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:pass	_	SpaceAfter=No	1:IRV
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	envolée	envoler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 37
+# text = J'ai eu peur pour ma fille.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+4	peur	peur	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	1
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	fille	fille	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 38
+# text = Elle habite au 13 rue du Tramway.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	habite	habiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	6	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	13	13	NUM	_	_	6	nummod	_	_	*
+6	rue	rue	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	Tramway	Tramway	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 39
+# text = J'y suis tout de suite allé.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	SpaceAfter=No	*
+2	y	y	PRON	_	_	7	iobj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+4	tout	tout	ADV	_	_	7	advmod	_	_	*
+5	de	de	ADP	_	_	4	fixed	_	_	*
+6	suite	suite	NOUN	_	Gender=Fem|Number=Sing	4	fixed	_	_	*
+7	allé	aller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 40
+# text = Je n'ai été rassuré que lorsque que je l'ai vu sur le balcon.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj:pass	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+5	rassuré	rassurer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	que	que	ADV	_	_	5	advmod	_	_	*
+7	lorsque	lorsque	SCONJ	_	_	12	mark	_	_	*
+8	que	que	SCONJ	_	_	12	mark	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_	*
+10	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	*
+11	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	_	*
+13	sur	sur	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	balcon	balcon	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_81.txt 41
+# text = »
+1	»	»	PUNCT	_	_	0	root	_	SpacesAfter=\n	*
+

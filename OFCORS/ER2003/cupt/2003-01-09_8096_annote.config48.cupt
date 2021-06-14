@@ -1,0 +1,542 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-09_8096.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 1
+# text = Le prince saoudien
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	prince	prince	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	saoudien	saoudien	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 2
+# text = Le président, récréatif : « Parlez-nous du prince saoudien... ».
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	récréatif	récréatif	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+5	:	:	PUNCT	_	_	7	punct	_	_	*
+6	«	«	PUNCT	_	_	7	punct	_	_	*
+7	Parlez	parler	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpaceAfter=No	*
+8	-nous	nous	PRON	_	Number=Plur|Person=1|PronType=Prs	7	obj	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	prince	prince	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	saoudien	saoudien	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	...	...	PUNCT	_	_	7	punct	_	_	*
+14	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 3
+# text = L'ancien directeur général adjoint, embarrassé, concède : « J'ai eu peur physiquement.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+2	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	général	général	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	adjoint	adjoint	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	embarrassé	embarrasser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	concède	concéder	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+10	:	:	PUNCT	_	_	14	punct	_	_	*
+11	«	«	PUNCT	_	_	14	punct	_	_	*
+12	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	SpaceAfter=No	*
+13	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	1:LVC.full
+15	peur	peur	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	1
+16	physiquement	physiquement	ADV	_	_	14	advmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 4
+# text = Il nous a convoqués dans un hôtel à Londres.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	4	obj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	convoqués	convoquer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	dans	dans	ADP	_	_	7	case	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Londres	Londres	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 5
+# text = Il y avait des gardes et de drôles de machines dans sa chambre.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	gardes	garde	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	drôles	drôle	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	machines	machine	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+12	dans	dans	ADP	_	_	14	case	_	_	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	chambre	chambre	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 6
+# text = Il exigeait sur le champ 6 millions de dollars pour faciliter le rachat de la MGM par la famille royale saoudienne ».
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	exigeait	exiger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	sur	sur	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	champ	champ	NOUN	_	Gender=Masc|Number=Sing	2	obl	_	_	*
+6	6	6	NUM	_	_	7	nummod	_	_	*
+7	millions	million	NOUN	_	Gender=Masc|Number=Plur	5	appos	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	dollars	dollar	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	faciliter	faciliter	VERB	_	VerbForm=Inf	2	advcl	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	rachat	rachat	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	MGM	MGM	PROPN	_	_	13	nmod	_	_	*
+17	par	par	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	famille	famille	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*
+20	royale	royal	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+21	saoudienne	saoudien	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+22	»	»	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 7
+# text = Il y eut aussi un dîner romantique sur le Bosphore entre George Bush père et le président turc.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	1:VID
+2	y	y	PRON	_	_	3	obl:mod	_	_	1
+3	eut	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1
+4	aussi	aussi	ADV	_	_	3	advmod	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	dîner	dîner	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+7	romantique	romantique	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Bosphore	Bosphore	PROPN	_	_	6	nmod	_	_	*
+11	entre	entre	ADP	_	_	12	case	_	_	*
+12	George	George	PROPN	_	_	6	nmod	_	_	*
+13	Bush	Bush	PROPN	_	_	12	flat:name	_	_	*
+14	père	père	NOUN	_	Gender=Masc|Number=Sing	12	flat:name	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	président	président	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+18	turc	turc	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 8
+# text = « Ce dernier évoqua le rachat de MGM par son fils ».
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*
+3	dernier	dernier	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+4	évoqua	évoquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	rachat	rachat	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	MGM	MGM	PROPN	_	_	6	nmod	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	fils	fils	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+12	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 9
+# text = Par bonheur, les grands argentiers du Lyonnais n'ont pas proposé un nouveau crédit.
+1	Par	par	ADP	_	_	2	case	_	_	*
+2	bonheur	bonheur	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+5	grands	grand	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+6	argentiers	argentier	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	Lyonnais	Lyonnais	PROPN	_	_	6	nmod	_	_	*
+10	n'	ne	ADV	_	Polarity=Neg	13	advmod	_	SpaceAfter=No	*
+11	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+12	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+15	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+16	crédit	crédit	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 10
+# text = Mais sur la base de tous ces mécomptes, le directeur du Trésor et le Gouverneur de la Banque de France ont tout de même expliqué aux ministres spectateurs qu'il s'agissait d'une belle affaire...
+1	Mais	mais	CCONJ	_	_	23	cc	_	_	*
+2	sur	sur	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	base	base	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	_	*
+5	de	de	ADP	_	_	8	case	_	_	*
+6	tous	tout	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+7	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_	*
+8	mécomptes	mécompte	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	Trésor	trésor	PROPN	_	_	11	nmod	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	Gouverneur	gouverneur	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	Banque	banque	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	France	France	PROPN	_	_	20	nmod	_	_	*
+23	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+24	tout	tout	ADV	_	_	27	advmod	_	_	*
+25	de	de	ADP	_	_	24	fixed	_	_	*
+26	même	même	ADV	_	_	24	fixed	_	_	*
+27	expliqué	expliquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	advcl	_	_	*
+28-29	aux	_	_	_	_	_	_	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+30	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	27	obl:arg	_	_	*
+31	spectateurs	spectateur	NOUN	_	Gender=Masc|Number=Plur	27	obj	_	_	*
+32	qu'	que	SCONJ	_	_	35	mark	_	SpaceAfter=No	*
+33	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	expl:subj	_	_	1:VID
+34	s'	se	PRON	_	Person=3|PronType=Prs	35	expl:comp	_	SpaceAfter=No	1
+35	agissait	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	31	acl	_	_	1
+36	d'	de	ADP	_	_	39	case	_	SpaceAfter=No	*
+37	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+38	belle	beau	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	_	*
+39	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	35	obl:arg	_	SpaceAfter=No	*
+40	...	...	PUNCT	_	_	27	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 11
+# text = Place au cinéma.
+1	Place	Place	PROPN	_	_	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	cinéma	cinéma	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 12
+# text = Comme dans tous les bons films, le méchant s'impose.
+1	Comme	comme	SCONJ	_	_	6	mark	_	_	*
+2	dans	dans	ADP	_	_	6	case	_	_	*
+3	tous	tout	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+5	bons	bon	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+6	films	film	NOUN	_	Gender=Masc|Number=Plur	11	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	6	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	méchant	méchant	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	11	expl:pass	_	SpaceAfter=No	1:IRV
+11	impose	imposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1
+12	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 13
+# text = En ce troisième jour de procès, les dirigeants du Crédit lyonnais évoquent le bouc émissaire parfait.
+1	En	en	ADP	_	_	4	case	_	_	*
+2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_	*
+3	troisième	troisième	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	jour	jour	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	procès	procès	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	4	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	dirigeants	dirigeant	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	Crédit	crédit	PROPN	_	_	9	nmod	_	_	*
+13	lyonnais	lyonnais	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	évoquent	évoquer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	bouc	bouc	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+17	émissaire	émissaire	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	parfait	parfait	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 14
+# text = Absent, abstrait.
+1	Absent	absent	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	abstrait	abstrait	ADJ	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 15
+# text = Pratique pour se défausser.
+1	Pratique	pratique	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	pour	pour	ADP	_	_	4	mark	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	obj	_	_	*
+4	défausser	défausser	VERB	_	VerbForm=Inf	1	advcl	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 16
+# text = C'est l'ancien PDG en personne, Jean-Yves Haberer, rosette de la Légion d'honneur au revers de la veste, qui en dresse le portrait : « Ce n'est pas un détail, mais le dirigeant de notre filiale hollandaise était un joueur d'échecs, de ces hommes qui ont toujours un coup d'avance.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+4	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	PDG	PDG	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	personne	personne	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	Jean-Yves	Jean-Yves	PROPN	_	_	5	appos	_	_	*
+10	Haberer	Haberer	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	rosette	rosette	NOUN	_	Gender=Fem|Number=Sing	9	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	Légion	légion	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	honneur	honneur	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	revers	revers	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	veste	veste	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*
+26	en	en	PRON	_	Person=3	29	nmod	_	_	*
+27	dresse	dresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	27	obj	_	_	*
+30	:	:	PUNCT	_	_	37	punct	_	_	*
+31	«	«	PUNCT	_	_	37	punct	_	_	*
+32	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	37	nsubj	_	_	*
+33	n'	ne	ADV	_	Polarity=Neg	37	advmod	_	SpaceAfter=No	*
+34	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_	*
+35	pas	pas	ADV	_	Polarity=Neg	37	advmod	_	_	*
+36	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	détail	détail	NOUN	_	Gender=Masc|Number=Sing	27	parataxis	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	48	punct	_	_	*
+39	mais	mais	CCONJ	_	_	48	cc	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	dirigeant	dirigeant	NOUN	_	Gender=Masc|Number=Sing	48	nsubj	_	_	*
+42	de	de	ADP	_	_	44	case	_	_	*
+43	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	44	det	_	_	*
+44	filiale	filiale	NOUN	_	Gender=Fem|Number=Sing	41	nmod	_	_	*
+45	hollandaise	hollandais	ADJ	_	Gender=Fem|Number=Sing	44	amod	_	_	*
+46	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	48	cop	_	_	*
+47	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_	*
+48	joueur	joueur	NOUN	_	Gender=Masc|Number=Sing	37	conj	_	_	*
+49	d'	de	ADP	_	_	50	case	_	SpaceAfter=No	*
+50	échecs	échec	NOUN	_	Gender=Masc|Number=Plur	48	nmod	_	SpaceAfter=No	*
+51	,	,	PUNCT	_	_	54	punct	_	_	*
+52	de	de	ADP	_	_	54	case	_	_	*
+53	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	54	det	_	_	*
+54	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*
+55	qui	qui	PRON	_	PronType=Rel	56	nsubj	_	_	*
+56	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	54	acl:relcl	_	_	*
+57	toujours	toujours	ADV	_	_	56	advmod	_	_	*
+58	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_	*
+59	coup	coup	NOUN	_	Gender=Masc|Number=Sing	56	obj	_	_	*
+60	d'	de	ADP	_	_	61	case	_	SpaceAfter=No	*
+61	avance	avance	NOUN	_	Gender=Fem|Number=Sing	59	nmod	_	SpaceAfter=No	*
+62	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 17
+# text = Il avait une tournure d'esprit assez particulière, mais c'était une sommité.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	tournure	tournure	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	assez	assez	ADV	_	_	8	advmod	_	_	*
+8	particulière	particulier	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	14	punct	_	_	*
+10	mais	mais	CCONJ	_	_	14	cc	_	_	*
+11	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*
+12	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	sommité	sommité	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 18
+# text = La salle du conseil d'administration à Rotterdam portait même son nom.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	salle	salle	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	administration	administration	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Rotterdam	Rotterdam	PROPN	_	_	2	nmod	_	_	*
+10	portait	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:VID
+11	même	même	ADV	_	_	10	advmod	_	_	*
+12	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	nom	nom	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No	1
+14	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 19
+# text = On me l'avait présenté comme mon futur bras droit ».
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+2	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	5	obj	_	_	*
+3	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*
+5	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	comme	comme	ADP	_	_	9	case	_	_	*
+7	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+8	futur	futur	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	bras	bras	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+10	droit	droit	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+11	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 20
+# text = Problème : en mai 1990, une lettre de la banque centrale des Pays-Bas enjoint le patron parisien de se méfier des engagements hasardeux de sa filiale.
+1	Problème	problème	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	16	punct	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	mai	mai	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+5	1990	1990	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	lettre	lettre	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	banque	banque	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	centrale	central	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	Pays-Bas	Pays-Bas	PROPN	_	_	11	nmod	_	_	*
+16	enjoint	enjoindre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	patron	patron	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*
+19	parisien	parisien	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+20	de	de	ADP	_	_	22	mark	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	22	expl:comp	_	_	*
+22	méfier	méfier	VERB	_	VerbForm=Inf	18	acl	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	engagements	engagement	NOUN	_	Gender=Masc|Number=Plur	22	obl:arg	_	_	*
+26	hasardeux	hasardeux	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	29	det	_	_	*
+29	filiale	filiale	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 21
+# text = « La banque centrale faisait état de rumeurs sur la fragilité du groupe italien de Gianfranco Parretti que notre filiale soutenait à bout de bras ».
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	banque	banque	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	centrale	central	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	faisait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:VID
+6	état	état	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1
+7	de	de	ADP	_	_	8	case	_	_	*
+8	rumeurs	rumeur	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	fragilité	fragilité	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	italien	italien	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Gianfranco	Gianfranco	PROPN	_	_	14	nmod	_	_	*
+18	Parretti	Parretti	PROPN	_	_	17	flat:name	_	_	*
+19	que	que	SCONJ	_	_	22	mark	_	_	*
+20	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	filiale	filiale	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+22	soutenait	soutenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl	_	_	*
+23	à	à	ADP	_	_	24	case	_	_	*
+24	bout	bout	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	bras	bras	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	_	*
+27	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 22
+# text = Jean-Yves Haberer le confesse : il n'a pas vu le coup venir.
+1	Jean-Yves	Jean-Yves	PROPN	_	_	4	nsubj	_	_	*
+2	Haberer	Haberer	PROPN	_	_	1	flat:name	_	_	*
+3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*
+4	confesse	confesser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	:	:	PUNCT	_	_	10	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*
+7	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+10	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	parataxis	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	coup	coup	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	venir	venir	VERB	_	VerbForm=Inf	12	appos	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 23
+# text = Alors que le ministre des Finances avait opposé son veto à une prise de contrôle par les Italiens du groupe cinématographique français Pathé, le Lyonnais va soutenir à l'aveuglette Gianfranco Parretti dans sa conquête de la Metro Goldwyn Mayer à Hollywood.
+1	Alors	alors	ADV	_	_	9	mark	_	_	*
+2	que	que	SCONJ	_	_	1	fixed	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Finances	Finances	PROPN	_	_	4	nmod	_	_	*
+8	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*
+9	opposé	opposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	advcl	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	veto	veto	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	prise	prise	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	par	par	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*
+19	Italiens	Italiens	PROPN	_	_	14	nmod	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	cinématographique	cinématographique	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24	français	français	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+25	Pathé	Pathé	PROPN	_	_	22	appos	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	9	punct	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	Lyonnais	Lyonnais	PROPN	_	_	29	nsubj	_	_	*
+29	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+30	soutenir	soutenir	VERB	_	VerbForm=Inf	29	xcomp	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*
+33	aveuglette	aveuglette	NOUN	_	Gender=Fem|Number=Sing	30	obl:arg	_	_	*
+34	Gianfranco	Gianfranco	PROPN	_	_	33	appos	_	_	*
+35	Parretti	Parretti	PROPN	_	_	34	flat:name	_	_	*
+36	dans	dans	ADP	_	_	38	case	_	_	*
+37	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	38	det	_	_	*
+38	conquête	conquête	NOUN	_	Gender=Fem|Number=Sing	30	obl:mod	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	Metro	Metro	PROPN	_	_	38	nmod	_	_	*
+42	Goldwyn	Goldwyn	PROPN	_	_	41	flat:name	_	_	*
+43	Mayer	Mayer	PROPN	_	_	41	flat:name	_	_	*
+44	à	à	ADP	_	_	45	case	_	_	*
+45	Hollywood	Hollywood	PROPN	_	_	38	nmod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8096.txt 24
+# text = Sa filiale hollandaise engloutira jusqu'à 900 millions de dollars sans prendre la moindre garantie.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	filiale	filiale	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	hollandaise	hollandais	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	engloutira	engloutir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+5	jusqu'	jusque	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	900	900	NUM	_	_	8	nummod	_	_	*
+8	millions	million	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	dollars	dollar	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+11	sans	sans	ADP	_	_	12	mark	_	_	*
+12	prendre	prendre	VERB	_	VerbForm=Inf	4	advcl	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+14	moindre	moindre	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	garantie	garantie	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n	*
+

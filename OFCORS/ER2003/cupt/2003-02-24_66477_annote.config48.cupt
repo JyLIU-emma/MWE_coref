@@ -1,0 +1,508 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-24_66477.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 1
+# text = Le permis à 500 points ?
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	permis	permis	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	500	500	NUM	_	_	5	nummod	_	_	*
+5	points	point	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	?	?	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 2
+# text = M. Michel CHEVENEMENT 3, clos Saint-Urbain 54200 Toul.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Michel	Michel	PROPN	_	_	1	flat:name	_	_	*
+3	CHEVENEMENT	CHEVENEMENT	PROPN	_	_	1	flat:name	_	_	*
+4	3	3	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	clos	clore	DET	_	Gender=Masc|Number=Plur	7	det	_	_	*
+7	Saint-Urbain	Saint-Urbain	PROPN	_	_	1	conj	_	_	*
+8	54200	54200	NUM	_	_	7	flat:name	_	_	*
+9	Toul	Toul	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 3
+# text = Huit mille morts par an et d'innombrables blessés sur nos route, c'est trop, beaucoup trop.
+1	Huit	huit	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	mille	mille	NUM	_	_	3	nummod	_	_	*
+3	morts	mort	NOUN	_	Gender=Masc|Number=Plur	1	obj	_	_	*
+4	par	par	ADP	_	_	5	case	_	_	*
+5	an	an	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	innombrables	innombrable	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+9	blessés	blesser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	route	route	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	1	punct	_	_	*
+14	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	19	nsubj	_	SpaceAfter=No	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*
+16	trop	trop	ADV	_	_	19	advmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	beaucoup	beaucoup	ADV	_	_	19	advmod	_	_	*
+19	trop	trop	ADV	_	_	1	advmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 4
+# text = Mais chacun peut constater qu'il y a « peu d'accidents » par rapport aux risques et infractions que certains commettent chaque jour.
+1	Mais	mais	CCONJ	_	_	3	cc	_	_	*
+2	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	constater	constater	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	qu'	que	SCONJ	_	_	8	mark	_	SpaceAfter=No	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID
+7	y	y	PRON	_	_	8	expl:comp	_	_	1
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	1;2:LVC.full
+9	«	«	PUNCT	_	_	10	punct	_	_	*
+10	peu	peu	ADV	_	_	8	obj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	accidents	accident	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	_	*
+13	»	»	PUNCT	_	_	10	punct	_	_	*
+14	par	par	ADP	_	_	15	case	_	_	*
+15	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	2
+16-17	aux	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	risques	risque	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*
+20	infractions	infraction	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	_	*
+21	que	que	SCONJ	_	_	23	mark	_	_	*
+22	certains	certain	PRON	_	Gender=Masc|Number=Plur	23	nsubj	_	_	*
+23	commettent	commettre	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl	_	_	*
+24	chaque	chaque	DET	_	Gender=Masc|Number=Sing	25	det	_	_	*
+25	jour	jour	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 5
+# text = Lorsque vous roulez à 110 ou 130 km/h selon la réglementation, vous êtes doublé non pas par une ou deux voitures « en excès de vitesse » mais par des dizaines de véhicules qui vous laissent sur place, la plupart roulant à 150 ou 170 km/h si ce n'est plus !
+1	Lorsque	lorsque	SCONJ	_	_	3	mark	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	roulez	rouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	advcl	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	110	110	NUM	_	_	3	obl:arg	_	_	*
+6	ou	ou	CCONJ	_	_	8	cc	_	_	*
+7	130	130	NUM	_	_	8	nummod	_	_	*
+8	km/h	km/h	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	_	*
+9	selon	selon	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	réglementation	réglementation	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	3	punct	_	_	*
+13	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	nsubj	_	_	*
+14	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	doublé	doubler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+16	non	non	ADV	_	_	17	advmod	_	_	*
+17	pas	pas	ADV	_	_	15	advmod	_	_	*
+18	par	par	ADP	_	_	19	case	_	_	*
+19	une	un	NUM	_	_	15	obl:arg	_	_	*
+20	ou	ou	CCONJ	_	_	21	cc	_	_	*
+21	deux	deux	NUM	_	_	19	conj	_	_	*
+22	voitures	voiture	NOUN	_	Gender=Fem|Number=Plur	15	obj	_	_	*
+23	«	«	PUNCT	_	_	25	punct	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	excès	excès	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	vitesse	vitesse	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+28	»	»	PUNCT	_	_	15	punct	_	_	*
+29	mais	mais	CCONJ	_	_	33	cc	_	_	*
+30	par	par	ADP	_	_	33	case	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_	*
+33	dizaines	dizaine	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	véhicules	véhicule	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	_	*
+36	qui	qui	PRON	_	PronType=Rel	38	nsubj	_	_	*
+37	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	38	iobj	_	_	*
+38	laissent	laisser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_	*
+39	sur	sur	ADP	_	_	40	case	_	_	*
+40	place	place	NOUN	_	Gender=Fem|Number=Sing	38	obl	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	42	punct	_	_	*
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_	*
+43	plupart	plupart	NOUN	_	Gender=Fem|Number=Sing	42	fixed	_	_	*
+44	roulant	rouler	VERB	_	Tense=Pres|VerbForm=Part	42	acl	_	_	*
+45	à	à	ADP	_	_	46	case	_	_	*
+46	150	150	NUM	_	_	44	obl:mod	_	_	*
+47	ou	ou	CCONJ	_	_	48	cc	_	_	*
+48	170	170	NUM	_	_	46	conj	_	_	*
+49	km/h	km/h	NOUN	_	Gender=Masc|Number=Plur	33	appos	_	_	*
+50	si	si	SCONJ	_	_	54	mark	_	_	*
+51	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	54	nsubj	_	_	*
+52	n'	ne	ADV	_	Polarity=Neg	54	advmod	_	SpaceAfter=No	*
+53	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	_	_	*
+54	plus	plus	ADV	_	Polarity=Neg	49	advcl	_	_	*
+55	!	!	PUNCT	_	_	54	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 6
+# text = Il n'y a pas que les étrangers qui se défoulent sur nos routes.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID
+2	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*
+3	y	y	PRON	_	_	4	expl:comp	_	_	1
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	que	que	SCONJ	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	étrangers	étranger	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+10	se	se	PRON	_	Person=3|PronType=Prs	11	expl:comp	_	_	*
+11	défoulent	défouler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*
+12	sur	sur	ADP	_	_	14	case	_	_	*
+13	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	routes	route	NOUN	_	Gender=Fem|Number=Plur	11	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 7
+# text = Si vous êtes arrêté au feu rouge, ne démarrez pas trop vite lorsqu'il passe au vert : comptez combien de véhicules vont griller le rouge !
+1	Si	si	SCONJ	_	_	4	mark	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+3	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	arrêté	arrêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	advcl	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	feu	feu	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	rouge	rouge	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*
+10	ne	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*
+11	démarrez	démarrer	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*
+13	trop	trop	ADV	_	_	11	obj	_	_	*
+14	vite	vite	ADV	_	_	11	advmod	_	_	*
+15	lorsqu'	lorsque	SCONJ	_	_	17	mark	_	SpaceAfter=No	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*
+17	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	vert	vert	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+21	:	:	PUNCT	_	_	22	punct	_	_	*
+22	comptez	compter	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	parataxis	_	_	*
+23	combien	combien	ADV	_	_	22	iobj	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	véhicules	véhicule	NOUN	_	Gender=Masc|Number=Plur	23	obl:arg	_	_	*
+26	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	xcomp	_	_	*
+27	griller	griller	VERB	_	VerbForm=Inf	26	xcomp	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	rouge	rouge	NOUN	_	Gender=Masc|Number=Sing	27	obj	_	_	*
+30	!	!	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 8
+# text = Et combien tournent sans clignotant ou démarrent sous votre nez sans même regarder...
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	combien	combien	ADV	_	_	3	advmod	_	_	*
+3	tournent	tourner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	sans	sans	ADP	_	_	5	case	_	_	*
+5	clignotant	clignotant	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+6	ou	ou	CCONJ	_	_	7	cc	_	_	*
+7	démarrent	démarrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+8	sous	sous	ADP	_	_	10	case	_	_	*
+9	votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	nez	nez	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+11	sans	sans	ADP	_	_	13	mark	_	_	*
+12	même	même	ADV	_	_	13	advmod	_	_	*
+13	regarder	regarder	VERB	_	VerbForm=Inf	7	advcl	_	SpaceAfter=No	*
+14	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 9
+# text = Il y a aussi ceux qui roulent sans ceinture et/ou mettent les jeunes enfants à l'avant sans même les attacher.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	aussi	aussi	ADV	_	_	3	advmod	_	_	*
+5	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	3	obj	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+7	roulent	rouler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+8	sans	sans	ADP	_	_	9	case	_	_	*
+9	ceinture	ceinture	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+10	et	et	CCONJ	_	_	13	cc	_	SpaceAfter=No	*
+11	/	/	SYM	_	_	12	cc	_	SpaceAfter=No	*
+12	ou	ou	CCONJ	_	_	10	conj	_	_	*
+13	mettent	mettre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+15	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_	*
+16	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	avant	avant	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	_	*
+20	sans	sans	ADP	_	_	23	mark	_	_	*
+21	même	même	ADV	_	_	23	advmod	_	_	*
+22	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	23	obj	_	_	*
+23	attacher	attacher	VERB	_	VerbForm=Inf	19	acl	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 10
+# text = La vitesse en agglomération est-elle respectée ?
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	vitesse	vitesse	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	agglomération	agglomération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	SpaceAfter=No	*
+6	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_	*
+7	respectée	respecter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	?	?	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 11
+# text = Non, évidemment, chacun peut le constater à chaque instant.
+1	Non	non	INTJ	_	_	6	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	évidemment	évidemment	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+8	constater	constater	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	chaque	chaque	DET	_	Gender=Masc|Number=Sing	11	det	_	_	*
+11	instant	instant	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 12
+# text = D'autres exemples ?
+1	D'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	3	det	_	SpaceAfter=No	*
+2	autres	autre	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	exemples	exemple	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+4	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 13
+# text = Il y a ceux qui roulent sans éclairage de nuit ou par temps de brouillard, ceux qui restent pleins phares lorsque vous les croisez ; les lignes blanches et les « stop » non respectés... sans oublier les téléphones et autres baladeurs.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	3	obj	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+6	roulent	rouler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+7	sans	sans	ADP	_	_	8	case	_	_	*
+8	éclairage	éclairage	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	ou	ou	CCONJ	_	_	13	cc	_	_	*
+12	par	par	ADP	_	_	13	case	_	_	*
+13	temps	temps	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	brouillard	brouillard	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	4	appos	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*
+19	restent	rester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_	*
+20	pleins	plein	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+21	phares	phare	NOUN	_	Gender=Masc|Number=Plur	19	obj	_	_	*
+22	lorsque	lorsque	SCONJ	_	_	25	mark	_	_	*
+23	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	25	nsubj	_	_	*
+24	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	25	obj	_	_	*
+25	croisez	croiser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	19	advcl	_	_	*
+26	;	;	PUNCT	_	_	28	punct	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_	*
+28	lignes	ligne	NOUN	_	Gender=Fem|Number=Plur	4	appos	_	_	*
+29	blanches	blanc	ADJ	_	Gender=Fem|Number=Plur	28	amod	_	_	*
+30	et	et	CCONJ	_	_	33	cc	_	_	*
+31	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_	*
+32	«	«	PUNCT	_	_	33	punct	_	_	*
+33	stop	stop	NOUN	_	Gender=Fem|Number=Sing	28	conj	_	_	*
+34	»	»	PUNCT	_	_	28	punct	_	_	*
+35	non	non	ADV	_	_	36	advmod	_	_	*
+36	respectés	respecter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	28	acl	_	SpaceAfter=No	*
+37	...	...	PUNCT	_	_	28	punct	_	_	*
+38	sans	sans	ADP	_	_	39	mark	_	_	*
+39	oublier	oublier	VERB	_	VerbForm=Inf	28	acl	_	_	*
+40	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_	*
+41	téléphones	téléphone	NOUN	_	Gender=Masc|Number=Plur	39	obj	_	_	*
+42	et	et	CCONJ	_	_	44	cc	_	_	*
+43	autres	autre	ADJ	_	Gender=Masc|Number=Plur	44	amod	_	_	*
+44	baladeurs	baladeur	NOUN	_	Gender=Masc|Number=Plur	41	conj	_	SpaceAfter=No	*
+45	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 14
+# text = Si chacun avait un pouvoir de sanction, combien de points retireriez-vous dans une seule journée, ne serait-ce qu'à vous-même ?
+1	Si	si	SCONJ	_	_	3	mark	_	_	*
+2	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	advcl	_	_	1:LVC.full
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	pouvoir	pouvoir	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+6	de	de	ADP	_	_	7	case	_	_	*
+7	sanction	sanction	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	combien	combien	ADV	_	_	12	nsubj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	points	point	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*
+12	retireriez	retireoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+13	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	12	obj	_	_	*
+14	dans	dans	ADP	_	_	17	case	_	_	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+16	seule	seul	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*
+17	journée	journée	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	ne	ne	ADV	_	Polarity=Neg	21	advmod	_	_	*
+20	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	SpaceAfter=No	*
+21	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	advcl	_	_	*
+22	qu'	que	SCONJ	_	_	24	mark	_	SpaceAfter=No	*
+23	à	à	ADP	_	_	24	case	_	_	*
+24	vous-même	vous-même	ADV	_	_	21	ccomp	_	_	*
+25	?	?	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 15
+# text = Les pouvoirs publics font ce qu'ils peuvent et il appartient à chacun de faire un plus grand effort de prudence derrière un volant.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	pouvoirs	pouvoir	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	publics	public	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	obj	_	_	*
+6	qu'	que	PRON	_	PronType=Rel	8	obj	_	SpaceAfter=No	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*
+11	appartient	appartenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	faire	faire	VERB	_	VerbForm=Inf	11	xcomp	_	_	1:LVC.full
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+17	plus	plus	ADV	_	_	18	advmod	_	_	*
+18	grand	grand	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+19	effort	effort	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	1
+20	de	de	ADP	_	_	21	case	_	_	*
+21	prudence	prudence	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+22	derrière	derrière	ADP	_	_	24	case	_	_	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	volant	volant	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 16
+# text = Les panneaux, le Code de la route sont indispensables mais le plus important est de respecter l'autre.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	panneaux	panneau	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	Code	Code	PROPN	_	_	2	appos	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	route	route	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	indispensables	indispensable	ADJ	_	Gender=Fem|Number=Plur	0	root	_	_	*
+11	mais	mais	CCONJ	_	_	14	cc	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+13	plus	plus	ADV	_	_	14	advmod	_	_	*
+14	important	important	ADJ	_	Gender=Masc|Number=Sing	10	conj	_	_	*
+15	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_	*
+16	de	de	ADP	_	_	17	mark	_	_	*
+17	respecter	respecter	VERB	_	VerbForm=Inf	15	ccomp	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	autre	autre	PRON	_	Number=Sing	17	obj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 17
+# text = Si vous prenez garde à l'enfant qui joue au ballon, à la personne âgée qui a peut-être moins de réflexes que vous, à celui qui vient de commettre une erreur de conduite, si vous faites preuve de courtoisie envers les autres usagers et si vous avez un sourire bienveillant envers celui qui est un peu long pour effectuer son créneau, alors vous verrez de nouveaux panneaux qui n'existent pas encore et qui s'appellent tolérance, amabilité, respect et partage de l'espace de vie...
+1	Si	si	SCONJ	_	_	3	mark	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	prenez	prendre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	garde	garde	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	enfant	enfant	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	personne	personne	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+17	âgée	âgé	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*
+19	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	*
+20	peut-être	peut-être	ADV	_	_	19	advmod	_	_	*
+21	moins	moins	ADV	_	_	19	obj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	réflexes	réflexe	NOUN	_	Gender=Masc|Number=Plur	21	obl:arg	_	_	*
+24	que	que	SCONJ	_	_	69	mark	_	_	*
+25	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	69	nsubj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	25	punct	_	_	*
+27	à	à	ADP	_	_	28	case	_	_	*
+28	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	69	obl:mod	_	_	*
+29	qui	qui	PRON	_	PronType=Rel	30	nsubj	_	_	*
+30	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	acl:relcl	_	_	*
+31	de	de	ADP	_	_	32	mark	_	_	*
+32	commettre	commettre	VERB	_	VerbForm=Inf	30	xcomp	_	_	*
+33	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	erreur	erreur	NOUN	_	Gender=Fem|Number=Sing	32	obj	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	conduite	conduite	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	28	punct	_	_	*
+38	si	si	SCONJ	_	_	40	mark	_	_	*
+39	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	40	nsubj	_	_	*
+40	faites	faire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	69	advcl	_	_	1:VID
+41	preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	40	obj	_	_	1
+42	de	de	ADP	_	_	43	case	_	_	*
+43	courtoisie	courtoisie	NOUN	_	Gender=Fem|Number=Sing	41	nmod	_	_	*
+44	envers	envers	ADP	_	_	47	case	_	_	*
+45	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	_	_	*
+46	autres	autre	ADJ	_	Gender=Masc|Number=Plur	47	amod	_	_	*
+47	usagers	usager	NOUN	_	Gender=Masc|Number=Plur	40	obl	_	_	*
+48	et	et	CCONJ	_	_	51	cc	_	_	*
+49	si	si	SCONJ	_	_	51	mark	_	_	*
+50	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	51	nsubj	_	_	*
+51	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	40	conj	_	_	*
+52	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_	*
+53	sourire	sourire	NOUN	_	Gender=Masc|Number=Sing	51	obj	_	_	*
+54	bienveillant	bienveillant	ADJ	_	Gender=Masc|Number=Sing	53	amod	_	_	*
+55	envers	envers	ADP	_	_	56	case	_	_	*
+56	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	53	nmod	_	_	*
+57	qui	qui	PRON	_	PronType=Rel	61	nsubj	_	_	*
+58	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	61	cop	_	_	*
+59	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	61	advmod	_	_	*
+60	peu	peu	ADV	_	_	59	fixed	_	_	*
+61	long	long	ADJ	_	Gender=Masc|Number=Sing	53	acl:relcl	_	_	*
+62	pour	pour	ADP	_	_	63	mark	_	_	*
+63	effectuer	effectuer	VERB	_	VerbForm=Inf	61	advcl	_	_	*
+64	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	65	det	_	_	*
+65	créneau	créneau	NOUN	_	Gender=Masc|Number=Sing	63	obj	_	SpaceAfter=No	*
+66	,	,	PUNCT	_	_	40	punct	_	_	*
+67	alors	alors	ADV	_	_	69	advmod	_	_	*
+68	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	69	nsubj	_	_	*
+69	verrez	vevoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	19	ccomp	_	_	*
+70	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	72	det	_	_	*
+71	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	72	amod	_	_	*
+72	panneaux	panneau	NOUN	_	Gender=Masc|Number=Plur	69	obj	_	_	*
+73	qui	qui	PRON	_	PronType=Rel	75	nsubj	_	_	*
+74	n'	ne	ADV	_	Polarity=Neg	75	advmod	_	SpaceAfter=No	*
+75	existent	exister	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	72	acl:relcl	_	_	*
+76	pas	pas	ADV	_	Polarity=Neg	75	advmod	_	_	*
+77	encore	encore	ADV	_	_	75	advmod	_	_	*
+78	et	et	CCONJ	_	_	81	cc	_	_	*
+79	qui	qui	PRON	_	PronType=Rel	81	nsubj	_	_	*
+80	s'	se	PRON	_	Person=3|PronType=Prs	81	expl:pass	_	SpaceAfter=No	*
+81	appellent	appeler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	75	conj	_	_	*
+82	tolérance	tolérance	NOUN	_	Gender=Fem|Number=Sing	81	xcomp	_	SpaceAfter=No	*
+83	,	,	PUNCT	_	_	84	punct	_	_	*
+84	amabilité	amabilité	NOUN	_	Gender=Fem|Number=Sing	82	conj	_	SpaceAfter=No	*
+85	,	,	PUNCT	_	_	86	punct	_	_	*
+86	respect	respect	NOUN	_	Gender=Masc|Number=Sing	82	conj	_	_	*
+87	et	et	CCONJ	_	_	88	cc	_	_	*
+88	partage	partage	NOUN	_	Gender=Masc|Number=Sing	82	conj	_	_	*
+89	de	de	ADP	_	_	91	case	_	_	*
+90	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	91	det	_	SpaceAfter=No	*
+91	espace	espace	NOUN	_	Gender=Masc|Number=Sing	88	nmod	_	_	*
+92	de	de	ADP	_	_	93	case	_	_	*
+93	vie	vie	NOUN	_	Gender=Fem|Number=Sing	91	nmod	_	SpaceAfter=No	*
+94	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-24_66477.txt 18
+# text = Pour le reste, il y a la chance et... saint Christophe !
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	reste	reste	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	_	1:VID
+6	y	y	PRON	_	_	7	expl:comp	_	_	1
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1;2:LVC.full
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	chance	chance	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	2
+10	et	et	CCONJ	_	_	12	cc	_	SpaceAfter=No	*
+11	...	...	PUNCT	_	_	12	punct	_	_	*
+12	saint	saint	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+13	Christophe	Christophe	PROPN	_	_	7	obl	_	_	*
+14	!	!	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

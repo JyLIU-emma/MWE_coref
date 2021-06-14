@@ -1,0 +1,560 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-04_1992.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 1
+# text = Evette-Salbert privé de courant A Evette-Salbert, les agents d'EDF vérifient le réseau moyenne tension après des coupures d'électricités à répétition.
+1	Evette-Salbert	Evette-Salbert	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+2	privé	privé	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	courant	courant	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n	*
+5	A	A	X	_	_	1	appos	_	_	*
+6	Evette-Salbert	Evette-Salbert	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	agents	agent	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	EDF	EDF	PROPN	_	_	9	nmod	_	_	*
+12	vérifient	vérifier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*
+15	moyenne	moyenne	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+16	tension	tension	NOUN	_	Gender=Fem|Number=Sing	14	appos	_	_	*
+17	après	après	ADV	_	_	12	advmod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	coupures	coupure	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+21	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+22	électricités	électricité	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	_	*
+23	à	à	ADP	_	_	24	case	_	_	*
+24	répétition	répétition	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	12	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 2
+# text = « J'ai reçu des appels de mes administrés.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	appels	appel	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	1
+8	de	de	ADP	_	_	10	case	_	_	*
+9	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	administrés	administré	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 3
+# text = Ils veulent savoir quand l'alimentation électrique sera rétablie.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	veulent	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	savoir	savoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	quand	quand	SCONJ	_	_	9	mark	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	alimentation	alimentation	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:pass	_	_	*
+7	électrique	électrique	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	_	_	*
+9	rétablie	rétablir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 4
+# text = Il est 14 h. Six heures cela fait long.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	14	14	NUM	_	_	4	nummod	_	_	*
+4	h	heure	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	7	punct	_	_	*
+6	Six	Six	NUM	_	_	7	nummod	_	_	*
+7	heures	heure	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_	*
+8	cela	cela	PRON	_	Number=Sing|PronType=Dem	10	nsubj	_	_	*
+9	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	long	long	ADJ	_	Gender=Masc|Number=Sing	7	acl:relcl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 5
+# text = Surtout que nous avons déjà eu des coupures jeudi vers 18 puis dans la nuit.
+1	Surtout	surtout	ADV	_	_	6	mark	_	_	*
+2	que	que	SCONJ	_	_	1	fixed	_	_	*
+3	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_	*
+4	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	déjà	déjà	ADV	_	_	6	advmod	_	_	*
+6	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	coupures	coupure	NOUN	_	Gender=Fem|Number=Plur	6	obl:arg	_	_	*
+10	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+11	vers	vers	ADP	_	_	12	case	_	_	*
+12	18	18	NUM	_	_	6	obl	_	_	*
+13	puis	puis	ADV	_	_	16	cc	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 6
+# text = » Le maire d'Evette-Salbert, Alain Simon, s'est entretenu, hier après-midi, rue du Salbert avec des employés d'EDF-GDF et de France Réseau.
+1	»	»	PUNCT	_	_	12	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	maire	maire	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	Evette-Salbert	Evette-Salbert	PROPN	_	_	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Alain	Alain	PROPN	_	_	3	appos	_	_	*
+8	Simon	Simon	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	12	expl:comp	_	SpaceAfter=No	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	entretenu	entretenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	hier	hier	ADV	_	_	15	advmod	_	_	*
+15	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	rue	rue	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	Salbert	Salbert	PROPN	_	_	17	nmod	_	_	*
+21	avec	avec	ADP	_	_	24	case	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	employés	employé	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+25	d'	de	ADP	_	_	26	case	_	SpaceAfter=No	*
+26	EDF-GDF	EDF-GDF	PROPN	_	_	24	nmod	_	_	*
+27	et	et	CCONJ	_	_	29	cc	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	France	France	PROPN	_	_	26	conj	_	_	*
+30	Réseau	réseau	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 7
+# text = Ceux-ci cherchaient la cause d'une panne, qui a privé d'électricité moins de 1.000 foyers.
+1	Ceux-ci	celui-ci	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	2	nsubj	_	_	*
+2	cherchaient	cherch	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	cause	cause	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	panne	panne	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	privé	priver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl:relcl	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	électricité	électricité	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*
+14	moins	moins	ADV	_	_	11	obj	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	1.000	1.000	NUM	_	_	17	nummod	_	_	*
+17	foyers	foyer	NOUN	_	Gender=Masc|Number=Plur	14	obl:arg	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 8
+# text = « Nous savons juste que nous avons un défaut sur un interrupteur aérien », indique Sylvain Chapon, du service communication d'EDF-GDF Franche-Comté Nord.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	savons	savoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	ccomp	_	_	*
+4	juste	juste	ADV	_	_	9	advmod	_	_	*
+5	que	que	SCONJ	_	_	9	mark	_	_	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_	*
+7	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	défaut	défaut	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	interrupteur	interrupteur	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	aérien	aérien	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	3	punct	_	_	*
+16	indique	indiquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	Sylvain	Sylvain	PROPN	_	_	16	nsubj	_	_	*
+18	Chapon	Chapon	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	service	service	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+23	communication	communication	NOUN	_	Gender=Fem|Number=Sing	22	appos	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	EDF-GDF	EDF-GDF	PROPN	_	_	23	nmod	_	_	*
+26	Franche-Comté	Franche-Comté	PROPN	_	_	25	flat:name	_	_	*
+27	Nord	nord	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 9
+# text = « Nous avons une dizaine d'agents sur place.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	avons	avoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	agents	agent	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+8	sur	sur	ADP	_	_	9	case	_	_	*
+9	place	place	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 10
+# text = Ils disposent de deux nacelles pour travailler sur le réseau aérien moyenne tension.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	disposent	disposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	deux	deux	NUM	_	_	5	nummod	_	_	*
+5	nacelles	nacelle	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	travailler	travailler	VERB	_	VerbForm=Inf	2	advcl	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+11	aérien	aérien	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	moyenne	moyenne	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+13	tension	tension	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 11
+# text = » L'entreprise publique a eu des difficultés pour identifier puis localiser la source du problème.
+1	»	»	PUNCT	_	_	6	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+4	publique	public	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	difficultés	difficulté	NOUN	_	Gender=Fem|Number=Plur	6	obl:arg	_	_	1
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	identifier	identifier	VERB	_	VerbForm=Inf	9	acl	_	_	*
+12	puis	puis	ADV	_	_	13	cc	_	_	*
+13	localiser	localiser	VERB	_	VerbForm=Inf	11	conj	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	source	source	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	problème	problème	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 12
+# text = Finalement après huit heures d'efforts, l'alimentation a été rétablie dans l'après-midi.
+1	Finalement	finalement	ADV	_	_	4	advmod	_	_	*
+2	après	après	ADP	_	_	4	case	_	_	*
+3	huit	huit	NUM	_	_	4	nummod	_	_	*
+4	heures	heure	NOUN	_	Gender=Fem|Number=Plur	12	obl:mod	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	efforts	effort	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	4	punct	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	alimentation	alimentation	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:pass	_	_	*
+12	rétablie	rétablir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	dans	dans	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 13
+# text = Evette n'en avait pas pour aurant fini avec les pannes puisque hier soir, le bas de la commune a subi une nouvelle coupure.
+1	Evette	Evette	PROPN	_	_	4	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	1:VID
+4	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	aurant	aurant	VERB	_	Tense=Pres|VerbForm=Part	4	advcl	_	_	*
+8	fini	finir	ADJ	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+9	avec	avec	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	pannes	panne	NOUN	_	Gender=Fem|Number=Plur	7	obl:mod	_	_	*
+12	puisque	puisque	SCONJ	_	_	22	mark	_	_	*
+13	hier	hier	ADV	_	_	22	advmod	_	_	*
+14	soir	soir	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	13	punct	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	bas	bas	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	commune	commune	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+21	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	subi	subir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+24	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	coupure	coupure	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 14
+# text = A Essert aussi quelques rues étaient dans le noir dans la soirée.
+1	A	à	ADP	_	_	2	case	_	_	*
+2	Essert	Essert	PROPN	_	_	9	obl:mod	_	_	*
+3	aussi	aussi	ADV	_	_	9	advmod	_	_	*
+4	quelques	quelque	DET	_	Gender=Fem|Number=Plur	5	det	_	_	*
+5	rues	rue	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+6	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	noir	noir	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 15
+# text = Ces incidents interviennent après les multiples coupures d'électricité survenues sur le département.
+1	Ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_	*
+2	incidents	incident	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	interviennent	intervenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	après	après	ADP	_	_	7	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+6	multiples	multiple	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+7	coupures	coupure	NOUN	_	Gender=Fem|Number=Plur	3	obl	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	électricité	électricité	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	survenues	survenir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+11	sur	sur	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	département	département	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 16
+# text = Elles ont été provoquées par des chutes d'arbres ou de branches sur des lignes qui ont été sectionnées.
+1	Elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj:pass	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	aux:pass	_	_	*
+4	provoquées	provoquer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	par	par	ADP	_	_	8	case	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	un	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	chutes	chute	NOUN	_	Gender=Fem|Number=Plur	4	obl:agent	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	arbres	arbre	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+11	ou	ou	CCONJ	_	_	13	cc	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	branches	branche	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_	*
+14	sur	sur	ADP	_	_	17	case	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*
+17	lignes	ligne	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	21	nsubj:pass	_	_	*
+19	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*
+20	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	aux:pass	_	_	*
+21	sectionnées	sectionner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	17	acl:relcl	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 17
+# text = Jusqu'à 3.000 clients ont ainsi été privées de courant.
+1	Jusqu'	jusque	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	3.000	3.000	NUM	_	_	4	nummod	_	_	*
+4	clients	client	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:pass	_	_	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+6	ainsi	ainsi	ADV	_	_	8	advmod	_	_	*
+7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_	*
+8	privées	priver	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	courant	courant	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 18
+# text = Résultat : Electricité de France a rappelé, en début d'après-midi jeudi, du personnel en congé pour composer six équipes d'intervention, soit une vingtaine de personnes.
+1	Résultat	résultat	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	Electricité	Electricité	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	France	France	PROPN	_	_	3	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	rappelé	rappeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	début	début	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+13	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	congé	conger	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+20	pour	pour	ADP	_	_	21	mark	_	_	*
+21	composer	composer	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+22	six	six	NUM	_	_	23	nummod	_	_	*
+23	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	soit	soit	ADV	_	_	29	advmod	_	_	*
+28	une	un	NUM	_	_	29	nummod	_	_	*
+29	vingtaine	vingtaine	NOUN	_	Gender=Fem|Number=Sing	23	appos	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	29	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 19
+# text = Elles ont reçu l'aide de plusieurs entreprises dont Franche-Comté installation électrique.
+1	Elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	aide	aide	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	8	det	_	_	*
+8	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+9	dont	dont	PRON	_	PronType=Rel	10	nmod	_	_	*
+10	Franche-Comté	Franche-Comté	PROPN	_	_	8	appos	_	_	*
+11	installation	installation	NOUN	_	Gender=Fem|Number=Sing	10	flat:name	_	_	*
+12	électrique	électrique	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 20
+# text = A 6 heures, hier matin, elles pensaient que la partie était gagnée.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	6	6	NUM	_	_	3	nummod	_	_	*
+3	heures	heure	NOUN	_	Gender=Fem|Number=Plur	9	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	hier	hier	ADV	_	_	6	advmod	_	_	*
+6	matin	matin	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_	*
+9	pensaient	penser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+10	que	que	SCONJ	_	_	14	mark	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	partie	partie	NOUN	_	Gender=Fem|Number=Sing	14	nsubj:pass	_	_	*
+13	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	aux:pass	_	_	*
+14	gagnée	gagner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	ccomp	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 21
+# text = A tort !
+1	A	à	ADP	_	_	0	root	_	_	*
+2	tort	tort	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*
+3	!	!	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 22
+# text = Une nouvelle coupure d'électricité vers 8 heures à Evette a nécessité le rappel de personnel qui était aller se coucher.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	coupure	coupure	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	électricité	électricité	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	vers	vers	ADP	_	_	8	case	_	_	*
+7	8	8	NUM	_	_	8	nummod	_	_	*
+8	heures	heure	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	Evette	Evette	PROPN	_	_	3	nmod	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	nécessité	nécessiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	rappel	rappel	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux:tense	_	_	*
+19	aller	aller	VERB	_	VerbForm=Inf	14	acl:relcl	_	_	*
+20	se	se	PRON	_	Person=3|PronType=Prs	21	expl:comp	_	_	*
+21	coucher	coucher	VERB	_	VerbForm=Inf	19	xcomp	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 23
+# text = « Je me suis couché après 5 h 30 et j'ai été rappelé à 9 h », témoigne l'un des agents d'EDF, épuisé.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+3	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	5	obj	_	_	*
+4	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	couché	coucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	ccomp	_	_	*
+6	après	après	ADP	_	_	8	case	_	_	*
+7	5	5	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+9	30	30	NUM	_	_	8	nmod	_	_	*
+10	et	et	CCONJ	_	_	14	cc	_	_	*
+11	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj:pass	_	SpaceAfter=No	*
+12	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	aux:pass	_	_	*
+14	rappelé	rappeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	9	9	NUM	_	_	17	nummod	_	_	*
+17	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+18	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	5	punct	_	_	*
+20	témoigne	témoigner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	un	un	PRON	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	agents	agent	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	_	*
+26	d'	de	ADP	_	_	27	case	_	SpaceAfter=No	*
+27	EDF	EDF	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	épuisé	épuiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 24
+# text = « Je n'ai mangé qu'un petit sandwich.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+3	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	mangé	manger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	qu'	que	SCONJ	_	_	9	case	_	SpaceAfter=No	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	petit	petit	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	sandwich	sandwich	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 25
+# text = Dans les secteurs les plus isolés, EDF a prêté à ses clients l'un des quatre groupes électrogène.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	secteurs	secteur	NOUN	_	Gender=Masc|Number=Plur	10	obl:mod	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	advmod	_	_	*
+5	plus	plus	ADV	_	_	4	fixed	_	_	*
+6	isolés	isolé	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	EDF	EDF	PROPN	_	_	10	nsubj	_	_	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	prêté	prêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	clients	client	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	un	un	PRON	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	19	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+18	quatre	quatre	NUM	_	_	19	nummod	_	_	*
+19	groupes	groupe	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+20	électrogène	électrogène	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-04_1992.txt 26
+# text = France Télécom a aussi eu des lignes sectionnées par des branchages ce qui a nécessité l'intervention de ses services.
+1	France	France	PROPN	_	_	5	nsubj	_	_	*
+2	Télécom	Télécom	PROPN	_	_	1	flat:name	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	aussi	aussi	ADV	_	_	5	advmod	_	_	*
+5	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	lignes	ligne	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	_	*
+9	sectionnées	sectionner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	par	par	ADP	_	_	13	case	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	un	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	branchages	branchage	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*
+14	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	obj	_	_	*
+15	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	nécessité	nécessiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl:relcl	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	services	service	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*
+

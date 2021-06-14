@@ -1,0 +1,612 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-22_23914.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 1
+# text = Affable, souriant et serviable
+1	Affable	Affable	ADJ	_	_	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	souriant	sourier	VERB	_	Tense=Pres|VerbForm=Part	1	conj	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	serviable	serviable	ADJ	_	Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 2
+# text = En 1975, Elio avait cessé son activité, mais âgé alors de 61 ans, il était entré à Alsthom « pour compléter ses annuités de retraite », cette retraite qu'il avait prise quatre ans plus tard.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1975	1975	NUM	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Elio	Elio	PROPN	_	_	6	nsubj	_	_	*
+5	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+6	cessé	cesser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	advcl	_	_	*
+7	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	activité	activité	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	mais	mais	CCONJ	_	_	11	cc	_	_	*
+11	âgé	âgé	ADJ	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+12	alors	alors	ADV	_	_	11	advmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	61	61	NUM	_	_	15	nummod	_	_	*
+15	ans	an	NOUN	_	Gender=Masc|Number=Plur	11	obl:arg	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	6	punct	_	_	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux:tense	_	_	*
+19	entré	entrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+20	à	à	ADP	_	_	21	case	_	_	*
+21	Alsthom	Alsthom	PROPN	_	_	19	obl:arg	_	_	*
+22	«	«	PUNCT	_	_	24	punct	_	_	*
+23	pour	pour	ADP	_	_	24	mark	_	_	*
+24	compléter	compléter	VERB	_	VerbForm=Inf	19	advcl	_	_	*
+25	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	annuités	annuité	NOUN	_	Gender=Fem|Number=Plur	24	obj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+29	»	»	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	24	punct	_	_	*
+31	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	32	det	_	_	*
+32	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	1:VID
+33	qu'	que	PRON	_	PronType=Rel	36	obj	_	SpaceAfter=No	*
+34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	nsubj	_	_	*
+35	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	36	aux:tense	_	_	*
+36	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	32	acl:relcl	_	_	1
+37	quatre	quatre	NUM	_	_	38	nummod	_	_	*
+38	ans	an	NOUN	_	Gender=Masc|Number=Plur	36	obl	_	_	*
+39	plus	plus	ADV	_	_	40	advmod	_	_	*
+40	tard	tard	ADV	_	_	38	advmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 3
+# text = Il avait fait partie de la Cravanchoise au sein de laquelle il se montrait très actif et plus tard, il avait participé avec son épouse aux activités du club du Bois Joli.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	aux:tense	_	_	*
+3	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+4	partie	partie	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	1
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	Cravanchoise	Cravanchoise	PROPN	_	_	4	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	sein	sein	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	10	nmod	_	_	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	15	expl:comp	_	_	2:IRV
+15	montrait	montrer	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	xcomp	_	_	2
+16	très	très	ADV	_	_	17	advmod	_	_	*
+17	actif	actif	ADJ	_	Gender=Masc|Number=Sing	15	xcomp	_	_	*
+18	et	et	CCONJ	_	_	24	cc	_	_	*
+19	plus	plus	ADV	_	_	20	advmod	_	_	*
+20	tard	tard	ADV	_	_	24	advmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	20	punct	_	_	*
+22	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_	*
+23	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	aux:tense	_	_	*
+24	participé	participer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	conj	_	_	*
+25	avec	avec	ADP	_	_	27	case	_	_	*
+26	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	24	obl:arg	_	_	*
+28-29	aux	_	_	_	_	_	_	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*
+30	activités	activité	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	_	*
+31-32	du	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	club	club	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34-35	du	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	Bois	Bois	PROPN	_	_	33	nmod	_	_	*
+37	Joli	joli	PROPN	_	_	36	flat:name	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 4
+# text = Il consacrait également beaucoup de temps à son son jardin de la Forêt du Salbert.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	consacrait	consacraître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	également	également	ADV	_	_	2	advmod	_	_	*
+4	beaucoup	beaucoup	ADV	_	_	2	obj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	temps	temps	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+9	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	jardin	jardin	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Forêt	Forêt	PROPN	_	_	10	nmod	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	Salbert	Salbert	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 5
+# text = Enfin, il avait été porte-drapeau des anciens combattants et prisonniers de guerre.
+1	Enfin	enfin	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	cop	_	_	*
+6	porte-drapeau	porte-drapeau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	10	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+10	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	prisonniers	prisonnier	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 6
+# text = En 1950, il avait épousé à Cravanche Marie-Rose Malet et de cette union était né un fils, Hervé, mais il avait élevé comme ses propres enfants ses deux beaux-fils, René et Bernard Labruyère.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1950	1950	NUM	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+5	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+6	épousé	épouser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Cravanche	Cravanche	PROPN	_	_	6	obl:arg	_	_	*
+9	Marie-Rose	Marie-Rose	PROPN	_	_	8	flat:name	_	_	*
+10	Malet	Malet	PROPN	_	_	8	flat:name	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	14	det	_	_	*
+14	union	union	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+15	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+16	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	xcomp	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	fils	fils	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Hervé	Hervé	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	25	punct	_	_	*
+22	mais	mais	CCONJ	_	_	25	cc	_	_	*
+23	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_	*
+24	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	aux:tense	_	_	*
+25	élevé	élever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	conj	_	_	*
+26	comme	comme	ADP	_	_	29	case	_	_	*
+27	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	29	det	_	_	*
+28	propres	propre	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	_	*
+29	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	25	obl:mod	_	_	*
+30	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	32	det	_	_	*
+31	deux	deux	NUM	_	_	32	nummod	_	_	*
+32	beaux-fils	beaux-fil	NOUN	_	Gender=Masc|Number=Plur	25	obj	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	René	René	PROPN	_	_	32	appos	_	_	*
+35	et	et	CCONJ	_	_	36	cc	_	_	*
+36	Bernard	Bernard	PROPN	_	_	34	conj	_	_	*
+37	Labruyère	Labruyère	PROPN	_	_	36	flat:name	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 7
+# text = Il avait trois petits-fils, Jérôme, Thierry et Fabrice ainsi que cinq arrières-petits-fils.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	trois	trois	NUM	_	_	4	nummod	_	_	*
+4	petits-fils	petits-fil	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	Jérôme	Jérôme	PROPN	_	_	4	appos	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Thierry	Thierry	PROPN	_	_	6	conj	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	Fabrice	Fabrice	PROPN	_	_	6	conj	_	_	*
+11	ainsi	ainsi	ADV	_	_	14	cc	_	_	*
+12	que	que	SCONJ	_	_	11	fixed	_	_	*
+13	cinq	cinq	NUM	_	_	14	nummod	_	_	*
+14	arrières-petits-fils	arrières-petits-fil	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 8
+# text = Mais sa vie avait changé au décès de son épouse le 30 mai 2001.
+1	Mais	mais	CCONJ	_	_	5	cc	_	_	*
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	vie	vie	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*
+5	changé	changer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	décès	décès	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	30	30	NUM	_	_	5	obl	_	_	*
+14	mai	mai	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+15	2001	2001	NUM	_	_	14	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 9
+# text = Quelques semaines plus tard, il avait décidé d'entrer à la Résidence Boneff où il s'était rapidement fait apprécier par sa gentillesse, sa serviabilité, sa gaieté et son allant et c'est lui qui avait relancé les parties de belote... « Aujourd'hui, il laisse un grand vide au sein de la Résidence : c'était un rayon de soleil non seulement pour les pensionnaires mais également pour le personnel ».
+1	Quelques	quelque	DET	_	Gender=Fem|Number=Plur	2	det	_	_	*
+2	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	8	obl:mod	_	_	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*
+4	tard	tard	ADV	_	_	2	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+7	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux:tense	_	_	*
+8	décidé	décider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	d'	de	ADP	_	_	10	mark	_	SpaceAfter=No	*
+10	entrer	entrer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Résidence	résidence	PROPN	_	_	10	obl:arg	_	_	*
+14	Boneff	Boneff	PROPN	_	_	13	flat:name	_	_	*
+15	où	où	ADV	_	PronType=Rel	21	advmod	_	_	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	nsubj:caus	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	21	obj	_	SpaceAfter=No	*
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	aux:tense	_	_	*
+19	rapidement	rapidement	ADV	_	_	21	advmod	_	_	*
+20	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	aux:caus	_	_	*
+21	apprécier	apprécier	VERB	_	VerbForm=Inf	13	acl:relcl	_	_	*
+22	par	par	ADP	_	_	24	case	_	_	*
+23	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	gentillesse	gentillesse	NOUN	_	Gender=Fem|Number=Sing	21	obl:agent	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	serviabilité	serviabilité	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	30	det	_	_	*
+30	gaieté	gaieté	NOUN	_	Gender=Fem|Number=Sing	27	conj	_	_	*
+31	et	et	CCONJ	_	_	33	cc	_	_	*
+32	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	33	det	_	_	*
+33	allant	allant	NOUN	_	Gender=Masc|Number=Sing	27	conj	_	_	*
+34	et	et	CCONJ	_	_	37	cc	_	_	*
+35	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	37	nsubj	_	SpaceAfter=No	*
+36	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_	*
+37	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	27	conj	_	_	*
+38	qui	qui	PRON	_	PronType=Rel	40	nsubj	_	_	*
+39	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	40	aux:tense	_	_	*
+40	relancé	relancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	37	acl:relcl	_	_	*
+41	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	42	det	_	_	*
+42	parties	partie	NOUN	_	Gender=Fem|Number=Plur	40	obj	_	_	*
+43	de	de	ADP	_	_	44	case	_	_	*
+44	belote	belote	NOUN	_	Gender=Masc|Number=Sing	42	nmod	_	SpaceAfter=No	*
+45	...	...	PUNCT	_	_	50	punct	_	_	*
+46	«	«	PUNCT	_	_	50	punct	_	_	*
+47	Aujourd'hui	aujourd'hui	ADV	_	_	50	advmod	_	SpaceAfter=No	*
+48	,	,	PUNCT	_	_	47	punct	_	_	*
+49	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	50	nsubj	_	_	*
+50	laisse	laisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	parataxis	_	_	*
+51	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_	*
+52	grand	grand	ADJ	_	Gender=Masc|Number=Sing	53	amod	_	_	*
+53	vide	vide	NOUN	_	Gender=Masc|Number=Sing	50	obj	_	_	*
+54-55	au	_	_	_	_	_	_	_	_	*
+54	à	à	ADP	_	_	56	case	_	_	*
+55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_	*
+56	sein	sein	NOUN	_	Gender=Masc|Number=Sing	50	obl:mod	_	_	*
+57	de	de	ADP	_	_	59	case	_	_	*
+58	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	_	_	*
+59	Résidence	résidence	PROPN	_	_	56	nmod	_	_	*
+60	:	:	PUNCT	_	_	64	punct	_	_	*
+61	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	64	nsubj	_	SpaceAfter=No	*
+62	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	64	cop	_	_	*
+63	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	64	det	_	_	*
+64	rayon	rayon	NOUN	_	Gender=Masc|Number=Sing	8	parataxis	_	_	*
+65	de	de	ADP	_	_	66	case	_	_	*
+66	soleil	soleil	NOUN	_	Gender=Masc|Number=Sing	64	nmod	_	_	*
+67	non	non	ADV	_	_	71	advmod	_	_	*
+68	seulement	seulement	ADV	_	_	67	fixed	_	_	*
+69	pour	pour	ADP	_	_	71	case	_	_	*
+70	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	71	det	_	_	*
+71	pensionnaires	pensionnaire	NOUN	_	Gender=Masc|Number=Plur	64	nmod	_	_	*
+72	mais	mais	CCONJ	_	_	76	cc	_	_	*
+73	également	également	ADV	_	_	76	advmod	_	_	*
+74	pour	pour	ADP	_	_	76	case	_	_	*
+75	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	76	det	_	_	*
+76	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	71	conj	_	_	*
+77	»	»	PUNCT	_	_	64	punct	_	SpaceAfter=No	*
+78	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 10
+# text = La cérémonie religieuse aura lieu le 22 janvier 2003 à 14 heures en la chapelle de Cravanche.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	cérémonie	cérémonie	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	religieuse	religieux	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+5	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	1
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	22	22	NUM	_	_	4	obl	_	_	*
+8	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	2003	2003	NUM	_	_	8	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	14	14	NUM	_	_	12	nummod	_	_	*
+12	heures	heure	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	*
+13	en	en	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	chapelle	chapelle	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Cravanche	Cravanche	PROPN	_	_	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 11
+# text = Nos condoléances.
+1	Nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	condoléances	condoléance	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 12
+# text = Elio Burchi s'est éteint dimanche au Centre hospitalier de Belfort.
+1	Elio	Elio	PROPN	_	_	5	nsubj	_	_	*
+2	Burchi	Burchi	PROPN	_	_	1	flat:name	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	éteint	éteindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	Centre	centre	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+10	hospitalier	hospitalier	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Belfort	Belfort	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 13
+# text = Il devait fêter ses 89 ans dans quelques semaines.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	fêter	fêter	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*
+5	89	89	NUM	_	_	6	nummod	_	_	*
+6	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	quelques	quelque	DET	_	Gender=Fem|Number=Plur	9	det	_	_	*
+9	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	3	obl:mod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 14
+# text = C'est une figure connue et estimée à Cravanche qui disparaît.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	figure	figure	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	connue	connaître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	estimée	estimer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Cravanche	Cravanche	PROPN	_	_	7	obl:arg	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+11	disparaît	disparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 15
+# text = Il était né le 19 mars 1914 à Lizzano dans la province de Bologne en Italie, dans une famille qui comptait dix enfants et qui allait émigrer en France en 1926.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	aux:tense	_	_	*
+3	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	19	19	NUM	_	_	3	obl:arg	_	_	*
+6	mars	mars	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+7	1914	1914	NUM	_	_	6	nmod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Lizzano	Lizzano	PROPN	_	_	3	obl:arg	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	province	province	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Bologne	Bologne	PROPN	_	_	12	nmod	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	Italie	Italie	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	dans	dans	ADP	_	_	20	case	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	famille	famille	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+22	comptait	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl:relcl	_	_	*
+23	dix	dix	NUM	_	_	24	nummod	_	_	*
+24	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	et	et	CCONJ	_	_	27	cc	_	_	*
+26	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*
+27	allait	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	conj	_	_	*
+28	émigrer	émigrer	VERB	_	VerbForm=Inf	27	xcomp	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	France	France	PROPN	_	_	28	obl	_	_	*
+31	en	en	ADP	_	_	32	case	_	_	*
+32	1926	1926	NUM	_	_	28	obl	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 16
+# text = Il avait exercé plusieurs métiers : débardage, livraison de charbon et il avait également travaillé à Alsthom.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	aux:tense	_	_	*
+3	exercé	exercer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	plusieurs	plusieurs	DET	_	Gender=Masc|Number=Plur	5	det	_	_	*
+5	métiers	métier	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+6	:	:	PUNCT	_	_	7	punct	_	_	*
+7	débardage	débardage	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	livraison	livraison	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	charbon	charbon	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	et	et	CCONJ	_	_	16	cc	_	_	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	*
+14	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+15	également	également	ADV	_	_	16	advmod	_	_	*
+16	travaillé	travailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Alsthom	Alsthom	PROPN	_	_	16	obl:arg	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 17
+# text = En 1940, Italien, il s'était engagé dans la Légion étrangère, mais rapidement fait prisonnier, il avait connu les camps ou fermes en Allemagne, en Pologne et en Tchécoslovaquie.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1940	1940	NUM	_	_	9	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Italien	italien	PROPN	_	_	9	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+7	s'	se	PRON	_	Person=3|PronType=Prs	9	obj	_	SpaceAfter=No	1:IRV
+8	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*
+9	engagé	engager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	advcl	_	_	1
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Légion	légion	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+13	étrangère	étranger	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	mais	mais	CCONJ	_	_	17	cc	_	_	*
+16	rapidement	rapidement	ADV	_	_	17	advmod	_	_	*
+17	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	conj	_	_	2:VID
+18	prisonnier	prisonnier	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	SpaceAfter=No	2
+19	,	,	PUNCT	_	_	9	punct	_	_	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	*
+21	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux:tense	_	_	*
+22	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	camps	camp	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	ou	ou	CCONJ	_	_	26	cc	_	_	*
+26	fermes	ferme	ADJ	_	Gender=Fem|Number=Plur	24	conj	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	Allemagne	Allemagne	PROPN	_	_	22	obl	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	en	en	ADP	_	_	31	case	_	_	*
+31	Pologne	Pologne	PROPN	_	_	28	conj	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	en	en	ADP	_	_	34	case	_	_	*
+34	Tchécoslovaquie	Tchécoslovaquie	PROPN	_	_	28	conj	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 18
+# text = Sa captivité avait pris fin à la Libération.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	captivité	captivité	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*
+4	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+5	fin	fin	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
+6	à	à	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	Libération	Libération	PROPN	_	_	4	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 19
+# text = Il s'était alors associé avec son frère jumeau, Joseph, pour « monter » un magasin de cycles, « ventes et réparations » dans un local aujourd'hui disparu, qui était situé au centre de la commune.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	*
+3	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*
+4	alors	alors	ADV	_	_	5	advmod	_	_	*
+5	associé	associer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	avec	avec	ADP	_	_	8	case	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	frère	frère	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	jumeau	jumeau	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	Joseph	Joseph	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	pour	pour	ADP	_	_	15	mark	_	_	*
+14	«	«	PUNCT	_	_	15	punct	_	_	*
+15	monter	monter	VERB	_	VerbForm=Inf	8	acl	_	_	*
+16	»	»	PUNCT	_	_	15	punct	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	magasin	magasin	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	cycles	cycle	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	«	«	PUNCT	_	_	23	punct	_	_	*
+23	ventes	vente	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*
+24	et	et	CCONJ	_	_	25	cc	_	_	*
+25	réparations	réparation	NOUN	_	Gender=Fem|Number=Plur	23	conj	_	_	*
+26	»	»	PUNCT	_	_	23	punct	_	_	*
+27	dans	dans	ADP	_	_	29	case	_	_	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	local	local	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+30	aujourd'hui	aujourd'hui	ADV	_	_	31	advmod	_	_	*
+31	disparu	disparu	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	35	punct	_	_	*
+33	qui	qui	PRON	_	PronType=Rel	35	nsubj	_	_	*
+34	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	35	aux:tense	_	_	*
+35	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+36-37	au	_	_	_	_	_	_	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	centre	centre	NOUN	_	Gender=Masc|Number=Sing	35	obl:arg	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	commune	commune	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 20
+# text = Ils avaient ensuite construit la maison actuelle du 10, rue des Commandos, dans laquelle ils avaient transféré leur activité.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*
+3	ensuite	ensuite	ADV	_	_	4	advmod	_	_	*
+4	construit	construire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	maison	maison	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	actuelle	actuel	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	10	10	NUM	_	_	6	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	Commandos	commandos	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	21	punct	_	_	*
+17	dans	dans	ADP	_	_	18	case	_	_	*
+18	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	21	obl:arg	_	_	*
+19	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	nsubj	_	_	*
+20	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	aux:tense	_	_	*
+21	transféré	transférer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl:relcl	_	_	*
+22	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	23	det	_	_	*
+23	activité	activité	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 21
+# text = Les anciens se souviendront du slogan « Avec les cycles Burchi, allez sans soucis », mais aussi des courses cyclistes organisées par Elio et Joseph.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	anciens	ancien	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	1:IRV
+4	souviendront	souvenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	slogan	slogan	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	«	«	PUNCT	_	_	11	punct	_	_	*
+9	Avec	avec	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	cycles	cycle	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+12	Burchi	Burchi	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	11	punct	_	_	*
+14	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	xcomp	_	_	*
+15	sans	sans	ADP	_	_	16	case	_	_	*
+16	soucis	souci	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	_	*
+17	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	23	punct	_	_	*
+19	mais	mais	CCONJ	_	_	23	cc	_	_	*
+20	aussi	aussi	ADV	_	_	23	advmod	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	courses	course	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_	*
+24	cyclistes	cycliste	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*
+25	organisées	organiser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	23	acl	_	_	*
+26	par	par	ADP	_	_	27	case	_	_	*
+27	Elio	Elio	PROPN	_	_	25	obl:agent	_	_	*
+28	et	et	CCONJ	_	_	29	cc	_	_	*
+29	Joseph	Joseph	PROPN	_	_	27	conj	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_23914.txt 22
+# text = Les deux frères s'étaient ensuite séparés, Joseph ouvrant pendant quelques années un magasin similaire à Valdoie.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	deux	deux	NUM	_	_	3	nummod	_	_	*
+3	frères	frère	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	7	obj	_	SpaceAfter=No	1:IRV
+5	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	aux:tense	_	_	*
+6	ensuite	ensuite	ADV	_	_	7	advmod	_	_	*
+7	séparés	séparer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	Joseph	Joseph	PROPN	_	_	10	nsubj	_	_	*
+10	ouvrant	ouvrir	VERB	_	Tense=Pres|VerbForm=Part	7	advcl	_	_	*
+11	pendant	pendant	ADP	_	_	13	case	_	_	*
+12	quelques	quelque	DET	_	Gender=Fem|Number=Plur	13	det	_	_	*
+13	années	année	NOUN	_	Gender=Fem|Number=Plur	10	obl	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	magasin	magasin	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+16	similaire	similaire	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Valdoie	Valdoie	PROPN	_	_	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

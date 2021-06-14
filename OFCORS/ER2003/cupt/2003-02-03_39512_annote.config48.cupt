@@ -1,0 +1,596 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-03_39512.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 1
+# text = Privé, public M. Philippe HOGRAINDLEUR 70290 Champagney.
+1	Privé	privé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	public	public	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	_	SpacesAfter=\n	*
+4	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	nsubj	_	_	*
+5	Philippe	Philippe	PROPN	_	_	4	flat:name	_	_	*
+6	HOGRAINDLEUR	HOGRAINDLEUR	PROPN	_	_	4	flat:name	_	_	*
+7	70290	70290	NUM	_	_	4	nmod	_	_	*
+8	Champagney	Champagney	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 2
+# text = Je supporte de plus en plus mal les attaques dont font l'objet les fonctionnaires.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	supporte	support	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	de	de	ADP	_	_	2	advmod	_	_	*
+4	plus	plus	ADV	_	_	3	fixed	_	_	*
+5	en	en	ADP	_	_	3	fixed	_	_	*
+6	plus	plus	ADV	_	_	3	fixed	_	_	*
+7	mal	mal	ADV	_	_	9	advmod	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	attaques	attaque	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	_	*
+10	dont	dont	PRON	_	PronType=Rel	11	iobj	_	_	*
+11	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	1:VID
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	1
+13	objet	objet	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	1
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	fonctionnaires	fonctionnaire	NOUN	_	Gender=Masc|Number=Plur	13	appos	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 3
+# text = A entendre ces donneurs de leçons, on a l'impression que le fonctionnaire fait partie d'une caste sociale qui hérite à la naissance de son rang (...) Je suis fonctionnaire et je ne me considère pas du tout comme un privilégié.
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	entendre	entendre	VERB	_	VerbForm=Inf	9	advcl	_	_	*
+3	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	4	det	_	_	*
+4	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	leçons	leçon	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	2	punct	_	_	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_	*
+9	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2:LVC.full
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	impression	impression	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	2;3:VID
+12	que	que	SCONJ	_	_	15	mark	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	fonctionnaire	fonctionnaire	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+15	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl	_	_	1:VID;3
+16	partie	partie	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	1
+17	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	caste	caste	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	sociale	social	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+22	hérite	hériter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	22	obl:arg	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+28	rang	rang	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+29	(	(	PUNCT	_	_	34	punct	_	SpaceAfter=No	*
+30	...	...	PUNCT	_	_	34	punct	_	SpaceAfter=No	*
+31	)	)	PUNCT	_	_	34	punct	_	_	*
+32	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	34	nsubj	_	_	*
+33	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	34	cop	_	_	*
+34	fonctionnaire	fonctionnaire	NOUN	_	Gender=Masc|Number=Sing	28	appos	_	_	*
+35	et	et	CCONJ	_	_	39	cc	_	_	*
+36	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	39	nsubj	_	_	*
+37	ne	ne	ADV	_	Polarity=Neg	39	advmod	_	_	*
+38	me	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	39	iobj	_	_	*
+39	considère	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	conj	_	_	*
+40	pas	pas	ADV	_	Polarity=Neg	39	advmod	_	_	*
+41-42	du	_	_	_	_	_	_	_	_	*
+41	de	de	ADP	_	_	39	advmod	_	_	*
+42	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	fixed	_	_	*
+43	tout	tout	PRON	_	Gender=Masc|Number=Sing	41	fixed	_	_	*
+44	comme	comme	ADP	_	_	46	case	_	_	*
+45	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_	*
+46	privilégié	privilégié	NOUN	_	Gender=Masc|Number=Sing	39	obl:mod	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	34	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 4
+# text = J'ai travaillé à 17 ans, pendant une dizaine d'années dans plusieurs PME : ambulancier, en moyenne 200 à 250 heures par mois pour un salaire guère plus que le SMIC.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	travaillé	travailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	17	17	NUM	_	_	6	nummod	_	_	*
+6	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	pendant	pendant	ADP	_	_	10	case	_	_	*
+9	une	une	NUM	_	_	10	nummod	_	_	*
+10	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	années	année	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_	*
+13	dans	dans	ADP	_	_	15	case	_	_	*
+14	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	15	det	_	_	*
+15	PME	PME	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+16	:	:	PUNCT	_	_	17	punct	_	_	*
+17	ambulancier	ambulancier	NOUN	_	Gender=Masc|Number=Sing	15	appos	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	moyenne	moyenne	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+21	200	200	NUM	_	_	20	nmod	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	250	250	NUM	_	_	24	nummod	_	_	*
+24	heures	heure	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	_	*
+25	par	par	ADP	_	_	26	case	_	_	*
+26	mois	mois	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+27	pour	pour	ADP	_	_	29	case	_	_	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+30	guère	guère	ADV	_	_	31	advmod	_	_	*
+31	plus	plus	ADV	_	_	29	advmod	_	_	*
+32	que	que	SCONJ	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	SMIC	SMIC	PROPN	_	_	31	obl:mod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 5
+# text = La dernière entreprise met la clé sous la porte.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+4	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	clé	clé	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	sous	sous	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	porte	porte	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 6
+# text = Je passe un concours : reçu, tout simplement.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	concours	concours	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	tout	tout	ADV	_	_	9	advmod	_	_	*
+9	simplement	simplement	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 7
+# text = Plus de 100.000 inscrits, environ 10 % de reçus.
+1	Plus	plus	ADV	_	_	8	advmod	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	100.000	100.000	NUM	_	_	4	nummod	_	_	*
+4	inscrits	inscrit	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	environ	environ	ADV	_	_	7	advmod	_	_	*
+7	10	10	NUM	_	_	8	nummod	_	_	*
+8	%	%	SYM	_	_	0	root	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	reçus	reçus	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 8
+# text = Tous là, ou presque, à cause du chômage, la Fonction publique offre de l'emploi et c'est bien.
+1	Tous	tout	PRON	_	Gender=Masc|Number=Plur	16	advcl	_	_	*
+2	là	là	ADV	_	_	1	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	8	punct	_	_	*
+4	ou	ou	CCONJ	_	_	8	cc	_	_	*
+5	presque	presque	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	cause	cause	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	chômage	chômage	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	1	punct	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	Fonction	fonction	PROPN	_	_	16	nsubj	_	_	*
+15	publique	public	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+16	offre	offrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	22	nsubj	_	SpaceAfter=No	*
+22	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*
+23	bien	bien	ADV	_	_	22	advmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 9
+# text = D'ailleurs, ces concours sont accessibles à tous, vous pouvez vous inscrire !
+1	D'	de	ADP	_	_	7	advmod	_	SpaceAfter=No	*
+2	ailleurs	ailleurs	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	_	_	*
+5	concours	concours	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	accessibles	accessible	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	tous	tout	PRON	_	Gender=Masc|Number=Plur	7	obl:mod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_	*
+12	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	conj	_	_	*
+13	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	14	obj	_	_	*
+14	inscrire	inscrire	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+15	!	!	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 10
+# text = J'ai prêté serment, j'ai pris des engagements dont certains sont plus contraignants que dans le privé (obligation de continuité de service, secret professionnel, égalité de traitement...), avec un salaire qui, après 20 ans d'activité, arrive à peine à 1.400 euros, pas de 13e mois.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	prêté	prêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	serment	serment	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	SpaceAfter=No	*
+7	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	1:LVC.full
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	engagements	engagement	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	_	1
+12	dont	dont	PRON	_	PronType=Rel	13	nmod	_	_	*
+13	certains	certain	PRON	_	Gender=Masc|Number=Plur	16	nsubj	_	_	*
+14	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+15	plus	plus	ADV	_	_	16	advmod	_	_	*
+16	contraignants	contraignant	ADJ	_	Gender=Masc|Number=Plur	11	acl:relcl	_	_	*
+17	que	que	SCONJ	_	_	20	mark	_	_	*
+18	dans	dans	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	privé	privé	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	obligation	obligation	NOUN	_	Gender=Fem|Number=Sing	20	appos	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	continuité	continuité	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	service	service	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*
+28	secret	secret	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*
+29	professionnel	professionnel	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No	*
+34	...	...	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+35	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	39	punct	_	_	*
+37	avec	avec	ADP	_	_	39	case	_	_	*
+38	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_	*
+40	qui	qui	PRON	_	PronType=Rel	48	nsubj	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	40	punct	_	_	*
+42	après	après	ADP	_	_	44	case	_	_	*
+43	20	20	NUM	_	_	44	nummod	_	_	*
+44	ans	an	NOUN	_	Gender=Masc|Number=Plur	48	obl:mod	_	_	*
+45	d'	de	ADP	_	_	46	case	_	SpaceAfter=No	*
+46	activité	activité	NOUN	_	Gender=Fem|Number=Sing	44	nmod	_	SpaceAfter=No	*
+47	,	,	PUNCT	_	_	44	punct	_	_	*
+48	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	acl:relcl	_	_	*
+49	à	à	ADP	_	_	50	case	_	_	*
+50	peine	peine	NOUN	_	Gender=Fem|Number=Sing	48	obl:mod	_	_	*
+51	à	à	ADP	_	_	53	case	_	_	*
+52	1.400	1.400	NUM	_	_	53	nummod	_	_	*
+53	euros	euro	NOUN	_	Gender=Masc|Number=Plur	50	nmod	_	SpaceAfter=No	*
+54	,	,	PUNCT	_	_	58	punct	_	_	*
+55	pas	pas	ADV	_	Polarity=Neg	58	advmod	_	_	*
+56	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	58	det	_	_	*
+57	13e	13e	ADJ	_	Gender=Masc|Number=Plur	58	amod	_	_	*
+58	mois	mois	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	SpaceAfter=No	*
+59	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 11
+# text = Pour la retraite, qui ne sera pas de 75 % de mon traitement (mais beaucoup moins) contrairement à ce qui certains en disent, je l'aurai plutôt à 60 ans qu'à 55 (...).
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	30	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	11	punct	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+6	ne	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*
+7	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	cop	_	_	*
+8	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	75	75	NUM	_	_	11	nummod	_	_	*
+11	%	%	SYM	_	_	3	acl:relcl	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+16	mais	mais	CCONJ	_	_	18	cc	_	_	*
+17	beaucoup	beaucoup	ADV	_	_	18	advmod	_	_	*
+18	moins	moins	ADV	_	_	11	conj	_	SpaceAfter=No	*
+19	)	)	PUNCT	_	_	18	punct	_	_	*
+20	contrairement	contrairement	ADV	_	_	22	advmod	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nmod	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*
+24	certains	certain	PRON	_	Gender=Masc|Number=Plur	26	nsubj	_	_	*
+25	en	en	PRON	_	Person=3	26	iobj	_	_	*
+26	disent	dire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	3	punct	_	_	*
+28	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	30	nsubj	_	_	*
+29	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	30	obj	_	SpaceAfter=No	*
+30	aurai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+31	plutôt	plutôt	ADV	_	_	34	advmod	_	_	*
+32	à	à	ADP	_	_	34	case	_	_	*
+33	60	60	NUM	_	_	34	nummod	_	_	*
+34	ans	an	NOUN	_	Gender=Masc|Number=Plur	30	obl:mod	_	_	*
+35	qu'	que	SCONJ	_	_	34	advmod	_	SpaceAfter=No	*
+36	à	à	ADP	_	_	37	case	_	_	*
+37	55	55	NUM	_	_	35	obl:arg	_	_	*
+38	(	(	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+39	...	...	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+40	)	)	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	30	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 12
+# text = Je suis fils d'ouvrier (tout petit salaire), la mère au foyer, pas de biens, une vie modeste : doit-on vraiment tous régresser à ce point là pour qu'il y ait une égalité de salaire, dans la retraite ?
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	fils	fils	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	ouvrier	ouvrier	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+7	tout	tout	ADV	_	_	8	advmod	_	_	*
+8	petit	petit	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	mère	mère	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*
+19	de	de	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	biens	bien	NOUN	_	Gender=Masc|Number=Plur	16	conj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	vie	vie	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+24	modeste	modeste	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+25	:	:	PUNCT	_	_	23	punct	_	_	*
+26	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	SpaceAfter=No	*
+27	-on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_	*
+28	vraiment	vraiment	ADV	_	_	26	advmod	_	_	*
+29	tous	tout	PRON	_	Gender=Masc|Number=Plur	30	obj	_	_	*
+30	régresser	régresser	VERB	_	VerbForm=Inf	26	xcomp	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	33	det	_	_	*
+33	point	point	NOUN	_	Gender=Masc|Number=Sing	30	obl:mod	_	_	*
+34	là	là	ADV	_	_	30	advmod	_	_	*
+35	pour	pour	ADP	_	_	39	mark	_	_	*
+36	qu'	que	SCONJ	_	_	39	mark	_	SpaceAfter=No	*
+37	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	expl:subj	_	_	1:VID
+38	y	y	PRON	_	_	39	expl:comp	_	_	1
+39	ait	avoir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	advcl	_	_	1
+40	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	39	obj	_	_	*
+42	de	de	ADP	_	_	43	case	_	_	*
+43	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No	*
+44	,	,	PUNCT	_	_	47	punct	_	_	*
+45	dans	dans	ADP	_	_	47	case	_	_	*
+46	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_	*
+47	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	39	obl:mod	_	_	*
+48	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 13
+# text = Je me rappelle un receveur (fonctionnaire) qui m'expliquait que, dans les années 60, personne ne voulait rentrer à la Poste, les salaires étant de moitié de ceux de Peugeot.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	3	iobj	_	_	1:IRV
+3	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	receveur	receveur	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+7	fonctionnaire	fonctionnaire	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	SpaceAfter=No	*
+8	)	)	PUNCT	_	_	7	punct	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+10	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	11	iobj	_	SpaceAfter=No	*
+11	expliquait	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl:relcl	_	_	*
+12	que	que	SCONJ	_	_	21	mark	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	années	année	NOUN	_	Gender=Fem|Number=Plur	21	obl:mod	_	_	*
+17	60	60	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	16	punct	_	_	*
+19	personne	personne	PRON	_	Number=Sing|PronType=Neg	21	nsubj	_	_	*
+20	ne	ne	ADV	_	Polarity=Neg	21	advmod	_	_	*
+21	voulait	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	ccomp	_	_	*
+22	rentrer	rentrer	VERB	_	VerbForm=Inf	21	xcomp	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	Poste	poste	PROPN	_	_	22	obl:arg	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	31	punct	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	salaires	salaire	NOUN	_	Gender=Masc|Number=Plur	31	nsubj	_	_	*
+29	étant	être	AUX	_	Tense=Pres|VerbForm=Part	31	cop	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	moitié	moitié	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	31	nmod	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	Peugeot	Peugeot	PROPN	_	_	33	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 14
+# text = (...) Il ne faudrait pas se tromper « d'ennemi ».
+1	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+2	...	...	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+3	)	)	PUNCT	_	_	6	punct	_	_	*
+4	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	1:VID
+5	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	faudrait	falloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	_	*
+9	tromper	tromper	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+10	«	«	PUNCT	_	_	12	punct	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	ennemi	ennemi	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	_	*
+13	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 15
+# text = A moins que les colporteurs de ces ragots aient des intérêts ?
+1	A	à	ADP	_	_	0	root	_	_	*
+2	moins	moins	ADV	_	_	1	fixed	_	_	*
+3	que	que	SCONJ	_	_	9	mark	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	colporteurs	colporteur	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_	*
+8	ragots	ragot	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	aient	avoir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_	1:LVC.full
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	intérêts	intérêt	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	1
+13	?	?	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 16
+# text = Ce n'est pas en « gueulant » sur le voisin du même immeuble, parce qu'il a une voiture moins pourrie ou des fleurs à son balcon, que l'on va régler le problème de notre voiture, ou du « fleurissement ».
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+5	en	en	ADP	_	_	7	case	_	_	*
+6	«	«	PUNCT	_	_	7	punct	_	_	*
+7	gueulant	gueulant	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+8	»	»	PUNCT	_	_	7	punct	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	voisin	voisin	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	15	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+14	même	même	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	20	punct	_	_	*
+17	parce	parce	ADV	_	_	20	mark	_	_	*
+18	qu'	que	SCONJ	_	_	17	fixed	_	SpaceAfter=No	*
+19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_	*
+20	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	*
+23	moins	moins	ADV	_	_	24	advmod	_	_	*
+24	pourrie	pourrie	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+25	ou	ou	CCONJ	_	_	28	cc	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_	*
+28	fleurs	fleur	NOUN	_	Gender=Fem|Number=Plur	22	conj	_	_	*
+29	à	à	ADP	_	_	31	case	_	_	*
+30	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	31	det	_	_	*
+31	balcon	balcon	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	36	punct	_	_	*
+33	que	que	PRON	_	PronType=Rel	37	obj	_	_	*
+34	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	36	nsubj	_	SpaceAfter=No	*
+35	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	34	fixed	_	_	*
+36	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_	*
+37	régler	régler	VERB	_	VerbForm=Inf	36	xcomp	_	_	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	problème	problème	NOUN	_	Gender=Masc|Number=Sing	36	obj	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	42	det	_	_	*
+42	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	48	punct	_	_	*
+44	ou	ou	CCONJ	_	_	48	cc	_	_	*
+45-46	du	_	_	_	_	_	_	_	_	*
+45	de	de	ADP	_	_	48	case	_	_	*
+46	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_	*
+47	«	«	PUNCT	_	_	48	punct	_	_	*
+48	fleurissement	fleurissement	NOUN	_	Gender=Masc|Number=Sing	42	conj	_	_	*
+49	»	»	PUNCT	_	_	48	punct	_	SpaceAfter=No	*
+50	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 17
+# text = Il faut aujourd'hui débattre du niveau minimum acceptable, des soins, des transports, des loisirs, de la communication, de l'enseignement, pour tous.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	aujourd'hui	aujourd'hui	ADV	_	_	2	advmod	_	_	*
+4	débattre	débattre	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	minimum	minimum	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	acceptable	acceptable	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	soins	soin	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	transports	transport	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	communication	communication	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+29	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	pour	pour	ADP	_	_	32	case	_	_	*
+32	tous	tout	PRON	_	Gender=Masc|Number=Plur	4	obl	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 18
+# text = Et demander aux « imposés sur les grandes fortunes », chaque année plus nombreux (alors que le seuil augmente), de partager un peu pour financer ces besoins.
+1	Et	et	CCONJ	_	_	2	cc	_	_	*
+2	demander	demander	VERB	_	VerbForm=Inf	0	root	_	_	*
+3-4	aux	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	6	case	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	imposés	imposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	xcomp	_	_	*
+7	sur	sur	ADP	_	_	10	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+9	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
+10	fortunes	fortune	NOUN	_	Gender=Fem|Number=Plur	6	obl	_	_	*
+11	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	chaque	chaque	DET	_	Gender=Fem|Number=Sing	14	det	_	_	*
+14	année	année	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	_	*
+15	plus	plus	ADV	_	_	16	advmod	_	_	*
+16	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*
+17	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+18	alors	alors	ADV	_	_	22	mark	_	_	*
+19	que	que	SCONJ	_	_	18	fixed	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	seuil	seuil	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+22	augmente	augmenter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	SpaceAfter=No	*
+23	)	)	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	2	punct	_	_	*
+25	de	de	ADP	_	_	26	mark	_	_	*
+26	partager	partager	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	advmod	_	_	*
+28	peu	peu	ADV	_	_	27	fixed	_	_	*
+29	pour	pour	ADP	_	_	30	mark	_	_	*
+30	financer	financer	VERB	_	VerbForm=Inf	26	advcl	_	_	*
+31	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	32	det	_	_	*
+32	besoins	besoin	NOUN	_	Gender=Masc|Number=Plur	30	obj	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_39512.txt 19
+# text = C'est pour moi la meilleure façon d'aligner... par le haut, les différents salariés et retraités.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+3	pour	pour	ADP	_	_	4	case	_	_	*
+4	moi	soi	PRON	_	Number=Sing|Person=1	7	obl:mod	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	meilleure	meilleur	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	façon	façon	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	aligner	aligner	VERB	_	VerbForm=Inf	7	acl	_	SpaceAfter=No	*
+10	...	...	PUNCT	_	_	13	punct	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	haut	haut	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	13	punct	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+16	différents	différent	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+17	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	retraités	retraité	NOUN	_	Gender=Fem|Number=Plur	17	conj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

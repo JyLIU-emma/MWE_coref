@@ -1,0 +1,611 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-25_26588.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 1
+# text = Le président de la FNSEA à Besançon jeudi
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	FNSEA	FNSEA	PROPN	_	_	2	nmod	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	Besançon	Besançon	PROPN	_	_	2	nmod	_	_	*
+8	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 2
+# text = L'assemblée générale de la fédération des syndicats d'exploitants agricoles (FDSEA) aura lieu, jeudi 30 janvier à 9 h 30, au palais des congrès Micropolis, à Besançon.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+3	générale	général	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	exploitants	exploitant	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+12	agricoles	agricole	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	FDSEA	FDSEA	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	_	*
+16	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+17	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No	1
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+20	30	30	NUM	_	_	19	nmod	_	_	*
+21	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	9	9	NUM	_	_	24	nummod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+25	30	30	NUM	_	_	21	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27-28	au	_	_	_	_	_	_	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	palais	palais	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+30-31	des	_	_	_	_	_	_	_	_	*
+30	de	de	ADP	_	_	32	case	_	_	*
+31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_	*
+32	congrès	congrès	NOUN	_	Gender=Masc|Number=Plur	29	nmod	_	_	*
+33	Micropolis	Micropolis	PROPN	_	_	32	appos	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	36	punct	_	_	*
+35	à	à	ADP	_	_	36	case	_	_	*
+36	Besançon	Besançon	PROPN	_	_	29	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 3
+# text = Cette réunion sera marquée par la présence de Jean-Michel Lemétayer, président de la FNSEA.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	_	_	*
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*
+4	marquée	marquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	présence	présence	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Jean-Michel	Jean-Michel	PROPN	_	_	7	nmod	_	_	*
+10	Lemétayer	Lemétayer	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	président	président	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	FNSEA	FNSEA	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 4
+# text = Il s'exprimera sur les enjeux actuels de l'agriculture et les orientations prises par la FNSEA.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	exprimera	exprimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	enjeux	enjeu	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*
+7	actuels	actuel	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	agriculture	agriculture	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	orientations	orientation	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*
+14	prises	prendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15	par	par	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	FNSEA	FNSEA	PROPN	_	_	14	obl:agent	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 5
+# text = L'AG donnera également lieu à une intéressante table ronde entre producteurs, transformateurs et distributeurs avec la participation de Guy Belot, patron de l'abattoir SICA GAB ;
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	AG	AG	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	donnera	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+6	à	à	ADP	_	_	9	case	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	intéressante	intéressant	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	table	table	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+10	ronde	rond	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	entre	entre	ADP	_	_	12	case	_	_	*
+12	producteurs	producteur	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	transformateurs	transformateur	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	distributeurs	distributeur	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+17	avec	avec	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	participation	participation	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Guy	Guy	PROPN	_	_	19	nmod	_	_	*
+22	Belot	Belot	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	patron	patron	NOUN	_	Gender=Masc|Number=Sing	19	appos	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*
+27	abattoir	abattoir	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+28	SICA	SICA	PROPN	_	_	27	appos	_	_	*
+29	GAB	GAB	PROPN	_	_	28	flat:name	_	_	*
+30	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 6
+# text = Alain Cannard, des Monts-de-Joux ;
+1	Alain	Alain	PROPN	_	_	0	root	_	_	*
+2	Cannard	Cannard	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	Monts-de-Joux	Monts-de-Joux	PROPN	_	_	1	nmod	_	_	*
+7	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 7
+# text = Antoine Arab, directeur du carrefour de Chalezeule et un responsable d'une centrale d'achat de la grande distribution.
+1	Antoine	Antoine	PROPN	_	_	0	root	_	_	*
+2	Arab	Arab	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	carrefour	carrefour	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Chalezeule	Chalezeule	PROPN	_	_	7	nmod	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	responsable	responsable	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	centrale	centrale	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	achat	achat	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	de	de	ADP	_	_	21	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+20	grande	grand	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+21	distribution	distribution	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 8
+# text = En novembre, FDSEA et Jeunes agriculteurs, étaient intervenus dans plusieurs grandes surfaces du département pour dénoncer les écarts importants mesurés entre le prix d'achat aux agriculteurs et le prix de revente aux consommateurs de produits tels que la viande ou les légumes.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	FDSEA	FDSEA	PROPN	_	_	10	nsubj:pass	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Jeunes	Jeunes	PROPN	_	_	4	conj	_	_	*
+7	agriculteurs	agriculteur	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	aux:pass	_	_	*
+10	intervenus	intervenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	dans	dans	ADP	_	_	14	case	_	_	*
+12	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	14	det	_	_	*
+13	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	14	amod	_	_	*
+14	surfaces	surface	NOUN	_	Gender=Fem|Number=Plur	10	obl:arg	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	département	département	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+18	pour	pour	ADP	_	_	19	mark	_	_	*
+19	dénoncer	dénoncer	VERB	_	VerbForm=Inf	10	advcl	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	écarts	écart	NOUN	_	Gender=Masc|Number=Plur	19	obj	_	_	*
+22	importants	important	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+23	mesurés	mesurer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	21	acl	_	_	*
+24	entre	entre	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	prix	prix	NOUN	_	Gender=Masc|Number=Sing	23	obl	_	_	*
+27	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+28	achat	achat	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+29-30	aux	_	_	_	_	_	_	_	_	*
+29	à	à	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_	*
+31	agriculteurs	agriculteur	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	prix	prix	NOUN	_	Gender=Masc|Number=Sing	26	conj	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	revente	revente	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	_	*
+37-38	aux	_	_	_	_	_	_	_	_	*
+37	à	à	ADP	_	_	39	case	_	_	*
+38	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_	*
+39	consommateurs	consommateur	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	_	*
+40	de	de	ADP	_	_	41	case	_	_	*
+41	produits	produit	NOUN	_	Gender=Masc|Number=Plur	39	nmod	_	_	*
+42	tels	tel	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	_	*
+43	que	que	SCONJ	_	_	45	case	_	_	*
+44	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_	*
+45	viande	viande	NOUN	_	Gender=Fem|Number=Sing	42	obl:arg	_	_	*
+46	ou	ou	CCONJ	_	_	48	cc	_	_	*
+47	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_	*
+48	légumes	légume	NOUN	_	Gender=Masc|Number=Plur	45	conj	_	SpaceAfter=No	*
+49	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 9
+# text = Une friteuse oubliée sur le feu semble à l'origine du sinistre qui s'est propagé rapidement.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	friteuse	friteur	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	oubliée	oublier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	feu	feu	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	origine	origine	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+15	s'	se	PRON	_	Person=3|PronType=Prs	17	expl:comp	_	SpaceAfter=No	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	propagé	propager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl:relcl	_	_	*
+18	rapidement	rapidement	ADV	_	_	17	advmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 10
+# text = L'intervention des pompiers a été compliquée par la présence d'un stock de cartouches de chasse et d'une cuve de fuel.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_	*
+8	compliquée	compliquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	présence	présence	NOUN	_	Gender=Fem|Number=Sing	8	obl:agent	_	_	*
+12	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	stock	stock	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	cartouches	cartouche	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	et	et	CCONJ	_	_	22	cc	_	_	*
+20	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	cuve	cuve	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 11
+# text = Photo Ludovic LAUDE Un incendie a totalement détruit une maison d'habitation, hier, sur les hauteurs de Dannemarie-sur-Crête.
+1	Photo	photo	PROPN	_	_	8	nsubj	_	_	*
+2	Ludovic	Ludovic	PROPN	_	_	1	flat:name	_	_	*
+3	LAUDE	laude	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s	*
+4	Un	Un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	incendie	incendi	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	totalement	totalement	ADV	_	_	8	advmod	_	_	*
+8	détruit	détruire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	maison	maison	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	habitation	habitation	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	hier	hier	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16	sur	sur	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*
+18	hauteurs	hauteur	NOUN	_	Gender=Fem|Number=Plur	8	obl	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	Dannemarie-sur-Crête	Dannemarie-sur-Crête	PROPN	_	_	18	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 12
+# text = Le feu s'est déclaré vers 11 h 50, dans la cuisine du 19, rue Essertaux.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	feu	feu	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:pass	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	déclaré	déclarer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	vers	vers	ADP	_	_	8	case	_	_	*
+7	11	11	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+9	50	50	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	dans	dans	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	cuisine	cuisine	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	19	19	NUM	_	_	13	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	rue	rue	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*
+19	Essertaux	Essertaux	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 13
+# text = Une friteuse oubliée sur le feu semble à l'origine du sinistre qui s'est propagé à une vitesse folle.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	friteuse	friteur	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	oubliée	oublier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	feu	feu	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	origine	origine	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+15	s'	se	PRON	_	Person=3|PronType=Prs	17	expl:comp	_	SpaceAfter=No	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	propagé	propager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl:relcl	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	vitesse	vitesse	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*
+21	folle	fou	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 14
+# text = Donnant aussitôt l'alerte, les propriétaires, un couple d'octogénaires, Roberte et Marcelle Benoit, ont assisté impuissants à la destruction de leur magnifique demeure familiale, une ferme du 18e siècle rénovée avec goût.
+1	Donnant	donner	VERB	_	Tense=Pres|VerbForm=Part	20	advcl	_	_	1:LVC.full
+2	aussitôt	aussitôt	ADV	_	_	1	advmod	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	alerte	alerte	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No	1
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	propriétaires	propriétaire	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	couple	couple	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	octogénaires	octogénaire	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Roberte	Roberte	PROPN	_	_	4	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	Marcelle	Marcelle	PROPN	_	_	4	conj	_	_	*
+17	Benoit	Benoit	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	1	punct	_	_	*
+19	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*
+20	assisté	assister	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+21	impuissants	impuissant	ADJ	_	Gender=Masc|Number=Plur	20	xcomp	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	destruction	destruction	NOUN	_	Gender=Fem|Number=Sing	20	obl:mod	_	_	*
+25	de	de	ADP	_	_	28	case	_	_	*
+26	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+27	magnifique	magnifique	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	_	*
+28	demeure	demeure	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+29	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	24	appos	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	36	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+35	18e	18e	ADJ	_	Gender=Masc|Number=Sing	36	amod	_	_	*
+36	siècle	siècle	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	_	*
+37	rénovée	rénover	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	32	acl	_	_	*
+38	avec	avec	ADP	_	_	39	case	_	_	*
+39	goût	goût	NOUN	_	Gender=Masc|Number=Sing	37	obl:mod	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 15
+# text = Extrêmement choquée par le désastre, Mme Benoit a dû être hospitalisée.
+1	Extrêmement	extrêmement	ADV	_	_	2	advmod	_	_	*
+2	choquée	choquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_	*
+3	par	par	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	désastre	désastre	NOUN	_	Gender=Masc|Number=Sing	2	obl:agent	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+8	Benoit	Benoit	PROPN	_	_	7	flat:name	_	_	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	être	être	AUX	_	VerbForm=Inf	12	aux:pass	_	_	*
+12	hospitalisée	hospitaliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	xcomp	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 16
+# text = Rien ne pourra être sauvé dans la maison entièrement ravagée par les flammes qui ont trouvé de quoi se nourrir dans la paille et le bois qui restaient entreposés dans la grange attenante.
+1	Rien	rien	PRON	_	_	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	_	*
+5	sauvé	sauver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	maison	maison	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9	entièrement	entièrement	ADV	_	_	10	advmod	_	_	*
+10	ravagée	ravager	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	flammes	flamme	NOUN	_	Gender=Fem|Number=Plur	10	obl:agent	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*
+15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	trouvé	trouver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl:relcl	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	quoi	quoi	PRON	_	_	16	obl:arg	_	_	*
+19	se	se	PRON	_	Person=3|PronType=Prs	20	obj	_	_	*
+20	nourrir	nourrir	VERB	_	VerbForm=Inf	16	xcomp	_	_	*
+21	dans	dans	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	paille	paille	NOUN	_	Gender=Fem|Number=Sing	20	obl:mod	_	_	*
+24	et	et	CCONJ	_	_	26	cc	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	bois	bois	NOUN	_	Gender=Masc|Number=Sing	23	conj	_	_	*
+27	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*
+28	restaient	rester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	23	acl:relcl	_	_	*
+29	entreposés	entreposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	28	xcomp	_	_	*
+30	dans	dans	ADP	_	_	32	case	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	grange	grange	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	_	*
+33	attenante	attenant	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 17
+# text = La charpente historique s'est effondrée malgré les efforts conjugués de dix-neuf sapeurs-pompiers de Saint-Vit et Besançon, venus en renforts avec leur grande échelle et un fourgon pompe tonne.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	charpente	charpente	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	historique	historique	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	SpaceAfter=No	1:IRV
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	effondrée	effondrer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+7	malgré	malgré	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	efforts	effort	NOUN	_	Gender=Masc|Number=Plur	6	obl	_	_	*
+10	conjugués	conjuguer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	acl	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	dix-neuf	dix-neuf	NUM	_	_	13	nummod	_	_	*
+13	sapeurs-pompiers	sapeur-pompier	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Saint-Vit	Saint-Vit	PROPN	_	_	13	nmod	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	Besançon	Besançon	PROPN	_	_	15	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	venus	venir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	conj	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	renforts	renfourir	NOUN	_	Gender=Masc|Number=Plur	19	obl	_	_	*
+22	avec	avec	ADP	_	_	25	case	_	_	*
+23	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*
+24	grande	grand	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	échelle	échelle	NOUN	_	Gender=Fem|Number=Sing	19	obl:arg	_	_	*
+26	et	et	CCONJ	_	_	28	cc	_	_	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	fourgon	fourgon	NOUN	_	Gender=Masc|Number=Sing	25	conj	_	_	*
+29	pompe	pompe	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+30	tonne	ton	NOUN	_	Gender=Fem|Number=Sing	28	appos	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 18
+# text = La violence du feu a tout emporté.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	violence	violence	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	feu	feu	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	tout	tout	ADV	_	_	8	advmod	_	_	*
+8	emporté	emporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 19
+# text = Leur intervention s'est révélée à un moment périlleuse.
+1	Leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	révélée	révéler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	à	à	ADP	_	_	8	case	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	moment	moment	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+9	périlleuse	périlleuse	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 20
+# text = Les gendarmes de Saint-Vit ont en effet dû dresser un cordon de sécurité autour de la maison sinistrée.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	gendarmes	gendarme	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Saint-Vit	Saint-Vit	PROPN	_	_	2	nmod	_	_	*
+5	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*
+6	en	en	ADP	_	_	5	advmod	_	_	*
+7	effet	effet	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	_	*
+8	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	dresser	dresser	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	cordon	cordon	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	autour	autour	ADV	_	_	9	advmod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	maison	maison	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+18	sinistrée	sinistré	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 21
+# text = Un stock d'une centaine de cartouches de chasse a en effet explosé.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	stock	stock	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+3	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	centaine	centaine	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	cartouches	cartouche	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+11	en	en	ADP	_	_	12	case	_	_	*
+12	effet	effet	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	_	1
+13	explosé	exploser	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 22
+# text = Une cuve de fuel de 300 l a également posé quelques soucis aux soldats du feu qui ne se sont rendus maître du sinistre qu'en début d'après-midi.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	cuve	cuve	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	fuel	fuel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	300	300	NUM	_	_	7	nummod	_	_	*
+7	l	litre	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+9	également	également	ADV	_	_	10	advmod	_	_	*
+10	posé	poser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	quelques	quelque	DET	_	Gender=Masc|Number=Plur	12	det	_	_	*
+12	soucis	souci	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*
+13-14	aux	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	soldats	soldat	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	feu	feu	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	23	nsubj	_	_	*
+20	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	23	expl:comp	_	_	1:IRV
+22	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	rendus	rendre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	acl:relcl	_	_	1
+24	maître	maître	NOUN	_	Gender=Masc|Number=Sing	23	xcomp	_	_	*
+25-26	du	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+28	qu'	que	ADV	_	_	30	advmod	_	SpaceAfter=No	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	début	début	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+31	d'	de	ADP	_	_	32	case	_	SpaceAfter=No	*
+32	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-25_26588.txt 23
+# text = Pour la nuit, un piquet de surveillance a été laissé en place, afin de veiller à une éventuelle reprise des flammes.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	piquet	piquet	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+10	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	aux:pass	_	_	*
+11	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	place	place	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	afin	afin	ADV	_	_	11	advmod	_	_	*
+16	de	de	ADP	_	_	17	mark	_	_	*
+17	veiller	veiller	VERB	_	VerbForm=Inf	15	ccomp	_	_	*
+18	à	à	ADP	_	_	21	case	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+20	éventuelle	éventuel	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+21	reprise	reprise	NOUN	_	Gender=Fem|Number=Sing	17	obl:arg	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_	*
+24	flammes	flamme	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n	*
+

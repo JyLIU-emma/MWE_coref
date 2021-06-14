@@ -1,0 +1,531 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-13_52018.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 1
+# text = Pascal Thibaud Pascal Thibaud, 40 ans en mars prochain, coach du BBCD qui reçoit samedi Clermont-Ferrand (20h au Palais des Sports) avant de se déplacer à Reims.
+1	Pascal	Pascal	PROPN	_	_	0	root	_	_	*
+2	Thibaud	Thibaud	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*
+3	Pascal	Pascal	PROPN	_	_	1	flat:name	_	_	*
+4	Thibaud	Thibaud	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	40	40	NUM	_	_	7	nummod	_	_	*
+7	ans	an	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	mars	mars	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	coach	coach	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	BBCD	BBCD	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+17	reçoit	recevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	*
+18	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	*
+19	Clermont-Ferrand	Clermont-Ferrand	PROPN	_	_	18	nmod	_	_	*
+20	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+21	20h	20h	NUM	_	_	18	nmod	_	_	*
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	Palais	palais	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	Sports	sport	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	SpaceAfter=No	*
+28	)	)	PUNCT	_	_	21	punct	_	_	*
+29	avant	avant	ADV	_	_	17	advmod	_	_	*
+30	de	de	ADP	_	_	32	mark	_	_	*
+31	se	se	PRON	_	Person=3|PronType=Prs	32	obj	_	_	1:IRV
+32	déplacer	déplacer	VERB	_	VerbForm=Inf	29	ccomp	_	_	1
+33	à	à	ADP	_	_	34	case	_	_	*
+34	Reims	Reims	PROPN	_	_	32	obl:arg	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 2
+# text = _ Votre femme est anglaise.
+1	_	_	PUNCT	_	_	5	punct	_	_	*
+2	Votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	femme	femme	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	anglaise	anglais	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 3
+# text = Vous allez suivre en sa compagnie devant votre télé Angleterre-France samedi à Twickenham ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*
+2	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	suivre	suivre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	en	en	ADP	_	_	6	case	_	_	*
+5	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+7	devant	devant	ADP	_	_	9	case	_	_	*
+8	votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	télé	télé	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+10	Angleterre-France	Angleterre-France	PROPN	_	_	9	appos	_	_	*
+11	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	Twickenham	Twickenham	PROPN	_	_	3	obl:mod	_	_	*
+14	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 4
+# text = _ Oui.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Oui	oui	INTJ	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 5
+# text = _ Votre père est trésorier du club de football de Brest.
+1	_	_	PUNCT	_	_	5	punct	_	_	*
+2	Votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	père	père	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	club	club	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	football	football	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Brest	Brest	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 6
+# text = Vous serez supporter brestois lorsque les Bretons viendront jouer au stade Léo-Lagrange la semaine prochaine ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj:caus	_	_	*
+2	serez	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	3	aux:caus	_	_	*
+3	supporter	supporter	VERB	_	VerbForm=Inf	0	root	_	_	*
+4	brestois	brestois	ADV	_	_	3	advmod	_	_	*
+5	lorsque	lorsque	SCONJ	_	_	8	mark	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	Bretons	breton	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	*
+8	viendront	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	advcl	_	_	*
+9	jouer	jouer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	stade	stade	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+13	Léo-Lagrange	Léo-Lagrange	PROPN	_	_	12	appos	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+16	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+17	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 7
+# text = _ Non.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Non	non	ADV	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 8
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 9
+# text = Le BBCD distribue toujours une meule de 40kg de comté à l'extérieur.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	BBCD	BBCD	PROPN	_	_	0	root	_	_	*
+3	distribue	distribuer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	toujours	toujours	ADV	_	_	3	advmod	_	_	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	meule	meule	NOUN	_	Gender=Fem|Number=Sing	3	xcomp	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	40kg	40kg	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	comté	comté	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	extérieur	extérieur	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 10
+# text = Mais vous, aimez-vous le comté ?
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	aimez	aimer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+5	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	comté	comté	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+8	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 11
+# text = _ Oui.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Oui	oui	INTJ	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 12
+# text = _ Breton de naissance, vous envisagez de disputer un jour la Transjurassienne sur des skis de fond ?
+1	_	_	PUNCT	_	_	7	punct	_	_	*
+2	Breton	breton	PROPN	_	_	7	advcl	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*
+7	envisagez	envisager	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	disputer	disputer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	jour	jour	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Transjurassienne	Transjurassienne	PROPN	_	_	11	appos	_	_	*
+14	sur	sur	ADP	_	_	17	case	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	skis	ski	NOUN	_	Gender=Masc|Number=Plur	9	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	fond	fond	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+20	?	?	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 13
+# text = _ Non.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Non	non	ADV	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 14
+# text = _ Vos proches disent que vous égarez fréquemment vos affaires.
+1	_	_	PUNCT	_	_	4	punct	_	_	*
+2	Vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	proches	proche	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+4	disent	dire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	que	que	SCONJ	_	_	7	mark	_	_	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*
+7	égarez	égar	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*
+8	fréquemment	fréquemment	ADV	_	_	7	advmod	_	_	*
+9	vos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 15
+# text = Vous confirmez avoir tout récemment laisser votre sacoche sur une poubelle ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*
+2	confirmez	confirmer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	avoir	avoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	tout	tout	ADV	_	_	5	advmod	_	_	*
+5	récemment	récemment	ADV	_	_	3	advmod	_	_	*
+6	laisser	laisser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+7	votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	sacoche	sacoche	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	poubelle	poubelle	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+12	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 16
+# text = _ (sourire) Oui !
+1	_	_	PUNCT	_	_	3	punct	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	sourire	sourire	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	Oui	oui	PROPN	_	_	3	appos	_	_	*
+6	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 17
+# text = _ A 31 ans, vous croyez réellement Antoine Rigaudeau capable de faire carrière en NBA ?
+1	_	_	PUNCT	_	_	7	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	31	31	NUM	_	_	4	nummod	_	_	*
+4	ans	an	NOUN	_	Gender=Masc|Number=Plur	7	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*
+7	croyez	croir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	réellement	réellement	ADV	_	_	7	advmod	_	_	*
+9	Antoine	Antoine	PROPN	_	_	7	obj	_	_	*
+10	Rigaudeau	Rigaudeau	PROPN	_	_	9	flat:name	_	_	*
+11	capable	capable	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+12	de	de	ADP	_	_	13	mark	_	_	*
+13	faire	faire	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	NBA	NBA	PROPN	_	_	13	obl	_	_	*
+17	?	?	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 18
+# text = _ Joker.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Joker	Joker	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 19
+# text = _ André Mulon vous offre un budget illimité pour recruter le pivot de votre choix.
+1	_	_	PUNCT	_	_	5	punct	_	_	*
+2	André	André	PROPN	_	_	5	nsubj	_	_	*
+3	Mulon	Mulon	PROPN	_	_	2	flat:name	_	_	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*
+5	offre	offrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	budget	budget	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	illimité	illimité	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	pour	pour	ADP	_	_	10	mark	_	_	*
+10	recruter	recruter	VERB	_	VerbForm=Inf	5	advcl	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	pivot	pivot	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	choix	choix	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 20
+# text = Vous préférez l'expérience de Shaquille 0'Neal aux promesses du Chinois Yao Ming ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*
+2	préférez	préférer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Shaquille	Shaquille	PROPN	_	_	4	nmod	_	_	*
+7	0'Neal	0'Neal	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	promesses	promesse	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	Chinois	chinois	PROPN	_	_	10	nmod	_	_	*
+14	Yao	Yao	PROPN	_	_	13	flat:name	_	_	*
+15	Ming	Ming	PROPN	_	_	13	flat:name	_	_	*
+16	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 21
+# text = _ Oui, surtout sa puissance.
+1	_	_	PUNCT	_	_	6	punct	_	_	*
+2	Oui	oui	INTJ	_	_	6	cc	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	surtout	surtout	ADV	_	_	6	advmod	_	_	*
+5	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	puissance	puissance	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 22
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 23
+# text = Si vous avez un samedi de libre, vous préférez allez voir jouer les filles du BBCD plutôt qu'un bon film au cinema ?
+1	Si	si	SCONJ	_	_	3	mark	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	advcl	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	libre	libre	ADJ	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+10	préférez	préférer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	xcomp	_	_	*
+12	voir	voir	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	jouer	jouer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	filles	fille	NOUN	_	Gender=Fem|Number=Plur	13	obj	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	BBCD	BBCD	PROPN	_	_	15	nmod	_	_	*
+19	plutôt	plutôt	ADV	_	_	23	cc	_	_	*
+20	qu'	que	SCONJ	_	_	19	fixed	_	SpaceAfter=No	*
+21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+22	bon	bon	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+23	film	film	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	cinema	cinema	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+27	?	?	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 24
+# text = _ (temps d'hésitation) Oui.
+1	_	_	PUNCT	_	_	3	punct	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	temps	temps	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	hésitation	hésitation	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	3	punct	_	_	*
+7	Oui	oui	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 25
+# text = _ Franchement, si on vous demande de noter la valeur de l'arbitrage en Pro B, vous mettez juste la moyenne ?
+1	_	_	PUNCT	_	_	20	punct	_	_	*
+2	Franchement	franchement	ADV	_	_	20	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	si	si	SCONJ	_	_	7	mark	_	_	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	*
+7	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	noter	noter	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	valeur	valeur	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	arbitrage	arbitrage	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	Pro	Pro	PROPN	_	_	9	obl	_	_	*
+17	B	B	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	7	punct	_	_	*
+19	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	20	nsubj	_	_	*
+20	mettez	mettre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+21	juste	juste	ADV	_	_	20	advmod	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	moyenne	moyenne	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	*
+24	?	?	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 26
+# text = _ Oui... _
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Oui	oui	INTJ	_	_	0	root	_	SpaceAfter=No	*
+3	...	...	PUNCT	_	_	2	punct	_	_	*
+4	_	_	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 27
+# text = On vous offre une invitation au stade de France.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*
+3	offre	offrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	invitation	invitation	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	stade	stade	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	France	France	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 28
+# text = Vous la conservez plutôt pour un match de l'équipe tricolore de rugby que de football ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+2	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obj	_	_	*
+3	conservez	conserver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	plutôt	plutôt	ADV	_	_	3	advmod	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	match	match	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	tricolore	tricolore	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	rugby	rugby	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	que	que	SCONJ	_	_	16	cc	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	football	football	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+17	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 29
+# text = _ Non.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Non	non	ADV	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 30
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 31
+# text = Vous avez la réputation d'un amateur de bon vin.
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	réputation	réputation	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	amateur	amateur	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	bon	bon	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+10	vin	vin	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 32
+# text = Vous pourriez déboursez 100 euros pour arroser avec un seul cru de qualité un repas au restaurant ?
+1	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*
+2	pourriez	pouroir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	déboursez	débourser	ADV	_	_	2	advmod	_	_	*
+4	100	100	NUM	_	_	5	nummod	_	_	*
+5	euros	euro	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	arroser	arroser	VERB	_	VerbForm=Inf	2	advcl	_	_	*
+8	avec	avec	ADP	_	_	11	case	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+10	seul	seul	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	cru	cru	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	repas	repas	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	restaurant	restaurant	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 33
+# text = _ (ferme) Non.
+1	_	_	PUNCT	_	_	3	punct	_	_	*
+2	(	(	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+4	)	)	PUNCT	_	_	3	punct	_	_	*
+5	Non	non	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 34
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 35
+# text = En cas de victoire devant Clermont puis à Reims, le BBCD aura un pied et demi en Pro A ?
+1	En	en	ADP	_	_	2	case	_	_	*
+2	cas	cas	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	victoire	victoire	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	devant	devant	ADP	_	_	6	case	_	_	*
+6	Clermont	Clermont	PROPN	_	_	4	nmod	_	_	*
+7	puis	puis	ADV	_	_	9	cc	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Reims	Reims	PROPN	_	_	4	conj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	2	punct	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	BBCD	BBCD	PROPN	_	_	13	nsubj	_	_	*
+13	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	pied	pied	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	demi	demi	ADJ	_	Gender=Masc|Number=Sing	15	conj	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	Pro	Pro	PROPN	_	_	13	obl	_	_	*
+20	A	A	X	_	_	19	flat:name	_	_	*
+21	?	?	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 36
+# text = _ Non.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Non	non	ADV	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 37
+# text = _ Vous avez dit toute la vérité ?
+1	_	_	PUNCT	_	_	4	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+3	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	toute	tout	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	vérité	vérité	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 38
+# text = _ Oui.
+1	_	_	PUNCT	_	_	2	punct	_	_	*
+2	Oui	oui	INTJ	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-13_52018.txt 39
+# text = Recueilli par J-M L.
+1	Recueilli	recueillir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	par	par	ADP	_	_	3	case	_	_	*
+3	J-M	J-M	PROPN	_	_	1	obl:agent	_	_	*
+4	L.	L.	X	_	_	3	flat:name	_	SpacesAfter=\n	*
+

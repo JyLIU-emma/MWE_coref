@@ -1,0 +1,505 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-19_59299.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 1
+# text = 1000 emplois à Air France
+1	1000	1000	NUM	_	_	2	nummod	_	_	*
+2	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	à	à	ADP	_	_	4	case	_	_	*
+4	Air	Air	PROPN	_	_	2	nmod	_	_	*
+5	France	France	PROPN	_	_	4	flat:name	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 2
+# text = Le reclassement des quelque 3.200 salariés d'Air Lib a commencé à se préparer hier au ministère des Transports, qui a annoncé aux syndicats la mise à disposition par Air France de 1.000 emplois en 2003.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	reclassement	reclassement	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	7	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+5	quelque	quelque	ADV	_	_	6	advmod	_	_	*
+6	3.200	3.200	NUM	_	_	7	nummod	_	_	*
+7	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	Air	Air	PROPN	_	_	7	nmod	_	_	*
+10	Lib	Lib	PROPN	_	_	9	flat:name	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	commencé	commencer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	à	à	ADP	_	_	15	mark	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	15	expl:comp	_	_	*
+15	préparer	préparer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+16	hier	hier	ADV	_	_	15	advmod	_	_	*
+17-18	au	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	22	det	_	_	*
+22	Transports	transports	PROPN	_	_	19	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*
+25	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:tense	_	_	*
+26	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl:relcl	_	_	*
+27-28	aux	_	_	_	_	_	_	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+29	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	26	obl:arg	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	mise	mise	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	_	*
+32	à	à	ADP	_	_	33	case	_	_	*
+33	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+34	par	par	ADP	_	_	35	case	_	_	*
+35	Air	Air	PROPN	_	_	31	nmod	_	_	*
+36	France	France	PROPN	_	_	35	flat:name	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	1.000	1.000	NUM	_	_	39	nummod	_	_	*
+39	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	_	*
+40	en	en	ADP	_	_	41	case	_	_	*
+41	2003	2003	NUM	_	_	31	nmod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 3
+# text = « Le PDG d'Air France nous a autorisé à annoncer qu'Air France mettait à la disposition des salariés d'Air Lib, dès 2003, 1.000 emplois, pour moitié des personnels navigants commerciaux, et pour moitié des personnels au sol », a déclaré Gilles de Robien à l'issue de sa rencontre avec l'intersyndicale d'Air Lib, saluant le « geste de citoyenneté » de la compagnie nationale.
+1	«	«	PUNCT	_	_	9	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	PDG	PDG	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	Air	Air	PROPN	_	_	3	nmod	_	_	*
+6	France	France	PROPN	_	_	5	flat:name	_	_	*
+7	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	autorisé	autoriser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	52	ccomp	_	_	*
+10	à	à	ADP	_	_	11	mark	_	_	*
+11	annoncer	annoncer	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	qu'	que	SCONJ	_	_	15	mark	_	SpaceAfter=No	*
+13	Air	Air	PROPN	_	_	15	nsubj	_	_	*
+14	France	France	PROPN	_	_	13	flat:name	_	_	*
+15	mettait	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	ccomp	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	Air	Air	PROPN	_	_	21	nmod	_	_	*
+24	Lib	Lib	PROPN	_	_	23	flat:name	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	dès	dès	ADP	_	_	27	case	_	_	*
+27	2003	2003	NUM	_	_	9	obl	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	1.000	1.000	NUM	_	_	30	nummod	_	_	*
+30	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	33	punct	_	_	*
+32	pour	pour	ADP	_	_	33	case	_	_	*
+33	moitié	moitié	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+34-35	des	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	37	case	_	_	*
+35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+36	personnels	personnel	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	_	*
+37	navigants	navigant	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	_	*
+38	commerciaux	commercial	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	42	punct	_	_	*
+40	et	et	CCONJ	_	_	42	cc	_	_	*
+41	pour	pour	ADP	_	_	42	case	_	_	*
+42	moitié	moitié	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+43-44	des	_	_	_	_	_	_	_	_	*
+43	de	de	ADP	_	_	45	case	_	_	*
+44	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	_	_	*
+45	personnels	personnel	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*
+46-47	au	_	_	_	_	_	_	_	_	*
+46	à	à	ADP	_	_	48	case	_	_	*
+47	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_	*
+48	sol	sol	NOUN	_	Gender=Masc|Number=Sing	42	nmod	_	_	*
+49	»	»	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+50	,	,	PUNCT	_	_	9	punct	_	_	*
+51	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	aux:tense	_	_	*
+52	déclaré	déclarer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+53	Gilles	Gilles	PROPN	_	_	52	nsubj	_	_	*
+54	de	de	ADP	_	_	55	case	_	_	*
+55	Robien	Robien	PROPN	_	_	53	nmod	_	_	*
+56	à	à	ADP	_	_	58	case	_	_	*
+57	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	_	SpaceAfter=No	*
+58	issue	issue	NOUN	_	Gender=Fem|Number=Sing	52	obl:mod	_	_	*
+59	de	de	ADP	_	_	61	case	_	_	*
+60	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	61	det	_	_	*
+61	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	58	nmod	_	_	*
+62	avec	avec	ADP	_	_	64	case	_	_	*
+63	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	SpaceAfter=No	*
+64	intersyndicale	intersyndicale	NOUN	_	Gender=Fem|Number=Sing	61	nmod	_	_	*
+65	d'	de	ADP	_	_	66	case	_	SpaceAfter=No	*
+66	Air	Air	PROPN	_	_	64	nmod	_	_	*
+67	Lib	Lib	PROPN	_	_	66	flat:name	_	SpaceAfter=No	*
+68	,	,	PUNCT	_	_	69	punct	_	_	*
+69	saluant	saluer	VERB	_	Tense=Pres|VerbForm=Part	64	acl	_	_	*
+70	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	72	det	_	_	*
+71	«	«	PUNCT	_	_	72	punct	_	_	*
+72	geste	geste	NOUN	_	Gender=Masc|Number=Sing	69	obj	_	_	*
+73	de	de	ADP	_	_	74	case	_	_	*
+74	citoyenneté	citoyenneté	NOUN	_	Gender=Fem|Number=Sing	72	nmod	_	_	*
+75	»	»	PUNCT	_	_	72	punct	_	_	*
+76	de	de	ADP	_	_	78	case	_	_	*
+77	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	78	det	_	_	*
+78	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	72	nmod	_	_	*
+79	nationale	national	ADJ	_	Gender=Fem|Number=Sing	78	amod	_	SpaceAfter=No	*
+80	.	.	PUNCT	_	_	52	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 4
+# text = « Notre recherche et notre prospection dans le milieu aérien sont plutôt fructueux et sur l'année 2003, il y a de fortes probabilités de proposer plusieurs centaines d'emplois », en plus des mille emplois d'Air France, a ajouté M.
+1	«	«	PUNCT	_	_	13	punct	_	_	*
+2	Notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	prospection	prospection	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	milieu	milieu	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+10	aérien	aérien	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+12	plutôt	plutôt	ADV	_	_	13	advmod	_	_	*
+13	fructueux	fructueux	ADJ	_	Gender=Masc|Number=Sing	45	ccomp	_	_	*
+14	et	et	CCONJ	_	_	22	cc	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	année	année	NOUN	_	Gender=Fem|Number=Sing	22	obl:mod	_	_	*
+18	2003	2003	NUM	_	_	17	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	17	punct	_	_	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	expl:subj	_	_	1:VID
+21	y	y	PRON	_	_	22	expl:comp	_	_	1
+22	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_	1
+23	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+24	fortes	fort	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*
+25	probabilités	probabilité	NOUN	_	Gender=Fem|Number=Plur	22	obj	_	_	*
+26	de	de	ADP	_	_	27	mark	_	_	*
+27	proposer	proposer	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+28	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	29	det	_	_	*
+29	centaines	centaine	NOUN	_	Gender=Fem|Number=Plur	27	obj	_	_	*
+30	d'	de	ADP	_	_	31	case	_	SpaceAfter=No	*
+31	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	29	nmod	_	_	*
+32	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	en	en	ADP	_	_	13	advmod	_	_	*
+35	plus	plus	ADV	_	_	34	fixed	_	_	*
+36-37	des	_	_	_	_	_	_	_	_	*
+36	de	de	ADP	_	_	39	case	_	_	*
+37	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_	*
+38	mille	mille	NUM	_	_	39	nummod	_	_	*
+39	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	34	obl:arg	_	_	*
+40	d'	de	ADP	_	_	41	case	_	SpaceAfter=No	*
+41	Air	Air	PROPN	_	_	39	nmod	_	_	*
+42	France	France	PROPN	_	_	41	flat:name	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	13	punct	_	_	*
+44	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux:tense	_	_	*
+45	ajouté	ajouter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+46	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	45	nsubj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 5
+# text = De Robien.
+1	De	de	ADP	_	_	2	case	_	_	*
+2	Robien	Robien	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 6
+# text = Le ministre a annoncé la mise en place, dans les tout prochains jours, d'une cellule de reclassement près d'Orly, avec des antennes en provinces, pour une durée d'au moins six mois.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	mise	mise	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	place	place	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	14	punct	_	_	*
+10	dans	dans	ADP	_	_	14	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+12	tout	tout	ADV	_	_	13	advmod	_	_	*
+13	prochains	prochain	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*
+14	jours	jour	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	14	punct	_	_	*
+16	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	cellule	cellule	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	reclassement	reclassement	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+21	près	près	ADV	_	_	18	advmod	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	Orly	Orly	PROPN	_	_	21	obl:arg	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	28	punct	_	_	*
+25	avec	avec	ADP	_	_	28	case	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_	*
+28	antennes	antenne	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	provinces	province	NOUN	_	Gender=Fem|Number=Plur	28	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	34	punct	_	_	*
+32	pour	pour	ADP	_	_	34	case	_	_	*
+33	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	durée	durée	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+35	d'	de	ADP	_	_	40	case	_	SpaceAfter=No	*
+36-37	au	_	_	_	_	_	_	_	_	*
+36	à	à	ADP	_	_	39	advmod	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	fixed	_	_	*
+38	moins	moins	ADV	_	_	36	fixed	_	_	*
+39	six	six	NUM	_	_	40	nummod	_	_	*
+40	mois	mois	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 7
+# text = Pour leur part, les syndicats d'Air Lib ont pris acte de ces engagements, avertissant cependant qu'ils étaient insuffisants et qu'ils restaient sur leurs gardes.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	part	part	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	SpaceAfter=No	1:VID
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	Air	Air	PROPN	_	_	6	nmod	_	_	*
+9	Lib	Lib	PROPN	_	_	8	flat:name	_	_	*
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1;2:VID
+12	acte	acte	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	2
+13	de	de	ADP	_	_	15	case	_	_	*
+14	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	15	det	_	_	*
+15	engagements	engagement	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	avertissant	avertir	VERB	_	Tense=Pres|VerbForm=Part	11	advcl	_	_	*
+18	cependant	cependant	ADV	_	_	17	advmod	_	_	*
+19	qu'	que	SCONJ	_	_	22	mark	_	SpaceAfter=No	*
+20	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_	*
+21	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	_	*
+22	insuffisants	insuffisant	ADJ	_	Gender=Masc|Number=Plur	18	ccomp	_	_	*
+23	et	et	CCONJ	_	_	26	cc	_	_	*
+24	qu'	que	SCONJ	_	_	26	mark	_	SpaceAfter=No	*
+25	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	26	nsubj	_	_	3:VID
+26	restaient	rester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	22	conj	_	_	3
+27	sur	sur	ADP	_	_	29	case	_	_	*
+28	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	29	det	_	_	*
+29	gardes	garde	NOUN	_	Gender=Masc|Number=Plur	26	obl	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 8
+# text = « Beaucoup de questions restent sans réponses.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Beaucoup	beaucoup	ADV	_	_	5	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	questions	question	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*
+5	restent	rester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	sans	sans	ADP	_	_	7	case	_	_	*
+7	réponses	réponse	NOUN	_	Gender=Fem|Number=Plur	5	obl	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 9
+# text = Il y a des postes disponibles à Air France mais on ne sait pas sur quels critères et nous restons très méfiants », a déclaré le délégué CFDT Gilles Nicoli, à l'issue de sa rencontre avec Gilles de Robien.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	ccomp	_	_	1
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	postes	poste	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*
+7	disponibles	disponible	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	Air	Air	PROPN	_	_	6	nmod	_	_	*
+10	France	France	PROPN	_	_	9	flat:name	_	_	*
+11	mais	mais	CCONJ	_	_	14	cc	_	_	*
+12	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_	*
+13	ne	ne	ADV	_	Polarity=Neg	14	advmod	_	_	*
+14	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	_	*
+16	sur	sur	ADP	_	_	18	case	_	_	*
+17	quels	quel	DET	_	Gender=Masc|Number=Plur	18	det	_	_	*
+18	critères	critère	NOUN	_	Gender=Masc|Number=Plur	14	obl	_	_	*
+19	et	et	CCONJ	_	_	21	cc	_	_	*
+20	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	21	nsubj	_	_	2:VID
+21	restons	rester	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	conj	_	_	2
+22	très	très	ADV	_	_	23	advmod	_	_	*
+23	méfiants	méfiant	ADJ	_	Gender=Masc|Number=Plur	21	xcomp	_	_	*
+24	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	3	punct	_	_	*
+26	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:tense	_	_	*
+27	déclaré	déclarer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	délégué	délégué	NOUN	_	Gender=Masc|Number=Sing	27	nsubj	_	_	*
+30	CFDT	CFDT	PROPN	_	_	29	appos	_	_	*
+31	Gilles	Gilles	PROPN	_	_	30	flat:name	_	_	*
+32	Nicoli	Nicoli	PROPN	_	_	30	flat:name	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	36	punct	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	SpaceAfter=No	*
+36	issue	issue	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	39	det	_	_	*
+39	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+40	avec	avec	ADP	_	_	41	case	_	_	*
+41	Gilles	Gilles	PROPN	_	_	39	nmod	_	_	*
+42	de	de	ADP	_	_	43	case	_	_	*
+43	Robien	Robien	PROPN	_	_	41	nmod	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	27	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 10
+# text = « En 2001 il y avait eu beaucoup de promesses alors j'appelle M.
+1	«	«	PUNCT	_	_	7	punct	_	_	*
+2	En	en	ADP	_	_	3	case	_	_	*
+3	2001	2001	NUM	_	_	7	obl:mod	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	_	1:VID
+5	y	y	PRON	_	_	7	expl:comp	_	_	1
+6	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:tense	_	_	*
+7	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+8	beaucoup	beaucoup	ADV	_	_	7	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	promesses	promesse	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	_	*
+11	alors	alors	ADV	_	_	13	advmod	_	_	*
+12	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	SpaceAfter=No	*
+13	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	parataxis	_	_	*
+14	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 11
+# text = de Robien à respecter ses engagements pour que les salariés soient reclassés dignement, sans être soumis à des tortures d'embauches », a ajouté M. Nicoli.
+1	de	de	ADP	_	_	2	case	_	_	*
+2	Robien	Robien	PROPN	_	_	27	nsubj	_	_	*
+3	à	à	ADP	_	_	4	mark	_	_	*
+4	respecter	respecter	VERB	_	VerbForm=Inf	2	acl	_	_	*
+5	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	engagements	engagement	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+7	pour	pour	ADP	_	_	12	mark	_	_	*
+8	que	que	SCONJ	_	_	12	mark	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	12	nsubj:pass	_	_	*
+11	soient	être	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*
+12	reclassés	reclasser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	4	advcl	_	_	*
+13	dignement	dignement	ADV	_	_	12	advmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	sans	sans	ADP	_	_	17	mark	_	_	*
+16	être	être	AUX	_	VerbForm=Inf	17	aux:pass	_	_	*
+17	soumis	soumettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	advcl	_	_	1:LVC.full
+18	à	à	ADP	_	_	21	case	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*
+21	tortures	torture	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	1
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	embauches	embauche	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	_	*
+24	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	2	punct	_	_	*
+26	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:tense	_	_	*
+27	ajouté	ajouter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+28	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	27	obj	_	_	*
+29	Nicoli	Nicoli	PROPN	_	_	28	flat:name	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	27	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 12
+# text = « Nous ne voulons pas de reclassements d'opérette », a-t-il averti.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	voulons	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	reclassements	reclassement	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	opérette	opérette	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	15	punct	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	SpaceAfter=No	*
+13	-t	t	PART	_	_	14	dep	_	SpaceAfter=No	*
+14	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+15	averti	avertir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	parataxis	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 13
+# text = Mutinerie à Clairvaux.
+1	Mutinerie	Mutinerie	PROPN	_	_	0	root	_	_	*
+2	à	à	ADP	_	_	3	case	_	_	*
+3	Clairvaux	Clairvaux	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 14
+# text = - Une cinquantaine de détenus de la centrale de Clairvaux ont refusé hier soir de réintégrer leurs cellules, entraînant le déclenchement du « plan rouge » de la préfecture de l'Aube.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	cinquantaine	cinquantaine	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	détenus	détenu	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	centrale	centrale	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Clairvaux	Clairvaux	PROPN	_	_	8	nmod	_	_	*
+11	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	refusé	refuser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	hier	hier	ADV	_	_	12	advmod	_	_	*
+14	soir	soir	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	_	*
+15	de	de	ADP	_	_	16	mark	_	_	*
+16	réintégrer	réintégrer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+17	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	18	det	_	_	*
+18	cellules	cellule	NOUN	_	Gender=Fem|Number=Plur	16	obj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	entraînant	entraîner	VERB	_	Tense=Pres|VerbForm=Part	12	advcl	_	_	1:LVC.cause
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	déclenchement	déclenchement	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	1
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	26	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+25	«	«	PUNCT	_	_	26	punct	_	_	*
+26	plan	plan	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+27	rouge	rouge	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	_	*
+28	»	»	PUNCT	_	_	26	punct	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	préfecture	préfecture	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*
+34	Aube	Aube	PROPN	_	_	31	nmod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 15
+# text = A partir de 19h00, les détenus, réunis dans le réfectoire, ont détruit les caméras de surveillance et ont allumé des feux.
+1	A	à	ADP	_	_	16	advmod	_	_	*
+2	partir	partir	VERB	_	VerbForm=Inf	1	fixed	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	19	19	NUM	_	_	5	nummod	_	SpaceAfter=No	*
+5	h00	h00	NOUN	_	Gender=Fem|Number=Plur	1	obl:arg	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	détenus	détenu	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	réunis	réunir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	*
+11	dans	dans	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	réfectoire	réfectoire	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	8	punct	_	_	*
+15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	détruit	détruire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*
+18	caméras	caméra	NOUN	_	Gender=Fem|Number=Plur	16	obj	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	allumé	allumer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	conj	_	_	*
+24-25	des	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_	*
+26	feux	feu	NOUN	_	Gender=Masc|Number=Plur	23	obl:arg	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-19_59299.txt 16
+# text = Les forces de l'ordre s'apprêtaient peu avant minuit à donner l'assaut.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	forces	force	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	SpaceAfter=No	*
+7	apprêtaient	apprêt	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+8	peu	peu	ADV	_	_	10	advmod	_	_	*
+9	avant	avant	ADP	_	_	10	case	_	_	*
+10	minuit	minuit	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+11	à	à	ADP	_	_	12	mark	_	_	*
+12	donner	donner	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	assaut	assaut	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

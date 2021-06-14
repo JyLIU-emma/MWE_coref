@@ -1,0 +1,525 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_33086.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 1
+# text = Louis Vuillemin nous a quittés
+1	Louis	Louis	PROPN	_	_	5	nsubj	_	_	*
+2	Vuillemin	Vuillemin	PROPN	_	_	1	flat:name	_	_	*
+3	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	5	obj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	quittés	quitter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 2
+# text = Il y a encore deux semaines, Louis Vuillemin jouait aux cartes avec ses amis du club de l'Age d'Or.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	encore	encore	ADV	_	_	3	advmod	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	Louis	Louis	PROPN	_	_	10	nsubj	_	_	*
+9	Vuillemin	Vuillemin	PROPN	_	_	8	flat:name	_	_	*
+10	jouait	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	acl:relcl	_	_	*
+11-12	aux	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	cartes	carte	NOUN	_	Gender=Fem|Number=Plur	10	obl:mod	_	_	*
+14	avec	avec	ADP	_	_	16	case	_	_	*
+15	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	amis	ami	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	club	club	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	Age	age	PROPN	_	_	19	nmod	_	_	*
+23	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+24	Or	or	PROPN	_	_	19	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 3
+# text = Au mois de mars, il devait fêter ses 90 ans et en mai ses 60 ans de mariage.
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	mois	mois	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	mars	mars	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+9	fêter	fêter	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+11	90	90	NUM	_	_	12	nummod	_	_	*
+12	ans	an	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	mai	mai	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+16	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	18	det	_	_	*
+17	60	60	NUM	_	_	18	nummod	_	_	*
+18	ans	an	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	mariage	mariage	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 4
+# text = Mais la maladie a eu raison de ses projets.
+1	Mais	mais	CCONJ	_	_	5	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+6	raison	raison	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1
+7	de	de	ADP	_	_	9	case	_	_	*
+8	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	projets	projet	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 5
+# text = C'est à Laval-le-Prieuré, le 19 mars 1913, que Louis vit le jour dans une famille d'agriculteurs.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	à	à	ADP	_	_	4	case	_	_	*
+4	Laval-le-Prieuré	Laval-le-Prieuré	PROPN	_	_	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	19	19	NUM	_	_	4	obl:mod	_	_	*
+8	mars	mars	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	1913	1913	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	que	que	SCONJ	_	_	13	mark	_	_	*
+12	Louis	Louis	PROPN	_	_	13	nsubj	_	_	*
+13	vit	vivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl:cleft	_	_	1:VID
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	1
+15	jour	jour	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	famille	famille	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+19	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*
+20	agriculteurs	agriculteur	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 6
+# text = Des 5 enfants que compte la famille, il est le plus jeune et il a la douleur de perdre sa maman alors qu'il n'a que 5 ans.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	4	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+3	5	5	NUM	_	_	4	nummod	_	_	*
+4	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	14	obl:mod	_	_	*
+5	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+6	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	famille	famille	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+13	plus	plus	ADV	_	_	14	advmod	_	_	*
+14	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*
+17	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_	1:LVC.full
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	douleur	douleur	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	1
+20	de	de	ADP	_	_	21	mark	_	_	*
+21	perdre	perdre	VERB	_	VerbForm=Inf	19	acl	_	_	*
+22	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	23	det	_	_	*
+23	maman	maman	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	*
+24	alors	alors	ADV	_	_	28	mark	_	_	*
+25	qu'	que	SCONJ	_	_	24	fixed	_	SpaceAfter=No	*
+26	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_	*
+27	n'	ne	ADV	_	Polarity=Neg	28	advmod	_	SpaceAfter=No	*
+28	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_	*
+29	que	que	ADV	_	_	31	advmod	_	_	*
+30	5	5	NUM	_	_	31	nummod	_	_	*
+31	ans	an	NOUN	_	Gender=Masc|Number=Plur	28	obj	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 7
+# text = Après sa scolarité, il aide son père à la ferme familiale puis il fait son service militaire au 60e régiment d'infanterie à Giromagny (90).
+1	Après	après	ADP	_	_	3	case	_	_	*
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	scolarité	scolarité	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+6	aide	aider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	père	père	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*
+12	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	puis	puis	ADV	_	_	15	cc	_	_	*
+14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+15	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	1:LVC.full
+16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	service	service	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	1
+18	militaire	militaire	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*
+19-20	au	_	_	_	_	_	_	_	_	*
+19	à	à	ADP	_	_	22	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+21	60e	60e	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+22	régiment	régiment	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+23	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+24	infanterie	infanterie	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25	à	à	ADP	_	_	26	case	_	_	*
+26	Giromagny	Giromagny	PROPN	_	_	22	nmod	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	90	90	NUM	_	_	26	nmod	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 8
+# text = Avec la déclaration de la guerre en 1939, il est de nouveau mobilisé, puis, après la débâcle, il rejoint la zone libre.
+1	Avec	avec	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	déclaration	déclaration	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	1939	1939	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj:pass	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	_	_	*
+12	de	de	ADP	_	_	14	advmod	_	_	*
+13	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	12	fixed	_	_	*
+14	mobilisé	mobiliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	23	punct	_	_	*
+16	puis	puis	ADV	_	_	23	cc	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	16	punct	_	_	*
+18	après	après	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	débâcle	débâcle	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	20	punct	_	_	*
+22	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_	*
+23	rejoint	rejoindre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	zone	zone	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*
+26	libre	libre	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 9
+# text = En 1943, il épouse Juliette Gaume, originaire de Mont de Laval.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1943	1943	NUM	_	_	5	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+5	épouse	épouser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Juliette	Juliette	PROPN	_	_	5	obj	_	_	*
+7	Gaume	Gaume	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	originaire	originaire	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Mont	Mont	PROPN	_	_	9	obl:arg	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Laval	Laval	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 10
+# text = De cette union 4 enfants naissent : 2 garçons qui devaient décéder en bas âge et 2 filles, Jeanne-Antide et Colette.
+1	De	de	ADP	_	_	3	case	_	_	*
+2	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*
+3	union	union	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*
+4	4	4	NUM	_	_	5	nummod	_	_	*
+5	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*
+6	naissent	naître	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	:	:	PUNCT	_	_	9	punct	_	_	*
+8	2	2	NUM	_	_	9	nummod	_	_	*
+9	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+11	devaient	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	acl:relcl	_	_	*
+12	décéder	décéder	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	en	en	ADP	_	_	15	case	_	_	*
+14	bas	bas	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	âge	âge	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	2	2	NUM	_	_	18	nummod	_	_	*
+18	filles	fille	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Jeanne-Antide	Jeanne-Antide	PROPN	_	_	9	appos	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	Colette	Colette	PROPN	_	_	20	conj	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 11
+# text = Plus tard, 5 petits-enfants et 4 arrière-petits-enfants viennent agrandir le cercle familial.
+1	Plus	plus	ADV	_	_	2	advmod	_	_	*
+2	tard	tard	ADV	_	_	9	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	5	5	NUM	_	_	5	nummod	_	_	*
+5	petits-enfants	petits-enfant	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	4	4	NUM	_	_	8	nummod	_	_	*
+8	arrière-petits-enfants	arrière-petits-enfant	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+9	viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	agrandir	agrandir	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	cercle	cercle	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	familial	familial	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 12
+# text = Après avoir vécu à Miserey, la famille vint s'installer à Tallenay en 1948.
+1	Après	après	ADP	_	_	3	mark	_	_	*
+2	avoir	avoir	AUX	_	VerbForm=Inf	3	aux:tense	_	_	*
+3	vécu	vivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Miserey	Miserey	PROPN	_	_	3	obl:arg	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	famille	famille	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+9	vint	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	11	obj	_	SpaceAfter=No	*
+11	installer	installer	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	Tallenay	Tallenay	PROPN	_	_	11	obl:arg	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	1948	1948	NUM	_	_	11	obl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 13
+# text = Durant dix ans, Louis et Juliette exploitèrent, en qualité de métayers, ce qui est aujourd'hui la ferme Courtot.
+1	Durant	durant	ADP	_	_	3	case	_	_	*
+2	dix	dix	NUM	_	_	3	nummod	_	_	*
+3	ans	an	NOUN	_	Gender=Masc|Number=Plur	8	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	Louis	Louis	PROPN	_	_	8	nsubj	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	Juliette	Juliette	PROPN	_	_	5	conj	_	_	*
+8	exploitèrent	exploiter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	métayers	métayer	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	obj	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+18	aujourd'hui	aujourd'hui	ADV	_	_	20	advmod	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	15	acl:relcl	_	_	*
+21	Courtot	Courtot	PROPN	_	_	20	appos	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 14
+# text = Puis ce fut le départ à Pontailler-sur-Saône, dans la Côte-d'Or, où le couple travailla encore une dizaine d'années dans une exploitation agricole.
+1	Puis	puis	ADV	_	_	5	cc	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_	*
+3	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	départ	départ	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	Pontailler-sur-Saône	Pontailler-sur-Saône	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	dans	dans	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	Côte	Côte	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+12	-	-	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+13	d'Or	d'Or	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	18	punct	_	_	*
+15	où	où	ADV	_	PronType=Rel	18	advmod	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	couple	couple	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	_	_	*
+18	travailla	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	_	_	*
+19	encore	encore	ADV	_	_	18	advmod	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	années	année	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	_	*
+24	dans	dans	ADP	_	_	26	case	_	_	*
+25	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	exploitation	exploitation	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+27	agricole	agricole	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 15
+# text = En 1966, ce fut le grand retour dans la région.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1966	1966	NUM	_	_	8	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	_	*
+5	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+7	grand	grand	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+8	retour	retour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+9	dans	dans	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	région	région	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 16
+# text = Jusqu'à sa retraite, en 1977, Louis travaillait dans l'entreprise Scoder, située à Ecole-Valentin.
+1	Jusqu'	jusque	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	1977	1977	NUM	_	_	10	obl:mod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	7	punct	_	_	*
+9	Louis	Louis	PROPN	_	_	10	nsubj	_	_	*
+10	travaillait	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+11	dans	dans	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*
+14	Scoder	Scoder	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	située	situer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Ecole-Valentin	Ecole-Valentin	PROPN	_	_	16	obl:arg	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 17
+# text = A quelques centaines de mètres de la ferme où résidait la famille de Juliette, s'éleva un coquet pavillon que Louis et son épouse ne devaient plus quitter.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	quelques	quelque	DET	_	Gender=Fem|Number=Plur	3	det	_	_	*
+3	centaines	centaine	NOUN	_	Gender=Fem|Number=Plur	17	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	mètres	mètre	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	où	où	ADV	_	PronType=Rel	10	advmod	_	_	*
+10	résidait	résider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl:relcl	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	famille	famille	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Juliette	Juliette	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	3	punct	_	_	*
+16	s'	se	PRON	_	Person=3|PronType=Prs	17	expl:comp	_	SpaceAfter=No	1:IRV
+17	éleva	élever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	coquet	coquet	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	*
+20	pavillon	pavillon	ADP	_	_	27	mark	_	_	*
+21	que	que	SCONJ	_	_	27	mark	_	_	*
+22	Louis	Louis	PROPN	_	_	27	nsubj	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+26	ne	ne	ADV	_	Polarity=Neg	27	advmod	_	_	*
+27	devaient	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	_	_	*
+28	plus	plus	ADV	_	Polarity=Neg	27	advmod	_	_	*
+29	quitter	quitter	VERB	_	VerbForm=Inf	27	xcomp	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 18
+# text = Paisible et particulièrement serviable, Louis occupait son temps à la vannerie, au jardinage, aux réunions du club de l'Age d'Or.
+1	Paisible	Paisible	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+2	et	et	CCONJ	_	_	4	cc	_	_	*
+3	particulièrement	particulièrement	ADV	_	_	4	advmod	_	_	*
+4	serviable	serviable	ADJ	_	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	Louis	Louis	PROPN	_	_	7	nsubj	_	_	*
+7	occupait	occuper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	temps	temps	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	vannerie	vannerie	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	jardinage	jardinage	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	réunions	réunion	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+21-22	du	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	club	club	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	Age	age	PROPN	_	_	23	nmod	_	_	*
+27	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+28	Or	or	PROPN	_	_	23	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 19
+# text = Il adorait particulièrement les voyages et jouer aux cartes, surtout au tarot, avec ses amis ou les membres de sa famille.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	adorait	adorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	particulièrement	particulièrement	ADV	_	_	2	advmod	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	voyages	voyage	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	jouer	jouer	VERB	_	VerbForm=Inf	5	conj	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	cartes	carte	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	15	punct	_	_	*
+12	surtout	surtout	ADV	_	_	15	advmod	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	tarot	tarot	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	avec	avec	ADP	_	_	19	case	_	_	*
+18	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	amis	ami	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+20	ou	ou	CCONJ	_	_	22	cc	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	membres	membre	NOUN	_	Gender=Masc|Number=Plur	19	conj	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	famille	famille	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 20
+# text = Très croyant, Louis participa également à de nombreux pèlerinages.
+1	Très	très	ADV	_	_	2	advmod	_	_	*
+2	croyant	croyant	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Louis	Louis	PROPN	_	_	5	nsubj	_	_	*
+5	participa	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+6	également	également	ADV	_	_	5	advmod	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+10	pèlerinages	pèlerinage	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 21
+# text = Les obsèques auront lieu vendredi 31 janvier, à 15 h, en l'église de Châtillon-le-Duc.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	obsèques	obsèque	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	_	_	*
+3	auront	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_	*
+4	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+6	31	31	NUM	_	_	4	nmod	_	_	*
+7	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	15	15	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	11	punct	_	_	*
+13	en	en	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	église	église	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Châtillon-le-Duc	Châtillon-le-Duc	PROPN	_	_	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33086.txt 22
+# text = A la famille dans la peine, le journal présente ses sincères condoléances.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	famille	famille	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*
+4	dans	dans	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	peine	peine	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	journal	journal	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+10	présente	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	13	det	_	_	*
+12	sincères	sincer	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*
+13	condoléances	condoléance	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n	*
+

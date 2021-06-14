@@ -1,0 +1,426 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-20_61062.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 1
+# text = Michel Lehalle, le responsable.
+1	Michel	Michel	PROPN	_	_	0	root	_	_	*
+2	Lehalle	Lehalle	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	responsable	responsable	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 2
+# text = La délégation a pour but de promouvoir ce chien de chasse polyvalent.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+4	pour	pour	ADP	_	_	5	case	_	_	*
+5	but	but	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	1
+6	de	de	ADP	_	_	7	mark	_	_	*
+7	promouvoir	promouvoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	chien	chien	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	polyvalent	polyvalent	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 3
+# text = La délégation lorraine du Jagd-Terrier Club de France vient de reprendre la délégation Champagne-Ardennes et agit maintenant sur six départements : Meurthe-et-Moselle, Meuse, Moselle, Ardennes, Aube et Haute-Marne.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+3	lorraine	lorrain	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Jagd-Terrier	Jagd-Terrier	PROPN	_	_	2	nmod	_	_	*
+7	Club	Club	PROPN	_	_	6	flat:name	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	France	France	PROPN	_	_	6	nmod	_	_	*
+10	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	de	de	ADP	_	_	12	mark	_	_	*
+12	reprendre	reprendre	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
+15	Champagne-Ardennes	Champagne-Ardennes	PROPN	_	_	14	appos	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_	*
+18	maintenant	maintenant	ADV	_	_	17	advmod	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	six	six	NUM	_	_	21	nummod	_	_	*
+21	départements	département	NOUN	_	Gender=Masc|Number=Plur	17	obl	_	_	*
+22	:	:	PUNCT	_	_	23	punct	_	_	*
+23	Meurthe-et-Moselle	Meurthe-et-Moselle	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Meuse	Meuse	PROPN	_	_	23	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	Moselle	Moselle	PROPN	_	_	23	conj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Ardennes	Ardennes	PROPN	_	_	23	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Aube	Aube	PROPN	_	_	23	conj	_	_	*
+32	et	et	CCONJ	_	_	33	cc	_	_	*
+33	Haute-Marne	Haute-Marne	PROPN	_	_	23	conj	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 4
+# text = Elle s'appelle désormais Délégation Lorraine-Champagne-Ardennes et a tenu son assemblée générale à Thiaucourt sous la présidence de Michel Lehalle, délégué.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	*
+3	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	désormais	désormais	ADV	_	_	3	advmod	_	_	*
+5	Délégation	délégation	PROPN	_	_	3	obj	_	_	*
+6	Lorraine-Champagne-Ardennes	Lorraine-Champagne-Ardennes	PROPN	_	_	5	flat:name	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	_	1:LVC.full
+10	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	1
+12	générale	général	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Thiaucourt	Thiaucourt	PROPN	_	_	11	nmod	_	_	*
+15	sous	sous	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Michel	Michel	PROPN	_	_	17	nmod	_	_	*
+20	Lehalle	Lehalle	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	délégué	délégué	NOUN	_	Gender=Masc|Number=Sing	19	appos	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 5
+# text = Ce fut l'occasion pour les responsables de dresser le bilan de l'année écoulée qui s'avère tout à fait satisfaisant.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*
+2	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_	3:VID
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	3
+4	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	3
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	responsables	responsable	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	dresser	dresser	VERB	_	VerbForm=Inf	7	acl	_	_	1:LVC.full
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	1
+12	de	de	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	année	année	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	écoulée	écoulé	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	18	expl:comp	_	SpaceAfter=No	2:IRV
+18	avère	avérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	2
+19	tout	tout	ADV	_	_	22	advmod	_	_	*
+20	à	à	ADP	_	_	19	fixed	_	_	*
+21	fait	fait	NOUN	_	Gender=Masc|Number=Sing	19	fixed	_	_	*
+22	satisfaisant	satisfaisant	ADJ	_	Gender=Masc|Number=Sing	18	xcomp	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 6
+# text = Quant aux finances, elles reflètent une gestion saine.
+1	Quant	quant	ADV	_	_	4	case	_	_	*
+2-3	aux	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	finances	finance	NOUN	_	Gender=Fem|Number=Plur	7	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_	*
+7	reflètent	reflèter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+10	saine	sain	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 7
+# text = La nouvelle délégation compte maintenant 200 adhérents qui sont pour la plupart propriétaires de jagds-terriers.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+4	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	maintenant	maintenant	ADV	_	_	4	advmod	_	_	*
+6	200	200	NUM	_	_	7	nummod	_	_	*
+7	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+10	pour	pour	ADP	_	_	13	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+12	plupart	plupart	ADJ	_	Gender=Fem|Number=Plur	11	fixed	_	_	*
+13	propriétaires	propriétaire	NOUN	_	Gender=Masc|Number=Plur	9	obl	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	jagds-terriers	jagds-terrier	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 8
+# text = Une cinquantaine d'entre eux ont participé aux débats.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	cinquantaine	cinquantaine	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+4	entre	entre	ADP	_	_	3	fixed	_	_	*
+5	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	2	nmod	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	participé	participer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	débats	débat	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 9
+# text = Le jagd-terrier est à l'aise dans tous types de chasse et la délégation Lorraine-Champagne-Ardennes souhaite améliorer les performances de ce petit chien.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	jagd-terrier	jagd-terrier	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	aise	aise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	tous	tout	DET	_	Gender=Masc|Number=Plur	9	det	_	_	*
+9	types	type	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+15	Lorraine-Champagne-Ardennes	Lorraine-Champagne-Ardennes	PRON	_	Gender=Fem|Number=Plur	16	nsubj	_	_	*
+16	souhaite	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*
+17	améliorer	améliorer	VERB	_	VerbForm=Inf	16	xcomp	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	performances	performance	NOUN	_	Gender=Fem|Number=Plur	17	obj	_	_	*
+20	de	de	ADP	_	_	23	case	_	_	*
+21	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_	*
+22	petit	petit	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+23	chien	chien	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 10
+# text = « Tout acquéreur ou producteur de jagd-terrier doit inscrire son chien aux brevets de chasse afin de contribuer à promouvoir ses aptitudes naturelles et les perpétuer génétiquement », explique Michel Lehalle.
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	Tout	tout	DET	_	Gender=Masc|Number=Sing	3	det	_	_	*
+3	acquéreur	acquéreur	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	ou	ou	CCONJ	_	_	5	cc	_	_	*
+5	producteur	producteur	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	jagd-terrier	jagd-terrier	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	ccomp	_	_	*
+9	inscrire	inscrire	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	chien	chien	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12-13	aux	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	brevets	brevet	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	chasse	chasse	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	afin	afin	ADV	_	_	9	advmod	_	_	*
+18	de	de	ADP	_	_	19	mark	_	_	*
+19	contribuer	contribuer	VERB	_	VerbForm=Inf	17	ccomp	_	_	*
+20	à	à	ADP	_	_	21	mark	_	_	*
+21	promouvoir	promouvoir	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+22	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	23	det	_	_	*
+23	aptitudes	aptitude	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+24	naturelles	naturel	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*
+25	et	et	CCONJ	_	_	27	cc	_	_	*
+26	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	27	obj	_	_	*
+27	perpétuer	perpétuer	VERB	_	VerbForm=Inf	19	conj	_	_	*
+28	génétiquement	génétiquement	ADV	_	_	27	advmod	_	_	*
+29	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	8	punct	_	_	*
+31	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+32	Michel	Michel	PROPN	_	_	31	nsubj	_	_	*
+33	Lehalle	Lehalle	PROPN	_	_	32	flat:name	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	31	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 11
+# text = « Le caractère du jagd-terrier vient de sa sélection destinée à en faire un excellent chasseur.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	caractère	caractère	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	jagd-terrier	jagd-terrier	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	sélection	sélection	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+11	destinée	destiner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	*
+12	à	à	ADP	_	_	14	mark	_	_	*
+13	en	en	PRON	_	Person=3	14	iobj	_	_	*
+14	faire	faire	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+16	excellent	excellent	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*
+17	chasseur	chasseur	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 12
+# text = Cependant, il est très important de ne pas confondre « courage et mordant » et « agressivité ».
+1	Cependant	cependant	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	très	très	ADV	_	_	6	advmod	_	_	*
+6	important	important	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	de	de	ADP	_	_	12	case	_	_	*
+8	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+10	confondre	confondre	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+11	«	«	PUNCT	_	_	12	punct	_	_	*
+12	courage	courage	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	mordant	mordant	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+15	»	»	PUNCT	_	_	12	punct	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	«	«	PUNCT	_	_	18	punct	_	_	*
+18	agressivité	agressivité	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	_	*
+19	»	»	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 13
+# text = Trop souvent, on entend critiquer cette race sans raison », poursuit-il.
+1	Trop	trop	ADV	_	_	5	advmod	_	_	*
+2	souvent	souvent	ADV	_	_	1	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+5	entend	entendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	critiquer	critiquer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_	*
+8	race	race	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9	sans	sans	ADP	_	_	6	advmod	_	_	*
+10	raison	raison	NOUN	_	Gender=Fem|Number=Sing	9	fixed	_	_	*
+11	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	poursuit	poursuivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	SpaceAfter=No	*
+14	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 14
+# text = « Au cours des dix dernières années, le club a fait de gros efforts, grâce à des chasseurs passionnés, pour sélectionner des lignées équilibrées de très bons chasseurs », conclut le responsable de la délégation.
+1	«	«	PUNCT	_	_	14	punct	_	_	*
+2-3	Au	_	_	_	_	_	_	_	_	*
+2	À	à	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	cours	cours	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	9	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+7	dix	dix	NUM	_	_	9	nummod	_	_	*
+8	dernières	dernier	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*
+9	années	année	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	4	punct	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	club	club	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	38	ccomp	_	_	1:LVC.full
+15	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+16	gros	gros	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+17	efforts	effort	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	SpaceAfter=No	1
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	grâce	grâce	ADV	_	_	14	advmod	_	_	*
+20	à	à	ADP	_	_	23	case	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	chasseurs	chasseur	NOUN	_	Gender=Masc|Number=Plur	19	obl:arg	_	_	*
+24	passionnés	passionné	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	pour	pour	ADP	_	_	27	mark	_	_	*
+27	sélectionner	sélectionner	VERB	_	VerbForm=Inf	14	advcl	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*
+30	lignées	lignée	NOUN	_	Gender=Fem|Number=Plur	27	obl:arg	_	_	*
+31	équilibrées	équilibré	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	30	acl	_	_	*
+32	de	de	ADP	_	_	35	case	_	_	*
+33	très	très	ADV	_	_	34	advmod	_	_	*
+34	bons	bon	ADJ	_	Gender=Masc|Number=Plur	35	amod	_	_	*
+35	chasseurs	chasseur	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_	*
+36	»	»	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	14	punct	_	_	*
+38	conclut	conclure	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	responsable	responsable	NOUN	_	Gender=Masc|Number=Sing	38	nsubj	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*
+43	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	38	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 15
+# text = A l'issue de la rencontre, les participants ont partagé le verre de l'amitié en l'honneur de Jean-Claude Bricnet de Lironville, de Jean-Claude Morel de Commercy et de Guy Jacquin d'Haudiomont pour les remercier de leur fidélité et des services rendus au club depuis 10 ans.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	issue	issue	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	participants	participant	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	partagé	partager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	verre	verre	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	amitié	amitié	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	en	en	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	honneur	honneur	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Jean-Claude	Jean-Claude	PROPN	_	_	19	nmod	_	_	*
+22	Bricnet	Bricnet	PROPN	_	_	21	flat:name	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	Lironville	Lironville	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Jean-Claude	Jean-Claude	PROPN	_	_	21	conj	_	_	*
+28	Morel	Morel	PROPN	_	_	27	flat:name	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	Commercy	Commercy	PROPN	_	_	27	nmod	_	_	*
+31	et	et	CCONJ	_	_	33	cc	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	Guy	Guy	PROPN	_	_	21	conj	_	_	*
+34	Jacquin	Jacquin	PROPN	_	_	33	flat:name	_	_	*
+35	d'	de	ADP	_	_	36	case	_	SpaceAfter=No	*
+36	Haudiomont	Haudiomont	PROPN	_	_	33	nmod	_	_	*
+37	pour	pour	ADP	_	_	39	mark	_	_	*
+38	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	39	obj	_	_	*
+39	remercier	remercier	VERB	_	VerbForm=Inf	11	advcl	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	42	det	_	_	*
+42	fidélité	fidélité	NOUN	_	Gender=Fem|Number=Sing	39	obl:arg	_	_	*
+43	et	et	CCONJ	_	_	46	cc	_	_	*
+44-45	des	_	_	_	_	_	_	_	_	*
+44	de	de	ADP	_	_	46	case	_	_	*
+45	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_	*
+46	services	service	NOUN	_	Gender=Masc|Number=Plur	42	conj	_	_	1:LVC.full
+47	rendus	rendre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	46	acl	_	_	1
+48-49	au	_	_	_	_	_	_	_	_	*
+48	à	à	ADP	_	_	50	case	_	_	*
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*
+50	club	club	NOUN	_	Gender=Masc|Number=Sing	47	obl:arg	_	_	*
+51	depuis	depuis	ADP	_	_	53	case	_	_	*
+52	10	10	NUM	_	_	53	nummod	_	_	*
+53	ans	an	NOUN	_	Gender=Masc|Number=Plur	47	obl	_	SpaceAfter=No	*
+54	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_61062.txt 16
+# text = La soirée s'est poursuivie dans une ambiance conviviale autour d'un excellent repas concocté par Joël Hervé.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:pass	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	poursuivie	poursuivre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	ambiance	ambiance	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9	conviviale	convivial	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	autour	autour	ADV	_	_	8	advmod	_	_	*
+11	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+13	excellent	excellent	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+14	repas	repas	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+15	concocté	concocter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_	*
+16	par	par	ADP	_	_	17	case	_	_	*
+17	Joël	Joël	PROPN	_	_	15	obl:agent	_	_	*
+18	Hervé	Hervé	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*
+

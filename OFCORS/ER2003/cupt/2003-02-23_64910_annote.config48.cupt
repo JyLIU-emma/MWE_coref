@@ -1,0 +1,484 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-23_64910.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 1
+# text = Signé JPP !
+1	Signé	signer	PROPN	_	_	0	root	_	_	*
+2	JPP	JPP	PROPN	_	_	1	flat:name	_	_	*
+3	!	!	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 2
+# text = Emma : C'est JPP qui a donné hier soir le coup d'envoi du match Sochaux-Le Havre.
+1	Emma	Emma	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	JPP	JPP	PROPN	_	_	1	parataxis	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+9	hier	hier	ADV	_	_	8	advmod	_	_	*
+10	soir	soire	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	coup	coup	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	envoi	envoi	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	match	match	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+18	Sochaux	Sochaux	PROPN	_	_	17	appos	_	SpaceAfter=No	*
+19	-	-	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+20	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	Havre	Havre	PROPN	_	_	18	conj	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 3
+# text = L'ex-international a contribué à sa façon à un effort de mobilisation destiné à venir en aide à la petite Emma, victime de lésions cérébrales.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ex-international	ex-international	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	contribué	contribuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	façon	façon	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	effort	effort	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	mobilisation	mobilisation	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	destiné	destiner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	*
+14	à	à	ADP	_	_	15	mark	_	_	*
+15	venir	venir	VERB	_	VerbForm=Inf	13	xcomp	_	_	1:LVC.full
+16	en	en	ADP	_	_	17	case	_	_	1
+17	aide	aide	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	_	1
+18	à	à	ADP	_	_	21	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+20	petite	petit	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+21	Emma	Emma	PROPN	_	_	15	obl:arg	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	victime	victime	NOUN	_	Gender=Fem|Number=Sing	21	appos	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	lésions	lésion	NOUN	_	Gender=Fem|Number=Plur	23	nmod	_	_	*
+26	cérébrales	cérébral	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 4
+# text = Une petite fille qui a besoin de fonds pour suivre un traitement coûteux aux USA.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	petite	petit	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	fille	fille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	1:LVC.full
+6	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1
+7	de	de	ADP	_	_	8	case	_	_	*
+8	fonds	fond	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+9	pour	pour	ADP	_	_	10	mark	_	_	*
+10	suivre	suivre	VERB	_	VerbForm=Inf	5	advcl	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	coûteux	coûteux	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14-15	aux	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+16	USA	USA	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 5
+# text = Des tirelires ont été disposées dans l'ensemble du stade Bonal pour faire appel à la générosité des spectateurs.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	tirelires	tirelire	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	disposées	disposer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	ensemble	ensemble	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	stade	stade	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	Bonal	Bonal	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	pour	pour	ADP	_	_	15	mark	_	_	*
+15	faire	faire	VERB	_	VerbForm=Inf	6	advcl	_	_	1:LVC.full
+16	appel	appel	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	1
+17	à	à	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	générosité	générosité	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	spectateurs	spectateur	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 6
+# text = Et Jean-Pierre Papin a une nouvelle fois fait la démonstration de sa générosité et de sa simplicité.
+1	Et	et	CCONJ	_	_	4	cc	_	_	*
+2	Jean-Pierre	Jean-Pierre	PROPN	_	_	4	nsubj	_	_	*
+3	Papin	Papin	PROPN	_	_	2	flat:name	_	_	*
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	fois	fois	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+8	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	démonstration	démonstration	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	générosité	générosité	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	et	et	CCONJ	_	_	17	cc	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	simplicité	simplicité	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 7
+# text = La marque d'un authentique champion.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	marque	marque	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	authentique	authentique	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	champion	champion	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 8
+# text = Blessure : Le défenseur sochalien Maxence Flachez et l'attaquant havrais Olivier Fauconnier ont un point commun : tous deux ont été blessés à quelques jours d'intervalle par le Lensois Rigobert Song à la fin de l'année dernière.
+1	Blessure	blessure	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	défenseur	défenseur	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	sochalien	sochalien	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	Maxence	Maxence	PROPN	_	_	4	appos	_	_	*
+7	Flachez	Flachez	PROPN	_	_	6	flat:name	_	_	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	attaquant	attaquant	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	_	*
+11	havrais	havrais	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	_	*
+12	Olivier	Olivier	PROPN	_	_	11	appos	_	_	*
+13	Fauconnier	Fauconnier	PROPN	_	_	12	flat:name	_	_	*
+14	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	point	point	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+17	commun	commun	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	:	:	PUNCT	_	_	23	punct	_	_	*
+19	tous	tout	PRON	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+20	deux	deux	PRON	_	Number=Plur	23	nsubj:pass	_	_	*
+21	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+22	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	aux:pass	_	_	*
+23	blessés	blesser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	14	parataxis	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	quelques	quelque	DET	_	Gender=Masc|Number=Plur	26	det	_	_	*
+26	jours	jour	NOUN	_	Gender=Masc|Number=Plur	23	obl:mod	_	_	*
+27	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+28	intervalle	intervalle	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+29	par	par	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	Lensois	Lensois	PROPN	_	_	23	obl:agent	_	_	*
+32	Rigobert	Rigobert	PROPN	_	_	31	flat:name	_	_	*
+33	Song	Song	PROPN	_	_	31	flat:name	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	fin	fin	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	SpaceAfter=No	*
+39	année	année	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+40	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 9
+# text = Si Flachez a déjà pu rejouer en 2003, Fauconnier, qui a dû subir une opération avec anesthésie générale pour recoudre son mollet entaillé par les crampons de Song, devrait bientôt reprendre avec l'équipe réserve plus de deux mois après l'agression.
+1	Si	si	SCONJ	_	_	5	mark	_	_	*
+2	Flachez	Flachez	PROPN	_	_	5	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	déjà	déjà	ADV	_	_	5	advmod	_	_	*
+5	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	32	advcl	_	_	*
+6	rejouer	rejouer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	2003	2003	NUM	_	_	6	obl	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	5	punct	_	_	*
+10	Fauconnier	Fauconnier	PROPN	_	_	32	nsubj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*
+15	subir	subir	VERB	_	VerbForm=Inf	14	xcomp	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	opération	opération	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+18	avec	avec	ADP	_	_	19	case	_	_	*
+19	anesthésie	anesthésie	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	générale	général	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+21	pour	pour	ADP	_	_	22	mark	_	_	*
+22	recoudre	recoudre	VERB	_	VerbForm=Inf	15	advcl	_	_	*
+23	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	mollet	mollet	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*
+25	entaillé	entailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	acl	_	_	*
+26	par	par	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	crampons	crampon	NOUN	_	Gender=Masc|Number=Plur	25	obl:agent	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	Song	Song	PROPN	_	_	28	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	10	punct	_	_	*
+32	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+33	bientôt	bientôt	ADV	_	_	32	advmod	_	_	*
+34	reprendre	reprendre	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+35	avec	avec	ADP	_	_	37	case	_	_	*
+36	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	SpaceAfter=No	*
+37	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	34	obl:arg	_	_	*
+38	réserve	réserver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	acl	_	_	*
+39	plus	plus	ADV	_	_	38	obj	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	deux	deux	NUM	_	_	42	nummod	_	_	*
+42	mois	mois	NOUN	_	Gender=Masc|Number=Plur	39	obl:arg	_	_	*
+43	après	après	ADP	_	_	45	case	_	_	*
+44	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	SpaceAfter=No	*
+45	agression	agression	NOUN	_	Gender=Fem|Number=Sing	42	nmod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	32	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 10
+# text = Anniversaire : Si Gnanhouan et Isabey ont fêté la semaine dernière leur anniversaire, le président sochalien Jean-Claude Plessis a également connu cette joie, lui qui vient de passer le cap des 59 ans.
+1	Anniversaire	anniversaire	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+2	:	:	PUNCT	_	_	8	punct	_	_	*
+3	Si	si	SCONJ	_	_	8	mark	_	_	*
+4	Gnanhouan	Gnanhouan	PROPN	_	_	8	nsubj	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Isabey	Isabey	PROPN	_	_	4	conj	_	_	*
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	fêté	fêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	_	*
+11	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	anniversaire	anniversaire	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	président	président	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_	*
+17	sochalien	sochalien	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	Jean-Claude	Jean-Claude	PROPN	_	_	16	appos	_	_	*
+19	Plessis	Plessis	PROPN	_	_	18	flat:name	_	_	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+21	également	également	ADV	_	_	22	advmod	_	_	*
+22	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	_	_	*
+24	joie	joie	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	22	obl	_	_	*
+27	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*
+28	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	_	_	*
+29	de	de	ADP	_	_	30	mark	_	_	*
+30	passer	passer	VERB	_	VerbForm=Inf	28	xcomp	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	cap	cap	NOUN	_	Gender=Masc|Number=Sing	30	obj	_	_	*
+33-34	des	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	36	case	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_	*
+35	59	59	NUM	_	_	36	nummod	_	_	*
+36	ans	an	NOUN	_	Gender=Masc|Number=Plur	32	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 11
+# text = Statistiques : Sochaux et Le Havre se sont rencontrés à 36 reprises dont 30 en D 1.
+1	Statistiques	statistique	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	Sochaux	Sochaux	PROPN	_	_	1	appos	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Havre	Havre	PROPN	_	_	3	conj	_	_	*
+7	se	se	PRON	_	Person=3|PronType=Prs	9	expl:pass	_	_	*
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	rencontrés	rencontrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	36	36	NUM	_	_	12	nummod	_	_	*
+12	reprises	reprise	NOUN	_	Gender=Fem|Number=Plur	9	obl:mod	_	_	*
+13	dont	dont	PRON	_	PronType=Rel	14	nmod	_	_	*
+14	30	30	NUM	_	_	12	appos	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	D	D	PROPN	_	_	14	nmod	_	_	*
+17	1	1	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 12
+# text = En dix-huit rendez-vous à domicile, les Sochaliens se sont imposés dix fois pour trois nuls et cinq défaites (la dernière en 93-94).
+1	En	en	ADP	_	_	3	case	_	_	*
+2	dix-huit	dix-huit	NUM	_	_	3	nummod	_	_	*
+3	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	domicile	domicile	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Sochaliens	Sochaliens	PROPN	_	_	11	nsubj	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	11	obj	_	_	1:IRV
+10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	imposés	imposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+12	dix	dix	NUM	_	_	13	nummod	_	_	*
+13	fois	fois	NOUN	_	Gender=Fem|Number=Plur	11	obl	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	trois	trois	NUM	_	_	16	nummod	_	_	*
+16	nuls	nul	NOUN	_	Gender=Masc|Number=Plur	11	obl	_	_	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*
+18	cinq	cinq	NUM	_	_	19	nummod	_	_	*
+19	défaites	défaite	NOUN	_	Gender=Fem|Number=Plur	16	conj	_	_	*
+20	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	dernière	dernier	NOUN	_	Gender=Fem|Number=Sing	16	appos	_	_	*
+23	en	en	ADP	_	_	24	case	_	_	*
+24	93-94	93-94	NUM	_	_	22	nmod	_	SpaceAfter=No	*
+25	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 13
+# text = En D 1, le dernier affrontement entre les deux équipes remonte à la saison 98-99 et les Doubiens s'étaient imposés 1-0.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	D	D	PROPN	_	_	12	obl:mod	_	_	*
+3	1	1	NUM	_	_	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	affrontement	affrontement	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+8	entre	entre	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+10	deux	deux	NUM	_	_	11	nummod	_	_	*
+11	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_	*
+12	remonte	remonter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	saison	saison	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+16	98-99	98-99	NUM	_	_	15	nmod	_	_	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*
+19	Doubiens	Doubiens	PROPN	_	_	15	conj	_	_	*
+20	s'	se	PRON	_	Person=3|PronType=Prs	22	expl:comp	_	SpaceAfter=No	1:IRV
+21	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	22	aux:tense	_	_	*
+22	imposés	imposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	xcomp	_	_	1
+23	1-0	1-0	NUM	_	_	22	obl	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 14
+# text = Renfort :
+1	Renfort	renfort	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 15
+# text = Le HAC a déjà usé de son droit à faire appel à un joker.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	HAC	HAC	PROPN	_	_	5	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	déjà	déjà	ADV	_	_	5	advmod	_	_	*
+5	usé	user	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	droit	droit	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	à	à	ADP	_	_	10	mark	_	_	*
+10	faire	faire	VERB	_	VerbForm=Inf	8	acl	_	_	1:LVC.full
+11	appel	appel	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	1
+12	à	à	ADP	_	_	14	case	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	joker	joker	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 16
+# text = Le club normand a en effet fait signer l'international slovène Milan Osterc juste après le Mercato.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	club	club	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	normand	normand	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*
+5	en	en	ADP	_	_	4	advmod	_	_	*
+6	effet	effet	NOUN	_	Gender=Masc|Number=Sing	5	fixed	_	_	*
+7	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:caus	_	_	*
+8	signer	signer	VERB	_	VerbForm=Inf	0	root	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	international	international	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	slovène	slovener	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	Milan	Milan	PROPN	_	_	10	appos	_	_	*
+13	Osterc	Osterc	PROPN	_	_	12	flat:name	_	_	*
+14	juste	juste	ADV	_	_	17	advmod	_	_	*
+15	après	après	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	Mercato	Mercato	PROPN	_	_	8	obl	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 17
+# text = Agé de 27 ans, cet attaquant athlétique (1,85 m pour 83 kg) évoluait la saison dernière dans le championnat israélien avec l'Hapoel Tel-Aviv.
+1	Agé	âgé	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	27	27	NUM	_	_	4	nummod	_	_	*
+4	ans	an	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*
+7	attaquant	attaquant	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+8	athlétique	athlétique	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+10	1,85	1,85	NUM	_	_	11	nummod	_	_	*
+11	m	m	NOUN	_	Gender=Masc|Number=Plur	7	appos	_	_	*
+12	pour	pour	ADP	_	_	14	case	_	_	*
+13	83	83	NUM	_	_	14	nummod	_	_	*
+14	kg	kg	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	11	punct	_	_	*
+16	évoluait	évoluer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	saison	saison	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*
+19	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+20	dans	dans	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+23	israélien	israélien	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24	avec	avec	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	Hapoel	Hapoel	PROPN	_	_	16	obl:arg	_	_	*
+27	Tel-Aviv	Tel-Aviv	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 18
+# text = Jean-François Domergue avait suivi ses productions l'été dernier lors de son voyage en Corée en qualité de commentateur pour le Mondial.
+1	Jean-François	Jean-François	PROPN	_	_	4	nsubj	_	_	*
+2	Domergue	Domergue	PROPN	_	_	1	flat:name	_	_	*
+3	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*
+4	suivi	suivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	productions	production	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	été	été	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+9	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	lors	lors	ADV	_	_	4	advmod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	Corée	Corée	PROPN	_	_	13	nmod	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	commentateur	commentateur	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+20	pour	pour	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	Mondial	Mondial	PROPN	_	_	4	obl	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 19
+# text = Osterc était retenu hier soir pour la première fois sur une feuille de match du championnat français.
+1	Osterc	Osterc	PROPN	_	_	3	nsubj:pass	_	_	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	aux:pass	_	_	*
+3	retenu	retenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	hier	hier	ADV	_	_	3	advmod	_	_	*
+5	soir	soir	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+6	pour	pour	ADP	_	_	9	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	première	premier	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	fois	fois	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	feuille	feuille	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	match	match	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+18	français	français	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-23_64910.txt 20
+# text = Ch.M.
+1	Ch.M.	Ch.m.	ADP	_	_	0	root	_	SpacesAfter=\n	*
+

@@ -1,0 +1,739 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-22_24718.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 1
+# text = Une exécution ?
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	exécution	exécution	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	?	?	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 2
+# text = Baptisé « L'exécuteur » à cause des 41 victoires (dont 30 par K. O) que compte sa carte de visite, Bernard Hopkins est évidemment persuadé qu'il ne s'agira là que d'une formalité.
+1	Baptisé	baptiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	advcl	_	_	*
+2	«	«	PUNCT	_	_	4	punct	_	_	*
+3	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	exécuteur	exécuteur	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	cause	cause	NOUN	_	Gender=Fem|Number=Sing	1	obl:mod	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+10	41	41	NUM	_	_	11	nummod	_	_	*
+11	victoires	victoire	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_	*
+12	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+13	dont	dont	PRON	_	PronType=Rel	14	nmod	_	_	*
+14	30	30	NUM	_	_	11	nmod	_	_	*
+15	par	par	ADP	_	_	16	case	_	_	*
+16	K.	K.	PROPN	_	_	14	nmod	_	_	*
+17	O	O	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	14	punct	_	_	*
+19	que	que	PRON	_	PronType=Rel	20	obj	_	_	*
+20	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	*
+21	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	carte	carte	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	visite	visite	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	1	punct	_	_	*
+26	Bernard	Bernard	PROPN	_	_	30	nsubj:pass	_	_	*
+27	Hopkins	Hopkins	PROPN	_	_	26	flat:name	_	_	*
+28	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux:pass	_	_	*
+29	évidemment	évidemment	ADV	_	_	30	advmod	_	_	*
+30	persuadé	persuader	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+31	qu'	que	SCONJ	_	_	35	mark	_	SpaceAfter=No	*
+32	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_	1:VID
+33	ne	ne	ADV	_	Polarity=Neg	35	advmod	_	_	*
+34	s'	se	PRON	_	Person=3|PronType=Prs	35	expl:comp	_	SpaceAfter=No	1
+35	agira	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	ccomp	_	_	1
+36	là	là	ADV	_	_	35	advmod	_	_	*
+37	que	que	SCONJ	_	_	40	cc	_	_	*
+38	d'	de	ADP	_	_	40	case	_	SpaceAfter=No	*
+39	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	formalité	formalité	NOUN	_	Gender=Fem|Number=Sing	35	obl:arg	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	30	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 3
+# text = Les pronostics ne portent pas sur l'issue du combat, mais plutôt de savoir en combien de rounds il exécutera Hakkar.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	pronostics	pronostic	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	portent	porter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	sur	sur	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	issue	issue	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	combat	combat	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	16	punct	_	_	*
+13	mais	mais	CCONJ	_	_	16	cc	_	_	*
+14	plutôt	plutôt	ADV	_	_	16	advmod	_	_	*
+15	de	de	ADP	_	_	16	mark	_	_	*
+16	savoir	savoir	VERB	_	VerbForm=Inf	4	conj	_	_	*
+17	en	en	ADP	_	_	18	case	_	_	*
+18	combien	combien	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	rounds	round	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	*
+22	exécutera	exécuter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	ccomp	_	_	*
+23	Hakkar	Hakkar	PROPN	_	_	22	obj	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 4
+# text = Logique.
+1	Logique	logique	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 5
+# text = Mais le camp français a relevé un « détail » qui aura toute son importance.
+1	Mais	mais	CCONJ	_	_	6	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	camp	camp	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+4	français	français	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	relevé	relever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	«	«	PUNCT	_	_	9	punct	_	_	*
+9	détail	détail	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+10	»	»	PUNCT	_	_	9	punct	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+12	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	acl:relcl	_	_	1:LVC.full
+13	toute	tout	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+14	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	importance	importance	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	SpaceAfter=No	1
+16	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 6
+# text = L'Américain vient de fêter le 15 janvier 2003 ses... 38 ans.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Américain	américain	PROPN	_	_	3	nsubj	_	_	*
+3	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	fêter	fêter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	15	15	NUM	_	_	5	obl	_	_	*
+8	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	2003	2003	NUM	_	_	8	nmod	_	_	*
+10	ses	son	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	SpaceAfter=No	*
+11	...	...	PUNCT	_	_	13	punct	_	_	*
+12	38	38	NUM	_	_	13	nummod	_	_	*
+13	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 7
+# text = Ce n'est plus vraiment l'âge à mettre un boxeur entre quatre cordes !
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+4	plus	plus	ADV	_	_	5	advmod	_	_	*
+5	vraiment	vraiment	ADV	_	_	7	advmod	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	âge	âge	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+8	à	à	ADP	_	_	9	mark	_	_	*
+9	mettre	mettre	VERB	_	VerbForm=Inf	7	acl	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	boxeur	boxeur	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	entre	entre	ADP	_	_	14	case	_	_	*
+13	quatre	quatre	NUM	_	_	14	nummod	_	_	*
+14	cordes	corde	NOUN	_	Gender=Fem|Number=Plur	9	obl	_	_	*
+15	!	!	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 8
+# text = « Mon seul atout sera de tenir.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+3	seul	seul	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	atout	atout	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+5	sera	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+6	de	de	ADP	_	_	7	mark	_	_	*
+7	tenir	tenir	VERB	_	VerbForm=Inf	5	ccomp	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 9
+# text = Plus le combat durera, plus mes chances augmenteront.
+1	Plus	plus	ADV	_	_	4	advmod	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	combat	combat	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+4	durera	durer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	plus	plus	ADV	_	_	8	advmod	_	_	*
+7	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	chances	chance	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*
+9	augmenteront	augmenter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	xcomp	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 10
+# text = Si je passe les six premiers rounds de ce championnat du monde prévu en douze reprises, qui sait alors ce qui peut se passer ?
+1	Si	si	SCONJ	_	_	3	mark	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+5	six	six	NUM	_	_	7	nummod	_	_	*
+6	premiers	premier	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+7	rounds	round	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_	*
+10	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	monde	monde	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	prévu	prévoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	*
+15	en	en	ADP	_	_	17	case	_	_	*
+16	douze	douze	NUM	_	_	17	nummod	_	_	*
+17	reprises	reprise	NOUN	_	Gender=Fem|Number=Plur	14	obl	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+20	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	_	_	*
+21	alors	alors	ADV	_	_	20	advmod	_	_	*
+22	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	20	obj	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	24	nsubj	_	_	*
+24	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*
+25	se	se	PRON	_	Person=3|PronType=Prs	26	expl:comp	_	_	1:IRV
+26	passer	passer	VERB	_	VerbForm=Inf	24	xcomp	_	_	1
+27	?	?	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 11
+# text = Hopkins est quand même un boxeur en fin de carrière », analyse Morrade Hakkar.
+1	Hopkins	Hopkins	PROPN	_	_	6	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+3	quand	quand	ADV	_	_	6	advmod	_	_	*
+4	même	même	ADV	_	_	6	advmod	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	boxeur	boxeur	NOUN	_	Gender=Masc|Number=Sing	13	ccomp	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	fin	fin	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	6	punct	_	_	*
+13	analyse	analyser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	Morrade	Morrade	PROPN	_	_	13	nsubj	_	_	*
+15	Hakkar	Hakkar	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 12
+# text = Avant de lâcher froidement : « Ce que je veux éviter, c'est de perdre en trois rounds devant ma famille et mes supporters.
+1	Avant	avant	ADV	_	_	14	advmod	_	_	*
+2	de	de	ADP	_	_	3	mark	_	_	*
+3	lâcher	lâcher	VERB	_	VerbForm=Inf	1	ccomp	_	_	*
+4	froidement	froidement	ADV	_	_	3	advmod	_	_	*
+5	:	:	PUNCT	_	_	3	punct	_	_	*
+6	«	«	PUNCT	_	_	7	punct	_	_	*
+7	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	dislocated	_	_	*
+8	que	que	PRON	_	PronType=Rel	11	obj	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+10	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+11	éviter	éviter	VERB	_	VerbForm=Inf	10	xcomp	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	7	punct	_	_	*
+13	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*
+14	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+15	de	de	ADP	_	_	16	mark	_	_	*
+16	perdre	perdre	VERB	_	VerbForm=Inf	14	ccomp	_	_	*
+17	en	en	ADP	_	_	19	case	_	_	*
+18	trois	trois	NUM	_	_	19	nummod	_	_	*
+19	rounds	round	NOUN	_	Gender=Masc|Number=Plur	16	obl	_	_	*
+20	devant	devoir	ADP	_	_	22	case	_	_	*
+21	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	famille	famille	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	supporters	supporter	NOUN	_	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 13
+# text = Je ne peux pas les décevoir !
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+5	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	6	obj	_	_	*
+6	décevoir	décevoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+7	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 14
+# text = Croyez-moi, je vais aller au charbon.
+1	Croyez	croire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	advcl	_	SpaceAfter=No	*
+2	-moi	soi	PRON	_	Number=Sing|Person=1	1	obj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	aller	aller	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	charbon	charbon	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 15
+# text = je donnerai tout et plus encore ».
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	donnerai	donner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	tout	tout	ADV	_	_	6	advmod	_	_	*
+4	et	et	CCONJ	_	_	3	fixed	_	_	*
+5	plus	plus	ADV	_	_	3	fixed	_	_	*
+6	encore	encore	ADV	_	_	2	advmod	_	_	*
+7	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 16
+# text = Morrade le « guerrier » n'a cessé de démontrer tout au long de sa carrière que s'il était effectivement une force de la nature, il était également doté d'un mental exceptionnel.
+1	Morrade	Morrade	PROPN	_	_	8	nsubj	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	«	«	PUNCT	_	_	4	punct	_	_	*
+4	guerrier	guerrier	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	_	*
+6	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	cessé	cesser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	de	de	ADP	_	_	10	mark	_	_	*
+10	démontrer	démontrer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	tout	tout	ADV	_	_	14	advmod	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	long	long	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+18	que	que	SCONJ	_	_	32	mark	_	_	*
+19	s'	si	SCONJ	_	_	24	mark	_	SpaceAfter=No	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_	*
+21	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	cop	_	_	*
+22	effectivement	effectivement	ADV	_	_	24	advmod	_	_	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	force	force	NOUN	_	Gender=Fem|Number=Sing	32	advcl	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	nature	nature	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	24	punct	_	_	*
+29	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_	*
+30	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	32	aux:tense	_	_	*
+31	également	également	ADV	_	_	32	advmod	_	_	*
+32	doté	doter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	ccomp	_	_	*
+33	d'	de	ADP	_	_	35	case	_	SpaceAfter=No	*
+34	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	mental	mental	NOUN	_	Gender=Masc|Number=Sing	32	obl:arg	_	_	*
+36	exceptionnel	exceptionnel	ADJ	_	Gender=Masc|Number=Sing	35	amod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 17
+# text = Pour en arriver là, il a dû surmonter une multitude d'épreuves qui l'ont rendu de plus en plus fort.
+1	Pour	pour	ADP	_	_	3	mark	_	_	*
+2	en	en	PRON	_	Person=3	3	obj	_	_	*
+3	arriver	arriver	VERB	_	VerbForm=Inf	8	advcl	_	_	*
+4	là	là	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	surmonter	surmonter	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	multitude	multitude	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	épreuves	épreuve	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+15	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	17	obj	_	SpaceAfter=No	*
+16	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	rendu	rendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl:relcl	_	_	*
+18	de	de	ADP	_	_	17	advmod	_	_	*
+19	plus	plus	ADV	_	_	18	fixed	_	_	*
+20	en	en	ADP	_	_	18	fixed	_	_	*
+21	plus	plus	ADV	_	_	18	fixed	_	_	*
+22	fort	fort	ADV	_	_	17	advmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 18
+# text = Le 29 mars, dans la vaste enceinte de Philadelphie, la ville natale de Bernard Hopkins, l'enfant de Montrapon sera à la hauteur de l'événement.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	29	29	NUM	_	_	26	obl:mod	_	_	*
+3	mars	mars	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	dans	dans	ADP	_	_	8	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	vaste	vaste	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	enceinte	enceinte	NOUN	_	Gender=Fem|Number=Sing	26	obl:mod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Philadelphie	Philadelphie	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	8	punct	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	ville	ville	NOUN	_	Gender=Fem|Number=Sing	26	nsubj	_	_	*
+14	natale	natal	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Bernard	Bernard	PROPN	_	_	13	nmod	_	_	*
+17	Hopkins	Hopkins	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	enfant	enfant	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	Montrapon	Montrapon	PROPN	_	_	20	nmod	_	_	*
+23	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	cop	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	hauteur	hauteur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+29	événement	événement	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 19
+# text = Nous sommes prêts à prendre les paris... Frédéric VIAL BESANÇON.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	prêts	prêt	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	prendre	prendre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	paris	pari	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	SpaceAfter=No	*
+8	...	...	PUNCT	_	_	9	punct	_	SpacesAfter=\s\s\s	*
+9	Frédéric	Frédéric	PROPN	_	_	3	parataxis	_	_	*
+10	VIAL	Vial	PROPN	_	_	9	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+11	BESANÇON	Besançon	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 20
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 21
+# text = Cette fois, c'est sûr !
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	fois	fois	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+6	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	!	!	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 22
+# text = Don King en personne l'a annoncé.
+1	Don	Don	PROPN	_	_	7	nsubj	_	_	*
+2	King	King	PROPN	_	_	1	flat:name	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	personne	personne	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*
+5	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 23
+# text = Après avoir traîné les pieds pendant des semaines, Bernard Hopkins affrontera Morrade Hakkar.
+1	Après	après	ADP	_	_	3	mark	_	_	*
+2	avoir	avoir	AUX	_	VerbForm=Inf	3	aux:tense	_	_	*
+3	traîné	traîner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	advcl	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+6	pendant	pendant	ADP	_	_	9	case	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	3	obl:mod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	3	punct	_	_	*
+11	Bernard	Bernard	PROPN	_	_	13	nsubj	_	_	*
+12	Hopkins	Hopkins	PROPN	_	_	11	flat:name	_	_	*
+13	affrontera	affronter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+14	Morrade	Morrade	PROPN	_	_	13	obj	_	_	*
+15	Hakkar	Hakkar	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 24
+# text = Forcé et contraint, le seul et unique champion du monde des poids moyens daignera croiser les gants avec ce boxeur français totalement inconnu.
+1	Forcé	forcé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	nsubj	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	contraint	contraindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	conj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	9	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+6	seul	seul	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	unique	unique	ADJ	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+9	champion	champion	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	monde	monde	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	poids	poids	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+16	moyens	moyen	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*
+17	daignera	daigner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+18	croiser	croiser	VERB	_	VerbForm=Inf	17	xcomp	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	gants	gant	NOUN	_	Gender=Masc|Number=Plur	18	obj	_	_	*
+21	avec	avec	ADP	_	_	23	case	_	_	*
+22	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_	*
+23	boxeur	boxeur	NOUN	_	Gender=Masc|Number=Sing	18	obl:mod	_	_	*
+24	français	français	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+25	totalement	totalement	ADV	_	_	26	advmod	_	_	*
+26	inconnu	inconnu	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 25
+# text = « Ça m'a fait tout drôle !
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Ça	ça	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_	1:VID
+3	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	tout	tout	DET	_	Gender=Masc|Number=Sing	7	det	_	_	*
+7	drôle	drôle	ADJ	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	!	!	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 26
+# text = Je n'ai pas dormi pendant la nuit qui a suivi afin de savourer la nouvelle pendant chaque seconde qui passait », s'amuse Morrade Hakkar.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	dormi	dormir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	pendant	pendant	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	suivi	suivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+12	afin	afin	ADV	_	_	11	advmod	_	_	*
+13	de	de	ADP	_	_	14	mark	_	_	*
+14	savourer	savourer	VERB	_	VerbForm=Inf	12	ccomp	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	nouvelle	nouvelle	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	*
+17	pendant	pendant	ADP	_	_	19	case	_	_	*
+18	chaque	chaque	DET	_	Gender=Fem|Number=Sing	19	det	_	_	*
+19	seconde	seconde	NOUN	_	Gender=Fem|Number=Sing	14	obl	_	_	*
+20	qui	qui	PRON	_	PronType=Rel	21	nsubj	_	_	*
+21	passait	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	acl:relcl	_	_	*
+22	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	s'	se	PRON	_	Person=3|PronType=Prs	25	expl:comp	_	SpaceAfter=No	1:IRV
+25	amuse	amuser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	1
+26	Morrade	Morrade	PROPN	_	_	25	nsubj	_	_	*
+27	Hakkar	Hakkar	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 27
+# text = « Toute ma vie j'ai attendu ça.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+3	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	vie	vie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	SpaceAfter=No	*
+6	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	attendu	attendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	parataxis	_	_	*
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	obj	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 28
+# text = Etre face à face avec le roi des poids moyens devant quinze ou vingt-mille spectateurs et des millions d'observateur sur le globe.
+1	Etre	être	AUX	_	VerbForm=Inf	4	cop	_	_	*
+2	face	face	ADV	_	_	4	advmod	_	_	*
+3	à	à	ADP	_	_	4	case	_	_	*
+4	face	face	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	avec	avec	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	roi	roi	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	poids	poids	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+11	moyens	moyen	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+12	devant	devant	ADP	_	_	13	case	_	_	*
+13	quinze	quinze	NUM	_	_	4	nmod	_	_	*
+14	ou	ou	CCONJ	_	_	16	cc	_	_	*
+15	vingt-mille	vingt-miller	NUM	_	_	16	nummod	_	_	*
+16	spectateurs	spectateur	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	_	*
+17	et	et	CCONJ	_	_	20	cc	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	millions	million	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	_	*
+21	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+22	observateur	observateur	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	sur	sur	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	globe	globe	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 29
+# text = Le top du top ! ».
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	top	top	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	top	top	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	!	!	PUNCT	_	_	2	punct	_	_	*
+7	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 30
+# text = L'émotion est forte, mais aucune angoisse n'est perceptible.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	émotion	émotion	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	forte	fort	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	11	punct	_	_	*
+6	mais	mais	CCONJ	_	_	11	cc	_	_	*
+7	aucune	aucun	DET	_	Gender=Fem|Number=Sing|Polarity=Neg|PronType=Neg	8	det	_	_	*
+8	angoisse	angoisse	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+9	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	SpaceAfter=No	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+11	perceptible	perceptible	ADJ	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 31
+# text = C'est sa nature profonde, le Bisontin n'a peur de personne.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	nature	nature	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+5	profonde	profond	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	Bisontin	Bisontin	PROPN	_	_	4	appos	_	_	*
+9	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+10	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+11	peur	peur	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	1
+12	de	de	ADP	_	_	13	case	_	_	*
+13	personne	personne	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 32
+# text = Là où la plus part des boxeurs nourriraient une frayeur compréhensible, il parle de confiance et de vivre l'évenement à fond.
+1	Là	là	ADV	_	_	15	advmod	_	_	*
+2	où	où	ADV	_	PronType=Rel	9	advmod	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	plus	plus	ADV	_	_	5	advmod	_	_	*
+5	part	part	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	boxeurs	boxeur	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	nourriraient	nourrir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	frayeur	frayeur	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	compréhensible	compréhensible	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	9	punct	_	_	*
+14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+15	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	_	*
+18	et	et	CCONJ	_	_	20	cc	_	_	*
+19	de	de	ADP	_	_	20	mark	_	_	*
+20	vivre	vivre	VERB	_	VerbForm=Inf	17	conj	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	évenement	évènement	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	*
+23	à	à	ADP	_	_	24	case	_	_	*
+24	fond	fond	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 33
+# text = N'allez cependant pas imaginer que Morrade Hakkar soit un fanfaron ou tout simplement un inconscient.
+1	N'	ne	ADV	_	Polarity=Neg	2	advmod	_	SpaceAfter=No	*
+2	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	cependant	cependant	ADV	_	_	2	advmod	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*
+5	imaginer	imaginer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+6	que	que	SCONJ	_	_	11	mark	_	_	*
+7	Morrade	Morrade	PROPN	_	_	11	nsubj	_	_	*
+8	Hakkar	Hakkar	PROPN	_	_	7	flat:name	_	_	*
+9	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	fanfaron	fanfaron	NOUN	_	Gender=Masc|Number=Sing	5	ccomp	_	_	*
+12	ou	ou	CCONJ	_	_	16	cc	_	_	*
+13	tout	tout	ADV	_	_	14	advmod	_	_	*
+14	simplement	simplement	ADV	_	_	16	advmod	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	inconscient	inconscient	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 34
+# text = Il ne se leuure pas une seconde sur ce qui l'attend : « Il n'y a aucun doute.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	*
+4	leuure	leuurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	seconde	seconde	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	sur	sur	ADP	_	_	9	case	_	_	*
+9	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nmod	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+11	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	*
+12	attend	attendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+13	:	:	PUNCT	_	_	18	punct	_	_	*
+14	«	«	PUNCT	_	_	18	punct	_	_	*
+15	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	expl:subj	_	_	1:VID
+16	n'	ne	ADV	_	Polarity=Neg	18	advmod	_	SpaceAfter=No	*
+17	y	y	PRON	_	_	18	expl:comp	_	_	1
+18	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	1;2:LVC.full
+19	aucun	aucun	DET	_	Gender=Masc|Number=Sing|Polarity=Neg|PronType=Neg	20	det	_	_	*
+20	doute	doute	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No	2
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 35
+# text = Hopkins est largement plus fort que moi.
+1	Hopkins	Hopkins	PROPN	_	_	5	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	largement	largement	ADV	_	_	4	advmod	_	_	*
+4	plus	plus	ADV	_	_	5	advmod	_	_	*
+5	fort	fort	ADV	_	_	0	root	_	_	*
+6	que	que	SCONJ	_	_	7	case	_	_	*
+7	moi	soi	PRON	_	Number=Sing|Person=1	5	obl:mod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 36
+# text = Si je perds aux points, tout le monde estimera qu'il est... fini.
+1	Si	si	SCONJ	_	_	3	mark	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	perds	perd	ADJ	_	Gender=Masc|Number=Plur	11	advcl	_	_	*
+4-5	aux	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	points	point	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	tout	tout	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+11	estimera	estimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+12	qu'	que	SCONJ	_	_	16	mark	_	SpaceAfter=No	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	SpaceAfter=No	*
+15	...	...	PUNCT	_	_	16	punct	_	_	*
+16	fini	fini	ADJ	_	Gender=Masc|Number=Sing	11	ccomp	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 37
+# text = Les boxeurs voudront à nouveau le rencontrer.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	boxeurs	boxeur	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	voudront	voudr	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	à	à	ADP	_	_	3	advmod	_	_	*
+5	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	4	fixed	_	_	*
+6	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*
+7	rencontrer	rencontrer	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24718.txt 38
+# text = Depuis qu'il a mis K. O Félix Trinidad en septembre 2001 à New-York, il passe pour véritable épouvantail »
+1	Depuis	depuis	ADV	_	_	17	advmod	_	_	*
+2	qu'	que	SCONJ	_	_	5	mark	_	SpaceAfter=No	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	ccomp	_	_	*
+6	K.	K.	X	_	_	5	obj	_	_	*
+7	O	O	X	_	_	6	flat:foreign	_	_	*
+8	Félix	Félix	X	_	_	6	flat:foreign	_	_	*
+9	Trinidad	Trinidad	X	_	_	6	flat:foreign	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+12	2001	2001	NUM	_	_	11	nmod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	New-York	New-York	PROPN	_	_	5	obl:arg	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	5	punct	_	_	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*
+17	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	pour	pour	ADP	_	_	20	case	_	_	*
+19	véritable	véritable	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*
+20	épouvantail	épouvantail	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_	*
+21	»	»	PUNCT	_	_	17	punct	_	SpacesAfter=\n	*
+

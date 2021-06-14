@@ -1,0 +1,803 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-16_17221.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 1
+# text = Victoire sur tapis vert
+1	Victoire	Victoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	sur	sur	ADP	_	_	3	case	_	_	*
+3	tapis	tapis	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	vert	vert	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 2
+# text = Les joueurs ont fait preuve d'adresse et de concentation au cours des parties.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+5	preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	adresse	adresse	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	concentation	concentation	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	cours	cours	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	parties	partie	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 3
+# text = Dimanche s'est déroulée, à partir de 9 h, la finale de la ligue lorraine de billard américain au jeu de 14-1 continu, au Billard-club du Val dunois à Doulcon.
+1	Dimanche	dimanche	PROPN	_	_	4	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:IRV
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	déroulée	dérouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	à	à	ADP	_	_	4	advmod	_	_	*
+7	partir	partir	VERB	_	VerbForm=Inf	6	fixed	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	9	9	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	10	punct	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	finale	finale	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	ligue	ligue	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	lorraine	lorrain	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	billard	billard	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	américain	américain	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+21-22	au	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	14-1	14-1	NUM	_	_	13	nmod	_	_	*
+26	continu	continu	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	30	punct	_	_	*
+28-29	au	_	_	_	_	_	_	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	Billard-club	Billard-club	PROPN	_	_	13	nmod	_	_	*
+31-32	du	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	Val	Val	PROPN	_	_	30	nmod	_	_	*
+34	dunois	dunois	ADJ	_	Gender=Masc|Number=Plur	33	amod	_	_	*
+35	à	à	ADP	_	_	36	case	_	_	*
+36	Doulcon	Doulcon	PROPN	_	_	30	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 4
+# text = Huit joueurs se sont rencontrés en double KO, cinq meusiens, Fabrice Jampierre et Janny Kroner de Bar-le-Duc, Christophe Linder de Commercy, Thierry Martin de Dun, Erick Delamarche de Ligny-en-Barrois et trois Mosellans, Gino Vadal, Yannick Testolin et François Ravagli de Knutange.
+1	Huit	huit	NUM	_	_	2	nummod	_	_	*
+2	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	5	obj	_	_	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	rencontrés	rencontrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	double	double	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+8	KO	KO	PROPN	_	_	7	appos	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	cinq	cinq	NUM	_	_	11	nummod	_	_	*
+11	meusiens	meusien	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Fabrice	Fabrice	PROPN	_	_	11	conj	_	_	*
+14	Jampierre	Jampierre	PROPN	_	_	13	flat:name	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	Janny	Janny	PROPN	_	_	11	conj	_	_	*
+17	Kroner	Kroner	PROPN	_	_	16	flat:name	_	_	*
+18	de	de	ADP	_	_	16	flat:name	_	_	*
+19	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Christophe	Christophe	PROPN	_	_	11	conj	_	_	*
+22	Linder	Linder	PROPN	_	_	21	flat:name	_	_	*
+23	de	de	ADP	_	_	21	flat:name	_	_	*
+24	Commercy	Commercy	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	Thierry	Thierry	PROPN	_	_	11	conj	_	_	*
+27	Martin	Martin	PROPN	_	_	26	flat:name	_	_	*
+28	de	de	ADP	_	_	26	flat:name	_	_	*
+29	Dun	Dun	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Erick	Erick	PROPN	_	_	11	conj	_	_	*
+32	Delamarche	Delamarche	PROPN	_	_	31	flat:name	_	_	*
+33	de	de	ADP	_	_	31	flat:name	_	_	*
+34	Ligny-en-Barrois	Ligny-en-Barrois	PROPN	_	_	31	flat:name	_	_	*
+35	et	et	CCONJ	_	_	37	cc	_	_	*
+36	trois	trois	NUM	_	_	37	nummod	_	_	*
+37	Mosellans	Mosellan	PROPN	_	_	11	conj	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	39	punct	_	_	*
+39	Gino	Gino	PROPN	_	_	11	conj	_	_	*
+40	Vadal	Vadal	PROPN	_	_	39	flat:name	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	42	punct	_	_	*
+42	Yannick	Yannick	PROPN	_	_	11	conj	_	_	*
+43	Testolin	Testolin	PROPN	_	_	42	flat:name	_	_	*
+44	et	et	CCONJ	_	_	45	cc	_	_	*
+45	François	François	PROPN	_	_	11	conj	_	_	*
+46	Ravagli	Ravagli	PROPN	_	_	45	flat:name	_	_	*
+47	de	de	ADP	_	_	45	flat:name	_	_	*
+48	Knutange	Knutange	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+49	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 5
+# text = Sur les tables de billard américain, les joueurs ayant mêlé, toute la journée, adresse et concentration dans le seul but de gagner une place au classement, se qualifier et participer à la finale de secteur.
+1	Sur	sur	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	tables	table	NOUN	_	Gender=Fem|Number=Plur	11	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	billard	billard	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	américain	américain	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*
+10	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	11	aux:tense	_	_	*
+11	mêlé	mêler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	toute	tout	ADV	_	_	15	advmod	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	journée	journée	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	adresse	adresse	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	concentration	concentration	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*
+20	dans	dans	ADP	_	_	23	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+22	seul	seul	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+23	but	but	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*
+24	de	de	ADP	_	_	25	mark	_	_	*
+25	gagner	gagner	VERB	_	VerbForm=Inf	23	acl	_	_	*
+26	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	place	place	NOUN	_	Gender=Fem|Number=Sing	25	obj	_	_	*
+28-29	au	_	_	_	_	_	_	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	classement	classement	NOUN	_	Gender=Masc|Number=Sing	25	obl:mod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	33	punct	_	_	*
+32	se	se	PRON	_	Person=3|PronType=Prs	33	expl:comp	_	_	*
+33	qualifier	qualifier	VERB	_	VerbForm=Inf	11	conj	_	_	*
+34	et	et	CCONJ	_	_	35	cc	_	_	*
+35	participer	participer	VERB	_	VerbForm=Inf	33	conj	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	finale	finale	NOUN	_	Gender=Fem|Number=Sing	35	obl:arg	_	_	*
+39	de	de	ADP	_	_	40	case	_	_	*
+40	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 6
+# text = A la salle des fêtes de Belleville, les passionnés ont évoqué leurs projets.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	salle	salle	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Belleville	Belleville	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	passionnés	passionné	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	évoqué	évoquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	projets	projet	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 7
+# text = Jean-Pierre Clinquart (à gauche), un président motivé.
+1	Jean-Pierre	Jean-Pierre	PROPN	_	_	0	root	_	_	*
+2	Clinquart	Clinquart	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	président	président	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+10	motivé	motivé	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 8
+# text = Une association à l'effectif modeste, mais efficace et talentueux.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	modeste	modeste	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	mais	mais	CCONJ	_	_	9	cc	_	_	*
+9	efficace	efficace	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	talentueux	talentueux	ADJ	_	Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 9
+# text = Chaque vendredi soir, pendant plusieurs heures, les membres de l'Association ferroviphile Belleville 55 s'adonnent à leur passion : faire vivre tout un monde en miniatures, autour de superbes réseaux ferroviaires qui traversent villages, prairies et collines.
+1	Chaque	chaque	DET	_	Gender=Masc|Number=Sing	2	det	_	_	*
+2	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	18	obl:mod	_	_	*
+3	soir	soir	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	pendant	pendant	ADP	_	_	7	case	_	_	*
+6	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	7	det	_	_	*
+7	heures	heure	NOUN	_	Gender=Fem|Number=Plur	18	obl:mod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	7	punct	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	membres	membre	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	Association	association	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	ferroviphile	ferroviphile	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	Belleville	Belleville	PROPN	_	_	13	appos	_	_	*
+16	55	55	NUM	_	_	15	nmod	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	18	expl:comp	_	SpaceAfter=No	1:IRV
+18	adonnent	adonner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+19	à	à	ADP	_	_	21	case	_	_	*
+20	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	passion	passion	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	_	*
+22	:	:	PUNCT	_	_	24	punct	_	_	*
+23	faire	faire	AUX	_	VerbForm=Inf	24	aux:caus	_	_	*
+24	vivre	vivre	VERB	_	VerbForm=Inf	18	parataxis	_	_	*
+25	tout	tout	ADV	_	_	27	advmod	_	_	*
+26	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	monde	monde	NOUN	_	Gender=Masc|Number=Sing	24	obj:agent	_	_	*
+28	en	en	ADP	_	_	29	case	_	_	*
+29	miniatures	miniature	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	autour	autour	ADV	_	_	24	advmod	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	superbes	superbe	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	_	*
+34	réseaux	réseau	NOUN	_	Gender=Masc|Number=Plur	31	obl:arg	_	_	*
+35	ferroviaires	ferroviaire	ADJ	_	Gender=Masc|Number=Plur	34	amod	_	_	*
+36	qui	qui	PRON	_	PronType=Rel	37	nsubj	_	_	*
+37	traversent	traverser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	acl:relcl	_	_	*
+38	villages	village	NOUN	_	Gender=Masc|Number=Plur	37	obj	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	40	punct	_	_	*
+40	prairies	prairie	NOUN	_	Gender=Fem|Number=Plur	38	conj	_	_	*
+41	et	et	CCONJ	_	_	42	cc	_	_	*
+42	collines	colline	NOUN	_	Gender=Fem|Number=Plur	38	conj	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 10
+# text = Ce décor, patiemment fabriqué le plus souvent avec des matériaux de récupération et beaucoup d'ingéniosité, est une œuvre collective dans laquelle chacun apporte son expérience, son talent et ses idées.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	décor	décor	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	patiemment	patiemment	ADV	_	_	5	advmod	_	_	*
+5	fabriqué	fabriquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	advmod	_	_	*
+7	plus	plus	ADV	_	_	6	fixed	_	_	*
+8	souvent	souvent	ADV	_	_	5	advmod	_	_	*
+9	avec	avec	ADP	_	_	12	case	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	matériaux	matériau	NOUN	_	Gender=Masc|Number=Plur	5	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	récupération	récupération	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	beaucoup	beaucoup	ADV	_	_	12	conj	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	ingéniosité	ingéniosité	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	16	punct	_	_	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+23	collective	collectif	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+24	dans	dans	ADP	_	_	25	case	_	_	*
+25	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	27	obl:mod	_	_	*
+26	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	27	nsubj	_	_	*
+27	apporte	apporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*
+28	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	29	det	_	_	*
+29	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	27	obj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	32	det	_	_	*
+32	talent	talent	NOUN	_	Gender=Masc|Number=Sing	29	conj	_	_	*
+33	et	et	CCONJ	_	_	35	cc	_	_	*
+34	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	35	det	_	_	*
+35	idées	idée	NOUN	_	Gender=Fem|Number=Plur	29	conj	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 11
+# text = « Certes, notre effectif est assez confidentiel, une vingtaine de membres dont huit adolescents et trois pré-ado », souligne le président, Jean-Pierre Clinquart, « mais cela permet de travailler calmement, méthodiquement, avec l'esprit et la méticulosité de collectionneurs ».
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	Certes	certes	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	assez	assez	ADV	_	_	8	advmod	_	_	*
+8	confidentiel	confidentiel	ADJ	_	Gender=Masc|Number=Sing	22	ccomp	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	vingtaine	vingtaine	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	membres	membre	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+14	dont	dont	PRON	_	PronType=Rel	16	nmod	_	_	*
+15	huit	huit	NUM	_	_	16	nummod	_	_	*
+16	adolescents	adolescent	NOUN	_	Gender=Masc|Number=Plur	13	acl:relcl	_	_	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*
+18	trois	trois	NUM	_	_	19	nummod	_	_	*
+19	pré-ado	pré-ado	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*
+20	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	8	punct	_	_	*
+22	souligne	souligner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	président	président	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	Jean-Pierre	Jean-Pierre	PROPN	_	_	24	appos	_	_	*
+27	Clinquart	Clinquart	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	26	punct	_	_	*
+29	«	«	PUNCT	_	_	32	punct	_	_	*
+30	mais	mais	CCONJ	_	_	32	cc	_	_	*
+31	cela	cela	PRON	_	Number=Sing|PronType=Dem	32	nsubj	_	_	*
+32	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_	*
+33	de	de	ADP	_	_	34	mark	_	_	*
+34	travailler	travailler	VERB	_	VerbForm=Inf	32	xcomp	_	_	*
+35	calmement	calmement	ADV	_	_	34	advmod	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	37	punct	_	_	*
+37	méthodiquement	méthodiquement	ADV	_	_	34	advmod	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	41	punct	_	_	*
+39	avec	avec	ADP	_	_	41	case	_	_	*
+40	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	SpaceAfter=No	*
+41	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	34	obl:mod	_	_	*
+42	et	et	CCONJ	_	_	44	cc	_	_	*
+43	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_	*
+44	méticulosité	méticulosité	NOUN	_	Gender=Fem|Number=Sing	41	conj	_	_	*
+45	de	de	ADP	_	_	46	case	_	_	*
+46	collectionneurs	collectionneur	NOUN	_	Gender=Masc|Number=Plur	44	nmod	_	_	*
+47	»	»	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+48	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 12
+# text = Leurs locaux sont situés en plein cœur de Belleville, sous les combles de l'école Maginot.
+1	Leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	locaux	local	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	situés	situer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	en	en	ADP	_	_	7	case	_	_	*
+6	plein	plein	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Belleville	Belleville	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	sous	sous	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	combles	comble	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	école	école	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	Maginot	Maginot	PROPN	_	_	16	appos	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 13
+# text = C'est logiquepuisque la commune a abrité pendant des décennies plusieurs centaines de cheminots.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+3	logiquepuisque	logiquepuisque	ADV	_	_	7	advmod	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	commune	commune	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	abrité	abriter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	pendant	pendant	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	décennies	décennie	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+12	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	13	det	_	_	*
+13	centaines	centaine	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	cheminots	cheminot	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 14
+# text = Mais les membres de l'association, avec beaucoup d'huile de coude, font face à de nombreuses activités.
+1	Mais	mais	CCONJ	_	_	15	cc	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	membres	membre	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	association	association	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	avec	avec	ADP	_	_	9	case	_	_	*
+9	beaucoup	beaucoup	ADV	_	_	3	obl:mod	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	huile	huile	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	coude	coude	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	3	punct	_	_	*
+15	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID
+16	face	face	NOUN	_	Gender=Fem|Number=Sing	15	obj:lvc	_	_	1
+17	à	à	ADP	_	_	20	case	_	_	*
+18	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+19	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_	*
+20	activités	activité	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 15
+# text = « En 2002, nous avons participé à plusieurs expositions, à Revin, Metz Magny, Hayange et aux portes ouvertes des 1er-2e régiment de chasseurs et nous avons organisé en novembre des portes ouvertes à Belleville, qui ont connu un grand succès.
+1	«	«	PUNCT	_	_	7	punct	_	_	*
+2	En	en	ADP	_	_	3	case	_	_	*
+3	2002	2002	NUM	_	_	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+6	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	participé	participer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	10	det	_	_	*
+10	expositions	exposition	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	Revin	Revin	PROPN	_	_	7	obl:mod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	Metz	Metz	PROPN	_	_	13	conj	_	_	*
+16	Magny	Magny	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	Hayange	Hayange	PROPN	_	_	13	conj	_	_	*
+19	et	et	CCONJ	_	_	22	cc	_	_	*
+20-21	aux	_	_	_	_	_	_	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	portes	porte	NOUN	_	Gender=Fem|Number=Plur	13	conj	_	_	*
+23	ouvertes	ouvrir	ADJ	_	Gender=Fem|Number=Plur	22	amod	_	_	*
+24-25	des	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	28	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+26	1er	1er	NUM	_	_	28	nummod	_	SpaceAfter=No	*
+27	-2e	2e	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	_	*
+28	régiment	régiment	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	chasseurs	chasseur	NOUN	_	Gender=Masc|Number=Plur	28	nmod	_	_	*
+31	et	et	CCONJ	_	_	34	cc	_	_	*
+32	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	34	nsubj	_	_	*
+33	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	34	aux:tense	_	_	*
+34	organisé	organiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	conj	_	_	*
+35	en	en	ADP	_	_	36	case	_	_	*
+36	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	34	obl	_	_	*
+37-38	des	_	_	_	_	_	_	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	_	*
+39	portes	porte	NOUN	_	Gender=Fem|Number=Plur	34	obl:arg	_	_	*
+40	ouvertes	ouvrir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	39	acl	_	_	*
+41	à	à	ADP	_	_	42	case	_	_	*
+42	Belleville	Belleville	PROPN	_	_	40	obl:arg	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	46	punct	_	_	*
+44	qui	qui	PRON	_	PronType=Rel	46	nsubj	_	_	*
+45	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	46	aux:tense	_	_	*
+46	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	39	acl:relcl	_	_	1:LVC.full
+47	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_	*
+48	grand	grand	ADJ	_	Gender=Masc|Number=Sing	49	amod	_	_	*
+49	succès	succès	NOUN	_	Gender=Masc|Number=Sing	46	obj	_	SpaceAfter=No	1
+50	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 16
+# text = Un réseau européen
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	européen	européen	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 17
+# text = Le remodelage du grand réseau de train miniature installé au local, comme l'amélioration du réseau modulaire d'exposition nécessite beaucoup de temps, mais le club a aussi participé aux contrats éducatifs locaux, et pris part aux réunions de l'ECTM, un groupement des clubs du Grand Est.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	remodelage	remodelage	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	grand	grand	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	train	train	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+9	miniature	miniature	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*
+10	installé	installer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	local	local	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	comme	comme	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	amélioration	amélioration	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	modulaire	modulaire	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+24	nécessite	nécessiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+25	beaucoup	beaucoup	ADV	_	_	24	obj	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	temps	temps	NOUN	_	Gender=Masc|Number=Sing	25	obl:arg	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	34	punct	_	_	*
+29	mais	mais	CCONJ	_	_	34	cc	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	club	club	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	_	_	*
+32	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux:tense	_	_	*
+33	aussi	aussi	ADV	_	_	34	advmod	_	_	*
+34	participé	participer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	conj	_	_	*
+35-36	aux	_	_	_	_	_	_	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	contrats	contrat	NOUN	_	Gender=Masc|Number=Plur	34	obl:arg	_	_	*
+38	éducatifs	éducatif	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	_	*
+39	locaux	local	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	42	punct	_	_	*
+41	et	et	CCONJ	_	_	42	cc	_	_	*
+42	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	34	conj	_	_	1:VID
+43	part	part	NOUN	_	Gender=Fem|Number=Sing	42	obj	_	_	1
+44-45	aux	_	_	_	_	_	_	_	_	*
+44	à	à	ADP	_	_	46	case	_	_	*
+45	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	46	det	_	_	*
+46	réunions	réunion	NOUN	_	Gender=Fem|Number=Plur	42	obl:arg	_	_	*
+47	de	de	ADP	_	_	49	case	_	_	*
+48	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	49	det	_	SpaceAfter=No	*
+49	ECTM	ECTM	PROPN	_	_	46	nmod	_	SpaceAfter=No	*
+50	,	,	PUNCT	_	_	52	punct	_	_	*
+51	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_	*
+52	groupement	groupement	NOUN	_	Gender=Masc|Number=Sing	46	appos	_	_	*
+53-54	des	_	_	_	_	_	_	_	_	*
+53	de	de	ADP	_	_	55	case	_	_	*
+54	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_	*
+55	clubs	club	NOUN	_	Gender=Masc|Number=Plur	52	nmod	_	_	*
+56-57	du	_	_	_	_	_	_	_	_	*
+56	de	de	ADP	_	_	59	case	_	_	*
+57	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_	*
+58	Grand	Grand	ADJ	_	Gender=Masc|Number=Sing	59	amod	_	_	*
+59	Est	Est	PROPN	_	_	55	nmod	_	SpaceAfter=No	*
+60	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 18
+# text = « Pour 2003, toutes ces activités seront reprises et développées, confie le président, mais dès le 23 février à Belleville, nous mettrons sur pied notre troisième bourse multi-collections ».
+1	«	«	PUNCT	_	_	9	punct	_	_	*
+2	Pour	pour	ADP	_	_	3	case	_	_	*
+3	2003	2003	NUM	_	_	9	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+6	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	7	det	_	_	*
+7	activités	activité	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	_	_	*
+8	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	_	_	*
+9	reprises	reprendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	développées	développer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	9	conj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	9	punct	_	_	*
+13	confie	confier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	président	président	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	26	punct	_	_	*
+17	mais	mais	CCONJ	_	_	26	cc	_	_	*
+18	dès	dès	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	23	23	NUM	_	_	26	obl:mod	_	_	*
+21	février	février	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	Belleville	Belleville	PROPN	_	_	26	obl:mod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	23	punct	_	_	*
+25	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	26	nsubj	_	_	*
+26	mettrons	mettre	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	13	conj	_	_	1:VID
+27	sur	sur	ADP	_	_	28	case	_	_	1
+28	pied	pied	NOUN	_	Gender=Masc|Number=Sing	26	obl	_	_	1
+29	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	31	det	_	_	*
+30	troisième	troisième	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+31	bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	_	*
+32	multi-collections	multi-collection	NOUN	_	Gender=Fem|Number=Plur	31	appos	_	_	*
+33	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 19
+# text = Dans le même temps, avec l'ECTM, l'AFB 55 travaillera à la mise en place d'une charte inter-clubs et à l'élaboration d'un réseau commun européen.
+1	Dans	dans	ADP	_	_	4	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	même	même	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	avec	avec	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	ECTM	ECTM	PROPN	_	_	13	obl:mod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	AFB	AFB	PROPN	_	_	8	conj	_	_	*
+12	55	55	NUM	_	_	11	nmod	_	_	*
+13	travaillera	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	mise	mise	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	en	en	ADP	_	_	18	case	_	_	*
+18	place	place	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	d'	de	ADP	_	_	21	case	_	SpaceAfter=No	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	charte	charte	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+22	inter-clubs	inter-club	ADJ	_	Gender=Fem|Number=Plur	21	amod	_	_	*
+23	et	et	CCONJ	_	_	26	cc	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	élaboration	élaboration	NOUN	_	Gender=Fem|Number=Sing	21	conj	_	_	*
+27	d'	de	ADP	_	_	29	case	_	SpaceAfter=No	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+30	commun	commun	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+31	européen	européen	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 20
+# text = En fin de réunion, Yves Peltier, accompagné de sa première adjointe Marie-Paule Soubrier « a félicité une association qui exporte très loin le nom de la commune ».
+1	En	en	ADP	_	_	2	case	_	_	*
+2	fin	fin	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	Yves	Yves	PROPN	_	_	18	nsubj	_	_	*
+7	Peltier	Peltier	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	accompagné	accompagner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+10	de	de	ADP	_	_	13	case	_	_	*
+11	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+12	première	premier	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+13	adjointe	adjoint	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+14	Marie-Paule	Marie-Paule	PROPN	_	_	13	appos	_	_	*
+15	Soubrier	Soubrier	PROPN	_	_	14	flat:name	_	_	*
+16	«	«	PUNCT	_	_	9	punct	_	_	*
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*
+18	félicité	féliciter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	association	association	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+22	exporte	exporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_	*
+23	très	très	ADV	_	_	24	advmod	_	_	*
+24	loin	loin	ADV	_	_	22	advmod	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	nom	nom	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	commune	commune	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+30	»	»	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 21
+# text = Il s'est engagé à compléter les installations électriques du local et à assurer son isolation.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:IRV
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	engagé	engager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	compléter	compléter	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	installations	installation	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*
+9	électriques	électrique	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	local	local	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	à	à	ADP	_	_	15	mark	_	_	*
+15	assurer	assurer	VERB	_	VerbForm=Inf	8	conj	_	_	*
+16	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	isolation	isolation	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 22
+# text = Le nouveau bureau : président, Jean-Pierre Clinquart ; vice-président, Jef Titeux ; secrétaire, André Warin ; trésorier, Francis Chapelle.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	président	président	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Jean-Pierre	Jean-Pierre	PROPN	_	_	3	appos	_	_	*
+8	Clinquart	Clinquart	PROPN	_	_	7	flat:name	_	_	*
+9	;	;	PUNCT	_	_	10	punct	_	_	*
+10	vice-président	vice-président	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Jef	Jef	PROPN	_	_	10	appos	_	_	*
+13	Titeux	Titeux	PROPN	_	_	12	flat:name	_	_	*
+14	;	;	PUNCT	_	_	15	punct	_	_	*
+15	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	André	André	PROPN	_	_	15	appos	_	_	*
+18	Warin	Warin	PROPN	_	_	17	flat:name	_	_	*
+19	;	;	PUNCT	_	_	17	punct	_	_	*
+20	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	17	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	Francis	Francis	PROPN	_	_	17	appos	_	_	*
+23	Chapelle	chapelle	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 23
+# text = Contact : tél.
+1	Contact	contact	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*
+3	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 24
+# text = 03.29.86.05.44.
+1	03.29.86.05.44	03.29.86.05.44	X	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 25
+# text = L'Est Républicain : Guy Henrion, 6, rue de Chiny, tél. et Fax 03.29.80.03.30.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Est	Est	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Guy	Guy	PROPN	_	_	2	appos	_	_	*
+6	Henrion	Henrion	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	6	6	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	rue	rue	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Chiny	Chiny	PROPN	_	_	10	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	Fax	Fax	PROPN	_	_	5	conj	_	_	*
+17	03.29.80.03.30	03.29.80.03.30	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 26
+# text = Pharmacie de nuit : Mme Debreux, Stenay, tél.
+1	Pharmacie	pharmacie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+6	Debreux	Debreux	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Stenay	Stenay	PROPN	_	_	5	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 27
+# text = 03.29.80.30.28.
+1	03.29.80.30.28	03.29.80.30.28	PRON	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 28
+# text = Club Bel Automne : à 14 h, rue Fernand-Antoine.
+1	Club	Club	PROPN	_	_	0	root	_	_	*
+2	Bel	bel	PROPN	_	_	1	flat:name	_	_	*
+3	Automne	automne	PROPN	_	_	1	flat:name	_	_	*
+4	:	:	PUNCT	_	_	1	punct	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	rue	rue	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+10	Fernand-Antoine	Fernand-Antoine	PROPN	_	_	9	appos	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 29
+# text = Jujitsu : à 19 h.
+1	Jujitsu	Jujitsu	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	19	19	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17221.txt 30
+# text = Cinéma : à 21 h, « Harry Potter et la chambre des secrets ».
+1	Cinéma	cinéma	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	21	21	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*
+7	«	«	PUNCT	_	_	8	punct	_	_	*
+8	Harry	Harry	PROPN	_	_	1	appos	_	_	*
+9	Potter	Potter	PROPN	_	_	8	flat:name	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	chambre	chambre	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	secrets	secret	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

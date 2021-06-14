@@ -1,0 +1,599 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-18_20015.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 1
+# text = Le créneau existe
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	créneau	créneau	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 2
+# text = Ce montage financier a permis justement de faire la décision.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	montage	montage	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	financier	financier	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	permis	permettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	justement	justement	ADV	_	_	5	advmod	_	_	*
+7	de	de	ADP	_	_	8	mark	_	_	*
+8	faire	faire	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	décision	décision	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 3
+# text = « Sinon, M. Martigny serait allé dans le Périgord, où on lui proposait des terrains à 5 F... » Pour Remiremont, l'opération est blanche, et il y a une dizaine d'emplois à la clé.
+1	«	«	PUNCT	_	_	7	punct	_	_	*
+2	Sinon	sinon	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	M.	monsieur	PROPN	_	_	7	nsubj	_	_	*
+5	Martigny	Martigny	PROPN	_	_	4	flat:name	_	_	*
+6	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	allé	aller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	parataxis	_	_	*
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Périgord	Périgord	PROPN	_	_	7	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	15	punct	_	_	*
+12	où	où	ADV	_	PronType=Rel	15	advmod	_	_	*
+13	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	15	nsubj	_	_	*
+14	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	15	iobj	_	_	*
+15	proposait	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	conj	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	15	obl:arg	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	5	5	NUM	_	_	21	nummod	_	_	*
+21	F	F	X	_	_	18	nmod	_	SpaceAfter=No	*
+22	...	...	PUNCT	_	_	7	punct	_	_	*
+23	»	»	PUNCT	_	_	7	punct	_	_	*
+24	Pour	pour	ADP	_	_	25	case	_	_	*
+25	Remiremont	Remiremont	PROPN	_	_	30	obl:mod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	25	punct	_	_	*
+27	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	opération	opération	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	_	_	*
+29	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	_	_	*
+30	blanche	blanc	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	35	punct	_	_	*
+32	et	et	CCONJ	_	_	35	cc	_	_	*
+33	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	expl:subj	_	_	1:VID
+34	y	y	PRON	_	_	35	expl:comp	_	_	1
+35	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	_	1
+36	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	35	obj	_	_	*
+38	d'	de	ADP	_	_	39	case	_	SpaceAfter=No	*
+39	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	37	nmod	_	_	*
+40	à	à	ADP	_	_	42	case	_	_	*
+41	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_	*
+42	clé	clé	NOUN	_	Gender=Fem|Number=Sing	35	obl:arg	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	30	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 4
+# text = Hubert Martigny est pressé, car sans ce montage avec de l'argent public, tout irait beaucoup plus vite.
+1	Hubert	Hubert	PROPN	_	_	4	nsubj	_	_	*
+2	Martigny	Martigny	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	pressé	presser	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	17	punct	_	_	*
+6	car	car	CCONJ	_	_	17	cc	_	_	*
+7	sans	sans	ADP	_	_	9	case	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	montage	montage	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+10	avec	avec	ADP	_	_	13	case	_	_	*
+11	de	de	ADP	_	_	13	det	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	_	SpaceAfter=No	*
+13	argent	argent	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+14	public	public	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	9	punct	_	_	*
+16	tout	tout	PRON	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+17	irait	aller	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+18	beaucoup	beaucoup	ADV	_	_	19	advmod	_	_	*
+19	plus	plus	ADV	_	_	20	advmod	_	_	*
+20	vite	vite	ADV	_	_	17	advmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 5
+# text = Mais il reste philosophe.
+1	Mais	mais	CCONJ	_	_	3	cc	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	1:VID
+3	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	philosophe	philosophe	NOUN	_	Gender=Masc|Number=Sing	3	xcomp	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 6
+# text = « Tous les papiers ont été signés à la fin de l'année dernière.
+1	«	«	PUNCT	_	_	7	punct	_	_	*
+2	Tous	tout	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	papiers	papier	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+6	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	aux:pass	_	_	*
+7	signés	signer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	fin	fin	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	année	année	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 7
+# text = Je sais que le créneau existe.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	que	que	SCONJ	_	_	6	mark	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	créneau	créneau	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 8
+# text = L'an dernier, le marché des pianos acoustiques a chuté de 40 %, et nous seuls, les pianos Pleyel avons progressé.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	an	an	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*
+3	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	marché	marché	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	acoustiques	acoustique	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	chuté	chuter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	40	40	NUM	_	_	15	nummod	_	_	*
+15	%	%	SYM	_	_	12	obl:mod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*
+18	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	19	iobj	_	_	*
+19	seuls	seul	ADJ	_	Gender=Masc|Number=Plur	12	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	25	punct	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	25	nsubj	_	_	*
+23	Pleyel	Pleyel	PROPN	_	_	22	appos	_	_	*
+24	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	progressé	progresser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	conj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 9
+# text = Nous faisons désormais 50 % à l'export » nous déclarait l'homme d'affaires, coprésident d'Altran Technologies, fleuron de la Bourse française, qui emploie 16.000 ingénieurs dans le monde.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	faisons	faiser	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	désormais	désormais	ADV	_	_	2	advmod	_	_	*
+4	50	50	NUM	_	_	5	nummod	_	_	*
+5	%	%	SYM	_	_	2	obj	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	export	export	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*
+9	»	»	PUNCT	_	_	11	punct	_	_	*
+10	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	_	*
+11	déclarait	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	parataxis	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	homme	homme	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	coprésident	coprésident	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	_	*
+18	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*
+19	Altran	Altran	PROPN	_	_	17	nmod	_	_	*
+20	Technologies	Technologies	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	fleuron	fleuron	NOUN	_	Gender=Masc|Number=Sing	17	appos	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	Bourse	Bourse	PROPN	_	_	22	nmod	_	_	*
+26	française	français	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	29	punct	_	_	*
+28	qui	qui	PRON	_	PronType=Rel	29	nsubj	_	_	*
+29	emploie	employer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_	*
+30	16.000	16.000	NUM	_	_	31	nummod	_	_	*
+31	ingénieurs	ingénieur	NOUN	_	Gender=Masc|Number=Plur	29	obj	_	_	*
+32	dans	dans	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	monde	monde	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 10
+# text = « Le plan social à Alès est terminé.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	plan	plan	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	_	_	*
+4	social	social	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	à	à	ADP	_	_	6	case	_	_	*
+6	Alès	Alès	PROPN	_	_	3	nmod	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*
+8	terminé	terminer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 11
+# text = J'ai pu injecter des capitaux.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	injecter	injecter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	capitaux	capital	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 12
+# text = J'y ai toujours cru, car le savoir-faire ne s'est jamais perdu, la qualité ne s'est jamais démentie.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	SpaceAfter=No	*
+2	y	y	PRON	_	_	5	iobj	_	_	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	toujours	toujours	ADV	_	_	5	advmod	_	_	*
+5	cru	craître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	14	punct	_	_	*
+7	car	car	CCONJ	_	_	14	cc	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	savoir-faire	savoir-faire	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+10	ne	ne	ADV	_	Polarity=Neg	14	advmod	_	_	*
+11	s'	se	PRON	_	Person=3|PronType=Prs	14	obj	_	SpaceAfter=No	1:IRV
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	jamais	jamais	ADV	_	_	14	advmod	_	_	*
+14	perdu	perdre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	SpaceAfter=No	1
+15	,	,	PUNCT	_	_	22	punct	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+18	ne	ne	ADV	_	Polarity=Neg	22	advmod	_	_	*
+19	s'	se	PRON	_	Person=3|PronType=Prs	22	expl:comp	_	SpaceAfter=No	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+21	jamais	jamais	ADV	_	_	22	advmod	_	_	*
+22	démentie	démentir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	conj	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 13
+# text = Aujourd'hui, avec la réouverture de la salle Pleyel dans laquelle nous faisons d'énormes travaux, qui sera dotée enfin d'une direction artistique, et le troisième pilier de notre développement que sera la société de Remiremont, le renom des pianos français, ce patrimoine moribond il y a trois ans pourra revivre.
+1	Aujourd'hui	aujourd'hui	ADV	_	_	50	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	avec	avec	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	réouverture	réouverture	NOUN	_	Gender=Fem|Number=Sing	50	obl:mod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	salle	salle	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	Pleyel	Pleyel	PROPN	_	_	8	appos	_	_	*
+10	dans	dans	ADP	_	_	11	case	_	_	*
+11	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	13	obl:mod	_	_	*
+12	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	13	nsubj	_	_	*
+13	faisons	faiser	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+15	énormes	énorme	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_	*
+16	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	20	nsubj:pass	_	_	*
+19	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	aux:pass	_	_	*
+20	dotée	doter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*
+21	enfin	enfin	ADV	_	_	20	advmod	_	_	*
+22	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	direction	direction	NOUN	_	Gender=Fem|Number=Sing	21	obl:arg	_	_	*
+25	artistique	artistique	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	30	punct	_	_	*
+27	et	et	CCONJ	_	_	30	cc	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+29	troisième	troisième	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+30	pilier	pilier	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	33	det	_	_	*
+33	développement	développement	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34	que	que	PRON	_	PronType=Rel	37	nsubj	_	_	*
+35	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	37	cop	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	société	société	NOUN	_	Gender=Fem|Number=Sing	33	acl:relcl	_	_	*
+38	de	de	ADP	_	_	39	case	_	_	*
+39	Remiremont	Remiremont	PROPN	_	_	37	nmod	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	42	punct	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	renom	renom	NOUN	_	Gender=Masc|Number=Sing	37	conj	_	_	*
+43-44	des	_	_	_	_	_	_	_	_	*
+43	de	de	ADP	_	_	45	case	_	_	*
+44	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	_	_	*
+45	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*
+46	français	français	ADJ	_	Gender=Masc|Number=Plur	45	amod	_	SpaceAfter=No	*
+47	,	,	PUNCT	_	_	5	punct	_	_	*
+48	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	49	det	_	_	*
+49	patrimoine	patrimoine	NOUN	_	Gender=Masc|Number=Sing	50	nsubj	_	_	*
+50	moribond	moribondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	nsubj	_	_	*
+51	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	55	case	_	_	1:VID
+52	y	y	PRON	_	_	51	fixed	_	_	1
+53	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	51	fixed	_	_	1
+54	trois	trois	NUM	_	_	55	nummod	_	_	*
+55	ans	an	NOUN	_	Gender=Masc|Number=Plur	50	obl:mod	_	_	*
+56	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+57	revivre	revivre	VERB	_	VerbForm=Inf	56	xcomp	_	SpaceAfter=No	*
+58	.	.	PUNCT	_	_	56	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 14
+# text = » Il faudra juste que les professionnels français, concertistes, mais surtout les responsables de conservatoires et écoles de musique se souviennent qu'il n'y a pas que Steinway et Yamaha dans la vie.
+1	»	»	PUNCT	_	_	3	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	2:VID
+3	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	2
+4	juste	juste	ADV	_	_	3	advmod	_	_	*
+5	que	que	SCONJ	_	_	23	mark	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	professionnels	professionnel	NOUN	_	Gender=Masc|Number=Plur	23	nsubj	_	_	*
+8	français	français	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	concertistes	concertiste	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	15	punct	_	_	*
+12	mais	mais	CCONJ	_	_	15	cc	_	_	*
+13	surtout	surtout	ADV	_	_	15	advmod	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	responsables	responsable	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	conservatoires	conservatoire	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	écoles	école	NOUN	_	Gender=Fem|Number=Plur	17	conj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	musique	musique	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+22	se	se	PRON	_	Person=3|PronType=Prs	23	expl:comp	_	_	3:IRV
+23	souviennent	souvenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	3
+24	qu'	que	SCONJ	_	_	28	mark	_	SpaceAfter=No	*
+25	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	expl:subj	_	_	1:VID
+26	n'	ne	ADV	_	Polarity=Neg	28	advmod	_	SpaceAfter=No	*
+27	y	y	PRON	_	_	28	expl:comp	_	_	1
+28	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_	1
+29	pas	pas	ADV	_	Polarity=Neg	28	advmod	_	_	*
+30	que	que	SCONJ	_	_	31	case	_	_	*
+31	Steinway	Steinway	PROPN	_	_	28	obl:mod	_	_	*
+32	et	et	CCONJ	_	_	33	cc	_	_	*
+33	Yamaha	Yamaha	PROPN	_	_	31	conj	_	_	*
+34	dans	dans	ADP	_	_	36	case	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	vie	vie	NOUN	_	Gender=Fem|Number=Sing	28	obl:mod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 15
+# text = « D'ailleurs, nous allons lancer un queue de concert, qui sera le meilleur.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	D'	de	ADP	_	_	6	advmod	_	SpaceAfter=No	*
+3	ailleurs	ailleurs	ADV	_	_	2	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	allons	aller	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	lancer	lancer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	queue	queue	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	concert	concert	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	16	punct	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*
+14	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	cop	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	meilleur	meilleur	ADJ	_	Gender=Masc|Number=Sing	9	acl:relcl	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 16
+# text = J'en prends le pari ».
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	en	en	PRON	_	Person=3	5	nmod	_	_	*
+3	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	pari	pari	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 17
+# text = On en prend bonnes notes !
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	en	en	PRON	_	Person=3	5	nmod	_	_	*
+3	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	bonnes	bon	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_	*
+5	notes	note	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*
+6	!	!	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 18
+# text = Guillaume MAZEAUD
+1	Guillaume	Guillaume	PROPN	_	_	0	root	_	_	*
+2	MAZEAUD	MAZEAUD	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 19
+# text = L'annonce en avait été faite le 6 juin 2002, un bon jour pour débarquer à Remiremont avec un solide projet d'investissement, d'ailleurs bienvenu en pleine campagne électorale !
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	annonce	annonce	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	_	_	*
+3	en	en	PRON	_	Person=3	6	iobj	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	faite	faire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	6	6	NUM	_	_	6	obl	_	_	*
+9	juin	juin	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+10	2002	2002	NUM	_	_	9	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+13	bon	bon	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+14	jour	jour	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+15	pour	pour	ADP	_	_	16	mark	_	_	*
+16	débarquer	débarquer	VERB	_	VerbForm=Inf	6	advcl	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Remiremont	Remiremont	PROPN	_	_	16	obl:arg	_	_	*
+19	avec	avec	ADP	_	_	22	case	_	_	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+21	solide	solide	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+22	projet	projet	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+23	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+24	investissement	investissement	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	28	punct	_	_	*
+26	d'	de	ADP	_	_	28	advmod	_	SpaceAfter=No	*
+27	ailleurs	ailleurs	ADV	_	_	26	fixed	_	_	*
+28	bienvenu	bienvenu	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	acl	_	_	*
+29	en	en	ADP	_	_	31	case	_	_	*
+30	pleine	plein	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+31	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	28	obl	_	_	*
+32	électorale	électoral	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+33	!	!	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 20
+# text = La circonstance pouvait donc rendre méfiant sur la réalité du projet.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	circonstance	circonstance	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	pouvait	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	donc	donc	ADV	_	_	3	advmod	_	_	*
+5	rendre	rendre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	méfiant	méfier	VERB	_	Tense=Pres|VerbForm=Part	5	xcomp	_	_	*
+7	sur	sur	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	projet	projet	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 21
+# text = Pourtant, il suit son cours, même si l'an dernier a finalement été plutôt mauvais pour la vente de (vrais) pianos, à cause de la crise, qui touche le loisir en premier lieu, et à l'ascension des ventes de pianos numériques.
+1	Pourtant	pourtant	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+4	suit	suivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	cours	cours	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	1
+7	,	,	PUNCT	_	_	17	punct	_	_	*
+8	même	même	ADV	_	_	17	advmod	_	_	*
+9	si	si	SCONJ	_	_	17	mark	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	an	an	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+12	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+14	finalement	finalement	ADV	_	_	17	advmod	_	_	*
+15	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	cop	_	_	*
+16	plutôt	plutôt	ADV	_	_	17	advmod	_	_	*
+17	mauvais	mauvais	ADJ	_	Gender=Masc|Number=Plur	4	advcl	_	_	*
+18	pour	pour	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	vente	vente	NOUN	_	Gender=Fem|Number=Sing	17	obl	_	_	*
+21	de	de	ADP	_	_	25	case	_	_	*
+22	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+23	vrais	vrai	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	SpaceAfter=No	*
+24	)	)	PUNCT	_	_	23	punct	_	_	*
+25	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*
+27	à	à	ADP	_	_	28	case	_	_	*
+28	cause	cause	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	crise	crise	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	34	punct	_	_	*
+33	qui	qui	PRON	_	PronType=Rel	34	nsubj	_	_	*
+34	touche	toucher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	acl:relcl	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	loisir	loisir	NOUN	_	Gender=Masc|Number=Sing	34	obj	_	_	*
+37	en	en	ADP	_	_	39	case	_	_	*
+38	premier	premier	ADJ	_	Gender=Masc|Number=Sing	39	amod	_	_	*
+39	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	34	obl	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	44	punct	_	_	*
+41	et	et	CCONJ	_	_	44	cc	_	_	*
+42	à	à	ADP	_	_	44	case	_	_	*
+43	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	SpaceAfter=No	*
+44	ascension	ascension	NOUN	_	Gender=Fem|Number=Sing	34	conj	_	_	*
+45-46	des	_	_	_	_	_	_	_	_	*
+45	de	de	ADP	_	_	47	case	_	_	*
+46	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	47	det	_	_	*
+47	ventes	vente	NOUN	_	Gender=Fem|Number=Plur	44	nmod	_	_	*
+48	de	de	ADP	_	_	49	case	_	_	*
+49	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	47	nmod	_	_	*
+50	numériques	numérique	ADJ	_	Gender=Masc|Number=Plur	49	amod	_	SpaceAfter=No	*
+51	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 22
+# text = « En fait, Hubert Martigny est pressé », explique Jean-Paul Didier, maire de Remiremont.
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	En	en	ADP	_	_	8	advmod	_	_	*
+3	fait	fait	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	Hubert	Hubert	PROPN	_	_	8	nsubj	_	_	*
+6	Martigny	Martigny	PROPN	_	_	5	flat:name	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+8	pressé	presser	ADJ	_	Gender=Masc|Number=Sing	11	ccomp	_	_	*
+9	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	8	punct	_	_	*
+11	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	Jean-Paul	Jean-Paul	PROPN	_	_	11	nsubj	_	_	*
+13	Didier	Didier	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	maire	maire	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Remiremont	Remiremont	PROPN	_	_	15	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 23
+# text = « Son projet porte sur une « niche », la copie ou la restauration des pianos anciens et précieux et la marqueterie de pianos contemporains, des Pleyel fabriqués à Alès dans la société rachetée il y a trois ans par Hubert Martigny.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	projet	projet	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+4	porte	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	sur	sur	ADP	_	_	8	case	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	«	«	PUNCT	_	_	8	punct	_	_	*
+8	niche	niche	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+9	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	copie	copie	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+13	ou	ou	CCONJ	_	_	15	cc	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	restauration	restauration	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	pianos	piano	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	précieux	précieux	ADJ	_	Gender=Masc|Number=Plur	19	conj	_	_	*
+22	et	et	CCONJ	_	_	24	cc	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	marqueterie	marqueterie	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	pianos	sopian	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	contemporains	contemporain	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	31	punct	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*
+31	Pleyel	Pleyel	PROPN	_	_	27	nmod	_	_	*
+32	fabriqués	fabriquer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	31	acl	_	_	*
+33	à	à	ADP	_	_	34	case	_	_	*
+34	Alès	Alès	PROPN	_	_	32	obl:mod	_	_	*
+35	dans	dans	ADP	_	_	37	case	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	société	société	NOUN	_	Gender=Fem|Number=Sing	32	obl:mod	_	_	*
+38	rachetée	racheter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	37	acl	_	_	*
+39	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	case	_	_	1:VID
+40	y	y	PRON	_	_	39	fixed	_	_	1
+41	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	fixed	_	_	1
+42	trois	trois	NUM	_	_	43	nummod	_	_	*
+43	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	_	*
+44	par	par	ADP	_	_	45	case	_	_	*
+45	Hubert	Hubert	PROPN	_	_	4	obl:agent	_	_	*
+46	Martigny	Martigny	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-18_20015.txt 24
+# text = Il y a toujours de l'argent pour les objets de très grand luxe, même par temps de crise ».
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	toujours	toujours	ADV	_	_	3	advmod	_	_	*
+5	de	de	ADP	_	_	7	det	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	SpaceAfter=No	*
+7	argent	argent	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+8	pour	pour	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	objets	objet	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*
+11	de	de	ADP	_	_	14	case	_	_	*
+12	très	très	ADV	_	_	13	advmod	_	_	*
+13	grand	grand	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+14	luxe	luxe	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16	même	même	ADV	_	_	18	advmod	_	_	*
+17	par	par	ADP	_	_	18	case	_	_	*
+18	temps	temps	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	crise	crise	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

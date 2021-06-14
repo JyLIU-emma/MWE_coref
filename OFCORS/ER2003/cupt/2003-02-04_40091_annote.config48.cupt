@@ -1,0 +1,456 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-04_40091.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 1
+# text = Euro ou pas euro ?
+1	Euro	euro	PROPN	_	_	0	root	_	_	*
+2	ou	ou	CCONJ	_	_	4	cc	_	_	*
+3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	euro	euro	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+5	?	?	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 2
+# text = On devait parler également de l'entrée du Royaume Uni dans l'euro...
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	parler	parler	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Royaume	royaume	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	Uni	uni	PROPN	_	_	10	appos	_	_	*
+12	dans	dans	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	euro	euro	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+15	...	...	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 3
+# text = Tony Blair y est favorable, les Anglais moins.
+1	Tony	Tony	PROPN	_	_	5	nsubj	_	_	*
+2	Blair	Blair	PROPN	_	_	1	flat:name	_	_	*
+3	y	y	PRON	_	_	5	obl:mod	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	favorable	favorable	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Anglais	Anglais	PROPN	_	_	5	conj	_	_	*
+9	moins	moins	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 4
+# text = Et de moins en moins, semble-t-il, alors que l'économie britannique n'a jamais été aussi florissante...
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	moins	moins	ADV	_	_	7	advmod	_	_	*
+4	en	en	ADP	_	_	3	fixed	_	_	*
+5	moins	moins	ADV	_	_	3	fixed	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1:VID
+8	-t	t	PART	_	_	9	dep	_	SpaceAfter=No	1
+9	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No	1
+10	,	,	PUNCT	_	_	21	punct	_	_	*
+11	alors	alors	ADV	_	_	21	mark	_	_	*
+12	que	que	SCONJ	_	_	11	fixed	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	économie	économie	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	_	_	*
+15	britannique	britannique	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+16	n'	ne	ADV	_	Polarity=Neg	21	advmod	_	SpaceAfter=No	*
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*
+18	jamais	jamais	ADV	_	Polarity=Neg	21	advmod	_	_	*
+19	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	cop	_	_	*
+20	aussi	aussi	ADV	_	_	21	advmod	_	_	*
+21	florissante	florissant	ADJ	_	Gender=Fem|Number=Sing	7	advcl	_	SpaceAfter=No	*
+22	...	...	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 5
+# text = Il y avait des mieux aussi.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+2	y	y	PRON	_	_	3	expl:comp	_	_	1
+3	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	7	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+6	mieux	mieux	ADV	_	_	7	advmod	_	_	*
+7	aussi	aussi	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 6
+# text = Le dossier Sangatte et celui de l'embargo sur le boeuf britannique sont réglés.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	14	nsubj:pass	_	_	*
+3	Sangatte	Sangatte	PROPN	_	_	2	appos	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	conj	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	embargo	embargo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	boeuf	boeuf	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	britannique	britannique	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	_	_	*
+14	réglés	régler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 7
+# text = Mais pèsent peu après ce qui s'est passé...
+1	Mais	mais	CCONJ	_	_	2	cc	_	_	*
+2	pèsent	pèser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	peu	peu	ADV	_	_	2	advmod	_	_	*
+4	après	après	ADP	_	_	3	fixed	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	obj	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+7	s'	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	SpaceAfter=No	1:IRV
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	passé	passer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	SpaceAfter=No	1
+10	...	...	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 8
+# text = La fragile unité européenne sacrifiée sur l'autel d'une petite opération de propagande guerrière...
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	fragile	fragile	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	unité	unité	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	européenne	européen	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	sacrifiée	sacrifier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*
+6	sur	sur	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	autel	autel	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+9	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+11	petite	petit	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	opération	opération	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	propagande	propagande	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	guerrière	guerrier	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*
+16	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 9
+# text = Le 22 janvier lorsque le couple franco-allemand avait fêté ses 40 ans d'amitié, Tony Blair avait envoyé un télégramme de félicitations.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	22	22	NUM	_	_	19	obl:mod	_	_	*
+3	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	lorsque	lorsque	SCONJ	_	_	9	mark	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	couple	couple	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+7	franco-allemand	franco-allemand	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*
+9	fêté	fêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	advcl	_	_	*
+10	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+11	40	40	NUM	_	_	12	nummod	_	_	*
+12	ans	an	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	amitié	amitié	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	9	punct	_	_	*
+16	Tony	Tony	PROPN	_	_	19	nsubj	_	_	*
+17	Blair	Blair	PROPN	_	_	16	flat:name	_	_	*
+18	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux:tense	_	_	*
+19	envoyé	envoyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	télégramme	télégramme	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	félicitations	félicitation	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 10
+# text = Diplomate.
+1	Diplomate	diplomate	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 11
+# text = L'initiative de double présidence européenne avait son agrément, il était même candidat.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	initiative	initiative	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	double	double	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	européenne	européen	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	agrément	agrément	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	14	punct	_	_	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*
+12	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	_	_	*
+13	même	même	ADV	_	_	14	advmod	_	_	*
+14	candidat	candidat	ADJ	_	Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 12
+# text = Et puis voilà que les deux en profitent pour réaffirmer leur opposition à la guerre en Irak !
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	puis	puis	ADV	_	_	3	cc	_	_	*
+3	voilà	voilà	VERB	_	_	0	root	_	_	*
+4	que	que	SCONJ	_	_	8	mark	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	deux	deux	NUM	_	_	8	nsubj	_	_	*
+7	en	en	PRON	_	Person=3	8	iobj	_	_	*
+8	profitent	profiter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+9	pour	pour	ADP	_	_	10	mark	_	_	*
+10	réaffirmer	réaffirmer	VERB	_	VerbForm=Inf	8	advcl	_	_	*
+11	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	opposition	opposition	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	Irak	Irak	PROPN	_	_	10	obl	_	_	*
+18	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 13
+# text = La suite, on la connaît.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	suite	suite	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*
+5	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	obj	_	_	*
+6	connaît	connaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 14
+# text = La « réconciliation » si elle a lieu, ne peut se faire que sur l'Irak.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	réconciliation	réconciliation	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+4	»	»	PUNCT	_	_	3	punct	_	_	*
+5	si	si	SCONJ	_	_	7	mark	_	_	*
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_	*
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_	1:VID
+8	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	1
+9	,	,	PUNCT	_	_	7	punct	_	_	*
+10	ne	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*
+11	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	se	se	PRON	_	Person=3|PronType=Prs	13	expl:pass	_	_	*
+13	faire	faire	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	que	que	ADV	_	_	17	advmod	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	Irak	Irak	PROPN	_	_	13	obl	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 15
+# text = Pas sur la PAC.
+1	Pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+2	sur	sur	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	PAC	PAC	PROPN	_	_	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 16
+# text = Philippe JARRASSÉ
+1	Philippe	Philippe	PROPN	_	_	0	root	_	_	*
+2	JARRASSÉ	JARRASSÉ	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 17
+# text = Le sommet franco-anglais qui se tient aujourd'hui au Touquet, devait être celui de la « réconciliation » Le précédent rendez-vous prévu le 3 décembre dernier, avait dû être reporté sine die à la suite d'un « vigoureux échange » qui avait eu lieu lors du sommet de Bruxelles, le 24 octobre, entre Tony Blair et Jacques Chirac.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	sommet	sommet	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+3	franco-anglais	franco-anglais	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+5	se	se	PRON	_	Person=3|PronType=Prs	6	expl:pass	_	_	2:IRV
+6	tient	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	2
+7	aujourd'hui	aujourd'hui	ADV	_	_	6	advmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Touquet	Touquet	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	2	punct	_	_	*
+12	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+13	être	être	AUX	_	VerbForm=Inf	14	cop	_	_	*
+14	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	30	nsubj	_	_	*
+15	de	de	ADP	_	_	18	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+17	«	«	PUNCT	_	_	18	punct	_	_	*
+18	réconciliation	réconciliation	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+19	»	»	PUNCT	_	_	18	punct	_	_	*
+20	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+21	précédent	précédent	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+22	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	18	appos	_	_	*
+23	prévu	prévoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	3	3	NUM	_	_	23	obl	_	_	*
+26	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+27	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	14	punct	_	_	*
+29	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	aux:tense	_	_	*
+30	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	ccomp	_	_	*
+31	être	être	AUX	_	VerbForm=Inf	32	aux:pass	_	_	*
+32	reporté	reporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	xcomp	_	_	*
+33	sine	sin	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_	*
+34	die	die	NOUN	_	Gender=Fem|Number=Sing	32	obj	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	suite	suite	NOUN	_	Gender=Fem|Number=Sing	32	obl:mod	_	_	*
+38	d'	de	ADP	_	_	42	case	_	SpaceAfter=No	*
+39	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+40	«	«	PUNCT	_	_	42	punct	_	_	*
+41	vigoureux	vigoureux	ADJ	_	Gender=Masc|Number=Sing	42	amod	_	_	*
+42	échange	échange	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*
+43	»	»	PUNCT	_	_	42	punct	_	_	*
+44	qui	qui	PRON	_	PronType=Rel	46	nsubj	_	_	*
+45	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	46	aux:tense	_	_	*
+46	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	42	acl:relcl	_	_	1:VID
+47	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	46	obj	_	_	1
+48	lors	lors	ADV	_	_	46	advmod	_	_	*
+49-50	du	_	_	_	_	_	_	_	_	*
+49	de	de	ADP	_	_	51	case	_	_	*
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_	*
+51	sommet	sommet	NOUN	_	Gender=Masc|Number=Sing	48	obl:arg	_	_	*
+52	de	de	ADP	_	_	53	case	_	_	*
+53	Bruxelles	Bruxelles	PROPN	_	_	51	nmod	_	SpaceAfter=No	*
+54	,	,	PUNCT	_	_	56	punct	_	_	*
+55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_	*
+56	24	24	NUM	_	_	46	obl	_	_	*
+57	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	56	nmod	_	SpaceAfter=No	*
+58	,	,	PUNCT	_	_	60	punct	_	_	*
+59	entre	entre	ADP	_	_	60	case	_	_	*
+60	Tony	Tony	PROPN	_	_	46	obl	_	_	*
+61	Blair	Blair	PROPN	_	_	60	flat:name	_	_	*
+62	et	et	CCONJ	_	_	63	cc	_	_	*
+63	Jacques	Jacques	PROPN	_	_	60	conj	_	_	*
+64	Chirac	Chirac	PROPN	_	_	63	flat:name	_	SpaceAfter=No	*
+65	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 18
+# text = Le réveil du couple franco-allemand - concrétisé par un accord surprise sur la PAC - avait pris de court le Premier ministre anglais habitué depuis deux ans à mettre à profit la brouille issue du sommet de Nice, pour imposer ses vues.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	réveil	réveil	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	couple	couple	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	franco-allemand	franco-allemand	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	-	-	PUNCT	_	_	5	punct	_	_	*
+8	concrétisé	concrétiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	accord	accord	NOUN	_	Gender=Masc|Number=Sing	8	obl:agent	_	_	*
+12	surprise	surprise	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	sur	sur	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	PAC	PAC	PROPN	_	_	11	nmod	_	_	*
+16	-	-	PUNCT	_	_	15	punct	_	_	*
+17	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	aux:tense	_	_	*
+18	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	court	court	ADJ	_	Gender=Masc|Number=Sing	18	obl:arg	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+22	Premier	premier	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+23	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	_	*
+24	anglais	anglais	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+25	habitué	habitué	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	acl	_	_	*
+26	depuis	depuis	ADP	_	_	28	case	_	_	*
+27	deux	deux	NUM	_	_	28	nummod	_	_	*
+28	ans	an	NOUN	_	Gender=Masc|Number=Plur	25	obl	_	_	*
+29	à	à	ADP	_	_	30	mark	_	_	*
+30	mettre	mettre	VERB	_	VerbForm=Inf	25	xcomp	_	_	1:VID
+31	à	à	ADP	_	_	32	case	_	_	1
+32	profit	profit	NOUN	_	Gender=Masc|Number=Sing	30	obl:arg	_	_	1
+33	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	brouille	brouille	NOUN	_	Gender=Fem|Number=Sing	30	obj	_	_	*
+35	issue	issu	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_	*
+36-37	du	_	_	_	_	_	_	_	_	*
+36	de	de	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	sommet	sommet	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+39	de	de	ADP	_	_	40	case	_	_	*
+40	Nice	Nice	PROPN	_	_	38	nmod	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	43	punct	_	_	*
+42	pour	pour	ADP	_	_	43	mark	_	_	*
+43	imposer	imposer	VERB	_	VerbForm=Inf	18	advcl	_	_	*
+44	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	45	det	_	_	*
+45	vues	vue	NOUN	_	Gender=Fem|Number=Plur	43	obj	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 19
+# text = Notamment après de la Commission européenne.
+1	Notamment	notamment	ADV	_	_	2	advmod	_	_	*
+2	après	après	ADV	_	_	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*
+6	européenne	européen	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 20
+# text = Encouragé par ses deux hommes-liges, Aznar et Berlusconi.
+1	Encouragé	encourager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	par	par	ADP	_	_	5	case	_	_	*
+3	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	*
+4	deux	deux	NUM	_	_	5	nummod	_	_	*
+5	hommes-liges	hommes-lige	NOUN	_	Gender=Masc|Number=Plur	1	obl:agent	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Aznar	Aznar	PROPN	_	_	5	appos	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	Berlusconi	Berlusconi	PROPN	_	_	7	conj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 21
+# text = L'aimable Blair avait carrément perdu son inoxydable sourire, lorsque le président français avait suggéré que pour financer l'élargissement, des économies pouvaient être faites... sur le rabais budgétaire consenti chaque année aux Anglais.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+2	aimable	aimable	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	Blair	Blair	PROPN	_	_	6	nsubj	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	carrément	carrément	ADV	_	_	6	advmod	_	_	*
+6	perdu	perdre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+8	inoxydable	inoxydable	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	sourire	sourire	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	16	punct	_	_	*
+11	lorsque	lorsque	SCONJ	_	_	16	mark	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	président	président	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+14	français	français	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+16	suggéré	suggérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	_	*
+17	que	que	SCONJ	_	_	19	mark	_	_	*
+18	pour	pour	ADP	_	_	19	mark	_	_	*
+19	financer	financer	VERB	_	VerbForm=Inf	26	advcl	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	élargissement	élargissement	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	économies	économie	NOUN	_	Gender=Fem|Number=Plur	21	conj	_	_	*
+26	pouvaient	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	16	xcomp	_	_	*
+27	être	être	AUX	_	VerbForm=Inf	28	aux:pass	_	_	*
+28	faites	faire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	26	xcomp	_	SpaceAfter=No	*
+29	...	...	PUNCT	_	_	33	punct	_	_	*
+30	sur	sur	ADP	_	_	33	case	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+32	rabais	rabais	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	_	*
+33	budgétaire	budgétaire	NOUN	_	Gender=Masc|Number=Sing	28	obl	_	_	*
+34	consenti	consentir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	33	acl	_	_	*
+35	chaque	chaque	DET	_	Gender=Fem|Number=Sing	36	det	_	_	*
+36	année	année	NOUN	_	Gender=Fem|Number=Sing	34	obl	_	_	*
+37-38	aux	_	_	_	_	_	_	_	_	*
+37	à	à	ADP	_	_	39	case	_	_	*
+38	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	39	det	_	_	*
+39	Anglais	Anglais	PROPN	_	_	34	obl:mod	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40091.txt 22
+# text = Une « ristourne » obtenue par la non moins aimable Maggy Thatcher, et jamais remise en cause depuis.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	ristourne	ristourne	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	»	»	PUNCT	_	_	3	punct	_	_	*
+5	obtenue	obtenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*
+6	par	par	ADP	_	_	11	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+8	non	non	ADV	_	_	9	advmod	_	_	*
+9	moins	moins	ADV	_	_	10	advmod	_	_	*
+10	aimable	aimable	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	Maggy	Maggy	PROPN	_	_	5	obl:agent	_	_	*
+12	Thatcher	Thatcher	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	et	et	CCONJ	_	_	16	cc	_	_	*
+15	jamais	jamais	ADV	_	_	16	advmod	_	_	*
+16	remise	remise	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	_	*
+17	en	en	ADP	_	_	18	case	_	_	*
+18	cause	cause	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	_	*
+19	depuis	depuis	ADV	_	_	16	advmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

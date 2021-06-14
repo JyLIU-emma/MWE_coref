@@ -1,0 +1,503 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-12_11313.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 1
+# text = Plus de morts
+1	Plus	plus	ADV	_	_	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	morts	mort	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 2
+# text = L'an dernier, on avait pu se réjouir de constater que le nombre de décès était en baisse entre 2000 et 2001 (-8,8 %), une tendance qui se confirmait depuis plusieurs années, confirmant l'allongement de l'espérance de vie.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	an	an	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+3	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*
+6	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:tense	_	_	*
+7	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	_	1:IRV
+9	réjouir	réjouir	VERB	_	VerbForm=Inf	7	xcomp	_	_	1
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	constater	constater	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	que	que	SCONJ	_	_	19	mark	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	décès	décès	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*
+17	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	cop	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	baisse	baisse	NOUN	_	Gender=Fem|Number=Sing	11	ccomp	_	_	*
+20	entre	entre	ADP	_	_	21	case	_	_	*
+21	2000	2000	NUM	_	_	19	obl	_	_	*
+22	et	et	CCONJ	_	_	23	cc	_	_	*
+23	2001	2001	NUM	_	_	21	conj	_	_	*
+24	(	(	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+25	-8,8	-8,8	NUM	_	_	26	nummod	_	_	*
+26	%	%	SYM	_	_	19	parataxis	_	SpaceAfter=No	*
+27	)	)	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	tendance	tendance	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	_	*
+31	qui	qui	PRON	_	PronType=Rel	33	nsubj	_	_	*
+32	se	se	PRON	_	Person=3|PronType=Prs	33	obj	_	_	*
+33	confirmait	confirmer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	acl:relcl	_	_	*
+34	depuis	depuis	ADP	_	_	36	case	_	_	*
+35	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	36	det	_	_	*
+36	années	année	NOUN	_	Gender=Fem|Number=Plur	33	obl	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	38	punct	_	_	*
+38	confirmant	confirmer	VERB	_	Tense=Pres|VerbForm=Part	19	advcl	_	_	*
+39	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	SpaceAfter=No	*
+40	allongement	allongement	NOUN	_	Gender=Masc|Number=Sing	38	obj	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	SpaceAfter=No	*
+43	espérance	espérance	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	_	*
+44	de	de	ADP	_	_	45	case	_	_	*
+45	vie	vie	NOUN	_	Gender=Fem|Number=Sing	43	nmod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 3
+# text = Cette année, on note une hausse non négligeable des décès (+15,7 %) passant de 458 en 2001 à 530 à 2002.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	année	année	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+5	note	noter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	hausse	hausse	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+8	non	non	ADV	_	_	9	advmod	_	_	*
+9	négligeable	négligeable	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	décès	décès	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+13	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+14	+15,7	+15,7	NUM	_	_	15	nummod	_	_	*
+15	%	%	SYM	_	_	12	appos	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	15	punct	_	_	*
+17	passant	passer	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	458	458	NUM	_	_	17	obl:arg	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	2001	2001	NUM	_	_	17	obl	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	530	530	NUM	_	_	17	obl:mod	_	_	*
+24	à	à	ADP	_	_	25	case	_	_	*
+25	2002	2002	NUM	_	_	23	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 4
+# text = Bilan, les Barisiens et Barisiennes en âge de procréer sont vivement priés de se mettre à l'ouvrage, si l'an prochain on veut à nouveau franchir la barre des 1.000 naissances.
+1	Bilan	bilan	PROPN	_	_	13	nsubj:pass	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*
+4	Barisiens	Barisiens	PROPN	_	_	1	conj	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Barisiennes	Barisiennes	PROPN	_	_	1	conj	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	âge	âge	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+9	de	de	ADP	_	_	10	mark	_	_	*
+10	procréer	procréer	VERB	_	VerbForm=Inf	8	acl	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	_	_	*
+12	vivement	vivement	ADV	_	_	13	advmod	_	_	*
+13	priés	prié	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	de	de	ADP	_	_	16	mark	_	_	*
+15	se	se	PRON	_	Person=3|PronType=Prs	16	obj	_	_	1:IRV
+16	mettre	mettre	VERB	_	VerbForm=Inf	13	xcomp	_	_	1
+17	à	à	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	ouvrage	ouvrage	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	26	punct	_	_	*
+21	si	si	SCONJ	_	_	26	mark	_	_	*
+22	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+23	an	an	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
+24	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*
+25	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_	*
+26	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_	*
+27	à	à	ADP	_	_	26	advmod	_	_	*
+28	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	27	fixed	_	_	*
+29	franchir	franchir	VERB	_	VerbForm=Inf	26	xcomp	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	barre	barre	NOUN	_	Gender=Fem|Number=Sing	29	obj	_	_	*
+32-33	des	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	35	case	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*
+34	1.000	1.000	NUM	_	_	35	nummod	_	_	*
+35	naissances	naissance	NOUN	_	Gender=Fem|Number=Plur	31	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 5
+# text = Ceux-là ont jusqu'au mois de mars pour y parvenir.
+1	Ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	0	root	_	SpaceAfter=No	*
+2	-là	-là	PRON	_	_	3	nsubj	_	_	*
+3	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+4	jusqu'	jusque	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	mois	mois	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	mars	mars	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	pour	pour	ADP	_	_	12	mark	_	_	*
+11	y	y	PRON	_	_	12	iobj	_	_	*
+12	parvenir	parvenir	VERB	_	VerbForm=Inf	3	advcl	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 6
+# text = Karine DIVERSAY
+1	Karine	Karine	PROPN	_	_	0	root	_	_	*
+2	DIVERSAY	DIVERSAY	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 7
+# text = Le passage à l'euro y est-il pour quelque chose, les événements du 11 septembre 2001 ont-ils provoqué une certaine morosité dans les couples, refrénant du coup leur envie de procréer ?
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	passage	passage	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	euro	euro	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	y	y	PRON	_	_	7	expl:comp	_	_	*
+7	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	parataxis	_	SpaceAfter=No	*
+8	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obl:arg	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	quelque	quelque	DET	_	Gender=Fem|Number=Sing	11	det	_	_	*
+11	chose	chose	NOUN	_	Gender=Fem|Number=Sing	22	obl:mod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	événements	événement	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	11	11	NUM	_	_	14	nmod	_	_	*
+18	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+19	2001	2001	NUM	_	_	18	nmod	_	_	*
+20	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	SpaceAfter=No	*
+21	-ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	22	nsubj	_	_	*
+22	provoqué	provoquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+24	certaine	certain	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	morosité	morosité	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+26	dans	dans	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	couples	couple	NOUN	_	Gender=Masc|Number=Plur	22	obl:mod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	refrénant	refréner	VERB	_	Tense=Pres|VerbForm=Part	22	advcl	_	_	*
+31-32	du	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	coup	coup	NOUN	_	Gender=Masc|Number=Sing	30	obl:mod	_	_	*
+34	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	35	det	_	_	*
+35	envie	envie	NOUN	_	Gender=Fem|Number=Sing	30	obj	_	_	*
+36	de	de	ADP	_	_	37	mark	_	_	*
+37	procréer	procréer	VERB	_	VerbForm=Inf	35	acl	_	_	*
+38	?	?	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 8
+# text = Allez savoir pourquoi en 2002 on a enregistré moins de naissances (870) qu'en 2001 (974) et encore moins qu'en 2000 (1.051), contre 1.010 en 1999.
+1	Allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	savoir	savoir	VERB	_	VerbForm=Inf	1	xcomp	_	_	*
+3	pourquoi	pourquoi	ADV	_	_	8	advmod	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	2002	2002	NUM	_	_	8	obl:mod	_	_	*
+6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	enregistré	enregistrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	*
+9	moins	moins	ADV	_	_	8	obj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	naissances	naissance	NOUN	_	Gender=Fem|Number=Plur	9	obl:arg	_	_	*
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+13	870	870	NUM	_	_	8	obl	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	13	punct	_	_	*
+15	qu'	que	ADV	_	_	17	advmod	_	SpaceAfter=No	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	2001	2001	NUM	_	_	8	obl	_	_	*
+18	(	(	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+19	974	974	NUM	_	_	17	nmod	_	SpaceAfter=No	*
+20	)	)	PUNCT	_	_	19	punct	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	encore	encore	ADV	_	_	23	advmod	_	_	*
+23	moins	moins	ADV	_	_	8	conj	_	_	*
+24	qu'	que	SCONJ	_	_	26	case	_	SpaceAfter=No	*
+25	en	en	ADP	_	_	26	case	_	_	*
+26	2000	2000	NUM	_	_	23	obl:mod	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	1.051	1.051	NUM	_	_	26	nmod	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	contre	contre	ADP	_	_	32	case	_	_	*
+32	1.010	1.010	NUM	_	_	26	nmod	_	_	*
+33	en	en	ADP	_	_	34	case	_	_	*
+34	1999	1999	NUM	_	_	32	nmod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 9
+# text = Soit une baisse de 10,6 % par rapport à l'an dernier.
+1	Soit	soit	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	baisse	baisse	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	10,6	10,6	NUM	_	_	6	nummod	_	_	*
+6	%	%	SYM	_	_	3	nmod	_	_	*
+7	par	par	ADP	_	_	8	case	_	_	*
+8	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	an	an	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 10
+# text = Un grand mystère même pour le personnel du service de l'état civil de la mairie.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	grand	grand	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	mystère	mystère	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	même	même	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	service	service	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	état	état	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	civil	civil	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 11
+# text = Sur les 870 enfants nés cette année, un peu plus nombreux que les filles sont les garçons à avoir vu le jour dans la cité.
+1	Sur	sur	ADP	_	_	4	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+3	870	870	NUM	_	_	4	nummod	_	_	*
+4	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	12	obl:mod	_	_	*
+5	nés	naître	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_	*
+7	année	année	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	advmod	_	_	*
+10	peu	peu	ADV	_	_	9	fixed	_	_	*
+11	plus	plus	ADV	_	_	12	advmod	_	_	*
+12	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*
+13	que	que	SCONJ	_	_	18	mark	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	filles	fille	NOUN	_	Gender=Fem|Number=Plur	18	nsubj	_	_	*
+16	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	12	ccomp	_	_	*
+19	à	à	ADP	_	_	21	mark	_	_	*
+20	avoir	avoir	AUX	_	VerbForm=Inf	21	aux:tense	_	_	*
+21	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	_	1:VID
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	1
+23	jour	jour	NOUN	_	Gender=Masc|Number=Sing	21	obj	_	_	1
+24	dans	dans	ADP	_	_	26	case	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	cité	cité	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 12
+# text = Par ailleurs, sur ce total, pour 185 d'entre eux leurs familles résident à Bar-le-Duc, les autres (685) sont extérieurs à la ville voire au département.
+1	Par	par	ADP	_	_	15	advmod	_	_	*
+2	ailleurs	ailleurs	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_	*
+6	total	total	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	6	punct	_	_	*
+8	pour	pour	ADP	_	_	9	case	_	_	*
+9	185	185	NUM	_	_	15	obl:mod	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	entre	entre	ADP	_	_	10	fixed	_	_	*
+12	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	9	nmod	_	_	*
+13	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	familles	famille	NOUN	_	Gender=Fem|Number=Plur	15	nsubj	_	_	*
+15	résident	résider	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	15	obl:arg	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	autres	autre	PRON	_	Number=Plur	17	conj	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	685	685	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+23	)	)	PUNCT	_	_	22	punct	_	_	*
+24	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	*
+25	extérieurs	extérieur	ADJ	_	Gender=Masc|Number=Plur	15	advcl	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	ville	ville	NOUN	_	Gender=Fem|Number=Sing	25	obl:arg	_	_	*
+29	voire	voire	ADV	_	_	32	cc	_	_	*
+30-31	au	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	département	département	NOUN	_	Gender=Masc|Number=Sing	28	conj	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 13
+# text = Il n'est en effet pas rare de voir des mamans domiciliées en Marne ou Haute-Marne, venir accoucher à la maternité barisienne.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+4	en	en	ADP	_	_	7	advmod	_	_	*
+5	effet	effet	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+7	rare	rare	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	voir	voir	VERB	_	VerbForm=Inf	7	csubj	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	mamans	maman	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*
+13	domiciliées	domicilier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	Marne	Marne	PROPN	_	_	13	obl	_	_	*
+16	ou	ou	CCONJ	_	_	17	cc	_	_	*
+17	Haute-Marne	Haute-Marne	PROPN	_	_	15	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	venir	venir	VERB	_	VerbForm=Inf	9	conj	_	_	*
+20	accoucher	accoucher	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	maternité	maternité	NOUN	_	Gender=Fem|Number=Sing	20	obl:arg	_	_	*
+24	barisienne	barisien	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 14
+# text = Par ailleurs, il ressort que le mois où le plus de naissances ont été enregistrées cette année est celui de juillet (83), suivi des mois de mai et octobre à égalité (82).
+1	Par	par	ADP	_	_	5	advmod	_	_	*
+2	ailleurs	ailleurs	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+5	ressort	ressortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	que	que	SCONJ	_	_	20	mark	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	mois	mois	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+9	où	où	ADV	_	PronType=Rel	16	advmod	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	plus	plus	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	naissances	naissance	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*
+14	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+15	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	aux:pass	_	_	*
+16	enregistrées	enregistrer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+17	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	_	_	*
+18	année	année	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	_	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+20	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	ccomp	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+24	83	83	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+25	)	)	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	suivi	suivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+30	mois	mois	NOUN	_	Gender=Masc|Number=Plur	27	obl:arg	_	_	*
+31	de	de	ADP	_	_	32	case	_	_	*
+32	mai	mai	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+33	et	et	CCONJ	_	_	34	cc	_	_	*
+34	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	27	conj	_	_	*
+35	à	à	ADP	_	_	36	case	_	_	*
+36	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	34	nmod	_	_	*
+37	(	(	PUNCT	_	_	38	punct	_	SpaceAfter=No	*
+38	82	82	NUM	_	_	34	nmod	_	SpaceAfter=No	*
+39	)	)	PUNCT	_	_	38	punct	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 15
+# text = Le mois de juin arrivant en queue de peloton (63), juste derrière janvier (64) et mars (65).
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	mois	mois	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	juin	juin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	arrivant	arriver	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	queue	queue	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	peloton	peloton	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+11	63	63	NUM	_	_	5	obl	_	SpaceAfter=No	*
+12	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	juste	juste	ADV	_	_	16	advmod	_	_	*
+15	derrière	derrière	ADP	_	_	16	case	_	_	*
+16	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+17	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+18	64	64	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+19	)	)	PUNCT	_	_	18	punct	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	mars	mars	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*
+22	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+23	65	65	NUM	_	_	21	nmod	_	SpaceAfter=No	*
+24	)	)	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 16
+# text = En 2001, le mois de juillet avait lui aussi procuré plus de travail aux obstétriciens qui avaient mis au monde 96 nouveaux-nés.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	2001	2001	NUM	_	_	8	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	mois	mois	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+9	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+10	aussi	aussi	ADV	_	_	11	advmod	_	_	*
+11	procuré	procurer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+12	plus	plus	ADV	_	_	11	obj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	travail	travail	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+15-16	aux	_	_	_	_	_	_	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	obstétriciens	obstétricien	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*
+18	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+19	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	20	aux:tense	_	_	*
+20	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl:relcl	_	_	*
+21-22	au	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	monde	monde	NOUN	_	Gender=Masc|Number=Sing	20	obl:arg	_	_	*
+24	96	96	NUM	_	_	25	nummod	_	_	*
+25	nouveaux-nés	nouveaux-né	ADJ	_	Gender=Masc|Number=Plur	20	obj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 17
+# text = En 2002, 62 couples ont souhaité sceller leur amour en passant devant le maire.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	2002	2002	NUM	_	_	7	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	62	62	NUM	_	_	5	nummod	_	_	*
+5	couples	couple	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	sceller	sceller	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+9	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	amour	amour	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	en	en	ADP	_	_	12	mark	_	_	*
+12	passant	passer	VERB	_	Tense=Pres|VerbForm=Part	8	advcl	_	_	*
+13	devant	devant	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	maire	maire	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-12_11313.txt 18
+# text = Ils étaient 69 en 2001, soit 10,1 % de célébrations en moins.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_	*
+3	69	69	NUM	_	_	9	nummod	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	2001	2001	NUM	_	_	9	obl:mod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*
+7	soit	soit	ADV	_	_	9	advmod	_	_	*
+8	10,1	10,1	NUM	_	_	9	nummod	_	_	*
+9	%	%	SYM	_	_	0	root	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	célébrations	célébration	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	_	*
+12	en	en	ADP	_	_	9	advmod	_	_	*
+13	moins	moins	ADV	_	_	12	fixed	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n	*
+

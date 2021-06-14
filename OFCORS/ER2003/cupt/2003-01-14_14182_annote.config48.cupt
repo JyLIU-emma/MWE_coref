@@ -1,0 +1,667 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-14_14182.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 1
+# text = « Saddam ben Laden » En Australie, un homme de 45 ans se présentant comme « Saddam ben Laden » a menacé par téléphone de commettre des attentats contre une gare et un Boeing de la compagnie Qantas.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Saddam	Saddam	X	_	Foreign=Yes	0	root	_	_	*
+3	ben	ben	X	_	Foreign=Yes	2	flat:foreign	_	_	*
+4	Laden	Laden	X	_	Foreign=Yes	2	flat:foreign	_	_	*
+5	»	»	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+6	En	en	ADP	_	_	7	case	_	_	*
+7	Australie	Australie	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	homme	homme	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	45	45	NUM	_	_	13	nummod	_	_	*
+13	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	15	obj	_	_	1:IRV
+15	présentant	présenter	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	1
+16	comme	comme	ADP	_	_	18	case	_	_	*
+17	«	«	PUNCT	_	_	18	punct	_	_	*
+18	Saddam	Saddam	PROPN	_	_	15	obl:mod	_	_	*
+19	ben	ben	X	_	_	18	flat:name	_	_	*
+20	Laden	Laden	PROPN	_	_	18	flat:name	_	_	*
+21	»	»	PUNCT	_	_	18	punct	_	_	*
+22	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	menacé	menacer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	parataxis	_	_	*
+24	par	par	ADP	_	_	25	case	_	_	*
+25	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	23	obl:mod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	commettre	commettre	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+30	attentats	attentat	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*
+31	contre	contre	ADP	_	_	33	case	_	_	*
+32	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	gare	gare	NOUN	_	Gender=Fem|Number=Sing	23	obl	_	_	*
+34	et	et	CCONJ	_	_	36	cc	_	_	*
+35	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	Boeing	Boeing	PROPN	_	_	33	conj	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+39	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_	*
+40	Qantas	Qantas	PROPN	_	_	39	appos	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 2
+# text = Arrêté, il a été condamné à voir un psychiatre et à se présenter tous les jours à la police.
+1	Arrêté	arrêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj:pass	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	condamné	condamner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	à	à	ADP	_	_	8	mark	_	_	*
+8	voir	voir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	psychiatre	psychiatre	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	à	à	ADP	_	_	14	mark	_	_	*
+13	se	se	PRON	_	Person=3|PronType=Prs	14	obj	_	_	1:IRV
+14	présenter	présenter	VERB	_	VerbForm=Inf	6	conj	_	_	1
+15	tous	tout	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	jours	jour	NOUN	_	Gender=Masc|Number=Plur	14	obl	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	police	police	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 3
+# text = Deux Palestiniens ont été tués par l'armée israélienne alors qu'ils couraient en direction d'un autobus de colons juifs au sud de Gaza.
+1	Deux	Deux	NUM	_	_	2	nummod	_	_	*
+2	Palestiniens	palestinien	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	_	*
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+5	tués	tuer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	armée	armée	NOUN	_	Gender=Fem|Number=Sing	5	obl:agent	_	_	*
+9	israélienne	israélien	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	alors	alors	ADV	_	_	13	mark	_	_	*
+11	qu'	que	SCONJ	_	_	10	fixed	_	SpaceAfter=No	*
+12	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_	*
+13	couraient	cour	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	direction	direction	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	_	*
+16	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	autobus	autobus	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	colons	colon	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+21	juifs	juif	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	_	*
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	sud	sud	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	Gaza	Gaza	PROPN	_	_	24	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 4
+# text = Ils étaient en possession de grenades et d'une kalachnikov.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	possession	possession	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	grenades	grenade	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
+7	et	et	CCONJ	_	_	10	cc	_	_	*
+8	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	kalachnikov	kalachnikovembre	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 5
+# text = La Grande-Bretagne, qui souhaitait relancer le processus de paix au Proche-Orient grâce à une conférence internationale sur l'Autorité palestinienne organisée aujourd'hui, devra se contenter d'une réunion plus modeste après le refus israélien d'autoriser la venue des dirigeants palestiniens.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	Grande-Bretagne	Grande-Bretagne	PROPN	_	_	26	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+5	souhaitait	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	_	_	*
+6	relancer	relancer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	processus	processus	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	paix	paix	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	Proche-Orient	Proche-orient	PROPN	_	_	6	obl:mod	_	_	*
+14	grâce	grâce	ADV	_	_	6	advmod	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+18	internationale	international	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	Autorité	Autorité	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+22	palestinienne	palestinien	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	organisée	organiser	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+24	aujourd'hui	aujourd'hui	ADV	_	_	21	advmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	2	punct	_	_	*
+26	devra	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+27	se	se	PRON	_	Person=3|PronType=Prs	28	expl:comp	_	_	1:IRV
+28	contenter	contenter	VERB	_	VerbForm=Inf	26	xcomp	_	_	1
+29	d'	de	ADP	_	_	31	case	_	SpaceAfter=No	*
+30	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	28	obl:arg	_	_	*
+32	plus	plus	ADV	_	_	33	advmod	_	_	*
+33	modeste	modeste	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	_	*
+34	après	après	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	refus	refus	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+37	israélien	israélien	ADJ	_	Gender=Masc|Number=Sing	36	amod	_	_	*
+38	d'	de	ADP	_	_	39	mark	_	SpaceAfter=No	*
+39	autoriser	autoriser	VERB	_	VerbForm=Inf	36	acl	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	venue	venue	NOUN	_	Gender=Fem|Number=Sing	39	obj	_	_	*
+42-43	des	_	_	_	_	_	_	_	_	*
+42	de	de	ADP	_	_	44	case	_	_	*
+43	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_	*
+44	dirigeants	dirigeant	NOUN	_	Gender=Masc|Number=Plur	41	nmod	_	_	*
+45	palestiniens	palestinien	ADJ	_	Gender=Masc|Number=Plur	44	amod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 6
+# text = L'Iran et l'Afghanistan ont signé un mémorandum pour renforcer la coopération économique et commerciale bilatérale, à l'issue d'une visite à Téhéran du chef de la diplomatie afghane Abdullah Abdullah.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Iran	Iran	PROPN	_	_	7	nsubj	_	_	*
+3	et	et	CCONJ	_	_	5	cc	_	_	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	Afghanistan	Afghanistan	PROPN	_	_	2	conj	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	signé	signer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	mémorandum	mémorandum	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	renforcer	renforcer	VERB	_	VerbForm=Inf	9	acl	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	coopération	coopération	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	économique	économique	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	commerciale	commercial	ADJ	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+17	bilatérale	bilatérale	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	issue	issue	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+22	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	visite	visite	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+25	à	à	ADP	_	_	26	case	_	_	*
+26	Téhéran	Téhéran	PROPN	_	_	24	nmod	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	chef	chef	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+30	de	de	ADP	_	_	32	case	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	diplomatie	diplomatir	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*
+33	afghane	afghan	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	_	*
+34	Abdullah	Abdullah	PROPN	_	_	24	appos	_	_	*
+35	Abdullah	Abdullah	PROPN	_	_	34	flat:name	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 7
+# text = Une manifestation massive en faveur de la réunification de Chypre est prévue aujourd'hui dans la partie turque de Nicosie.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	_	_	*
+3	massive	massif	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	faveur	faveur	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	réunification	réunification	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Chypre	Chypre	PROPN	_	_	8	nmod	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*
+12	prévue	prévoir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	aujourd'hui	aujourd'hui	ADV	_	_	12	advmod	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	partie	partie	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_	*
+17	turque	turc	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Nicosie	Nicosie	PROPN	_	_	16	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 8
+# text = Beaucoup de Chypriotes turcs craignent que l'attitude intransigeante affichée par leurs dirigeants ne fasse dérailler le processus de paix à la veille de l'entrée de l'île dans l'Union européenne.
+1	Beaucoup	beaucoup	ADV	_	_	5	nsubj	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	Chypriotes	Chypriotes	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	_	*
+4	turcs	turc	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+5	craignent	craindre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	que	que	SCONJ	_	_	15	mark	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	attitude	attitude	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+9	intransigeante	intransigeant	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	affichée	afficher	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	dirigeants	dirigeant	NOUN	_	Gender=Masc|Number=Plur	10	obl:agent	_	_	*
+14	ne	ne	ADV	_	Polarity=Neg	15	advmod	_	_	*
+15	fasse	faire	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+16	dérailler	dérailler	VERB	_	VerbForm=Inf	15	xcomp	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	processus	processus	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	paix	paix	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	veille	veille	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+29	île	île	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+30	dans	dans	ADP	_	_	32	case	_	_	*
+31	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	32	det	_	SpaceAfter=No	*
+32	Union	union	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+33	européenne	européen	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 9
+# text = Le gouvernement vietnamien prépare un décret qui réduira encore les possibilités déjà limitées de manifester dans le pays.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	vietnamien	vietnamien	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	prépare	préparer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	décret	décret	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*
+8	réduira	réduire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	acl:relcl	_	_	*
+9	encore	encore	ADV	_	_	8	advmod	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	possibilités	possibilité	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*
+12	déjà	déjà	ADV	_	_	13	advmod	_	_	*
+13	limitées	limiter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_	*
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	manifester	manifester	VERB	_	VerbForm=Inf	13	xcomp	_	_	*
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	pays	pays	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 10
+# text = Le Vietnam a été récemment le théâtre de plusieurs manifestations, souvent liées à des scandales de corruption.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Vietnam	Vietnam	PROPN	_	_	7	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	cop	_	_	*
+5	récemment	récemment	ADV	_	_	7	advmod	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	10	det	_	_	*
+10	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	souvent	souvent	ADV	_	_	13	advmod	_	_	*
+13	liées	lier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	10	acl	_	_	*
+14	à	à	ADP	_	_	17	case	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	un	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*
+17	scandales	scandale	NOUN	_	Gender=Fem|Number=Plur	13	obl:arg	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	corruption	corruption	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 11
+# text = Le procès de Milosevic devant le Tribunal pénal international de La Haye, a de nouveau été interrompu hier en raison des problèmes de santé de l'ancien chef de l'Etat yougoslave.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	procès	procès	NOUN	_	Gender=Masc|Number=Sing	18	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Milosevic	Milosevic	PROPN	_	_	2	nmod	_	_	*
+5	devant	devant	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Tribunal	Tribunal	PROPN	_	_	2	nmod	_	_	*
+8	pénal	pénal	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	international	international	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	La	La	DET	_	_	12	det	_	_	*
+12	Haye	Haye	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	2	punct	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*
+15	de	de	ADP	_	_	18	advmod	_	_	*
+16	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	15	fixed	_	_	*
+17	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	aux:pass	_	_	*
+18	interrompu	interrompre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	hier	hier	ADV	_	_	18	advmod	_	_	*
+20	en	en	ADP	_	_	18	advmod	_	_	*
+21	raison	raison	NOUN	_	Gender=Fem|Number=Sing	20	fixed	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	santé	santé	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+27	de	de	ADP	_	_	30	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+29	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+30	chef	chef	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*
+33	Etat	Etat	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34	yougoslave	yougoslave	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 12
+# text = L'ex-président souffre de tension artérielle susceptible d'entraîner des risques cardio-vasculaires sérieux.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ex-président	ex-président	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	souffre	souffrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	tension	ténsion	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+6	artérielle	artériel	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	susceptible	susceptible	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	entraîner	entraîner	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	risques	risque	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*
+13	cardio-vasculaires	cardio-vasculaire	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+14	sérieux	sérieux	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 13
+# text = Le chef de l'opposition djiboutienne, Ahmed Dini, a appelé à la mobilisation contre les fraudes qui ont entaché selon lui les élections législatives du 10 janvier, remportées par le pouvoir en place.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	chef	chef	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	opposition	opposition	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	djiboutienne	djiboutien	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Ahmed	Ahmed	PROPN	_	_	2	appos	_	_	*
+9	Dini	Dini	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	2	punct	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	appelé	appeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	mobilisation	mobilisation	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+16	contre	contre	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*
+18	fraudes	fraude	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	21	nsubj	_	_	*
+20	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*
+21	entaché	entacher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl:relcl	_	_	*
+22	selon	selon	ADP	_	_	23	case	_	_	*
+23	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	21	obl	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	élections	élection	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+26	législatives	législatif	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	10	10	NUM	_	_	25	nmod	_	_	*
+30	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	remportées	remporter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	25	acl	_	_	*
+33	par	par	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	pouvoir	pouvoir	NOUN	_	Gender=Masc|Number=Sing	32	obl:agent	_	_	*
+36	en	en	ADP	_	_	37	case	_	_	*
+37	place	place	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 14
+# text = Les six délégués des âarchs (tribus kabyles), en grève de la faim depuis le 3 décembre à la prison de Tizi Ouzou ont annoncé la cessation de leur action après 41 jours de jeûne.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	six	six	NUM	_	_	3	nummod	_	_	*
+3	délégués	délégué	NOUN	_	Gender=Masc|Number=Plur	28	nsubj	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	âarchs	âarch	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	tribus	tribu	NOUN	_	Gender=Fem|Number=Plur	3	appos	_	_	*
+9	kabyles	kabyle	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	grève	grève	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	faim	faim	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	depuis	depuis	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	3	3	NUM	_	_	13	nmod	_	_	*
+20	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	prison	prison	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Tizi	Tizi	PROPN	_	_	23	nmod	_	_	*
+26	Ouzou	Ouzou	PROPN	_	_	25	flat:name	_	_	*
+27	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux:tense	_	_	*
+28	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	cessation	cessation	NOUN	_	Gender=Fem|Number=Sing	28	obj	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	33	det	_	_	*
+33	action	action	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+34	après	après	ADP	_	_	36	case	_	_	*
+35	41	41	NUM	_	_	36	nummod	_	_	*
+36	jours	jour	NOUN	_	Gender=Masc|Number=Plur	28	obl	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	jeûne	jeûne	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	28	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 15
+# text = La mission des inspecteurs de l'ONU devra être prolongée.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	mission	mission	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	inspecteurs	inspecteur	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	ONU	ONU	PROPN	_	_	5	nmod	_	_	*
+9	devra	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+10	être	être	AUX	_	VerbForm=Inf	11	aux:pass	_	_	*
+11	prolongée	prolonger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	xcomp	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 16
+# text = Le ministre français des Affaires étrangères, Dominique de Villepin, qui recevait hier le chef de l'AIEA (Agence internationale de l'énergie atomique) a affirmé que la guerre pourrait être évitée si Bagdad se décidait enfin à coopérer activement avec les experts de l'ONU.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	_	_	*
+3	français	français	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	Affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+7	étrangères	étranger	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	Dominique	Dominique	PROPN	_	_	2	appos	_	_	*
+10	de	de	ADP	_	_	9	flat:name	_	_	*
+11	Villepin	Villepin	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+14	recevait	recevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	_	_	*
+15	hier	hier	ADV	_	_	14	advmod	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	chef	chef	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	AIEA	Aiea	PROPN	_	_	17	nmod	_	_	*
+21	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+22	Agence	agence	PROPN	_	_	20	appos	_	_	*
+23	internationale	international	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	énergie	énergie	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+27	atomique	atomique	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	SpaceAfter=No	*
+28	)	)	PUNCT	_	_	22	punct	_	_	*
+29	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux:tense	_	_	*
+30	affirmé	affirmer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+31	que	que	SCONJ	_	_	34	mark	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	34	nsubj	_	_	*
+34	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	ccomp	_	_	*
+35	être	être	AUX	_	VerbForm=Inf	36	aux:pass	_	_	*
+36	évitée	éviter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	34	xcomp	_	_	*
+37	si	si	SCONJ	_	_	40	mark	_	_	*
+38	Bagdad	Bagdad	PROPN	_	_	40	nsubj	_	_	*
+39	se	se	PRON	_	Person=3|PronType=Prs	40	expl:comp	_	_	*
+40	décidait	décidre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	36	advcl	_	_	*
+41	enfin	enfin	ADV	_	_	40	advmod	_	_	*
+42	à	à	ADP	_	_	43	mark	_	_	*
+43	coopérer	coopérer	VERB	_	VerbForm=Inf	40	xcomp	_	_	*
+44	activement	activement	ADV	_	_	43	advmod	_	_	*
+45	avec	avec	ADP	_	_	47	case	_	_	*
+46	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	_	_	*
+47	experts	expert	NOUN	_	Gender=Masc|Number=Plur	43	obl:arg	_	_	*
+48	de	de	ADP	_	_	50	case	_	_	*
+49	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	50	det	_	SpaceAfter=No	*
+50	ONU	ONU	PROPN	_	_	47	nmod	_	SpaceAfter=No	*
+51	.	.	PUNCT	_	_	30	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 17
+# text = Par ailleurs, ces inspecteurs ont fait savoir que leur mission devrait probablement être prolongée de plusieurs mois.
+1	Par	par	ADP	_	_	8	advmod	_	_	*
+2	ailleurs	ailleurs	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	_	_	*
+5	inspecteurs	inspecteur	NOUN	_	Gender=Masc|Number=Plur	8	nsubj:caus	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:caus	_	_	1:MVC
+8	savoir	savoir	VERB	_	VerbForm=Inf	0	root	_	_	1
+9	que	que	SCONJ	_	_	12	mark	_	_	*
+10	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	mission	mission	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*
+12	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*
+13	probablement	probablement	ADV	_	_	12	advmod	_	_	*
+14	être	être	AUX	_	VerbForm=Inf	15	aux:pass	_	_	*
+15	prolongée	prolonger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	12	xcomp	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	plusieurs	plusieurs	DET	_	Gender=Masc|Number=Plur	18	det	_	_	*
+18	mois	mois	NOUN	_	Gender=Masc|Number=Plur	15	obl:mod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 18
+# text = De son côté, le Premier ministre britannique Tony Blair a estimé que le document remis par l'Irak à l'ONU sur son arsenal est « insuffisant et probablement faux ».
+1	De	de	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	Premier	premier	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+8	britannique	britannique	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	Tony	Tony	PROPN	_	_	7	appos	_	_	*
+10	Blair	Blair	PROPN	_	_	9	flat:name	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	estimé	estimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	que	que	SCONJ	_	_	28	mark	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	document	document	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	_	_	*
+16	remis	remettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	acl	_	_	*
+17	par	par	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	Irak	Irak	PROPN	_	_	16	obl:agent	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	ONU	ONU	PROPN	_	_	16	obl:arg	_	_	*
+23	sur	sur	ADP	_	_	25	case	_	_	*
+24	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	arsenal	arsenal	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+26	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_	*
+27	«	«	PUNCT	_	_	28	punct	_	_	*
+28	insuffisant	insuffisant	ADJ	_	Gender=Masc|Number=Sing	12	ccomp	_	_	*
+29	et	et	CCONJ	_	_	31	cc	_	_	*
+30	probablement	probablement	ADV	_	_	31	advmod	_	_	*
+31	faux	faux	ADJ	_	Gender=Masc|Number=Plur	28	conj	_	_	*
+32	»	»	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 19
+# text = « Saddam devrait suivre la voie pacifique et désarmer.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Saddam	Saddam	PROPN	_	_	3	nsubj	_	_	*
+3	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	suivre	suivre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	voie	voie	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	pacifique	pacifique	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	désarmer	désarmer	VERB	_	VerbForm=Inf	4	conj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 20
+# text = S'il ne le fait pas, il sera désarmé par la force », a-t-il martelé.
+1	S'	si	SCONJ	_	_	5	mark	_	SpaceAfter=No	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+3	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_	*
+5	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj:pass	_	_	*
+9	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux:pass	_	_	*
+10	désarmé	désarmer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	force	force	NOUN	_	Gender=Fem|Number=Sing	10	obl:agent	_	_	*
+14	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	19	punct	_	_	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	SpaceAfter=No	*
+17	-t	t	PART	_	_	18	dep	_	SpaceAfter=No	*
+18	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+19	martelé	marteler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	parataxis	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-14_14182.txt 21
+# text = Sur le terrain, des avions de la coalition américano-britannique ont bombardé hier un lanceur de missiles terre-mer irakien situé près de Bassorah, qui représentait, selon le Pentagone, une menace pour les bateaux naviguant dans le Golfe.
+1	Sur	sur	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	avions	avion	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	coalition	coalition	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	américano-britannique	américano-britannique	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	bombardé	bombarder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	hier	hier	ADV	_	_	13	advmod	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	lanceur	lanceur	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	missiles	missile	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*
+19	terre-mer	terre-mer	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+20	irakien	irakien	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+21	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	_	*
+22	près	près	ADV	_	_	21	advmod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	Bassorah	Bassorah	PROPN	_	_	22	obl:arg	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*
+27	représentait	représenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	acl:relcl	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	31	punct	_	_	*
+29	selon	selon	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	Pentagone	Pentagone	PROPN	_	_	27	obl	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	34	punct	_	_	*
+33	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	menace	menace	NOUN	_	Gender=Fem|Number=Sing	31	appos	_	_	*
+35	pour	pour	ADP	_	_	37	case	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	bateaux	bateau	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	_	*
+38	naviguant	naviguer	VERB	_	Tense=Pres|VerbForm=Part	37	acl	_	_	*
+39	dans	dans	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	Golfe	Golfe	PROPN	_	_	38	obl:mod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\n	*
+

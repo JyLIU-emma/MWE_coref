@@ -1,0 +1,593 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_33080.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 1
+# text = Assemblée générale de l'association des anciens combattants
+1	Assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	générale	général	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	association	association	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	9	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+8	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	9	amod	_	_	*
+9	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 2
+# text = Le président heureux des bons résultats et projets.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	heureux	heureux	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	7	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+6	bons	bon	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+7	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	projets	projet	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 3
+# text = L'assemblée générale de l'association des anciens combattants et victimes de guerre d'Arguel, Beure, Larnod, Pugey s'est tenue en mairie de Beure en présence de très nombreux adhérents.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	25	obl:mod	_	_	1:LVC.full
+3	générale	général	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	association	association	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	10	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+10	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	victimes	victime	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	Arguel	Arguel	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	Beure	Beure	PROPN	_	_	16	conj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Larnod	Larnod	PROPN	_	_	16	conj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	2	punct	_	_	*
+22	Pugey	Pugey	PROPN	_	_	25	nsubj	_	_	*
+23	s'	se	PRON	_	Person=3|PronType=Prs	25	expl:pass	_	SpaceAfter=No	2:IRV
+24	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	tenue	tenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1;2
+26	en	en	ADP	_	_	27	case	_	_	*
+27	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	25	obl	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	Beure	Beure	PROPN	_	_	27	nmod	_	_	*
+30	en	en	ADP	_	_	31	case	_	_	*
+31	présence	présence	NOUN	_	Gender=Fem|Number=Sing	25	obl	_	_	*
+32	de	de	ADP	_	_	35	case	_	_	*
+33	très	très	ADV	_	_	34	advmod	_	_	*
+34	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	35	amod	_	_	*
+35	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	25	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 4
+# text = Après avoir présenté ses vœux et fait respecter une minute de silence pour les défunts, le président Pierre Jacquet a souligné la bonne marche de la section qui compte maintenant près de 100 membres.
+1	Après	après	ADP	_	_	3	mark	_	_	*
+2	avoir	avoir	AUX	_	VerbForm=Inf	3	aux:tense	_	_	*
+3	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	advcl	_	_	*
+4	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:caus	_	_	*
+8	respecter	respecter	VERB	_	VerbForm=Inf	3	conj	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	minute	minute	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	silence	silence	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	défunts	défunt	NOUN	_	Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	3	punct	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	président	président	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+19	Pierre	Pierre	PROPN	_	_	18	appos	_	_	*
+20	Jacquet	Jacquet	PROPN	_	_	19	flat:name	_	_	*
+21	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	souligné	souligner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+24	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	marche	marche	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	section	section	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	qui	qui	PRON	_	PronType=Rel	30	nsubj	_	_	*
+30	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	_	*
+31	maintenant	maintenant	ADV	_	_	30	advmod	_	_	*
+32	près	près	ADV	_	_	30	obj	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	100	100	NUM	_	_	35	nummod	_	_	*
+35	membres	membre	NOUN	_	Gender=Masc|Number=Plur	32	obl:arg	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 5
+# text = Leur présence toujours importante aux diverses manifestations patriotiques est remarquée.
+1	Leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	présence	présence	NOUN	_	Gender=Fem|Number=Sing	11	nsubj:pass	_	_	*
+3	toujours	toujours	ADV	_	_	4	advmod	_	_	*
+4	importante	important	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+5-6	aux	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	8	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+7	diverses	divers	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+8	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+9	patriotiques	patriotique	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*
+11	remarquée	remarquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 6
+# text = Il signale que les veuves d'anciens combattants ont maintenant les mêmes droits en matière de secours et de prêts que les anciens combattants et que quinze d'entre elles ont adhéré à la section.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	signale	signaler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	que	que	SCONJ	_	_	9	mark	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*
+5	veuves	veuve	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+6	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+7	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+8	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	1:LVC.full
+10	maintenant	maintenant	ADV	_	_	9	advmod	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+12	mêmes	même	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*
+13	droits	droit	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	1
+14	en	en	ADP	_	_	15	case	_	_	*
+15	matière	matière	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	secours	secours	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	et	et	CCONJ	_	_	20	cc	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	prêts	prêt	NOUN	_	Gender=Masc|Number=Plur	17	conj	_	_	*
+21	que	que	PRON	_	PronType=Rel	13	acl:relcl	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+23	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	24	amod	_	_	*
+24	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	21	nsubj	_	_	*
+25	et	et	CCONJ	_	_	32	cc	_	_	*
+26	que	que	SCONJ	_	_	32	mark	_	_	*
+27	quinze	quinze	NUM	_	_	32	nsubj	_	_	*
+28	d'	de	ADP	_	_	30	case	_	SpaceAfter=No	*
+29	entre	entre	ADP	_	_	28	fixed	_	_	*
+30	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	27	nmod	_	_	*
+31	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux:tense	_	_	*
+32	adhéré	adhérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	conj	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	section	section	NOUN	_	Gender=Fem|Number=Sing	32	obl:arg	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 7
+# text = Une délégation s'est rendue à Fréjus pour assister à la cérémonie au cours de laquelle l'un des leurs, Jean Cretin, a reçu la cravate de commandeur de la légion d'honneur des mains de Mme Alliot-Marie.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:IRV
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	rendue	rendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	à	à	ADP	_	_	7	case	_	_	*
+7	Fréjus	Fréjus	PROPN	_	_	5	obl:mod	_	_	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*
+9	assister	assister	VERB	_	VerbForm=Inf	5	advcl	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	cérémonie	cérémonie	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	cours	cours	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	28	obl:arg	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	un	un	PRON	_	Gender=Masc|Number=Sing	28	nsubj	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	22	det	_	_	*
+22	leurs	leur	PRON	_	Number=Plur|PronType=Prs	19	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	Jean	Jean	PROPN	_	_	19	appos	_	_	*
+25	Cretin	Cretin	PROPN	_	_	24	flat:name	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	19	punct	_	_	*
+27	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:tense	_	_	*
+28	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	acl:relcl	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	cravate	cravate	NOUN	_	Gender=Fem|Number=Sing	28	obj	_	_	*
+31	de	de	ADP	_	_	32	case	_	_	*
+32	commandeur	commandeur	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	légion	légion	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+36	d'	de	ADP	_	_	37	case	_	SpaceAfter=No	*
+37	honneur	honneur	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+38-39	des	_	_	_	_	_	_	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	40	det	_	_	*
+40	mains	main	NOUN	_	Gender=Fem|Number=Plur	37	nmod	_	_	*
+41	de	de	ADP	_	_	42	case	_	_	*
+42	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	_	*
+43	Alliot-Marie	Alliot-marie	PROPN	_	_	42	flat:name	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 8
+# text = A titre civil, un autre membre, Gérard Deboichet, a été décoré de la croix de vermeil du mérite et du dévouement français du ministère de la jeunesse et des sports.
+1	A	à	ADP	_	_	2	case	_	_	*
+2	titre	titre	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+3	civil	civil	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	autre	autre	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	membre	membre	NOUN	_	Gender=Masc|Number=Sing	14	nsubj:pass	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	Gérard	Gérard	PROPN	_	_	7	appos	_	_	*
+10	Deboichet	Deboichet	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	7	punct	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	aux:pass	_	_	*
+14	décoré	décorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	croix	croix	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	vermeil	vermeil	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	mérite	mérite	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+23	et	et	CCONJ	_	_	26	cc	_	_	*
+24-25	du	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	dévouement	dévouement	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*
+27	français	français	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	_	*
+28-29	du	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+34	et	et	CCONJ	_	_	37	cc	_	_	*
+35-36	des	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	sports	sport	NOUN	_	Gender=Masc|Number=Plur	33	conj	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 9
+# text = La tenue de la comptabilité a été validée par les commissaires aux comptes pour 6.113 € de dépenses et 5.831 € de recettes.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	tenue	tenue	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	comptabilité	comptabilité	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_	*
+8	validée	valider	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	commissaires	commissaire	NOUN	_	Gender=Masc|Number=Plur	8	obl:agent	_	_	*
+12-13	aux	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	comptes	compte	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+15	pour	pour	ADP	_	_	17	case	_	_	*
+16	6.113	6.113	NUM	_	_	17	nummod	_	_	*
+17	€	€	SYM	_	_	8	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	dépenses	dépense	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	5.831	5.831	NUM	_	_	22	nummod	_	_	*
+22	€	€	SYM	_	_	17	conj	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	recettes	recette	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 10
+# text = La trésorerie reste saine et le solde positif s'élève à 5.610 €.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	trésorerie	trésorerie	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	saine	sain	ADJ	_	Gender=Fem|Number=Sing	3	xcomp	_	_	*
+5	et	et	CCONJ	_	_	10	cc	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	solde	solde	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+8	positif	positif	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	s'	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	SpaceAfter=No	1:IRV
+10	élève	élever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	1
+11	à	à	ADP	_	_	13	case	_	_	*
+12	5.610	5.610	NUM	_	_	13	nummod	_	_	*
+13	€	€	SYM	_	_	10	obl:arg	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 11
+# text = Deux faits marquants sont prévus pour 2003 : célébration des anniversaires des membres âgés de 75 ans et plus par tranches de 5 ans et par ailleurs, un voyage ouvert à tous.
+1	Deux	Deux	NUM	_	_	2	nummod	_	_	*
+2	faits	fait	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	_	*
+3	marquants	marquant	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	prévus	prévoir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	pour	pour	ADP	_	_	7	case	_	_	*
+7	2003	2003	NUM	_	_	5	obl	_	_	*
+8	:	:	PUNCT	_	_	9	punct	_	_	*
+9	célébration	célébration	NOUN	_	Gender=Fem|Number=Sing	5	parataxis	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	anniversaires	anniversaire	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	membres	membre	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	âgés	âgé	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	75	75	NUM	_	_	19	nummod	_	_	*
+19	ans	an	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	plus	plus	ADV	_	_	9	conj	_	_	*
+22	par	par	ADP	_	_	23	case	_	_	*
+23	tranches	tranche	NOUN	_	Gender=Fem|Number=Plur	21	obl:arg	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	5	5	NUM	_	_	26	nummod	_	_	*
+26	ans	an	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+27	et	et	CCONJ	_	_	32	cc	_	_	*
+28	par	par	ADP	_	_	32	advmod	_	_	*
+29	ailleurs	ailleurs	ADV	_	_	28	fixed	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	28	punct	_	_	*
+31	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	23	conj	_	_	*
+33	ouvert	ouvert	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	_	*
+34	à	à	ADP	_	_	35	case	_	_	*
+35	tous	tout	PRON	_	Gender=Masc|Number=Plur	32	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 12
+# text = Ce voyage aura lieu du 3 au 7 septembre à la Rochette, Puy du fou, Ile de Ré, mais aussi un pèlerinage à Oradour sur Glane.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+4	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	3	3	NUM	_	_	4	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	7	7	NUM	_	_	7	nmod	_	_	*
+11	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	Rochette	Rochette	PROPN	_	_	3	obl:arg	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Puy	Puy	PROPN	_	_	14	appos	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	fou	fou	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Ile	Ile	PROPN	_	_	16	conj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Ré	Ré	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	28	punct	_	_	*
+25	mais	mais	CCONJ	_	_	28	cc	_	_	*
+26	aussi	aussi	ADV	_	_	28	advmod	_	_	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	pèlerinage	pèlerinage	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+29	à	à	ADP	_	_	30	case	_	_	*
+30	Oradour	Oradour	PROPN	_	_	28	nmod	_	_	*
+31	sur	sur	ADP	_	_	32	case	_	_	*
+32	Glane	Glane	PROPN	_	_	28	nmod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 13
+# text = Renseignements et inscriptions auprès de Lionnel Marchand (tél.
+1	Renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	inscriptions	inscription	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+4	auprès	auprès	ADV	_	_	1	advmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Lionnel	Lionnel	PROPN	_	_	4	obl:arg	_	_	*
+7	Marchand	marchand	PROPN	_	_	6	flat:name	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 14
+# text = 03.81.52.78.62).
+1	03.81.52.78.62	03.81.52.78.62	PRON	_	Number=Plur	0	root	_	SpaceAfter=No	*
+2	)	)	PUNCT	_	_	1	punct	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 15
+# text = Le nouveau bureau a été élu pour trois ans.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	élu	élire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	pour	pour	ADP	_	_	9	case	_	_	*
+8	trois	trois	NUM	_	_	9	nummod	_	_	*
+9	ans	an	NOUN	_	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 16
+# text = Président Pierre Jacquet, vice-président délégué Louis Merle, vice président Henri Gillard, Lionnel Marchand trésorier, trésorier adjoint G.
+1	Président	président	PROPN	_	_	0	root	_	_	*
+2	Pierre	Pierre	PROPN	_	_	1	flat:name	_	_	*
+3	Jacquet	Jacquet	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	vice-président	vice-président	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6	délégué	déléguer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*
+7	Louis	Louis	PROPN	_	_	6	obj	_	_	*
+8	Merle	Merle	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	vice	vice	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	_	*
+11	président	président	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	_	*
+12	Henri	Henri	PROPN	_	_	11	appos	_	_	*
+13	Gillard	Gillard	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	Lionnel	Lionnel	PROPN	_	_	11	conj	_	_	*
+16	Marchand	marchand	PROPN	_	_	15	flat:name	_	_	*
+17	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	15	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+20	adjoint	adjoint	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+21	G.	G.	PROPN	_	_	19	appos	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 17
+# text = Jacquemot.
+1	Jacquemot	Jacquemot	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 18
+# text = Présent à cette assemblée, Louis Chevillard, président départemental, a demandé de retenir la date du 22 mai 2003 pour le congrès qui se tiendra à Lièvremont, Montbenoit et Gilley.
+1	Présent	présent	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|Typo=Yes|VerbForm=Fin	6	acl	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_	*
+4	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	Louis	Louis	PROPN	_	_	13	nsubj	_	_	*
+7	Chevillard	Chevillard	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	président	président	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	_	*
+10	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	9	punct	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	retenir	retenir	VERB	_	VerbForm=Inf	13	xcomp	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	date	date	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	22	22	NUM	_	_	17	nmod	_	_	*
+21	mai	mai	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+22	2003	2003	NUM	_	_	21	nmod	_	_	*
+23	pour	pour	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	congrès	congrès	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+26	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*
+27	se	se	PRON	_	Person=3|PronType=Prs	28	expl:comp	_	_	1:IRV
+28	tiendra	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	acl:relcl	_	_	1
+29	à	à	ADP	_	_	30	case	_	_	*
+30	Lièvremont	Lièvremont	PROPN	_	_	28	obl:arg	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Montbenoit	Montbenoit	PROPN	_	_	30	conj	_	_	*
+33	et	et	CCONJ	_	_	34	cc	_	_	*
+34	Gilley	Gilley	PROPN	_	_	30	conj	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 19
+# text = Il s'est dit satisfait de l'inauguration du Mémorial de la guerre d'Algérie dont la modernité s'intègre bien au paysage pour faire apparaître la liste des 23.000 morts actuellement identifiés.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	satisfait	satisfait	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	inauguration	inauguration	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Mémorial	Mémorial	PROPN	_	_	8	nmod	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	Algérie	Algérie	PROPN	_	_	14	nmod	_	_	*
+17	dont	dont	PRON	_	PronType=Rel	19	nmod	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	modernité	modernité	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	_	_	*
+20	s'	se	PRON	_	Person=3|PronType=Prs	21	expl:pass	_	SpaceAfter=No	*
+21	intègre	intégrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*
+22	bien	bien	ADV	_	_	21	advmod	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	paysage	paysage	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	_	*
+26	pour	pour	ADP	_	_	28	mark	_	_	*
+27	faire	faire	AUX	_	VerbForm=Inf	28	aux:caus	_	_	*
+28	apparaître	apparaître	VERB	_	VerbForm=Inf	21	advcl	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	liste	liste	NOUN	_	Gender=Fem|Number=Sing	28	obj:agent	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	34	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+33	23.000	23.000	NUM	_	_	34	nummod	_	_	*
+34	morts	mort	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_	*
+35	actuellement	actuellement	ADV	_	_	36	advmod	_	_	*
+36	identifiés	identifié	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	30	acl	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 20
+# text = Par contre, il est très déçu par la suite donnée à une action menée par lui contre un groupe de chanteurs dont les paroles sont particulièrement insultantes envers la France et les Français.
+1	Par	par	ADP	_	_	7	advmod	_	_	*
+2	contre	contre	NOUN	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj:pass	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*
+6	très	très	ADV	_	_	7	advmod	_	_	*
+7	déçu	décevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	par	par	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	suite	suite	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	1:VID
+11	donnée	donner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	1
+12	à	à	ADP	_	_	14	case	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	action	action	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*
+15	menée	mener	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	*
+16	par	par	ADP	_	_	17	case	_	_	*
+17	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	15	obl:arg	_	_	*
+18	contre	contre	ADP	_	_	20	case	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	chanteurs	chanteur	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+23	dont	dont	PRON	_	PronType=Rel	25	nmod	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	paroles	parole	NOUN	_	Gender=Fem|Number=Plur	28	nsubj	_	_	*
+26	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_	*
+27	particulièrement	particulièrement	ADV	_	_	28	advmod	_	_	*
+28	insultantes	insultant	ADJ	_	Gender=Fem|Number=Plur	20	acl:relcl	_	_	*
+29	envers	envers	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	France	France	PROPN	_	_	28	obl:mod	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	34	det	_	_	*
+34	Français	Français	PROPN	_	_	31	conj	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33080.txt 21
+# text = En raison de la prescription des faits, cette action n'a pas abouti, mais il demeurera très vigilant pour l'avenir.
+1	En	en	ADP	_	_	15	advmod	_	_	*
+2	raison	raison	NOUN	_	Gender=Fem|Number=Sing	1	fixed	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	prescription	prescription	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	faits	fait	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_	*
+11	action	action	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+12	n'	ne	ADV	_	Polarity=Neg	15	advmod	_	SpaceAfter=No	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+14	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*
+15	abouti	aboutir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	mais	mais	CCONJ	_	_	19	cc	_	_	*
+18	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+19	demeurera	demeurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	conj	_	_	*
+20	très	très	ADV	_	_	21	advmod	_	_	*
+21	vigilant	vigilant	ADJ	_	Gender=Masc|Number=Sing	19	xcomp	_	_	*
+22	pour	pour	ADP	_	_	24	case	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	avenir	avenir	NOUN	_	Gender=Masc|Number=Sing	21	obl	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	15	punct	_	SpacesAfter=\n	*
+

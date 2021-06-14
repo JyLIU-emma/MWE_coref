@@ -1,0 +1,545 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-16_16662.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 1
+# text = Les 32 conseillers ont fait leur rentrée.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	32	32	NUM	_	_	3	nummod	_	_	*
+3	conseillers	conseiller	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+6	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	rentrée	rentrée	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No	1
+8	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 2
+# text = François Ostermann (président salarié sortant), Bernard Remack (président salarié entrant), Denis Renaud (président employeur entrant) et Jacques Bruart (président employeur sortant).
+1	François	François	PROPN	_	_	0	root	_	_	*
+2	Ostermann	Ostermann	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	président	président	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	salarié	salarié	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	sortant	sortant	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	Bernard	Bernard	PROPN	_	_	1	conj	_	_	*
+10	Remack	Remack	PROPN	_	_	9	flat:name	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	président	président	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+13	salarié	salarié	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	entrant	entrant	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	Denis	Denis	PROPN	_	_	1	conj	_	_	*
+18	Renaud	Renaud	PROPN	_	_	17	flat:name	_	_	*
+19	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+20	président	président	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+21	employeur	employeur	NOUN	_	Gender=Masc|Number=Sing	17	appos	_	_	*
+22	entrant	entrant	VERB	_	Tense=Pres|VerbForm=Part	21	acl	_	SpaceAfter=No	*
+23	)	)	PUNCT	_	_	21	punct	_	_	*
+24	et	et	CCONJ	_	_	25	cc	_	_	*
+25	Jacques	Jacques	PROPN	_	_	1	conj	_	_	*
+26	Bruart	Bruart	PROPN	_	_	25	flat:name	_	_	*
+27	(	(	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+28	président	président	NOUN	_	Gender=Masc|Number=Sing	25	appos	_	_	*
+29	employeur	employeur	NOUN	_	Gender=Masc|Number=Sing	28	appos	_	_	*
+30	sortant	sortant	VERB	_	Tense=Pres|VerbForm=Part	28	acl	_	SpaceAfter=No	*
+31	)	)	PUNCT	_	_	28	punct	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 3
+# text = « Pour la première fois, je présente des réquisitions devant votre juridiction ».
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	Pour	pour	ADP	_	_	5	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	première	premier	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	fois	fois	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	présente	présent	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	réquisitions	réquisition	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	_	*
+12	devant	devant	ADP	_	_	14	case	_	_	*
+13	votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	juridiction	juridiction	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+15	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 4
+# text = Michel Senthille, nouveau procureur de la République, est venu ouvrir hier matin la nouvelle année judiciaire du conseil des prud'hommes.
+1	Michel	Michel	PROPN	_	_	11	nsubj	_	_	*
+2	Senthille	Senthille	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	procureur	procureur	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	République	république	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	venu	venir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	ouvrir	ouvrir	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	hier	hier	ADV	_	_	12	advmod	_	_	*
+14	matin	matin	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+16	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*
+17	année	année	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
+18	judiciaire	judiciaire	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	prud'hommes	prud'homme	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 5
+# text = Le conseil connaît cette année de grands changements suite aux élections du 11 décembre 2002.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	connaît	connaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*
+5	année	année	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	grands	grand	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+8	changements	changement	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	suite	suite	ADV	_	_	3	advmod	_	_	*
+10-11	aux	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	élections	élection	NOUN	_	Gender=Fem|Number=Plur	9	obl:arg	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	11	11	NUM	_	_	12	nmod	_	_	*
+16	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+17	2002	2002	NUM	_	_	16	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 6
+# text = Le président est désormais Bernard Remack, du collège salarié, qui succède à Jacques Bruart, du collège employeur, en raison de la règle de l'alternance.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	désormais	désormais	ADV	_	_	5	advmod	_	_	*
+5	Bernard	Bernard	PROPN	_	_	0	root	_	_	*
+6	Remack	Remack	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	collège	collège	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+11	salarié	salarié	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+14	succède	succéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	Jacques	Jacques	PROPN	_	_	14	obl:arg	_	_	*
+17	Bruart	Bruart	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	collège	collège	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+22	employeur	employeur	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	14	punct	_	_	*
+24	en	en	ADP	_	_	14	advmod	_	_	*
+25	raison	raison	NOUN	_	Gender=Fem|Number=Sing	24	fixed	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	règle	règle	NOUN	_	Gender=Fem|Number=Sing	24	obl:arg	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	alternance	alternance	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 7
+# text = Le procureur de la République a fait l'éloge du conseil local.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	procureur	procureur	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	République	république	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	éloge	éloge	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	1
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	local	local	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 8
+# text = « Ce dernier remplit les tâches qui lui sont confiées.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*
+3	dernier	dernier	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+4	remplit	remplir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	tâches	tâche	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	10	nsubj:pass	_	_	*
+8	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	10	iobj	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
+10	confiées	confier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	6	acl:relcl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 9
+# text = Je connais les problèmes des entreprises locales et je souhaite que 2003 n'aggrave pas la situation.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	connais	connaître	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	1
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
+8	locales	local	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*
+11	souhaite	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+12	que	que	SCONJ	_	_	15	mark	_	_	*
+13	2003	2003	NUM	_	_	15	nsubj	_	_	*
+14	n'	ne	ADV	_	Polarity=Neg	15	advmod	_	SpaceAfter=No	*
+15	aggrave	aggraver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	*
+16	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	situation	situation	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 10
+# text = Je suis certain que les litiges qui seront évoqués ici seront traités avec sérénité » Une conclusion permettant à Bernard Remack de dresser le bilan de l'année écoulée.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	certain	certain	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	que	que	SCONJ	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	litiges	litige	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	9	nsubj:pass	_	_	*
+8	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	_	_	*
+9	évoqués	évoquer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	acl:relcl	_	_	*
+10	ici	ici	ADV	_	_	9	advmod	_	_	*
+11	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux:pass	_	_	*
+12	traités	traiter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	advcl	_	_	*
+13	avec	avec	ADP	_	_	14	case	_	_	*
+14	sérénité	sérénité	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+15	»	»	PUNCT	_	_	12	punct	_	_	*
+16	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	conclusion	conclusion	NOUN	_	Gender=Fem|Number=Sing	12	xcomp	_	_	*
+18	permettant	permettre	VERB	_	Tense=Pres|VerbForm=Part	17	acl	_	_	*
+19	à	à	ADP	_	_	20	case	_	_	*
+20	Bernard	Bernard	PROPN	_	_	18	obl:arg	_	_	*
+21	Remack	Remack	PROPN	_	_	20	flat:name	_	_	*
+22	de	de	ADP	_	_	23	mark	_	_	*
+23	dresser	dresser	VERB	_	VerbForm=Inf	17	acl	_	_	1:LVC.full
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_	1
+26	de	de	ADP	_	_	28	case	_	_	*
+27	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	année	année	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	écoulée	écouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	25	acl	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 11
+# text = 215 affaires nouvelles ont été inscrites au rôle de 2002.
+1	215	215	NUM	_	_	2	nummod	_	_	*
+2	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	6	nsubj:pass	_	_	*
+3	nouvelles	nouveau	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	inscrites	inscrire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	rôle	rôle	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	2002	2002	NUM	_	_	9	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 12
+# text = « Un chiffre en augmentation de 15 % par rapport à 2001 » a t-il souligné.
+1	«	«	PUNCT	_	_	16	punct	_	_	*
+2	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	chiffre	chiffre	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	15	15	NUM	_	_	8	nummod	_	_	*
+8	%	%	SYM	_	_	3	nmod	_	_	*
+9	par	par	ADP	_	_	10	case	_	_	*
+10	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	2001	2001	NUM	_	_	10	nmod	_	_	*
+13	»	»	PUNCT	_	_	3	punct	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+15	t-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	_	*
+16	souligné	souligner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 13
+# text = 209 affaires sont terminées.
+1	209	209	NUM	_	_	2	nummod	_	_	*
+2	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	4	nsubj:pass	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	terminées	terminer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 14
+# text = La section industrie en comptabilise 133, l'encadrement 11, le commerce 37 et les activités diverses 34.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	section	section	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	industrie	industrier	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	comptabilise	comptabilise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	133	133	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	encadrement	encadrement	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+10	11	11	NUM	_	_	9	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+14	37	37	NUM	_	_	13	nmod	_	_	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*
+17	activités	activité	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_	*
+18	diverses	divers	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	_	*
+19	34	34	NUM	_	_	17	appos	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 15
+# text = En 2002, le conseil des prud'hommes a enregistré 42 référés nouveaux (tous terminés), 40 appels (contre 86 en 2001), 0 pourvoi, 1 contredit.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	2002	2002	NUM	_	_	10	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	prud'hommes	prud'homme	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	enregistré	enregistrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	42	42	NUM	_	_	12	nummod	_	_	*
+12	référés	référé	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*
+13	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	tous	tout	PRON	_	Gender=Masc|Number=Plur	12	appos	_	_	*
+16	terminés	terminer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	acl	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	40	40	NUM	_	_	20	nummod	_	_	*
+20	appels	appel	NOUN	_	Gender=Masc|Number=Plur	10	obl	_	_	*
+21	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+22	contre	contre	ADP	_	_	23	case	_	_	*
+23	86	86	NUM	_	_	20	nmod	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	2001	2001	NUM	_	_	23	nmod	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	29	punct	_	_	*
+28	0	0	NUM	_	_	29	nummod	_	_	*
+29	pourvoi	pourvoi	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	1	1	NUM	_	_	32	nummod	_	_	*
+32	contredit	contredit	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 16
+# text = Enfin, 14 conciliations totales et 5 partielles sont à dénombrer.
+1	Enfin	enfin	ADV	_	_	9	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	14	14	NUM	_	_	4	nummod	_	_	*
+4	conciliations	conciliation	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+5	totales	total	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	5	5	NUM	_	_	8	nummod	_	_	*
+8	partielles	partielle	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_	*
+9	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	à	à	ADP	_	_	11	mark	_	_	*
+11	dénombrer	dénombrer	VERB	_	VerbForm=Inf	9	ccomp	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 17
+# text = A noter aussi le nombre d'affaires passées devant le juge départiteur : 7 au total.
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	noter	noter	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	aussi	aussi	ADV	_	_	2	advmod	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+8	passées	passer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	acl	_	_	*
+9	devant	devant	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	juge	juge	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*
+12	départiteur	départiteur	NOUN	_	Gender=Masc|Number=Sing	11	appos	_	_	*
+13	:	:	PUNCT	_	_	14	punct	_	_	*
+14	7	7	NUM	_	_	5	appos	_	_	*
+15-16	au	_	_	_	_	_	_	_	_	*
+15	à	à	ADP	_	_	14	advmod	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	fixed	_	_	*
+17	total	total	NOUN	_	Gender=Masc|Number=Sing	15	fixed	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 18
+# text = « Un très faible taux de recours au départage » a remarqué Michel Senthille.
+1	«	«	PUNCT	_	_	13	punct	_	_	*
+2	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+3	très	très	ADV	_	_	4	advmod	_	_	*
+4	faible	faible	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	taux	taux	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	recours	recours	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	départage	départage	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	»	»	PUNCT	_	_	5	punct	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	remarqué	remarquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	Michel	Michel	PROPN	_	_	13	obj	_	_	*
+15	Senthille	Senthille	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 19
+# text = Le procureur s'est avoué satisfait de ce bilan.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	procureur	procureur	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	avoué	avouer	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	satisfait	satisfait	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 20
+# text = « A ce nouveau conseil des prud'hommes, j'adresse un message de dévouement pour la justice ».
+1	«	«	PUNCT	_	_	11	punct	_	_	*
+2	A	à	ADP	_	_	5	case	_	_	*
+3	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*
+4	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	prud'hommes	prud'homme	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	5	punct	_	_	*
+10	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	SpaceAfter=No	*
+11	adresse	adresser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	message	message	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	dévouement	dévouement	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+16	pour	pour	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	justice	justice	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+19	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 21
+# text = Bernard Remack a rappelé le rôle des prud'hommes.
+1	Bernard	Bernard	PROPN	_	_	4	nsubj	_	_	*
+2	Remack	Remack	PROPN	_	_	1	flat:name	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	rappelé	rappeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	rôle	rôle	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	prud'hommes	prud'homme	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 22
+# text = « Il représente souvent pour les salariés le seul moyen d'obtenir justice pour les affaires liées au travail.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+3	représente	représenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	souvent	souvent	ADV	_	_	3	advmod	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+9	seul	seul	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+10	moyen	moyen	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+11	d'	de	ADP	_	_	12	mark	_	SpaceAfter=No	*
+12	obtenir	obtenir	VERB	_	VerbForm=Inf	10	acl	_	_	*
+13	justice	justice	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	12	obl	_	_	*
+17	liées	lier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	16	acl	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	travail	travail	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 23
+# text = C'est une juridiction originale composée de juges non professionnels et élus » Parmi tous ces juges, quatre ayant servi de nombreuses années ne se sont pas représentés aux élections.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	juridiction	juridiction	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	originale	original	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+6	composée	composer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	juges	juge	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*
+9	non	non	ADV	_	_	10	advmod	_	_	*
+10	professionnels	professionnel	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	élus	élu	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	conj	_	_	*
+13	»	»	PUNCT	_	_	4	punct	_	_	*
+14	Parmi	parmi	ADP	_	_	17	case	_	_	*
+15	tous	tout	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+16	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	17	det	_	_	*
+17	juges	juge	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	quatre	quatre	NUM	_	_	21	nummod	_	_	*
+20	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	21	aux:tense	_	_	*
+21	servi	servir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+22	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_	*
+23	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	24	amod	_	_	*
+24	années	année	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+25	ne	ne	ADV	_	Polarity=Neg	29	advmod	_	_	*
+26	se	se	PRON	_	Person=3|PronType=Prs	29	obj	_	_	1:IRV
+27	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	aux:tense	_	_	*
+28	pas	pas	ADV	_	Polarity=Neg	29	advmod	_	_	*
+29	représentés	représenter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	21	xcomp	_	_	1
+30-31	aux	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_	*
+32	élections	élection	NOUN	_	Gender=Fem|Number=Plur	29	obl:arg	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16662.txt 24
+# text = Jacques Bruart, Claude Reboisson, Michel Seeleuthner et François-Xavier Ostermann ont été proposés à l'honorariat par l'assemblée générale.
+1	Jacques	Jacques	PROPN	_	_	14	nsubj:pass	_	_	*
+2	Bruart	Bruart	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	Claude	Claude	PROPN	_	_	1	conj	_	_	*
+5	Reboisson	Reboisson	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Michel	Michel	PROPN	_	_	1	conj	_	_	*
+8	Seeleuthner	Seeleuthner	PROPN	_	_	7	flat:name	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	François-Xavier	François-Xavier	PROPN	_	_	1	conj	_	_	*
+11	Ostermann	Ostermann	PROPN	_	_	10	flat:name	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	aux:pass	_	_	*
+14	proposés	proposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	honorariat	honorariat	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	_	*
+18	par	par	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+21	générale	général	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	14	punct	_	SpacesAfter=\n	*
+

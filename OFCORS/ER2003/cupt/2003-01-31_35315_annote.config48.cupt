@@ -1,0 +1,779 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-31_35315.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 1
+# text = « Un chat noir doit rôder... » - Pour gagner, il faut marquer.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	chat	chat	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	noir	noir	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	rôder	rôder	VERB	_	VerbForm=Inf	5	xcomp	_	SpaceAfter=No	*
+7	...	...	PUNCT	_	_	8	punct	_	_	*
+8	»	»	PUNCT	_	_	11	punct	_	SpacesAfter=\n	*
+9	-	-	PUNCT	_	_	11	punct	_	_	*
+10	Pour	pour	ADP	_	_	11	mark	_	_	*
+11	gagner	gagner	VERB	_	VerbForm=Inf	6	ccomp	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	_	1:VID
+14	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	1
+15	marquer	marquer	VERB	_	VerbForm=Inf	14	ccomp	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 2
+# text = Or sous vos ordres, l'ESTAC n'a pas fait trembler une seule fois les filets en championnat... - A Auxerre et Ajaccio, comme mercredi face aux Girondins de Bordeaux, nous avons effectivement perdu 1-0.
+1	Or	or	CCONJ	_	_	12	cc	_	_	*
+2	sous	sous	ADP	_	_	4	case	_	_	*
+3	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	ordres	ordre	NOUN	_	Gender=Masc|Number=Plur	12	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	ESTAC	ESTAC	PROPN	_	_	12	nsubj:caus	_	_	*
+8	n'	ne	ADV	_	Polarity=Neg	12	advmod	_	SpaceAfter=No	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+10	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*
+11	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:caus	_	_	*
+12	trembler	trembler	VERB	_	VerbForm=Inf	0	root	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+14	seule	seul	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	fois	fois	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	filets	filet	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	12	obl	_	SpaceAfter=No	*
+20	...	...	PUNCT	_	_	23	punct	_	_	*
+21	-	-	PUNCT	_	_	23	punct	_	_	*
+22	A	A	ADP	_	_	23	case	_	_	*
+23	Auxerre	Auxerre	PROPN	_	_	12	obl	_	_	*
+24	et	et	CCONJ	_	_	25	cc	_	_	*
+25	Ajaccio	Ajaccio	PROPN	_	_	23	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*
+27	comme	comme	ADP	_	_	28	case	_	_	*
+28	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+29	face	face	ADV	_	_	28	advmod	_	_	*
+30-31	aux	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	32	det	_	_	*
+32	Girondins	Girondins	PROPN	_	_	29	obl:arg	_	_	*
+33	de	de	ADP	_	_	34	case	_	_	*
+34	Bordeaux	Bordeaux	PROPN	_	_	32	nmod	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	39	punct	_	_	*
+36	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	39	nsubj	_	_	*
+37	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	39	aux:tense	_	_	*
+38	effectivement	effectivement	ADV	_	_	39	advmod	_	_	*
+39	perdu	perdre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	conj	_	_	*
+40	1-0	1-0	NUM	_	_	39	obj	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 3
+# text = C'est rageant.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	rageant	rageant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 4
+# text = Mais ces trois rencontres nous ont plutôt rassurés sur le plan du jeu.
+1	Mais	mais	CCONJ	_	_	8	cc	_	_	*
+2	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	4	det	_	_	*
+3	trois	trois	NUM	_	_	4	nummod	_	_	*
+4	rencontres	rencontre	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	_	_	*
+5	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	8	obj	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	plutôt	plutôt	ADV	_	_	8	advmod	_	_	*
+8	rassurés	rassurer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	plan	plan	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 5
+# text = Reste à résoudre notre problème d'efficacité.
+1	Reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	à	à	ADP	_	_	3	mark	_	_	*
+3	résoudre	résoudre	VERB	_	VerbForm=Inf	1	xcomp	_	_	*
+4	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	problème	problème	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	efficacité	efficacité	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 6
+# text = Zorro ne va pas surgir, Ronaldo non plus.
+1	Zorro	Zorro	PROPN	_	_	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+5	surgir	surgir	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Ronaldo	Ronaldo	PROPN	_	_	3	conj	_	_	*
+8	non	non	ADV	_	_	7	advmod	_	_	*
+9	plus	plus	ADV	_	_	8	fixed	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 7
+# text = Nous devrons trouver une solution collectivement.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	devrons	devr	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	trouver	trouver	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	solution	solution	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	collectivement	collectivement	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 8
+# text = Quoi qu'il arrive, je ne baisserai pas les bras.
+1	Quoi	quoi	ADV	_	_	4	mark	_	_	*
+2	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+4	arrive	arriver	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	baisserai	baisser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	bras	bras	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 9
+# text = Je garde confiance.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	garde	garder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 10
+# text = On fera tout pour ne pas finir en enfer.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	fera	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	tout	tout	ADV	_	_	7	advmod	_	_	*
+4	pour	pour	ADP	_	_	7	mark	_	_	*
+5	ne	ne	ADV	_	Polarity=Neg	7	advmod	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+7	finir	finir	VERB	_	VerbForm=Inf	2	advcl	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	enfer	enfer	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 11
+# text = Avec un peu de chance, nous aurons redressé la tête quand, en mars, nous accueillerons Sochaux, l'éternelle équipe de mon cœur.
+1	Avec	avec	ADP	_	_	9	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	advmod	_	_	*
+3	peu	peu	ADV	_	_	2	fixed	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	chance	chance	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_	*
+8	aurons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	9	aux:tense	_	_	*
+9	redressé	redresser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	tête	tête	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	quand	quand	SCONJ	_	_	18	mark	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	mars	mars	NOUN	_	Gender=Masc|Number=Sing	18	obl:mod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	15	punct	_	_	*
+17	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	18	nsubj	_	_	*
+18	accueillerons	accueillere	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	9	advcl	_	_	*
+19	Sochaux	Sochaux	PROPN	_	_	18	obj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	9	punct	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+22	éternelle	éternel	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+23	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 12
+# text = - A vos yeux, une certaine malédiction accompagnerait donc Troyes depuis le début de saison ?
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	certaine	certain	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	malédiction	malédiction	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+9	accompagnerait	accompagner	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	donc	donc	ADV	_	_	9	advmod	_	_	*
+11	Troyes	Troyes	ADJ	_	Gender=Fem|Number=Plur	9	xcomp	_	_	*
+12	depuis	depuis	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	début	début	NOUN	_	Gender=Masc|Number=Sing	9	obl	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	saison	saison	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	?	?	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 13
+# text = - On peut le penser.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_	*
+5	penser	penser	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 14
+# text = Souvenez-vous de l'épisode de l'élimination sur tapis vert en Intertoto, l'été dernier, à cause d'une erreur administrative...
+1	Souvenez	souvenir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1:IRV
+2	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	1	nsubj	_	_	1
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	épisode	épisode	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	élimination	élimination	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	sur	sur	ADP	_	_	10	case	_	_	*
+10	tapis	tapis	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	vert	vert	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	Intertoto	Intertoto	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	été	été	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+17	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	à	à	ADP	_	_	20	case	_	_	*
+20	cause	cause	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+21	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	erreur	erreur	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+24	administrative	administratif	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No	*
+25	...	...	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 15
+# text = Un chat noir doit rôder au club.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	noir	noir	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	rôder	rôder	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	club	club	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 16
+# text = On va le chasser !
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*
+4	chasser	chasser	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	!	!	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 17
+# text = Propos recueillis par Romain JACQUOT BESANÇON.
+1	Propos	propos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	recueillis	recueillir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+3	par	par	ADP	_	_	4	case	_	_	*
+4	Romain	romain	PROPN	_	_	2	obl:agent	_	_	*
+5	JACQUOT	JACQUOT	PROPN	_	_	4	flat:name	_	SpacesAfter=\s\s\s\s\s	*
+6	BESANÇON	Besançon	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 18
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 19
+# text = Ça n'aura sûrement pas échappé aux nombreux inconditionnels d'Alain Perrin.
+1	Ça	ça	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	3	advmod	_	SpaceAfter=No	*
+3	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	sûrement	sûrement	ADV	_	_	3	advmod	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+6	échappé	échapper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*
+7-8	aux	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+10	inconditionnels	inconditionnel	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	Alain	Alain	PROPN	_	_	10	nmod	_	_	*
+13	Perrin	Perrin	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 20
+# text = L'équipe dirigée par l'ancien entraîneur aubois se prélasse en effet dans le fauteuil de leader alors que la troupe troyenne galère sur son siège de lanterne rouge.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+3	dirigée	diriger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	par	par	ADP	_	_	7	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+6	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	entraîneur	entraîneur	NOUN	_	Gender=Masc|Number=Sing	3	obl:agent	_	_	*
+8	aubois	aubois	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	obj	_	_	*
+10	prélasse	prélasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	en	en	ADP	_	_	10	advmod	_	_	*
+12	effet	effet	NOUN	_	Gender=Masc|Number=Sing	11	fixed	_	_	*
+13	dans	dans	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	fauteuil	fauteuil	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	leader	leader	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	alors	alors	ADV	_	_	21	mark	_	_	*
+19	que	que	SCONJ	_	_	18	fixed	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	10	advcl	_	_	*
+22	troyenne	troyen	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	galère	galer	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+24	sur	sur	ADP	_	_	26	case	_	_	*
+25	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	siège	siège	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	lanterne	lanterne	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+29	rouge	rouge	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 21
+# text = L'OM premier, l'ESTAC dernier, c'est une sacrée ironie du sort.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	OM	OM	PROPN	_	_	13	dislocated	_	_	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	ESTAC	ESTAC	PROPN	_	_	2	appos	_	_	*
+7	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	2	punct	_	_	*
+9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+12	sacrée	sacré	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+13	ironie	ironie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	sort	sort	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 22
+# text = Installé en janvier sur un banc qui venait d'être occupé durant neuf ans par l'ex-responsable du centre de formation de l'AS Nancy-Lorraine, parti à Marseille, puis pendant six mois par Jacky Bonnevay, un autre coach naguère éleveur de champions au sein du club meurthe-et-mosellan, Faruk Hadzibegic avait qualifié sa nouvelle mission de « très difficile ».
+1	Installé	installer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	banc	banc	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*
+8	venait	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	acl:relcl	_	_	*
+9	d'	de	ADP	_	_	11	mark	_	SpaceAfter=No	*
+10	être	être	AUX	_	VerbForm=Inf	11	aux:pass	_	_	*
+11	occupé	occuper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	xcomp	_	_	*
+12	durant	durant	ADP	_	_	14	case	_	_	*
+13	neuf	neuf	NUM	_	_	14	nummod	_	_	*
+14	ans	an	NOUN	_	Gender=Masc|Number=Plur	11	obl	_	_	*
+15	par	par	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	ex-responsable	ex-responsable	NOUN	_	Gender=Masc|Number=Sing	11	obl:agent	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	centre	centre	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	formation	formation	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	AS	AS	PROPN	_	_	20	nmod	_	_	*
+26	Nancy-Lorraine	Nancy-Lorraine	PROPN	_	_	25	flat:name	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*
+28	parti	partir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	conj	_	_	*
+29	à	à	ADP	_	_	30	case	_	_	*
+30	Marseille	Marseille	PROPN	_	_	28	obl:arg	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	35	punct	_	_	*
+32	puis	puis	ADV	_	_	35	cc	_	_	*
+33	pendant	pendant	ADP	_	_	35	case	_	_	*
+34	six	six	NUM	_	_	35	nummod	_	_	*
+35	mois	mois	NOUN	_	Gender=Masc|Number=Plur	28	conj	_	_	*
+36	par	par	ADP	_	_	37	case	_	_	*
+37	Jacky	Jacky	PROPN	_	_	58	obl:mod	_	_	*
+38	Bonnevay	Bonnevay	PROPN	_	_	37	flat:name	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	42	punct	_	_	*
+40	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+41	autre	autre	ADJ	_	Gender=Masc|Number=Sing	42	amod	_	_	*
+42	coach	coach	NOUN	_	Gender=Masc|Number=Sing	37	appos	_	_	*
+43	naguère	naguère	ADV	_	_	44	advmod	_	_	*
+44	éleveur	éleveur	ADJ	_	Gender=Masc|Number=Sing	42	amod	_	_	*
+45	de	de	ADP	_	_	46	case	_	_	*
+46	champions	champion	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*
+47-48	au	_	_	_	_	_	_	_	_	*
+47	à	à	ADP	_	_	49	case	_	_	*
+48	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_	*
+49	sein	sein	NOUN	_	Gender=Masc|Number=Sing	42	nmod	_	_	*
+50-51	du	_	_	_	_	_	_	_	_	*
+50	de	de	ADP	_	_	52	case	_	_	*
+51	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_	*
+52	club	club	NOUN	_	Gender=Masc|Number=Sing	49	nmod	_	_	*
+53	meurthe-et-mosellan	meurthe-et-mosellan	ADJ	_	Gender=Masc|Number=Sing	52	amod	_	SpaceAfter=No	*
+54	,	,	PUNCT	_	_	37	punct	_	_	*
+55	Faruk	Faruk	PROPN	_	_	58	nsubj	_	_	*
+56	Hadzibegic	Hadzibegic	PROPN	_	_	55	flat:name	_	_	*
+57	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	58	aux:tense	_	_	*
+58	qualifié	qualifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	35	acl:relcl	_	_	*
+59	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	61	det	_	_	*
+60	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	61	amod	_	_	*
+61	mission	mission	NOUN	_	Gender=Fem|Number=Sing	58	obj	_	_	*
+62	de	de	ADP	_	_	65	case	_	_	*
+63	«	«	PUNCT	_	_	65	punct	_	_	*
+64	très	très	ADV	_	_	65	advmod	_	_	*
+65	difficile	difficile	ADJ	_	Gender=Masc|Number=Sing	61	amod	_	_	*
+66	»	»	PUNCT	_	_	65	punct	_	SpaceAfter=No	*
+67	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 23
+# text = Est-elle désormais impossible, après l'échec à domicile contre Bordeaux (0-1), mercredi), le quatrième en autant de matches depuis sa signature (trois défaites en L1 plus l'élimination en Coupe de France à Schiltigheim) ?
+1	Est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+2	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_	*
+3	désormais	désormais	ADV	_	_	1	advmod	_	_	*
+4	impossible	impossible	ADJ	_	Gender=Fem|Number=Sing	1	xcomp	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	après	après	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	échec	échec	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	domicile	domicile	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	contre	contre	ADP	_	_	12	case	_	_	*
+12	Bordeaux	Bordeaux	PROPN	_	_	1	obl	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	0-1	0-1	NUM	_	_	12	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	1	punct	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	1	punct	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	quatrième	quatrième	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+22	en	en	ADP	_	_	23	case	_	_	*
+23	autant	autant	ADV	_	_	1	advmod	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	matches	match	NOUN	_	Gender=Masc|Number=Plur	23	obl:arg	_	_	*
+26	depuis	depuis	ADP	_	_	28	case	_	_	*
+27	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+28	signature	signature	NOUN	_	Gender=Fem|Number=Sing	1	obl	_	_	*
+29	(	(	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+30	trois	trois	NUM	_	_	31	nummod	_	_	*
+31	défaites	défaite	NOUN	_	Gender=Fem|Number=Plur	28	appos	_	_	*
+32	en	en	ADP	_	_	33	case	_	_	*
+33	L1	L1	PROPN	_	_	31	nmod	_	_	*
+34	plus	plus	ADV	_	_	36	advmod	_	_	*
+35	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	SpaceAfter=No	*
+36	élimination	élimination	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+37	en	en	ADP	_	_	38	case	_	_	*
+38	Coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+39	de	de	ADP	_	_	40	case	_	_	*
+40	France	France	PROPN	_	_	36	nmod	_	_	*
+41	à	à	ADP	_	_	42	case	_	_	*
+42	Schiltigheim	Schiltigheim	PROPN	_	_	36	nmod	_	SpaceAfter=No	*
+43	)	)	PUNCT	_	_	31	punct	_	_	*
+44	?	?	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 24
+# text = Malgré la tempête, le Bosniaque répond avec une sérénité qui le caractérisait lorsqu'il pilotait la défense du FC Sochaux.
+1	Malgré	malgré	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	tempête	tempête	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Bosniaque	bosniaque	PROPN	_	_	7	nsubj	_	_	*
+7	répond	répondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	avec	avec	ADP	_	_	10	case	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	sérénité	sérénité	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+12	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	_	_	*
+13	caractérisait	caractérisavoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_	*
+14	lorsqu'	lorsque	SCONJ	_	_	16	mark	_	SpaceAfter=No	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	*
+16	pilotait	pilotre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	advcl	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	défense	défense	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	FC	FC	PROPN	_	_	18	nmod	_	_	*
+22	Sochaux	Sochaux	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 25
+# text = - Peut-on dire que Troyes ne parvient pas à tourner la page Alain Perrin ? - Oui.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+3	-on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+4	dire	dire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	que	que	SCONJ	_	_	8	mark	_	_	*
+6	Troyes	Troyes	PROPN	_	_	8	nsubj	_	_	*
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	parvient	parvenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+10	à	à	ADP	_	_	11	mark	_	_	*
+11	tourner	tourner	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	page	page	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	Alain	Alain	PROPN	_	_	13	appos	_	_	*
+15	Perrin	Perrin	PROPN	_	_	14	flat:name	_	_	*
+16	?	?	PUNCT	_	_	18	punct	_	_	*
+17	-	-	PUNCT	_	_	18	punct	_	_	*
+18	Oui	oui	PROPN	_	_	14	appos	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 26
+# text = On sent bien que l'actuel coach de l'OM a marqué les mémoires.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	sent	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	bien	bien	ADV	_	_	2	advmod	_	_	*
+4	que	que	SCONJ	_	_	12	mark	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+6	actuel	actuel	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	coach	coach	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	OM	OM	PROPN	_	_	7	nmod	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	marqué	marquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	mémoires	mémoire	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 27
+# text = Les supporters parlent souvent de lui.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	supporters	supporter	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	parlent	parler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	souvent	souvent	ADV	_	_	3	advmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	3	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 28
+# text = C'est d'ailleurs normal.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	d'	de	ADP	_	_	5	advmod	_	SpaceAfter=No	*
+4	ailleurs	ailleurs	ADV	_	_	3	fixed	_	_	*
+5	normal	normal	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 29
+# text = Car il a pris l'équipe en N2 et l'a emmenée en Coupe d'Europe.
+1	Car	car	CCONJ	_	_	4	cc	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	N2	N2	PROPN	_	_	4	obl	_	_	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*
+10	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	emmenée	emmener	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	Coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	Europe	Europe	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 30
+# text = Et puis, son travail dépassait le terrain.
+1	Et	et	CCONJ	_	_	6	cc	_	_	*
+2	puis	puis	ADV	_	_	6	cc	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	travail	travail	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	dépassait	dépasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 31
+# text = Il orientait la politique générale du club.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	orientait	orienter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	politique	politique	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	générale	général	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	club	club	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 32
+# text = Perrin a laissé un vide énorme.
+1	Perrin	Perrin	PROPN	_	_	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	vide	vide	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	énorme	énorme	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 33
+# text = Un peu comme si Guy Roux quittait Auxerre.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	_	*
+2	peu	peu	ADV	_	_	1	fixed	_	_	*
+3	comme	comme	SCONJ	_	_	7	mark	_	_	*
+4	si	si	SCONJ	_	_	7	mark	_	_	*
+5	Guy	Guy	PROPN	_	_	7	nsubj	_	_	*
+6	Roux	Roux	PROPN	_	_	5	flat:name	_	_	*
+7	quittait	quitter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+8	Auxerre	Auxerre	PROPN	_	_	7	obj	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 34
+# text = - Pointées respectivement à dix et huit longueurs du premier non-relégable, Ajaccio, suite aux résultats de mercredi, votre formation et celle de Montpellier ont-elles déjà un pied en Ligue 2 ?
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Pointées	Pointer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+3	respectivement	respectivement	ADV	_	_	2	advmod	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	dix	dix	NUM	_	_	8	nummod	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	huit	huit	NUM	_	_	5	conj	_	_	*
+8	longueurs	longueur	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	14	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+11	premier	premier	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+12	non-relégable	non-relégable	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Ajaccio	Ajaccio	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	suite	suite	ADV	_	_	29	advmod	_	_	*
+17-18	aux	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	29	obl:mod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	19	punct	_	_	*
+23	votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	formation	formation	NOUN	_	Gender=Fem|Number=Sing	29	nsubj	_	_	1:LVC.full
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	24	conj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	Montpellier	Montpellier	PROPN	_	_	26	nmod	_	_	*
+29	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpaceAfter=No	1
+30	-elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	29	obl:mod	_	_	*
+31	déjà	déjà	ADV	_	_	30	advmod	_	_	*
+32	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	pied	pied	NOUN	_	Gender=Masc|Number=Sing	29	obj	_	_	*
+34	en	en	ADP	_	_	35	case	_	_	*
+35	Ligue	Ligue	PROPN	_	_	33	nmod	_	_	*
+36	2	2	NUM	_	_	35	nmod	_	_	*
+37	?	?	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 35
+# text = - Ça fait longtemps que je n'ai pas reçu de cours de mathématiques.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Ça	ça	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_	1:VID
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	longtemps	longtemps	ADV	_	_	3	advmod	_	_	*
+5	que	que	SCONJ	_	_	10	mark	_	_	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+7	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+8	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+10	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	_	*
+11	de	un	ADP	_	_	12	case	_	_	*
+12	cours	cours	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	mathématiques	mathématique	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 36
+# text = Je ne vais pas oser des calculs de probabilités Ù(rires)...
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+5	oser	oser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	calculs	calcul	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	probabilités	probabilité	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+11	Ù(	ù(	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+12	rires	rire	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+14	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 37
+# text = La certitude, à 100 %, c'est que nous ne sommes pas en L2.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	certitude	certitude	NOUN	_	Gender=Fem|Number=Sing	9	dislocated	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	100	100	NUM	_	_	6	nummod	_	_	*
+6	%	%	SYM	_	_	2	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	2	punct	_	_	*
+8	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	SpaceAfter=No	*
+9	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	que	que	SCONJ	_	_	16	mark	_	_	*
+11	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	16	nsubj	_	_	*
+12	ne	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*
+13	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+14	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	L2	L2	X	_	_	9	ccomp	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 38
+# text = Nous comptons un match en retard.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	comptons	compter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	match	match	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	retard	retard	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 39
+# text = Une série positive pourrait vite nous relancer.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	série	série	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	positive	positif	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	vite	vite	ADV	_	_	4	advmod	_	_	*
+6	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	7	obj	_	_	*
+7	relancer	relancer	VERB	_	VerbForm=Inf	4	xcomp	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-31_35315.txt 40
+# text = En tout cas, l'idéal serait d'empocher trois points dès samedi, sur le terrain du Havre, l'un de nos concurrents directs.
+1	En	en	ADP	_	_	3	case	_	_	*
+2	tout	tout	DET	_	Gender=Masc|Number=Sing	3	det	_	_	*
+3	cas	cas	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	idéal	idéal	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+7	serait	être	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	empocher	empocher	VERB	_	VerbForm=Inf	7	ccomp	_	_	*
+10	trois	trois	NUM	_	_	11	nummod	_	_	*
+11	points	point	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+12	dès	dès	ADP	_	_	13	case	_	_	*
+13	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	Havre	Havre	PROPN	_	_	17	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+23	un	un	PRON	_	Gender=Masc|Number=Sing	11	appos	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	concurrents	concurrent	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+27	directs	direct	ADJ	_	Gender=Masc|Number=Plur	26	amod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

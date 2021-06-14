@@ -1,0 +1,463 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-21_22854.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 1
+# text = Le groupe fusillé par l'Armée
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	fusillé	fusiller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	par	par	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	Armée	armée	NOUN	_	Gender=Fem|Number=Sing	3	obl:agent	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 2
+# text = Le service militaire aura raison des Etoiles Filantes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	service	service	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	militaire	militaire	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+5	raison	raison	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	Etoiles	Etoiles	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+9	Filantes	Filant	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 3
+# text = « Le groupe a éclaté.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	éclaté	éclater	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 4
+# text = La moitié a rejoint une formation de Nancy, l'autre est partie à l'armée » Alain n'en sortira pas totalement perdant.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	moitié	moitié	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	rejoint	rejoindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	formation	formation	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Nancy	Nancy	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	autre	autre	PRON	_	Number=Sing	13	nsubj	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+13	partie	partie	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	armée	armée	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	»	»	PUNCT	_	_	13	punct	_	_	*
+18	Alain	Alain	PROPN	_	_	13	appos	_	_	*
+19	n'	ne	ADV	_	Polarity=Neg	21	advmod	_	SpaceAfter=No	*
+20	en	en	PRON	_	Person=3	21	expl:comp	_	_	*
+21	sortira	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	parataxis	_	_	*
+22	pas	pas	ADV	_	Polarity=Neg	21	advmod	_	_	*
+23	totalement	totalement	ADV	_	_	21	advmod	_	_	*
+24	perdant	perdant	ADJ	_	Gender=Masc|Number=Sing	21	xcomp	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 5
+# text = Sous les drapeaux naîtra une seconde passion : le saut en parachute.
+1	Sous	sous	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	drapeaux	drapeau	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	_	*
+4	naîtra	naître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	seconde	second	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	passion	passion	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	:	:	PUNCT	_	_	10	punct	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	saut	saut	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	_	*
+11	en	en	ADP	_	_	12	case	_	_	*
+12	parachute	parachute	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 6
+# text = Elle lui vaudra le titre de moniteur, celui d'officier dans l'ordre national du Mérite, et la médaille d'or du service militaire volontaire.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	3	iobj	_	_	*
+3	vaudra	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	titre	titre	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	moniteur	moniteur	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	appos	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	officier	officier	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	dans	dans	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+15	national	national	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	Mérite	mérite	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	médaille	médaille	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+23	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+24	or	or	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+25-26	du	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	service	service	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+28	militaire	militaire	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29	volontaire	volontaire	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 7
+# text = Touche-à-tout, Alain vendra ensuite des meubles pour Rabannes.
+1	Touche-à-tout	Touche-à-tout	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	Alain	Alain	PROPN	_	_	4	nsubj	_	_	*
+4	vendra	vendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+5	ensuite	ensuite	ADV	_	_	4	advmod	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	meubles	meuble	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+9	pour	pour	ADP	_	_	10	case	_	_	*
+10	Rabannes	Rabannes	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 8
+# text = Et le jour de ses trente ans, en 1976, il retrouvre la musique avec l'ouverture rue des Minimes du magasin d'instruments « Alan Music » Il vendra l'affaire en 1988 à la disparition de son père, « un puits de science en la matière » Aujourd'hui en pré-retraite, Alain Bergeret n'attend plus qu'une chose : une Star academy « pour les vieux ».
+1	Et	et	CCONJ	_	_	13	cc	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	jour	jour	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+4	de	de	ADP	_	_	7	case	_	_	*
+5	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*
+6	trente	trente	NUM	_	_	7	nummod	_	_	*
+7	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	1976	1976	NUM	_	_	13	obl:mod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	10	punct	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*
+13	retrouvre	retrouvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	musique	musique	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*
+16	avec	avec	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	ouverture	ouverture	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+19	rue	rue	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	22	det	_	_	*
+22	Minimes	Minimes	PROPN	_	_	18	nmod	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	magasin	magasin	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26	d'	de	ADP	_	_	27	case	_	SpaceAfter=No	*
+27	instruments	instrument	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	_	*
+28	«	«	PUNCT	_	_	29	punct	_	_	*
+29	Alan	Alan	PROPN	_	_	25	appos	_	_	*
+30	Music	Music	PROPN	_	_	29	flat:name	_	_	*
+31	»	»	PUNCT	_	_	29	punct	_	_	*
+32	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_	*
+33	vendra	vendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	parataxis	_	_	*
+34	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*
+35	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	33	obj	_	_	*
+36	en	en	ADP	_	_	37	case	_	_	*
+37	1988	1988	NUM	_	_	33	obl	_	_	*
+38	à	à	ADP	_	_	40	case	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	disparition	disparition	NOUN	_	Gender=Fem|Number=Sing	33	obl:mod	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	43	det	_	_	*
+43	père	père	NOUN	_	Gender=Masc|Number=Sing	40	nmod	_	SpaceAfter=No	*
+44	,	,	PUNCT	_	_	47	punct	_	_	*
+45	«	«	PUNCT	_	_	47	punct	_	_	*
+46	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_	*
+47	puits	puits	NOUN	_	Gender=Masc|Number=Sing	61	nsubj	_	_	*
+48	de	de	ADP	_	_	49	case	_	_	*
+49	science	science	NOUN	_	Gender=Fem|Number=Sing	47	nmod	_	_	*
+50	en	en	ADP	_	_	52	case	_	_	*
+51	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_	*
+52	matière	matière	NOUN	_	Gender=Fem|Number=Sing	47	nmod	_	_	*
+53	»	»	PUNCT	_	_	47	punct	_	_	*
+54	Aujourd'hui	aujourd'hui	ADV	_	_	61	advmod	_	_	*
+55	en	en	ADP	_	_	56	case	_	_	*
+56	pré-retraite	pré-retraite	NOUN	_	Gender=Fem|Number=Sing	61	obl:mod	_	SpaceAfter=No	*
+57	,	,	PUNCT	_	_	56	punct	_	_	*
+58	Alain	Alain	PROPN	_	_	61	nsubj	_	_	*
+59	Bergeret	Bergeret	PROPN	_	_	58	flat:name	_	_	*
+60	n'	ne	ADV	_	Polarity=Neg	61	advmod	_	SpaceAfter=No	*
+61	attend	attendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	parataxis	_	_	*
+62	plus	plus	ADV	_	Polarity=Neg	61	advmod	_	_	*
+63	qu'	que	SCONJ	_	_	65	case	_	SpaceAfter=No	*
+64	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_	*
+65	chose	chose	NOUN	_	Gender=Fem|Number=Sing	61	obl:mod	_	_	*
+66	:	:	PUNCT	_	_	68	punct	_	_	*
+67	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	68	det	_	_	*
+68	Star	Star	PROPN	_	_	65	appos	_	_	*
+69	academy	academy	ADJ	_	_	68	amod	_	_	*
+70	«	«	PUNCT	_	_	73	punct	_	_	*
+71	pour	pour	ADP	_	_	73	case	_	_	*
+72	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	73	det	_	_	*
+73	vieux	vieux	ADJ	_	Gender=Masc|Number=Plur	68	nmod	_	_	*
+74	»	»	PUNCT	_	_	73	punct	_	SpaceAfter=No	*
+75	.	.	PUNCT	_	_	65	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 9
+# text = C'est sûr qu'un jour, on le verra apparaître sur grand écran.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	qu'	que	SCONJ	_	_	6	case	_	SpaceAfter=No	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	jour	jour	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_	*
+9	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	_	_	*
+10	verra	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	_	_	*
+11	apparaître	apparaître	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+12	sur	sur	ADP	_	_	14	case	_	_	*
+13	grand	grand	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+14	écran	écran	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 10
+# text = Marie-Ange CREUSOT « L'an dernier, je me suis dit « avant que je sois trop vieux, il faut que je fasse un CD » ».
+1	Marie-Ange	Marie-Ange	PROPN	_	_	11	nsubj	_	_	*
+2	CREUSOT	CREUSOT	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+3	«	«	PUNCT	_	_	5	punct	_	_	*
+4	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	an	an	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+6	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	1	punct	_	_	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*
+9	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	11	iobj	_	_	*
+10	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	«	«	PUNCT	_	_	13	punct	_	_	*
+13	avant	avant	ADV	_	_	11	advmod	_	_	*
+14	que	que	SCONJ	_	_	18	mark	_	_	*
+15	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_	*
+16	sois	sois	ADV	_	_	17	advmod	_	_	*
+17	trop	trop	ADV	_	_	18	advmod	_	_	*
+18	vieux	vieux	ADJ	_	Gender=Masc|Number=Sing	13	ccomp	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl:subj	_	_	1:VID
+21	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	1
+22	que	que	SCONJ	_	_	24	mark	_	_	*
+23	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_	*
+24	fasse	faire	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	CD	CD	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*
+27	»	»	PUNCT	_	_	26	punct	_	_	*
+28	»	»	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 11
+# text = Au studio d'enregistrement de Chavelot « Second Side », Alain Bergeret a gravé dans les sillons les plus belles années de sa vie : « J'ai mis 14 morceaux en boîte en deux jours ».
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	studio	studio	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	enregistrement	enregistrement	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Chavelot	Chavelot	PROPN	_	_	3	nmod	_	_	*
+8	«	«	PUNCT	_	_	9	punct	_	_	*
+9	Second	second	PROPN	_	_	3	appos	_	_	*
+10	Side	Side	PROPN	_	_	9	flat:name	_	_	*
+11	»	»	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	3	punct	_	_	*
+13	Alain	Alain	PROPN	_	_	16	nsubj	_	_	*
+14	Bergeret	Bergeret	PROPN	_	_	13	flat:name	_	_	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	gravé	graver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	sillons	sillon	NOUN	_	Gender=Masc|Number=Plur	16	obl:arg	_	_	*
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*
+21	plus	plus	ADV	_	_	22	advmod	_	_	*
+22	belles	beau	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*
+23	années	année	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*
+26	vie	vie	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+27	:	:	PUNCT	_	_	31	punct	_	_	*
+28	«	«	PUNCT	_	_	31	punct	_	_	*
+29	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	31	nsubj	_	SpaceAfter=No	*
+30	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	31	aux:tense	_	_	*
+31	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	parataxis	_	_	*
+32	14	14	NUM	_	_	33	nummod	_	_	*
+33	morceaux	morceau	NOUN	_	Gender=Masc|Number=Plur	31	obj	_	_	*
+34	en	en	ADP	_	_	35	case	_	_	*
+35	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	31	obl	_	_	*
+36	en	en	ADP	_	_	38	case	_	_	*
+37	deux	deux	NUM	_	_	38	nummod	_	_	*
+38	jours	jour	NOUN	_	Gender=Masc|Number=Plur	31	obl	_	_	*
+39	»	»	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 12
+# text = Alain dit l'avoir fait pour sa famille, ses amis.
+1	Alain	Alain	PROPN	_	_	2	nsubj	_	_	*
+2	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No	*
+4	avoir	avoir	AUX	_	VerbForm=Inf	5	aux:tense	_	_	*
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	_	*
+6	pour	pour	ADP	_	_	8	case	_	_	*
+7	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	amis	ami	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 13
+# text = Peut-être aussi pour réentendre les voix de cette jeunesse, quand il prêtait la sienne au groupe phare de la cité, les Shooting Stars.
+1	Peut-être	peut-être	ADV	_	_	4	advmod	_	_	*
+2	aussi	aussi	ADV	_	_	4	advmod	_	_	*
+3	pour	pour	ADP	_	_	4	mark	_	_	*
+4	réentendre	réentendre	VERB	_	VerbForm=Inf	0	root	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	voix	voix	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_	*
+9	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	quand	quand	SCONJ	_	_	13	mark	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*
+13	prêtait	prêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	sienne	sienne	PRON	_	Gender=Fem|Number=Sing	13	obj	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	_	*
+19	phare	phare	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	cité	cité	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	4	punct	_	_	*
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	_	*
+25	Shooting	Shooting	PROPN	_	_	4	obj	_	_	*
+26	Stars	stars	NOUN	_	Gender=Fem|Number=Plur	25	flat:name	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 14
+# text = Alain le « yé-yé » est né dans une principauté.
+1	Alain	Alain	PROPN	_	_	7	nsubj	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	«	«	PUNCT	_	_	4	punct	_	_	*
+4	yé-yé	yé-yé	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	né	naître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	principauté	principauté	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 15
+# text = Celle de Salm.
+1	Celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	Salm	Salm	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 16
+# text = A Senones.
+1	A	à	ADP	_	_	2	case	_	_	*
+2	Senones	Senones	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 17
+# text = Spinalien, il le deviendra par son père Jean, huissier de justice.
+1	Spinalien	Spinalien	ADJ	_	Gender=Masc|Number=Sing	5	advcl	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_	*
+5	deviendra	devenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	père	père	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	Jean	Jean	PROPN	_	_	8	appos	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	huissier	huissier	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	justice	justice	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 18
+# text = « Oui mais parce que le grand-père l'avait poussé ! ».
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Oui	oui	INTJ	_	_	0	root	_	_	*
+3	mais	mais	CCONJ	_	_	10	cc	_	_	*
+4	parce	parce	ADV	_	_	10	mark	_	_	*
+5	que	que	SCONJ	_	_	4	fixed	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	grand-père	grand-père	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+8	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	10	obj	_	SpaceAfter=No	*
+9	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux:tense	_	_	*
+10	poussé	pousser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*
+11	!	!	PUNCT	_	_	2	punct	_	_	*
+12	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 19
+# text = Un métier en effet peu populaire dont Alain n'aura que faire.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	métier	métier	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	en	en	ADP	_	_	6	advmod	_	_	*
+4	effet	effet	NOUN	_	Gender=Masc|Number=Sing	3	fixed	_	_	*
+5	peu	peu	ADV	_	_	6	advmod	_	_	*
+6	populaire	populaire	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+7	dont	dont	PRON	_	PronType=Rel	8	nmod	_	_	*
+8	Alain	Alain	PROPN	_	_	10	nsubj	_	_	*
+9	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	SpaceAfter=No	*
+10	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	_	_	*
+11	que	que	ADV	_	_	10	advmod	_	_	*
+12	faire	faire	VERB	_	VerbForm=Inf	10	xcomp	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 20
+# text = Lui, a hérité du meilleur de son père : « Il était peintre, musicien.
+1	Lui	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	hérité	hériter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	meilleur	meilleur	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	père	père	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	:	:	PUNCT	_	_	15	punct	_	_	*
+12	«	«	PUNCT	_	_	15	punct	_	_	*
+13	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+14	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	cop	_	_	*
+15	peintre	peintre	NOUN	_	Gender=Masc|Number=Sing	4	parataxis	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	musicien	musicien	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-21_22854.txt 21
+# text = Il a été premier prix de Paris au piano ! ».
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	cop	_	_	*
+4	premier	premier	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	prix	prix	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Paris	Paris	PROPN	_	_	5	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	piano	piano	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+11	!	!	PUNCT	_	_	10	punct	_	_	*
+12	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*
+

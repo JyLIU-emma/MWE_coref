@@ -1,0 +1,549 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_33792.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 1
+# text = Lucien Bovet, un homme estimé de tous.
+1	Lucien	Lucien	PROPN	_	_	0	root	_	_	*
+2	Bovet	Bovet	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	homme	homme	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6	estimé	estimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	tous	tout	PRON	_	Gender=Masc|Number=Plur	6	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 2
+# text = Tout en franchissant le cap des 90 ans, Lucien Bovet, domicilié à Pagny rue de la Victoire, est l'un des doyens des Pagnotins ; plusieurs dames l'ont cependant devancé.
+1	Tout	tout	ADV	_	_	3	advmod	_	_	*
+2	en	en	ADP	_	_	3	mark	_	_	*
+3	franchissant	franchir	VERB	_	Tense=Pres|VerbForm=Part	24	advcl	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	cap	cap	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	9	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+8	90	90	NUM	_	_	9	nummod	_	_	*
+9	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	3	punct	_	_	*
+11	Lucien	Lucien	PROPN	_	_	24	nsubj	_	_	*
+12	Bovet	Bovet	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	domicilié	domicilier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	Pagny	Pagny	PROPN	_	_	14	obl:mod	_	_	*
+17	rue	rue	NOUN	_	Gender=Fem|Number=Sing	14	xcomp	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	Victoire	victoire	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	11	punct	_	_	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	un	un	PRON	_	Gender=Masc|Number=Sing	0	root	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	doyens	doyen	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	30	det	_	_	*
+30	Pagnotins	Pagnotin	PROPN	_	_	27	nmod	_	_	*
+31	;	;	PUNCT	_	_	37	punct	_	_	*
+32	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	33	det	_	_	*
+33	dames	dame	NOUN	_	Gender=Fem|Number=Plur	37	nsubj	_	_	*
+34	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	37	obj	_	SpaceAfter=No	*
+35	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	37	aux:tense	_	_	*
+36	cependant	cependant	ADV	_	_	37	advmod	_	_	*
+37	devancé	devancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	parataxis	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 3
+# text = C'est le 28 janvier 1913 qu'il a vu le jour à Danjoutin (90).
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	28	28	NUM	_	_	0	root	_	_	*
+5	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+6	1913	1913	NUM	_	_	5	nmod	_	_	*
+7	qu'	que	SCONJ	_	_	10	mark	_	SpaceAfter=No	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advcl:cleft	_	_	1:VID
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	1
+12	jour	jour	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	1
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Danjoutin	Danjoutin	PROPN	_	_	10	obl:arg	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	90	90	NUM	_	_	10	obl	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 4
+# text = Son père Emile, dont d'anciens Pagnotins se souviennent, était cheminot.
+1	Son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	père	père	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+3	Emile	Emile	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	10	punct	_	_	*
+5	dont	dont	PRON	_	PronType=Rel	8	nmod	_	_	*
+6	d'	un	ADP	_	_	8	case	_	SpaceAfter=No	*
+7	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*
+8	Pagnotins	Pagnotin	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:comp	_	_	1:IRV
+10	souviennent	souvenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	SpaceAfter=No	1
+11	,	,	PUNCT	_	_	10	punct	_	_	*
+12	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	_	_	*
+13	cheminot	cheminot	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 5
+# text = Aussitôt la guerre, la mobilité de la profession paternelle amena la famille à Pagny en 1919, d'abord dans les cités SNCF, des pavillons en bois, puis 30, rue Joly.
+1	Aussitôt	aussitôt	ADV	_	_	3	advmod	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	mobilité	mobillité	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	profession	profession	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	paternelle	paternel	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	amena	amener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	famille	famille	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	à	à	ADP	_	_	15	case	_	_	*
+15	Pagny	Pagny	PROPN	_	_	13	nmod	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	1919	1919	NUM	_	_	11	obl	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	23	punct	_	_	*
+19	d'	de	ADP	_	_	23	advmod	_	SpaceAfter=No	*
+20	abord	abord	NOUN	_	Gender=Masc|Number=Sing	19	fixed	_	_	*
+21	dans	dans	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	cités	cité	NOUN	_	Gender=Fem|Number=Plur	11	obl:mod	_	_	*
+24	SNCF	SNCF	PROPN	_	_	23	appos	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	23	punct	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	pavillons	pavillon	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	bois	bois	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	33	punct	_	_	*
+32	puis	puis	ADV	_	_	33	cc	_	_	*
+33	30	30	NUM	_	_	23	conj	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	35	punct	_	_	*
+35	rue	rue	NOUN	_	Gender=Fem|Number=Sing	33	conj	_	_	*
+36	Joly	Joly	PROPN	_	_	33	conj	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 6
+# text = Le jeune Emile suivit les cours de l'école primaire de Pagny et est aujourd'hui l'un des plus anciens élèves de M. Florentin Gisquet dont il garde un excellent souvenir.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	Emile	Emile	PROPN	_	_	4	nsubj	_	_	*
+4	suivit	suivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1:LVC.full
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	cours	cours	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	1
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	école	école	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	primaire	primaire	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Pagny	Pagny	PROPN	_	_	9	nmod	_	_	*
+13	et	et	CCONJ	_	_	17	cc	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+15	aujourd'hui	aujourd'hui	ADV	_	_	17	advmod	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	un	un	PRON	_	Gender=Masc|Number=Sing	4	conj	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	22	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+20	plus	plus	ADV	_	_	21	advmod	_	_	*
+21	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	_	*
+22	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+25	Florentin	Florentin	PROPN	_	_	24	flat:name	_	_	*
+26	Gisquet	Gisquet	PROPN	_	_	24	flat:name	_	_	*
+27	dont	dont	PRON	_	PronType=Rel	32	nmod	_	_	*
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_	*
+29	garde	garder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	2:LVC.full
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+31	excellent	excellent	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	_	*
+32	souvenir	souvenir	NOUN	_	Gender=Masc|Number=Sing	29	obj	_	SpaceAfter=No	2
+33	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 7
+# text = Ce fut ensuite l'école professionnelle de Nancy et la vie active.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_	*
+2	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_	*
+3	ensuite	ensuite	ADV	_	_	5	advmod	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	école	école	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	professionnelle	professionnel	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Nancy	Nancy	PROPN	_	_	5	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	vie	vie	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+12	active	actif	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 8
+# text = Une dizaine d'années employé puis cadre à la CGTVN (compagnie générale de transports par voies navigables avec ses trolleys) entre Pagny et Marbache, il changea de voie pour aller vers une société de distribution alimentaire (les ECO).
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	années	année	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+5	employé	employer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	puis	puis	ADV	_	_	7	cc	_	_	*
+7	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	CGTVN	CGTVN	PROPN	_	_	7	nmod	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*
+13	générale	général	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	transports	transport	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	par	par	ADP	_	_	17	case	_	_	*
+17	voies	voie	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+18	navigables	navigable	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	_	*
+19	avec	avec	ADP	_	_	21	case	_	_	*
+20	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	trolleys	trolleys	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*
+22	)	)	PUNCT	_	_	12	punct	_	_	*
+23	entre	entre	ADP	_	_	24	case	_	_	*
+24	Pagny	Pagny	PROPN	_	_	10	nmod	_	_	*
+25	et	et	CCONJ	_	_	26	cc	_	_	*
+26	Marbache	Marbache	PROPN	_	_	24	conj	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	2	punct	_	_	*
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_	*
+29	changea	changer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	voie	voie	NOUN	_	Gender=Fem|Number=Sing	29	obl:arg	_	_	*
+32	pour	pour	ADP	_	_	33	mark	_	_	*
+33	aller	aller	VERB	_	VerbForm=Inf	29	advcl	_	_	*
+34	vers	vers	ADP	_	_	36	case	_	_	*
+35	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	société	société	NOUN	_	Gender=Fem|Number=Sing	33	obl	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	distribution	distribution	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+39	alimentaire	alimentaire	ADJ	_	Gender=Fem|Number=Sing	38	amod	_	_	*
+40	(	(	PUNCT	_	_	42	punct	_	SpaceAfter=No	*
+41	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	42	det	_	_	*
+42	ECO	Eco	PROPN	_	_	36	appos	_	SpaceAfter=No	*
+43	)	)	PUNCT	_	_	42	punct	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 9
+# text = Un peu plus tard, toujours dans le secteur alimentaire, il partagea la responsabilité des 140 succursales de la coopérative de De Wendel dans le Pays-Haut, jusqu'à l'âge de 63 ans.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	advmod	_	_	*
+2	peu	peu	ADV	_	_	1	fixed	_	_	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*
+4	tard	tard	ADV	_	_	13	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	toujours	toujours	ADV	_	_	9	advmod	_	_	*
+7	dans	dans	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+10	alimentaire	alimentaire	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	9	punct	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*
+13	partagea	partager	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	responsabilité	responsabilité	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	19	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+18	140	140	NUM	_	_	19	nummod	_	_	*
+19	succursales	succursale	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	coopérative	coopérative	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	De	De	PROPN	_	_	22	nmod	_	_	*
+25	Wendel	Wendel	PROPN	_	_	24	flat:name	_	_	*
+26	dans	dans	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	Pays-Haut	Pays-Haut	PROPN	_	_	13	obl:mod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	33	punct	_	_	*
+30	jusqu'	jusque	ADV	_	_	33	advmod	_	SpaceAfter=No	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*
+33	âge	âge	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	63	63	NUM	_	_	36	nummod	_	_	*
+36	ans	an	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 10
+# text = Il habitait alors à Saint-Nicolas-en-Forêt.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	habitait	habiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	alors	alors	ADV	_	_	2	advmod	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Saint-Nicolas-en-Forêt	Saint-Nicolas-en-Forêt	PROPN	_	_	2	obl:arg	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 11
+# text = En 1976, il eut avec son épouse née Paulette Fousse, l'occasion de revenir à Pagny : la perte d'un être cher, l'unique fille Josette à l'âge de 19 ans en 1955, avait désemparé le couple.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1976	1976	NUM	_	_	5	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+5	eut	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1:LVC.full
+6	avec	avec	ADP	_	_	8	case	_	_	*
+7	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*
+9	née	naître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	Paulette	Paulette	PROPN	_	_	9	xcomp	_	_	*
+11	Fousse	Fousse	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	1
+15	de	de	ADP	_	_	16	mark	_	_	*
+16	revenir	revenir	VERB	_	VerbForm=Inf	14	acl	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Pagny	Pagny	PROPN	_	_	16	obl:arg	_	_	*
+19	:	:	PUNCT	_	_	41	punct	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	perte	perte	NOUN	_	Gender=Fem|Number=Sing	41	obl:mod	_	_	*
+22	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	être	être	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+25	cher	cher	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	21	punct	_	_	*
+27	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+28	unique	unique	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_	*
+29	fille	fille	NOUN	_	Gender=Fem|Number=Sing	41	nsubj	_	_	*
+30	Josette	Josette	PROPN	_	_	29	appos	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*
+33	âge	âge	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	19	19	NUM	_	_	36	nummod	_	_	*
+36	ans	an	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	_	*
+37	en	en	ADP	_	_	38	case	_	_	*
+38	1955	1955	NUM	_	_	29	nmod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	29	punct	_	_	*
+40	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	41	aux:tense	_	_	*
+41	désemparé	désemparer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	parataxis	_	_	*
+42	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_	*
+43	couple	couple	NOUN	_	Gender=Masc|Number=Sing	41	obj	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 12
+# text = Lucien est veuf depuis 1995.
+1	Lucien	Lucien	PROPN	_	_	3	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	veuf	veuf	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	depuis	depuis	ADP	_	_	5	case	_	_	*
+5	1995	1995	NUM	_	_	3	obl	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 13
+# text = Le nonagénaire de l'année 2003 fut aussi un grand sportif.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	nonagénaire	nonagénaire	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	année	année	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	2003	2003	NUM	_	_	5	nmod	_	_	*
+7	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	_	*
+8	aussi	aussi	ADV	_	_	11	advmod	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+10	grand	grand	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	sportif	sportif	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 14
+# text = « J'ai pratiqué le football jusqu'à l'âge de 35 ans dans les clubs de Marbache, Pont-à-Mousson et Pagny et lorsque j'étais en Moselle, je fus dirigeant du club cycliste de Thionville », se plaît-il à rappeler.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	pratiqué	pratiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	football	football	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	jusqu'	jusque	ADV	_	_	10	advmod	_	SpaceAfter=No	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	âge	âge	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	35	35	NUM	_	_	13	nummod	_	_	*
+13	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+16	clubs	club	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Marbache	Marbache	PROPN	_	_	16	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Pont-à-Mousson	Pont-à-Mousson	PROPN	_	_	18	conj	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	Pagny	Pagny	PROPN	_	_	18	conj	_	_	*
+23	et	et	CCONJ	_	_	42	cc	_	_	*
+24	lorsque	lorsque	SCONJ	_	_	26	mark	_	_	*
+25	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	26	nsubj	_	SpaceAfter=No	*
+26	étais	être	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	42	advcl	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	Moselle	Moselle	PROPN	_	_	26	obl	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	26	punct	_	_	*
+30	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	26	obj	_	_	*
+31	fus	fus	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	30	acl	_	_	*
+32	dirigeant	diriger	VERB	_	Tense=Pres|VerbForm=Part	30	acl	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	club	club	NOUN	_	Gender=Masc|Number=Sing	32	obl:arg	_	_	*
+36	cycliste	cycliste	ADJ	_	Gender=Masc|Number=Sing	35	amod	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	Thionville	Thionville	PROPN	_	_	35	nmod	_	_	*
+39	»	»	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	26	punct	_	_	*
+41	se	se	PRON	_	Person=3|PronType=Prs	42	expl:comp	_	_	1:IRV
+42	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	SpaceAfter=No	1
+43	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	42	nsubj	_	_	*
+44	à	à	ADP	_	_	45	mark	_	_	*
+45	rappeler	rappeler	VERB	_	VerbForm=Inf	42	xcomp	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 15
+# text = Depuis 1976, il est aussi un membre assidu de l'amicale des Anciens du Génie, il avait effectué son service au 18e.
+1	Depuis	depuis	ADP	_	_	2	case	_	_	*
+2	1976	1976	NUM	_	_	8	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+6	aussi	aussi	ADV	_	_	8	advmod	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	membre	membre	NOUN	_	Gender=Masc|Number=Sing	22	advcl	_	_	*
+9	assidu	assidre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	Anciens	ancien	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	Génie	génie	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	8	punct	_	_	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	*
+21	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux:tense	_	_	*
+22	effectué	effectuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	service	service	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*
+25-26	au	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	18e	18e	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 16
+# text = Dans quelques semaines, M.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	quelques	quelque	DET	_	Gender=Fem|Number=Plur	3	det	_	_	*
+3	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 17
+# text = Lucien Bovet aura quitté Pagny.
+1	Lucien	Lucien	PROPN	_	_	4	nsubj	_	_	*
+2	Bovet	Bovet	PROPN	_	_	1	flat:name	_	_	*
+3	aura	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:tense	_	_	*
+4	quitté	quitter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	Pagny	Pagny	PROPN	_	_	4	obj	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 18
+# text = Il s'y est toujours plu, mais une opportunité se présente et il suivra dans les Vosges un couple qui a toujours été aux petits soins pour lui.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj:pass	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	SpaceAfter=No	*
+3	y	y	PRON	_	_	6	obl:mod	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_	*
+5	toujours	toujours	ADV	_	_	6	advmod	_	_	*
+6	plu	ploir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	12	punct	_	_	*
+8	mais	mais	CCONJ	_	_	12	cc	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	opportunité	opportunité	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*
+11	se	se	PRON	_	Person=3|PronType=Prs	12	expl:pass	_	_	1:IRV
+12	présente	présenter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	1
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+15	suivra	suivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_	*
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+18	Vosges	Vosges	PROPN	_	_	15	obl:arg	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	couple	couple	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*
+21	qui	qui	PRON	_	PronType=Rel	24	nsubj	_	_	*
+22	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+23	toujours	toujours	ADV	_	_	24	advmod	_	_	*
+24	été	être	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl:relcl	_	_	*
+25-26	aux	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	28	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+27	petits	petit	ADJ	_	Gender=Masc|Number=Plur	28	amod	_	_	*
+28	soins	soin	NOUN	_	Gender=Masc|Number=Plur	24	obl:arg	_	_	*
+29	pour	pour	ADP	_	_	30	case	_	_	*
+30	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	28	nmod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 19
+# text = « Il habitera une petite maison à côté de la nôtre », ajoutent M. et Mme Fabri.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+3	habitera	habiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	ccomp	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+5	petite	petit	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	maison	maison	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+7	à	à	ADP	_	_	3	advmod	_	_	*
+8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	nôtre	nôtre	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+12	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	3	punct	_	_	*
+14	ajoutent	ajouter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+15	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*
+18	Fabri	Fabri	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33792.txt 20
+# text = Nous lui souhaitons un agréable séjour non loin de Gérardmer et que de nombreux chiffres croissants s'ajoutent au « 9 » qui caractérise dorénavant son âge.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	3	iobj	_	_	*
+3	souhaitons	souhaiter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	agréable	agréable	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	séjour	séjour	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+7	non	non	ADV	_	_	8	advmod	_	_	*
+8	loin	loin	ADV	_	_	6	advmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Gérardmer	Gérardmer	PROPN	_	_	8	obl:arg	_	_	*
+11	et	et	CCONJ	_	_	18	cc	_	_	*
+12	que	que	SCONJ	_	_	18	mark	_	_	*
+13	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+14	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*
+15	chiffres	chiffre	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_	*
+16	croissants	croissant	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	18	expl:pass	_	SpaceAfter=No	*
+18	ajoutent	ajouter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_	*
+19-20	au	_	_	_	_	_	_	_	_	*
+19	à	à	ADP	_	_	22	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+21	«	«	PUNCT	_	_	22	punct	_	_	*
+22	9	9	NUM	_	_	18	obl:arg	_	_	*
+23	»	»	PUNCT	_	_	22	punct	_	_	*
+24	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*
+25	caractérise	caractériser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*
+26	dorénavant	dorénavant	ADP	_	_	28	case	_	_	*
+27	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+28	âge	âge	NOUN	_	Gender=Masc|Number=Sing	25	obl:arg	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

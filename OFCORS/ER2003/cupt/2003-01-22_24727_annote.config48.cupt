@@ -1,0 +1,611 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-22_24727.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 1
+# text = Sur tous les fronts NANCY. _ Défi Major, Petits As, coupe de France.
+1	Sur	sur	ADP	_	_	4	case	_	_	*
+2	tous	tout	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	fronts	front	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\n	*
+5	NANCY.	NANCY.	PROPN	_	_	4	appos	_	_	*
+6	_	_	PUNCT	_	_	7	punct	_	_	*
+7	Défi	Défi	PROPN	_	_	5	conj	_	_	*
+8	Major	major	PROPN	_	_	7	flat:name	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	Petits	petits	PROPN	_	_	5	conj	_	_	*
+11	As	As	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	France	France	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 2
+# text = Les jeunes tennismen lorrains auront de multiples occasions de se confronter à l'élite dans les dix prochains jours.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	tennismen	tennisman	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+4	lorrains	lorrain	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+5	auront	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:LVC.full
+6	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+7	multiples	multiple	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+8	occasions	occasion	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	1
+9	de	de	ADP	_	_	11	mark	_	_	*
+10	se	se	PRON	_	Person=3|PronType=Prs	11	expl:comp	_	_	*
+11	confronter	confronter	VERB	_	VerbForm=Inf	8	acl	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	élite	élite	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*
+15	dans	dans	ADP	_	_	19	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+17	dix	dix	NUM	_	_	19	nummod	_	_	*
+18	prochains	prochain	ADJ	_	Gender=Masc|Number=Plur	19	amod	_	_	*
+19	jours	jour	NOUN	_	Gender=Masc|Number=Plur	11	obl:mod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 3
+# text = Revue d'effectif.
+1	Revue	Revue	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 4
+# text = PETITS AS.
+1	PETITS	petits	PROPN	_	_	0	root	_	_	*
+2	AS	as	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 5
+# text = Trois Lorrains se rendent cette semaine au prestigieux tournoi international des Petits As à Tarbes.
+1	Trois	Trois	NUM	_	_	2	nummod	_	_	*
+2	Lorrains	lorrains	PROPN	_	_	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	1:IRV
+4	rendent	rendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_	*
+6	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+9	prestigieux	prestigieux	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+10	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+11	international	international	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*
+14	Petits	petits	PROPN	_	_	10	nmod	_	_	*
+15	As	As	PROPN	_	_	14	flat:name	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	Tarbes	Tarbes	PROPN	_	_	10	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 6
+# text = Eric Bruni (Montigny-les-Metz), Kamélia Daya (SMEC) et Noémie Scharle (Hagondange) tenteront de marcher des traces prestigieuses.
+1	Eric	Eric	PROPN	_	_	18	nsubj	_	_	*
+2	Bruni	Bruni	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	Montigny-les-Metz	Montigny-les-Metz	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	Kamélia	Kamélia	PROPN	_	_	1	conj	_	_	*
+8	Daya	Daya	PROPN	_	_	7	flat:name	_	_	*
+9	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+10	SMEC	SMEC	PROPN	_	_	7	appos	_	SpaceAfter=No	*
+11	)	)	PUNCT	_	_	10	punct	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	Noémie	Noémie	PROPN	_	_	1	conj	_	_	*
+14	Scharle	Scharle	PROPN	_	_	13	flat:name	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	Hagondange	Hagondange	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	16	punct	_	_	*
+18	tenteront	tenter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+19	de	de	ADP	_	_	20	mark	_	_	*
+20	marcher	marcher	VERB	_	VerbForm=Inf	18	xcomp	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	traces	trace	NOUN	_	Gender=Fem|Number=Plur	20	obl:arg	_	_	*
+24	prestigieuses	prestigieux	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 7
+# text = Le Lorrain Maxime Boyé, les Français Richard Gasquet et Paul-Henri Mathieu, l'Américain Mickaël Chang mais aussi Kim Clijster, Martina Hingis ou Anna Kournikova ont inscrit leur nom au palmarès.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Lorrain	lorrain	PROPN	_	_	29	nsubj	_	_	*
+3	Maxime	Maxime	PROPN	_	_	2	flat:name	_	_	*
+4	Boyé	Boyé	PROPN	_	_	2	flat:name	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Français	français	PROPN	_	_	2	conj	_	_	*
+8	Richard	Richard	PROPN	_	_	7	appos	_	_	*
+9	Gasquet	Gasquet	PROPN	_	_	8	flat:name	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	Paul-Henri	Paul-Henri	PROPN	_	_	8	conj	_	_	*
+12	Mathieu	Mathieu	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	Américain	Américain	PROPN	_	_	2	conj	_	_	*
+16	Mickaël	Mickaël	PROPN	_	_	15	flat:name	_	_	*
+17	Chang	Chang	PROPN	_	_	15	flat:name	_	_	*
+18	mais	mais	CCONJ	_	_	20	cc	_	_	*
+19	aussi	aussi	ADV	_	_	20	advmod	_	_	*
+20	Kim	Kim	PROPN	_	_	2	conj	_	_	*
+21	Clijster	Clijster	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Martina	Martina	PROPN	_	_	2	conj	_	_	*
+24	Hingis	Hingis	PROPN	_	_	23	flat:name	_	_	*
+25	ou	ou	CCONJ	_	_	26	cc	_	_	*
+26	Anna	Anna	PROPN	_	_	2	conj	_	_	*
+27	Kournikova	Kournikova	PROPN	_	_	26	flat:name	_	_	*
+28	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	aux:tense	_	_	*
+29	inscrit	inscrire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+30	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	31	det	_	_	*
+31	nom	nom	NOUN	_	Gender=Masc|Number=Sing	29	obj	_	_	*
+32-33	au	_	_	_	_	_	_	_	_	*
+32	à	à	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	palmarès	palmarès	NOUN	_	Gender=Masc|Number=Sing	29	obl:arg	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	29	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 8
+# text = On suivra notamment le parcours de Noémie Scharle lors de ce mondial des 12-14 ans qui débute le 23 janvier.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	suivra	suivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	notamment	notamment	ADV	_	_	2	advmod	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Noémie	Noémie	PROPN	_	_	5	nmod	_	_	*
+8	Scharle	Scharle	PROPN	_	_	7	flat:name	_	_	*
+9	lors	lors	ADV	_	_	2	advmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_	*
+12	mondial	mondial	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	16	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+15	12-14	12-14	NUM	_	_	16	nummod	_	_	*
+16	ans	an	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+18	débute	débuter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	23	23	NUM	_	_	18	obl	_	_	*
+21	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 9
+# text = COUPE DE FRANCE.
+1	COUPE	coupe	PROPN	_	_	0	root	_	_	*
+2	DE	De	PROPN	_	_	1	flat:name	_	_	*
+3	FRANCE	France	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 10
+# text = Thibaut Léonet (2/6, Forêt de Haye) sera le seul représentant lorrain à la coupe de France d'hiver des 16 ans garçons.
+1	Thibaut	Thibaut	PROPN	_	_	15	nsubj	_	_	*
+2	Léonet	Léonet	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+5	/	/	SYM	_	_	6	cc	_	SpaceAfter=No	*
+6	6	6	NUM	_	_	4	conj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Forêt	Forêt	PROPN	_	_	4	conj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Haye	Haye	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	)	)	PUNCT	_	_	4	punct	_	_	*
+12	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	cop	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+14	seul	seul	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	représentant	représentant	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+16	lorrain	lorrain	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	France	France	PROPN	_	_	19	nmod	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	hiver	hiver	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+24-25	des	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	27	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+26	16	16	NUM	_	_	27	nummod	_	_	*
+27	ans	an	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_	*
+28	garçons	garçon	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 11
+# text = Tête de série n°7, le Lorrain devrait avoir son mot à dire sur les courts de Limoges du 23 au 26 janvier.
+1	Tête	tête	NOUN	_	Gender=Fem|Number=Sing	9	advcl	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	série	série	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	n°	°	SYM	_	_	3	nmod	_	SpaceAfter=No	*
+5	7	7	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	Lorrain	lorrain	PROPN	_	_	9	nsubj	_	_	*
+9	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	avoir	avoir	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+11	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	mot	mot	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	à	à	ADP	_	_	14	mark	_	_	*
+14	dire	dire	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	courts	court	NOUN	_	Gender=Masc|Number=Plur	14	obl	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Limoges	Limoges	PROPN	_	_	17	nmod	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	23	23	NUM	_	_	17	nmod	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	26	26	NUM	_	_	17	nmod	_	_	*
+26	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 12
+# text = DEFI MAJOR.
+1	DEFI	DEFI	PROPN	_	_	0	root	_	_	*
+2	MAJOR	Major	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 13
+# text = Les phases interrégionales du défi Major se déroulent du 1er au 3 février pour les garçons et les filles respectivement au centre de ligue de Franche-Comté et au CREPS de Reims.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	phases	phase	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+3	interrégionales	interrégional	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	défi	défi	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+7	Major	major	PROPN	_	_	6	appos	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	_	1:IRV
+9	déroulent	dérouler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	mark	_	_	*
+11	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_	*
+12	1er	1er	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	3	3	NUM	_	_	12	obl:mod	_	_	*
+16	février	février	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+17	pour	pour	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	12	obl	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	filles	fille	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	_	*
+23	respectivement	respectivement	ADV	_	_	22	advmod	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	centre	centre	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	ligue	ligue	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	Franche-Comté	Franche-Comté	PROPN	_	_	26	nmod	_	_	*
+31	et	et	CCONJ	_	_	34	cc	_	_	*
+32-33	au	_	_	_	_	_	_	_	_	*
+32	à	à	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	CREPS	Creps	PROPN	_	_	26	conj	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	Reims	Reims	PROPN	_	_	34	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 14
+# text = Accompagnées par Alban Gouzennes, les filles qualifiées sont : Marie Aubert (Ludres), Delphine Guidetti (Cattenom), Mélanie Longhini (Longlaville), Margaux Sancier (ASPTT Nancy), Mathilde Cuenin (Ludres).
+1	Accompagnées	accompagner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	11	advcl	_	_	*
+2	par	par	ADP	_	_	3	case	_	_	*
+3	Alban	Alban	PROPN	_	_	1	obl:agent	_	_	*
+4	Gouzennes	Gouzennes	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	filles	fille	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	_	_	*
+8	qualifiées	qualifier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+10	:	:	PUNCT	_	_	11	punct	_	_	*
+11	Marie	Marie	PROPN	_	_	0	root	_	_	*
+12	Aubert	Aubert	PROPN	_	_	11	flat:name	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	Ludres	Ludres	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	Delphine	Delphine	PROPN	_	_	11	conj	_	_	*
+18	Guidetti	Guidetti	PROPN	_	_	17	flat:name	_	_	*
+19	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+20	Cattenom	Cattenom	PROPN	_	_	17	appos	_	SpaceAfter=No	*
+21	)	)	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Mélanie	Mélanie	PROPN	_	_	11	conj	_	_	*
+24	Longhini	Longhini	PROPN	_	_	23	flat:name	_	_	*
+25	(	(	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+26	Longlaville	Longlaville	PROPN	_	_	23	appos	_	SpaceAfter=No	*
+27	)	)	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Margaux	Margaux	PROPN	_	_	11	conj	_	_	*
+30	Sancier	Sancier	PROPN	_	_	29	flat:name	_	_	*
+31	(	(	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+32	ASPTT	ASPTT	PROPN	_	_	29	appos	_	_	*
+33	Nancy	Nancy	PROPN	_	_	32	flat:name	_	SpaceAfter=No	*
+34	)	)	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	Mathilde	Mathilde	PROPN	_	_	11	conj	_	_	*
+37	Cuenin	Cuenin	PROPN	_	_	36	flat:name	_	_	*
+38	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No	*
+39	Ludres	Ludres	PROPN	_	_	36	appos	_	SpaceAfter=No	*
+40	)	)	PUNCT	_	_	39	punct	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 15
+# text = Les garçons, encadrés par François Errard, sont : Alexandre Piffer (ASPTT Metz), Stanislas Beck (Thionville), Geoffreu Thomas (Golbey), David Lee Yung Ping (Ludres), Mathieu Froment (Briey), François Deville (Commercy).
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	encadrés	encadrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	par	par	ADP	_	_	6	case	_	_	*
+6	François	François	PROPN	_	_	4	obl:agent	_	_	*
+7	Errard	Errard	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	2	punct	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+10	:	:	PUNCT	_	_	11	punct	_	_	*
+11	Alexandre	Alexandre	PROPN	_	_	0	root	_	_	*
+12	Piffer	Piffer	PROPN	_	_	11	flat:name	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	ASPTT	ASPTT	PROPN	_	_	11	appos	_	_	*
+15	Metz	Metz	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	Stanislas	Stanislas	PROPN	_	_	11	conj	_	_	*
+19	Beck	Beck	PROPN	_	_	18	flat:name	_	_	*
+20	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+21	Thionville	Thionville	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+22	)	)	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	Geoffreu	Geoffreu	PROPN	_	_	11	conj	_	_	*
+25	Thomas	Thomas	PROPN	_	_	24	flat:name	_	_	*
+26	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+27	Golbey	Golbey	PROPN	_	_	24	appos	_	SpaceAfter=No	*
+28	)	)	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	David	David	PROPN	_	_	11	conj	_	_	*
+31	Lee	Lee	PROPN	_	_	30	flat:name	_	_	*
+32	Yung	Yung	PROPN	_	_	30	flat:name	_	_	*
+33	Ping	Ping	PROPN	_	_	30	flat:name	_	_	*
+34	(	(	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+35	Ludres	Ludres	PROPN	_	_	30	appos	_	SpaceAfter=No	*
+36	)	)	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	38	punct	_	_	*
+38	Mathieu	Mathieu	PROPN	_	_	11	conj	_	_	*
+39	Froment	froment	PROPN	_	_	38	flat:name	_	_	*
+40	(	(	PUNCT	_	_	41	punct	_	SpaceAfter=No	*
+41	Briey	Briey	PROPN	_	_	38	appos	_	SpaceAfter=No	*
+42	)	)	PUNCT	_	_	41	punct	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	44	punct	_	_	*
+44	François	François	PROPN	_	_	11	conj	_	_	*
+45	Deville	Deville	PROPN	_	_	44	flat:name	_	_	*
+46	(	(	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+47	Commercy	Commercy	PROPN	_	_	44	appos	_	SpaceAfter=No	*
+48	)	)	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+49	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 16
+# text = CHAMPIONNAT DE FRAN-CE PAR EQUIPES DES 15-16 ANS.
+1	CHAMPIONNAT	championnat	PROPN	_	_	0	root	_	_	*
+2	DE	De	PROPN	_	_	1	flat:name	_	_	*
+3	FRAN	Fran	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+4	-	-	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	CE	ce	PROPN	_	_	1	flat:name	_	_	*
+6	PAR	Par	PROPN	_	_	1	flat:name	_	_	*
+7	EQUIPES	EQUIPES	PROPN	_	_	1	flat:name	_	_	*
+8-9	DES	_	_	_	_	_	_	_	_	*
+8	DE	de	PROPN	_	_	1	flat:name	_	_	*
+9	LES	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*
+10	15-16	15-16	NUM	_	_	11	nummod	_	_	*
+11	ANS	an	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 17
+# text = Voici les résultats de la deuxième journée du tableau final régional filles 15-16 ans qui s'est déroulée le 18 janvier : Thionville bat Natation Messine 3-0 ;
+1	Voici	voici	VERB	_	_	0	root	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	1	obj	_	_	*
+4	de	de	ADP	_	_	7	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	journée	journée	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	tableau	tableau	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	final	final	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	régional	régional	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+13	filles	fille	NOUN	_	Gender=Fem|Number=Plur	10	appos	_	_	*
+14	15-16	15-16	NUM	_	_	15	nummod	_	_	*
+15	ans	an	NOUN	_	Gender=Masc|Number=Plur	13	appos	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*
+17	s'	se	PRON	_	Person=3|PronType=Prs	19	expl:comp	_	SpaceAfter=No	1:IRV
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+19	déroulée	dérouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	15	acl:relcl	_	_	1
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	18	18	NUM	_	_	19	obl	_	_	*
+22	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+23	:	:	PUNCT	_	_	25	punct	_	_	*
+24	Thionville	Thionville	PROPN	_	_	25	nsubj	_	_	*
+25	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	parataxis	_	_	*
+26	Natation	natation	PROPN	_	_	25	obj	_	_	*
+27	Messine	Messine	PROPN	_	_	26	flat:name	_	_	*
+28	3-0	3-0	NUM	_	_	26	nmod	_	_	*
+29	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 18
+# text = Sarreguemines bat ES Hagondange 3-0 ;
+1	Sarreguemines	Sarreguemines	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	ES	es	X	_	_	2	obj	_	_	*
+4	Hagondange	Hagondange	PROPN	_	_	3	flat:name	_	_	*
+5	3-0	3-0	NUM	_	_	3	nmod	_	_	*
+6	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 19
+# text = ASPTT Metz bat Gandrange 3-0 ;
+1	ASPTT	ASPTT	PROPN	_	_	3	nsubj	_	_	*
+2	Metz	Metz	PROPN	_	_	1	flat:name	_	_	*
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	Gandrange	Gandrange	PROPN	_	_	3	obj	_	_	*
+5	3-0	3-0	NUM	_	_	4	nmod	_	_	*
+6	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 20
+# text = SMEC bat Nancy Forêt de Haye 3-0 ;
+1	SMEC	SMEC	ADP	_	_	2	case	_	_	*
+2	bat	battre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Nancy	Nancy	PROPN	_	_	2	appos	_	_	*
+4	Forêt	forêt	PROPN	_	_	3	flat:name	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Haye	Haye	PROPN	_	_	3	nmod	_	_	*
+7	3-0	3-0	NUM	_	_	2	nmod	_	_	*
+8	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 21
+# text = Vagney bat Saint-Dié 3-0 ;
+1	Vagney	Vagney	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	Saint-Dié	Saint-Dié	PROPN	_	_	2	xcomp	_	_	*
+4	3-0	3-0	NUM	_	_	3	nmod	_	_	*
+5	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 22
+# text = Ludres bat Jarville 3-0 ;
+1	Ludres	Ludres	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	Jarville	Jarville	PROPN	_	_	2	xcomp	_	_	*
+4	3-0	3-0	NUM	_	_	3	nmod	_	_	*
+5	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 23
+# text = L'Hopital bat Moulins 3-0 ;
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Hopital	Hopital	PROPN	_	_	3	nsubj	_	_	*
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	Moulins	moulins	PROPN	_	_	3	xcomp	_	_	*
+5	3-0	3-0	NUM	_	_	4	nmod	_	_	*
+6	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 24
+# text = Hagondange bat Cattenom 2-1.
+1	Hagondange	Hagondange	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	Cattenom	Cattenom	PROPN	_	_	2	xcomp	_	_	*
+4	2-1	2-1	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 25
+# text = - Voici les résultats de la deuxième journée du tableau final régional garçons : PTT Metz bat Sarreguemines (2) 2-1 ;
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Voici	voici	VERB	_	_	0	root	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+5	de	de	ADP	_	_	8	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	journée	journée	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	tableau	tableau	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	final	final	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	régional	régional	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+14	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+15	:	:	PUNCT	_	_	18	punct	_	_	*
+16	PTT	PTT	PROPN	_	_	18	nsubj	_	_	*
+17	Metz	Metz	PROPN	_	_	16	flat:name	_	_	*
+18	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_	*
+19	Sarreguemines	Sarreguemines	PROPN	_	_	18	xcomp	_	_	*
+20	(	(	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+21	2	2	NUM	_	_	19	nmod	_	SpaceAfter=No	*
+22	)	)	PUNCT	_	_	21	punct	_	_	*
+23	2-1	2-1	NUM	_	_	18	obl	_	_	*
+24	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 26
+# text = Nancy Forêt de Haye (2) bat ATP Nancy (3) 3-0 ;
+1	Nancy	Nancy	PROPN	_	_	8	nsubj	_	_	*
+2	Forêt	Forêt	PROPN	_	_	1	flat:name	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Haye	Haye	PROPN	_	_	1	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	ATP	ATP	PROPN	_	_	8	obj	_	_	*
+10	Nancy	Nancy	PROPN	_	_	9	flat:name	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	3	3	NUM	_	_	9	nmod	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	12	punct	_	_	*
+14	3-0	3-0	NUM	_	_	8	obl	_	_	*
+15	;	;	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 27
+# text = US Forbach bat UST Thierville 2-1 ;
+1	US	US	PROPN	_	_	3	nsubj	_	_	*
+2	Forbach	Forbach	PROPN	_	_	1	flat:name	_	_	*
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	UST	UST	PROPN	_	_	3	obj	_	_	*
+5	Thierville	Thierville	PROPN	_	_	4	flat:name	_	_	*
+6	2-1	2-1	NUM	_	_	4	nmod	_	_	*
+7	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 28
+# text = Sarreguemines bat US Forbach 3-0 ;
+1	Sarreguemines	Sarreguemines	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	US	US	PROPN	_	_	2	obj	_	_	*
+4	Forbach	Forbach	PROPN	_	_	3	flat:name	_	_	*
+5	3-0	3-0	NUM	_	_	3	nmod	_	_	*
+6	;	;	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 29
+# text = Cattenom bat Bar-le-Duc W.O.
+1	Cattenom	Cattenom	PROPN	_	_	2	nsubj	_	_	*
+2	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	2	obj	_	_	*
+4	W.O.	W.O.	PROPN	_	_	3	flat:name	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 30
+# text = ;
+1	;	;	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 31
+# text = ATP Nancy bat Sarrebourg 3-0 ;
+1	ATP	ATP	PROPN	_	_	3	nsubj	_	_	*
+2	Nancy	Nancy	PROPN	_	_	1	flat:name	_	_	*
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	Sarrebourg	Sarrebourg	PROPN	_	_	3	obj	_	_	*
+5	3-0	3-0	NUM	_	_	4	nmod	_	_	*
+6	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 32
+# text = ATP Nancy (2) bat Nancy Forêt de Haye bat Saint-Dié 2-1.
+1	ATP	ATP	PROPN	_	_	6	nsubj	_	_	*
+2	Nancy	Nancy	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	Nancy	Nancy	PROPN	_	_	6	obj	_	_	*
+8	Forêt	forêt	PROPN	_	_	7	flat:name	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Haye	Haye	PROPN	_	_	7	nmod	_	_	*
+11	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	xcomp	_	_	*
+12	Saint-Dié	Saint-Dié	PROPN	_	_	11	xcomp	_	_	*
+13	2-1	2-1	NUM	_	_	12	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-22_24727.txt 33
+# text = S.G.
+1	S.G	S.G	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

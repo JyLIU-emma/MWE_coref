@@ -1,0 +1,835 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-16_17128.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 1
+# text = Raymond Chainel EPINAL.
+1	Raymond	Raymond	PROPN	_	_	0	root	_	_	*
+2	Chainel	Chainel	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*
+3	EPINAL	EPINAL	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 2
+# text = _ Raymond, le plus jeune des frères Chainel est au repos forcé suite à une chute du scaphoïde qu'il s'est faite dimanche, lors des championnats de France à Nommay.
+1	_	_	PUNCT	_	_	15	punct	_	_	*
+2	Raymond	Raymond	PROPN	_	_	15	nsubj:pass	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	plus	plus	ADV	_	_	6	advmod	_	_	*
+6	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	frères	frère	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	Chainel	Chainel	PROPN	_	_	9	appos	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	repos	repos	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+15	forcé	forcé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+16	suite	suite	ADV	_	_	15	advmod	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	chute	chute	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	scaphoïde	scaphoïde	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	qu'	que	SCONJ	_	_	27	mark	_	SpaceAfter=No	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_	1:VID
+25	s'	se	PRON	_	Person=3|PronType=Prs	27	expl:comp	_	SpaceAfter=No	1
+26	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:tense	_	_	*
+27	faite	faire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	1
+28	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	27	obl	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	lors	lors	ADV	_	_	27	advmod	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_	*
+33	championnats	championnat	NOUN	_	Gender=Masc|Number=Plur	30	obl:arg	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	France	France	PROPN	_	_	33	nmod	_	_	*
+36	à	à	ADP	_	_	37	case	_	_	*
+37	Nommay	Nommay	PROPN	_	_	33	nmod	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 3
+# text = Plâtré durant un mois, Raymond réapparaîtra pour préparer sa saison sur route.
+1	Plâtré	Plâtrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+2	durant	durant	ADP	_	_	4	case	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	mois	mois	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	Raymond	Raymond	PROPN	_	_	7	nsubj	_	_	*
+7	réapparaîtra	réapparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*
+9	préparer	préparer	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+10	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	saison	saison	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	sur	sur	ADP	_	_	13	case	_	_	*
+13	route	route	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 4
+# text = - Vous souvenez-vous de la première compétition à laquelle vous avez assisté ? - Très bien.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	souvenez	souvenir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1:IRV
+4	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	3	obj	_	_	1
+5	de	de	ADP	_	_	8	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	première	premier	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	compétition	compétition	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	13	obl:arg	_	_	*
+11	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_	*
+12	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	assisté	assister	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+14	?	?	PUNCT	_	_	3	punct	_	_	*
+15	-	-	PUNCT	_	_	3	punct	_	_	*
+16	Très	très	ADV	_	_	17	advmod	_	_	*
+17	bien	bien	ADV	_	_	3	advmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 5
+# text = Peut-être aussi grâce aux cassettes vidéo.
+1	Peut-être	peut-être	ADV	_	_	3	advmod	_	_	*
+2	aussi	aussi	ADV	_	_	3	advmod	_	_	*
+3	grâce	grâce	ADV	_	_	0	root	_	_	*
+4-5	aux	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	cassettes	cassette	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*
+7	vidéo	vidéo	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 6
+# text = Mais en tout cas c'était une course de vélo à Saint-Etienne alors que j'avais trois ans.
+1	Mais	mais	CCONJ	_	_	8	cc	_	_	*
+2	en	en	ADP	_	_	4	case	_	_	*
+3	tout	tout	DET	_	Gender=Masc|Number=Sing	4	det	_	_	*
+4	cas	cas	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*
+6	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	course	course	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	Saint-Etienne	Saint-Etienne	PROPN	_	_	8	nmod	_	_	*
+13	alors	alors	ADV	_	_	16	mark	_	_	*
+14	que	que	SCONJ	_	_	13	fixed	_	_	*
+15	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	16	nsubj	_	SpaceAfter=No	*
+16	avais	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	8	advcl	_	_	*
+17	trois	trois	NUM	_	_	18	nummod	_	_	*
+18	ans	an	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 7
+# text = On était deux au départ, mon cousin et moi.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_	*
+3	deux	deux	NUM	_	_	0	root	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	départ	départ	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	cousin	cousin	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	moi	soi	PRON	_	Number=Sing|Person=1	3	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 8
+# text = Je finis deuxième...
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	finis	finir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	deuxième	deuxième	ADJ	_	Gender=Masc|Number=Sing	2	xcomp	_	SpaceAfter=No	*
+4	...	...	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 9
+# text = J'ai eu ma première coupe... - Quel genre de petit garçon étiez-vous à l'école ? - Nerveux disons...
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+5	première	premier	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	*
+7	...	...	PUNCT	_	_	10	punct	_	_	*
+8	-	-	PUNCT	_	_	10	punct	_	_	*
+9	Quel	quel	DET	_	Gender=Masc|Number=Sing	10	det	_	_	*
+10	genre	genre	NOUN	_	Gender=Masc|Number=Sing	3	parataxis	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	petit	petit	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+13	garçon	garçon	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	étiez	étier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	acl	_	SpaceAfter=No	*
+15	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	14	obj	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	école	école	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	_	*
+19	?	?	PUNCT	_	_	21	punct	_	_	*
+20	-	-	PUNCT	_	_	21	punct	_	_	*
+21	Nerveux	nervouloir	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+22	disons	dire	NOUN	_	Gender=Masc|Number=Plur	10	appos	_	SpaceAfter=No	*
+23	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 10
+# text = Je faisais un peu le cirque.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	faisais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	advmod	_	_	*
+4	peu	peu	ADV	_	_	3	fixed	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	cirque	cirque	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 11
+# text = - Excepté le vélo, quel sport aimeriez-vous faire ?
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Excepté	excepté	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	quel	quel	DET	_	Gender=Masc|Number=Sing	7	det	_	_	*
+7	sport	sport	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+8	aimeriez	aimeoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+9	-vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	obj	_	_	*
+10	faire	faire	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	?	?	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 12
+# text = - Le cheval.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	cheval	cheval	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 13
+# text = J'ai toujours été attiré par ça.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj:pass	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+3	toujours	toujours	ADV	_	_	5	advmod	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+5	attiré	attirer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	par	par	ADP	_	_	7	case	_	_	*
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl:agent	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 14
+# text = J'ai eu l'occasion d'en faire un peu quand j'étais tout petit et j'aime beaucoup aller me balader en forêt.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	1
+6	d'	de	ADP	_	_	8	mark	_	SpaceAfter=No	*
+7	en	en	PRON	_	Person=3	8	iobj	_	_	*
+8	faire	faire	VERB	_	VerbForm=Inf	5	acl	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	advmod	_	_	*
+10	peu	peu	ADV	_	_	9	fixed	_	_	*
+11	quand	quand	SCONJ	_	_	15	mark	_	_	*
+12	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	SpaceAfter=No	*
+13	étais	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	15	cop	_	_	*
+14	tout	tout	ADV	_	_	15	advmod	_	_	*
+15	petit	petit	ADJ	_	Gender=Masc|Number=Sing	8	advcl	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	18	nsubj	_	SpaceAfter=No	*
+18	aime	aimer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	conj	_	_	*
+19	beaucoup	beaucoup	ADV	_	_	20	advmod	_	_	*
+20	aller	aller	VERB	_	VerbForm=Inf	15	xcomp	_	_	*
+21	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	22	obj	_	_	2:IRV
+22	balader	balader	VERB	_	VerbForm=Inf	20	xcomp	_	_	2
+23	en	en	ADP	_	_	24	case	_	_	*
+24	forêt	forêt	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 15
+# text = - Que possédez-vous de plus précieux d'un point de vue matériel ? - Je crois que c'est quand même mon vélo...
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Que	que	PRON	_	PronType=Int	3	obj	_	_	*
+3	possédez	posséder	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	17	parataxis	_	SpaceAfter=No	*
+4	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+5	de	de	ADP	_	_	7	advmod	_	_	*
+6	plus	plus	ADV	_	_	5	fixed	_	_	*
+7	précieux	précieux	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	_	*
+8	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	point	point	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	vue	vue	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	?	?	PUNCT	_	_	3	punct	_	_	*
+15	-	-	PUNCT	_	_	3	punct	_	_	*
+16	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_	*
+17	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	que	que	SCONJ	_	_	24	mark	_	_	*
+19	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	24	nsubj	_	SpaceAfter=No	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*
+21	quand	quand	ADV	_	_	24	advmod	_	_	*
+22	même	même	ADV	_	_	21	fixed	_	_	*
+23	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	24	det	_	_	*
+24	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	17	ccomp	_	SpaceAfter=No	*
+25	...	...	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 16
+# text = Il m'a été donné par mon frère Steve et je ne dirais pas que c'est sacré mais pas loin... - Le plus beau cadeau de Noël qu'on vous ait offert ?
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj:pass	_	_	*
+2	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+5	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	frère	frère	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	_	_	*
+9	Steve	Steve	PROPN	_	_	8	appos	_	_	*
+10	et	et	CCONJ	_	_	13	cc	_	_	*
+11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_	*
+12	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	dirais	dir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+14	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*
+15	que	que	SCONJ	_	_	18	mark	_	_	*
+16	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	18	nsubj:pass	_	SpaceAfter=No	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_	*
+18	sacré	sacrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+19	mais	mais	CCONJ	_	_	21	cc	_	_	*
+20	pas	pas	ADV	_	_	21	advmod	_	_	*
+21	loin	loin	ADV	_	_	18	conj	_	SpaceAfter=No	*
+22	...	...	PUNCT	_	_	27	punct	_	_	*
+23	-	-	PUNCT	_	_	27	punct	_	_	*
+24	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+25	plus	plus	ADV	_	_	26	advmod	_	_	*
+26	beau	beau	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+27	cadeau	cadeau	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	Noël	Noël	PROPN	_	_	27	nmod	_	_	*
+30	qu'	que	PRON	_	PronType=Rel	34	obj	_	SpaceAfter=No	*
+31	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	34	nsubj	_	_	*
+32	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	34	obj	_	_	*
+33	ait	avoir	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux:tense	_	_	*
+34	offert	offrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	27	acl:relcl	_	_	*
+35	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 17
+# text = - C'est un cadeau que j'ai eu cette année.
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	cadeau	cadeau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	que	que	PRON	_	PronType=Rel	9	obj	_	_	*
+7	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	SpaceAfter=No	*
+8	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+10	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_	*
+11	année	année	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 18
+# text = Un truc tout bête, une bataille navale que je voulais depuis longtemps.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	truc	truc	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	tout	tout	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	bête	bête	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	bataille	bataille	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+8	navale	naval	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	que	que	PRON	_	PronType=Rel	11	obj	_	_	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*
+11	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_	*
+12	depuis	depuis	ADP	_	_	13	case	_	_	*
+13	longtemps	longtemps	ADV	_	_	11	advmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 19
+# text = - Vous êtes plutôt balade en forêt ou soirée jeux vidéo ? - Jeux vidéo...
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*
+3	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	plutôt	plutôt	ADV	_	_	5	advmod	_	_	*
+5	balade	balade	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	forêt	forêt	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+8	ou	ou	CCONJ	_	_	9	cc	_	_	*
+9	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+10	jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	5	parataxis	_	_	*
+11	vidéo	vidéo	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+12	?	?	PUNCT	_	_	14	punct	_	_	*
+13	-	-	PUNCT	_	_	14	punct	_	_	*
+14	Jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	10	appos	_	_	*
+15	vidéo	vidéo	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No	*
+16	...	...	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 20
+# text = Je suis un mordu, dès que j'ai un peu de temps c'est jeux vidéo.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	mordu	mordu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	9	punct	_	_	*
+6	dès	dès	ADP	_	_	9	mark	_	_	*
+7	que	que	SCONJ	_	_	9	mark	_	_	*
+8	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	SpaceAfter=No	*
+9	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	acl	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	obj	_	_	*
+11	peu	peu	ADV	_	_	10	fixed	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	temps	temps	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	17	nsubj	_	SpaceAfter=No	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+16	jeux	jeux	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*
+17	vidéo	vidéo	NOUN	_	Gender=Masc|Number=Sing	9	parataxis	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 21
+# text = - Si vous deviez être réincarné en animal, lequel choisiriez-vous ?
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Si	si	SCONJ	_	_	4	mark	_	_	*
+3	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+4	deviez	devier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	être	être	AUX	_	VerbForm=Inf	6	aux:pass	_	_	*
+6	réincarné	réincarner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	xcomp	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	animal	animal	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	11	nmod	_	_	*
+11	choisiriez-vous	choisiriez-vous	PRON	_	Person=2|PronType=Prs	4	parataxis	_	_	*
+12	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 22
+# text = - Une petite souris pour tout voir.
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+4	souris	souris	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	pour	pour	ADP	_	_	7	mark	_	_	*
+6	tout	tout	PRON	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+7	voir	voir	VERB	_	VerbForm=Inf	4	acl	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 23
+# text = - Cinq qualificatifs pour vous définir ?
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Cinq	cinq	NUM	_	_	3	nummod	_	_	*
+3	qualificatifs	qualificatif	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+4	pour	pour	ADP	_	_	6	mark	_	_	*
+5	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obj	_	_	*
+6	définir	définir	VERB	_	VerbForm=Inf	3	acl	_	_	*
+7	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 24
+# text = - Curieux.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Curieux	curieux	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 25
+# text = Pas trop bête, je pense.
+1	Pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*
+2	trop	trop	ADV	_	_	3	advmod	_	_	*
+3	bête	bête	ADJ	_	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 26
+# text = Rigolo.
+1	Rigolo	Rigolo	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 27
+# text = Sympathique et beau... - Quelle est la dernière personne avec laquelle vous vous êtes disputée ? - Ma mère.
+1	Sympathique	sympathique	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	beau	beau	ADJ	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+4	...	...	PUNCT	_	_	1	punct	_	_	*
+5	-	-	PUNCT	_	_	6	punct	_	_	*
+6	Quelle	quel	PRON	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	personne	personne	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+11	avec	avec	ADP	_	_	12	case	_	_	*
+12	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	16	obl:arg	_	_	*
+13	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	16	nsubj	_	_	*
+14	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	16	iobj	_	_	*
+15	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	disputée	disputer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*
+17	?	?	PUNCT	_	_	20	punct	_	_	*
+18	-	-	PUNCT	_	_	20	punct	_	_	*
+19	Ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*
+20	mère	mère	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 28
+# text = - Quel est le dernier disque que vous avez acheté ?
+1	-	-	PUNCT	_	_	6	punct	_	_	*
+2	Quel	quel	PRON	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	disque	disque	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	que	que	PRON	_	PronType=Rel	10	obj	_	_	*
+8	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+9	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	acheté	acheter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl:relcl	_	_	*
+11	?	?	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 29
+# text = - Le disque de Star Academy.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	disque	disque	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Star	Star	PROPN	_	_	3	nmod	_	_	*
+6	Academy	Academy	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 30
+# text = - Vous gagnez un million d'euros.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	gagnez	gagner	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	million	million	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	euros	euro	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 31
+# text = Quelle est la première chose que vous faites ?
+1	Quelle	quel	PRON	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	première	premier	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	chose	chose	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	que	que	PRON	_	PronType=Rel	8	obj	_	_	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*
+8	faites	faire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+9	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 32
+# text = - Je pars au soleil avec mes parents à la Réunion.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	pars	partir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	soleil	soleil	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*
+7	avec	avec	ADP	_	_	9	case	_	_	*
+8	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	parents	parent	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Réunion	Réunion	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 33
+# text = - Votre film préféré ? - Un James Bond, Golden Eyes.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	film	film	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	préféré	préféré	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	?	?	PUNCT	_	_	8	punct	_	_	*
+6	-	-	PUNCT	_	_	8	punct	_	_	*
+7	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	James	James	PROPN	_	_	3	appos	_	_	*
+9	Bond	Bond	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	Golden	Golden	PROPN	_	_	3	appos	_	_	*
+12	Eyes	Eyes	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 34
+# text = - Sucré ou salé ? - Sucré.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Sucré	sucré	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+3	ou	ou	CCONJ	_	_	4	cc	_	_	*
+4	salé	salé	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+5	?	?	PUNCT	_	_	2	punct	_	_	*
+6	-	-	PUNCT	_	_	2	punct	_	_	*
+7	Sucré	sucré	PROPN	_	_	0	root	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 35
+# text = - Vous partez sur un île déserte, vous emmenez quoi ? - Ma console de jeux vidéo.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	partez	partir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	sur	sur	ADP	_	_	6	case	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	île	île	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7	déserte	désert	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+10	emmenez	emmenir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+11	quoi	quoi	PRON	_	_	10	obj	_	_	*
+12	?	?	PUNCT	_	_	3	punct	_	_	*
+13	-	-	PUNCT	_	_	3	punct	_	_	*
+14	Ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	console	console	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+18	vidéo	vidéo	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 36
+# text = - Qu'avez-vous hérité de vos parents ?
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	Qu'	que	PRON	_	PronType=Int	5	obj	_	SpaceAfter=No	*
+3	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	aux:tense	_	SpaceAfter=No	*
+4	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*
+5	hérité	hériter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	parents	parent	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*
+9	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 37
+# text = - Le côté grognon de ma mère.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	grognon	grognon	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	mère	mère	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 38
+# text = Et la curiosité de mon père.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	curiosité	curiosité	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	père	père	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 39
+# text = - A quelle époque auriez-vous aimé vivre ?
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	quelle	quel	DET	_	Gender=Fem|Number=Sing	4	det	_	_	*
+4	époque	époque	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*
+5	auriez	avoir	VERB	_	Mood=Cnd|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+6	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*
+7	aimé	aimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	parataxis	_	_	*
+8	vivre	vivre	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+9	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 40
+# text = - Pendant la révolution française.
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Pendant	pendant	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	révolution	révolution	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	française	français	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 41
+# text = Du côté des sans-culottes.
+1-2	Du	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	sans-culottes	sans-culotte	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 42
+# text = - Votre spécialité culinaire ?
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	spécialité	spécialité	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	culinaire	culinaire	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 43
+# text = - Les crêpes.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	crêpes	crêpe	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 44
+# text = - Votre dernier rêve... - Je partais sur la lune voir les Martiens.
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	Votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+3	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	rêve	rêve	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No	*
+5	...	...	PUNCT	_	_	8	punct	_	_	*
+6	-	-	PUNCT	_	_	8	punct	_	_	*
+7	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	partais	parter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	lune	lune	PRON	_	Gender=Fem|Number=Sing	8	obl	_	_	*
+12	voir	voir	VERB	_	VerbForm=Inf	11	acl	_	_	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*
+14	Martiens	Martiens	PROPN	_	_	12	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 45
+# text = J'étais avec ma petite sœur et on avait volé une fusée.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No	*
+2	étais	être	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	avec	avec	ADP	_	_	6	case	_	_	*
+4	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+5	petite	petit	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	sœur	sœur	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	_	*
+7	et	et	CCONJ	_	_	10	cc	_	_	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_	*
+9	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux:tense	_	_	*
+10	volé	voler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	fusée	fusée	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 46
+# text = - Votre meilleur bouquin ?
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+3	meilleur	meilleur	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	bouquin	bouquin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 47
+# text = - Je suis assez « BD », et notamment Titeuf.
+1	-	-	PUNCT	_	_	6	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	assez	assez	ADV	_	_	6	advmod	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	BD	BD	PROPN	_	_	0	root	_	_	*
+7	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	notamment	notamment	ADV	_	_	11	advmod	_	_	*
+11	Titeuf	Titeuf	PROPN	_	_	6	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 48
+# text = - Avec qui aimeriez-vous dîner ? - Pamela Anderson.
+1	-	-	PUNCT	_	_	4	punct	_	_	*
+2	Avec	avec	ADP	_	_	3	case	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	_	*
+4	aimeriez	aimeoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+5	-vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obj	_	_	*
+6	dîner	dîner	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	?	?	PUNCT	_	_	4	punct	_	_	*
+8	-	-	PUNCT	_	_	4	punct	_	_	*
+9	Pamela	Pamela	PROPN	_	_	4	obj	_	_	*
+10	Anderson	Anderson	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 49
+# text = - La voiture de vos rêves... - Une Ferrari.
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	rêves	rêve	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*
+7	...	...	PUNCT	_	_	3	punct	_	_	*
+8	-	-	PUNCT	_	_	3	punct	_	_	*
+9	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	Ferrari	Ferrari	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 50
+# text = - Le plus beau compliment à votre sujet ? - Que je suis mignon, on me le dit de temps en temps.
+1	-	-	PUNCT	_	_	5	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*
+4	beau	beau	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	compliment	compliment	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9	?	?	PUNCT	_	_	5	punct	_	_	*
+10	-	-	PUNCT	_	_	5	punct	_	_	*
+11	Que	que	PRON	_	PronType=Int	5	appos	_	_	*
+12	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_	*
+13	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	cop	_	_	*
+14	mignon	mignon	ADJ	_	Gender=Masc|Number=Sing	11	acl:relcl	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	5	punct	_	_	*
+16	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_	*
+17	me	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	19	iobj	_	_	*
+18	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_	*
+19	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	temps	temps	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	_	*
+22	en	en	ADP	_	_	23	case	_	_	*
+23	temps	temps	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 51
+# text = - Vous dans 10 ans, vous voyez ça comment ?
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Vous	il	PROPN	_	_	8	nsubj	_	_	*
+3	dans	dans	ADP	_	_	5	case	_	_	*
+4	10	10	NUM	_	_	5	nummod	_	_	*
+5	ans	an	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	iobj	_	_	*
+8	voyez	voir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	obj	_	_	*
+10	comment	comment	ADV	_	_	8	parataxis	_	_	*
+11	?	?	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 52
+# text = - Grand.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	Grand	grand	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 53
+# text = Mince.
+1	Mince	mince	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 54
+# text = Blond.
+1	Blond	Blond	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 55
+# text = Chauffagiste avec ma boîte.
+1	Chauffagiste	Chauffagiste	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	avec	avec	ADP	_	_	4	case	_	_	*
+3	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 56
+# text = Et toujours un peu de vélo à côté, car je ne pourrais pas m'en passer.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	toujours	toujours	ADV	_	_	3	advmod	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	0	root	_	_	*
+4	peu	peu	ADV	_	_	3	fixed	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	à	à	ADP	_	_	6	advmod	_	_	*
+8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	car	car	CCONJ	_	_	13	cc	_	_	*
+11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_	*
+12	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+14	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*
+15	m'	se	PRON	_	Number=Sing|Person=1|PronType=Prs	17	obj	_	SpaceAfter=No	1:IRV
+16	en	en	PRON	_	Person=3	17	iobj	_	_	*
+17	passer	passer	VERB	_	VerbForm=Inf	13	xcomp	_	SpaceAfter=No	1
+18	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_17128.txt 57
+# text = Recueilli par J.C.P.
+1	Recueilli	recueillir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	par	par	ADP	_	_	3	case	_	_	*
+3	J.C.P.	J.C.P.	PROPN	_	_	1	obl:agent	_	SpacesAfter=\n	*
+

@@ -1,0 +1,656 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-04_40475.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 1
+# text = « Je suis hors de moi !
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	hors	hors	ADV	_	_	0	root	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	moi	soi	PRON	_	Number=Sing|Person=1	4	obl:arg	_	_	*
+7	!	!	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 2
+# text = » Porté une première fois devant le tribunal d'instance d'Epinal qui se déclare incompétent - la faute a été commise à Remiremont -, le dossier est plaidé devant la juridiction romarimontaine le 2 décembre 2002.
+1	»	»	PUNCT	_	_	22	punct	_	SpacesAfter=\n	*
+2	Porté	porté	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	première	premier	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	fois	fois	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	_	*
+6	devant	devant	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	2	obl	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	instance	instance	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	Epinal	Epinal	PROPN	_	_	8	nmod	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	15	expl:comp	_	_	2:IRV
+15	déclare	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	2
+16	incompétent	incompétent	ADJ	_	Gender=Masc|Number=Sing	15	xcomp	_	_	*
+17	-	-	PUNCT	_	_	8	punct	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	faute	faute	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	_	_	1:LVC.full
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+21	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	aux:pass	_	_	*
+22	commise	commettre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+23	à	à	ADP	_	_	24	case	_	_	*
+24	Remiremont	Remiremont	PROPN	_	_	22	obl:arg	_	_	*
+25	-	-	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	30	punct	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	30	nsubj:pass	_	_	*
+29	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux:pass	_	_	*
+30	plaidé	plaider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	conj	_	_	*
+31	devant	devant	ADP	_	_	33	case	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	juridiction	juridiction	NOUN	_	Gender=Fem|Number=Sing	30	obl	_	_	*
+34	romarimontaine	romarimontain	ADJ	_	Gender=Fem|Number=Sing	33	amod	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	2	2	NUM	_	_	30	obl	_	_	*
+37	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_	*
+38	2002	2002	NUM	_	_	37	nmod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 3
+# text = Les réquisitions du ministère public seront brèves.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	réquisitions	réquisition	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	public	public	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	8	cop	_	_	*
+8	brèves	brèf	ADJ	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 4
+# text = « Le tribunal ne pourra que constater l'extinction de l'action publique en vertu de la loi d'amnistie ».
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+6	que	que	ADV	_	_	7	advmod	_	_	*
+7	constater	constater	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	extinction	extinction	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	action	action	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	publique	public	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	vertu	vertu	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	loi	loi	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*
+20	amnistie	amnistie	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+21	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 5
+# text = En effet, peu après l'instruction de l'affaire, l'amnistie présidentielle tombait comme un couperet.
+1	En	en	ADP	_	_	15	advmod	_	_	*
+2	effet	effet	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	peu	peu	ADV	_	_	7	advmod	_	_	*
+5	après	après	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	instruction	instruction	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	7	punct	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	amnistie	amnistie	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+14	présidentielle	présidentiel	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	tombait	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+16	comme	comme	ADP	_	_	18	case	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	couperet	couperet	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 6
+# text = Le Parquet se devait donc d'appliquer la loi.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Parquet	parquet	PROPN	_	_	4	nsubj	_	_	*
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	1:IRV
+4	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1
+5	donc	donc	ADV	_	_	4	advmod	_	_	*
+6	d'	de	ADP	_	_	7	mark	_	SpaceAfter=No	*
+7	appliquer	appliquer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	loi	loi	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 7
+# text = Hier, le tribunal a rendu son délibéré et a amnistié sans surprise le chirurgien de son infraction tandis que la partie civile était jugée irrecevable.
+1	Hier	hier	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	rendu	rendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	délibéré	délibéré	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	amnistié	amnistier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*
+12	sans	sans	ADP	_	_	13	case	_	_	*
+13	surprise	surprise	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	chirurgien	chirurgien	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	18	det	_	_	*
+18	infraction	infraction	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19	tandis	tandis	ADV	_	_	25	mark	_	_	*
+20	que	que	SCONJ	_	_	19	fixed	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	partie	partie	NOUN	_	Gender=Fem|Number=Sing	25	nsubj:pass	_	_	*
+23	civile	civil	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+24	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	aux:pass	_	_	*
+25	jugée	juger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	_	*
+26	irrecevable	irrecevable	ADJ	_	Gender=Fem|Number=Sing	25	xcomp	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 8
+# text = « Le tribunal n'a fait qu'appliquer la loi », constate Me Welzer.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+4	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+7	qu'	que	SCONJ	_	_	8	mark	_	SpaceAfter=No	*
+8	appliquer	appliquer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	loi	loi	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	6	punct	_	_	*
+13	constate	constater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	Me	Me	PROPN	_	_	13	nsubj	_	_	*
+15	Welzer	Welzer	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 9
+# text = « Une loi scandaleuse !
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	loi	loi	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	scandaleuse	scandaleux	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 10
+# text = Nous allons engager un référé civil afin d'obtenir une indemnisation puisque la responsabilité du chirurgien est prouvée et reconnue ».
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	allons	aller	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	engager	engager	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	référé	référé	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	civil	civil	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	afin	afin	ADV	_	_	3	advmod	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	obtenir	obtenir	VERB	_	VerbForm=Inf	7	ccomp	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	indemnisation	indemnisation	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	puisque	puisque	SCONJ	_	_	19	mark	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	responsabilité	responsabilité	NOUN	_	Gender=Fem|Number=Sing	19	nsubj:pass	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	chirurgien	chirurgien	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_	*
+19	prouvée	prouver	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	reconnue	reconnaître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	conj	_	_	*
+22	»	»	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 11
+# text = Une responsabilité « jamais contestée » selon Me Bertrand Haemmerlé, avocat du spécialiste ORL « Le jugement n'est pas critiquable sur le plan juridique.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	responsabilité	responsabilité	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	«	«	PUNCT	_	_	5	punct	_	_	*
+4	jamais	jamais	ADV	_	_	5	advmod	_	_	*
+5	contestée	contester	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	»	»	PUNCT	_	_	5	punct	_	_	*
+7	selon	selon	ADP	_	_	8	case	_	_	*
+8	Me	Me	PROPN	_	_	5	obl	_	_	*
+9	Bertrand	Bertrand	PROPN	_	_	8	flat:name	_	_	*
+10	Haemmerlé	Haemmerlé	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	avocat	avocat	NOUN	_	Gender=Masc|Number=Sing	8	appos	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	spécialiste	spécialiste	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	ORL	ORL	PROPN	_	_	15	appos	_	_	*
+17	«	«	PUNCT	_	_	23	punct	_	_	*
+18	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	jugement	jugement	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+20	n'	ne	ADV	_	Polarity=Neg	23	advmod	_	SpaceAfter=No	*
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*
+22	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*
+23	critiquable	critiquable	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+24	sur	sur	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	plan	plan	NOUN	_	Gender=Masc|Number=Sing	23	obl	_	_	*
+27	juridique	juridique	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 12
+# text = Nous sommes prêts à indemniser la partie civile dans des proportions raisonnables ».
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	prêts	prêt	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	indemniser	indemniser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	partie	partie	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+8	civile	civil	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	dans	dans	ADP	_	_	12	case	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	proportions	proportion	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*
+13	raisonnables	raisonnable	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_	*
+14	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 13
+# text = L'entente amiable souhaitée par la défense cadre mal avec l'état d'esprit des parents.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	entente	entente	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	amiable	amiable	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	souhaitée	souhaiter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	défense	défense	NOUN	_	Gender=Fem|Number=Sing	4	obl:agent	_	_	*
+8	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	mal	mal	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+10	avec	avec	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	état	état	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	parents	parent	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 14
+# text = « Je suis hors de moi », lâche la maman.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	hors	hors	ADV	_	_	9	advmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	moi	soi	PRON	_	Number=Sing|Person=1	4	obl:arg	_	_	*
+7	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	lâche	lâcher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	maman	maman	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 15
+# text = « Nous n'en resterons pas là... » Alain THIESSE EPINAL.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_	2:VID
+3	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+4	en	en	PRON	_	Person=3	5	expl:comp	_	_	1:VID
+5	resterons	rester	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	1;2
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+7	là	là	ADV	_	_	5	advmod	_	SpaceAfter=No	1
+8	...	...	PUNCT	_	_	5	punct	_	_	*
+9	»	»	PUNCT	_	_	5	punct	_	SpacesAfter=\s\s\s	*
+10	Alain	Alain	PROPN	_	_	5	obj	_	_	*
+11	THIESSE	THIESSE	PROPN	_	_	10	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+12	EPINAL	EPINAL	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 16
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 17
+# text = L'intervention devait être bénigne.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	être	être	AUX	_	VerbForm=Inf	5	cop	_	_	*
+5	bénigne	bénigne	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 18
+# text = Elle a failli coûté la vie à la petite Soline.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	failli	faillir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	coûté	coûter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	vie	vie	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	petite	petit	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	Soline	Soline	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 19
+# text = Le 24 avril 2001, l'enfant est admise au centre hospitalier de Remiremont pour y être opérée des végétations par un spécialiste en ORL de 46 ans.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	24	24	NUM	_	_	9	obl:mod	_	_	*
+3	avril	avril	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2001	2001	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	enfant	enfant	NOUN	_	Gender=Masc|Number=Sing	9	nsubj:pass	_	_	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	_	*
+9	admise	admettre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	centre	centre	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	_	*
+13	hospitalier	hospitalier	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Remiremont	Remiremont	PROPN	_	_	12	nmod	_	_	*
+16	pour	pour	ADP	_	_	19	mark	_	_	*
+17	y	y	PRON	_	_	19	obl:mod	_	_	*
+18	être	être	AUX	_	VerbForm=Inf	19	aux:pass	_	_	*
+19	opérée	opérer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	végétations	végétation	NOUN	_	Gender=Fem|Number=Plur	19	obl:arg	_	_	*
+23	par	par	ADP	_	_	25	case	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	spécialiste	spécialiste	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26	en	en	ADP	_	_	27	case	_	_	*
+27	ORL	ORL	PROPN	_	_	25	nmod	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	46	46	NUM	_	_	30	nummod	_	_	*
+30	ans	an	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 20
+# text = L'acte chirurgical se déroule normalement mais le lendemain, à son retour au domicile familial, Soline se plaint de la gorge à sa maman.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	acte	acte	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	chirurgical	chirurgical	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	se	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	_	1:IRV
+5	déroule	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+6	normalement	normalement	ADV	_	_	5	advmod	_	_	*
+7	mais	mais	CCONJ	_	_	21	cc	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	lendemain	lendemain	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	retour	retour	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	domicile	domicile	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+17	familial	familial	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	13	punct	_	_	*
+19	Soline	Soline	PROPN	_	_	21	nsubj	_	_	*
+20	se	se	PRON	_	Person=3|PronType=Prs	21	expl:comp	_	_	2:IRV
+21	plaint	plaindre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	2
+22	de	de	ADP	_	_	24	case	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	gorge	gorge	NOUN	_	Gender=Fem|Number=Sing	21	obl:arg	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	maman	maman	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 21
+# text = Une visite chez le médecin de famille - qui n'observera rien d'anormal si ce n'est une inflammation - se soldera par une simple prescription d'antibiotiques.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	visite	visite	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	_	*
+3	chez	chez	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	famille	famille	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	-	-	PUNCT	_	_	11	punct	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*
+10	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	SpaceAfter=No	*
+11	observera	observer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	_	_	*
+12	rien	rien	PRON	_	Number=Sing	11	obj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	anormal	anormal	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+15	si	si	SCONJ	_	_	20	mark	_	_	*
+16	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	20	nsubj	_	_	*
+17	n'	ne	ADV	_	Polarity=Neg	20	advmod	_	SpaceAfter=No	*
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	inflammation	inflammation	NOUN	_	Gender=Fem|Number=Sing	11	advcl	_	_	*
+21	-	-	PUNCT	_	_	11	punct	_	_	*
+22	se	se	PRON	_	Person=3|PronType=Prs	23	expl:pass	_	_	*
+23	soldera	solder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+24	par	par	ADP	_	_	27	case	_	_	*
+25	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+26	simple	simple	ADJ	_	Gender=Fem|Number=Sing	27	amod	_	_	*
+27	prescription	prescription	NOUN	_	Gender=Fem|Number=Sing	23	obl:arg	_	_	*
+28	d'	de	ADP	_	_	29	case	_	SpaceAfter=No	*
+29	antibiotiques	antibiotique	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 22
+# text = Mais trois jours plus tard alors que la gamine est en week-end avec ses parents dans la famille, son état de santé s'aggrave.
+1	Mais	mais	CCONJ	_	_	25	cc	_	_	*
+2	trois	trois	NUM	_	_	3	nummod	_	_	*
+3	jours	jour	NOUN	_	Gender=Masc|Number=Plur	25	obl:mod	_	_	*
+4	plus	plus	ADV	_	_	5	advmod	_	_	*
+5	tard	tard	ADV	_	_	3	advmod	_	_	*
+6	alors	alors	ADV	_	_	15	mark	_	_	*
+7	que	que	SCONJ	_	_	6	fixed	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	gamine	gamine	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*
+11	en	en	ADP	_	_	12	case	_	_	*
+12	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+13	avec	avec	ADP	_	_	15	case	_	_	*
+14	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	parents	parent	NOUN	_	Gender=Masc|Number=Plur	25	advcl	_	_	*
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	famille	famille	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	15	punct	_	_	*
+20	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	état	état	NOUN	_	Gender=Masc|Number=Sing	25	nsubj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	santé	santé	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+24	s'	se	PRON	_	Person=3|PronType=Prs	25	expl:pass	_	SpaceAfter=No	*
+25	aggrave	aggraver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	25	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 23
+# text = La petite peine à respirer et tombe dans le coma.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	petite	petit	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	peine	peine	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	respirer	respirer	VERB	_	VerbForm=Inf	3	acl	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	tombe	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	coma	coma	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 24
+# text = Sandra Simoutre, sa mère, la découvre vers 22 h 15 à demi-consciente.
+1	Sandra	Sandra	PROPN	_	_	0	root	_	_	*
+2	Simoutre	Simoutre	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	mère	mère	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	découvre	découvrir	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+9	vers	vers	ADP	_	_	11	case	_	_	*
+10	22	22	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	15	15	NUM	_	_	11	nmod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	demi-consciente	demi-consciente	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 25
+# text = Le diagnostic du médecin urgentiste du Samu arrivée à la rescousse est sans appel : un corps étranger obstrue les voies respiratoires de la victime.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	diagnostic	diagnostic	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	urgentiste	urgentiste	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	Samu	Samu	PROPN	_	_	5	nmod	_	_	*
+10	arrivée	arriver	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	rescousse	rescousse	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+15	sans	sans	ADP	_	_	16	case	_	_	*
+16	appel	appel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+17	:	:	PUNCT	_	_	19	punct	_	_	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	corps	corps	NOUN	_	Gender=Masc|Number=Sing	16	appos	_	_	*
+20	étranger	étranger	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+21	obstrue	obstraître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	voies	voie	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+24	respiratoires	respiratoire	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	victime	victime	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 26
+# text = Une gaze qui, avec le temps avait pris du volume et étouffait Soline à petit feu.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	gaze	gaze	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*
+5	avec	avec	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	1:VID
+7	temps	temps	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	1
+8	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*
+9	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	1
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	volume	volume	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	étouffait	étouffait	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	conj	_	_	*
+15	Soline	Soline	PROPN	_	_	14	obj	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	petit	petit	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+18	feu	feu	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 27
+# text = Une fois la compresse extraite, la fillette retrouvait de nouveau, en urgence cette fois, le chemin de l'hôpital de la cité des Abbesses.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+2	fois	fois	NOUN	_	Gender=Fem|Number=Sing	1	fixed	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	compresse	compresse	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+5	extraite	extrait	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	fillette	fillette	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+9	retrouvait	retrouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+10	de	de	ADP	_	_	9	advmod	_	_	*
+11	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	10	fixed	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	urgence	urgence	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+15	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	16	det	_	_	*
+16	fois	fois	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	chemin	chemin	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	cité	cité	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	28	det	_	_	*
+28	Abbesses	Abbesses	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 28
+# text = Elle sortira indemne de son coma.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	sortira	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	indemne	indemne	ADJ	_	Gender=Fem|Number=Sing	2	xcomp	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	coma	coma	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 29
+# text = Dans son rapport, l'expert notera que la compresse avait « peut-être » été oubliée.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	expert	expert	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+7	notera	noter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+8	que	que	SCONJ	_	_	16	mark	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	compresse	compresse	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	_	_	*
+11	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+12	«	«	PUNCT	_	_	13	punct	_	_	*
+13	peut-être	peut-être	ADV	_	_	16	advmod	_	_	*
+14	»	»	PUNCT	_	_	13	punct	_	_	*
+15	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	aux:pass	_	_	*
+16	oubliée	oublier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	ccomp	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40475.txt 30
+# text = Un constat intolérable pour les parents qui, après s'être rapprochés de leur avocat Me Gérard Welzer, portent plainte au pénal le 2 mai 2001.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	constat	constat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	intolérable	intolérable	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	7	punct	_	_	*
+9	après	après	ADP	_	_	12	mark	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	1:IRV
+11	être	être	AUX	_	VerbForm=Inf	12	aux:tense	_	_	*
+12	rapprochés	rapprocher	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	20	advcl	_	_	1
+13	de	de	ADP	_	_	15	case	_	_	*
+14	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	avocat	avocat	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+16	Me	Me	PROPN	_	_	15	appos	_	_	*
+17	Gérard	Gérard	PROPN	_	_	16	flat:name	_	_	*
+18	Welzer	Welzer	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	12	punct	_	_	*
+20	portent	porter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	2:LVC.full
+21	plainte	plainte	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	2
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	pénal	pénal	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	2	2	NUM	_	_	21	nmod	_	_	*
+27	mai	mai	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+28	2001	2001	NUM	_	_	27	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+

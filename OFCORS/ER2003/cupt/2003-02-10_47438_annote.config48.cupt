@@ -1,0 +1,494 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-10_47438.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 1
+# text = Deux bouteilles pour 540 € « 3.400 debout...
+1	Deux	Deux	NUM	_	_	2	nummod	_	_	*
+2	bouteilles	bouteille	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	pour	pour	ADP	_	_	5	case	_	_	*
+4	540	540	NUM	_	_	5	nummod	_	_	*
+5	€	€	SYM	_	_	2	nmod	_	SpacesAfter=\n	*
+6	«	«	PUNCT	_	_	8	punct	_	_	*
+7	3.400	3.400	NUM	_	_	8	nummod	_	_	*
+8	debout	debout	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	SpaceAfter=No	*
+9	...	...	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 2
+# text = 3.500 assis... 3.700 en jaune... 3.800 dans l'allée centrale... » En quelques secondes, les enchères se sont envolées.
+1	3.500	3.500	NUM	_	_	2	nummod	_	_	*
+2	assis	assis	NOUN	_	Gender=Masc|Number=Plur	23	obl:mod	_	SpaceAfter=No	*
+3	...	...	PUNCT	_	_	4	punct	_	_	*
+4	3.700	3.700	NUM	_	_	2	nmod	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	jaune	jaune	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	...	...	PUNCT	_	_	8	punct	_	_	*
+8	3.800	3.800	NUM	_	_	4	nmod	_	_	*
+9	dans	dans	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	allée	allée	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+12	centrale	central	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	...	...	PUNCT	_	_	4	punct	_	_	*
+14	»	»	PUNCT	_	_	4	punct	_	_	*
+15	En	en	ADP	_	_	17	case	_	_	*
+16	quelques	quelque	DET	_	Gender=Fem|Number=Plur	17	det	_	_	*
+17	secondes	seconde	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	2	punct	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*
+20	enchères	enchère	NOUN	_	Gender=Fem|Number=Plur	23	nsubj	_	_	*
+21	se	se	PRON	_	Person=3|PronType=Prs	23	expl:comp	_	_	1:IRV
+22	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	envolées	envoler	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+24	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 3
+# text = Et on embraye : « 5.400 tout au fond, 5.600 assis, 5.700, 6.000. 6.200 sur ma droite... » Le carrosse de sixties s'apprête à être adjugé, lorsqu'un « 6.300 ! » retentit.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+3	embraye	embrayer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	:	:	PUNCT	_	_	6	punct	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	5.400	5.400	NUM	_	_	3	parataxis	_	_	*
+7	tout	tout	ADV	_	_	10	case	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	7	fixed	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	fond	fond	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	5.600	5.600	NUM	_	_	13	nummod	_	_	*
+13	assis	assis	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	5.700	5.700	NUM	_	_	6	conj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	6.000	6.000	NUM	_	_	6	conj	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	19	punct	_	_	*
+19	6.200	6.200	NUM	_	_	6	conj	_	_	*
+20	sur	sur	ADP	_	_	22	case	_	_	*
+21	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	droite	droite	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	SpaceAfter=No	*
+23	...	...	PUNCT	_	_	6	punct	_	_	*
+24	»	»	PUNCT	_	_	6	punct	_	_	*
+25	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	carrosse	carrosse	NOUN	_	Gender=Masc|Number=Sing	30	nsubj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	sixties	sixtie	NOUN	_	Gender=Fem|Number=Plur	26	nmod	_	_	*
+29	s'	se	PRON	_	Person=3|PronType=Prs	30	expl:comp	_	SpaceAfter=No	1:IRV
+30	apprête	apprêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	1
+31	à	à	ADP	_	_	33	mark	_	_	*
+32	être	être	AUX	_	VerbForm=Inf	33	aux:pass	_	_	*
+33	adjugé	adjuger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	xcomp	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	41	punct	_	_	*
+35	lorsqu'	lorsque	SCONJ	_	_	41	mark	_	SpaceAfter=No	*
+36	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+37	«	«	PUNCT	_	_	38	punct	_	_	*
+38	6.300	6.300	NUM	_	_	41	nsubj	_	_	*
+39	!	!	PUNCT	_	_	38	punct	_	_	*
+40	»	»	PUNCT	_	_	38	punct	_	_	*
+41	retentit	retentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	advcl	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 4
+# text = L'une des assesseurs vient de prendre l'ordre d'achat au téléphone.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	une	un	PRON	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	assesseurs	assesseur	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	de	de	ADP	_	_	8	mark	_	_	*
+8	prendre	prendre	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	achat	achat	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 5
+# text = Une fois, deux fois, trois fois...
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	fois	fois	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	deux	deux	NUM	_	_	5	nummod	_	_	*
+5	fois	fois	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	trois	trois	NUM	_	_	8	nummod	_	_	*
+8	fois	fois	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	SpaceAfter=No	*
+9	...	...	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 6
+# text = C'est vendu : la Jaguar est attribuée pour l'équivalent de 41.000 F à un acheteur absent de la salle qui après révision pourra parader à son volant.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	:	:	PUNCT	_	_	8	punct	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	Jaguar	jaguar	PROPN	_	_	8	nsubj:pass	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*
+8	attribuée	attribuer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	équivalent	équivalent	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	41.000	41.000	NUM	_	_	11	nmod	_	_	*
+14	F	F	X	_	_	13	nmod	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	acheteur	acheteur	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*
+18	absent	absent	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	salle	salle	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+22	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*
+23	après	après	ADP	_	_	24	case	_	_	*
+24	révision	révision	NOUN	_	Gender=Fem|Number=Sing	25	obl:mod	_	_	*
+25	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	acl:relcl	_	_	*
+26	parader	parader	VERB	_	VerbForm=Inf	25	xcomp	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	29	det	_	_	*
+29	volant	volant	NOUN	_	Gender=Masc|Number=Sing	26	obl:arg	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 7
+# text = Parmi les beaux lots qui suivront, la Coccinelle VW de 1973 mise à prix 3.000 € atteindra les 3.700, ces deux bouteilles de Montrachet 1947 grand cru Roland Thevenin partiront à 540 €.
+1	Parmi	parmi	ADP	_	_	4	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+3	beaux	beau	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*
+4	lots	lot	NOUN	_	Gender=Masc|Number=Plur	18	obl:mod	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+6	suivront	suivre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	acl:relcl	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	4	punct	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	Coccinelle	Coccinelle	PROPN	_	_	18	nsubj	_	_	*
+10	VW	VW	PROPN	_	_	9	flat:name	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	1973	1973	NUM	_	_	13	nummod	_	_	*
+13	mise	mettre	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+14	à	à	ADP	_	_	15	case	_	_	*
+15	prix	prix	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+16	3.000	3.000	NUM	_	_	17	nummod	_	_	*
+17	€	€	SYM	_	_	13	appos	_	_	*
+18	atteindra	atteindre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	3.700	3.700	NUM	_	_	18	obj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	24	punct	_	_	*
+22	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	24	det	_	_	*
+23	deux	deux	NUM	_	_	24	nummod	_	_	*
+24	bouteilles	bouteille	NOUN	_	Gender=Fem|Number=Plur	20	appos	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	Montrachet	Montrachet	PROPN	_	_	24	nmod	_	_	*
+27	1947	1947	NUM	_	_	26	nmod	_	_	*
+28	grand	grand	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	_	*
+29	cru	cru	NOUN	_	Gender=Masc|Number=Sing	24	appos	_	_	*
+30	Roland	Roland	PROPN	_	_	29	appos	_	_	*
+31	Thevenin	Thevenin	PROPN	_	_	30	flat:name	_	_	*
+32	partiront	partir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	18	xcomp	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	540	540	NUM	_	_	35	nummod	_	_	*
+35	€	€	SYM	_	_	32	obl:arg	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 8
+# text = Et cette paire de fauteuils Majorelle type club ? 2.500 €.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*
+3	paire	paire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	fauteuils	fauteuils	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	Majorelle	Majorelle	PROPN	_	_	3	appos	_	_	*
+7	type	typer	NOUN	_	Gender=Masc|Number=Sing	6	flat:name	_	_	*
+8	club	club	NOUN	_	Gender=Masc|Number=Sing	6	flat:name	_	_	*
+9	?	?	PUNCT	_	_	11	punct	_	_	*
+10	2.500	2.500	NUM	_	_	11	nummod	_	_	*
+11	€	€	SYM	_	_	3	appos	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 9
+# text = Suivront ensuite notamment un chronographe Breitling homme modèle aerospace à 680 €, le « Doubs sortant du lac » peint par Charigny à 1.500 € et ses « Vaches au pâturage » à 1.000 €, ainsi qu'une bague en or jaune sertie d'un saphir ovale estimé à 14,3 carats et entouré de seize diamants, le tout atteignant presque le prix de la Jaguar avec une adjudication à 6.200 €.
+1	Suivront	Suivr	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+2	ensuite	ensuite	ADV	_	_	1	advmod	_	_	*
+3	notamment	notamment	ADV	_	_	1	advmod	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	chronographe	chronographe	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+6	Breitling	Breitling	PROPN	_	_	5	appos	_	_	*
+7	homme	homme	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8	modèle	modèle	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	_	*
+9	aerospace	aerospace	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	680	680	NUM	_	_	12	nummod	_	_	*
+12	€	€	SYM	_	_	5	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+15	«	«	PUNCT	_	_	16	punct	_	_	*
+16	Doubs	Doubs	PROPN	_	_	5	appos	_	_	*
+17	sortant	sortir	VERB	_	Tense=Pres|VerbForm=Part	16	acl	_	_	*
+18-19	du	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	lac	lac	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+21	»	»	PUNCT	_	_	16	punct	_	_	*
+22	peint	peindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*
+23	par	par	ADP	_	_	24	case	_	_	*
+24	Charigny	Charigny	PROPN	_	_	22	obl:agent	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	1.500	1.500	NUM	_	_	27	nummod	_	_	*
+27	€	€	SYM	_	_	22	obl	_	_	*
+28	et	et	CCONJ	_	_	31	cc	_	_	*
+29	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	31	det	_	_	*
+30	«	«	PUNCT	_	_	31	punct	_	_	*
+31	Vaches	vaches	PROPN	_	_	5	conj	_	_	*
+32-33	au	_	_	_	_	_	_	_	_	*
+32	à	à	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	pâturage	pâturage	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+35	»	»	PUNCT	_	_	31	punct	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	1.000	1.000	NUM	_	_	38	nummod	_	_	*
+38	€	€	SYM	_	_	1	obl:arg	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	43	punct	_	_	*
+40	ainsi	ainsi	ADV	_	_	43	cc	_	_	*
+41	qu'	que	SCONJ	_	_	40	fixed	_	SpaceAfter=No	*
+42	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*
+43	bague	bague	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+44	en	en	ADP	_	_	45	case	_	_	*
+45	or	or	NOUN	_	Gender=Masc|Number=Sing	43	nmod	_	_	*
+46	jaune	jaune	ADJ	_	Gender=Masc|Number=Sing	43	amod	_	_	*
+47	sertie	sertie	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	43	acl	_	_	*
+48	d'	de	ADP	_	_	50	case	_	SpaceAfter=No	*
+49	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*
+50	saphir	saphir	NOUN	_	Gender=Masc|Number=Sing	47	obl:arg	_	_	*
+51	ovale	ovale	ADJ	_	Gender=Masc|Number=Sing	50	amod	_	_	*
+52	estimé	estimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	50	acl	_	_	*
+53	à	à	ADP	_	_	55	case	_	_	*
+54	14,3	14,3	NUM	_	_	55	nummod	_	_	*
+55	carats	carat	NOUN	_	Gender=Masc|Number=Plur	52	obl:arg	_	_	*
+56	et	et	CCONJ	_	_	57	cc	_	_	*
+57	entouré	entourer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	52	conj	_	_	*
+58	de	de	ADP	_	_	60	case	_	_	*
+59	seize	seize	NUM	_	_	60	nummod	_	_	*
+60	diamants	diamant	NOUN	_	Gender=Masc|Number=Plur	57	obl:arg	_	SpaceAfter=No	*
+61	,	,	PUNCT	_	_	64	punct	_	_	*
+62	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	det	_	_	*
+63	tout	tout	PRON	_	Gender=Masc|Number=Sing	64	nsubj	_	_	*
+64	atteignant	atteindre	VERB	_	Tense=Pres|VerbForm=Part	1	advcl	_	_	*
+65	presque	presque	ADV	_	_	64	advmod	_	_	*
+66	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	67	det	_	_	*
+67	prix	prix	NOUN	_	Gender=Masc|Number=Sing	64	obj	_	_	*
+68	de	de	ADP	_	_	70	case	_	_	*
+69	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	70	det	_	_	*
+70	Jaguar	jaguar	PROPN	_	_	67	nmod	_	_	*
+71	avec	avec	ADP	_	_	73	case	_	_	*
+72	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	73	det	_	_	*
+73	adjudication	adjudication	NOUN	_	Gender=Fem|Number=Sing	64	obl:mod	_	_	*
+74	à	à	ADP	_	_	76	case	_	_	*
+75	6.200	6.200	NUM	_	_	76	nummod	_	_	*
+76	€	€	SYM	_	_	73	nmod	_	SpaceAfter=No	*
+77	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 10
+# text = Pierre LAURENT 14 h 05, hier après-midi dans la salle des ventes de Micropolis.
+1	Pierre	Pierre	PROPN	_	_	0	root	_	_	*
+2	LAURENT	Laurent	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+3	14	14	NUM	_	_	4	nummod	_	_	*
+4	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	flat:name	_	_	*
+5	05	05	NUM	_	_	1	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	hier	hier	ADV	_	_	8	advmod	_	_	*
+8	après-midi	après-midir	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+9	dans	dans	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	salle	salle	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+14	ventes	vente	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Micropolis	Micropolis	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 11
+# text = A la tribune, Me Renoud-Grappin empoigne son marteau et règle le micro.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	tribune	tribune	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	Me	Me	PROPN	_	_	7	nsubj	_	_	*
+6	Renoud-Grappin	Renoud-Grappin	PROPN	_	_	5	flat:name	_	_	*
+7	empoigne	empoigner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	marteau	marteau	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	et	et	CCONJ	_	_	11	cc	_	_	*
+11	règle	règle	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	micro	micro	X	_	_	7	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 12
+# text = « Plus fort, on n'entend pas bien de ce côté-là », se plaignent les acheteurs des rangées à tribord.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Plus	plus	ADV	_	_	3	advmod	_	_	*
+3	fort	fort	ADJ	_	Gender=Masc|Number=Sing	17	ccomp	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*
+6	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*
+7	entend	entendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+9	bien	bien	ADV	_	_	7	advmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_	*
+12	côté	côté	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+13	-là	là	ADV	_	_	12	advmod	_	_	*
+14	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	3	punct	_	_	*
+16	se	se	PRON	_	Person=3|PronType=Prs	17	expl:pass	_	_	1:IRV
+17	plaignent	plaindre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	acheteurs	acheteur	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	rangées	rangée	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	_	*
+23	à	à	ADP	_	_	24	case	_	_	*
+24	tribord	tribord	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 13
+# text = « Ça va là ?
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Ça	ça	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_	*
+3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	là	là	ADV	_	_	3	advmod	_	_	*
+5	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 14
+# text = Sinon je vais bientôt me prendre pour un chanteur pop », plaisante le commissaire-priseur qui, puisque toute l'assistance est désormais toute ouïe, peut maintenant entamer les enchères.
+1	Sinon	sinon	ADV	_	_	3	advmod	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	ccomp	_	_	*
+4	bientôt	bientôt	ADV	_	_	3	advmod	_	_	*
+5	me	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	6	obj	_	_	*
+6	prendre	prendre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+7	pour	pour	ADP	_	_	9	case	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	chanteur	chanteur	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+10	pop	pop	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+11	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	3	punct	_	_	*
+13	plaisante	plaisant	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	commissaire-priseur	commissaire-priseur	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	16	punct	_	_	*
+18	puisque	puisque	SCONJ	_	_	25	mark	_	_	*
+19	toute	tout	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	assistance	assistance	NOUN	_	Gender=Fem|Number=Sing	25	nsubj	_	_	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	*
+23	désormais	désormais	ADV	_	_	25	advmod	_	_	*
+24	toute	tout	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+25	ouïe	ouïe	NOUN	_	Gender=Fem|Number=Sing	27	advcl	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	25	punct	_	_	*
+27	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	*
+28	maintenant	maintenant	ADV	_	_	29	advmod	_	_	*
+29	entamer	entamer	VERB	_	VerbForm=Inf	27	xcomp	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_	*
+31	enchères	enchère	NOUN	_	Gender=Fem|Number=Plur	29	obj	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 15
+# text = Un démarrage en trombe avec une mise à prix à 1.000 € pour cette Jaguar MKII dont les chromes et l'emblème élancé scintillent sous les spots.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	démarrage	démarrage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	trombe	trombe	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	avec	avec	ADP	_	_	7	case	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	mise	mise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+8	à	à	ADP	_	_	9	case	_	_	*
+9	prix	prix	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	1.000	1.000	NUM	_	_	12	nummod	_	_	*
+12	€	€	SYM	_	_	7	nmod	_	_	*
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_	*
+15	Jaguar	jaguar	PROPN	_	_	7	nmod	_	_	*
+16	MKII	MKII	NUM	_	_	19	nummod	_	_	*
+17	dont	dont	PRON	_	PronType=Rel	19	nmod	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	chromes	chrome	NOUN	_	Gender=Masc|Number=Plur	7	appos	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	emblème	emblème	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+23	élancé	élancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+24	scintillent	scintillent	ADJ	_	Gender=Masc|Number=Sing	23	xcomp	_	_	*
+25	sous	sous	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	spots	spot	NOUN	_	Gender=Masc|Number=Plur	23	obl	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 16
+# text = Garé au fond de la salle, le prestigieux tacot, avec ses 22 CV sous le capot, est mis aux enchères suite à une liquidation judiciaire.
+1	Garé	Garer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	fond	fond	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	salle	salle	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+10	prestigieux	prestigieux	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	tacot	tacot	NOUN	_	Gender=Masc|Number=Sing	22	nsubj:pass	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	16	punct	_	_	*
+13	avec	avec	ADP	_	_	16	case	_	_	*
+14	ses	son	DET	_	Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*
+15	22	22	NUM	_	_	16	nummod	_	_	*
+16	CV	CV	PROPN	_	_	11	nmod	_	_	*
+17	sous	sous	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	capot	capot	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	11	punct	_	_	*
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:pass	_	_	*
+22	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23-24	aux	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	enchères	enchère	NOUN	_	Gender=Fem|Number=Plur	22	obl:arg	_	_	*
+26	suite	suite	ADV	_	_	22	advmod	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	liquidation	liquidation	NOUN	_	Gender=Fem|Number=Sing	26	obl:arg	_	_	*
+30	judiciaire	judiciaire	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-10_47438.txt 17
+# text = Le véhicule de collection immatriculé 75 était chez le garagiste depuis deux ans où il attendait la décision du tribunal de commerce.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	collection	collection	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	immatriculé	immatriculer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	75	75	NUM	_	_	5	obl	_	_	*
+7	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	_	*
+8	chez	chez	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	garagiste	garagiste	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+11	depuis	depuis	ADP	_	_	13	case	_	_	*
+12	deux	deux	NUM	_	_	13	nummod	_	_	*
+13	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	où	où	ADV	_	PronType=Rel	16	advmod	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	*
+16	attendait	attendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	acl:relcl	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	décision	décision	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,533 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-05_41613.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 1
+# text = Les terrains du chemin d'Outrancourt viabilisés.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	chemin	chemin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	Outrancourt	Outrancourt	PROPN	_	_	5	nmod	_	_	*
+8	viabilisés	viabilisé	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	5	acl	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 2
+# text = Le conseil municipal s'est réuni vendredi soir à la salle habituelle.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	SpaceAfter=No	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	réuni	réunir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+8	soir	soir	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	salle	salle	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*
+12	habituelle	habituel	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 3
+# text = Des décisions ont été prises.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	décisions	décision	NOUN	_	Gender=Fem|Number=Plur	6	nsubj:pass	_	_	1:LVC.full
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	prises	prendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 4
+# text = Il est fait état des travaux à réaliser chemin d'Outrancourt afin de viabiliser les terrains acquis par M. Thiriet et Scotet.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+4	état	état	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+8	à	à	ADP	_	_	9	mark	_	_	*
+9	réaliser	réaliser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+10	chemin	chemin	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	Outrancourt	Outrancourt	PROPN	_	_	10	nmod	_	_	*
+13	afin	afin	ADV	_	_	9	advmod	_	_	*
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	viabiliser	viabiliser	VERB	_	VerbForm=Inf	13	ccomp	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*
+18	acquis	acquérir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	17	acl	_	_	*
+19	par	par	ADP	_	_	20	case	_	_	*
+20	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	18	obl:agent	_	_	*
+21	Thiriet	Thiriet	PROPN	_	_	20	flat:name	_	_	*
+22	et	et	CCONJ	_	_	23	cc	_	_	*
+23	Scotet	Scotet	PROPN	_	_	20	conj	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 5
+# text = Afin de réaliser ces travaux au plus juste coût, la commune profitera de l'enfouissement de l'installation de gaz pour enfouir en même temps la conduite d'eau et les câbles EDF du réseau d'éclairage public.
+1	Afin	afin	ADV	_	_	14	advmod	_	_	*
+2	de	de	ADP	_	_	3	mark	_	_	*
+3	réaliser	réaliser	VERB	_	VerbForm=Inf	1	ccomp	_	_	1:LVC.full
+4	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	5	det	_	_	*
+5	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	1
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	3	advmod	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*
+8	plus	plus	ADV	_	_	6	fixed	_	_	*
+9	juste	juste	ADJ	_	Gender=Masc|Number=Sing	6	fixed	_	_	*
+10	coût	coût	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	1	punct	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	commune	commune	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_	*
+14	profitera	profiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	enfouissement	enfouissement	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	installation	installation	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	gaz	gaz	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	pour	pour	ADP	_	_	24	mark	_	_	*
+24	enfouir	enfouir	VERB	_	VerbForm=Inf	14	advcl	_	_	*
+25	en	en	ADP	_	_	24	advmod	_	_	*
+26	même	même	ADJ	_	Gender=Masc|Number=Sing	25	fixed	_	_	*
+27	temps	temps	NOUN	_	Gender=Masc|Number=Sing	25	fixed	_	_	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	conduite	conduite	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	*
+30	d'	de	ADP	_	_	31	case	_	SpaceAfter=No	*
+31	eau	eau	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+34	câbles	câble	NOUN	_	Gender=Masc|Number=Plur	29	conj	_	_	*
+35	EDF	EDF	PROPN	_	_	34	appos	_	_	*
+36-37	du	_	_	_	_	_	_	_	_	*
+36	de	de	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+39	d'	de	ADP	_	_	40	case	_	SpaceAfter=No	*
+40	éclairage	éclairage	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	_	*
+41	public	public	ADJ	_	Gender=Masc|Number=Sing	40	amod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 6
+# text = Le conseil municipal décide de créer « une place à retourner » en forêt sur la parcelle 30 et accepte le devis présenté par l'entreprise Nicolas de Vaudoncourt.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	de	de	ADP	_	_	6	mark	_	_	*
+6	créer	créer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	«	«	PUNCT	_	_	9	punct	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	place	place	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+10	à	à	ADP	_	_	11	mark	_	_	*
+11	retourner	retourner	VERB	_	VerbForm=Inf	9	acl	_	_	*
+12	»	»	PUNCT	_	_	9	punct	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	forêt	forêt	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	parcelle	parcelle	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+18	30	30	NUM	_	_	17	nmod	_	_	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*
+20	accepte	accepter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	devis	devis	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	*
+23	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl	_	_	*
+24	par	par	ADP	_	_	26	case	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	23	obl:agent	_	_	*
+27	Nicolas	Nicolas	PROPN	_	_	26	appos	_	_	*
+28	de	de	ADP	_	_	27	flat:name	_	_	*
+29	Vaudoncourt	Vaudoncourt	PROPN	_	_	27	flat:name	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 7
+# text = Les crédits seront inscrits au budget primitif 2003 de la forêt communale.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	crédits	crédit	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	_	_	*
+3	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*
+4	inscrits	inscrire	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	budget	budget	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	primitif	primitif	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	2003	2003	NUM	_	_	7	nmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	forêt	forêt	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+13	communale	communal	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 8
+# text = La commune ayant l'opportunité d'adhérer au pays de l'ouest vosgien décide d'adopter la charte de ce syndicat.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	commune	commune	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+3	ayant	avoir	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	opportunité	opportunité	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	d'	de	ADP	_	_	7	mark	_	SpaceAfter=No	*
+7	adhérer	adhérer	VERB	_	VerbForm=Inf	5	acl	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	pays	pays	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	ouest	ouest	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	vosgien	vosgien	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	d'	de	ADP	_	_	17	mark	_	SpaceAfter=No	*
+17	adopter	adopter	VERB	_	VerbForm=Inf	15	xcomp	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	charte	charte	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	22	det	_	_	*
+22	syndicat	syndicat	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 9
+# text = A la suite de la fermeture de l'une des classes de l'école primaire et afin de minimiser les coûts, un véhicule a été acheté pour le transport des élèves à Bulgnéville.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	suite	suite	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	fermeture	fermeture	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	une	un	PRON	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	classes	classe	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	école	école	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	primaire	primaire	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	afin	afin	ADV	_	_	3	conj	_	_	*
+19	de	de	ADP	_	_	20	mark	_	_	*
+20	minimiser	minimiser	VERB	_	VerbForm=Inf	18	ccomp	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	coûts	coût	NOUN	_	Gender=Masc|Number=Plur	20	obj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	28	punct	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	28	nsubj:pass	_	_	*
+26	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:tense	_	_	*
+27	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	28	aux:pass	_	_	*
+28	acheté	acheter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl:relcl	_	_	*
+29	pour	pour	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	transport	transport	NOUN	_	Gender=Masc|Number=Sing	28	obl	_	_	*
+32-33	des	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+34	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	_	*
+35	à	à	ADP	_	_	36	case	_	_	*
+36	Bulgnéville	Bulgnéville	PROPN	_	_	34	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 10
+# text = A ce sujet et pour la conduite du véhicule, un emploi a été créé à raison de 10 heures par semaine.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*
+3	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+4	et	et	CCONJ	_	_	7	cc	_	_	*
+5	pour	pour	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	conduite	conduite	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	3	punct	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+15	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	aux:pass	_	_	*
+16	créé	créer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	à	à	ADP	_	_	16	advmod	_	_	*
+18	raison	raison	NOUN	_	Gender=Fem|Number=Sing	17	fixed	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	10	10	NUM	_	_	21	nummod	_	_	*
+21	heures	heure	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	_	*
+22	par	par	ADP	_	_	23	case	_	_	*
+23	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 11
+# text = Cet emploi sera partiellement dédié à l'entretien de la salle polyvalente.
+1	Cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	_	*
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	_	_	*
+4	partiellement	partiellement	ADV	_	_	5	advmod	_	_	*
+5	dédié	dédier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	entretien	entretien	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	salle	salle	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	polyvalente	polyvalent	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 12
+# text = Le conseil, vu le nouveau code des marchés publics et afin de simplifier les procédures lorsqu'il s'agit d'achats courants ou de passation de marchés de faible montant, donne délégation au maire pour ces multiples petites tâches.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	34	nsubj	_	SpaceAfter=No	2:LVC.full
+3	,	,	PUNCT	_	_	7	punct	_	_	*
+4	vu	vu	ADP	_	_	7	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	code	code	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+11	publics	public	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	afin	afin	ADV	_	_	2	conj	_	_	*
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	simplifier	simplifier	VERB	_	VerbForm=Inf	13	ccomp	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*
+17	procédures	procédure	NOUN	_	Gender=Fem|Number=Plur	15	obj	_	_	*
+18	lorsqu'	lorsque	SCONJ	_	_	21	mark	_	SpaceAfter=No	*
+19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl:subj	_	_	1:VID
+20	s'	se	PRON	_	Person=3|PronType=Prs	21	expl:comp	_	SpaceAfter=No	1
+21	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	_	_	1
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	achats	achat	NOUN	_	Gender=Masc|Number=Plur	21	obl:arg	_	_	*
+24	courants	courant	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*
+25	ou	ou	CCONJ	_	_	27	cc	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	passation	passation	NOUN	_	Gender=Fem|Number=Sing	23	conj	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	faible	faible	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+32	montant	montant	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	2	punct	_	_	*
+34	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2
+35	délégation	délégation	NOUN	_	Gender=Fem|Number=Sing	34	obj	_	_	*
+36-37	au	_	_	_	_	_	_	_	_	*
+36	à	à	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	maire	maire	NOUN	_	Gender=Masc|Number=Sing	34	obl:arg	_	_	*
+39	pour	pour	ADP	_	_	43	case	_	_	*
+40	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	43	det	_	_	*
+41	multiples	multiples	ADJ	_	Gender=Fem|Number=Plur	43	amod	_	_	*
+42	petites	petit	ADJ	_	Gender=Fem|Number=Plur	43	amod	_	_	*
+43	tâches	tâche	NOUN	_	Gender=Fem|Number=Plur	34	obl	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	34	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 13
+# text = Il en sera rendu compte verbalement à chaque réunion du conseil.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	en	en	PRON	_	Person=3	4	iobj	_	_	*
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:tense	_	_	*
+4	rendu	rendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	compte	compter	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+6	verbalement	verbalement	ADV	_	_	4	advmod	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	chaque	chaque	DET	_	Gender=Fem|Number=Sing	9	det	_	_	*
+9	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 14
+# text = La commune, étant devenue locataire de la grange-écurie de la maison du CCAS, décide d'ouvrir une porte de garage dans ce bâtiment et demande en premier lieu l'accord du CCAS et accepte le devis proposé par l'entreprise Aubry de Bulgnéville.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	commune	commune	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	étant	être	AUX	_	Tense=Pres|VerbForm=Part	5	aux:tense	_	_	*
+5	devenue	devenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+6	locataire	locataire	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	grange-écurie	grange-écurie	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	maison	maison	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	CCAS	CCAS	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	5	punct	_	_	*
+17	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	d'	de	ADP	_	_	19	mark	_	SpaceAfter=No	*
+19	ouvrir	ouvrir	VERB	_	VerbForm=Inf	17	xcomp	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	porte	porte	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	garage	garage	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+24	dans	dans	ADP	_	_	26	case	_	_	*
+25	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	26	det	_	_	*
+26	bâtiment	bâtiment	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	_	*
+27	et	et	CCONJ	_	_	28	cc	_	_	*
+28	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	_	_	*
+29	en	en	ADP	_	_	31	case	_	_	*
+30	premier	premier	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	_	*
+31	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	28	obl	_	_	*
+32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No	*
+33	accord	accord	NOUN	_	Gender=Masc|Number=Sing	28	obj	_	_	*
+34-35	du	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	CCAS	CCAS	PROPN	_	_	33	nmod	_	_	*
+37	et	et	CCONJ	_	_	38	cc	_	_	*
+38	accepte	accepter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	devis	devis	NOUN	_	Gender=Masc|Number=Sing	38	obj	_	_	*
+41	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	40	acl	_	_	*
+42	par	par	ADP	_	_	44	case	_	_	*
+43	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	SpaceAfter=No	*
+44	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	41	obl:agent	_	_	*
+45	Aubry	Aubry	PROPN	_	_	44	appos	_	_	*
+46	de	de	ADP	_	_	45	flat:name	_	_	*
+47	Bulgnéville	Bulgnéville	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+48	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 15
+# text = Les crédits seront inscrits au budget primitif de 2003.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	crédits	crédit	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	_	_	*
+3	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*
+4	inscrits	inscrire	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	budget	budget	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	primitif	primitif	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	2003	2003	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 16
+# text = Le conseil décide également l'achat d'un tracteur agricole d'occasion.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	achat	achat	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+7	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	tracteur	tracteur	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	agricole	agricole	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+11	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+12	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 17
+# text = Il accepte le devis des Ets Claude de Mandres-sur-Vair.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	accepte	accepter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	devis	devis	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Ets	et	PROPN	_	_	4	nmod	_	_	*
+8	Claude	Claude	PROPN	_	_	7	flat:name	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Mandres-sur-Vair	Mandres-sur-Vair	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 18
+# text = Les crédits seront prévus au budget 2003.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	crédits	crédit	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	_	_	*
+3	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*
+4	prévus	prévoir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	budget	budget	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+8	2003	2003	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 19
+# text = Dans le cadre de l'étude d'assainissement général sur la nouvelle loi sur l'eau, le conseil a choisi de confier, lors d'une précédente réunion, la maîtrise d'œuvre de cette étude à la DDE des Vosges à Vittel.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	étude	étude	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	assainissement	assainissement	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+9	général	général	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	sur	sur	ADP	_	_	13	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+12	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+13	loi	loi	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+14	sur	sur	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	eau	eau	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	3	punct	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	_	_	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*
+21	choisi	choisir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+22	de	de	ADP	_	_	23	mark	_	_	*
+23	confier	confier	VERB	_	VerbForm=Inf	21	xcomp	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	lors	lors	ADV	_	_	23	advmod	_	_	*
+26	d'	de	ADP	_	_	29	case	_	SpaceAfter=No	*
+27	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+28	précédente	précédent	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_	*
+29	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	25	obl:arg	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	maîtrise	maîtrise	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*
+33	d'	de	ADP	_	_	34	case	_	SpaceAfter=No	*
+34	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	37	det	_	_	*
+37	étude	étude	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	_	*
+38	à	à	ADP	_	_	40	case	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	DDE	DDE	PROPN	_	_	37	nmod	_	_	*
+41-42	des	_	_	_	_	_	_	_	_	*
+41	de	de	ADP	_	_	43	case	_	_	*
+42	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	43	det	_	_	*
+43	Vosges	Vosges	PROPN	_	_	40	nmod	_	_	*
+44	à	à	ADP	_	_	45	case	_	_	*
+45	Vittel	Vittel	PROPN	_	_	37	nmod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	21	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-05_41613.txt 20
+# text = M. le maire précise à ce jour le montant de la dépense afférente, soit 11.181, 11 euros TTC.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	maire	maire	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	précise	préciser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*
+7	jour	jour	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	montant	montant	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	dépense	dépense	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	afférente	afférent	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	soit	soit	CCONJ	_	_	16	cc	_	_	*
+16	11.181	11.181	NUM	_	_	9	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	11	11	NUM	_	_	19	nummod	_	_	*
+19	euros	euro	NOUN	_	Gender=Masc|Number=Plur	16	conj	_	_	*
+20	TTC	TTC	PROPN	_	_	16	appos	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n	*
+

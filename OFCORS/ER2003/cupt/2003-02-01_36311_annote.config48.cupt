@@ -1,0 +1,597 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-01_36311.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 1
+# text = CONFERENCES ET EXPOSITIONS
+1	CONFERENCES	CONFERENCES	PROPN	_	_	0	root	_	_	*
+2	ET	ET	PROPN	_	_	1	flat:name	_	_	*
+3	EXPOSITIONS	expositions	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 2
+# text = A l'école de musique, à 15 h, conférence de Jean-Marc Illi, musicologue, sur « la nature inspire les compositeurs ».
+1	A	à	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	école	école	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	musique	musique	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	15	15	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	3	punct	_	_	*
+11	conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Jean-Marc	Jean-Marc	PROPN	_	_	11	nmod	_	_	*
+14	Illi	Illi	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	musicologue	musicologue	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	22	punct	_	_	*
+18	sur	sur	ADP	_	_	22	case	_	_	*
+19	«	«	PUNCT	_	_	22	punct	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	nature	nature	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+22	inspire	inspirer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	compositeurs	compositeur	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 3
+# text = Expositions tout le week-end, toujours à l'école de musique, insectes, papillons, minéralogie, fossiles, photographies... Entrée libre.
+1	Expositions	exposition	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+2	tout	tout	ADV	_	_	4	advmod	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	9	punct	_	_	*
+6	toujours	toujours	ADV	_	_	9	advmod	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	école	école	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	musique	musique	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	insectes	insecte	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	papillons	papillon	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	minéralogie	minéralogie	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	fossiles	fossile	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	photographies	photographie	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	SpaceAfter=No	*
+22	...	...	PUNCT	_	_	23	punct	_	_	*
+23	Entrée	entrée	PROPN	_	_	4	conj	_	_	*
+24	libre	libre	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 4
+# text = Brillants résultats de la section taekwondo, qui participe ce week-end au championnat de France à Lille.
+1	Brillants	brillant	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+2	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	section	section	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	taekwondo	taekwondo	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	participe	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*
+11	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	France	France	PROPN	_	_	14	nmod	_	_	*
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Lille	Lille	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 5
+# text = Belle récompense que celle obtenue par les jeunes de la section taekwondo du Sin Moo Kwan.
+1	Belle	beau	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	récompense	récompense	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	que	que	SCONJ	_	_	4	case	_	_	*
+4	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	2	nmod	_	_	*
+5	obtenue	obtenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	5	obl:agent	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	section	section	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	taekwondo	taekwondo	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	Sin	Sin	PROPN	_	_	11	nmod	_	_	*
+16	Moo	Moo	PROPN	_	_	15	flat:name	_	_	*
+17	Kwan	Kwan	PROPN	_	_	15	flat:name	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 6
+# text = En effet, le week-end dernier à Chelles (Seine-et-Marne), lors de la coupe de France (combat enfant) de taekwondo de la Fédération française du sport travailliste, les sept jeunes compétiteurs du club se sont remarquablement comportés : Aurélie Guilliem (9 ans), Kevin Grisius (9 ans), Mélissa Boukezzoula (12 ans) et Abdelilah Jaghmi (14 ans) montaient sur la plus haute marche et recevaient une médaille d'or.
+1	En	en	ADP	_	_	44	advmod	_	_	*
+2	effet	effet	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	44	obl:mod	_	_	*
+6	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Chelles	Chelles	PROPN	_	_	5	nmod	_	_	*
+9	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+10	Seine-et-Marne	Seine-et-Marne	PROPN	_	_	8	nmod	_	SpaceAfter=No	*
+11	)	)	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	lors	lors	ADV	_	_	8	advmod	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	France	France	PROPN	_	_	16	nmod	_	_	*
+19	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+20	combat	combat	NOUN	_	Gender=Masc|Number=Sing	16	appos	_	_	*
+21	enfant	enfant	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+22	)	)	PUNCT	_	_	20	punct	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	taekwondo	taekwondo	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	Fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+28	française	français	ADJ	_	Gender=Fem|Number=Sing	27	amod	_	_	*
+29-30	du	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	sport	sport	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	_	*
+32	travailliste	travailliste	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	5	punct	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+35	sept	sept	NUM	_	_	37	nummod	_	_	*
+36	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	_	*
+37	compétiteurs	compétiteur	NOUN	_	Gender=Masc|Number=Plur	44	nsubj	_	_	*
+38-39	du	_	_	_	_	_	_	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	club	club	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*
+41	se	se	PRON	_	Person=3|PronType=Prs	44	obj	_	_	1:IRV
+42	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	44	aux:tense	_	_	*
+43	remarquablement	remarquablement	ADV	_	_	44	advmod	_	_	*
+44	comportés	comporter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+45	:	:	PUNCT	_	_	46	punct	_	_	*
+46	Aurélie	Aurélie	PROPN	_	_	73	nsubj	_	_	*
+47	Guilliem	Guilliem	PROPN	_	_	46	flat:name	_	_	*
+48	(	(	PUNCT	_	_	50	punct	_	SpaceAfter=No	*
+49	9	9	NUM	_	_	50	nummod	_	_	*
+50	ans	an	NOUN	_	Gender=Masc|Number=Plur	46	nmod	_	SpaceAfter=No	*
+51	)	)	PUNCT	_	_	50	punct	_	SpaceAfter=No	*
+52	,	,	PUNCT	_	_	53	punct	_	_	*
+53	Kevin	Kevin	PROPN	_	_	46	conj	_	_	*
+54	Grisius	Grisius	PROPN	_	_	53	flat:name	_	_	*
+55	(	(	PUNCT	_	_	57	punct	_	SpaceAfter=No	*
+56	9	9	NUM	_	_	57	nummod	_	_	*
+57	ans	an	NOUN	_	Gender=Masc|Number=Plur	53	nmod	_	SpaceAfter=No	*
+58	)	)	PUNCT	_	_	57	punct	_	SpaceAfter=No	*
+59	,	,	PUNCT	_	_	60	punct	_	_	*
+60	Mélissa	Mélissa	PROPN	_	_	46	conj	_	_	*
+61	Boukezzoula	Boukezzoula	PROPN	_	_	60	flat:name	_	_	*
+62	(	(	PUNCT	_	_	64	punct	_	SpaceAfter=No	*
+63	12	12	NUM	_	_	64	nummod	_	_	*
+64	ans	an	NOUN	_	Gender=Masc|Number=Plur	60	nmod	_	SpaceAfter=No	*
+65	)	)	PUNCT	_	_	64	punct	_	_	*
+66	et	et	CCONJ	_	_	67	cc	_	_	*
+67	Abdelilah	Abdelilah	PROPN	_	_	46	conj	_	_	*
+68	Jaghmi	Jaghmi	PROPN	_	_	67	flat:name	_	_	*
+69	(	(	PUNCT	_	_	71	punct	_	SpaceAfter=No	*
+70	14	14	NUM	_	_	71	nummod	_	_	*
+71	ans	an	NOUN	_	Gender=Masc|Number=Plur	67	nmod	_	SpaceAfter=No	*
+72	)	)	PUNCT	_	_	71	punct	_	_	*
+73	montaient	monter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	44	parataxis	_	_	*
+74	sur	sur	ADP	_	_	78	case	_	_	*
+75	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	78	det	_	_	*
+76	plus	plus	ADV	_	_	77	advmod	_	_	*
+77	haute	haut	ADJ	_	Gender=Fem|Number=Sing	78	amod	_	_	*
+78	marche	marche	NOUN	_	Gender=Fem|Number=Sing	73	obl	_	_	*
+79	et	et	CCONJ	_	_	80	cc	_	_	*
+80	recevaient	recev	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	73	conj	_	_	*
+81	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	82	det	_	_	*
+82	médaille	médaille	NOUN	_	Gender=Fem|Number=Sing	80	obj	_	_	*
+83	d'	de	ADP	_	_	84	case	_	SpaceAfter=No	*
+84	or	or	NOUN	_	Gender=Masc|Number=Sing	82	nmod	_	SpaceAfter=No	*
+85	.	.	PUNCT	_	_	44	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 7
+# text = Quant à Patricia Heulle (14 ans) et Miriame Ouali (11 ans), ils obtenaient l'argent.
+1	Quant	quant	ADV	_	_	3	case	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	Patricia	Patricia	PROPN	_	_	18	obl:mod	_	_	*
+4	Heulle	Heulle	PROPN	_	_	3	flat:name	_	_	*
+5	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*
+8	)	)	PUNCT	_	_	7	punct	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	Miriame	Miriame	PROPN	_	_	3	conj	_	_	*
+11	Ouali	Ouali	PROPN	_	_	10	flat:name	_	_	*
+12	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+13	11	11	NUM	_	_	14	nummod	_	_	*
+14	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	3	punct	_	_	*
+17	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_	*
+18	obtenaient	obtenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	argent	argent	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 8
+# text = Sans oublier, Marvin Merikhi qui participa également à la fête.
+1	Sans	sans	ADP	_	_	2	mark	_	_	*
+2	oublier	oublier	VERB	_	VerbForm=Inf	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Marvin	Marvin	PROPN	_	_	2	obj	_	_	*
+5	Merikhi	Merikhi	PROPN	_	_	4	flat:name	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+7	participa	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	_	_	*
+8	également	également	ADV	_	_	7	advmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	fête	fête	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 9
+# text = Motifs de satisfaction donc, pour le club et son président, Nicolas Tacchi, qui dirige le « Donjag » de la ville de mains de maître.
+1	Motifs	motif	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	satisfaction	satisfaction	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	donc	donc	ADV	_	_	1	advmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	pour	pour	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	club	club	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	président	président	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Nicolas	Nicolas	PROPN	_	_	1	appos	_	_	*
+14	Tacchi	Tacchi	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+17	dirige	diriger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+19	«	«	PUNCT	_	_	20	punct	_	_	*
+20	Donjag	Donjag	PROPN	_	_	17	obj	_	_	*
+21	»	»	PUNCT	_	_	20	punct	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	ville	ville	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	mains	main	NOUN	_	Gender=Fem|Number=Plur	24	nmod	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	maître	maître	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 10
+# text = « Je suis particulièrement satisfait du résultat puisque nos cinq jeunes confirmés se sont distingués.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	particulièrement	particulièrement	ADV	_	_	5	advmod	_	_	*
+5	satisfait	satisfait	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	résultat	résultat	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	puisque	puisque	SCONJ	_	_	16	mark	_	_	*
+10	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	13	det	_	_	*
+11	cinq	cinq	NUM	_	_	13	nummod	_	_	*
+12	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*
+13	confirmés	confirmé	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_	*
+14	se	se	PRON	_	Person=3|PronType=Prs	16	obj	_	_	1:IRV
+15	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	distingués	distinguer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	5	advcl	_	SpaceAfter=No	1
+17	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 11
+# text = De plus, deux petits nouveaux ont été médaillés d'or... l'ambition ne manque pas », déclarait Nicolas.
+1	De	de	ADP	_	_	9	advmod	_	_	*
+2	plus	plus	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	deux	deux	NUM	_	_	5	nummod	_	_	*
+5	petits	petit	NOUN	_	Gender=Masc|Number=Plur	9	nsubj:pass	_	_	*
+6	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_	*
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+8	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	aux:pass	_	_	*
+9	médaillés	médailler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	20	ccomp	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	or	or	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+12	...	...	PUNCT	_	_	16	punct	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	ambition	ambition	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+15	ne	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*
+16	manque	manquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	*
+17	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*
+18	»	»	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	9	punct	_	_	*
+20	déclarait	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+21	Nicolas	Nicolas	PROPN	_	_	20	nsubj	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 12
+# text = « Les compétitions de « light contact » plaisent beaucoup aux jeunes, car ce sont des combats à touches réelles où les coups de pieds au visage sont permis, protections de rigueur (casque à grille... ) », poursuivait-il.
+1	«	«	PUNCT	_	_	9	punct	_	_	*
+2	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	compétitions	compétition	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	light	light	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	contact	contact	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+8	»	»	PUNCT	_	_	6	punct	_	_	*
+9	plaisent	plaire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	beaucoup	beaucoup	ADV	_	_	9	advmod	_	_	*
+11-12	aux	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	20	punct	_	_	*
+15	car	car	CCONJ	_	_	20	cc	_	_	*
+16	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	20	nsubj	_	_	*
+17	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	combats	combat	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	touches	touche	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	_	*
+23	réelles	réel	ADJ	_	Gender=Fem|Number=Plur	22	amod	_	_	*
+24	où	où	ADV	_	PronType=Rel	33	advmod	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_	*
+26	coups	coup	NOUN	_	Gender=Masc|Number=Plur	33	nsubj:pass	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+29-30	au	_	_	_	_	_	_	_	_	*
+29	à	à	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	visage	visage	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+32	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	aux:pass	_	_	*
+33	permis	permettre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	22	acl:relcl	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	35	punct	_	_	*
+35	protections	protection	NOUN	_	Gender=Fem|Number=Plur	33	obl	_	_	*
+36	de	de	ADP	_	_	37	case	_	_	*
+37	rigueur	rigueur	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	_	*
+38	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No	*
+39	casque	casque	NOUN	_	Gender=Masc|Number=Sing	35	appos	_	_	*
+40	à	à	ADP	_	_	41	case	_	_	*
+41	grille	grille	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	SpaceAfter=No	*
+42	...	...	PUNCT	_	_	39	punct	_	_	*
+43	)	)	PUNCT	_	_	39	punct	_	_	*
+44	»	»	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+45	,	,	PUNCT	_	_	46	punct	_	_	*
+46	poursuivait	poursuivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	33	parataxis	_	SpaceAfter=No	*
+47	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	nsubj	_	SpaceAfter=No	*
+48	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 13
+# text = Dans un autre registre, le club participera, ce week-end à Lille, au championnat de France de taekwondo.
+1	Dans	dans	ADP	_	_	4	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	autre	autre	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	registre	registre	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	club	club	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+8	participera	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*
+11	week-end	week-end	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	Lille	Lille	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15-16	au	_	_	_	_	_	_	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	France	France	PROPN	_	_	17	nmod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	taekwondo	taekwondo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 14
+# text = Un dérivé apprécié des adultes, car basé essentiellement sur la technique.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	dérivé	dérivé	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	apprécié	apprécier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	adultes	adulte	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	car	car	CCONJ	_	_	9	cc	_	_	*
+9	basé	baser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*
+10	essentiellement	essentiellement	ADV	_	_	9	advmod	_	_	*
+11	sur	sur	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	technique	technique	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 15
+# text = Encore une occasion de rapporter des médailles.
+1	Encore	encore	ADV	_	_	3	advmod	_	_	*
+2	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	rapporter	rapporter	VERB	_	VerbForm=Inf	3	acl	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	médailles	médaille	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 16
+# text = Pour sa deuxième année d'existence, le Sin Moo Kwan, pôle national de l'hapkido par ailleurs, est donc très actif.
+1	Pour	pour	ADP	_	_	4	case	_	_	*
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+3	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+4	année	année	NOUN	_	Gender=Fem|Number=Sing	24	obl:mod	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	existence	existence	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	4	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	Sin	Sin	PROPN	_	_	24	nsubj	_	_	*
+10	Moo	Moo	PROPN	_	_	9	flat:name	_	_	*
+11	Kwan	Kwan	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	pôle	pôle	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+14	national	national	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	hapkido	hapkido	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+18	par	par	ADP	_	_	9	advmod	_	_	*
+19	ailleurs	ailleurs	ADV	_	_	18	fixed	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	9	punct	_	_	*
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*
+22	donc	donc	ADV	_	_	24	advmod	_	_	*
+23	très	très	ADV	_	_	24	advmod	_	_	*
+24	actif	actif	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 17
+# text = Depuis peu, le club propose une nouvelle discipline : le sundo, un art martial valorisant la respiration et le renforcement musculaire.
+1	Depuis	depuis	ADP	_	_	2	case	_	_	*
+2	peu	peu	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	club	club	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+6	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	discipline	discipline	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+10	:	:	PUNCT	_	_	12	punct	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	sundo	sundo	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	art	art	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+16	martial	martial	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	valorisant	valoriser	VERB	_	Tense=Pres|VerbForm=Part	15	acl	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	respiration	respiration	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	renforcement	renforcement	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+23	musculaire	musculaire	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 18
+# text = A méditer !
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	méditer	méditer	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	!	!	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 19
+# text = A noter : Stage exceptionnel de hapkido du 26/02 au 2/03 au Parc des Sports (présence du Grand Maître fondateur, Ji Han-Jae, partenaire de Bruce
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	noter	noter	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	Stage	stage	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	exceptionnel	exceptionnel	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	hapkido	hapkido	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	26	26	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+11	/	/	SYM	_	_	12	cc	_	SpaceAfter=No	*
+12	02	02	NUM	_	_	10	conj	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	2	2	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+16	/	/	SYM	_	_	17	cc	_	SpaceAfter=No	*
+17	03	03	NUM	_	_	15	conj	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	Parc	parc	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	Sports	sport	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+24	(	(	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+25	présence	présence	NOUN	_	Gender=Fem|Number=Sing	4	appos	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	29	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+28	Grand	grand	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+29	Maître	Maître	PROPN	_	_	25	nmod	_	_	*
+30	fondateur	fondateur	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Ji	ji	PROPN	_	_	25	conj	_	_	*
+33	Han-Jae	Han-Jae	PROPN	_	_	32	flat:name	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	35	punct	_	_	*
+35	partenaire	partenaire	NOUN	_	Gender=Masc|Number=Sing	25	conj	_	_	*
+36	de	de	ADP	_	_	37	case	_	_	*
+37	Bruce	Bruce	PROPN	_	_	35	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 20
+# text = Lee dans « Le jeu de la mort » et « Légende vivante »).
+1	Lee	Lee	PROPN	_	_	0	root	_	_	*
+2	dans	dans	ADP	_	_	5	case	_	_	*
+3	«	«	PUNCT	_	_	5	punct	_	_	*
+4	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	mort	mort	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	»	»	PUNCT	_	_	1	punct	_	_	*
+10	et	et	CCONJ	_	_	12	cc	_	_	*
+11	«	«	PUNCT	_	_	12	punct	_	_	*
+12	Légende	légende	PROPN	_	_	1	conj	_	_	*
+13	vivante	vivant	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	1	punct	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 21
+# text = Renseignements et inscriptions avant le 15 février au Parc des Sports, sur le site internet : http : //www.
+1	Renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	inscriptions	inscription	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+4	avant	avant	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	15	15	NUM	_	_	1	nmod	_	_	*
+7	février	février	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Parc	Parc	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	Sports	sport	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	site	site	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+18	internet	internet	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+19	:	:	PUNCT	_	_	20	punct	_	_	*
+20	http	http	NOUN	_	_	17	appos	_	_	*
+21	:	:	PUNCT	_	_	23	punct	_	_	*
+22	//	//	PUNCT	_	_	23	punct	_	SpaceAfter=No	*
+23	www.	www.	NOUN	_	Gender=Masc|Number=Sing	20	appos	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 22
+# text = sinmoo-hapkido.
+1	sinmoo-hapkido.	sinmoo-hapkido	ADV	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 23
+# text = com ou par tél.
+1	com	com	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	ou	ou	CCONJ	_	_	4	cc	_	_	*
+3	par	par	ADP	_	_	4	case	_	_	*
+4	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-01_36311.txt 24
+# text = 06.08.53.53.11.
+1	06.08.53.53.11	06.08.53.53.11	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

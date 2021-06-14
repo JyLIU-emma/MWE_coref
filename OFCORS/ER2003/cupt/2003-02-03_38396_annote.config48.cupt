@@ -1,0 +1,509 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-03_38396.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 1
+# text = Tremplin Eté 2002 : nouvelle expérience en Méditerranée.
+1	Tremplin	tremplin	PROPN	_	_	0	root	_	SpacesAfter=\n	*
+2	Eté	Eté	PROPN	_	_	1	flat:name	_	_	*
+3	2002	2002	NUM	_	_	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	6	punct	_	_	*
+5	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	Méditerranée	Méditerranée	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 2
+# text = Les jeunes savent la chance qu'ils ont.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	savent	savoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	chance	chance	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	1:LVC.full
+6	qu'	que	PRON	_	PronType=Rel	8	obj	_	SpaceAfter=No	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	SpaceAfter=No	1
+9	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 3
+# text = « Partir d'ici en Franche-Comté pour aller sur un bateau, vous ne savez pas ce que cela représente.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Partir	partir	VERB	_	VerbForm=Inf	15	advcl	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	ici	ici	ADV	_	_	2	advmod	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	Franche-Comté	Franche-Comté	PROPN	_	_	2	obl	_	_	*
+7	pour	pour	ADP	_	_	8	mark	_	_	*
+8	aller	aller	VERB	_	VerbForm=Inf	2	advcl	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	bateau	bateau	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	2	punct	_	_	*
+13	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	nsubj	_	_	*
+14	ne	ne	ADV	_	Polarity=Neg	15	advmod	_	_	*
+15	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*
+17	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	obj	_	_	*
+18	que	que	PRON	_	PronType=Rel	20	obj	_	_	*
+19	cela	cela	PRON	_	Number=Sing|PronType=Dem	18	nsubj	_	_	*
+20	représente	représenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 4
+# text = C'est pour cela que nous voulons remercier tous les partenaires.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	pour	pour	ADP	_	_	4	case	_	_	*
+4	cela	cela	PRON	_	Number=Sing|PronType=Dem	0	root	_	_	*
+5	que	que	SCONJ	_	_	7	mark	_	_	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+7	voulons	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	advcl:cleft	_	_	*
+8	remercier	remercier	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+9	tous	tout	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	partenaires	partenaire	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 5
+# text = » C'est pour cela aussi que les jeunes ont organisé l'exposition.
+1	»	»	PUNCT	_	_	5	punct	_	_	*
+2	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	expl:subj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	pour	pour	ADP	_	_	5	case	_	_	*
+5	cela	cela	PRON	_	Number=Sing|PronType=Dem	0	root	_	_	*
+6	aussi	aussi	ADV	_	_	5	advmod	_	_	*
+7	que	que	SCONJ	_	_	11	mark	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	organisé	organiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl:cleft	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 6
+# text = Juste histoire de partager.
+1	Juste	juste	ADV	_	_	2	advmod	_	_	*
+2	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	partager	partager	VERB	_	VerbForm=Inf	2	acl	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 7
+# text = « Nous aimerions poursuivre l'été prochain », reprennent les marins bisontins.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	aimerions	aimeroir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	10	ccomp	_	_	*
+4	poursuivre	poursuivre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	été	été	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+7	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	reprennent	reprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	marins	marin	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+13	bisontins	bisontin	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 8
+# text = « Nous allons suivre des formations.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	allons	aller	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	suivre	suivre	VERB	_	VerbForm=Inf	3	xcomp	_	_	1:LVC.full
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	formations	formation	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	SpaceAfter=No	1
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 9
+# text = Notre objectif maintenant est d'encadrer des jeunes, de les emmener avec nous.
+1	Notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	objectif	objectif	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	maintenant	maintenant	ADV	_	_	2	advmod	_	_	*
+4	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	d'	de	ADP	_	_	6	mark	_	SpaceAfter=No	*
+6	encadrer	encadrer	VERB	_	VerbForm=Inf	4	ccomp	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	de	de	ADP	_	_	13	mark	_	_	*
+12	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	13	obj	_	_	*
+13	emmener	emmener	VERB	_	VerbForm=Inf	6	conj	_	_	*
+14	avec	avec	ADP	_	_	15	case	_	_	*
+15	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	13	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 10
+# text = L'association nous a servi de tremplin.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	5	iobj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	servi	servir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	tremplin	tremplin	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 11
+# text = Maintenant, nous voulons aller plus loin.
+1	Maintenant	maintenant	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	voulons	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	aller	aller	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	plus	plus	ADV	_	_	7	advmod	_	_	*
+7	loin	loin	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 12
+# text = C'est pour cela que nous recherchons des financeurs ou des partenaires.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	pour	pour	ADP	_	_	4	case	_	_	*
+4	cela	cela	PRON	_	Number=Sing|PronType=Dem	0	root	_	_	*
+5	que	que	SCONJ	_	_	7	mark	_	_	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+7	recherchons	rechercher	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	advcl:cleft	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	financeurs	financeur	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*
+11	ou	ou	CCONJ	_	_	14	cc	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	partenaires	partenaire	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 13
+# text = » L'appel est lancé.
+1	»	»	PUNCT	_	_	5	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	appel	appel	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	_	1:LVC.full
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 14
+# text = MJC de Besançon, Touillon-et-Loutelet, tél.
+1	MJC	MJC	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	Besançon	Besançon	PROPN	_	_	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	Touillon-et-Loutelet	Touillon-et-Loutelet	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	tél	tél	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 15
+# text = : 03.81.49.10.04.
+1	:	:	PUNCT	_	_	2	punct	_	_	*
+2	03.81.49.10.04	03.81.49.10.04	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 16
+# text = Eric DAVIATTE
+1	Eric	Eric	PROPN	_	_	0	root	_	_	*
+2	DAVIATT	DAVIATT	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	E	E	X	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 17
+# text = Les jeunes des Clairs-So et des quartiers rêvent d'aventure.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*
+5	Clairs	clairs	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+6	-So	-So	PROPN	_	_	5	flat:name	_	_	*
+7	et	et	CCONJ	_	_	10	cc	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	quartiers	quartier	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+11	rêvent	rêver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	aventure	aventure	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 18
+# text = Et la vivent.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	vivent	vivre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 19
+# text = Samedi, à la MJC Le Loutelet, ils ont proposé une exposition relatant quelques étés de vie en mer.
+1	Samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	MJC	MJC	PROPN	_	_	1	conj	_	_	*
+6	Le	Le	DET	_	_	5	flat:name	_	_	*
+7	Loutelet	Loutelet	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_	*
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	relatant	relater	VERB	_	Tense=Pres|VerbForm=Part	13	acl	_	_	*
+15	quelques	quelque	DET	_	Gender=Fem|Number=Plur	16	det	_	_	*
+16	étés	été	NOUN	_	Gender=Fem|Number=Plur	14	obj	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	vie	vie	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	mer	mer	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 20
+# text = « A l'origine, il y avait l'association « Horizons pour tous » de Christian Lemasson et ses camps autonomes », expliquent Nordine, Nahim, Salim, Hamid, Youne et Samir.
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	origine	origine	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	SpaceAfter=No	2:LVC.full
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID
+7	y	y	PRON	_	_	8	expl:comp	_	_	1
+8	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	ccomp	_	_	1;2
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	association	association	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	«	«	PUNCT	_	_	12	punct	_	_	*
+12	Horizons	horizons	PROPN	_	_	10	appos	_	_	*
+13	pour	pour	ADP	_	_	14	case	_	_	*
+14	tous	tout	PRON	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+15	»	»	PUNCT	_	_	12	punct	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	Christian	Christian	PROPN	_	_	10	nmod	_	_	*
+18	Lemasson	Lemasson	PROPN	_	_	17	flat:name	_	_	*
+19	et	et	CCONJ	_	_	21	cc	_	_	*
+20	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	camps	camp	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_	*
+22	autonomes	autonome	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+23	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	8	punct	_	_	*
+25	expliquent	expliquer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+26	Nordine	Nordine	PROPN	_	_	25	nsubj	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*
+28	Nahim	Nahim	PROPN	_	_	26	conj	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	Salim	Salim	PROPN	_	_	26	conj	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	Hamid	Hamid	PROPN	_	_	26	conj	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	Youne	Youne	PROPN	_	_	26	conj	_	_	*
+35	et	et	CCONJ	_	_	36	cc	_	_	*
+36	Samir	Samir	PROPN	_	_	26	conj	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	25	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 21
+# text = « L'association a permis à des jeunes de partir faire du voilier en Méditerranée en 1999.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	association	association	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	permis	permettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	à	à	ADP	_	_	9	case	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*
+10	de	de	ADP	_	_	12	mark	_	_	*
+11	partir	partir	VERB	_	VerbForm=Inf	10	fixed	_	_	*
+12	faire	faire	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	voilier	voilier	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	Méditerranée	Méditerranée	PROPN	_	_	15	nmod	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	1999	1999	NUM	_	_	12	obl	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 22
+# text = L'expérience s'est renouvelée l'année suivante en Corse avec un groupe agrandi »
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	renouvelée	renouveler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	année	année	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+8	suivante	suivant	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	Corse	Corse	PROPN	_	_	5	obl	_	_	*
+11	avec	avec	ADP	_	_	13	case	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+14	agrandi	agrandi	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	_	*
+15	»	»	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 23
+# text = L'occasion de poursuivre l'apprentissage de la navigation, de pratiquer la voile.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	poursuivre	poursuivre	VERB	_	VerbForm=Inf	2	acl	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	apprentissage	apprentissage	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	navigation	navigation	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	de	de	ADP	_	_	12	mark	_	_	*
+12	pratiquer	pratiquer	VERB	_	VerbForm=Inf	4	conj	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	voile	voile	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 24
+# text = Mais aussi de vivre des moments inoubliables comme de participer à un comptage de cétacés, de nager avec des dauphins...
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	aussi	aussi	ADV	_	_	4	advmod	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	vivre	vivre	VERB	_	VerbForm=Inf	0	root	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	moments	moment	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8	inoubliables	inoubliable	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+9	comme	comme	SCONJ	_	_	11	mark	_	_	*
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	participer	participer	VERB	_	VerbForm=Inf	7	acl	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	comptage	comptage	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	cétacés	cétacé	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	nager	nager	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*
+20	avec	avec	ADP	_	_	23	case	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	dauphins	dauphin	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No	*
+24	...	...	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 25
+# text = Pour la troisième édition, en 2001, les jeunes de Besançon quittent les côtes françaises et la Corse.
+1	Pour	pour	ADP	_	_	4	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+3	troisième	troisième	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+4	édition	édition	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	2001	2001	NUM	_	_	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Besançon	Besançon	PROPN	_	_	10	nmod	_	_	*
+13	quittent	quitter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	côtes	côte	NOUN	_	Gender=Fem|Number=Plur	13	obj	_	_	*
+16	françaises	français	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	Corse	Corse	PROPN	_	_	15	conj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 26
+# text = Cette fois-ci, cap est mis vers la Martinique.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	fois	fois	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	SpaceAfter=No	*
+3	-ci	ci	PART	_	_	2	advmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5	cap	cap	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*
+7	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	vers	vers	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	Martinique	Martinique	PROPN	_	_	7	obl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 27
+# text = « Nous avons participé au tour du Monde à la voile », reprennent Hamid et Samir.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	participé	participer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	ccomp	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	tour	tour	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	voile	voile	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+14	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	4	punct	_	_	*
+16	reprennent	reprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	Hamid	Hamid	PROPN	_	_	16	nsubj	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	Samir	Samir	PROPN	_	_	17	conj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 28
+# text = Au menu : traversée des Caraïbes, du canal de Panama.
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	menu	menu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	traversée	traversée	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Caraïbes	Caraïbes	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	12	punct	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	canal	canal	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Panama	Panama	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 29
+# text = « Un mois en mer pour terminer dans les îles de la Polynésie française.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	mois	mois	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	mer	mer	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	terminer	terminer	VERB	_	VerbForm=Inf	3	acl	_	_	*
+8	dans	dans	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	îles	île	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Polynésie	Polynésie	PROPN	_	_	10	nmod	_	_	*
+14	française	français	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 30
+# text = Cela restera toujours gravé dans nos mémoires.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	*
+2	restera	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	toujours	toujours	ADV	_	_	2	advmod	_	_	*
+4	gravé	gravé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	_	*
+5	dans	dans	ADP	_	_	7	case	_	_	*
+6	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	mémoires	mémoire	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-03_38396.txt 31
+# text = »
+1	»	»	PUNCT	_	_	0	root	_	SpacesAfter=\n	*
+

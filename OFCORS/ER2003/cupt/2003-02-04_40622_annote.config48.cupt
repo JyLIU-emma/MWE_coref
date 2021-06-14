@@ -1,0 +1,880 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-04_40622.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 1
+# text = La Gym fait une pause
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	Gym	Gym	PROPN	_	_	3	nsubj	_	_	*
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	pause	pause	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 2
+# text = Les dames couronnées de la galette des rois en fin de table.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	dames	dame	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	couronnées	couronner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	galette	galette	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	rois	roi	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	fin	fin	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	table	table	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 3
+# text = Les dames de la section gym volontaire se sont réunies en assemblée générale au foyer Saint-Pierre en présence de leur présidente et animatrice Janine Rouvelin.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	dames	dame	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	section	section	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	gym	gym	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	volontaire	volontaire	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	réunies	réunir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	en	en	ADP	_	_	12	case	_	_	*
+12	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*
+13	générale	général	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+17	Saint-Pierre	Saint-Pierre	PROPN	_	_	16	appos	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	présence	présence	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	présidente	président	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	et	et	CCONJ	_	_	24	cc	_	_	*
+24	animatrice	animateur	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+25	Janine	Janine	PROPN	_	_	24	appos	_	_	*
+26	Rouvelin	Rouvelin	PROPN	_	_	25	flat:name	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 4
+# text = La trésorière Marie-Louise Couturier à donné le bilan financier sur la période de septembre 2001 à septembre 2002, bilan équilibré à hauteur de 10.648 euros en recettes et en dépenses.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	trésorière	trésorier	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	Marie-Louise	Marie-Louise	PROPN	_	_	2	appos	_	_	*
+4	Couturier	Couturier	PROPN	_	_	3	flat:name	_	_	*
+5	à	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	financier	financier	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	période	période	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15	2001	2001	NUM	_	_	14	nmod	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+18	2002	2002	NUM	_	_	17	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	17	appos	_	_	*
+21	équilibré	équilibrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	hauteur	hauteur	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	10.648	10.648	NUM	_	_	26	nummod	_	_	*
+26	euros	euro	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	recettes	recette	NOUN	_	Gender=Fem|Number=Plur	21	obl	_	_	*
+29	et	et	CCONJ	_	_	31	cc	_	_	*
+30	en	en	ADP	_	_	31	case	_	_	*
+31	dépenses	dépense	NOUN	_	Gender=Fem|Number=Plur	28	conj	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 5
+# text = Les recettes proviennent essentiellement des licences et cotisations des adhérentes (68 à ce jour) réparties en section gym volontaire, maintien en forme et gym-step, des subventions de la commune de Bouligny, du département, du FNDS.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	recettes	recette	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*
+3	proviennent	provenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	essentiellement	essentiellement	ADV	_	_	3	advmod	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	licences	licence	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	adhérentes	adhérent	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	68	68	NUM	_	_	7	appos	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	17	det	_	_	*
+17	jour	jour	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	14	punct	_	_	*
+19	réparties	répartir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	section	section	NOUN	_	Gender=Fem|Number=Sing	19	obl	_	_	*
+22	gym	gym	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	volontaire	volontaire	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+26	en	en	ADP	_	_	27	case	_	_	*
+27	forme	forme	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+28	et	et	CCONJ	_	_	29	cc	_	_	*
+29	gym-step	gym-step	NOUN	_	Gender=Masc|Number=Sing	27	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	33	punct	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_	*
+33	subventions	subvention	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	commune	commune	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	Bouligny	Bouligny	PROPN	_	_	36	nmod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	42	punct	_	_	*
+40-41	du	_	_	_	_	_	_	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	département	département	NOUN	_	Gender=Masc|Number=Sing	38	conj	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	46	punct	_	_	*
+44-45	du	_	_	_	_	_	_	_	_	*
+44	de	de	ADP	_	_	46	case	_	_	*
+45	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_	*
+46	FNDS	FNDS	PROPN	_	_	38	conj	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 6
+# text = Pour les dépenses, entre autre, les indemnités des animatrices et de leurs stages, les assurances des adhérentes, l'affiliation à la fédération de la gym volontaire, l'achat de matériel divers, steps, extenseurs.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	dépenses	dépense	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	entre	entre	ADP	_	_	6	case	_	_	*
+6	autre	autre	PRON	_	Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	indemnités	indemnité	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	animatrices	animatrice	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	et	et	CCONJ	_	_	16	cc	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	stages	stage	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	assurances	assurance	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	adhérentes	adhérente	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	affiliation	affiliation	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	gym	gym	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	_	*
+32	volontaire	volontaire	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	35	punct	_	_	*
+34	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*
+35	achat	achat	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+36	de	de	ADP	_	_	37	case	_	_	*
+37	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+38	divers	divers	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	40	punct	_	_	*
+40	steps	step	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	42	punct	_	_	*
+42	extenseurs	extenseur	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 7
+# text = Janine Rouvelin a donné quelques informations sur les manifestations de fin 2002, démonstrations en maisons de retraite, à la fête du folklore et de la journée handisport à Bouligny et des sorties à Disneyland Paris pour la parade de Noël, et au marché de Noël de Trèves en décembre.
+1	Janine	Janine	PROPN	_	_	4	nsubj	_	_	*
+2	Rouvelin	Rouvelin	PROPN	_	_	1	flat:name	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	quelques	quelque	DET	_	Gender=Fem|Number=Plur	6	det	_	_	*
+6	informations	information	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*
+7	sur	sur	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	fin	fin	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	2002	2002	NUM	_	_	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	démonstrations	démonstration	NOUN	_	Gender=Fem|Number=Plur	9	appos	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	maisons	maison	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	fête	fête	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	folklore	folklore	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26	et	et	CCONJ	_	_	29	cc	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	journée	journée	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+30	handisport	handisport	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+31	à	à	ADP	_	_	32	case	_	_	*
+32	Bouligny	Bouligny	PROPN	_	_	29	nmod	_	_	*
+33	et	et	CCONJ	_	_	36	cc	_	_	*
+34-35	des	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_	*
+36	sorties	sortie	NOUN	_	Gender=Fem|Number=Plur	32	conj	_	_	*
+37	à	à	ADP	_	_	38	case	_	_	*
+38	Disneyland	Disneyland	PROPN	_	_	36	nmod	_	_	*
+39	Paris	Paris	PROPN	_	_	38	flat:name	_	_	*
+40	pour	pour	ADP	_	_	42	case	_	_	*
+41	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_	*
+42	parade	parade	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+43	de	de	ADP	_	_	44	case	_	_	*
+44	Noël	Noël	PROPN	_	_	42	nmod	_	SpaceAfter=No	*
+45	,	,	PUNCT	_	_	49	punct	_	_	*
+46	et	et	CCONJ	_	_	49	cc	_	_	*
+47-48	au	_	_	_	_	_	_	_	_	*
+47	à	à	ADP	_	_	49	case	_	_	*
+48	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_	*
+49	marché	marché	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*
+50	de	de	ADP	_	_	51	case	_	_	*
+51	Noël	Noël	PROPN	_	_	49	nmod	_	_	*
+52	de	de	ADP	_	_	53	case	_	_	*
+53	Trèves	Trèves	PROPN	_	_	49	nmod	_	_	*
+54	en	en	ADP	_	_	55	case	_	_	*
+55	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	49	nmod	_	SpaceAfter=No	*
+56	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 8
+# text = Pour 2003, est en prévision en plus des manifestations traditionnelles, une sortie week-end en avril en Hollande ;
+1	Pour	pour	ADP	_	_	2	case	_	_	*
+2	2003	2003	NUM	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	prévision	prévision	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	en	en	ADP	_	_	6	advmod	_	_	*
+8	plus	plus	ADV	_	_	7	fixed	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*
+12	traditionnelles	traditionnel	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*
+16	week-end	week-endre	NOUN	_	_	15	nmod	_	_	*
+17	en	en	ADP	_	_	18	case	_	_	*
+18	avril	avril	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+19	en	en	ADP	_	_	20	case	_	_	*
+20	Hollande	Hollande	PROPN	_	_	15	nmod	_	_	*
+21	;	;	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 9
+# text = des précisions seront données ultérieurement à ce sujet.
+1-2	des	_	_	_	_	_	_	_	_	*
+1	de	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	précisions	précision	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	_	_	*
+4	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	_	_	*
+5	données	donner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	ultérieurement	ultérieurement	ADV	_	_	5	advmod	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 10
+# text = Les cours sont donnés au gymnase, ouverts à toutes de Bouligny et de l'extérieur, pour la gym volontaire le lundi de 19 h 30 à 20 h 30, le jeudi de 9 h à 10 h, le vendredi de 17 h 30 à 18 h 30 ;
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	cours	cours	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	_	_	1:LVC.full
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	donnés	donner	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	ouverts	ouvrir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+10	à	à	ADP	_	_	11	case	_	_	*
+11	toutes	tout	PRON	_	Gender=Fem|Number=Plur	9	obl:mod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Bouligny	Bouligny	PROPN	_	_	11	nmod	_	_	*
+14	et	et	CCONJ	_	_	17	cc	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	extérieur	extérieur	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	pour	pour	ADP	_	_	21	case	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	gym	gym	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+22	volontaire	volontaire	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	19	19	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+28	30	30	NUM	_	_	31	nummod	_	_	*
+29	à	à	ADP	_	_	30	case	_	_	*
+30	20	20	NUM	_	_	28	nmod	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	27	conj	_	_	*
+32	30	30	NUM	_	_	31	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	44	punct	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+36	de	de	ADP	_	_	38	case	_	_	*
+37	9	9	NUM	_	_	38	nummod	_	_	*
+38	h	heure	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	_	*
+39	à	à	ADP	_	_	41	case	_	_	*
+40	10	10	NUM	_	_	41	nummod	_	_	*
+41	h	heure	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	35	punct	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+45	de	de	ADP	_	_	47	case	_	_	*
+46	17	17	NUM	_	_	47	nummod	_	_	*
+47	h	heure	NOUN	_	Gender=Fem|Number=Sing	44	nmod	_	_	*
+48	30	30	NUM	_	_	51	nummod	_	_	*
+49	à	à	ADP	_	_	50	case	_	_	*
+50	18	18	NUM	_	_	48	nmod	_	_	*
+51	h	heure	NOUN	_	Gender=Fem|Number=Sing	47	conj	_	_	*
+52	30	30	NUM	_	_	51	nmod	_	_	*
+53	;	;	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 11
+# text = pour le maintien en forme (des mamies) le mardi et le jeudi de 16 h 15 à 17 h 15 ;
+1	pour	pour	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	forme	forme	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	mamies	mamie	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	16	16	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+19	15	15	NUM	_	_	22	nummod	_	_	*
+20	à	à	ADP	_	_	21	case	_	_	*
+21	17	17	NUM	_	_	19	nmod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+23	15	15	NUM	_	_	3	nmod	_	_	*
+24	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 12
+# text = pour la gym-step le mercredi de 17 h 30 à 18 h 15.
+1	pour	pour	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	gym-step	gym-step	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	17	17	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+9	30	30	NUM	_	_	12	nummod	_	_	*
+10	à	à	ADP	_	_	11	case	_	_	*
+11	18	18	NUM	_	_	9	nmod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+13	15	15	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 13
+# text = On peut s'inscrire sur place ou contacter la présidente Janine Rouvelin au 03.29.85.31.84.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	obj	_	SpaceAfter=No	*
+4	inscrire	inscrire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	sur	sur	ADP	_	_	6	case	_	_	*
+6	place	place	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+7	ou	ou	CCONJ	_	_	8	cc	_	_	*
+8	contacter	contacter	VERB	_	VerbForm=Inf	4	conj	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	présidente	présidente	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	Janine	Janine	PROPN	_	_	10	appos	_	_	*
+12	Rouvelin	Rouvelin	PROPN	_	_	11	flat:name	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	03.29.85.31.84	03.29.85.31.84	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 14
+# text = A la fin de la réunion, la pause café et galette des rois à donnée l'occasion de couronner reines du jour, Elia, Danielle, Marie-Louise, Roselyne et Marguerite.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	fin	fin	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	pause	pause	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	café	café	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	galette	galette	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	rois	roi	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	à	à	ADP	_	_	17	mark	_	_	*
+17	donnée	donner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	1:LVC.cause
+18	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	1
+20	de	de	ADP	_	_	21	mark	_	_	*
+21	couronner	couronner	VERB	_	VerbForm=Inf	19	acl	_	_	*
+22	reines	rein	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	jour	jour	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	Elia	Elia	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Danielle	Danielle	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Marie-Louise	Marie-Louise	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	33	punct	_	_	*
+33	Roselyne	Roselyne	PROPN	_	_	22	conj	_	_	*
+34	et	et	CCONJ	_	_	35	cc	_	_	*
+35	Marguerite	Marguerite	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 15
+# text = L'Est Républicain : Gildo Magi, 187 rue de la Libération, Bouligny, tél.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Est	Est	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Gildo	Gildo	PROPN	_	_	2	appos	_	_	*
+6	Magi	Magi	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	187	187	NUM	_	_	9	nummod	_	_	*
+9	rue	rue	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Libération	Libération	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Bouligny	Bouligny	PROPN	_	_	5	conj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	tél	tél	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 16
+# text = 03.29.87.97.59.
+1	03.29.87.97.59	03.29.87.97.59	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 17
+# text = Médecin de garde : régime général, en cas d'urgence téléphoner au centre 15 ; régime minier, téléphoner au 03.82.21.81.06.
+1	Médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	garde	garde	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	régime	régime	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6	général	général	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	cas	cas	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	urgence	urgence	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	téléphoner	téléphoner	VERB	_	VerbForm=Inf	11	acl	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	centre	centre	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+16	15	15	NUM	_	_	15	nmod	_	_	*
+17	;	;	PUNCT	_	_	18	punct	_	_	*
+18	régime	régime	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+19	minier	minier	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	téléphoner	téléphoner	VERB	_	VerbForm=Inf	18	conj	_	_	*
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	03.82.21.81.06	03.82.21.81.06	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 18
+# text = Pharmacie de garde : après 18 h 30, téléphoner au 03.82.21.07.07.
+1	Pharmacie	pharmacie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	garde	garde	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	après	après	ADP	_	_	7	case	_	_	*
+6	18	18	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	30	30	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	7	punct	_	_	*
+10	téléphoner	téléphoner	VERB	_	VerbForm=Inf	1	acl	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	03.82.21.07.07	03.82.21.07.07	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 19
+# text = Permanence en mairie : de 14 h à 16 h, Gérard Saragoni (urbanisme, environnement).
+1	Permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	16	16	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Gérard	Gérard	PROPN	_	_	1	appos	_	_	*
+13	Saragoni	Saragoni	PROPN	_	_	12	flat:name	_	_	*
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	urbanisme	urbanisme	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	environnement	environnement	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 20
+# text = Bibliothèque : de 14 h à 18 h. Top loisirs : à 14 h, à la salle Madeleine Hastert, au quartier de La Mourière.
+1	Bibliothèque	bibliothèque	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	14	14	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	18	18	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	11	punct	_	_	*
+10	Top	top	NOUN	_	_	11	nmod	_	_	*
+11	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_	*
+12	:	:	PUNCT	_	_	11	punct	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	14	14	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+20	Madeleine	Madeleine	PROPN	_	_	19	appos	_	_	*
+21	Hastert	Hastert	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	La	La	DET	_	_	28	det	_	_	*
+28	Mourière	Mourière	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 21
+# text = Détente et loisirs : à 14 h, à la salle Grimau, au quartier de Joudreville.
+1	Détente	détente	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+12	Grimau	Grimau	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Joudreville	Joudreville	PROPN	_	_	16	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 22
+# text = Club Pyramide : à 20 h 15, à la salle annexe de la salle Grimau.
+1	Club	Club	PROPN	_	_	0	root	_	_	*
+2	Pyramide	pyramide	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	20	20	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	15	15	NUM	_	_	6	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	6	punct	_	_	*
+9	à	à	ADP	_	_	12	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+11	salle	salle	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	annexe	annexe	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	salle	salle	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	Grimau	Grimau	PROPN	_	_	15	appos	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 23
+# text = Bouligny accueil : à 14 h, au foyer Maurice Thorez.
+1	Bouligny	Bouligny	PROPN	_	_	0	root	_	_	*
+2	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	14	14	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+11	Maurice	Maurice	PROPN	_	_	10	appos	_	_	*
+12	Thorez	Thorez	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 24
+# text = Maintien en forme : de 16 h 15 à 17 h 15, au gymnase.
+1	Maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	forme	forme	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	16	16	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	15	15	NUM	_	_	11	nummod	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	17	17	NUM	_	_	8	nmod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+12	15	15	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14-15	au	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 25
+# text = Catéchisme : à 17 h 30, à la salle du scrabble pour les CM2.
+1	Catéchisme	catéchisme	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	17	17	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	30	30	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	scrabble	scrabble	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+16	CM2	CM2	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 26
+# text = Piscine : de 20 h à 21 h 30, aquagym des dames inscrites.
+1	Piscine	Piscin	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	20	20	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	21	21	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	30	30	NUM	_	_	8	nummod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	5	punct	_	_	*
+11	aquagym	aquagym	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+14	dames	dame	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*
+15	inscrites	inscrit	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	14	acl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 27
+# text = ASBB football : entraînement au gymnase, à 17 h 30 (benjamins) et à 18 h (seniors A et B).
+1	ASBB	ASBB	ADV	_	_	2	advmod	_	_	*
+2	football	football	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	17	17	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+12	30	30	NUM	_	_	11	nmod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	benjamins	benjamin	NOUN	_	Gender=Masc|Number=Plur	4	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	14	punct	_	_	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	18	18	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+20	(	(	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+21	seniors	seniors	ADP	_	_	22	case	_	_	*
+22	A	a	X	_	_	19	parataxis	_	_	*
+23	et	et	CCONJ	_	_	24	cc	_	_	*
+24	B	B	X	_	_	22	conj	_	SpaceAfter=No	*
+25	)	)	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 28
+# text = ASJPB basket-ball : entraînement à la salle de Joudreville, à 19 h (seniors A et B).
+1	ASJPB	ASJPB	ADV	_	_	2	advmod	_	_	*
+2	basket-ball	basket-ball	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	salle	salle	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Joudreville	Joudreville	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	19	19	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+14	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+15	seniors	seniors	ADP	_	_	16	case	_	_	*
+16	A	a	X	_	_	13	nmod	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	B	B	X	_	_	16	conj	_	SpaceAfter=No	*
+19	)	)	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 29
+# text = Ping-pong : à 20 h, entraînement au gymnase.
+1	Ping-pong	Ping-pong	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	20	20	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 30
+# text = Danse de salon : à 20 h salle de l'hôtel de ville, ouvert à tous.
+1	Danse	danse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	salon	salon	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	20	20	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	salle	sal	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	ville	ville	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	tous	tout	PRON	_	Gender=Masc|Number=Plur	15	obl:arg	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-04_40622.txt 31
+# text = Cinéma : à la salle Germinal, deux films au programme, à 17 h 30 « Harry Potter », et à 20 h 30 « Le Seigneur des Anneaux » Réunion publique : à 19 h 30, salle de l'hôtel de ville de Bouligny, réunion ouverte à tous, pour les informations sur l'alimentation du gaz naturel des quartiers de la commune.
+1	Cinéma	cinéma	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	Germinal	Germinal	PROPN	_	_	5	appos	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	deux	deux	NUM	_	_	9	nummod	_	_	*
+9	films	film	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	programme	programme	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	16	punct	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	17	17	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+17	30	30	NUM	_	_	16	nmod	_	_	*
+18	«	«	PUNCT	_	_	19	punct	_	_	*
+19	Harry	Harry	PROPN	_	_	9	appos	_	_	*
+20	Potter	Potter	PROPN	_	_	19	flat:name	_	_	*
+21	»	»	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	26	punct	_	_	*
+23	et	et	CCONJ	_	_	26	cc	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	20	20	NUM	_	_	26	nummod	_	_	*
+26	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+27	30	30	NUM	_	_	30	nummod	_	_	*
+28	«	«	PUNCT	_	_	30	punct	_	_	*
+29	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	Seigneur	seigneur	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_	*
+33	Anneaux	anneaux	PROPN	_	_	30	nmod	_	_	*
+34	»	»	PUNCT	_	_	30	punct	_	_	*
+35	Réunion	Réunion	PROPN	_	_	26	appos	_	_	*
+36	publique	public	ADJ	_	Gender=Fem|Number=Sing	35	amod	_	_	*
+37	:	:	PUNCT	_	_	26	punct	_	_	*
+38	à	à	ADP	_	_	40	case	_	_	*
+39	19	19	NUM	_	_	40	nummod	_	_	*
+40	h	heure	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+41	30	30	NUM	_	_	40	nummod	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	43	punct	_	_	*
+43	salle	salle	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+44	de	de	ADP	_	_	46	case	_	_	*
+45	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	SpaceAfter=No	*
+46	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	43	nmod	_	_	*
+47	de	de	ADP	_	_	48	case	_	_	*
+48	ville	ville	NOUN	_	Gender=Fem|Number=Sing	46	nmod	_	_	*
+49	de	de	ADP	_	_	50	case	_	_	*
+50	Bouligny	Bouligny	PROPN	_	_	46	nmod	_	SpaceAfter=No	*
+51	,	,	PUNCT	_	_	52	punct	_	_	*
+52	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+53	ouverte	ouvrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	52	acl	_	_	*
+54	à	à	ADP	_	_	55	case	_	_	*
+55	tous	tout	PRON	_	Gender=Masc|Number=Plur	53	obl:mod	_	SpaceAfter=No	*
+56	,	,	PUNCT	_	_	59	punct	_	_	*
+57	pour	pour	ADP	_	_	59	case	_	_	*
+58	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	59	det	_	_	*
+59	informations	information	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	_	*
+60	sur	sur	ADP	_	_	62	case	_	_	*
+61	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	_	SpaceAfter=No	*
+62	alimentation	alimentation	NOUN	_	Gender=Fem|Number=Sing	59	nmod	_	_	*
+63-64	du	_	_	_	_	_	_	_	_	*
+63	de	de	ADP	_	_	65	case	_	_	*
+64	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	det	_	_	*
+65	gaz	gaz	NOUN	_	Gender=Masc|Number=Sing	62	nmod	_	_	*
+66	naturel	naturel	ADJ	_	Gender=Masc|Number=Sing	65	amod	_	_	*
+67-68	des	_	_	_	_	_	_	_	_	*
+67	de	de	ADP	_	_	69	case	_	_	*
+68	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	69	det	_	_	*
+69	quartiers	quartier	NOUN	_	Gender=Masc|Number=Plur	65	nmod	_	_	*
+70	de	de	ADP	_	_	72	case	_	_	*
+71	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	72	det	_	_	*
+72	commune	commune	NOUN	_	Gender=Fem|Number=Sing	69	nmod	_	SpaceAfter=No	*
+73	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

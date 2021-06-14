@@ -1,0 +1,632 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-09_47049.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 1
+# text = Metz deuxième MARQUIS (CHOLET) PLACé EN DÉTENTION Basket.
+1	Metz	Metz	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	deuxième	deuxième	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\n	*
+3	MARQUIS	marquis	PROPN	_	_	1	appos	_	_	*
+4	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	CHOLET	CHOLET	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	5	punct	_	_	*
+7	PLACé	Placé	PROPN	_	_	3	flat:name	_	_	*
+8	EN	en	PROPN	_	_	3	appos	_	_	*
+9	DÉTENTION	détention	PROPN	_	_	8	flat:name	_	_	*
+10	Basket	Basket	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 2
+# text = Le pivot de Cholet (Pro A) Claude Marquis, soupçonné de complicité de tentative d'homicide, a été placé en détention vendredi.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	pivot	pivot	NOUN	_	Gender=Masc|Number=Sing	22	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Cholet	Cholet	PROPN	_	_	2	nmod	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Pro	Pro	PROPN	_	_	2	appos	_	_	*
+7	A	a	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	)	)	PUNCT	_	_	6	punct	_	_	*
+9	Claude	Claude	PROPN	_	_	2	appos	_	_	*
+10	Marquis	marquis	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	soupçonné	soupçonner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	complicité	complicité	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	tentative	tentative	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	homicide	homicide	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	12	punct	_	_	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+21	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	aux:pass	_	_	*
+22	placé	placer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+23	en	en	ADP	_	_	24	case	_	_	*
+24	détention	détention	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*
+25	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 3
+# text = Le joueur aurait accompagné des amis qui voulaient régler son compte à Romain, un ancien participant de l'émission télé « Koh-Lanta » Le malheureux aurait reçu trois coups de couteau.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	joueur	joueur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	accompagné	accompagner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	amis	ami	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*
+9	voulaient	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_	*
+10	régler	régler	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+11	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	compte	compte	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Romain	Romain	PROPN	_	_	10	obl:mod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	29	punct	_	_	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+17	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+18	participant	participant	VERB	_	Tense=Pres|VerbForm=Part	29	advcl	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	émission	émission	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	_	*
+22	télé	téler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	acl	_	_	*
+23	«	«	PUNCT	_	_	24	punct	_	_	*
+24	Koh-Lanta	Koh-Lanta	PROPN	_	_	21	appos	_	_	*
+25	»	»	PUNCT	_	_	24	punct	_	_	*
+26	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	malheureux	malheureux	ADJ	_	Gender=Masc|Number=Sing	29	nsubj	_	_	*
+28	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux:tense	_	_	*
+29	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	conj	_	_	*
+30	trois	trois	NUM	_	_	31	nummod	_	_	*
+31	coups	coup	NOUN	_	Gender=Masc|Number=Plur	29	obj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	couteau	couteau	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 4
+# text = NAZON TROISIÈME Cyclisme.
+1	NAZON	NAZON	ADP	_	_	2	case	_	_	*
+2	TROISIÈME	troisième	PROPN	_	_	0	root	_	_	*
+3	Cyclisme	cyclisme	NOUN	_	Gender=Masc|Number=Sing	2	flat:name	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 5
+# text = L'Australien Robbie McEwen (Lotto) a remporté au sprint, hier, la quatrième étape de l'Etoile de Bessèges (154 km entre Alès et La Grand Combe), devant l'Estonien Jaan Kirsipuu et le Vosgien Jean-Patrick Nazon.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Australien	Australien	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+3	Robbie	Robbie	PROPN	_	_	2	appos	_	_	*
+4	McEwen	McEwen	PROPN	_	_	3	flat:name	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Lotto	Lotto	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	remporté	remporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	sprint	sprint	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	hier	hier	ADV	_	_	12	advmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+17	quatrième	quatrième	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+18	étape	étape	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	Etoile	Etoile	PROPN	_	_	18	nmod	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Bessèges	Bessèges	PROPN	_	_	21	nmod	_	_	*
+24	(	(	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+25	154	154	NUM	_	_	26	nummod	_	_	*
+26	km	km	NOUN	_	Gender=Masc|Number=Plur	18	appos	_	_	*
+27	entre	entre	ADP	_	_	28	case	_	_	*
+28	Alès	Alès	PROPN	_	_	26	nmod	_	_	*
+29	et	et	CCONJ	_	_	31	cc	_	_	*
+30	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	Grand	Grand	PROPN	_	_	28	conj	_	_	*
+32	Combe	Combe	PROPN	_	_	31	flat:name	_	SpaceAfter=No	*
+33	)	)	PUNCT	_	_	26	punct	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	37	punct	_	_	*
+35	devant	devant	ADP	_	_	37	case	_	_	*
+36	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	37	det	_	SpaceAfter=No	*
+37	Estonien	estonien	PROPN	_	_	18	nmod	_	_	*
+38	Jaan	Jaan	PROPN	_	_	37	flat:name	_	_	*
+39	Kirsipuu	Kirsipuu	PROPN	_	_	37	flat:name	_	_	*
+40	et	et	CCONJ	_	_	42	cc	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	Vosgien	vosgien	PROPN	_	_	37	conj	_	_	*
+43	Jean-Patrick	Jean-Patrick	PROPN	_	_	42	flat:name	_	_	*
+44	Nazon	Nazon	PROPN	_	_	42	flat:name	_	SpaceAfter=No	*
+45	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 6
+# text = L'Italien Fabio Baldato (Alessio) conserve la tête du classement général.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Italien	Italien	PROPN	_	_	8	nsubj	_	_	*
+3	Fabio	Fabio	PROPN	_	_	2	appos	_	_	*
+4	Baldato	Baldato	PROPN	_	_	3	flat:name	_	_	*
+5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Alessio	Alessio	PROPN	_	_	3	appos	_	SpaceAfter=No	*
+7	)	)	PUNCT	_	_	6	punct	_	_	*
+8	conserve	conserver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	tête	tête	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	classement	classement	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	général	général	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 7
+# text = CHELSEA SE REPLACE Football.
+1	CHELSEA	Chelsea	PROPN	_	_	0	root	_	_	*
+2	SE	se	PROPN	_	_	1	flat:name	_	_	*
+3	REPLACE	REPLACE	PROPN	_	_	1	flat:name	_	_	*
+4	Football	football	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 8
+# text = Chelsea, qui est allé l'emporter (3-1) à Birmingham, est remonté hier à la 3e place, doublant provisoirement, à la différence de buts, Newcastle qui recevra ce dimanche le leader, Arsenal, à l'occasion de la 27e journée du Championnat d'Angleterre.
+1	Chelsea	Chelsea	PROPN	_	_	15	nsubj:pass	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	allé	aller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl:relcl	_	_	*
+6	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No	1:VID
+7	emporter	emporter	VERB	_	VerbForm=Inf	5	xcomp	_	_	1
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	3-1	3-1	NUM	_	_	7	obl	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	Birmingham	Birmingham	PROPN	_	_	7	obl:mod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	1	punct	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_	*
+15	remonté	remonter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+16	hier	hier	ADV	_	_	15	advmod	_	_	*
+17	à	à	ADP	_	_	20	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+19	3e	3e	ADJ	_	_	20	amod	_	_	*
+20	place	place	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	doublant	doubler	VERB	_	Tense=Pres|VerbForm=Part	15	advcl	_	_	*
+23	provisoirement	provisoirement	ADV	_	_	22	advmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	différence	différence	NOUN	_	Gender=Fem|Number=Sing	22	obl:mod	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	buts	but	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Newcastle	Newcastle	PROPN	_	_	22	obj	_	_	*
+32	qui	qui	PRON	_	PronType=Rel	33	nsubj	_	_	*
+33	recevra	recevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	acl:relcl	_	_	*
+34	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	35	det	_	_	*
+35	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	33	obj	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	leader	leader	NOUN	_	Gender=Masc|Number=Sing	35	appos	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	39	punct	_	_	*
+39	Arsenal	Arsenal	PROPN	_	_	37	appos	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	43	punct	_	_	*
+41	à	à	ADP	_	_	43	case	_	_	*
+42	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	SpaceAfter=No	*
+43	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	37	nmod	_	_	*
+44	de	de	ADP	_	_	47	case	_	_	*
+45	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_	*
+46	27e	27e	ADJ	_	Gender=Fem|Number=Sing	47	amod	_	_	*
+47	journée	journée	NOUN	_	Gender=Fem|Number=Sing	43	nmod	_	_	*
+48-49	du	_	_	_	_	_	_	_	_	*
+48	de	de	ADP	_	_	50	case	_	_	*
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*
+50	Championnat	championnat	NOUN	_	Gender=Masc|Number=Sing	47	nmod	_	_	*
+51	d'	de	ADP	_	_	52	case	_	SpaceAfter=No	*
+52	Angleterre	Angleterre	PROPN	_	_	50	nmod	_	SpaceAfter=No	*
+53	.	.	PUNCT	_	_	15	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 9
+# text = BELLE RENTRÉE POUR HURTIS Athlétisme.
+1	BELLE	Belle	PROPN	_	_	0	root	_	_	*
+2	RENTRÉE	rentrée	PROPN	_	_	1	flat:name	_	_	*
+3	POUR	Pour	PROPN	_	_	1	flat:name	_	_	*
+4	HURTIS	HURTIS	PROPN	_	_	1	flat:name	_	_	*
+5	Athlétisme	athlétisme	NOUN	_	Gender=Masc|Number=Sing	1	flat:name	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 10
+# text = La double championne d'Europe en salle sur 200 m, Muriel Hurtis, a marqué les esprits, vendredi à Eaubonne, en réalisant un temps remarquable de 22''76 pour sa rentrée sur la distance, à l'occasion de la réunion nationale en salle du Val-d'Oise.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	double	double	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	championne	champion	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	Europe	Europe	PROPN	_	_	3	nmod	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	salle	salle	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	200	200	NUM	_	_	10	nummod	_	_	*
+10	m	m	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Muriel	Muriel	PROPN	_	_	3	appos	_	_	*
+13	Hurtis	Hurtis	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	3	punct	_	_	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	marqué	marquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	esprits	esprit	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	Eaubonne	Eaubonne	PROPN	_	_	16	obl:mod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*
+24	en	en	ADP	_	_	25	mark	_	_	*
+25	réalisant	réaliser	VERB	_	Tense=Pres|VerbForm=Part	16	advcl	_	_	*
+26	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	temps	temps	NOUN	_	Gender=Masc|Number=Sing	25	obj	_	_	*
+28	remarquable	remarquable	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	22	22	NUM	_	_	27	nmod	_	SpaceAfter=No	*
+31	''	''	PUNCT	_	_	32	punct	_	SpaceAfter=No	*
+32	76	76	NUM	_	_	30	nmod	_	_	*
+33	pour	pour	ADP	_	_	35	case	_	_	*
+34	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	35	det	_	_	*
+35	rentrée	rentrée	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	_	*
+36	sur	sur	ADP	_	_	38	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	distance	distance	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	42	punct	_	_	*
+40	à	à	ADP	_	_	42	case	_	_	*
+41	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No	*
+42	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	25	obl:mod	_	_	*
+43	de	de	ADP	_	_	45	case	_	_	*
+44	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_	*
+45	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	42	nmod	_	_	*
+46	nationale	national	ADJ	_	Gender=Fem|Number=Sing	45	amod	_	_	*
+47	en	en	ADP	_	_	48	case	_	_	*
+48	salle	salle	NOUN	_	Gender=Fem|Number=Sing	42	nmod	_	_	*
+49-50	du	_	_	_	_	_	_	_	_	*
+49	de	de	ADP	_	_	51	case	_	_	*
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_	*
+51	Val-d'Oise	Val-d'Oise	PROPN	_	_	48	nmod	_	SpaceAfter=No	*
+52	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 11
+# text = La Guadeloupéenne a réalisé la meilleure performance mondiale de ce début de saison.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	Guadeloupéenne	Guadeloupéenne	PROPN	_	_	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	réalisé	réaliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	meilleure	meilleur	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	performance	performance	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	mondiale	mondial	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*
+11	début	début	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	saison	saison	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 12
+# text = ELLEN MCARTHUR EST EN RETARD Voile.
+1	ELLEN	Ellen	PROPN	_	_	0	root	_	_	*
+2	MCARTHUR	MCARTHUR	PROPN	_	_	1	flat:name	_	_	*
+3	EST	Est	PROPN	_	_	1	flat:name	_	_	*
+4	EN	en	PROPN	_	_	1	flat:name	_	_	*
+5	RETARD	retard	PROPN	_	_	1	flat:name	_	_	*
+6	Voile	voile	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 13
+# text = La navigatrice anglaise Ellen McArthur, à bord de « Kingfisher II », est sortie du pot au noir, mais le vent de sud-est souffle trop peu pour rattraper le retard sur le record du Trophée Jules-Verne (tour du monde en équipage).
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	navigatrice	navigateur	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*
+3	anglaise	anglais	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	Ellen	Ellen	PROPN	_	_	2	appos	_	_	*
+5	McArthur	McArthur	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	bord	bord	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	«	«	PUNCT	_	_	11	punct	_	_	*
+11	Kingfisher	Kingfisher	PROPN	_	_	8	nmod	_	_	*
+12	II	II	NUM	_	_	11	nmod	_	_	*
+13	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	2	punct	_	_	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	sortie	sortir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	pot	pôt	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*
+20-21	au	_	_	_	_	_	_	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	noir	noir	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	29	punct	_	_	*
+24	mais	mais	CCONJ	_	_	29	cc	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	vent	vent	NOUN	_	Gender=Masc|Number=Sing	29	nsubj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	sud-est	sud-est	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+29	souffle	souffler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*
+30	trop	trop	ADV	_	_	31	advmod	_	_	*
+31	peu	peu	ADV	_	_	29	advmod	_	_	*
+32	pour	pour	ADP	_	_	33	mark	_	_	*
+33	rattraper	rattraper	VERB	_	VerbForm=Inf	29	advcl	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	retard	retard	NOUN	_	Gender=Masc|Number=Sing	33	obj	_	_	*
+36	sur	sur	ADP	_	_	38	case	_	_	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+38	record	record	NOUN	_	Gender=Masc|Number=Sing	33	obl	_	_	*
+39-40	du	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	Trophée	trophée	PROPN	_	_	38	nmod	_	_	*
+42	Jules-Verne	Jules-Verne	PROPN	_	_	41	flat:name	_	_	*
+43	(	(	PUNCT	_	_	44	punct	_	SpaceAfter=No	*
+44	tour	tour	NOUN	_	Gender=Masc|Number=Sing	41	appos	_	_	*
+45-46	du	_	_	_	_	_	_	_	_	*
+45	de	de	ADP	_	_	47	case	_	_	*
+46	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_	*
+47	monde	monde	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+48	en	en	ADP	_	_	49	case	_	_	*
+49	équipage	équipage	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	SpaceAfter=No	*
+50	)	)	PUNCT	_	_	44	punct	_	SpaceAfter=No	*
+51	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 14
+# text = A 8 h hier matin, « Kingfisher II » comptait environ 28 h de retard sur « Geronimo », le bateau d'Olivier de Kersauson, également à l'assaut du Trophée Jules-Verne.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	8	8	NUM	_	_	3	nummod	_	_	*
+3	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+4	hier	hier	ADV	_	_	5	advmod	_	_	*
+5	matin	matin	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	«	«	PUNCT	_	_	8	punct	_	_	*
+8	Kingfisher	Kingfisher	PROPN	_	_	11	nsubj	_	_	*
+9	II	II	NUM	_	_	8	nmod	_	_	*
+10	»	»	PUNCT	_	_	8	punct	_	_	*
+11	comptait	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+12	environ	environ	ADV	_	_	13	advmod	_	_	*
+13	28	28	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	retard	retard	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	sur	sur	ADP	_	_	19	case	_	_	*
+18	«	«	PUNCT	_	_	19	punct	_	_	*
+19	Geronimo	Geronimo	PROPN	_	_	16	nmod	_	_	*
+20	»	»	PUNCT	_	_	19	punct	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	11	punct	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	bateau	bateau	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*
+25	Olivier	Olivier	PROPN	_	_	23	nmod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Kersauson	Kersauson	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	32	punct	_	_	*
+29	également	également	ADV	_	_	32	advmod	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	SpaceAfter=No	*
+32	assaut	assaut	NOUN	_	Gender=Masc|Number=Sing	23	appos	_	_	*
+33-34	du	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	Trophée	trophée	PROPN	_	_	32	nmod	_	_	*
+36	Jules-Verne	Jules-Verne	PROPN	_	_	35	flat:name	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 15
+# text = McArthur déplorait aussi 3 h 21' de retard sur « Orange », le bateau de Bruno Peyron au moment de l'établissement du record.
+1	McArthur	McArthur	PROPN	_	_	2	nsubj	_	_	*
+2	déplorait	déplorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	aussi	aussi	ADV	_	_	2	advmod	_	_	*
+4	3	3	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+6	21	21	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	2	punct	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	retard	retard	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	«	«	PUNCT	_	_	12	punct	_	_	*
+12	Orange	Orange	PROPN	_	_	9	nmod	_	_	*
+13	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	bateau	bateau	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Bruno	Bruno	PROPN	_	_	16	nmod	_	_	*
+19	Peyron	Peyron	PROPN	_	_	18	flat:name	_	_	*
+20-21	au	_	_	_	_	_	_	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	moment	moment	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	record	record	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 16
+# text = BAILLY 5E Biathlon.
+1	BAILLY	BAILLY	PROPN	_	_	0	root	_	_	*
+2	5E	5e	PROPN	_	_	1	flat:name	_	_	*
+3	Biathlon	biathlon	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 17
+# text = La Russe Olga Pyleva a remporté la 13e épreuve de la Coupe du monde, un sprint sur 7,5 km, devant sa compatriote Albina Achatova et la championne olympique allemande Kati Wilhelm, hier à Lahti (Finlande).
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	Russe	russe	PROPN	_	_	6	nsubj	_	_	*
+3	Olga	Olga	PROPN	_	_	2	flat:name	_	_	*
+4	Pyleva	Pyleva	PROPN	_	_	2	flat:name	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	remporté	remporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	13e	13e	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	épreuve	épreuve	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	monde	monde	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	sprint	sprint	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	7,5	7,5	NUM	_	_	21	nummod	_	_	*
+21	km	km	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23	devant	devant	ADP	_	_	25	case	_	_	*
+24	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*
+25	compatriote	compatriote	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+26	Albina	Albina	PROPN	_	_	25	appos	_	_	*
+27	Achatova	Achatova	PROPN	_	_	26	flat:name	_	_	*
+28	et	et	CCONJ	_	_	30	cc	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	championne	champion	NOUN	_	Gender=Fem|Number=Sing	25	conj	_	_	*
+31	olympique	olympique	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	_	*
+32	allemande	allemand	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	_	*
+33	Kati	Kati	PROPN	_	_	30	appos	_	_	*
+34	Wilhelm	Wilhelm	PROPN	_	_	33	flat:name	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	hier	hier	ADV	_	_	25	advmod	_	_	*
+37	à	à	ADP	_	_	38	case	_	_	*
+38	Lahti	Lahti	PROPN	_	_	36	obl:arg	_	_	*
+39	(	(	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+40	Finlande	Finlande	PROPN	_	_	38	nmod	_	SpaceAfter=No	*
+41	)	)	PUNCT	_	_	40	punct	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 18
+# text = Les Françaises Sandrine Bailly et Sylvie Becaert ont pris les 5e et 11e places.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	Françaises	françaises	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+3	Sandrine	Sandrine	PROPN	_	_	2	appos	_	_	*
+4	Bailly	Bailly	PROPN	_	_	3	flat:name	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Sylvie	Sylvie	PROPN	_	_	3	conj	_	_	*
+7	Becaert	Becaert	PROPN	_	_	6	flat:name	_	_	*
+8	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+11	5e	5e	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	11e	11e	ADJ	_	Gender=Fem|Number=Sing	11	conj	_	_	*
+14	places	place	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 19
+# text = DÉFAILLANCE DE POIRÉE Biathlon.
+1	DÉFAILLANCE	défaillance	PROPN	_	_	0	root	_	_	*
+2	DE	de	PROPN	_	_	1	flat:name	_	_	*
+3	POIRÉE	POIRÉE	PROPN	_	_	1	flat:name	_	_	*
+4	Biathlon	biathlon	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 20
+# text = L'Allemand Alexander Wolf a remporté à la surprise générale la première victoire de sa carrière, devant le Russe Sergei Tchepikov et le Bélarusse Alexei Aidarov, dans l'épreuve de sprint sur 10 km de la Coupe du monde, hier à Lahti.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Allemand	Allemand	PROPN	_	_	6	nsubj	_	_	*
+3	Alexander	Alexander	PROPN	_	_	2	appos	_	_	*
+4	Wolf	Wolf	PROPN	_	_	3	flat:name	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	remporté	remporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+7	à	à	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	surprise	surprise	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*
+10	générale	général	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+12	première	premier	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+13	victoire	victoire	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	1
+14	de	de	ADP	_	_	16	case	_	_	*
+15	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	devant	devant	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	Russe	russe	PROPN	_	_	13	nmod	_	_	*
+21	Sergei	Sergei	PROPN	_	_	20	flat:name	_	_	*
+22	Tchepikov	Tchepikov	PROPN	_	_	20	flat:name	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	Bélarusse	Bélarusse	PROPN	_	_	20	conj	_	_	*
+26	Alexei	Alexei	PROPN	_	_	25	flat:name	_	_	*
+27	Aidarov	Aidarov	PROPN	_	_	25	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	31	punct	_	_	*
+29	dans	dans	ADP	_	_	31	case	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	épreuve	épreuve	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	sprint	sprint	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+34	sur	sur	ADP	_	_	36	case	_	_	*
+35	10	10	NUM	_	_	36	nummod	_	_	*
+36	km	km	NOUN	_	Gender=Masc|Number=Plur	31	nmod	_	_	*
+37	de	de	ADP	_	_	39	case	_	_	*
+38	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+39	Coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*
+40-41	du	_	_	_	_	_	_	_	_	*
+40	de	de	ADP	_	_	42	case	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	monde	monde	NOUN	_	Gender=Masc|Number=Sing	39	nmod	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	46	punct	_	_	*
+44	hier	hier	ADV	_	_	46	advmod	_	_	*
+45	à	à	ADP	_	_	46	case	_	_	*
+46	Lahti	Lahti	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-09_47049.txt 21
+# text = Au classement général de la Coupe du monde, le Norvégien Ole Einar Bjoerndalen, 6e, prend le commandement, au détriment du Francais Raphaël Poirée qui a terminé seulement à la 18e place, la 7e revenant à Vincent Defrasne.
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	classement	classement	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*
+4	général	général	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	Coupe	coupe	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	3	punct	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	Norvégien	norvégien	PROPN	_	_	20	nsubj	_	_	*
+14	Ole	Ole	PROPN	_	_	13	flat:name	_	_	*
+15	Einar	Einar	PROPN	_	_	13	flat:name	_	_	*
+16	Bjoerndalen	Bjoerndalen	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	6e	6e	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	18	punct	_	_	*
+20	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	commandement	commandement	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	détriment	détriment	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	Francais	Francais	PROPN	_	_	26	nmod	_	_	*
+30	Raphaël	Raphaël	PROPN	_	_	29	flat:name	_	_	*
+31	Poirée	Poirée	PROPN	_	_	29	flat:name	_	_	*
+32	qui	qui	PRON	_	PronType=Rel	34	nsubj	_	_	*
+33	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	aux:tense	_	_	*
+34	terminé	terminer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	acl:relcl	_	_	*
+35	seulement	seulement	ADV	_	_	34	advmod	_	_	*
+36	à	à	ADP	_	_	39	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*
+38	18e	18e	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	_	*
+39	place	place	NOUN	_	Gender=Fem|Number=Sing	34	obl:arg	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	39	punct	_	_	*
+41	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_	*
+42	7e	7e	ADJ	_	Gender=Fem|Number=Sing	34	xcomp	_	_	*
+43	revenant	revenir	VERB	_	Tense=Pres|VerbForm=Part	42	acl	_	_	*
+44	à	à	ADP	_	_	45	case	_	_	*
+45	Vincent	Vincent	PROPN	_	_	43	obl:arg	_	_	*
+46	Defrasne	Defrasne	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	20	punct	_	SpacesAfter=\n	*
+

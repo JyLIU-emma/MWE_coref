@@ -1,0 +1,502 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_34051.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 1
+# text = CARNET BLEU Nous apprenons la naissance de Nathan, le 24 janvier à Briey, au foyer de M. Alain-Bernard Leroy et de Mme née Isabelle François, domiciliés 3 rue d'Aucourt dans la commune.
+1	CARNET	carnet	PROPN	_	_	0	root	_	_	*
+2	BLEU	bleu	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*
+3	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	apprenons	apprenir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Nathan	Nathan	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	24	24	NUM	_	_	6	conj	_	_	*
+12	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Briey	Briey	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+21	Alain-Bernard	Alain-Bernard	PROPN	_	_	18	appos	_	_	*
+22	Leroy	Leroy	PROPN	_	_	21	flat:name	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+26	née	naître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	25	acl	_	_	*
+27	Isabelle	Isabelle	PROPN	_	_	26	xcomp	_	_	*
+28	François	François	PROPN	_	_	27	flat:name	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	30	punct	_	_	*
+30	domiciliés	domicilier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	26	conj	_	_	*
+31	3	3	NUM	_	_	32	nummod	_	_	*
+32	rue	rue	NOUN	_	Gender=Fem|Number=Sing	30	obj	_	_	*
+33	d'	de	ADP	_	_	34	case	_	SpaceAfter=No	*
+34	Aucourt	Aucourt	PROPN	_	_	32	nmod	_	_	*
+35	dans	dans	ADP	_	_	37	case	_	_	*
+36	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_	*
+37	commune	commune	NOUN	_	Gender=Fem|Number=Sing	30	obl:arg	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 2
+# text = Nos félicitations.
+1	Nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	félicitations	félicitation	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 3
+# text = L'Est Républicain : Claude Mangin, tél 03.29.87.13.59.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Est	est	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Claude	Claude	PROPN	_	_	2	appos	_	_	*
+6	Mangin	Mangin	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	tél	tél	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	_	*
+9	03.29.87.13.59	03.29.87.13.59	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 4
+# text = ou 06.09.26.22.63. fax 03.29.87.01.40.
+1	ou	ou	CCONJ	_	_	3	cc	_	_	*
+2	06.09.26.22.63.	06.09.26.22.63.	ADV	_	_	3	advmod	_	_	*
+3	fax	fax	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	03.29.87.01.40	03.29.87.01.40	X	_	_	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 5
+# text = Mairie : secrétariat ouvert de 9 h à 12 h et de 14 h à 17 h ; permanences de l'écrivain public de 9 h à 11 h 30 ;
+1	Mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	secrétariat	secrétariat	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	9	9	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	12	12	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	14	14	NUM	_	_	14	nummod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_	*
+15	à	à	ADP	_	_	17	case	_	_	*
+16	17	17	NUM	_	_	17	nummod	_	_	*
+17	h	heure	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_	*
+18	;	;	PUNCT	_	_	4	punct	_	_	*
+19	permanences	permanence	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	écrivain	écrivain	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	public	public	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	9	9	NUM	_	_	26	nummod	_	_	*
+26	h	heure	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	11	11	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+30	30	30	NUM	_	_	29	nummod	_	_	*
+31	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 6
+# text = Jean Picart, maire de 14 h 30 à 16 h 30 ;
+1	Jean	Jean	PROPN	_	_	0	root	_	_	*
+2	Picart	Picart	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	maire	maire	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	30	30	NUM	_	_	4	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	16	16	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	30	30	NUM	_	_	11	nummod	_	_	*
+13	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 7
+# text = Paul Krugler (CCAS) de 14 h à 17 h ;
+1	Paul	Paul	PROPN	_	_	0	root	_	_	*
+2	Krugler	Krugler	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	CCAS	CCAS	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	14	14	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	17	17	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 8
+# text = Valérie Dambrine (manifestations) de 14 h à 16 h ;
+1	Valérie	Valérie	PROPN	_	_	0	root	_	_	*
+2	Dambrine	Dambrine	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	14	14	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	16	16	NUM	_	_	11	nummod	_	_	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+12	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 9
+# text = Marie Thérèse Cucini (finances) de 17 h à 18 h. Gym volontaire : adultes, salle de judo, de 9 h 30 à 10 h 30.
+1	Marie	Marie	PROPN	_	_	0	root	_	_	*
+2	Thérèse	Thérèse	PROPN	_	_	1	flat:name	_	_	*
+3	Cucini	Cucini	PROPN	_	_	1	flat:name	_	_	*
+4	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+5	finances	finance	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	5	punct	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	17	17	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	18	18	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+14	Gym	Gym	PROPN	_	_	1	flat:name	_	_	*
+15	volontaire	volontaire	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+16	:	:	PUNCT	_	_	17	punct	_	_	*
+17	adultes	adulte	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	salle	salle	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	judo	judo	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	9	9	NUM	_	_	25	nummod	_	_	*
+25	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+26	30	30	NUM	_	_	25	nmod	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	10	10	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+30	30	30	NUM	_	_	29	nummod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 10
+# text = Baby bourse : au centre social, dépôt des produits (vêtements accessoires) de 9 h 30 à 11 h 30 et de 13 h 30 à 17 h 30.
+1	Baby	baby	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	bourse	bourse	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	centre	centre	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+7	social	social	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	dépôt	dépôt	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	produits	produit	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	vêtements	vêtement	NOUN	_	Gender=Masc|Number=Plur	12	appos	_	_	*
+15	accessoires	accessoire	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	14	punct	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	9	9	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+20	30	30	NUM	_	_	23	nummod	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	11	11	NUM	_	_	20	nmod	_	_	*
+23	h	heure	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	_	*
+24	30	30	NUM	_	_	6	nmod	_	_	*
+25	et	et	CCONJ	_	_	28	cc	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	13	13	NUM	_	_	28	nummod	_	_	*
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	_	*
+29	30	30	NUM	_	_	24	nmod	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	17	17	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+33	30	30	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 11
+# text = Step : gymnase de la Codecom de 19 h 45 à 20 h 45 et de 20 h 45 à 21 h 45.
+1	Step	step	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	gymnase	gymnase	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	Codecom	Codecom	PROPN	_	_	3	nmod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	19	19	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+10	45	45	NUM	_	_	13	nummod	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	20	20	NUM	_	_	10	nmod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	conj	_	_	*
+14	45	45	NUM	_	_	13	nmod	_	_	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	20	20	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+19	45	45	NUM	_	_	22	nummod	_	_	*
+20	à	à	ADP	_	_	21	case	_	_	*
+21	21	21	NUM	_	_	19	nmod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+23	45	45	NUM	_	_	18	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 12
+# text = Halte-garderie : « La Galipette » de 9 h à 11 h 50 et de 13 h 30 à 16 h 30.
+1	Halte-garderie	Halte-garderie	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	«	«	PUNCT	_	_	5	punct	_	_	*
+4	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	Galipette	Galipette	PROPN	_	_	1	appos	_	_	*
+6	»	»	PUNCT	_	_	5	punct	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	9	9	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	11	11	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	50	50	NUM	_	_	12	nmod	_	_	*
+14	et	et	CCONJ	_	_	17	cc	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	13	13	NUM	_	_	17	nummod	_	_	*
+17	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+18	30	30	NUM	_	_	17	nmod	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	16	16	NUM	_	_	21	nummod	_	_	*
+21	h	heure	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+22	30	30	NUM	_	_	21	nummod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 13
+# text = Restos du cœur : sous-sol de la mairie, de 9 h à 11 h. Marché : place de l'Hôtel-de-Ville, tout l'après-midi.
+1	Restos	Restos	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	:	:	PUNCT	_	_	6	punct	_	_	*
+6	sous-sol	sous-sol	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	9	9	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	11	11	NUM	_	_	16	nummod	_	_	*
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	18	punct	_	_	*
+18	Marché	marché	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+19	:	:	PUNCT	_	_	20	punct	_	_	*
+20	place	place	NOUN	_	Gender=Fem|Number=Sing	18	appos	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+23	Hôtel-de-Ville	Hôtel-de-Ville	PROPN	_	_	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	tout	tout	ADV	_	_	27	advmod	_	_	*
+26	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*
+27	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 14
+# text = Office du tourisme : de 13 h 30 à 17 h 30, tél.
+1	Office	office	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	:	:	PUNCT	_	_	8	punct	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	13	13	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+9	30	30	NUM	_	_	12	nummod	_	_	*
+10	à	à	ADP	_	_	11	case	_	_	*
+11	17	17	NUM	_	_	9	nmod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+13	30	30	NUM	_	_	15	nummod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	13	punct	_	_	*
+15	tél	tél	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 15
+# text = 03.29.87.20.80.
+1	03.29.87.20.80	03.29.87.20.80	NUM	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 16
+# text = Peinture sur soie : au local de 13 h 30 à 16 h 30.
+1	Peinture	peinture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	sur	sur	ADP	_	_	3	case	_	_	*
+3	soie	soie	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	local	local	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	13	13	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	30	30	NUM	_	_	14	nummod	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	16	16	NUM	_	_	11	nmod	_	_	*
+14	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+15	30	30	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 17
+# text = Croix-Rouge : pavillon F. -Verdun de 10 h à 11 h 30.
+1	Croix-Rouge	Croix-Rouge	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	pavillon	pavillon	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	F.	F.	PROPN	_	_	3	appos	_	_	*
+5	-	-	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	Verdun	Verdun	PROPN	_	_	4	flat:name	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	10	10	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	11	11	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	30	30	NUM	_	_	12	nummod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 18
+# text = Secours catholique : accueil, vestiaire et permanence au pavillon François-Verdun.
+1	Secours	secours	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	catholique	catholique	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	1	parataxis	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	vestiaire	vestiaire	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+9-10	au	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	pavillon	pavillon	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	François-Verdun	François-Verdun	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 19
+# text = Amis stainois : rencontre au local de 14 h à 18 h. Centre social : carrefour-emploi de 9 h 30 à 12 h ; accompagnement scolaire de 16 h 30 à 18 h. Gym sensorielle : en mairie, salle Druilhet, de 17 h à 18 h 30.
+1	Amis	amis	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	stainois	stainois	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	rencontre	rencontrer	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	local	local	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	14	14	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	18	18	NUM	_	_	13	nummod	_	_	*
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	15	punct	_	_	*
+15	Centre	Centre	PROPN	_	_	4	conj	_	_	*
+16	social	social	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+17	:	:	PUNCT	_	_	18	punct	_	_	*
+18	carrefour-emploi	carrefour-emploi	NOUN	_	Gender=Masc|Number=Sing	15	appos	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	9	9	NUM	_	_	21	nummod	_	_	*
+21	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+22	30	30	NUM	_	_	18	nmod	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	12	12	NUM	_	_	25	nummod	_	_	*
+25	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+26	;	;	PUNCT	_	_	27	punct	_	_	*
+27	accompagnement	accompagnement	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+28	scolaire	scolaire	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	16	16	NUM	_	_	31	nummod	_	_	*
+31	h	heure	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*
+32	30	30	NUM	_	_	31	nmod	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	18	18	NUM	_	_	35	nummod	_	_	*
+35	h	heure	NOUN	_	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	37	punct	_	_	*
+37	Gym	Gym	PROPN	_	_	27	appos	_	_	*
+38	sensorielle	sensoriel	ADJ	_	Gender=Fem|Number=Sing	37	amod	_	_	*
+39	:	:	PUNCT	_	_	43	punct	_	_	*
+40	en	en	ADP	_	_	41	case	_	_	*
+41	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	43	nmod	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	41	punct	_	_	*
+43	salle	salle	NOUN	_	Gender=Fem|Number=Sing	37	appos	_	_	*
+44	Druilhet	Druilhet	PROPN	_	_	43	appos	_	SpaceAfter=No	*
+45	,	,	PUNCT	_	_	48	punct	_	_	*
+46	de	de	ADP	_	_	48	case	_	_	*
+47	17	17	NUM	_	_	48	nummod	_	_	*
+48	h	heure	NOUN	_	Gender=Fem|Number=Sing	43	nmod	_	_	*
+49	à	à	ADP	_	_	51	case	_	_	*
+50	18	18	NUM	_	_	51	nummod	_	_	*
+51	h	heure	NOUN	_	Gender=Fem|Number=Sing	48	nmod	_	_	*
+52	30	30	NUM	_	_	51	nummod	_	SpaceAfter=No	*
+53	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 20
+# text = Informatique : salle d'informatique de l'école primaire de 18 h à 20 h. Handisport : tir au stand de l'Avant-Garde, de 18 h 30 à 20 h 30.
+1	Informatique	Informatique	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	informatique	informatique	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	école	école	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+9	primaire	primaire	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	18	18	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	20	20	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	17	punct	_	_	*
+17	Handisport	Handisport	PROPN	_	_	1	appos	_	_	*
+18	:	:	PUNCT	_	_	19	punct	_	_	*
+19	tir	tir	NOUN	_	Gender=Masc|Number=Sing	17	appos	_	_	*
+20-21	au	_	_	_	_	_	_	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	stand	stand	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	Avant-Garde	avant-garde	PROPN	_	_	22	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	18	18	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+30	30	30	NUM	_	_	33	nummod	_	_	*
+31	à	à	ADP	_	_	32	case	_	_	*
+32	20	20	NUM	_	_	30	nmod	_	_	*
+33	h	heure	NOUN	_	Gender=Fem|Number=Sing	29	conj	_	_	*
+34	30	30	NUM	_	_	17	nmod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_34051.txt 21
+# text = Harmonie : répétition de la batterie-fanfare au local à 20 h 30.
+1	Harmonie	harmonie	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	répétition	répétition	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	batterie-fanfare	batterie-fanfare	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	local	local	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	20	20	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+13	30	30	NUM	_	_	12	nummod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

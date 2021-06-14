@@ -1,0 +1,750 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-17_18281.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 1
+# text = Résultats techniques en 2002 Nombre d'heures de marche : 12904 h (8678 heures en 2001).
+1	Résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	techniques	technique	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	_	*
+3	en	en	ADP	_	_	5	case	_	_	*
+4	2002	2002	NUM	_	_	5	nummod	_	SpacesAfter=\n	*
+5	Nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	heures	heure	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	marche	marche	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+10	:	:	PUNCT	_	_	12	punct	_	_	*
+11	12904	12904	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	parataxis	_	_	*
+13	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+14	8678	8678	NUM	_	_	15	nummod	_	_	*
+15	heures	heure	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	2001	2001	NUM	_	_	15	nmod	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 2
+# text = 780.000 tonnes de charbon consommé (470.000 en 2001) dont 450.000 approvisionnées par voie fluviale, ce qui permet à Blénod de se situer favorablement au niveau national.
+1	780.000	780.000	NUM	_	_	2	nummod	_	_	*
+2	tonnes	tonne	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	charbon	charbon	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	consommé	consommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	(	(	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+7	470.000	470.000	NUM	_	_	2	nmod	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	2001	2001	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	7	punct	_	_	*
+11	dont	dont	PRON	_	PronType=Rel	12	nmod	_	_	*
+12	450.000	450.000	NUM	_	_	13	nsubj:pass	_	_	*
+13	approvisionnées	approvisionnée	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*
+14	par	par	ADP	_	_	15	case	_	_	*
+15	voie	voie	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+16	fluviale	fluvial	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	parataxis	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+20	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	Blénod	Blénod	PROPN	_	_	20	obl:arg	_	_	*
+23	de	de	ADP	_	_	25	mark	_	_	*
+24	se	se	PRON	_	Person=3|PronType=Prs	25	obj	_	_	1:IRV
+25	situer	situer	VERB	_	VerbForm=Inf	20	xcomp	_	_	1
+26	favorablement	favorablement	ADV	_	_	25	advmod	_	_	*
+27-28	au	_	_	_	_	_	_	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	25	obl:mod	_	_	*
+30	national	national	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 3
+# text = Les solistes de Christiane Stutzmann et le chœur de Christine Bohlinger ont fait vibrer la salle socioculturelle, hier soir.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	solistes	soliste	NOUN	_	Gender=Masc|Number=Plur	14	nsubj:caus	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Christiane	Christiane	PROPN	_	_	2	nmod	_	_	*
+5	Stutzmann	Stutzmann	PROPN	_	_	4	flat:name	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	chœur	chœur	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Christine	Christine	PROPN	_	_	8	nmod	_	_	*
+11	Bohlinger	Bohlinger	PROPN	_	_	10	flat:name	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+13	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	aux:caus	_	_	*
+14	vibrer	vibrer	VERB	_	VerbForm=Inf	0	root	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	salle	salle	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	*
+17	socioculturelle	socioculturel	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	hier	hier	ADV	_	_	20	advmod	_	_	*
+20	soir	soir	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	14	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 4
+# text = Pour le public mussipontain, ce rendez-vous était l'occasion de (re) découvrir les charmes de l'opérette.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	public	public	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+4	mussipontain	mussipontain	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*
+7	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+8	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	_	1:VID
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	1
+10	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	1
+11	de	de	ADP	_	_	13	mark	_	_	*
+12	(	(	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+13	re	re	VERB	_	VerbForm=Inf	10	acl	_	SpaceAfter=No	*
+14	)	)	PUNCT	_	_	13	punct	_	_	*
+15	découvrir	découvrir	VERB	_	VerbForm=Inf	10	acl	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	charmes	charme	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	opérette	opérette	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 5
+# text = Pas moins de 160 artistes ont pris place sur scène.
+1	Pas	pas	ADV	_	_	2	advmod	_	_	*
+2	moins	moins	ADV	_	_	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	160	160	NUM	_	_	5	nummod	_	_	*
+5	artistes	artiste	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	_	*
+6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+8	place	place	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	1
+9	sur	sur	ADP	_	_	10	case	_	_	*
+10	scène	scène	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 6
+# text = L'orchestre symphonique sous la direction de Jean-Marie Quenon.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	symphonique	symphonique	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	sous	sous	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	direction	direction	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Jean-Marie	Jean-Marie	PROPN	_	_	6	nmod	_	_	*
+9	Quenon	Quenon	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 7
+# text = Photos Alexandre Marchi Quoi de plus grandioses que les fameuses valses de Vienne, de Johann Strauss, jouées par l'Orchestre symphonique du conservatoire national de région de Nancy, placé sous la direction de Jean-Marie Quenon, pour entamer le concert où toutes les générations étaient conviées, hier soir.
+1	Photos	photos	PROPN	_	_	0	root	_	_	*
+2	Alexandre	Alexandre	PROPN	_	_	1	flat:name	_	_	*
+3	Marchi	Marchi	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s	*
+4	Quoi	quoi	PROPN	_	_	1	nmod	_	_	*
+5	de	de	ADP	_	_	4	flat:name	_	_	*
+6	plus	plus	ADV	_	_	4	flat:name	_	_	*
+7	grandioses	grandiose	ADJ	_	Gender=Fem|Number=Plur	4	flat:name	_	_	*
+8	que	que	SCONJ	_	_	11	cc	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+10	fameuses	fameux	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_	*
+11	valses	valse	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Vienne	Vienne	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	16	punct	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Johann	Johann	PROPN	_	_	13	conj	_	_	*
+17	Strauss	Strauss	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	jouées	jouer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_	*
+20	par	par	ADP	_	_	22	case	_	_	*
+21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*
+22	Orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	19	obl:agent	_	_	*
+23	symphonique	symphonique	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24-25	du	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	conservatoire	conservatoire	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+27	national	national	ADJ	_	Gender=Masc|Number=Sing	26	amod	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	région	région	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	Nancy	Nancy	PROPN	_	_	26	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	33	punct	_	_	*
+33	placé	placer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+34	sous	sous	ADP	_	_	36	case	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*
+36	direction	direction	NOUN	_	Gender=Fem|Number=Sing	33	obl	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	Jean-Marie	Jean-Marie	PROPN	_	_	36	nmod	_	_	*
+39	Quenon	Quenon	PROPN	_	_	38	flat:name	_	SpaceAfter=No	*
+40	,	,	PUNCT	_	_	42	punct	_	_	*
+41	pour	pour	ADP	_	_	42	mark	_	_	*
+42	entamer	entamer	VERB	_	VerbForm=Inf	33	advcl	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	concert	concert	NOUN	_	Gender=Masc|Number=Sing	42	obj	_	_	*
+45	où	où	ADV	_	PronType=Rel	50	advmod	_	_	*
+46	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	48	amod	_	_	*
+47	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	_	_	*
+48	générations	génération	NOUN	_	Gender=Fem|Number=Plur	50	nsubj:pass	_	_	*
+49	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	50	aux:pass	_	_	*
+50	conviées	convier	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	44	acl:relcl	_	SpaceAfter=No	*
+51	,	,	PUNCT	_	_	53	punct	_	_	*
+52	hier	hier	ADV	_	_	53	advmod	_	_	*
+53	soir	soir	NOUN	_	Gender=Masc|Number=Sing	50	obl	_	SpaceAfter=No	*
+54	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 8
+# text = Pour le public mussipontain, ce rendez-vous proposé par les Jeunesses musicales de France fut l'occasion de redécouvrir les charmes de l'opérette, à la salle socioculturelle, dès 20 h 30.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	public	public	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+4	mussipontain	mussipontain	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*
+7	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+8	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9	par	par	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	Jeunesses	Jeunesse	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	_	_	*
+12	musicales	musical	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	France	France	PROPN	_	_	11	nmod	_	_	*
+15	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	cop	_	_	1:VID
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	1
+17	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	1
+18	de	de	ADP	_	_	19	mark	_	_	*
+19	redécouvrir	redécouvrir	VERB	_	VerbForm=Inf	17	acl	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	charmes	charme	NOUN	_	Gender=Masc|Number=Plur	19	obj	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	opérette	opérette	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	28	punct	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	salle	salle	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*
+29	socioculturelle	socioculturel	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	33	punct	_	_	*
+31	dès	dès	ADP	_	_	33	case	_	_	*
+32	20	20	NUM	_	_	33	nummod	_	_	*
+33	h	heure	NOUN	_	Gender=Fem|Number=Sing	19	obl	_	_	*
+34	30	30	NUM	_	_	33	nmod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 9
+# text = « Pont-à-Mousson a le privilège d'accueillir les solistes de la classe de chant de Christiane Stutzmann ainsi que le chœur de Christine Bohlinger », présentait auparavant Jean-Paul Houvion, président des Jeunesses musicales de Lorraine.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Pont-à-Mousson	Pont-à-Mousson	PROPN	_	_	3	nsubj	_	_	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	ccomp	_	_	1:LVC.full
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	privilège	privilège	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+6	d'	de	ADP	_	_	7	mark	_	SpaceAfter=No	*
+7	accueillir	accueillir	VERB	_	VerbForm=Inf	5	acl	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	solistes	soliste	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	classe	classe	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	chant	chant	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Christiane	Christiane	PROPN	_	_	12	nmod	_	_	*
+17	Stutzmann	Stutzmann	PROPN	_	_	16	flat:name	_	_	*
+18	ainsi	ainsi	ADV	_	_	21	cc	_	_	*
+19	que	que	SCONJ	_	_	18	fixed	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	chœur	chœur	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Christine	Christine	PROPN	_	_	21	nmod	_	_	*
+24	Bohlinger	Bohlinger	PROPN	_	_	23	flat:name	_	_	*
+25	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	3	punct	_	_	*
+27	présentait	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+28	auparavant	auparavant	ADV	_	_	27	advmod	_	_	*
+29	Jean-Paul	Jean-Paul	PROPN	_	_	27	nsubj	_	_	*
+30	Houvion	Houvion	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	président	président	NOUN	_	Gender=Masc|Number=Sing	29	appos	_	_	*
+33-34	des	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*
+35	Jeunesses	Jeunesse	NOUN	_	Gender=Fem|Number=Plur	32	nmod	_	_	*
+36	musicales	musical	ADJ	_	Gender=Fem|Number=Plur	35	amod	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	Lorraine	Lorraine	PROPN	_	_	35	nmod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	27	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 10
+# text = « Cette chanteuse étoile, native de Pont-à-Mousson, a voyagé sur les plus grandes scènes du monde et chanté les plus grands rôles du répertoire lyrique de sa voix de soprano dramatique.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*
+3	chanteuse	chanteur	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+4	étoile	étoile	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	native	natif	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Pont-à-Mousson	Pont-à-Mousson	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	3	punct	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	voyagé	voyager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	sur	sur	ADP	_	_	16	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+14	plus	plus	ADV	_	_	15	advmod	_	_	*
+15	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*
+16	scènes	scène	NOUN	_	Gender=Fem|Number=Plur	11	obl	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	monde	monde	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	chanté	chanter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	conj	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+23	plus	plus	ADV	_	_	24	advmod	_	_	*
+24	grands	grand	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_	*
+25	rôles	rôle	NOUN	_	Gender=Masc|Number=Plur	21	obj	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	répertoire	répertoire	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+29	lyrique	lyrique	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	_	*
+30	de	de	ADP	_	_	32	case	_	_	*
+31	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	32	det	_	_	*
+32	voix	voix	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	_	*
+33	de	de	ADP	_	_	34	case	_	_	*
+34	soprano	soprano	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*
+35	dramatique	dramatique	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 11
+# text = Aujourd'hui, elle transmet son savoir au conservatoire de Nancy », ajoutait-il, dithyrambique.
+1	Aujourd'hui	aujourd'hui	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+4	transmet	transmettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	savoir	savoir	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	conservatoire	conservatoire	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Nancy	Nancy	PROPN	_	_	9	nmod	_	_	*
+12	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	ajoutait	ajouter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	parataxis	_	SpaceAfter=No	*
+15	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	dithyrambique	dithyrambique	ADJ	_	Gender=Masc|Number=Sing	14	xcomp	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 12
+# text = Sur scène, les solistes de Christiane Stutzmann s'installent aux côtés des chœurs de Christine Bohlinger.
+1	Sur	sur	ADP	_	_	2	case	_	_	*
+2	scène	scène	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	solistes	soliste	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Christiane	Christiane	PROPN	_	_	5	nmod	_	_	*
+8	Stutzmann	Stutzmann	PROPN	_	_	7	flat:name	_	_	*
+9	s'	se	PRON	_	Person=3|PronType=Prs	10	obj	_	SpaceAfter=No	*
+10	installent	installer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11-12	aux	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	10	advmod	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	fixed	_	_	*
+13	côtés	côté	NOUN	_	Gender=Masc|Number=Plur	11	fixed	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+16	chœurs	chœur	NOUN	_	Gender=Masc|Number=Plur	11	obl:arg	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	Christine	Christine	PROPN	_	_	16	nmod	_	_	*
+19	Bohlinger	Bohlinger	PROPN	_	_	18	flat:name	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 13
+# text = Pas moins de cent soixante musiciens et chanteurs vont alors donner la pleine mesure de leur talent.
+1	Pas	pas	ADV	_	_	2	advmod	_	_	*
+2	moins	moins	ADV	_	_	9	advmod	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	cent	cent	NUM	_	_	2	obl:arg	_	_	*
+5	soixante	soixante	NUM	_	_	4	nmod	_	_	*
+6	musiciens	musicien	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+7	et	et	CCONJ	_	_	8	cc	_	_	*
+8	chanteurs	chanteur	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	_	*
+9	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	alors	alors	ADV	_	_	9	advmod	_	_	*
+11	donner	donner	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+13	pleine	plein	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+14	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	talent	talent	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 14
+# text = Compositeur et hautboïste, c'est le directeur du Conservatoire nancéien qui dirige lui-même l'orchestre symphonique.
+1	Compositeur	compositeur	NOUN	_	Gender=Masc|Number=Sing	8	dislocated	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	hautboïste	hautboïste	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Conservatoire	Conservatoire	PROPN	_	_	8	nmod	_	_	*
+12	nancéien	nancéien	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+14	dirige	diriger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*
+15	lui-même	lui-même	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	14	obl:mod	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+18	symphonique	symphonique	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 15
+# text = Paule et Nicole, d'Atton, installées confortablement aux premières loges, n'en perdent pas une miette.
+1	Paule	Paule	PROPN	_	_	17	nsubj	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	Nicole	Nicole	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	Atton	Atton	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	installées	installer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+9	confortablement	confortablement	ADV	_	_	8	advmod	_	_	*
+10-11	aux	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	13	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+12	premières	premier	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*
+13	loges	loge	NOUN	_	Gender=Fem|Number=Plur	8	obl:mod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	1	punct	_	_	*
+15	n'	ne	ADV	_	Polarity=Neg	17	advmod	_	SpaceAfter=No	*
+16	en	en	PRON	_	Person=3	17	expl:comp	_	_	*
+17	perdent	perdre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	pas	pas	ADV	_	Polarity=Neg	17	advmod	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	miette	miette	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 16
+# text = Et ne peuvent s'empêcher de frapper des mains lorsque Laure Baert et Nicolas Gambotti entonnent « Désir de rire, plaisir d'aimer », ainsi que le duo admirablement interprété par Karamorgan, Celia Pierre et Nicolas Gambotti.
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	*
+5	empêcher	empêcher	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	de	de	ADP	_	_	7	mark	_	_	*
+7	frapper	frapper	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	mains	main	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*
+11	lorsque	lorsque	SCONJ	_	_	17	mark	_	_	*
+12	Laure	Laure	PROPN	_	_	17	nsubj	_	_	*
+13	Baert	Baert	PROPN	_	_	12	flat:name	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	Nicolas	Nicolas	PROPN	_	_	12	conj	_	_	*
+16	Gambotti	Gambotti	PROPN	_	_	15	flat:name	_	_	*
+17	entonnent	entonner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_	*
+18	«	«	PUNCT	_	_	19	punct	_	_	*
+19	Désir	Désir	PROPN	_	_	17	obj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	rire	rire	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	plaisir	plaisir	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+24	d'	de	ADP	_	_	25	mark	_	SpaceAfter=No	*
+25	aimer	aimer	VERB	_	VerbForm=Inf	23	acl	_	_	*
+26	»	»	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	31	punct	_	_	*
+28	ainsi	ainsi	ADV	_	_	31	cc	_	_	*
+29	que	que	SCONJ	_	_	28	fixed	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	duo	duo	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+32	admirablement	admirablement	ADV	_	_	33	advmod	_	_	*
+33	interprété	interpréter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_	*
+34	par	par	ADP	_	_	35	case	_	_	*
+35	Karamorgan	Karamorgan	PROPN	_	_	33	obl:agent	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	37	punct	_	_	*
+37	Celia	Celia	PROPN	_	_	19	conj	_	_	*
+38	Pierre	Pierre	PROPN	_	_	37	flat:name	_	_	*
+39	et	et	CCONJ	_	_	40	cc	_	_	*
+40	Nicolas	Nicolas	PROPN	_	_	19	conj	_	_	*
+41	Gambotti	Gambotti	PROPN	_	_	40	flat:name	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 17
+# text = En deuxième partie, ce sont « les Cloches de Corneville », de Robert Planquette (dont on célèbre en janvier 2003 le centenaire de la mort), qui furent à l'honneur.
+1	En	en	ADP	_	_	3	case	_	_	*
+2	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	partie	partie	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	_	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+7	«	«	PUNCT	_	_	9	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+9	Cloches	cloches	PROPN	_	_	0	root	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Corneville	Corneville	PROPN	_	_	9	nmod	_	_	*
+12	»	»	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Robert	Robert	PROPN	_	_	9	nmod	_	_	*
+16	Planquette	Planquette	PROPN	_	_	15	flat:name	_	_	*
+17	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+18	dont	dont	PRON	_	PronType=Rel	20	iobj	_	_	*
+19	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_	*
+20	célèbre	célébrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	*
+21	en	en	ADP	_	_	22	case	_	_	*
+22	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	obl	_	_	*
+23	2003	2003	NUM	_	_	22	nmod	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	centenaire	centenaire	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	mort	mort	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	35	punct	_	_	*
+31	qui	qui	PRON	_	PronType=Rel	35	nsubj	_	_	*
+32	furent	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	35	cop	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	SpaceAfter=No	*
+35	honneur	honneur	NOUN	_	Gender=Masc|Number=Sing	15	acl:relcl	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 18
+# text = Et comme le rappelait Christiane Stutzmann, « l'opérette ?
+1	Et	et	CCONJ	_	_	4	cc	_	_	*
+2	comme	comme	SCONJ	_	_	4	mark	_	_	*
+3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*
+4	rappelait	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+5	Christiane	Christiane	PROPN	_	_	4	nsubj	_	_	*
+6	Stutzmann	Stutzmann	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	«	«	PUNCT	_	_	10	punct	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	opérette	opérette	NOUN	_	Gender=Fem|Number=Sing	5	appos	_	_	*
+11	?	?	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 19
+# text = C'est paillettes et champagne !
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	paillettes	paillette	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	champagne	champagne	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+6	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 20
+# text = » SALON DU MARIAGE ENCHENGER.
+1	»	»	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s\s\s	*
+2	SALON	salon	ADP	_	_	3	case	_	_	*
+3-4	DU	_	_	_	_	_	_	_	_	*
+3	DE	de	PROPN	_	_	0	root	_	_	*
+4	LE	Le	PROPN	_	_	3	flat:name	_	_	*
+5	MARIAGE	mariage	PROPN	_	_	3	flat:name	_	_	*
+6	ENCHENGER	ENCHENGER	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 21
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 22
+# text = Le 4e salon du mariage du pays de Bitche se déroulera dimanche 2 février, à partir de 10 h, à la salle polyvalente d'Enchenberg, à 30 km de Sarreguemines.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	4e	4e	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	salon	salon	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	mariage	mariage	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	pays	pays	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Bitche	Bitche	PROPN	_	_	9	nmod	_	_	*
+12	se	se	PRON	_	Person=3|PronType=Prs	13	expl:pass	_	_	1:IRV
+13	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+14	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*
+15	2	2	NUM	_	_	14	nmod	_	_	*
+16	février	février	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	à	à	ADP	_	_	13	advmod	_	_	*
+19	partir	partir	VERB	_	VerbForm=Inf	18	fixed	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	10	10	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	salle	salle	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+27	polyvalente	polyvalent	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+28	d'	de	ADP	_	_	29	case	_	SpaceAfter=No	*
+29	Enchenberg	Enchenberg	PROPN	_	_	26	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	33	punct	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	30	30	NUM	_	_	33	nummod	_	_	*
+33	km	km	NOUN	_	Gender=Masc|Number=Plur	22	conj	_	_	*
+34	de	de	ADP	_	_	35	case	_	_	*
+35	Sarreguemines	Sarreguemines	PROPN	_	_	33	nmod	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 23
+# text = Une trentaine d'exposants sur plus de 800 m2 ainsi que trois défilés de lingerie, robes de mariée et confection.
+1	Une	une	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	trentaine	trentaine	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	exposants	exposant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+5	sur	sur	ADP	_	_	6	case	_	_	*
+6	plus	plus	ADV	_	_	4	nmod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	800	800	NUM	_	_	9	nummod	_	_	*
+9	m2	m2	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*
+10	ainsi	ainsi	ADV	_	_	12	cc	_	_	*
+11	que	que	SCONJ	_	_	10	fixed	_	_	*
+12	trois	trois	NUM	_	_	2	conj	_	_	*
+13	défilés	défilé	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	lingerie	lingerie	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	robes	robe	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	mariée	marié	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	confection	confection	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 24
+# text = Restauration sur place toute la journée.
+1	Restauration	restauration	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	sur	sur	ADP	_	_	3	case	_	_	*
+3	place	place	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	toute	tout	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	journée	journée	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 25
+# text = STAGE DE THEATRE METZ.
+1	STAGE	STAGE	X	_	_	0	root	_	_	*
+2	DE	de	PROPN	_	_	1	appos	_	_	*
+3	THEATRE	Theatre	PROPN	_	_	2	flat:name	_	_	*
+4	METZ	Metz	PROPN	_	_	2	flat:name	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 26
+# text = _
+1	_	_	PUNCT	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 27
+# text = La compagnie du « Théâtre sous la pluie » organise, du dimanche 23 février au 2 mars, de 13 h à 20 h, un stage intitulé « Le théâtre en milieu scolaire ».
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	Théâtre	théâtre	PROPN	_	_	2	nmod	_	_	*
+7	sous	sous	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	pluie	pluie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+10	»	»	PUNCT	_	_	2	punct	_	_	*
+11	organise	organis	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*
+16	23	23	NUM	_	_	15	nmod	_	_	*
+17	février	février	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	2	2	NUM	_	_	11	obl	_	_	*
+21	mars	mars	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	13	13	NUM	_	_	25	nummod	_	_	*
+25	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	20	20	NUM	_	_	28	nummod	_	_	*
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	25	punct	_	_	*
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	stage	stage	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+32	intitulé	intituler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_	*
+33	«	«	PUNCT	_	_	35	punct	_	_	*
+34	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	32	xcomp	_	_	*
+36	en	en	ADP	_	_	37	case	_	_	*
+37	milieu	milieu	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	_	*
+38	scolaire	scolaire	ADJ	_	Gender=Masc|Number=Sing	37	amod	_	_	*
+39	»	»	PUNCT	_	_	35	punct	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 28
+# text = Les repas ainsi que l'hébergement sont possibles.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	repas	repas	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	*
+3	ainsi	ainsi	ADV	_	_	6	cc	_	_	*
+4	que	que	SCONJ	_	_	3	fixed	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	hébergement	hébergement	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+8	possibles	possible	ADJ	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 29
+# text = Le tarif de ce stage est de 190 euros (hors hébergement et repas).
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	tarif	tarif	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*
+5	stage	stage	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	190	190	NUM	_	_	9	nummod	_	_	*
+9	euros	euro	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+10	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+11	hors	hors	ADP	_	_	12	case	_	_	*
+12	hébergement	hébergement	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	repas	repas	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 30
+# text = Renseignements et inscriptions : le Théâtre sous la pluie, 87, rue du XXe-Corps américain, 57 Metz, tél.
+1	Renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	inscriptions	inscription	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+4	:	:	PUNCT	_	_	6	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	Théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+7	sous	sous	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	pluie	pluie	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	87	87	NUM	_	_	6	conj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	XXe-Corps	XXe-Corps	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+17	américain	américain	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	57	57	NUM	_	_	20	nummod	_	_	*
+20	Metz	Metz	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	tél	tél	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18281.txt 31
+# text = 03.87.50.51.19.
+1	03.87.50.51.19	03.87.50.51.19	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

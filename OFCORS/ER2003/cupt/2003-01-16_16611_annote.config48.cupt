@@ -1,0 +1,563 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-16_16611.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 1
+# text = Une commission pour la salle des sports
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	commission	commission	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	pour	pour	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	salle	salle	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	sports	sport	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 2
+# text = Le conseil municipal s'est réuni mardi soir et a pris les décisions suivantes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	s'	se	PRON	_	Person=3|PronType=Prs	6	obj	_	SpaceAfter=No	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	réuni	réunir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+8	soir	soir	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	1:LVC.full
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*
+13	décisions	décision	NOUN	_	Gender=Fem|Number=Plur	11	obj	_	_	1
+14	suivantes	suivant	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 3
+# text = Usine Solvay : le maire a été autorisé à signer les documents et actes concernant la vente de terrains communaux à l'usine Solvay.
+1	Usine	usine	PROPN	_	_	0	root	_	_	*
+2	Solvay	Solvay	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	8	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	maire	maire	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_	*
+8	autorisé	autoriser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	_	*
+9	à	à	ADP	_	_	10	mark	_	_	*
+10	signer	signer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	documents	document	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	actes	acte	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+15	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	vente	vente	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*
+20	communaux	communal	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+23	usine	usine	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	_	*
+24	Solvay	Solvay	PROPN	_	_	23	appos	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 4
+# text = La précédente délibération avait été annulée car il fallait avoir l'estimation des Domaines mais toutes les clauses de la délibération du 27 novembre dernier seront appliquées.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	précédente	précédent	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	délibération	délibération	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	_	_	*
+4	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux:pass	_	_	*
+6	annulée	annuler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	car	car	CCONJ	_	_	9	cc	_	_	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	1:VID
+9	fallait	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	conj	_	_	1
+10	avoir	avoir	VERB	_	VerbForm=Inf	29	nsubj:pass	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	estimation	estimation	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	Domaines	domaine	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+16	mais	mais	CCONJ	_	_	19	cc	_	_	*
+17	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	19	amod	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	clauses	clause	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	délibération	délibération	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23-24	du	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	27	27	NUM	_	_	22	nmod	_	_	*
+26	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+27	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*
+28	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	29	aux:pass	_	_	*
+29	appliquées	appliqué	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	9	xcomp	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 5
+# text = « Ces terrains servent uniquement de compensation hydraulique », a précisé le maire, « la digue ne sera pas construite dessus ».
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_	*
+3	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+4	servent	servir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_	*
+5	uniquement	uniquement	ADV	_	_	4	advmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	compensation	compensation	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	hydraulique	hydraulique	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	4	punct	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	précisé	préciser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	maire	maire	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	22	punct	_	_	*
+16	«	«	PUNCT	_	_	22	punct	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	digue	digue	NOUN	_	Gender=Fem|Number=Sing	22	nsubj:pass	_	_	*
+19	ne	ne	ADV	_	Polarity=Neg	22	advmod	_	_	*
+20	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	aux:pass	_	_	*
+21	pas	pas	ADV	_	Polarity=Neg	22	advmod	_	_	*
+22	construite	construire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	12	ccomp	_	_	*
+23	dessus	dessus	ADV	_	_	22	advmod	_	_	*
+24	»	»	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 6
+# text = Poste : le bail de location du bâtiment de la poste a été renouvelé jusqu'au 31 décembre 2011.
+1	Poste	Poste	PROPN	_	_	15	nsubj:pass	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	bail	bail	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	location	location	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	bâtiment	bâtiment	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	poste	poste	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+14	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	aux:pass	_	_	*
+15	renouvelé	renouveler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+16	jusqu'	jusque	ADV	_	_	19	advmod	_	SpaceAfter=No	*
+17-18	au	_	_	_	_	_	_	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	31	31	NUM	_	_	15	obl	_	_	*
+20	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+21	2011	2011	NUM	_	_	20	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 7
+# text = Travaux : la société Lorraine d'Ingénierie a fait une proposition financière pour la maîtrise d'œuvre des travaux de voirie de la rue de Nancy.
+1	Travaux	travaux	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	société	société	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+5	Lorraine	Lorraine	PROPN	_	_	4	appos	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	Ingénierie	ingénierie	PROPN	_	_	5	nmod	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	_	1:LVC.full
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	proposition	proposition	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	1
+12	financière	financier	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	pour	pour	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	maîtrise	maîtrise	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	voirie	voirie	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	rue	rue	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Nancy	Nancy	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 8
+# text = Le taux de rémunération a été ramené de 8,45 % à 8 % sur une estimation de travaux fixée à 250.000 € HT.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	taux	taux	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	rémunération	rémunération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+6	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	aux:pass	_	_	*
+7	ramené	ramener	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	8,45	8,45	NUM	_	_	10	nummod	_	_	*
+10	%	%	SYM	_	_	7	obl:mod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	8	8	NUM	_	_	13	nummod	_	_	*
+13	%	%	SYM	_	_	10	nmod	_	_	*
+14	sur	sur	ADP	_	_	16	case	_	_	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	estimation	estimation	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*
+19	fixée	fixer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	250.000	250.000	NUM	_	_	22	nummod	_	_	*
+22	€	€	SYM	_	_	19	obl:arg	_	_	*
+23	HT	HT	PROPN	_	_	22	appos	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 9
+# text = Le forfait de la rémunération est fixé à 20.000 € HT.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	forfait	forfait	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	rémunération	rémunération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*
+7	fixé	fixer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	20.000	20.000	NUM	_	_	10	nummod	_	_	*
+10	€	€	SYM	_	_	7	obl:arg	_	_	*
+11	HT	HT	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 10
+# text = Nouvelle commission : une nouvelle commission municipale a été nommée.
+1	Nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	commission	commission	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	10	punct	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+5	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+6	commission	commission	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	*
+7	municipale	municipal	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+9	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	aux:pass	_	_	*
+10	nommée	nommer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	parataxis	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 11
+# text = Elle sera chargée de l'étude et du suivi pour la réalisation d'une salle des sports.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_	*
+2	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	_	_	*
+3	chargée	charger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	étude	étude	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+7	et	et	CCONJ	_	_	10	cc	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	suivi	suivi	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+11	pour	pour	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	réalisation	réalisation	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	salle	salle	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	sports	sport	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 12
+# text = Elle est composée de Jean Roj, Bruno Chassigneux, Daniel Fleischlauer, Max Steunou, Pascal Hubert, Suzanne Ponsot, Marc Isoir, Henri Vasse, Yves Leverd.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
+3	composée	composer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Jean	Jean	PROPN	_	_	3	obl:arg	_	_	*
+6	Roj	Roj	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Bruno	Bruno	PROPN	_	_	5	conj	_	_	*
+9	Chassigneux	Chassigneux	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	Daniel	Daniel	PROPN	_	_	5	conj	_	_	*
+12	Fleischlauer	Fleischlauer	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Max	Max	PROPN	_	_	5	conj	_	_	*
+15	Steunou	Steunou	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	Pascal	Pascal	PROPN	_	_	5	conj	_	_	*
+18	Hubert	Hubert	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Suzanne	Suzanne	PROPN	_	_	5	conj	_	_	*
+21	Ponsot	Ponsot	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Marc	Marc	PROPN	_	_	5	conj	_	_	*
+24	Isoir	Isoir	PROPN	_	_	23	flat:name	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	26	punct	_	_	*
+26	Henri	Henri	PROPN	_	_	5	conj	_	_	*
+27	Vasse	Vasse	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	Yves	Yves	PROPN	_	_	5	conj	_	_	*
+30	Leverd	Leverd	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 13
+# text = Travaux forestiers : des contrats d'entreprise pour des travaux forestiers seront signés : ils concernant des cloisonnements sylvicoles, des réouvertures de lignes, l'abattage et le façonnement de bois de chauffage et de grumes.
+1	Travaux	traval	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+2	forestiers	forestier	NOUN	_	Gender=Masc|Number=Plur	15	nsubj:pass	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	contrats	contrat	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	pour	pour	ADP	_	_	12	case	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+13	forestiers	forestier	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+14	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	15	aux:pass	_	_	*
+15	signés	signer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+16	:	:	PUNCT	_	_	18	punct	_	_	*
+17	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_	*
+18	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	15	parataxis	_	_	*
+19-20	des	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	cloisonnements	cloisonnement	NOUN	_	Gender=Masc|Number=Plur	18	obl:arg	_	_	*
+22	sylvicoles	sylvicole	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24-25	des	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_	*
+26	réouvertures	réouverture	NOUN	_	Gender=Fem|Number=Plur	21	conj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	lignes	ligne	NOUN	_	Gender=Fem|Number=Plur	26	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	abattage	abattage	NOUN	_	Gender=Masc|Number=Sing	21	conj	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	façonnement	façonnement	NOUN	_	Gender=Masc|Number=Sing	21	conj	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	bois	bois	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+37	de	de	ADP	_	_	38	case	_	_	*
+38	chauffage	chauffage	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+39	et	et	CCONJ	_	_	41	cc	_	_	*
+40	de	de	ADP	_	_	41	case	_	_	*
+41	grumes	grume	NOUN	_	Gender=Fem|Number=Plur	38	conj	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 14
+# text = Une subvention de 5.686 € sera demandée pour des travaux de nettoyage.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	7	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	5.686	5.686	NUM	_	_	5	nummod	_	_	*
+5	€	€	SYM	_	_	2	nmod	_	_	*
+6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*
+7	demandée	demander	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	pour	pour	ADP	_	_	11	case	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	7	obl	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	nettoyage	nettoyage	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 15
+# text = Cimetière : les emplacements de 70 concessions du cimetière sont venus à échéance.
+1	Cimetière	cimetière	PROPN	_	_	12	nsubj	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	emplacements	emplacement	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	70	70	NUM	_	_	7	nummod	_	_	*
+7	concessions	concession	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	cimetière	cimetière	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	venus	venir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	échéance	échéance	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 16
+# text = L'entreprise Retzinger d'Hudiviller se chargera du démontage et de l'évacuation des monuments funéraires pour un montant de 137,54 € l'unité.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+3	Retzinger	Retzinger	PROPN	_	_	2	appos	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	Hudiviller	Hudiviller	PROPN	_	_	3	nmod	_	_	*
+6	se	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	_	*
+7	chargera	charger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	démontage	démontage	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*
+11	et	et	CCONJ	_	_	14	cc	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	évacuation	évacuation	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	monuments	monument	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*
+18	funéraires	funéraire	ADJ	_	Gender=Masc|Number=Plur	17	amod	_	_	*
+19	pour	pour	ADP	_	_	21	case	_	_	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	montant	montant	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	137,54	137,54	NUM	_	_	24	nummod	_	_	*
+24	€	€	SYM	_	_	21	nmod	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	unité	unité	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 17
+# text = Subvention : une subvention exceptionnelle de 1.000 euros sera allouée à un sportif rosiérois, Serge Bernardin, qui participera au rallye de Monte-Carlo du 22 au 26 janvier prochain.
+1	Subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	*
+2	:	:	PUNCT	_	_	4	punct	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+5	exceptionnelle	exceptionnel	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	1.000	1.000	NUM	_	_	8	nummod	_	_	*
+8	euros	euro	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+9	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux:pass	_	_	*
+10	allouée	allouer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	sportif	sportif	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+14	rosiérois	rosiérois	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	Serge	Serge	PROPN	_	_	13	appos	_	_	*
+17	Bernardin	Bernardin	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*
+20	participera	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	acl:relcl	_	_	*
+21-22	au	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	rallye	rallye	NOUN	_	Gender=Masc|Number=Sing	20	obl:arg	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	Monte-Carlo	Monte-Carlo	PROPN	_	_	23	nmod	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	22	22	NUM	_	_	23	nmod	_	_	*
+29-30	au	_	_	_	_	_	_	_	_	*
+29	à	à	ADP	_	_	31	case	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	26	26	NUM	_	_	20	obl:mod	_	_	*
+32	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+33	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 18
+# text = Fermeture : du 21 juin au 6 septembre 2003, la mairie sera fermée le samedi matin.
+1	Fermeture	fermeture	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	21	21	NUM	_	_	1	nmod	_	_	*
+6	juin	juin	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	6	6	NUM	_	_	1	nmod	_	_	*
+10	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+11	2003	2003	NUM	_	_	10	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	1	punct	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	16	nsubj:pass	_	_	*
+15	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux:pass	_	_	*
+16	fermée	fermer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+19	matin	matin	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	16	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 19
+# text = Mardi, les sapeurs-pompiers du centre de secours ont été appelés à 19 h 50 pour une inondation de locaux à Dombasle, à 20 h 10 pour un malaise à Saint-Nicolas-de-Port.
+1	Mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	sapeurs-pompiers	sapeur-pompier	NOUN	_	Gender=Masc|Number=Plur	12	nsubj:pass	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	centre	centre	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	secours	secours	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:pass	_	_	*
+12	appelés	appeler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	19	19	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_	*
+16	50	50	NUM	_	_	15	nummod	_	_	*
+17	pour	pour	ADP	_	_	19	case	_	_	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	inondation	inondation	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	locaux	local	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	Dombasle	Dombasle	PROPN	_	_	19	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	20	20	NUM	_	_	27	nummod	_	_	*
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_	*
+28	10	10	NUM	_	_	27	nmod	_	_	*
+29	pour	pour	ADP	_	_	31	case	_	_	*
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	malaise	malaise	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	_	*
+32	à	à	ADP	_	_	33	case	_	_	*
+33	Saint-Nicolas-de-Port	Saint-Nicolas-de-Port	PROPN	_	_	31	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-16_16611.txt 20
+# text = Mercredi, ils sont intervenus à 10 h 50 pour une fuite d'eau à Rosières, 14 h pour une fuite d'eau à Dombasle et à 17 h 45 pour une dépose d'objet menaçant de tomber à Saint-Nicolas-de-Port.
+1	Mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj:pass	_	_	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+5	intervenus	intervenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	10	10	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+9	50	50	NUM	_	_	5	obl	_	_	*
+10	pour	pour	ADP	_	_	12	case	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	fuite	fuite	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	eau	eau	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	Rosières	Rosières	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	14	14	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	_	*
+20	pour	pour	ADP	_	_	22	case	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	fuite	fuite	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	d'	de	ADP	_	_	24	case	_	SpaceAfter=No	*
+24	eau	eau	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25	à	à	ADP	_	_	26	case	_	_	*
+26	Dombasle	Dombasle	PROPN	_	_	22	nmod	_	_	*
+27	et	et	CCONJ	_	_	30	cc	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	17	17	NUM	_	_	30	nummod	_	_	*
+30	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	conj	_	_	*
+31	45	45	NUM	_	_	30	nmod	_	_	*
+32	pour	pour	ADP	_	_	34	case	_	_	*
+33	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	dépose	dépose	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+35	d'	de	ADP	_	_	36	case	_	SpaceAfter=No	*
+36	objet	objet	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+37	menaçant	menacer	VERB	_	Tense=Pres|VerbForm=Part	34	acl	_	_	*
+38	de	de	ADP	_	_	39	mark	_	_	*
+39	tomber	tomber	VERB	_	VerbForm=Inf	37	xcomp	_	_	*
+40	à	à	ADP	_	_	41	case	_	_	*
+41	Saint-Nicolas-de-Port	Saint-Nicolas-de-Port	PROPN	_	_	39	obl:arg	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,810 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-17_18067.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 1
+# text = Une deuxième naissance
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 2
+# text = Le 20 novembre 2001, les deux frères se retrouvent à l'hôpital de Hautepierre à Strasbourg.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	20	20	NUM	_	_	10	obl:mod	_	_	*
+3	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+4	2001	2001	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+7	deux	deux	NUM	_	_	8	nummod	_	_	*
+8	frères	frère	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	_	1:IRV
+10	retrouvent	retrouver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+11	à	à	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Hautepierre	Hautepierre	PROPN	_	_	13	nmod	_	_	*
+16	à	à	ADP	_	_	17	case	_	_	*
+17	Strasbourg	Strasbourg	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 3
+# text = « Christophe est parti le premier en salle d'opération.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Christophe	Christophe	PROPN	_	_	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	parti	partir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	premier	premier	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	salle	salle	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	opération	opération	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 4
+# text = Je n'y suis allé que lorsque son rein était sorti.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+3	y	y	PRON	_	_	5	iobj	_	_	*
+4	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	allé	aller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	que	que	ADV	_	_	11	advmod	_	_	*
+7	lorsque	lorsque	SCONJ	_	_	11	mark	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	rein	rein	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	_	_	*
+10	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux:pass	_	_	*
+11	sorti	sortir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	ccomp	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 5
+# text = Un rein qui est resté deux ou trois heures dans un liquide spécial avant qu'on ne me le greffe » témoigne Philippe.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	rein	rein	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	resté	rester	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*
+6	deux	deux	NUM	_	_	9	nummod	_	_	*
+7	ou	ou	CCONJ	_	_	8	cc	_	_	*
+8	trois	trois	NUM	_	_	6	conj	_	_	*
+9	heures	heure	NOUN	_	Gender=Fem|Number=Plur	5	obl	_	_	*
+10	dans	dans	ADP	_	_	12	case	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	liquide	liquide	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+13	spécial	spécial	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+14	avant	avant	ADP	_	_	20	case	_	_	*
+15	qu'	que	SCONJ	_	_	20	mark	_	SpaceAfter=No	*
+16	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_	*
+17	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+18	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	20	expl:comp	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	greffe	greffe	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+21	»	»	PUNCT	_	_	20	punct	_	_	*
+22	témoigne	témoigner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	Philippe	Philippe	PROPN	_	_	22	obj	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 6
+# text = Quatre heures d'opération pour chacun, quelques jours en soins intensifs, tous deux sont ressortis de l'hôpital dix jours après y être entrés.
+1	Quatre	Quatre	NUM	_	_	2	nummod	_	_	*
+2	heures	heure	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	opération	opération	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	pour	pour	ADP	_	_	6	case	_	_	*
+6	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	quelques	quelque	DET	_	Gender=Masc|Number=Plur	9	det	_	_	*
+9	jours	jour	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	soins	soin	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+12	intensifs	intensif	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	17	punct	_	_	*
+14	tous	tout	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*
+15	deux	deux	PRON	_	Number=Plur	17	nsubj:pass	_	_	*
+16	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:pass	_	_	*
+17	ressortis	ressortir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+21	dix	dix	NUM	_	_	20	nmod	_	_	*
+22	jours	jour	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+23	après	après	ADP	_	_	26	mark	_	_	*
+24	y	y	PRON	_	_	26	obl:mod	_	_	*
+25	être	être	AUX	_	VerbForm=Inf	26	aux:pass	_	_	*
+26	entrés	entrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	17	advcl	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 7
+# text = « Lorsque l'on est greffé, les premiers jours sont très importants car il peut se produire un rejet.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	Lorsque	lorsque	SCONJ	_	_	6	mark	_	_	*
+3	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	6	nsubj:pass	_	SpaceAfter=No	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	fixed	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_	*
+6	greffé	greffer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	advcl	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	6	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+9	premiers	premier	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+10	jours	jour	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+12	très	très	ADV	_	_	13	advmod	_	_	*
+13	importants	important	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*
+14	car	car	CCONJ	_	_	16	cc	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_	*
+16	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_	*
+17	se	se	PRON	_	Person=3|PronType=Prs	18	expl:pass	_	_	1:IRV
+18	produire	produire	VERB	_	VerbForm=Inf	16	xcomp	_	_	1
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	rejet	rejet	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 8
+# text = Cela n'a pas été mon cas.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	7	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+5	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	cop	_	_	*
+6	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	cas	cas	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 9
+# text = La greffe a pris tout de suite » explique l'ancien malade.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	greffe	greffe	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	ccomp	_	_	*
+5	tout	tout	ADV	_	_	4	advmod	_	_	*
+6	de	de	ADP	_	_	5	fixed	_	_	*
+7	suite	suite	NOUN	_	Gender=Fem|Number=Sing	5	fixed	_	_	*
+8	»	»	PUNCT	_	_	4	punct	_	_	*
+9	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+11	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	malade	malade	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 10
+# text = Depuis, tous deux vont bien, très bien.
+1	Depuis	depuis	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	tous	tout	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*
+4	deux	deux	PRON	_	Number=Plur	5	nsubj	_	_	*
+5	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	bien	bien	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	très	très	ADV	_	_	9	advmod	_	_	*
+9	bien	bien	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 11
+# text = « J'ai ressenti comme une deuxième naissance.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	ressenti	ressentir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	comme	comme	ADP	_	_	8	case	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+7	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 12
+# text = J'ai repris un travail à temps plein, des activités sportives.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	repris	reprendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	travail	travail	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	à	à	ADP	_	_	7	case	_	_	*
+7	temps	temps	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+8	plein	plein	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	12	punct	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	activités	activité	NOUN	_	Gender=Fem|Number=Plur	3	obl:mod	_	_	*
+13	sportives	sportif	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 13
+# text = L'arrivée de ce rein a considérablement réduit mon traitement médical et a décuplé mon appétit de vivre.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*
+5	rein	rein	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	considérablement	considérablement	ADV	_	_	8	advmod	_	_	*
+8	réduit	réduire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	médical	médical	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	décuplé	décupler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	*
+15	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	appétit	appétit	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+17	de	de	ADP	_	_	18	mark	_	_	*
+18	vivre	vivre	VERB	_	VerbForm=Inf	16	acl	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 14
+# text = J'ai voulu tout faire, rattraper ces deux ans de maladie qui m'avaient privé de ce que j'aimais.
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	tout	tout	PRON	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+5	faire	faire	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	rattraper	rattraper	VERB	_	VerbForm=Inf	3	advcl	_	_	*
+8	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_	*
+9	deux	deux	NUM	_	_	10	nummod	_	_	*
+10	ans	an	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*
+14	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	16	obj	_	SpaceAfter=No	*
+15	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+16	privé	privé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	obl:arg	_	_	*
+19	que	que	PRON	_	PronType=Rel	18	acl:relcl	_	_	*
+20	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	19	nsubj	_	SpaceAfter=No	*
+21	aimais	aimais	ADV	_	Polarity=Neg	20	advmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 15
+# text = Mais j'en voulais trop, je me suis dispersé.
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+3	en	en	PRON	_	Person=3	4	iobj	_	_	*
+4	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+5	trop	trop	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	10	punct	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+8	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	10	obj	_	_	*
+9	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	dispersé	disperser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 16
+# text = Maintenant j'essaye de trier mes envies.
+1	Maintenant	maintenant	ADV	_	_	3	advmod	_	_	*
+2	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+3	essaye	essayer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	5	mark	_	_	*
+5	trier	trier	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+6	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	envies	envie	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 17
+# text = Cette expérience nous a rapproché encore plus.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	expérience	expérience	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	rapproché	rapprocher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	encore	encore	ADV	_	_	7	advmod	_	_	*
+7	plus	plus	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 18
+# text = Nous sommes presque comme des frères jumeaux.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+2	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+3	presque	presque	ADV	_	_	7	advmod	_	_	*
+4	comme	comme	SCONJ	_	_	7	cc	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	frères	frère	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+8	jumeaux	jumeau	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 19
+# text = Et en juillet prochain, je participera aux Jeux mondiaux des transplantés à Nancy » raconte Philippe.
+1	Et	et	CCONJ	_	_	7	cc	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+4	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*
+7	participera	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	ccomp	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	Jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_	*
+11	mondiaux	mondial	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	transplantés	transplanté	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+15	à	à	ADP	_	_	16	case	_	_	*
+16	Nancy	Nancy	PROPN	_	_	10	nmod	_	_	*
+17	»	»	PUNCT	_	_	7	punct	_	_	*
+18	raconte	raconter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+19	Philippe	Philippe	PROPN	_	_	18	nsubj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 20
+# text = « Je dois effectuer un contrôle médical tous les ans.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	dois	devoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	effectuer	effectuer	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	médical	médical	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	tous	tout	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 21
+# text = Je ne suis pas considéré comme malade, j'ai simplement un organe en moins.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+2	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	considéré	considérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	comme	comme	SCONJ	_	_	7	mark	_	_	*
+7	malade	malade	ADJ	_	Gender=Masc|Number=Sing	5	xcomp	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	SpaceAfter=No	*
+10	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+11	simplement	simplement	ADV	_	_	10	advmod	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	organe	organe	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	moins	moins	ADV	_	_	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 22
+# text = Et je suis la preuve vivante que l'on peut vivre avec un rein ! » note Christophe.
+1	Et	et	CCONJ	_	_	5	cc	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	_	_	*
+6	vivante	vivant	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	que	que	PRON	_	PronType=Rel	11	obj	_	_	*
+8	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	10	nsubj	_	SpaceAfter=No	*
+9	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	fixed	_	_	*
+10	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*
+11	vivre	vivre	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+12	avec	avec	ADP	_	_	14	case	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	rein	rein	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*
+15	!	!	PUNCT	_	_	5	punct	_	_	*
+16	»	»	PUNCT	_	_	5	punct	_	_	*
+17	note	noter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	Christophe	Christophe	PROPN	_	_	17	obj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 23
+# text = « On peut donner de l'argent, des vêtements, de la nourriture mais donner un organe, c'est aider quelqu'un à vivre plus longtemps.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	donner	donner	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	de	de	ADP	_	_	7	det	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	SpaceAfter=No	*
+7	argent	argent	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	vêtements	vêtement	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	17	punct	_	_	*
+13	de	de	ADP	_	_	17	advmod	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	fixed	_	_	*
+15	nourriture	nourriture	NOUN	_	Gender=Fem|Number=Sing	13	fixed	_	_	*
+16	mais	mais	CCONJ	_	_	17	cc	_	_	*
+17	donner	donner	VERB	_	VerbForm=Inf	7	conj	_	_	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	organe	organe	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	23	punct	_	_	*
+21	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	23	nsubj	_	SpaceAfter=No	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*
+23	aider	aider	VERB	_	VerbForm=Inf	3	conj	_	_	*
+24	quelqu'un	quelqu'un	PRON	_	Gender=Masc|Number=Sing	23	obj	_	_	*
+25	à	à	ADP	_	_	26	mark	_	_	*
+26	vivre	vivre	VERB	_	VerbForm=Inf	24	acl	_	_	*
+27	plus	plus	ADV	_	_	28	advmod	_	_	*
+28	longtemps	longtemps	ADV	_	_	23	advmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 24
+# text = C'est un acte d'amour » analyse Philippe.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	acte	acte	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+6	amour	amour	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	»	»	PUNCT	_	_	4	punct	_	_	*
+8	analyse	analyser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	Philippe	Philippe	PROPN	_	_	8	obj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 25
+# text = L'amour de la vie tout simplement.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	amour	amour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	vie	vie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	tout	tout	ADV	_	_	7	advmod	_	_	*
+7	simplement	simplement	ADV	_	_	2	advmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 26
+# text = Christelle LEGAND
+1	Christelle	Christelle	PROPN	_	_	0	root	_	_	*
+2	LEGAND	LEGAND	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 27
+# text = L'un des grands intérêts du forum sur le don d'organes organisé hier par les étudiants en carrières sociales de l'IUT de Belfort-Montbéliard résidait dans la rencontre avec des personnes greffées.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	un	un	PRON	_	Gender=Masc|Number=Sing	28	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+5	grands	grand	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+6	intérêts	intérêt	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	forum	forum	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	don	don	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	organes	organe	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+15	organisé	organiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_	*
+16	hier	hier	ADV	_	_	15	advmod	_	_	*
+17	par	par	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*
+19	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	15	obl:agent	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	carrières	carrière	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	_	*
+22	sociales	social	ADJ	_	Gender=Fem|Number=Plur	21	amod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	IUT	IUT	PROPN	_	_	19	nmod	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Belfort-Montbéliard	Belfort-Montbéliard	PROPN	_	_	25	nmod	_	_	*
+28	résidait	résider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+29	dans	dans	ADP	_	_	31	case	_	_	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*
+31	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	28	obl:mod	_	_	*
+32	avec	avec	ADP	_	_	35	case	_	_	*
+33-34	des	_	_	_	_	_	_	_	_	*
+33	de	un	ADP	_	_	35	case	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*
+35	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	31	nmod	_	_	*
+36	greffées	greffé	ADJ	_	Gender=Fem|Number=Plur	35	amod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	28	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 28
+# text = Parmi elles, Christophe et Philippe, deux frères, âgés respectivement de 32 et 30 ans.
+1	Parmi	parmi	ADP	_	_	2	case	_	_	*
+2	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Christophe	Christophe	PROPN	_	_	0	root	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	Philippe	Philippe	PROPN	_	_	4	conj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	deux	deux	NUM	_	_	9	nummod	_	_	*
+9	frères	frère	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	âgés	âgé	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+12	respectivement	respectivement	ADV	_	_	4	conj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	32	32	NUM	_	_	12	obl:mod	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	30	30	NUM	_	_	14	conj	_	_	*
+17	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 29
+# text = A l'âge de 17 ans, Philippe apprend qu'il souffre d'une mauvaise filtration des protéines par ses reins.
+1	A	à	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	âge	âge	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	17	17	NUM	_	_	6	nummod	_	_	*
+6	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	Philippe	Philippe	PROPN	_	_	9	nsubj	_	_	*
+9	apprend	apprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	qu'	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	*
+12	souffre	souffrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_	*
+13	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+15	mauvaise	mauvais	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+16	filtration	filtration	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	protéines	protéine	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*
+20	par	par	ADP	_	_	22	case	_	_	*
+21	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*
+22	reins	rein	NOUN	_	Gender=Masc|Number=Plur	12	obl:mod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 30
+# text = Première conséquence de sa maladie, une très grande fatigue l'obligeant à réduire ses activités.
+1	Première	premier	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	conséquence	conséquence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	10	punct	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+8	très	très	ADV	_	_	9	advmod	_	_	*
+9	grande	grand	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	fatigue	fatigue	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*
+11	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	*
+12	obligeant	obliger	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	*
+13	à	à	ADP	_	_	14	mark	_	_	*
+14	réduire	réduire	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+15	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	activités	activité	NOUN	_	Gender=Fem|Number=Plur	14	obj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 31
+# text = D'analyses en examens médicaux, le verdict tombe : Philippe est atteint de néphrite chronique.
+1	D'	de	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	2	det	_	SpaceAfter=No	*
+2	analyses	analyse	NOUN	_	Gender=Fem|Number=Plur	9	obl:mod	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	examens	examen	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+5	médicaux	médical	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	verdict	verdict	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+9	tombe	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	:	:	PUNCT	_	_	13	punct	_	_	*
+11	Philippe	Philippe	PROPN	_	_	13	nsubj	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	atteint	atteindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	parataxis	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	néphrite	néphrite	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+16	chronique	chronique	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 32
+# text = Pris en charge par l'hôpital de Mulhouse, sa maladie ne cesse d'évoluer.
+1	Pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	1:VID
+2	en	en	ADP	_	_	3	case	_	_	1
+3	charge	charge	NOUN	_	Gender=Fem|Number=Sing	1	obl	_	_	1
+4	par	par	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	1	obl:agent	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Mulhouse	Mulhouse	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_	*
+12	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	cesse	cesser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+14	d'	de	ADP	_	_	15	mark	_	SpaceAfter=No	*
+15	évoluer	évoluer	VERB	_	VerbForm=Inf	13	xcomp	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 33
+# text = En 1999, Philippe est d'abord dialysé de jour avant d'être hémodyalisé.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	1999	1999	NUM	_	_	8	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Philippe	Philippe	PROPN	_	_	8	nsubj	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+6	d'	de	ADP	_	_	8	advmod	_	SpaceAfter=No	*
+7	abord	abord	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	_	*
+8	dialysé	dialyser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	jour	jour	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*
+11	avant	avant	ADV	_	_	8	advmod	_	_	*
+12	d'	de	ADP	_	_	14	mark	_	SpaceAfter=No	*
+13	être	être	AUX	_	VerbForm=Inf	14	aux:pass	_	_	*
+14	hémodyalisé	hémodyaliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	ccomp	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 34
+# text = Un traitement médical lourd qui l'oblige à ne plus travailler qu'à mi-temps.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	traitement	traitement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	médical	médical	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	lourd	lourd	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+6	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No	*
+7	oblige	obliger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+8	à	à	ADP	_	_	11	mark	_	_	*
+9	ne	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*
+10	plus	plus	ADV	_	Polarity=Neg	11	advmod	_	_	*
+11	travailler	travailler	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+12	qu'	que	ADV	_	_	14	advmod	_	SpaceAfter=No	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	mi-temps	mi-temps	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 35
+# text = Passionné de foot, il est obligé d'arrêter.
+1	Passionné	passionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	advcl	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	foot	foot	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj:pass	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*
+7	obligé	obliger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*
+9	arrêter	arrêter	VERB	_	VerbForm=Inf	7	xcomp	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 36
+# text = Insupportable pour son frère Christophe : « C'est moi qui ai pris la décision, dans la mesure où cela pouvait l'aider, de lui donner l'un de mes reins.
+1	Insupportable	insupportable	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	pour	pour	ADP	_	_	4	case	_	_	*
+3	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	frère	frère	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*
+5	Christophe	Christophe	PROPN	_	_	4	appos	_	_	*
+6	:	:	PUNCT	_	_	10	punct	_	_	*
+7	«	«	PUNCT	_	_	10	punct	_	_	*
+8	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	moi	soi	PRON	_	Number=Sing|Person=1	4	appos	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+12	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	1:LVC.full;2:LVC.full
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	décision	décision	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	SpaceAfter=No	1
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	2
+20	où	où	ADV	_	PronType=Rel	22	advmod	_	_	*
+21	cela	cela	PRON	_	Number=Sing|PronType=Dem	22	nsubj	_	_	*
+22	pouvait	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	acl:relcl	_	_	*
+23	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	24	obj	_	SpaceAfter=No	*
+24	aider	aider	VERB	_	VerbForm=Inf	22	xcomp	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	28	punct	_	_	*
+26	de	de	ADP	_	_	28	mark	_	_	*
+27	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	28	iobj	_	_	*
+28	donner	donner	VERB	_	VerbForm=Inf	4	acl	_	_	*
+29	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	un	un	PRON	_	Gender=Masc|Number=Sing	28	obj	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	33	det	_	_	*
+33	reins	rein	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 37
+# text = Nous avons donc pris rendez-vous avec les médecins » Point positif : les deux frères ont le même groupe sanguin.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	donc	donc	ADV	_	_	4	advmod	_	_	*
+4	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	rendez-vous	rendez-vous	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+6	avec	avec	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	médecins	médecin	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+9	»	»	PUNCT	_	_	8	punct	_	_	*
+10	Point	point	PROPN	_	_	8	appos	_	_	*
+11	positif	positif	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+12	:	:	PUNCT	_	_	16	punct	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+14	deux	deux	NUM	_	_	15	nummod	_	_	*
+15	frères	frère	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_	*
+16	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+18	même	même	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+19	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*
+20	sanguin	sanguin	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 38
+# text = « Cela commençait bien car il ne suffit pas de vouloir donner un organe, encore faut-il que donneur et receveur soient compatibles » ajoute Philippe.
+1	«	«	PUNCT	_	_	3	punct	_	_	*
+2	Cela	cela	PRON	_	Number=Sing|PronType=Dem	3	nsubj	_	_	*
+3	commençait	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	ccomp	_	_	*
+4	bien	bien	ADV	_	_	3	advmod	_	_	*
+5	car	car	CCONJ	_	_	8	cc	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	2:VID
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	suffit	suffire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	2
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	vouloir	vouloir	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+12	donner	donner	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	organe	organe	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	encore	encore	ADV	_	_	17	advmod	_	_	*
+17	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	SpaceAfter=No	1:VID
+18	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	1
+19	que	que	SCONJ	_	_	24	mark	_	_	*
+20	donneur	donneur	NOUN	_	Gender=Masc|Number=Sing	24	nsubj	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	receveur	receveur	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_	*
+23	soient	être	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*
+24	compatibles	compatible	ADJ	_	Gender=Masc|Number=Plur	17	ccomp	_	_	*
+25	»	»	PUNCT	_	_	3	punct	_	_	*
+26	ajoute	ajouter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+27	Philippe	Philippe	PROPN	_	_	26	nsubj	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 39
+# text = Une semaine d'hospitalisation en septembre 2001 permet aux médecins d'affirmer qu'ils sont compatibles.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	hospitalisation	hospitalisation	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+7	2001	2001	NUM	_	_	6	nmod	_	_	*
+8	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9-10	aux	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	médecins	médecin	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	_	*
+12	d'	de	ADP	_	_	13	mark	_	SpaceAfter=No	*
+13	affirmer	affirmer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+14	qu'	que	SCONJ	_	_	17	mark	_	SpaceAfter=No	*
+15	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	_	*
+16	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+17	compatibles	compatible	ADJ	_	Gender=Masc|Number=Plur	13	ccomp	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 40
+# text = « Ensuite, je suis passé au tribunal de grande instance qui a donné son accord.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	Ensuite	ensuite	ADV	_	_	6	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+5	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	passé	passer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	grande	grand	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+12	instance	instance	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_	1:LVC.full
+16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	accord	accord	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	SpaceAfter=No	1
+18	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-17_18067.txt 41
+# text = Une procédure légale visant à certifier que je n'étais pas forcé et que je le faisais de mon plein gré » explique Christophe.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	procédure	procédure	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	_	*
+3	légale	légal	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	visant	viser	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	*
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	certifier	certifier	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	que	que	SCONJ	_	_	12	mark	_	_	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_	*
+9	n'	ne	ADV	_	Polarity=Neg	12	advmod	_	SpaceAfter=No	*
+10	étais	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	12	aux:tense	_	_	*
+11	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*
+12	forcé	forcer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	ccomp	_	_	*
+13	et	et	CCONJ	_	_	17	cc	_	_	*
+14	que	que	SCONJ	_	_	17	mark	_	_	*
+15	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_	*
+16	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	obj	_	_	*
+17	faisais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	12	conj	_	_	*
+18	de	de	ADP	_	_	21	case	_	_	*
+19	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+20	plein	plein	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	_	*
+21	gré	gré	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+22	»	»	PUNCT	_	_	2	punct	_	_	*
+23	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+24	Christophe	Christophe	PROPN	_	_	23	obj	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	23	punct	_	SpacesAfter=\n	*
+

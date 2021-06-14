@@ -1,0 +1,433 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-30_33694.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 1
+# text = Bien préparer sa vieillesse
+1	Bien	bien	ADV	_	_	2	advmod	_	_	*
+2	préparer	préparer	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	vieillesse	vieillesse	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 2
+# text = Les retraités veulent rester jeunes le plus longtemps possible.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	retraités	retraité	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*
+3	veulent	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	rester	rester	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	4	xcomp	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	advmod	_	_	*
+7	plus	plus	ADV	_	_	6	fixed	_	_	*
+8	longtemps	longtemps	ADV	_	_	4	advmod	_	_	*
+9	possible	possible	ADJ	_	Gender=Masc|Number=Sing	8	advcl	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 3
+# text = Il vaut mieux prévenir que guérir.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID;2:VID
+2	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1;2
+3	mieux	mieux	ADV	_	_	2	advmod	_	_	1;2
+4	prévenir	prévenir	VERB	_	VerbForm=Inf	2	xcomp	_	_	1
+5	que	que	SCONJ	_	_	6	mark	_	_	1
+6	guérir	guérir	VERB	_	VerbForm=Inf	4	ccomp	_	SpaceAfter=No	1
+7	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 4
+# text = C'est ce à quoi s'attache la MSA en mettant en place des journées d'information sur le vieillissement, qui est parfois mal vécu.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	quoi	quoi	PRON	_	PronType=Rel	7	obl:arg	_	_	*
+6	s'	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	SpaceAfter=No	1:IRV
+7	attache	attacher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	1
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	MSA	MSA	PROPN	_	_	7	nsubj	_	_	*
+10	en	en	ADP	_	_	11	mark	_	_	*
+11	mettant	mettre	VERB	_	Tense=Pres|VerbForm=Part	7	advcl	_	_	*
+12	en	en	ADP	_	_	13	case	_	_	*
+13	place	place	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	journées	journée	NOUN	_	Gender=Fem|Number=Plur	11	obl:arg	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	information	information	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	vieillissement	vieillissement	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	27	punct	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	27	nsubj:pass	_	_	*
+24	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:pass	_	_	*
+25	parfois	parfois	ADV	_	_	27	advmod	_	_	*
+26	mal	mal	ADV	_	_	27	advmod	_	_	*
+27	vécu	vivre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	acl:relcl	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 5
+# text = « Accepter de vieillir peut devenir un réel défi » dira Mme Bulté, assistante sociale.
+1	«	«	PUNCT	_	_	2	punct	_	_	*
+2	Accepter	accepter	VERB	_	VerbForm=Inf	11	ccomp	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	vieillir	vieillir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_	*
+6	devenir	devenir	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	réel	réel	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*
+9	défi	défi	NOUN	_	Gender=Masc|Number=Sing	6	xcomp	_	_	*
+10	»	»	PUNCT	_	_	5	punct	_	_	*
+11	dira	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+12	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+13	Bulté	Bulté	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	assistante	assistant	NOUN	_	Gender=Fem|Number=Sing	12	appos	_	_	*
+16	sociale	social	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 6
+# text = Les personnes qui ont répondu à l'invitation de la journée organisée à Rouvres-la-Chétive ont été très intéressées par la présentation de notion de vieillesse présentée par une psychologue et sur les adaptations de l'habitat pour éviter les accidents bêtes, qui sont la conséquence de négligences de confort.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	18	nsubj:pass	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	répondu	répondre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	invitation	invitation	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	journée	journée	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	organisée	organiser	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Rouvres-la-Chétive	Rouvres-la-Chétive	PROPN	_	_	11	nmod	_	_	*
+15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*
+16	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	aux:pass	_	_	*
+17	très	très	ADV	_	_	18	advmod	_	_	*
+18	intéressées	intéresser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	par	par	ADP	_	_	21	case	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	18	obl:agent	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	notion	notion	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	vieillesse	vieillesse	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*
+26	présentée	présenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	21	acl	_	_	*
+27	par	par	ADP	_	_	29	case	_	_	*
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	psychologue	psychologue	NOUN	_	Gender=Fem|Number=Sing	26	obl:agent	_	_	*
+30	et	et	CCONJ	_	_	33	cc	_	_	*
+31	sur	sur	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_	*
+33	adaptations	adaptation	NOUN	_	Gender=Fem|Number=Plur	29	conj	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	SpaceAfter=No	*
+36	habitat	habitat	NOUN	_	Gender=Masc|Number=Sing	33	nmod	_	_	*
+37	pour	pour	ADP	_	_	38	mark	_	_	*
+38	éviter	éviter	VERB	_	VerbForm=Inf	26	advcl	_	_	*
+39	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_	*
+40	accidents	accident	NOUN	_	Gender=Masc|Number=Plur	38	obj	_	_	*
+41	bêtes	bête	ADJ	_	Gender=Masc|Number=Plur	40	amod	_	SpaceAfter=No	*
+42	,	,	PUNCT	_	_	46	punct	_	_	*
+43	qui	qui	PRON	_	PronType=Rel	46	nsubj	_	_	*
+44	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	46	cop	_	_	*
+45	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_	*
+46	conséquence	conséquence	NOUN	_	Gender=Fem|Number=Sing	40	acl:relcl	_	_	*
+47	de	de	ADP	_	_	48	case	_	_	*
+48	négligences	négligence	NOUN	_	Gender=Fem|Number=Plur	46	nmod	_	_	*
+49	de	de	ADP	_	_	50	case	_	_	*
+50	confort	confort	NOUN	_	Gender=Masc|Number=Sing	48	nmod	_	SpaceAfter=No	*
+51	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 7
+# text = Si la capacité physique est un des éléments pour bien vivre, chacun était d'accord pour dire que les moyens sont une première condition pour mener une vie plus agréable.
+1	Si	si	SCONJ	_	_	6	mark	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	capacité	capacité	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+4	physique	physique	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+6	un	un	PRON	_	Gender=Masc|Number=Sing	17	advcl	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	éléments	élément	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	pour	pour	ADP	_	_	12	mark	_	_	*
+11	bien	bien	ADV	_	_	12	advmod	_	_	*
+12	vivre	vivre	VERB	_	VerbForm=Inf	9	acl	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	6	punct	_	_	*
+14	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*
+15	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	cop	_	_	*
+16	d'	de	ADP	_	_	17	case	_	SpaceAfter=No	*
+17	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+18	pour	pour	ADP	_	_	19	mark	_	_	*
+19	dire	dire	VERB	_	VerbForm=Inf	17	advcl	_	_	*
+20	que	que	SCONJ	_	_	26	mark	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	moyens	moyen	NOUN	_	Gender=Masc|Number=Plur	26	nsubj	_	_	*
+23	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	_	*
+24	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+25	première	premier	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+26	condition	condition	NOUN	_	Gender=Fem|Number=Sing	19	ccomp	_	_	*
+27	pour	pour	ADP	_	_	28	mark	_	_	*
+28	mener	mener	VERB	_	VerbForm=Inf	26	advcl	_	_	1:LVC.full
+29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	vie	vie	NOUN	_	Gender=Fem|Number=Sing	28	obj	_	_	1
+31	plus	plus	ADV	_	_	32	advmod	_	_	*
+32	agréable	agréable	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 8
+# text = Mais il faut savoir aussi lui donner un sens.
+1	Mais	mais	CCONJ	_	_	3	cc	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+3	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	savoir	savoir	VERB	_	VerbForm=Inf	3	ccomp	_	_	*
+5	aussi	aussi	ADV	_	_	4	advmod	_	_	*
+6	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	7	iobj	_	_	*
+7	donner	donner	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	sens	sens	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 9
+# text = M. Duval dira : « Si on est attaché aux valeurs du cœur, on vieillit bien, si on est attaché aux valeurs matérielles, on vit mal ».
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	Duval	Duval	PROPN	_	_	1	flat:name	_	_	*
+3	dira	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	:	:	PUNCT	_	_	9	punct	_	_	*
+5	«	«	PUNCT	_	_	9	punct	_	_	*
+6	Si	si	SCONJ	_	_	9	mark	_	_	*
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	attaché	attacher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	_	*
+10-11	aux	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	valeurs	valeur	NOUN	_	Gender=Fem|Number=Plur	9	obl:arg	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_	*
+18	vieillit	vieillir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	*
+19	bien	bien	ADV	_	_	18	obj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	24	punct	_	_	*
+21	si	si	SCONJ	_	_	24	mark	_	_	*
+22	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	24	nsubj	_	_	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+24	attaché	attacher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+25-26	aux	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_	*
+27	valeurs	valeur	NOUN	_	Gender=Fem|Number=Plur	24	obl:arg	_	_	*
+28	matérielles	matériel	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	31	nsubj	_	_	*
+31	vit	vivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_	*
+32	mal	mal	NOUN	_	Gender=Masc|Number=Sing	31	obj	_	_	*
+33	»	»	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 10
+# text = Les relations affectives, psychologiques et sociales sont importantes.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	relations	relation	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*
+3	affectives	affectif	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	psychologiques	psychologic	ADJ	_	Gender=Fem|Number=Plur	3	conj	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	sociales	social	ADJ	_	Gender=Fem|Number=Plur	3	conj	_	_	*
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+9	importantes	important	ADJ	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 11
+# text = Maïté Vertu, conseillère en économie sociale et familiale, a rappelé que pour se maintenir en bonne santé, il convenait d'agir pour prévenir les risques de chute.
+1	Maïté	Maïté	PROPN	_	_	12	nsubj	_	_	*
+2	Vertu	vertu	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	conseillère	conseiller	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	économie	économie	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7	sociale	social	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	7	conj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	1	punct	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	rappelé	rappeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	que	que	SCONJ	_	_	22	mark	_	_	*
+14	pour	pour	ADP	_	_	16	mark	_	_	*
+15	se	se	PRON	_	Person=3|PronType=Prs	16	obj	_	_	*
+16	maintenir	maintenir	VERB	_	VerbForm=Inf	22	advcl	_	_	*
+17	en	en	ADP	_	_	19	case	_	_	*
+18	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+19	santé	santé	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	16	punct	_	_	*
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_	1:VID
+22	convenait	convenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	ccomp	_	_	1
+23	d'	de	ADP	_	_	24	mark	_	SpaceAfter=No	*
+24	agir	agir	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+25	pour	pour	ADP	_	_	26	mark	_	_	*
+26	prévenir	prévenir	VERB	_	VerbForm=Inf	24	advcl	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*
+28	risques	risque	NOUN	_	Gender=Masc|Number=Plur	26	obj	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	chute	chute	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 12
+# text = « Ne pas attendre pour réaliser les aménagements, éliminer les obstacles et les pièges inutiles, soigner l'éclairage, éviter les gestes inutiles, ne pas renoncer à une installation sous prétexte que cela fait vieux, soigner les accès, sont les sept règles d'or de la maison bien organisée » Françoise Bulté a souligné qu'accepter de vieillir, c'est ne pas hésiter à faire appel aux services spécialisés, aide-ménagère, livraison de produits...
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	attendre	attendre	VERB	_	VerbForm=Inf	47	ccomp	_	_	*
+5	pour	pour	ADP	_	_	6	mark	_	_	*
+6	réaliser	réaliser	VERB	_	VerbForm=Inf	4	advcl	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	aménagements	aménagement	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	éliminer	éliminer	VERB	_	VerbForm=Inf	8	conj	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	obstacles	obstacle	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	pièges	piège	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+16	inutiles	inutile	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	soigner	soigner	VERB	_	VerbForm=Inf	4	conj	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	éclairage	éclairage	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	éviter	éviter	VERB	_	VerbForm=Inf	4	conj	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	gestes	geste	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	inutiles	inutile	ADJ	_	Gender=Masc|Number=Plur	24	amod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	ne	ne	ADV	_	Polarity=Neg	29	advmod	_	_	*
+28	pas	pas	ADV	_	Polarity=Neg	29	advmod	_	_	*
+29	renoncer	renoncer	VERB	_	VerbForm=Inf	4	conj	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	installation	installation	NOUN	_	Gender=Fem|Number=Sing	29	obl:arg	_	_	*
+33	sous	sous	ADP	_	_	34	case	_	_	*
+34	prétexte	prétexte	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	_	*
+35	que	que	SCONJ	_	_	37	mark	_	_	*
+36	cela	cela	PRON	_	Number=Sing|PronType=Dem	37	nsubj	_	_	1:VID
+37	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	_	_	1
+38	vieux	vieux	ADJ	_	Gender=Masc|Number=Plur	37	xcomp	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	40	punct	_	_	*
+40	soigner	soigner	VERB	_	VerbForm=Inf	37	advcl	_	_	*
+41	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	_	_	*
+42	accès	accès	NOUN	_	Gender=Masc|Number=Plur	40	obj	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	4	punct	_	_	*
+44	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	47	cop	_	_	*
+45	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	47	det	_	_	*
+46	sept	sept	NUM	_	_	47	nummod	_	_	*
+47	règles	règle	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+48	d'	de	ADP	_	_	49	case	_	SpaceAfter=No	*
+49	or	or	NOUN	_	Gender=Masc|Number=Sing	47	nmod	_	_	*
+50	de	de	ADP	_	_	52	case	_	_	*
+51	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_	*
+52	maison	maison	NOUN	_	Gender=Fem|Number=Sing	47	nmod	_	_	*
+53	bien	bien	ADV	_	_	54	advmod	_	_	*
+54	organisée	organisé	ADJ	_	Gender=Fem|Number=Sing	52	amod	_	_	*
+55	»	»	PUNCT	_	_	52	punct	_	_	*
+56	Françoise	Françoise	PROPN	_	_	59	nsubj	_	_	*
+57	Bulté	Bulté	PROPN	_	_	56	flat:name	_	_	*
+58	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	59	aux:tense	_	_	*
+59	souligné	souligner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	47	acl:relcl	_	_	*
+60	qu'	que	SCONJ	_	_	61	mark	_	SpaceAfter=No	*
+61	accepter	accepter	VERB	_	VerbForm=Inf	59	xcomp	_	_	*
+62	de	de	ADP	_	_	63	mark	_	_	*
+63	vieillir	vieillir	VERB	_	VerbForm=Inf	61	xcomp	_	SpaceAfter=No	*
+64	,	,	PUNCT	_	_	69	punct	_	_	*
+65	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	69	nsubj	_	SpaceAfter=No	*
+66	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	69	cop	_	_	*
+67	ne	ne	ADV	_	Polarity=Neg	69	advmod	_	_	*
+68	pas	pas	ADV	_	Polarity=Neg	69	advmod	_	_	*
+69	hésiter	hésiter	VERB	_	VerbForm=Inf	47	conj	_	_	*
+70	à	à	ADP	_	_	71	mark	_	_	*
+71	faire	faire	VERB	_	VerbForm=Inf	69	xcomp	_	_	2:LVC.full;3:LVC.full
+72	appel	appel	NOUN	_	Gender=Masc|Number=Sing	71	obj	_	_	2
+73-74	aux	_	_	_	_	_	_	_	_	*
+73	à	à	ADP	_	_	75	case	_	_	*
+74	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	75	det	_	_	*
+75	services	service	NOUN	_	Gender=Masc|Number=Plur	71	obl:arg	_	_	3
+76	spécialisés	spécialisé	ADJ	_	Gender=Masc|Number=Plur	75	amod	_	SpaceAfter=No	*
+77	,	,	PUNCT	_	_	78	punct	_	_	*
+78	aide-ménagère	aide-ménagère	NOUN	_	Gender=Fem|Number=Sing	47	conj	_	SpaceAfter=No	*
+79	,	,	PUNCT	_	_	80	punct	_	_	*
+80	livraison	livraison	NOUN	_	Gender=Fem|Number=Sing	47	conj	_	_	*
+81	de	de	ADP	_	_	82	case	_	_	*
+82	produits	produit	NOUN	_	Gender=Masc|Number=Plur	80	nmod	_	SpaceAfter=No	*
+83	...	...	PUNCT	_	_	47	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 13
+# text = mais également s'intégrer dans la vie culturelle et associative locale.
+1	mais	mais	CCONJ	_	_	4	cc	_	_	*
+2	également	également	ADV	_	_	4	advmod	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	*
+4	intégrer	intégrer	VERB	_	VerbForm=Inf	0	root	_	_	*
+5	dans	dans	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	vie	vie	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	culturelle	culturel	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	associative	associatif	ADJ	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+11	locale	local	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 14
+# text = « Il n'y a pas de recettes miracles, mais les échanges que nous avons eu nous permettent de voir les choses de façon différentes.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl:subj	_	_	1:VID
+3	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*
+4	y	y	PRON	_	_	5	expl:comp	_	_	1
+5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+7	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	recettes	recette	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	*
+9	miracles	miracle	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	19	punct	_	_	*
+11	mais	mais	CCONJ	_	_	19	cc	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	échanges	échange	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*
+14	que	que	SCONJ	_	_	17	mark	_	_	*
+15	nous	nous	PRON	_	Number=Plur|Person=1|PronType=Prs	17	nsubj	_	_	*
+16	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+18	nous	le	PRON	_	Number=Plur|Person=1|PronType=Prs	17	obj	_	_	*
+19	permettent	permettre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+20	de	de	ADP	_	_	21	mark	_	_	*
+21	voir	voir	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	choses	chose	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	façon	façon	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	_	*
+26	différentes	différent	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-30_33694.txt 15
+# text = On a rajeunit de 10 ans », telles sont les réflexions à l'issue de cette journée enrichissante pour les participants.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	rajeunit	rajeunir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	10	10	NUM	_	_	6	nummod	_	_	*
+6	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	_	*
+7	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	12	punct	_	_	*
+9	telles	tel	ADJ	_	Gender=Fem|Number=Plur	12	nsubj	_	_	*
+10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	réflexions	réflexion	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	issue	issue	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	18	det	_	_	*
+18	journée	journée	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19	enrichissante	enrichissant	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+20	pour	pour	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	participants	participant	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

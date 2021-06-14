@@ -1,0 +1,683 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-21_62209.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 1
+# text = Appel aux bénévoles
+1	Appel	appel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2-3	aux	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	bénévoles	bénévole	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 2
+# text = Le président a présenté le rapport d'activités de 2002 en indiquant que les collectes avaient connu une certaine stabilité : 101 donneurs, 97 prélevés en mars dont 7 nouveaux.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	activités	activité	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	2002	2002	NUM	_	_	6	nmod	_	_	*
+11	en	en	ADP	_	_	12	mark	_	_	*
+12	indiquant	indiquer	VERB	_	Tense=Pres|VerbForm=Part	4	advcl	_	_	*
+13	que	que	SCONJ	_	_	17	mark	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	collectes	collecte	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	_	_	*
+16	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	aux:tense	_	_	*
+17	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	ccomp	_	_	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+19	certaine	certain	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+20	stabilité	stabilité	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+21	:	:	PUNCT	_	_	23	punct	_	_	*
+22	101	101	NUM	_	_	23	nummod	_	_	*
+23	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	4	parataxis	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	97	97	NUM	_	_	23	appos	_	_	*
+26	prélevés	prélevé	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	25	acl	_	_	*
+27	en	en	ADP	_	_	28	case	_	_	*
+28	mars	mars	NOUN	_	Gender=Masc|Number=Sing	26	obl	_	_	*
+29	dont	dont	PRON	_	PronType=Rel	31	iobj	_	_	*
+30	7	7	NUM	_	_	31	nummod	_	_	*
+31	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	28	acl:relcl	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 3
+# text = 100 donneurs : 90 prélevés en septembre dont 6 nouveaux et 5 plasmaphérèses, ces dernières étant de nouveau réalisées dans les collectes mobiles avec du nouveau matériel.
+1	100	100	NUM	_	_	2	nummod	_	_	*
+2	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	20	obl:mod	_	_	*
+3	:	:	PUNCT	_	_	4	punct	_	_	*
+4	90	90	NUM	_	_	2	appos	_	_	*
+5	prélevés	prélever	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+8	dont	dont	PRON	_	PronType=Rel	10	nmod	_	_	*
+9	6	6	NUM	_	_	10	nummod	_	_	*
+10	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	5	xcomp	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	5	5	NUM	_	_	13	nummod	_	_	*
+13	plasmaphérèses	plasmaphérèse	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	2	punct	_	_	*
+15	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	16	det	_	_	*
+16	dernières	dernier	NOUN	_	Gender=Fem|Number=Plur	20	nsubj:pass	_	_	*
+17	étant	être	AUX	_	Tense=Pres|VerbForm=Part	20	aux:pass	_	_	*
+18	de	de	ADP	_	_	20	advmod	_	_	*
+19	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	18	fixed	_	_	*
+20	réalisées	réaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+21	dans	dans	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	collectes	collecte	NOUN	_	Gender=Fem|Number=Plur	20	obl:mod	_	_	*
+24	mobiles	mobile	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*
+25	avec	avec	ADP	_	_	29	case	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	29	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+28	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*
+29	matériel	matériel	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 4
+# text = Les prochaines collectes 2003, le 20 mars et le 18 septembre.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+2	prochaines	prochain	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+3	collectes	collecte	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+4	2003	2003	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	20	20	NUM	_	_	3	conj	_	_	*
+8	mars	mars	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	18	18	NUM	_	_	3	conj	_	_	*
+12	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 5
+# text = Un appel est lancé pour que des bénévoles puissent s'investir au sein du comité.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	appel	appel	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	2:LVC.full
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	2
+5	pour	pour	ADP	_	_	10	mark	_	_	*
+6	que	que	SCONJ	_	_	10	mark	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	bénévoles	bénévole	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+10	puissent	pouvoir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*
+11	s'	se	PRON	_	Person=3|PronType=Prs	12	expl:comp	_	SpaceAfter=No	1:IRV
+12	investir	investir	VERB	_	VerbForm=Inf	10	xcomp	_	_	1
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	sein	sein	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	comité	comité	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 6
+# text = M. Bury, président départemental, a félicité les donneurs rappelant que 250 poches sont nécessaires par jour sur le département et qu'il faut se mobiliser.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+2	Bury	Bury	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	président	président	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	félicité	féliciter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	_	*
+11	rappelant	rappeler	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	*
+12	que	que	SCONJ	_	_	16	mark	_	_	*
+13	250	250	NUM	_	_	14	nummod	_	_	*
+14	poches	poche	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	_	_	*
+15	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+16	nécessaires	nécessaire	ADJ	_	Gender=Fem|Number=Plur	11	ccomp	_	_	*
+17	par	par	ADP	_	_	18	case	_	_	*
+18	jour	jour	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	département	département	NOUN	_	Gender=Masc|Number=Sing	16	obl	_	_	*
+22	et	et	CCONJ	_	_	25	cc	_	_	*
+23	qu'	que	SCONJ	_	_	25	mark	_	SpaceAfter=No	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl:subj	_	_	1:VID
+25	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	1
+26	se	se	PRON	_	Person=3|PronType=Prs	27	obj	_	_	*
+27	mobiliser	mobiliser	VERB	_	VerbForm=Inf	25	ccomp	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 7
+# text = Il faut continuer à être convaincant auprès des non donneurs, la transfusion en France est l'une des plus sûres du monde.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	continuer	continuer	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+4	à	à	ADP	_	_	6	mark	_	_	*
+5	être	être	AUX	_	VerbForm=Inf	6	aux:tense	_	_	*
+6	convaincant	convaincer	VERB	_	Tense=Pres|VerbForm=Part	19	advcl	_	_	*
+7	auprès	auprès	ADV	_	_	6	advmod	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	11	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+10	non	non	ADV	_	_	11	advmod	_	_	*
+11	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	6	punct	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	transfusion	transfusion	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	France	France	PROPN	_	_	14	nmod	_	_	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	une	un	PRON	_	Gender=Fem|Number=Sing	3	xcomp	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	23	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+22	plus	plus	ADV	_	_	23	advmod	_	_	*
+23	sûres	sûr	ADJ	_	Gender=Fem|Number=Plur	19	nmod	_	_	*
+24-25	du	_	_	_	_	_	_	_	_	*
+24	de	de	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	monde	monde	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 8
+# text = Didier Sartelet, pour sa part, a tenu à féliciter Bernard Mangin trésorier de l'amicale ayant été nommé dernièrement commandeur dans l'ordre du sang.
+1	Didier	Didier	PROPN	_	_	9	nsubj	_	_	*
+2	Sartelet	Sartelet	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	part	part	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	1	punct	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	tenu	tenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	à	à	ADP	_	_	11	mark	_	_	*
+11	féliciter	féliciter	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	Bernard	Bernard	PROPN	_	_	11	obj	_	_	*
+13	Mangin	Mangin	PROPN	_	_	12	flat:name	_	_	*
+14	trésorier	trésorier	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+18	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	20	aux:tense	_	_	*
+19	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	aux:pass	_	_	*
+20	nommé	nommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl:relcl	_	_	*
+21	dernièrement	dernièrement	ADV	_	_	22	advmod	_	_	*
+22	commandeur	commandeur	NOUN	_	Gender=Masc|Number=Sing	20	xcomp	_	_	*
+23	dans	dans	ADP	_	_	25	case	_	_	*
+24	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*
+25	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+26-27	du	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	sang	sang	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 9
+# text = Responsable du CLS, M. Sartelet a indiqué que les jeunes participants aux activités et aux cours de secourisme (démarche citoyenne) seraient sollicités pour participer aux dons du sang.
+1	Responsable	responsable	ADJ	_	Gender=Masc|Number=Sing	9	advcl	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	CLS	CLS	PROPN	_	_	1	obl:arg	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	M.	M.	PROPN	_	_	9	nsubj	_	_	*
+7	Sartelet	Sartelet	PROPN	_	_	6	flat:name	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	indiqué	indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	que	que	SCONJ	_	_	28	mark	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+12	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*
+13	participants	participant	NOUN	_	Gender=Masc|Number=Plur	28	nsubj:pass	_	_	*
+14-15	aux	_	_	_	_	_	_	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	activités	activité	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_	*
+17	et	et	CCONJ	_	_	20	cc	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	cours	cours	NOUN	_	Gender=Masc|Number=Plur	16	conj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	secourisme	secourisme	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+24	démarche	démarche	NOUN	_	Gender=Fem|Number=Sing	22	appos	_	_	*
+25	citoyenne	citoyen	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	24	punct	_	_	*
+27	seraient	être	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	_	*
+28	sollicités	solliciter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	ccomp	_	_	*
+29	pour	pour	ADP	_	_	30	mark	_	_	*
+30	participer	participer	VERB	_	VerbForm=Inf	28	advcl	_	_	*
+31-32	aux	_	_	_	_	_	_	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_	*
+33	dons	don	NOUN	_	Gender=Masc|Number=Plur	30	obl:arg	_	_	*
+34-35	du	_	_	_	_	_	_	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	sang	sang	NOUN	_	Gender=Masc|Number=Sing	33	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 10
+# text = Le Dr Jacquot a fait un exposé sur le plasma.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	Dr	Dr	PROPN	_	_	5	nsubj	_	_	*
+3	Jacquot	Jacquot	PROPN	_	_	2	flat:name	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	exposé	exposé	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	plasma	plasma	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 11
+# text = Il a lancé également un appel aux volontaires pour soutenir l'amicale si on ne veut pas qu'elle disparaisse.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	appel	appel	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+7-8	aux	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	volontaires	volontaire	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*
+11	soutenir	soutenir	VERB	_	VerbForm=Inf	3	advcl	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	si	si	SCONJ	_	_	17	mark	_	_	*
+15	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_	*
+16	ne	ne	ADV	_	Polarity=Neg	17	advmod	_	_	*
+17	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+18	pas	pas	ADV	_	Polarity=Neg	17	advmod	_	_	*
+19	qu'	que	SCONJ	_	_	21	mark	_	SpaceAfter=No	*
+20	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_	*
+21	disparaisse	disparaître	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 12
+# text = C'est devant une quarantaine de personnes que Jack Finance, président de l'Association des donneurs de sang bénévoles, a ouvert l'assemblée générale en présence de M. Bury, président départemental ;
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	devant	devant	ADP	_	_	5	case	_	_	*
+4	une	un	NUM	_	_	5	nummod	_	_	*
+5	quarantaine	quarantaine	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+8	que	que	SCONJ	_	_	9	case	_	_	*
+9	Jack	Jack	PROPN	_	_	5	nmod	_	_	*
+10	Finance	finance	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	président	président	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	Association	association	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	sang	sang	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+21	bénévoles	bénévole	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	9	punct	_	_	*
+23	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+24	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	*
+27	générale	général	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+28	en	en	ADP	_	_	29	case	_	_	*
+29	présence	présence	NOUN	_	Gender=Fem|Number=Sing	26	nmod	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*
+32	Bury	Bury	PROPN	_	_	31	flat:name	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	président	président	NOUN	_	Gender=Masc|Number=Sing	31	appos	_	_	*
+35	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*
+36	;	;	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 13
+# text = Didier Sartelet, adjoint au maire ;
+1	Didier	Didier	PROPN	_	_	0	root	_	_	*
+2	Sartelet	Sartelet	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	adjoint	adjoindre	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	maire	maire	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 14
+# text = Dr Jacquot, représentant de l'établissement français du sang.
+1	Dr	de	ADP	_	_	2	case	_	_	*
+2	Jacquot	Jacquot	PROPN	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	représentant	représentant	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	français	français	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	sang	sang	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 15
+# text = Dans son rapport moral, le président a présenté quelques chiffres tirés d'une enquête fort intéressante sur l'opinion des personnes concernant le don du sang.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+4	moral	moral	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	président	président	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	quelques	quelque	DET	_	Gender=Masc|Number=Plur	11	det	_	_	*
+11	chiffres	chiffre	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+12	tirés	tirer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+16	fort	fort	ADV	_	_	17	advmod	_	_	*
+17	intéressante	intéressant	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+18	sur	sur	ADP	_	_	20	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+20	opinion	opinion	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	_	*
+24	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	23	acl	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	don	don	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	sang	sang	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 16
+# text = Le premier enseignement de cette étude est l'opinion très positive exprimée par tous sur la sécurité transfusionnelle, les conditions d'accueil en collecte, le professionnalisme des équipes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	premier	premier	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_	*
+6	étude	étude	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	opinion	opinion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+10	très	très	ADV	_	_	11	advmod	_	_	*
+11	positive	positif	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+12	exprimée	exprimer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*
+13	par	par	ADP	_	_	14	case	_	_	*
+14	tous	tout	PRON	_	Gender=Masc|Number=Plur	12	obl:agent	_	_	*
+15	sur	sur	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+18	transfusionnelle	transfusionnel	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*
+21	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+24	en	en	ADP	_	_	25	case	_	_	*
+25	collecte	collecte	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	professionnalisme	professionnalisme	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_	*
+31	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	28	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 17
+# text = « C'est rassurant », a dit le président, « le don du sang a retrouvé aujourd'hui une bonne image aux yeux du grand public, il était temps !
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	rassurant	rassurant	ADJ	_	Gender=Masc|Number=Sing	8	ccomp	_	_	*
+5	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	président	président	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	«	«	PUNCT	_	_	14	punct	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	don	don	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	sang	sang	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+18	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+19	retrouvé	retrouver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	xcomp	_	_	*
+20	aujourd'hui	aujourd'hui	ADV	_	_	19	advmod	_	_	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+22	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+23	image	image	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+24-25	aux	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_	*
+26	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	19	obl:mod	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	30	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+29	grand	grand	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+30	public	public	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	34	punct	_	_	*
+32	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	nsubj	_	_	1:VID
+33	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	34	cop	_	_	1
+34	temps	temps	NOUN	_	Gender=Masc|Number=Sing	19	parataxis	_	_	1
+35	!	!	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 18
+# text = Seulement voilà, 4 % de la population française passe à l'acte chaque année, il y a un fossé entre l'intention et la réalité » « De nombreuses questions se posent.
+1	Seulement	seulement	ADV	_	_	2	advmod	_	_	*
+2	voilà	voilà	VERB	_	_	10	advcl	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	4	4	NUM	_	_	5	nummod	_	_	*
+5	%	%	SYM	_	_	10	nsubj	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	population	population	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+9	française	français	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*
+13	acte	acte	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+14	chaque	chaque	DET	_	Gender=Fem|Number=Sing	15	det	_	_	*
+15	année	année	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	expl:subj	_	_	1:VID
+18	y	y	PRON	_	_	19	expl:comp	_	_	1
+19	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_	1
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	fossé	fossé	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	*
+22	entre	entre	ADP	_	_	24	case	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	intention	intention	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+25	et	et	CCONJ	_	_	27	cc	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	_	*
+28	»	»	PUNCT	_	_	10	punct	_	_	*
+29	«	«	PUNCT	_	_	34	punct	_	_	*
+30	De	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_	*
+31	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	32	amod	_	_	*
+32	questions	question	NOUN	_	Gender=Fem|Number=Plur	34	nsubj	_	_	2:VID
+33	se	se	PRON	_	Person=3|PronType=Prs	34	expl:pass	_	_	2
+34	posent	poser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	SpaceAfter=No	2
+35	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 19
+# text = Cela voudrait dire », s'étonne le président, « que notre action de sensibilisation à nous donneurs, à nous amicalistes, n'est pas suffisante ou suffisamment crédible pour inciter les non-donneurs à venir faire ce geste ?
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	*
+2	voudrait	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_	3:VID
+3	dire	dire	VERB	_	VerbForm=Inf	2	xcomp	_	_	3
+4	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*
+6	s'	se	PRON	_	Person=3|PronType=Prs	7	obj	_	SpaceAfter=No	2:IRV
+7	étonne	étonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	président	président	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	28	punct	_	_	*
+11	«	«	PUNCT	_	_	28	punct	_	_	*
+12	que	que	SCONJ	_	_	28	mark	_	_	*
+13	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*
+14	action	action	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	sensibilisation	sensibilisation	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	nous	lui	ADJ	_	_	19	amod	_	_	*
+19	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	22	punct	_	_	*
+21	à	à	ADP	_	_	22	case	_	_	*
+22	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	14	nmod	_	_	*
+23	amicalistes	amicaliste	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	14	punct	_	_	*
+25	n'	ne	ADV	_	Polarity=Neg	28	advmod	_	SpaceAfter=No	*
+26	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_	*
+27	pas	pas	ADV	_	Polarity=Neg	28	advmod	_	_	*
+28	suffisante	suffisant	ADJ	_	Gender=Fem|Number=Sing	7	parataxis	_	_	*
+29	ou	ou	CCONJ	_	_	31	cc	_	_	*
+30	suffisamment	suffisamment	ADV	_	_	31	advmod	_	_	*
+31	crédible	crédible	ADJ	_	Gender=Fem|Number=Sing	28	conj	_	_	*
+32	pour	pour	ADP	_	_	33	mark	_	_	*
+33	inciter	inciter	VERB	_	VerbForm=Inf	28	advcl	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*
+35	non-donneurs	non-donneur	NOUN	_	Gender=Masc|Number=Plur	33	obj	_	_	*
+36	à	à	ADP	_	_	37	mark	_	_	*
+37	venir	venir	VERB	_	VerbForm=Inf	33	xcomp	_	_	*
+38	faire	faire	VERB	_	VerbForm=Inf	37	xcomp	_	_	1:LVC.full
+39	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	40	det	_	_	*
+40	geste	geste	NOUN	_	Gender=Masc|Number=Sing	38	obj	_	_	1
+41	?	?	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 20
+# text = Je n'en suis pas certain.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*
+3	en	en	PRON	_	Person=3	6	iobj	_	_	*
+4	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	certain	certain	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 21
+# text = Quoi qu'il en soit, nous continuerons à expliquer davantage au donneur potentiel, les contraintes, les conditions de prélèvement, les raisons de refus, l'utilité du don du sang.
+1	Quoi	quoi	ADV	_	_	8	mark	_	_	*
+2	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+4	en	en	PRON	_	Person=3	8	obl:mod	_	_	*
+5	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	continuerons	continuer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	à	à	ADP	_	_	10	mark	_	_	*
+10	expliquer	expliquer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	davantage	davantage	ADV	_	_	14	advmod	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	donneur	donneur	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*
+15	potentiel	potentiel	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*
+18	contraintes	contrainte	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*
+21	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	18	conj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	prélèvement	prélèvement	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	26	punct	_	_	*
+25	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_	*
+26	raisons	raison	NOUN	_	Gender=Fem|Number=Plur	18	conj	_	_	*
+27	de	de	ADP	_	_	28	case	_	_	*
+28	refus	refus	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	31	punct	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	utilité	utilité	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+32-33	du	_	_	_	_	_	_	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	don	don	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*
+35-36	du	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	sang	sang	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 22
+# text = Le donneur doit pouvoir trouver également les réponses à ces questions auprès de son médecin, dentiste ou pharmacien et, bien sûr, auprès des autres donneurs et associations.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	donneur	donneur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+3	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	pouvoir	pouvoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	trouver	trouver	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	également	également	ADV	_	_	5	advmod	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	réponses	réponse	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	11	det	_	_	*
+11	questions	question	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*
+12	auprès	auprès	ADV	_	_	11	advmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	dentiste	dentiste	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_	*
+18	ou	ou	CCONJ	_	_	19	cc	_	_	*
+19	pharmacien	pharmacien	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_	*
+20	et	et	CCONJ	_	_	25	cc	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	20	punct	_	_	*
+22	bien	bien	ADV	_	_	25	advmod	_	_	*
+23	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	22	fixed	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	22	punct	_	_	*
+25	auprès	auprès	ADV	_	_	15	conj	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	29	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+28	autres	autre	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	_	*
+29	donneurs	donneur	NOUN	_	Gender=Masc|Number=Plur	25	obl:arg	_	_	*
+30	et	et	CCONJ	_	_	31	cc	_	_	*
+31	associations	association	NOUN	_	Gender=Fem|Number=Plur	29	conj	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-21_62209.txt 23
+# text = Nous réussirons ainsi à faire comprendre la nécessité du don du sang bénévole et faire accroître le nombre de dons ».
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	réussirons	réussir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+3	ainsi	ainsi	ADV	_	_	2	advmod	_	_	*
+4	à	à	ADP	_	_	6	mark	_	_	*
+5	faire	faire	AUX	_	VerbForm=Inf	6	aux:caus	_	_	*
+6	comprendre	comprendre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	nécessité	nécessité	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	don	don	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	sang	sang	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	bénévole	bénévole	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	faire	faire	AUX	_	VerbForm=Inf	18	aux:caus	_	_	*
+18	accroître	accroître	VERB	_	VerbForm=Inf	6	conj	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	dons	don	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*
+23	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,958 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-02_98.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 1
+# text = 2002 dans le rétroviseur
+1	2002	2002	NUM	_	_	0	root	_	_	*
+2	dans	dans	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	rétroviseur	rétroviseur	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 2
+# text = La ravissante Julie Nobel, Miss Alsace en titre, rend visite aux « Violons d'Ingres » C'est elle qui, le soir, remettra leur prix aux trois premiers du salon, trois Comtois d'ailleurs.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+2	ravissante	ravissant	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	Julie	Julie	PROPN	_	_	11	nsubj	_	_	*
+4	Nobel	Nobel	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*
+6	Miss	Miss	PROPN	_	_	3	appos	_	_	*
+7	Alsace	Alsace	PROPN	_	_	6	flat:name	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	titre	titre	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	3	punct	_	_	*
+11	rend	rendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+12	visite	visite	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	1
+13-14	aux	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	16	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+15	«	«	PUNCT	_	_	16	punct	_	_	*
+16	Violons	Violons	PROPN	_	_	11	obl:arg	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	Ingres	Ingres	PROPN	_	_	16	nmod	_	_	*
+19	»	»	PUNCT	_	_	16	punct	_	_	*
+20	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	22	nsubj	_	SpaceAfter=No	*
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+22	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	parataxis	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	26	punct	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	soir	soir	NOUN	_	Gender=Masc|Number=Sing	28	obl:mod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	26	punct	_	_	*
+28	remettra	remettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	acl:relcl	_	_	*
+29	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	30	det	_	_	*
+30	prix	prix	NOUN	_	Gender=Masc|Number=Sing	28	obj	_	_	*
+31-32	aux	_	_	_	_	_	_	_	_	*
+31	à	à	ADP	_	_	34	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_	*
+33	trois	trois	NUM	_	_	34	nummod	_	_	*
+34	premiers	premier	NOUN	_	Gender=Masc|Number=Plur	28	obl:arg	_	_	*
+35-36	du	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	salon	salon	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	40	punct	_	_	*
+39	trois	trois	NUM	_	_	40	nummod	_	_	*
+40	Comtois	Comtois	PROPN	_	_	37	conj	_	_	*
+41	d'	de	ADP	_	_	40	advmod	_	SpaceAfter=No	*
+42	ailleurs	ailleurs	ADV	_	_	41	fixed	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 3
+# text = JANVIER Le 7, lors de la réception organisée à l'occasion de la nouvelle année, à Dannemarie, le conseiller général Rémi With annonce la construction en 2003 de la nouvelle gendarmerie et les études pour le contournement routier Retzwiller-Dannemarie-Ballersdorf.
+1	JANVIER	janvier	PROPN	_	_	26	obl:mod	_	_	*
+2	Le	le	PROPN	_	_	1	flat:name	_	_	*
+3	7	7	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	lors	lors	ADV	_	_	26	advmod	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	réception	réception	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*
+9	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+13	de	de	ADP	_	_	16	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+15	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+16	année	année	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	à	à	ADP	_	_	19	case	_	_	*
+19	Dannemarie	Dannemarie	PROPN	_	_	12	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	5	punct	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	conseiller	conseiller	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	_	_	*
+23	général	général	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24	Rémi	Rémi	PROPN	_	_	22	appos	_	_	*
+25	With	with	PROPN	_	_	24	flat:name	_	_	*
+26	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	construction	construction	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	_	*
+29	en	en	ADP	_	_	30	case	_	_	*
+30	2003	2003	NUM	_	_	28	nmod	_	_	*
+31	de	de	ADP	_	_	34	case	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+33	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_	*
+34	gendarmerie	gendarmerie	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	_	*
+35	et	et	CCONJ	_	_	37	cc	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_	*
+37	études	étude	NOUN	_	Gender=Fem|Number=Plur	34	conj	_	_	*
+38	pour	pour	ADP	_	_	40	case	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	contournement	contournement	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+41	routier	routier	ADJ	_	Gender=Masc|Number=Sing	40	amod	_	_	*
+42	Retzwiller-Dannemarie-Ballersdorf	Retzwiller-Dannemarie-Ballersdorf	PROPN	_	_	40	appos	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 4
+# text = A Altkirch, lors de la réception de Nouvel An, devant trois cents invités, le député-maire Jean-Luc Reitzer souhaite l'intervention de l'ONU dans le conflit israélo-palestinien et un milliard de francs pour le réseau routier sundgauvien.
+1	A	à	ADP	_	_	2	case	_	_	*
+2	Altkirch	Altkirch	PROPN	_	_	22	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	lors	lors	ADV	_	_	22	advmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	réception	réception	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Nouvel	Nouvel	PROPN	_	_	7	nmod	_	_	*
+10	An	an	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	devant	devant	ADP	_	_	14	case	_	_	*
+13	trois	trois	NUM	_	_	14	nummod	_	_	*
+14	cents	cent	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+15	invités	inviter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	14	acl	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	14	punct	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	député-maire	député-maire	NOUN	_	Gender=Masc|Number=Sing	22	nsubj	_	_	*
+19	Jean-	jean-	PROPN	_	_	18	appos	_	SpaceAfter=No	*
+20	Luc	Luc	PROPN	_	_	19	flat:name	_	_	*
+21	Reitzer	Reitzer	PROPN	_	_	19	flat:name	_	_	*
+22	souhaite	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*
+27	ONU	ONU	PROPN	_	_	24	nmod	_	_	*
+28	dans	dans	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	conflit	conflit	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+31	israélo-palestinien	israélo-palestinien	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+32	et	et	CCONJ	_	_	34	cc	_	_	*
+33	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*
+34	milliard	milliard	NOUN	_	Gender=Masc|Number=Sing	24	conj	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	francs	franc	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	_	*
+37	pour	pour	ADP	_	_	39	case	_	_	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	_	*
+40	routier	routier	ADJ	_	Gender=Masc|Number=Sing	39	amod	_	_	*
+41	sundgauvien	sundgauvien	ADJ	_	Gender=Masc|Number=Sing	39	amod	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 5
+# text = Le 19, les gendarmes célèbrent sainte Geneviève à Ligsdorf.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	19	19	NUM	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	gendarmes	gendarme	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*
+6	célèbrent	célèbrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+7	sainte	sainter	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+8	Geneviève	Geneviève	PROPN	_	_	7	appos	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	Ligsdorf	Ligsdorf	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 6
+# text = Le capitaine Pascal Gross annonce de nouvelles casernes à Ferrette et Dannemarie et de bons résultats dans la lutte contre les accidents et la toxicomanie.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	capitaine	capitaine	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	Pascal	Pascal	PROPN	_	_	2	appos	_	_	*
+4	Gross	Gross	PROPN	_	_	3	flat:name	_	_	*
+5	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+7	nouvelles	nouveau	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*
+8	casernes	caserne	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	Ferrette	Ferrette	PROPN	_	_	8	nmod	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	Dannemarie	Dannemarie	PROPN	_	_	10	conj	_	_	*
+13	et	et	CCONJ	_	_	16	cc	_	_	*
+14	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+15	bons	bon	ADJ	_	Gender=Masc|Number=Plur	16	amod	_	_	*
+16	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	lutte	lutte	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	contre	contre	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	accidents	accident	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	toxicomanie	toxicomanie	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 7
+# text = Le 20, exposition sur la guerre de 14-18, à Altkrich, et présentation du livre sur le front Altkirch-Dannemarie, par des historiens sundgauviens.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	20	20	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+5	sur	sur	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	14-18	14-18	NUM	_	_	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	4	punct	_	_	*
+11	à	à	ADP	_	_	12	case	_	_	*
+12	Altkrich	Altkrich	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	livre	livre	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	sur	sur	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	front	front	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+22	Altkirch-Dannemarie	Altkirch-Dannemarie	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	27	punct	_	_	*
+24	par	par	ADP	_	_	27	case	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	historiens	historien	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+28	sundgauviens	sundgauvien	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 8
+# text = Le 21, prise de fonction du MDLC Boucher, adjoint de l'adjudant Holsenburger, à Dannemarie.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	21	21	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	fonction	fonction	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	MDLC	MDLC	PROPN	_	_	6	nmod	_	_	*
+10	Boucher	boucher	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	adjoint	adjoint	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	adjudant	adjudant	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	Holsenburger	Holsenburger	PROPN	_	_	15	appos	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	19	punct	_	_	*
+18	à	à	ADP	_	_	19	case	_	_	*
+19	Dannemarie	Dannemarie	PROPN	_	_	9	conj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 9
+# text = Le 29, chez Peugeot MTC à Dannemarie, le PFG, Gérard Premessuyre, dans le bilan 2001, faot état de la baisse des ventes dans certains pays.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	29	29	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	chez	chez	ADP	_	_	5	case	_	_	*
+5	Peugeot	Peugeot	PROPN	_	_	2	nmod	_	_	*
+6	MTC	MTC	PROPN	_	_	5	flat:name	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Dannemarie	Dannemarie	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	PFG	PFG	PROPN	_	_	5	conj	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	Gérard	Gérard	PROPN	_	_	5	conj	_	_	*
+14	Premessuyre	Premessuyre	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	18	punct	_	_	*
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+19	2001	2001	NUM	_	_	18	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	22	punct	_	_	*
+21	faot	faot	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+22	état	état	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	baisse	baisse	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+26-27	des	_	_	_	_	_	_	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_	*
+28	ventes	vente	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*
+29	dans	dans	ADP	_	_	31	case	_	_	*
+30	certains	certain	DET	_	Gender=Masc|Number=Plur	31	det	_	_	*
+31	pays	pays	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 10
+# text = Le concurrent le plus redoutable, l'Italie.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	concurrent	concurrent	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	advmod	_	_	*
+4	plus	plus	ADV	_	_	3	fixed	_	_	*
+5	redoutable	redoutable	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	Italie	Italie	PROPN	_	_	2	appos	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 11
+# text = Des investissements considérables sont prévus à Beaulieu et Dannemarie.
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	investissements	investissement	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*
+4	considérables	considérable	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+5	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_	*
+6	prévus	prévoir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Beaulieu	Beaulieu	PROPN	_	_	6	obl:mod	_	_	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*
+10	Dannemarie	Dannemarie	PROPN	_	_	8	conj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 12
+# text = FÉVRIER
+1	FÉVRIER	Février	PRON	_	Gender=Masc|Number=Sing	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 13
+# text = Le 1er, à la Poste de Montreux-Vieux, Laura Meyer, venant de Huningue, succède à Doris Rubino, nommée assistante au service des finances, à Altkirch.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	1er	1er	NUM	_	_	17	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	Poste	poste	PROPN	_	_	17	obl:mod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Montreux-Vieux	Montreux-Vieux	PROPN	_	_	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	10	punct	_	_	*
+10	Laura	Laura	PROPN	_	_	6	appos	_	_	*
+11	Meyer	Meyer	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	venant	venir	VERB	_	Tense=Pres|VerbForm=Part	6	acl	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Huningue	Huningue	PROPN	_	_	13	obl:arg	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	6	punct	_	_	*
+17	succède	succéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	à	à	ADP	_	_	19	case	_	_	*
+19	Doris	Doris	PROPN	_	_	17	obl:arg	_	_	*
+20	Rubino	Rubino	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	nommée	nommer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+23	assistante	assistanter	NOUN	_	Gender=Fem|Number=Sing	22	xcomp	_	_	*
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	service	service	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+27-28	des	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_	*
+29	finances	finance	NOUN	_	Gender=Fem|Number=Plur	26	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*
+31	à	à	ADP	_	_	32	case	_	_	*
+32	Altkirch	Altkirch	PROPN	_	_	22	obl:mod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 14
+# text = Le 2, un jeune homme s'empare de la caisse du loto du Racing, à Dannemarie devant quatre cents personnes.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	2	2	NUM	_	_	8	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	jeune	jeune	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	homme	homme	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+7	s'	se	PRON	_	Person=3|PronType=Prs	8	expl:comp	_	SpaceAfter=No	1:IRV
+8	empare	emparer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	caisse	caisse	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	loto	loto	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	Racing	Racing	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	à	à	ADP	_	_	20	case	_	_	*
+20	Dannemarie	Dannemarie	PROPN	_	_	8	obl:mod	_	_	*
+21	devant	devant	ADP	_	_	24	case	_	_	*
+22	quatre	quatre	NUM	_	_	23	nummod	_	_	*
+23	cents	cents	NUM	_	_	24	nummod	_	_	*
+24	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	8	obl	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 15
+# text = Il avait le visage masqué par une cagoule : 2.832 € sont volés.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj:pass	_	_	*
+2	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	aux:tense	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	visage	visage	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	masqué	masquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	cagoule	cagoule	NOUN	_	Gender=Fem|Number=Sing	5	obl:agent	_	_	*
+9	:	:	PUNCT	_	_	11	punct	_	_	*
+10	2.832	2.832	NUM	_	_	11	nummod	_	_	*
+11	€	€	SYM	_	_	4	appos	_	_	*
+12	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:pass	_	_	*
+13	volés	voler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 16
+# text = Le 10, 10e salon des « Violons d'Ingres » à Dannemarie qui reçoit la visite de Julie Nobel, Miss Alsace.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	10	10	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	10e	10e	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	salon	salon	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	9	case	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+8	«	«	PUNCT	_	_	9	punct	_	_	*
+9	Violons	Violons	PROPN	_	_	5	nmod	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	Ingres	Ingres	PROPN	_	_	9	nmod	_	_	*
+12	»	»	PUNCT	_	_	9	punct	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Dannemarie	Dannemarie	PROPN	_	_	5	nmod	_	_	*
+15	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*
+16	reçoit	recevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	1:LVC.full
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	visite	visite	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	1
+19	de	de	ADP	_	_	20	case	_	_	*
+20	Julie	Julie	PROPN	_	_	18	nmod	_	_	*
+21	Nobel	Nobel	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Miss	Miss	PROPN	_	_	20	conj	_	_	*
+24	Alsace	Alsace	PROPN	_	_	23	flat:name	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 17
+# text = Le soir, elle remet leurs prix aux vainqueurs, tous des Comtois.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	soir	soir	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+5	remet	remettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*
+7	prix	prix	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*
+8-9	aux	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	vainqueurs	vainqueur	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	tous	tout	PRON	_	Gender=Masc|Number=Plur	5	conj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	Comtois	Comtois	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 18
+# text = Le 25, les ciments d'Origny, à Altkirch, changent de raison sociale pour devenir Holcim.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	25	25	NUM	_	_	5	nummod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	ciments	ciment	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	Origny	Origny	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	Altkirch	Altkirch	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	changent	changer	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	raison	raison	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	sociale	social	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+16	pour	pour	ADP	_	_	17	mark	_	_	*
+17	devenir	devenir	VERB	_	VerbForm=Inf	12	acl	_	_	*
+18	Holcim	Holcim	PROPN	_	_	17	xcomp	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 19
+# text = France-Altkirch, la maison mère, est en Suisse.
+1	France-Altkirch	France-Altkirch	PROPN	_	_	9	nsubj	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	maison	maison	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+5	mère	mère	NOUN	_	Gender=Fem|Number=Sing	4	appos	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	Suisse	Suisse	PROPN	_	_	0	root	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 20
+# text = Le 28, à Chavannes-sur l'Etang (Haut-Rhin) manifestation des parents d'élèves en faveur du « chaînon manquant », lequel a de gros problèmes financiers.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	28	28	NUM	_	_	11	nummod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Chavannes-sur	Chavannes-sur	PROPN	_	_	2	conj	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	flat:name	_	SpaceAfter=No	*
+7	Etang	Etang	PROPN	_	_	5	flat:name	_	_	*
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*
+9	Haut-Rhin	Haut-Rhin	PROPN	_	_	5	appos	_	SpaceAfter=No	*
+10	)	)	PUNCT	_	_	9	punct	_	_	*
+11	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	parents	parent	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+16	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*
+17	en	en	ADP	_	_	18	case	_	_	*
+18	faveur	faveur	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	22	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+21	«	«	PUNCT	_	_	22	punct	_	_	*
+22	chaînon	chaînon	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+23	manquant	manquant	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*
+24	»	»	PUNCT	_	_	22	punct	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	27	punct	_	_	*
+26	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj	_	_	*
+27	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	1:LVC.full
+28	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+29	gros	gros	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	_	*
+30	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	27	obj	_	_	1
+31	financiers	financier	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 21
+# text = « Il serait temps que l'Etat mette la main à la poche », déclare M.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	1:VID
+3	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	1
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	16	ccomp	_	_	1
+5	que	que	SCONJ	_	_	8	mark	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	Etat	Etat	PROPN	_	_	8	nsubj	_	_	*
+8	mette	meter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	main	main	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	poche	poche	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+14	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	4	punct	_	_	*
+16	déclare	déclarer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+17	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 22
+# text = Picquet, président de « Comité de soutien à Mélanie » MARS
+1	Picquet	Picquet	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	3	punct	_	_	*
+3	président	président	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	Comité	comité	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	soutien	soutien	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+9	à	à	ADP	_	_	10	case	_	_	*
+10	Mélanie	Mélanie	PROPN	_	_	6	nmod	_	_	*
+11	»	»	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s\s	*
+12	MARS	mars	PROPN	_	_	1	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 23
+# text = Le 14, venue de Gefco à Montreux-Vieux.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	14	14	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	venue	venir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	Gefco	Gefco	PROPN	_	_	4	obl:arg	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	Montreux-Vieux	Montreux-Vieux	PROPN	_	_	4	obl:mod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 24
+# text = « La situation est bloquée », estime le maire, André Trabold.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	situation	situation	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	bloquée	bloqué	ADJ	_	Gender=Fem|Number=Sing	8	ccomp	_	_	*
+6	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*
+8	estime	estimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	maire	maire	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	André	André	PROPN	_	_	10	appos	_	_	*
+13	Trabold	Trabold	PROPN	_	_	12	flat:name	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 25
+# text = Le 16, trois fûts de déchets radio-actifs sont découverts à la décharge de Retzwiller.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	16	16	NUM	_	_	10	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	trois	trois	NUM	_	_	5	nummod	_	_	*
+5	fûts	fûts	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	déchets	déchet	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+8	radio-actifs	radio-actif	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
+10	découverts	découvrir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	décharge	décharge	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Retzwiller	Retzwiller	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 26
+# text = Ils ont été amenés par un camion le 14 mars, et placés en container.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj:pass	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	aux:pass	_	_	*
+4	amenés	amener	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	camion	camion	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	14	14	NUM	_	_	4	obl	_	_	*
+10	mars	mars	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	placés	placer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	4	conj	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	container	container	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 27
+# text = Enquête ouverte et manifestation du le site d'élus et de riverains.
+1	Enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	ouverte	ouvrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*
+4	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	8	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	site	site	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	élus	élu	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	riverains	riverain	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 28
+# text = Vive colère des maires du secteur.
+1	Vive	vif	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	colère	colère	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	maires	maire	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 29
+# text = Le 17, 5.000 personnes au carnaval d'Altkirch et un clin d'œil au député-maire avec le char Big Reitzer.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	17	17	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	5.000	5.000	NUM	_	_	5	nummod	_	_	*
+5	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	carnaval	carnaval	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	Altkirch	Altkirch	PROPN	_	_	8	nmod	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	clin	clin	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	œil	œil	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	député-maire	député-maire	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+19	avec	avec	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	char	char	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+22	Big	Big	PROPN	_	_	21	appos	_	_	*
+23	Reitzer	Reitzer	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 30
+# text = Le 23, l'école Cousteau de Chavannes-sur-l'Etang est sélectionnée pour le parlement d'enfants qui siégera le 11 mai.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	23	23	NUM	_	_	10	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	école	école	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	_	*
+6	Cousteau	Cousteau	PROPN	_	_	5	appos	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Chavannes-sur-l'Etang	Chavannes-sur-l'Etang	PROPN	_	_	5	nmod	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
+10	sélectionnée	sélectionner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	pour	pour	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	parlement	parlement	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	_	*
+14	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+15	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*
+17	siégera	siéger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	acl:relcl	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	11	11	NUM	_	_	17	obl	_	_	*
+20	mai	mai	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 31
+# text = Julie Frottinger, députée junior, occupera le siège 155 du député Reitzer.
+1	Julie	Julie	PROPN	_	_	7	nsubj	_	_	*
+2	Frottinger	Frottinger	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	députée	député	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+5	junior	junior	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	1	punct	_	_	*
+7	occupera	occuper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	siège	siège	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	155	155	NUM	_	_	9	nmod	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	député	député	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+14	Reitzer	Reitzer	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 32
+# text = Dans son projet de loi, elle défendra la cause des enfants handicapés.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	projet	projet	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	loi	loi	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	défendra	défendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	cause	cause	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	handicapés	handicapé	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 33
+# text = Jean-Luc Reitzer visite l'école et parle des tâches multiples du parlementaire.
+1	Jean-Luc	Jean-Luc	PROPN	_	_	3	nsubj	_	_	*
+2	Reitzer	Reitzer	PROPN	_	_	1	flat:name	_	_	*
+3	visite	visiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	école	école	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	tâches	tâche	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*
+11	multiples	multiple	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	parlementaire	parlementaire	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 34
+# text = AVRIL Le 20, bon concert de rentrée de l'orchestre d'harmonie de Dannemarie, dirigée par le nouveau maestro, nadia Villardi.
+1	AVRIL	avril	PROPN	_	_	23	nsubj	_	_	*
+2	Le	Le	PROPN	_	_	1	flat:name	_	_	*
+3	20	20	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	bon	bon	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	concert	concert	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	rentrée	rentrée	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	harmonie	harmonie	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Dannemarie	Dannemarie	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	dirigée	diriger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*
+18	par	par	ADP	_	_	21	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+20	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	_	*
+21	maestro	maestro	NOUN	_	Gender=Masc|Number=Sing	17	obl:agent	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	17	punct	_	_	*
+23	nadia	nadia	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+24	Villardi	Villardi	PROPN	_	_	23	obj	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 35
+# text = Le nouveau président est E.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	président	président	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	E.	E.	X	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 36
+# text = Schacherer.
+1	Schacherer	Schacherer	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 37
+# text = Le 24, à Montreux-Vieux, exposition sur la guerre 39-45 par Pierre Péru, président du Praf Haut-Rhin et Claude Reverchon, UNC, volet sur les « Malgré nous » et « Malgré elles ».
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	24	24	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Montreux-Vieux	Montreux-Vieux	PROPN	_	_	2	conj	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	39-45	39-45	NUM	_	_	10	nmod	_	_	*
+12	par	par	ADP	_	_	13	case	_	_	*
+13	Pierre	Pierre	PROPN	_	_	7	nmod	_	_	*
+14	Péru	Péru	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	président	président	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	Praf	Praf	PROPN	_	_	16	nmod	_	_	*
+20	Haut-Rhin	Haut-Rhin	PROPN	_	_	19	flat:name	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	Claude	Claude	PROPN	_	_	13	conj	_	_	*
+23	Reverchon	Reverchon	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	UNC	UNC	PROPN	_	_	13	conj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	volet	volet	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*
+28	sur	sur	ADP	_	_	31	case	_	_	*
+29	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*
+30	«	«	PUNCT	_	_	31	punct	_	_	*
+31	Malgré	malgré	PROPN	_	_	27	nmod	_	_	*
+32	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	31	flat:name	_	_	*
+33	»	»	PUNCT	_	_	31	punct	_	_	*
+34	et	et	CCONJ	_	_	37	cc	_	_	*
+35	«	«	PUNCT	_	_	37	punct	_	_	*
+36	Malgré	malgré	ADP	_	_	37	case	_	_	*
+37	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	13	conj	_	_	*
+38	»	»	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 38
+# text = Le 28, à Chavannes-sur-L'Etang, jubilé sacerdotal du père Jean-Marie Guerner, dont le parcours est impressionnant : on note surtout un séjour de 27 ans en Tanzanie.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	28	28	NUM	_	_	8	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	Chavannes-sur-L'	chavannes-sur-l'	PROPN	_	_	2	nmod	_	SpaceAfter=No	*
+6	Etang	Etang	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*
+8	jubilé	jubiler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	sacerdotal	sacerdotal	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	père	père	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	Jean-Marie	Jean-Marie	PROPN	_	_	12	appos	_	_	*
+14	Guerner	Guerner	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	20	punct	_	_	*
+16	dont	dont	PRON	_	PronType=Rel	18	nmod	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	parcours	parcours	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*
+20	impressionnant	impressionnant	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+21	:	:	PUNCT	_	_	23	punct	_	_	*
+22	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_	*
+23	note	noter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_	*
+24	surtout	surtout	ADV	_	_	23	advmod	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	séjour	séjour	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	27	27	NUM	_	_	29	nummod	_	_	*
+29	ans	an	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+30	en	en	ADP	_	_	31	case	_	_	*
+31	Tanzanie	Tanzanie	PROPN	_	_	26	nmod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\s\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 39
+# text = MAI Le 4, Mme Lucile Bouvier, de Lutran, fête ses 102 ans, dans la joie familiale.
+1	MAI	Mai	PROPN	_	_	12	nsubj	_	_	*
+2	Le	Le	PROPN	_	_	1	flat:name	_	_	*
+3	4	4	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+6	Lucile	Lucile	PROPN	_	_	5	flat:name	_	_	*
+7	Bouvier	Bouvier	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Lutran	Lutran	PROPN	_	_	1	conj	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	1	punct	_	_	*
+12	fête	fêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+13	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	_	*
+14	102	102	NUM	_	_	15	nummod	_	_	*
+15	ans	an	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	dans	dans	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	joie	joie	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*
+20	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 40
+# text = Elle a reçu l'hommage municipal.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	hommage	hommage	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 41
+# text = Le 8, dévoilement de la plaque de la Praf, sur le fronton de la mairie de Montreux-Vieux par Pierre Péru, président département.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	8	8	NUM	_	_	0	root	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	dévoilement	dévoilement	ADV	_	_	2	advmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	plaque	plaque	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	Praf	Praf	PROPN	_	_	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	sur	sur	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	fronton	fronton	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Montreux-Vieux	Montreux-Vieux	PROPN	_	_	17	nmod	_	_	*
+20	par	par	ADP	_	_	21	case	_	_	*
+21	Pierre	Pierre	PROPN	_	_	7	nmod	_	_	*
+22	Péru	Péru	PROPN	_	_	21	flat:name	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	président	président	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	_	*
+25	département	département	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_98.txt 42
+# text = A suivre.
+1	A	à	ADP	_	_	2	mark	_	_	*
+2	suivre	suivre	VERB	_	VerbForm=Inf	0	root	_	SpaceAfter=No	*
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+

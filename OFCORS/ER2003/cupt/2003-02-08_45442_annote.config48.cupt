@@ -1,0 +1,504 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-08_45442.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 1
+# text = La réunion du conseil municipal
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 2
+# text = Le conseil s'est réuni récemment sous le présidence du maire, Mme Vernier.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:pass	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	réuni	réunir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	récemment	récemment	ADV	_	_	5	advmod	_	_	*
+7	sous	sous	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	présidence	présidence	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	maire	maire	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+15	Vernier	Vernier	PROPN	_	_	14	flat:name	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 3
+# text = Diverses questions ont été abordées.
+1	Diverses	divers	DET	_	Gender=Fem|Number=Plur	2	det	_	_	*
+2	questions	question	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	_	_	*
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_	*
+5	abordées	aborder	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+6	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 4
+# text = Des panneaux qui partent et qui reviennent !
+1-2	Des	_	_	_	_	_	_	_	_	*
+1	De	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	panneaux	panneau	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*
+5	partent	partir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*
+8	reviennent	revenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*
+9	!	!	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 5
+# text = On sait qu'il y a quelques semaines les agriculteurs du canton, dans le cadre de leur organisation, ont manifesté une grande colère relative à la taxation des ordures ménagères.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	qu'	que	SCONJ	_	_	6	mark	_	SpaceAfter=No	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+5	y	y	PRON	_	_	6	expl:comp	_	_	1
+6	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	1
+7	quelques	quelque	DET	_	Gender=Fem|Number=Plur	8	det	_	_	*
+8	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	agriculteurs	agriculteur	NOUN	_	Gender=Masc|Number=Plur	8	appos	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	canton	canton	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	dans	dans	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*
+20	organisation	organisation	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	manifesté	manifesté	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*
+24	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+25	grande	grand	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+26	colère	colère	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*
+27	relative	relatif	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	taxation	taxation	NOUN	_	Gender=Fem|Number=Sing	27	obl:arg	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_	*
+33	ordures	ordure	NOUN	_	Gender=Fem|Number=Plur	30	nmod	_	_	*
+34	ménagères	ménager	ADJ	_	Gender=Fem|Number=Plur	33	amod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 6
+# text = On en est arrivé à enlever les panneaux de signalisation routière indiquant les écarts, à savoir les fermes isolées.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*
+2	en	en	PRON	_	Person=3	4	iobj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	arrivé	arriver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	enlever	enlever	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	panneaux	panneau	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	signalisation	signalisation	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	routière	routier	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	indiquant	indiquer	VERB	_	Tense=Pres|VerbForm=Part	8	acl	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	écarts	écart	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	19	punct	_	_	*
+16	à	à	ADP	_	_	19	case	_	_	*
+17	savoir	savoir	VERB	_	VerbForm=Inf	16	fixed	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	fermes	ferme	NOUN	_	Gender=Fem|Number=Plur	6	obl:mod	_	_	*
+20	isolées	isoler	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	19	acl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 7
+# text = Ils ont été déposés devant le local de la communauté de communes !
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj:pass	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	aux:pass	_	_	*
+4	déposés	déposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	devant	devant	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	local	local	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	communauté	communauté	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	communes	commune	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_	*
+13	!	!	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 8
+# text = Sur interpellation du président de celle-ci, le conseil avait à en débattre.
+1	Sur	sur	ADP	_	_	2	case	_	_	*
+2	interpellation	interpellation	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	président	président	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	2	punct	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*
+11	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+12	à	à	ADP	_	_	14	mark	_	_	*
+13	en	en	PRON	_	Person=3	14	iobj	_	_	*
+14	débattre	débattre	VERB	_	VerbForm=Inf	11	xcomp	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 9
+# text = M. Bonvalot, juge et partie en l'affaire, à savoir élu local et agriculteur, s'est engagé à remettre les panneaux en place dans un délai raisonnable.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+2	Bonvalot	Bonvalot	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*
+4	juge	juge	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	partie	partie	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*
+7	en	en	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	à	à	ADP	_	_	13	mark	_	_	*
+12	savoir	savoir	AUX	_	VerbForm=Inf	13	aux:tense	_	_	*
+13	élu	élire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+14	local	local	ADJ	_	Gender=Masc|Number=Sing	13	xcomp	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	agriculteur	agriculteur	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	1	punct	_	_	*
+18	s'	se	PRON	_	Person=3|PronType=Prs	20	expl:comp	_	SpaceAfter=No	1:IRV
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*
+20	engagé	engager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+21	à	à	ADP	_	_	22	mark	_	_	*
+22	remettre	remettre	VERB	_	VerbForm=Inf	20	xcomp	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	panneaux	panneau	NOUN	_	Gender=Masc|Number=Plur	22	obj	_	_	*
+25	en	en	ADP	_	_	26	case	_	_	*
+26	place	place	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*
+27	dans	dans	ADP	_	_	29	case	_	_	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	délai	délai	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+30	raisonnable	raisonnable	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	20	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 10
+# text = Chaufferie aux plaquettes de bois.
+1	Chaufferie	Chaufferie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2-3	aux	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	plaquettes	plaquette	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	bois	bois	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 11
+# text = C'est le projet porteur 2003 de l'équipe municipale.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	projet	projet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	porteur	porteur	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+6	2003	2003	NUM	_	_	5	nmod	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+10	municipale	municipal	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 12
+# text = Une subvention à hauteur de 80 % (40 % du conseil général et autant de l'ADEME) est possible pour financer l'étude.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+3	à	à	ADP	_	_	4	case	_	_	*
+4	hauteur	hauteur	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	80	80	NUM	_	_	7	nummod	_	_	*
+7	%	%	SYM	_	_	2	nmod	_	_	*
+8	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+9	40	40	NUM	_	_	10	nummod	_	_	*
+10	%	%	SYM	_	_	2	appos	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	général	général	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	autant	autant	ADV	_	_	10	conj	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	ADEME	ADEME	PROPN	_	_	16	obl:arg	_	SpaceAfter=No	*
+20	)	)	PUNCT	_	_	10	punct	_	_	*
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+22	possible	possible	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+23	pour	pour	ADP	_	_	24	mark	_	_	*
+24	financer	financer	VERB	_	VerbForm=Inf	22	advcl	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*
+26	étude	étude	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 13
+# text = Le dossier est instruit.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	instruit	instruire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 14
+# text = La carte communale.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	carte	carte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	communale	communal	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 15
+# text = Le futur nouveau périmètre constructible provoque des réactions compréhensibles.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	futur	futur	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	périmètre	périmètre	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+5	constructible	constructible	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	provoque	provoquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	réactions	réaction	NOUN	_	Gender=Fem|Number=Plur	6	obl:arg	_	_	*
+10	compréhensibles	compréhensible	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 16
+# text = Les intérêts personnels et l'intérêt général ne sont pas toujours compatibles.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	intérêts	intérêt	NOUN	_	Gender=Masc|Number=Plur	12	nsubj	_	_	*
+3	personnels	personnel	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	intérêt	intérêt	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+7	général	général	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+10	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*
+11	toujours	toujours	ADV	_	_	12	advmod	_	_	*
+12	compatibles	compatible	ADJ	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 17
+# text = Le développement futur du village dépend des décisions prises aujourd'hui.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	développement	développement	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+3	futur	futur	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	village	village	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+7	dépend	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*
+10	décisions	décision	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	1:LVC.full
+11	prises	prendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	10	acl	_	_	1
+12	aujourd'hui	aujourd'hui	ADV	_	_	11	advmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 18
+# text = Les élus sont attentifs.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	élus	élu	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	attentifs	attentif	ADJ	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 19
+# text = C'est ainsi qu'ils demandent de prendre en compte leurs remarques pour repousser les limites constructibles rue de Saint-Hippolyte, rue de Chamesol et aux Raîchênes.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ainsi	ainsi	ADV	_	_	0	root	_	_	*
+4	qu'	que	SCONJ	_	_	6	mark	_	SpaceAfter=No	*
+5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_	*
+6	demandent	demander	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl:cleft	_	_	*
+7	de	de	ADP	_	_	8	mark	_	_	*
+8	prendre	prendre	VERB	_	VerbForm=Inf	6	xcomp	_	_	1:VID
+9	en	en	ADP	_	_	10	case	_	_	1
+10	compte	compte	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	1
+11	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	remarques	remarque	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*
+13	pour	pour	ADP	_	_	14	mark	_	_	*
+14	repousser	repousser	VERB	_	VerbForm=Inf	6	advcl	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	limites	limite	NOUN	_	Gender=Fem|Number=Plur	14	obj	_	_	*
+17	constructibles	constructible	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*
+18	rue	rue	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	Saint-Hippolyte	Saint-Hippolyte	PROPN	_	_	16	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	rue	rue	NOUN	_	Gender=Fem|Number=Sing	20	appos	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	Chamesol	Chamesol	PROPN	_	_	22	nmod	_	_	*
+25	et	et	CCONJ	_	_	28	cc	_	_	*
+26-27	aux	_	_	_	_	_	_	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	28	det	_	_	*
+28	Raîchênes	Raîchênes	PROPN	_	_	22	conj	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 20
+# text = On s'interroge également pour des parcelles sur la Vie Dampjoux.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*
+2	s'	se	PRON	_	Person=3|PronType=Prs	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	interroge	interroger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	également	également	ADV	_	_	3	advmod	_	_	*
+5	pour	pour	ADP	_	_	8	case	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	parcelles	parcelle	NOUN	_	Gender=Fem|Number=Plur	3	obl	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	Vie	vie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	Dampjoux	Dampjoux	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 21
+# text = Chambre d'agriculture et boues d'épuration.
+1	Chambre	chambre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	agriculture	agriculture	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	boues	boue	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	épuration	épuration	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 22
+# text = La convention pour le suivi agronomique des boues de la station d'épuration est à renouveler pour 2003 et 2004.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	convention	convention	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+3	pour	pour	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	suivi	suivi	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	agronomique	agronomique	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	boues	boue	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	station	station	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+14	épuration	épuration	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	à	à	ADP	_	_	17	mark	_	_	*
+17	renouveler	renouveler	VERB	_	VerbForm=Inf	15	ccomp	_	_	*
+18	pour	pour	ADP	_	_	19	case	_	_	*
+19	2003	2003	NUM	_	_	17	obl	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	2004	2004	NUM	_	_	19	conj	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 23
+# text = Les élus relaient la demande des agriculteurs pour une réunion avec le service vétérinaire départemental.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	élus	élu	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	relaient	rel	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	demande	demande	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	agriculteurs	agriculteur	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+12	avec	avec	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	service	service	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	vétérinaire	vétérinaire	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 24
+# text = Les problèmes scolaires.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	scolaires	scolaire	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	SpaceAfter=No	*
+4	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 25
+# text = La mobilisation des parents d'élèves et des municipalités de Chamesol et Montécheroux est forte.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	mobilisation	mobilisation	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*
+8	et	et	CCONJ	_	_	11	cc	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	municipalités	municipalité	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Chamesol	Chamesol	PROPN	_	_	11	nmod	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	Montécheroux	Montécheroux	PROPN	_	_	13	conj	_	_	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+17	forte	fort	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 26
+# text = La suppression d'un poste d'enseignant du RPI proposée par l'Inspection académique en est la cause.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	suppression	suppression	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*
+3	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	poste	poste	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	enseignant	enseignant	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8-9	du	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	RPI	RPI	PROPN	_	_	5	nmod	_	_	*
+11	proposée	proposer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+12	par	par	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	Inspection	inspection	NOUN	_	Gender=Fem|Number=Sing	11	obl:agent	_	_	*
+15	académique	académique	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+16	en	en	PRON	_	Person=3	2	nmod	_	_	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	cause	cause	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-08_45442.txt 27
+# text = Les maires des deux communes vont faire connaître, par courrier, leur mécontentement au ministre de l'Education nationale
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	maires	maire	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	6	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	communes	commune	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+7	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	faire	faire	AUX	_	VerbForm=Inf	9	aux:caus	_	_	*
+9	connaître	connaître	VERB	_	VerbForm=Inf	7	xcomp	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	par	par	ADP	_	_	9	advmod	_	_	*
+12	courrier	courrier	NOUN	_	Gender=Masc|Number=Sing	11	fixed	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	mécontentement	mécontentement	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	Education	Education	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*
+22	nationale	national	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	SpacesAfter=\n	*
+

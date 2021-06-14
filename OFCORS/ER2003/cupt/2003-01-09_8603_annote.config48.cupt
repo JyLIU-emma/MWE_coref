@@ -1,0 +1,833 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-09_8603.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 1
+# text = Nos villages vus d'ULM.
+1	Nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	villages	village	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	vus	voir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	ULM.	ULM.	PROPN	_	_	2	nmod	_	SpacesAfter=\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 2
+# text = Au pays de Stenay, les paysages sont diversifiés : vallées de la Meuse et de la Chiers, Côtes de Meuse, Côtes de Moselle.
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	pays	pays	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Stenay	Stenay	PROPN	_	_	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	paysages	paysage	NOUN	_	Gender=Masc|Number=Plur	10	nsubj:pass	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*
+10	diversifiés	diversifier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	:	:	PUNCT	_	_	12	punct	_	_	*
+12	vallées	valler	NOUN	_	Gender=Fem|Number=Plur	10	parataxis	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	Meuse	Meuse	PROPN	_	_	12	nmod	_	_	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	Chiers	Chiers	PROPN	_	_	15	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Côtes	côtes	PROPN	_	_	12	conj	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Meuse	Meuse	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	Côtes	côtes	PROPN	_	_	12	conj	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	Moselle	Moselle	PROPN	_	_	25	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 3
+# text = La communauté de communes a souhaité prendre davantage en compte cette dimension paysagère pour son projet de territoire.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	communauté	communauté	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	communes	commune	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	prendre	prendre	VERB	_	VerbForm=Inf	6	xcomp	_	_	1:VID
+8	davantage	davantage	ADV	_	_	7	advmod	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	1
+10	compte	compte	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	1
+11	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	_	_	*
+12	dimension	dimension	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+13	paysagère	paysager	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	projet	projet	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	territoire	territoire	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 4
+# text = Aussi vient-elle d'engager une étude de ses paysages, menée par la société alsacienne DAT Conseils.
+1	Aussi	aussi	ADV	_	_	2	advmod	_	_	*
+2	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+3	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+4	d'	de	ADP	_	_	5	mark	_	SpaceAfter=No	*
+5	engager	engager	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	étude	étude	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1:LVC.full
+8	de	de	ADP	_	_	10	case	_	_	*
+9	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*
+10	paysages	paysage	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	menée	mener	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	1
+13	par	par	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	société	société	NOUN	_	Gender=Fem|Number=Sing	12	obl:agent	_	_	*
+16	alsacienne	alsacien	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+17	DAT	DAT	PROPN	_	_	15	appos	_	_	*
+18	Conseils	conseils	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 5
+# text = L'objectif de cette expertise est triple : informer les élus du dispositif plan de paysage mis en œuvre par la Région et la direction régionale de l'environnement, débattre d'une démarche locale et étudier la façon d'engager une intervention sur les paysages.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	objectif	objectif	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*
+5	expertise	expertise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	triple	triple	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+8	:	:	PUNCT	_	_	9	punct	_	_	*
+9	informer	informer	VERB	_	VerbForm=Inf	7	parataxis	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	élus	élu	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	15	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+14	dispositif	dispositif	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+15	plan	plan	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	paysage	paysage	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	1:VID
+19	en	en	ADP	_	_	20	case	_	_	1
+20	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	18	obl	_	_	1
+21	par	par	ADP	_	_	23	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	Région	région	NOUN	_	Gender=Fem|Number=Sing	18	obl:agent	_	_	*
+24	et	et	CCONJ	_	_	26	cc	_	_	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	direction	direction	NOUN	_	Gender=Fem|Number=Sing	23	conj	_	_	*
+27	régionale	régional	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	environnement	environnement	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*
+32	débattre	débattre	VERB	_	VerbForm=Inf	9	conj	_	_	*
+33	d'	de	ADP	_	_	35	case	_	SpaceAfter=No	*
+34	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	démarche	démarche	NOUN	_	Gender=Fem|Number=Sing	32	obl:arg	_	_	*
+36	locale	local	ADJ	_	Gender=Fem|Number=Sing	35	amod	_	_	*
+37	et	et	CCONJ	_	_	38	cc	_	_	*
+38	étudier	étudier	VERB	_	VerbForm=Inf	9	conj	_	_	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*
+40	façon	façon	NOUN	_	Gender=Fem|Number=Sing	38	obj	_	_	*
+41	d'	de	ADP	_	_	42	mark	_	SpaceAfter=No	*
+42	engager	engager	VERB	_	VerbForm=Inf	40	acl	_	_	*
+43	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_	*
+44	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	42	obj	_	_	*
+45	sur	sur	ADP	_	_	47	case	_	_	*
+46	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	_	_	*
+47	paysages	paysage	NOUN	_	Gender=Masc|Number=Plur	44	nmod	_	SpaceAfter=No	*
+48	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 6
+# text = « L'expertise, explique Etienne Demulder, président de la codecom, conseiller général, maire, est prise en charge par la direction régionale de l'environnement et le conseil régional » A terme, cette expertise pourrait permettre d'élaborer une stratégie d'ensemble pour la mise en valeur des paysages du Pays de Stenay (la plaine alluviale, le canal, les villages), mais aussi mettre en valeur le bourg de Stenay, rechercher une qualité paysagère le long des principaux axes de circulation et de découverte et préserver l'identité architecturale des villages, choisir des sites patrimoniaux et paysagers emblématiques pour les relier par une route touristique de découverte et enfin, prendre en compte le paysage dans l'activité agricole, en particulier dans les zones inondables de la Meuse et de la Chiers, les côteaux et les abords des villages.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	expertise	expertise	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	Etienne	Etienne	PROPN	_	_	5	obj	_	_	*
+7	Demulder	Demulder	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	président	président	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	codecom	codecom	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	conseiller	conseiller	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+15	général	général	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	maire	maire	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	5	punct	_	_	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	_	_	*
+20	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	xcomp	_	_	3:VID;4:VID
+21	en	en	ADP	_	_	22	case	_	_	4
+22	charge	charge	NOUN	_	Gender=Fem|Number=Sing	20	obl	_	_	4
+23	par	par	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	direction	direction	NOUN	_	Gender=Fem|Number=Sing	20	obl:agent	_	_	3
+26	régionale	régional	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*
+29	environnement	environnement	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+30	et	et	CCONJ	_	_	32	cc	_	_	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*
+32	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_	*
+33	régional	régional	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	_	*
+34	»	»	PUNCT	_	_	32	punct	_	_	*
+35	A	A	ADP	_	_	36	case	_	_	*
+36	terme	terme	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No	*
+37	,	,	PUNCT	_	_	40	punct	_	_	*
+38	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	39	det	_	_	*
+39	expertise	expertise	NOUN	_	Gender=Fem|Number=Sing	40	nsubj	_	_	*
+40	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_	*
+41	permettre	permettre	VERB	_	VerbForm=Inf	40	xcomp	_	_	*
+42	d'	de	ADP	_	_	43	mark	_	SpaceAfter=No	*
+43	élaborer	élaborer	VERB	_	VerbForm=Inf	41	xcomp	_	_	*
+44	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_	*
+45	stratégie	stratégie	NOUN	_	Gender=Fem|Number=Sing	43	obj	_	_	*
+46	d'	de	ADP	_	_	47	case	_	SpaceAfter=No	*
+47	ensemble	ensemble	NOUN	_	Gender=Masc|Number=Sing	45	nmod	_	_	*
+48	pour	pour	ADP	_	_	50	case	_	_	*
+49	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_	*
+50	mise	mise	NOUN	_	Gender=Fem|Number=Sing	45	nmod	_	_	*
+51	en	en	ADP	_	_	52	case	_	_	*
+52	valeur	valeur	NOUN	_	Gender=Fem|Number=Sing	50	nmod	_	_	*
+53-54	des	_	_	_	_	_	_	_	_	*
+53	de	de	ADP	_	_	55	case	_	_	*
+54	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_	*
+55	paysages	paysage	NOUN	_	Gender=Masc|Number=Plur	50	nmod	_	_	*
+56-57	du	_	_	_	_	_	_	_	_	*
+56	de	de	ADP	_	_	58	case	_	_	*
+57	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_	*
+58	Pays	Pays	PROPN	_	_	55	nmod	_	_	*
+59	de	de	ADP	_	_	60	case	_	_	*
+60	Stenay	Stenay	PROPN	_	_	58	nmod	_	_	*
+61	(	(	PUNCT	_	_	63	punct	_	SpaceAfter=No	*
+62	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	63	det	_	_	*
+63	plaine	plaine	NOUN	_	Gender=Fem|Number=Sing	58	appos	_	_	*
+64	alluviale	alluvial	ADJ	_	Gender=Fem|Number=Sing	63	amod	_	SpaceAfter=No	*
+65	,	,	PUNCT	_	_	67	punct	_	_	*
+66	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	67	det	_	_	*
+67	canal	canal	NOUN	_	Gender=Masc|Number=Sing	63	conj	_	SpaceAfter=No	*
+68	,	,	PUNCT	_	_	70	punct	_	_	*
+69	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	70	det	_	_	*
+70	villages	village	NOUN	_	Gender=Masc|Number=Plur	63	conj	_	SpaceAfter=No	*
+71	)	)	PUNCT	_	_	63	punct	_	SpaceAfter=No	*
+72	,	,	PUNCT	_	_	75	punct	_	_	*
+73	mais	mais	CCONJ	_	_	75	cc	_	_	*
+74	aussi	aussi	ADV	_	_	75	advmod	_	_	*
+75	mettre	mettre	VERB	_	VerbForm=Inf	20	conj	_	_	1:VID
+76	en	en	ADP	_	_	77	case	_	_	1
+77	valeur	valeur	NOUN	_	Gender=Fem|Number=Sing	75	obl	_	_	1
+78	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	79	det	_	_	*
+79	bourg	bourg	NOUN	_	Gender=Masc|Number=Sing	75	obj	_	_	*
+80	de	de	ADP	_	_	81	case	_	_	*
+81	Stenay	Stenay	PROPN	_	_	79	nmod	_	SpaceAfter=No	*
+82	,	,	PUNCT	_	_	83	punct	_	_	*
+83	rechercher	rechercher	VERB	_	VerbForm=Inf	20	conj	_	_	*
+84	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	85	det	_	_	*
+85	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	83	obj	_	_	*
+86	paysagère	paysager	ADJ	_	Gender=Fem|Number=Sing	85	amod	_	_	*
+87	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	88	det	_	_	*
+88	long	long	NOUN	_	Gender=Masc|Number=Sing	85	nmod	_	_	*
+89-90	des	_	_	_	_	_	_	_	_	*
+89	de	de	ADP	_	_	92	case	_	_	*
+90	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	92	det	_	_	*
+91	principaux	principal	ADJ	_	Gender=Masc|Number=Plur	92	amod	_	_	*
+92	axes	axe	NOUN	_	Gender=Masc|Number=Plur	88	nmod	_	_	*
+93	de	de	ADP	_	_	94	case	_	_	*
+94	circulation	circulation	NOUN	_	Gender=Fem|Number=Sing	92	nmod	_	_	*
+95	et	et	CCONJ	_	_	97	cc	_	_	*
+96	de	de	ADP	_	_	97	case	_	_	*
+97	découverte	découverte	NOUN	_	Gender=Fem|Number=Sing	94	conj	_	_	*
+98	et	et	CCONJ	_	_	99	cc	_	_	*
+99	préserver	préserver	VERB	_	VerbForm=Inf	20	conj	_	_	*
+100	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	101	det	_	SpaceAfter=No	*
+101	identité	identité	NOUN	_	Gender=Fem|Number=Sing	99	obj	_	_	*
+102	architecturale	architectural	ADJ	_	Gender=Fem|Number=Sing	101	amod	_	_	*
+103-104	des	_	_	_	_	_	_	_	_	*
+103	de	de	ADP	_	_	105	case	_	_	*
+104	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	105	det	_	_	*
+105	villages	village	NOUN	_	Gender=Masc|Number=Plur	101	nmod	_	SpaceAfter=No	*
+106	,	,	PUNCT	_	_	107	punct	_	_	*
+107	choisir	choisir	VERB	_	VerbForm=Inf	20	conj	_	_	*
+108-109	des	_	_	_	_	_	_	_	_	*
+108	de	de	ADP	_	_	110	case	_	_	*
+109	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	110	det	_	_	*
+110	sites	site	NOUN	_	Gender=Masc|Number=Plur	107	obl:arg	_	_	*
+111	patrimoniaux	patrimonial	ADJ	_	Gender=Masc|Number=Plur	110	amod	_	_	*
+112	et	et	CCONJ	_	_	113	cc	_	_	*
+113	paysagers	paysager	ADJ	_	Gender=Masc|Number=Plur	111	conj	_	_	*
+114	emblématiques	emblématique	ADJ	_	Gender=Masc|Number=Plur	110	amod	_	_	*
+115	pour	pour	ADP	_	_	117	mark	_	_	*
+116	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	117	obj	_	_	*
+117	relier	relier	VERB	_	VerbForm=Inf	107	advcl	_	_	*
+118	par	par	ADP	_	_	120	case	_	_	*
+119	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	120	det	_	_	*
+120	route	route	NOUN	_	Gender=Fem|Number=Sing	117	obl:arg	_	_	*
+121	touristique	touristique	ADJ	_	Gender=Fem|Number=Sing	120	amod	_	_	*
+122	de	de	ADP	_	_	123	case	_	_	*
+123	découverte	découverte	NOUN	_	Gender=Fem|Number=Sing	120	nmod	_	_	*
+124	et	et	CCONJ	_	_	127	cc	_	_	*
+125	enfin	enfin	ADV	_	_	127	advmod	_	SpaceAfter=No	*
+126	,	,	PUNCT	_	_	125	punct	_	_	*
+127	prendre	prendre	VERB	_	VerbForm=Inf	120	conj	_	_	2:VID
+128	en	en	ADP	_	_	129	case	_	_	2
+129	compte	compte	NOUN	_	Gender=Masc|Number=Sing	127	obl	_	_	2
+130	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	131	det	_	_	*
+131	paysage	paysage	NOUN	_	Gender=Masc|Number=Sing	127	obj	_	_	*
+132	dans	dans	ADP	_	_	134	case	_	_	*
+133	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	134	det	_	SpaceAfter=No	*
+134	activité	activité	NOUN	_	Gender=Fem|Number=Sing	127	obl:mod	_	_	*
+135	agricole	agricole	ADJ	_	Gender=Fem|Number=Sing	134	amod	_	SpaceAfter=No	*
+136	,	,	PUNCT	_	_	141	punct	_	_	*
+137	en	en	ADP	_	_	141	advmod	_	_	*
+138	particulier	particulier	NOUN	_	Gender=Masc|Number=Sing	137	fixed	_	_	*
+139	dans	dans	ADP	_	_	141	case	_	_	*
+140	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	141	det	_	_	*
+141	zones	zone	NOUN	_	Gender=Fem|Number=Plur	134	conj	_	_	*
+142	inondables	inondable	ADJ	_	Gender=Fem|Number=Plur	141	amod	_	_	*
+143	de	de	ADP	_	_	145	case	_	_	*
+144	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	145	det	_	_	*
+145	Meuse	Meuse	PROPN	_	_	141	nmod	_	_	*
+146	et	et	CCONJ	_	_	149	cc	_	_	*
+147	de	de	ADP	_	_	149	case	_	_	*
+148	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	149	det	_	_	*
+149	Chiers	Chiers	PROPN	_	_	145	conj	_	SpaceAfter=No	*
+150	,	,	PUNCT	_	_	152	punct	_	_	*
+151	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	152	det	_	_	*
+152	côteaux	côteau	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	_	*
+153	et	et	CCONJ	_	_	155	cc	_	_	*
+154	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	155	det	_	_	*
+155	abords	abord	NOUN	_	Gender=Masc|Number=Plur	152	conj	_	_	*
+156-157	des	_	_	_	_	_	_	_	_	*
+156	de	de	ADP	_	_	158	case	_	_	*
+157	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	158	det	_	_	*
+158	villages	village	NOUN	_	Gender=Masc|Number=Plur	155	nmod	_	SpaceAfter=No	*
+159	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 7
+# text = Les élus ont réaffirmé leur souhait de préserver l'identité architecturale et urbaine locale alors que plusieurs actions ont déjà été engagées : le fleurissement, l'aménagement des usoirs, l'enfouissement des réseaux aériens.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	élus	élu	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	réaffirmé	réaffirmer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	souhait	souhait	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	mark	_	_	*
+8	préserver	préserver	VERB	_	VerbForm=Inf	6	acl	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	identité	identité	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	architecturale	architectural	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	urbaine	urbain	ADJ	_	Gender=Fem|Number=Sing	11	conj	_	_	*
+14	locale	local	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	alors	alors	ADV	_	_	22	mark	_	_	*
+16	que	que	SCONJ	_	_	15	fixed	_	_	*
+17	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	18	det	_	_	*
+18	actions	action	NOUN	_	Gender=Fem|Number=Plur	22	nsubj:pass	_	_	*
+19	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+20	déjà	déjà	ADV	_	_	22	advmod	_	_	*
+21	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	aux:pass	_	_	*
+22	engagées	engager	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	4	advcl	_	_	*
+23	:	:	PUNCT	_	_	25	punct	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	fleurissement	fleurissement	NOUN	_	Gender=Masc|Number=Sing	18	appos	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*
+27	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	aménagement	aménagement	NOUN	_	Gender=Masc|Number=Sing	25	conj	_	_	*
+29-30	des	_	_	_	_	_	_	_	_	*
+29	de	de	ADP	_	_	31	case	_	_	*
+30	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_	*
+31	usoirs	usoir	NOUN	_	Gender=Masc|Number=Plur	28	nmod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	34	punct	_	_	*
+33	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*
+34	enfouissement	enfouissement	NOUN	_	Gender=Masc|Number=Sing	25	conj	_	_	*
+35-36	des	_	_	_	_	_	_	_	_	*
+35	de	de	ADP	_	_	37	case	_	_	*
+36	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_	*
+37	réseaux	réseau	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	_	*
+38	aériens	aérien	ADJ	_	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 8
+# text = Par contre, aucun point de vue n'est encore aménagé, et les côteaux sont souvent en friches, alors que des appuis financiers européens, nationaux et régionaux peuvent être obtenus.
+1	Par	par	ADP	_	_	11	advmod	_	_	*
+2	contre	contre	NOUN	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	aucun	aucun	DET	_	Gender=Masc|Number=Sing|Polarity=Neg|PronType=Neg	5	det	_	_	*
+5	point	point	NOUN	_	Gender=Masc|Number=Sing	11	nsubj:pass	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	vue	vue	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	SpaceAfter=No	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*
+10	encore	encore	ADV	_	_	11	advmod	_	_	*
+11	aménagé	aménager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	19	punct	_	_	*
+13	et	et	CCONJ	_	_	19	cc	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	côteaux	côteau	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*
+16	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*
+17	souvent	souvent	ADV	_	_	19	advmod	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	friches	friche	NOUN	_	Gender=Fem|Number=Plur	11	conj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	32	punct	_	_	*
+21	alors	alors	ADV	_	_	32	mark	_	_	*
+22	que	que	SCONJ	_	_	21	fixed	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	appuis	appui	NOUN	_	Gender=Masc|Number=Plur	32	nsubj	_	_	*
+26	financiers	financier	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_	*
+27	européens	européen	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	29	punct	_	_	*
+29	nationaux	national	ADJ	_	Gender=Masc|Number=Plur	27	conj	_	_	*
+30	et	et	CCONJ	_	_	31	cc	_	_	*
+31	régionaux	régional	ADJ	_	Gender=Masc|Number=Plur	27	conj	_	_	*
+32	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+33	être	être	AUX	_	VerbForm=Inf	34	aux:pass	_	_	*
+34	obtenus	obtenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	32	xcomp	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 9
+# text = Cinq objectifs pourraient être retenus dans un programme global dont les actions seraient mises en place progressivement : inventorier et localiser les atouts paysagers du territoire intercommunal avec repérage des points forts ; préservation et réhabilitation du patrimoine bati ; mise en valeur des paysages le long des voies de circulation terrestres et fluviale ;
+1	Cinq	Cinq	NUM	_	_	2	nummod	_	_	*
+2	objectifs	objectif	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+3	pourraient	pouvoir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	_	*
+5	retenus	retenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	xcomp	_	_	*
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	programme	programme	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*
+9	global	global	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	dont	dont	PRON	_	PronType=Rel	12	nmod	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	actions	action	NOUN	_	Gender=Fem|Number=Plur	14	nsubj:pass	_	_	*
+13	seraient	être	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux:pass	_	_	*
+14	mises	mettre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	place	place	NOUN	_	Gender=Fem|Number=Sing	14	obl	_	_	*
+17	progressivement	progressivement	ADV	_	_	14	advmod	_	_	*
+18	:	:	PUNCT	_	_	19	punct	_	_	*
+19	inventorier	inventorier	VERB	_	VerbForm=Inf	14	parataxis	_	_	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*
+21	localiser	localiser	VERB	_	VerbForm=Inf	19	conj	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	atouts	atout	NOUN	_	Gender=Masc|Number=Plur	21	obj	_	_	*
+24	paysagers	paysager	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*
+25-26	du	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	territoire	territoire	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+28	intercommunal	intercommunal	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+29	avec	avec	ADP	_	_	30	case	_	_	*
+30	repérage	repérage	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*
+31-32	des	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_	*
+33	points	point	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_	*
+34	forts	fort	ADJ	_	Gender=Masc|Number=Plur	33	amod	_	_	*
+35	;	;	PUNCT	_	_	36	punct	_	_	*
+36	préservation	préservation	NOUN	_	Gender=Fem|Number=Sing	19	conj	_	_	*
+37	et	et	CCONJ	_	_	38	cc	_	_	*
+38	réhabilitation	réhabilitation	NOUN	_	Gender=Fem|Number=Sing	36	conj	_	_	*
+39-40	du	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	patrimoine	patrimoine	NOUN	_	Gender=Masc|Number=Sing	38	nmod	_	_	*
+42	bati	bati	ADJ	_	Gender=Masc|Number=Sing	41	amod	_	_	*
+43	;	;	PUNCT	_	_	44	punct	_	_	*
+44	mise	mise	NOUN	_	Gender=Fem|Number=Sing	36	conj	_	_	*
+45	en	en	ADP	_	_	46	case	_	_	*
+46	valeur	valeur	NOUN	_	Gender=Fem|Number=Sing	44	nmod	_	_	*
+47-48	des	_	_	_	_	_	_	_	_	*
+47	de	de	ADP	_	_	49	case	_	_	*
+48	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	49	det	_	_	*
+49	paysages	paysage	NOUN	_	Gender=Masc|Number=Plur	46	nmod	_	_	*
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_	*
+51	long	long	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+52-53	des	_	_	_	_	_	_	_	_	*
+52	de	de	ADP	_	_	54	case	_	_	*
+53	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	_	_	*
+54	voies	voie	NOUN	_	Gender=Fem|Number=Plur	51	nmod	_	_	*
+55	de	de	ADP	_	_	56	case	_	_	*
+56	circulation	circulation	NOUN	_	Gender=Fem|Number=Sing	54	nmod	_	_	*
+57	terrestres	terrestre	ADJ	_	Gender=Masc|Number=Plur	56	amod	_	_	*
+58	et	et	CCONJ	_	_	59	cc	_	_	*
+59	fluviale	fluvial	ADJ	_	Gender=Fem|Number=Sing	57	conj	_	_	*
+60	;	;	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 10
+# text = début de la valorisation de sites paysagers remarquables par des prestations touristiques et sensibilisation de la population aux atouts paysagers et patrimoniaux.
+1	début	début	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	valorisation	valorisation	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	sites	site	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+7	paysagers	paysager	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+8	remarquables	remarquable	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+9	par	par	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*
+12	prestations	prestation	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	_	*
+13	touristiques	touristique	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	sensibilisation	sensibilisation	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	population	population	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19-20	aux	_	_	_	_	_	_	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*
+21	atouts	atout	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+22	paysagers	paysager	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*
+23	et	et	CCONJ	_	_	24	cc	_	_	*
+24	patrimoniaux	patrimonial	ADJ	_	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 11
+# text = Ce plan de paysage serait mis en place en concertation avec la population, indispensable à la réussite du projet.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	paysage	paysage	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_	*
+6	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	place	place	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+9	en	en	ADP	_	_	10	case	_	_	*
+10	concertation	concertation	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+11	avec	avec	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	population	population	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	indispensable	indispensable	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	réussite	réussite	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	projet	projet	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 12
+# text = Un dossier à suivre.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	à	à	ADP	_	_	4	mark	_	_	*
+4	suivre	suivre	VERB	_	VerbForm=Inf	2	acl	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 13
+# text = L'Est Républicain : Gildo Magi, 187 rue de la Libération à Bouligny, tél.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	Est	Est	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Républicain	républicain	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Gildo	Gildo	PROPN	_	_	2	appos	_	_	*
+6	Magi	Magi	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	187	187	NUM	_	_	9	nummod	_	_	*
+9	rue	rue	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Libération	libération	PROPN	_	_	9	nmod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Bouligny	Bouligny	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	2	punct	_	_	*
+16	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 14
+# text = 03.29.87.97.59.
+1	03.29.87.97.59	03.29.87.97.59	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 15
+# text = Médecin de garde : régime général, en cas d'urgence téléphoner au Centre 15 ; régime minier, téléphoner au 03.82.21.81.06.
+1	Médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	garde	garde	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	régime	régime	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+6	général	général	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	9	punct	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	cas	cas	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	urgence	urgence	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+12	téléphoner	téléphoner	VERB	_	VerbForm=Inf	11	acl	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	Centre	Centre	PROPN	_	_	12	obl:arg	_	_	*
+16	15	15	NUM	_	_	15	nmod	_	_	*
+17	;	;	PUNCT	_	_	18	punct	_	_	*
+18	régime	régime	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*
+19	minier	minier	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	téléphoner	téléphoner	VERB	_	VerbForm=Inf	18	conj	_	_	*
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	03.82.21.81.06	03.82.21.81.06	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 16
+# text = Pharmacie de garde après 18 h 30 : téléphoner au 03.82.21.07.07.
+1	Pharmacie	pharmacie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	3	case	_	_	*
+3	garde	garde	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	après	après	ADP	_	_	6	case	_	_	*
+5	18	18	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	30	30	NUM	_	_	9	obl	_	_	*
+8	:	:	PUNCT	_	_	9	punct	_	_	*
+9	téléphoner	téléphoner	VERB	_	VerbForm=Inf	6	acl	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	03.82.21.07.07	03.82.21.07.07	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 17
+# text = Permanence en mairie : de 14 h à 16 h, Serge Landier (cimetière, logements, patrimoine).
+1	Permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	16	16	NUM	_	_	10	nummod	_	_	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	Serge	Serge	PROPN	_	_	1	appos	_	_	*
+13	Landier	Landier	PROPN	_	_	12	flat:name	_	_	*
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	cimetière	cimetière	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	logements	logement	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	patrimoine	patrimoine	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No	*
+20	)	)	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 18
+# text = Bibliothèque : de 14 h à 18 h.
+1	Bibliothèque	bibliothèque	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	1	punct	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	14	14	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	18	18	NUM	_	_	8	nummod	_	_	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 19
+# text = Gym volontaire : de 9 h à 10 h au gymnase.
+1	Gym	Gym	PROPN	_	_	0	root	_	_	*
+2	volontaire	volontaire	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	9	9	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	10	10	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 20
+# text = Top-loisirs : à 14 h à la salle Madeleine-Hastert au quartier de La Mourière.
+1	Top-loisirs	Top-loisirs	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	5	punct	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	14	14	NUM	_	_	5	nummod	_	_	*
+5	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+9	Madeleine-Hastert	Madeleine-Hastert	PROPN	_	_	8	appos	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	La	La	DET	_	_	15	det	_	_	*
+15	Mourière	Mourière	PROPN	_	_	12	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 21
+# text = Détente et loisirs : à 14 h à la salle Grimau au quartier de Joudreville.
+1	Détente	détente	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	_	*
+4	:	:	PUNCT	_	_	7	punct	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	14	14	NUM	_	_	7	nummod	_	_	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	salle	salle	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+11	Grimau	Grimau	PROPN	_	_	10	appos	_	_	*
+12-13	au	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Joudreville	Joudreville	PROPN	_	_	14	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 22
+# text = Club Pyramide : à 14 h à la salle annexe de la salle Grimau.
+1	Club	Club	PROPN	_	_	0	root	_	_	*
+2	Pyramide	pyramide	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	14	14	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7	à	à	ADP	_	_	10	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+9	salle	salle	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+10	annexe	annexe	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	salle	salle	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	Grimau	Grimau	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 23
+# text = Chez-nous : à 13 h 30, reprise au foyer Maurice-Thorez et galettes des rois.
+1	Chez	chez	ADP	_	_	2	case	_	SpaceAfter=No	*
+2	-nous	le	PRON	_	Number=Plur|Person=1|PronType=Prs	0	root	_	_	*
+3	:	:	PUNCT	_	_	2	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	13	13	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7	30	30	NUM	_	_	6	nummod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	reprise	reprendre	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+10-11	au	_	_	_	_	_	_	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+13	Maurice-Thorez	Maurice-Thorez	PROPN	_	_	12	appos	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	galettes	galette	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	rois	roi	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 24
+# text = Entr'amis : à 14 h au foyer Saint-Pierre.
+1	Entr'	Entr'	ADP	_	_	2	case	_	SpaceAfter=No	*
+2	amis	ami	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	:	:	PUNCT	_	_	2	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	14	14	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+10	Saint-Pierre	Saint-Pierre	PROPN	_	_	9	appos	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 25
+# text = Club ABC : à 20 h au foyer Maurice-Thorez.
+1	Club	Club	PROPN	_	_	0	root	_	_	*
+2	ABC	ABC	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	20	20	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	Maurice-Thorez	Maurice-Thorez	PROPN	_	_	9	appos	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 26
+# text = Piscine : école de natation, de 17 h à 18 h 30 (jeunes) et de 18 h 40 à 19 h 30 (adultes).
+1	Piscine	piscine	PROPN	_	_	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	école	école	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	natation	natation	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	17	17	NUM	_	_	9	nummod	_	_	*
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	18	18	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	30	30	NUM	_	_	12	nmod	_	_	*
+14	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No	*
+15	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	3	appos	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	15	punct	_	_	*
+17	et	et	CCONJ	_	_	20	cc	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	18	18	NUM	_	_	20	nummod	_	_	*
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*
+21	40	40	NUM	_	_	24	nummod	_	_	*
+22	à	à	ADP	_	_	23	case	_	_	*
+23	19	19	NUM	_	_	21	nmod	_	_	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+25	30	30	NUM	_	_	24	nmod	_	_	*
+26	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+27	adultes	adulte	NOUN	_	Gender=Masc|Number=Plur	20	appos	_	SpaceAfter=No	*
+28	)	)	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 27
+# text = ASBB football : à 18 h entraînement au gymnase (seniors A et B).
+1	ASBB	Asbb	ADV	_	_	2	advmod	_	_	*
+2	football	football	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	7	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	18	18	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+7	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	gymnase	gymnase	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	seniors	seniors	NOUN	_	Gender=Masc|Number=Plur	7	appos	_	_	*
+13	A	a	X	_	_	12	appos	_	_	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*
+15	B	B	X	_	_	12	conj	_	SpaceAfter=No	*
+16	)	)	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-09_8603.txt 28
+# text = ASJPB basket : à 19 h entraînement à la salle de Joudreville (seniors A et B).
+1	ASJPB	ASJPB	ADV	_	_	2	advmod	_	_	*
+2	basket	basket	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	:	:	PUNCT	_	_	7	punct	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	19	19	NUM	_	_	6	nummod	_	_	*
+6	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+7	entraînement	entraînement	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	salle	salle	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Joudreville	Joudreville	PROPN	_	_	10	nmod	_	_	*
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+14	seniors	seniors	NOUN	_	Gender=Masc|Number=Plur	7	appos	_	_	*
+15	A	a	X	_	_	14	appos	_	_	*
+16	et	et	CCONJ	_	_	17	cc	_	_	*
+17	B	B	X	_	_	14	conj	_	SpaceAfter=No	*
+18	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*
+

@@ -1,0 +1,473 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-02-20_60605.txt
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 1
+# text = Frédéric Arnould : « des aides personnalisées » Frédéric Arnould, un président de terrain.
+1	Frédéric	Frédéric	PROPN	_	_	0	root	_	_	*
+2	Arnould	Arnould	PROPN	_	_	1	flat:name	_	_	*
+3	:	:	PUNCT	_	_	7	punct	_	_	*
+4	«	«	PUNCT	_	_	7	punct	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	aides	aide	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	_	*
+8	personnalisées	personnaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9	»	»	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+10	Frédéric	Frédéric	PROPN	_	_	7	appos	_	_	*
+11	Arnould	Arnould	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	président	président	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 2
+# text = Comment sont distribuées les aides ?
+1	Comment	comment	ADV	_	_	3	advmod	_	_	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	distribuées	distribuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*
+5	aides	aide	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*
+6	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 3
+# text = Frédéric Arnould « Jusqu'à ce jour, nous étions tenus de remettre les dons à la Centrale Caritative de Vinigradov que gérait le père Tihamer et que l'on rencontrait souvent à Sion.
+1	Frédéric	Frédéric	PROPN	_	_	11	nsubj	_	_	*
+2	Arnould	Arnould	PROPN	_	_	1	flat:name	_	_	*
+3	«	«	PUNCT	_	_	7	punct	_	_	*
+4	Jusqu'	jusque	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*
+7	jour	jour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	1	punct	_	_	*
+9	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	11	obj	_	_	*
+10	étions	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	11	aux:tense	_	_	*
+11	tenus	tenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	de	de	ADP	_	_	13	mark	_	_	*
+13	remettre	remettre	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	dons	don	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	_	*
+16	à	à	ADP	_	_	19	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+18	Centrale	centrale	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*
+19	Caritative	Caritatif	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Vinigradov	Vinigradov	PROPN	_	_	19	nmod	_	_	*
+22	que	que	PRON	_	PronType=Rel	23	obj	_	_	*
+23	gérait	gérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	acl:relcl	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	père	père	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+26	Tihamer	Tihamer	PROPN	_	_	25	appos	_	_	*
+27	et	et	CCONJ	_	_	31	cc	_	_	*
+28	que	que	SCONJ	_	_	31	mark	_	_	*
+29	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	31	nsubj	_	SpaceAfter=No	*
+30	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	29	fixed	_	_	*
+31	rencontrait	rencontrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	conj	_	_	*
+32	souvent	souvent	ADV	_	_	31	advmod	_	_	*
+33	à	à	ADP	_	_	34	case	_	_	*
+34	Sion	Sion	PROPN	_	_	31	obl:arg	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 4
+# text = Depuis sa nomination en Hongrie, une nouvelle équipe a été mise en place avec qui ont été établis des contacts fructueux afin de pérenniser notre action sur l'ensemble de la Transcarpatie.
+1	Depuis	depuis	ADP	_	_	3	case	_	_	*
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	nomination	nomination	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	Hongrie	Hongrie	PROPN	_	_	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+8	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+9	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:pass	_	_	*
+12	mise	mettre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	place	place	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*
+15	avec	avec	ADP	_	_	16	case	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	19	nsubj:pass	_	_	*
+17	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+18	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	aux:pass	_	_	*
+19	établis	établir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	xcomp	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	contacts	contact	NOUN	_	Gender=Masc|Number=Plur	19	obl:arg	_	_	*
+23	fructueux	fructueux	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	_	*
+24	afin	afin	ADV	_	_	19	advmod	_	_	*
+25	de	de	ADP	_	_	26	mark	_	_	*
+26	pérenniser	pérenniser	VERB	_	VerbForm=Inf	24	ccomp	_	_	*
+27	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*
+28	action	action	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	_	*
+29	sur	sur	ADP	_	_	31	case	_	_	*
+30	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No	*
+31	ensemble	ensemble	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*
+32	de	de	ADP	_	_	34	case	_	_	*
+33	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_	*
+34	Transcarpatie	Transcarpatie	PROPN	_	_	31	nmod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 5
+# text = Seront reprises les activités principales : jardin d'enfants, cuisine de charité, centre pour handicapés, foyer de jour Sainte-Edwige qui vient en aide aux jeunes gitans ».
+1	Seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	aux:pass	_	_	*
+2	reprises	reprendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*
+4	activités	activité	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	_	*
+5	principales	principal	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	_	*
+6	:	:	PUNCT	_	_	7	punct	_	_	*
+7	jardin	jardin	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	cuisine	cuisine	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	charité	charité	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	centre	centre	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+16	pour	pour	ADP	_	_	17	case	_	_	*
+17	handicapés	handicapé	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	foyer	foyer	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	jour	jour	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+22	Sainte-Edwige	Sainte-Edwige	PROPN	_	_	19	appos	_	_	*
+23	qui	qui	PRON	_	PronType=Rel	24	nsubj	_	_	*
+24	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_	1:LVC.full
+25	en	en	ADP	_	_	26	case	_	_	1
+26	aide	aide	NOUN	_	Gender=Fem|Number=Sing	24	obl	_	_	1
+27-28	aux	_	_	_	_	_	_	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_	*
+29	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*
+30	gitans	gitan	ADJ	_	Gender=Masc|Number=Plur	29	amod	_	_	*
+31	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 6
+# text = Pourquoi les médicaments ne font-ils plus partie du voyage ?
+1	Pourquoi	pourquoi	ADV	_	_	5	advmod	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	médicaments	médicament	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+4	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1:VID
+6	-ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	det	_	_	*
+7	plus	plus	ADV	_	_	8	advmod	_	_	*
+8	partie	partie	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+12	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 7
+# text = F.A.
+1	F.A	F.A	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 8
+# text = « Les exigences gouvernementales ajoutées aux difficultés d'approvisionnement en la matière, ont conduit la Centrale caritative à ne plus assurer cette activité ».
+1	«	«	PUNCT	_	_	16	punct	_	_	*
+2	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	exigences	exigence	NOUN	_	Gender=Fem|Number=Plur	16	nsubj	_	_	*
+4	gouvernementales	gouvernemental	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+5	ajoutées	ajouter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	*
+6-7	aux	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	difficultés	difficulté	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	approvisionnement	approvisionnement	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	en	en	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	matière	matière	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	3	punct	_	_	*
+15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	conduit	conduire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	Centrale	centrale	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*
+19	caritative	caritatif	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+20	à	à	ADP	_	_	23	mark	_	_	*
+21	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	_	*
+22	plus	plus	ADV	_	_	23	advmod	_	_	*
+23	assurer	assurer	VERB	_	VerbForm=Inf	16	xcomp	_	_	*
+24	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	25	det	_	_	*
+25	activité	activité	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*
+26	»	»	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 9
+# text = Votre aide s'apparente-t-elle à une forme d'assistanat ?
+1	Votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	aide	aide	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:IRV
+4	apparente	apparenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1
+5	-t	t	PART	_	_	6	dep	_	SpaceAfter=No	*
+6	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	forme	forme	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	assistanat	assistanat	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	?	?	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 10
+# text = F.A. : « Si nous continuons à alimenter la Centrale caritative, nous assurons parallèlement des aides personnalisées en dehors des directives de la Centrale.
+1	F.A	F.A	PROPN	_	_	15	nsubj	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+3	:	:	PUNCT	_	_	1	punct	_	_	*
+4	«	«	PUNCT	_	_	7	punct	_	_	*
+5	Si	si	SCONJ	_	_	7	mark	_	_	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+7	continuons	continuer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	15	advcl	_	_	*
+8	à	à	ADP	_	_	9	mark	_	_	*
+9	alimenter	alimenter	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	Centrale	centrale	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	caritative	caritatif	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	7	punct	_	_	*
+14	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	15	nsubj	_	_	*
+15	assurons	assurer	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+16	parallèlement	parallèlement	ADV	_	_	15	advmod	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	aides	aide	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	_	_	*
+20	personnalisées	personnaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	19	acl	_	_	*
+21	en	en	ADP	_	_	22	case	_	_	*
+22	dehors	dehors	NOUN	_	Gender=Masc|Number=Sing	20	obl	_	_	*
+23-24	des	_	_	_	_	_	_	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*
+25	directives	directive	NOUN	_	Gender=Fem|Number=Plur	22	nmod	_	_	*
+26	de	de	ADP	_	_	28	case	_	_	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	Centrale	Centrale	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 11
+# text = Par exemple, nous parrainons la rénovation d'une maison au centre de Vinogradov, bâtisse devant accueillir une famille de 5 enfants.
+1	Par	par	ADP	_	_	5	advmod	_	_	*
+2	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*
+4	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	parrainons	parrainir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	rénovation	rénovation	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*
+8	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	maison	maison	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	centre	centre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Vinogradov	Vinogradov	PROPN	_	_	13	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	bâtisse	bâtisse	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*
+18	devant	devoir	ADP	_	_	19	mark	_	_	*
+19	accueillir	accueillir	VERB	_	VerbForm=Inf	17	acl	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	famille	famille	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	5	5	NUM	_	_	24	nummod	_	_	*
+24	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 12
+# text = Avec l'argent collecté, nous achetons sur place, les matériaux nécessaires à la rénovation qui sera entreprise par les habitants eux-mêmes.
+1	Avec	avec	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	argent	argent	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+4	collecté	collecter	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	3	punct	_	_	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*
+7	achetons	acheter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	sur	sur	ADP	_	_	9	case	_	_	*
+9	place	place	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	matériaux	matériau	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*
+13	nécessaires	nécessaire	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	rénovation	rénovation	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	19	nsubj:pass	_	_	*
+18	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	19	aux:pass	_	_	*
+19	entreprise	entreprendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	16	acl:relcl	_	_	*
+20	par	par	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*
+22	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	19	obl:agent	_	_	*
+23	eux-mêmes	eux-mêmes	PRON	_	Gender=Masc|Number=Plur|Person=3|Reflex=Yes	22	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 13
+# text = Notre aide vise aujourd'hui à redonner goût à se remettre au travail.
+1	Notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	aide	aide	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	vise	viser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	aujourd'hui	aujourd'hui	ADV	_	_	3	advmod	_	_	*
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	redonner	redonner	VERB	_	VerbForm=Inf	3	ccomp	_	_	*
+7	goût	goût	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+8	à	à	ADP	_	_	10	mark	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	obj	_	_	1:IRV
+10	remettre	remettre	VERB	_	VerbForm=Inf	6	xcomp	_	_	1
+11-12	au	_	_	_	_	_	_	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	travail	travail	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 14
+# text = Un exemple d'aide parmi tant d'autres ».
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+4	aide	aide	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	parmi	parmi	ADP	_	_	6	case	_	_	*
+6	tant	tant	ADV	_	_	2	nmod	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	autres	autre	PRON	_	Number=Plur	6	obl:arg	_	_	*
+9	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 15
+# text = « Quels sont vos besoins ? » F.A.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Quels	quel	PRON	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	*
+5	besoins	besoin	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+6	?	?	PUNCT	_	_	5	punct	_	_	*
+7	»	»	PUNCT	_	_	5	punct	_	_	*
+8	F.A.	F.A.	X	_	_	5	appos	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 16
+# text = : « Ceux exprimés par les Ukrainiens eux-mêmes.
+1	:	:	PUNCT	_	_	3	punct	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	0	root	_	_	*
+4	exprimés	exprimer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	*
+5	par	par	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	Ukrainiens	Ukrainiens	PROPN	_	_	4	obl:agent	_	_	*
+8	eux-mêmes	eux-mêmes	PRON	_	Gender=Masc|Number=Plur|Person=3|Reflex=Yes	7	nmod	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 17
+# text = Aujourd'hui, les greniers de l'Association sont pratiquement vides.
+1	Aujourd'hui	aujourd'hui	ADV	_	_	10	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	greniers	grenier	NOUN	_	Gender=Masc|Number=Plur	10	nsubj	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	Association	association	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+9	pratiquement	pratiquement	ADV	_	_	10	advmod	_	_	*
+10	vides	vide	ADJ	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 18
+# text = Nous recevons volontiers tous les produits d'hygiène ou de premières nécessités.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	recevons	recevoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	volontiers	volontiers	NOUN	_	Gender=Masc|Number=Plur	2	obl	_	_	*
+4	tous	tout	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	produits	produit	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+8	hygiène	hygiène	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	ou	ou	CCONJ	_	_	12	cc	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	premières	premier	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_	*
+12	nécessités	nécessité	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 19
+# text = Mais l'argent est le bienvenu.
+1	Mais	mais	CCONJ	_	_	6	cc	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	argent	argent	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	bienvenu	bienvenu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 20
+# text = Aujourd'hui, la subvention accordée par le Conseil général a trouvé son utilisation.
+1	Aujourd'hui	aujourd'hui	ADV	_	_	11	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+5	accordée	accorder	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	par	par	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	_	_	*
+9	général	général	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	trouvé	trouver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*
+13	utilisation	utilisation	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 21
+# text = Le moindre don nous permettra de poursuivre notre action auprès de la Centrale, mais aussi intensifier nos efforts en direction des aides personnalisées » Contact : Fraternité Lorraine-Ukraine.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	moindre	moindre	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	don	don	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	5	iobj	_	_	*
+5	permettra	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+6	de	de	ADP	_	_	7	mark	_	_	*
+7	poursuivre	poursuivre	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+8	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	action	action	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+10	auprès	auprès	ADV	_	_	7	advmod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Centrale	Centrale	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	mais	mais	CCONJ	_	_	17	cc	_	_	*
+16	aussi	aussi	ADV	_	_	17	advmod	_	_	*
+17	intensifier	intensifier	VERB	_	VerbForm=Inf	5	conj	_	_	*
+18	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	efforts	effort	NOUN	_	Gender=Masc|Number=Plur	17	obj	_	_	*
+20	en	en	ADP	_	_	21	case	_	_	*
+21	direction	direction	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_	*
+24	aides	aide	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	_	*
+25	personnalisées	personnaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	24	acl	_	_	*
+26	»	»	PUNCT	_	_	24	punct	_	_	*
+27	Contact	contact	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+28	:	:	PUNCT	_	_	29	punct	_	_	*
+29	Fraternité	Fraternité	PROPN	_	_	19	appos	_	_	*
+30	Lorraine-Ukraine	Lorraine-Ukraine	PROPN	_	_	29	flat:name	_	SpaceAfter=No	*
+31	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 22
+# text = Association loi 1901, 2, rue de l'Eglise 54330 Houdelmont.
+1	Association	association	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	loi	loi	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+3	1901	1901	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*
+5	2	2	NUM	_	_	1	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	rue	rue	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	Eglise	Eglise	PROPN	_	_	7	nmod	_	_	*
+11	54330	54330	NUM	_	_	12	nummod	_	_	*
+12	Houdelmont	Houdelmont	PROPN	_	_	10	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 23
+# text = Tél.
+1	Tél.	Tél.	ADV	_	_	0	root	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-02-20_60605.txt 24
+# text = 03.83.26.90.19.
+1	03.83.26.90.19	03.83.26.90.19	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

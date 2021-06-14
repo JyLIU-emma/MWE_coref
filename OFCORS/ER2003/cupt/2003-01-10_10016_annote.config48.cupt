@@ -1,0 +1,660 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-10_10016.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 1
+# text = Le tuyau gelé « Je dormais quand cela est arrivé » ajoute Mme Pointurier.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	tuyau	tuyau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	gelé	geler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	SpacesAfter=\n	*
+4	«	«	PUNCT	_	_	5	punct	_	_	*
+5	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	appos	_	_	*
+6	dormais	dormais	ADV	_	_	5	advmod	_	_	*
+7	quand	quand	SCONJ	_	_	10	mark	_	_	*
+8	cela	cela	PRON	_	Number=Sing|PronType=Dem	10	nsubj	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	arrivé	arriver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	_	*
+11	»	»	PUNCT	_	_	10	punct	_	_	*
+12	ajoute	ajouter	DET	_	Gender=Fem|Number=Sing	13	det	_	_	*
+13	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+14	Pointurier	Pointurier	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 2
+# text = Entendant des bruits bizarres, son époux Bernard s'est levé, descendant aussitôt au rez-de-chaussée.
+1	Entendant	Entendant	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	bruits	bruit	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+5	bizarres	bizarre	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*
+7	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	_	*
+8	époux	époux	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+9	Bernard	Bernard	PROPN	_	_	8	appos	_	_	*
+10	s'	se	PRON	_	Person=3|PronType=Prs	12	expl:comp	_	SpaceAfter=No	1:IRV
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	levé	lever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	1
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	descendant	descendre	VERB	_	Tense=Pres|VerbForm=Part	12	advcl	_	_	*
+15	aussitôt	aussitôt	ADV	_	_	14	advmod	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	rez-de-chaussée	rez-de-chaussée	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 3
+# text = « Il m'a crié lève-toi, il y a le feu.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*
+3	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	crié	crier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	lève	lève	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No	*
+7	-toi	soi	PRON	_	Number=Sing|Person=2	6	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl:subj	_	_	1:VID
+10	y	y	PRON	_	_	11	expl:comp	_	_	1
+11	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	1
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	feu	feu	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 4
+# text = J'ai appelé tout de suite les pompiers ».
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*
+2	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	appelé	appeler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	tout	tout	ADV	_	_	6	advmod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	suite	suite	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*
+9	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 5
+# text = Quant à son mari, qui est actuellement à la recherche d'un emploi, il a voulu essayer d'arroser le sinistre naissant qui aurait à priori débuté à la chaudière, quasiment au milieu de l'habitation, mais le tuyau d'arrosage est gelé.
+1	Quant	quant	ADV	_	_	4	case	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*
+4	mari	mari	NOUN	_	Gender=Masc|Number=Sing	18	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*
+7	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+8	actuellement	actuellement	ADV	_	_	7	advmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+12	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	4	punct	_	_	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_	*
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*
+18	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+19	essayer	essayer	VERB	_	VerbForm=Inf	18	xcomp	_	_	*
+20	d'	de	ADP	_	_	21	mark	_	SpaceAfter=No	*
+21	arroser	arroser	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	21	obj	_	_	*
+24	naissant	naître	VERB	_	Tense=Pres|VerbForm=Part	23	acl	_	_	*
+25	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*
+26	aurait	avoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	priori	priori	ADV	_	_	29	advmod	_	_	*
+29	débuté	débuter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	obl:arg	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	chaudière	chaudière	NOUN	_	Gender=Fem|Number=Sing	29	obl:mod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	37	punct	_	_	*
+34	quasiment	quasiment	ADV	_	_	37	advmod	_	_	*
+35-36	au	_	_	_	_	_	_	_	_	*
+35	à	à	ADP	_	_	37	case	_	_	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*
+37	milieu	milieu	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	SpaceAfter=No	*
+40	habitation	habitation	NOUN	_	Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No	*
+41	,	,	PUNCT	_	_	48	punct	_	_	*
+42	mais	mais	CCONJ	_	_	48	cc	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	tuyau	tuyau	NOUN	_	Gender=Masc|Number=Sing	48	nsubj:pass	_	_	*
+45	d'	de	ADP	_	_	46	case	_	SpaceAfter=No	*
+46	arrosage	arrosage	NOUN	_	Gender=Masc|Number=Sing	44	nmod	_	_	*
+47	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	aux:pass	_	_	*
+48	gelé	geler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	conj	_	SpaceAfter=No	*
+49	.	.	PUNCT	_	_	18	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 6
+# text = Une demeure ancienne, des planchers de bois, malgré une intervention rapide des pompiers de Plombières-les-Bains, de la grande échelle romarimontaine et d'un autre fourgon de Remiremont, les pompiers coordonnés par le major Jean-Louis Huilié ne pourront se rendre maîtres du sinistre qui détruira l'habitation.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	demeure	demeure	NOUN	_	Gender=Fem|Number=Sing	43	nsubj	_	_	*
+3	ancienne	ancien	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	planchers	plancher	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	bois	bois	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	malgré	malgré	ADP	_	_	13	case	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*
+14	rapide	rapide	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	Plombières-les-Bains	Plombières-les-Bains	PROPN	_	_	17	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	24	punct	_	_	*
+21	de	de	ADP	_	_	24	case	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+23	grande	grand	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	_	*
+24	échelle	échelle	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+25	romarimontaine	romarimontain	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	_	*
+26	et	et	CCONJ	_	_	30	cc	_	_	*
+27	d'	de	ADP	_	_	30	case	_	SpaceAfter=No	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+29	autre	autre	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	_	*
+30	fourgon	fourgon	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+31	de	de	ADP	_	_	32	case	_	_	*
+32	Remiremont	Remiremont	PROPN	_	_	30	nmod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	35	punct	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*
+35	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	_	*
+36	coordonnés	coordonné	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	35	acl	_	_	*
+37	par	par	ADP	_	_	39	case	_	_	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	major	major	NOUN	_	Gender=Masc|Number=Sing	36	obl:agent	_	_	*
+40	Jean-Louis	Jean-Louis	PROPN	_	_	39	appos	_	_	*
+41	Huilié	Huilié	PROPN	_	_	40	flat:name	_	_	*
+42	ne	ne	ADV	_	Polarity=Neg	43	advmod	_	_	*
+43	pourront	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+44	se	se	PRON	_	Person=3|PronType=Prs	45	expl:comp	_	_	1:IRV
+45	rendre	rendre	VERB	_	VerbForm=Inf	43	xcomp	_	_	1
+46	maîtres	maître	NOUN	_	Gender=Masc|Number=Plur	45	xcomp	_	_	*
+47-48	du	_	_	_	_	_	_	_	_	*
+47	de	de	ADP	_	_	49	case	_	_	*
+48	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_	*
+49	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	46	nmod	_	_	*
+50	qui	qui	PRON	_	PronType=Rel	51	nsubj	_	_	*
+51	détruira	détruire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	49	acl:relcl	_	_	*
+52	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	_	SpaceAfter=No	*
+53	habitation	habitation	NOUN	_	Gender=Fem|Number=Sing	51	obj	_	SpaceAfter=No	*
+54	.	.	PUNCT	_	_	43	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 7
+# text = Aidés des secours, les occupants essaieront vainement de sortir quelques affaires.
+1	Aidés	aider	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	advcl	_	_	*
+2-3	des	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	secours	secours	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	occupants	occupant	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	*
+8	essaieront	essaier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+9	vainement	vainement	ADV	_	_	8	advmod	_	_	*
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	sortir	sortir	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+12	quelques	quelque	DET	_	Gender=Fem|Number=Plur	13	det	_	_	*
+13	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 8
+# text = « En les attendant, j'avais essayé de prendre quelques effets, mais la fumée m'a prise à la gorge et j'ai dû ressortir ».
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	En	en	ADP	_	_	4	mark	_	_	*
+3	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	*
+4	attendant	attendre	VERB	_	Tense=Pres|VerbForm=Part	8	advcl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	SpaceAfter=No	*
+7	avais	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	8	aux:tense	_	_	*
+8	essayé	essayer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	de	de	ADP	_	_	10	mark	_	_	*
+10	prendre	prendre	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	quelques	quelque	DET	_	Gender=Masc|Number=Plur	12	det	_	_	*
+12	effets	effet	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	19	punct	_	_	*
+14	mais	mais	CCONJ	_	_	19	cc	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	fumée	fumée	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*
+17	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	19	obj	_	SpaceAfter=No	*
+18	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+19	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	gorge	gorge	NOUN	_	Gender=Fem|Number=Sing	19	obl:arg	_	_	*
+23	et	et	CCONJ	_	_	26	cc	_	_	*
+24	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	26	nsubj	_	SpaceAfter=No	*
+25	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	26	aux:tense	_	_	*
+26	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	*
+27	ressortir	ressortrir	VERB	_	VerbForm=Inf	26	xcomp	_	_	*
+28	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 9
+# text = Présent sur les lieux, Philippe Faivre, maire de la commune, devait s'assurer du relogement de cette famille dans un meublé.
+1	Présent	présent	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|Typo=Yes|VerbForm=Fin	14	advcl	_	_	*
+2	sur	sur	ADP	_	_	4	case	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	1	obl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	1	punct	_	_	*
+6	Philippe	Philippe	PROPN	_	_	14	nsubj	_	_	*
+7	Faivre	Faivre	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	maire	maire	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	commune	commune	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	6	punct	_	_	*
+14	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+15	s'	se	PRON	_	Person=3|PronType=Prs	16	obj	_	SpaceAfter=No	1:IRV
+16	assurer	assurer	VERB	_	VerbForm=Inf	14	xcomp	_	_	1
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	relogement	relogement	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	22	det	_	_	*
+22	famille	famille	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+23	dans	dans	ADP	_	_	25	case	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	meublé	meublé	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 10
+# text = « Mon fils est interne, il a quelques affaires.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*
+3	fils	fils	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	interne	interne	ADJ	_	Gender=Masc|Number=Sing	8	advcl	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	quelques	quelque	DET	_	Gender=Fem|Number=Plur	10	det	_	_	*
+10	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	SpaceAfter=No	*
+11	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 11
+# text = On va voir ce qui est encore intact à l'intérieur, mais j'ai peu d'espoir.
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*
+2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	voir	voir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	encore	encore	ADV	_	_	8	advmod	_	_	*
+8	intact	intact	ADJ	_	Gender=Masc|Number=Sing	4	acl:relcl	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	intérieur	intérieur	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	mais	mais	CCONJ	_	_	15	cc	_	_	*
+14	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	SpaceAfter=No	*
+15	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+16	peu	peu	ADV	_	_	15	obj	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	espoir	espoir	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 12
+# text = Tout a brûlé et ce qui ne l'a pas été a pu être touché par l'eau.
+1	Tout	tout	PRON	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	brûlé	brûler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	conj	_	_	*
+6	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+7	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	_	*
+8	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	13	obj	_	SpaceAfter=No	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+10	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	aux:pass	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+14	être	être	AUX	_	VerbForm=Inf	15	aux:pass	_	_	*
+15	touché	toucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	xcomp	_	_	*
+16	par	par	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	eau	eau	NOUN	_	Gender=Fem|Number=Sing	15	obl:agent	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 13
+# text = C'est triste, surtout pour les souvenirs, car ça, cela ne se rachète pas » conclut cette responsable informatique de chez Parisot.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	triste	triste	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	8	punct	_	_	*
+5	surtout	surtout	ADV	_	_	8	advmod	_	_	*
+6	pour	pour	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	souvenirs	souvenir	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	16	punct	_	_	*
+10	car	car	CCONJ	_	_	16	cc	_	_	*
+11	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	16	obl:mod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	11	punct	_	_	*
+13	cela	cela	PRON	_	Number=Sing|PronType=Dem	16	nsubj	_	_	*
+14	ne	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*
+15	se	se	PRON	_	Person=3|PronType=Prs	16	expl:comp	_	_	1:IRV
+16	rachète	racheter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	1
+17	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*
+18	»	»	PUNCT	_	_	16	punct	_	_	*
+19	conclut	conclure	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+20	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	21	det	_	_	*
+21	responsable	responsable	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+22	informatique	informatique	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	chez	chez	ADP	_	_	25	case	_	_	*
+25	Parisot	Parisot	PROPN	_	_	21	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 14
+# text = En l'espace de deux heures, le rêve d'une vie est parti en fumée.
+1	En	en	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	espace	espace	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	heures	heure	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	rêve	rêve	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	vie	vie	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*
+14	parti	partir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID
+15	en	en	ADP	_	_	16	case	_	_	1
+16	fumée	fumée	NOUN	_	Gender=Fem|Number=Sing	14	obl	_	SpaceAfter=No	1
+17	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 15
+# text = Les gendarmes plombinois sont chargés de l'enquête.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	gendarmes	gendarme	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	plombinois	plombinois	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	chargés	charger	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	SpaceAfter=No	*
+9	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 16
+# text = Catherine MAROTEL Une épaisse fumée blanche se dégageant d'une toiture calcinée et écroulée.
+1	Catherine	Catherine	PROPN	_	_	0	root	_	_	*
+2	MAROTEL	MAROTEL	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*
+3	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+4	épaisse	épaisse	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	fumée	fumer	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+6	blanche	blanc	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+7	se	se	PRON	_	Person=3|PronType=Prs	8	expl:comp	_	_	*
+8	dégageant	dégager	VERB	_	Tense=Pres|VerbForm=Part	5	acl	_	_	*
+9	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	toiture	toiture	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+12	calcinée	calciner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	écroulée	écrouler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	conj	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 17
+# text = Sous l'effet du froid mordant, l'eau gêle sur la route, tandis que des pompiers s'activent autour d'une habitation.
+1	Sous	sous	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	effet	effet	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+4-5	du	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	froid	froid	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7	mordant	mordant	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	eau	eau	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+11	gêle	gêl	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	sur	sur	ADP	_	_	14	case	_	_	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	route	route	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	20	punct	_	_	*
+16	tandis	tandis	ADV	_	_	20	cc	_	_	*
+17	que	que	SCONJ	_	_	16	fixed	_	_	*
+18-19	des	_	_	_	_	_	_	_	_	*
+18	de	de	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	pompiers	pompier	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	_	_	*
+21	s'	se	PRON	_	Person=3|PronType=Prs	22	expl:pass	_	SpaceAfter=No	*
+22	activent	activer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	autour	autour	ADV	_	_	22	advmod	_	_	*
+24	d'	de	ADP	_	_	26	case	_	SpaceAfter=No	*
+25	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	habitation	habitation	NOUN	_	Gender=Fem|Number=Sing	23	obl:arg	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 18
+# text = Hier, au lever du jour, c'étaient les seuls stigmates visibles de l'incendie accidentel qui a ravagé, vers 5 h 30, une maison d'habitation à la Croisette sur la commune du Val d'Ajol.
+1	Hier	hier	ADV	_	_	14	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	lever	lever	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	jour	jour	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	1	punct	_	_	*
+10	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*
+11	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	14	cop	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+13	seuls	seul	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*
+14	stigmates	stigmate	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+15	visibles	visible	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*
+18	incendie	incendie	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+19	accidentel	accidentel	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*
+21	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	ravagé	ravager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl:relcl	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	26	punct	_	_	*
+24	vers	vers	ADP	_	_	26	case	_	_	*
+25	5	5	NUM	_	_	26	nummod	_	_	*
+26	h	heure	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*
+27	30	30	NUM	_	_	26	nmod	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	maison	maison	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	_	*
+31	d'	de	ADP	_	_	32	case	_	SpaceAfter=No	*
+32	habitation	habitation	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	Croisette	Croisette	PROPN	_	_	30	nmod	_	_	*
+36	sur	sur	ADP	_	_	38	case	_	_	*
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_	*
+38	commune	commune	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	_	*
+39-40	du	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*
+41	Val	Val	PROPN	_	_	38	nmod	_	_	*
+42	d'	de	ADP	_	_	43	case	_	SpaceAfter=No	*
+43	Ajol	Ajol	PROPN	_	_	41	nmod	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 19
+# text = Un petit hameau situé en bord de la RN 57, à quelques dizaines de mètres de la limite du département de la Haute-Saône.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	hameau	hameau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	bord	bord	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	RN	RN	PROPN	_	_	6	nmod	_	_	*
+10	57	57	NUM	_	_	9	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	14	punct	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	quelques	quelque	DET	_	Gender=Fem|Number=Plur	14	det	_	_	*
+14	dizaines	dizaine	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	mètres	mètre	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	limite	limite	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	département	département	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	_	*
+23	de	de	ADP	_	_	25	case	_	_	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*
+25	Haute-Saône	Haute-Saône	PROPN	_	_	22	nmod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 20
+# text = Devant le numéro 121, où demeure la famille Pointurier victime du sinistre, un calvaire encastré dans une haie veille en bord de route.
+1	Devant	devant	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+4	121	121	NUM	_	_	3	nmod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	où	où	ADV	_	PronType=Rel	7	advmod	_	_	*
+7	demeure	demeurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	famille	famille	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*
+10	Pointurier	Pointurier	PROPN	_	_	9	appos	_	_	*
+11	victime	victime	NOUN	_	Gender=Fem|Number=Sing	9	appos	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	calvaire	calvaire	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*
+18	encastré	encastrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*
+19	dans	dans	ADP	_	_	21	case	_	_	*
+20	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	haie	haie	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	_	*
+22	veille	veiller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+23	en	en	ADP	_	_	24	case	_	_	*
+24	bord	bord	NOUN	_	Gender=Masc|Number=Sing	22	obl	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	route	route	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	22	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 21
+# text = « Nous avons emménagé ici en mai 2001 » se souvient Rosalie Pointurier en évaluant les dégâts à la lueur du jour.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	emménagé	emménager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	ccomp	_	_	*
+5	ici	ici	ADV	_	_	4	advmod	_	_	*
+6	en	en	ADP	_	_	7	case	_	_	*
+7	mai	mai	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+8	2001	2001	NUM	_	_	7	nmod	_	_	*
+9	»	»	PUNCT	_	_	4	punct	_	_	*
+10	se	se	PRON	_	Person=3|PronType=Prs	11	expl:comp	_	_	1:IRV
+11	souvient	souvenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+12	Rosalie	Rosalie	PROPN	_	_	11	nsubj	_	_	*
+13	Pointurier	Pointurier	PROPN	_	_	12	flat:name	_	_	*
+14	en	en	ADP	_	_	15	mark	_	_	*
+15	évaluant	évaluer	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	dégâts	dégât	NOUN	_	Gender=Masc|Number=Plur	15	obj	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	lueur	lueur	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	_	*
+21-22	du	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	jour	jour	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 22
+# text = « Cette maison date de 1848.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_	*
+3	maison	maison	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*
+4	date	dater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	1848	1848	NUM	_	_	4	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 23
+# text = C'était un coup de cœur pour ses vieilles pierres de taille, sa surface et surtout sa clarté.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	coup	coup	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+7	pour	pour	ADP	_	_	10	case	_	_	*
+8	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*
+9	vieilles	vieux	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*
+10	pierres	pierre	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	taille	taille	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*
+14	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	surface	surface	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*
+17	surtout	surtout	ADV	_	_	19	advmod	_	_	*
+18	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	clarté	clarté	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 24
+# text = Elle était très lumineuse et avait un vécu, un passé.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_	*
+3	très	très	ADV	_	_	4	advmod	_	_	*
+4	lumineuse	lumineux	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	vécu	vécu	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	passé	passé	NOUN	_	Gender=Masc|Number=Sing	4	conj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 25
+# text = Même si on peut la refaire, cela ne sera plus pareil.
+1	Même	même	ADV	_	_	4	advmod	_	_	*
+2	si	si	SCONJ	_	_	4	mark	_	_	*
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*
+4	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	refaire	refaire	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	4	punct	_	_	*
+8	cela	cela	PRON	_	Number=Sing|PronType=Dem	12	nsubj	_	_	*
+9	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*
+10	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	cop	_	_	*
+11	plus	plus	ADV	_	Polarity=Neg	12	advmod	_	_	*
+12	pareil	pareil	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	12	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-10_10016.txt 26
+# text = Et il faudra voir les dégâts causés par l'eau et le gel sur les pierres ».
+1	Et	et	CCONJ	_	_	3	cc	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+3	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+4	voir	voir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	dégâts	dégât	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+7	causés	causer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	acl	_	_	*
+8	par	par	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	eau	eau	NOUN	_	Gender=Fem|Number=Sing	7	obl:agent	_	_	*
+11	et	et	CCONJ	_	_	13	cc	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	gel	gel	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+14	sur	sur	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	pierres	pierre	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_	*
+17	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

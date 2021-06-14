@@ -1,0 +1,451 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-26_27849.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 1
+# text = La retraite pour le gardien du stade Jean-Marc Gauvain fêté, ainsi que sa femme.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	pour	pour	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	gardien	gardien	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6-7	du	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	stade	stade	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpacesAfter=\n	*
+9	Jean-Marc	Jean-Marc	PROPN	_	_	8	appos	_	_	*
+10	Gauvain	Gauvain	PROPN	_	_	9	flat:name	_	_	*
+11	fêté	fêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	2	punct	_	_	*
+13	ainsi	ainsi	ADV	_	_	16	cc	_	_	*
+14	que	que	SCONJ	_	_	13	fixed	_	_	*
+15	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	femme	femme	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 2
+# text = Depuis 1977, Jean-Marc Gauvain veille sur les installations sportives de la côte des Avrils : terrains de sports, cosec, salle de judo.
+1	Depuis	depuis	ADP	_	_	2	case	_	_	*
+2	1977	1977	NUM	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	Jean-Marc	Jean-Marc	PROPN	_	_	6	nsubj	_	_	*
+5	Gauvain	Gauvain	PROPN	_	_	4	flat:name	_	_	*
+6	veille	veiller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	sur	sur	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	installations	installation	NOUN	_	Gender=Fem|Number=Plur	6	obl	_	_	*
+10	sportives	sportif	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	côte	côte	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+16	Avrils	Avrils	PROPN	_	_	13	nmod	_	_	*
+17	:	:	PUNCT	_	_	18	punct	_	_	*
+18	terrains	terrain	NOUN	_	Gender=Masc|Number=Plur	6	parataxis	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	sports	sport	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*
+22	cosec	cosec	NOUN	_	Gender=Masc|Number=Sing	18	conj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	24	punct	_	_	*
+24	salle	salle	NOUN	_	Gender=Fem|Number=Sing	18	conj	_	_	*
+25	de	de	ADP	_	_	26	case	_	_	*
+26	judo	judo	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 3
+# text = Il a fait valoir ses droits à la retraite cette année et le maire de Saint-Mihiel n'a pas voulu le laisser partir sans le traditionnel cadeau de l'amicale du personnel communal.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj:caus	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	aux:caus	_	_	1:MVC
+4	valoir	valoir	VERB	_	VerbForm=Inf	0	root	_	_	1
+5	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*
+6	droits	droit	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+10	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_	*
+11	année	année	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+12	et	et	CCONJ	_	_	20	cc	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	maire	maire	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	14	nmod	_	_	*
+17	n'	ne	ADV	_	Polarity=Neg	20	advmod	_	SpaceAfter=No	*
+18	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*
+19	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*
+20	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_	*
+21	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_	*
+22	laisser	laisser	VERB	_	VerbForm=Inf	20	xcomp	_	_	*
+23	partir	partir	VERB	_	VerbForm=Inf	22	fixed	_	_	*
+24	sans	sans	ADP	_	_	27	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+26	traditionnel	traditionnel	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	_	*
+27	cadeau	cadeau	NOUN	_	Gender=Masc|Number=Sing	22	obl	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*
+31-32	du	_	_	_	_	_	_	_	_	*
+31	de	de	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*
+34	communal	communal	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 4
+# text = Jean-Marc Gauvain que tous les sportifs connaissent, est originaire de Cloyes dans l'Eure-et-Loir.
+1	Jean-Marc	Jean-Marc	PROPN	_	_	10	nsubj	_	_	*
+2	Gauvain	Gauvain	PROPN	_	_	1	flat:name	_	_	*
+3	que	que	SCONJ	_	_	7	mark	_	_	*
+4	tous	tout	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	sportifs	sportif	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*
+7	connaissent	connaître	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	7	punct	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	originaire	originaire	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Cloyes	Cloyes	PROPN	_	_	10	obl:arg	_	_	*
+13	dans	dans	ADP	_	_	15	case	_	_	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*
+15	Eure-et-Loir	Eure-et-Loir	PROPN	_	_	10	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 5
+# text = Il a longtemps été le cuisinier du bowling de Bouconville, avant d'entrer dans les services techniques municipaux en qualité de gardien des installations sportives.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+3	longtemps	longtemps	ADV	_	_	6	advmod	_	_	*
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	cop	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	cuisinier	cuisinier	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7-8	du	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	bowling	bowling	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Bouconville	Bouconville	PROPN	_	_	9	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	avant	avant	ADV	_	_	6	advmod	_	_	*
+14	d'	de	ADP	_	_	15	mark	_	SpaceAfter=No	*
+15	entrer	entrer	VERB	_	VerbForm=Inf	13	ccomp	_	_	*
+16	dans	dans	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*
+18	services	service	NOUN	_	Gender=Masc|Number=Plur	15	obl:arg	_	_	*
+19	techniques	technique	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+20	municipaux	municipal	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+21	en	en	ADP	_	_	22	case	_	_	*
+22	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	gardien	gardien	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_	*
+27	installations	installation	NOUN	_	Gender=Fem|Number=Plur	24	nmod	_	_	*
+28	sportives	sportif	ADJ	_	Gender=Fem|Number=Plur	27	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 6
+# text = Titularisé en 1979, agent technique principal depuis 1999, Jean-Marc Gauvain et son épouse, qui ont élevé 4 enfants, vont pouvoir profiter d'une retraite bien méritée que nous leur souhaitons la plus heureuse possible.
+1	Titularisé	Titulariser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	1979	1979	NUM	_	_	1	obl	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	agent	agent	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*
+6	technique	technique	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+7	principal	principal	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+8	depuis	depuis	ADP	_	_	9	case	_	_	*
+9	1999	1999	NUM	_	_	5	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	Jean-Marc	Jean-Marc	PROPN	_	_	5	conj	_	_	*
+12	Gauvain	Gauvain	PROPN	_	_	11	flat:name	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	épouse	épouse	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*
+18	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*
+19	élevé	élever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*
+20	4	4	NUM	_	_	21	nummod	_	_	*
+21	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	19	obj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	5	punct	_	_	*
+23	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+24	pouvoir	pouvoir	VERB	_	VerbForm=Inf	23	xcomp	_	_	*
+25	profiter	profiter	VERB	_	VerbForm=Inf	24	xcomp	_	_	*
+26	d'	de	ADP	_	_	28	case	_	SpaceAfter=No	*
+27	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*
+28	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	25	obl:arg	_	_	*
+29	bien	bien	ADV	_	_	30	advmod	_	_	*
+30	méritée	mérité	ADJ	_	Gender=Fem|Number=Sing	28	amod	_	_	*
+31	que	que	SCONJ	_	_	34	mark	_	_	*
+32	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	34	nsubj	_	_	*
+33	leur	lui	PRON	_	Number=Plur|Person=3|PronType=Prs	34	iobj	_	_	*
+34	souhaitons	souhaiter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	30	ccomp	_	_	*
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	advmod	_	_	*
+36	plus	plus	ADV	_	_	35	fixed	_	_	*
+37	heureuse	heureux	ADJ	_	Gender=Fem|Number=Sing	34	xcomp	_	_	*
+38	possible	possible	ADJ	_	Gender=Fem|Number=Sing	37	amod	_	SpaceAfter=No	*
+39	.	.	PUNCT	_	_	23	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 7
+# text = Orchestre d'harmonie
+1	Orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	harmonie	harmonie	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 8
+# text = Les musiciens de l'orchestre d'harmonie se réuniront en assemblée générale samedi 1er février à 18 h dans l'auditorium Berlioz.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	musiciens	musicien	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	orchestre	orchestre	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+7	harmonie	harmonie	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	obj	_	_	*
+9	réuniront	réunir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+12	générale	général	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	samedi	samedi	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+14	1er	1er	NUM	_	_	13	obl	_	_	*
+15	février	février	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	18	18	NUM	_	_	18	nummod	_	_	*
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+19	dans	dans	ADP	_	_	21	case	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	auditorium	auditorium	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+22	Berlioz	Berlioz	PROPN	_	_	21	appos	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 9
+# text = L'ordre du jour est le suivant : bilan moral, projets 2003, conseil d'administration et questions diverses.
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	jour	jour	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	suivant	suivant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+9	:	:	PUNCT	_	_	10	punct	_	_	*
+10	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	8	parataxis	_	_	*
+11	moral	moral	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	projets	projet	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_	*
+14	2003	2003	NUM	_	_	13	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*
+18	administration	administration	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*
+20	questions	question	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_	*
+21	diverses	divers	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 10
+# text = Toutes les personnes intéressées seront les bienvenues.
+1	Toutes	tout	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	_	*
+4	intéressées	intéresser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	*
+5	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	cop	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*
+7	bienvenues	bienvenue	NOUN	_	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 11
+# text = Assemblée de l'APEAC
+1	Assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	APEAC	APEAC	PROPN	_	_	1	nmod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 12
+# text = L'assemblée générale de l'amicale des parents d'élèves et amis du conservatoire municipal de musique de Saint-Mihiel se déroulera vendredi 31 janvier à 19 h, au conservatoire municipal de musique.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	_	*
+3	générale	général	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*
+6	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	parents	parent	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*
+11	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	amis	ami	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	conservatoire	conservatoire	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+17	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	musique	musique	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	16	nmod	_	_	*
+22	se	se	PRON	_	Person=3|PronType=Prs	23	expl:pass	_	_	1:IRV
+23	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1
+24	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	23	obl	_	_	*
+25	31	31	NUM	_	_	23	obl	_	_	*
+26	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	19	19	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	33	punct	_	_	*
+31-32	au	_	_	_	_	_	_	_	_	*
+31	à	à	ADP	_	_	33	case	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	conservatoire	conservatoire	NOUN	_	Gender=Masc|Number=Sing	23	obl:mod	_	_	*
+34	municipal	municipal	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	_	*
+35	de	de	ADP	_	_	36	case	_	_	*
+36	musique	musique	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	23	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 13
+# text = Rapport moral et bilan financier, projets, questions diverses sont à l'ordre du jour.
+1	Rapport	Rapport	NOUN	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*
+2	moral	moral	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*
+4	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*
+5	financier	financier	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*
+7	projets	projet	NOUN	_	Gender=Masc|Number=Plur	1	conj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	questions	question	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	_	*
+10	diverses	divers	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*
+11	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*
+14	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	jour	jour	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 14
+# text = Randonnée Petite erreur d'horaire quant à la randonnée pédestre de la Grolle sammielloise aujourd'hui, le départ aura lieu à 13 h 30 de la place des Moines et pas à 9 h. Amicale des chauffeurs routiers
+1	Randonnée	randonner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	_	*
+2	Petite	petit	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+3	erreur	erreur	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	horaire	horaire	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	quant	quant	ADV	_	_	9	case	_	_	*
+7	à	à	ADP	_	_	6	fixed	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	randonnée	randonnée	NOUN	_	Gender=Fem|Number=Sing	1	obl	_	_	*
+10	pédestre	pédestre	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	Grolle	Grolle	PROPN	_	_	9	nmod	_	_	*
+14	sammielloise	sammiellois	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*
+15	aujourd'hui	aujourd'hui	ADV	_	_	1	advmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	1	punct	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	départ	départ	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*
+19	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID
+20	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	1
+21	à	à	ADP	_	_	23	case	_	_	*
+22	13	13	NUM	_	_	23	nummod	_	_	*
+23	h	heure	NOUN	_	Gender=Fem|Number=Sing	19	obl:arg	_	_	*
+24	30	30	NUM	_	_	23	nmod	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	place	place	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	30	det	_	_	*
+30	Moines	moines	PROPN	_	_	27	nmod	_	_	*
+31	et	et	CCONJ	_	_	35	cc	_	_	*
+32	pas	pas	ADV	_	Polarity=Neg	35	advmod	_	_	*
+33	à	à	ADP	_	_	35	case	_	_	*
+34	9	9	NUM	_	_	35	nummod	_	_	*
+35	h	heure	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	37	punct	_	_	*
+37	Amicale	amicale	ADJ	_	Gender=Fem|Number=Sing	19	advcl	_	_	*
+38-39	des	_	_	_	_	_	_	_	_	*
+38	de	de	ADP	_	_	40	case	_	_	*
+39	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_	*
+40	chauffeurs	chauffeur	NOUN	_	Gender=Masc|Number=Plur	37	obl:arg	_	_	*
+41	routiers	routier	ADJ	_	Gender=Masc|Number=Plur	40	amod	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 15
+# text = L'amicale des chauffeurs routiers de Saint-Mihiel organisera une réunion d'information à l'attention de tous les chauffeurs de poids lourds samedi 8 février à 17 h, salle Nicolas-Cordier.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	chauffeurs	chauffeur	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	routiers	routier	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Saint-Mihiel	Saint-Mihiel	PROPN	_	_	5	nmod	_	_	*
+9	organisera	organiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	information	information	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	attention	attention	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*
+17	de	de	ADP	_	_	20	case	_	_	*
+18	tous	tout	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	chauffeurs	chauffeur	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	poids	poids	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	lourds	lourd	NUM	_	Gender=Masc|Number=Plur	22	nmod	_	_	*
+24	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+25	8	8	NUM	_	_	24	nmod	_	_	*
+26	février	février	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*
+27	à	à	ADP	_	_	29	case	_	_	*
+28	17	17	NUM	_	_	29	nummod	_	_	*
+29	h	heure	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	salle	salle	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*
+32	Nicolas-Cordier	Nicolas-Cordier	PROPN	_	_	31	appos	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_27849.txt 16
+# text = Les membres de cette amicale seront reçus ce matin à 10 h en mairie par l'adjoint au maire chargé du dossier du stationnement des poids lourds.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*
+2	membres	membre	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*
+5	amicale	amicale	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+6	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*
+7	reçus	recevoir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*
+9	matin	matin	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	10	10	NUM	_	_	12	nummod	_	_	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*
+13	en	en	ADP	_	_	14	case	_	_	*
+14	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	par	par	ADP	_	_	17	case	_	_	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*
+17	adjoint	adjoint	NOUN	_	Gender=Masc|Number=Sing	7	obl:agent	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	maire	maire	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+21	chargé	charger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	_	*
+22-23	du	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	_	*
+25-26	du	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	stationnement	stationnement	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*
+30	poids	poids	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*
+31	lourds	lourd	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n	*
+

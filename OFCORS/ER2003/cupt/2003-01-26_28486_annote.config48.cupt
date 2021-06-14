@@ -1,0 +1,683 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-26_28486.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 1
+# text = Polémique « exagérée » « C'est effectivement un peu paradoxal que ce film sorte alors qu'on ne parle que d'insécurité routière », reconnaît Caroline.
+1	Polémique	polémique	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	exagérée	exagéré	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+4	»	»	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+5	«	«	PUNCT	_	_	11	punct	_	_	*
+6	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	SpaceAfter=No	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+8	effectivement	effectivement	ADV	_	_	11	advmod	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	advmod	_	_	*
+10	peu	peu	ADV	_	_	9	fixed	_	_	*
+11	paradoxal	paradoxal	ADJ	_	Gender=Masc|Number=Sing	1	parataxis	_	_	*
+12	que	que	SCONJ	_	_	15	mark	_	_	*
+13	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_	*
+14	film	film	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*
+15	sorte	sorter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	*
+16	alors	alors	ADV	_	_	20	mark	_	_	*
+17	qu'	que	SCONJ	_	_	16	fixed	_	SpaceAfter=No	*
+18	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_	*
+19	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+20	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	_	_	*
+21	que	que	ADV	_	_	23	advmod	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	insécurité	insécurité	NOUN	_	Gender=Fem|Number=Sing	20	obl:arg	_	_	*
+24	routière	routier	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	_	*
+25	»	»	PUNCT	_	_	20	punct	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*
+27	reconnaît	reconnaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_	*
+28	Caroline	Caroline	PROPN	_	_	27	nsubj	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 2
+# text = Mais pour elle, comme pour Laurent et Sébastien qui l'accompagnent, « il faut savoir faire la part des choses.
+1	Mais	mais	CCONJ	_	_	16	cc	_	_	*
+2	pour	pour	ADP	_	_	3	case	_	_	*
+3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	comme	comme	SCONJ	_	_	7	cc	_	_	*
+6	pour	pour	ADP	_	_	7	case	_	_	*
+7	Laurent	Laurent	PROPN	_	_	16	obl:mod	_	_	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*
+9	Sébastien	Sébastien	PROPN	_	_	7	conj	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+11	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No	*
+12	accompagnent	accompagner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	7	punct	_	_	*
+14	«	«	PUNCT	_	_	16	punct	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl:subj	_	_	1:VID
+16	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+17	savoir	savoir	VERB	_	VerbForm=Inf	16	ccomp	_	_	*
+18	faire	faire	VERB	_	VerbForm=Inf	17	xcomp	_	_	2:VID
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	part	part	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	2
+21-22	des	_	_	_	_	_	_	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*
+23	choses	chose	NOUN	_	Gender=Fem|Number=Plur	20	nmod	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 3
+# text = Sinon, on ne regarde plus rien : les films de guerre, ceux qui traitent de la délinquance », dit Laurent.
+1	Sinon	sinon	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+4	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	plus	plus	ADV	_	_	7	advmod	_	_	*
+7	rien	rien	PRON	_	Number=Sing	5	obj	_	_	*
+8	:	:	PUNCT	_	_	22	punct	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	films	film	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	10	appos	_	_	*
+15	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*
+16	traitent	traiter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	délinquance	délinquance	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*
+20	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	10	punct	_	_	*
+22	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	_	*
+23	Laurent	Laurent	PROPN	_	_	22	xcomp	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 4
+# text = De toute façon, il faut pouvoir se permettre une conduite comme celle des personnages du film : « Je ne vais pas me mettre à faire des cascades avec ma 205 ! », s'amuse Caroline.
+1	De	de	ADP	_	_	3	case	_	_	*
+2	toute	tout	DET	_	Gender=Fem|Number=Sing	3	det	_	_	*
+3	façon	façon	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+6	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+7	pouvoir	pouvoir	VERB	_	VerbForm=Inf	6	ccomp	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	iobj	_	_	4:IRV
+9	permettre	permettre	VERB	_	VerbForm=Inf	7	xcomp	_	_	4
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	conduite	conduite	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	comme	comme	ADP	_	_	13	case	_	_	*
+13	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	11	nmod	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+16	personnages	personnage	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+17-18	du	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	film	film	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	:	:	PUNCT	_	_	24	punct	_	_	*
+21	«	«	PUNCT	_	_	24	punct	_	_	*
+22	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_	*
+23	ne	ne	ADV	_	Polarity=Neg	24	advmod	_	_	*
+24	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	_	*
+25	pas	pas	ADV	_	Polarity=Neg	24	advmod	_	_	*
+26	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	27	obj	_	_	3:IRV
+27	mettre	mettre	VERB	_	VerbForm=Inf	24	xcomp	_	_	3
+28	à	à	ADP	_	_	29	mark	_	_	*
+29	faire	faire	VERB	_	VerbForm=Inf	27	xcomp	_	_	*
+30-31	des	_	_	_	_	_	_	_	_	*
+30	de	de	ADP	_	_	32	case	_	_	*
+31	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_	*
+32	cascades	cascade	NOUN	_	Gender=Fem|Number=Plur	29	obl:arg	_	_	*
+33	avec	avec	ADP	_	_	35	case	_	_	*
+34	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	35	det	_	_	*
+35	205	205	NUM	_	_	32	nmod	_	_	*
+36	!	!	PUNCT	_	_	24	punct	_	_	*
+37	»	»	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	40	punct	_	_	*
+39	s'	se	PRON	_	Person=3|PronType=Prs	40	obj	_	SpaceAfter=No	2:IRV
+40	amuse	amuser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	conj	_	_	2
+41	Caroline	Caroline	PROPN	_	_	40	nsubj	_	SpaceAfter=No	*
+42	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 5
+# text = Un moment de détente et de franche rigolade, voilà ce que cette joyeuse troupe de jeunes adultes cherche en allant voir « Taxi 3 ».
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	moment	moment	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	détente	détente	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	et	et	CCONJ	_	_	8	cc	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	franche	franc	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+8	rigolade	rigolade	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	2	punct	_	_	*
+10	voilà	voilà	VERB	_	_	0	root	_	_	*
+11	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	obj	_	_	*
+12	que	que	PRON	_	PronType=Rel	19	obj	_	_	*
+13	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_	*
+14	joyeuse	joyeux	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*
+15	troupe	troupe	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*
+18	adultes	adulte	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	_	*
+19	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	*
+20	en	en	ADP	_	_	21	mark	_	_	*
+21	allant	aller	VERB	_	Tense=Pres|VerbForm=Part	10	advcl	_	_	*
+22	voir	voir	VERB	_	VerbForm=Inf	21	xcomp	_	_	*
+23	«	«	PUNCT	_	_	24	punct	_	_	*
+24	Taxi	taxi	PROPN	_	_	22	obj	_	_	*
+25	3	3	NUM	_	_	24	nmod	_	_	*
+26	»	»	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 6
+# text = Cette polémique est donc « exagérée » Laurent, qui est amateur de jeux vidéos, trouve que ces derniers « incitent peut-être plus à franchir les limites, dans la mesure où le joueur est acteur, et pas spectateur comme au cinéma » Yohann, 19 ans, est en train de passer son permis et est du même avis.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	polémique	polémique	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	donc	donc	ADV	_	_	6	advmod	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	exagérée	exagéré	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+7	»	»	PUNCT	_	_	6	punct	_	_	*
+8	Laurent	Laurent	PROPN	_	_	17	nsubj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	12	punct	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+12	amateur	amateur	NOUN	_	Gender=Masc|Number=Sing	8	acl:relcl	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+15	vidéos	vidéo	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	8	punct	_	_	*
+17	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+18	que	que	SCONJ	_	_	22	mark	_	_	*
+19	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	20	det	_	_	*
+20	derniers	dernier	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	_	_	*
+21	«	«	PUNCT	_	_	22	punct	_	_	*
+22	incitent	inciter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_	*
+23	peut-être	peut-être	ADV	_	_	22	advmod	_	_	*
+24	plus	plus	ADV	_	_	22	advmod	_	_	*
+25	à	à	ADP	_	_	26	mark	_	_	*
+26	franchir	franchir	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+27	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_	*
+28	limites	limite	NOUN	_	Gender=Fem|Number=Plur	26	obj	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	32	punct	_	_	*
+30	dans	dans	ADP	_	_	32	case	_	_	*
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_	*
+32	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	26	obl:mod	_	_	*
+33	où	où	ADV	_	PronType=Rel	37	advmod	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*
+35	joueur	joueur	NOUN	_	Gender=Masc|Number=Sing	37	nsubj	_	_	*
+36	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_	*
+37	acteur	acteur	NOUN	_	Gender=Masc|Number=Sing	32	acl:relcl	_	SpaceAfter=No	*
+38	,	,	PUNCT	_	_	41	punct	_	_	*
+39	et	et	CCONJ	_	_	41	cc	_	_	*
+40	pas	pas	ADV	_	Polarity=Neg	41	advmod	_	_	*
+41	spectateur	spectateur	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	_	*
+42	comme	comme	SCONJ	_	_	45	cc	_	_	*
+43-44	au	_	_	_	_	_	_	_	_	*
+43	à	à	ADP	_	_	45	case	_	_	*
+44	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_	*
+45	cinéma	cinéma	NOUN	_	Gender=Masc|Number=Sing	41	conj	_	_	*
+46	»	»	PUNCT	_	_	41	punct	_	_	*
+47	Yohann	Yohann	PROPN	_	_	41	appos	_	SpaceAfter=No	*
+48	,	,	PUNCT	_	_	50	punct	_	_	*
+49	19	19	NUM	_	_	50	nummod	_	_	*
+50	ans	an	NOUN	_	Gender=Masc|Number=Plur	41	conj	_	SpaceAfter=No	*
+51	,	,	PUNCT	_	_	41	punct	_	_	*
+52	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	53	cop	_	_	*
+53	en	en	ADP	_	_	17	advmod	_	_	*
+54	train	train	NOUN	_	Gender=Masc|Number=Sing	53	fixed	_	_	*
+55	de	de	ADP	_	_	56	mark	_	_	*
+56	passer	passer	VERB	_	VerbForm=Inf	53	xcomp	_	_	*
+57	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	58	det	_	_	*
+58	permis	permis	NOUN	_	Gender=Masc|Number=Sing	56	obj	_	_	*
+59	et	et	CCONJ	_	_	64	cc	_	_	*
+60	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	64	cop	_	_	*
+61-62	du	_	_	_	_	_	_	_	_	*
+61	de	de	ADP	_	_	64	case	_	_	*
+62	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	64	det	_	_	*
+63	même	même	ADJ	_	Gender=Masc|Number=Sing	64	amod	_	_	*
+64	avis	avis	NOUN	_	Gender=Masc|Number=Sing	53	conj	_	SpaceAfter=No	*
+65	.	.	PUNCT	_	_	53	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 7
+# text = « De toute façon, le comportement sur la route, ça dépend de l'éducation », dit-il.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	De	de	ADP	_	_	4	case	_	_	*
+3	toute	tout	DET	_	Gender=Fem|Number=Sing	4	det	_	_	*
+4	façon	façon	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	comportement	comportement	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	_	*
+8	sur	sur	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	route	route	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	13	punct	_	_	*
+12	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	nsubj	_	_	*
+13	dépend	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	éducation	éducation	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	SpaceAfter=No	*
+20	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 8
+# text = Dans « Taxi 3 », une scène prête particulièrement à la polémique : les deux héros prennent le volant après avoir fumé un joint de cannabis.
+1	Dans	dans	ADP	_	_	3	case	_	_	*
+2	«	«	PUNCT	_	_	3	punct	_	_	*
+3	Taxi	taxi	PROPN	_	_	8	obl:mod	_	_	*
+4	3	3	NUM	_	_	3	nmod	_	_	*
+5	»	»	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	scène	scène	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+9	prête	prêt	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*
+10	particulièrement	particulièrement	ADV	_	_	13	advmod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	polémique	polémique	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+14	:	:	PUNCT	_	_	18	punct	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+16	deux	deux	NUM	_	_	17	nummod	_	_	*
+17	héros	héros	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_	*
+18	prennent	prendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	volant	volant	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	_	*
+21	après	après	ADP	_	_	23	mark	_	_	*
+22	avoir	avoir	AUX	_	VerbForm=Inf	23	aux:tense	_	_	*
+23	fumé	fumer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	advcl	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	joint	joint	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_	*
+26	de	de	ADP	_	_	27	case	_	_	*
+27	cannabis	cannabis	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 9
+# text = Pour Yohann, qui « aime bien boire », prendre le volant quand on n'est pas dans son état normal n'est pas sérieux : « Je ne ferai jamais ça », promet-il.
+1	Pour	pour	ADP	_	_	2	case	_	_	*
+2	Yohann	Yohann	PROPN	_	_	26	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+5	«	«	PUNCT	_	_	6	punct	_	_	*
+6	aime	aimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+7	bien	bien	ADV	_	_	6	advmod	_	_	*
+8	boire	boire	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	»	»	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	prendre	prendre	VERB	_	VerbForm=Inf	2	acl	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	volant	volant	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	quand	quand	SCONJ	_	_	21	mark	_	_	*
+15	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	21	nsubj	_	_	*
+16	n'	ne	ADV	_	Polarity=Neg	21	advmod	_	SpaceAfter=No	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*
+18	pas	pas	ADV	_	Polarity=Neg	21	advmod	_	_	*
+19	dans	dans	ADP	_	_	21	case	_	_	*
+20	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+21	état	état	NOUN	_	Gender=Masc|Number=Sing	11	advcl	_	_	*
+22	normal	normal	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	_	*
+23	n'	ne	ADV	_	Polarity=Neg	26	advmod	_	SpaceAfter=No	*
+24	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	_	*
+25	pas	pas	ADV	_	Polarity=Neg	26	advmod	_	_	*
+26	sérieux	sérieux	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+27	:	:	PUNCT	_	_	31	punct	_	_	*
+28	«	«	PUNCT	_	_	31	punct	_	_	*
+29	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	31	nsubj	_	_	*
+30	ne	ne	ADV	_	Polarity=Neg	31	advmod	_	_	*
+31	ferai	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	26	parataxis	_	_	1:VID
+32	jamais	jamais	ADV	_	Polarity=Neg	31	advmod	_	_	*
+33	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	31	obj	_	_	1
+34	»	»	PUNCT	_	_	31	punct	_	SpaceAfter=No	*
+35	,	,	PUNCT	_	_	36	punct	_	_	*
+36	promet	promettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	SpaceAfter=No	*
+37	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	nsubj	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	26	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 10
+# text = Corinne trouve qu'il convient de remettre les choses à leur place : « Mais « Taxi 3 », c'est un film ! », s'étonne cette mère de famille de 37 ans.
+1	Corinne	Corinne	PROPN	_	_	2	nsubj	_	_	*
+2	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	qu'	que	SCONJ	_	_	5	mark	_	SpaceAfter=No	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl:subj	_	_	1:VID
+5	convient	convenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	1
+6	de	de	ADP	_	_	7	mark	_	_	*
+7	remettre	remettre	VERB	_	VerbForm=Inf	5	ccomp	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+9	choses	chose	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*
+13	:	:	PUNCT	_	_	17	punct	_	_	*
+14	«	«	PUNCT	_	_	17	punct	_	_	*
+15	Mais	mais	CCONJ	_	_	17	cc	_	_	*
+16	«	«	PUNCT	_	_	17	punct	_	_	*
+17	Taxi	taxi	PROPN	_	_	7	parataxis	_	_	*
+18	3	3	NUM	_	_	17	nmod	_	_	*
+19	»	»	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	24	punct	_	_	*
+21	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	24	nsubj	_	SpaceAfter=No	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	film	film	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	_	*
+25	!	!	PUNCT	_	_	24	punct	_	_	*
+26	»	»	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	29	punct	_	_	*
+28	s'	se	PRON	_	Person=3|PronType=Prs	29	expl:comp	_	SpaceAfter=No	2:IRV
+29	étonne	étonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	_	_	2
+30	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	31	det	_	_	*
+31	mère	mère	NOUN	_	Gender=Fem|Number=Sing	29	obj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	famille	famille	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	_	*
+34	de	de	ADP	_	_	36	case	_	_	*
+35	37	37	NUM	_	_	36	nummod	_	_	*
+36	ans	an	NOUN	_	Gender=Masc|Number=Plur	33	nmod	_	SpaceAfter=No	*
+37	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 11
+# text = « C'est une fiction...
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	fiction	fiction	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*
+6	...	...	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 12
+# text = Et même les jeunes, je ne vois pas comment ça pourrait les influencer.
+1	Et	et	CCONJ	_	_	4	cc	_	_	*
+2	même	même	ADV	_	_	4	advmod	_	_	*
+3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*
+4	jeunes	jeune	NOUN	_	Gender=Masc|Number=Plur	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	vois	vois	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*
+10	comment	comment	ADV	_	_	12	advmod	_	_	*
+11	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	_	_	*
+12	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*
+13	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	14	obj	_	_	*
+14	influencer	influencer	VERB	_	VerbForm=Inf	12	xcomp	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 13
+# text = Moi, quand j'avais 18 ans, je n'aurais jamais conduit comme ça... » Olivier, Delphine et Jérémy, de 14 à 16 ans, sont venus en scooter.
+1	Moi	soi	PRON	_	Number=Sing|Person=1	13	obj	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	quand	quand	SCONJ	_	_	5	mark	_	_	*
+4	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	SpaceAfter=No	*
+5	avais	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	13	advcl	_	_	*
+6	18	18	NUM	_	_	7	nummod	_	_	*
+7	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	5	punct	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_	*
+10	n'	ne	ADV	_	Polarity=Neg	13	advmod	_	SpaceAfter=No	*
+11	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+12	jamais	jamais	ADV	_	Polarity=Neg	13	advmod	_	_	*
+13	conduit	conduire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	nsubj:pass	_	_	*
+14	comme	comme	ADP	_	_	15	case	_	_	*
+15	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	obl:arg	_	SpaceAfter=No	*
+16	...	...	PUNCT	_	_	18	punct	_	_	*
+17	»	»	PUNCT	_	_	18	punct	_	_	*
+18	Olivier	Olivier	PROPN	_	_	13	appos	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	Delphine	Delphine	PROPN	_	_	18	conj	_	_	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*
+22	Jérémy	Jérémy	PROPN	_	_	18	conj	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	18	punct	_	_	*
+24	de	de	ADP	_	_	25	case	_	_	*
+25	14	14	NUM	_	_	18	nmod	_	_	*
+26	à	à	ADP	_	_	28	case	_	_	*
+27	16	16	NUM	_	_	28	nummod	_	_	*
+28	ans	an	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	18	punct	_	_	*
+30	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	aux:pass	_	_	*
+31	venus	venir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+32	en	en	ADP	_	_	33	case	_	_	*
+33	scooter	scooter	NOUN	_	Gender=Masc|Number=Sing	31	obl	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	31	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 14
+# text = « Ce serait débile de se tuer après avoir vu un film », dit le premier.
+1	«	«	PUNCT	_	_	4	punct	_	_	*
+2	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*
+3	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	débile	débile	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	de	de	ADP	_	_	7	mark	_	_	*
+6	se	se	PRON	_	Person=3|PronType=Prs	7	obj	_	_	*
+7	tuer	tuer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+8	après	après	ADP	_	_	10	mark	_	_	*
+9	avoir	avoir	AUX	_	VerbForm=Inf	10	aux:tense	_	_	*
+10	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	advcl	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	film	film	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	»	»	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	conj	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	premier	premier	ADJ	_	Gender=Masc|Number=Sing	15	xcomp	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 15
+# text = Et s'il veut faire de la vitesse, Jérémy ira sur un circuit.
+1	Et	et	CCONJ	_	_	11	cc	_	_	*
+2	s'	si	SCONJ	_	_	4	mark	_	SpaceAfter=No	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+4	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+5	faire	faire	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	de	de	ADP	_	_	8	det	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	fixed	_	_	*
+8	vitesse	vitesse	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	4	punct	_	_	*
+10	Jérémy	Jérémy	PROPN	_	_	11	nsubj	_	_	*
+11	ira	irer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+12	sur	sur	ADP	_	_	14	case	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	circuit	circuit	NOUN	_	Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 16
+# text = Quant à Delphine, elle constate : « Si je vais aussi vite que dans le film avec mon « scoot », je m'envole ! » Pragmatique... A.
+1	Quant	quant	ADV	_	_	3	case	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	Delphine	Delphine	PROPN	_	_	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+6	constate	constater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	:	:	PUNCT	_	_	11	punct	_	_	*
+8	«	«	PUNCT	_	_	11	punct	_	_	*
+9	Si	si	SCONJ	_	_	11	mark	_	_	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*
+11	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	_	*
+12	aussi	aussi	ADV	_	_	11	advmod	_	_	*
+13	vite	vite	ADV	_	_	11	advmod	_	_	*
+14	que	que	SCONJ	_	_	26	mark	_	_	*
+15	dans	dans	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	film	film	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
+18	avec	avec	ADP	_	_	21	case	_	_	*
+19	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	21	det	_	_	*
+20	«	«	PUNCT	_	_	21	punct	_	_	*
+21	scoot	scoot	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*
+22	»	»	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	17	punct	_	_	*
+24	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	26	nsubj	_	_	*
+25	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	26	iobj	_	SpaceAfter=No	*
+26	envole	envole	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	*
+27	!	!	PUNCT	_	_	29	punct	_	_	*
+28	»	»	PUNCT	_	_	29	punct	_	_	*
+29	Pragmatique	Pragmatique	PROPN	_	_	11	conj	_	SpaceAfter=No	*
+30	...	...	PUNCT	_	_	29	punct	_	SpacesAfter=\s\s\s	*
+31	A.	A.	X	_	_	29	flat:name	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 17
+# text = S. Instaurer des contrôles de vitesse à la sortie des cinémas, au même titre qu'on mesure l'alcoolémie au retour des boîtes de nuits ?
+1	S	S	PROPN	_	_	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s\s\s\s	*
+3	Instaurer	instaurer	PROPN	_	_	1	appos	_	_	*
+4-5	des	_	_	_	_	_	_	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	contrôles	contrôle	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	vitesse	vitesse	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	cinémas	cinéma	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	19	punct	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	19	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+18	même	même	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+19	titre	titre	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+20	qu'	que	PRON	_	PronType=Rel	22	obj	_	SpaceAfter=No	*
+21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	22	nsubj	_	_	*
+22	mesure	mesurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_	*
+23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No	*
+24	alcoolémie	alcoolémie	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+25-26	au	_	_	_	_	_	_	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	retour	retour	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*
+30	boîtes	boîte	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	_	*
+31	de	de	ADP	_	_	32	case	_	_	*
+32	nuits	nuit	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_	*
+33	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 18
+# text = C'est ce que semblent souhaiter les détracteurs de « Taxi 3 », pour qui ce film fait l'apologie de la violence routière.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+4	que	que	PRON	_	PronType=Rel	5	obj	_	_	*
+5	semblent	sembler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+6	souhaiter	souhaiter	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	détracteurs	détracteur	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	«	«	PUNCT	_	_	11	punct	_	_	*
+11	Taxi	taxi	PROPN	_	_	8	nmod	_	_	*
+12	3	3	NUM	_	_	11	nmod	_	_	*
+13	»	»	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	19	punct	_	_	*
+15	pour	pour	ADP	_	_	16	case	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	19	obl	_	_	*
+17	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	_	_	*
+18	film	film	NOUN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*
+19	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+20	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+21	apologie	apologie	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	violence	violence	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+25	routière	routier	ADJ	_	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 19
+# text = Hier, le Scala proposait les trois premières séances d'une avant-première en deux partie (suite mardi soir).
+1	Hier	hier	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	Scala	scala	PROPN	_	_	5	nsubj	_	_	*
+5	proposait	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*
+7	trois	trois	NUM	_	_	9	nummod	_	_	*
+8	premières	premier	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*
+9	séances	séance	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	avant-première	avant-première	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	en	en	ADP	_	_	15	case	_	_	*
+14	deux	deux	NUM	_	_	15	nummod	_	_	*
+15	partie	partie	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*
+16	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+17	suite	suite	ADV	_	_	15	advmod	_	_	*
+18	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	17	obl	_	_	*
+19	soir	soir	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+20	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 20
+# text = Comme pour « Taxi 2 », et avant lui pour « Taxi », les spectateurs étaient nombreux.
+1	Comme	comme	SCONJ	_	_	4	cc	_	_	*
+2	pour	pour	ADP	_	_	4	case	_	_	*
+3	«	«	PUNCT	_	_	4	punct	_	_	*
+4	Taxi	taxi	PROPN	_	_	0	root	_	_	*
+5	2	2	NUM	_	_	4	nmod	_	_	*
+6	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*
+9	avant	avant	ADP	_	_	10	case	_	_	*
+10	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	4	conj	_	_	*
+11	pour	pour	ADP	_	_	13	case	_	_	*
+12	«	«	PUNCT	_	_	13	punct	_	_	*
+13	Taxi	taxi	PROPN	_	_	10	obl:mod	_	_	*
+14	»	»	PUNCT	_	_	13	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	19	punct	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	spectateurs	spectateur	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*
+18	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	19	cop	_	_	*
+19	nombreux	nombreux	ADJ	_	Gender=Masc|Number=Plur	13	acl:relcl	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 21
+# text = Au point que certains faisaient le pied de grue dès 18 heures, pour une séance prévue trois quarts d'heure plus tard...
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	1:VID
+3	point	point	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1
+4	que	que	SCONJ	_	_	6	mark	_	_	*
+5	certains	certain	PRON	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*
+6	faisaient	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	acl	_	_	1
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	pied	pied	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	grue	grue	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+11	dès	dès	ADP	_	_	13	case	_	_	*
+12	18	18	NUM	_	_	13	nummod	_	_	*
+13	heures	heure	NOUN	_	Gender=Fem|Number=Plur	6	obl	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*
+15	pour	pour	ADP	_	_	17	case	_	_	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	séance	séance	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+18	prévue	prévoir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*
+19	trois	trois	NUM	_	_	20	nummod	_	_	*
+20	quarts	quart	NOUN	_	Gender=Masc|Number=Plur	17	appos	_	_	*
+21	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+22	heure	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*
+23	plus	plus	ADV	_	_	24	advmod	_	_	*
+24	tard	tard	ADV	_	_	20	advmod	_	SpaceAfter=No	*
+25	...	...	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-26_28486.txt 22
+# text = Tous ont eu vent de la polémique, qui enfle à mesure que la sortie du film, mercredi, approche.
+1	Tous	tout	PRON	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	vent	vent	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	polémique	polémique	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*
+10	enfle	enfler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+11	à	à	ADP	_	_	22	mark	_	_	*
+12	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	11	fixed	_	_	*
+13	que	que	SCONJ	_	_	22	mark	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	film	film	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*
+20	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	15	punct	_	_	*
+22	approche	approche	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n	*
+

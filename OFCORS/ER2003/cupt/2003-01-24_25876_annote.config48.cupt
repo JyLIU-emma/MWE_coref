@@ -1,0 +1,582 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-24_25876.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 1
+# text = Consommation et transparence « Je crois en la nécessité d'une loyauté ».
+1	Consommation	consommation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*
+3	transparence	transparence	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	SpacesAfter=\n	*
+4	«	«	PUNCT	_	_	6	punct	_	_	*
+5	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+7	en	en	ADP	_	_	9	case	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	nécessité	nécessité	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	loyauté	loyauté	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 2
+# text = Photo d'archives
+1	Photo	photo	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	archives	archive	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	SpacesAfter=\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 3
+# text = L'ADIC (Association de défense et d'information du consommateur) tiendra son assemblée générale ce soir à 17 h 30, dans ses locaux.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	ADIC	ADIC	PROPN	_	_	14	nsubj	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	Association	association	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	défense	défense	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	information	information	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+10-11	du	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	consommateur	consommateur	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	4	punct	_	_	*
+14	tiendra	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:LVC.full
+15	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	1
+17	générale	général	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	_	_	*
+19	soir	soir	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	_	*
+20	à	à	ADP	_	_	22	case	_	_	*
+21	17	17	NUM	_	_	22	nummod	_	_	*
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*
+23	30	30	NUM	_	_	22	nummod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	27	punct	_	_	*
+25	dans	dans	ADP	_	_	27	case	_	_	*
+26	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	27	det	_	_	*
+27	locaux	local	NOUN	_	Gender=Masc|Number=Plur	14	obl:mod	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	14	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 4
+# text = L'occasion de faire le point sur le comportement des consommateurs avec sa présidente, Mme Moitry.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*
+2	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	de	de	ADP	_	_	4	mark	_	_	*
+4	faire	faire	VERB	_	VerbForm=Inf	2	acl	_	_	1:VID
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	1
+6	point	point	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	1
+7	sur	sur	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	comportement	comportement	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	consommateurs	consommateur	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	avec	avec	ADP	_	_	15	case	_	_	*
+14	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	présidente	président	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	17	punct	_	_	*
+17	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	15	appos	_	_	*
+18	Moitry	Moitry	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 5
+# text = - L'euro est-il le seul coupable de la flambée des prix ces dernières années ?
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	euro	euro	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	SpaceAfter=No	*
+5	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+7	seul	seul	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+8	coupable	coupable	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	flambée	flambée	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	prix	prix	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+15	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	17	det	_	_	*
+16	dernières	dernier	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	_	*
+17	années	année	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+18	?	?	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 6
+# text = - En fait, le 11 septembre marque une franche rupture dans le comportement du consommateur, qui s'est depuis largement replié sur lui-même et joue la carte de la prudence.
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	En	en	ADP	_	_	1	fixed	_	_	*
+3	fait	fait	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	11	11	NUM	_	_	8	obl:mod	_	_	*
+7	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*
+8	marque	marquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+10	franche	franc	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+11	rupture	rupture	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+12	dans	dans	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	comportement	comportement	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+15-16	du	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	consommateur	consommateur	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	24	punct	_	_	*
+19	qui	qui	PRON	_	PronType=Rel	24	nsubj	_	_	*
+20	s'	se	PRON	_	Person=3|PronType=Prs	24	expl:comp	_	SpaceAfter=No	2:IRV
+21	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+22	depuis	depuis	ADP	_	_	24	mark	_	_	*
+23	largement	largement	ADV	_	_	24	advmod	_	_	*
+24	replié	replier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	2
+25	sur	sur	ADP	_	_	26	case	_	_	*
+26	lui-même	lui-même	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	24	obl	_	_	*
+27	et	et	CCONJ	_	_	28	cc	_	_	*
+28	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	conj	_	_	1:VID
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	1
+30	carte	carte	NOUN	_	Gender=Fem|Number=Sing	28	obj	_	_	1
+31	de	de	ADP	_	_	33	case	_	_	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*
+33	prudence	prudence	NOUN	_	Gender=Fem|Number=Sing	30	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 7
+# text = La conjoncture a alors largement influencé les courbes consuméristes.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	conjoncture	conjoncture	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+4	alors	alors	ADV	_	_	6	advmod	_	_	*
+5	largement	largement	ADV	_	_	6	advmod	_	_	*
+6	influencé	influencer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	courbes	courbe	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*
+9	consuméristes	consumériste	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 8
+# text = Néanmoins, 96 % des Français considèrent que l'euro est responsable de ce changement de comportement, avec le phénomène de prix arrondis.
+1	Néanmoins	néanmoins	ADV	_	_	8	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	96	96	NUM	_	_	4	nummod	_	_	*
+4	%	%	SYM	_	_	8	nsubj	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	Français	français	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+8	considèrent	considérer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	que	que	SCONJ	_	_	13	mark	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	euro	euro	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+13	responsable	responsable	ADJ	_	Gender=Masc|Number=Sing	8	ccomp	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_	*
+16	changement	changement	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	comportement	comportement	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*
+20	avec	avec	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+23	de	de	ADP	_	_	24	case	_	_	*
+24	prix	prix	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*
+25	arrondis	arrondi	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No	*
+26	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 9
+# text = Depuis deux ans en effet, les prix ont en moyenne augmenté de 8,2 %.
+1	Depuis	depuis	ADP	_	_	3	case	_	_	*
+2	deux	deux	NUM	_	_	3	nummod	_	_	*
+3	ans	an	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	_	*
+4	en	en	ADP	_	_	3	advmod	_	_	*
+5	effet	effet	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	prix	prix	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+9	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	moyenne	moyenne	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+12	augmenté	augmenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	8,2	8,2	NUM	_	_	15	nummod	_	_	*
+15	%	%	SYM	_	_	11	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 10
+# text = D'autres enquêtes mettent en jeu la hausse des cours du cacao et du pétrole.
+1	D'	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	3	det	_	SpaceAfter=No	*
+2	autres	autre	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+3	enquêtes	enquête	NOUN	_	Gender=Fem|Number=Plur	4	nsubj	_	_	*
+4	mettent	mettre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	hausse	hausse	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	cours	cours	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	cacao	cacao	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	pétrole	pétrole	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 11
+# text = De multiples facteurs sont à prendre en compte en économie, le coupable désigné n'existe pas.
+1	De	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+2	multiples	multiple	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	facteurs	facteur	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*
+4	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	prendre	prendre	VERB	_	VerbForm=Inf	4	ccomp	_	_	1:VID
+7	en	en	ADP	_	_	8	case	_	_	1
+8	compte	compte	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	1
+9	en	en	ADP	_	_	10	case	_	_	*
+10	économie	économie	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	16	punct	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	coupable	coupable	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+14	désigné	désigner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*
+15	n'	ne	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*
+16	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	*
+17	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 12
+# text = - A quels types de pièges sont aujourd'hui confrontés les consommateurs ?
+1	-	-	PUNCT	_	_	9	punct	_	_	*
+2	A	à	ADP	_	_	4	case	_	_	*
+3	quels	quel	DET	_	Gender=Masc|Number=Plur	4	det	_	_	*
+4	types	type	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	pièges	piège	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	_	*
+8	aujourd'hui	aujourd'hui	ADV	_	_	9	advmod	_	_	*
+9	confrontés	confronter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	consommateurs	consommateur	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+12	?	?	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 13
+# text = - D'abord, des pièges liés à l'affichage.
+1	-	-	PUNCT	_	_	2	punct	_	_	*
+2	D'	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+3	abord	abord	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	pièges	piège	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	_	*
+8	liés	lier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	affichage	affichage	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 14
+# text = 76 % des Français souhaitent voir perdurer le double affichage euro/franc en 2003.
+1	76	76	NUM	_	_	2	nummod	_	_	*
+2	%	%	SYM	_	_	6	nsubj	_	_	*
+3-4	des	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*
+5	Français	français	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*
+6	souhaitent	souhaiter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	voir	voir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	perdurer	perdurer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+10	double	double	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+11	affichage	affichage	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+12	euro	euro	NOUN	_	Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No	*
+13	/	/	SYM	_	_	14	cc	_	SpaceAfter=No	*
+14	franc	franc	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_	*
+15	en	en	ADP	_	_	16	case	_	_	*
+16	2003	2003	NUM	_	_	8	obl	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 15
+# text = Nous recevons encore beaucoup de doléances pour des problèmes de conversion.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	recevons	recevoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	encore	encore	ADV	_	_	2	advmod	_	_	*
+4	beaucoup	beaucoup	ADV	_	_	2	obj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	doléances	doléance	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	*
+7	pour	pour	ADP	_	_	10	case	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	problèmes	problème	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	conversion	conversion	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 16
+# text = De même en ce qui concerne l'absence d'étiquetage clair et précis des organismes génétiquement modifiés.
+1	De	de	ADP	_	_	4	case	_	_	*
+2	même	même	ADV	_	_	1	fixed	_	_	*
+3	en	en	ADP	_	_	1	fixed	_	_	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+6	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	absence	absence	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+10	étiquetage	étiquetage	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+11	clair	clair	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	précis	précis	ADJ	_	Gender=Masc|Number=Sing	11	conj	_	_	*
+14-15	des	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*
+16	organismes	organisme	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+17	génétiquement	génétiquement	ADV	_	_	18	advmod	_	_	*
+18	modifiés	modifié	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	acl	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 17
+# text = Enfin, notre grande déception : la suspension de la loi Murcef.
+1	Enfin	enfin	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*
+3	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*
+4	grande	grand	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+5	déception	déception	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	:	:	PUNCT	_	_	8	punct	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	suspension	suspension	NOUN	_	Gender=Fem|Number=Sing	5	appos	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	loi	loi	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	Murcef	Murcef	PROPN	_	_	11	appos	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 18
+# text = Qui devait prévoir l'envoi, à l'ensemble des titulaires d'un compte dépôt, d'une convention de compte définissant les droits et obligations des parties et notamment des banques.
+1	Qui	qui	PRON	_	PronType=Int	2	nsubj	_	_	*
+2	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+3	prévoir	prévoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	envoi	envoi	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	ensemble	ensemble	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	titulaires	titulaire	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	compte	compte	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	dépôt	dépôt	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	20	punct	_	_	*
+18	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	convention	convention	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	compte	compte	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	définissant	définir	VERB	_	Tense=Pres|VerbForm=Part	22	acl	_	_	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*
+25	droits	droit	NOUN	_	Gender=Masc|Number=Plur	23	obj	_	_	*
+26	et	et	CCONJ	_	_	27	cc	_	_	*
+27	obligations	obligation	NOUN	_	Gender=Fem|Number=Plur	25	conj	_	_	*
+28-29	des	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*
+30	parties	partie	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*
+31	et	et	CCONJ	_	_	35	cc	_	_	*
+32	notamment	notamment	ADV	_	_	35	advmod	_	_	*
+33-34	des	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	35	case	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*
+35	banques	banque	NOUN	_	Gender=Fem|Number=Plur	25	conj	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 19
+# text = Seule la transparence en matière de communication produits peut nous permettre de progresser en terme de juste consommation.
+1	Seule	seul	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	transparence	transparence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	matière	matière	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	communication	communication	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	produits	produire	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+9	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+10	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	11	obj	_	_	*
+11	permettre	permettre	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	de	de	ADP	_	_	13	mark	_	_	*
+13	progresser	progresser	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	en	en	ADP	_	_	15	case	_	_	*
+15	terme	terme	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	juste	juste	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*
+18	consommation	consommation	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 20
+# text = - Comment voyez-vous les années à venir ?
+1	-	-	PUNCT	_	_	3	punct	_	_	*
+2	Comment	comment	ADV	_	_	3	advmod	_	_	*
+3	voyez	voir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1:IRV
+4	-vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	1
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	années	année	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*
+7	à	à	ADP	_	_	8	mark	_	_	*
+8	venir	venir	VERB	_	VerbForm=Inf	6	acl	_	_	*
+9	?	?	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 21
+# text = - Le consommateur est avant tout en droit d'attendre une qualité produit.
+1	-	-	PUNCT	_	_	8	punct	_	_	*
+2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	consommateur	consommateur	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+5	avant	avant	ADV	_	_	8	advmod	_	_	*
+6	tout	tout	ADV	_	_	8	advmod	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	droit	droit	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+9	d'	de	ADP	_	_	10	mark	_	SpaceAfter=No	*
+10	attendre	attendre	VERB	_	VerbForm=Inf	8	acl	_	_	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13	produit	produire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 22
+# text = Si les produits et les prix sont de plus en plus fixés par la mondialisation, il ne faut pas oublier que la consommation est faite par le consommateur.
+1	Si	si	SCONJ	_	_	12	mark	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	produits	produit	NOUN	_	Gender=Masc|Number=Plur	12	nsubj:pass	_	_	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*
+6	prix	prix	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	_	*
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*
+8	de	de	ADP	_	_	12	advmod	_	_	*
+9	plus	plus	ADV	_	_	8	fixed	_	_	*
+10	en	en	ADP	_	_	8	fixed	_	_	*
+11	plus	plus	ADV	_	_	8	fixed	_	_	*
+12	fixés	fixer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	19	advcl	_	_	*
+13	par	par	ADP	_	_	15	case	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	mondialisation	mondialisation	NOUN	_	Gender=Fem|Number=Sing	12	obl:agent	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	12	punct	_	_	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	expl:subj	_	_	1:VID
+18	ne	ne	ADV	_	Polarity=Neg	19	advmod	_	_	*
+19	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+20	pas	pas	ADV	_	Polarity=Neg	19	advmod	_	_	*
+21	oublier	oublier	VERB	_	VerbForm=Inf	19	ccomp	_	_	*
+22	que	que	SCONJ	_	_	26	mark	_	_	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	consommation	consommation	NOUN	_	Gender=Fem|Number=Sing	26	nsubj:pass	_	_	*
+25	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	_	_	*
+26	faite	faire	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	21	ccomp	_	_	*
+27	par	par	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	consommateur	consommateur	NOUN	_	Gender=Masc|Number=Sing	26	obl:agent	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 23
+# text = C'est une force qui peut influer efficacement sur la production elle-même.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*
+4	force	force	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+6	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+7	influer	influer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	efficacement	efficacement	ADV	_	_	7	advmod	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	production	production	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+12	elle-même	elle-même	PRON	_	Gender=Fem|Number=Sing|Person=3|Reflex=Yes	11	nmod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 24
+# text = Je suis donc optimiste, et crois en la nécessité d'une loyauté de produit et de transaction.
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	donc	donc	ADV	_	_	4	advmod	_	_	*
+4	optimiste	optimiste	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*
+7	crois	croire	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+8	en	en	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	nécessité	nécessité	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+11	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	loyauté	loyauté	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	produit	produit	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*
+16	et	et	CCONJ	_	_	18	cc	_	_	*
+17	de	de	ADP	_	_	18	case	_	_	*
+18	transaction	transaction	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 25
+# text = Propos recueillis par Anne CHARRON ADIC, Maison du Consommateur, 18, rue Sainte-Catherine, Nancy.
+1	Propos	propos	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+2	recueillis	recueillir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+3	par	par	ADP	_	_	4	case	_	_	*
+4	Anne	Anne	PROPN	_	_	2	obl:agent	_	_	*
+5	CHARRON	CHARRON	PROPN	_	_	4	flat:name	_	SpacesAfter=\s\s\s\s	*
+6	ADIC	ADIC	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*
+8	Maison	maison	PROPN	_	_	4	conj	_	_	*
+9-10	du	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	Consommateur	consommateur	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*
+13	18	18	NUM	_	_	8	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	15	punct	_	_	*
+15	rue	rue	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*
+16	Sainte-Catherine	Sainte-Catherine	PROPN	_	_	15	appos	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	Nancy	Nancy	PROPN	_	_	4	conj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-24_25876.txt 26
+# text = Contact : 03.83.30.36.41, du lundi au vendredi inclus, de 14 h 30 à 17 h ; assemblée générale à cette même adresse, ce soir à 17 h 30.
+1	Contact	contact	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	:	:	PUNCT	_	_	3	punct	_	_	*
+3	03.83.30.36.41	03.83.30.36.41	NUM	_	_	1	appos	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*
+5-6	du	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	inclus	inclure	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	14	14	NUM	_	_	15	nummod	_	_	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+16	30	30	NUM	_	_	15	nmod	_	_	*
+17	à	à	ADP	_	_	19	case	_	_	*
+18	17	17	NUM	_	_	19	nummod	_	_	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	;	;	PUNCT	_	_	21	punct	_	_	*
+21	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*
+22	générale	général	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*
+23	à	à	ADP	_	_	26	case	_	_	*
+24	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	26	det	_	_	*
+25	même	même	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*
+26	adresse	adresse	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	29	punct	_	_	*
+28	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	29	det	_	_	*
+29	soir	soir	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	*
+31	17	17	NUM	_	_	32	nummod	_	_	*
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*
+33	30	30	NUM	_	_	32	nummod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*
+

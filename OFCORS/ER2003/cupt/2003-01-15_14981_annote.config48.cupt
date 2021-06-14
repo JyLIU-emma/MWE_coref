@@ -1,0 +1,546 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2003-01-15_14981.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 1
+# text = La CGT écartée Au niveau des AST (commissions vacances, familles et fêtes), les représentants CGT ont été écartés.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	CGT	CGT	PROPN	_	_	24	nsubj:pass	_	_	*
+3	écartée	écarter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	SpacesAfter=\n	*
+4-5	Au	_	_	_	_	_	_	_	_	*
+4	À	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+9	AST	AST	PROPN	_	_	6	nmod	_	_	*
+10	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+11	commissions	commission	NOUN	_	Gender=Fem|Number=Plur	6	appos	_	_	*
+12	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	11	appos	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*
+14	familles	famille	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_	*
+15	et	et	CCONJ	_	_	16	cc	_	_	*
+16	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	SpaceAfter=No	*
+17	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	20	punct	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	représentants	représentant	NOUN	_	Gender=Masc|Number=Plur	2	appos	_	_	*
+21	CGT	CGT	PROPN	_	_	20	appos	_	_	*
+22	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+23	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	aux:pass	_	_	*
+24	écartés	écarter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+25	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 2
+# text = « On n'a pas souhaité prendre position, ni prendre le risque d'une ouverture qui pourrait nous être défavorable », souligne encore Jacques Ernst.
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*
+3	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	ccomp	_	_	*
+7	prendre	prendre	VERB	_	VerbForm=Inf	6	xcomp	_	_	1:LVC.full
+8	position	position	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No	1
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	ni	ni	CCONJ	_	_	11	cc	_	_	*
+11	prendre	prendre	VERB	_	VerbForm=Inf	7	conj	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	risque	risque	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	ouverture	ouverture	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+18	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	*
+19	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	21	nsubj	_	_	*
+20	être	être	AUX	_	VerbForm=Inf	21	cop	_	_	*
+21	défavorable	défavorable	ADJ	_	Gender=Masc|Number=Sing	18	xcomp	_	_	*
+22	»	»	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	6	punct	_	_	*
+24	souligne	souligner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+25	encore	encore	ADV	_	_	24	advmod	_	_	*
+26	Jacques	Jacques	PROPN	_	_	24	nsubj	_	_	*
+27	Ernst	Ernst	PROPN	_	_	26	flat:name	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	24	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 3
+# text = « Autrefois, on connaissait bien les gens et tout se passait bien.
+1	«	«	PUNCT	_	_	5	punct	_	_	*
+2	Autrefois	autrefois	ADV	_	_	5	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+5	connaissait	connaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+6	bien	bien	ADV	_	_	5	advmod	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	gens	gens	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*
+10	tout	tout	PRON	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*
+11	se	se	PRON	_	Person=3|PronType=Prs	12	expl:comp	_	_	1:IRV
+12	passait	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	conj	_	_	1
+13	bien	bien	ADV	_	_	12	advmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 4
+# text = Cette décision est la position de l'ensemble des syndicats réformistes et nous la respectons.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*
+2	décision	décision	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	position	position	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	ensemble	ensemble	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*
+11	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+12	réformistes	réformiste	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*
+13	et	et	CCONJ	_	_	16	cc	_	_	*
+14	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	16	nsubj	_	_	*
+15	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	obj	_	_	*
+16	respectons	respecter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 5
+# text = Quant au CE, il va se remettre en marche et continuer le travail lancé par l'ancienne équipe » Maurice Mantaux (F0) qui préside la commission « vacances » a fait un bref bilan des aides aux vacances attribuées en 2002 aux salariés.
+1	Quant	quant	ADV	_	_	4	case	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	CE	CE	PROPN	_	_	7	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_	*
+7	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	obj	_	_	1:IRV
+9	remettre	remettre	VERB	_	VerbForm=Inf	7	xcomp	_	_	1
+10	en	en	ADP	_	_	11	case	_	_	*
+11	marche	marche	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	continuer	continuer	VERB	_	VerbForm=Inf	9	conj	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	travail	travail	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+16	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	acl	_	_	*
+17	par	par	ADP	_	_	20	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*
+19	ancienne	ancien	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*
+20	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	16	obl:agent	_	_	*
+21	»	»	PUNCT	_	_	22	punct	_	_	*
+22	Maurice	Maurice	PROPN	_	_	20	appos	_	_	*
+23	Mantaux	Mantaux	PROPN	_	_	22	flat:name	_	_	*
+24	(	(	PUNCT	_	_	25	punct	_	SpaceAfter=No	*
+25	F0	F0	PROPN	_	_	22	appos	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	25	punct	_	_	*
+27	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*
+28	préside	présider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*
+30	commission	commission	NOUN	_	Gender=Fem|Number=Sing	28	obj	_	_	*
+31	«	«	PUNCT	_	_	32	punct	_	_	*
+32	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	30	appos	_	_	*
+33	»	»	PUNCT	_	_	32	punct	_	_	*
+34	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:tense	_	_	*
+35	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	xcomp	_	_	*
+36	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*
+37	bref	bref	ADJ	_	Gender=Masc|Number=Sing	38	amod	_	_	*
+38	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	35	obj	_	_	*
+39-40	des	_	_	_	_	_	_	_	_	*
+39	de	de	ADP	_	_	41	case	_	_	*
+40	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	41	det	_	_	*
+41	aides	aide	NOUN	_	Gender=Fem|Number=Plur	38	nmod	_	_	*
+42-43	aux	_	_	_	_	_	_	_	_	*
+42	à	à	ADP	_	_	44	case	_	_	*
+43	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_	*
+44	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	35	obl:arg	_	_	*
+45	attribuées	attribuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	44	acl	_	_	*
+46	en	en	ADP	_	_	47	case	_	_	*
+47	2002	2002	NUM	_	_	45	obl	_	_	*
+48-49	aux	_	_	_	_	_	_	_	_	*
+48	à	à	ADP	_	_	50	case	_	_	*
+49	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	_	_	*
+50	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	45	obl:arg	_	SpaceAfter=No	*
+51	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 6
+# text = « 7.900 familles en ont profité et ont reçu une aide moyenne de 270 €...
+1	«	«	PUNCT	_	_	6	punct	_	_	*
+2	7.900	7.900	NUM	_	_	3	nummod	_	_	*
+3	familles	famille	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	_	_	*
+4	en	en	PRON	_	Person=3	3	nmod	_	_	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	profité	profiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	et	et	CCONJ	_	_	9	cc	_	_	*
+8	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	conj	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	aide	aide	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	moyenne	moyen	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	270	270	NUM	_	_	15	nummod	_	_	*
+15	€	€	SYM	_	_	11	nmod	_	SpaceAfter=No	*
+16	...	...	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 7
+# text = Nous avons également mis en place le cumul des aides qui permet à des salariés aux revenus plus modestes de partir à la découverte d'autres pays lointains, d'autres cultures.
+1	Nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	également	également	ADV	_	_	4	advmod	_	_	*
+4	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	place	place	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	cumul	cumul	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	aides	aide	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+13	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	*
+14	à	à	ADP	_	_	17	case	_	_	*
+15-16	des	_	_	_	_	_	_	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_	*
+17	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_	*
+18-19	aux	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*
+20	revenus	revenu	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_	*
+21	plus	plus	ADV	_	_	22	advmod	_	_	*
+22	modestes	modeste	ADJ	_	Gender=Masc|Number=Plur	20	amod	_	_	*
+23	de	de	ADP	_	_	22	advmod	_	_	*
+24	partir	partir	VERB	_	VerbForm=Inf	23	fixed	_	_	*
+25	à	à	ADP	_	_	27	case	_	_	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*
+27	découverte	découverte	NOUN	_	Gender=Fem|Number=Sing	23	obl:arg	_	_	*
+28	d'	de	ADP	_	_	30	case	_	SpaceAfter=No	*
+29	autres	autre	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	_	*
+30	pays	pays	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*
+31	lointains	lointain	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	SpaceAfter=No	*
+32	,	,	PUNCT	_	_	35	punct	_	_	*
+33	d'	de	DET	_	Definite=Ind|PronType=Art	35	det	_	SpaceAfter=No	*
+34	autres	autre	ADJ	_	Gender=Fem|Number=Plur	35	amod	_	_	*
+35	cultures	culture	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No	*
+36	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 8
+# text = Il nous a fallu également depuis 4 ans anticiper par rapport aux RTT.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	1:VID
+2	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	4	iobj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	fallu	falloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+5	également	également	ADV	_	_	4	advmod	_	_	*
+6	depuis	depuis	ADP	_	_	8	case	_	_	*
+7	4	4	NUM	_	_	8	nummod	_	_	*
+8	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	obl	_	_	*
+9	anticiper	anticiper	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+10	par	par	ADP	_	_	11	case	_	_	*
+11	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*
+12-13	aux	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*
+14	RTT	RTT	PROPN	_	_	11	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 9
+# text = Notre objectif c'est aussi d'aller toujours plus loin en matière de services (chèque aide-scolaire et chèque livres pour les collégiens par exemple) ».
+1	Notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*
+2	objectif	objectif	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+5	aussi	aussi	ADV	_	_	7	advmod	_	_	*
+6	d'	de	ADP	_	_	7	mark	_	SpaceAfter=No	*
+7	aller	aller	VERB	_	VerbForm=Inf	0	root	_	_	*
+8	toujours	toujours	ADV	_	_	9	advmod	_	_	*
+9	plus	plus	ADV	_	_	10	advmod	_	_	*
+10	loin	loin	ADV	_	_	11	advmod	_	_	*
+11	en	en	ADP	_	_	12	case	_	_	*
+12	matière	matière	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	services	service	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+15	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No	*
+16	chèque	chèque	NOUN	_	Gender=Fem|Number=Sing	14	appos	_	_	*
+17	aide-scolaire	aide-scolaire	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	et	et	CCONJ	_	_	19	cc	_	_	*
+19	chèque	chèque	ADJ	_	Gender=Fem|Number=Sing	17	conj	_	_	*
+20	livres	livre	NOUN	_	Gender=Masc|Number=Plur	16	appos	_	_	*
+21	pour	pour	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	collégiens	collégien	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*
+24	par	par	ADP	_	_	23	advmod	_	_	*
+25	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	24	fixed	_	SpaceAfter=No	*
+26	)	)	PUNCT	_	_	16	punct	_	_	*
+27	»	»	PUNCT	_	_	7	punct	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 10
+# text = Les autres commissions : Christian Pochard (CFTC) préside celle des familles ;
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+2	autres	autre	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+3	commissions	commission	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+4	:	:	PUNCT	_	_	5	punct	_	_	*
+5	Christian	Christian	PROPN	_	_	3	appos	_	_	*
+6	Pochard	Pochard	PROPN	_	_	5	flat:name	_	_	*
+7	(	(	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+8	CFTC	CFTC	PROPN	_	_	5	appos	_	SpaceAfter=No	*
+9	)	)	PUNCT	_	_	8	punct	_	_	*
+10	préside	présider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	10	obj	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*
+14	familles	famille	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*
+15	;	;	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 11
+# text = Marie-Françoise Berherlet (CFE-CGC) est à celle de l'égalité hommes-femmes ;
+1	Marie-Françoise	Marie-Françoise	PROPN	_	_	8	nsubj	_	_	*
+2	Berherlet	Berherlet	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	CFE-CGC	CFE-CGC	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+5	)	)	PUNCT	_	_	4	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	à	à	ADP	_	_	8	case	_	_	*
+8	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	égalité	égalité	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	hommes-femmes	hommes-femme	NOUN	_	Gender=Masc|Number=Plur	11	appos	_	_	*
+13	;	;	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 12
+# text = Pascal Mamelle devrait présider la commission professionnelle, Abib Mameri (FO) est chargé du logement et cadre de vie.
+1	Pascal	Pascal	PROPN	_	_	3	nsubj	_	_	*
+2	Mamelle	Mamelle	PROPN	_	_	1	flat:name	_	_	*
+3	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	nsubj:pass	_	_	*
+4	présider	présider	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	commission	commission	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+7	professionnelle	professionnel	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*
+9	Abib	Abib	PROPN	_	_	6	appos	_	_	*
+10	Mameri	Mameri	PROPN	_	_	9	flat:name	_	_	*
+11	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No	*
+12	FO	Fo	PROPN	_	_	9	appos	_	SpaceAfter=No	*
+13	)	)	PUNCT	_	_	12	punct	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_	*
+15	chargé	charger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	logement	logement	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*
+20	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	18	conj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	vie	vie	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	15	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 13
+# text = Gilles Torrès (CGC-CFE) est chargé des fêtes.
+1	Gilles	Gilles	PROPN	_	_	8	nsubj:pass	_	_	*
+2	Torrès	Torrès	PROPN	_	_	1	flat:name	_	_	*
+3	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	CGC-	Cgc-	PROPN	_	_	1	appos	_	SpaceAfter=No	*
+5	CFE	CFE	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*
+6	)	)	PUNCT	_	_	4	punct	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*
+8	chargé	charger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 14
+# text = Maurice Mantaux est aux vacances.
+1	Maurice	Maurice	PROPN	_	_	3	nsubj	_	_	*
+2	Mantaux	Mantaux	PROPN	_	_	1	flat:name	_	_	*
+3	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4-5	aux	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*
+6	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	SpaceAfter=No	*
+7	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s\s	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 15
+# text = C'est à l'URSSAF de Montbéliard, à la présidence plus précisément, que l'on croisera désormais Jean-Claude Durupt qui fut durant 4 ans secrétaire du CE Peugeot Citroën.
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	à	à	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	URSSAF	URSSAF	PROPN	_	_	0	root	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Montbéliard	Montbéliard	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	5	conj	_	_	*
+12	plus	plus	ADV	_	_	13	advmod	_	_	*
+13	précisément	précisément	ADV	_	_	11	advmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	18	punct	_	_	*
+15	que	que	SCONJ	_	_	18	mark	_	_	*
+16	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	18	nsubj	_	SpaceAfter=No	*
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	16	fixed	_	_	*
+18	croisera	croiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	conj	_	_	*
+19	désormais	désormais	ADV	_	_	18	advmod	_	_	*
+20	Jean-Claude	Jean-Claude	PROPN	_	_	18	obj	_	_	*
+21	Durupt	Durupt	PROPN	_	_	20	flat:name	_	_	*
+22	qui	qui	PRON	_	PronType=Rel	27	nsubj	_	_	*
+23	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	cop	_	_	*
+24	durant	durant	ADP	_	_	26	case	_	_	*
+25	4	4	NUM	_	_	26	nummod	_	_	*
+26	ans	an	NOUN	_	Gender=Masc|Number=Plur	27	obl:mod	_	_	*
+27	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	20	acl:relcl	_	_	*
+28-29	du	_	_	_	_	_	_	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*
+30	CE	ce	PROPN	_	_	27	nmod	_	_	*
+31	Peugeot	Peugeot	PROPN	_	_	30	flat:name	_	_	*
+32	Citroën	Citroën	PROPN	_	_	30	flat:name	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 16
+# text = Les élections qui se sont déroulées mardi matin ont mis en place pour les deux années à venir Jacques Ernst, 51 ans, salarié depuis 2000 à l'usine DPTA/IDG-liaisons au sol et militant à la CFE-CGC depuis 1995.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	élections	élection	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+4	se	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	_	1:IRV
+5	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	déroulées	dérouler	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	1
+7	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*
+8	matin	matin	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+11	en	en	ADP	_	_	12	case	_	_	*
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*
+13	pour	pour	ADP	_	_	16	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+15	deux	deux	NUM	_	_	16	nummod	_	_	*
+16	années	année	NOUN	_	Gender=Fem|Number=Plur	10	obl	_	_	*
+17	à	à	ADP	_	_	18	mark	_	_	*
+18	venir	venir	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+19	Jacques	Jacques	PROPN	_	_	18	obj	_	_	*
+20	Ernst	Ernst	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*
+21	,	,	PUNCT	_	_	23	punct	_	_	*
+22	51	51	NUM	_	_	23	nummod	_	_	*
+23	ans	an	NOUN	_	Gender=Masc|Number=Plur	19	appos	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	salarié	salarier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+26	depuis	depuis	ADP	_	_	27	case	_	_	*
+27	2000	2000	NUM	_	_	25	obl	_	_	*
+28	à	à	ADP	_	_	30	case	_	_	*
+29	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*
+30	usine	usine	NOUN	_	Gender=Fem|Number=Sing	25	obl:mod	_	_	*
+31	DPTA	DPTA	PROPN	_	_	30	appos	_	SpaceAfter=No	*
+32	/	/	SYM	_	_	33	cc	_	SpaceAfter=No	*
+33	IDG-liaisons	IDG-liaisons	PROPN	_	_	31	conj	_	_	*
+34-35	au	_	_	_	_	_	_	_	_	*
+34	à	à	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	sol	sol	NOUN	_	Gender=Masc|Number=Sing	25	obl:mod	_	_	*
+37	et	et	CCONJ	_	_	38	cc	_	_	*
+38	militant	militer	VERB	_	Tense=Pres|VerbForm=Part	25	conj	_	_	*
+39	à	à	ADP	_	_	41	case	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	CFE-CGC	CFE-CGC	PROPN	_	_	38	obl:arg	_	_	*
+42	depuis	depuis	ADP	_	_	43	case	_	_	*
+43	1995	1995	NUM	_	_	38	obl	_	SpaceAfter=No	*
+44	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 17
+# text = Hier soir, dans son nouveau fief de la rue des Vosges, il a présenté son équipe composée d'Eric Peultier, trésorier (syndicat FO), Maurice Mantaux, trésorier adjoint (FO), et Patrice Jacquet, secrétaire adjoint (CFTC).
+1	Hier	hier	ADV	_	_	2	advmod	_	_	*
+2	soir	soir	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	dans	dans	ADP	_	_	7	case	_	_	*
+5	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	_	*
+6	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	fief	fief	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	rue	rue	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*
+13	Vosges	Vosges	PROPN	_	_	10	nmod	_	SpaceAfter=No	*
+14	,	,	PUNCT	_	_	7	punct	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	19	det	_	_	*
+19	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+20	composée	composer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*
+21	d'	de	ADP	_	_	22	case	_	SpaceAfter=No	*
+22	Eric	Eric	PROPN	_	_	20	obl:arg	_	_	*
+23	Peultier	Peultier	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*
+25	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*
+26	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+27	syndicat	syndicat	NOUN	_	Gender=Masc|Number=Sing	25	appos	_	_	*
+28	FO	Fo	PROPN	_	_	27	appos	_	SpaceAfter=No	*
+29	)	)	PUNCT	_	_	27	punct	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	Maurice	Maurice	PROPN	_	_	22	conj	_	_	*
+32	Mantaux	Mantaux	PROPN	_	_	31	flat:name	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	34	punct	_	_	*
+34	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*
+35	adjoint	adjoint	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*
+36	(	(	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+37	FO	Fo	PROPN	_	_	34	appos	_	SpaceAfter=No	*
+38	)	)	PUNCT	_	_	37	punct	_	SpaceAfter=No	*
+39	,	,	PUNCT	_	_	41	punct	_	_	*
+40	et	et	CCONJ	_	_	41	cc	_	_	*
+41	Patrice	Patrice	PROPN	_	_	22	conj	_	_	*
+42	Jacquet	Jacquet	PROPN	_	_	41	flat:name	_	SpaceAfter=No	*
+43	,	,	PUNCT	_	_	44	punct	_	_	*
+44	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	41	appos	_	_	*
+45	adjoint	adjoint	ADJ	_	Gender=Masc|Number=Sing	44	amod	_	_	*
+46	(	(	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+47	CFTC	CFTC	PROPN	_	_	44	appos	_	SpaceAfter=No	*
+48	)	)	PUNCT	_	_	47	punct	_	SpaceAfter=No	*
+49	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 18
+# text = « Les personnes qui m'entourent sont des habitués du CE », a expliqué le nouveau secrétaire.
+1	«	«	PUNCT	_	_	10	punct	_	_	*
+2	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*
+4	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+5	m'	se	PRON	_	Number=Sing|Person=1|PronType=Prs	6	obj	_	SpaceAfter=No	*
+6	entourent	entourer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+7	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	habitués	habitué	NOUN	_	Gender=Masc|Number=Plur	17	ccomp	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	CE	CE	PROPN	_	_	10	nmod	_	_	*
+14	»	»	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	10	punct	_	_	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	expliqué	expliquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+19	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*
+20	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-15_14981.txt 19
+# text = « En fait, il n'y a pas de gros bouleversements hormis le trésorier qui me remplace ».
+1	«	«	PUNCT	_	_	8	punct	_	_	*
+2	En	en	ADP	_	_	3	case	_	_	*
+3	fait	fait	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID
+6	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+7	y	y	PRON	_	_	8	expl:comp	_	_	1
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+10	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+11	gros	gros	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+12	bouleversements	bouleversement	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	_	*
+13	hormis	hormis	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	trésorier	trésorier	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+17	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	18	iobj	_	_	*
+18	remplace	remplace	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_	*
+19	»	»	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	8	punct	_	SpacesAfter=\n	*
+
