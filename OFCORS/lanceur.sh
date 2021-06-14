@@ -13,7 +13,7 @@ ofcors()
         do
             echo "--------------------------------------"
             echo $fichier
-            ofcors-infer -f -k stanza -p window --window-size 8 $fichier
+            ofcors-infer -f -k stanza -p window --window-size 5 $fichier
 
             new_fichier=(${fichier//\// })
             dernier=$((${#new_fichier[@]}-1))
