@@ -16,12 +16,13 @@ ofcors()
             ofcors-infer -f -k stanza -p window --window-size 8 $fichier
 
             new_fichier=(${fichier//\// })
-            new_fichier=(${new_fichier[1]//./ })
-            echo ${new_fichier[0]}
+            dernier=$((${#new_fichier[@]}-1))
+            new_fichier=(${new_fichier[dernier]//./ })
+            echo $new_fichier
 
-            mv ./ofcors_outputs/resulting_chains.json ./$1ofcors_outputs/${new_fichier[0]}_resulting_chains.json
-            mv ./ofcors_outputs/mentions_detection/mentions_output.json ./$1ofcors_outputs/${new_fichier[0]}_mentions_output.json
-            mv ./ofcors_outputs/mentions_detection/tokens.json ./$1ofcors_outputs/${new_fichier[0]}_tokens.json
+            mv ./ofcors_outputs/resulting_chains.json ./$1ofcors_outputs/${new_fichier}_resulting_chains.json
+            mv ./ofcors_outputs/mentions_detection/mentions_output.json ./$1ofcors_outputs/${new_fichier}_mentions_output.json
+            mv ./ofcors_outputs/mentions_detection/tokens.json ./$1ofcors_outputs/${new_fichier}_tokens.json
         done
 }
 
@@ -32,13 +33,14 @@ mwecoref()
             echo "--------------------------------------"
             echo $fichier
             new_fichier=(${fichier//\// })
-            new_fichier=(${new_fichier[1]//./ })
-            echo ${new_fichier[0]}
-            if [[ `ls ./$1${new_fichier[0]}*.cupt` =~ ./$1${new_fichier[0]}.cupt ]]
+            dernier=$((${#new_fichier[@]}-1))
+            new_fichier=(${new_fichier[dernier]//./ })
+            echo $new_fichier
+            if [[ `ls ./$1$new_fichier*.cupt` =~ ./$1$new_fichier.cupt ]]
             then
-                python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}.cupt
+                python3 merge_s2s_ofcors.py ./$1 $new_fichier ./$1${new_fichier}.cupt
             else
-                python3 merge_s2s_ofcors.py ./$1 ${new_fichier[0]} ./$1${new_fichier[0]}_annote.config48.cupt
+                python3 merge_s2s_ofcors.py ./$1 $new_fichier ./$1${new_fichier}_annote.config48.cupt
             fi
         done
 }
