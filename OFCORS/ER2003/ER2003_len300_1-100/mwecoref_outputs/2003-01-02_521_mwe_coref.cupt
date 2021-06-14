@@ -1,0 +1,651 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_521.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 1
+# text = Bonne année quand même...
+1	Bonne	bon	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	1	8:1
+2	année	année	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1	8:1
+3	quand	quand	SCONJ	_	_	2	advmod	_	_	*	*	*
+4	même	même	ADV	_	_	3	fixed	_	SpaceAfter=No	*	*	*
+5	...	...	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 2
+# text = La nuit du 31 décembre au 1er janvier 2003 n'est pas forcément synonyme de fête pour tout le monde.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	2;3	*
+2	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*	2;3	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	2;3;4;5	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	2;3;4;5	*
+5	31	31	NUM	_	_	2	nmod	_	_	*	2;3;4;5	*
+6	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	2;3;4;5	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	3;5;6	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	3;5;6	*
+9	1er	1er	NUM	_	_	5	nmod	_	_	*	3;5;6	*
+10	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	3;5;6	*
+11	2003	2003	NUM	_	_	10	nmod	_	_	*	3;5;6	*
+12	n'	ne	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+14	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*	*	*
+15	forcément	forcément	ADV	_	_	16	advmod	_	_	*	*	*
+16	synonyme	synonyme	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	7	8:7
+17	de	de	ADP	_	_	18	case	_	_	*	7	8:7
+18	fête	fête	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	_	*	7;8	8:7
+19	pour	pour	ADP	_	_	22	case	_	_	*	*	*
+20	tout	tout	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*	*	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	*	*
+22	monde	monde	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*	*	*
+23	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 3
+# text = Les urgences du CH de Neufchâteau avaient renforcé leur effectif pour parer à une augmentation du nombre des patients cette nuit-là.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*	9	*
+2	urgences	urgence	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*	9	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	9;10	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	9;10	*
+5	CH	CH	PROPN	_	_	2	nmod	_	_	*	9;10	*
+6	de	de	ADP	_	_	7	case	_	_	*	9;10	*
+7	Neufchâteau	Neufchâteau	PROPN	_	_	5	nmod	_	_	*	9;10;11	*
+8	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+9	renforcé	renforcer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+10	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*	12	*
+11	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*	12	*
+12	pour	pour	ADP	_	_	13	mark	_	_	*	*	*
+13	parer	parer	VERB	_	VerbForm=Inf	9	advcl	_	_	*	*	*
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	13	*
+16	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*	13	*
+17-18	du	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	13;14	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	13;14	*
+19	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*	13;14	*
+20-21	des	_	_	_	_	_	_	_	_	*	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	13;14;15	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*	13;14;15	*
+22	patients	patient	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_	*	13;14;15	*
+23	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	24	det	_	_	*	*	*
+24	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	SpaceAfter=No	*	*	*
+25	-là	là	ADV	_	_	24	advmod	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 4
+# text = Le docteur Christine
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	16	*
+2	docteur	docteur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	16	*
+3	Christine	Christine	PROPN	_	_	2	appos	_	_	*	16;17	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 5
+# text = Cour était de garde.
+1	Cour	cour	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	16;17	*
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_	*	*	*
+3	de	de	ADP	_	_	4	case	_	_	*	*	*
+4	garde	garde	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+5	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 6
+# text = Une soirée un peu spéciale et pas toujours agréable à vivre : « Le 31, il y a eu un peu plus d'agités et de personnes ivres », souligne-t-elle.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	18	1:18
+2	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	18	1:18
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	advmod	_	_	*	18	1:18
+4	peu	peu	ADV	_	_	3	fixed	_	_	*	18	1:18
+5	spéciale	spécial	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	18	1:18
+6	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	_	*	*	*
+8	toujours	toujours	ADV	_	_	9	advmod	_	_	*	*	*
+9	agréable	agréable	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	_	*	*	*
+10	à	à	ADP	_	_	11	mark	_	_	*	*	*
+11	vivre	vivre	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+12	:	:	PUNCT	_	_	20	punct	_	_	*	*	*
+13	«	«	PUNCT	_	_	20	punct	_	_	*	*	*
+14	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	19	*
+15	31	31	NUM	_	_	20	obl:mod	_	SpaceAfter=No	*	19	*
+16	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	expl:subj	_	_	1:VID	*	*
+18	y	y	PRON	_	_	20	expl:comp	_	_	1	*	*
+19	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*	*	*
+20	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	parataxis	_	_	1	*	*
+21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	advmod	_	_	*	*	*
+22	peu	peu	ADV	_	_	21	fixed	_	_	*	*	*
+23	plus	plus	ADV	_	_	20	obj	_	_	*	*	*
+24	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*	20;21	*
+25	agités	agité	NOUN	_	Gender=Fem|Number=Plur	23	obl:arg	_	_	*	20;21	*
+26	et	et	CCONJ	_	_	28	cc	_	_	*	21	*
+27	de	de	ADP	_	_	28	case	_	_	*	21;22	12:22
+28	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	25	conj	_	_	*	21;22;23	12:22
+29	ivres	ivre	ADJ	_	Gender=Fem|Number=Plur	28	amod	_	_	*	21;22;23	12:22
+30	»	»	PUNCT	_	_	20	punct	_	SpaceAfter=No	*	*	*
+31	,	,	PUNCT	_	_	32	punct	_	_	*	*	*
+32	souligne	souligner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	parataxis	_	SpaceAfter=No	*	*	*
+33	-t	t	PART	_	_	34	dep	_	SpaceAfter=No	*	*	*
+34	-elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	SpaceAfter=No	*	24	1:24
+35	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 7
+# text = Au programme de ce réveillon : des rixes, de l'alcoolémie et un cas grave.
+1-2	Au	_	_	_	_	_	_	_	_	*	*	*
+1	À	à	ADP	_	_	3	case	_	_	*	25	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	25	*
+3	programme	programme	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	25	*
+4	de	de	ADP	_	_	6	case	_	_	*	25	*
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_	*	25;26	*
+6	réveillon	réveillon	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	25;26	*
+7	:	:	PUNCT	_	_	10	punct	_	_	*	*	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	27;28	12:28
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*	27;28	12:28
+10	rixes	rixe	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*	27;28	12:28
+11	,	,	PUNCT	_	_	14	punct	_	_	*	27;28	12:28
+12	de	de	ADP	_	_	14	case	_	_	*	28	12:28
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	28;29	12:28
+14	alcoolémie	alcoolémie	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*	28;29	12:28
+15	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	*	*
+17	cas	cas	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*	*	*
+18	grave	grave	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*	*	*
+19	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 8
+# text = Le médecin de garde a dû aussi assurer la permanence avec le SMUR.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	30	*
+2	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	30	*
+3	de	de	ADP	_	_	4	case	_	_	*	30	*
+4	garde	garde	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	30;31	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	dû	devoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	aussi	aussi	ADV	_	_	6	advmod	_	_	*	*	*
+8	assurer	assurer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	32	1:32
+10	permanence	permanence	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	32	1:32
+11	avec	avec	ADP	_	_	13	case	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	33	*
+13	SMUR	SMUR	PROPN	_	_	8	obl:arg	_	SpaceAfter=No	*	33	*
+14	.	.	PUNCT	_	_	6	punct	_	_	*	33	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 9
+# text = Elle s'est rendue dans une discothèque pour soigner un blessé lors d'une bagarre avec gaz lacrymogène.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*	34	1:34
+2	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	rendue	rendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+5	dans	dans	ADP	_	_	7	case	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	35	1:35
+7	discothèque	discothèque	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	35	1:35
+8	pour	pour	ADP	_	_	9	mark	_	_	*	*	*
+9	soigner	soigner	VERB	_	VerbForm=Inf	4	advcl	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	36	*
+11	blessé	blessé	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*	36	*
+12	lors	lors	ADV	_	_	9	advmod	_	_	*	*	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*	*	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	37;38	1:37;1:38
+15	bagarre	bagarre	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*	37;38	1:37;1:38
+16	avec	avec	ADP	_	_	17	case	_	_	*	38	1:38
+17	gaz	gaz	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	38;39	1:38
+18	lacrymogène	lacrymogène	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No	*	38;39	1:38
+19	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 10
+# text = Finalement, plus de peur que de mal.
+1	Finalement	finalement	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+3	plus	plus	ADV	_	_	5	advmod	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	40	1:40
+5	peur	peur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	40	1:40
+6	que	que	SCONJ	_	_	8	cc	_	_	*	*	*
+7	de	de	ADP	_	_	8	case	_	_	*	*	*
+8	mal	mal	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 11
+# text = Au retour de cette intervention, le travail reprend avec les patients arrivés entre temps aux urgences.
+1-2	Au	_	_	_	_	_	_	_	_	*	*	*
+1	À	à	ADP	_	_	3	case	_	_	*	41;42	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	41;42	*
+3	retour	retour	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	41;42	*
+4	de	de	ADP	_	_	6	case	_	_	*	41;42	*
+5	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_	*	41;42;43	*
+6	intervention	intervention	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*	41;42;43	*
+7	,	,	PUNCT	_	_	3	punct	_	_	*	42	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	42;44	3:44
+9	travail	travail	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	42;44	3:44
+10	reprend	reprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	avec	avec	ADP	_	_	13	case	_	_	*	*	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	45	9:45
+13	patients	patient	NOUN	_	Gender=Masc|Number=Plur	10	obl:mod	_	_	*	45	9:45
+14	arrivés	arriver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	13	acl	_	_	*	*	*
+15	entre	entre	ADP	_	_	16	case	_	_	*	*	*
+16	temps	temps	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	_	*	*	*
+17-18	aux	_	_	_	_	_	_	_	_	*	*	*
+17	à	à	ADP	_	_	19	case	_	_	*	46	4:46
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*	46	4:46
+19	urgences	urgence	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No	*	46	4:46
+20	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 12
+# text = Là, les insultes pleuvent parce que les malades sont impatients et énervés.
+1	Là	là	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*	47	*
+4	insultes	insulte	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_	*	47	*
+5	pleuvent	pleuver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	parce	parce	ADV	_	_	11	mark	_	_	*	*	*
+7	que	que	SCONJ	_	_	6	fixed	_	_	*	*	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	48	9:48
+9	malades	malade	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	_	*	48	9:48
+10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+11	impatients	impatient	ADJ	_	Gender=Masc|Number=Plur	5	advcl	_	_	*	*	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+13	énervés	énervé	ADJ	_	Gender=Masc|Number=Plur	11	conj	_	SpaceAfter=No	*	*	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 13
+# text = Parfois même, les malades en viennent aux mains.
+1	Parfois	parfois	ADV	_	_	7	advmod	_	_	*	*	*
+2	même	même	ADV	_	_	1	fixed	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*	49	9:49
+5	malades	malade	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	_	*	49	9:49
+6	en	en	PRON	_	Person=3	7	iobj	_	_	1:VID	*	*
+7	viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+8-9	aux	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	50	4:50
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*	50	4:50
+10	mains	main	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	SpaceAfter=No	*	50	4:50
+11	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 14
+# text = « On est bon qu'à rendre service », indique une infirmière et de poursuivre, « ils ne respectent pas le personnel ».
+1	«	«	PUNCT	_	_	4	punct	_	_	*	*	*
+2	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	51	3:51
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	11	ccomp	_	_	*	*	*
+5	qu'	que	ADV	_	_	7	advmod	_	SpaceAfter=No	*	*	*
+6	à	à	ADP	_	_	7	mark	_	_	*	*	*
+7	rendre	rendre	VERB	_	VerbForm=Inf	4	ccomp	_	_	1:LVC.full	*	*
+8	service	service	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	1	*	*
+9	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+11	indique	indiquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	52	5:52
+13	infirmière	infirmier	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	52	5:52
+14	et	et	CCONJ	_	_	16	cc	_	_	*	*	*
+15	de	de	ADP	_	_	16	mark	_	_	*	*	*
+16	poursuivre	poursuivre	VERB	_	VerbForm=Inf	13	conj	_	SpaceAfter=No	*	*	*
+17	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+18	«	«	PUNCT	_	_	21	punct	_	_	*	*	*
+19	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	nsubj	_	_	*	53	9:53
+20	ne	ne	ADV	_	Polarity=Neg	21	advmod	_	_	*	*	*
+21	respectent	respecter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	parataxis	_	_	*	*	*
+22	pas	pas	ADV	_	Polarity=Neg	21	advmod	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	54	3:54
+24	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	21	obj	_	_	*	54	3:54
+25	»	»	PUNCT	_	_	21	punct	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 15
+# text = Le médecin des urgences n'est quant à elle pas encore au bout de sa peine.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	55	3:55
+2	médecin	médecin	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	_	*	55	3:55
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	55;56	3:55
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*	55;56	3:55
+5	urgences	urgence	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	55;56	3:55
+6	n'	ne	ADV	_	Polarity=Neg	15	advmod	_	SpaceAfter=No	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+8	quant	quant	ADV	_	_	10	case	_	_	*	*	*
+9	à	à	ADP	_	_	8	fixed	_	_	*	*	*
+10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	_	*	57	5:57
+11	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+12	encore	encore	ADV	_	_	11	advmod	_	_	*	*	*
+13-14	au	_	_	_	_	_	_	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	*	*
+15	bout	bout	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	*	*
+17	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	18	det	_	_	*	58	5:58
+18	peine	peine	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*	58	5:58
+19	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 16
+# text = Sa garde qui a commencé le 31 décembre à 14 h 30, prend fin aujourd'hui à 15 h... Bonne année quand même !
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	59	5:59
+2	garde	garde	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_	*	59	5:59
+3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*	60	5:60
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	commencé	commencer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	61	5:61
+7	31	31	NUM	_	_	5	obj	_	_	*	61	5:61
+8	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	61	5:61
+9	à	à	ADP	_	_	10	case	_	_	*	*	*
+10	14	14	NUM	_	_	7	nmod	_	_	*	62	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	62	*
+12	30	30	NUM	_	_	11	nmod	_	SpaceAfter=No	*	62	*
+13	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+14	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+15	fin	fin	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	1	*	*
+16	aujourd'hui	aujourd'hui	ADV	_	_	14	advmod	_	_	*	*	*
+17	à	à	ADP	_	_	19	case	_	_	*	*	*
+18	15	15	NUM	_	_	19	nummod	_	_	*	63;64	*
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	SpaceAfter=No	*	63;64	*
+20	...	...	PUNCT	_	_	22	punct	_	_	*	64	*
+21	Bonne	bon	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*	64;65	5:65
+22	année	année	NOUN	_	Gender=Fem|Number=Sing	14	obl	_	_	*	64;65	5:65
+23	quand	quand	SCONJ	_	_	14	advmod	_	_	*	*	*
+24	même	même	ADV	_	_	23	fixed	_	_	*	*	*
+25	!	!	PUNCT	_	_	14	punct	_	SpacesAfter=\s\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 17
+# text = Barthélemy SANSON Une dizaine d'enfants de 4 à 7 ans passent leurs vacances au centre de loisirs.
+1	Barthélemy	Barthélemy	PROPN	_	_	12	nsubj	_	_	*	66	14:66
+2	SANSON	Sanson	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s\s	*	66	14:66
+3	Une	une	NUM	_	_	4	nummod	_	_	*	67;68	*
+4	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*	67;68	*
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*	67;68;69;70	*
+6	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	67;68;69;70	*
+7	de	de	ADP	_	_	8	case	_	_	*	68;70	*
+8	4	4	NUM	_	_	11	nummod	_	_	*	68;70;71	*
+9	à	à	ADP	_	_	10	case	_	_	*	68;70;71	*
+10	7	7	NUM	_	_	11	nummod	_	_	*	68;70;71;72	*
+11	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	appos	_	_	*	68;70;71;72	*
+12	passent	passer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+13	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	14	det	_	_	*	73	*
+14	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	12	obj	_	_	1	73	*
+15-16	au	_	_	_	_	_	_	_	_	*	*	*
+15	à	à	ADP	_	_	17	case	_	_	*	74;75	14:74
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	74;75	14:74
+17	centre	centre	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	74;75	14:74
+18	de	de	ADP	_	_	19	case	_	_	*	74;75	14:74
+19	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*	74;75;76	14:74;10:76
+20	.	.	PUNCT	_	_	12	punct	_	_	*	75	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 18
+# text = Avec comme point d'orgue un spectacle qu'ils préparent pour leurs parents.
+1	Avec	avec	ADV	_	_	3	advmod	_	_	*	*	*
+2	comme	comme	ADP	_	_	3	case	_	_	*	*	*
+3	point	point	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	77	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*	77	*
+5	orgue	orgue	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	77;78	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	79	*
+7	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_	*	79	*
+8	qu'	que	PRON	_	PronType=Rel	10	obj	_	SpaceAfter=No	*	80	10:80
+9	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_	*	81	10:81
+10	préparent	préparer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*	*	*
+11	pour	pour	ADP	_	_	13	case	_	_	*	*	*
+12	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	13	det	_	_	*	82	10:82
+13	parents	parent	NOUN	_	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No	*	82	10:82
+14	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 19
+# text = Une dizaine d'enfants se sont retrouvés au centre de loisirs.
+1	Une	une	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	83	*
+2	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	83	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	83;84	*
+4	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	83;84;85	*
+5	se	se	PRON	_	Person=3|PronType=Prs	7	expl:pass	_	_	1:IRV	*	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+7	retrouvés	retrouver	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+8-9	au	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	86	6:86
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	86	6:86
+10	centre	centre	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	_	*	86	6:86
+11	de	de	ADP	_	_	12	case	_	_	*	86	6:86
+12	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*	86;87	6:86;10:87
+13	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\s\s\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 20
+# text = Durant les vacances de Noël, la ville a mis en place un centre de loisirs pour les enfants de 4 à 7 ans.
+1	Durant	durant	ADP	_	_	3	case	_	_	*	*	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*	88;89	*
+3	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	10	obl:mod	_	_	*	88;89	*
+4	de	de	ADP	_	_	5	case	_	_	*	88;89	*
+5	Noël	Noël	PROPN	_	_	3	nmod	_	SpaceAfter=No	*	88;89;90	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*	89	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	89;91	*
+8	ville	ville	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	89;91	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*	*	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	92	11:92
+14	centre	centre	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*	92	11:92
+15	de	de	ADP	_	_	16	case	_	_	*	92	11:92
+16	loisirs	loisir	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	_	*	92;93	11:92;6:93
+17	pour	pour	ADP	_	_	19	case	_	_	*	*	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*	94;95	*
+19	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	10	obl	_	_	*	94;95	*
+20	de	de	ADP	_	_	21	case	_	_	*	95	*
+21	4	4	NUM	_	_	19	nmod	_	_	*	95	*
+22	à	à	ADP	_	_	23	case	_	_	*	95	*
+23	7	7	NUM	_	_	21	nmod	_	_	*	95	*
+24	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No	*	95	*
+25	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 21
+# text = Il a ouvert ses portes durant la semaine.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*	96	11:96
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID	*	*
+4	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	1	97	*
+5	portes	porte	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	1	97	*
+6	durant	durant	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	*	*
+8	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 22
+# text = Il est animé par Angélique Leuenberger assistée de Mauricette.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_	*	98	11:98
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*	*	*
+3	animé	animer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	par	par	ADP	_	_	5	case	_	_	*	*	*
+5	Angélique	Angélique	PROPN	_	_	3	obl:agent	_	_	*	99	*
+6	Leuenberger	Leuenberger	PROPN	_	_	5	flat:name	_	_	*	99	*
+7	assistée	assister	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*	*	*
+8	de	de	ADP	_	_	9	case	_	_	*	*	*
+9	Mauricette	Mauricette	PROPN	_	_	7	obl:arg	_	SpaceAfter=No	*	100	*
+10	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 23
+# text = Une dizaine d'enfants ont répondu à l'invitation.
+1	Une	une	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	101	*
+2	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	101	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	101;102	*
+4	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	101;102	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	répondu	répondre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	*	*
+9	invitation	invitation	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 24
+# text = Le thème de cette semaine était tourné autour des marionnettes et basé sur des activités manuelles.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	103	11:103
+2	thème	thème	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*	103	11:103
+3	de	de	ADP	_	_	5	case	_	_	*	103	11:103
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*	103;104	11:103
+5	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	103;104	11:103
+6	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+7	tourné	tourner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	autour	autour	ADV	_	_	7	advmod	_	_	*	*	*
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	105	15:105
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*	105	15:105
+11	marionnettes	marionnettes	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	_	*	105	15:105
+12	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+13	basé	baser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	conj	_	_	*	*	*
+14	sur	sur	ADP	_	_	17	case	_	_	*	*	*
+15-16	des	_	_	_	_	_	_	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	106	15:106
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*	106	15:106
+17	activités	activité	NOUN	_	Gender=Fem|Number=Plur	13	obl	_	_	*	106	15:106
+18	manuelles	manuelle	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	SpaceAfter=No	*	106	15:106
+19	.	.	PUNCT	_	_	7	punct	_	_	*	106	15:106
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 25
+# text = Lundi était consacré à la confection de ces petites figurines si attachantes pour qui on a créé une histoire.
+1	Lundi	lundi	PROPN	_	_	3	nsubj	_	_	*	107	13:107
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	consacré	consacrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	à	à	ADP	_	_	6	case	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	108	*
+6	confection	confection	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*	108	*
+7	de	de	ADP	_	_	10	case	_	_	*	108	*
+8	ces	ce	DET	_	Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_	*	108;109	*
+9	petites	petit	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*	108;109	*
+10	figurines	figurine	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*	108;109	*
+11	si	si	ADV	_	_	12	advmod	_	_	*	108;109	*
+12	attachantes	attachant	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*	108;109	*
+13	pour	pour	ADP	_	_	14	case	_	_	*	*	*
+14	qui	qui	PRON	_	PronType=Rel	17	obl	_	_	*	110	*
+15	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_	*	111	13:111
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*	*	*
+17	créé	créer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*	*	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	112	*
+19	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No	*	112	*
+20	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 26
+# text = Mardi, changement de décor avec la sortie patinoire sur celle de Vittel en plein air.
+1	Mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	113	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+3	changement	changement	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	114	*
+4	de	de	ADP	_	_	5	case	_	_	*	114	*
+5	décor	décor	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	114;115	7:115
+6	avec	avec	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	116	*
+8	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	116	*
+9	patinoire	patinoire	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*	116;117	2:117
+10	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+11	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	8	nmod	_	_	*	118	2:118
+12	de	de	ADP	_	_	13	case	_	_	*	118	2:118
+13	Vittel	Vittel	PROPN	_	_	11	nmod	_	_	*	118;119	2:118
+14	en	en	ADP	_	_	16	case	_	_	*	*	*
+15	plein	plein	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*	120	*
+16	air	air	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	120	*
+17	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 27
+# text = Jeudi, confection de décors et répétition générale du spectacle final qui sera présenté vendredi après-midi, à 16 h, aux parents.
+1	Jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	121	7:121
+2	,	,	PUNCT	_	_	1	punct	_	_	*	121	7:121
+3	confection	confection	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*	121;122	7:121
+4	de	de	ADP	_	_	5	case	_	_	*	121;122	7:121
+5	décors	décor	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*	121;122;123	7:121
+6	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+7	répétition	répétition	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*	124	2:124
+8	générale	général	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	124	2:124
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	124;125	2:124
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	124;125	2:124
+11	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	124;125	2:124
+12	final	final	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	124;125	2:124
+13	qui	qui	PRON	_	PronType=Rel	15	nsubj:pass	_	_	*	126	2:126
+14	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	aux:pass	_	_	*	*	*
+15	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl:relcl	_	_	*	*	*
+16	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	_	*	127;128;129	*
+17	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*	127;128;129	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*	128;129	*
+19	à	à	ADP	_	_	21	case	_	_	*	129	*
+20	16	16	NUM	_	_	21	nummod	_	_	*	129;130	*
+21	h	heure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*	129;130	*
+22	,	,	PUNCT	_	_	1	punct	_	_	*	129;130	*
+23-24	aux	_	_	_	_	_	_	_	_	*	*	*
+23	à	à	ADP	_	_	25	case	_	_	*	131	0:131
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_	*	131	0:131
+25	parents	parent	NOUN	_	Gender=Masc|Number=Plur	1	punct	_	SpaceAfter=No	*	131	0:131
+26	.	.	PUNCT	_	_	25	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 28
+# text = Les enfants sont ravis de ces après-midi.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	132	*
+2	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*	132	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	ravis	ravi	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	*	*
+6	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	7	det	_	_	*	133	*
+7	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	SpaceAfter=No	*	133	*
+8	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 29
+# text = Ils se retrouvent entre copains et copines, apprennent à bricoler et surtout ne s'ennuient pas.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	134	0:134
+2	se	se	PRON	_	Person=3|PronType=Prs	3	obj	_	_	1:IRV	*	*
+3	retrouvent	retrouver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+4	entre	entre	ADP	_	_	5	case	_	_	*	*	*
+5	copains	copain	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	_	*	135	0:135
+6	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+7	copines	copine	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	SpaceAfter=No	*	136	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+9	apprennent	apprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	*	*
+10	à	à	ADP	_	_	11	mark	_	_	*	*	*
+11	bricoler	bricoler	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+12	et	et	CCONJ	_	_	16	cc	_	_	*	*	*
+13	surtout	surtout	ADV	_	_	16	advmod	_	_	*	*	*
+14	ne	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*	*	*
+15	s'	se	PRON	_	Person=3|PronType=Prs	16	expl:comp	_	SpaceAfter=No	*	*	*
+16	ennuient	ennuier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	*	*	*
+17	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*	*	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 30
+# text = Ils attendent déjà avec impatience les prochaines vacances avec d'autres travaux manuels.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*	137	0:137
+2	attendent	attendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	déjà	déjà	ADV	_	_	2	advmod	_	_	*	*	*
+4	avec	avec	ADP	_	_	5	case	_	_	*	*	*
+5	impatience	impatience	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	_	*	138	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	139	*
+7	prochaines	prochain	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*	139	*
+8	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	_	*	139	*
+9	avec	avec	ADP	_	_	12	case	_	_	*	*	*
+10	d'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	12	det	_	SpaceAfter=No	*	*	*
+11	autres	autre	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*	*	*
+12	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	*	*
+13	manuels	manuel	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*	*	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 31
+# text = Ces après-midi se déroulent dans une excellente ambiance.
+1	Ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_	*	140	0:140
+2	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	140	0:140
+3	se	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	_	1:IRV	*	*
+4	déroulent	dérouler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+5	dans	dans	ADP	_	_	8	case	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	*	*
+7	excellente	excellent	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*	*	*
+8	ambiance	ambiance	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 32
+# text = Une façon de passer des vacances agréables et intéressantes.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	141	*
+2	façon	façon	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	141	*
+3	de	de	ADP	_	_	4	mark	_	_	*	*	*
+4	passer	passer	VERB	_	VerbForm=Inf	2	acl	_	_	1:LVC.full	*	*
+5-6	des	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*	*	*
+7	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	_	1	*	*
+8	agréables	agréable	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*	*	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+10	intéressantes	intéressant	ADJ	_	Gender=Fem|Number=Plur	8	conj	_	SpaceAfter=No	*	*	*
+11	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_521.txt 33
+# text = Rendez-vous est donc donné aux parents pour le spectacle vendredi après-midi.
+1	Rendez	rendez	PROPN	_	_	5	nsubj:pass	_	SpaceAfter=No	*	142	*
+2	-vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj:pass	_	_	*	142	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+4	donc	donc	ADV	_	_	5	advmod	_	_	*	*	*
+5	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6-7	aux	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	143	0:143
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	143	0:143
+8	parents	parent	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*	143	0:143
+9	pour	pour	ADP	_	_	11	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	144	*
+11	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	144	*
+12	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	145;146	0:145;0:146
+13	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	145;146	0:145;0:146
+14	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*	146	0:146
+

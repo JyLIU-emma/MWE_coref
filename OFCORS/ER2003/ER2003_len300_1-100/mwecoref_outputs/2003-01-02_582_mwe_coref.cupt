@@ -1,0 +1,608 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_582.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 1
+# text = Premières plantations en mai
+1	Premières	premier	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*	1	*
+2	plantations	plantation	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	1	*
+3	en	en	ADP	_	_	4	case	_	_	*	*	*
+4	mai	mai	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 2
+# text = L'exploitation du vignoble coûterait entre 3.000 et 7.000 euros.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	3	*
+2	exploitation	exploitation	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	3	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	3;4	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	3;4	*
+5	vignoble	vignoble	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	3;4	*
+6	coûterait	coûter	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	entre	entre	ADP	_	_	8	case	_	_	*	*	*
+8	3.000	3.000	NUM	_	_	11	nummod	_	_	*	5	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*	5	*
+10	7.000	7.000	NUM	_	_	8	conj	_	_	*	5;6	*
+11	euros	euro	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	SpaceAfter=No	*	5;6	*
+12	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 3
+# text = Michel Laroppe ferait le vin la première année puis des personnes de la future association seraient formées par ses soins pour assurer la fabrication du vin les années suivantes.
+1	Michel	Michel	PROPN	_	_	3	nsubj	_	_	*	7;8	*
+2	Laroppe	Laroppe	PROPN	_	_	1	flat:name	_	_	*	7;8	*
+3	ferait	faire	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	8	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	8;9	*
+5	vin	vin	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	8;9	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	10	9:10
+7	première	premier	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*	10	9:10
+8	année	année	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*	10	9:10
+9	puis	puis	ADV	_	_	12	cc	_	_	*	*	*
+10-11	des	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	11	1:11
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*	11	1:11
+12	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	3	conj	_	_	*	11	1:11
+13	de	de	ADP	_	_	16	case	_	_	*	11	1:11
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	11;12	1:11;9:12
+15	future	futur	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*	11;12	1:11;9:12
+16	association	association	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	11;12	1:11;9:12
+17	seraient	être	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	aux:pass	_	_	*	*	*
+18	formées	former	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_	*	*	*
+19	par	par	ADP	_	_	21	case	_	_	*	*	*
+20	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	21	det	_	_	*	13	6:13
+21	soins	soin	NOUN	_	Gender=Masc|Number=Plur	18	obl:agent	_	_	*	13	6:13
+22	pour	pour	ADP	_	_	23	mark	_	_	*	*	*
+23	assurer	assurer	VERB	_	VerbForm=Inf	18	advcl	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	14	9:14
+25	fabrication	fabrication	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*	14	9:14
+26-27	du	_	_	_	_	_	_	_	_	*	*	*
+26	de	de	ADP	_	_	28	case	_	_	*	14;15	9:14
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*	14;15	9:14
+28	vin	vin	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*	14;15	9:14
+29	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_	*	*	*
+30	années	année	NOUN	_	Gender=Fem|Number=Plur	23	obl	_	_	*	*	*
+31	suivantes	suivant	ADJ	_	Gender=Fem|Number=Plur	30	amod	_	SpaceAfter=No	*	*	*
+32	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 4
+# text = Une partie pas gagnée d'avance quand on sait qu'il faut de nombreuses heures de formation pour arriver à un très bon niveau de viticulture.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	16	9:16
+2	partie	partie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	16	9:16
+3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	16	9:16
+4	gagnée	gagner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	16	9:16
+5	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*	16	9:16
+6	avance	avance	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	16	9:16
+7	quand	quand	SCONJ	_	_	9	mark	_	_	*	*	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_	*	17	6:17
+9	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_	*	*	*
+10	qu'	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl:subj	_	_	1:VID	*	*
+12	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_	1	*	*
+13	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*	18	1:18
+14	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*	18	1:18
+15	heures	heure	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	_	*	18	1:18
+16	de	de	ADP	_	_	17	case	_	_	*	18	1:18
+17	formation	formation	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	18;19	1:18;9:19
+18	pour	pour	ADP	_	_	19	mark	_	_	*	*	*
+19	arriver	arriver	VERB	_	VerbForm=Inf	12	advcl	_	_	*	*	*
+20	à	à	ADP	_	_	24	case	_	_	*	*	*
+21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	*	*
+22	très	très	ADV	_	_	23	advmod	_	_	*	*	*
+23	bon	bon	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	_	*	*	*
+24	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	_	*	*	*
+25	de	de	ADP	_	_	26	case	_	_	*	*	*
+26	viticulture	viticulture	NOUN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No	*	20	9:20
+27	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 5
+# text = D'où la réaction d'un Dommartemontais : « Je pense que le côté technique doit être pris en compte par des professionnels car c'est très difficile à gérer.
+1	D'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	*	*
+2	où	où	ADV	_	PronType=Rel	1	fixed	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	21	9:21
+4	réaction	réaction	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	21	9:21
+5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	21	9:21
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	21;22	9:21
+7	Dommartemontais	Dommartemontais	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	21;22	9:21
+8	:	:	PUNCT	_	_	11	punct	_	_	*	*	*
+9	«	«	PUNCT	_	_	11	punct	_	_	*	*	*
+10	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*	23	*
+11	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*	*	*
+12	que	que	SCONJ	_	_	16	mark	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	24	*
+14	côté	côté	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*	24	*
+15	technique	technique	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*	24	*
+16	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	*	*	*
+17	être	être	AUX	_	VerbForm=Inf	18	aux:pass	_	_	*	*	*
+18	pris	prendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	xcomp	_	_	1:VID	*	*
+19	en	en	ADP	_	_	20	case	_	_	1	*	*
+20	compte	compte	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	1	*	*
+21	par	par	ADP	_	_	24	case	_	_	*	*	*
+22-23	des	_	_	_	_	_	_	_	_	*	*	*
+22	de	de	ADP	_	_	24	case	_	_	*	25	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*	25	*
+24	professionnels	professionnel	NOUN	_	Gender=Masc|Number=Plur	18	obl:arg	_	_	*	25	*
+25	car	car	CCONJ	_	_	29	cc	_	_	*	*	*
+26	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	29	nsubj	_	SpaceAfter=No	*	26	4:26
+27	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	_	_	*	*	*
+28	très	très	ADV	_	_	29	advmod	_	_	*	*	*
+29	difficile	difficile	ADJ	_	Gender=Masc|Number=Sing	11	conj	_	_	*	*	*
+30	à	à	ADP	_	_	31	mark	_	_	*	*	*
+31	gérer	gérer	VERB	_	VerbForm=Inf	29	ccomp	_	SpaceAfter=No	*	*	*
+32	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 6
+# text = L'association apportant simplement son aide.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	27	3:27
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	27	3:27
+3	apportant	apporter	VERB	_	Tense=Pres|VerbForm=Part	2	acl	_	_	1:LVC.full	*	*
+4	simplement	simplement	ADV	_	_	3	advmod	_	_	*	*	*
+5	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	_	*	*	*
+6	aide	aide	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No	1	*	*
+7	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 7
+# text = » Comme on peut le constater, mettre en place un vignoble n'est pas chose aisée.
+1	»	»	PUNCT	_	_	4	punct	_	_	*	*	*
+2	Comme	comme	SCONJ	_	_	4	mark	_	_	*	*	*
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	28	3:28
+4	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	nsubj	_	_	*	*	*
+5	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_	*	*	*
+6	constater	constater	VERB	_	VerbForm=Inf	4	xcomp	_	SpaceAfter=No	*	*	*
+7	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+8	mettre	mettre	VERB	_	VerbForm=Inf	4	conj	_	_	*	*	*
+9	en	en	ADP	_	_	10	case	_	_	*	*	*
+10	place	place	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	_	*	*	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	29	4:29
+12	vignoble	vignoble	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	29	4:29
+13	n'	ne	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*	*	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+15	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*	*	*
+16	chose	chose	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+17	aisée	aisé	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	SpaceAfter=No	*	*	*
+18	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 8
+# text = « Avec ce vignoble, nous allons renouer avec nos traditions.
+1	«	«	PUNCT	_	_	7	punct	_	_	*	30	4:30
+2	Avec	avec	ADP	_	_	4	case	_	_	*	*	*
+3	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_	*	31	*
+4	vignoble	vignoble	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*	31	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+6	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_	*	32	3:32
+7	allons	aller	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	renouer	renouer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+9	avec	avec	ADP	_	_	11	case	_	_	*	*	*
+10	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	11	det	_	_	*	33	*
+11	traditions	tradition	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	SpaceAfter=No	*	33	*
+12	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 9
+# text = Il faut passer maintenant à la phase active.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID	*	*
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	passer	passer	VERB	_	VerbForm=Inf	2	ccomp	_	_	*	*	*
+4	maintenant	maintenant	ADV	_	_	3	advmod	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	*	*
+7	phase	phase	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*	*	*
+8	active	actif	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 10
+# text = En mai 2003, la plantation commencera.
+1	En	en	ADP	_	_	2	case	_	_	*	34	*
+2	mai	mai	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	34;35	*
+3	2003	2003	NUM	_	_	2	nmod	_	SpaceAfter=No	*	34;35	*
+4	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	36	*
+6	plantation	plantation	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	36	*
+7	commencera	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+8	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 11
+# text = Ce doit être un événement.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_	*	*	*
+2	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	être	être	AUX	_	VerbForm=Inf	5	cop	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	37	4:37
+5	événement	événement	NOUN	_	Gender=Masc|Number=Sing	2	xcomp	_	SpaceAfter=No	*	37	4:37
+6	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 12
+# text = D'ailleurs, nos amis d'Ensheim (ville jumelée avec Dommartemont) viendront, eux aussi, planter leurs cépages » conclut, confiant, René Martinuzzi.
+1	D'	de	ADP	_	_	14	advmod	_	SpaceAfter=No	*	*	*
+2	ailleurs	ailleurs	ADV	_	_	1	fixed	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+4	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	_	*	38;39	17:38;5:39
+5	amis	ami	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	_	_	*	38;39	17:38;5:39
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	38;39	17:38;5:39
+7	Ensheim	Ensheim	PROPN	_	_	5	nmod	_	_	*	38;39;40;41	17:38;5:39;10:40;4:41
+8	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*	39;41;42	5:39;4:41;17:42
+9	ville	ville	NOUN	_	Gender=Fem|Number=Sing	5	appos	_	_	*	39;41;42;43	5:39;4:41;17:42
+10	jumelée	jumeler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*	39;41;42;43	5:39;4:41;17:42
+11	avec	avec	ADP	_	_	12	case	_	_	*	*	*
+12	Dommartemont	Dommartemont	PROPN	_	_	9	nmod	_	SpaceAfter=No	*	44	10:44
+13	)	)	PUNCT	_	_	9	punct	_	_	*	*	*
+14	viendront	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	23	ccomp	_	SpaceAfter=No	*	*	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+16	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	14	obl:mod	_	_	*	45	5:45
+17	aussi	aussi	ADV	_	_	16	advmod	_	SpaceAfter=No	*	*	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+19	planter	planter	VERB	_	VerbForm=Inf	14	conj	_	_	*	*	*
+20	leurs	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	21	det	_	_	*	46	5:46
+21	cépages	cépage	NOUN	_	Gender=Masc|Number=Plur	19	obj	_	_	*	46	5:46
+22	»	»	PUNCT	_	_	14	punct	_	_	*	*	*
+23	conclut	conclure	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+24	,	,	PUNCT	_	_	25	punct	_	_	*	*	*
+25	confiant	confier	ADJ	_	Gender=Masc|Number=Sing	23	conj	_	SpaceAfter=No	*	*	*
+26	,	,	PUNCT	_	_	27	punct	_	_	*	*	*
+27	René	René	PROPN	_	_	23	conj	_	_	*	47	*
+28	Martinuzzi	Martinuzzi	PROPN	_	_	27	flat:name	_	SpaceAfter=No	*	47	*
+29	.	.	PUNCT	_	_	23	punct	_	SpacesAfter=\s\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 13
+# text = Saïd LOUAIL Si tout va bien, la première récolte est prévue en 2006.
+1	Saïd	Saïd	PROPN	_	_	12	nsubj	_	_	*	48	*
+2	LOUAIL	LOUAIL	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*	48	*
+3	Si	si	SCONJ	_	_	5	mark	_	_	*	*	*
+4	tout	tout	PRON	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	49	5:49
+5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*	*	*
+6	bien	bien	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	50	15:50
+9	première	premier	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*	50	15:50
+10	récolte	récolte	NOUN	_	Gender=Fem|Number=Sing	12	nsubj:pass	_	_	*	50	15:50
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*	*	*
+12	prévue	prévoir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+13	en	en	ADP	_	_	14	case	_	_	*	*	*
+14	2006	2006	NUM	_	_	12	obl	_	SpaceAfter=No	*	51	*
+15	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 14
+# text = Ce sera un vin blanc dont le cépage sera de l'auxerrois.
+1	Ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*	*	*
+2	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	52	*
+4	vin	vin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	52	*
+5	blanc	blanc	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*	52	*
+6	dont	dont	PRON	_	PronType=Rel	8	nmod	_	_	*	53	5:53
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	54	8:54
+8	cépage	cépage	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*	54	8:54
+9	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	cop	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	55	*
+12	auxerrois	auxerrois	NOUN	_	Gender=Masc|Number=Sing	4	acl:relcl	_	SpaceAfter=No	*	55	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 15
+# text = Mais avant d'en arriver à la toute première vendange, il va falloir se retrousser les manches pour assurer une pérennité à cette vigne.
+1	Mais	mais	CCONJ	_	_	13	cc	_	_	*	*	*
+2	avant	avant	ADV	_	_	13	advmod	_	_	*	*	*
+3	d'	de	ADP	_	_	5	mark	_	SpaceAfter=No	*	*	*
+4	en	en	PRON	_	Person=3	5	expl:comp	_	_	*	*	*
+5	arriver	arriver	VERB	_	VerbForm=Inf	2	ccomp	_	_	*	*	*
+6	à	à	ADP	_	_	10	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	56	15:56
+8	toute	toute	ADV	_	_	9	advmod	_	_	*	56	15:56
+9	première	premier	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*	56	15:56
+10	vendange	vendange	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	SpaceAfter=No	*	56	15:56
+11	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*	*	*
+13	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+14	falloir	falloir	VERB	_	VerbForm=Inf	13	xcomp	_	_	*	*	*
+15	se	se	PRON	_	Person=3|PronType=Prs	16	expl:comp	_	_	*	*	*
+16	retrousser	retrousser	VERB	_	VerbForm=Inf	14	xcomp	_	_	*	*	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*	57	*
+18	manches	manche	NOUN	_	Gender=Fem|Number=Plur	16	obj	_	_	*	57	*
+19	pour	pour	ADP	_	_	20	mark	_	_	*	*	*
+20	assurer	assurer	VERB	_	VerbForm=Inf	18	acl	_	_	*	*	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	58	14:58
+22	pérennité	pérennité	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	*	58	14:58
+23	à	à	ADP	_	_	25	case	_	_	*	*	*
+24	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	25	det	_	_	*	59;60	*
+25	vigne	vigne	NOUN	_	Gender=Fem|Number=Sing	20	obl:arg	_	SpaceAfter=No	*	59;60	*
+26	.	.	PUNCT	_	_	13	punct	_	_	*	60	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 16
+# text = Comme on le sait, le parrain sera Michel Laroppe, viticulteur très connu du Toulois, qui apportera ses compétences et son savoir-faire dès la première année de mise en route.
+1	Comme	comme	SCONJ	_	_	4	mark	_	_	*	*	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	61	14:61
+3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*	*	*
+4	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	62	8:62
+7	parrain	parrain	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*	62	8:62
+8	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	cop	_	_	*	*	*
+9	Michel	Michel	PROPN	_	_	0	root	_	_	*	63	*
+10	Laroppe	Laroppe	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*	63	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+12	viticulteur	viticulteur	NOUN	_	Gender=Masc|Number=Sing	9	appos	_	_	*	*	*
+13	très	très	ADV	_	_	14	advmod	_	_	*	*	*
+14	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	_	*	*	*
+15-16	du	_	_	_	_	_	_	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	64;65	8:65
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	64;65	8:65
+17	Toulois	Toulois	PROPN	_	_	14	obl:agent	_	SpaceAfter=No	*	64;65	8:65
+18	,	,	PUNCT	_	_	20	punct	_	_	*	65	8:65
+19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*	66	8:66
+20	apportera	apporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	acl:relcl	_	_	*	*	*
+21	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*	67;68	*
+22	compétences	compétence	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*	67;68	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*	68	*
+24	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*	68;69	8:69
+25	savoir-faire	savoir-faire	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	_	*	68;69	8:69
+26	dès	dès	ADP	_	_	29	case	_	_	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	*	*
+28	première	premier	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_	*	*	*
+29	année	année	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*	*	*
+30	de	de	ADP	_	_	31	case	_	_	*	*	*
+31	mise	mise	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*	70	*
+32	en	en	ADP	_	_	33	case	_	_	*	70	*
+33	route	route	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No	*	70	*
+34	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 17
+# text = Le relais sera ensuite assuré par les membres qui constitueront l'association gestionnaire de la vigne.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	71	8:71
+2	relais	relais	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	_	*	71	8:71
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+4	ensuite	ensuite	ADV	_	_	5	advmod	_	_	*	*	*
+5	assuré	assurer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	par	par	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	72	*
+8	membres	membre	NOUN	_	Gender=Masc|Number=Plur	5	obl:agent	_	_	*	72	*
+9	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*	73	8:73
+10	constitueront	constituer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	74	*
+12	association	association	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*	74	*
+13	gestionnaire	gestionnaire	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*	74	*
+14	de	de	ADP	_	_	16	case	_	_	*	74	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	74;75	13:75
+16	vigne	vigne	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*	74;75	13:75
+17	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 18
+# text = D'où une réunion organisée par la municipalité afin de recueillir des candidatures pour ladite association.
+1	D'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	*	*
+2	où	où	ADV	_	PronType=Rel	1	fixed	_	_	*	*	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	76;77	13:77
+4	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	76;77	13:77
+5	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*	77	13:77
+6	par	par	ADP	_	_	8	case	_	_	*	77	13:77
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	77;78	13:77;13:78
+8	municipalité	municipalité	NOUN	_	Gender=Fem|Number=Sing	5	obl:agent	_	_	*	77;78	13:77;13:78
+9	afin	afin	ADV	_	_	5	advmod	_	_	*	*	*
+10	de	de	ADP	_	_	11	mark	_	_	*	*	*
+11	recueillir	recueillir	VERB	_	VerbForm=Inf	9	ccomp	_	_	*	*	*
+12-13	des	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	79	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*	79	*
+14	candidatures	candidature	NOUN	_	Gender=Fem|Number=Plur	11	obl:arg	_	_	*	79	*
+15	pour	pour	ADP	_	_	17	case	_	_	*	*	*
+16	ladite	ledit	DET	_	Gender=Fem|Number=Sing	17	det	_	_	*	80	*
+17	association	association	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*	80	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 19
+# text = Aux côtés du maire, se trouvait Jacky Chef, adjoint, qui a présenté le projet et tenté de répondre aux questions posées.
+1-2	Aux	_	_	_	_	_	_	_	_	*	*	*
+1	À	à	ADP	_	_	3	case	_	_	*	81	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*	81	*
+3	côtés	côté	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	_	*	81	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	81;82	12:82
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	81;82	12:82
+6	maire	maire	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*	81;82	12:82
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:pass	_	_	2:IRV	*	*
+9	trouvait	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	2	*	*
+10	Jacky	Jacky	PROPN	_	_	9	nsubj	_	_	*	83;84;85	12:85
+11	Chef	Chef	PROPN	_	_	10	flat:name	_	SpaceAfter=No	*	83;84;85	12:85
+12	,	,	PUNCT	_	_	13	punct	_	_	*	84;85	12:85
+13	adjoint	adjoint	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	SpaceAfter=No	*	84;85	12:85
+14	,	,	PUNCT	_	_	17	punct	_	_	*	85	12:85
+15	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*	86	12:86
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*	*	*
+17	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*	*	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	87	0:87
+19	projet	projet	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	*	87	0:87
+20	et	et	CCONJ	_	_	21	cc	_	_	*	*	*
+21	tenté	tenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	conj	_	_	*	*	*
+22	de	de	ADP	_	_	23	mark	_	_	*	*	*
+23	répondre	répondre	VERB	_	VerbForm=Inf	21	xcomp	_	_	*	*	*
+24-25	aux	_	_	_	_	_	_	_	_	*	*	*
+24	à	à	ADP	_	_	26	case	_	_	*	88	16:88
+25	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_	*	88	16:88
+26	questions	question	NOUN	_	Gender=Fem|Number=Plur	23	obl:arg	_	_	1:LVC.full	88	16:88
+27	posées	poser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	26	acl	_	SpaceAfter=No	1	88	16:88
+28	.	.	PUNCT	_	_	9	punct	_	_	*	88	16:88
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 20
+# text = Qui va prendre en charge le vignoble ?
+1	Qui	qui	PRON	_	PronType=Int	2	nsubj	_	_	*	89	16:89
+2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	prendre	prendre	VERB	_	VerbForm=Inf	2	xcomp	_	_	1:VID	*	*
+4	en	en	ADP	_	_	5	case	_	_	1	*	*
+5	charge	charge	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	1	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	90	0:90
+7	vignoble	vignoble	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	90	0:90
+8	?	?	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 21
+# text = A qui va être destinée la production ?
+1	A	à	X	_	_	0	root	_	_	*	*	*
+2	qui	qui	PRON	_	PronType=Rel	3	nsubj	_	_	*	91	*
+3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*	*	*
+4	être	être	AUX	_	VerbForm=Inf	5	aux:tense	_	_	*	*	*
+5	destinée	destiner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	92	2:92
+7	production	production	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	92	2:92
+8	?	?	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 22
+# text = René Martinuzzi, le premier magistrat dommartemontais, a apporté des éclaircissements : « Pour la prise en charge, je pense que la vinification devrait être prise en charge par l'association au même titre que les vendanges.
+1	René	René	PROPN	_	_	10	nsubj	_	_	*	93	*
+2	Martinuzzi	Martinuzzi	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	93	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	94	0:94
+5	premier	premier	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	94	0:94
+6	magistrat	magistrat	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	94	0:94
+7	dommartemontais	dommartemontais	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No	*	94	0:94
+8	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	apporté	apporter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11-12	des	_	_	_	_	_	_	_	_	*	*	*
+11	de	de	ADP	_	_	13	case	_	_	*	95	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	95	*
+13	éclaircissements	éclaircissement	NOUN	_	Gender=Masc|Number=Plur	10	obl:arg	_	_	*	95	*
+14	:	:	PUNCT	_	_	23	punct	_	_	*	*	*
+15	«	«	PUNCT	_	_	23	punct	_	_	*	*	*
+16	Pour	pour	ADP	_	_	18	case	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	96	2:96
+18	prise	prise	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	_	*	96	2:96
+19	en	en	ADP	_	_	20	case	_	_	*	96	2:96
+20	charge	charge	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*	96;97	2:96
+21	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+22	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	23	nsubj	_	_	*	98	0:98
+23	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	parataxis	_	_	*	*	*
+24	que	que	SCONJ	_	_	27	mark	_	_	*	*	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	99	2:99
+26	vinification	vinification	NOUN	_	Gender=Fem|Number=Sing	27	nsubj	_	_	*	99	2:99
+27	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_	*	*	*
+28	être	être	AUX	_	VerbForm=Inf	29	aux:pass	_	_	*	*	*
+29	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	27	xcomp	_	_	1:VID	*	*
+30	en	en	ADP	_	_	31	case	_	_	1	*	*
+31	charge	charge	NOUN	_	Gender=Fem|Number=Sing	29	obl	_	_	1	100	2:100
+32	par	par	ADP	_	_	34	case	_	_	*	*	*
+33	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*	101	*
+34	association	association	NOUN	_	Gender=Fem|Number=Sing	29	obl:agent	_	_	*	101	*
+35-36	au	_	_	_	_	_	_	_	_	*	*	*
+35	à	à	ADP	_	_	38	case	_	_	*	102	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	102	*
+37	même	même	ADJ	_	Gender=Masc|Number=Sing	38	amod	_	_	*	102	*
+38	titre	titre	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	_	*	102	*
+39	que	que	SCONJ	_	_	41	case	_	_	*	*	*
+40	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_	*	103	*
+41	vendanges	vendange	NOUN	_	Gender=Masc|Number=Plur	38	nmod	_	SpaceAfter=No	*	103	*
+42	.	.	PUNCT	_	_	10	punct	_	_	*	103	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 23
+# text = La mairie prendrait en charge l'entretien du vignoble.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	104	*
+2	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*	104	*
+3	prendrait	prendre	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+4	en	en	ADP	_	_	5	case	_	_	1	*	*
+5	charge	charge	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	1	*	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	105	*
+7	entretien	entretien	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	105	*
+8-9	du	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	105;106	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	105;106	*
+10	vignoble	vignoble	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*	105;106	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 24
+# text = Concernant la production, elle pourrait être destinée à l'association avec des quote-parts qui permettraient alors d'attribuer tant de litres par personne.
+1	Concernant	concernant	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	107	2:107
+3	production	production	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	107	2:107
+4	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*	108	2:108
+6	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	être	être	AUX	_	VerbForm=Inf	8	aux:pass	_	_	*	*	*
+8	destinée	destiner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	xcomp	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	109	7:109
+11	association	association	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*	109	7:109
+12	avec	avec	ADP	_	_	15	case	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	110	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	110	*
+15	quote-parts	quote-part	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*	110	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*	111	7:111
+17	permettraient	permettr	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	15	acl:relcl	_	_	*	*	*
+18	alors	alors	ADV	_	_	17	advmod	_	_	*	*	*
+19	d'	de	ADP	_	_	20	mark	_	SpaceAfter=No	*	*	*
+20	attribuer	attribuer	VERB	_	VerbForm=Inf	17	xcomp	_	_	*	*	*
+21	tant	tant	ADV	_	_	20	obj	_	_	*	*	*
+22	de	de	ADP	_	_	23	case	_	_	*	112	*
+23	litres	litre	NOUN	_	Gender=Masc|Number=Plur	21	obl:arg	_	_	*	112	*
+24	par	par	ADP	_	_	25	case	_	_	*	*	*
+25	personne	personne	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No	*	113;114	2:113;2:114
+26	.	.	PUNCT	_	_	6	punct	_	_	*	114	2:114
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 25
+# text = » En aucun cas, le vin ne pourra être vendu à des fins commerciales puisque l'association sera régie par la loi 1901.
+1	»	»	PUNCT	_	_	9	punct	_	_	*	*	*
+2	En	en	ADP	_	_	4	case	_	_	*	*	*
+3	aucun	aucun	DET	_	Gender=Masc|Number=Sing|Polarity=Neg|PronType=Neg	4	det	_	_	*	115	*
+4	cas	cas	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*	115	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	116	11:116
+7	vin	vin	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*	116	11:116
+8	ne	ne	ADV	_	Polarity=Neg	9	advmod	_	_	*	*	*
+9	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+10	être	être	AUX	_	VerbForm=Inf	11	aux:pass	_	_	*	*	*
+11	vendu	vendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	xcomp	_	_	*	*	*
+12	à	à	ADP	_	_	15	case	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	117	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*	117	*
+15	fins	fin	NOUN	_	Gender=Fem|Number=Plur	11	obl:arg	_	_	*	117	*
+16	commerciales	commercial	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*	117	*
+17	puisque	puisque	SCONJ	_	_	21	mark	_	_	*	*	*
+18	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*	118	*
+19	association	association	NOUN	_	Gender=Fem|Number=Sing	21	nsubj:pass	_	_	*	118	*
+20	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	aux:pass	_	_	*	*	*
+21	régie	régir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	advcl	_	_	*	*	*
+22	par	par	ADP	_	_	24	case	_	_	*	*	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*	*	*
+24	loi	loi	NOUN	_	Gender=Fem|Number=Sing	21	obl:agent	_	_	*	*	*
+25	1901	1901	NUM	_	_	24	nmod	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_582.txt 26
+# text = Trois possibilités sont donc envisagées par le maire : le redistribuer, au cours de manifestations communales, aux adhérents de l'association et également sous forme de vente aux enchères annuelle au profit de cette association.
+1	Trois	Trois	NUM	_	_	2	nummod	_	_	*	119	*
+2	possibilités	possibilité	NOUN	_	Gender=Fem|Number=Plur	5	nsubj:pass	_	_	*	119	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+4	donc	donc	ADV	_	_	5	advmod	_	_	*	*	*
+5	envisagées	envisager	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	par	par	ADP	_	_	8	case	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	120	11:120
+8	maire	maire	NOUN	_	Gender=Masc|Number=Sing	5	obl:agent	_	_	*	120	11:120
+9	:	:	PUNCT	_	_	11	punct	_	_	*	*	*
+10	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_	*	121	11:121
+11	redistribuer	redistribuer	VERB	_	VerbForm=Inf	5	parataxis	_	SpaceAfter=No	*	*	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+13-14	au	_	_	_	_	_	_	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	122	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	122	*
+15	cours	cours	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	_	*	122	*
+16	de	de	ADP	_	_	17	case	_	_	*	122;123;124	*
+17	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*	122;123;124;125	*
+18	communales	communal	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	SpaceAfter=No	*	122;123;124;125	*
+19	,	,	PUNCT	_	_	22	punct	_	_	*	124	*
+20-21	aux	_	_	_	_	_	_	_	_	*	*	*
+20	à	à	ADP	_	_	22	case	_	_	*	126	18:126
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*	126	18:126
+22	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*	126	18:126
+23	de	de	ADP	_	_	25	case	_	_	*	126	18:126
+24	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*	126;127	18:126
+25	association	association	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*	126;127	18:126
+26	et	et	CCONJ	_	_	29	cc	_	_	*	*	*
+27	également	également	ADV	_	_	29	advmod	_	_	*	*	*
+28	sous	sous	ADP	_	_	29	case	_	_	*	*	*
+29	forme	forme	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	_	*	128	*
+30	de	de	ADP	_	_	31	case	_	_	*	128	*
+31	vente	vente	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*	128;129	*
+32-33	aux	_	_	_	_	_	_	_	_	*	*	*
+32	à	à	ADP	_	_	34	case	_	_	*	128;129;130	*
+33	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_	*	128;129;130	*
+34	enchères	enchère	NOUN	_	Gender=Fem|Number=Plur	31	nmod	_	_	*	128;129;130	*
+35	annuelle	annuel	ADJ	_	Gender=Fem|Number=Sing	34	amod	_	_	*	128;129;130	*
+36-37	au	_	_	_	_	_	_	_	_	*	*	*
+36	à	à	ADP	_	_	38	case	_	_	*	131	18:131
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	131	18:131
+38	profit	profit	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*	131	18:131
+39	de	de	ADP	_	_	41	case	_	_	*	131	18:131
+40	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	41	det	_	_	*	131;132	18:131
+41	association	association	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	SpaceAfter=No	*	131;132	18:131
+42	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*	*	*
+

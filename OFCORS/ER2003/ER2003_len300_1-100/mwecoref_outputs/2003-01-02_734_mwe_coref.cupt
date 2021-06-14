@@ -1,0 +1,555 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_734.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 1
+# text = 307 CC : on la veut !
+1	307	307	NUM	_	_	2	nummod	_	_	*	1	*
+2	CC	CC	PROPN	_	_	0	root	_	_	*	1	*
+3	:	:	PUNCT	_	_	6	punct	_	_	*	*	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*	2	*
+5	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	obj	_	_	*	3	2:3
+6	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*	*	*
+7	!	!	PUNCT	_	_	2	punct	_	SpacesAfter=\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 2
+# text = Au cœur de l'été, elle risque d'attirer tous les regards et toutes les convoitises.
+1-2	Au	_	_	_	_	_	_	_	_	*	*	*
+1	À	à	ADP	_	_	3	case	_	_	*	4	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	4	*
+3	cœur	cœur	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	4	*
+4	de	de	ADP	_	_	6	case	_	_	*	4	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	4;5	10:5
+6	été	été	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*	4;5	10:5
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*	6	2:6
+9	risque	risquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+10	d'	de	ADP	_	_	11	mark	_	SpaceAfter=No	*	*	*
+11	attirer	attirer	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+12	tous	tout	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*	7	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*	7	*
+14	regards	regard	NOUN	_	Gender=Masc|Number=Plur	11	obj	_	_	*	7	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+16	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	_	*	8	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_	*	8	*
+18	convoitises	convoitise	NOUN	_	Gender=Fem|Number=Plur	14	conj	_	SpaceAfter=No	*	8	*
+19	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 3
+# text = De qui s'agit-il ?
+1	De	de	ADP	_	_	2	case	_	_	*	*	*
+2	qui	qui	PRON	_	PronType=Int	4	expl:subj	_	_	*	9	2:9
+3	s'	se	PRON	_	Person=3|PronType=Prs	4	expl:comp	_	SpaceAfter=No	1:VID	*	*
+4	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1	*	*
+5	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	1	*	*
+6	?	?	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 4
+# text = De la 307 CC, qui sera exclusivement fabriquée à PSA-Sochaux.
+1	De	de	ADP	_	_	4	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	10;11	10:10;2:11
+3	307	307	NUM	_	_	4	nummod	_	_	*	10;11	10:10;2:11
+4	CC	CC	PROPN	_	_	0	root	_	SpaceAfter=No	*	10;11	10:10;2:11
+5	,	,	PUNCT	_	_	9	punct	_	_	*	11	2:11
+6	qui	qui	PRON	_	PronType=Rel	9	nsubj:pass	_	_	*	12	2:12
+7	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux:pass	_	_	*	*	*
+8	exclusivement	exclusivement	ADV	_	_	9	advmod	_	_	*	*	*
+9	fabriquée	fabriquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl:relcl	_	_	*	*	*
+10	à	à	ADP	_	_	11	case	_	_	*	*	*
+11	PSA-Sochaux	PSA-Sochaux	PROPN	_	_	9	obl:arg	_	SpaceAfter=No	*	13	1:13
+12	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 5
+# text = Ce séduisant coupé-cabriolet est annoncé pour la fin août/début septembre.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*	14	1:14
+2	séduisant	séduisant	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	14	1:14
+3	coupé-cabriolet	coupé-cabriolet	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	_	*	14	1:14
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+5	annoncé	annoncer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	pour	pour	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	15	*
+8	fin	fin	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*	15	*
+9	août	août	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No	*	15	*
+10	/	/	SYM	_	_	11	cc	_	SpaceAfter=No	*	15	*
+11	début	début	NOUN	_	Gender=Masc|Number=Sing	9	conj	_	_	*	15;16;17	1:16;1:17
+12	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*	15;16;17;18	1:16;1:17;1:18
+13	.	.	PUNCT	_	_	5	punct	_	_	*	15;17;18	1:17;1:18
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 6
+# text = Deux moteurs essence seront disponibles immédiatement : l'un développant 138, le second 180 cv.
+1	Deux	Deux	NUM	_	_	2	nummod	_	_	*	19	*
+2	moteurs	moteur	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*	19	*
+3	essence	essence	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	19	*
+4	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	cop	_	_	*	*	*
+5	disponibles	disponible	ADJ	_	Gender=Masc|Number=Plur	0	root	_	_	*	*	*
+6	immédiatement	immédiatement	ADV	_	_	5	advmod	_	_	*	*	*
+7	:	:	PUNCT	_	_	10	punct	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	20	*
+9	un	un	PRON	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	20	*
+10	développant	développant	VERB	_	Tense=Pres|VerbForm=Part	5	parataxis	_	_	*	*	*
+11	138	138	NUM	_	_	10	obl	_	SpaceAfter=No	*	21	1:21
+12	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	22	1:22
+14	second	second	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*	22	1:22
+15	180	180	NUM	_	_	16	nummod	_	_	*	23	*
+16	cv	cvembre	NOUN	_	Gender=Masc|Number=Sing	14	appos	_	SpaceAfter=No	*	23	*
+17	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 7
+# text = Et l'on parle déjà d'une version diésélisée.
+1	Et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+2	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	4	nsubj	_	SpaceAfter=No	*	*	*
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	fixed	_	_	*	24	1:24
+4	parle	parler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	déjà	déjà	ADV	_	_	4	advmod	_	_	*	*	*
+6	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	25	*
+8	version	version	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	25	*
+9	diésélisée	diéséliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	SpaceAfter=No	*	25	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 8
+# text = Comme pour la 206 CC, on peut redouter des délais de livraison dépassant l'entendement...
+1	Comme	comme	SCONJ	_	_	8	mark	_	_	*	*	*
+2	pour	pour	ADP	_	_	5	case	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	26	*
+4	206	206	NUM	_	_	5	nummod	_	_	*	26	*
+5	CC	CC	PROPN	_	_	8	obl:mod	_	SpaceAfter=No	*	26	*
+6	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_	*	27	1:27
+8	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+9	redouter	redouter	VERB	_	VerbForm=Inf	8	xcomp	_	_	*	*	*
+10-11	des	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	28	6:28
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*	28	6:28
+12	délais	délai	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*	28	6:28
+13	de	de	ADP	_	_	14	case	_	_	*	28	6:28
+14	livraison	livraison	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	28;29;30	6:28
+15	dépassant	dépasser	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*	30	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	30;31	*
+17	entendement	entendement	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	SpaceAfter=No	*	30;31	*
+18	...	...	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 9
+# text = La 406 arrive, on le sait, au terme de sa carrière.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	32	6:32
+2	406	406	NUM	_	_	3	nsubj	_	_	*	32	6:32
+3	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*	33	13:33
+6	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*	*	*
+7	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	SpaceAfter=No	*	*	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+9-10	au	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	*	*
+11	terme	terme	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	*	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	_	*	34	*
+14	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*	34	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 10
+# text = Pour preuve, les remises substantielles que le réseau consent sur cette voiture.
+1	Pour	pour	ADP	_	_	2	case	_	_	*	*	*
+2	preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_	*	35	*
+5	remises	remise	NOUN	_	Gender=Fem|Number=Plur	10	nsubj	_	_	*	35	*
+6	substantielles	substantielle	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_	*	35	*
+7	que	que	SCONJ	_	_	9	case	_	_	*	36	13:36
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	37	*
+9	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	37	*
+10	consent	conser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	sur	sur	ADP	_	_	13	case	_	_	*	*	*
+12	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	_	_	*	38	*
+13	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	SpaceAfter=No	*	38	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 11
+# text = Une auto s'en va, une autre arrive.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	39	11:39
+2	auto	auto	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	39	11:39
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	SpaceAfter=No	1:VID	*	*
+4	en	en	PRON	_	Person=3	5	expl:comp	_	_	1	*	*
+5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	1	*	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	40	11:40
+8	autre	autre	PRON	_	Number=Sing	9	nsubj	_	_	*	40	11:40
+9	arrive	arrive	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 12
+# text = La 407 sera présentée officiellement au prochain Salon de Francfort en septembre.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	41	13:41
+2	407	407	NUM	_	_	4	nsubj:pass	_	_	*	41	13:41
+3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_	*	*	*
+4	présentée	présenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	officiellement	officiellement	ADV	_	_	4	advmod	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	9	case	_	_	*	42	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	42	*
+8	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	42	*
+9	Salon	salon	PROPN	_	_	4	obl:arg	_	_	*	42	*
+10	de	de	ADP	_	_	11	case	_	_	*	42	*
+11	Francfort	Francfort	PROPN	_	_	9	nmod	_	_	*	42;43	*
+12	en	en	ADP	_	_	13	case	_	_	*	*	*
+13	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*	44	*
+14	.	.	PUNCT	_	_	4	punct	_	_	*	44	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 13
+# text = Des photos non officielles mais bien réelles commencent à circuler sur Internet.
+1-2	Des	_	_	_	_	_	_	_	_	*	*	*
+1	De	de	ADP	_	_	3	case	_	_	*	45;46	9:46
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*	45;46	9:46
+3	photos	photo	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_	*	45;46	9:46
+4	non	non	ADV	_	_	5	advmod	_	_	*	45;46	9:46
+5	officielles	officiel	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*	45;46	9:46
+6	mais	mais	CCONJ	_	_	8	cc	_	_	*	46	9:46
+7	bien	bien	ADV	_	_	8	advmod	_	_	*	46	9:46
+8	réelles	réel	ADJ	_	Gender=Fem|Number=Plur	3	conj	_	_	*	46	9:46
+9	commencent	commencer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+10	à	à	ADP	_	_	11	mark	_	_	*	*	*
+11	circuler	circuler	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+12	sur	sur	ADP	_	_	13	case	_	_	*	*	*
+13	Internet	Internet	PROPN	_	_	11	obl	_	SpaceAfter=No	*	47	*
+14	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 14
+# text = Elles témoignent d'un design tout à la fois élégant et dynamique.
+1	Elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*	48	9:48
+2	témoignent	témoigner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	*	*
+5	design	design	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	*	*
+6	tout	tout	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
+7	à	à	ADP	_	_	10	advmod	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	fixed	_	_	*	*	*
+9	fois	fois	NOUN	_	Gender=Fem|Number=Sing	7	fixed	_	_	*	*	*
+10	élégant	élégant	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	*	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+12	dynamique	dynamique	ADJ	_	Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 15
+# text = Comme sa grande sœur 607, la 407 jouera à coup sûr la carte de la familiale statutaire.
+1	Comme	comme	SCONJ	_	_	9	mark	_	_	*	*	*
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	_	*	49	15:49
+3	grande	grand	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	49	15:49
+4	sœur	sœur	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*	49	15:49
+5	607	607	NUM	_	_	4	nmod	_	SpaceAfter=No	*	50	15:50
+6	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	51	*
+8	407	407	NUM	_	_	9	nsubj	_	_	*	51	*
+9	jouera	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:VID	*	*
+10	à	à	ADP	_	_	9	advmod	_	_	*	*	*
+11	coup	coup	NOUN	_	Gender=Masc|Number=Sing	10	fixed	_	_	*	*	*
+12	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	10	fixed	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	1	*	*
+14	carte	carte	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	1	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	*	*
+17	familiale	familiale	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	*	*
+18	statutaire	statutaire	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	SpaceAfter=No	*	*	*
+19	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 16
+# text = La commercialisation n'interviendra toutefois qu'au printemps 2004.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	52	*
+2	commercialisation	commercialisation	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	52	*
+3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*	*	*
+4	interviendra	intervenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+5	toutefois	toutefois	ADV	_	_	4	advmod	_	_	*	*	*
+6	qu'	que	SCONJ	_	_	9	mark	_	SpaceAfter=No	*	*	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	53	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	53	*
+9	printemps	printemps	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	53	*
+10	2004	2004	NUM	_	_	9	nmod	_	SpaceAfter=No	*	53	*
+11	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 17
+# text = Avant la fin de l'année, Peugeot dévoilera aussi sa 107, citadine s'inspirant du concept-car Sésame, aperçu au dernier Mondial de l'Automobile.
+1	Avant	avant	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	54;55	3:55
+3	fin	fin	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*	54;55	3:55
+4	de	de	ADP	_	_	6	case	_	_	*	54;55	3:55
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	54;55;56	3:55;12:56
+6	année	année	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*	54;55;56	3:55;12:56
+7	,	,	PUNCT	_	_	3	punct	_	_	*	55	3:55
+8	Peugeot	Peugeot	PROPN	_	_	9	nsubj	_	_	*	55;57	3:55
+9	dévoilera	dévoiler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+10	aussi	aussi	ADV	_	_	9	advmod	_	_	*	*	*
+11	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*	58;59	12:58;12:59
+12	107	107	NUM	_	_	9	obj	_	SpaceAfter=No	*	58;59	12:58;12:59
+13	,	,	PUNCT	_	_	14	punct	_	_	*	59	12:59
+14	citadine	citadine	NUM	_	_	12	nmod	_	_	*	59;60	12:59;3:60
+15	s'	se	PRON	_	Person=3|PronType=Prs	16	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+16	inspirant	inspirer	VERB	_	Tense=Pres|VerbForm=Part	9	advcl	_	_	1	*	*
+17-18	du	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	61;62	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	61;62	*
+19	concept-car	concept-car	NOUN	_	Gender=Masc|Number=Sing	16	obl:arg	_	_	*	61;62	*
+20	Sésame	Sésame	PROPN	_	_	19	appos	_	SpaceAfter=No	*	62	*
+21	,	,	PUNCT	_	_	22	punct	_	_	*	*	*
+22	aperçu	apercevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*	*	*
+23-24	au	_	_	_	_	_	_	_	_	*	*	*
+23	à	à	ADP	_	_	25	case	_	_	*	*	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	*	*
+25	dernier	dernier	NOUN	_	Gender=Masc|Number=Sing	22	obl:arg	_	_	*	*	*
+26	Mondial	mondial	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*	*	*
+27	de	de	ADP	_	_	29	case	_	_	*	*	*
+28	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	29	det	_	SpaceAfter=No	*	63	12:63
+29	Automobile	automobile	PROPN	_	_	25	nmod	_	SpaceAfter=No	*	63	12:63
+30	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 18
+# text = Sa mission sera de détrôner la Twingo et sa remplaçante dans le segment des petites voitures sympa et attachantes.
+1	Sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	64	3:64
+2	mission	mission	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*	64	3:64
+3	sera	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+4	de	de	ADP	_	_	5	mark	_	_	*	*	*
+5	détrôner	détrôner	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	65;66	3:65;3:66
+7	Twingo	twingo	PROPN	_	_	5	obj	_	_	*	65;66	3:65;3:66
+8	et	et	CCONJ	_	_	10	cc	_	_	*	66	3:66
+9	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	_	*	66;67	3:66;3:67
+10	remplaçante	remplaçant	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	66;67	3:66;3:67
+11	dans	dans	ADP	_	_	13	case	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	*	*
+13	segment	segment	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*	*	*
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	17	case	_	_	*	*	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*	*	*
+16	petites	petit	ADJ	_	Gender=Fem|Number=Plur	17	amod	_	_	*	*	*
+17	voitures	voiture	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_	*	*	*
+18	sympa	sympa	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*	*	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*	*	*
+20	attachantes	attachant	ADJ	_	Gender=Fem|Number=Plur	18	conj	_	SpaceAfter=No	*	*	*
+21	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 19
+# text = Elle pourra mettre en avant, plusieurs technologies novatrices comme par exemple des portes coulissantes ou encore un espace habitacle hors du commun dans sa catégorie.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	68	3:68
+2	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	mettre	mettre	VERB	_	VerbForm=Inf	2	xcomp	_	_	1:VID	*	*
+4	en	en	ADP	_	_	5	case	_	_	1	*	*
+5	avant	avant	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No	1	*	*
+6	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+7	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	8	det	_	_	*	69	*
+8	technologies	technologie	NOUN	_	Gender=Fem|Number=Plur	2	obl	_	_	*	69	*
+9	novatrices	novateur	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*	69	*
+10	comme	comme	ADP	_	_	15	case	_	_	*	*	*
+11	par	par	ADP	_	_	15	advmod	_	_	*	*	*
+12	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	11	fixed	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	70	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*	70	*
+15	portes	porte	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*	70	*
+16	coulissantes	coulissant	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*	70	*
+17	ou	ou	CCONJ	_	_	20	cc	_	_	*	*	*
+18	encore	encore	ADV	_	_	20	advmod	_	_	*	*	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	71	*
+20	espace	espace	NOUN	_	Gender=Masc|Number=Sing	15	conj	_	_	*	71	*
+21	habitacle	habitacle	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*	71;72	*
+22	hors	hors	ADV	_	_	15	advmod	_	_	*	71;72	*
+23-24	du	_	_	_	_	_	_	_	_	*	*	*
+23	de	de	ADP	_	_	25	case	_	_	*	71;72;73	0:73
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	71;72;73	0:73
+25	commun	commun	ADJ	_	Gender=Masc|Number=Sing	22	obl:arg	_	_	*	71;72;73	0:73
+26	dans	dans	ADP	_	_	28	case	_	_	*	*	*
+27	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	_	*	74;75	3:74;3:75
+28	catégorie	catégorie	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*	74;75	3:74;3:75
+29	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*	75	3:75
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 20
+# text = Dominique CAMPISTRON MONTBELIARD. - Incontestablement, 2003 sera un grand cru pour Peugeot.
+1	Dominique	Dominique	PROPN	_	_	11	nsubj	_	_	*	*	*
+2	CAMPISTRON	CAMPISTRON	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\s\s\s\s\s	*	*	*
+3	MONTBELIARD.	MONTBELIARD.	PROPN	_	_	1	flat:name	_	_	*	*	*
+4	-	-	PUNCT	_	_	5	punct	_	_	*	*	*
+5	Incontestablement	Incontestablement	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	*	*
+6	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+7	2003	2003	NUM	_	_	1	nmod	_	_	*	76	0:76
+8	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	cop	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	77	0:77
+10	grand	grand	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	77	0:77
+11	cru	cru	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	77	0:77
+12	pour	pour	ADP	_	_	13	case	_	_	*	*	*
+13	Peugeot	Peugeot	PROPN	_	_	11	nmod	_	SpaceAfter=No	*	78;79	0:79
+14	.	.	PUNCT	_	_	11	punct	_	_	*	79	0:79
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 21
+# text = En effet, au terme d'une année plus que satisfaisante en matière de ventes et de pénétration de marchés, le Lion s'apprête à commercialiser quatre nouveaux modèles.
+1	En	en	ADP	_	_	26	advmod	_	_	*	*	*
+2	effet	effet	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+4-5	au	_	_	_	_	_	_	_	_	*	*	*
+4	à	à	ADP	_	_	6	case	_	_	*	80	0:80
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	80	0:80
+6	terme	terme	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*	80	0:80
+7	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*	80	0:80
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	80;81;82	0:80
+9	année	année	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	80;81;82	0:80
+10	plus	plus	ADV	_	_	12	advmod	_	_	*	80;82	0:80
+11	que	que	SCONJ	_	_	10	fixed	_	_	*	80;82	0:80
+12	satisfaisante	satisfaisant	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	80;82	0:80
+13	en	en	ADP	_	_	14	case	_	_	*	*	*
+14	matière	matière	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*	*	*
+15	de	de	ADP	_	_	16	case	_	_	*	83	*
+16	ventes	vente	NOUN	_	Gender=Fem|Number=Plur	14	nmod	_	_	*	83;84	*
+17	et	et	CCONJ	_	_	19	cc	_	_	*	*	*
+18	de	de	ADP	_	_	19	case	_	_	*	*	*
+19	pénétration	pénétration	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*	85	*
+20	de	de	ADP	_	_	21	case	_	_	*	85;86	*
+21	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No	*	85;86;87	*
+22	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	88	5:88
+24	Lion	Lion	PROPN	_	_	26	nsubj	_	_	*	88	5:88
+25	s'	se	PRON	_	Person=3|PronType=Prs	26	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+26	apprête	apprêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+27	à	à	ADP	_	_	28	mark	_	_	*	*	*
+28	commercialiser	commercialiser	VERB	_	VerbForm=Inf	26	xcomp	_	_	*	*	*
+29	quatre	quatre	NUM	_	_	31	nummod	_	_	*	89	*
+30	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	31	amod	_	_	*	89	*
+31	modèles	modèle	NOUN	_	Gender=Masc|Number=Plur	28	obj	_	SpaceAfter=No	*	89	*
+32	.	.	PUNCT	_	_	26	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 22
+# text = Le premier à voir le jour est en quelque sorte une « vieille connaissance » puisqu'il s'agit de la 206 RC dont la sortie a été maintes fois repoussée en raison de difficultés de mise au point moteur.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	90	5:90
+2	premier	premier	ADJ	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	90	5:90
+3	à	à	ADP	_	_	4	mark	_	_	*	*	*
+4	voir	voir	VERB	_	VerbForm=Inf	2	xcomp	_	_	2:VID	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	2	91	5:91
+6	jour	jour	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	2	91	5:91
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+8	en	en	ADP	_	_	10	case	_	_	*	*	*
+9	quelque	quelque	DET	_	Gender=Fem|Number=Sing	10	det	_	_	*	*	*
+10	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	92;93	*
+12	«	«	PUNCT	_	_	14	punct	_	_	*	92;93	*
+13	vieille	vieux	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*	92;93	*
+14	connaissance	connaissance	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*	92;93	*
+15	»	»	PUNCT	_	_	14	punct	_	_	*	93	*
+16	puisqu'	puisque	SCONJ	_	_	19	mark	_	SpaceAfter=No	*	*	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	expl:subj	_	_	1:VID	*	*
+18	s'	se	PRON	_	Person=3|PronType=Prs	19	expl:comp	_	SpaceAfter=No	1	*	*
+19	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_	1	*	*
+20	de	de	ADP	_	_	23	case	_	_	*	*	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	94	5:94
+22	206	206	NUM	_	_	23	nummod	_	_	*	94	5:94
+23	RC	RC	PROPN	_	_	19	obl:arg	_	_	*	94	5:94
+24	dont	dont	PRON	_	PronType=Rel	26	nmod	_	_	*	95	5:95
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	96	14:96
+26	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	31	nsubj:pass	_	_	*	96	14:96
+27	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux:tense	_	_	*	*	*
+28	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	aux:pass	_	_	*	*	*
+29	maintes	maint	ADJ	_	Gender=Fem|Number=Plur	30	amod	_	_	*	97	*
+30	fois	fois	NOUN	_	Gender=Fem|Number=Sing	31	obl:mod	_	_	*	97	*
+31	repoussée	repousser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	23	acl:relcl	_	_	*	*	*
+32	en	en	ADP	_	_	31	advmod	_	_	*	*	*
+33	raison	raison	NOUN	_	Gender=Fem|Number=Sing	32	fixed	_	_	*	*	*
+34	de	de	ADP	_	_	35	case	_	_	*	*	*
+35	difficultés	difficulté	NOUN	_	Gender=Fem|Number=Plur	32	obl:arg	_	_	*	*	*
+36	de	de	ADP	_	_	37	case	_	_	*	*	*
+37	mise	mise	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	_	*	*	*
+38-39	au	_	_	_	_	_	_	_	_	*	*	*
+38	à	à	ADP	_	_	40	case	_	_	*	*	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*	*	*
+40	point	point	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	*	*
+41	moteur	moteur	NOUN	_	Gender=Masc|Number=Sing	40	appos	_	SpaceAfter=No	*	*	*
+42	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 23
+# text = Confiée à Lotus, cette tâche a en effet rencontré quelques écueils.
+1	Confiée	confier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*	*	*
+2	à	à	ADP	_	_	3	case	_	_	*	*	*
+3	Lotus	Lotus	PROPN	_	_	1	obl:arg	_	SpaceAfter=No	*	98	*
+4	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+5	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_	*	99	8:99
+6	tâche	tâche	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	99	8:99
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	en	en	ADP	_	_	10	advmod	_	_	*	*	*
+9	effet	effet	NOUN	_	Gender=Masc|Number=Sing	8	fixed	_	_	*	*	*
+10	rencontré	rencontrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|Typo=Yes|VerbForm=Part	7	advcl	_	_	*	*	*
+11	quelques	quelque	DET	_	Gender=Masc|Number=Plur	12	det	_	_	*	100	4:100
+12	écueils	écueil	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No	*	100	4:100
+13	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 24
+# text = Mais aujourd'hui, cette bombinette de 180 CV semble enfin prête à mordre l'asphalte... des circuits.
+1	Mais	mais	CCONJ	_	_	9	cc	_	_	*	*	*
+2	aujourd'hui	aujourd'hui	ADV	_	_	9	advmod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_	*	101	8:101
+5	bombinette	bombinette	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*	101	8:101
+6	de	de	ADP	_	_	8	case	_	_	*	101	8:101
+7	180	180	NUM	_	_	8	nummod	_	_	*	101;102	8:101;7:102
+8	CV	CV	PROPN	_	_	5	nmod	_	_	*	101;102	8:101;7:102
+9	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+10	enfin	enfin	ADV	_	_	9	advmod	_	_	*	*	*
+11	prête	prêt	ADJ	_	Gender=Fem|Number=Sing	9	xcomp	_	_	*	*	*
+12	à	à	ADP	_	_	13	mark	_	_	*	*	*
+13	mordre	mordre	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	103	14:103
+15	asphalte	asphalte	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No	*	103	14:103
+16	...	...	PUNCT	_	_	19	punct	_	_	*	*	*
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	104	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*	104	*
+19	circuits	circuit	NOUN	_	Gender=Masc|Number=Plur	13	obl:mod	_	SpaceAfter=No	*	104	*
+20	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 25
+# text = Evidemment, on pourra s'interroger sur la pertinence de lancer pareil « piège à permis » en pleine campagne contre l'insécurité routière.
+1	Evidemment	evidemment	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	105	4:105
+4	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+5	s'	se	PRON	_	Person=3|PronType=Prs	6	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+6	interroger	interroger	VERB	_	VerbForm=Inf	4	xcomp	_	_	1	*	*
+7	sur	sur	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	106	*
+9	pertinence	pertinence	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*	106	*
+10	de	de	ADP	_	_	11	mark	_	_	*	*	*
+11	lancer	lancer	VERB	_	VerbForm=Inf	9	acl	_	_	*	*	*
+12	pareil	pareil	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*	107;108	7:107;7:108
+13	«	«	PUNCT	_	_	14	punct	_	_	*	107;108	7:107;7:108
+14	piège	piège	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*	107;108	7:107;7:108
+15	à	à	ADP	_	_	16	case	_	_	*	107;108	7:107;7:108
+16	permis	permis	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*	107;108;109;110	7:107;7:108
+17	»	»	PUNCT	_	_	14	punct	_	_	*	108;110	7:108
+18	en	en	ADP	_	_	20	case	_	_	*	*	*
+19	pleine	plein	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*	111	*
+20	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	*	111;112	*
+21	contre	contre	ADP	_	_	23	case	_	_	*	*	*
+22	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*	*	*
+23	insécurité	insécurité	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	*	*	*
+24	routière	routier	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No	*	*	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_734.txt 26
+# text = Gageons toutefois que nombre de passionnés passeront commande d'un engin apte à délivrer des sensations à nulles autres pareilles.
+1	Gageons	Gageer	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+2	toutefois	toutefois	ADV	_	_	1	advmod	_	_	*	*	*
+3	que	que	SCONJ	_	_	7	mark	_	_	*	*	*
+4	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	113	7:113
+5	de	de	ADP	_	_	6	case	_	_	*	113;114	7:113
+6	passionnés	passionné	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	113;114	7:113
+7	passeront	passer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	1	ccomp	_	_	*	*	*
+8	commande	commande	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*	*	*
+9	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	115	7:115
+11	engin	engin	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	115	7:115
+12	apte	apte	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	*	*
+13	à	à	ADP	_	_	14	mark	_	_	*	*	*
+14	délivrer	délivrer	VERB	_	VerbForm=Inf	8	acl	_	_	*	*	*
+15-16	des	_	_	_	_	_	_	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	116	*
+16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	*	116	*
+17	sensations	sensation	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*	116	*
+18	à	à	ADP	_	_	19	case	_	_	*	*	*
+19	nulles	nulle	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_	*	*	*
+20	autres	autre	ADJ	_	Gender=Fem|Number=Plur	21	amod	_	_	*	*	*
+21	pareilles	pareille	NOUN	_	Gender=Fem|Number=Plur	19	nmod	_	SpaceAfter=No	*	*	*
+22	.	.	PUNCT	_	_	1	punct	_	SpacesAfter=\n	*	*	*
+

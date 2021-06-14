@@ -1,0 +1,496 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_712.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 1
+# text = Yvon Biston Yvon Biston, maire de Dieulouard et conseiller général.
+1	Yvon	Yvon	PROPN	_	_	0	root	_	_	*	1	*
+2	Biston	Biston	PROPN	_	_	1	flat:name	_	SpacesAfter=\n	*	1	*
+3	Yvon	Yvon	PROPN	_	_	1	flat:name	_	_	*	2;3	*
+4	Biston	Biston	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	2;3	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*	3	*
+6	maire	maire	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	3;4	11:4
+7	de	de	ADP	_	_	8	case	_	_	*	3;4	11:4
+8	Dieulouard	Dieulouard	PROPN	_	_	6	nmod	_	_	*	3;4;5	11:4
+9	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+10	conseiller	conseiller	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*	6;7	*
+11	général	général	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*	6;7	*
+12	.	.	PUNCT	_	_	1	punct	_	_	*	7	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 2
+# text = « Une année se termine avec ses bons et mauvais souvenirs.
+1	«	«	PUNCT	_	_	5	punct	_	_	*	8	11:8
+2	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	8;9	11:8
+3	année	année	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	8;9	11:8
+4	se	se	PRON	_	Person=3|PronType=Prs	5	expl:pass	_	_	*	*	*
+5	termine	terminer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	avec	avec	ADP	_	_	11	case	_	_	*	*	*
+7	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	11	det	_	_	*	10	*
+8	bons	bon	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*	10	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*	10	*
+10	mauvais	mauvais	ADJ	_	Gender=Masc|Number=Plur	8	conj	_	_	*	10	*
+11	souvenirs	souvenir	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpaceAfter=No	*	10	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 3
+# text = Une autre commence avec l'espoir de jours meilleurs, avec la réalisation de certains projets jugés pour certains indispensables.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	11	4:11
+2	autre	autre	PRON	_	Number=Sing	3	nsubj	_	_	*	11	4:11
+3	commence	commence	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	avec	avec	ADP	_	_	6	case	_	_	*	*	*
+5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	12	*
+6	espoir	espoir	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	12	*
+7	de	de	ADP	_	_	8	case	_	_	*	12;13;14	*
+8	jours	jour	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*	12;13;14	*
+9	meilleurs	meilleur	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	SpaceAfter=No	*	12;13;14	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*	12;14	*
+11	avec	avec	ADP	_	_	13	case	_	_	*	*	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	15;16	4:15;4:16
+13	réalisation	réalisation	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*	15;16	4:15;4:16
+14	de	de	ADP	_	_	16	case	_	_	*	15;16	4:15;4:16
+15	certains	certain	DET	_	Gender=Masc|Number=Plur	16	det	_	_	*	15;16;17;18	4:15;4:16;8:17;16:18
+16	projets	projet	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*	15;16;17;18	4:15;4:16;8:17;16:18
+17	jugés	juger	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	acl	_	_	*	16;18	4:16;16:18
+18	pour	pour	ADP	_	_	20	case	_	_	*	*	*
+19	certains	certain	DET	_	Gender=Masc|Number=Plur	20	det	_	_	*	19	8:19
+20	indispensables	indispensable	NOUN	_	Gender=Masc|Number=Plur	17	obl	_	SpaceAfter=No	*	*	*
+21	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 4
+# text = A mon avis, ce que l'on doit souhaiter en priorité, c'est la paix, une paix intérieure, comme internationale.
+1	A	à	ADP	_	_	3	case	_	_	*	*	*
+2	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_	*	20	*
+3	avis	avis	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	SpaceAfter=No	*	20	*
+4	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	appos	_	_	*	*	*
+6	que	que	PRON	_	PronType=Rel	10	obj	_	_	*	*	*
+7	l'	l'	DET	_	Definite=Def|Number=Sing|PronType=Art	9	nsubj	_	SpaceAfter=No	*	*	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	fixed	_	_	*	21	16:21
+9	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+10	souhaiter	souhaiter	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	priorité	priorité	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	SpaceAfter=No	*	22	*
+13	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+14	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	17	nsubj	_	SpaceAfter=No	*	*	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	23;24	4:23;4:24
+17	paix	paix	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No	*	23;24	4:23;4:24
+18	,	,	PUNCT	_	_	20	punct	_	_	*	24	4:24
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	*	*
+20	paix	paix	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*	*	*
+21	intérieure	intérieur	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No	*	*	*
+22	,	,	PUNCT	_	_	24	punct	_	_	*	*	*
+23	comme	comme	SCONJ	_	_	24	mark	_	_	*	*	*
+24	internationale	internationale	ADJ	_	Gender=Fem|Number=Sing	17	advcl	_	SpaceAfter=No	*	*	*
+25	.	.	PUNCT	_	_	17	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 5
+# text = Les conflits, d'une autre mesure, dans un monde en ébullition, ne font que renforcer nos craintes, il est grand temps que les hommes raisonnent tous dans le même sens et œuvrent unanimement pour la paix.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	25	8:25
+2	conflits	conflit	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	SpaceAfter=No	*	25	8:25
+3	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+4	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	26;27	4:27
+6	autre	autre	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	26;27	4:27
+7	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*	26;27	4:27
+8	,	,	PUNCT	_	_	11	punct	_	_	*	27	4:27
+9	dans	dans	ADP	_	_	11	case	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	28	*
+11	monde	monde	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	28	*
+12	en	en	ADP	_	_	13	case	_	_	*	28	*
+13	ébullition	ébullition	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*	28;29;30	4:30
+14	,	,	PUNCT	_	_	2	punct	_	_	*	30	4:30
+15	ne	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*	*	*
+16	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	advcl	_	_	*	*	*
+17	que	que	ADV	_	_	18	advmod	_	_	*	*	*
+18	renforcer	renforcer	VERB	_	VerbForm=Inf	16	xcomp	_	_	*	*	*
+19	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	20	det	_	_	*	31	*
+20	craintes	crainte	NOUN	_	Gender=Fem|Number=Plur	18	obj	_	SpaceAfter=No	*	31	*
+21	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+22	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_	1:VID	*	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	1	*	*
+24	grand	grand	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*	32	*
+25	temps	temps	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1	32	*
+26	que	que	SCONJ	_	_	29	mark	_	_	*	*	*
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*	33	14:33
+28	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	29	nsubj	_	_	*	33	14:33
+29	raisonnent	raisonner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl	_	_	*	*	*
+30	tous	tout	PRON	_	Gender=Masc|Number=Plur	29	obl:mod	_	_	*	34	14:34
+31	dans	dans	ADP	_	_	34	case	_	_	*	*	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	35	*
+33	même	même	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*	35	*
+34	sens	sens	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	_	*	35	*
+35	et	et	CCONJ	_	_	36	cc	_	_	*	*	*
+36	œuvrent	œuvrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	conj	_	_	*	*	*
+37	unanimement	unanimement	ADV	_	_	36	advmod	_	_	*	*	*
+38	pour	pour	ADP	_	_	40	case	_	_	*	*	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*	36	*
+40	paix	paix	NOUN	_	Gender=Fem|Number=Sing	36	obl	_	SpaceAfter=No	*	36	*
+41	.	.	PUNCT	_	_	25	punct	_	_	*	36	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 6
+# text = Concernant le Pays du Val de Lorraine auquel nous appartenons, nous sommes face à deux grandes réalisations qui peuvent transformer notre avenir.
+1	Concernant	concernant	ADP	_	_	3	case	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	37	10:37
+3	Pays	pays	PROPN	_	_	15	nsubj	_	_	*	37	10:37
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	37;38	10:37;17:38
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	37;38	10:37;17:38
+6	Val	Val	PROPN	_	_	3	nmod	_	_	*	37;38	10:37;17:38
+7	de	de	ADP	_	_	8	case	_	_	*	37;38	10:37;17:38
+8	Lorraine	Lorraine	PROPN	_	_	6	nmod	_	_	*	37;38;39	10:37;17:38
+9-10	auquel	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	10	case	_	_	*	40	10:40
+10	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	12	obl:arg	_	_	*	40	10:40
+11	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_	*	41	14:41
+12	appartenons	appartenir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No	*	*	*
+13	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+14	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	15	iobj	_	_	*	42	*
+15	sommes	être	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+16	face	face	ADV	_	_	15	advmod	_	_	*	*	*
+17	à	à	ADP	_	_	20	case	_	_	*	*	*
+18	deux	deux	NUM	_	_	20	nummod	_	_	*	43	*
+19	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	20	amod	_	_	*	43	*
+20	réalisations	réalisation	NOUN	_	Gender=Fem|Number=Plur	16	obl:arg	_	_	*	43	*
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	44	17:44
+22	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_	*	*	*
+23	transformer	transformer	VERB	_	VerbForm=Inf	22	xcomp	_	_	*	*	*
+24	notre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	25	det	_	_	*	45	10:45
+25	avenir	avenir	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*	45	10:45
+26	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 7
+# text = Si le projet du TGV Est européen est sur de bons rails, il est nécessaire que tous les élus optent pour la gare d'interconnexion à Vandières, seule implantation raisonnable.
+1	Si	si	SCONJ	_	_	8	mark	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	46	10:46
+3	projet	projet	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	46	10:46
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	46;47	10:46;10:47
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	46;47	10:46;10:47
+6	TGV	TGV	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	46;47	10:46;10:47
+7	Est	est	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	46;47	10:46;10:47
+8	européen	européen	ADJ	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*	46;47	10:46;10:47
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
+10	sur	sur	ADP	_	_	13	case	_	_	*	*	*
+11	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	48	*
+12	bons	bon	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*	48	*
+13	rails	rail	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*	48	*
+14	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl:subj	_	_	*	*	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*	*	*
+17	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	13	conj	_	_	*	*	*
+18	que	que	SCONJ	_	_	22	mark	_	_	*	*	*
+19	tous	tout	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*	49	*
+20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*	49	*
+21	élus	élu	NOUN	_	Gender=Masc|Number=Plur	22	nsubj	_	_	*	49	*
+22	optent	opter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	csubj	_	_	*	*	*
+23	pour	pour	ADP	_	_	25	case	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	50	*
+25	gare	gare	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*	50	*
+26	d'	de	ADP	_	_	27	case	_	SpaceAfter=No	*	50	*
+27	interconnexion	interconnexion	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*	50;51	*
+28	à	à	ADP	_	_	29	case	_	_	*	*	*
+29	Vandières	Vandières	PROPN	_	_	25	nmod	_	SpaceAfter=No	*	52;53	*
+30	,	,	PUNCT	_	_	32	punct	_	_	*	53	*
+31	seule	seul	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	_	*	54;55	*
+32	implantation	implantation	NOUN	_	Gender=Fem|Number=Sing	29	appos	_	_	*	54;55	*
+33	raisonnable	raisonnable	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No	*	55	*
+34	.	.	PUNCT	_	_	13	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 8
+# text = Il est grand temps que l'Etat statue définitivement sur ce choix.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	1:VID	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	1	*	*
+3	grand	grand	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*	56	*
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	1	56	*
+5	que	que	SCONJ	_	_	8	mark	_	_	*	*	*
+6	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	57	12:57
+7	Etat	Etat	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	57	12:57
+8	statue	statuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl:cleft	_	_	*	*	*
+9	définitivement	définitivement	ADV	_	_	8	advmod	_	_	*	*	*
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_	*	58	6:58
+12	choix	choix	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No	*	58	6:58
+13	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 9
+# text = Pensons également et rapidement à la circulation de l'A31.
+1	Pensons	penre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+2	également	également	ADV	_	_	1	advmod	_	_	*	*	*
+3	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+4	rapidement	rapidement	ADV	_	_	7	advmod	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	59	0:59
+7	circulation	circulation	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	59	0:59
+8	de	de	ADP	_	_	10	case	_	_	*	59	0:59
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*	59;60	0:59
+10	A31	A31	PROPN	_	_	7	nmod	_	SpaceAfter=No	*	59;60	0:59
+11	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 10
+# text = N'attentons pas le dernier moment pour solutionner hâtivement ce problème, la saturation de la circulation est programmée d'ici peu (... )
+1	N'	ne	ADV	_	Polarity=Neg	2	advmod	_	SpaceAfter=No	*	*	*
+2	attentons	attenter	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	61	12:61
+5	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	61	12:61
+6	moment	moment	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	61	12:61
+7	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+8	solutionner	solutionner	VERB	_	VerbForm=Inf	19	advcl	_	_	*	*	*
+9	hâtivement	hâtivement	ADV	_	_	8	advmod	_	_	*	*	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*	62	6:62
+11	problème	problème	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No	*	62	6:62
+12	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	63	0:63
+14	saturation	saturation	NOUN	_	Gender=Fem|Number=Sing	19	nsubj:pass	_	_	*	63	0:63
+15	de	de	ADP	_	_	17	case	_	_	*	63	0:63
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	63;64	0:63;0:64
+17	circulation	circulation	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	63;64	0:63;0:64
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:pass	_	_	*	*	*
+19	programmée	programmer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	_	*	*	*
+20	d'	de	ADP	_	_	19	advmod	_	SpaceAfter=No	*	*	*
+21	ici	ici	ADV	_	_	20	fixed	_	_	*	*	*
+22	peu	peu	ADV	_	_	20	fixed	_	_	*	*	*
+23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No	*	*	*
+24	...	...	PUNCT	_	_	19	parataxis	_	_	*	*	*
+25	)	)	PUNCT	_	_	24	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 11
+# text = Dans le domaine de la solidarité, je souhaite que l'APA (Allocation personnalisée à l'autonomie), intéressant les personnes dépendantes de plus de 60 ans, continue, comme initialement, à soutenir financièrement toutes celles et tous ceux qui en ont un véritable besoin (... )
+1	Dans	dans	ADP	_	_	3	case	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	65	12:65
+3	domaine	domaine	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	65	12:65
+4	de	de	ADP	_	_	6	case	_	_	*	65	12:65
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	65;66	12:65;0:66
+6	solidarité	solidarité	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No	*	65;66	12:65;0:66
+7	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_	*	67	6:67
+9	souhaite	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+10	que	que	SCONJ	_	_	31	mark	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	68;69	22:68
+12	APA	APA	PROPN	_	_	31	nsubj	_	_	*	68;69	22:68
+13	(	(	PUNCT	_	_	14	punct	_	SpaceAfter=No	*	69	*
+14	Allocation	Allocation	PROPN	_	_	12	appos	_	_	*	69;70	*
+15	personnalisée	personnaliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_	*	69;70	*
+16	à	à	ADP	_	_	18	case	_	_	*	69;70	*
+17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*	69;70;71;72	22:71
+18	autonomie	autonomie	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	SpaceAfter=No	*	69;70;71;72	22:71
+19	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No	*	69;72	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*	69	*
+21	intéressant	intéresser	VERB	_	Tense=Pres|VerbForm=Part	12	acl	_	_	*	*	*
+22	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_	*	*	*
+23	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*	*	*
+24	dépendantes	dépendant	ADJ	_	Gender=Fem|Number=Plur	23	amod	_	_	*	*	*
+25	de	de	ADP	_	_	26	case	_	_	*	*	*
+26	plus	plus	ADV	_	_	23	nmod	_	_	*	*	*
+27	de	de	ADP	_	_	29	case	_	_	*	*	*
+28	60	60	NUM	_	_	29	nummod	_	_	*	73	3:73
+29	ans	an	NOUN	_	Gender=Masc|Number=Plur	26	obl:arg	_	SpaceAfter=No	*	73	3:73
+30	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+31	continue	continaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	SpaceAfter=No	*	*	*
+32	,	,	PUNCT	_	_	37	punct	_	_	*	*	*
+33	comme	comme	SCONJ	_	_	37	mark	_	_	*	*	*
+34	initialement	initialement	ADV	_	_	37	advmod	_	SpaceAfter=No	*	*	*
+35	,	,	PUNCT	_	_	37	punct	_	_	*	*	*
+36	à	à	ADP	_	_	37	mark	_	_	*	*	*
+37	soutenir	soutenir	VERB	_	VerbForm=Inf	31	advcl	_	_	*	*	*
+38	financièrement	financièrement	ADV	_	_	37	advmod	_	_	*	*	*
+39	toutes	tout	DET	_	Gender=Fem|Number=Plur	40	det	_	_	*	74	*
+40	celles	celui	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	37	obj	_	_	*	74	*
+41	et	et	CCONJ	_	_	43	cc	_	_	*	*	*
+42	tous	tout	DET	_	Gender=Masc|Number=Plur	43	det	_	_	*	75	3:75
+43	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	40	conj	_	_	*	75	3:75
+44	qui	qui	PRON	_	PronType=Rel	46	nsubj	_	_	*	76	3:76
+45	en	en	PRON	_	Person=3	46	expl:comp	_	_	2:VID	77	3:77
+46	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	43	acl:relcl	_	_	1:LVC.full;2	*	*
+47	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_	*	78	15:78
+48	véritable	véritable	ADJ	_	Gender=Masc|Number=Sing	49	amod	_	_	*	78	15:78
+49	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	46	obj	_	_	1	78	15:78
+50	(	(	PUNCT	_	_	51	punct	_	SpaceAfter=No	*	*	*
+51	...	...	PUNCT	_	_	49	punct	_	_	*	*	*
+52	)	)	PUNCT	_	_	51	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 12
+# text = Pensons également à notre jeunesse qui doit s'organiser, donnons lui des responsabilités, offrons lui notre confiance mais restons vigilants avec celles et ceux qui refusent la main tendue.
+1	Pensons	penre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*	*	*
+2	également	également	ADV	_	_	1	advmod	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	*	*
+4	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*	79	1:79
+5	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*	79	1:79
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*	80	1:80
+7	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+8	s'	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+9	organiser	organiser	VERB	_	VerbForm=Inf	7	xcomp	_	SpaceAfter=No	1	*	*
+10	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+11	donnons	donnir	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+12	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	11	obj	_	_	*	81	15:81
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	82	23:82
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*	82	23:82
+15	responsabilités	responsabilité	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No	*	82	23:82
+16	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+17	offrons	offre	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	15	conj	_	_	*	*	*
+18	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	20	det	_	_	*	83	15:83
+19	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	_	*	84	1:84
+20	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*	84	1:84
+21	mais	mais	CCONJ	_	_	22	cc	_	_	*	*	*
+22	restons	rester	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	_	*	*	*
+23	vigilants	vigilant	ADJ	_	Gender=Masc|Number=Plur	22	amod	_	_	*	*	*
+24	avec	avec	ADP	_	_	25	case	_	_	*	*	*
+25	celles	celui	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	20	nmod	_	_	*	85;86	23:85;9:86
+26	et	et	CCONJ	_	_	27	cc	_	_	*	86	9:86
+27	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	25	conj	_	_	*	86;87	9:86;7:87
+28	qui	qui	PRON	_	PronType=Rel	29	nsubj	_	_	*	88	9:88
+29	refusent	refuser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_	*	*	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*	*	*
+31	main	main	NOUN	_	Gender=Fem|Number=Sing	29	obj	_	_	*	*	*
+32	tendue	tendu	ADJ	_	Gender=Fem|Number=Sing	31	amod	_	SpaceAfter=No	*	*	*
+33	.	.	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 13
+# text = La responsabilité des parents reste engagée, la famille constitue encore aujourd'hui le support de notre jeunesse.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	89	5:89
+2	responsabilité	responsabilité	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	89	5:89
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	89;90	5:89;7:90
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*	89;90	5:89;7:90
+5	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	89;90	5:89;7:90
+6	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	engagée	engagé	ADJ	_	Gender=Fem|Number=Sing	6	xcomp	_	SpaceAfter=No	*	*	*
+8	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	91	*
+10	famille	famille	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	91	*
+11	constitue	constituer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	*	*	*
+12	encore	encore	ADV	_	_	11	advmod	_	_	*	*	*
+13	aujourd'hui	aujourd'hui	ADV	_	_	11	advmod	_	_	*	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	92	*
+15	support	support	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*	92	*
+16	de	de	ADP	_	_	18	case	_	_	*	92	*
+17	notre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	18	det	_	_	*	92;93	*
+18	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No	*	92;93	*
+19	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 14
+# text = La décentralisation est attendue mais pour être efficace, elle devra s'accompagner des transferts de ressources nécessaires, faute de quoi elle renforcerait l'inégalité.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	94	5:94
+2	décentralisation	décentralisation	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	94	5:94
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	attendue	attendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	mais	mais	CCONJ	_	_	8	cc	_	_	*	*	*
+6	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+7	être	être	AUX	_	VerbForm=Inf	8	cop	_	_	*	*	*
+8	efficace	efficace	ADJ	_	Gender=Masc|Number=Sing	4	conj	_	SpaceAfter=No	*	*	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*	95	5:95
+11	devra	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	conj	_	_	*	*	*
+12	s'	se	PRON	_	Person=3|PronType=Prs	13	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+13	accompagner	accompagner	VERB	_	VerbForm=Inf	11	xcomp	_	_	1	*	*
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	96	7:96
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*	96	7:96
+16	transferts	transfert	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_	*	96	7:96
+17	de	de	ADP	_	_	18	case	_	_	*	96;97	7:96
+18	ressources	ressource	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*	96;97;98	7:96
+19	nécessaires	nécessaire	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	SpaceAfter=No	*	96	7:96
+20	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+21	faute	faute	ADV	_	_	25	advmod	_	_	*	*	*
+22	de	de	ADP	_	_	23	case	_	_	*	*	*
+23	quoi	quoi	PRON	_	_	25	obl:mod	_	_	*	*	*
+24	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_	*	99	5:99
+25	renforcerait	renforcere	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_	*	*	*
+26	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*	100;101	18:100;5:101
+27	inégalité	inégalité	NOUN	_	Gender=Fem|Number=Sing	25	obj	_	SpaceAfter=No	*	100;101	18:100;5:101
+28	.	.	PUNCT	_	_	4	punct	_	_	*	101	5:101
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 15
+# text = Attention également de ne pas transformer la décentralisation en libre service où chacun ferait son marché au gré de ses appétits (... )
+1	Attention	attention	INTJ	_	_	0	root	_	_	*	*	*
+2	également	également	ADV	_	_	1	advmod	_	_	*	*	*
+3	de	de	ADP	_	_	6	mark	_	_	*	*	*
+4	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+6	transformer	transformer	VERB	_	VerbForm=Inf	1	ccomp	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	102	5:102
+8	décentralisation	décentralisation	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*	102	5:102
+9	en	en	ADP	_	_	11	case	_	_	*	*	*
+10	libre	libre	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	103	*
+11	service	service	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	103	*
+12	où	où	ADV	_	PronType=Rel	14	advmod	_	_	*	104	18:104
+13	chacun	chacun	PRON	_	Gender=Masc|Number=Sing	14	nsubj	_	_	*	105	*
+14	ferait	faire	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+15	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*	106	*
+16	marché	marché	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*	106	*
+17-18	au	_	_	_	_	_	_	_	_	*	*	*
+17	à	à	ADP	_	_	19	case	_	_	*	107;108	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	107;108	*
+19	gré	gré	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*	107;108	*
+20	de	de	ADP	_	_	22	case	_	_	*	108	*
+21	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*	108;109	21:109
+22	appétits	appétit	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	_	*	108;109	21:109
+23	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No	*	*	*
+24	...	...	PUNCT	_	_	22	punct	_	_	*	*	*
+25	)	)	PUNCT	_	_	24	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 16
+# text = J'ai une pensée toute particulière pour nos malades, pour les personnes âgées, pour celles et ceux qui ont perdu un être cher, pour celles et ceux qui sont dans le besoin...
+1	J'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No	*	110	*
+2	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	111	*
+4	pensée	pensée	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	111	*
+5	toute	tout	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	111	*
+6	particulière	particulier	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	111	*
+7	pour	pour	ADP	_	_	9	case	_	_	*	*	*
+8	nos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*	*	*
+9	malades	malade	NOUN	_	Gender=Fem|Number=Plur	2	obl	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+11	pour	pour	ADP	_	_	13	case	_	_	*	*	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*	112	13:112
+13	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	2	obl	_	_	*	112	13:112
+14	âgées	âgé	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	SpaceAfter=No	*	112	13:112
+15	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+16	pour	pour	ADP	_	_	17	case	_	_	*	*	*
+17	celles	celui	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	2	obl	_	_	*	113;114	13:113;2:114
+18	et	et	CCONJ	_	_	19	cc	_	_	*	114	2:114
+19	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	17	conj	_	_	*	114;115	2:114;21:115
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	116	2:116
+21	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*	*	*
+22	perdu	perdre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	acl:relcl	_	_	*	*	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	117	20:117
+24	être	être	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*	117	20:117
+25	cher	cher	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	SpaceAfter=No	*	117	20:117
+26	,	,	PUNCT	_	_	28	punct	_	_	*	*	*
+27	pour	pour	ADP	_	_	28	case	_	_	*	*	*
+28	celles	celui	PRON	_	Gender=Fem|Number=Plur|PronType=Dem	22	obl	_	_	*	118;119	2:118;13:119
+29	et	et	CCONJ	_	_	30	cc	_	_	*	119	13:119
+30	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	22	conj	_	_	*	119;120	13:119
+31	qui	qui	PRON	_	PronType=Rel	35	nsubj	_	_	*	121	13:121
+32	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	_	*	*	*
+33	dans	dans	ADP	_	_	35	case	_	_	*	*	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*	122	20:122
+35	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	30	acl:relcl	_	SpaceAfter=No	*	122	20:122
+36	...	...	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_712.txt 17
+# text = A tous, je présente mes meilleurs vœux au seuil de cette nouvelle année, surtout une excellente santé ».
+1	A	à	ADP	_	_	2	case	_	_	*	*	*
+2	tous	tout	PRON	_	Gender=Masc|Number=Plur	5	obl:mod	_	SpaceAfter=No	*	123	19:123
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	124	*
+5	présente	présenter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	_	*	125	19:125
+7	meilleurs	meilleur	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*	125	19:125
+8	vœux	vœux	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*	125	19:125
+9-10	au	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	126	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	126	*
+11	seuil	seuil	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	126	*
+12	de	de	ADP	_	_	15	case	_	_	*	126	*
+13	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_	*	126;127	*
+14	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*	126;127	*
+15	année	année	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No	*	126;127	*
+16	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+17	surtout	surtout	ADV	_	_	20	advmod	_	_	*	*	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	128	*
+19	excellente	excellent	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*	128	*
+20	santé	santé	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	128	*
+21	»	»	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	*	*
+22	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n	*	*	*
+
