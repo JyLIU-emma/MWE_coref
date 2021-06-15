@@ -1,0 +1,464 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2003-01-02_495.txt
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 1
+# text = LES REPRISES
+1	LES	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	1	*
+2	REPRISES	reprises	PROPN	_	_	0	root	_	SpacesAfter=\n	*	1	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 2
+# text = La sorcellerie d'Harry n'a pas fini de lui épargner bien des ennuis !
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	2	*
+2	sorcellerie	sorcellerie	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	2	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	2	*
+4	Harry	Harry	PROPN	_	_	2	nmod	_	_	*	2	*
+5	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*	*	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+8	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+9	de	de	ADP	_	_	11	mark	_	_	*	*	*
+10	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	11	iobj	_	_	*	3	6:3
+11	épargner	épargner	VERB	_	VerbForm=Inf	8	xcomp	_	_	*	*	*
+12	bien	bien	ADV	_	_	11	obj	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	4	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	4	*
+15	ennuis	ennui	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	_	_	*	4	*
+16	!	!	PUNCT	_	_	8	punct	_	SpacesAfter=\s\s	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 3
+# text = LE SEIGNEUR DES ANNEAUX - LES DEUX TOURS Majestic Verdun, mercredi à 17 h et 20 h 30 et jeudi à 14 h, 17 h 15, 21 h ;
+1	LE	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	5	6:5
+2	SEIGNEUR	seigneur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	5	6:5
+3-4	DES	_	_	_	_	_	_	_	_	*	*	*
+3	DE	de	ADP	_	_	5	case	_	_	*	5	6:5
+4	LES	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	5	6:5
+5	ANNEAUX	anneaux	PROPN	_	_	2	nmod	_	_	*	5	6:5
+6	-	-	PUNCT	_	_	8	punct	_	_	*	5	6:5
+7	LES	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	5	6:5
+8	DEUX	Deux	PROPN	_	_	5	conj	_	_	*	5	6:5
+9	TOURS	Tours	PROPN	_	_	8	appos	_	_	*	5	6:5
+10	Majestic	Majestic	PROPN	_	_	9	flat:name	_	_	*	*	*
+11	Verdun	Verdun	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*	*	*
+12	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+13	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	*	*
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	17	17	NUM	_	_	16	nummod	_	_	*	6	10:6
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	6	10:6
+17	et	et	CCONJ	_	_	19	cc	_	_	*	6	10:6
+18	20	20	NUM	_	_	19	nummod	_	_	*	6	10:6
+19	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*	6	10:6
+20	30	30	NUM	_	_	19	appos	_	_	*	6	10:6
+21	et	et	CCONJ	_	_	22	cc	_	_	*	*	*
+22	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_	*	7	6:7
+23	à	à	ADP	_	_	25	case	_	_	*	*	*
+24	14	14	NUM	_	_	25	nummod	_	_	*	*	*
+25	h	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*	*	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*	*	*
+27	17	17	NUM	_	_	28	nummod	_	_	*	8	10:8
+28	h	heure	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*	8	10:8
+29	15	15	NUM	_	_	28	nmod	_	SpaceAfter=No	*	8	10:8
+30	,	,	PUNCT	_	_	32	punct	_	_	*	*	*
+31	21	21	NUM	_	_	32	nummod	_	_	*	9	1:9
+32	h	heure	NOUN	_	Gender=Masc|Number=Plur	29	conj	_	_	*	9	1:9
+33	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 4
+# text = Colisée Bar-le-Duc, mercredi à 17 h et 21 h et jeudi à 14 h, 17 h 30 et 21 h ;
+1	Colisée	Colisée	PROPN	_	_	0	root	_	_	*	*	*
+2	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	10	6:10
+3	,	,	PUNCT	_	_	4	punct	_	_	*	10	6:10
+4	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	10	6:10
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	17	17	NUM	_	_	7	nummod	_	_	*	11	1:11
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	11	1:11
+8	et	et	CCONJ	_	_	10	cc	_	_	*	11	1:11
+9	21	21	NUM	_	_	10	nummod	_	_	*	11	1:11
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	11	1:11
+11	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+12	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*	12	6:12
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	14	14	NUM	_	_	15	nummod	_	_	*	*	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*	*	*
+16	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+17	17	17	NUM	_	_	18	nummod	_	_	*	13	1:13
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	conj	_	_	*	13	1:13
+19	30	30	NUM	_	_	22	nummod	_	_	*	13	1:13
+20	et	et	CCONJ	_	_	21	cc	_	_	*	13	1:13
+21	21	21	NUM	_	_	19	conj	_	_	*	13	1:13
+22	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*	13	1:13
+23	;	;	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 5
+# text = Cinéma Truffaut, Commercy, jeudi à 14 h 30 et 20 h 30, samedi 4 à 14 h 30 et 20 h 30 et dimanche 5 janvier à 14 h 30.
+1	Cinéma	cinéma	PROPN	_	_	0	root	_	_	*	14	6:14
+2	Truffaut	Truffaut	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	14	6:14
+3	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+4	Commercy	Commercy	PROPN	_	_	1	appos	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+6	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	15	6:15
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	14	14	NUM	_	_	9	nummod	_	_	*	16	1:16
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	16	1:16
+10	30	30	NUM	_	_	6	nmod	_	_	*	16	1:16
+11	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+12	20	20	NUM	_	_	10	conj	_	_	*	17	1:17
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	17	1:17
+14	30	30	NUM	_	_	13	nmod	_	SpaceAfter=No	*	17	1:17
+15	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+16	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	18	*
+17	4	4	NUM	_	_	16	nmod	_	_	*	18	*
+18	à	à	ADP	_	_	20	case	_	_	*	*	*
+19	14	14	NUM	_	_	20	nummod	_	_	*	19	1:19
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	19	1:19
+21	30	30	NUM	_	_	24	nummod	_	_	*	19	1:19
+22	et	et	CCONJ	_	_	23	cc	_	_	*	19	1:19
+23	20	20	NUM	_	_	21	conj	_	_	*	19;20	1:19;1:20
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*	19;20	1:19;1:20
+25	30	30	NUM	_	_	24	nmod	_	_	*	19;20	1:19;1:20
+26	et	et	CCONJ	_	_	27	cc	_	_	*	20	1:20
+27	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	20	1:20
+28	5	5	NUM	_	_	27	nmod	_	_	*	20	1:20
+29	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*	20	1:20
+30	à	à	ADP	_	_	32	case	_	_	*	*	*
+31	14	14	NUM	_	_	32	nummod	_	_	*	21	1:21
+32	h	heure	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*	21	1:21
+33	30	30	NUM	_	_	32	nummod	_	SpaceAfter=No	*	21	1:21
+34	.	.	PUNCT	_	_	1	punct	_	_	*	21	1:21
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 6
+# text = LE PAPILLON Colisée Bar-le-Duc, mercredi à 20 h 40 et jeudi à 17 h 15.
+1	LE	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	_	*	*	*
+2	PAPILLON	papillon	PROPN	_	_	0	root	_	_	*	*	*
+3	Colisée	Colisée	PROPN	_	_	2	flat:name	_	_	*	*	*
+4	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	2	flat:name	_	SpaceAfter=No	*	22	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+6	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*	23	*
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	20	20	NUM	_	_	9	nummod	_	_	*	24	1:24
+9	h	heure	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	24	1:24
+10	40	40	NUM	_	_	9	nummod	_	_	*	24	1:24
+11	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+12	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*	25	0:25
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	17	17	NUM	_	_	15	nummod	_	_	*	26	11:26
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	26	11:26
+16	15	15	NUM	_	_	2	nmod	_	SpaceAfter=No	*	26	11:26
+17	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 7
+# text = BOWLING FOR COLUMBINE Cinéma Majestic Verdun jeudi à 20 h 30.
+1	BOWLING	BOWLING	PROPN	_	_	0	root	_	_	*	27	0:27
+2	FOR	For	PROPN	_	_	1	flat:name	_	_	*	27	0:27
+3	COLUMBINE	COLUMBINE	PROPN	_	_	1	flat:name	_	_	*	27;28	0:27;11:28
+4	Cinéma	cinéma	PROPN	_	_	1	flat:name	_	_	*	28	11:28
+5	Majestic	Majestic	PROPN	_	_	1	flat:name	_	_	*	28	11:28
+6	Verdun	Verdun	PROPN	_	_	1	flat:name	_	_	*	29	*
+7	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	*	*
+9	20	20	NUM	_	_	10	nummod	_	_	*	*	*
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	*	*
+11	30	30	NUM	_	_	10	nummod	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 8
+# text = C'EST LE BOUQUET Colisée Bar-le-Duc, mercredi à 17 h 15 et dimanche à 20 h 40 ;
+1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*	*	*
+2	EST	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	LE	Le	PROPN	_	_	0	root	_	_	*	*	*
+4	BOUQUET	bouquet	PROPN	_	_	3	flat:name	_	_	*	*	*
+5	Colisée	Colisée	PROPN	_	_	3	flat:name	_	_	*	30	11:30
+6	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	3	flat:name	_	SpaceAfter=No	*	30	11:30
+7	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+8	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_	*	31	0:31
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	17	17	NUM	_	_	11	nummod	_	_	*	*	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	*	*
+12	15	15	NUM	_	_	11	nummod	_	_	*	*	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*	*	*
+14	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*	32	0:32
+15	à	à	ADP	_	_	17	case	_	_	*	*	*
+16	20	20	NUM	_	_	17	nummod	_	_	*	33	*
+17	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	33	*
+18	40	40	NUM	_	_	17	nummod	_	_	*	33	*
+19	;	;	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 9
+# text = Majestic Verdun, vendredi à 17 h ;
+1	Majestic	Majestic	PROPN	_	_	0	root	_	_	*	34	*
+2	Verdun	Verdun	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+4	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	35	9:35
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	17	17	NUM	_	_	7	nummod	_	_	*	36	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	36	*
+8	;	;	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 10
+# text = Cinéma Truffaut, Commercy, vendredi 3 janvier à 20 h 30, dimanche 5 à 18 h et lundi 6 à 20 h 30.
+1	Cinéma	cinéma	PROPN	_	_	0	root	_	_	*	37	*
+2	Truffaut	Truffaut	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	37	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+4	Commercy	Commercy	PROPN	_	_	1	appos	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+6	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	38	9:38
+7	3	3	NUM	_	_	6	nmod	_	_	*	38	9:38
+8	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	38	9:38
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	20	20	NUM	_	_	11	nummod	_	_	*	*	*
+11	h	heure	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	*	*
+12	30	30	NUM	_	_	8	nmod	_	SpaceAfter=No	*	*	*
+13	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+14	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	39	*
+15	5	5	NUM	_	_	14	nmod	_	_	*	39	*
+16	à	à	ADP	_	_	18	case	_	_	*	*	*
+17	18	18	NUM	_	_	18	nummod	_	_	*	40	7:40
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	40	7:40
+19	et	et	CCONJ	_	_	20	cc	_	_	*	*	*
+20	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	41	*
+21	6	6	NUM	_	_	20	nmod	_	_	*	41	*
+22	à	à	ADP	_	_	24	case	_	_	*	*	*
+23	20	20	NUM	_	_	24	nummod	_	_	*	42	*
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*	42	*
+25	30	30	NUM	_	_	24	nummod	_	SpaceAfter=No	*	42	*
+26	.	.	PUNCT	_	_	1	punct	_	_	*	42	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 11
+# text = AH SI J'ETAIS RICHE Majestic Verdun, mercredi à 17 h 15 et jeudi à 17 h ;
+1	AH	ah	INTJ	_	_	0	root	_	_	*	*	*
+2	SI	si	X	_	_	1	flat:name	_	_	*	*	*
+3	J'	j'	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	43	3:43
+4	ETAIS	ETAIS	PROPN	_	_	1	flat:name	_	_	*	*	*
+5	RICHE	riche	PROPN	_	_	1	obj	_	_	*	*	*
+6	Majestic	Majestic	PROPN	_	_	5	flat:name	_	_	*	44	*
+7	Verdun	Verdun	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*	*	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+9	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	_	*	*	*
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	17	17	NUM	_	_	12	nummod	_	_	*	45	7:45
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*	45	7:45
+13	15	15	NUM	_	_	12	nummod	_	_	*	45	7:45
+14	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+15	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*	46	3:46
+16	à	à	ADP	_	_	18	case	_	_	*	*	*
+17	17	17	NUM	_	_	18	nummod	_	_	*	47	7:47
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	47	7:47
+19	;	;	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 12
+# text = Colisée Bar-le-Duc, vendredi 3 à 20 h 40.
+1	Colisée	Colisée	PROPN	_	_	0	root	_	_	*	*	*
+2	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	48	3:48
+3	,	,	PUNCT	_	_	4	punct	_	_	*	48	3:48
+4	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	48	3:48
+5	3	3	NUM	_	_	4	nmod	_	_	*	48	3:48
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	20	20	NUM	_	_	8	nummod	_	_	*	49	5:49
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	49	5:49
+9	40	40	NUM	_	_	8	nummod	_	SpaceAfter=No	*	49	5:49
+10	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 13
+# text = HARRY POTTER ET LA CHAMBRE DES SECRETS Majestic Verdun, mercredi à 17 h et 20 h 40 et jeudi à 14 h et 17 h ;
+1	HARRY	Harry	PROPN	_	_	0	root	_	_	*	50	7:50
+2	POTTER	Potter	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+3	ET	et	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+4	LA	La	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+5	CHAMBRE	chambre	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+6-7	DES	_	_	_	_	_	_	_	_	*	*	*
+6	DE	de	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+7	LES	Les	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+8	SECRETS	secrets	PROPN	_	_	1	flat:name	_	_	*	50	7:50
+9	Majestic	Majestic	PROPN	_	_	1	flat:name	_	_	*	*	*
+10	Verdun	Verdun	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	*	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+12	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	17	17	NUM	_	_	15	nummod	_	_	*	51	5:51
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	51	5:51
+16	et	et	CCONJ	_	_	18	cc	_	_	*	51	5:51
+17	20	20	NUM	_	_	18	nummod	_	_	*	51	5:51
+18	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	51	5:51
+19	40	40	NUM	_	_	24	nummod	_	_	*	51	5:51
+20	et	et	CCONJ	_	_	21	cc	_	_	*	*	*
+21	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*	52	3:52
+22	à	à	ADP	_	_	23	case	_	_	*	*	*
+23	14	14	NUM	_	_	19	nmod	_	_	*	53	5:53
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	appos	_	_	*	53	5:53
+25	et	et	CCONJ	_	_	27	cc	_	_	*	53	5:53
+26	17	17	NUM	_	_	27	nummod	_	_	*	53	5:53
+27	h	heure	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	_	*	53	5:53
+28	;	;	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 14
+# text = Colisée Bar-le-Duc, mercredi à 17 h et 20 h 40 et jeudi à 14 h 15, 17 h 30 et 20 h 40.
+1	Colisée	Colisée	PROPN	_	_	0	root	_	_	*	*	*
+2	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	54	3:54
+3	,	,	PUNCT	_	_	4	punct	_	_	*	54	3:54
+4	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	54	3:54
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	17	17	NUM	_	_	7	nummod	_	_	*	55	5:55
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	55	5:55
+8	et	et	CCONJ	_	_	10	cc	_	_	*	55	5:55
+9	20	20	NUM	_	_	10	nummod	_	_	*	55	5:55
+10	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	55	5:55
+11	40	40	NUM	_	_	10	nummod	_	_	*	55	5:55
+12	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+13	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	56	3:56
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	14	14	NUM	_	_	16	nummod	_	_	*	57	5:57
+16	h	heure	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	57	5:57
+17	15	15	NUM	_	_	13	nmod	_	SpaceAfter=No	*	57	5:57
+18	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+19	17	17	NUM	_	_	20	nummod	_	_	*	58	5:58
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	58	5:58
+21	30	30	NUM	_	_	24	nummod	_	_	*	58	5:58
+22	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+23	20	20	NUM	_	_	21	conj	_	_	*	59	5:59
+24	h	heure	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*	59	5:59
+25	40	40	NUM	_	_	20	nmod	_	SpaceAfter=No	*	59	5:59
+26	.	.	PUNCT	_	_	1	punct	_	_	*	59	5:59
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 15
+# text = LA PLANETE AU TRESOR Majestic Verdun, jeudi à 14 h 30 ;
+1	LA	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	60	*
+2	PLANETE	PLANETE	PROPN	_	_	0	root	_	_	*	60	*
+3-4	AU	_	_	_	_	_	_	_	_	*	*	*
+3	À	à	ADP	_	_	4	case	_	_	*	61	*
+4	LE	Le	PROPN	_	_	2	nmod	_	_	*	61	*
+5	TRESOR	TRESOR	PROPN	_	_	4	flat:name	_	_	*	61	*
+6	Majestic	Majestic	PROPN	_	_	4	flat:name	_	_	*	61	*
+7	Verdun	Verdun	PROPN	_	_	4	flat:name	_	SpaceAfter=No	*	*	*
+8	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+9	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*	62	4:62
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	14	14	NUM	_	_	12	nummod	_	_	*	*	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*	*	*
+13	30	30	NUM	_	_	2	nmod	_	_	*	*	*
+14	;	;	PUNCT	_	_	13	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 16
+# text = Colisée Bar-le-Duc, jeudi à 14 h 30.
+1	Colisée	Colisée	PROPN	_	_	0	root	_	_	*	*	*
+2	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	63	4:63
+3	,	,	PUNCT	_	_	4	punct	_	_	*	63	4:63
+4	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	63	4:63
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	14	14	NUM	_	_	7	nummod	_	_	*	64	2:64
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	64	2:64
+8	30	30	NUM	_	_	1	nmod	_	SpaceAfter=No	*	64	2:64
+9	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 17
+# text = MEURS UN AUTRE JOUR - JAMES BOND 007 Colisée Bar-le-Dusc, mercredi à 17 h 15 et jeudi à 17 h ;
+1	MEURS	MEURS	PROPN	_	_	0	root	_	_	*	*	*
+2	UN	Un	PROPN	_	_	1	flat:name	_	_	*	65	4:65
+3	AUTRE	autre	PROPN	_	_	1	flat:name	_	_	*	65	4:65
+4	JOUR	jour	PROPN	_	_	1	flat:name	_	_	*	65	4:65
+5	-	-	PUNCT	_	_	6	punct	_	_	*	*	*
+6	JAMES	James	PROPN	_	_	1	flat:name	_	_	*	*	*
+7	BOND	Bond	PROPN	_	_	1	flat:name	_	_	*	*	*
+8	007	007	NUM	_	_	1	flat:name	_	_	*	*	*
+9	Colisée	Colisée	PROPN	_	_	1	flat:name	_	_	*	*	*
+10	Bar-le-Dusc	Bar-le-Dusc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	*	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+12	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	66	4:66
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	17	17	NUM	_	_	15	nummod	_	_	*	*	*
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	*	*
+16	15	15	NUM	_	_	15	nummod	_	_	*	*	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+18	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	67	4:67
+19	à	à	ADP	_	_	21	case	_	_	*	*	*
+20	17	17	NUM	_	_	21	nummod	_	_	*	68	2:68
+21	h	heure	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*	68	2:68
+22	;	;	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 18
+# text = Majestic Verdun, mercredi à 20 h 40 et jeudi à 17 h 30.
+1	Majestic	Majestic	PROPN	_	_	0	root	_	_	*	69	*
+2	Verdun	Verdun	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+4	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	70	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	20	20	NUM	_	_	7	nummod	_	_	*	71	*
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	71	*
+8	40	40	NUM	_	_	7	nummod	_	_	*	71	*
+9	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+10	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	72	8:72
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	17	17	NUM	_	_	13	nummod	_	_	*	73	2:73
+13	h	heure	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	73	2:73
+14	30	30	NUM	_	_	1	nmod	_	SpaceAfter=No	*	73	2:73
+15	.	.	PUNCT	_	_	14	punct	_	_	*	73	2:73
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 19
+# text = SPIRIT, L'ETALON DES PLAINES Majestic Verdun, vendredi 3 à 17 h 30 ;
+1	SPIRIT	Spirit	PROPN	_	_	0	root	_	SpaceAfter=No	*	74	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+3	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	75	*
+4	ETALON	ETALON	PROPN	_	_	1	conj	_	_	*	75	*
+5-6	DES	_	_	_	_	_	_	_	_	*	*	*
+5	DE	de	PROPN	_	_	4	appos	_	_	*	75	*
+6	LES	le	PROPN	_	_	5	flat:name	_	_	*	75	*
+7	PLAINES	plaines	PROPN	_	_	5	flat:name	_	_	*	75	*
+8	Majestic	Majestic	PROPN	_	_	5	flat:name	_	_	*	*	*
+9	Verdun	Verdun	PROPN	_	_	5	flat:name	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+11	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	*	*
+12	3	3	NUM	_	_	11	nmod	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	17	17	NUM	_	_	15	nummod	_	_	*	76	2:76
+15	h	heure	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	76	2:76
+16	30	30	NUM	_	_	15	nummod	_	_	*	76	2:76
+17	;	;	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 20
+# text = Colisée Bar-le-Duc, jeudi à 17 h 15.
+1	Colisée	Colisée	PROPN	_	_	0	root	_	_	*	*	*
+2	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	SpaceAfter=No	*	77	8:77
+3	,	,	PUNCT	_	_	4	punct	_	_	*	77	8:77
+4	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*	77	8:77
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	17	17	NUM	_	_	7	nummod	_	_	*	78	2:78
+7	h	heure	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	78	2:78
+8	15	15	NUM	_	_	1	nmod	_	SpaceAfter=No	*	78	2:78
+9	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 21
+# text = MON IDOLE Colisée Bar-le-Duc jeudi à 14 h 30.
+1	MON	son	PROPN	_	_	0	root	_	_	*	*	*
+2	IDOLE	idole	PROPN	_	_	1	flat:name	_	_	*	*	*
+3	Colisée	Colisée	PROPN	_	_	1	flat:name	_	_	*	79	2:79
+4	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	_	*	79	2:79
+5	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	14	14	NUM	_	_	8	nummod	_	_	*	*	*
+8	h	heure	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*	*	*
+9	30	30	NUM	_	_	5	nmod	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2003-01-02_495.txt 22
+# text = BALZAC ET LA PETITE TAILLEUSE CHINOISE Colisée Bar-le-Duc mercredi à 20 h 30 et samedi 4 janvier à 17 h 15.
+1	BALZAC	BALZAC	PROPN	_	_	0	root	_	_	*	80	*
+2	ET	ET	PROPN	_	_	1	flat:name	_	_	*	*	*
+3	LA	La	PROPN	_	_	1	flat:name	_	_	*	*	*
+4	PETITE	Petite	PROPN	_	_	1	flat:name	_	_	*	*	*
+5	TAILLEUSE	TAILLEUSE	PROPN	_	_	1	flat:name	_	_	*	*	*
+6	CHINOISE	chinoise	PROPN	_	_	1	flat:name	_	_	*	*	*
+7	Colisée	Colisée	PROPN	_	_	1	flat:name	_	_	*	81	2:81
+8	Bar-le-Duc	Bar-le-Duc	PROPN	_	_	1	flat:name	_	_	*	81	2:81
+9	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	20	20	NUM	_	_	12	nummod	_	_	*	*	*
+12	h	heure	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*	*	*
+13	30	30	NUM	_	_	12	nummod	_	_	*	*	*
+14	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+15	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	82	8:82
+16	4	4	NUM	_	_	15	nmod	_	_	*	82	8:82
+17	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*	82	8:82
+18	à	à	ADP	_	_	20	case	_	_	*	*	*
+19	17	17	NUM	_	_	20	nummod	_	_	*	83	2:83
+20	h	heure	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	83	2:83
+21	15	15	NUM	_	_	1	nmod	_	SpaceAfter=No	*	83	2:83
+22	.	.	PUNCT	_	_	21	punct	_	SpacesAfter=\n	*	83	2:83
+
