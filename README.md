@@ -49,9 +49,11 @@ Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est e
 
 Pour traiter correctement la coréférence, il est nécessaire de connaître les frontières de textes dans un corpus. En effet, la coréférence ne peut être traitée qu'à l'intérieur d'une même unité discursive.  
 Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429).  
-Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA :
+Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA pour lesquels les phrases se suivent selon l'ordre du document initial:
 * 2 documents de l'agence européenne du médicament pour la partie EMEA (\~ 1000 phrases en tout)
-* 19 pages Wikipédia pour la partie frwiki (\~ 1000 phrases en tout)
+* 19 pages Wikipédia pour la partie frwiki (\~ 1000 phrases en tout)  
+
+[Est Républicain]
 
 ## Structure du repository
 
@@ -92,34 +94,43 @@ Nous avons donc isolé les différents documents présents dans le corpus SEQUOI
 
 1. Modification du script de Seen2seen, pour qu'il puisse faire seulement l'étape d'annotation;
 
-    - Script `udpipe_annote.py` pour transformer un fichier txt en `cupt.blind`;
-    - Modification du script `seen2seen.py` en créant un mode "annotation_ONLY" qui permet de ne faire que l'annotation sans refaire l'entraînement. Ce mode est à spécifier dans le fichier de config (`config.cfg`) avec "annotation_ONLY = True".
+    - Script `seen2seen/udpipe_annote.py` pour transformer un fichier txt en `cupt.blind`;
+    - Modification du script `seen2seen/seen2seen.py` en créant un mode "annotation_ONLY" qui permet de ne faire que l'annotation sans refaire l'entraînement. Ce mode est à spécifier dans le fichier de config (`seen2seen/config.cfg`) avec "annotation_ONLY = True".
 
 
 2. Utilisation du corpus SEQUOIA dans PARSEME, séparation des sous-corpus EMEA et frwiki selon les articles;
 
     - Lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
-    - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `emea.conllu` et `frwiki.conllu`, utilisation du script `get_text_brut.py` pour extraire d'abord le texte brut et leurs sent_id dans fichiers `emea_textbrut.txt` et `frwiki_textbrut.txt`
-    - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `emea_textbrut.txt` et `frwiki_textbrut.txt`
-    - À partir du contenu du fichier cupt, utilisation de `corpus_split2text.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
-    - Répertoire du corpus obtenu: `./OFCORS/SEQUOIA_EMEA` et `./OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
+    - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `SEQUOIA/z_fichiers_intermediaires/sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `SEQUOIA/z_fichiers_intermediaires/emea.conllu` et `SEQUOIA/z_fichiers_intermediaires/frwiki.conllu`
+    - Utilisation du script `SEQUOIA/get_txt_from_conllu.py` pour extraire d'abord le texte brut et les sent_id des phrases qu'il contient dans les fichiers `SEQUOIA/z_fichiers_intermediaires/emea_textbrut.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut.txt`
+    - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `SEQUOIA/z_fichiers_intermediaires/emea_textbrut_annote.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut_annote.txt`
+    - À partir du contenu du fichier cupt, utilisation de `SEQUOIA/corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
+    - Répertoire du corpus obtenu: `OFCORS/SEQUOIA_EMEA` et `OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
 
-3. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
+3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
+    -
+    -
+    -
+
+4. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
     - Format : colonne des mentions : id de mentions séparés par `;`
                colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`Exemple :
 
         ```
         ...
-        6	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	_	*	5;6	7:5;7:6
-        7	parents	parent	NOUN	_	Gender=Masc|Number=Plur	2	obl:mod	_	_	*	5;6	7:5;7:6
-        8	et	et	CCONJ	_	_	11	cc	_	_	*	6	7:6
-        9	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*	6;7	7:6
-        10	petite	petit	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	6;7	7:6
-        11	sœur	sœur	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	6;7	7:6
+        1   Le  le  DET _   Definite=Def|Gender=Masc|Number=Sing|PronType=Art   2   det _   _   *   31  1:31
+        2   trajet  trajet  NOUN    _   Gender=Masc|Number=Sing 4   nsubj   _   _   *   31  1:31
+        3   ne  ne  ADV _   Polarity=Neg    4   advmod  _   _   *   *   *
+        4   dure    durer   VERB    _   Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin   0   root    _   _   *   *   *
+        5   que que ADV _   _   7   advmod  _   _   *   *   *
+        6   20  20  NUM _   _   7   nummod  _   _   *   32  *
+        7   minutes minute  NOUN    _   Gender=Fem|Number=Plur  4   obj _   _   *   32  *
+        8   !   !   PUNCT   _   _   4   punct   _   _   *   *   *
         ...
         ```
-
+    Ici, La mention n°31 est "Le trajet" et la mention n°32 est "20 minutes".
+    La chaîne n°1 contient (entre autres) la mention 31. La mention 32 n'appartient à aucune chaîne de coréférence.
     - Scripts pour les fusionner : `CuptParser.py`, `OfcorsFilesParser.py` et `merge_s2s_ofcors.py`
     - Script pour lancer tout :`lanceur.sh`
     - Script pour étudier le résultat :  `statistiques.py`
