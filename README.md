@@ -46,14 +46,15 @@ Ofcors est installé!
 Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est expliqué plus bas.
 
 ## Choix de corpus
-
+### Première expérience : sous-corpus de PARSEME
 Pour traiter correctement la coréférence, il est nécessaire de connaître les frontières de textes dans un corpus. En effet, la coréférence ne peut être traitée qu'à l'intérieur d'une même unité discursive.  
 Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429).  
 Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA pour lesquels les phrases se suivent selon l'ordre du document initial:
 * 2 documents de l'agence européenne du médicament pour la partie EMEA (\~ 1000 phrases en tout)
 * 19 pages Wikipédia pour la partie frwiki (\~ 1000 phrases en tout)  
 
-[Est Républicain]
+### Deuxième expérience : Est Républicain
+Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républicain](http://redac.univ-tlse2.fr/corpus/estRepublicain.html), un recueil des articles paru en 1999, 2002 et les deux premiers mois de 2003 sur le journal régional Est Républicain. Considérant la taille énorme de corpus, pour l'instant, nous limitons notre test sur les 100 premiers articles ayant plus de 300 mots de l'année 2003.
 
 ## Structure du repository
 
@@ -108,9 +109,10 @@ Nous avons donc isolé les différents documents présents dans le corpus SEQUOI
     - Répertoire du corpus obtenu: `OFCORS/SEQUOIA_EMEA` et `OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
 
 3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
-    -
-    -
-    -
+    - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `EST_REPUBLICAIN`
+    - Lancement du script `EST_REPUBLICAIN/extract_text_er.py` dans `EST_REPUBLICAIN` avec `python extract_texte_er.py <rep_corpus> <taille_min_article>`
+    - Le répertoire des articles est `EST_REPUBLICAIN/<rep_corpus>_len<taille>_articles`, et dans lequel chaque article est nommé comme `<date>_<indice_article>.txt`
+    - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
 
 4. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
