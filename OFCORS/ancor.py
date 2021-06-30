@@ -14,6 +14,7 @@ Les fichiers produits sont :
 
 import re
 import json
+import argparse
 from ofcors import ancorparsing as ap
 
 
@@ -35,7 +36,7 @@ class AncorToken():
         self.id = out_id
 
 
-def find_tokens(file, namefile):
+def find_tokens(file, namefile, path):
     """
     Récupère les tokens du fichier TEI et créer les fichiers
     ofcors_outputs/{fichier}.txt et ofcors_outputs/{fichier}_tokens.json et
@@ -65,18 +66,20 @@ def find_tokens(file, namefile):
         tokens_file[cnt] = word.text
         cnt += 1
 
-    with open(f"ANCOR/ofcors_outputs/{namefile}.txt", 'w') as textfile:
-        print(f"ANCOR/ofcors_outputs/{namefile}.txt")
+    chemin = f"{path}/{namefile}.txt"
+    with open(chemin, 'w') as textfile:
+        print(chemin)
         textfile.write(raw_text)
 
-    with open(f"ANCOR/ofcors_outputs/{namefile}_tokens.json", 'w') as textfile:
-        print(f"ANCOR/ofcors_outputs/{namefile}_tokens.json")
+    chemin = f"{path}/ofcors_outputs/{namefile}_tokens.json"
+    with open(chemin, 'w') as textfile:
+        print(chemin)
         json.dump(tokens_file, textfile)
 
     return ancor_tokens
 
 
-def find_mentions(file, namefile, ancor_tokens):
+def find_mentions(file, namefile, path, ancor_tokens):
     """
     Récupère les mentions du fichier TEI et créer le fichier
     ofcors_outputs/{fichier}_mentions_output.json
@@ -104,14 +107,15 @@ def find_mentions(file, namefile, ancor_tokens):
         mentions[cnt]['SPAN-ID'] = f"{mentions[cnt]['START']}-{mentions[cnt]['END']}"
         cnt += 1
 
-    with open(f"ANCOR/ofcors_outputs/{namefile}_mentions_output.json", 'w') as textfile:
-        print(f"ANCOR/ofcors_outputs/{namefile}_mentions_output.json")
+    chemin = f"{path}/ofcors_outputs/{namefile}_mentions_output.json"
+    with open(chemin, 'w') as textfile:
+        print(chemin)
         json.dump(mentions, textfile)
 
     return mentions
 
 
-def find_chains(file, namefile, mentions):
+def find_chains(file, namefile, path, mentions):
     """
     Trouve les chaînes de coréférence du fichier TEI et créer le fichier
     ofcors_outputs/{fichier}_resulting_chains.json
@@ -122,18 +126,23 @@ def find_chains(file, namefile, mentions):
         mentions (dict), les infos sur les mentions du fichier TEI
 
     """
-    coref_ancor = file.get_coreferences()
-    clusters = {}
-    cnt = 0
-    for _, coref_dico in coref_ancor.items():
-        left = get_mention_id(mentions, coref_dico["LEFT_NAME"])
-        right = get_mention_id(mentions, coref_dico["RIGHT_NAME"])
-        clusters[cnt] = [left, right]
-        cnt += 1
+    # coref_ancor = file.get_coreferences()
+    coref_ancor = file.get_chains()
 
+    # u-MENTION-jmuzerelle_1371570089700
+    clusters = {}
+    for cnt , chaine in coref_ancor.items():
+        clusters[cnt] = []
+        for ment in chaine:
+            ment = get_mention_id(mentions, ment)
+            clusters[cnt].append(ment)
+
+    print(clusters)
     coref = {"type": "clusters", "clusters": clusters}
-    with open(f"ANCOR/ofcors_outputs/{namefile}_resulting_chains.json", 'w') as textfile:
-        print(f"ANCOR/ofcors_outputs/{namefile}_resulting_chains.json")
+
+    chemin = f"{path}/ofcors_outputs/{namefile}_resulting_chains.json"
+    with open(chemin, 'w') as textfile:
+        print(chemin)
         json.dump(coref, textfile)
 
 
@@ -194,17 +203,22 @@ def main():
     """
     Créer les fichiers de sortie d'OFCORS à partir des annotations d'ANCOR
     """
-    file = ap.XMLTEIFileReader("ANCOR/1AG0549.tei")
-    namefile = "1AG0549"
+    parser = argparse.ArgumentParser(description="fichier")
+    parser.add_argument("file", help="fichier .tei")
+    args = parser.parse_args()
+
+    file = ap.XMLTEIFileReader(args.file)
+    namefile = args.file.split('/')[-1].split('.')[0]
+    path = "/".join(args.file.split('/')[:-1])
 
     # FICHIER.TXT et FICHIER_TOKEN.JSON
-    ancor_tokens = find_tokens(file, namefile)
+    ancor_tokens = find_tokens(file, namefile, path)
 
     # FICHIER_MENTIONS_OUTPUT.JSON
-    mentions = find_mentions(file, namefile, ancor_tokens)
+    mentions = find_mentions(file, namefile, path, ancor_tokens)
 
     # FICHIER_RESULTING_CHAINS.JSON
-    find_chains(file, namefile, mentions)
+    find_chains(file, namefile, path, mentions)
 
 
 if __name__ == "__main__":

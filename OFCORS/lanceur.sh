@@ -45,7 +45,33 @@ mwecoref()
         done
 }
 
-if [ $1 == "-os" ]
+ancor()
+{
+    for fichier in `ls $1*.tei`
+        do
+            python3 ancor.py $fichier
+        done
+}
+
+if [ $1 == "-o" ]
+then
+    mkdir ./$2ofcors_outputs/
+    ofcors "$2"
+elif [ $1 == "-a" ]
+then
+    mkdir ./$2ofcors_outputs/
+    ancor "$2"
+elif [ $1 == "-s" ]
+then
+    mkdir ./$2mwecoref_outputs/
+    mwecoref "$2"
+    if [ $3 ]
+    then
+        python3 statistiques.py $2mwecoref_outputs/ -out $3
+    else
+        python3 statistiques.py $2mwecoref_outputs/
+    fi
+elif [ $1 == "-os" ]
 then
     mkdir ./$2ofcors_outputs/
     echo "OFCORS"
@@ -59,23 +85,10 @@ then
     else
         python3 statistiques.py $2mwecoref_outputs/
     fi
-elif [ $1 == "-o" ]
-then
-    mkdir ./$2ofcors_outputs/
-    ofcors "$2"
-elif [ $1 == "-s" ]
-then
-    mkdir ./$2mwecoref_outputs/
-    mwecoref "$2"
-    if [ $3 ]
-    then
-        python3 statistiques.py $2mwecoref_outputs/ -out $3
-    else
-        python3 statistiques.py $2mwecoref_outputs/
-    fi
 else
     echo " Cette option n'existe pas. "
     echo " -o : lance ofcors-infer "
+    echo " -a : lance ancor.py "
     echo " -s : lance merge_s2s_ofcors.py et statistiques.py "
     echo " -os : lance ofcors-infer, merge_s2s_ofcors.py et statistiques.py "
 fi
