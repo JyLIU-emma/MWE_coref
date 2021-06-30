@@ -1,0 +1,409 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00261
+# text = Jet d'éponge
+1	Jet	jet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	d'	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+3	éponge	éponge	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00262
+# text = Que s'est-il passé ?
+1	Que	que	PRON	_	PronType=Int	5	obj	_	_	*
+2	s'	se	PRON	_	Person=3|Reflex=Yes	5	expl:comp	_	SpaceAfter=No	1:IRV
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	SpaceAfter=No	*
+4	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	5	expl:subj	_	_	*
+5	passé	passer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1
+6	?	?	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00263
+# text = M. Brandt est l'actionnaire majoritaire (à 68%) d'EFI.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+2	Brandt	Brandt	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	actionnaire	actionnaire	NOUN	_	Number=Sing	0	root	_	_	*
+6	majoritaire	majoritaire	ADJ	_	Number=Sing	5	amod	_	_	*
+7	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*
+8	à	à	ADP	_	_	10	case	_	_	*
+9	68	68	NUM	_	NumType=Card	10	nummod	_	SpaceAfter=No	*
+10	%	%	NOUN	_	Gender=Masc	5	nmod	_	SpaceAfter=No	*
+11	)	)	PUNCT	_	_	5	punct	_	_	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+13	EFI	EFI	PROPN	_	_	5	nmod	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00264
+# text = La banque de l'entreprise, la Société Générale, possède pour sa part 22% des actions.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	banque	banque	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+3	de	de	ADP	_	_	5	case	_	_	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+5	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	2	punct	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	Société	Société	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	_	*
+9	Générale	général	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	11	punct	_	_	*
+11	possède	posséder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	pour	pour	ADP	_	_	14	case	_	_	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	14	det	_	_	*
+14	part	part	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*
+15	22	22	NUM	_	NumType=Card	16	nummod	_	SpaceAfter=No	*
+16	%	%	NOUN	_	Gender=Masc	11	obj	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*
+19	actions	action	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00265
+# text = Or elle aurait décidé de jeter l'éponge.
+1	Or	or	CCONJ	_	_	4	cc	_	_	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_	*
+3	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	décidé	décider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	de	de	ADP	_	_	6	mark	_	_	*
+6	jeter	jeter	VERB	_	VerbForm=Inf	4	xcomp	_	_	1:VID
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	1
+8	éponge	éponge	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No	1
+9	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00266
+# text = "Nous avions bon espoir d'obtenir d'elle un prêt-relais pour acheter les matières premières nécessaires au redémarrage de l'activité, car dans l'usine, les machines sont arrêtées depuis le 14 janvier dernier" explique le directeur d'EFI Michel Balandier.
+1	"	"	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+2	Nous	il	PRON	_	Number=Plur|Person=1	3	nsubj	_	_	*
+3	avions	avoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	1:LVC.full
+4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*
+5	espoir	espoir	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1
+6	d'	de	ADP	_	_	7	mark	_	SpaceAfter=No	*
+7	obtenir	obtenir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*
+9	elle	soi	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obl:arg	_	_	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	prêt-relais	prêt-relais	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+12	pour	pour	ADP	_	_	13	mark	_	_	*
+13	acheter	acheter	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*
+15	matières	matière	NOUN	_	Gender=Fem|Number=Plur	13	obj	_	_	*
+16	premières	premier	ADJ	_	Gender=Fem|Number=Plur|NumType=Ord	15	amod	_	_	*
+17	nécessaires	nécessaire	ADJ	_	Number=Plur	15	amod	_	_	*
+18-19	au	_	_	_	_	_	_	_	_	*
+18	à	à	ADP	_	_	20	case	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	redémarrage	redémarrage	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*
+21	de	de	ADP	_	_	23	case	_	_	*
+22	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*
+23	activité	activité	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	3	punct	_	_	*
+25	car	car	CCONJ	_	_	33	cc	_	_	*
+26	dans	dans	ADP	_	_	28	case	_	_	*
+27	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	usine	usine	NOUN	_	Gender=Fem|Number=Sing	33	obl:mod	_	SpaceAfter=No	*
+29	,	,	PUNCT	_	_	33	punct	_	_	*
+30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*
+31	machines	machine	NOUN	_	Gender=Fem|Number=Plur	33	nsubj:pass	_	_	*
+32	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	aux:pass	_	_	*
+33	arrêtées	arrêter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	_	*
+34	depuis	depuis	ADP	_	_	36	case	_	_	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+36	14	14	NUM	_	NumType=Card	33	obl:mod	_	_	*
+37	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_	*
+38	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	36	amod	_	SpaceAfter=No	*
+39	"	"	PUNCT	_	_	3	punct	_	_	*
+40	explique	expliquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_	*
+42	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	40	nsubj	_	_	*
+43	d'	de	ADP	_	_	44	case	_	SpaceAfter=No	*
+44	EFI	EFI	PROPN	_	_	42	nmod	_	_	*
+45	Michel	Michel	PROPN	_	Gender=Masc|Number=Sing	42	appos	_	_	*
+46	Balandier	Balandier	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*
+47	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00267
+# text = Ce prêt aurait permis aussi à la société de lancer sa production de plaques offset en numérique, une technologie qu'elle est parvenue à maîtriser l'an dernier, et qui pouvait la sauver, car elle est très attendue sur le marché.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	prêt	prêt	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	permis	permettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	aussi	aussi	ADV	_	_	4	advmod	_	_	*
+6	à	à	ADP	_	_	8	case	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	société	société	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+9	de	de	ADP	_	_	10	mark	_	_	*
+10	lancer	lancer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+11	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	12	det	_	_	*
+12	production	production	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	plaques	plaque	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+15	offset	offset	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+16	en	en	ADP	_	_	17	case	_	_	*
+17	numérique	numérique	NOUN	_	Number=Sing	14	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	12	punct	_	_	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*
+20	technologie	technologie	NOUN	_	Gender=Fem|Number=Sing	12	appos	_	_	*
+21	qu'	que	PRON	_	PronType=Rel	26	obj	_	SpaceAfter=No	*
+22	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	24	nsubj	_	_	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+24	parvenue	parvenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	20	acl:relcl	_	_	*
+25	à	à	ADP	_	_	26	mark	_	_	*
+26	maîtriser	maîtriser	VERB	_	VerbForm=Inf	24	xcomp	_	_	*
+27	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*
+28	an	an	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*
+29	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	28	amod	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	26	punct	_	_	*
+31	et	et	CCONJ	_	_	33	cc	_	_	*
+32	qui	qui	PRON	_	PronType=Rel	33	nsubj	_	_	*
+33	pouvait	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	conj	_	_	*
+34	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3	35	obj	_	_	*
+35	sauver	sauver	VERB	_	VerbForm=Inf	33	xcomp	_	SpaceAfter=No	*
+36	,	,	PUNCT	_	_	33	punct	_	_	*
+37	car	car	CCONJ	_	_	41	cc	_	_	*
+38	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	41	nsubj:pass	_	_	*
+39	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	aux:pass	_	_	*
+40	très	très	ADV	_	_	41	advmod	_	_	*
+41	attendue	attendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	33	conj	_	_	*
+42	sur	sur	ADP	_	_	44	case	_	_	*
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*
+44	marché	marché	NOUN	_	Gender=Masc|Number=Sing	41	obl:mod	_	SpaceAfter=No	*
+45	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00268
+# text = Las.
+1	Las	las	ADJ	_	Gender=Masc	0	root	_	SpaceAfter=No	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00269
+# text = Pour des raisons que le directeur ne connaît pas, la Société Générale n'a pas accordé ce crédit.
+1	Pour	pour	ADP	_	_	3	case	_	_	*
+2	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	3	det	_	_	*
+3	raisons	raison	NOUN	_	Gender=Fem|Number=Plur	17	obl:mod	_	_	*
+4	que	que	PRON	_	PronType=Rel	8	obj	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	connaît	connaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	17	punct	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Société	Société	PROPN	_	Gender=Fem|Number=Sing	17	nsubj	_	_	*
+13	Générale	général	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*
+14	n'	ne	ADV	_	Polarity=Neg	17	advmod	_	SpaceAfter=No	*
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+16	pas	pas	ADV	_	Polarity=Neg	17	advmod	_	_	*
+17	accordé	accorder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	19	det	_	_	*
+19	crédit	crédit	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00270
+# text = C'est connu, les malheurs ne surviennent jamais seuls : un important groupe canadien qui se disait intéressé par la distribution en Europe des plaques numériques mises au point à Baume n'a soudainement plus donné signe de vie.
+1	C'	ce	PRON	_	Number=Sing|Person=3	3	nsubj:pass	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*
+3	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	8	punct	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	malheurs	malheur	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	1:VID
+7	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	1
+8	surviennent	survenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_	1
+9	jamais	jamais	ADV	_	Polarity=Neg	8	advmod	_	_	1
+10	seuls	seul	ADJ	_	Gender=Masc|Number=Plur	8	advmod	_	_	1
+11	:	:	PUNCT	_	_	3	punct	_	_	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+13	important	important	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+14	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	39	nsubj	_	_	*
+15	canadien	canadien	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*
+16	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*
+17	se	se	PRON	_	Person=3|Reflex=Yes	18	obj	_	_	*
+18	disait	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl:relcl	_	_	*
+19	intéressé	intéresser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	xcomp	_	_	*
+20	par	par	ADP	_	_	22	case	_	_	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+22	distribution	distribution	NOUN	_	Gender=Fem|Number=Sing	19	obl:agent	_	_	*
+23	en	en	ADP	_	_	24	case	_	_	*
+24	Europe	Europe	PROPN	_	Gender=Fem|Number=Sing	22	nmod	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*
+27	plaques	plaque	NOUN	_	Gender=Fem|Number=Plur	22	nmod	_	_	*
+28	numériques	numérique	ADJ	_	Number=Plur	27	amod	_	_	*
+29	mises	mettre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	27	acl	_	_	2:VID
+30-31	au	_	_	_	_	_	_	_	_	*
+30	à	à	ADP	_	_	32	case	_	_	2
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	2
+32	point	point	NOUN	_	Gender=Masc|Number=Sing	29	obl:arg	_	_	2
+33	à	à	ADP	_	_	34	case	_	_	*
+34	Baume	Baume	PROPN	_	_	29	obl:mod	_	_	*
+35	n'	ne	ADV	_	Polarity=Neg	39	advmod	_	SpaceAfter=No	*
+36	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	aux:tense	_	_	*
+37	soudainement	soudainement	ADV	_	_	39	advmod	_	_	*
+38	plus	plus	ADV	_	Polarity=Neg	39	advmod	_	_	*
+39	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	3:VID
+40	signe	signe	NOUN	_	Gender=Masc|Number=Sing	39	obj	_	_	3
+41	de	de	ADP	_	_	42	case	_	_	3
+42	vie	vie	NOUN	_	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No	3
+43	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00271
+# text = Quant au chèque de 76.000 euros, la banque a apparemment refusé de l'honorer.
+1	Quant	quant	ADV	_	_	4	case	_	EXTPOS=ADP|MWE=quant_à	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	fixed	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	chèque	chèque	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	76.000	76.000	NUM	_	NumType=Card	7	nummod	_	_	*
+7	euros	euro	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	13	punct	_	_	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	banque	banque	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+12	apparemment	apparemment	ADV	_	_	13	advmod	_	_	*
+13	refusé	refuser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	de	de	ADP	_	_	16	mark	_	_	*
+15	l'	le	PRON	_	Number=Sing|Person=3	16	obj	_	SpaceAfter=No	*
+16	honorer	honorer	VERB	_	VerbForm=Inf	13	xcomp	_	SpaceAfter=No	*
+17	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00272
+# text = Plus exactement, cet argent a servi à régler une partie (30%) des salaires de janvier.
+1	Plus	plus	ADV	_	_	2	advmod	_	_	*
+2	exactement	exactement	ADV	_	_	7	advmod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	7	punct	_	_	*
+4	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_	*
+5	argent	argent	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	servi	servir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	à	à	ADP	_	_	9	mark	_	_	*
+9	régler	régler	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	partie	partie	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*
+12	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+13	30	30	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=No	*
+14	%	%	NOUN	_	Gender=Masc	11	appos	_	SpaceAfter=No	*
+15	)	)	PUNCT	_	_	11	punct	_	_	*
+16-17	des	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+18	salaires	salaire	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00273
+# text = Dès lors, la "condamnation" de l'entreprise devenait inévitable.
+1	Dès	dès	ADP	_	_	11	advmod	_	EXTPOS=ADV|MWE=dès_lors	*
+2	lors	lors	ADV	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	11	punct	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+5	"	"	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+6	condamnation	condamnation	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	SpaceAfter=No	*
+7	"	"	PUNCT	_	_	6	punct	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*
+11	devenait	devenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+12	inévitable	inévitable	ADJ	_	Number=Sing	11	xcomp	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00274
+# text = Car EFI, mise en redressement judiciaire en 1998 avec un plan de continuation de dix ans, devait déjà impérativement régler une partie des sommes dues à ses créanciers en juin dernier.
+1	Car	car	CCONJ	_	_	19	cc	_	_	*
+2	EFI	EFI	PROPN	_	_	19	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*
+4	mise	mettre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	redressement	redressement	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+7	judiciaire	judiciaire	ADJ	_	Number=Sing	6	amod	_	_	*
+8	en	en	ADP	_	_	9	case	_	_	*
+9	1998	1998	NUM	_	NumType=Card	4	obl:mod	_	_	*
+10	avec	avec	ADP	_	_	12	case	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	continuation	continuation	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	dix	dix	NUM	_	NumType=Card	17	nummod	_	_	*
+17	ans	an	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	19	punct	_	_	*
+19	devait	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+20	déjà	déjà	ADV	_	_	19	advmod	_	_	*
+21	impérativement	impérativement	ADV	_	_	19	advmod	_	_	*
+22	régler	régler	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*
+24	partie	partie	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*
+25-26	des	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*
+27	sommes	somme	NOUN	_	Number=Plur	24	nmod	_	_	*
+28	dues	devoir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	27	acl	_	_	*
+29	à	à	ADP	_	_	31	case	_	_	*
+30	ses	son	DET	_	Number=Plur|Poss=Yes	31	det	_	_	*
+31	créanciers	créancier	NOUN	_	Gender=Masc|Number=Plur	28	obl:arg	_	_	*
+32	en	en	ADP	_	_	33	case	_	_	*
+33	juin	juin	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	_	*
+34	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	33	amod	_	SpaceAfter=No	*
+35	.	.	PUNCT	_	_	19	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00275
+# text = Elle n'y était pas parvenue à cette date.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	6	nsubj	_	_	*
+2	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*
+3	y	y	PRON	_	Person=3	6	iobj	_	_	*
+4	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	parvenue	parvenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_	*
+9	date	date	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00276
+# text = Alors le tribunal lui avait accordé un ultime délai : fin janvier, avec l'échec que l'on sait.
+1	Alors	alors	ADV	_	_	6	advmod	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+4	lui	lui	PRON	_	Number=Sing|Person=3	6	iobj	_	_	*
+5	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	aux:tense	_	_	*
+6	accordé	accorder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+8	ultime	ultime	ADJ	_	Number=Sing	9	amod	_	_	*
+9	délai	délai	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+10	:	:	PUNCT	_	_	9	punct	_	_	*
+11	fin	fin	NOUN	_	Number=Sing	9	appos	_	_	*
+12	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*
+13	,	,	PUNCT	_	_	6	punct	_	_	*
+14	avec	avec	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	échec	échec	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*
+17	que	que	PRON	_	PronType=Rel	20	obj	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	nsubj	_	EXTPOS=PRON|MWE=il|SpaceAfter=No	*
+19	on	il	PRON	_	Number=Sing|Person=3	18	fixed	_	_	*
+20	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	SpaceAfter=No	*
+21	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00277
+# text = Et comme le plan de résorption des dettes prévoyait un autre versement de près de deux millions d'euros en juin prochain...
+1	Et	et	CCONJ	_	_	10	cc	_	_	*
+2	comme	comme	SCONJ	_	_	10	mark	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+5	de	de	ADP	_	_	6	case	_	_	*
+6	résorption	résorption	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+9	dettes	dette	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*
+10	prévoyait	prévoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+12	autre	autre	ADJ	_	Number=Sing	13	amod	_	_	*
+13	versement	versement	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+14	de	de	ADP	_	_	18	case	_	_	*
+15	près	près	ADV	_	_	18	advmod	_	_	*
+16	de	de	ADP	_	_	18	dep	_	_	*
+17	deux	deux	NUM	_	NumType=Card	18	nummod	_	_	*
+18	millions	million	NOUN	_	Gender=Masc|Number=Plur|NumType=Card	13	nmod	_	_	*
+19	d'	de	ADP	_	_	20	case	_	SpaceAfter=No	*
+20	euros	euro	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*
+21	en	en	ADP	_	_	22	case	_	_	*
+22	juin	juin	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+23	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	SpaceAfter=No	*
+24	...	...	PUNCT	_	_	10	punct	_	_	*
