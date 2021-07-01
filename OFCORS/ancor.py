@@ -45,6 +45,7 @@ def find_tokens(file, namefile, path):
     Args:
         file (str), le fichier TEI du corpus ANCOR
         namefile (str), le nom du fichier sans l'extension
+        path (str), le chemin vers le dossier qui contient les fichiers TEI
     Returns:
         ancor_tokens (liste de AncorToken), la liste des tokens du fichier
     """
@@ -54,17 +55,19 @@ def find_tokens(file, namefile, path):
     cnt = 0
     encours = 0
 
-    for word in file.root.iter('{http://www.tei-c.org/ns/1.0}w'):
-        ancor_id = "#" + word.attrib["{http://www.w3.org/XML/1998/namespace}id"]
-        unite = int(re.search(r'u([0-9]+)', ancor_id).group(1))
-        word = AncorToken(word.text, ancor_id, unite, cnt)
-        ancor_tokens.append(word)
-        if word.unite != encours:
-            raw_text += "\n\n"
-            encours = word.unite
-        raw_text += f"{word.text} "
-        tokens_file[cnt] = word.text
-        cnt += 1
+    for unite in file.root.iter('{http://www.tei-c.org/ns/1.0}u'):
+        for word in unite.iter():
+            if word.tag == "{http://www.tei-c.org/ns/1.0}w" or word.tag == "{http://www.tei-c.org/ns/1.0}pc":
+                ancor_id = "#" + word.attrib["{http://www.w3.org/XML/1998/namespace}id"]
+                unite = int(re.search(r'u([0-9]+)', ancor_id).group(1))
+                word = AncorToken(word.text, ancor_id, unite, cnt)
+                ancor_tokens.append(word)
+                if word.unite != encours:
+                    raw_text += "\n\n"
+                    encours = word.unite
+                raw_text += f"{word.text} "
+                tokens_file[cnt] = word.text
+                cnt += 1
 
     chemin = f"{path}/{namefile}.txt"
     with open(chemin, 'w') as textfile:
@@ -87,6 +90,7 @@ def find_mentions(file, namefile, path, ancor_tokens):
     Args:
         file (str), le fichier TEI du corpus ANCOR
         namefile (str), le nom du fichier sans l'extension
+        path (str), le chemin vers le dossier qui contient les fichiers TEI
         ancor_tokens (liste de AncorToken), la liste des tokens du fichier
     Returns:
         mentions (dict), les infos sur les mentions du fichier TEI
@@ -123,21 +127,20 @@ def find_chains(file, namefile, path, mentions):
     Args:
         file (str), le fichier TEI du corpus ANCOR
         namefile (str), le nom du fichier sans l'extension
+        path (str), le chemin vers le dossier qui contient les fichiers TEI
         mentions (dict), les infos sur les mentions du fichier TEI
 
     """
-    # coref_ancor = file.get_coreferences()
-    coref_ancor = file.get_chains()
+    coref_ancor = file.get_coreferences()
+    coref_ancor = file.compute_chains(coref_ancor)
 
-    # u-MENTION-jmuzerelle_1371570089700
     clusters = {}
-    for cnt , chaine in coref_ancor.items():
+    for cnt, chaine in coref_ancor.items():
         clusters[cnt] = []
         for ment in chaine:
             ment = get_mention_id(mentions, ment)
             clusters[cnt].append(ment)
 
-    print(clusters)
     coref = {"type": "clusters", "clusters": clusters}
 
     chemin = f"{path}/ofcors_outputs/{namefile}_resulting_chains.json"
