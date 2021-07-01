@@ -1,0 +1,441 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00469
+# text = Pablo Correa portera encore le maillot de l'ASNL la saison prochaine.
+1	Pablo	Pablo	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	Correa	Correa	PROPN	_	_	1	flat:name	_	_	*
+3	portera	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*
+4	encore	encore	ADV	_	_	3	advmod	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	maillot	maillot	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	ASNL	ASNL	PROPN	_	Number=Sing	6	nmod	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	saison	saison	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*
+12	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00470
+# text = Hier en fin d'après-midi, il a signé un nouveau contrat de deux ans, acceptant finalement les propositions de Jacques Rousselot.
+1	Hier	hier	ADV	_	_	9	advmod	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	fin	fin	NOUN	_	Number=Sing	9	obl:mod	_	_	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+5	après-midi	après-midi	NOUN	_	Number=Sing	3	nmod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	signé	signer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+11	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	contrat	contrat	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	1
+13	de	de	ADP	_	_	15	case	_	_	*
+14	deux	deux	NUM	_	NumType=Card	15	nummod	_	_	*
+15	ans	an	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	9	punct	_	_	*
+17	acceptant	accepter	VERB	_	Tense=Pres|VerbForm=Part	9	advcl	_	_	*
+18	finalement	finalement	ADV	_	_	17	advmod	_	_	*
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*
+20	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	17	obj	_	_	*
+21	de	de	ADP	_	_	22	case	_	_	*
+22	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*
+23	Rousselot	Rousselot	PROPN	_	_	22	flat:name	_	SpaceAfter=No	*
+24	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00471
+# text = Il y a trois semaines, l'Uruguayen envisageait de quitter le club.
+1	Il	il	PRON	_	Number=Sing|Person=3	5	case	_	EXTPOS=ADP|MWE=il_y_a	*
+2	y	y	PRON	_	Person=3	1	fixed	_	_	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_	*
+4	trois	trois	NUM	_	NumType=Card	5	nummod	_	_	*
+5	semaines	semaine	NOUN	_	Gender=Fem|Number=Plur	9	obl:mod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	Uruguayen	uruguayen	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+9	envisageait	envisager	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+10	de	de	ADP	_	_	11	mark	_	_	*
+11	quitter	quitter	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	club	club	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00472
+# text = Dans un premier temps, le président nancéien invita Pablo à cesser sa carrière pour intégrer le staff technique.
+1	Dans	dans	ADP	_	_	4	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	_	_	*
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	9	punct	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	président	président	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+8	nancéien	nancéien	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	invita	inviter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+10	Pablo	Pablo	PROPN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+11	à	à	ADP	_	_	12	mark	_	_	*
+12	cesser	cesser	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	14	det	_	_	*
+14	carrière	carrière	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	_	*
+15	pour	pour	ADP	_	_	16	mark	_	_	*
+16	intégrer	intégrer	VERB	_	VerbForm=Inf	12	advcl	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	staff	staff	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*
+19	technique	technique	ADJ	_	Number=Sing	18	amod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00473
+# text = Comme l'attaquant tenait encore à jouer, il refusa et examina d'autres possibilités : "Le Mans, Valence, Sedan et un quatrième club dont je dois taire le nom, me faisaient des offres intéressantes.
+1	Comme	comme	SCONJ	_	_	4	mark	_	_	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*
+3	attaquant	attaquant	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+4	tenait	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_	*
+5	encore	encore	ADV	_	_	4	advmod	_	_	*
+6	à	à	ADP	_	_	7	mark	_	_	*
+7	jouer	jouer	VERB	_	VerbForm=Inf	4	xcomp	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	10	punct	_	_	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_	*
+10	refusa	refuser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*
+12	examina	examiner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_	*
+13	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	15	det	_	SpaceAfter=No	*
+14	autres	autre	ADJ	_	Number=Plur	15	amod	_	_	*
+15	possibilités	possibilité	NOUN	_	Gender=Fem|Number=Plur	12	obj	_	_	*
+16	:	:	PUNCT	_	_	10	punct	_	_	*
+17	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No	*
+18	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	Mans	Mans	PROPN	_	Gender=Masc|Number=Sing	36	nsubj	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*
+21	Valence	Valence	PROPN	_	Gender=Masc|Number=Sing	19	conj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	23	punct	_	_	*
+23	Sedan	Sedan	PROPN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+24	et	et	CCONJ	_	_	27	cc	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+26	quatrième	quatrième	ADJ	_	Number=Sing|NumType=Ord	27	amod	_	_	*
+27	club	club	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+28	dont	dont	PRON	_	PronType=Rel	33	nmod	_	_	*
+29	je	il	PRON	_	Number=Sing|Person=1	30	nsubj	_	_	*
+30	dois	devoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_	*
+31	taire	taire	VERB	_	VerbForm=Inf	30	xcomp	_	_	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*
+33	nom	nom	NOUN	_	Gender=Masc|Number=Sing	31	obj	_	SpaceAfter=No	*
+34	,	,	PUNCT	_	_	36	punct	_	_	*
+35	me	le	PRON	_	Number=Sing|Person=1	36	iobj	_	_	*
+36	faisaient	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_	1:LVC.full
+37	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	38	det	_	_	*
+38	offres	offre	NOUN	_	Gender=Fem|Number=Plur	36	obj	_	_	1
+39	intéressantes	intéressant	ADJ	_	Gender=Fem|Number=Plur	38	amod	_	SpaceAfter=No	*
+40	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00474
+# text = J'étais prêt à partir, malgré mon attachement à l'ASNL et à la ville, car à 32 ans, il s'agissait sans doute de ma dernière chance de signer un nouveau contrat".
+1	J'	il	PRON	_	Number=Sing|Person=1	3	nsubj	_	SpaceAfter=No	*
+2	étais	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	cop	_	_	*
+3	prêt	prêt	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	à	à	ADP	_	_	5	mark	_	_	*
+5	partir	partir	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	3	punct	_	_	*
+7	malgré	malgré	ADP	_	_	9	case	_	_	*
+8	mon	son	DET	_	Number=Sing|Poss=Yes	9	det	_	_	*
+9	attachement	attachement	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+10	à	à	ADP	_	_	12	case	_	_	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*
+12	ASNL	ASNL	PROPN	_	Number=Sing	9	nmod	_	_	*
+13	et	et	CCONJ	_	_	16	cc	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	ville	ville	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	3	punct	_	_	*
+18	car	car	CCONJ	_	_	25	cc	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	32	32	NUM	_	NumType=Card	21	nummod	_	_	*
+21	ans	an	NOUN	_	Gender=Masc|Number=Plur	25	obl:mod	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	25	punct	_	_	*
+23	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	25	expl:subj	_	_	1:VID
+24	s'	se	PRON	_	Person=3|Reflex=Yes	25	expl:comp	_	SpaceAfter=No	1
+25	agissait	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	conj	_	_	1
+26	sans	sans	ADP	_	_	27	case	_	_	*
+27	doute	doute	NOUN	_	Gender=Masc|Number=Sing	25	obl:mod	_	_	*
+28	de	de	ADP	_	_	31	case	_	_	*
+29	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	31	det	_	_	*
+30	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	31	amod	_	_	*
+31	chance	chance	NOUN	_	Gender=Fem|Number=Sing	25	obl:arg	_	_	*
+32	de	de	ADP	_	_	33	mark	_	_	*
+33	signer	signer	VERB	_	VerbForm=Inf	31	acl	_	_	2:LVC.full
+34	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*
+35	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	36	amod	_	_	*
+36	contrat	contrat	NOUN	_	Gender=Masc|Number=Sing	33	obj	_	SpaceAfter=No	2
+37	"	"	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+38	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00475
+# text = Jacques Rousselot qui tenait à conserver Correa repassa à l'offensive et après une première proposition d'un an, il se rangea au souhait du joueur qui en souhaitait deux : "Notre objectif reste le maintien.
+1	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+2	Rousselot	Rousselot	PROPN	_	_	1	flat:name	_	_	*
+3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	_	*
+4	tenait	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	_	_	*
+5	à	à	ADP	_	_	6	mark	_	_	*
+6	conserver	conserver	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	Correa	Correa	PROPN	_	_	6	obj	_	_	*
+8	repassa	repasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1:VID
+9	à	à	ADP	_	_	11	case	_	_	1
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	1
+11	offensive	offensive	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	1
+12	et	et	CCONJ	_	_	23	cc	_	_	*
+13	après	après	ADP	_	_	16	case	_	_	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+15	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_	*
+16	proposition	proposition	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	_	*
+17	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	an	an	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No	*
+20	,	,	PUNCT	_	_	23	punct	_	_	*
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_	*
+22	se	se	PRON	_	Person=3|Reflex=Yes	23	expl:comp	_	_	2:IRV
+23	rangea	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	_	_	2
+24-25	au	_	_	_	_	_	_	_	_	*
+24	à	à	ADP	_	_	26	case	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	souhait	souhait	NOUN	_	Gender=Masc|Number=Sing	23	obl:arg	_	_	*
+27-28	du	_	_	_	_	_	_	_	_	*
+27	de	de	ADP	_	_	29	case	_	_	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*
+29	joueur	joueur	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+30	qui	qui	PRON	_	PronType=Rel	32	nsubj	_	_	*
+31	en	en	PRON	_	Person=3	33	nmod	_	_	*
+32	souhaitait	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	29	acl:relcl	_	_	*
+33	deux	deux	PRON	_	NumType=Card	32	obj	_	_	*
+34	:	:	PUNCT	_	_	8	punct	_	_	*
+35	"	"	PUNCT	_	_	38	punct	_	SpaceAfter=No	*
+36	Notre	son	DET	_	Number=Sing|Poss=Yes	37	det	_	_	*
+37	objectif	objectif	NOUN	_	Gender=Masc|Number=Sing	38	nsubj	_	_	*
+38	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*
+40	maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	38	xcomp	_	SpaceAfter=No	*
+41	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00476
+# text = Je fais donc confiance aux maximum de joueurs qui l'ont atteint cette saison.
+1	Je	il	PRON	_	Number=Sing|Person=1	2	nsubj	_	_	*
+2	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full
+3	donc	donc	ADV	_	_	2	advmod	_	_	*
+4	confiance	confiance	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	1
+5-6	aux	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	maximum	maximum	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	joueurs	joueur	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+11	l'	le	PRON	_	Number=Sing|Person=3	13	obj	_	SpaceAfter=No	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	atteint	atteindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_	*
+14	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_	*
+15	saison	saison	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00477
+# text = à mes yeux, ils valent bien ceux que nous pourrions aller chercher ailleurs.
+1	à	à	ADP	_	_	3	case	_	_	*
+2	mes	son	DET	_	Number=Plur|Poss=Yes	3	det	_	_	*
+3	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	6	obl:mod	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	6	punct	_	_	*
+5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_	*
+6	valent	valoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	bien	bien	ADV	_	_	6	advmod	_	_	*
+8	ceux	celui	PRON	_	Gender=Masc|Number=Plur|PronType=Dem	6	obj	_	_	*
+9	que	que	PRON	_	PronType=Rel	13	obj	_	_	*
+10	nous	il	PRON	_	Number=Plur|Person=1	11	nsubj	_	_	*
+11	pourrions	pouvoir	VERB	_	Mood=Cnd|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*
+12	aller	aller	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+13	chercher	chercher	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+14	ailleurs	ailleurs	ADV	_	_	13	advmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00478
+# text = Pour conforter l'équipe et grossir l'effectif, nous allons quand même prendre un milieu offensif et un attaquant habitué au côté droit ".
+1	Pour	pour	ADP	_	_	2	mark	_	_	*
+2	conforter	conforter	VERB	_	VerbForm=Inf	11	advcl	_	_	*
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*
+4	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*
+6	grossir	grossir	VERB	_	VerbForm=Inf	2	conj	_	_	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*
+8	effectif	effectif	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*
+10	nous	il	PRON	_	Number=Plur|Person=1	11	nsubj	_	_	*
+11	allons	aller	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+12	quand	quand	ADV	_	_	11	advmod	_	EXTPOS=ADV|MWE=quand_même	*
+13	même	même	ADV	_	_	12	fixed	_	_	*
+14	prendre	prendre	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	milieu	milieu	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	_	*
+17	offensif	offensif	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+18	et	et	CCONJ	_	_	20	cc	_	_	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*
+20	attaquant	attaquant	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*
+21	habitué	habituer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	acl	_	_	*
+22-23	au	_	_	_	_	_	_	_	_	*
+22	à	à	ADP	_	_	24	case	_	_	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*
+24	côté	côté	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	_	*
+25	droit	droit	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	_	*
+26	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00479
+# text = Bien sûr, Pablo Correa n'a obtenu aucune garantie concernant une place de titulaire : "Je ne revendique rien, mais je connais mes qualités, mon envie et je sens que je peux jouer plus que la saison dernière.
+1	Bien	bien	ADV	_	_	8	advmod	_	EXTPOS=ADV|MWE=bien_sûr	*
+2	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	8	punct	_	_	*
+4	Pablo	Pablo	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+5	Correa	Correa	PROPN	_	_	4	flat:name	_	_	*
+6	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	obtenu	obtenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	aucune	aucun	DET	_	Gender=Fem|Number=Sing	10	det	_	_	*
+10	garantie	garantie	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	concernant	concerner	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	place	place	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	titulaire	titulaire	NOUN	_	Number=Sing	13	nmod	_	_	*
+16	:	:	PUNCT	_	_	8	punct	_	_	*
+17	"	"	PUNCT	_	_	8	punct	_	SpaceAfter=No	*
+18	Je	il	PRON	_	Number=Sing|Person=1	20	nsubj	_	_	*
+19	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+20	revendique	revendiquer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*
+21	rien	rien	PRON	_	Number=Sing	20	obj	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	20	punct	_	_	*
+23	mais	mais	CCONJ	_	_	25	cc	_	_	*
+24	je	il	PRON	_	Number=Sing|Person=1	25	nsubj	_	_	*
+25	connais	connaître	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	conj	_	_	*
+26	mes	son	DET	_	Number=Plur|Poss=Yes	27	det	_	_	*
+27	qualités	qualité	NOUN	_	Gender=Fem|Number=Plur	25	obj	_	SpaceAfter=No	*
+28	,	,	PUNCT	_	_	30	punct	_	_	*
+29	mon	son	DET	_	Number=Sing|Poss=Yes	30	det	_	_	*
+30	envie	envie	NOUN	_	Gender=Fem|Number=Sing	27	conj	_	_	*
+31	et	et	CCONJ	_	_	33	cc	_	_	*
+32	je	il	PRON	_	Number=Sing|Person=1	33	nsubj	_	_	*
+33	sens	sentir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	conj	_	_	*
+34	que	que	SCONJ	_	_	36	mark	_	_	*
+35	je	il	PRON	_	Number=Sing|Person=1	36	nsubj	_	_	*
+36	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	33	ccomp	_	_	*
+37	jouer	jouer	VERB	_	VerbForm=Inf	36	xcomp	_	_	*
+38	plus	plus	ADV	_	_	37	advmod	_	_	*
+39	que	que	SCONJ	_	_	41	mark	_	_	*
+40	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_	*
+41	saison	saison	NOUN	_	Gender=Fem|Number=Sing	38	dep	_	_	*
+42	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	41	amod	_	SpaceAfter=No	*
+43	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00480
+# text = M. Rousselot a insisté pour me garder et je l'en remercie.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	Rousselot	Rousselot	PROPN	_	_	1	flat:name	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	insisté	insister	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	pour	pour	ADP	_	_	7	mark	_	_	*
+6	me	le	PRON	_	Number=Sing|Person=1	7	obj	_	_	*
+7	garder	garder	VERB	_	VerbForm=Inf	4	advcl	_	_	*
+8	et	et	CCONJ	_	_	12	cc	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1	12	nsubj	_	_	*
+10	l'	le	PRON	_	Number=Sing|Person=3	12	obj	_	SpaceAfter=No	*
+11	en	en	PRON	_	Person=3	12	iobj	_	_	*
+12	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00481
+# text = Bien sûr, je ne néglige pas l'aspect financier, mais il n'est pas le seul élément que j'ai pris en compte ".
+1	Bien	bien	ADV	_	_	6	advmod	_	EXTPOS=ADV|MWE=bien_sûr	*
+2	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1	6	nsubj	_	_	*
+5	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	néglige	négliger	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	aspect	aspect	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+10	financier	financier	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	6	punct	_	_	*
+12	mais	mais	CCONJ	_	_	19	cc	_	_	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_	*
+14	n'	ne	ADV	_	Polarity=Neg	19	advmod	_	SpaceAfter=No	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*
+16	pas	pas	ADV	_	Polarity=Neg	19	advmod	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+18	seul	seul	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	_	*
+19	élément	élément	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*
+20	que	que	PRON	_	PronType=Rel	23	obj	_	_	*
+21	j'	il	PRON	_	Number=Sing|Person=1	23	nsubj	_	SpaceAfter=No	*
+22	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*
+23	pris	prendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	19	acl:relcl	_	_	1:VID
+24	en	en	ADP	_	_	25	case	_	_	1
+25	compte	compte	NOUN	_	Gender=Masc|Number=Sing	23	obl:arg	_	_	1
+26	"	"	PUNCT	_	_	6	punct	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00482
+# text = Il est encore trop tôt pour savoir si au bout de ces deux années, Pablo Correa intégrera le staff technique, puisqu'il paraît décidé à demeurer en France.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	5	expl:subj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	encore	encore	ADV	_	_	5	advmod	_	_	*
+4	trop	trop	ADV	_	_	5	advmod	_	_	*
+5	tôt	tôt	ADV	_	_	0	root	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	savoir	savoir	VERB	_	VerbForm=Inf	5	advcl	_	_	*
+8	si	si	SCONJ	_	_	19	mark	_	_	*
+9-10	au	_	_	_	_	_	_	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	bout	bout	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	_	*
+12	de	de	ADP	_	_	15	case	_	_	*
+13	ces	ce	DET	_	Number=Plur|PronType=Dem	15	det	_	_	*
+14	deux	deux	NUM	_	NumType=Card	15	nummod	_	_	*
+15	années	année	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*
+17	Pablo	Pablo	PROPN	_	Gender=Masc|Number=Sing	19	nsubj	_	_	*
+18	Correa	Correa	PROPN	_	_	17	flat:name	_	_	*
+19	intégrera	intégrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	ccomp	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	staff	staff	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	*
+22	technique	technique	ADJ	_	Number=Sing	21	amod	_	SpaceAfter=No	*
+23	,	,	PUNCT	_	_	5	punct	_	_	*
+24	puisqu'	puisque	SCONJ	_	_	26	mark	_	SpaceAfter=No	*
+25	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_	*
+26	paraît	paraître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_	*
+27	décidé	décider	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	xcomp	_	_	*
+28	à	à	ADP	_	_	29	mark	_	_	*
+29	demeurer	demeurer	VERB	_	VerbForm=Inf	27	xcomp	_	_	*
+30	en	en	ADP	_	_	31	case	_	_	*
+31	France	France	PROPN	_	Gender=Fem|Number=Sing	29	obl:arg	_	SpaceAfter=No	*
+32	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00483
+# text = Tout à sa joie, l'Uruguayen s'en tirait par une pirouette : "Dans deux ans, j'aurai peut-être encore envie de jouer".
+1	Tout	tout	ADV	_	_	4	advmod	_	_	*
+2	à	à	ADP	_	_	4	case	_	_	*
+3	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	4	det	_	_	*
+4	joie	joie	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	10	punct	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	Uruguayen	uruguayen	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+8	s'	se	PRON	_	Person=3|Reflex=Yes	10	expl:comp	_	SpaceAfter=No	*
+9	en	en	PRON	_	Person=3	10	expl:comp	_	_	*
+10	tirait	tirer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+11	par	par	ADP	_	_	13	case	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*
+13	pirouette	pirouette	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*
+14	:	:	PUNCT	_	_	10	punct	_	_	*
+15	"	"	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+16	Dans	dans	ADP	_	_	18	case	_	_	*
+17	deux	deux	NUM	_	NumType=Card	18	nummod	_	_	*
+18	ans	an	NOUN	_	Gender=Masc|Number=Plur	21	obl:mod	_	SpaceAfter=No	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*
+20	j'	il	PRON	_	Number=Sing|Person=1	21	nsubj	_	SpaceAfter=No	*
+21	aurai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	10	advcl	_	_	1:LVC.full
+22	peut-être	peut-être	ADV	_	_	23	advmod	_	_	*
+23	encore	encore	ADV	_	_	21	advmod	_	_	*
+24	envie	envie	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	1
+25	de	de	ADP	_	_	26	mark	_	_	*
+26	jouer	jouer	VERB	_	VerbForm=Inf	24	acl	_	SpaceAfter=No	*
+27	"	"	PUNCT	_	_	21	punct	_	SpaceAfter=No	*
+28	.	.	PUNCT	_	_	10	punct	_	_	*

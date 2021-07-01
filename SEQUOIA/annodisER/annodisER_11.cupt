@@ -1,0 +1,239 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00109
+# text = Un véhicule a effectué une spectaculaire sortie de route, hier vers 18h15, sur l'A36.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	effectué	effectuer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+6	spectaculaire	spectaculaire	ADJ	_	Number=Sing	7	amod	_	_	*
+7	sortie	sortie	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	1
+8	de	de	ADP	_	_	9	case	_	_	1
+9	route	route	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	1
+10	,	,	PUNCT	_	_	4	punct	_	_	*
+11	hier	hier	ADV	_	_	4	advmod	_	_	*
+12	vers	vers	ADP	_	_	14	case	_	_	*
+13	18	18	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=No	*
+14	h	h	NOUN	_	_	4	obl:mod	_	SpaceAfter=No	*
+15	15	15	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	4	punct	_	_	*
+17	sur	sur	ADP	_	_	19	case	_	_	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*
+19	A36	A36	NOUN	_	Number=Sing	4	obl:mod	_	SpaceAfter=No	*
+20	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00110
+# text = La voiture circulait dans le sens Mulhouse-Montbéliard lorsqu'après être passée à hauteur du 35e RI, elle a quitté la chaussée sur sa droite.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*
+3	circulait	circuler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+4	dans	dans	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	sens	sens	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+7	Mulhouse-Montbéliard	Mulhouse-Montbéliard	PROPN	_	_	6	nmod	_	_	*
+8	lorsqu'	lorsque	SCONJ	_	_	21	mark	_	SpaceAfter=No	*
+9	après	après	ADP	_	_	11	mark	_	_	*
+10	être	être	AUX	_	VerbForm=Inf	11	aux:tense	_	_	*
+11	passée	passer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	21	advcl	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	hauteur	hauteur	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	17	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+16	35e	35e	ADJ	_	NumType=Ord	17	amod	_	_	*
+17	RI	RI	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*
+19	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	21	nsubj	_	_	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*
+21	quitté	quitter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*
+23	chaussée	chaussée	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	*
+24	sur	sur	ADP	_	_	26	case	_	_	*
+25	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	26	det	_	_	*
+26	droite	droite	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	SpaceAfter=No	*
+27	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00111
+# text = Frôlant le début d'une glissière de sécurité, le véhicule a gravi le talus, basculé de l'autre côté, traversé un champ, est entré dans un secteur boisé, pour finalement plonger vers le centre Leclerc dans une zone à pic.
+1	Frôlant	frôler	VERB	_	Tense=Pres|VerbForm=Part	13	advcl	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	début	début	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+4	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	glissière	glissière	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	_	*
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	gravi	gravir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	talus	talus	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	13	punct	_	_	*
+17	basculé	basculer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+18	de	de	ADP	_	_	21	case	_	_	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*
+20	autre	autre	ADJ	_	Number=Sing	21	amod	_	_	*
+21	côté	côté	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	SpaceAfter=No	*
+22	,	,	PUNCT	_	_	13	punct	_	_	*
+23	traversé	traverser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	champ	champ	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	13	punct	_	_	*
+27	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:tense	_	_	*
+28	entré	entrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	ccomp	_	_	*
+29	dans	dans	ADP	_	_	31	case	_	_	*
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	28	obl:arg	_	_	*
+32	boisé	boisé	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No	*
+33	,	,	PUNCT	_	_	13	punct	_	_	*
+34	pour	pour	ADP	_	_	36	mark	_	_	*
+35	finalement	finalement	ADV	_	_	36	advmod	_	_	*
+36	plonger	plonger	VERB	_	VerbForm=Inf	13	advcl	_	_	*
+37	vers	vers	ADP	_	_	39	case	_	_	*
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_	*
+39	centre	centre	NOUN	_	Gender=Masc|Number=Sing	36	obl:arg	_	_	*
+40	Leclerc	Leclerc	PROPN	_	_	39	nmod	_	_	*
+41	dans	dans	ADP	_	_	43	case	_	_	*
+42	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*
+43	zone	zone	NOUN	_	Gender=Fem|Number=Sing	36	obl:mod	_	_	*
+44	à	à	ADP	_	_	45	case	_	_	*
+45	pic	pic	NOUN	_	Gender=Masc|Number=Sing	43	nmod	_	SpaceAfter=No	*
+46	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00112
+# text = Fort heureusement pour les deux occupants, l'automobile a fini par percuter un arbre assez résistant pour immobiliser le véhicule.
+1	Fort	fort	ADV	_	_	2	advmod	_	_	*
+2	heureusement	heureusement	ADV	_	_	11	advmod	_	_	*
+3	pour	pour	ADP	_	_	6	case	_	_	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+5	deux	deux	NUM	_	NumType=Card	6	nummod	_	_	*
+6	occupants	occupant	NOUN	_	Gender=Masc|Number=Plur	2	obl:mod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	11	punct	_	_	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*
+9	automobile	automobile	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*
+11	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+12	par	par	ADP	_	_	13	mark	_	_	*
+13	percuter	percuter	VERB	_	VerbForm=Inf	11	xcomp	_	_	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	arbre	arbre	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*
+16	assez	assez	ADV	_	_	17	advmod	_	_	*
+17	résistant	résistant	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*
+18	pour	pour	ADP	_	_	19	mark	_	_	*
+19	immobiliser	immobiliser	VERB	_	VerbForm=Inf	17	advcl	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	11	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00113
+# text = Ce dernier est resté en équilibre instable, au-dessus d'un vide de plus de dix mètres.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*
+2	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	resté	rester	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	équilibre	équilibre	NOUN	_	Gender=Masc|Number=Sing	4	xcomp	_	_	*
+7	instable	instable	ADJ	_	Number=Sing	6	amod	_	SpaceAfter=No	*
+8	,	,	PUNCT	_	_	4	punct	_	_	*
+9	au-dessus	au-dessus	ADV	_	_	4	advmod	_	SpaceAfter=No	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	vide	vide	NOUN	_	Gender=Masc|Number=Sing	9	dep	_	SpaceAfter=No	*
+13	de	de	ADP	_	_	17	case	_	_	*
+14	plus	plus	ADV	_	_	16	advmod	_	SpaceAfter=No	*
+15	de	de	ADP	_	_	14	fixed	_	_	*
+16	dix	dix	NUM	_	NumType=Card	17	nummod	_	_	*
+17	mètres	mètre	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No	*
+18	.	.	PUNCT	_	_	4	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00114
+# text = En tout, il a parcouru une distance de près de 150 mètres pour un dénivelé de plusieurs dizaines de mètres.
+1	En	en	ADP	_	_	2	case	_	_	*
+2	tout	tout	ADV	_	_	6	obl:mod	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	parcouru	parcourir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	distance	distance	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*
+9	de	de	ADP	_	_	13	case	_	_	*
+10	près	près	ADV	_	_	13	advmod	_	_	*
+11	de	de	ADP	_	_	13	dep	_	_	*
+12	150	150	NUM	_	NumType=Card	13	nummod	_	_	*
+13	mètres	mètre	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*
+14	pour	pour	ADP	_	_	16	case	_	_	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	dénivelé	dénivelé	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	plusieurs	plusieurs	DET	_	Number=Plur	19	det	_	_	*
+19	dizaines	dizaine	NOUN	_	Gender=Fem|Number=Plur	16	nmod	_	_	*
+20	de	de	ADP	_	_	21	case	_	_	*
+21	mètres	mètre	NOUN	_	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No	*
+22	.	.	PUNCT	_	_	6	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00115
+# text = Les sapeurs-pompiers de Belfort et le Samu sont parvenus, après avoir crapahuté dans les broussailles, à récupérer le conducteur et sa passagère, qui étaient conscients.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*
+2	sapeurs-pompiers	sapeur-pompier	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Belfort	Belfort	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*
+5	et	et	CCONJ	_	_	7	cc	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	Samu	Samu	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	parvenus	parvenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*
+11	après	après	ADP	_	_	13	mark	_	_	*
+12	avoir	avoir	AUX	_	VerbForm=Inf	13	aux:tense	_	_	*
+13	crapahuté	crapahuter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+16	broussailles	broussaille	NOUN	_	Gender=Fem|Number=Plur	13	obl:mod	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	9	punct	_	_	*
+18	à	à	ADP	_	_	19	mark	_	_	*
+19	récupérer	récupérer	VERB	_	VerbForm=Inf	9	xcomp	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	conducteur	conducteur	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	*
+22	et	et	CCONJ	_	_	24	cc	_	_	*
+23	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	24	det	_	_	*
+24	passagère	passager	NOUN	_	Gender=Fem|Number=Sing	21	conj	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	21	punct	_	_	*
+26	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*
+27	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	28	cop	_	_	*
+28	conscients	conscient	ADJ	_	Gender=Masc|Number=Plur	21	acl:relcl	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	9	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00116
+# text = Ces derniers, choqués, ne semblaient pas blessés.
+1	Ces	ce	DET	_	Number=Plur|PronType=Dem	2	det	_	_	*
+2	derniers	dernier	ADJ	_	Gender=Masc|Number=Plur|NumType=Ord	7	nsubj	_	SpaceAfter=No	*
+3	,	,	PUNCT	_	_	7	punct	_	_	*
+4	choqués	choquer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	7	advcl	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*
+6	ne	ne	ADV	_	Polarity=Neg	7	advmod	_	_	*
+7	semblaient	sembler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+9	blessés	blessé	ADJ	_	Gender=Masc|Number=Plur	7	xcomp	_	SpaceAfter=No	*
+10	.	.	PUNCT	_	_	7	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00117
+# text = Ils ont été transportés au centre hospitalier de Belfort pour des examens de contrôle.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	4	nsubj:pass	_	_	*
+2	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+3	été	être	AUX	_	Tense=Past|VerbForm=Part	4	aux:pass	_	_	*
+4	transportés	transporter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	centre	centre	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*
+8	hospitalier	hospitalier	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Belfort	Belfort	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+11	pour	pour	ADP	_	_	13	case	_	_	*
+12	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	13	det	_	_	*
+13	examens	examen	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*

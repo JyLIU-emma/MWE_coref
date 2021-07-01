@@ -1,0 +1,383 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00134
+# text = Le Petit Prince au programme des élèves de Jules-Romains
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	Petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	Prince	Prince	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4-5	au	_	_	_	_	_	_	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	programme	programme	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+7-8	des	_	_	_	_	_	_	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+9	élèves	élève	NOUN	_	Number=Plur	6	nmod	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Jules-Romains	Jules-Romains	PROPN	_	_	9	nmod	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00135
+# text = Une représentation théâtrale remarquable.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	représentation	représentation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	théâtrale	théâtral	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+4	remarquable	remarquable	ADJ	_	Number=Sing	2	amod	_	SpaceAfter=No	*
+5	.	.	PUNCT	_	_	2	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00136
+# text = Le Petit Prince de Saint Exupéry est entré à l'école primaire Jules-Romains dans le cadre d'un projet école et des CATE, en novembre dernier.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+2	Petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	Prince	Prince	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	Saint	Saint	PROPN	_	_	3	nmod	_	_	*
+6	Exupéry	Exupéry	PROPN	_	_	5	flat:name	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	entré	entrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	à	à	ADP	_	_	11	case	_	_	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+11	école	école	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+12	primaire	primaire	ADJ	_	Number=Sing	11	amod	_	_	*
+13	Jules-Romains	Jules-Romains	PROPN	_	_	11	nmod	_	_	*
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+17	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	projet	projet	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*
+20	école	école	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*
+21	et	et	CCONJ	_	_	24	cc	_	_	*
+22-23	des	_	_	_	_	_	_	_	_	*
+22	de	de	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*
+24	CATE	CATE	PROPN	_	_	19	conj	_	SpaceAfter=No	*
+25	,	,	PUNCT	_	_	8	punct	_	_	*
+26	en	en	ADP	_	_	27	case	_	_	*
+27	novembre	novembre	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+28	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	27	amod	_	SpaceAfter=No	*
+29	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00137
+# text = à travers cette oeuvre, les élèves de CM2 de la classe de Mme Galotte ont abordé la compréhension du texte.
+1	à	à	ADP	_	_	4	case	_	EXTPOS=ADP|MWE=à_travers	*
+2	travers	travers	NOUN	_	Gender=Masc	1	fixed	_	_	*
+3	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_	*
+4	oeuvre	oeuvre	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	17	punct	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	élèves	élève	NOUN	_	Number=Plur	17	nsubj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	CM2	CM2	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	classe	classe	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Mme	monsieur	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*
+15	Galotte	Galotte	PROPN	_	_	14	flat:name	_	_	*
+16	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	abordé	aborder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	compréhension	compréhension	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*
+20-21	du	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+22	texte	texte	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*
+23	.	.	PUNCT	_	_	17	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00138
+# text = Et par le biais de l'activité théâtre, ils se sont intéressés à l'expression orale et à la mise en scène avec un intervenant, Julien Georges, maître de théâtre.
+1	Et	et	CCONJ	_	_	13	cc	_	_	*
+2	par	par	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	biais	biais	NOUN	_	Gender=Masc	13	obl:mod	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*
+7	activité	activité	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*
+8	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*
+9	,	,	PUNCT	_	_	13	punct	_	_	*
+10	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	13	nsubj	_	_	*
+11	se	se	PRON	_	Person=3|Reflex=Yes	13	expl:comp	_	_	*
+12	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	intéressés	intéresser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+14	à	à	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*
+16	expression	expression	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*
+17	orale	oral	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*
+18	et	et	CCONJ	_	_	21	cc	_	_	*
+19	à	à	ADP	_	_	21	case	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+21	mise	mise	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	_	*
+22	en	en	ADP	_	_	23	case	_	_	*
+23	scène	scène	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*
+24	avec	avec	ADP	_	_	26	case	_	_	*
+25	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*
+26	intervenant	intervenant	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*
+27	,	,	PUNCT	_	_	26	punct	_	_	*
+28	Julien	Julien	PROPN	_	Gender=Masc|Number=Sing	26	appos	_	_	*
+29	Georges	Georges	PROPN	_	Gender=Masc|Number=Sing	28	flat:name	_	SpaceAfter=No	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*
+31	maître	maître	NOUN	_	Gender=Masc|Number=Sing	28	conj	_	_	*
+32	de	de	ADP	_	_	33	case	_	_	*
+33	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No	*
+34	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00139
+# text = Dans un premier temps, ils ont étudié les dialogues du livre et en ont extrait quelques-uns pour mieux les mettre en scène.
+1	Dans	dans	ADP	_	_	4	case	_	_	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	_	_	*
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	8	nsubj	_	_	*
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	étudié	étudier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*
+10	dialogues	dialogue	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	_	*
+11-12	du	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	livre	livre	NOUN	_	Number=Sing	10	nmod	_	_	*
+14	et	et	CCONJ	_	_	17	cc	_	_	*
+15	en	en	PRON	_	Person=3	17	iobj	_	_	*
+16	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	_	*
+17	extrait	extraire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	conj	_	_	*
+18	quelques-uns	quelques-uns	PRON	_	Gender=Fem|Number=Plur	17	obj	_	_	*
+19	pour	pour	ADP	_	_	22	mark	_	_	*
+20	mieux	mieux	ADV	_	_	22	advmod	_	_	*
+21	les	le	PRON	_	Number=Plur|Person=3	22	obj	_	_	*
+22	mettre	mettre	VERB	_	VerbForm=Inf	17	advcl	_	_	1:VID
+23	en	en	ADP	_	_	24	case	_	_	1
+24	scène	scène	NOUN	_	Gender=Fem|Number=Sing	22	obl:arg	_	SpaceAfter=No	1
+25	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00140
+# text = Comme de vrais acteurs, ils ont appris à parler fort, à bien articuler, à ne pas tourner le dos au public, à s'amuser avec leur rôle.
+1	Comme	comme	ADP	_	_	4	case	_	_	*
+2	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	4	det	_	_	*
+3	vrais	vrai	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*
+4	acteurs	acteur	NOUN	_	Gender=Masc|Number=Plur	8	obl:mod	_	SpaceAfter=No	*
+5	,	,	PUNCT	_	_	8	punct	_	_	*
+6	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	8	nsubj	_	_	*
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+8	appris	apprendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	*
+9	à	à	ADP	_	_	10	mark	_	_	*
+10	parler	parler	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	fort	fort	ADV	_	_	10	advmod	_	SpaceAfter=No	*
+12	,	,	PUNCT	_	_	15	punct	_	_	*
+13	à	à	ADP	_	_	15	mark	_	_	*
+14	bien	bien	ADV	_	_	15	advmod	_	_	*
+15	articuler	articuler	VERB	_	VerbForm=Inf	10	conj	_	SpaceAfter=No	*
+16	,	,	PUNCT	_	_	20	punct	_	_	*
+17	à	à	ADP	_	_	20	mark	_	_	*
+18	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+19	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*
+20	tourner	tourner	VERB	_	VerbForm=Inf	10	conj	_	_	1:VID
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	1
+22	dos	dos	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	_	1
+23-24	au	_	_	_	_	_	_	_	_	*
+23	à	à	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	public	public	NOUN	_	Gender=Masc|Number=Sing	20	obl:arg	_	SpaceAfter=No	*
+26	,	,	PUNCT	_	_	29	punct	_	_	*
+27	à	à	ADP	_	_	29	mark	_	_	*
+28	s'	se	PRON	_	Person=3|Reflex=Yes	29	expl:comp	_	SpaceAfter=No	2:IRV
+29	amuser	amuser	VERB	_	VerbForm=Inf	10	conj	_	_	2
+30	avec	avec	ADP	_	_	32	case	_	_	*
+31	leur	son	DET	_	Number=Sing|Poss=Yes	32	det	_	_	*
+32	rôle	rôle	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	8	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00141
+# text = Quelques mois auront été nécessaires pour mettre en scène le Petit Prince.
+1	Quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	_	*
+2	mois	mois	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*
+3	auront	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	aux:tense	_	_	*
+4	été	être	AUX	_	Tense=Past|VerbForm=Part	5	cop	_	_	*
+5	nécessaires	nécessaire	ADJ	_	Number=Plur	0	root	_	_	*
+6	pour	pour	ADP	_	_	7	mark	_	_	*
+7	mettre	mettre	VERB	_	VerbForm=Inf	5	advcl	_	_	1:VID
+8	en	en	ADP	_	_	9	case	_	_	1
+9	scène	scène	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	1
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+11	Petit	petit	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	Prince	Prince	PROPN	_	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00142
+# text = Pièce théâtrale présentée dans le spacieux hall de l'école, aux copains, parents, grands-parents.
+1	Pièce	pièce	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	théâtrale	théâtral	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*
+3	présentée	présenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*
+4	dans	dans	ADP	_	_	7	case	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	spacieux	spacieux	ADJ	_	Gender=Masc	7	amod	_	_	*
+7	hall	hall	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*
+10	école	école	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	3	punct	_	_	*
+12-13	aux	_	_	_	_	_	_	_	_	*
+12	à	à	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*
+14	copains	copain	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	SpaceAfter=No	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*
+16	parents	parent	NOUN	_	Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No	*
+17	,	,	PUNCT	_	_	18	punct	_	_	*
+18	grands-parents	grands-parents	NOUN	_	Gender=Masc|Number=Plur	14	conj	_	SpaceAfter=No	*
+19	.	.	PUNCT	_	_	1	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00143
+# text = Les Petits Princes, au nombre de cinq, le roi Pierre... ont réveillé chez le public des souvenirs d'enfance, le temps d'une représentation.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*
+2	Petits	petit	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*
+3	Princes	prince	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	SpaceAfter=No	*
+4	,	,	PUNCT	_	_	3	punct	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	cinq	cinq	PRON	_	NumType=Card	7	nmod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+12	roi	roi	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	_	*
+13	Pierre	Pierre	PROPN	_	Gender=Masc|Number=Sing	12	flat:name	_	SpaceAfter=No	*
+14	...	...	PUNCT	_	_	16	punct	_	_	*
+15	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*
+16	réveillé	réveiller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	chez	chez	ADP	_	_	19	case	_	_	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*
+19	public	public	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+20	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	21	det	_	_	*
+21	souvenirs	souvenir	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_	*
+22	d'	de	ADP	_	_	23	case	_	SpaceAfter=No	*
+23	enfance	enfance	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No	*
+24	,	,	PUNCT	_	_	16	punct	_	_	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	advmod	_	EXTPOS=ADV|MWE=le_temps	*
+26	temps	temps	NOUN	_	Gender=Masc|Number=Sing	25	fixed	_	_	*
+27	d'	de	ADP	_	_	29	case	_	SpaceAfter=No	*
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	représentation	représentation	NOUN	_	Gender=Fem|Number=Sing	25	dep	_	SpaceAfter=No	*
+30	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00144
+# text = C'est dans une aisance toute naturelle que les élèves apprentis-acteurs ont joué.
+1	C'	ce	PRON	_	Number=Sing|Person=3	5	expl:subj	_	SpaceAfter=No	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+3	dans	dans	ADP	_	_	5	case	_	_	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	aisance	aisance	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	toute	toute	ADV	_	_	7	advmod	_	_	*
+7	naturelle	naturel	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	_	*
+8	que	que	PRON	_	PronType=Rel	13	iobj	_	_	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*
+10	élèves	élève	NOUN	_	Number=Plur	13	nsubj	_	_	*
+11	apprentis-acteurs	apprenti-acteur	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+12	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*
+13	joué	jouer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl:cleft	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	5	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00145
+# text = Leur plus belle récompense fut sans aucun doute les applaudissements nourris du public.
+1	Leur	son	DET	_	Number=Sing|Poss=Yes	4	det	_	_	*
+2	plus	plus	ADV	_	_	3	advmod	_	_	*
+3	belle	beau	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*
+4	récompense	récompense	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+5	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	_	_	*
+6	sans	sans	ADP	_	_	8	case	_	_	*
+7	aucun	aucun	DET	_	Gender=Masc|Number=Sing	8	det	_	_	*
+8	doute	doute	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*
+10	applaudissements	applaudissement	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+11	nourris	nourrir	VERB	_	Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	_	*
+12-13	du	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	public	public	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No	*
+15	.	.	PUNCT	_	_	10	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00146
+# text = Au mois de mars dernier, les enfants de CE2 de Mme Philippe avaient montré leur travail réalisé d'après "Les contes du chat perché" de Marcel Aimé.
+1-2	Au	_	_	_	_	_	_	_	_	*
+1	À	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	mois	mois	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	mars	mars	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*
+6	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	SpaceAfter=No	*
+7	,	,	PUNCT	_	_	16	punct	_	_	*
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*
+9	enfants	enfant	NOUN	_	Number=Plur	16	nsubj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	CE2	CE2	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Mme	monsieur	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+14	Philippe	Philippe	PROPN	_	Gender=Masc|Number=Sing	13	flat:name	_	_	*
+15	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	16	aux:tense	_	_	*
+16	montré	montrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+17	leur	son	DET	_	Number=Sing|Poss=Yes	18	det	_	_	*
+18	travail	travail	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	1:LVC.full
+19	réalisé	réaliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	_	1
+20	d'	de	ADP	_	_	24	case	_	EXTPOS=ADP|MWE=d'après|SpaceAfter=No	*
+21	après	après	ADP	_	_	20	fixed	_	_	*
+22	"	"	PUNCT	_	_	24	punct	_	SpaceAfter=No	*
+23	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*
+24	contes	conte	NOUN	_	Gender=Masc|Number=Plur	19	obl:mod	_	_	*
+25-26	du	_	_	_	_	_	_	_	_	*
+25	de	de	ADP	_	_	27	case	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	chat	chat	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+28	perché	perché	ADJ	_	Gender=Masc|Number=Sing	27	amod	_	SpaceAfter=No	*
+29	"	"	PUNCT	_	_	24	punct	_	_	*
+30	de	de	ADP	_	_	31	case	_	_	*
+31	Marcel	Marcel	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*
+32	Aimé	Aimé	PROPN	_	Gender=Masc|Number=Sing	31	flat:name	_	SpaceAfter=No	*
+33	.	.	PUNCT	_	_	16	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00147
+# text = Julien Georges souligne : "Le théâtre doit être léger, populaire.
+1	Julien	Julien	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	Georges	Georges	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*
+3	souligne	souligner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	:	:	PUNCT	_	_	3	punct	_	_	*
+5	"	"	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+6	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+8	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+9	être	être	AUX	_	VerbForm=Inf	10	cop	_	_	*
+10	léger	léger	ADJ	_	Gender=Masc|Number=Sing	8	xcomp	_	SpaceAfter=No	*
+11	,	,	PUNCT	_	_	12	punct	_	_	*
+12	populaire	populaire	ADJ	_	Number=Sing	10	conj	_	SpaceAfter=No	*
+13	.	.	PUNCT	_	_	3	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00148
+# text = Faire s'exprimer les enfants à travers cette activité, c'est important.
+1	Faire	faire	AUX	_	VerbForm=Inf	3	aux:caus	_	_	*
+2	s'	se	PRON	_	Person=3|Reflex=Yes	3	expl:comp	_	SpaceAfter=No	1:IRV
+3	exprimer	exprimer	VERB	_	VerbForm=Inf	13	dislocated	_	_	1
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*
+5	enfants	enfant	NOUN	_	Number=Plur	3	obj:agent	_	_	*
+6	à	à	ADP	_	_	9	case	_	EXTPOS=ADP|MWE=à_travers	*
+7	travers	travers	NOUN	_	Gender=Masc	6	fixed	_	_	*
+8	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_	*
+9	activité	activité	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	SpaceAfter=No	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*
+11	c'	ce	PRON	_	Number=Sing|Person=3	13	expl:subj	_	SpaceAfter=No	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*
+13	important	important	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+14	.	.	PUNCT	_	_	13	punct	_	_	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00149
+# text = J'espère qu'un jour, le théâtre remplacera la télévision."
+1	J'	il	PRON	_	Number=Sing|Person=1	2	nsubj	_	SpaceAfter=No	*
+2	espère	espérer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	qu'	que	SCONJ	_	_	9	mark	_	SpaceAfter=No	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	jour	jour	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	SpaceAfter=No	*
+6	,	,	PUNCT	_	_	9	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+9	remplacera	remplacer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	télévision	télévision	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	SpaceAfter=No	*
+12	.	.	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
+13	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No	*
