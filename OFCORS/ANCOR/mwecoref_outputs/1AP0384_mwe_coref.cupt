@@ -1,0 +1,211 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0384.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 2
+# text = bonjour est ce que vous avez un programme de l' année des musées de Grenoble et des musées Dauphinois s' il vous plaît
+1	bonjour	bonjour	INTJ	_	_	0	root	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	obl:arg	_	_	*	*	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	26	obj	_	_	*	*	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	0	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	1;2	*
+8	programme	programme	NOUN	_	Gender=Masc|Number=Sing	26	obl:mod	_	_	*	1;2	*
+9	de	de	ADP	_	_	11	case	_	_	*	1;2	*
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	1;2;3	*
+11	année	année	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	1;2;3	*
+12-13	des	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	2;4	*
+13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_	*	2;4	*
+14	musées	musée	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*	2;4	*
+15	de	de	ADP	_	_	16	case	_	_	*	2;4	*
+16	Grenoble	Grenoble	PROPN	_	_	14	nmod	_	_	*	2;4;5	*
+17	et	et	CCONJ	_	_	20	cc	_	_	*	*	*
+18-19	des	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	6	0:6
+19	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_	*	6	0:6
+20	musées	musée	NOUN	_	Gender=Fem|Number=Plur	16	conj	_	_	*	6	0:6
+21	Dauphinois	Dauphinois	PROPN	_	_	20	appos	_	_	*	6	0:6
+22	s	s	X	_	_	21	flat:name	_	SpaceAfter=No	*	*	*
+23	'	'	PUNCT	_	_	8	punct	_	_	*	*	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_	*	*	*
+25	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	26	iobj	_	_	*	*	*
+26	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 3
+# text = on n' a pas eu sur les musées du musée Dauphinois on va pas tarder à l' avoir on a simplement la petite plaquette et documentation du musée
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*	7	*
+2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+5	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	sur	sur	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	*	*
+8	musées	musée	NOUN	_	Gender=Fem|Number=Plur	5	obl	_	_	*	*	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	8	0:8
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	8	0:8
+11	musée	musée	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	8	0:8
+12	Dauphinois	Dauphinois	PROPN	_	_	11	appos	_	_	*	8	0:8
+13	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_	*	9	*
+14	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*	*	*
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	_	*	*	*
+16	tarder	tarder	VERB	_	VerbForm=Inf	14	xcomp	_	_	*	*	*
+17	à	à	ADP	_	_	22	case	_	_	*	*	*
+18	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No	*	10	1:10
+19	'	'	PUNCT	_	_	18	punct	_	_	*	10	1:10
+20	avoir	avoir	VERB	_	VerbForm=Inf	22	advcl	_	_	*	*	*
+21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	22	nsubj	_	_	*	11	*
+22	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	obl:arg	_	_	*	*	*
+23	simplement	simplement	ADV	_	_	22	advmod	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	12	6:12
+25	petite	petit	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*	12	6:12
+26	plaquette	plaquette	NOUN	_	Gender=Fem|Number=Sing	22	obj	_	_	*	12	6:12
+27	et	et	CCONJ	_	_	28	cc	_	_	*	*	*
+28	documentation	documentation	NOUN	_	Gender=Fem|Number=Sing	26	conj	_	_	*	13	6:13
+29-30	du	_	_	_	_	_	_	_	_	*	*	*
+29	de	de	ADP	_	_	31	case	_	_	*	13;14	6:13;0:14
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*	13;14	6:13;0:14
+31	musée	musée	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpacesAfter=\s\n\n	*	13;14	6:13;0:14
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 4
+# text = d' accord mais pas les thèmes des des expositions
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	mais	mais	CCONJ	_	_	7	cc	_	_	*	*	*
+5	pas	pas	ADV	_	_	7	advmod	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*	15	*
+7	thèmes	thème	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	_	*	15	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	9	case	_	_	*	*	*
+9	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	7	nmod	_	_	*	*	*
+10-11	des	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	16	3:16
+11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_	*	16	3:16
+12	expositions	exposition	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpacesAfter=\s\n\n	*	16	3:16
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 5
+# text = pas les thèmes des expos e mais même je sais pas si non plus le musée vous m' avez dit aussi bien le musée ils nous ont pas laissé leur e d' habitude ils nous envoient une sorte de dossier avec tous tous les imprimés qui concernent les expos qu' on n' a pas encore eus
+1	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*	17	2:17
+3	thèmes	thème	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	17	2:17
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	17;18	2:17;3:18
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*	17;18	2:17;3:18
+6	expos	expos	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*	17;18	2:17;3:18
+7	e	e	CCONJ	_	_	11	cc	_	_	*	*	*
+8	mais	mais	CCONJ	_	_	11	cc	_	_	*	*	*
+9	même	même	ADV	_	_	11	advmod	_	_	*	*	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*	19	*
+11	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	*	*
+12	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*	*	*
+13	si	si	SCONJ	_	_	17	mark	_	_	*	*	*
+14	non	non	ADV	_	_	17	advmod	_	_	*	*	*
+15	plus	plus	ADV	_	_	14	fixed	_	_	*	*	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	20	0:20
+17	musée	musée	NOUN	_	Gender=Masc|Number=Sing	11	advcl	_	_	*	20	0:20
+18	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	22	nsubj	_	_	*	21	*
+19	m	m	NOUN	_	Gender=Masc|Number=Plur	22	obl:mod	_	SpaceAfter=No	*	22	*
+20	'	'	PUNCT	_	_	19	punct	_	_	*	22	*
+21	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*	*	*
+22	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*	*	*
+23	aussi	aussi	ADV	_	_	22	advmod	_	_	*	*	*
+24	bien	bien	ADV	_	_	26	advmod	_	_	*	*	*
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*	23	0:23
+26	musée	musée	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*	23	0:23
+27	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	31	nsubj	_	_	*	24	4:24
+28	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	31	iobj	_	_	*	25	*
+29	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	aux:tense	_	_	*	*	*
+30	pas	pas	ADV	_	Polarity=Neg	31	advmod	_	_	*	*	*
+31	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	acl:relcl	_	_	*	*	*
+32	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	33	det	_	_	*	*	*
+33	e	e	NOUN	_	Gender=Fem|Number=Sing	31	obj	_	_	*	*	*
+34	d'	de	ADP	_	_	35	case	_	_	*	*	*
+35	habitude	habitude	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_	*	*	*
+36	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	38	nsubj	_	_	*	26	4:26
+37	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	38	iobj	_	_	*	27	*
+38	envoient	envoyer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	parataxis	_	_	*	*	*
+39	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*	28	*
+40	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	38	obj	_	_	*	28	*
+41	de	de	ADP	_	_	42	case	_	_	*	28	*
+42	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	40	nmod	_	_	*	28;29	*
+43	avec	avec	ADP	_	_	44	case	_	_	*	*	*
+44	tous	tout	PRON	_	Gender=Masc|Number=Plur	17	obl:mod	_	_	*	*	*
+45	tous	tout	ADJ	_	Gender=Masc|Number=Plur	47	amod	_	_	*	30	5:30
+46	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	47	det	_	_	*	30	5:30
+47	imprimés	imprimé	NOUN	_	Gender=Masc|Number=Plur	42	nmod	_	_	*	30	5:30
+48	qui	qui	PRON	_	PronType=Rel	49	nsubj	_	_	*	31	5:31
+49	concernent	concerner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	47	acl:relcl	_	_	*	*	*
+50	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	_	_	*	32	3:32
+51	expos	expos	NOUN	_	Gender=Masc|Number=Plur	49	obj	_	_	*	32	3:32
+52	qu	que	SCONJ	_	_	59	mark	_	SpaceAfter=No	*	33	5:33
+53	'	'	PUNCT	_	_	59	punct	_	_	*	33	5:33
+54	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	59	nsubj	_	_	*	34	*
+55	n'	ne	ADV	_	Polarity=Neg	59	advmod	_	_	*	*	*
+56	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	59	aux:tense	_	_	*	*	*
+57	pas	pas	ADV	_	Polarity=Neg	59	advmod	_	_	*	*	*
+58	encore	encore	ADV	_	_	59	advmod	_	_	*	*	*
+59	eus	eu	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	51	acl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 6
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 7
+# text = alors je peux je peux je peux pas vous laisser c' est la présentation du musée
+1	alors	alors	ADV	_	_	3	advmod	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	35	*
+3	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	36	*
+5	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*	*	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*	37	*
+7	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*	*	*
+8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*	*	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	obj	_	_	*	38	*
+10	laisser	laisser	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+11	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	nsubj	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	39	6:39
+15	présentation	présentation	NOUN	_	Gender=Fem|Number=Sing	10	parataxis	_	_	*	39	6:39
+16-17	du	_	_	_	_	_	_	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	39;40	6:39;0:40
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*	39;40	6:39;0:40
+18	musée	musée	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	SpacesAfter=\s\n\n	*	39;40	6:39;0:40
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 8
+# text = oui d' accord bon
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	d	de	ADP	_	_	4	case	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	4	punct	_	_	*	*	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*	*	*
+5	bon	bon	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 9
+# text = hein
+1	hein	hein	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 10
+# text = ben je repasserais peut être alors merci
+1	ben	ben	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	41	*
+3	repasserais	repasser	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*	*	*
+4	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	être	être	AUX	_	VerbForm=Inf	7	cop	_	_	*	*	*
+6	alors	alors	ADV	_	_	7	advmod	_	_	*	*	*
+7	merci	merci	INTJ	_	_	4	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0384.txt 11
+# text = je vous en prie monsieur
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	42	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	43	*
+3	en	en	PRON	_	Person=3	5	nmod	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpacesAfter=\s\n	*	44	*
+

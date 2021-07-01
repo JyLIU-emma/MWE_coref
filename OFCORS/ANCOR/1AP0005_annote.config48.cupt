@@ -1,0 +1,134 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0005.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 2
+# text = bonjour j' aurais vous avez un plan des pistes cyclables à Grenoble
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	j	je	X	_	_	1	nmod	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	aurais	avoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	advcl	_	_	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+12	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_	*
+13	à	à	ADP	_	_	14	case	_	_	*
+14	Grenoble	Grenoble	PROPN	_	_	11	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 3
+# text = ils sont tombés en rupture de stock la communauté de la commune ce qui fait que le temps de le rééditer e il faut quand même un mois de délai peut être que vous le trouverez dans les mairies essayez de faire les mairies parce qu' ils en ont déposés aussi nous je sais que ça fait un moment qu' on en a plus hein parce qu' ils partent de chez nous très très vite hein
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*
+3	tombés	tomber	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	en	en	ADP	_	_	5	case	_	_	*
+5	rupture	rupture	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	stock	stock	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	communauté	communauté	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	commune	commune	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*
+13	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*
+15	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_	*
+16	que	que	SCONJ	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	temps	temps	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*
+19	de	de	ADP	_	_	21	mark	_	_	*
+20	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obj	_	_	*
+21	rééditer	rééditer	VERB	_	VerbForm=Inf	18	acl	_	_	*
+22	e	e	CCONJ	_	_	24	cc	_	_	*
+23	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	expl:subj	_	_	1:VID
+24	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_	1
+25	quand	quand	SCONJ	_	_	31	mark	_	_	*
+26	même	même	ADV	_	_	25	fixed	_	_	*
+27	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*
+28	mois	mois	NOUN	_	Gender=Masc|Number=Sing	31	nsubj	_	_	*
+29	de	de	ADP	_	_	30	case	_	_	*
+30	délai	délai	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*
+31	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	advcl	_	_	*
+32	être	être	VERB	_	VerbForm=Inf	31	xcomp	_	_	*
+33	que	que	SCONJ	_	_	36	mark	_	_	*
+34	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	36	nsubj	_	_	*
+35	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	obj	_	_	*
+36	trouverez	trouver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	32	ccomp	_	_	*
+37	dans	dans	ADP	_	_	39	case	_	_	*
+38	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	_	*
+39	mairies	mairie	NOUN	_	Gender=Fem|Number=Plur	36	obl:mod	_	_	*
+40	essayez	essaire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	39	acl	_	_	*
+41	de	de	ADP	_	_	42	mark	_	_	*
+42	faire	faire	VERB	_	VerbForm=Inf	40	xcomp	_	_	*
+43	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_	*
+44	mairies	mairie	NOUN	_	Gender=Fem|Number=Plur	42	obj	_	_	*
+45	parce	parce	ADV	_	_	51	advmod	_	_	*
+46	qu	que	SCONJ	_	_	45	fixed	_	SpaceAfter=No	*
+47	'	'	PUNCT	_	_	45	punct	_	_	*
+48	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	51	nsubj	_	_	*
+49	en	en	PRON	_	Person=3	51	iobj	_	_	*
+50	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	51	aux:tense	_	_	*
+51	déposés	déposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	36	advcl	_	_	*
+52	aussi	aussi	ADV	_	_	51	advmod	_	_	*
+53	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	55	iobj	_	_	*
+54	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	55	nsubj	_	_	*
+55	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	51	parataxis	_	_	*
+56	que	que	SCONJ	_	_	58	mark	_	_	*
+57	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	58	nsubj	_	_	3:VID
+58	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	ccomp	_	_	3
+59	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_	*
+60	moment	moment	NOUN	_	Gender=Masc|Number=Sing	58	obj	_	_	*
+61	qu	qu	ADJ	_	Gender=Masc|Number=Sing	60	amod	_	SpaceAfter=No	*
+62	'	'	PUNCT	_	_	65	punct	_	_	*
+63	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	65	nsubj	_	_	*
+64	en	en	PRON	_	Person=3	65	expl:comp	_	_	2:VID
+65	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	parataxis	_	_	2
+66	plus	plus	ADV	_	Polarity=Neg	65	advmod	_	_	*
+67	hein	hein	ADJ	_	Gender=Masc|Number=Sing	65	obj	_	_	*
+68	parce	parce	ADV	_	_	72	advmod	_	_	*
+69	qu	que	SCONJ	_	_	68	fixed	_	SpaceAfter=No	*
+70	'	'	PUNCT	_	_	68	punct	_	_	*
+71	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	72	nsubj	_	_	*
+72	partent	partir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	67	advcl	_	_	*
+73	de	de	ADP	_	_	78	case	_	_	*
+74	chez	chez	ADP	_	_	75	case	_	_	*
+75	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	78	obl:mod	_	_	*
+76	très	très	ADV	_	_	78	advmod	_	_	*
+77	très	très	ADV	_	_	78	advmod	_	_	*
+78	vite	vite	ADV	_	_	72	advmod	_	_	*
+79	hein	hein	ADJ	_	Gender=Masc|Number=Sing	72	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 4
+# text = d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 5
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 6
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0005.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

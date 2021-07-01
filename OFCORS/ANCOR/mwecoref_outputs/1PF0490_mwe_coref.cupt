@@ -1,0 +1,99 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0490.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 1
+# text = madame bonjour
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	0	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 2
+# text = bonjour vous auriez un plan de Grenoble s' il vous plaît
+1	bonjour	bonjour	INTJ	_	_	3	discourse	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*	1	*
+3	auriez	avoir	VERB	_	Mood=Cnd|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	2	0:2
+5	plan	plan	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	2	0:2
+6	de	de	ADP	_	_	7	case	_	_	*	2	0:2
+7	Grenoble	Grenoble	PROPN	_	_	5	nmod	_	_	*	2;3	0:2
+8	s	s	X	_	_	7	flat:name	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	*	*	*
+11	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	12	iobj	_	_	*	*	*
+12	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 3
+# text = oui à à quels prix vingt-trois
+1	oui	oui	ADV	_	_	5	advmod	_	_	*	*	*
+2	à	à	ADP	_	_	5	case	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	*	*
+4	quels	quel	DET	_	Gender=Masc|Number=Plur	5	det	_	_	*	4	*
+5	prix	prix	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	4	*
+6	vingt-trois	vingt-trois	NUM	_	_	5	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 4
+# text = ah vous en n' avez pas des gratuits
+1	ah	ah	INTJ	_	_	5	discourse	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	5	*
+3	en	en	PRON	_	Person=3	5	expl:comp	_	_	1:VID	6	0:6
+4	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	*	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	*	*
+9	gratuits	gratuit	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 5
+# text = ah j' en ai des gratuits non mais comme je vous vois avec vos sous et vos clés alors j' ai cru que vous vouliez acheter un plan voyez tout de suite j' extrapolais déjà
+1	ah	ah	INTJ	_	_	0	root	_	_	*	*	*
+2	j	j	X	_	_	1	flat:name	_	SpaceAfter=No	*	7	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	7	*
+4	en	en	ADP	_	_	5	case	_	_	*	8	0:8
+5	ai	ai	NOUN	_	Gender=Masc|Number=Sing	1	obl	_	_	*	*	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	*	*
+8	gratuits	gratuit	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	*	*
+9	non	avoir	ADV	_	_	25	advmod	_	_	*	*	*
+10	mais	mais	CCONJ	_	_	9	fixed	_	_	*	*	*
+11	comme	comme	SCONJ	_	_	9	fixed	_	_	*	*	*
+12	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_	*	9	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	25	nsubj	_	_	*	10	*
+14	vois	vois	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*	*	*
+15	avec	avec	ADP	_	_	17	case	_	_	*	*	*
+16	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	17	det	_	_	*	11;12	*
+17	sous	sou	NOUN	_	Gender=Masc|Number=Plur	13	obl:mod	_	_	*	11;12	*
+18	et	et	CCONJ	_	_	20	cc	_	_	*	12	*
+19	vos	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	20	det	_	_	*	12;13	*
+20	clés	clé	NOUN	_	Gender=Fem|Number=Plur	17	conj	_	_	*	12;13	*
+21	alors	alors	ADV	_	_	22	advmod	_	_	*	*	*
+22	j	j	X	_	_	17	appos	_	SpaceAfter=No	*	14	*
+23	'	'	PUNCT	_	_	22	punct	_	_	*	14	*
+24	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*	*	*
+25	cru	croître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*	*	*
+26	que	que	SCONJ	_	_	28	mark	_	_	*	*	*
+27	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	28	nsubj	_	_	*	15	*
+28	vouliez	voulier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	25	ccomp	_	_	*	*	*
+29	acheter	acheter	VERB	_	VerbForm=Inf	28	xcomp	_	_	*	*	*
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*	16	0:16
+31	plan	plan	NOUN	_	Gender=Masc|Number=Sing	29	obj	_	_	*	16	0:16
+32	voyez	voire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	25	xcomp	_	_	*	*	*
+33	tout	tout	ADV	_	_	36	advmod	_	_	*	*	*
+34	de	de	ADP	_	_	33	fixed	_	_	*	*	*
+35	suite	suite	NOUN	_	Gender=Fem|Number=Sing	33	fixed	_	_	*	*	*
+36	j	j	X	_	_	32	obj	_	SpaceAfter=No	*	17	*
+37	'	'	PUNCT	_	_	38	punct	_	_	*	17	*
+38	extrapolais	extrapolais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	25	parataxis	_	_	*	*	*
+39	déjà	déjà	ADV	_	_	38	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 6
+# text = merci beaucoup
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	beaucoup	beaucoup	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0490.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

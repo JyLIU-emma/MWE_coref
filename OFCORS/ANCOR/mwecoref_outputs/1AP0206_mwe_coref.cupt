@@ -1,0 +1,61 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0206.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 1
+# text = ben moi je voulais le plan
+1	ben	ben	ADV	_	_	2	advmod	_	SpacesBefore=\n\n	*	*	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	4	obl:mod	_	_	*	0	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	1	*
+4	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	2	0:2
+6	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpacesAfter=\s\n\n	*	2	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 2
+# text = un plan bien sûr je vais vous montrer où on est quand même
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	3	0:3
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	3	0:3
+3	bien	bien	ADV	_	_	6	advmod	_	_	*	*	*
+4	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	3	fixed	_	_	*	*	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	4	*
+6	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*	*	*
+7	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	8	obj	_	_	*	5	*
+8	montrer	montrer	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+9	où	où	ADV	_	PronType=Rel	11	advmod	_	_	*	*	*
+10	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_	*	6	*
+11	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+12	quand	quand	SCONJ	_	_	11	advmod	_	_	*	*	*
+13	même	même	ADV	_	_	12	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 3
+# text = ah oui
+1	ah	ah	INTJ	_	_	2	amod	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 4
+# text = on est là hein voilà
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	7	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	là	là	ADV	_	_	4	advmod	_	_	*	*	*
+4	hein	hein	ADJ	_	Gender=Masc|Number=Sing	5	advcl	_	_	*	*	*
+5	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 5
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 6
+# text = mais je vous en prie monsieur au revoir
+1	mais	mais	CCONJ	_	_	5	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	8	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	9	*
+4	en	en	PRON	_	Person=3	6	nmod	_	_	*	*	*
+5	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	10	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	5	advmod	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	fixed	_	_	*	*	*
+9	revoir	revoir	VERB	_	VerbForm=Inf	7	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0206.txt 7
+# text = madame
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*	11	*
+

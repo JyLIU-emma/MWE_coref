@@ -1,0 +1,80 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 059_0000003c.txt
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*	0	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*	0	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*	0	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 2
+# text = oui bonjour je vous appelle au sujet des résultats de DEUG droit deuxième année j' aimerais savoir quand est ce qu' ils seraient affiché
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl	_	_	*	*	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	1	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	2	*
+5	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	3	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	3	*
+8	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	28	obl:mod	_	_	*	3	*
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	3;4	0:4
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*	3;4	0:4
+11	résultats	résultat	NOUN	_	Gender=Masc|Number=Plur	28	obl:mod	_	_	*	3;4	0:4
+12	de	de	ADP	_	_	13	case	_	_	*	3;4	0:4
+13	DEUG	DEUG	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	3;4;5	0:4
+14	droit	droit	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*	3;4;5;6	0:4
+15	deuxième	deuxième	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*	3;4;5;7	0:4
+16	année	année	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	3;4;5;7	0:4
+17	j	je	X	_	_	16	nmod	_	SpaceAfter=No	*	8	*
+18	'	'	PUNCT	_	_	19	punct	_	_	*	8	*
+19	aimerais	aimer	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	28	advcl	_	_	*	*	*
+20	savoir	savoir	VERB	_	VerbForm=Inf	19	xcomp	_	_	*	*	*
+21	quand	quand	SCONJ	_	_	24	mark	_	_	*	*	*
+22	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_	*	*	*
+23	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	24	det	_	_	*	*	*
+24	qu	qu	NOUN	_	Gender=Masc|Number=Sing	19	advcl	_	SpaceAfter=No	*	*	*
+25	'	'	PUNCT	_	_	19	punct	_	_	*	*	*
+26	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	28	nsubj:pass	_	_	*	9	0:9
+27	seraient	être	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	_	*	*	*
+28	affiché	afficher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 3
+# text = oui je vais vous passer une personne conservez si
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	10	*
+3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	11	*
+5	passer	passer	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	12	*
+7	personne	personne	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	12	*
+8	conservez	conservoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	_	*	*	*
+9	si	si	SCONJ	_	_	8	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 4
+# text = d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 5
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 6
+# text = oui je te je te passe une communication
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	6	advcl	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	13	*
+3	te	se	PRON	_	Number=Sing|Person=2|PronType=Prs	6	iobj	_	_	*	14	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	15	*
+5	te	se	PRON	_	Number=Sing|Person=2|PronType=Prs	6	iobj	_	_	1:IRV	16	*
+6	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	17	*
+8	communication	communication	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	SpacesAfter=\s\n\n	*	17	*
+
+# source_sent_id = http://my/newcorpus/uri 059_0000003c.txt 7
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,76 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0596.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 1
+# text = je veux juste voulu savoir si e où se trouvait la Caisse d' Allocation Familiale
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	juste	juste	ADV	_	_	4	advmod	_	_	*
+4	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	_	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	si	si	SCONJ	_	_	10	mark	_	_	*
+7	e	e	CCONJ	_	_	10	cc	_	_	*
+8	où	où	ADV	_	PronType=Rel	10	iobj	_	_	*
+9	se	se	PRON	_	Person=3|PronType=Prs	10	expl:pass	_	_	1:IRV
+10	trouvait	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	ccomp	_	_	1
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	Caisse	Caisse	PROPN	_	_	10	nsubj	_	_	*
+13	d'	de	ADP	_	_	14	case	_	_	*
+14	Allocation	Allocation	PROPN	_	_	12	nmod	_	_	*
+15	Familiale	Familiale	PROPN	_	_	14	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 2
+# text = oui c' est rue des Alliés donc on est là et c' est ici d' accord
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	rue	rue	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*
+8	Alliés	Alliés	PROPN	_	_	5	nmod	_	_	*
+9	donc	donc	ADV	_	_	12	advmod	_	_	*
+10	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+12	là	là	ADV	_	_	8	advmod	_	_	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*
+14	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	conj	_	SpaceAfter=No	*
+15	'	'	PUNCT	_	_	14	punct	_	_	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*
+17	ici	ici	ADV	_	_	5	advmod	_	_	*
+18	d	de	ADP	_	_	17	advmod	_	SpaceAfter=No	*
+19	'	'	PUNCT	_	_	18	punct	_	_	*
+20	accord	accord	NOUN	_	Gender=Masc|Number=Sing	18	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 3
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 4
+# text = voilà il y a le tramway hein
+1	voilà	voilà	VERB	_	_	4	mark	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID
+3	y	y	PRON	_	_	4	expl:comp	_	_	1
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	tramway	tramway	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	hein	hein	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 5
+# text = d' accord merci bien
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+4	merci	merci	INTJ	_	_	0	root	_	_	*
+5	bien	bien	ADV	_	_	4	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0596.txt 6
+# text = je vous en prie bonsoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	en	en	PRON	_	Person=3	5	obj	_	_	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	bonsoir	bonsoir	VERB	_	VerbForm=Inf	4	xcomp	_	SpacesAfter=\s\n	*
+

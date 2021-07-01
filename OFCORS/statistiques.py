@@ -349,11 +349,14 @@ def span_schema(schema):
     encours = False
     liste_ind = []
     for indice, element in enumerate(schema):
+        # Début
         if element != "*" and not encours:
             # L'élément vient de commencer
             encours = True
             debut = indice
-        elif element == "*" and encours:
+
+        # Fin
+        if element == "*" and encours:
             # l'élément vient de se finir
             encours = False
             fin = indice - 1
@@ -363,6 +366,7 @@ def span_schema(schema):
             encours = False
             fin = indice
             liste_ind.append([debut, fin])
+
     return liste_ind
 
 

@@ -1,0 +1,89 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 055_00000038.txt
+# source_sent_id = http://my/newcorpus/uri 055_00000038.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 055_00000038.txt 2
+# text = bonjour madame madame Nom s' il vous plait
+1	bonjour	bonjour	INTJ	_	_	9	advcl	_	_	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	1	flat:name	_	_	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	1	flat:name	_	_	*
+4	Nom	Nom	PROPN	_	_	1	flat:name	_	_	*
+5	s	s	X	_	_	1	flat:name	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	1	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+8	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	obj	_	_	*
+9	plait	plir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 055_00000038.txt 3
+# text = ah elle s' est absentée de son bureau
+1	ah	ah	INTJ	_	_	6	nsubj:pass	_	_	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	obl:arg	_	_	*
+3	s	s	X	_	_	2	appos	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_	*
+6	absentée	absenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	de	de	ADP	_	_	9	case	_	_	*
+8	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 055_00000038.txt 4
+# text = ah e e bon je peux la rappeler plus tard à ce moment là
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	6	advcl	_	_	*
+2	e	e	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*
+3	e	e	CCONJ	_	_	4	cc	_	_	*
+4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+8	rappeler	rappeler	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	plus	plus	ADV	_	_	10	advmod	_	_	*
+10	tard	tard	ADV	_	_	8	advmod	_	_	*
+11	à	à	ADP	_	_	13	case	_	_	*
+12	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	13	det	_	_	*
+13	moment	moment	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*
+14	là	là	ADV	_	_	6	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 055_00000038.txt 5
+# text = oui oui oui rappelez parce qu' elle est là mais elle m' a dit qu' elle partait un petit peu donc e hein vous pouvez tout à l' heure au revoir
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advcl	_	_	*
+2	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*
+3	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*
+4	rappelez	rappeler	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	parce	parce	ADV	_	_	10	advmod	_	_	*
+6	qu	que	SCONJ	_	_	10	mark	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	10	punct	_	_	*
+8	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	là	là	ADV	_	_	4	advcl	_	_	*
+11	mais	mais	CCONJ	_	_	15	cc	_	_	*
+12	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+13	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	15	iobj	_	_	*
+14	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	conj	_	_	*
+16	qu	que	SCONJ	_	_	19	mark	_	SpaceAfter=No	*
+17	'	'	PUNCT	_	_	19	punct	_	_	*
+18	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+19	partait	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	advcl	_	_	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	petit	petit	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	*
+22	peu	peu	ADV	_	_	23	advmod	_	_	*
+23	donc	donc	ADV	_	_	19	advmod	_	_	*
+24	e	e	CCONJ	_	_	25	cc	_	_	*
+25	hein	hein	ADJ	_	Gender=Masc|Number=Sing	19	conj	_	_	*
+26	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	27	nsubj	_	_	*
+27	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	parataxis	_	_	*
+28	tout	tout	ADV	_	_	27	advmod	_	_	*
+29	à	à	ADP	_	_	32	case	_	_	*
+30	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	SpaceAfter=No	*
+31	'	'	PUNCT	_	_	30	punct	_	_	*
+32	heure	heure	NOUN	_	Gender=Fem|Number=Sing	27	obl:mod	_	_	*
+33-34	au	_	_	_	_	_	_	_	_	*
+33	à	à	ADP	_	_	27	advmod	_	_	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	fixed	_	_	*
+35	revoir	revoir	VERB	_	VerbForm=Inf	33	fixed	_	SpacesAfter=\s\n	*
+

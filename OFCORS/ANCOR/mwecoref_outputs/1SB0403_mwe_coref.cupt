@@ -1,0 +1,85 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0403.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 1
+# text = est ce que vous avez un plan de Grenoble avec le plan du quartier Europôle
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	0	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	1	2:1
+7	plan	plan	NOUN	_	Gender=Masc|Number=Sing	5	xcomp	_	_	*	1	2:1
+8	de	de	ADP	_	_	9	case	_	_	*	1	2:1
+9	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	_	*	1;2	2:1;0:2
+10	avec	avec	ADP	_	_	12	case	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	3	*
+12	plan	plan	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	3	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	3;4	1:4
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	3;4	1:4
+15	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	3;4	1:4
+16	Europôle	Europôle	PROPN	_	_	15	appos	_	SpacesAfter=\s\n\n	*	3;4	1:4
+
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 2
+# text = j' ai le plan du Grenoble avec e l' indication du quartier Europôle
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*	5	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	5	*
+3	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	6	3:6
+5	plan	plan	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	6	3:6
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	6;7	3:6;0:7
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	6;7	3:6;0:7
+8	Grenoble	Grenoble	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	6;7	3:6;0:7
+9	avec	avec	ADP	_	_	10	case	_	_	*	*	*
+10	e	e	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*	*	*
+11	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	8	*
+12	'	'	PUNCT	_	_	13	punct	_	_	*	8	*
+13	indication	indication	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*	8	*
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	8;9	1:9
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	8;9	1:9
+16	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*	8;9	1:9
+17	Europôle	Europôle	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpacesAfter=\s\n\n	*	8;9	1:9
+
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 3
+# text = ouais mais e vous n' avez pas un plan où il y aurait les immeubles c' est nul même en petit
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+2	mais	mais	CCONJ	_	_	6	cc	_	_	*	*	*
+3	e	e	CCONJ	_	_	6	cc	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	10	*
+5	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	11	2:11
+9	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	11	2:11
+10	où	où	ADV	_	PronType=Rel	13	advmod	_	_	*	12	2:12
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl:subj	_	_	1:VID	*	*
+12	y	y	PRON	_	_	13	expl:comp	_	_	1	*	*
+13	aurait	avoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	1	*	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	13	*
+15	immeubles	immeuble	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	_	*	13	*
+16	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	19	nsubj	_	SpaceAfter=No	*	14	3:14
+17	'	'	PUNCT	_	_	16	punct	_	_	*	14	3:14
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	_	*	*	*
+19	nul	nul	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	*	*
+20	même	même	ADV	_	_	13	advmod	_	_	*	*	*
+21	en	en	ADP	_	_	13	advmod	_	_	*	*	*
+22	petit	petit	ADJ	_	Gender=Masc|Number=Sing	21	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 4
+# text = oh non
+1	oh	oh	INTJ	_	_	0	root	_	_	*	*	*
+2	non	non	ADV	_	Polarity=Neg	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 5
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0403.txt 6
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

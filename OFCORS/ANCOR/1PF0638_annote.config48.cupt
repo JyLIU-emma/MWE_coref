@@ -1,0 +1,110 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1PF0638.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 1
+# text = bonjour je cherche le cours Jean Jaurès
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	cours	cours	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*
+6	Jean	Jean	PROPN	_	_	5	appos	_	_	*
+7	Jaurès	Jaurès	PROPN	_	_	6	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 2
+# text = le cours Jean Jaurès et ben dis donc vous pouvez pas le perdre celui là
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	cours	cours	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+3	Jean	Jean	PROPN	_	_	2	appos	_	_	*
+4	Jaurès	Jaurès	PROPN	_	_	3	flat:name	_	_	*
+5	et	et	CCONJ	_	_	10	cc	_	_	*
+6	ben	ben	ADV	_	_	8	advmod	_	_	*
+7	dis	dire	ADV	_	_	8	advmod	_	_	*
+8	donc	donc	ADV	_	_	10	advmod	_	_	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+10	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*
+12	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	obj	_	_	*
+13	perdre	perdre	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+14	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	obl	_	_	*
+15	là	là	ADV	_	_	14	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 3
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 4
+# text = il fait huit kilomètres alors vous êtes là
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*
+2	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	huit	huit	NUM	_	_	4	nummod	_	_	*
+4	kilomètres	kilomètre	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	_	*
+5	alors	alors	ADV	_	_	8	advmod	_	_	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*
+7	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+8	là	là	ADV	_	_	2	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 5
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 6
+# text = tout dépend si c' est sur e pour sur Echirolles ou sur Grenoble
+1	tout	tout	PRON	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*
+2	dépend	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	si	si	SCONJ	_	_	11	mark	_	_	*
+4	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+7	sur	sur	ADP	_	_	8	case	_	_	*
+8	e	e	CCONJ	_	_	11	cc	_	_	*
+9	pour	pour	ADP	_	_	11	case	_	_	*
+10	sur	sur	ADP	_	_	11	case	_	_	*
+11	Echirolles	Echirolles	PROPN	_	_	2	advcl	_	_	*
+12	ou	ou	CCONJ	_	_	14	cc	_	_	*
+13	sur	sur	ADP	_	_	14	case	_	_	*
+14	Grenoble	Grenoble	PROPN	_	_	11	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 7
+# text = non c' est Grenoble
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	Grenoble	Grenoble	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 8
+# text = bon ben c' est bon alors c' est c' est la partie du haut du cours Jean Jaurès
+1	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	ben	ben	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+3	c	ce	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	2	punct	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+6	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	alors	alors	ADV	_	_	10	advmod	_	_	*
+8	c	ce	X	_	_	10	nsubj	_	SpaceAfter=No	*
+9	'	'	PUNCT	_	_	8	punct	_	_	*
+10	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_	*
+11	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	nsubj	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	11	punct	_	_	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+15	partie	partie	NOUN	_	Gender=Fem|Number=Sing	10	ccomp	_	_	*
+16-17	du	_	_	_	_	_	_	_	_	*
+16	de	de	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	haut	haut	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	cours	cours	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+22	Jean	Jean	PROPN	_	_	21	appos	_	_	*
+23	Jaurès	Jaurès	PROPN	_	_	22	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0638.txt 9
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n	*
+

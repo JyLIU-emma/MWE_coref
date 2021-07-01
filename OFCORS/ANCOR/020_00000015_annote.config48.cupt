@@ -1,0 +1,104 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 020_00000015.txt
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 2
+# text = oui bonjour madame monsieur Nom Siemens j' aurais voulu parler à Monsieur Nom2 s' il était là
+1	oui	oui	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+5	Nom	Nom	PROPN	_	_	2	appos	_	_	*
+6	Siemens	Siemens	PROPN	_	_	5	flat:name	_	_	*
+7	j	j	X	_	_	5	flat:name	_	SpaceAfter=No	*
+8	'	'	PUNCT	_	_	2	punct	_	_	*
+9	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*
+10	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	19	advcl	_	_	*
+11	parler	parler	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+12	à	à	ADP	_	_	13	case	_	_	*
+13	Monsieur	monsieur	PROPN	_	_	11	obl:arg	_	_	*
+14	Nom2	Nom2	X	_	_	13	flat:name	_	_	*
+15	s	s	X	_	_	13	flat:name	_	SpaceAfter=No	*
+16	'	'	PUNCT	_	_	13	punct	_	_	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_	*
+18	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	cop	_	_	*
+19	là	là	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 3
+# text = oui j' ai pas bien entendu votre nom monsieur
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+6	bien	bien	ADV	_	_	5	fixed	_	_	*
+7	entendu	entendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	votre	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*
+9	nom	nom	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*
+10	monsieur	monsieur	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 4
+# text = monsieur Nom Siemens
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Nom	Nom	PROPN	_	_	1	appos	_	_	*
+3	Siemens	Siemens	PROPN	_	_	2	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 5
+# text = monsieur Nom Société Siemens c' est ça
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*
+2	Nom	Nom	PROPN	_	_	1	appos	_	_	*
+3	Société	société	PROPN	_	_	2	flat:name	_	_	*
+4	Siemens	Siemens	PROPN	_	_	2	flat:name	_	_	*
+5	c	ce	X	_	_	2	flat:name	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	1	punct	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 6
+# text = de oui
+1	de	de	ADP	_	_	2	case	_	_	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 7
+# text = d' accord je vais voir
+1	d	de	ADP	_	_	5	advmod	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	voir	voir	VERB	_	VerbForm=Inf	5	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 8
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 9
+# text = allo
+1	allo	allo	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 10
+# text = oui j' ai en ligne monsieur Nom de la société Siemens
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+7	monsieur	monsieur	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+8	Nom	Nom	PROPN	_	_	4	obj	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	société	société	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*
+12	Siemens	Siemens	PROPN	_	_	11	appos	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 020_00000015.txt 11
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,31 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0087.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0087.txt 1
+# text = bonjour est ce que je pourrais avoir une carte de Grenoble
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	SpacesBefore=\n\n	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+7	avoir	avoir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	carte	carte	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Grenoble	Grenoble	PROPN	_	_	9	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0087.txt 2
+# text = oui bien sûr voilà
+1	oui	oui	ADV	_	_	4	advmod	_	_	*
+2	bien	bien	ADV	_	_	1	fixed	_	_	*
+3	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	_	*
+4	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0087.txt 3
+# text = merci au revoir
+1	merci	merci	INTJ	_	_	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	advmod	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+4	revoir	revoir	VERB	_	VerbForm=Inf	2	fixed	_	SpacesAfter=\s\n	*
+

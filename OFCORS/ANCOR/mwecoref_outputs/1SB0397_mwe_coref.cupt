@@ -1,0 +1,118 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0397.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 2
+# text = bonjour ce serait pour avoir un des renseignements sur tous les clubs de danse que qu' il y a à Grenoble
+1	bonjour	bonjour	INTJ	_	_	3	mark	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	*	*	*
+3	serait	être	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	pour	pour	ADP	_	_	5	mark	_	_	*	*	*
+5	avoir	avoir	VERB	_	VerbForm=Inf	3	advcl	_	_	*	*	*
+6	un	un	PRON	_	Gender=Masc|Number=Sing	5	obj	_	_	*	*	*
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	0	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	0	*
+9	renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*	0	*
+10	sur	sur	ADP	_	_	13	case	_	_	*	*	*
+11	tous	tout	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*	1	0:1
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	1	0:1
+13	clubs	club	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*	1	0:1
+14	de	de	ADP	_	_	15	case	_	_	*	1	0:1
+15	danse	danse	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	1;2	0:1
+16	que	que	SCONJ	_	_	21	mark	_	_	*	*	*
+17	qu	que	SCONJ	_	_	21	mark	_	SpaceAfter=No	*	3	0:3
+18	'	'	PUNCT	_	_	17	punct	_	_	*	3	0:3
+19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl:subj	_	_	1:VID	*	*
+20	y	y	PRON	_	_	21	expl:comp	_	_	1	*	*
+21	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	1	*	*
+22	à	à	ADP	_	_	23	case	_	_	*	*	*
+23	Grenoble	Grenoble	PROPN	_	_	21	obl:mod	_	SpacesAfter=\s\n\n	*	4	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 3
+# text = c' est à consulter hein
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	SpaceAfter=No	*	5	0:5
+2	'	'	PUNCT	_	_	1	punct	_	_	*	5	0:5
+3	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	à	à	ADP	_	_	5	mark	_	_	*	*	*
+5	consulter	consulter	VERB	_	VerbForm=Inf	3	ccomp	_	_	*	*	*
+6	hein	hein	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 4
+# text = ah c' est à consulter d' accord
+1	ah	ah	INTJ	_	_	2	amod	_	_	*	*	*
+2	c	ce	X	_	_	4	nsubj	_	SpaceAfter=No	*	6	0:6
+3	'	'	PUNCT	_	_	2	punct	_	_	*	6	0:6
+4	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	à	à	ADP	_	_	6	mark	_	_	*	*	*
+6	consulter	consulter	VERB	_	VerbForm=Inf	4	ccomp	_	_	*	*	*
+7	d	de	ADP	_	_	6	advmod	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*	*	*
+9	accord	accord	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 5
+# text = c' est en dernier en dernier e à la fin de du classeur
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*	7	0:7
+2	'	'	PUNCT	_	_	1	punct	_	_	*	7	0:7
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+4	en	en	ADP	_	_	8	advmod	_	_	*	*	*
+5	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	4	fixed	_	_	*	*	*
+6	en	en	ADP	_	_	8	case	_	_	*	*	*
+7	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	*	*
+8	e	e	SYM	_	_	0	root	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	8	*
+11	fin	fin	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	_	*	8	*
+12	de	de	ADP	_	_	15	case	_	_	*	8	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	8;9	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	8;9	*
+15	classeur	classeur	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpacesAfter=\s\n\n	*	8;9	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 6
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 7
+# text = si vous voulez prendre un papier stylo je vous donne tout ça si vous voulez prendre des adresses voilà
+1	si	si	SCONJ	_	_	3	mark	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	10	*
+3	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	20	advcl	_	_	*	*	*
+4	prendre	prendre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	11	*
+6	papier	papier	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	11	*
+7	stylo	stylo	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	12	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	13	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	iobj	_	_	*	14	*
+10	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*	*	*
+11	tout	tout	DET	_	Gender=Masc|Number=Sing	12	det	_	_	*	15	*
+12	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	obj	_	_	*	15	*
+13	si	si	SCONJ	_	_	15	mark	_	_	*	*	*
+14	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	nsubj	_	_	*	16	*
+15	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	advcl	_	_	*	*	*
+16	prendre	prendre	VERB	_	VerbForm=Inf	15	xcomp	_	_	*	*	*
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	17	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*	17	*
+19	adresses	adresse	NOUN	_	Gender=Fem|Number=Plur	16	obl:arg	_	_	*	17;18	*
+20	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 8
+# text = je veux bien
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	19	*
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	bien	bien	ADV	_	_	2	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 9
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0397.txt 10
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	20	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	21	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,93 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0341.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 2
+# text = bonjour je voudrais e savoir si vous avez le guide des pistes cyclables
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+3	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	e	e	CCONJ	_	_	5	cc	_	_	*	*	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	3	conj	_	_	*	*	*
+6	si	si	SCONJ	_	_	8	mark	_	_	*	*	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*	1	*
+8	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	advcl	_	_	*	*	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	2	0:2
+10	guide	guide	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	2	0:2
+11-12	des	_	_	_	_	_	_	_	_	*	*	*
+11	de	de	ADP	_	_	13	case	_	_	*	2;3	0:2
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*	2;3	0:2
+13	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_	*	2;3	0:2
+14	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	SpacesAfter=\s\n\n	*	2;3	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 3
+# text = on en a plus ils sont en rupture de stock ce qui veut dire qu' il faut un mois un mois et demi avant que ça ça se refasse il faut le rééditer
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*	4	*
+2	en	en	PRON	_	Person=3	3	expl:comp	_	_	2:VID	5	0:5
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2	*	*
+4	plus	plus	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_	*	6	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+7	en	en	ADP	_	_	8	case	_	_	*	*	*
+8	rupture	rupture	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*	7	*
+9	de	de	ADP	_	_	10	case	_	_	*	7	*
+10	stock	stock	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	7;8	*
+11	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	_	*	*	*
+12	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*	*	*
+13	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	3:VID	*	*
+14	dire	dire	VERB	_	VerbForm=Inf	13	xcomp	_	_	3	*	*
+15	qu	que	SCONJ	_	_	18	mark	_	SpaceAfter=No	*	*	*
+16	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	expl:subj	_	_	1:VID	*	*
+18	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	_	1	*	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	9	*
+20	mois	mois	NOUN	_	Gender=Masc|Number=Sing	18	nsubj	_	_	*	9	*
+21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	10	*
+22	mois	mois	NOUN	_	Gender=Masc|Number=Sing	20	appos	_	_	*	10	*
+23	et	et	CCONJ	_	_	24	cc	_	_	*	10	*
+24	demi	demi	ADJ	_	Gender=Masc|Number=Sing	22	conj	_	_	*	10	*
+25	avant	avant	ADV	_	_	18	advmod	_	_	*	*	*
+26	que	que	SCONJ	_	_	30	mark	_	_	*	*	*
+27	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	30	nsubj	_	_	*	*	*
+28	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	30	nsubj	_	_	*	11	0:11
+29	se	se	PRON	_	Person=3|PronType=Prs	30	obj	_	_	*	*	*
+30	refasse	refasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	ccomp	_	_	*	*	*
+31	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	expl:subj	_	_	*	*	*
+32	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	_	_	*	*	*
+33	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obj	_	_	*	12	0:12
+34	rééditer	rééditer	VERB	_	VerbForm=Inf	32	ccomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 4
+# text = bon d' accord
+1	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	*	*
+2	d	de	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 5
+# text = on fera pas de vélo en attendant
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	13	*
+2	fera	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	*	*
+5	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	14	*
+6	en	en	ADP	_	_	7	mark	_	_	*	*	*
+7	attendant	attendre	VERB	_	Tense=Pres|VerbForm=Part	2	advcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 6
+# text = ah ouais merci beaucoup
+1	ah	ah	INTJ	_	_	2	amod	_	_	*	*	*
+2	ouais	ouai	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	*	*
+3	merci	merci	INTJ	_	_	4	case	_	_	*	*	*
+4	beaucoup	beaucoup	ADV	_	_	2	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0341.txt 7
+# text = au revoir monsieur
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	3	mark	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpacesAfter=\s\n	*	15	*
+

@@ -1,0 +1,63 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1PF0648.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0648.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0648.txt 2
+# text = bonjour est ce que vous avez le programme des M J C
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	programme	programme	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*
+11	M	m	X	_	_	8	nmod	_	_	*
+12	J	J	X	_	_	11	flat:foreign	_	_	*
+13	C	ce	X	_	_	11	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0648.txt 3
+# text = ah voilà vous avez toutes les M J C
+1	ah	ah	INTJ	_	_	2	discourse	_	_	*
+2	voilà	voilà	VERB	_	_	4	mark	_	_	*
+3	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*
+7	M	M	X	_	_	4	obj	_	_	*
+8	J	J	X	_	_	7	flat:foreign	_	_	*
+9	C	C	X	_	_	7	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0648.txt 4
+# text = d' accord vous avez pas le ah si voilà ce qui faut en
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	ah	ah	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*
+9	si	si	SCONJ	_	_	10	mark	_	_	*
+10	voilà	voilà	VERB	_	_	5	advcl	_	_	*
+11	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	obj	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+13	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	*
+14	en	en	ADP	_	_	13	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0648.txt 5
+# text = si il y a le le descriptif annuel
+1	si	si	SCONJ	_	_	4	mark	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID
+3	y	y	PRON	_	_	4	expl:comp	_	_	1
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	descriptif	descriptif	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+8	annuel	annuel	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,40 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0365.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0365.txt 1
+# text = bonjour madame
+1	bonjour	bonjour	INTJ	_	_	2	amod	_	_	*	*	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	0	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0365.txt 2
+# text = bonjour est ce que vous avez le programme de oui e e je " connaissance du monde "
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	1	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	2	*
+8	programme	programme	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	2	*
+9	de	de	ADP	_	_	10	case	_	_	*	2	*
+10	oui	oui	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	*	*
+11	e	e	CCONJ	_	_	6	advmod	_	_	*	*	*
+12	e	e	CCONJ	_	_	15	cc	_	_	*	*	*
+13	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_	*	3	*
+14	"	"	PUNCT	_	_	15	punct	_	_	*	4;5	*
+15	connaissance	connaissance	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	_	*	4;5	*
+16-17	du	_	_	_	_	_	_	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	5;6	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*	5;6	*
+18	monde	monde	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	5;6	*
+19	"	"	PUNCT	_	_	15	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0365.txt 3
+# text = juste à côté madame à la billeterie
+1	juste	juste	ADV	_	_	2	advmod	_	_	*	*	*
+2	à	à	ADP	_	_	4	case	_	_	*	*	*
+3	côté	côté	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	_	*	*	*
+4	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	7	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	8	*
+7	billeterie	billeterie	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpacesAfter=\s\n	*	8	*
+

@@ -1,0 +1,123 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 090_0000005b.txt
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*	0	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*	0	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*	0	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 2
+# text = oui bonjour e j' aurais voulu savoir je postule pour e donc j' étais en licence d' économie à Rennes à Vannes pardon cette année
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	xcomp	_	_	*	*	*
+3	e	e	CCONJ	_	_	4	cc	_	_	*	*	*
+4	j	je	X	_	_	2	conj	_	SpaceAfter=No	*	1	*
+5	'	'	PUNCT	_	_	7	punct	_	_	*	1	*
+6	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+7	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	_	*	*	*
+8	savoir	savoir	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	2	*
+10	postule	postule	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*	*	*
+11	pour	pour	ADP	_	_	14	case	_	_	*	*	*
+12	e	e	CCONJ	_	_	14	cc	_	_	*	*	*
+13	donc	donc	ADV	_	_	14	advmod	_	_	*	*	*
+14	j	j	X	_	_	16	nmod	_	SpaceAfter=No	*	3	*
+15	'	'	PUNCT	_	_	14	punct	_	_	*	3	*
+16	étais	être	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*	*	*
+17	en	en	ADP	_	_	18	case	_	_	*	*	*
+18	licence	licence	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*	4	1:4
+19	d	de	ADP	_	_	21	case	_	SpaceAfter=No	*	4	1:4
+20	'	'	PUNCT	_	_	21	punct	_	_	*	4	1:4
+21	économie	économie	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*	4;5	1:4;0:5
+22	à	à	ADP	_	_	23	case	_	_	*	*	*
+23	Rennes	Rennes	PROPN	_	_	21	nmod	_	_	*	6	*
+24	à	à	ADP	_	_	25	case	_	_	*	*	*
+25	Vannes	Vannes	PROPN	_	_	21	nmod	_	_	*	7	*
+26	pardon	pardon	ADP	_	_	28	case	_	_	*	*	*
+27	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	28	det	_	_	*	8	*
+28	année	année	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	SpacesAfter=\s\n\n	*	8	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 3
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 4
+# text = et donc je postule pour l' IGER l' année prochaine et j' aurais voulu savoir s' il était possible d' avoir e mes notes du premier semestre
+1	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+2	donc	donc	ADV	_	_	4	advmod	_	_	*	*	*
+3	je	je	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	9	*
+4	postule	postule	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	pour	pour	ADP	_	_	7	mark	_	_	*	*	*
+6	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*	10	*
+7	IGER	IGER	VERB	_	VerbForm=Inf	4	advcl	_	_	*	10	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	11	*
+9	année	année	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	_	*	11	*
+10	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*	11	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+12	j	j	X	_	_	7	conj	_	SpaceAfter=No	*	12	*
+13	'	'	PUNCT	_	_	15	punct	_	_	*	12	*
+14	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+15	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	parataxis	_	_	*	*	*
+16	savoir	savoir	VERB	_	VerbForm=Inf	15	xcomp	_	_	*	*	*
+17	s	s	X	_	_	16	obj	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	21	punct	_	_	*	*	*
+19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl:subj	_	_	*	*	*
+20	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	cop	_	_	*	*	*
+21	possible	possible	ADJ	_	Gender=Masc|Number=Sing	4	parataxis	_	_	*	*	*
+22	d	de	ADP	_	_	24	mark	_	SpaceAfter=No	*	*	*
+23	'	'	PUNCT	_	_	24	punct	_	_	*	*	*
+24	avoir	avoir	VERB	_	VerbForm=Inf	21	csubj	_	_	*	*	*
+25	e	e	CCONJ	_	_	27	cc	_	_	*	*	*
+26	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	27	det	_	_	*	13	*
+27	notes	note	NOUN	_	Gender=Fem|Number=Plur	24	conj	_	_	*	13	*
+28-29	du	_	_	_	_	_	_	_	_	*	*	*
+28	de	de	ADP	_	_	31	case	_	_	*	13;14	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*	13;14	*
+30	premier	premier	ADJ	_	Gender=Masc|Number=Sing	31	amod	_	_	*	13;14	*
+31	semestre	semestre	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	SpacesAfter=\s\n\n	*	13;14	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 5
+# text = en A E S
+1	en	en	ADP	_	_	2	case	_	_	*	*	*
+2	A	a	X	_	_	0	root	_	_	*	15	*
+3	E	E	X	_	_	2	flat:foreign	_	_	*	15	*
+4	S	S	X	_	_	2	flat:foreign	_	SpacesAfter=\s\n\n	*	15	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 6
+# text = non en écono- en science licence sciences économiques
+1	non	non	ADV	_	_	3	advmod	_	_	*	*	*
+2	en	en	ADP	_	_	3	case	_	_	*	*	*
+3	écono-	écono-	SYM	_	_	0	root	_	_	*	16	0:16
+4	en	en	ADP	_	_	5	case	_	_	*	*	*
+5	science	science	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	17	*
+6	licence	licence	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	_	*	18	1:18
+7	sciences	science	NOUN	_	Gender=Fem|Number=Plur	3	appos	_	_	*	18;19	1:18
+8	économiques	économique	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	SpacesAfter=\s\n\n	*	18;19	1:18
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 7
+# text = oui alors conservez je vais vous passer Prénom Nom
+1	oui	oui	ADV	_	_	3	advmod	_	_	*	*	*
+2	alors	alors	ADV	_	_	1	advmod	_	_	*	*	*
+3	conservez	conserver	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	20	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*	*	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	*	21	*
+7	passer	passer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+8	Prénom	prénom	PROPN	_	_	7	obj	_	_	*	22	*
+9	Nom	Nom	PROPN	_	_	8	flat:name	_	SpacesAfter=\s\n\n	*	22	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 8
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 090_0000005b.txt 9
+# text = oui c' est pour toi Prénom
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+5	pour	pour	ADP	_	_	6	case	_	_	*	*	*
+6	toi	soi	PRON	_	Number=Sing|Person=2	7	obl:mod	_	_	*	23	*
+7	Prénom	prénom	PROPN	_	_	1	xcomp	_	SpacesAfter=\s\n	*	24	*
+

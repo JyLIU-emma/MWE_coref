@@ -1,0 +1,153 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0650.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 2
+# text = monsieur est ce que vous avez une brochure pour e vélo ou V T T autour de Grenoble
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	0	*
+2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	_	*	*	*
+4	que	que	SCONJ	_	_	6	mark	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	1	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	2;3	2:2;3:3
+8	brochure	brochure	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*	2;3	2:2;3:3
+9	pour	pour	ADP	_	_	10	case	_	_	*	2	2:2
+10	e	e	SYM	_	_	8	nmod	_	_	*	2	2:2
+11	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	2;4	2:2;0:4
+12	ou	ou	CCONJ	_	_	13	cc	_	_	*	*	*
+13	V	V	NUM	_	_	11	conj	_	_	*	5	1:5
+14	T	T	PROPN	_	_	11	appos	_	_	*	5	1:5
+15	T	T	PROPN	_	_	14	flat:name	_	_	*	5	1:5
+16	autour	autour	ADV	_	_	14	advmod	_	_	*	*	*
+17	de	de	ADP	_	_	18	case	_	_	*	*	*
+18	Grenoble	Grenoble	PROPN	_	_	16	obl:arg	_	SpacesAfter=\s\n\n	*	6	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 3
+# text = vélo V T T donc vélo je l' ai mais j' en ai plus et V T T ça se fait pas
+1	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	_	*	7	0:7
+2	V	V	NUM	_	_	1	nmod	_	_	*	8	1:8
+3	T	T	PROPN	_	_	15	nsubj	_	_	*	8	1:8
+4	T	T	PROPN	_	_	3	flat:name	_	_	*	8	1:8
+5	donc	donc	ADV	_	_	15	advmod	_	_	*	*	*
+6	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*	9	0:9
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_	*	10	*
+8	l	l	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	11	2:11
+9	'	'	PUNCT	_	_	8	punct	_	_	*	11	2:11
+10	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+11	mais	mais	CCONJ	_	_	12	cc	_	_	*	*	*
+12	j	j	X	_	_	10	conj	_	SpaceAfter=No	*	12	*
+13	'	'	PUNCT	_	_	15	punct	_	_	*	12	*
+14	en	en	PRON	_	Person=3	15	expl:comp	_	_	1:VID	13	3:13
+15	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+16	plus	plus	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+18	V	V	NUM	_	_	15	conj	_	_	*	14	1:14
+19	T	T	PROPN	_	_	18	flat:name	_	_	*	14	1:14
+20	T	T	PROPN	_	_	18	flat:name	_	_	*	14	1:14
+21	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	23	nsubj	_	_	2:VID	15	3:15
+22	se	se	PRON	_	Person=3|PronType=Prs	23	expl:pass	_	_	*	*	*
+23	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	parataxis	_	_	2	*	*
+24	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 4
+# text = ça se fait pas
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	1:VID	16	3:16
+2	se	se	PRON	_	Person=3|PronType=Prs	3	expl:pass	_	_	*	*	*
+3	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 5
+# text = il faudrait voir peut être avec e " la maison de la randonnée " au premier étage " info montagne " le bureau qui vient de s' ouvrir
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID	*	*
+2	faudrait	falloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	voir	voir	VERB	_	VerbForm=Inf	2	ccomp	_	_	*	*	*
+4	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	xcomp	_	_	*	*	*
+5	être	être	AUX	_	VerbForm=Inf	30	aux:pass	_	_	*	*	*
+6	avec	avec	ADP	_	_	10	case	_	_	*	*	*
+7	e	e	CCONJ	_	_	10	cc	_	_	*	*	*
+8	"	"	PUNCT	_	_	10	punct	_	_	*	17	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	17	*
+10	maison	maison	NOUN	_	Gender=Fem|Number=Sing	30	obl:mod	_	_	*	17	*
+11	de	de	ADP	_	_	13	case	_	_	*	17	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	17;18	*
+13	randonnée	randonnée	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	17;18	*
+14	"	"	PUNCT	_	_	10	punct	_	_	*	*	*
+15-16	au	_	_	_	_	_	_	_	_	*	*	*
+15	à	à	ADP	_	_	18	case	_	_	*	19	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*	19	*
+17	premier	premier	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	_	*	19	*
+18	étage	étage	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	19	*
+19	"	"	PUNCT	_	_	10	punct	_	_	*	*	*
+20	info	info	ADJ	_	_	21	amod	_	_	*	20	*
+21	montagne	montagner	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*	20	*
+22	"	"	PUNCT	_	_	10	punct	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	21	4:21
+24	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	_	*	21	4:21
+25	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*	22	4:22
+26	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	_	_	*	*	*
+27	de	de	ADP	_	_	28	case	_	_	*	*	*
+28	s	s	NOUN	_	Gender=Fem|Number=Sing	26	obl:arg	_	SpaceAfter=No	*	*	*
+29	'	'	PUNCT	_	_	10	punct	_	_	*	*	*
+30	ouvrir	ouvrir	VERB	_	VerbForm=Inf	4	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 6
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 7
+# text = peut être que eux pour les V T T sauraient vous conseiller mettez dans les cool ou ailleurs quant aux pistes cyclables nous on les a régulièrement fin de semaine je pense que je serai je serai approvisionné
+1	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+2	être	être	VERB	_	VerbForm=Inf	1	xcomp	_	_	*	*	*
+3	que	que	SCONJ	_	_	4	case	_	_	*	*	*
+4	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	2	obl:mod	_	_	*	23	*
+5	pour	pour	ADP	_	_	8	case	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	24	1:24
+7	V	V	NUM	_	_	8	nummod	_	_	*	24	1:24
+8	T	T	PROPN	_	_	2	obl	_	_	*	24	1:24
+9	T	T	PROPN	_	_	8	flat:name	_	_	*	24	1:24
+10	sauraient	saur	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	xcomp	_	_	*	*	*
+11	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	12	obj	_	_	*	25	*
+12	conseiller	conseiller	VERB	_	VerbForm=Inf	10	xcomp	_	_	*	*	*
+13	mettez	mettre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	12	xcomp	_	_	*	*	*
+14	dans	dans	ADP	_	_	24	case	_	_	*	*	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*	26	*
+16	cool	cool	ADJ	_	Gender=Masc|Number=Sing	24	amod	_	_	*	26	*
+17	ou	ou	CCONJ	_	_	22	cc	_	_	*	*	*
+18	ailleurs	ailleurs	ADV	_	_	17	fixed	_	_	*	*	*
+19	quant	quant	ADV	_	_	22	case	_	_	*	*	*
+20-21	aux	_	_	_	_	_	_	_	_	*	*	*
+20	à	à	ADP	_	_	19	fixed	_	_	*	27	5:27
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*	27	5:27
+22	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	16	conj	_	_	*	27	5:27
+23	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	22	amod	_	_	*	27	5:27
+24	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	13	obl:mod	_	_	*	28	*
+25	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	27	nsubj	_	_	*	29	*
+26	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	27	expl:comp	_	_	*	30	5:30
+27	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	_	*	*	*
+28	régulièrement	régulièrement	ADV	_	_	27	advmod	_	_	*	*	*
+29	fin	fin	NOUN	_	Gender=Fem|Number=Sing	27	obj	_	_	*	31	*
+30	de	de	ADP	_	_	31	case	_	_	*	31	*
+31	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*	31;32	*
+32	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	33	nsubj	_	_	*	33	*
+33	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	27	parataxis	_	_	*	*	*
+34	que	que	SCONJ	_	_	36	mark	_	_	*	*	*
+35	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	36	nsubj	_	_	*	34	*
+36	serai	ser	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	ccomp	_	_	*	*	*
+37	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	38	nsubj	_	_	*	35	*
+38	serai	ser	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	ccomp	_	_	*	*	*
+39	approvisionné	approvisionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	38	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 8
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0650.txt 9
+# text = c' est moi
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	SpacesAfter=\s\n	*	36	*
+

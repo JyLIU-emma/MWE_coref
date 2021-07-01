@@ -1,0 +1,100 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0007.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 2
+# text = bonjour madame je voudrais avoir les programmes de l' Hexagone e tout ça vous avez pour la vallée
+1	bonjour	bonjour	INTJ	_	_	4	advcl	_	_	*	*	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*	0	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	1	*
+4	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	avoir	avoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*	2	3:2
+7	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*	2	3:2
+8	de	de	ADP	_	_	10	case	_	_	*	2	3:2
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	_	*	2;3	3:2
+10	Hexagone	Hexagone	PROPN	_	_	7	nmod	_	_	*	2;3	3:2
+11	e	e	CCONJ	_	_	15	cc	_	_	*	*	*
+12	tout	tout	DET	_	Gender=Masc|Number=Sing	13	det	_	_	*	4	3:4
+13	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	_	*	4	3:4
+14	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*	5	*
+15	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	conj	_	_	*	*	*
+16	pour	pour	ADP	_	_	18	case	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	6	*
+18	vallée	vallée	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	SpacesAfter=\s\n\n	*	6	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 3
+# text = derrière vous le présentoir il n' y a que le " théâtre de Grenoble " qui ne soit pas présent sur le le petit présentoir là je vais vous le remettre
+1	derrière	derrière	ADP	_	_	2	case	_	_	*	*	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	0	root	_	_	*	7	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	8	0:8
+4	présentoir	présentoir	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	8	0:8
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID	*	*
+6	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+7	y	y	PRON	_	_	8	expl:comp	_	_	1	*	*
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	1	*	*
+9	que	que	SCONJ	_	_	28	mark	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	9	1:9
+11	"	"	PUNCT	_	_	12	punct	_	_	*	9	1:9
+12	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	28	nsubj	_	_	*	9	1:9
+13	de	de	ADP	_	_	14	case	_	_	*	9	1:9
+14	Grenoble	Grenoble	PROPN	_	_	12	nmod	_	_	*	9;10	1:9;2:10
+15	"	"	PUNCT	_	_	12	punct	_	_	*	*	*
+16	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*	11	1:11
+17	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*	*	*
+18	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*	*	*
+19	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*	*	*
+20	présent	présent	ADJ	_	Gender=Masc|Number=Sing	12	acl:relcl	_	_	*	*	*
+21	sur	sur	ADP	_	_	25	case	_	_	*	*	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	12	0:12
+24	petit	petit	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*	12	0:12
+25	présentoir	présentoir	NOUN	_	Gender=Masc|Number=Sing	20	obl	_	_	*	12	0:12
+26	là	là	ADV	_	_	28	advmod	_	_	*	*	*
+27	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	28	nsubj	_	_	*	13	*
+28	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	ccomp	_	_	*	*	*
+29	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	28	obj	_	_	*	14	*
+30	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	obj	_	_	*	15	1:15
+31	remettre	remettre	VERB	_	VerbForm=Inf	28	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 4
+# text = le " théâtre de Grenoble "
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	16	1:16
+2	"	"	PUNCT	_	_	3	punct	_	_	*	16	1:16
+3	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	16	1:16
+4	de	de	ADP	_	_	5	case	_	_	*	16	1:16
+5	Grenoble	Grenoble	PROPN	_	_	3	nmod	_	_	*	16;17	1:16;2:17
+6	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 5
+# text = Grenoble c' est moi qui ai les programmes sinon après tout le reste c' est vous vous servez hein
+1	Grenoble	Grenoble	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	18	2:18
+2	c	ce	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+5	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	_	*	19	*
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*	20	*
+7	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	21	3:21
+9	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*	21	3:21
+10	sinon	sinon	SCONJ	_	_	20	mark	_	_	*	*	*
+11	après	après	ADP	_	_	10	fixed	_	_	*	*	*
+12	tout	tout	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*	22	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	22	*
+14	reste	reste	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*	22	*
+15	c	c	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*	*	*
+16	'	'	PUNCT	_	_	14	punct	_	_	*	*	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*	*	*
+18	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	20	nsubj	_	_	*	23	*
+19	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	20	obj	_	_	*	*	*
+20	servez	server	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	advcl	_	_	*	*	*
+21	hein	hein	ADV	_	_	20	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0007.txt 6
+# text = très bien merci
+1	très	très	ADV	_	_	2	advmod	_	_	*	*	*
+2	bien	bien	ADV	_	_	3	advmod	_	_	*	*	*
+3	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

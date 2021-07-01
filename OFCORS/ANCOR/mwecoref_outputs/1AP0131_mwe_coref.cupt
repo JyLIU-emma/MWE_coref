@@ -1,0 +1,54 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0131.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 1
+# text = madame bonjour
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	0	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 2
+# text = bonjour dites j' aurais voulu e un billet pour e
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	*	*
+2	dites	dire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*	*	*
+3	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	2	xcomp	_	SpaceAfter=No	*	1	*
+4	'	'	PUNCT	_	_	1	punct	_	_	*	1	*
+5	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	e	e	CCONJ	_	_	9	cc	_	_	*	*	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	2	0:2
+9	billet	billet	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*	2	0:2
+10	pour	pour	ADP	_	_	11	case	_	_	*	*	*
+11	e	e	SYM	_	_	9	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 3
+# text = " visages du monde "
+1	"	"	PUNCT	_	_	2	punct	_	_	*	3	*
+2	visages	visage	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	3	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	3;4	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	3;4	*
+5	monde	monde	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	3;4	*
+6	"	"	PUNCT	_	_	2	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 4
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 5
+# text = hum c' est le guichet est juste à côté là
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	*	*
+2	c	ce	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No	*	5	0:5
+3	'	'	PUNCT	_	_	1	punct	_	_	*	5	0:5
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	6	*
+6	guichet	guichet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	6	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+8	juste	juste	ADV	_	_	9	advmod	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	côté	côté	NOUN	_	Gender=Masc|Number=Sing	9	fixed	_	_	*	*	*
+11	là	là	ADV	_	_	6	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0131.txt 6
+# text = la Sibérie
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	7	*
+2	Sibérie	Sibérie	PROPN	_	_	0	root	_	SpacesAfter=\s\n	*	7	*
+

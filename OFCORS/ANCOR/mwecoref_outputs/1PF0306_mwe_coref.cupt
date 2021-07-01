@@ -1,0 +1,135 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0306.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 2
+# text = oui bonjour
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 3
+# text = je vous écoute madame
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+2	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*	1	*
+3	écoute	écouter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	madame	madame	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 4
+# text = e j' étais venue chercher un plan de l' agglomération grenobloise on m' avait donné une photocopie parce que c' est pour refaire un plan de direction pour des gens qui viennent en réunion à Grenoble seulement je n' ai pas pu l' exploiter en photocopie parce que c' en était déjà une et là donc e
+1	e	e	CCONJ	_	_	2	cc	_	_	*	*	*
+2	j	je	X	_	_	5	nsubj	_	SpaceAfter=No	*	3	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	3	*
+4	étais	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	venue	venir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	chercher	chercher	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	4	*
+8	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	4	*
+9	de	de	ADP	_	_	12	case	_	_	*	4	*
+10	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	5	*
+11	'	'	PUNCT	_	_	12	punct	_	_	*	5	*
+12	agglomération	agglomération	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	5	*
+13	grenobloise	grenoblois	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*	*	*
+14	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_	*	6	*
+15	m	m	NOUN	_	Gender=Masc|Number=Plur	18	obl:mod	_	SpaceAfter=No	*	7	*
+16	'	'	PUNCT	_	_	15	punct	_	_	*	7	*
+17	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*	*	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	8	1:8
+20	photocopie	photocopie	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	*	8	1:8
+21	parce	parce	ADV	_	_	25	mark	_	_	*	*	*
+22	que	que	SCONJ	_	_	21	fixed	_	_	*	*	*
+23	c	ce	X	_	_	25	nsubj	_	SpaceAfter=No	*	*	*
+24	'	'	PUNCT	_	_	23	punct	_	_	*	*	*
+25	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	_	*	*	*
+26	pour	pour	ADP	_	_	27	mark	_	_	*	*	*
+27	refaire	refaire	VERB	_	VerbForm=Inf	48	advcl	_	_	*	*	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	9	*
+29	plan	plan	NOUN	_	Gender=Masc|Number=Sing	27	obj	_	_	*	9	*
+30	de	de	ADP	_	_	31	case	_	_	*	9	*
+31	direction	direction	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	_	*	9;10	*
+32	pour	pour	ADP	_	_	35	case	_	_	*	*	*
+33-34	des	_	_	_	_	_	_	_	_	*	*	*
+33	de	de	ADP	_	_	35	case	_	_	*	11	3:11
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*	11	3:11
+35	gens	gens	NOUN	_	Gender=Masc|Number=Plur	29	nmod	_	_	*	11	3:11
+36	qui	qui	PRON	_	PronType=Rel	37	nsubj	_	_	*	12	3:12
+37	viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	_	*	*	*
+38	en	en	ADP	_	_	39	case	_	_	*	*	*
+39	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	37	obl	_	_	*	13	*
+40	à	à	ADP	_	_	41	case	_	_	*	*	*
+41	Grenoble	Grenoble	PROPN	_	_	37	obl:mod	_	_	*	14	4:14
+42	seulement	seulement	ADV	_	_	41	advmod	_	_	*	*	*
+43	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	48	nsubj	_	_	*	15	*
+44	n	n	X	_	_	43	flat:name	_	SpaceAfter=No	*	*	*
+45	'	'	PUNCT	_	_	43	punct	_	_	*	*	*
+46	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	48	aux:tense	_	_	*	*	*
+47	pas	pas	ADV	_	Polarity=Neg	48	advmod	_	_	*	*	*
+48	pu	pouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	ccomp	_	_	*	*	*
+49	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	SpaceAfter=No	*	16	0:16
+50	'	'	PUNCT	_	_	49	punct	_	_	*	16	0:16
+51	exploiter	exploiter	VERB	_	VerbForm=Inf	58	acl	_	_	*	*	*
+52	en	en	ADP	_	_	53	case	_	_	*	*	*
+53	photocopie	photocopie	NOUN	_	Gender=Fem|Number=Sing	51	obl	_	_	*	17	1:17
+54	parce	parce	ADV	_	_	61	mark	_	_	*	*	*
+55	que	que	SCONJ	_	_	54	fixed	_	_	*	*	*
+56	c	ce	NOUN	_	Gender=Masc|Number=Sing	61	nsubj	_	SpaceAfter=No	*	18	0:18
+57	'	'	PUNCT	_	_	56	punct	_	_	*	18	0:18
+58	en	en	PRON	_	Person=3	48	obj	_	_	*	19	1:19
+59	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	61	cop	_	_	*	*	*
+60	déjà	déjà	ADV	_	_	61	advmod	_	_	*	*	*
+61	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	51	advcl	_	_	*	*	*
+62	et	et	CCONJ	_	_	65	cc	_	_	*	*	*
+63	là	là	ADV	_	_	65	advmod	_	_	*	*	*
+64	donc	donc	ADV	_	_	65	advmod	_	_	*	*	*
+65	e	e	CCONJ	_	_	61	conj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 5
+# text = ben ça c' est le plan actuel
+1	ben	ben	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	*	*
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*	*	*
+3	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	20	2:20
+7	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	20	2:20
+8	actuel	actuel	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	SpacesAfter=\s\n\n	*	20	2:20
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 6
+# text = c' est le plan actuel bon je vous prends ça
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	21;22	2:22
+5	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	21;22	2:22
+6	actuel	actuel	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	22	2:22
+7	bon	bon	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	23	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	obj	_	_	*	24	*
+10	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+11	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpacesAfter=\s\n\n	*	25	2:25
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 7
+# text = le plan qu' on vient de sortir là
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	26	2:26
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	26	2:26
+3	qu	qu	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*	27	2:27
+4	'	'	PUNCT	_	_	2	punct	_	_	*	27	2:27
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*	28	*
+6	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	de	de	ADP	_	_	8	mark	_	_	*	*	*
+8	sortir	sortir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+9	là	là	ADV	_	_	8	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 8
+# text = ok merci beaucoup monsieur
+1	ok	ok	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	4	cc	_	_	*	*	*
+3	beaucoup	beaucoup	ADV	_	_	4	advmod	_	_	*	*	*
+4	monsieur	monsieur	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	29	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0306.txt 9
+# text = moi
+1	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	SpacesAfter=\s\n	*	30	*
+

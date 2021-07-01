@@ -1,0 +1,97 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0210.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 1
+# text = le prospectus sur le le chocolat là le palais de chocolat
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	0	*
+2	prospectus	prospectus	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	0	*
+3	sur	sur	ADP	_	_	6	case	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	1	1:1
+6	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	1	1:1
+7	là	là	ADV	_	_	2	advmod	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	2	0:2
+9	palais	palais	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	2	0:2
+10	de	de	ADP	_	_	11	case	_	_	*	2	0:2
+11	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpacesAfter=\s\n\n	*	2;3	0:2;1:3
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 2
+# text = le palais du chocolat
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	4	0:4
+2	palais	palais	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	4	0:4
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	4;5	0:4;1:5
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	4;5	0:4;1:5
+5	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\n\n	*	4;5	0:4;1:5
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 3
+# text = à la côte Saint-André c' est ça oui vous n' aimez pas les chocolats bon merci
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	6	*
+3	côte	côte	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*	6	*
+4	Saint-André	Saint-André	PROPN	_	_	3	appos	_	_	*	6;7	*
+5	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	flat:name	_	SpaceAfter=No	*	*	*
+6	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	_	*	*	*
+9	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	advcl	_	_	*	*	*
+10	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_	*	8	*
+11	n'	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*	*	*
+12	aimez	aimer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	9	1:9
+15	chocolats	chocolat	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	_	_	*	9	1:9
+16	bon	bon	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	*	*
+17	merci	merci	INTJ	_	_	12	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 4
+# text = voulez le goûter d' ailleurs ils nous en ont laissé un petit peu juste qu' on puisse y goûter
+1	voulez	vouloir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_	*	10	1:10
+3	goûter	goûter	VERB	_	VerbForm=Inf	1	xcomp	_	_	*	*	*
+4	d	de	ADP	_	_	11	mark	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+6	ailleurs	ailleurs	ADV	_	_	11	advmod	_	_	*	*	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_	*	11	*
+8	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	_	*	12	*
+9	en	en	PRON	_	Person=3	11	iobj	_	_	*	13	1:13
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+11	laissé	laisser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	advmod	_	_	*	*	*
+13	petit	petit	ADJ	_	Gender=Masc|Number=Sing	12	fixed	_	_	*	*	*
+14	peu	peu	ADV	_	_	12	fixed	_	_	*	*	*
+15	juste	juste	ADV	_	_	16	advmod	_	_	*	*	*
+16	qu	qre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	obj	_	SpaceAfter=No	*	*	*
+17	'	'	PUNCT	_	_	19	punct	_	_	*	*	*
+18	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_	*	14	*
+19	puisse	pouvoir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*	*	*
+20	y	y	PRON	_	_	21	obl:mod	_	_	*	15	1:15
+21	goûter	goûter	VERB	_	VerbForm=Inf	19	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 5
+# text = c' est gentil
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	gentil	gentil	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 6
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 7
+# text = c' est vrai qu' ils sont bons
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+5	qu	que	SCONJ	_	_	9	mark	_	SpaceAfter=No	*	*	*
+6	'	'	PUNCT	_	_	9	punct	_	_	*	*	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_	*	16	1:16
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+9	bons	bon	ADJ	_	Gender=Masc|Number=Plur	4	ccomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0210.txt 8
+# text = merci bien
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	bien	bien	ADV	_	_	1	advmod	_	SpacesAfter=\s\n	*	*	*
+

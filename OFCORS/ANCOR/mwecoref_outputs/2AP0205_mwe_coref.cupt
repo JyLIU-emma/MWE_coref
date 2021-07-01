@@ -1,0 +1,114 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2AP0205.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 1
+# text = madame c' est pour savoir e e où se trouve la rue e e un rue Génissieu
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	c	ce	X	_	_	1	appos	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	pour	pour	ADP	_	_	6	mark	_	_	*	*	*
+6	savoir	savoir	VERB	_	VerbForm=Inf	4	advcl	_	_	*	*	*
+7	e	e	CCONJ	_	_	11	cc	_	_	*	*	*
+8	e	e	CCONJ	_	_	11	cc	_	_	*	*	*
+9	où	où	ADV	_	PronType=Rel	11	iobj	_	_	*	*	*
+10	se	se	PRON	_	Person=3|PronType=Prs	11	expl:pass	_	_	1:IRV	*	*
+11	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	1	*	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	1	0:1
+13	rue	rue	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	*	1	0:1
+14	e	e	CCONJ	_	_	17	cc	_	_	*	*	*
+15	e	e	CCONJ	_	_	17	cc	_	_	*	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	2	0:2
+17	rue	rue	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*	2	0:2
+18	Génissieu	Génissieu	PROPN	_	_	13	appos	_	SpacesAfter=\s\n\n	*	2;3	0:2;2:3
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 2
+# text = un rue Génissieu voilà on est là et c' est celle-ci
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	4	0:4
+2	rue	rue	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	4	0:4
+3	Génissieu	Génissieu	PROPN	_	_	2	appos	_	_	*	4;5	0:4;2:5
+4	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*	6	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	là	là	ADV	_	_	4	advmod	_	_	*	*	*
+8	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+9	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	9	punct	_	_	*	*	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+12	celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	4	conj	_	SpacesAfter=\s\n\n	*	7	0:7
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 3
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 4
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 5
+# text = la rue Génissieu Couveret Génissieu
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	8	0:8
+2	rue	rue	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	8	0:8
+3	Génissieu	Génissieu	PROPN	_	_	2	appos	_	_	*	8;9	0:8;2:9
+4	Couveret	Couveret	PROPN	_	_	3	flat:name	_	_	*	8;9	0:8;2:9
+5	Génissieu	Génissieu	PROPN	_	_	3	flat:name	_	SpacesAfter=\s\n\n	*	10	0:10
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 6
+# text = la rue de la base c' est tout ce qu' il vous faut
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	11	0:11
+2	rue	rue	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	11	0:11
+3	de	de	ADP	_	_	5	case	_	_	*	11	0:11
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	11;12	0:11
+5	base	base	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	11;12	0:11
+6	c	ce	X	_	_	5	appos	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+9	tout	tout	ADV	_	_	11	advmod	_	_	*	*	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*	*	*
+11	qu	qu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	15	punct	_	_	*	*	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	_	1:VID	*	*
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*	13	*
+15	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	parataxis	_	SpacesAfter=\s\n\n	1	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 7
+# text = e avec le plan TAG si possible pour voir s' il y a
+1	e	e	CCONJ	_	_	14	cc	_	_	*	*	*
+2	avec	avec	ADP	_	_	4	case	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	14	1:14
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*	14	1:14
+5	TAG	Tag	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*	14;15	1:14;3:15
+6	si	si	ADV	_	_	7	advmod	_	_	*	*	*
+7	possible	possible	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*	*	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*	*	*
+9	voir	voir	VERB	_	VerbForm=Inf	7	advcl	_	_	*	*	*
+10	s	s	X	_	_	9	obj	_	SpaceAfter=No	*	*	*
+11	'	'	PUNCT	_	_	4	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	_	1:VID	*	*
+13	y	y	PRON	_	_	14	expl:comp	_	_	1	*	*
+14	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	1	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 8
+# text = alors faudrait le prendre en face au service TAG merci au revoir
+1	alors	alors	ADV	_	_	2	advmod	_	_	*	*	*
+2	faudrait	falloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*	16	1:16
+4	prendre	prendre	VERB	_	VerbForm=Inf	2	ccomp	_	_	*	*	*
+5	en	en	ADP	_	_	10	case	_	_	*	*	*
+6	face	face	NOUN	_	Gender=Fem|Number=Sing	5	fixed	_	_	*	*	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	*	*
+9	service	service	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	17	*
+10	TAG	Tag	PROPN	_	_	4	obl	_	_	*	17;18	3:18
+11	merci	merci	INTJ	_	_	4	obl:mod	_	_	*	*	*
+12-13	au	_	_	_	_	_	_	_	_	*	*	*
+12	à	à	ADP	_	_	11	advmod	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	fixed	_	_	*	*	*
+14	revoir	revoir	VERB	_	VerbForm=Inf	12	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0205.txt 9
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

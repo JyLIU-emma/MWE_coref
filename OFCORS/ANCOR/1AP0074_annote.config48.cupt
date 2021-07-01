@@ -1,0 +1,66 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0074.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 2
+# text = oui bonjour je voudrais un plan de Grenoble
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advcl	_	_	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Grenoble	Grenoble	PROPN	_	_	6	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 3
+# text = bien sûr
+1	bien	bien	ADV	_	_	0	root	_	_	*
+2	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 4
+# text = c' est payant
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	payant	payer	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 5
+# text = non
+1	non	non	ADV	_	Polarity=Neg	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 6
+# text = ben merci
+1	ben	ben	ADV	_	_	2	advmod	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 7
+# text = au delà de dix c' est payant
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	9	advmod	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	delà	delà	ADV	_	_	1	fixed	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	dix	dix	NUM	_	_	6	nummod	_	_	*
+6	c	ce	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	1	punct	_	_	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*
+9	payant	payer	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 8
+# text = merci au
+1	merci	merci	INTJ	_	_	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	SpacesAfter=\s\n\n	*
+2	à	à	ADP	_	_	1	iobj	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0074.txt 9
+# text = au revoir merci
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	4	advmod	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	_	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

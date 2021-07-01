@@ -1,0 +1,84 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0243.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 2
+# text = je dois livrer ça à l' office du tourisme
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	0	*
+2	dois	devoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	livrer	livrer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	_	_	*	1	*
+5	à	à	ADP	_	_	8	case	_	_	*	*	*
+6	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	2	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*	2	*
+8	office	office	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*	2	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	2;3	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	2;3	*
+11	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpacesAfter=\s\n\n	*	2;3	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 3
+# text = faut il une pièce d' identité alors
+1	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_	1	*	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	4	*
+4	pièce	pièce	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_	*	4	*
+5	d	de	ADP	_	_	7	case	_	SpaceAfter=No	*	4	*
+6	'	'	PUNCT	_	_	7	punct	_	_	*	4	*
+7	identité	identité	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	4;5	*
+8	alors	alors	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 4
+# text = Prénom Nom
+1	Prénom	prénom	PROPN	_	_	0	root	_	_	*	6	*
+2	Nom	Nom	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\n\n	*	6	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 5
+# text = d' accord qu' est ce que je fais je signe
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	*	*
+4	qu	que	SCONJ	_	_	3	punct	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+8	que	que	PRON	_	PronType=Rel	10	obj	_	_	*	*	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	7	*
+10	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*	*	*
+11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_	*	8	*
+12	signe	sindre	NOUN	_	Gender=Masc|Number=Sing	10	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 6
+# text = pas une signature un tampon non
+1	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+2	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	9	*
+3	signature	signature	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	9	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	10	0:10
+5	tampon	tampon	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	_	*	10	0:10
+6	non	non	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 7
+# text = tampon merci c' est là hein voilà merci merci
+1	tampon	tampon	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	11	0:11
+2	merci	merci	INTJ	_	_	3	case	_	_	*	*	*
+3	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nmod	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	là	là	ADV	_	_	7	advmod	_	_	*	*	*
+7	hein	hein	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+8	voilà	voilà	VERB	_	_	9	acl	_	_	*	*	*
+9	merci	merci	INTJ	_	_	10	discourse	_	_	*	*	*
+10	merci	merci	INTJ	_	_	7	conj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0243.txt 8
+# text = je vous remercie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	12	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	3	obj	_	_	*	13	*
+3	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4-5	au	_	_	_	_	_	_	_	_	*	*	*
+4	à	à	ADP	_	_	3	advmod	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_	*	*	*
+6	revoir	revoir	VERB	_	VerbForm=Inf	4	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,117 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2PF0415.txt
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 1
+# text = je voudrais un plan de Grenoble s' il vous plaît e vous savez si vous avez des appartements e
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	1	*
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	1	*
+5	de	de	ADP	_	_	6	case	_	_	*	1	*
+6	Grenoble	Grenoble	PROPN	_	_	4	nmod	_	_	*	1;2	*
+7	s	s	X	_	_	6	flat:name	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*	*	*
+10	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	11	obj	_	_	*	*	*
+11	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*	*	*
+12	e	e	CCONJ	_	_	14	cc	_	_	*	*	*
+13	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	14	nsubj	_	_	*	3	*
+14	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	conj	_	_	*	*	*
+15	si	si	SCONJ	_	_	17	mark	_	_	*	*	*
+16	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	17	nsubj	_	_	*	4	*
+17	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*	*	*
+18-19	des	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	5	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*	5	*
+20	appartements	appartement	NOUN	_	Gender=Masc|Number=Plur	17	obl:arg	_	_	*	5	*
+21	e	e	CCONJ	_	_	11	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 2
+# text = alors j' ai " le 38 "
+1	alors	alors	ADV	_	_	4	advmod	_	_	*	*	*
+2	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*	6	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	6	*
+4	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	"	"	PUNCT	_	_	7	punct	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	7	0:7
+7	38	38	NUM	_	_	4	obj	_	_	*	7	0:7
+8	"	"	PUNCT	_	_	7	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 3
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 4
+# text = je peux vous donner " le 38 "
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	8	*
+2	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	9	*
+4	donner	donner	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	"	"	PUNCT	_	_	7	punct	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	10	0:10
+7	38	38	NUM	_	_	2	obl	_	_	*	10	0:10
+8	"	"	PUNCT	_	_	7	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 5
+# text = e avec e mission on peut pas avoir e d' adresses directement
+1	e	e	CCONJ	_	_	6	cc	_	_	*	*	*
+2	avec	avec	ADP	_	_	4	case	_	_	*	*	*
+3	e	e	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	*	*
+4	mission	mission	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*	11	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*	12	*
+6	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+8	avoir	avoir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+9	e	e	CCONJ	_	_	12	cc	_	_	*	*	*
+10	d	de	ADP	_	_	12	case	_	SpaceAfter=No	*	13	*
+11	'	'	PUNCT	_	_	12	punct	_	_	*	13	*
+12	adresses	adresse	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	_	*	13	*
+13	directement	directement	ADV	_	_	6	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 6
+# text = ah non nous non
+1	ah	ah	INTJ	_	_	3	discourse	_	_	*	*	*
+2	non	non	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+3	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	0	root	_	_	*	14	*
+4	non	non	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 7
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 8
+# text = on s' occupe pas du tout du mobilier hein
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	15	*
+2	s	s	X	_	_	1	appos	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	occupe	occuper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*	*	*
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	11	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*	*	*
+8	tout	tout	PRON	_	Gender=Masc|Number=Sing	6	fixed	_	_	*	*	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	16	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	16	*
+11	mobilier	mobilier	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	16	*
+12	hein	hein	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 9
+# text = d' accord je vous remercie
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	17	*
+5	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	iobj	_	_	*	18	*
+6	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0415.txt 10
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	19	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	20	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

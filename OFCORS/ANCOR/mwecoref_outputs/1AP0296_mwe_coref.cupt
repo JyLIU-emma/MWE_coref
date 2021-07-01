@@ -1,0 +1,82 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0296.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 2
+# text = bonjour j' aurais aimé avoir des renseignements sur les sites à visiter les châteaux les
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	0	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+4	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	aimé	aimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	ccomp	_	_	*	*	*
+6	avoir	avoir	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	1	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	1	*
+9	renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*	1	*
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*	2	*
+12	sites	site	NOUN	_	Gender=Masc|Number=Plur	6	obl	_	_	*	2	*
+13	à	à	ADP	_	_	14	mark	_	_	*	*	*
+14	visiter	visiter	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*	3	*
+16	châteaux	château	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	_	*	3	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 3
+# text = voilà donc ça c' est Grenoble et l' agglomération et le département même mais c' est un plan aussi de la ville hein
+1	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+2	donc	donc	ADV	_	_	1	advmod	_	_	*	*	*
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	_	_	*	*	*
+4	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	7	punct	_	_	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	Grenoble	Grenoble	PROPN	_	_	4	appos	_	_	*	4;5	0:4
+8	et	et	CCONJ	_	_	11	cc	_	_	*	5	*
+9	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	5;6	*
+10	'	'	PUNCT	_	_	11	punct	_	_	*	5;6	*
+11	agglomération	agglomération	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	5;6	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*	5	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	5;7	*
+14	département	département	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*	5;7	*
+15	même	même	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*	*	*
+16	mais	mais	CCONJ	_	_	21	cc	_	_	*	*	*
+17	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	21	nsubj	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	17	punct	_	_	*	*	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*	*	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	8	*
+21	plan	plan	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	_	*	8	*
+22	aussi	aussi	ADV	_	_	25	advmod	_	_	*	8	*
+23	de	de	ADP	_	_	25	case	_	_	*	8	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	8;9	0:9
+25	ville	ville	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*	8;9	0:9
+26	hein	hein	NOUN	_	Gender=Masc|Number=Sing	21	appos	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 5
+# text = mais je vous en prie
+1	mais	mais	CCONJ	_	_	5	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	10	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	11	*
+4	en	en	PRON	_	Person=3	5	obj	_	_	*	*	*
+5	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 6
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0296.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

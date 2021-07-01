@@ -1,0 +1,67 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2AG0561.txt
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 2
+# text = bonjour j' aurais voulu savoir si par hasard vous aviez un plan de la ville
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+4	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	savoir	savoir	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+7	si	si	ADV	_	_	6	advmod	_	_	*	*	*
+8	par	par	ADP	_	_	9	case	_	_	*	*	*
+9	hasard	hasard	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*	*	*
+10	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_	*	0	*
+11	aviez	avier	VERB	_	Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	advcl	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	1	*
+13	plan	plan	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*	1	*
+14	de	de	ADP	_	_	16	case	_	_	*	1	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	1;2	*
+16	ville	ville	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	SpacesAfter=\s\n\n	*	1;2	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 3
+# text = je vais regarder voilà
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	3	*
+2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*	*	*
+3	regarder	regarder	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 4
+# text = un plan du réseau des bus vous n' avez pas
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	4	*
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*	4;5	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	4;5;6	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	4;5;6	*
+5	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	4;5;6	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	4;5;6;7	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	4;5;6;7	*
+8	bus	bus	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	4;5;6;7	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_	*	8	*
+10	n'	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*	*	*
+11	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+12	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 5
+# text = de Lyon
+1	de	de	ADP	_	_	2	case	_	_	*	9	*
+2	Lyon	Lyon	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*	9	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 6
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 7
+# text = non
+1	non	non	ADV	_	Polarity=Neg	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0561.txt 8
+# text = non merci
+1	non	non	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

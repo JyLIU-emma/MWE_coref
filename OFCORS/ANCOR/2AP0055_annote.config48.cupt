@@ -1,0 +1,153 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2AP0055.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 2
+# text = bonjour e j' aurais souhaité e une brochure avec tous les commerces de Grenoble e répertoriés quoi vous n' avez pas
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*
+2	e	e	CCONJ	_	_	3	cc	_	_	*
+3	j	je	X	_	_	1	conj	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	1	punct	_	_	*
+5	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	souhaité	souhaiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	e	e	CCONJ	_	_	9	cc	_	_	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	brochure	brochure	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*
+10	avec	avec	ADP	_	_	13	case	_	_	*
+11	tous	tout	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	commerces	commerce	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Grenoble	Grenoble	PROPN	_	_	13	nmod	_	_	*
+16	e	e	CCONJ	_	_	17	cc	_	_	*
+17	répertoriés	répertorier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	conj	_	_	*
+18	quoi	quoi	PRON	_	_	21	mark	_	_	*
+19	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	21	nsubj	_	_	*
+20	n'	ne	ADV	_	Polarity=Neg	21	advmod	_	_	*
+21	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	17	advcl	_	_	*
+22	pas	pas	ADV	_	Polarity=Neg	21	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 3
+# text = ça c' est " pages jaunes " on n' a pas mieux que " les pages jaunes "
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	dislocated	_	_	*
+2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	"	"	PUNCT	_	_	5	punct	_	_	*
+5	pages	page	NOUN	_	Gender=Fem|Number=Plur	16	parataxis	_	_	*
+6	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_	*
+7	"	"	PUNCT	_	_	5	punct	_	_	*
+8	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	16	nsubj	_	_	*
+9	n'	ne	ADV	_	Polarity=Neg	16	advmod	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+11	pas	pas	ADV	_	Polarity=Neg	16	advmod	_	_	*
+12	mieux	mieux	ADV	_	_	16	advmod	_	_	*
+13	que	que	SCONJ	_	_	16	case	_	_	*
+14	"	"	PUNCT	_	_	16	punct	_	_	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*
+16	pages	page	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+17	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*
+18	"	"	PUNCT	_	_	16	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 4
+# text = " les pages jaunes "
+1	"	"	PUNCT	_	_	3	punct	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*
+3	pages	page	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*
+4	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*
+5	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 5
+# text = ouais on n' a pas de liste de commerces toute faite après c' est les la Chambre de Commerce et d' Industrie qui peut vous fournir une liste hein
+1	ouais	ouai	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	advcl	_	_	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*
+3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	csubj	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	liste	liste	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	commerces	commerce	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+10	toute	tout	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*
+11	faite	faite	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*
+12	après	après	ADP	_	_	13	case	_	_	*
+13	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	obl	_	SpaceAfter=No	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_	*
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	Chambre	chambre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+19	de	de	ADP	_	_	20	case	_	_	*
+20	Commerce	commerce	PROPN	_	_	18	nmod	_	_	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*
+22	d'	de	ADP	_	_	23	case	_	_	*
+23	Industrie	industrie	PROPN	_	_	20	conj	_	_	*
+24	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*
+25	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_	*
+26	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	27	iobj	_	_	*
+27	fournir	fournir	VERB	_	VerbForm=Inf	25	xcomp	_	_	*
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*
+29	liste	liste	NOUN	_	Gender=Fem|Number=Sing	27	obj	_	_	*
+30	hein	hein	ADV	_	_	29	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 6
+# text = ouais d' accord ok e vous pouvez me donner également une ou deux brochures que les les personnes préfèrent parfois et puis celle avec les logements
+1	ouais	ouai	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	d	de	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	4	punct	_	_	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+5	ok	ok	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	e	e	CCONJ	_	_	8	cc	_	_	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*
+8	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+9	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	10	iobj	_	_	*
+10	donner	donner	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+11	également	également	ADV	_	_	10	advmod	_	_	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+13	ou	ou	CCONJ	_	_	15	cc	_	_	*
+14	deux	deux	NUM	_	_	15	nummod	_	_	*
+15	brochures	brochure	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	_	*
+16	que	que	SCONJ	_	_	20	mark	_	_	*
+17	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	20	nsubj	_	_	*
+20	préfèrent	préfèrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_	*
+21	parfois	parfois	ADV	_	_	20	advmod	_	_	*
+22	et	et	CCONJ	_	_	24	cc	_	_	*
+23	puis	puis	ADV	_	_	24	cc	_	_	*
+24	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	20	conj	_	_	*
+25	avec	avec	ADP	_	_	27	case	_	_	*
+26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_	*
+27	logements	logement	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 7
+# text = celle-ci
+1	celle-ci	celui-ci	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 8
+# text = Cléconfort
+1	Cléconfort	Cléconfort	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 9
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 10
+# text = les locations voilà
+1	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*
+2	locations	location	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*
+3	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 11
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0055.txt 12
+# text = au revoir monsieur
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	3	mark	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	0	root	_	_	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,171 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SO0623.txt
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 2
+# text = bonjour je voudrais savoir jusqu' à quelle heure est ouverte la poste
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+3	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	savoir	savoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	jusqu'	jusque	ADV	_	_	8	advmod	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	quelle	quel	DET	_	Gender=Fem|Number=Sing	8	det	_	_	*	1	*
+8	heure	heure	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	1	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*	*	*
+10	ouverte	ouvrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	2	1:2
+12	poste	poste	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpacesAfter=\s\n\n	*	2	1:2
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 3
+# text = à côté dix-huit heures trente
+1	à	à	ADP	_	_	4	case	_	_	*	*	*
+2	côté	côté	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3	dix-huit	dix-huit	NUM	_	_	4	nummod	_	_	*	3	*
+4	heures	heure	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	3	*
+5	trente	trente	NUM	_	_	4	nmod	_	SpacesAfter=\s\n\n	*	3	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 4
+# text = plus grande et hum est ce que vous avez son numéro de téléphone s' il vous plaît
+1	plus	plus	ADV	_	_	2	advmod	_	_	*	*	*
+2	grande	grand	ADJ	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	*	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+4	hum	hum	ADJ	_	Gender=Fem|Number=Sing	2	conj	_	_	*	*	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+7	que	que	PRON	_	PronType=Rel	9	obj	_	_	*	*	*
+8	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	9	nsubj	_	_	*	4	*
+9	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	*	*	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*	5	0:5
+11	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*	5	0:5
+12	de	de	ADP	_	_	13	case	_	_	*	5	0:5
+13	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	5;6	0:5;3:6
+14	s	s	X	_	_	13	nmod	_	SpaceAfter=No	*	*	*
+15	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+16	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_	*	*	*
+17	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	18	iobj	_	_	*	*	*
+18	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 5
+# text = le numéro téléphone de la poste ah non
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	7;8	0:8
+2	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	7;8	0:8
+3	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*	7;8;9	0:8;3:9
+4	de	de	ADP	_	_	6	case	_	_	*	7;8	0:8
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	7;8;10	0:8;1:10
+6	poste	poste	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	8;10;11	0:8;1:10
+7	ah	ah	INTJ	_	_	0	root	_	_	*	*	*
+8	non	non	ADV	_	Polarity=Neg	7	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 6
+# text = vous l' avez pas
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	12	*
+2	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	3	obj	_	_	*	13	0:13
+3	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 7
+# text = mais ça doit être affiché juste devant la porte hein c' est juste dehors
+1	mais	mais	CCONJ	_	_	3	cc	_	_	*	*	*
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	*	14	0:14
+3	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	_	*	*	*
+5	affiché	afficher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_	*	*	*
+6	juste	juste	ADV	_	_	9	advmod	_	_	*	*	*
+7	devant	devant	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	15	*
+9	porte	porte	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	_	*	15	*
+10	hein	hein	X	_	_	11	nmod	_	_	*	*	*
+11	c	ce	X	_	_	9	appos	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+14	juste	juste	ADV	_	_	15	advmod	_	_	*	*	*
+15	dehors	dehors	ADV	_	_	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 8
+# text = la poste juste là c' est c' est c' est inscrit sur la grande poste centrale
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	16	1:16
+2	poste	poste	NOUN	_	Gender=Fem|Number=Sing	7	dislocated	_	_	*	16	1:16
+3	juste	juste	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	*	*
+4	là	là	ADV	_	_	2	advmod	_	_	*	*	*
+5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*	17	0:17
+8	'	'	PUNCT	_	_	7	punct	_	_	*	17	0:17
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+10	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*	18	0:18
+11	'	'	PUNCT	_	_	10	punct	_	_	*	18	0:18
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+13	inscrit	inscrire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+14	sur	sur	ADP	_	_	17	case	_	_	*	*	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	19	2:19
+16	grande	grand	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*	19	2:19
+17	poste	poste	NOUN	_	Gender=Fem|Number=Sing	13	obl	_	_	*	19	2:19
+18	centrale	central	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	SpacesAfter=\s\n\n	*	19	2:19
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 9
+# text = vous sortez
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	20	*
+2	sortez	sortir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 10
+# text = ah non la poste centrale elle est ici juste en sortant à gauche e ici
+1	ah	ah	INTJ	_	_	11	advcl	_	_	*	*	*
+2	non	non	ADV	_	_	1	advmod	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	21	2:21
+4	poste	poste	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	21	2:21
+5	centrale	central	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	21	2:21
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	appos	_	_	*	22	2:22
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+8	ici	ici	ADV	_	_	9	advmod	_	_	*	*	*
+9	juste	juste	ADV	_	_	11	advmod	_	_	*	*	*
+10	en	en	ADP	_	_	11	mark	_	_	*	*	*
+11	sortant	sortir	VERB	_	Tense=Pres|VerbForm=Part	0	root	_	_	*	*	*
+12	à	à	ADP	_	_	13	case	_	_	*	*	*
+13	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*	23	*
+14	e	e	CCONJ	_	_	11	advmod	_	_	*	*	*
+15	ici	ici	ADV	_	_	14	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 11
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 12
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 13
+# text = et si je vais à côté ils peuvent me donner le leur numéro
+1	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+2	si	si	SCONJ	_	_	4	mark	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	24	*
+4	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*	*	*
+5	à	à	ADP	_	_	6	case	_	_	*	*	*
+6	côté	côté	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	*	*
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_	*	25	4:25
+8	peuvent	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+9	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	10	iobj	_	_	1:IRV	26	*
+10	donner	donner	VERB	_	VerbForm=Inf	8	xcomp	_	_	1	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	*	*
+12	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	13	det	_	_	*	27	0:27
+13	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	SpacesAfter=\s\n\n	*	27	0:27
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 14
+# text = et ben je les ai joint voilà
+1	et	et	CCONJ	_	_	6	cc	_	_	*	*	*
+2	ben	ben	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	28	*
+4	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	6	obj	_	_	*	29	4:29
+5	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	joint	joindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	voilà	voilà	VERB	_	_	6	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0623.txt 15
+# text = merci beaucoup
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	beaucoup	beaucoup	ADV	_	_	1	advmod	_	SpacesAfter=\s\n	*	*	*
+

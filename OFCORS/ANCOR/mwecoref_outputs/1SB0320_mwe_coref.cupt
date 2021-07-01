@@ -1,0 +1,220 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0320.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 2
+# text = bonjour est ce que vous avez une liste d' agents immobiliers ou pour trouver un logement oui suffit de d' aller à la FNAIM rue Vicat la rue qui traverse le tramway derrière oui
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	0	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	1	*
+8	liste	liste	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	_	_	*	1	*
+9	d	de	ADP	_	_	11	case	_	SpaceAfter=No	*	1	*
+10	'	'	PUNCT	_	_	11	punct	_	_	*	1	*
+11	agents	agent	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	1;2	*
+12	immobiliers	immobilier	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*	1;2	*
+13	ou	ou	CCONJ	_	_	19	cc	_	_	*	*	*
+14	pour	pour	ADP	_	_	15	mark	_	_	*	*	*
+15	trouver	trouver	VERB	_	VerbForm=Inf	19	advcl	_	_	*	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	3	*
+17	logement	logement	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*	3	*
+18	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	19	obj	_	_	*	*	*
+19	suffit	suffire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_	*	*	*
+20	de	de	ADP	_	_	21	case	_	_	*	*	*
+21	d	d	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	SpaceAfter=No	*	*	*
+22	'	'	PUNCT	_	_	23	punct	_	_	*	*	*
+23	aller	aller	VERB	_	VerbForm=Inf	19	conj	_	_	*	*	*
+24	à	à	ADP	_	_	26	case	_	_	*	*	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	4	6:4
+26	FNAIM	Fnaim	PROPN	_	_	23	obl:arg	_	_	*	4	6:4
+27	rue	rue	NOUN	_	Gender=Fem|Number=Sing	26	flat:name	_	_	*	5	0:5
+28	Vicat	Vicat	PROPN	_	_	26	flat:name	_	_	*	5;6	0:5;7:6
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*	7	0:7
+30	rue	rue	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*	7	0:7
+31	qui	qui	PRON	_	PronType=Rel	32	nsubj	_	_	*	8	0:8
+32	traverse	traverser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	_	_	*	*	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	9	3:9
+34	tramway	tramway	NOUN	_	Gender=Masc|Number=Sing	32	obj	_	_	*	9	3:9
+35	derrière	derrière	ADP	_	_	36	case	_	_	*	*	*
+36	oui	oui	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 3
+# text = des agences immobilières
+1-2	des	_	_	_	_	_	_	_	_	*	*	*
+1	de	de	ADP	_	_	3	case	_	_	*	10	1:10
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*	10	1:10
+3	agences	agence	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	10	1:10
+4	immobilières	immobilier	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	SpacesAfter=\s\n\n	*	10	1:10
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 4
+# text = et ils répertorient eux e ils ont quatre-vingt pour cent des agences immobilières à leur fédération ça évite en fait de faire le tour de toutes les agences donc ils ont des listes gratuites faut aller les retirer c' est e rue Vicat c' est la petite rue qui est là qui est là
+1	et	et	CCONJ	_	_	3	cc	_	_	*	*	*
+2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	11	4:11
+3	répertorient	répertorier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	3	obj	_	_	*	12	4:12
+5	e	e	CCONJ	_	_	7	cc	_	_	*	*	*
+6	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_	*	13	4:13
+7	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	*	*
+8	quatre-vingt	quatre-vingt	NUM	_	_	7	obj	_	_	*	14	*
+9	pour	pour	ADP	_	_	10	case	_	_	*	14	*
+10	cent	cent	NUM	_	_	7	obl	_	_	*	14	*
+11-12	des	_	_	_	_	_	_	_	_	*	*	*
+11	de	de	ADP	_	_	13	case	_	_	*	14;15	1:15
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*	14;15	1:15
+13	agences	agence	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	_	*	14;15	1:15
+14	immobilières	immobilier	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*	14;15	1:15
+15	à	à	ADP	_	_	17	case	_	_	*	*	*
+16	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*	16	*
+17	fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*	16	*
+18	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	19	nsubj	_	_	*	17	6:17
+19	évite	éviter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_	*	*	*
+20	en	en	ADP	_	_	19	advmod	_	_	*	*	*
+21	fait	fait	NOUN	_	Gender=Masc|Number=Sing	20	fixed	_	_	*	*	*
+22	de	de	ADP	_	_	23	mark	_	_	*	*	*
+23	faire	faire	VERB	_	VerbForm=Inf	20	xcomp	_	_	1:VID	*	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	1	18	*
+25	tour	tour	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	_	1	18	*
+26	de	de	ADP	_	_	29	case	_	_	*	*	*
+27	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	29	amod	_	_	*	19	1:19
+28	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_	*	19	1:19
+29	agences	agence	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*	19	1:19
+30	donc	donc	ADV	_	_	32	advmod	_	_	*	*	*
+31	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	32	nsubj	_	_	*	20	4:20
+32	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_	*	*	*
+33-34	des	_	_	_	_	_	_	_	_	*	*	*
+33	de	de	ADP	_	_	35	case	_	_	*	21	2:21
+34	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*	21	2:21
+35	listes	liste	NOUN	_	Gender=Fem|Number=Plur	32	obl:arg	_	_	*	21	2:21
+36	gratuites	gratuit	ADJ	_	Gender=Fem|Number=Plur	35	amod	_	_	*	21	2:21
+37	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	advcl	_	_	*	*	*
+38	aller	aller	VERB	_	VerbForm=Inf	37	ccomp	_	_	*	*	*
+39	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	40	obj	_	_	*	22	2:22
+40	retirer	retirer	VERB	_	VerbForm=Inf	38	xcomp	_	_	*	*	*
+41	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	45	nsubj	_	SpaceAfter=No	*	23	6:23
+42	'	'	PUNCT	_	_	41	punct	_	_	*	23	6:23
+43	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	cop	_	_	*	*	*
+44	e	e	CCONJ	_	_	45	cc	_	_	*	*	*
+45	rue	rue	NOUN	_	Gender=Fem|Number=Sing	40	parataxis	_	_	*	24	0:24
+46	Vicat	Vicat	PROPN	_	_	40	appos	_	_	*	24;25	0:24;7:25
+47	c	ce	X	_	_	46	flat:name	_	SpaceAfter=No	*	26	0:26
+48	'	'	PUNCT	_	_	46	punct	_	_	*	26	0:26
+49	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	cop	_	_	*	*	*
+50	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_	*	27	0:27
+51	petite	petit	ADJ	_	Gender=Fem|Number=Sing	52	amod	_	_	*	27	0:27
+52	rue	rue	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*	27	0:27
+53	qui	qui	PRON	_	PronType=Rel	58	nsubj	_	_	*	28	0:28
+54	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	58	aux:tense	_	_	*	*	*
+55	là	là	ADV	_	_	58	advmod	_	_	*	*	*
+56	qui	qui	PRON	_	PronType=Rel	58	nsubj	_	_	*	29	0:29
+57	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	58	cop	_	_	*	*	*
+58	là	là	ADV	_	_	52	acl:relcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 5
+# text = c' est la rue qui passe là
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	30	0:30
+2	'	'	PUNCT	_	_	1	punct	_	_	*	30	0:30
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	31	0:31
+5	rue	rue	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	31	0:31
+6	qui	qui	PRON	_	PronType=Rel	7	nsubj	_	_	*	32	0:32
+7	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+8	là	là	ADV	_	_	7	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 6
+# text = voilà voilà la rue qui coupe le tramway là voilà ils sont ils sont à
+1	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+2	voilà	voilà	VERB	_	_	1	xcomp	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	33	0:33
+4	rue	rue	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	33	0:33
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*	34	0:34
+6	coupe	couper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	35	3:35
+8	tramway	tramway	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	35	3:35
+9	là	là	ADV	_	_	2	advmod	_	_	*	*	*
+10	voilà	voilà	VERB	_	_	15	mark	_	_	*	*	*
+11	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_	*	36	4:36
+12	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+13	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	expl:subj	_	_	*	37	4:37
+14	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+15	à	à	ADP	_	_	1	ccomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 7
+# text = je vais ils sont trois par là et passent là bas
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	38	*
+2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_	*	39	4:39
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+5	trois	trois	NUM	_	_	2	ccomp	_	_	*	*	*
+6	par	par	ADP	_	_	7	case	_	_	*	*	*
+7	là	là	ADV	_	_	5	nmod	_	_	*	*	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+9	passent	passer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*	*	*
+10	là	là	ADV	_	_	9	advmod	_	_	*	*	*
+11	bas	bas	ADJ	_	Gender=Masc|Number=Sing	9	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 8
+# text = voilà vous faites le tour hop du de du Crédit Agricole vous traversez la voie du tram vous êtes rue Vicat et c' est marqué TAI T A I TAI trente-huit en symboles en logo et c' est là
+1	voilà	voilà	VERB	_	_	3	advcl	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	40	*
+3	faites	faire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	advcl	_	_	1:VID	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	1	41	*
+5	tour	tour	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	1	41	*
+6	hop	hop	NOUN	_	_	5	appos	_	_	*	*	*
+7-8	du	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	*	*
+9	de	de	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	*	*
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	42	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	42	*
+12	Crédit	Crédit	PROPN	_	_	9	nmod	_	_	*	42	*
+13	Agricole	agricole	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*	42	*
+14	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	nsubj	_	_	*	43	*
+15	traversez	traverser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	29	nsubj:pass	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	44	*
+17	voie	voie	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*	44	*
+18-19	du	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	44;45	3:45
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	44;45	3:45
+20	tram	tram	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*	44;45	3:45
+21	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	23	nsubj	_	_	*	46	*
+22	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	23	cop	_	_	*	*	*
+23	rue	rue	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	_	*	47	0:47
+24	Vicat	Vicat	PROPN	_	_	23	appos	_	_	*	47;48	0:47;7:48
+25	et	et	CCONJ	_	_	26	cc	_	_	*	*	*
+26	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	23	conj	_	SpaceAfter=No	*	*	*
+27	'	'	PUNCT	_	_	26	punct	_	_	*	*	*
+28	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	_	_	*	*	*
+29	marqué	marquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+30	TAI	tai	PROPN	_	_	29	xcomp	_	_	*	49	5:49
+31	T	T	PROPN	_	_	30	flat:name	_	_	*	*	*
+32	A	A	ADP	_	_	33	case	_	_	*	*	*
+33	I	I	NUM	_	_	30	nmod	_	_	*	*	*
+34	TAI	tai	PROPN	_	_	30	appos	_	_	*	50	5:50
+35	trente-huit	trente-huit	NUM	_	_	34	nmod	_	_	*	50	5:50
+36	en	en	ADP	_	_	37	case	_	_	*	*	*
+37	symboles	symbole	NOUN	_	Gender=Masc|Number=Plur	30	nmod	_	_	*	51	*
+38	en	en	ADP	_	_	39	case	_	_	*	*	*
+39	logo	logo	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	52	*
+40	et	et	CCONJ	_	_	41	cc	_	_	*	*	*
+41	c	ce	X	_	_	30	conj	_	SpaceAfter=No	*	53	6:53
+42	'	'	PUNCT	_	_	41	punct	_	_	*	53	6:53
+43	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	cop	_	_	*	*	*
+44	là	là	ADV	_	_	29	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 9
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0320.txt 10
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

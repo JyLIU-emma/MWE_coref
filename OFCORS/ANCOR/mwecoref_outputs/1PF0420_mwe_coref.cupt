@@ -1,0 +1,70 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0420.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0420.txt 1
+# text = je voudrais savoir quel bus faut prendre pour aller jusqu' à Meylan
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	savoir	savoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	quel	quel	DET	_	Gender=Masc|Number=Sing	5	det	_	_	*	1	1:1
+5	bus	bus	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	1	1:1
+6	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*	*	*
+7	prendre	prendre	VERB	_	VerbForm=Inf	6	ccomp	_	_	*	*	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*	*	*
+9	aller	aller	VERB	_	VerbForm=Inf	7	advcl	_	_	*	*	*
+10	jusqu'	jusque	ADV	_	_	12	advmod	_	_	*	*	*
+11	à	à	ADP	_	_	12	case	_	_	*	*	*
+12	Meylan	Meylan	PROPN	_	_	9	obl:arg	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0420.txt 2
+# text = alors vous allez voir la TAG mademoiselle parce que e je veux pas vous dire de bêtises je crois que c' est le quarante-et-un hein vous leur demandez voyez c' est ils ont carrément des plans là bas hein ma collègue Prénom va vous dire ça
+1	alors	alors	ADV	_	_	3	advmod	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	3	*
+3	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	35	advcl	_	_	*	*	*
+4	voir	voir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	4	*
+6	TAG	Tag	PROPN	_	_	4	obj	_	_	*	4	*
+7	mademoiselle	mademoisel	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	5	*
+8	parce	parce	ADV	_	_	12	mark	_	_	*	*	*
+9	que	que	SCONJ	_	_	8	fixed	_	_	*	*	*
+10	e	e	CCONJ	_	_	12	cc	_	_	*	*	*
+11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_	*	6	*
+12	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	advcl	_	_	1:VID	*	*
+13	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	_	*	*	*
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*	7	*
+15	dire	dire	VERB	_	VerbForm=Inf	12	xcomp	_	_	1	*	*
+16	de	de	ADP	_	_	17	case	_	_	*	8	*
+17	bêtises	bêtise	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	_	_	*	8	*
+18	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_	*	9	*
+19	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_	*	*	*
+20	que	que	SCONJ	_	_	26	mark	_	_	*	*	*
+21	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	26	nsubj	_	SpaceAfter=No	*	10	1:10
+22	'	'	PUNCT	_	_	21	punct	_	_	*	10	1:10
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	_	*	*	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*	11	*
+25	quarante-et-un	quarante-et-un	NUM	_	_	26	nummod	_	_	*	11	*
+26	hein	hein	NOUN	_	Gender=Masc|Number=Sing	19	ccomp	_	_	*	*	*
+27	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	29	nsubj	_	_	*	12	*
+28	leur	lui	PRON	_	Number=Plur|Person=3|PronType=Prs	29	iobj	_	_	*	13	0:13
+29	demandez	demander	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	26	acl:relcl	_	_	*	*	*
+30	voyez	voire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	29	xcomp	_	_	*	*	*
+31	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	30	obj	_	SpaceAfter=No	*	*	*
+32	'	'	PUNCT	_	_	31	punct	_	_	*	*	*
+33	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	_	*	*	*
+34	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	nsubj	_	_	*	14	0:14
+35	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+36	carrément	carrément	NOUN	_	Gender=Masc|Number=Sing	35	obj	_	_	*	*	*
+37-38	des	_	_	_	_	_	_	_	_	*	*	*
+37	de	de	ADP	_	_	39	case	_	_	*	15	*
+38	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_	*	15	*
+39	plans	plan	NOUN	_	Gender=Masc|Number=Plur	36	nmod	_	_	*	15	*
+40	là	là	ADV	_	_	41	advmod	_	_	*	*	*
+41	bas	bas	ADJ	_	Gender=Masc|Number=Sing	42	amod	_	_	*	*	*
+42	hein	hein	NOUN	_	Gender=Masc|Number=Sing	39	nmod	_	_	*	*	*
+43	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	44	det	_	_	*	16	*
+44	collègue	collègue	NOUN	_	Gender=Fem|Number=Sing	46	nsubj	_	_	*	16;17	*
+45	Prénom	prénom	PROPN	_	_	44	appos	_	_	*	16;17	*
+46	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	parataxis	_	_	*	*	*
+47	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	48	iobj	_	_	*	18	*
+48	dire	dire	VERB	_	VerbForm=Inf	46	xcomp	_	_	*	*	*
+49	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	35	nsubj	_	SpacesAfter=\s\n	*	19	1:19
+

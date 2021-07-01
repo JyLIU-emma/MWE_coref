@@ -1,0 +1,46 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0418.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0418.txt 1
+# text = je voudrais un plan des pistes cyclables de Grenoble s' il vous plaît
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	1	*
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	1	*
+5-6	des	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	1;2	0:2
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*	1;2	0:2
+7	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*	1;2	0:2
+8	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	7	amod	_	_	*	1;2	0:2
+9	de	de	ADP	_	_	10	case	_	_	*	1;2	0:2
+10	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	_	*	1;2;3	0:2;1:3
+11	s	s	X	_	_	10	flat:name	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	15	punct	_	_	*	*	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*	*	*
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*	*	*
+15	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0418.txt 2
+# text = pistes cyclables de Grenoble voilà
+1	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_	*	4	0:4
+2	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	_	*	4	0:4
+3	de	de	ADP	_	_	4	case	_	_	*	4	0:4
+4	Grenoble	Grenoble	PROPN	_	_	1	nmod	_	_	*	4;5	0:4;1:5
+5	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0418.txt 3
+# text = ok merci bien
+1	ok	ok	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+3	bien	bien	ADV	_	_	2	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0418.txt 4
+# text = je vous en prie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	6	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	7	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,83 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2SB0165.txt
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 2
+# text = je veux savoir si vous avez des plans de Grenoble et de la fac
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	0	*
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	savoir	savoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	si	si	SCONJ	_	_	6	mark	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	1	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	_	*	*	*
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	2;3	0:3
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*	2;3	0:3
+9	plans	plan	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	_	*	2;3	0:3
+10	de	de	ADP	_	_	11	case	_	_	*	3	0:3
+11	Grenoble	Grenoble	PROPN	_	_	9	nmod	_	_	*	3;4	0:3;3:4
+12	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	5	1:5
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	5	1:5
+15	fac	fac	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	SpacesAfter=\s\n\n	*	5	1:5
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 3
+# text = et de la
+1	et	et	CCONJ	_	_	3	cc	_	_	*	*	*
+2	de	de	ADP	_	_	3	case	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 4
+# text = et de la fac
+1	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+2	de	de	ADP	_	_	4	case	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	6	1:6
+4	fac	fac	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	6	1:6
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 5
+# text = là plan de Grenoble et de la fac on va tenter là vous en avez un ici
+1	là	là	ADV	_	_	2	advmod	_	_	*	*	*
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	7	0:7
+3	de	de	ADP	_	_	4	case	_	_	*	7	0:7
+4	Grenoble	Grenoble	PROPN	_	_	2	nmod	_	_	*	7;8	0:7;3:8
+5	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	9	1:9
+8	fac	fac	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	_	*	9	1:9
+9	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	10	nsubj	_	_	*	10	*
+10	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+11	tenter	tenter	VERB	_	VerbForm=Inf	10	xcomp	_	_	*	*	*
+12	là	là	ADV	_	_	11	advmod	_	_	*	*	*
+13	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	11	obj	_	_	*	11	*
+14	en	en	PRON	_	Person=3	15	iobj	_	_	1:VID	12	2:12
+15	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	conj	_	_	1	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	advmod	_	_	*	*	*
+17	ici	ici	ADV	_	_	16	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 6
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 7
+# text = voilà merci
+1	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+2	merci	merci	INTJ	_	_	1	nsubj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 8
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0165.txt 9
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,28 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0223.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0223.txt 1
+# text = la rue Stendhal s' il vous plaît
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	0	0:0
+2	rue	rue	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	0	0:0
+3	Stendhal	Stendhal	PROPN	_	_	2	appos	_	_	*	0;1	0:0;1:1
+4	s	s	X	_	_	3	flat:name	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*	*	*
+7	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	8	iobj	_	_	*	*	*
+8	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0223.txt 2
+# text = e la rue Beyle Stendhal elle est derrière
+1	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	2	0:2
+3	rue	rue	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	2	0:2
+4	Beyle	Beyle	PROPN	_	_	3	appos	_	_	*	2;3	0:2;1:3
+5	Stendhal	Stendhal	PROPN	_	_	4	flat:name	_	_	*	2;3	0:2;1:3
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nmod	_	_	*	4	0:4
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+8	derrière	derrière	ADJ	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0223.txt 3
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

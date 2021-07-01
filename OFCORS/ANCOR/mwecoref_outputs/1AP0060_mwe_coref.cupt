@@ -1,0 +1,110 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0060.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 1
+# text = je cherche e l' E N S G I l' école de groupement I N P G ça ça doit être une école du centre ville mais e
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	e	e	CCONJ	_	_	10	cc	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	_	*	1	0:1
+5	E	E	X	_	_	10	nmod	_	_	*	1	0:1
+6	N	N	X	_	_	5	flat:foreign	_	_	*	1	0:1
+7	S	S	X	_	_	5	flat:foreign	_	_	*	1	0:1
+8	G	G	X	_	_	5	flat:foreign	_	_	*	1	0:1
+9	I	I	NUM	_	_	5	nmod	_	_	*	1	0:1
+10	l	litre	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No	*	2	0:2
+11	'	'	PUNCT	_	_	12	punct	_	_	*	2	0:2
+12	école	école	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*	2	0:2
+13	de	de	ADP	_	_	14	case	_	_	*	2	0:2
+14	groupement	groupement	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	2;3	0:2
+15	I	I	NUM	_	_	14	nmod	_	_	*	2;3;4	0:2
+16	N	N	X	_	_	12	appos	_	_	*	2;3;4	0:2
+17	P	p	X	_	_	16	flat:foreign	_	_	*	2;3;4	0:2
+18	G	G	X	_	_	16	flat:foreign	_	_	*	2;3;4	0:2
+19	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nmod	_	_	*	*	*
+20	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	nsubj	_	_	*	5	0:5
+21	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_	*	*	*
+22	être	être	AUX	_	VerbForm=Inf	24	cop	_	_	*	*	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*	6	0:6
+24	école	école	NOUN	_	Gender=Fem|Number=Sing	21	xcomp	_	_	*	6	0:6
+25-26	du	_	_	_	_	_	_	_	_	*	*	*
+25	de	de	ADP	_	_	27	case	_	_	*	6;7	0:6
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*	6;7	0:6
+27	centre	centre	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	_	*	6;7	0:6
+28	ville	ville	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	_	*	6;7	0:6
+29	mais	mais	CCONJ	_	_	30	cc	_	_	*	*	*
+30	e	e	CCONJ	_	_	21	conj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 2
+# text = alors on est là
+1	alors	alors	ADV	_	_	4	advmod	_	_	*	*	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	1	fixed	_	_	*	8	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	là	là	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 3
+# text = hum hum
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	hum	hum	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 4
+# text = et c' est l' avenue Felix Viallet elle est ici c' est celle qui mène sur la gare au numéro quarante-sept à peu près par là
+1	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*	9	0:9
+3	'	'	PUNCT	_	_	2	punct	_	_	*	9	0:9
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+5	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	10	1:10
+6	'	'	PUNCT	_	_	7	punct	_	_	*	10	1:10
+7	avenue	avenue	NOUN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*	10	1:10
+8	Felix	Felix	PROPN	_	_	7	appos	_	_	*	10;11	1:10
+9	Viallet	Viallet	PROPN	_	_	8	flat:name	_	_	*	10;11	1:10
+10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_	*	12	1:12
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
+12	ici	ici	ADV	_	_	13	advmod	_	_	*	*	*
+13	c	ce	ADJ	_	Gender=Masc|Number=Sing	7	acl:relcl	_	SpaceAfter=No	*	*	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*	*	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+16	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_	*	13	1:13
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	14	1:14
+18	mène	mener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	*	*	*
+19	sur	sur	ADP	_	_	21	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	15	*
+21	gare	gare	NOUN	_	Gender=Fem|Number=Sing	18	obl	_	_	*	15	*
+22-23	au	_	_	_	_	_	_	_	_	*	*	*
+22	à	à	ADP	_	_	24	case	_	_	*	16	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	16	*
+24	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*	16	*
+25	quarante-sept	quarante-sept	NUM	_	_	24	nmod	_	_	*	16	*
+26	à	à	ADP	_	_	27	case	_	_	*	*	*
+27	peu	peu	ADV	_	_	21	nmod	_	_	*	*	*
+28	près	près	ADV	_	_	27	advmod	_	_	*	*	*
+29	par	par	ADP	_	_	30	case	_	_	*	*	*
+30	là	là	ADV	_	_	18	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 5
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 6
+# text = hop
+1	hop	hop	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 7
+# text = ça marche merci
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_	*	*	*
+2	marche	marche	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	merci	merci	INTJ	_	_	2	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0060.txt 8
+# text = bonne journée monsieur merci bonjour au revoir
+1	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	17	*
+2	journée	journée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	17	*
+3	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	18	*
+4	merci	merci	INTJ	_	_	5	case	_	_	*	*	*
+5	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	2	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*	*	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	6	fixed	_	SpacesAfter=\s\n	*	*	*
+

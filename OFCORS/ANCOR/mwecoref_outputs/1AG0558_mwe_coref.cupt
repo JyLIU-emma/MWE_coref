@@ -1,0 +1,37 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0558.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0558.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0558.txt 2
+# text = bonjour e j' ai vu un prospectus sur la carte " tabou "
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	*	*
+2	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+3	j	j	X	_	_	1	conj	_	SpaceAfter=No	*	0	*
+4	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+5	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	1	*
+8	prospectus	prospectus	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	1	*
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	2	*
+11	carte	carte	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	_	*	2	*
+12	"	"	PUNCT	_	_	13	punct	_	_	*	2	*
+13	tabou	tabou	NOUN	_	Gender=Masc|Number=Sing	11	appos	_	_	*	2	*
+14	"	"	PUNCT	_	_	13	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0558.txt 3
+# text = à côté à la billetterie c' est avec cette personne
+1	à	à	ADP	_	_	11	advmod	_	_	*	*	*
+2	côté	côté	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	3	*
+5	billetterie	billetterie	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*	3	*
+6	c	ce	X	_	_	5	appos	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+9	avec	avec	ADP	_	_	11	case	_	_	*	*	*
+10	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_	*	4	*
+11	personne	personne	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*	4	*
+

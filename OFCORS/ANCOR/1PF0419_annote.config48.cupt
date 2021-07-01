@@ -1,0 +1,47 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1PF0419.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0419.txt 1
+# text = bonjour madame
+1	bonjour	bonjour	INTJ	_	_	2	amod	_	_	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0419.txt 2
+# text = bonjour les tarifs S N C F e Grenoble Paris
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	tarifs	tarif	NOUN	_	Gender=Masc|Number=Plur	1	nmod	_	_	*
+4	S	S	X	_	_	3	appos	_	_	*
+5	N	N	X	_	_	4	flat:foreign	_	_	*
+6	C	C	X	_	_	4	flat:foreign	_	_	*
+7	F	F	X	_	_	4	flat:foreign	_	_	*
+8	e	e	CCONJ	_	_	9	cc	_	_	*
+9	Grenoble	Grenoble	PROPN	_	_	4	conj	_	_	*
+10	Paris	Paris	PROPN	_	_	9	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0419.txt 3
+# text = alors il faut aller au bout madame sur la gauche c' est la S N C F
+1	alors	alors	ADV	_	_	3	advmod	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+3	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	aller	aller	VERB	_	VerbForm=Inf	3	ccomp	_	_	2:VID
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	2
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	2
+7	bout	bout	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	2
+8	madame	madame	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*
+9	sur	sur	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	_	*
+12	c	ce	X	_	_	11	appos	_	SpaceAfter=No	*
+13	'	'	PUNCT	_	_	11	punct	_	_	*
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*
+16	S	S	X	_	_	3	nsubj	_	_	*
+17	N	N	X	_	_	16	appos	_	_	*
+18	C	C	X	_	_	17	flat:foreign	_	_	*
+19	F	F	X	_	_	17	flat:foreign	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0419.txt 4
+# text = désolé
+1	désolé	désoler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n	*
+

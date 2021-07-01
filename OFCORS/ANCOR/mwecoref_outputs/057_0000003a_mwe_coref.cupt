@@ -1,0 +1,423 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 057_0000003a.txt
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*	0	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*	0	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*	0	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 2
+# text = oui bonjour madame excusez- moi de vous déranger en fait je suis étudiant et en fait j' aurais voulu savoir e les formations qui e qu' il y avait au niveau des troisièmes cycles avec le nouveau master qui va se mettre en place en gestion en fait ce que vous aviez
+1	oui	oui	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	*	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	*	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	1	*
+4	excusez	excuser	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+5	-	-	PUNCT	_	_	6	punct	_	_	*	*	*
+6	moi	soi	PRON	_	Number=Sing|Person=1	4	obj	_	_	*	2	*
+7	de	de	ADP	_	_	9	mark	_	_	*	*	*
+8	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	iobj	_	_	*	3	*
+9	déranger	déranger	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+10	en	en	ADP	_	_	14	advmod	_	_	*	*	*
+11	fait	fait	NOUN	_	Gender=Masc|Number=Sing	10	fixed	_	_	*	*	*
+12	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_	*	4	*
+13	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	cop	_	_	*	*	*
+14	étudiant	étudiant	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*	5	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+16	en	en	ADP	_	_	17	case	_	_	*	*	*
+17	fait	fait	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*	*	*
+18	j	j	X	_	_	17	nmod	_	SpaceAfter=No	*	6	*
+19	'	'	PUNCT	_	_	21	punct	_	_	*	6	*
+20	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*	*	*
+21	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	parataxis	_	_	*	*	*
+22	savoir	savoir	VERB	_	VerbForm=Inf	21	xcomp	_	_	*	*	*
+23	e	e	CCONJ	_	_	25	cc	_	_	*	*	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*	7	0:7
+25	formations	formation	NOUN	_	Gender=Fem|Number=Plur	22	conj	_	_	*	7	0:7
+26	qui	qui	PRON	_	PronType=Rel	25	appos	_	_	*	*	*
+27	e	e	CCONJ	_	_	32	cc	_	_	*	*	*
+28	qu	que	SCONJ	_	_	32	mark	_	SpaceAfter=No	*	8	0:8
+29	'	'	PUNCT	_	_	32	punct	_	_	*	8	0:8
+30	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	expl:subj	_	_	1:VID	*	*
+31	y	y	PRON	_	_	32	expl:comp	_	_	1	*	*
+32	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	conj	_	_	1	*	*
+33-34	au	_	_	_	_	_	_	_	_	*	*	*
+33	à	à	ADP	_	_	35	case	_	_	*	9	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_	*	9	*
+35	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	32	obl:arg	_	_	*	9	*
+36-37	des	_	_	_	_	_	_	_	_	*	*	*
+36	de	de	ADP	_	_	38	case	_	_	*	9;10	*
+37	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_	*	9;10	*
+38	troisièmes	troisième	NOUN	_	Gender=Masc|Number=Plur	35	nmod	_	_	*	9;10	*
+39	cycles	cycle	ADJ	_	Gender=Masc|Number=Plur	38	amod	_	_	*	9;10	*
+40	avec	avec	ADP	_	_	43	case	_	_	*	*	*
+41	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_	*	11	1:11
+42	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	43	amod	_	_	*	11	1:11
+43	master	master	NOUN	_	Gender=Masc|Number=Sing	32	obl:mod	_	_	*	11	1:11
+44	qui	qui	PRON	_	PronType=Rel	45	nsubj	_	_	*	12	1:12
+45	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	csubj	_	_	*	*	*
+46	se	se	PRON	_	Person=3|PronType=Prs	47	obj	_	_	2:IRV	*	*
+47	mettre	mettre	VERB	_	VerbForm=Inf	45	xcomp	_	_	2	*	*
+48	en	en	ADP	_	_	49	case	_	_	*	*	*
+49	place	place	NOUN	_	Gender=Fem|Number=Sing	47	obl	_	_	*	*	*
+50	en	en	ADP	_	_	51	case	_	_	*	*	*
+51	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	47	obl	_	_	*	13	2:13
+52	en	en	ADP	_	_	54	advmod	_	_	*	*	*
+53	fait	fait	NOUN	_	Gender=Masc|Number=Sing	52	fixed	_	_	*	*	*
+54	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	47	obl	_	_	*	*	*
+55	que	que	PRON	_	PronType=Rel	57	obj	_	_	*	*	*
+56	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	57	nsubj	_	_	*	14	*
+57	aviez	avier	VERB	_	Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	54	acl:relcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 3
+# text = I- I U P sciences de gestion
+1	I-	I-	SYM	_	_	0	root	_	_	*	*	*
+2	I	I	NUM	_	_	1	nmod	_	_	*	15	3:15
+3	U	U	X	_	_	5	nmod	_	_	*	15	3:15
+4	P	p	X	_	_	5	nmod	_	_	*	15	3:15
+5	sciences	science	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	_	*	15;16	3:15;4:16
+6	de	de	ADP	_	_	7	case	_	_	*	15;16	3:15;4:16
+7	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	SpacesAfter=\s\n\n	*	15;16;17	3:15;4:16;2:17
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 4
+# text = comment
+1	comment	comment	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 5
+# text = I U P sciences de gestion
+1	I	I	NUM	_	_	2	nummod	_	_	*	18	3:18
+2	U	U	X	_	_	4	nsubj	_	_	*	18	3:18
+3	P	p	X	_	_	2	appos	_	_	*	18	3:18
+4	sciences	science	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	18;19	3:18;4:19
+5	de	de	ADP	_	_	6	case	_	_	*	18;19	3:18;4:19
+6	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpacesAfter=\s\n\n	*	18;19;20	3:18;4:19;2:20
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 6
+# text = non pour savoir ce que vous aviez en en master en fait
+1	non	non	ADV	_	_	3	advmod	_	_	*	*	*
+2	pour	pour	ADP	_	_	3	mark	_	_	*	*	*
+3	savoir	savoir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	_	*	*	*
+5	que	que	PRON	_	PronType=Rel	7	obj	_	_	*	*	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*	21	*
+7	aviez	avier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*	*	*
+8	en	en	ADP	_	_	10	mark	_	_	*	*	*
+9	en	en	PRON	_	Person=3	10	iobj	_	_	*	*	*
+10	master	master	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	22	9:22
+11	en	en	ADP	_	_	3	advmod	_	_	*	*	*
+12	fait	fait	NOUN	_	Gender=Masc|Number=Sing	11	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 7
+# text = oui conservez je vais vous passer je v- je vais vous passer une personne hein conservez
+1	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_	*	*	*
+2	conservez	conserver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	23	*
+4	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	iobj	_	_	*	24	*
+6	passer	passer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	obj	_	_	*	25	*
+8	v	v	X	_	_	7	flat:name	_	SpaceAfter=No	*	*	*
+9	-	-	PUNCT	_	_	11	punct	_	_	*	*	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*	26	*
+11	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*	*	*
+12	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	13	iobj	_	_	*	27	*
+13	passer	passer	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	28	*
+15	personne	personne	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*	28	*
+16	hein	hein	ADV	_	_	17	advmod	_	_	*	*	*
+17	conservez	conservoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	advcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 8
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 9
+# text = qu' est -ce qui fait où c' est que j' ai mis ma feuille c' est pas le S U I O qui peut les renseigner et c' est vous autrement oui est -ce que vous pouvez rappeler la semaine prochaine parce qu' ils n' ont pas eu toutes les informations e
+1	qu	que	SCONJ	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	_	*	*	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*	*	*
+6	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*	*	*
+7	où	où	ADV	_	PronType=Rel	10	advmod	_	_	*	*	*
+8	c	ce	X	_	_	10	nsubj	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	8	punct	_	_	*	*	*
+10	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_	*	*	*
+11	que	que	SCONJ	_	_	15	mark	_	_	*	*	*
+12	j	j	X	_	_	15	nsubj	_	SpaceAfter=No	*	29	*
+13	'	'	PUNCT	_	_	12	punct	_	_	*	29	*
+14	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+15	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	38	advcl	_	_	*	*	*
+16	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*	30	*
+17	feuille	feuille	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*	30	*
+18	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	23	nsubj	_	SpaceAfter=No	*	*	*
+19	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*	*	*
+21	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*	*	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	31	5:31
+23	S	S	NOUN	_	Gender=Masc|Number=Sing	38	nsubj	_	_	*	31	5:31
+24	U	U	X	_	_	23	appos	_	_	*	31	5:31
+25	I	I	NUM	_	_	24	nmod	_	_	*	31	5:31
+26	O	O	X	_	_	23	appos	_	_	*	31	5:31
+27	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*	32	5:32
+28	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_	*	*	*
+29	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	30	obj	_	_	*	33	*
+30	renseigner	renseigner	VERB	_	VerbForm=Inf	28	xcomp	_	_	*	*	*
+31	et	et	CCONJ	_	_	32	cc	_	_	*	*	*
+32	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	30	conj	_	SpaceAfter=No	*	*	*
+33	'	'	PUNCT	_	_	32	punct	_	_	*	*	*
+34	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	cop	_	_	*	*	*
+35	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	38	iobj	_	_	*	34	*
+36	autrement	autrement	ADV	_	_	38	advmod	_	_	*	*	*
+37	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_	*	*	*
+38	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_	*	*	*
+39	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	38	expl:subj	_	_	*	*	*
+40	que	que	SCONJ	_	_	43	mark	_	_	*	*	*
+41	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	43	nsubj:caus	_	_	*	35	*
+42	pouvez	pouvoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	43	aux:caus	_	_	*	*	*
+43	rappeler	rappeler	VERB	_	VerbForm=Inf	38	ccomp	_	_	*	*	*
+44	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_	*	36	*
+45	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	43	obj	_	_	*	36	*
+46	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	45	amod	_	_	*	36	*
+47	parce	parce	ADV	_	_	55	mark	_	_	*	*	*
+48	qu	que	SCONJ	_	_	47	fixed	_	SpaceAfter=No	*	*	*
+49	'	'	PUNCT	_	_	55	punct	_	_	*	*	*
+50	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	55	nsubj	_	_	*	37	*
+51	n	n	ADV	_	_	55	advmod	_	SpaceAfter=No	*	*	*
+52	'	'	PUNCT	_	_	51	punct	_	_	*	*	*
+53	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	55	aux:tense	_	_	*	*	*
+54	pas	pas	ADV	_	Polarity=Neg	55	advmod	_	_	*	*	*
+55	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	43	advcl	_	_	*	*	*
+56	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	58	amod	_	_	*	38	*
+57	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	58	det	_	_	*	38	*
+58	informations	information	NOUN	_	Gender=Fem|Number=Plur	55	obj	_	_	*	38	*
+59	e	e	CCONJ	_	_	55	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 10
+# text = d' accord parce que en fait les dates d' inscription c' est quand la clôture
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	*	*
+4	parce	parce	ADV	_	_	7	mark	_	_	*	*	*
+5	que	que	SCONJ	_	_	4	fixed	_	_	*	*	*
+6	en	en	PRON	_	Person=3	7	iobj	_	_	*	*	*
+7	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*	39	7:39
+9	dates	date	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	_	*	39	7:39
+10	d	de	ADP	_	_	15	mark	_	SpaceAfter=No	*	39	7:39
+11	'	'	PUNCT	_	_	15	punct	_	_	*	39	7:39
+12	inscription	inscription	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*	39;40	7:39;8:40
+13	c	c	X	_	_	12	appos	_	SpaceAfter=No	*	41	6:41
+14	'	'	PUNCT	_	_	13	punct	_	_	*	41	6:41
+15	est	et	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_	*	*	*
+16	quand	quand	SCONJ	_	_	18	case	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	42	6:42
+18	clôture	clôture	NOUN	_	Gender=Fem|Number=Sing	15	obl	_	SpacesAfter=\s\n\n	*	42	6:42
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 11
+# text = c' est pour les la date d' inscription c' est ça
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*	*	*
+4	pour	pour	ADP	_	_	7	case	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	43	7:43
+7	date	date	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	_	*	43	7:43
+8	d	de	ADP	_	_	10	case	_	SpaceAfter=No	*	43	7:43
+9	'	'	PUNCT	_	_	10	punct	_	_	*	43	7:43
+10	inscription	inscription	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	_	*	43;44	7:43;8:44
+11	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*	*	*
+14	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 12
+# text = e ouais pour s' inscrire par exemple s' il y a un master qui m' intéresse il y a un master qui l' intéresse et il voudrait s' inscrire e
+1	e	e	CCONJ	_	_	2	cc	_	_	*	*	*
+2	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+3	pour	pour	ADP	_	_	4	case	_	_	*	*	*
+4	s	s	NOUN	_	Gender=Masc|Number=Plur	2	obl	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+6	inscrire	inscrire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+7	par	par	ADP	_	_	6	advmod	_	_	*	*	*
+8	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	_	*	*	*
+9	s	s	X	_	_	6	obj	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	case	_	_	1:VID	*	*
+12	y	y	PRON	_	_	11	fixed	_	_	1	*	*
+13	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	fixed	_	_	1	*	*
+14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	45	9:45
+15	master	master	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	45	9:45
+16	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*	46	9:46
+17	m	m	NOUN	_	Gender=Masc|Number=Plur	19	obl:mod	_	SpaceAfter=No	*	47	*
+18	'	'	PUNCT	_	_	17	punct	_	_	*	47	*
+19	intéresse	intéresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	*	*	*
+20	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	case	_	_	*	*	*
+21	y	y	PRON	_	_	20	fixed	_	_	*	*	*
+22	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	fixed	_	_	*	*	*
+23	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	48	9:48
+24	master	master	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	48	9:48
+25	qui	qui	PRON	_	PronType=Rel	28	nsubj	_	_	*	49	9:49
+26	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	SpaceAfter=No	*	50	*
+27	'	'	PUNCT	_	_	28	punct	_	_	*	50	*
+28	intéresse	intéresse	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	_	*	*	*
+29	et	et	CCONJ	_	_	31	cc	_	_	*	*	*
+30	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	nsubj	_	_	*	51	*
+31	voudrait	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_	*	*	*
+32	s	s	X	_	_	34	obl:mod	_	SpaceAfter=No	*	*	*
+33	'	'	PUNCT	_	_	32	punct	_	_	*	*	*
+34	inscrire	inscrire	VERB	_	VerbForm=Inf	31	xcomp	_	_	*	*	*
+35	e	e	CCONJ	_	_	28	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 13
+# text = c' est quand la date but- la date butoir e S G E G oui
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*	52	6:52
+2	'	'	PUNCT	_	_	1	punct	_	_	*	52	6:52
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	quand	quand	ADV	_	_	6	advmod	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	53	6:53
+6	date	date	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	53	6:53
+7	but-	but-	PUNCT	_	_	9	punct	_	_	*	53	6:53
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	54	6:54
+9	date	date	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*	54	6:54
+10	butoir	butoir	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	54	6:54
+11	e	e	CCONJ	_	_	12	cc	_	_	*	*	*
+12	S	S	X	_	_	9	conj	_	_	*	55	10:55
+13	G	G	X	_	_	12	flat:foreign	_	_	*	55	10:55
+14	E	E	X	_	_	12	flat:foreign	_	_	*	55	10:55
+15	G	G	X	_	_	12	flat:foreign	_	_	*	55	10:55
+16	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 14
+# text = comment
+1	comment	comment	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 15
+# text = c' est en S- S G E G
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	en	en	ADP	_	_	5	case	_	_	*	*	*
+5	S-	s-	PROPN	_	_	0	root	_	_	*	*	*
+6	S	S	X	_	_	5	flat:name	_	_	*	56	10:56
+7	G	G	X	_	_	5	flat:name	_	_	*	56	10:56
+8	E	E	X	_	_	5	flat:name	_	_	*	56	10:56
+9	G	G	X	_	_	5	flat:name	_	SpacesAfter=\s\n\n	*	56	10:56
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 16
+# text = ça veux dire quoi S
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	_	*	57	11:57
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID	*	*
+3	dire	dire	VERB	_	VerbForm=Inf	2	xcomp	_	_	1	*	*
+4	quoi	quoi	PRON	_	_	3	obj	_	_	*	*	*
+5	S	S	PROPN	_	_	4	flat:name	_	SpacesAfter=\s\n\n	*	58	11:58
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 17
+# text = en droit
+1	en	en	ADP	_	_	2	case	_	_	*	*	*
+2	droit	droit	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	59	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 18
+# text = c' est en économie gestion en fait
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	en	en	ADP	_	_	5	case	_	_	*	*	*
+5	économie	économie	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*	60	12:60
+6	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	61	2:61
+7	en	en	ADP	_	_	6	fixed	_	_	*	*	*
+8	fait	fait	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 19
+# text = économie et gestion donc
+1	économie	économie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	62;63	12:63
+2	et	et	CCONJ	_	_	3	cc	_	_	*	62	*
+3	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	_	*	62;64	2:64
+4	donc	donc	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 20
+# text = je voulais e savoir ce qu' il y avait en fait comme offre de formation
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	65	*
+2	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+3	e	e	CCONJ	_	_	4	cc	_	_	*	*	*
+4	savoir	savoir	VERB	_	VerbForm=Inf	2	conj	_	_	*	*	*
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_	*	*	*
+6	qu	qu	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	10	punct	_	_	*	*	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl:subj	_	_	1:VID	*	*
+9	y	y	PRON	_	_	10	expl:comp	_	_	1	*	*
+10	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	parataxis	_	_	1	*	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	fait	fait	NOUN	_	Gender=Masc|Number=Sing	10	obl	_	_	*	*	*
+13	comme	comme	ADP	_	_	14	case	_	_	*	*	*
+14	offre	offre	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*	66	*
+15	de	de	ADP	_	_	16	case	_	_	*	66	*
+16	formation	formation	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpacesAfter=\s\n\n	*	66;67	0:67
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 21
+# text = oui ben conservez je vais vous passer une autre personne hein
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	conservez	conserver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	68	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*	*	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	*	69	*
+7	passer	passer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	70	13:70
+9	autre	autre	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*	70	13:70
+10	personne	personne	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*	70	13:70
+11	hein	hein	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 22
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 23
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 24
+# text = il doit peut- être savoir qui est ce qui pourrait me oui à tout à l' heure oui
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	*	71	13:71
+2	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	peut-	peut-	ADV	_	_	2	advmod	_	_	*	*	*
+4	être	être	AUX	_	VerbForm=Inf	5	aux:caus	_	_	*	*	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+6	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	72	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+8	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	ccomp	_	_	*	*	*
+9	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*	*	*
+10	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+11	me	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	12	expl:comp	_	_	*	73	*
+12	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	xcomp	_	_	*	*	*
+13	à	à	ADP	_	_	14	case	_	_	*	*	*
+14	tout	tout	PRON	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	*	*
+15	à	à	ADP	_	_	18	case	_	_	*	*	*
+16	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*	*	*
+17	'	'	PUNCT	_	_	16	punct	_	_	*	*	*
+18	heure	heure	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	*	*
+19	oui	oui	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 25
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 26
+# text = oui je te passe une communication
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	4	advcl	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	74	*
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	_	*	75	*
+4	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	76	*
+6	communication	communication	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	SpacesAfter=\s\n\n	*	76	*
+
+# source_sent_id = http://my/newcorpus/uri 057_0000003a.txt 27
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

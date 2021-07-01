@@ -1,0 +1,51 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0308.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0308.txt 1
+# text = est ce que vous auriez des prospectus sur le musée Dauphinois
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	SpacesBefore=\n\n	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	0	*
+5	auriez	avoir	VERB	_	Mood=Cnd|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	1	0:1
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	1	0:1
+8	prospectus	prospectu	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*	1	0:1
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	2	*
+11	musée	musée	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	2	*
+12	Dauphinois	Dauphinois	PROPN	_	_	11	appos	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0308.txt 2
+# text = ah juste un petit dépliant une petite plaquette c' est tout
+1	ah	ah	INTJ	_	_	12	nsubj	_	_	*	*	*
+2	juste	juste	ADV	_	_	5	advmod	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	3	0:3
+4	petit	petit	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	3	0:3
+5	dépliant	dépliant	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	3	0:3
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	4	0:4
+7	petite	petit	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*	4	0:4
+8	plaquette	plaquette	NOUN	_	Gender=Fem|Number=Sing	5	appos	_	_	*	4	0:4
+9	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	appos	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	9	punct	_	_	*	*	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+12	tout	tout	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0308.txt 3
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0308.txt 4
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	5	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	6	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0308.txt 5
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

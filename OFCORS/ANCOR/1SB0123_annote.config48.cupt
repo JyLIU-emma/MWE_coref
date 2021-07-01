@@ -1,0 +1,77 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0123.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 1
+# text = monsieur
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 2
+# text = est ce que vous auriez un plan de Saint-Pierre-de-Chartreuse
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*
+5	auriez	avoir	VERB	_	Mood=Cnd|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	plan	plan	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+8	de	de	ADP	_	_	9	case	_	_	*
+9	Saint-Pierre-de-Chartreuse	Saint-Pierre-de-Chartreuse	PROPN	_	_	7	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 3
+# text = un plan de Saint-Pierre-de-Chartreuse non
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+3	de	de	ADP	_	_	4	case	_	_	*
+4	Saint-Pierre-de-Chartreuse	Saint-Pierre-de-Chartreuse	PROPN	_	_	2	nmod	_	_	*
+5	non	non	ADV	_	Polarity=Neg	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 4
+# text = non vous n' avez pas ça
+1	non	non	ADV	_	Polarity=Neg	4	advmod	_	_	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*
+4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 5
+# text = Saint-Pierre c' est tellement petit
+1	Saint-Pierre	Saint-Pierre	PROPN	_	_	6	dislocated	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	tellement	tellement	ADV	_	_	6	advmod	_	_	*
+6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 6
+# text = ben je sais bien mais
+1	ben	ben	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*
+4	bien	bien	ADV	_	_	3	advmod	_	_	*
+5	mais	mais	CCONJ	_	_	3	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 7
+# text = j' ai pas je suis désolée
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*
+6	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	désolée	désoler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 8
+# text = merci au revoir
+1	merci	merci	INTJ	_	_	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	advmod	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+4	revoir	revoir	VERB	_	VerbForm=Inf	2	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0123.txt 9
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

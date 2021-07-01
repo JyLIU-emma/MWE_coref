@@ -1,0 +1,92 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0069.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 2
+# text = e je voudrais un plan des pistes cyclables
+1	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+3	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	1	0:1
+5	plan	plan	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	1	0:1
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	1;2	0:1
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	1;2	0:1
+8	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*	1;2	0:1
+9	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	SpacesAfter=\s\n\n	*	1;2	0:1
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 3
+# text = il y en a plus
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID	*	*
+2	y	y	PRON	_	_	4	expl:comp	_	_	1	*	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	2:VID	3	0:3
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1;2	*	*
+5	plus	plus	ADV	_	Polarity=Neg	4	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 4
+# text = il y en a plus
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	_	1:VID	*	*
+2	y	y	PRON	_	_	4	expl:comp	_	_	1	*	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	2:VID	4	0:4
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1;2	*	*
+5	plus	plus	ADV	_	Polarity=Neg	4	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 5
+# text = hum non et e la communauté de communes est tombée en rupture de stock ce qui veut dire que le temps qu' elle la le réédite il faut au moins un mois de délai
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	*	*
+2	non	non	ADV	_	_	4	advmod	_	_	*	*	*
+3	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+4	e	e	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	5	2:5
+6	communauté	communauté	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	5	2:5
+7	de	de	ADP	_	_	8	case	_	_	*	5	2:5
+8	communes	commune	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*	5;6	2:5
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	tombée	tomber	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	rupture	rupture	NOUN	_	Gender=Fem|Number=Sing	10	obl	_	_	*	7	*
+13	de	de	ADP	_	_	14	case	_	_	*	7	*
+14	stock	stock	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	7;8	*
+15	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	obj	_	_	*	*	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*	*	*
+17	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	2:VID	*	*
+18	dire	dire	VERB	_	VerbForm=Inf	17	xcomp	_	_	2	*	*
+19	que	que	SCONJ	_	_	29	mark	_	_	*	*	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	9	1:9
+21	temps	temps	NOUN	_	Gender=Masc|Number=Sing	29	obl:mod	_	_	*	9	1:9
+22	qu	que	SCONJ	_	_	27	mark	_	SpaceAfter=No	*	10	1:10
+23	'	'	PUNCT	_	_	27	punct	_	_	*	10	1:10
+24	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_	*	11	2:11
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	*	*
+26	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obj	_	_	*	12	0:12
+27	réédite	rééditer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	advcl	_	_	*	*	*
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	expl:subj	_	_	1:VID	*	*
+29	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	_	_	1	*	*
+30-31	au	_	_	_	_	_	_	_	_	*	*	*
+30	à	à	ADP	_	_	34	advmod	_	_	*	*	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	fixed	_	_	*	*	*
+32	moins	moins	ADV	_	_	30	fixed	_	_	*	*	*
+33	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	13	*
+34	mois	mois	NOUN	_	Gender=Masc|Number=Sing	29	obl	_	_	*	13	*
+35	de	de	ADP	_	_	36	case	_	_	*	13	*
+36	délai	délai	NOUN	_	Gender=Masc|Number=Sing	34	nmod	_	SpacesAfter=\s\n\n	*	13;14	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 6
+# text = d' accord ben je repasserai merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	*	*
+4	ben	ben	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	15	*
+6	repasserai	repasser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+7	merci	merci	INTJ	_	_	6	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0069.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

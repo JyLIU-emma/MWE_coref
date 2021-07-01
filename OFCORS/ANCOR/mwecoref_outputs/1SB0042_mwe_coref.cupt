@@ -1,0 +1,149 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0042.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 1
+# text = je pourrais avoir douze plans e de Grenoble différents
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	avoir	avoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	douze	douze	NUM	_	_	5	nummod	_	_	*	1;2	0:2
+5	plans	plan	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*	1;2	0:2
+6	e	e	SYM	_	_	8	cc	_	_	*	1;2	0:2
+7	de	de	ADP	_	_	8	case	_	_	*	1;2	0:2
+8	Grenoble	Grenoble	PROPN	_	_	5	conj	_	_	*	1;2;3	0:2
+9	différents	différent	ADJ	_	Gender=Masc|Number=Plur	2	xcomp	_	SpacesAfter=\s\n\n	*	2	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 2
+# text = douze plans non c' est c' est payant douze plans un plan oui douze ça devient payant
+1	douze	douze	NUM	_	_	2	nummod	_	_	*	4	*
+2	plans	plan	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*	4	*
+3	non	non	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+4	c	ce	X	_	_	2	appos	_	SpaceAfter=No	*	5	0:5
+5	'	'	PUNCT	_	_	4	punct	_	_	*	5	0:5
+6	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	_	_	*	*	*
+7	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*	6	0:6
+8	'	'	PUNCT	_	_	7	punct	_	_	*	6	0:6
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	payant	payer	VERB	_	Tense=Pres|VerbForm=Part	6	ccomp	_	_	*	*	*
+11	douze	douze	NUM	_	_	12	nummod	_	_	*	7	0:7
+12	plans	plan	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*	7	0:7
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	8	0:8
+14	plan	plan	NOUN	_	Gender=Masc|Number=Sing	12	appos	_	_	*	8	0:8
+15	oui	oui	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	_	*	*	*
+16	douze	douze	NUM	_	_	17	nummod	_	_	*	*	*
+17	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	appos	_	_	*	9	0:9
+18	devient	devenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+19	payant	payer	VERB	_	Tense=Pres|VerbForm=Part	18	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 3
+# text = ah et c' est combien les tarifs
+1	ah	ah	INTJ	_	_	8	nsubj	_	_	*	*	*
+2	et	et	CCONJ	_	_	3	cc	_	_	*	*	*
+3	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	conj	_	SpaceAfter=No	*	10	1:10
+4	'	'	PUNCT	_	_	3	punct	_	_	*	10	1:10
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+6	combien	combien	ADV	_	_	8	advmod	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	11	1:11
+8	tarifs	tarif	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpacesAfter=\s\n\n	*	11	1:11
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 4
+# text = c' est e deux francs le plan
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	12	1:12
+2	'	'	PUNCT	_	_	1	punct	_	_	*	12	1:12
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	e	e	SYM	_	_	0	root	_	_	*	*	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*	13	2:13
+6	francs	franc	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	13	2:13
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	14	0:14
+8	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	SpacesAfter=\s\n\n	*	14	0:14
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 5
+# text = deux francs le plan
+1	deux	deux	NUM	_	_	2	nummod	_	_	*	15	2:15
+2	francs	franc	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	15	2:15
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	16	0:16
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	16	0:16
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 6
+# text = hum je peux vous en laisser e deux trois mais pas pas autant hein
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	3	dislocated	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	17	*
+3	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obj	_	_	*	18	*
+5	en	en	PRON	_	Person=3	6	iobj	_	_	*	19	0:19
+6	laisser	laisser	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+7	e	e	SYM	_	_	6	xcomp	_	_	*	*	*
+8	deux	deux	NUM	_	_	9	nummod	_	_	*	*	*
+9	trois	trois	NUM	_	_	6	obl	_	_	*	*	*
+10	mais	mais	CCONJ	_	_	11	cc	_	_	*	*	*
+11	pas	pas	ADV	_	_	14	advmod	_	_	*	*	*
+12	pas	pas	ADV	_	_	13	advmod	_	_	*	*	*
+13	autant	autant	ADV	_	_	14	advmod	_	_	*	*	*
+14	hein	hein	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 7
+# text = ok ouais
+1	ok	ok	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 8
+# text = ok
+1	ok	ok	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 9
+# text = ok
+1	ok	ok	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 10
+# text = je laisse ça je peux pas vous en donner plus
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	20	*
+2	laisse	laisser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	parataxis	_	_	*	*	*
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obj	_	_	*	21	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	22	*
+5	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+7	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	obj	_	_	*	23	*
+8	en	en	PRON	_	Person=3	9	iobj	_	_	*	24	0:24
+9	donner	donner	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+10	plus	plus	ADV	_	_	5	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 11
+# text = ok ben merci hein
+1	ok	ok	ADV	_	_	2	advmod	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+3	merci	merci	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	hein	hein	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 12
+# text = vous revenez demain j' aurai oublié votre tête
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	25	*
+2	revenez	revenir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	demain	demain	ADV	_	_	2	advmod	_	_	*	*	*
+4	j	j	X	_	_	2	obj	_	SpaceAfter=No	*	26	*
+5	'	'	PUNCT	_	_	6	punct	_	_	*	26	*
+6	aurai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	4	acl	_	_	*	*	*
+7	oublié	oublier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*	*	*
+8	votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	_	*	27	*
+9	tête	tête	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	SpacesAfter=\s\n\n	*	27	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 13
+# text = ok ben merci
+1	ok	ok	ADV	_	_	2	advmod	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+3	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 14
+# text = hum hum au revoir
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	hum	hum	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3-4	au	_	_	_	_	_	_	_	_	*	*	*
+3	à	à	ADP	_	_	1	advmod	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	*	*	*
+5	revoir	revoir	VERB	_	VerbForm=Inf	3	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0042.txt 15
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

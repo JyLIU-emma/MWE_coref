@@ -1,0 +1,101 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0427.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 1
+# text = madame bonjour
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	0	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 2
+# text = bonjour on m' a dit qu' il avait été édité un guide des pistes cyclables
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*	1	*
+3	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	iobj	_	_	*	2	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl:relcl	_	_	*	*	*
+6	qu	que	SCONJ	_	_	11	mark	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj:pass	_	_	*	3	0:3
+9	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+10	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	aux:pass	_	_	*	*	*
+11	édité	éditer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	ccomp	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	4	0:4
+13	guide	guide	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*	4	0:4
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	4;5	0:4;1:5
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*	4;5	0:4;1:5
+16	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	13	nmod	_	_	*	4;5	0:4;1:5
+17	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	SpacesAfter=\s\n\n	*	4;5	0:4;1:5
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 3
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 4
+# text = si on met le trou dans les troupes
+1	si	si	SCONJ	_	_	3	mark	_	_	*	*	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*	6	*
+3	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	7	*
+5	trou	trou	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	7	*
+6	dans	dans	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	8	*
+8	troupes	troupe	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	SpacesAfter=\s\n\n	*	8	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 5
+# text = les pistes cyclables
+1	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_	*	9	1:9
+2	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	9	1:9
+3	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	SpacesAfter=\s\n\n	*	9	1:9
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 6
+# text = oui merci pourrais je en avoir d' autres non c' est pas possible
+1	oui	oui	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+3	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	obl	_	_	*	10	*
+5	en	en	PRON	_	Person=3	6	expl:comp	_	_	1:VID	11	0:11
+6	avoir	avoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	1	*	*
+7	d	de	ADP	_	_	9	case	_	SpaceAfter=No	*	12	0:12
+8	'	'	PUNCT	_	_	9	punct	_	_	*	12	0:12
+9	autres	autre	PRON	_	Number=Plur	15	obl:mod	_	_	*	12	0:12
+10	non	non	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+11	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	nsubj	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_	*	*	*
+14	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+15	possible	possible	ADJ	_	Gender=Masc|Number=Sing	6	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 7
+# text = deux e j' en ai plus qu' un alors e
+1	deux	deux	NUM	_	_	8	nsubj	_	_	*	*	*
+2	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+3	j	j	X	_	_	1	conj	_	SpaceAfter=No	*	13	*
+4	'	'	PUNCT	_	_	1	punct	_	_	*	13	*
+5	en	en	PRON	_	Person=3	8	iobj	_	_	*	14	0:14
+6	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+7	plus	plus	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+8	qu	qre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+11	alors	alors	ADV	_	_	12	advmod	_	_	*	*	*
+12	e	e	CCONJ	_	_	8	obj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 8
+# text = vous les donnez
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*	15	*
+2	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	3	obj	_	_	*	16	0:16
+3	donnez	donner	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 9
+# text = bon
+1	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0427.txt 10
+# text = il faudrait que vous repassiez madame
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID	*	*
+2	faudrait	falloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	que	que	SCONJ	_	_	5	mark	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	17	*
+5	repassiez	repassier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*	*	*
+6	madame	madame	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	SpacesAfter=\s\n	*	18	*
+

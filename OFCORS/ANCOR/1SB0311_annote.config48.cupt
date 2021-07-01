@@ -1,0 +1,126 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0311.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 2
+# text = bonjour ce serait pour un renseignement je cherche un appartement la semaine prochaine j' aimerais savoir quel jour sort " le 38 "
+1	bonjour	bonjour	INTJ	_	_	3	mark	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	*
+3	serait	être	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	pour	pour	ADP	_	_	6	case	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	renseignement	renseignement	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	appartement	appartement	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*
+13	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*
+14	j	je	X	_	_	10	appos	_	SpaceAfter=No	*
+15	'	'	PUNCT	_	_	16	punct	_	_	*
+16	aimerais	aimer	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	parataxis	_	_	*
+17	savoir	savoir	VERB	_	VerbForm=Inf	16	obl:mod	_	_	*
+18	quel	quel	DET	_	Gender=Masc|Number=Sing	19	det	_	_	*
+19	jour	jour	NOUN	_	Gender=Masc|Number=Sing	20	nsubj	_	_	*
+20	sort	sort	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_	*
+21	"	"	PUNCT	_	_	23	punct	_	_	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*
+23	38	38	NUM	_	_	20	obl	_	_	*
+24	"	"	PUNCT	_	_	23	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 3
+# text = " le 38 " nous est livré le lundi
+1	"	"	PUNCT	_	_	7	punct	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	38	38	NUM	_	_	7	nsubj	_	_	*
+4	"	"	PUNCT	_	_	3	punct	_	_	*
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	7	iobj	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	livré	livrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 4
+# text = ok c' est le lundi matin
+1	ok	ok	ADV	_	_	6	advmod	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+7	matin	matin	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 5
+# text = e matin ou après midi ça dépend un peu de leur tournée quoi c' est jamais e le la même heure quoi
+1	e	e	CCONJ	_	_	2	cc	_	_	*
+2	matin	matin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	ou	ou	CCONJ	_	_	7	cc	_	_	*
+4	après	après	ADP	_	_	5	case	_	_	*
+5	midi	midi	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*
+7	dépend	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	advmod	_	_	*
+9	peu	peu	ADV	_	_	8	fixed	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	tournée	tournée	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*
+13	quoi	quoi	PRON	_	PronType=Rel	22	dislocated	_	_	*
+14	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	22	nsubj	_	SpaceAfter=No	*
+15	'	'	PUNCT	_	_	14	punct	_	_	*
+16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_	*
+17	jamais	jamais	ADV	_	_	22	advmod	_	_	*
+18	e	e	CCONJ	_	_	22	cc	_	_	*
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*
+21	même	même	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*
+22	heure	heure	NOUN	_	Gender=Fem|Number=Sing	12	acl:relcl	_	_	*
+23	quoi	quoi	PRON	_	_	22	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 6
+# text = d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 7
+# text = il faut vraiment passer le lundi pour avoir " le 38 " hein parce que le lendemain on en a déjà plus hein
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	vraiment	vraiment	ADV	_	_	4	advmod	_	_	*
+4	passer	passer	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+6	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*
+7	pour	pour	ADP	_	_	8	mark	_	_	*
+8	avoir	avoir	VERB	_	VerbForm=Inf	4	advcl	_	_	*
+9	"	"	PUNCT	_	_	11	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	38	38	NUM	_	_	8	obj	_	_	*
+12	"	"	PUNCT	_	_	11	punct	_	_	*
+13	hein	hein	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*
+14	parce	parce	ADV	_	_	20	mark	_	_	*
+15	que	que	SCONJ	_	_	14	fixed	_	_	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*
+17	lendemain	lendemain	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*
+18	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_	*
+19	en	en	PRON	_	Person=3	20	expl:comp	_	_	2:VID
+20	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_	2
+21	déjà	déjà	ADV	_	_	22	advmod	_	_	*
+22	plus	plus	ADV	_	_	23	advmod	_	_	*
+23	hein	hein	ADJ	_	Gender=Masc|Number=Sing	20	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 8
+# text = ok merci
+1	ok	ok	ADV	_	_	2	advmod	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0311.txt 9
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

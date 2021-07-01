@@ -1,0 +1,42 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0450.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0450.txt 1
+# text = pardon je pourrais avoir un plan s' il vous plaît
+1	pardon	pardon	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+3	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*	*	*
+4	avoir	avoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	1	0:1
+6	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	1	0:1
+7	s	s	X	_	_	6	appos	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*	*	*
+10	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	11	iobj	_	_	*	*	*
+11	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0450.txt 2
+# text = un plan
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	2	0:2
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	2	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1PF0450.txt 3
+# text = un plan de la ville voilà
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	3	0:3
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	3;4	0:3
+3	de	de	ADP	_	_	5	case	_	_	*	3;4	0:3
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	3;4;5	0:3
+5	ville	ville	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	3;4;5	0:3
+6	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0450.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0450.txt 5
+# text = je vous en prie mademoiselle
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	0	root	_	_	*	6	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	1	nsubj	_	_	*	7	*
+3	en	en	ADP	_	_	4	case	_	_	*	*	*
+4	prie	prie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	*	*
+5	mademoiselle	mademoisel	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpacesAfter=\s\n	*	8	*
+

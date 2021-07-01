@@ -1,0 +1,56 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0552.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0552.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0552.txt 2
+# text = j' aurais voulu savoir si vous aviez des itinéraires de balades en montagne
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*	0	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+3	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	si	si	SCONJ	_	_	8	mark	_	_	*	*	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*	1	*
+8	aviez	avier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	advcl	_	_	*	*	*
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	2	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*	2	*
+11	itinéraires	itinéraire	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	_	*	2	*
+12	de	de	ADP	_	_	13	case	_	_	*	2	*
+13	balades	balade	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	_	*	2;3	*
+14	en	en	ADP	_	_	15	case	_	_	*	2;3	*
+15	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	SpacesAfter=\s\n\n	*	2;3;4	0:4
+
+# source_sent_id = http://my/newcorpus/uri 1AG0552.txt 3
+# text = info de la montagne " info montagne "
+1	info	info	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	5	1:5
+2	de	de	ADP	_	_	4	case	_	_	*	5	1:5
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	5;6	1:5;0:6
+4	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	5;6	1:5;0:6
+5	"	"	PUNCT	_	_	6	punct	_	_	*	*	*
+6	info	info	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	_	*	7	1:7
+7	montagne	montagner	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	7	1:7
+8	"	"	PUNCT	_	_	1	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0552.txt 4
+# text = au premier
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	3	case	_	_	*	8	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	8	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	8	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0552.txt 5
+# text = oui sur la gauche après la foule sur la gauche
+1	oui	ouir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	sur	sur	ADP	_	_	4	case	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	9	2:9
+4	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	1	obl	_	_	*	9	2:9
+5	après	après	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	10	*
+7	foule	foule	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	10	*
+8	sur	sur	ADP	_	_	10	case	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	11	2:11
+10	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpacesAfter=\s\n	*	11	2:11
+

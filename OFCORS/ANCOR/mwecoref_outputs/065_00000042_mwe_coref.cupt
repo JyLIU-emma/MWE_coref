@@ -1,0 +1,33 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 065_00000042.txt
+# source_sent_id = http://my/newcorpus/uri 065_00000042.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*	0	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*	0	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*	0	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 065_00000042.txt 2
+# text = bonjour ici Prénom nom est ce que je pourrais avoir Prénom2 Nom2 s' il vous plait
+1	bonjour	bonjour	INTJ	_	_	6	nsubj	_	_	*	*	*
+2	ici	ici	ADV	_	_	1	advmod	_	_	*	*	*
+3	Prénom	prénom	PROPN	_	_	1	flat:name	_	_	*	1	*
+4	nom	nom	NOUN	_	Gender=Masc|Number=Sing	1	flat:name	_	_	*	1	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+7	que	que	PRON	_	PronType=Rel	9	obj	_	_	*	*	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_	*	2	*
+9	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	*	*	*
+10	avoir	avoir	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+11	Prénom2	Prénom2	X	_	_	10	obj	_	_	*	3	*
+12	Nom2	Nom2	X	_	_	11	appos	_	_	*	3	*
+13	s	s	X	_	_	12	flat:foreign	_	SpaceAfter=No	*	*	*
+14	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_	*	*	*
+16	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	17	obj	_	_	*	*	*
+17	plait	plir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 065_00000042.txt 3
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n	*	*	*
+

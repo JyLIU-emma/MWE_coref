@@ -1,0 +1,354 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0119.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 1
+# text = un renseignement pour visiter le truc du chocolat e le palais du chocolat je fais comment
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	0	*
+2	renseignement	renseignement	NOUN	_	Gender=Masc|Number=Sing	17	dislocated	_	_	*	0	*
+3	pour	pour	ADP	_	_	4	mark	_	_	*	*	*
+4	visiter	visiter	VERB	_	VerbForm=Inf	2	acl	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	1	1:1
+6	truc	truc	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	1	1:1
+7-8	du	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	1;2	1:1;10:2
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	1;2	1:1;10:2
+9	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	1;2	1:1;10:2
+10	e	e	CCONJ	_	_	12	cc	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	3	1:3
+12	palais	palais	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_	*	3	1:3
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	3;4	1:3;10:4
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	3;4	1:3;10:4
+15	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	3;4	1:3;10:4
+16	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_	*	5	*
+17	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+18	comment	comment	ADV	_	_	17	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 2
+# text = oui alors e bon si vous n' avez pas de voiture bien sûr faut vous renseigner pour les bus à la gare routière hein mais e il y a des départs pour les il n' y a pas de problème il est sur la Côte Saint André le palais du chocolat
+1	oui	oui	ADV	_	_	3	advmod	_	_	*	*	*
+2	alors	alors	ADV	_	_	3	advmod	_	_	*	*	*
+3	e	e	SYM	_	_	0	root	_	_	*	*	*
+4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	14	expl:subj	_	_	*	*	*
+5	si	si	SCONJ	_	_	8	mark	_	_	*	*	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*	6	*
+7	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+8	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	14	advcl	_	_	*	*	*
+9	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+10	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	*	*
+11	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	7	*
+12	bien	bien	ADV	_	_	8	advmod	_	_	*	*	*
+13	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	12	fixed	_	_	*	*	*
+14	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*	*	*
+15	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	16	obj	_	_	*	8	*
+16	renseigner	renseigner	VERB	_	VerbForm=Inf	14	ccomp	_	_	*	*	*
+17	pour	pour	ADP	_	_	19	case	_	_	*	*	*
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*	9	*
+19	bus	bus	NOUN	_	Gender=Masc|Number=Plur	16	obl	_	_	*	9	*
+20	à	à	ADP	_	_	22	case	_	_	*	*	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	10	0:10
+22	gare	gare	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	10	0:10
+23	routière	routier	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*	10	0:10
+24	hein	hein	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	_	*	*	*
+25	mais	mais	CCONJ	_	_	29	cc	_	_	*	*	*
+26	e	e	SYM	_	_	29	mark	_	_	*	*	*
+27	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	expl:subj	_	_	1:VID	*	*
+28	y	y	PRON	_	_	29	expl:comp	_	_	1	*	*
+29	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	1	*	*
+30-31	des	_	_	_	_	_	_	_	_	*	*	*
+30	de	de	ADP	_	_	32	case	_	_	*	11	*
+31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_	*	11	*
+32	départs	départ	NOUN	_	Gender=Masc|Number=Plur	29	obl:arg	_	_	*	11	*
+33	pour	pour	ADP	_	_	35	case	_	_	*	*	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_	*	*	*
+35	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	obl	_	_	*	*	*
+36	n'	ne	ADV	_	Polarity=Neg	38	advmod	_	_	*	*	*
+37	y	y	PRON	_	_	38	expl:comp	_	_	*	*	*
+38	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	_	_	2:LVC.full	*	*
+39	pas	pas	ADV	_	Polarity=Neg	38	advmod	_	_	*	*	*
+40	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	*	*
+41	problème	problème	NOUN	_	Gender=Masc|Number=Sing	38	obj	_	_	2	12	*
+42	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	nsubj	_	_	*	13	1:13
+43	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	cop	_	_	*	*	*
+44	sur	sur	ADP	_	_	46	case	_	_	*	*	*
+45	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_	*	14	2:14
+46	Côte	côte	PROPN	_	_	41	acl:relcl	_	_	*	14	2:14
+47	Saint	Saint	PROPN	_	_	46	appos	_	_	*	14;15	2:14;3:15
+48	André	André	PROPN	_	_	47	flat:name	_	_	*	14;15	2:14;3:15
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*	16	1:16
+50	palais	palais	NOUN	_	Gender=Masc|Number=Sing	46	nmod	_	_	*	16	1:16
+51-52	du	_	_	_	_	_	_	_	_	*	*	*
+51	de	de	ADP	_	_	53	case	_	_	*	16;17	1:16;10:17
+52	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_	*	16;17	1:16;10:17
+53	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	50	nmod	_	SpacesAfter=\s\n\n	*	16;17	1:16;10:17
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 3
+# text = la gare routière d' accord
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	18	0:18
+2	gare	gare	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	18	0:18
+3	routière	routier	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	18	0:18
+4	d	de	ADP	_	_	6	case	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+6	accord	accord	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 4
+# text = il est où s' il vous plaît e
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_	*	19	1:19
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	où	où	ADV	_	PronType=Rel	4	advmod	_	_	*	*	*
+4	s	s	X	_	_	0	root	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	8	punct	_	_	*	*	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_	*	*	*
+7	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	8	obj	_	_	*	*	*
+8	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*	*	*
+9	e	e	CCONJ	_	_	8	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 5
+# text = ah ben je connais bien
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	20	*
+4	connais	connaître	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	*	*	*
+5	bien	bien	ADV	_	_	4	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 6
+# text = Côte Saint André par contre ils font des choses très sympas regardez alors ça s' appelle " escapade gourmande " c' est à la journée
+1	Côte	Côte	PROPN	_	_	7	nsubj	_	_	*	21	2:21
+2	Saint	Saint	PROPN	_	_	1	flat:name	_	_	*	21;22	2:21;3:22
+3	André	André	PROPN	_	_	1	flat:name	_	_	*	21;22	2:21;3:22
+4	par	par	ADP	_	_	7	advmod	_	_	*	*	*
+5	contre	contre	NOUN	_	_	4	fixed	_	_	*	*	*
+6	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_	*	23	*
+7	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	24	*
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*	24	*
+10	choses	chose	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*	24	*
+11	très	très	ADV	_	_	12	advmod	_	_	*	24	*
+12	sympas	sympa	ADJ	_	Gender=Fem|Number=Plur	10	amod	_	_	*	24	*
+13	regardez	regarder	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	xcomp	_	_	*	*	*
+14	alors	alors	ADV	_	_	17	advmod	_	_	*	*	*
+15	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	nsubj	_	_	*	*	*
+16	s'	se	PRON	_	Person=3|PronType=Prs	17	expl:comp	_	_	*	*	*
+17	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_	*	*	*
+18	"	"	PUNCT	_	_	19	punct	_	_	*	*	*
+19	escapade	escapade	NOUN	_	Gender=Fem|Number=Sing	17	xcomp	_	_	*	25	8:25
+20	gourmande	gourmand	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	_	*	25	8:25
+21	"	"	PUNCT	_	_	19	punct	_	_	*	*	*
+22	c	c	X	_	_	19	appos	_	SpaceAfter=No	*	26	8:26
+23	'	'	PUNCT	_	_	19	punct	_	_	*	26	8:26
+24	est	est	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_	*	*	*
+25	à	à	ADP	_	_	27	case	_	_	*	*	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*	27	7:27
+27	journée	journée	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	SpacesAfter=\s\n\n	*	27	7:27
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 7
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 8
+# text = de dix heures et demie à seize heures vous êtes prise en charge le prix pour la journée est de cent vingt francs vous avez droit aux visites sur le
+1	de	de	ADP	_	_	3	case	_	_	*	*	*
+2	dix	dix	NUM	_	_	3	nummod	_	_	*	28;29	*
+3	heures	heure	NOUN	_	Gender=Fem|Number=Plur	11	obl:mod	_	_	*	28;29	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*	28;29	*
+5	demie	demier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	28;29	*
+6	à	à	ADP	_	_	8	case	_	_	*	29	*
+7	seize	seize	NUM	_	_	8	nummod	_	_	*	29;30	*
+8	heures	heure	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	_	*	29;30	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	11	nsubj:pass	_	_	*	31	*
+10	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_	*	*	*
+11	prise	prendre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	2:VID	*	*
+12	en	en	ADP	_	_	13	case	_	_	2	*	*
+13	charge	charge	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	_	2	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	32	*
+15	prix	prix	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*	32	*
+16	pour	pour	ADP	_	_	18	case	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	33	7:33
+18	journée	journée	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	33	7:33
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*	*	*
+20	de	de	ADP	_	_	23	case	_	_	*	*	*
+21	cent	cent	NUM	_	_	23	nummod	_	_	*	34	5:34
+22	vingt	vingt	NUM	_	_	23	nummod	_	_	*	34	5:34
+23	francs	franc	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*	34	5:34
+24	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	25	nsubj	_	_	*	35	*
+25	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	23	acl:relcl	_	_	1:LVC.full	*	*
+26	droit	droit	NOUN	_	Gender=Masc|Number=Sing	25	obj:lvc	_	_	1	*	*
+27-28	aux	_	_	_	_	_	_	_	_	*	*	*
+27	à	à	ADP	_	_	29	case	_	_	*	36	*
+28	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_	*	36	*
+29	visites	visite	NOUN	_	Gender=Fem|Number=Plur	25	obl:arg	_	_	*	36	*
+30	sur	sur	ADP	_	_	31	case	_	_	*	*	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 9
+# text = guidée oui
+1	guidée	guider	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	oui	oui	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 10
+# text = musée
+1	musée	muser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	37	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 11
+# text = du chocolat visite commentée chez les " Cherry Rocher " la liqueur
+1-2	du	_	_	_	_	_	_	_	_	*	*	*
+1	de	de	ADP	_	_	3	case	_	_	*	38	10:38
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	38	10:38
+3	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	_	*	38	10:38
+4	visite	visite	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	39	9:39
+5	commentée	commenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*	39	9:39
+6	chez	chez	ADP	_	_	9	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*	40	*
+8	"	"	PUNCT	_	_	9	punct	_	_	*	40	*
+9	Cherry	Cherry	PROPN	_	_	5	obl	_	_	*	40	*
+10	Rocher	rocher	PROPN	_	_	9	flat:name	_	_	*	40	*
+11	"	"	PUNCT	_	_	9	punct	_	_	*	*	*
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	41	4:41
+13	liqueur	liqueur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	41	4:41
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 12
+# text = oui liqueur
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+2	liqueur	liqueur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	42	4:42
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 13
+# text = et le repas du midi pour cent vingt francs avec le transport ça vaut le coup hein et regardez c' est c' est tout indiqué donc là il y a inscription vous avez le téléphone enfin n' hésitez pas et ça c' est pour le musée en lui-même le palais du chocolat seul par contre je vous conseille fortement si vous ne choisissez pas de participer au programme là de l' " escapade gourmande " de e le contacter parce qu' à cette période il y a des horaires précis à des jours bien précis pour visiter le palais hein
+1	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	43	*
+3	repas	repas	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	_	*	43	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	43;44	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	43;44	*
+6	midi	midi	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	43;44	*
+7	pour	pour	ADP	_	_	10	case	_	_	*	*	*
+8	cent	cent	NUM	_	_	10	nummod	_	_	*	45	5:45
+9	vingt	vingt	NUM	_	_	10	nummod	_	_	*	45	5:45
+10	francs	franc	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*	45	5:45
+11	avec	avec	ADP	_	_	13	case	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	46	*
+13	transport	transport	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	46	*
+14	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	_	*	*	*
+15	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	*	*
+17	coup	coup	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*	*	*
+18	hein	hein	ADJ	_	Gender=Masc|Number=Sing	17	amod	_	_	*	*	*
+19	et	et	CCONJ	_	_	20	cc	_	_	*	*	*
+20	regardez	regarder	NOUN	_	Gender=Masc|Number=Sing	17	conj	_	_	*	*	*
+21	c	ce	X	_	_	20	appos	_	SpaceAfter=No	*	*	*
+22	'	'	PUNCT	_	_	21	punct	_	_	*	*	*
+23	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+24	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	28	nsubj:pass	_	SpaceAfter=No	*	*	*
+25	'	'	PUNCT	_	_	24	punct	_	_	*	*	*
+26	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux:pass	_	_	*	*	*
+27	tout	tout	ADV	_	_	28	advmod	_	_	*	*	*
+28	indiqué	indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	parataxis	_	_	*	*	*
+29	donc	donc	ADV	_	_	23	advmod	_	_	*	*	*
+30	là	là	ADV	_	_	23	advmod	_	_	*	*	*
+31	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	expl:subj	_	_	1:VID	*	*
+32	y	y	PRON	_	_	33	expl:comp	_	_	1	*	*
+33	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_	1	*	*
+34	inscription	inscription	NOUN	_	Gender=Fem|Number=Sing	38	dislocated	_	_	*	47	*
+35	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	38	nsubj	_	_	*	48	*
+36	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	38	cop	_	_	*	*	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	49	*
+38	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	23	parataxis	_	_	*	49	*
+39	enfin	enfin	ADV	_	_	41	advmod	_	_	*	*	*
+40	n'	ne	ADV	_	Polarity=Neg	41	advmod	_	_	*	*	*
+41	hésitez	hésiter	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	38	parataxis	_	_	*	*	*
+42	pas	pas	ADV	_	Polarity=Neg	41	advmod	_	_	*	*	*
+43	et	et	CCONJ	_	_	50	cc	_	_	*	*	*
+44	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	50	nsubj	_	_	*	*	*
+45	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	50	expl:subj	_	SpaceAfter=No	*	*	*
+46	'	'	PUNCT	_	_	45	punct	_	_	*	*	*
+47	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	50	cop	_	_	*	*	*
+48	pour	pour	ADP	_	_	50	case	_	_	*	*	*
+49	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_	*	50	6:50
+50	musée	musée	NOUN	_	Gender=Masc|Number=Sing	41	conj	_	_	*	50	6:50
+51	en	en	ADP	_	_	52	case	_	_	*	*	*
+52	lui-même	lui-même	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	50	obl:mod	_	_	*	51	6:51
+53	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_	*	52	1:52
+54	palais	palais	NOUN	_	Gender=Masc|Number=Sing	63	nsubj	_	_	*	52	1:52
+55-56	du	_	_	_	_	_	_	_	_	*	*	*
+55	de	de	ADP	_	_	57	case	_	_	*	52;53	1:52;10:53
+56	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_	*	52;53	1:52;10:53
+57	chocolat	chocolat	NOUN	_	Gender=Masc|Number=Sing	54	nmod	_	_	*	52;53	1:52;10:53
+58	seul	seul	ADJ	_	Gender=Masc|Number=Sing	54	amod	_	_	*	*	*
+59	par	par	ADP	_	_	63	advmod	_	_	*	*	*
+60	contre	contre	NOUN	_	_	59	fixed	_	_	*	*	*
+61	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	63	nsubj	_	_	*	54	*
+62	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	63	iobj	_	_	*	55	*
+63	conseille	conseiller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	50	parataxis	_	_	*	*	*
+64	fortement	fortement	ADV	_	_	63	advmod	_	_	*	*	*
+65	si	si	SCONJ	_	_	68	mark	_	_	*	*	*
+66	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	68	nsubj	_	_	*	56	*
+67	ne	ne	ADV	_	Polarity=Neg	68	advmod	_	_	*	*	*
+68	choisissez	choisir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	85	advcl	_	_	*	*	*
+69	pas	pas	ADV	_	Polarity=Neg	68	advmod	_	_	*	*	*
+70	de	de	ADP	_	_	71	mark	_	_	*	*	*
+71	participer	participer	VERB	_	VerbForm=Inf	68	xcomp	_	_	*	*	*
+72-73	au	_	_	_	_	_	_	_	_	*	*	*
+72	à	à	ADP	_	_	74	case	_	_	*	57;58	*
+73	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	74	det	_	_	*	57;58	*
+74	programme	programme	NOUN	_	Gender=Masc|Number=Sing	71	obl:arg	_	_	*	57;58	*
+75	là	là	ADV	_	_	74	advmod	_	_	*	57;58	*
+76	de	de	ADP	_	_	79	case	_	_	*	57;58	*
+77	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	79	det	_	_	*	58;59	8:59
+78	"	"	PUNCT	_	_	79	punct	_	_	*	58;59	8:59
+79	escapade	escapade	NOUN	_	Gender=Fem|Number=Sing	74	nmod	_	_	*	58;59	8:59
+80	gourmande	gourmand	ADJ	_	Gender=Fem|Number=Sing	79	amod	_	_	*	58;59	8:59
+81	"	"	PUNCT	_	_	79	punct	_	_	*	*	*
+82	de	de	ADP	_	_	83	case	_	_	*	*	*
+83	e	e	SYM	_	_	79	nmod	_	_	*	*	*
+84	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	85	obj	_	_	*	60	1:60
+85	contacter	contacter	VERB	_	VerbForm=Inf	63	xcomp	_	_	*	*	*
+86	parce	parce	ADV	_	_	93	mark	_	_	*	*	*
+87	qu'	que	SCONJ	_	_	86	fixed	_	_	*	*	*
+88	à	à	ADP	_	_	90	case	_	_	*	*	*
+89	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	90	det	_	_	*	61	*
+90	période	période	NOUN	_	Gender=Fem|Number=Sing	93	obl:mod	_	_	*	61	*
+91	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	93	expl:subj	_	_	*	*	*
+92	y	y	PRON	_	_	93	expl:comp	_	_	*	*	*
+93	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	85	advcl	_	_	*	*	*
+94-95	des	_	_	_	_	_	_	_	_	*	*	*
+94	de	de	ADP	_	_	96	case	_	_	*	62	*
+95	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	96	det	_	_	*	62	*
+96	horaires	horaire	NOUN	_	Gender=Masc|Number=Plur	93	obl:arg	_	_	*	62	*
+97	précis	précis	ADJ	_	Gender=Masc|Number=Plur	96	amod	_	_	*	62	*
+98	à	à	ADP	_	_	101	case	_	_	*	*	*
+99-100	des	_	_	_	_	_	_	_	_	*	*	*
+99	de	de	ADP	_	_	101	case	_	_	*	63	*
+100	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	101	det	_	_	*	63	*
+101	jours	jour	NOUN	_	Gender=Masc|Number=Plur	96	nmod	_	_	*	63	*
+102	bien	bien	ADV	_	_	103	advmod	_	_	*	63	*
+103	précis	précis	ADJ	_	Gender=Masc|Number=Plur	101	amod	_	_	*	63	*
+104	pour	pour	ADP	_	_	105	mark	_	_	*	*	*
+105	visiter	visiter	VERB	_	VerbForm=Inf	85	advcl	_	_	*	*	*
+106	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	107	det	_	_	*	64	1:64
+107	palais	palais	NOUN	_	Gender=Masc|Number=Sing	105	obj	_	_	*	64	1:64
+108	hein	hein	ADJ	_	Gender=Masc|Number=Sing	107	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 14
+# text = c' est pas cher
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	65	5:65
+2	'	'	PUNCT	_	_	1	punct	_	_	*	65	5:65
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+5	cher	cher	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 15
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0119.txt 16
+# text = mais je vous en prie madame au revoir
+1	mais	mais	CCONJ	_	_	5	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	66	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	67	*
+4	en	en	PRON	_	Person=3	6	nmod	_	_	*	*	*
+5	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	madame	madame	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	68	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	5	advmod	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	fixed	_	_	*	*	*
+9	revoir	revoir	VERB	_	VerbForm=Inf	7	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,58 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 074_0000004b.txt
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 2
+# text = boujour madame madame Nom s' il vous plait
+1	boujour	boujour	ADP	_	_	2	case	_	_	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+4	Nom	Nom	PROPN	_	_	2	appos	_	_	*
+5	s	s	X	_	_	4	flat:name	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	2	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+8	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	obj	_	_	*
+9	plait	plir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 3
+# text = Prénom Nom
+1	Prénom	prénom	PROPN	_	_	0	root	_	_	*
+2	Nom	Nom	PROPN	_	_	1	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 4
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 5
+# text = oui conservez je vais vous la passer
+1	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_	*
+2	conservez	conserver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	*
+6	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*
+7	passer	passer	VERB	_	VerbForm=Inf	4	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 6
+# text = oui allo
+1	oui	oui	ADV	_	_	2	advmod	_	_	*
+2	allo	allo	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 7
+# text = c' est pour toi Prénom
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+4	pour	pour	ADP	_	_	5	case	_	_	*
+5	toi	soi	PRON	_	Number=Sing|Person=2	6	obl:mod	_	_	*
+6	Prénom	prénom	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 074_0000004b.txt 8
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*
+

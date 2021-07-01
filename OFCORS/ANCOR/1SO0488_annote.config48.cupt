@@ -1,0 +1,79 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SO0488.txt
+# source_sent_id = http://my/newcorpus/uri 1SO0488.txt 1
+# text = bonjour madame
+1	bonjour	bonjour	INTJ	_	_	2	amod	_	_	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0488.txt 2
+# text = bonjour dites moi quand je suis venue pour prendre des des billets pour I R M je les ai demandés pour le jeudi trois octobre et vous m' avez mis la date d' aujourd'hui
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	dites	dire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+3	moi	soi	PRON	_	Number=Sing|Person=1	1	nmod	_	_	*
+4	quand	quand	SCONJ	_	_	7	mark	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*
+6	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	venue	venir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	22	advcl	_	_	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*
+9	prendre	prendre	VERB	_	VerbForm=Inf	7	advcl	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	9	obl:arg	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	billets	billet	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*
+15	pour	pour	ADP	_	_	16	case	_	_	*
+16	I	I	NUM	_	_	14	nmod	_	_	*
+17	R	R	X	_	_	14	appos	_	_	*
+18	M	m	SYM	_	_	17	nmod	_	_	*
+19	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	22	nsubj	_	_	*
+20	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	22	obj	_	_	*
+21	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*
+22	demandés	demander	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	acl	_	_	*
+23	pour	pour	ADP	_	_	25	case	_	_	*
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*
+25	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	22	obl	_	_	*
+26	trois	trois	NUM	_	_	22	obl	_	_	*
+27	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*
+28	et	et	CCONJ	_	_	33	cc	_	_	*
+29	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	33	nsubj	_	_	*
+30	m	m	NOUN	_	Gender=Masc|Number=Plur	33	obl:mod	_	SpaceAfter=No	*
+31	'	'	PUNCT	_	_	30	punct	_	_	*
+32	avez	avoir	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	33	aux:tense	_	_	*
+33	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	conj	_	_	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*
+35	date	date	NOUN	_	Gender=Fem|Number=Sing	33	obj	_	_	*
+36	d	de	ADP	_	_	38	case	_	SpaceAfter=No	*
+37	'	'	PUNCT	_	_	38	punct	_	_	*
+38	aujourd'hui	aujourd'hui	ADV	_	_	33	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SO0488.txt 3
+# text = alors moi je n' ai rien mis je vais vous laisser voir avec ma collègue de la billetterie juste à côté je vous l' appelle
+1	alors	alors	ADV	_	_	8	advmod	_	_	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	1	fixed	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+4	n	n	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	3	punct	_	_	*
+6	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+7	rien	rien	PRON	_	Number=Sing	8	obj	_	_	*
+8	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+10	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	12	obj	_	_	*
+12	laisser	laisser	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+13	voir	voir	VERB	_	VerbForm=Inf	12	xcomp	_	_	*
+14	avec	avec	ADP	_	_	16	case	_	_	*
+15	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	collègue	collègue	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	billetterie	billetterie	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*
+20	juste	juste	ADV	_	_	26	advmod	_	_	*
+21	à	à	ADP	_	_	26	advmod	_	_	*
+22	côté	côté	NOUN	_	Gender=Masc|Number=Sing	21	fixed	_	_	*
+23	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	26	nsubj	_	_	*
+24	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	26	iobj	_	_	*
+25	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	26	obj	_	_	*
+26	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	acl	_	SpacesAfter=\s\n	*
+

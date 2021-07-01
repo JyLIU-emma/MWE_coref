@@ -1,0 +1,98 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2AP0058.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 2
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 3
+# text = moi je voulais savoir si vous aviez des dates et le programme du salon de la bande dessinée de Chambéry
+1	moi	soi	PRON	_	Number=Sing|Person=1	3	dislocated	_	_	*	0	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	1	*
+3	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+4	savoir	savoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	si	si	SCONJ	_	_	7	mark	_	_	*	*	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*	2	*
+7	aviez	avier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*	*	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	3	0:3
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_	*	3	0:3
+10	dates	date	NOUN	_	Gender=Fem|Number=Plur	7	obl:arg	_	_	*	3	0:3
+11	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	4	1:4
+13	programme	programme	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*	4	1:4
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	4;5	1:4
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	4;5	1:4
+16	salon	salon	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	4;5	1:4
+17	de	de	ADP	_	_	19	case	_	_	*	4;5	1:4
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	4;5;6	1:4
+19	bande	bande	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	4;5;6	1:4
+20	dessinée	dessiner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*	4;5;6	1:4
+21	de	de	ADP	_	_	22	case	_	_	*	4;5	1:4
+22	Chambéry	Chambéry	PROPN	_	_	19	nmod	_	SpacesAfter=\s\n\n	*	4;5;7	1:4;3:7
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 4
+# text = non
+1	non	non	ADV	_	Polarity=Neg	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 5
+# text = non vous savez pas non
+1	non	non	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	8	*
+3	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*	*	*
+5	non	non	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 6
+# text = date ni programme
+1	date	date	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	9	0:9
+2	ni	ni	CCONJ	_	_	3	cc	_	_	*	*	*
+3	programme	programme	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpacesAfter=\s\n\n	*	10	1:10
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 7
+# text = bien
+1	bien	bien	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 8
+# text = faudrait voir avec l' Office de Chambéry
+1	faudrait	falloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	_	*	*	*
+3	avec	avec	ADP	_	_	5	case	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	11	2:11
+5	Office	office	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*	11	2:11
+6	de	de	ADP	_	_	7	case	_	_	*	11	2:11
+7	Chambéry	Chambéry	PROPN	_	_	5	nmod	_	SpacesAfter=\s\n\n	*	11;12	2:11;3:12
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 9
+# text = ouais directement
+1	ouais	ouai	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+2	directement	directement	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 10
+# text = l' O T ouais
+1	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	13	2:13
+2	O	O	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	13	2:13
+3	T	T	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	13	2:13
+4	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 11
+# text = bien merci
+1	bien	bien	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0058.txt 12
+# text = je vous en prie monsieur au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	14	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	15	*
+3	en	en	PRON	_	Person=3	5	nmod	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	16	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*	*	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	6	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,115 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0245.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 2
+# text = e bonjour je voudrais savoir où est la CAF la Caisse d' Allocations Familiales
+1	e	e	CCONJ	_	_	4	cc	_	_	*	*	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	dislocated	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	0	*
+4	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	où	où	ADV	_	PronType=Rel	9	advmod	_	_	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	1	0:1
+9	CAF	CAF	PROPN	_	_	5	ccomp	_	_	*	1	0:1
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	2	*
+11	Caisse	caisse	PROPN	_	_	9	flat:name	_	_	*	2	*
+12	d'	de	ADP	_	_	13	case	_	_	*	2	*
+13	Allocations	Allocations	PROPN	_	_	11	nmod	_	_	*	2;3;4	*
+14	Familiales	familiales	PROPN	_	_	9	flat:name	_	SpacesAfter=\s\n\n	*	4	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 3
+# text = la CAF c' est rue trois rue des Alliés donc nous on est là c' est la rue qui est ici en face de la Sécurité Sociale le numéro trois la rue des Alliés
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	5	0:5
+2	CAF	CAF	PROPN	_	_	6	nsubj	_	_	*	5	0:5
+3	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	appos	_	SpaceAfter=No	*	6	0:6
+4	'	'	PUNCT	_	_	3	punct	_	_	*	6	0:6
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	rue	raître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	trois	trois	NUM	_	_	8	nummod	_	_	*	7	1:7
+8	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*	7	1:7
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	7;8	1:7;5:8
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	7;8	1:7;5:8
+11	Alliés	Alliés	PROPN	_	_	8	nmod	_	_	*	7;8	1:7;5:8
+12	donc	donc	ADV	_	_	17	advmod	_	_	*	*	*
+13	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	17	obj	_	_	*	9	*
+14	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_	*	10	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*	*	*
+16	là	là	ADV	_	_	17	advmod	_	_	*	*	*
+17	c	ce	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No	*	11	1:11
+18	'	'	PUNCT	_	_	17	punct	_	_	*	11	1:11
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	12	2:12
+21	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	_	_	*	12	2:12
+22	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*	13	2:13
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_	*	*	*
+24	ici	ici	ADV	_	_	25	advmod	_	_	*	*	*
+25	en	en	ADP	_	_	21	acl:relcl	_	_	*	*	*
+26	face	face	NOUN	_	Gender=Fem|Number=Sing	25	fixed	_	_	*	*	*
+27	de	de	ADP	_	_	29	case	_	_	*	*	*
+28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	14	*
+29	Sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	25	obl:arg	_	_	*	14	*
+30	Sociale	social	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	_	*	14	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*	15	1:15
+32	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*	15	1:15
+33	trois	trois	NUM	_	_	32	nmod	_	_	*	15	1:15
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_	*	16	2:16
+35	rue	rue	NOUN	_	Gender=Fem|Number=Sing	32	appos	_	_	*	16	2:16
+36-37	des	_	_	_	_	_	_	_	_	*	*	*
+36	de	de	ADP	_	_	38	case	_	_	*	16;17	2:16;5:17
+37	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_	*	16;17	2:16;5:17
+38	Alliés	allié	NOUN	_	Gender=Masc|Number=Plur	35	nmod	_	SpacesAfter=\s\n\n	*	16;17	2:16;5:17
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 4
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 5
+# text = vous avez le tramway qui passe hein pas très loin ligne A
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	18	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	19	3:19
+4	tramway	tramway	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	19	3:19
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*	20	3:20
+6	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*	*	*
+7	hein	hein	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*	*	*
+8	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+9	très	très	ADV	_	_	10	advmod	_	_	*	*	*
+10	loin	loin	ADV	_	_	11	advmod	_	_	*	*	*
+11	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	7	appos	_	_	*	21	4:21
+12	A	A	X	_	_	11	appos	_	SpacesAfter=\s\n\n	*	21	4:21
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 6
+# text = ligne A
+1	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	22	4:22
+2	A	à	X	_	_	1	appos	_	SpacesAfter=\s\n\n	*	22	4:22
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 7
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 8
+# text = d' accord ben merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*	*	*
+4	ben	ben	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+5	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0245.txt 9
+# text = je vous en prie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	23	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	24	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n	*	*	*
+

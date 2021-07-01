@@ -1,0 +1,56 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0487.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0487.txt 1
+# text = madame bonjour
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	0	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0487.txt 2
+# text = est ce que vous avez déjà le programme du " café des Arts " pour octobre
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	1	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	déjà	déjà	ADV	_	_	5	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	2	*
+8	programme	programme	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	2	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	12	case	_	_	*	2;3	0:3
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	2;3	0:3
+11	"	"	PUNCT	_	_	12	punct	_	_	*	2;3	0:3
+12	café	café	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	2;3	0:3
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	2;3;4	0:3;1:4
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	2;3;4	0:3;1:4
+15	Arts	Arts	PROPN	_	_	12	nmod	_	_	*	2;3;4	0:3;1:4
+16	"	"	PUNCT	_	_	8	punct	_	_	*	2	*
+17	pour	pour	ADP	_	_	18	case	_	_	*	*	*
+18	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	SpacesAfter=\s\n\n	*	5	2:5
+
+# source_sent_id = http://my/newcorpus/uri 1PF0487.txt 3
+# text = le café des actes
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	6	0:6
+2	café	café	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	6	0:6
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	6;7	0:6
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*	6;7	0:6
+5	actes	acte	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpacesAfter=\s\n\n	*	6;7	0:6
+
+# source_sent_id = http://my/newcorpus/uri 1PF0487.txt 4
+# text = des Arts
+1-2	des	_	_	_	_	_	_	_	_	*	*	*
+1	de	de	ADP	_	_	3	case	_	_	*	8	1:8
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*	8	1:8
+3	Arts	Arts	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*	8	1:8
+
+# source_sent_id = http://my/newcorpus/uri 1PF0487.txt 5
+# text = des Arts septembre octobre voilà
+1-2	des	_	_	_	_	_	_	_	_	*	*	*
+1	de	de	ADP	_	_	3	case	_	_	*	9	1:9
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*	9	1:9
+3	Arts	Arts	PROPN	_	_	6	obl:mod	_	_	*	9	1:9
+4	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	10	*
+5	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	11	2:11
+6	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

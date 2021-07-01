@@ -1,0 +1,65 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0099.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 1
+# text = vous avez un magazine qui présente Grenoble un petit peu sous toutes ses
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	magazine	magazine	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	_	*
+6	présente	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+7	Grenoble	Grenoble	PROPN	_	_	6	obj	_	_	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	advmod	_	_	*
+9	petit	petit	ADJ	_	Gender=Masc|Number=Sing	8	fixed	_	_	*
+10	peu	peu	ADV	_	_	8	fixed	_	_	*
+11	sous	sous	ADP	_	_	13	case	_	_	*
+12	toutes	tout	DET	_	Gender=Fem|Number=Plur	13	det	_	_	*
+13	ses	son	NOUN	_	Gender=Fem|Number=Plur	6	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 2
+# text = " Grenoble magazine "
+1	"	"	PUNCT	_	_	3	punct	_	_	*
+2	Grenoble	Grenoble	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*
+3	magazine	magazine	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+4	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 3
+# text = voilà ah ben c' est parfait
+1	voilà	voilà	VERB	_	_	7	nsubj	_	_	*
+2	ah	ah	X	_	_	4	nmod	_	_	*
+3	ben	ben	X	_	_	4	nmod	_	_	*
+4	c	c	X	_	_	1	obj	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	parfait	parfait	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 4
+# text = eh ben c' est super
+1	eh	eh	X	_	_	3	nmod	_	_	*
+2	ben	ben	X	_	_	3	nmod	_	_	*
+3	c	ce	X	_	_	6	nsubj	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+6	super	super	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 5
+# text = oui j' adore
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	adore	adorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 6
+# text = merci bien au revoir
+1	merci	merci	INTJ	_	_	0	root	_	_	*
+2	bien	bien	ADV	_	_	1	advmod	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	1	advmod	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	*
+5	revoir	revoir	VERB	_	VerbForm=Inf	3	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0099.txt 7
+# text = madame merci
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

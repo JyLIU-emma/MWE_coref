@@ -1,0 +1,75 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0043.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 1
+# text = monsieur
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	0	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 2
+# text = bonjour voilà je voulais me renseigner pour acheter une carte jeune
+1	bonjour	bonjour	INTJ	_	_	2	discourse	_	_	*	*	*
+2	voilà	voilà	VERB	_	_	4	mark	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	1	*
+4	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+5	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	6	obj	_	_	1:IRV	*	*
+6	renseigner	renseigner	VERB	_	VerbForm=Inf	4	xcomp	_	_	1	*	*
+7	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+8	acheter	acheter	VERB	_	VerbForm=Inf	6	advcl	_	_	*	*	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	2	0:2
+10	carte	carte	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	2	0:2
+11	jeune	jeune	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	SpacesAfter=\s\n\n	*	2	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 3
+# text = carte jeune alors il faut aller au CRIJ huit rue Voltaire derrière l' immeuble
+1	carte	carte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	3	0:3
+2	jeune	jeune	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	_	*	3	0:3
+3	alors	alors	ADV	_	_	5	advmod	_	_	*	*	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl:subj	_	_	1:VID	*	*
+5	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_	1	*	*
+6	aller	aller	VERB	_	VerbForm=Inf	5	ccomp	_	_	*	*	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	4	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	4	*
+9	CRIJ	CRIJ	PROPN	_	_	6	obl:arg	_	_	*	4	*
+10	huit	huit	NUM	_	_	9	nmod	_	_	*	5	*
+11	rue	rue	NOUN	_	Gender=Fem|Number=Sing	9	flat:name	_	_	*	5	*
+12	Voltaire	Voltaire	PROPN	_	_	9	flat:name	_	_	*	5;6	*
+13	derrière	derrière	ADP	_	_	16	case	_	_	*	*	*
+14	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No	*	7	1:7
+15	'	'	PUNCT	_	_	14	punct	_	_	*	7	1:7
+16	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	SpacesAfter=\s\n\n	*	7	1:7
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 4
+# text = derrière cet immeuble là
+1	derrière	derrière	ADP	_	_	3	case	_	_	*	*	*
+2	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*	8	1:8
+3	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	8	1:8
+4	là	là	ADV	_	_	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 5
+# text = vous faites le tour comme ça
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	9	*
+2	faites	faire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	1:VID;2:VID	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	1	10	*
+4	tour	tour	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	1	10	*
+5	comme	comme	ADP	_	_	6	case	_	_	*	*	*
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obl:mod	_	SpacesAfter=\s\n\n	2	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 6
+# text = d' accord merci beaucoup au revoir
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+4	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+5	beaucoup	beaucoup	ADV	_	_	4	advmod	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*	*	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	6	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0043.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

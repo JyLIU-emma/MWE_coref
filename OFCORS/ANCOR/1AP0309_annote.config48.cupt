@@ -1,0 +1,70 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0309.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 2
+# text = bonjour je voudrais la liste des radios de Grenoble
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	liste	liste	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6-7	des	_	_	_	_	_	_	_	_	*
+6	de	de	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*
+8	radios	radio	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Grenoble	Grenoble	PROPN	_	_	8	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 3
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 4
+# text = à Grenoble et et région si
+1	à	à	ADP	_	_	2	case	_	_	*
+2	Grenoble	Grenoble	PROPN	_	_	6	obl:mod	_	_	*
+3	et	et	CCONJ	_	_	5	cc	_	_	*
+4	et	et	CCONJ	_	_	5	cc	_	_	*
+5	région	région	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*
+6	si	si	SCONJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 5
+# text = c' est Grenoble et et les alentours hein le grand Grenoble hein
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	Grenoble	Grenoble	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	et	et	CCONJ	_	_	8	cc	_	_	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	alentours	alentours	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	_	*
+9	hein	hein	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+11	grand	grand	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	Grenoble	Grenoble	PROPN	_	_	8	appos	_	_	*
+13	hein	hein	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 6
+# text = oui d' accord merci beaucoup
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	d	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	4	punct	_	_	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*
+5	merci	merci	INTJ	_	_	6	case	_	_	*
+6	beaucoup	beaucoup	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0309.txt 7
+# text = je vous en prie madame au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	en	en	PRON	_	Person=3	5	nmod	_	_	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	madame	madame	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+6-7	au	_	_	_	_	_	_	_	_	*
+6	à	à	ADP	_	_	4	advmod	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	6	fixed	_	SpacesAfter=\s\n	*
+

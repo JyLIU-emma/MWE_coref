@@ -1,0 +1,80 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0605.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 1
+# text = bonsoir
+1	bonsoir	bonsoir	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 2
+# text = e comment je peux savoir si vous aviez " le 38 "
+1	e	e	CCONJ	_	_	4	cc	_	_	*
+2	comment	comment	ADV	_	_	4	advmod	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	si	si	SCONJ	_	_	8	mark	_	_	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*
+8	aviez	avier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+9	"	"	PUNCT	_	_	8	punct	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	38	38	NUM	_	_	8	obj	_	_	*
+12	"	"	PUNCT	_	_	4	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 3
+# text = on l' a plus il y en a plus
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_	*
+2	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	8	obj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*
+4	plus	plus	ADV	_	_	8	advmod	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID
+6	y	y	PRON	_	_	8	expl:comp	_	_	1
+7	en	en	PRON	_	Person=3	8	expl:comp	_	_	2:VID
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1;2
+9	plus	plus	ADV	_	Polarity=Neg	8	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 4
+# text = faut passer quand pour l' avoir
+1	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	passer	passer	VERB	_	VerbForm=Inf	1	ccomp	_	_	*
+3	quand	quand	SCONJ	_	_	5	mark	_	_	*
+4	pour	pour	ADP	_	_	5	case	_	_	*
+5	l	le	NOUN	_	Gender=Masc|Number=Plur	2	advcl	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	2	punct	_	_	*
+7	avoir	avoir	VERB	_	VerbForm=Inf	1	ccomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 5
+# text = ben on nous le livre le lundi matin à partir de quatre heures du matin
+1	ben	ben	ADV	_	_	5	advmod	_	_	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+3	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	5	iobj	_	_	*
+4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_	*
+5	livre	livrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	5	obl	_	_	*
+8	matin	matin	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*
+9	à	à	ADP	_	_	5	advmod	_	_	*
+10	partir	partir	VERB	_	VerbForm=Inf	9	fixed	_	_	*
+11	de	de	ADP	_	_	13	case	_	_	*
+12	quatre	quatre	NUM	_	_	13	nummod	_	_	*
+13	heures	heure	NOUN	_	Gender=Fem|Number=Plur	9	obl:arg	_	_	*
+14-15	du	_	_	_	_	_	_	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	matin	matin	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 6
+# text = lundi matin porte d' accord merci
+1	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*
+2	matin	matin	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*
+3	porte	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	d	de	ADP	_	_	6	case	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	6	punct	_	_	*
+6	accord	accord	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*
+7	merci	merci	INTJ	_	_	3	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0605.txt 7
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

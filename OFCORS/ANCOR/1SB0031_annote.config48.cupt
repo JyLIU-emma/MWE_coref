@@ -1,0 +1,101 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0031.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 2
+# text = bonjour je viens parce que j' ai entendu parler d' une carte e qu' on devrait prendre ici pour les étudiants
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+4	parce	parce	ADV	_	_	3	advmod	_	_	*
+5	que	que	SCONJ	_	_	9	mark	_	_	*
+6	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*
+8	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+9	entendu	entendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	_	1:MVC
+10	parler	parler	VERB	_	VerbForm=Inf	9	xcomp	_	_	1
+11	d	de	ADP	_	_	14	case	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	14	punct	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*
+14	carte	carte	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*
+15	e	e	CCONJ	_	_	19	cc	_	_	*
+16	qu	que	SCONJ	_	_	19	mark	_	SpaceAfter=No	*
+17	'	'	PUNCT	_	_	19	punct	_	_	*
+18	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_	*
+19	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_	*
+20	prendre	prendre	VERB	_	VerbForm=Inf	19	xcomp	_	_	*
+21	ici	ici	ADV	_	_	20	advmod	_	_	*
+22	pour	pour	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_	*
+24	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	20	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 3
+# text = carte " tabou "
+1	carte	carte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+2	"	"	PUNCT	_	_	3	punct	_	_	*
+3	tabou	tabou	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 4
+# text = je sais pas
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 5
+# text = tatoue " tabou " ou tatou je sais plus
+1	tatoue	tatoue	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*
+2	"	"	PUNCT	_	_	3	punct	_	_	*
+3	tabou	tabou	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	_	*
+4	"	"	PUNCT	_	_	3	punct	_	_	*
+5	ou	ou	CCONJ	_	_	8	cc	_	_	*
+6	tatou	tatou	ADV	_	PronType=Rel|Typo=Yes	8	advmod	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+8	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+9	plus	plus	ADV	_	Polarity=Neg	8	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 6
+# text = " tabou "
+1	"	"	PUNCT	_	_	2	punct	_	_	*
+2	tabou	tabou	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	"	"	PUNCT	_	_	2	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 7
+# text = c' est comme ça
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	comme	comme	ADP	_	_	5	case	_	_	*
+5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 8
+# text = oui c' est en vente à côté
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	en	en	ADP	_	_	6	case	_	_	*
+6	vente	vente	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+7	à	à	ADP	_	_	6	advmod	_	_	*
+8	côté	côté	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 9
+# text = juste là
+1	juste	juste	ADV	_	_	2	advmod	_	_	*
+2	là	là	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 10
+# text = oui oui d' accord
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+3	d	de	ADP	_	_	5	case	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	5	punct	_	_	*
+5	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0031.txt 11
+# text = merci madame
+1	merci	merci	INTJ	_	_	2	amod	_	_	*
+2	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*
+

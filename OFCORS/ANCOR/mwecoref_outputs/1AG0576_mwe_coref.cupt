@@ -1,0 +1,52 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0576.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0576.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0576.txt 2
+# text = bonjour j' aurais voulu savoir ce qu' il y avait à visiter sur Grenoble avoir des documents
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	0	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+4	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	savoir	savoir	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+7	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*	*	*
+8	qu	qu	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl:subj	_	_	1:VID	*	*
+11	y	y	PRON	_	_	12	expl:comp	_	_	1	*	*
+12	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	parataxis	_	_	1	*	*
+13	à	à	ADP	_	_	14	mark	_	_	*	*	*
+14	visiter	visiter	VERB	_	VerbForm=Inf	12	xcomp	_	_	*	*	*
+15	sur	sur	ADP	_	_	16	case	_	_	*	*	*
+16	Grenoble	Grenoble	PROPN	_	_	14	obl	_	_	*	1	0:1
+17	avoir	avoir	VERB	_	VerbForm=Inf	14	xcomp	_	_	*	*	*
+18-19	des	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	2	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_	*	2	*
+20	documents	document	NOUN	_	Gender=Masc|Number=Plur	17	obl:arg	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0576.txt 3
+# text = oui là vous avez tout ce qu' il faut voir sur Grenoble et un plan voilà de rien
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advcl	_	_	*	*	*
+2	là	là	ADV	_	_	1	advmod	_	_	*	*	*
+3	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	3	*
+4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	tout	tout	ADV	_	_	4	advmod	_	_	*	4	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*	*	*
+7	qu	qu	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	10	punct	_	_	*	*	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl:subj	_	_	1:VID	*	*
+10	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	1	*	*
+11	voir	voir	VERB	_	VerbForm=Inf	10	ccomp	_	_	*	*	*
+12	sur	sur	ADP	_	_	13	case	_	_	*	*	*
+13	Grenoble	Grenoble	PROPN	_	_	11	obl	_	_	*	5	0:5
+14	et	et	CCONJ	_	_	16	cc	_	_	*	*	*
+15	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	6	*
+16	plan	plan	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	_	*	6	*
+17	voilà	voilà	VERB	_	_	11	xcomp	_	_	*	*	*
+18	de	de	ADP	_	_	19	case	_	_	*	*	*
+19	rien	rien	PRON	_	Number=Sing	17	obl:arg	_	SpacesAfter=\s\n	*	*	*
+

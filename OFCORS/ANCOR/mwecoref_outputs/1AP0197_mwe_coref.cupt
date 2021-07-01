@@ -1,0 +1,42 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0197.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0197.txt 1
+# text = je veux un petit peu d' informations sur la ville
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	*	*
+4	petit	petit	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
+5	peu	peu	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	*	*
+6	d	de	ADP	_	_	8	case	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	8	punct	_	_	*	*	*
+8	informations	information	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	_	*	1	*
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	2	*
+11	ville	ville	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0197.txt 2
+# text = hum hum alors voilà tenez monsieur bonne journée
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	hum	hum	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	alors	alors	ADV	_	_	4	advmod	_	_	*	*	*
+4	voilà	voilà	VERB	_	_	1	acl	_	_	*	*	*
+5	tenez	tenir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	xcomp	_	_	*	*	*
+6	monsieur	monsieur	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	3	*
+7	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	4	*
+8	journée	journée	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	SpacesAfter=\s\n\n	*	4	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0197.txt 3
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0197.txt 4
+# text = merci au revoir
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2-3	au	_	_	_	_	_	_	_	_	*	*	*
+2	à	à	ADP	_	_	1	advmod	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*	*	*
+4	revoir	revoir	VERB	_	VerbForm=Inf	2	fixed	_	SpacesAfter=\s\n	*	*	*
+

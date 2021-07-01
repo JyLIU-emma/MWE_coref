@@ -1,0 +1,89 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0219.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 2
+# text = bonjour est ce que vous avez la liste des foires et brocantes de l' Isère
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	liste	liste	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+9-10	des	_	_	_	_	_	_	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*
+11	foires	foire	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*
+12	et	et	CCONJ	_	_	13	cc	_	_	*
+13	brocantes	brocante	NOUN	_	Gender=Fem|Number=Plur	11	conj	_	_	*
+14	de	de	ADP	_	_	16	case	_	_	*
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	_	*
+16	Isère	Isère	PROPN	_	_	11	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 3
+# text = de l' Isère non ce sera Grenoble et le le grand Grenoble c' est tout
+1	de	de	ADP	_	_	3	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	_	*
+3	Isère	Isère	PROPN	_	_	16	obl:mod	_	_	*
+4	non	non	ADV	_	Polarity=Neg	7	advmod	_	_	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*
+6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	cop	_	_	*
+7	Grenoble	Grenoble	PROPN	_	_	3	flat:name	_	_	*
+8	et	et	CCONJ	_	_	12	cc	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*
+11	grand	grand	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*
+12	Grenoble	Grenoble	PROPN	_	_	3	conj	_	_	*
+13	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	16	nsubj	_	SpaceAfter=No	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+16	tout	tout	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 4
+# text = bon ben Grenoble le grand ohlala
+1	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	ben	ben	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+3	Grenoble	Grenoble	PROPN	_	_	2	appos	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*
+5	grand	grand	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*
+6	ohlala	ohlala	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 5
+# text = et puis voir avec la Chambre de Commerce et d' Industrie de Grenoble qui pourra peut être vous fournir le reste voilà
+1	et	et	CCONJ	_	_	3	cc	_	_	*
+2	puis	puis	ADV	_	_	3	cc	_	_	*
+3	voir	voir	VERB	_	VerbForm=Inf	0	root	_	_	*
+4	avec	avec	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	Chambre	chambre	NOUN	_	Gender=Fem|Number=Sing	3	obl:arg	_	_	*
+7	de	de	ADP	_	_	8	case	_	_	*
+8	Commerce	commerce	PROPN	_	_	6	nmod	_	_	*
+9	et	et	CCONJ	_	_	11	cc	_	_	*
+10	d'	de	ADP	_	_	11	case	_	_	*
+11	Industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*
+12	de	de	ADP	_	_	13	case	_	_	*
+13	Grenoble	Grenoble	PROPN	_	_	8	nmod	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*
+15	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	acl:relcl	_	_	*
+16	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_	*
+17	être	être	AUX	_	VerbForm=Inf	19	aux:caus	_	_	*
+18	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	19	iobj	_	_	*
+19	fournir	fournir	VERB	_	VerbForm=Inf	16	xcomp	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	reste	reste	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*
+22	voilà	voilà	VERB	_	_	16	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 6
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0219.txt 7
+# text = bonne journée madame
+1	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	journée	journée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+3	madame	madame	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	SpacesAfter=\s\n	*
+

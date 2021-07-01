@@ -1,0 +1,49 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0255.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0255.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0255.txt 2
+# text = bonjour pour avoir des places s' il vous plaît pour e " montagnes en fêtes " à Fontaine
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	11	advcl	_	_	*	*	*
+2	pour	pour	ADP	_	_	3	mark	_	_	*	*	*
+3	avoir	avoir	VERB	_	VerbForm=Inf	1	acl	_	_	*	*	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	0	*
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*	0	*
+6	places	place	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*	0	*
+7	s	s	X	_	_	6	appos	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*	*	*
+10	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	11	obj	_	_	*	*	*
+11	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+12	pour	pour	ADP	_	_	15	case	_	_	*	*	*
+13	e	e	CCONJ	_	_	15	cc	_	_	*	*	*
+14	"	"	PUNCT	_	_	15	punct	_	_	*	1	*
+15	montagnes	montagne	NOUN	_	Gender=Fem|Number=Plur	11	obl	_	_	*	1	*
+16	en	en	ADP	_	_	17	case	_	_	*	1	*
+17	fêtes	fête	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*	1	*
+18	"	"	PUNCT	_	_	15	punct	_	_	*	1	*
+19	à	à	ADP	_	_	20	case	_	_	*	*	*
+20	Fontaine	Fontaine	PROPN	_	_	15	nmod	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0255.txt 3
+# text = à côté la billetterie là
+1	à	à	ADP	_	_	4	case	_	_	*	*	*
+2	côté	côté	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	3	*
+4	billetterie	billetterie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	3	*
+5	là	là	ADV	_	_	4	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0255.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0255.txt 5
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	4	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	5	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,193 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 053_00000036.txt
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 2
+# text = oui bonjour j' aurais aimé savoir si les diplômes de qui a été envoyé au rectorat pour des modifications était arrivé ou pas
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*
+3	j	j	X	_	_	2	appos	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	6	punct	_	_	*
+5	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	aimé	aimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	_	*
+7	savoir	savoir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+8	si	si	SCONJ	_	_	24	mark	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	diplômes	diplôme	NOUN	_	Gender=Masc|Number=Plur	24	nsubj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	qui	qui	PRON	_	PronType=Rel	15	nsubj:pass	_	_	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+14	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	aux:pass	_	_	*
+15	envoyé	envoyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl:relcl	_	_	*
+16-17	au	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	15	obl:arg	_	_	*
+19	pour	pour	ADP	_	_	22	case	_	_	*
+20-21	des	_	_	_	_	_	_	_	_	*
+20	de	de	ADP	_	_	22	case	_	_	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*
+22	modifications	modification	NOUN	_	Gender=Fem|Number=Plur	18	nmod	_	_	*
+23	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	aux:tense	_	_	*
+24	arrivé	arriver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	ccomp	_	_	*
+25	ou	ou	CCONJ	_	_	26	cc	_	_	*
+26	pas	pas	ADV	_	Polarity=Neg	24	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 3
+# text = e j' ai pas compris vous p- oui
+1	e	e	CCONJ	_	_	2	cc	_	_	*
+2	j	je	X	_	_	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	compris	comprendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+7	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obj	_	_	*
+8	p-	p-	ADV	_	_	9	advmod	_	_	*
+9	oui	ouir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 4
+# text = donc en fait il y a un diplôme qui a été envoyé au rectorat pour des modifications et donc j' aurais aimé savoir est -ce qu' il vous est parvenu ou pas encore
+1	donc	donc	ADV	_	_	6	advmod	_	_	*
+2	en	en	ADP	_	_	1	fixed	_	_	*
+3	fait	fait	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+5	y	y	PRON	_	_	6	expl:comp	_	_	1
+6	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	advcl	_	_	1
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	diplôme	diplôme	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	qui	qui	PRON	_	PronType=Rel	12	nsubj:pass	_	_	*
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:pass	_	_	*
+12	envoyé	envoyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*
+16	pour	pour	ADP	_	_	19	case	_	_	*
+17-18	des	_	_	_	_	_	_	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_	*
+19	modifications	modification	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*
+21	donc	donc	ADV	_	_	22	advmod	_	_	*
+22	j	j	X	_	_	19	conj	_	SpaceAfter=No	*
+23	'	'	PUNCT	_	_	25	punct	_	_	*
+24	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*
+25	aimé	aimer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	parataxis	_	_	*
+26	savoir	savoir	VERB	_	VerbForm=Inf	25	xcomp	_	_	*
+27	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:pass	_	_	*
+28	-	-	PUNCT	_	_	30	punct	_	SpaceAfter=No	*
+29	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	30	det	_	_	*
+30	qu	qu	NOUN	_	Gender=Masc|Number=Sing	35	obl:mod	_	SpaceAfter=No	*
+31	'	'	PUNCT	_	_	30	punct	_	_	*
+32	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_	*
+33	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	35	nsubj	_	_	*
+34	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:tense	_	_	*
+35	parvenu	parvenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+36	ou	ou	CCONJ	_	_	38	cc	_	_	*
+37	pas	pas	ADV	_	_	38	advmod	_	_	*
+38	encore	encore	ADV	_	_	35	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 5
+# text = est -ce que à oui au rectorat c' est sur Lorient ça
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+2	-	-	PUNCT	_	_	3	punct	_	SpaceAfter=No	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	_	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+5	à	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	oui	ouir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl:relcl	_	_	*
+7-8	au	_	_	_	_	_	_	_	_	*
+7	à	à	ADP	_	_	9	case	_	_	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*
+10	c	c	X	_	_	9	appos	_	SpaceAfter=No	*
+11	'	'	PUNCT	_	_	10	punct	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*
+13	sur	sur	ADP	_	_	14	case	_	_	*
+14	Lorient	Lorient	PROPN	_	_	0	root	_	_	*
+15	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 6
+# text = hein là je suis à Lorient
+1	hein	hein	ADV	_	_	2	advmod	_	_	*
+2	là	là	ADV	_	_	6	advmod	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+4	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	à	à	ADP	_	_	6	case	_	_	*
+6	Lorient	Lorient	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 7
+# text = non c' est à Vannes
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	à	à	ADP	_	_	6	case	_	_	*
+6	Vannes	Vannes	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 8
+# text = ouais ben ouais ouais ouais
+1	ouais	ouai	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+2	ben	ben	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+3	ouais	ouais	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	_	*
+4	ouais	ouai	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	_	*
+5	ouais	ouais	NOUN	_	Gender=Masc|Number=Plur	2	appos	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 9
+# text = et en quelle filière
+1	et	et	CCONJ	_	_	4	cc	_	_	*
+2	en	en	ADP	_	_	4	case	_	_	*
+3	quelle	quel	DET	_	Gender=Fem|Number=Sing	4	det	_	_	*
+4	filière	filière	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 10
+# text = A E S de deux mille deux
+1	A	à	ADP	_	_	2	case	_	_	*
+2	E	E	PROPN	_	_	0	root	_	_	*
+3	S	S	PROPN	_	_	2	flat:name	_	_	*
+4	de	de	ADP	_	_	6	case	_	_	*
+5	deux	deux	NUM	_	_	6	nummod	_	_	*
+6	mille	mille	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+7	deux	deux	NUM	_	_	2	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 11
+# text = alors attendez je vais vous passer la personne conservez hein
+1	alors	alors	ADV	_	_	2	advmod	_	_	*
+2	attendez	attendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*
+5	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	iobj	_	_	*
+6	passer	passer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*
+8	personne	personne	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*
+9	conservez	conservoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	hein	hein	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 12
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 13
+# text = oui allo
+1	oui	oui	ADV	_	_	2	advmod	_	_	*
+2	allo	allo	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 14
+# text = oui c' est pour toi Prénom
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+5	pour	pour	ADP	_	_	6	case	_	_	*
+6	toi	soi	PRON	_	Number=Sing|Person=2	7	obl:mod	_	_	*
+7	Prénom	prénom	PROPN	_	_	1	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 053_00000036.txt 15
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

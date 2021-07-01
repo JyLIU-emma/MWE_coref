@@ -1,0 +1,171 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0029.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 2
+# text = je voudrais savoir j' ai vu qu' il y avait un " atelier de l' oeil " je voudrais savoir si c' est des cours de dessin en fait
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	0	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	savoir	savoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	j	j	PRON	_	Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No	*	1	*
+5	'	'	PUNCT	_	_	7	punct	_	_	*	1	*
+6	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+7	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl:relcl	_	_	*	*	*
+8	qu	qre	SCONJ	_	_	12	mark	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl:subj	_	_	1:VID	*	*
+11	y	y	PRON	_	_	12	expl:comp	_	_	1	*	*
+12	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	ccomp	_	_	1	*	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	2	0:2
+14	"	"	PUNCT	_	_	15	punct	_	_	*	2	0:2
+15	atelier	atelier	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	2	0:2
+16	de	de	ADP	_	_	19	case	_	_	*	2	0:2
+17	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*	2;3	0:2;1:3
+18	'	'	PUNCT	_	_	19	punct	_	_	*	2;3	0:2;1:3
+19	oeil	oeil	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	2;3	0:2;1:3
+20	"	"	PUNCT	_	_	22	punct	_	_	*	*	*
+21	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	22	nsubj	_	_	*	4	*
+22	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	parataxis	_	_	*	*	*
+23	savoir	savoir	VERB	_	VerbForm=Inf	22	xcomp	_	_	*	*	*
+24	si	si	SCONJ	_	_	30	mark	_	_	*	*	*
+25	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	30	nsubj	_	SpaceAfter=No	*	5	0:5
+26	'	'	PUNCT	_	_	25	punct	_	_	*	5	0:5
+27	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	_	_	*	*	*
+28-29	des	_	_	_	_	_	_	_	_	*	*	*
+28	de	de	ADP	_	_	30	case	_	_	*	6	3:6
+29	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_	*	6	3:6
+30	cours	cours	NOUN	_	Gender=Masc|Number=Plur	23	ccomp	_	_	*	6	3:6
+31	de	de	ADP	_	_	32	case	_	_	*	6	3:6
+32	dessin	dessin	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*	6;7	3:6
+33	en	en	ADP	_	_	30	advmod	_	_	*	*	*
+34	fait	fait	NOUN	_	Gender=Masc|Number=Sing	33	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 3
+# text = c' est une galerie
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	8	0:8
+2	'	'	PUNCT	_	_	1	punct	_	_	*	8	0:8
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	9	0:9
+5	galerie	galerie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	9	0:9
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 4
+# text = c' est une galerie une de e
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	10	0:10
+2	'	'	PUNCT	_	_	1	punct	_	_	*	10	0:10
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	11	0:11
+5	galerie	galerie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	11	0:11
+6	une	un	PRON	_	Gender=Fem|Number=Sing	5	appos	_	_	*	*	*
+7	de	de	ADP	_	_	8	case	_	_	*	*	*
+8	e	e	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 5
+# text = galerie de l' oeil " vous dire s' ils donnent des cours ça se peut hein on n' est pas franchement au courant de tout leur programme et c' est avant tout une galerie et c' est dans ce but qu' ils ont fait une exposition donc je vais vous donner leur carte et puis vous les contactez
+1	galerie	galerie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	12	0:12
+2	de	de	ADP	_	_	5	case	_	_	*	12	0:12
+3	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	12;13	0:12;1:13
+4	'	'	PUNCT	_	_	5	punct	_	_	*	12;13	0:12;1:13
+5	oeil	oeil	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	12;13	0:12;1:13
+6	"	"	PUNCT	_	_	8	punct	_	_	*	*	*
+7	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	8	iobj	_	_	*	14	*
+8	dire	dire	VERB	_	VerbForm=Inf	1	parataxis	_	_	*	*	*
+9	s	s	X	_	_	12	obl:mod	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	9	punct	_	_	*	*	*
+11	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	_	*	15	2:15
+12	donnent	donner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	16	3:16
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	16	3:16
+15	cours	cours	NOUN	_	Gender=Masc|Number=Plur	18	obl:mod	_	_	*	16	3:16
+16	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	nsubj	_	_	*	*	*
+17	se	se	PRON	_	Person=3|PronType=Prs	18	expl:pass	_	_	1:IRV	*	*
+18	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	xcomp	_	_	1	*	*
+19	hein	hein	ADV	_	_	28	advmod	_	_	*	*	*
+20	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	28	nsubj	_	_	*	17	*
+21	n	n	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No	*	*	*
+22	'	'	PUNCT	_	_	21	punct	_	_	*	*	*
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_	*	*	*
+24	pas	pas	ADV	_	Polarity=Neg	28	advmod	_	_	*	*	*
+25	franchement	franchement	ADV	_	_	28	advmod	_	_	*	*	*
+26-27	au	_	_	_	_	_	_	_	_	*	*	*
+26	à	à	ADP	_	_	28	case	_	_	*	*	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*	*	*
+28	courant	courant	NOUN	_	Gender=Masc|Number=Sing	47	nsubj	_	_	*	*	*
+29	de	de	ADP	_	_	32	case	_	_	*	*	*
+30	tout	tout	ADJ	_	Gender=Masc|Number=Sing	32	amod	_	_	*	18	*
+31	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	32	det	_	_	*	18	*
+32	programme	programme	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	_	*	18	*
+33	et	et	CCONJ	_	_	34	cc	_	_	*	*	*
+34	c	ce	NOUN	_	Gender=Masc|Number=Sing	32	conj	_	SpaceAfter=No	*	19	0:19
+35	'	'	PUNCT	_	_	34	punct	_	_	*	19	0:19
+36	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	cop	_	_	*	*	*
+37	avant	avant	ADP	_	_	40	case	_	_	*	*	*
+38	tout	tout	ADV	_	_	40	advmod	_	_	*	*	*
+39	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*	20	0:20
+40	galerie	galerie	NOUN	_	Gender=Fem|Number=Sing	28	advcl	_	_	*	20	0:20
+41	et	et	CCONJ	_	_	42	cc	_	_	*	*	*
+42	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	40	conj	_	SpaceAfter=No	*	*	*
+43	'	'	PUNCT	_	_	42	punct	_	_	*	*	*
+44	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	cop	_	_	*	*	*
+45	dans	dans	ADP	_	_	47	case	_	_	*	*	*
+46	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	47	det	_	_	*	21	*
+47	but	but	NOUN	_	Gender=Masc|Number=Sing	18	xcomp	_	_	*	21	*
+48	qu	que	SCONJ	_	_	52	mark	_	SpaceAfter=No	*	*	*
+49	'	'	PUNCT	_	_	52	punct	_	_	*	*	*
+50	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	52	nsubj	_	_	*	22	2:22
+51	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	52	aux:tense	_	_	*	*	*
+52	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	47	acl	_	_	*	*	*
+53	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_	*	23	*
+54	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	52	obj	_	_	*	23	*
+55	donc	donc	ADV	_	_	57	advmod	_	_	*	*	*
+56	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	57	nsubj	_	_	*	24	*
+57	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	52	parataxis	_	_	*	*	*
+58	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	59	iobj	_	_	*	25	*
+59	donner	donner	VERB	_	VerbForm=Inf	57	xcomp	_	_	*	*	*
+60	leur	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	61	det	_	_	*	26	*
+61	carte	carte	NOUN	_	Gender=Fem|Number=Sing	59	obj	_	_	*	26	*
+62	et	et	CCONJ	_	_	66	cc	_	_	*	*	*
+63	puis	puis	ADV	_	_	66	cc	_	_	*	*	*
+64	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	66	nsubj	_	_	*	27	*
+65	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	66	obj	_	_	*	28	2:28
+66	contactez	contacter	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	59	conj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 6
+# text = oh oui volontiers
+1	oh	oh	INTJ	_	_	0	root	_	_	*	*	*
+2	oui	oui	ADV	_	_	3	advmod	_	_	*	*	*
+3	volontiers	volontiers	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 7
+# text = voilà voilà
+1	voilà	voilà	VERB	_	_	2	advcl	_	_	*	*	*
+2	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 8
+# text = et je vous remercie
+1	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	29	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	30	*
+4	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 9
+# text = je vous en prie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	31	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	32	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0029.txt 10
+# text = s' il vous plaît
+1	s	s	X	_	_	5	obl:mod	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	*	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	*	*
+5	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

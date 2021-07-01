@@ -1,0 +1,51 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2AP0594.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0594.txt 1
+# text = c' est à qui
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	qui	qui	PRON	_	PronType=Rel	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0594.txt 2
+# text = bonjour est ce que vous pouvez me donner un plan de Grenoble et de Lyon s' il vous plaît
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*
+2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	_	*
+4	que	que	SCONJ	_	_	6	mark	_	_	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*
+6	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*
+7	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	8	iobj	_	_	*
+8	donner	donner	VERB	_	VerbForm=Inf	6	xcomp	_	_	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+10	plan	plan	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	Grenoble	Grenoble	PROPN	_	_	10	nmod	_	_	*
+13	et	et	CCONJ	_	_	15	cc	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Lyon	Lyon	PROPN	_	_	12	conj	_	_	*
+16	s	s	X	_	_	15	flat:name	_	SpaceAfter=No	*
+17	'	'	PUNCT	_	_	2	punct	_	_	*
+18	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_	*
+19	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	20	iobj	_	_	*
+20	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0594.txt 3
+# text = voilà Grenoble voilà Lyon
+1	voilà	voilà	VERB	_	_	3	csubj	_	_	*
+2	Grenoble	Grenoble	PROPN	_	_	1	obj	_	_	*
+3	voilà	voilà	VERB	_	_	0	root	_	_	*
+4	Lyon	Lyon	PROPN	_	_	3	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0594.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0594.txt 5
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

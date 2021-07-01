@@ -1,0 +1,64 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0229.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 2
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 3
+# text = est ce que vous avez une liste des hôpitaux qui se trouvent dans les DOM TOM
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	liste	liste	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	hôpitaux	hôpital	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+12	se	se	PRON	_	Person=3|PronType=Prs	13	expl:pass	_	_	1:IRV
+13	trouvent	trouver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_	1
+14	dans	dans	ADP	_	_	16	case	_	_	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*
+16	DOM	Dom	PROPN	_	_	13	obl:arg	_	_	*
+17	TOM	Tom	PROPN	_	_	16	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 4
+# text = non pas du tout
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	pas	pas	ADV	_	_	0	root	_	_	*
+3-4	du	_	_	_	_	_	_	_	_	*
+3	de	de	ADP	_	_	2	advmod	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	*
+5	tout	tout	PRON	_	Gender=Masc|Number=Sing	3	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 5
+# text = pas du tout
+1	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*
+2-3	du	_	_	_	_	_	_	_	_	*
+2	de	de	ADP	_	_	4	case	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+4	tout	tout	PRON	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 6
+# text = non désolé
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	désolé	désoler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 7
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0229.txt 8
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

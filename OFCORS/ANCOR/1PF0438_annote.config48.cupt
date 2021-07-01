@@ -1,0 +1,75 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1PF0438.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 1
+# text = est ce que vous avez " le 38 " s' il vous plaît
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+6	"	"	PUNCT	_	_	8	punct	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	38	38	NUM	_	_	2	appos	_	_	*
+9	"	"	PUNCT	_	_	10	punct	_	_	*
+10	s	s	X	_	_	8	appos	_	SpaceAfter=No	*
+11	'	'	PUNCT	_	_	10	punct	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	14	iobj	_	_	*
+14	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 2
+# text = " le 38 "
+1	"	"	PUNCT	_	_	3	punct	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	38	38	NUM	_	_	0	root	_	_	*
+4	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 3
+# text = e pas vu j' avais pas vu qu' il était là hein
+1	e	e	CCONJ	_	_	3	cc	_	_	*
+2	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	_	*
+3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+4	j	j	X	_	_	8	nsubj	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*
+6	avais	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	8	aux:tense	_	_	*
+7	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+8	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	*
+9	qu	qre	SCONJ	_	_	14	mark	_	SpaceAfter=No	*
+10	'	'	PUNCT	_	_	14	punct	_	_	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*
+12	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	cop	_	_	*
+13	là	là	ADV	_	_	14	advmod	_	_	*
+14	hein	hein	ADJ	_	Gender=Masc|Number=Sing	8	advcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 4
+# text = monsieur
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 5
+# text = mais c' est pas grave hein
+1	mais	mais	CCONJ	_	_	6	cc	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	grave	grave	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+7	hein	hein	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 6
+# text = merci beaucoup je vous remercie merci beaucoup
+1	merci	merci	INTJ	_	_	5	discourse	_	_	*
+2	beaucoup	beaucoup	ADV	_	_	5	advmod	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obj	_	_	*
+5	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	merci	merci	INTJ	_	_	7	case	_	_	*
+7	beaucoup	beaucoup	ADV	_	_	5	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0438.txt 7
+# text = moi au revoir
+1	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	advmod	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+4	revoir	revoir	VERB	_	VerbForm=Inf	2	fixed	_	SpacesAfter=\s\n	*
+

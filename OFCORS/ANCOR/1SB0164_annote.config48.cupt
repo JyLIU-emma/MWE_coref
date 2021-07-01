@@ -1,0 +1,115 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0164.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 2
+# text = bonjour moi je viens chercher s' il vous plaît des des invitations pour la visite du musée de Grenoble aujourd'hui et le concert de piano
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	1	nmod	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+5	chercher	chercher	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	s	s	X	_	_	5	obj	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	10	punct	_	_	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	iobj	_	_	*
+10	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*
+11-12	des	_	_	_	_	_	_	_	_	*
+11	de	de	ADP	_	_	12	case	_	_	*
+12	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	10	obl:arg	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	invitations	invitation	NOUN	_	Gender=Fem|Number=Plur	12	nmod	_	_	*
+16	pour	pour	ADP	_	_	18	case	_	_	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*
+18	visite	visite	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*
+19-20	du	_	_	_	_	_	_	_	_	*
+19	de	de	ADP	_	_	21	case	_	_	*
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*
+21	musée	musée	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*
+22	de	de	ADP	_	_	23	case	_	_	*
+23	Grenoble	Grenoble	PROPN	_	_	21	nmod	_	_	*
+24	aujourd'hui	aujourd'hui	ADV	_	_	18	advmod	_	_	*
+25	et	et	CCONJ	_	_	27	cc	_	_	*
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*
+27	concert	concert	NOUN	_	Gender=Masc|Number=Sing	18	conj	_	_	*
+28	de	de	ADP	_	_	29	case	_	_	*
+29	piano	piano	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 3
+# text = c' est avant-première aussi ça
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	avant-première	avant-première	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+5	aussi	aussi	ADV	_	_	6	advmod	_	_	*
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obl:mod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 4
+# text = e je pas si c' est avant-première on m' a dit qu' il y avait ça aujourd'hui e on nous a dit l' office
+1	e	e	CCONJ	_	_	8	cc	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+3	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+4	si	si	SCONJ	_	_	8	mark	_	_	*
+5	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	5	punct	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+8	avant-première	avant-première	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+9	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*
+10	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	12	iobj	_	_	*
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*
+12	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	parataxis	_	_	*
+13	qu	que	SCONJ	_	_	17	mark	_	SpaceAfter=No	*
+14	'	'	PUNCT	_	_	17	punct	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl:subj	_	_	1:VID
+16	y	y	PRON	_	_	17	expl:comp	_	_	1
+17	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	ccomp	_	_	1
+18	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	obj	_	_	*
+19	aujourd'hui	aujourd'hui	ADV	_	_	17	advmod	_	_	*
+20	e	e	CCONJ	_	_	24	cc	_	_	*
+21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	24	nsubj	_	_	*
+22	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	24	iobj	_	_	*
+23	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*
+24	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	conj	_	_	*
+25	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	SpaceAfter=No	*
+26	'	'	PUNCT	_	_	25	punct	_	_	*
+27	office	office	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 5
+# text = les retirer ici à l' office
+1	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	2	obj	_	_	*
+2	retirer	retirer	VERB	_	VerbForm=Inf	0	root	_	_	*
+3	ici	ici	ADV	_	_	2	advmod	_	_	*
+4	à	à	ADP	_	_	5	case	_	_	*
+5	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	obl:arg	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	5	punct	_	_	*
+7	office	office	NOUN	_	Gender=Masc|Number=Sing	2	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 6
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0164.txt 7
+# text = bon c' est à côté billetterie il faut vous mettre l' accueil qui s' en occupe
+1	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	c	ce	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*
+5	à	à	ADP	_	_	7	case	_	_	*
+6	côté	côté	NOUN	_	Gender=Masc|Number=Sing	5	fixed	_	_	*
+7	billetterie	billetterie	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	1:VID
+9	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+10	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	11	obj	_	_	*
+11	mettre	mettre	VERB	_	VerbForm=Inf	9	ccomp	_	_	*
+12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*
+13	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*
+14	qui	qui	PRON	_	PronType=Rel	18	nmod	_	_	*
+15	s	s	X	_	_	18	nmod	_	SpaceAfter=No	*
+16	'	'	PUNCT	_	_	15	punct	_	_	*
+17	en	en	ADP	_	_	15	fixed	_	_	*
+18	occupe	occupe	NOUN	_	Gender=Fem|Number=Sing	13	appos	_	SpacesAfter=\s\n	*
+

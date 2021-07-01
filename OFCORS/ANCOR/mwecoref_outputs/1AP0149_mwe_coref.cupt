@@ -1,0 +1,80 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0149.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 1
+# text = madame nous sommes autorisés par la municipalité pour mettre cette belle affiche
+1	madame	madame	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	SpacesBefore=\n\n	*	0	*
+2	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_	*	1	*
+3	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	autorisés	autoriser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	par	par	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	2	*
+7	municipalité	municipalité	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	2	*
+8	pour	pour	ADP	_	_	9	mark	_	_	*	*	*
+9	mettre	mettre	VERB	_	VerbForm=Inf	4	advcl	_	_	*	*	*
+10	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	12	det	_	_	*	3	0:3
+11	belle	beau	ADJ	_	Gender=Fem|Number=Sing	12	amod	_	_	*	3	0:3
+12	affiche	affiche	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	SpacesAfter=\s\n\n	*	3	0:3
+
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 2
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 3
+# text = voyez " société d' écologie du Dauphiné " c' est celle qu' on vous donne chaque année
+1	voyez	vovoir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	14	nsubj	_	_	*	*	*
+2	"	"	PUNCT	_	_	3	punct	_	_	*	*	*
+3	société	société	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	_	*	4	1:4
+4	d	de	ADP	_	_	6	case	_	SpaceAfter=No	*	4	1:4
+5	'	'	PUNCT	_	_	6	punct	_	_	*	4	1:4
+6	écologie	écologie	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	4;5	1:4;2:5
+7-8	du	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	4;6	1:4
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	4;6	1:4
+9	Dauphiné	Dauphiné	PROPN	_	_	6	nmod	_	_	*	4;6	1:4
+10	"	"	PUNCT	_	_	6	punct	_	_	*	*	*
+11	c	ce	X	_	_	6	appos	_	SpaceAfter=No	*	7	0:7
+12	'	'	PUNCT	_	_	6	punct	_	_	*	7	0:7
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*	*	*
+14	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_	*	8	0:8
+15	qu	qu	SCONJ	_	_	19	mark	_	SpaceAfter=No	*	9	0:9
+16	'	'	PUNCT	_	_	19	punct	_	_	*	9	0:9
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	19	nsubj	_	_	*	10	*
+18	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	19	iobj	_	_	*	11	*
+19	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_	*	*	*
+20	chaque	chaque	DET	_	Gender=Fem|Number=Sing	21	det	_	_	*	12	*
+21	année	année	NOUN	_	Gender=Fem|Number=Sing	19	obl	_	SpacesAfter=\s\n\n	*	12	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 4
+# text = d' accord " société d' écologie " sans problème on va la mettre hein
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	*	*
+4	"	"	PUNCT	_	_	3	punct	_	_	*	*	*
+5	société	société	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	_	*	13	1:13
+6	d	de	ADP	_	_	8	case	_	SpaceAfter=No	*	13	1:13
+7	'	'	PUNCT	_	_	8	punct	_	_	*	13	1:13
+8	écologie	écologie	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*	13;14	1:13;2:14
+9	"	"	PUNCT	_	_	8	punct	_	_	*	*	*
+10	sans	sans	ADP	_	_	11	case	_	_	*	*	*
+11	problème	problème	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	15	*
+12	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_	*	16	*
+13	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+14	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obj	_	_	*	17	0:17
+15	mettre	mettre	VERB	_	VerbForm=Inf	13	xcomp	_	_	*	*	*
+16	hein	hein	NOUN	_	Gender=Masc|Number=Sing	15	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 5
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0149.txt 6
+# text = merci à vous monsieur au revoir
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	à	à	ADP	_	_	4	case	_	_	*	*	*
+3	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	det	_	_	*	18	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	19	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	1	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n	*	*	*
+

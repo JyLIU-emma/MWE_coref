@@ -1,0 +1,99 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 058_0000003b.txt
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 2
+# text = oui bonjour madame madame Nom de Brest je vous appelle pour savoir si vous faîtes la capacité en droit
+1	oui	oui	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	10	advcl	_	_	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+4	madame	madame	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*
+5	Nom	Nom	PROPN	_	_	4	appos	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	Brest	brest	PROPN	_	_	5	nmod	_	_	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	iobj	_	_	*
+10	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+11	pour	pour	ADP	_	_	12	mark	_	_	*
+12	savoir	savoir	VERB	_	VerbForm=Inf	10	advcl	_	_	*
+13	si	si	SCONJ	_	_	15	mark	_	_	*
+14	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	15	nsubj	_	_	*
+15	faîtes	faît	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	ccomp	_	_	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+17	capacité	capacité	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	droit	droit	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 3
+# text = en quelle filière
+1	en	en	ADP	_	_	3	case	_	_	*
+2	quelle	quel	DET	_	Gender=Fem|Number=Sing	3	det	_	_	*
+3	filière	filière	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 4
+# text = en droit
+1	en	en	ADP	_	_	2	case	_	_	*
+2	droit	droit	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 5
+# text = en droit oui je vais vous passer Prénom Nom
+1	en	en	ADP	_	_	2	case	_	_	*
+2	droit	droit	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+3	oui	oui	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obj	_	_	*
+7	passer	passer	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+8	Prénom	prénom	PROPN	_	_	7	obj	_	_	*
+9	Nom	Nom	PROPN	_	_	8	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 6
+# text = ah oui là je suis pas en droit parce que je
+1	ah	ah	INTJ	_	_	0	root	_	_	*
+2	oui	oui	ADV	_	_	8	advmod	_	_	*
+3	là	là	ADV	_	_	8	advmod	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*
+5	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+6	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*
+7	en	en	ADP	_	_	8	case	_	_	*
+8	droit	droit	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*
+9	parce	parce	ADV	_	_	11	mark	_	_	*
+10	que	que	SCONJ	_	_	9	fixed	_	_	*
+11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	1	advcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 7
+# text = vous êtes en droit si si mais à l' accueil je vous passe la pers- personne de la scolar- scolarité
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+2	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	en	en	ADP	_	_	4	case	_	_	*
+4	droit	droit	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+5	si	si	SCONJ	_	_	14	mark	_	_	*
+6	si	si	SCONJ	_	_	14	mark	_	_	*
+7	mais	mais	CCONJ	_	_	14	cc	_	_	*
+8	à	à	ADP	_	_	11	case	_	_	*
+9	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*
+10	'	'	PUNCT	_	_	9	punct	_	_	*
+11	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	_	*
+12	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	14	iobj	_	_	*
+14	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	acl	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+16	pers-	pers-	ADJ	_	_	17	amod	_	_	*
+17	personne	personne	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	_	*
+18	de	de	ADP	_	_	21	case	_	_	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*
+20	scolar-	scolar-	ADJ	_	_	21	amod	_	_	*
+21	scolarité	scolarité	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 058_0000003b.txt 8
+# text = d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

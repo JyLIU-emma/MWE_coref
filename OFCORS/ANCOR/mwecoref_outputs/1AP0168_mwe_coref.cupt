@@ -1,0 +1,49 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0168.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0168.txt 1
+# text = est ce que vous avez un plan de la piste cyclable
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	SpacesBefore=\n\n	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	0	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	1	0:1
+7	plan	plan	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	1	0:1
+8	de	de	ADP	_	_	10	case	_	_	*	1	0:1
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	1;2	0:1
+10	piste	piste	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	1;2	0:1
+11	cyclable	cyclable	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpacesAfter=\s\n\n	*	1;2	0:1
+
+# source_sent_id = http://my/newcorpus/uri 1AP0168.txt 2
+# text = non on n' en aura pas avant un mois maintenant
+1	non	non	ADV	_	_	6	advmod	_	_	*	*	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	1	fixed	_	_	*	3	*
+3	n	n	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+5	en	en	PRON	_	Person=3	6	expl:comp	_	_	1:VID	4	0:4
+6	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1	*	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+8	avant	avant	ADP	_	_	10	case	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	5	*
+10	mois	mois	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	_	*	5	*
+11	maintenant	maintenant	ADV	_	_	10	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0168.txt 3
+# text = je reviendrai je vous remercie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	6	*
+2	reviendrai	reviendr	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	7	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obj	_	_	*	8	*
+5	remercie	remercir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	mark	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	*	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	5	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0168.txt 4
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

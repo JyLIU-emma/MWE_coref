@@ -1,0 +1,123 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0056.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 1
+# text = vous avez un plan de Nice
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*	0	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	1	*
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	1	*
+5	de	de	ADP	_	_	6	case	_	_	*	1	*
+6	Nice	Nice	PROPN	_	_	4	nmod	_	SpacesAfter=\s\n\n	*	1;2	0:2
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 2
+# text = de Nice
+1	de	de	ADP	_	_	2	case	_	_	*	*	*
+2	Nice	Nice	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*	3	0:3
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 3
+# text = non rien
+1	non	non	ADV	_	_	2	advmod	_	_	*	*	*
+2	rien	rien	PRON	_	Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 4
+# text = non rien c' est c' est pour un départ très proche
+1	non	non	ADV	_	_	5	advmod	_	_	*	*	*
+2	rien	rien	PRON	_	Number=Sing|Polarity=Neg	5	nsubj	_	_	*	*	*
+3	c	ce	X	_	_	2	appos	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+5	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+9	pour	pour	ADP	_	_	11	case	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	4	*
+11	départ	départ	NOUN	_	Gender=Masc|Number=Sing	5	parataxis	_	_	*	4	*
+12	très	très	ADV	_	_	13	advmod	_	_	*	4	*
+13	proche	proche	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpacesAfter=\s\n\n	*	4	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 5
+# text = e la semaine prochaine
+1	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	5	*
+3	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	5	*
+4	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	SpacesAfter=\s\n\n	*	5	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 6
+# text = moi je vais les appeler aujourd'hui avec un peu de chance e je peux les avoir e on est quoi jeudi ouais lundi prochain
+1	moi	soi	PRON	_	Number=Sing|Person=1	3	nsubj	_	_	*	6	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	7	*
+3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	5	obj	_	_	*	8	1:8
+5	appeler	appeler	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	aujourd'hui	aujourd'hui	ADV	_	_	5	advmod	_	_	*	*	*
+7	avec	avec	ADP	_	_	8	case	_	_	*	*	*
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	obl:mod	_	_	*	*	*
+9	peu	peu	ADV	_	_	8	fixed	_	_	*	*	*
+10	de	de	ADP	_	_	11	case	_	_	*	*	*
+11	chance	chance	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	9	*
+12	e	e	CCONJ	_	_	14	cc	_	_	*	*	*
+13	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_	*	10	*
+14	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	conj	_	_	*	*	*
+15	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	16	obj	_	_	*	11	1:11
+16	avoir	avoir	VERB	_	VerbForm=Inf	14	xcomp	_	_	*	*	*
+17	e	e	CCONJ	_	_	23	cc	_	_	*	*	*
+18	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	23	nsubj	_	_	*	12	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*	*	*
+20	quoi	quoi	PRON	_	PronType=Rel	23	nmod	_	_	*	*	*
+21	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	13	*
+22	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	_	*	*	*
+23	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	_	*	14	2:14
+24	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	SpacesAfter=\s\n\n	*	14	2:14
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 7
+# text = ah ben ça serait bon
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	5	advcl	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_	*	15	2:15
+4	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+5	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 8
+# text = je vais les appeler e dans 5 minutes
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	16	*
+2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	*	17	1:17
+4	appeler	appeler	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	e	e	CCONJ	_	_	8	cc	_	_	*	*	*
+6	dans	dans	ADP	_	_	8	case	_	_	*	*	*
+7	5	5	NUM	_	_	8	nummod	_	_	*	18	*
+8	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	SpacesAfter=\s\n\n	*	18	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 9
+# text = d' accord donc je reviens chez vous d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	donc	donc	ADV	_	_	6	advmod	_	_	*	*	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	19	*
+6	reviens	revenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	chez	chez	ADP	_	_	8	case	_	_	*	*	*
+8	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obl	_	_	*	20	*
+9	d	de	ADP	_	_	11	case	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	11	punct	_	_	*	*	*
+11	accord	accord	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	*	*
+12	merci	merci	INTJ	_	_	6	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 10
+# text = vous repassez
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	21	*
+2	repassez	repasser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0056.txt 11
+# text = mais je vous en prie madame au revoir
+1	mais	mais	CCONJ	_	_	5	cc	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	22	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*	23	*
+4	en	en	PRON	_	Person=3	6	nmod	_	_	*	*	*
+5	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	madame	madame	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	24	*
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	5	advmod	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	fixed	_	_	*	*	*
+9	revoir	revoir	VERB	_	VerbForm=Inf	7	fixed	_	SpacesAfter=\s\n	*	*	*
+

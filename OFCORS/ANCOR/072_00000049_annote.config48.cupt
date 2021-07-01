@@ -1,0 +1,246 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 072_00000049.txt
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 1
+# text = U B S bonjour
+1	U	U	X	_	_	0	root	_	_	*
+2	B	B	X	_	_	1	flat:foreign	_	_	*
+3	S	S	X	_	_	1	flat:foreign	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 2
+# text = oui Prénom Nom bonjour e j' aimerais joindre e monsieur Nom2 Prénom2
+1	oui	oui	ADV	_	_	2	advmod	_	_	*
+2	Prénom	prénom	PROPN	_	_	0	root	_	_	*
+3	Nom	Nom	PROPN	_	_	2	flat:name	_	_	*
+4	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	2	flat:name	_	_	*
+5	e	e	CCONJ	_	_	6	cc	_	_	*
+6	j	je	X	_	_	4	conj	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	8	punct	_	_	*
+8	aimerais	aimer	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	_	*
+9	joindre	joindre	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*
+10	e	e	CCONJ	_	_	11	cc	_	_	*
+11	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_	*
+12	Nom2	Nom2	X	_	_	13	nmod	_	_	*
+13	Prénom2	Prénom2	X	_	_	11	appos	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 3
+# text = Monsieur Nom2 Prénom2 oui
+1	Monsieur	monsieur	PROPN	_	_	4	nsubj	_	_	*
+2	Nom2	Nom2	PROPN	_	_	1	flat:name	_	_	*
+3	Prénom2	Prénom2	PROPN	_	_	1	flat:name	_	_	*
+4	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 4
+# text = c' est possible
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	possible	possible	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 5
+# text = oui je vais regarder s' il est dans son bureau ou au secrétariat
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+4	regarder	regarder	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	s	s	X	_	_	4	obj	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	3	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*
+9	dans	dans	ADP	_	_	11	case	_	_	*
+10	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	11	det	_	_	*
+11	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+12	ou	ou	CCONJ	_	_	15	cc	_	_	*
+13-14	au	_	_	_	_	_	_	_	_	*
+13	à	à	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	secrétariat	secrétariat	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 6
+# text = merci c' est madame Nom3
+1	merci	merci	INTJ	_	_	5	discourse	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	Nom3	Nom3	NUM	_	_	5	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 7
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 8
+# text = c' est ça oui d' accord
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+5	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_	*
+6	d	de	ADP	_	_	8	case	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	8	punct	_	_	*
+8	accord	accord	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 9
+# text = je vais vous passer madame Nom3 hein elle va vous dire si e
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+4	passer	passer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+5	madame	madame	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*
+6	Nom3	Nom3	PROPN	_	_	5	flat:name	_	_	*
+7	hein	hein	PROPN	_	_	5	flat:name	_	_	*
+8	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+9	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*
+10	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	obj	_	_	*
+11	dire	dire	VERB	_	VerbForm=Inf	9	advcl	_	_	*
+12	si	si	SCONJ	_	_	11	advmod	_	_	*
+13	e	e	CCONJ	_	_	12	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 10
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 11
+# text = attends est -ce que tu sais où sont les grands plastiques e les sacs poubelles e Prénom4 ou vous les rangez vos grands sacs poubelles Nom5 Prénom5 Nom5 oui elle voudrait des grands sacs poubelles non elle ne répond pas pour le moment
+1	attends	attends	X	_	Foreign=Yes|Number=Plur	4	nsubj	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	-	-	PUNCT	_	_	4	punct	_	SpaceAfter=No	*
+4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+5	que	que	PRON	_	PronType=Rel	7	obj	_	_	*
+6	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_	*
+7	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*
+8	où	où	ADV	_	PronType=Rel	12	advmod	_	_	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+11	grands	grand	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	_	*
+12	plastiques	plastique	NOUN	_	Gender=Masc|Number=Plur	7	xcomp	_	_	*
+13	e	e	CCONJ	_	_	15	cc	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	sacs	sac	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	_	*
+16	poubelles	poubelle	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*
+17	e	e	CCONJ	_	_	18	cc	_	_	*
+18	Prénom4	Prénom4	X	_	_	15	conj	_	_	*
+19	ou	ou	CCONJ	_	_	22	cc	_	_	*
+20	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	22	nsubj	_	_	*
+21	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	22	obj	_	_	*
+22	rangez	rang	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	12	conj	_	_	*
+23	vos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	25	det	_	_	*
+24	grands	grand	ADJ	_	Gender=Masc|Number=Plur	25	amod	_	_	*
+25	sacs	sac	NOUN	_	Gender=Masc|Number=Plur	12	appos	_	_	*
+26	poubelles	poubelle	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*
+27	Nom5	Nom5	X	_	_	25	appos	_	_	*
+28	Prénom5	Prénom5	X	_	_	27	flat:foreign	_	_	*
+29	Nom5	Nom5	X	_	_	27	flat:foreign	_	_	*
+30	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obj	_	_	*
+31	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_	*
+32	voudrait	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	parataxis	_	_	*
+33-34	des	_	_	_	_	_	_	_	_	*
+33	de	de	ADP	_	_	36	case	_	_	*
+34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_	*
+35	grands	grand	ADJ	_	Gender=Masc|Number=Plur	36	amod	_	_	*
+36	sacs	sac	NOUN	_	Gender=Masc|Number=Plur	32	obl:arg	_	_	*
+37	poubelles	poubelle	ADJ	_	Gender=Fem|Number=Plur	36	amod	_	_	*
+38	non	non	ADV	_	Polarity=Neg	41	advmod	_	_	*
+39	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	41	nsubj	_	_	*
+40	ne	ne	ADV	_	Polarity=Neg	41	advmod	_	_	*
+41	répond	répondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	_	*
+42	pas	pas	ADV	_	Polarity=Neg	41	advmod	_	_	*
+43	pour	pour	ADP	_	_	45	case	_	_	*
+44	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_	*
+45	moment	moment	NOUN	_	Gender=Masc|Number=Sing	41	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 12
+# text = d' accord je rappelle dans un instant peut être
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+6	dans	dans	ADP	_	_	8	case	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	instant	instant	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+9	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+10	être	être	AUX	_	VerbForm=Inf	9	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 13
+# text = je lui d-
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	3	iobj	_	_	*
+3	d-	d-	SYM	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 14
+# text = oui d' ici un petit quart d' heure
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+2	d	de	ADP	_	_	7	case	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	7	punct	_	_	*
+4	ici	ici	ADV	_	_	7	advmod	_	_	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+7	quart	quart	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*
+8	d	de	ADP	_	_	10	case	_	SpaceAfter=No	*
+9	'	'	PUNCT	_	_	10	punct	_	_	*
+10	heure	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 15
+# text = est -ce qu' il y a une ligne directe pour le son service ou est -ce
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+2	-	-	PUNCT	_	_	1	punct	_	SpaceAfter=No	*
+3	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_	*
+4	qu	qu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	8	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID
+7	y	y	PRON	_	_	8	expl:comp	_	_	1
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	1
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	directe	direct	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*
+12	pour	pour	ADP	_	_	15	case	_	_	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+14	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	_	*
+15	service	service	NOUN	_	Gender=Masc|Number=Sing	8	obl	_	_	*
+16	ou	ou	CCONJ	_	_	19	cc	_	_	*
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_	*
+18	-	-	PUNCT	_	_	17	punct	_	SpaceAfter=No	*
+19	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 16
+# text = 0 2 97
+1	0	0	NUM	_	_	2	nummod	_	_	*
+2	2 97	2 97	NUM	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 17
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 18
+# text = 0 1
+1	0	0	NUM	_	_	2	nummod	_	_	*
+2	1	1	NUM	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 19
+# text = 26
+1	26	26	NUM	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 20
+# text = 26 73
+1	26	26	NUM	_	_	2	nummod	_	_	*
+2	73	73	NUM	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 21
+# text = ok merci
+1	ok	ok	ADV	_	_	2	advmod	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 22
+# text = au revoir monsieur
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	3	mark	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	0	root	_	_	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 072_00000049.txt 23
+# text = bonne journée
+1	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*
+2	journée	journée	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,54 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1PF0454.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0454.txt 1
+# text = bonjour mademoiselle
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	mademoiselle	mademoisel	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0454.txt 2
+# text = pour les étudiants on nous a dit de venir là pour récupérer un plan de vélo de la ville
+1	pour	pour	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	7	obl:mod	_	_	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*
+5	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	7	iobj	_	_	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+7	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+8	de	de	ADP	_	_	9	mark	_	_	*
+9	venir	venir	VERB	_	VerbForm=Inf	7	xcomp	_	_	*
+10	là	là	ADV	_	_	9	advmod	_	_	*
+11	pour	pour	ADP	_	_	12	mark	_	_	*
+12	récupérer	récupérer	VERB	_	VerbForm=Inf	9	advcl	_	_	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*
+14	plan	plan	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	de	de	ADP	_	_	19	case	_	_	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*
+19	ville	ville	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0454.txt 3
+# text = c' est pas e pour les étudiants spécialement c' est pour tout le monde hein
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	e	e	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*
+6	pour	pour	ADP	_	_	8	case	_	_	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*
+8	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	16	obl:mod	_	_	*
+9	spécialement	spécialement	ADV	_	_	10	advmod	_	_	*
+10	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	16	nsubj	_	SpaceAfter=No	*
+11	'	'	PUNCT	_	_	10	punct	_	_	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*
+13	pour	pour	ADP	_	_	16	case	_	_	*
+14	tout	tout	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	_	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*
+16	monde	monde	NOUN	_	Gender=Masc|Number=Sing	5	parataxis	_	_	*
+17	hein	hein	ADJ	_	Gender=Masc|Number=Sing	16	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0454.txt 4
+# text = ouais merci
+1	ouais	ouais	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

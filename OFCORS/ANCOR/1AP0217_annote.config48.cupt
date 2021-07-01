@@ -1,0 +1,61 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0217.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0217.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0217.txt 2
+# text = bonjour c' était pour savoir e si vous savez quel bus s' arrête aux Véoux
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*
+2	c	c	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	était	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*
+5	pour	pour	ADP	_	_	6	mark	_	_	*
+6	savoir	savoir	VERB	_	VerbForm=Inf	4	ccomp	_	_	*
+7	e	e	CCONJ	_	_	15	cc	_	_	*
+8	si	si	SCONJ	_	_	10	mark	_	_	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+10	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	advcl	_	_	*
+11	quel	quel	DET	_	Gender=Masc|Number=Sing	12	det	_	_	*
+12	bus	bus	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*
+13	s	s	X	_	_	12	appos	_	SpaceAfter=No	*
+14	'	'	PUNCT	_	_	10	punct	_	_	*
+15	arrête	arrêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*
+16-17	aux	_	_	_	_	_	_	_	_	*
+16	à	à	ADP	_	_	18	case	_	_	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*
+18	Véoux	Véoux	PROPN	_	_	15	obl:arg	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0217.txt 3
+# text = non il faut voir avec la TAG ça hein s' occupe du réseau bus et tramway
+1	non	non	ADV	_	_	3	advmod	_	_	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID
+3	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+4	voir	voir	VERB	_	VerbForm=Inf	3	ccomp	_	_	*
+5	avec	avec	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	TAG	Tag	PROPN	_	_	4	obl:arg	_	_	*
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	flat:name	_	_	*
+9	hein	hein	X	_	_	7	flat:name	_	_	*
+10	s	s	X	_	_	7	flat:name	_	SpaceAfter=No	*
+11	'	'	PUNCT	_	_	12	punct	_	_	*
+12	occupe	occupe	NOUN	_	Gender=Fem|Number=Sing	7	appos	_	_	*
+13-14	du	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*
+15	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*
+16	bus	bus	NOUN	_	Gender=Masc|Number=Sing	15	appos	_	_	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*
+18	tramway	tramway	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0217.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0217.txt 5
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

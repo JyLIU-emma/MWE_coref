@@ -1,0 +1,29 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0646.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0646.txt 1
+# text = bonjour j' aimerais avoir le plan de Grenoble s' il vous plaît
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	0	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+4	aimerais	aimer	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	avoir	avoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	1	*
+7	plan	plan	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	1	*
+8	de	de	ADP	_	_	9	case	_	_	*	1	*
+9	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	_	*	1;2	*
+10	s	s	X	_	_	9	flat:name	_	SpaceAfter=No	*	*	*
+11	'	'	PUNCT	_	_	14	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*	*	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	14	iobj	_	_	*	*	*
+14	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0646.txt 2
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0646.txt 3
+# text = je vous remercie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	3	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*	4	*
+3	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

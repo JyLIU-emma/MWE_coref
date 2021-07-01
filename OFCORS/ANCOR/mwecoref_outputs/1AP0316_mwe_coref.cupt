@@ -1,0 +1,448 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0316.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 2
+# text = bonjour il y a quelques années il y avait une association qui s' appelait " Pop ski " qui existait et qui se réunissait par ici ça dépendait de Grenoble c' était oui " Pop ski "
+1	bonjour	bonjour	INTJ	_	_	0	root	_	_	*	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	case	_	_	1:VID	*	*
+3	y	y	PRON	_	_	2	fixed	_	_	1	*	*
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	fixed	_	_	1	*	*
+5	quelques	quelque	DET	_	Gender=Fem|Number=Plur	6	det	_	_	*	0	*
+6	années	année	NOUN	_	Gender=Fem|Number=Plur	1	obl:mod	_	_	*	0	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	*	*	*
+8	y	y	PRON	_	_	9	expl:comp	_	_	*	*	*
+9	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_	*	*	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	1	0:1
+11	association	association	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*	1	0:1
+12	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*	2	0:2
+13	s	s	X	_	_	15	obl:mod	_	SpaceAfter=No	*	*	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*	*	*
+15	appelait	appelait	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	acl:relcl	_	_	*	*	*
+16	"	"	PUNCT	_	_	17	punct	_	_	*	3	0:3
+17	Pop	pop	PROPN	_	_	11	appos	_	_	*	3	0:3
+18	ski	ski	PROPN	_	_	17	flat:name	_	_	*	3	0:3
+19	"	"	PUNCT	_	_	17	punct	_	_	*	3	0:3
+20	qui	qui	PRON	_	PronType=Rel	21	nsubj	_	_	*	4	0:4
+21	existait	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	acl:relcl	_	_	*	*	*
+22	et	et	CCONJ	_	_	25	cc	_	_	*	*	*
+23	qui	qui	PRON	_	PronType=Rel	25	nsubj	_	_	*	5	0:5
+24	se	se	PRON	_	Person=3|PronType=Prs	25	expl:pass	_	_	*	*	*
+25	réunissait	réunir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	conj	_	_	*	*	*
+26	par	par	ADP	_	_	29	advmod	_	_	*	*	*
+27	ici	ici	ADV	_	_	26	fixed	_	_	*	*	*
+28	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	29	nsubj	_	_	*	6	0:6
+29	dépendait	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	advcl	_	_	*	*	*
+30	de	de	ADP	_	_	31	case	_	_	*	*	*
+31	Grenoble	Grenoble	PROPN	_	_	29	obl:arg	_	_	*	7	10:7
+32	c	ce	X	_	_	31	flat:name	_	SpaceAfter=No	*	8	0:8
+33	'	'	PUNCT	_	_	31	punct	_	_	*	8	0:8
+34	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	35	aux:pass	_	_	*	*	*
+35	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	xcomp	_	_	*	*	*
+36	"	"	PUNCT	_	_	37	punct	_	_	*	*	*
+37	Pop	pop	PROPN	_	_	35	xcomp	_	_	*	9	0:9
+38	ski	ski	NOUN	_	Gender=Masc|Number=Sing	37	nmod	_	_	*	9	0:9
+39	"	"	PUNCT	_	_	37	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 3
+# text = " Pop s "
+1	"	"	PUNCT	_	_	3	punct	_	_	*	10	0:10
+2	Pop	Pop	X	_	_	3	nmod	_	_	*	10	0:10
+3	s	s	X	_	_	0	root	_	_	*	10	0:10
+4	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*	10	0:10
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 4
+# text = " Pop ski "
+1	"	"	PUNCT	_	_	3	punct	_	_	*	*	*
+2	Pop	pop	ADV	_	_	3	advmod	_	_	*	11	0:11
+3	ski	ski	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	11	0:11
+4	"	"	PUNCT	_	_	3	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 5
+# text = est ce que vous connaissez ce journal d' une association qui s' occupe e de sorties le dimanche e dans des stations de ski e des du Rhône-Alpes
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	12	*
+5	connaissez	connaître	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*	13	*
+7	journal	journal	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	13	*
+8	d	de	ADP	_	_	11	case	_	SpaceAfter=No	*	13	*
+9	'	'	PUNCT	_	_	11	punct	_	_	*	13	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	13;14	1:14
+11	association	association	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	13;14	1:14
+12	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*	15	1:15
+13	s	s	X	_	_	15	obl:mod	_	SpaceAfter=No	*	*	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*	*	*
+15	occupe	occuper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	*	*	*
+16	e	e	CCONJ	_	_	18	cc	_	_	*	*	*
+17	de	de	ADP	_	_	18	case	_	_	*	16	2:16
+18	sorties	sortie	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_	*	16	2:16
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	17	*
+20	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	15	obl	_	_	*	17	*
+21	e	e	CCONJ	_	_	25	cc	_	_	*	*	*
+22	dans	dans	ADP	_	_	25	case	_	_	*	*	*
+23-24	des	_	_	_	_	_	_	_	_	*	*	*
+23	de	de	ADP	_	_	25	case	_	_	*	18	*
+24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_	*	18	*
+25	stations	station	NOUN	_	Gender=Fem|Number=Plur	20	conj	_	_	*	18	*
+26	de	de	ADP	_	_	27	case	_	_	*	18	*
+27	ski	ski	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	_	*	18;19	*
+28	e	e	CCONJ	_	_	30	cc	_	_	*	18	*
+29-30	des	_	_	_	_	_	_	_	_	*	*	*
+29	de	de	ADP	_	_	30	case	_	_	*	18	*
+30	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	20	conj	_	_	*	18	*
+31-32	du	_	_	_	_	_	_	_	_	*	*	*
+31	de	de	ADP	_	_	33	case	_	_	*	18;20	*
+32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_	*	18;20	*
+33	Rhône-Alpes	Rhône-Alpes	PROPN	_	_	30	nmod	_	SpacesAfter=\s\n\n	*	18;20	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 6
+# text = ben moi je sais que les V F D l' autocariste le fait e quand on arrive dans la période d' hiver il le fait avec le forfait plus transport pour un prix général très économique à part les V F D enfin disons que c' est le seul autocariste qui nous laisse ses programmes
+1	ben	ben	ADV	_	_	2	advmod	_	_	*	*	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	4	dislocated	_	_	*	21	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	22	*
+4	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	que	que	SCONJ	_	_	12	mark	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	23	3:23
+7	V	V	X	_	_	12	nsubj	_	_	*	23	3:23
+8	F	F	X	_	_	7	flat:foreign	_	_	*	23	3:23
+9	D	D	X	_	_	7	flat:foreign	_	_	*	23	3:23
+10	l	l	X	_	_	7	flat:foreign	_	SpaceAfter=No	*	24	*
+11	'	'	PUNCT	_	_	7	punct	_	_	*	24	*
+12	autocariste	autocarister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*	24	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	25	2:25
+14	fait	fait	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	*	*
+15	e	e	CCONJ	_	_	26	cc	_	_	*	*	*
+16	quand	quand	SCONJ	_	_	18	mark	_	_	*	*	*
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_	*	26	*
+18	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	advcl	_	_	*	*	*
+19	dans	dans	ADP	_	_	21	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	27	*
+21	période	période	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	27	*
+22	d'	de	ADP	_	_	23	case	_	_	*	27	*
+23	hiver	hiver	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*	27;28	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_	*	29	3:29
+25	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	obj	_	_	*	30	2:30
+26	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	_	*	*	*
+27	avec	avec	ADP	_	_	29	case	_	_	*	*	*
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	31	*
+29	forfait	forfait	NOUN	_	Gender=Masc|Number=Sing	26	obl:arg	_	_	*	31	*
+30	plus	plus	ADV	_	_	31	advmod	_	_	*	*	*
+31	transport	transport	NOUN	_	Gender=Masc|Number=Sing	29	appos	_	_	*	32	*
+32	pour	pour	ADP	_	_	34	case	_	_	*	*	*
+33	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	33	*
+34	prix	prix	NOUN	_	Gender=Masc|Number=Sing	45	obl:mod	_	_	*	33	*
+35	général	général	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*	33	*
+36	très	très	ADV	_	_	37	advmod	_	_	*	*	*
+37	économique	économique	ADJ	_	Gender=Masc|Number=Sing	34	amod	_	_	*	*	*
+38	à	à	ADP	_	_	39	case	_	_	*	*	*
+39	part	part	NOUN	_	Gender=Fem|Number=Sing	37	obl:mod	_	_	*	*	*
+40	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	41	det	_	_	*	34	3:34
+41	V	V	X	_	_	45	nsubj	_	_	*	34	3:34
+42	F	F	X	_	_	41	flat:name	_	_	*	34	3:34
+43	D	D	X	_	_	41	flat:name	_	_	*	34	3:34
+44	enfin	enfin	X	_	_	41	flat:name	_	_	*	*	*
+45	disons	dire	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	31	conj	_	_	*	*	*
+46	que	que	SCONJ	_	_	52	mark	_	_	*	*	*
+47	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	52	nsubj	_	SpaceAfter=No	*	35	3:35
+48	'	'	PUNCT	_	_	47	punct	_	_	*	35	3:35
+49	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	cop	_	_	*	*	*
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_	*	36	3:36
+51	seul	seul	ADJ	_	Gender=Masc|Number=Sing	52	amod	_	_	*	36	3:36
+52	autocariste	autocariste	NOUN	_	Gender=Masc|Number=Sing	45	ccomp	_	_	*	36	3:36
+53	qui	qui	PRON	_	PronType=Rel	55	nsubj	_	_	*	37	3:37
+54	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	55	iobj	_	_	*	38	*
+55	laisse	laisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	acl:relcl	_	_	*	*	*
+56	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	57	det	_	_	*	39	*
+57	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	55	obj	_	SpacesAfter=\s\n\n	*	39	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 7
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 8
+# text = donc e après c' est les clubs si les clubs alpins les clubs de montagne
+1	donc	donc	ADV	_	_	2	advmod	_	_	*	*	*
+2	e	e	SYM	_	_	8	nsubj	_	_	*	*	*
+3	après	après	ADP	_	_	4	case	_	_	*	*	*
+4	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	obl:mod	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	40	4:40
+8	clubs	club	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	40	4:40
+9	si	si	SCONJ	_	_	11	case	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_	*	41	4:41
+11	clubs	club	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	41	4:41
+12	alpins	alpin	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	_	*	41	4:41
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*	42	4:42
+14	clubs	club	NOUN	_	Gender=Masc|Number=Plur	11	appos	_	_	*	42	4:42
+15	de	de	ADP	_	_	16	case	_	_	*	42	4:42
+16	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpacesAfter=\s\n\n	*	42;43	4:42;9:43
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 9
+# text = c' était un club de
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	44	0:44
+2	'	'	PUNCT	_	_	1	punct	_	_	*	44	0:44
+3	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	45	0:45
+5	club	club	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	45	0:45
+6	de	de	ADP	_	_	5	appos	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 10
+# text = hum
+1	hum	hum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 11
+# text = je sais pas trop c' était une association constituée qui e ça vous dit rien
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	46	*
+2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*	*	*
+4	trop	trop	ADV	_	_	5	advmod	_	_	*	*	*
+5	c	ce	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	*	47	0:47
+6	'	'	PUNCT	_	_	5	punct	_	_	*	47	0:47
+7	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	_	*	*	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	48	0:48
+9	association	association	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	48	0:48
+10	constituée	constituer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	_	*	*	*
+11	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*	49	0:49
+12	e	e	CCONJ	_	_	15	cc	_	_	*	*	*
+13	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	_	*	50	0:50
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*	51	*
+15	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_	*	*	*
+16	rien	rien	PRON	_	Number=Sing	9	acl:relcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 12
+# text = moi ça me dit absolument rien mais e ce que vous
+1	moi	soi	PRON	_	Number=Sing|Person=1	4	dislocated	_	_	*	52	*
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*	53	0:53
+3	me	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	iobj	_	_	*	54	*
+4	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	absolument	absolument	ADV	_	_	6	advmod	_	_	*	*	*
+6	rien	rien	PRON	_	Number=Sing	4	obj	_	_	*	*	*
+7	mais	mais	CCONJ	_	_	9	cc	_	_	*	*	*
+8	e	e	CCONJ	_	_	9	cc	_	_	*	*	*
+9	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	conj	_	_	*	*	*
+10	que	que	PRON	_	PronType=Rel	9	acl:relcl	_	_	*	*	*
+11	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	SpacesAfter=\s\n\n	*	55	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 13
+# text = je pourrais me renseigner sur les associations
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	56	*
+2	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	4	obj	_	_	1:IRV	57	*
+4	renseigner	renseigner	VERB	_	VerbForm=Inf	2	xcomp	_	_	1	*	*
+5	sur	sur	ADP	_	_	7	case	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*	58	4:58
+7	associations	association	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	SpacesAfter=\s\n\n	*	58	4:58
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 14
+# text = ce que vous devriez faire je je vais vous donner les clubs de montagne la liste des clubs de montagne déjà d' une après ce que vous ferez vous monterez au premier " info montagne " maison de la randonnée
+1	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	_	*	*	*
+2	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+3	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	59	*
+4	devriez	devoir	VERB	_	Mood=Cnd|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	faire	faire	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*	*	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_	*	60	*
+8	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	*	*	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	iobj	_	_	*	61	*
+10	donner	donner	VERB	_	VerbForm=Inf	4	parataxis	_	_	*	*	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*	62	4:62
+12	clubs	club	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*	62	4:62
+13	de	de	ADP	_	_	14	case	_	_	*	62	4:62
+14	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	62;63	4:62;9:63
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	64	*
+16	liste	liste	NOUN	_	Gender=Fem|Number=Sing	12	appos	_	_	*	64	*
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	64;65	4:65
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*	64;65	4:65
+19	clubs	club	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*	64;65	4:65
+20	de	de	ADP	_	_	21	case	_	_	*	64;65	4:65
+21	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	64;65;66	4:65;9:66
+22	déjà	déjà	ADV	_	_	25	advmod	_	_	*	*	*
+23	d	de	ADP	_	_	25	case	_	SpaceAfter=No	*	*	*
+24	'	'	PUNCT	_	_	25	punct	_	_	*	*	*
+25	une	un	PRON	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	*	*
+26	après	après	ADP	_	_	27	case	_	_	*	*	*
+27	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	19	nmod	_	_	*	*	*
+28	que	que	PRON	_	PronType=Rel	30	obj	_	_	*	*	*
+29	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	30	nsubj	_	_	*	67	*
+30	ferez	faire	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	27	acl:relcl	_	_	*	*	*
+31	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	32	nsubj	_	_	*	68	*
+32	monterez	monterer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	advcl	_	_	*	*	*
+33-34	au	_	_	_	_	_	_	_	_	*	*	*
+33	à	à	ADP	_	_	38	case	_	_	*	*	*
+34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	*	*
+35	premier	premier	ADJ	_	Gender=Masc|Number=Sing	38	amod	_	_	*	*	*
+36	"	"	PUNCT	_	_	38	punct	_	_	*	69	8:69
+37	info	info	ADJ	_	_	38	amod	_	_	*	69	8:69
+38	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	32	obl:arg	_	_	*	69	8:69
+39	"	"	PUNCT	_	_	38	punct	_	_	*	*	*
+40	maison	maison	NOUN	_	Gender=Fem|Number=Sing	38	appos	_	_	*	70;71	7:71
+41	de	de	ADP	_	_	43	case	_	_	*	71	7:71
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*	71;72	7:71;11:72
+43	randonnée	randonnée	NOUN	_	Gender=Fem|Number=Sing	38	nmod	_	SpacesAfter=\s\n\n	*	71;72	7:71;11:72
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 15
+# text = je pourrai téléphoner
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	73	*
+2	pourrai	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	téléphoner	téléphoner	VERB	_	VerbForm=Inf	2	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 16
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 17
+# text = ils auront peut être 2 ou 3 petites choses aussi et si vraiment ça donne rien je vais vous laisser les coordonnées de du Bureau OMSCAG c' est le bureau qui s' occupe de la vie associative de la ville
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	74	*
+2	auront	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	être	être	AUX	_	VerbForm=Inf	9	cop	_	_	*	*	*
+5	2	2	NUM	_	_	9	nummod	_	_	*	75	*
+6	ou	ou	CCONJ	_	_	7	cc	_	_	*	75	*
+7	3	3	NUM	_	_	5	conj	_	_	*	75	*
+8	petites	petit	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*	75	*
+9	choses	chose	NOUN	_	Gender=Fem|Number=Plur	3	xcomp	_	_	*	75;76	*
+10	aussi	aussi	ADV	_	_	18	advmod	_	_	*	*	*
+11	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+12	si	si	ADV	_	_	13	advmod	_	_	*	*	*
+13	vraiment	vraiment	ADV	_	_	15	advmod	_	_	*	*	*
+14	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	_	*	*	*
+15	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_	*	*	*
+16	rien	rien	PRON	_	Number=Sing	20	obj	_	_	*	*	*
+17	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_	*	77	*
+18	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	32	csubj	_	_	*	*	*
+19	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	20	iobj	_	_	*	78	*
+20	laisser	laisser	VERB	_	VerbForm=Inf	18	xcomp	_	_	*	*	*
+21	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_	*	79	*
+22	coordonnées	coordonnée	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*	79	*
+23	de	de	ADP	_	_	26	case	_	_	*	79	*
+24-25	du	_	_	_	_	_	_	_	_	*	*	*
+24	de	de	ADP	_	_	26	case	_	_	*	79;80	5:80
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*	79;80	5:80
+26	Bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	79;80	5:80
+27	OMSCAG	OMSCAG	PROPN	_	_	26	appos	_	_	*	79;80	5:80
+28	c	ce	X	_	_	27	flat:name	_	SpaceAfter=No	*	81	5:81
+29	'	'	PUNCT	_	_	27	punct	_	_	*	81	5:81
+30	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	_	_	*	*	*
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*	82	5:82
+32	bureau	bureau	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	82	5:82
+33	qui	qui	PRON	_	PronType=Rel	36	nsubj	_	_	*	83	5:83
+34	s	s	X	_	_	36	nmod	_	SpaceAfter=No	*	*	*
+35	'	'	PUNCT	_	_	34	punct	_	_	*	*	*
+36	occupe	occupe	NOUN	_	Gender=Fem|Number=Sing	32	acl:relcl	_	_	*	*	*
+37	de	de	ADP	_	_	39	case	_	_	*	*	*
+38	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_	*	84	*
+39	vie	vie	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_	*	84	*
+40	associative	associatif	ADJ	_	Gender=Fem|Number=Sing	39	amod	_	_	*	84	*
+41	de	de	ADP	_	_	43	case	_	_	*	84	*
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*	84;85	10:85
+43	ville	ville	NOUN	_	Gender=Fem|Number=Sing	39	nmod	_	SpacesAfter=\s\n\n	*	84;85	10:85
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 18
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 19
+# text = ils sont dans les locaux de la maison des associations hein
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_	*	86	6:86
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+3	dans	dans	ADP	_	_	5	case	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_	*	87;88	*
+5	locaux	local	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	87;88	*
+6	de	de	ADP	_	_	8	case	_	_	*	88;89	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	88;89	*
+8	maison	maison	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*	88;89	*
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	88;90	*
+10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_	*	88;90	*
+11	associations	association	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*	88;90	*
+12	hein	hein	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 20
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 21
+# text = donc en les appelant
+1	donc	donc	ADV	_	_	4	advmod	_	_	*	*	*
+2	en	en	ADP	_	_	4	mark	_	_	*	*	*
+3	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	*	91	6:91
+4	appelant	appeler	VERB	_	Tense=Pres|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 22
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 23
+# text = ils pourront vous dire si l' association existe toujours parce que c' est possible qu' elle soit peut être plus
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*	92	6:92
+2	pourront	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	93	*
+4	dire	dire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	si	si	SCONJ	_	_	9	mark	_	_	*	*	*
+6	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	94	0:94
+7	'	'	PUNCT	_	_	6	punct	_	_	*	94	0:94
+8	association	association	NOUN	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*	94	0:94
+9	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*	*	*
+10	toujours	toujours	ADV	_	_	9	advmod	_	_	*	*	*
+11	parce	parce	ADV	_	_	10	fixed	_	_	*	*	*
+12	que	que	SCONJ	_	_	16	mark	_	_	*	*	*
+13	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	16	expl:subj	_	SpaceAfter=No	*	*	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*	*	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+16	possible	possible	ADJ	_	Gender=Masc|Number=Sing	10	ccomp	_	_	*	*	*
+17	qu	que	SCONJ	_	_	21	mark	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	21	punct	_	_	*	*	*
+19	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_	*	95	0:95
+20	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*	*	*
+21	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_	*	*	*
+22	être	être	AUX	_	VerbForm=Inf	23	cop	_	_	*	*	*
+23	plus	plus	ADV	_	_	21	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 24
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 25
+# text = voilà clubs de montagne le SCAG et puis la maison de la randonnée " info montagne "
+1	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+2	clubs	club	NOUN	_	Gender=Masc|Number=Plur	1	obj	_	_	*	96	4:96
+3	de	de	ADP	_	_	4	case	_	_	*	96	4:96
+4	montagne	montagne	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	96;97	4:96;9:97
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	98	5:98
+6	SCAG	SCAG	PROPN	_	_	1	nsubj	_	_	*	98	5:98
+7	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+8	puis	puis	ADV	_	_	10	cc	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	99	7:99
+10	maison	maison	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*	99	7:99
+11	de	de	ADP	_	_	13	case	_	_	*	99	7:99
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	99;100	7:99;11:100
+13	randonnée	randonnée	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	99;100	7:99;11:100
+14	"	"	PUNCT	_	_	15	punct	_	_	*	*	*
+15	info	info	NOUN	_	Gender=Fem|Number=Sing	10	appos	_	_	*	101	8:101
+16	montagne	montagne	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_	*	101	8:101
+17	"	"	PUNCT	_	_	15	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 26
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0316.txt 27
+# text = au revoir monsieur
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	3	mark	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+4	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpacesAfter=\s\n	*	102	*
+

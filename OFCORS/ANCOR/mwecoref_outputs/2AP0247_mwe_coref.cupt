@@ -1,0 +1,188 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2AP0247.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 1
+# text = bonjour j' aurais voulu une carte de Grenoble s' il vous plaît
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	0	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+4	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	1	*
+7	carte	carte	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	1	*
+8	de	de	ADP	_	_	9	case	_	_	*	1	*
+9	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	_	*	1;2	1:2
+10	s	s	X	_	_	9	flat:name	_	SpaceAfter=No	*	*	*
+11	'	'	PUNCT	_	_	14	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_	*	*	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	14	iobj	_	_	*	*	*
+14	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 2
+# text = bien sûr donc on est là hein
+1	bien	bien	ADV	_	_	3	advmod	_	_	*	*	*
+2	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3	donc	donc	ADV	_	_	7	advmod	_	_	*	*	*
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	_	*	3	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	là	là	ADV	_	_	7	advmod	_	_	*	*	*
+7	hein	hein	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 3
+# text = d' accord très bien j' aurais voulu savoir où est ce qui est e la Banque de France il y a une Banque de France ici à Grenoble
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	*	*
+4	très	très	ADV	_	_	5	advmod	_	_	*	*	*
+5	bien	bien	ADV	_	_	6	advmod	_	_	*	*	*
+6	j	j	X	_	_	3	nmod	_	SpaceAfter=No	*	4	*
+7	'	'	PUNCT	_	_	3	punct	_	_	*	4	*
+8	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+9	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+10	savoir	savoir	VERB	_	VerbForm=Inf	9	xcomp	_	_	*	*	*
+11	où	où	ADV	_	PronType=Rel	13	advmod	_	_	*	*	*
+12	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
+13	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	ccomp	_	_	*	*	*
+14	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	*	*
+15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_	*	*	*
+16	e	e	CCONJ	_	_	18	cc	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	5	0:5
+18	Banque	banque	NOUN	_	Gender=Fem|Number=Sing	13	acl:relcl	_	_	*	5	0:5
+19	de	de	ADP	_	_	20	case	_	_	*	5	0:5
+20	France	France	PROPN	_	_	18	nmod	_	_	*	5;6	0:5;5:6
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	expl:subj	_	_	1:VID	*	*
+22	y	y	PRON	_	_	23	expl:comp	_	_	1	*	*
+23	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_	1	*	*
+24	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	7	0:7
+25	Banque	banque	NOUN	_	Gender=Fem|Number=Sing	23	obj	_	_	*	7	0:7
+26	de	de	ADP	_	_	27	case	_	_	*	7	0:7
+27	France	France	PROPN	_	_	25	nmod	_	_	*	7;8	0:7;5:8
+28	ici	ici	ADV	_	_	23	advmod	_	_	*	*	*
+29	à	à	ADP	_	_	30	case	_	_	*	*	*
+30	Grenoble	Grenoble	PROPN	_	_	23	obl:mod	_	SpacesAfter=\s\n\n	*	9	1:9
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 4
+# text = elle est boulevard Edouard Rey elle est indiquée
+1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*	10	0:10
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	boulevard	boulevard	NOUN	_	Gender=Masc|Number=Sing	8	nsubj:pass	_	_	*	11	*
+4	Edouard	Edouard	PROPN	_	_	3	appos	_	_	*	11;12	*
+5	Rey	Rey	PROPN	_	_	4	flat:name	_	_	*	11;12	*
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	flat:name	_	_	*	13	0:13
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:pass	_	_	*	*	*
+8	indiquée	indiquer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 5
+# text = d' accord je vous remercie c' est pas
+1	d	de	ADP	_	_	6	advmod	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	14	*
+5	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	obj	_	_	*	15	*
+6	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*	16	0:16
+8	'	'	PUNCT	_	_	7	punct	_	_	*	16	0:16
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+10	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 6
+# text = oh non il y a pas pour longtemps passez place Grenette après la place Grenette vous allez tomber sur des feux en face de vous il y a la place Victor Hugo il y a un Quick
+1	oh	oh	INTJ	_	_	0	root	_	_	*	*	*
+2	non	non	ADV	_	_	5	advmod	_	_	*	*	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl:subj	_	_	1:VID	*	*
+4	y	y	PRON	_	_	5	expl:comp	_	_	1	*	*
+5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_	1	*	*
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+7	pour	pour	ADP	_	_	8	case	_	_	*	*	*
+8	longtemps	longtemps	ADV	_	_	5	advmod	_	_	*	*	*
+9	passez	passez	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	advcl	_	_	*	*	*
+10	place	place	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*	17	2:17
+11	Grenette	Grenette	PROPN	_	_	10	appos	_	_	*	17;18	2:17;6:18
+12	après	après	ADP	_	_	14	case	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	19	2:19
+14	place	place	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	_	*	19	2:19
+15	Grenette	Grenette	PROPN	_	_	17	nsubj	_	_	*	19;20	2:19;6:20
+16	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	17	iobj	_	_	*	21	*
+17	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*	*	*
+18	tomber	tomber	VERB	_	VerbForm=Inf	17	xcomp	_	_	*	*	*
+19	sur	sur	ADP	_	_	22	case	_	_	*	*	*
+20-21	des	_	_	_	_	_	_	_	_	*	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	22	*
+21	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_	*	22	*
+22	feux	feu	NOUN	_	Gender=Masc|Number=Plur	18	obl	_	_	*	22	*
+23	en	en	ADP	_	_	29	advmod	_	_	*	*	*
+24	face	face	NOUN	_	Gender=Fem|Number=Sing	23	fixed	_	_	*	*	*
+25	de	de	ADP	_	_	26	case	_	_	*	*	*
+26	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	23	obl:arg	_	_	*	23	*
+27	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	expl:subj	_	_	*	*	*
+28	y	y	PRON	_	_	29	expl:comp	_	_	*	*	*
+29	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_	*	*	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*	24	*
+31	place	place	NOUN	_	Gender=Fem|Number=Sing	29	obj	_	_	*	24	*
+32	Victor	Victor	PROPN	_	_	31	appos	_	_	*	24;25	*
+33	Hugo	Hugo	PROPN	_	_	29	obj	_	_	*	24;25	*
+34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	case	_	_	*	*	*
+35	y	y	PRON	_	_	34	fixed	_	_	*	*	*
+36	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	fixed	_	_	*	*	*
+37	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	26	3:26
+38	Quick	Quick	PROPN	_	_	33	obl:mod	_	SpacesAfter=\s\n\n	*	26	3:26
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 7
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 8
+# text = prenez le trottoir du Quick et vous le remontez vous tombez sur la Banque de France
+1	prenez	prendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	27	4:27
+3	trottoir	trottoir	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*	27	4:27
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	27;28	4:27;3:28
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	27;28	4:27;3:28
+6	Quick	Quick	PROPN	_	_	3	nmod	_	_	*	27;28	4:27;3:28
+7	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+8	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*	29	*
+9	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	_	_	*	30	4:30
+10	remontez	remonter	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	_	*	*	*
+11	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_	*	31	*
+12	tombez	tomber	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	sur	sur	ADP	_	_	15	case	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	32;33	0:33
+15	Banque	banque	NOUN	_	Gender=Fem|Number=Sing	12	obl	_	_	*	32;33	0:33
+16	de	de	ADP	_	_	17	case	_	_	*	33	0:33
+17	France	France	PROPN	_	_	15	nmod	_	SpacesAfter=\s\n\n	*	33;34	0:33;5:34
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 9
+# text = c' est à cinq minutes d' ici
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*	35	0:35
+2	'	'	PUNCT	_	_	1	punct	_	_	*	35	0:35
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	à	à	ADP	_	_	6	case	_	_	*	*	*
+5	cinq	cinq	NUM	_	_	6	nummod	_	_	*	36	*
+6	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	36	*
+7	d	de	ADP	_	_	6	advmod	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*	*	*
+9	ici	ici	ADV	_	_	7	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 10
+# text = dix minutes en gros
+1	dix	dix	NUM	_	_	2	nummod	_	_	*	37	*
+2	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	37	*
+3	en	en	ADP	_	_	4	case	_	_	*	*	*
+4	gros	gros	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 11
+# text = d' accord merci
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+4	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0247.txt 12
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

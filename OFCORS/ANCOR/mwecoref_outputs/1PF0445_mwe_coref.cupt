@@ -1,0 +1,215 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0445.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 1
+# text = bonjour j' aimerais savoir où se trouve l' agence France Télécom la plus proche
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	*	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*	0	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+4	aimerais	aimer	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	ccomp	_	_	*	*	*
+6	où	où	ADV	_	PronType=Rel	8	iobj	_	_	*	*	*
+7	se	se	PRON	_	Person=3|PronType=Prs	8	expl:pass	_	_	1:IRV	*	*
+8	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	1	*	*
+9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	1	4:1
+10	agence	agence	NOUN	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	1	4:1
+11	France	France	PROPN	_	_	10	appos	_	_	*	1;2	4:1
+12	Télécom	Télécom	PROPN	_	_	11	flat:name	_	_	*	1;2	4:1
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	advmod	_	_	*	1	4:1
+14	plus	plus	ADV	_	_	13	fixed	_	_	*	1	4:1
+15	proche	proche	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	SpacesAfter=\s\n\n	*	1	4:1
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 2
+# text = dix boulevard Jean Pain
+1	dix	dix	NUM	_	_	2	nummod	_	_	*	3	0:3
+2	boulevard	boulevard	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	3	0:3
+3	Jean	Jean	PROPN	_	_	0	root	_	_	*	3;4	0:3
+4	Pain	Pain	PROPN	_	_	3	flat:name	_	SpacesAfter=\s\n\n	*	3;4	0:3
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 3
+# text = c' est où
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	5	0:5
+2	'	'	PUNCT	_	_	1	punct	_	_	*	5	0:5
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	où	où	ADV	_	PronType=Rel	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 4
+# text = en face de l' hôtel après l' hôtel de ville
+1	en	en	ADP	_	_	0	root	_	_	*	*	*
+2	face	face	NOUN	_	Gender=Fem|Number=Sing	1	fixed	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	6	*
+5	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	6	*
+6	après	après	ADP	_	_	8	case	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	7	2:7
+8	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	7	2:7
+9	de	de	ADP	_	_	10	case	_	_	*	7	2:7
+10	ville	ville	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpacesAfter=\s\n\n	*	7;8	2:7;6:8
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 5
+# text = holala c- c' est et il y a Europôle il y en a pas une par hasard
+1	holala	holala	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	*	*
+2	c-	c-	ADJ	_	_	3	amod	_	_	*	*	*
+3	c	ce	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	SpaceAfter=No	*	9	0:9
+4	'	'	PUNCT	_	_	3	punct	_	_	*	9	0:9
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+6	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	1:VID	*	*
+8	y	y	PRON	_	_	9	expl:comp	_	_	1	*	*
+9	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	_	_	1	*	*
+10	Europôle	Europôle	PROPN	_	_	9	obj	_	_	*	10	1:10
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	_	*	*	*
+12	y	y	PRON	_	_	14	expl:comp	_	_	*	*	*
+13	en	en	PRON	_	Person=3	14	expl:comp	_	_	2:VID	11	*
+14	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2	*	*
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	_	*	*	*
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	*	*
+17	par	par	ADP	_	_	18	case	_	_	*	*	*
+18	hasard	hasard	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 6
+# text = à Europôle e j' ai aucune idée je crois pas mais je peux pas vous l' affirmer
+1	à	à	ADP	_	_	2	case	_	_	*	*	*
+2	Europôle	Europôle	PROPN	_	_	10	obl:mod	_	_	*	12	1:12
+3	e	e	CCONJ	_	_	4	cc	_	_	*	*	*
+4	j	j	X	_	_	2	conj	_	SpaceAfter=No	*	13	*
+5	'	'	PUNCT	_	_	2	punct	_	_	*	13	*
+6	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	1:LVC.full	*	*
+7	aucune	aucun	DET	_	Gender=Fem|Number=Sing|Polarity=Neg|PronType=Neg	8	det	_	_	*	14	*
+8	idée	idée	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	1	14	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	15	*
+10	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+12	mais	mais	CCONJ	_	_	14	cc	_	_	*	*	*
+13	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_	*	16	*
+14	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	conj	_	_	*	*	*
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	_	*	*	*
+16	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	18	iobj	_	_	*	17	*
+17	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	18	obj	_	_	*	*	*
+18	affirmer	affirmer	VERB	_	VerbForm=Inf	14	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 7
+# text = oui e c' est vers l' hôtel de ville
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	*	*
+2	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+3	c	ce	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No	*	18	0:18
+4	'	'	PUNCT	_	_	1	punct	_	_	*	18	0:18
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+6	vers	vers	ADP	_	_	8	case	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	19	2:19
+8	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	19	2:19
+9	de	de	ADP	_	_	10	case	_	_	*	19	2:19
+10	ville	ville	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	SpacesAfter=\s\n\n	*	19;20	2:19;6:20
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 8
+# text = ben vous êtes moins loin de l' hôtel de ville que de la gare hein
+1	ben	ben	ADV	_	_	5	advmod	_	_	*	*	*
+2	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	21	*
+3	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	moins	moins	ADV	_	_	5	advmod	_	_	*	*	*
+5	loin	loin	ADV	_	_	0	root	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	22	2:22
+8	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	22	2:22
+9	de	de	ADP	_	_	10	case	_	_	*	22	2:22
+10	ville	ville	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	22;23	2:22;6:23
+11	que	que	SCONJ	_	_	14	cc	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	24	*
+14	gare	gare	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	_	*	24	*
+15	hein	hein	NOUN	_	Gender=Masc|Number=Sing	14	appos	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 9
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 10
+# text = l' hôtel de ville e
+1	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	25	2:25
+2	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	25	2:25
+3	de	de	ADP	_	_	4	case	_	_	*	25	2:25
+4	ville	ville	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	25;26	2:25;6:26
+5	e	e	CCONJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 11
+# text = je prends le tram là et puis ouais je vais à pied
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	27	*
+2	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	28	*
+4	tram	tram	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	28	*
+5	là	là	ADV	_	_	2	advmod	_	_	*	*	*
+6	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+7	puis	puis	ADV	_	_	8	cc	_	_	*	*	*
+8	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	6	conj	_	_	*	*	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	29	*
+10	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_	*	*	*
+11	à	à	ADP	_	_	12	case	_	_	*	*	*
+12	pied	pied	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	SpacesAfter=\s\n\n	*	30	3:30
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 12
+# text = là vous allez à pieds là
+1	là	là	ADV	_	_	3	advmod	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	31	*
+3	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	à	à	ADP	_	_	5	case	_	_	*	*	*
+5	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*	32	3:32
+6	là	là	ADV	_	_	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 13
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 14
+# text = c' est vous voyez la place de Verdun
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	33	0:33
+2	'	'	PUNCT	_	_	1	punct	_	_	*	33	0:33
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	34	*
+5	voyez	voir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	35	*
+7	place	place	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	35	*
+8	de	de	ADP	_	_	9	case	_	_	*	35	*
+9	Verdun	Verdun	PROPN	_	_	7	nmod	_	SpacesAfter=\s\n\n	*	35;36	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 15
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 16
+# text = le rectorat c' est à côté du rectorat
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	37	5:37
+2	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	37	5:37
+3	c	c	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No	*	38	4:38
+4	'	'	PUNCT	_	_	2	punct	_	_	*	38	4:38
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+6	à	à	ADP	_	_	10	advmod	_	_	*	*	*
+7	côté	côté	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	_	*	*	*
+8-9	du	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	39	5:39
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	39	5:39
+10	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	39	5:39
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 17
+# text = à côté du rectorat ouais ben j- e
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	côté	côté	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	40	5:40
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	40	5:40
+5	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	40	5:40
+6	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
+7	ben	ben	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	*	*
+8	j-	j-	PUNCT	_	_	1	punct	_	_	*	41	*
+9	e	e	CCONJ	_	_	1	punct	_	SpacesAfter=\s\n\n	*	41	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0445.txt 18
+# text = du rectorat ouais dans le grand bâtiment
+1-2	du	_	_	_	_	_	_	_	_	*	*	*
+1	de	de	ADP	_	_	3	case	_	_	*	42	5:42
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	42	5:42
+3	rectorat	rectorat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	42	5:42
+4	ouais	ouais	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+5	dans	dans	ADP	_	_	8	case	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	43	*
+7	grand	grand	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	43	*
+8	bâtiment	bâtiment	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\s\n	*	43	*
+

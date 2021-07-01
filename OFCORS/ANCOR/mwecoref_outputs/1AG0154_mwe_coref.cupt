@@ -1,0 +1,93 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0154.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0154.txt 1
+# text = je peux m' occuper de quelqu'un
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	0	*
+2	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	m	m	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+5	occuper	occuper	VERB	_	VerbForm=Inf	3	acl	_	_	*	*	*
+6	de	de	ADP	_	_	7	case	_	_	*	*	*
+7	quelqu'un	quelqu'un	PRON	_	Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\s\n\n	*	1	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0154.txt 2
+# text = moi je veux bien c' est je cherche une carte des massifs montagneux de Grenoble
+1	moi	soi	PRON	_	Number=Sing|Person=1	3	iobj	_	_	*	2	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	3	*
+3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	bien	bien	ADV	_	_	5	advmod	_	_	*	*	*
+5	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	SpaceAfter=No	*	*	*
+6	'	'	PUNCT	_	_	5	punct	_	_	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_	*	4	*
+9	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*	*	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	5	*
+11	carte	carte	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	*	5	*
+12-13	des	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	5;6	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*	5;6	*
+14	massifs	massif	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*	5;6	*
+15	montagneux	montagneux	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	_	*	5;6	*
+16	de	de	ADP	_	_	17	case	_	_	*	5;6	*
+17	Grenoble	Grenoble	PROPN	_	_	14	nmod	_	SpacesAfter=\s\n\n	*	5;6;7	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0154.txt 3
+# text = e il faudra monter à " info montagne " parce que moi j' ai ça et j' ai peur que ce soit pas assez compliqué à moins que ça vous suffise
+1	e	e	CCONJ	_	_	3	cc	_	_	*	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID	*	*
+3	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1	*	*
+4	monter	monter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	"	"	PUNCT	_	_	7	punct	_	_	*	8	0:8
+7	info	info	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	8	0:8
+8	montagne	montagne	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	8	0:8
+9	"	"	PUNCT	_	_	7	punct	_	_	*	8	0:8
+10	parce	parce	ADV	_	_	15	mark	_	_	*	*	*
+11	que	que	SCONJ	_	_	10	fixed	_	_	*	*	*
+12	moi	soi	PRON	_	Number=Sing|Person=1	15	nsubj	_	_	*	9	*
+13	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	15	expl:comp	_	SpaceAfter=No	*	10	*
+14	'	'	PUNCT	_	_	13	punct	_	_	*	10	*
+15	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*	*	*
+16	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	obj	_	_	*	11	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+18	j	j	PRON	_	Number=Sing|Person=1|PronType=Prs	16	conj	_	SpaceAfter=No	*	12	*
+19	'	'	PUNCT	_	_	15	punct	_	_	*	12	*
+20	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_	2:LVC.full	*	*
+21	peur	peur	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	2	*	*
+22	que	que	SCONJ	_	_	27	mark	_	_	*	*	*
+23	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	27	nsubj:pass	_	_	*	13	*
+24	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux:pass	_	_	*	*	*
+25	pas	pas	ADV	_	Polarity=Neg	27	advmod	_	_	*	*	*
+26	assez	assez	ADV	_	_	27	advmod	_	_	*	*	*
+27	compliqué	compliquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	acl	_	_	*	*	*
+28	à	à	ADP	_	_	29	case	_	_	*	*	*
+29	moins	moins	ADV	_	_	33	mark	_	_	*	*	*
+30	que	que	SCONJ	_	_	33	mark	_	_	*	*	*
+31	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	33	nsubj	_	_	*	14	*
+32	vous	le	PRON	_	Number=Plur|Person=2|PronType=Prs	33	iobj	_	_	*	15	*
+33	suffise	suffis	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	advcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0154.txt 4
+# text = je vais déjà prendre ça sinon il faut que je monte
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	16	*
+2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	déjà	déjà	ADV	_	_	2	advmod	_	_	*	*	*
+4	prendre	prendre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obj	_	_	*	17	*
+6	sinon	sinon	SCONJ	_	_	8	mark	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID	*	*
+8	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_	1	*	*
+9	que	que	SCONJ	_	_	11	mark	_	_	*	*	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*	18	*
+11	monte	monter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0154.txt 5
+# text = oui " info montagne " voilà madame
+1	oui	oui	INTJ	_	_	7	amod	_	_	*	*	*
+2	"	"	PUNCT	_	_	3	punct	_	_	*	19	0:19
+3	info	info	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	_	*	19	0:19
+4	montagne	montagne	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*	19	0:19
+5	"	"	PUNCT	_	_	3	punct	_	_	*	*	*
+6	voilà	voilà	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	*	*
+7	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*	20	*
+

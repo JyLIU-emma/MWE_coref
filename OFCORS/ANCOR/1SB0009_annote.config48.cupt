@@ -1,0 +1,104 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0009.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 1
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 2
+# text = j' aurais voulu savoir si vous aviez une brochure sur les sports qu' on peut pratiquer à Grenoble
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*
+4	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	si	si	SCONJ	_	_	8	mark	_	_	*
+7	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_	*
+8	aviez	avier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	ccomp	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*
+10	brochure	brochure	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*
+11	sur	sur	ADP	_	_	13	case	_	_	*
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*
+13	sports	sport	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*
+14	qu	que	SCONJ	_	_	17	mark	_	SpaceAfter=No	*
+15	'	'	PUNCT	_	_	17	punct	_	_	*
+16	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	17	nsubj	_	_	*
+17	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_	*
+18	pratiquer	pratiquer	VERB	_	VerbForm=Inf	17	xcomp	_	_	*
+19	à	à	ADP	_	_	20	case	_	_	*
+20	Grenoble	Grenoble	PROPN	_	_	18	obl:mod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 3
+# text = oui elle existe mais il m' en reste plus qu' une donc je vous la donne pas sinon il faut aller la retirer à partir de quinze heures
+1	oui	oui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_	*
+3	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	mais	mais	CCONJ	_	_	6	cc	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_	*
+6	m	m	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*
+8	en	en	PRON	_	Person=3	9	expl:comp	_	_	*
+9	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*
+10	plus	plus	ADV	_	Polarity=Neg	18	advmod	_	_	*
+11	qu	que	SCONJ	_	_	18	mark	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	18	punct	_	_	*
+13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*
+14	donc	donc	ADV	_	_	13	fixed	_	_	*
+15	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_	*
+16	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	18	iobj	_	_	*
+17	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	obj	_	_	*
+18	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*
+19	pas	pas	ADV	_	Polarity=Neg	18	advmod	_	_	*
+20	sinon	sinon	SCONJ	_	_	22	mark	_	_	*
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	expl:subj	_	_	1:VID
+22	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	_	1
+23	aller	aller	VERB	_	VerbForm=Inf	22	ccomp	_	_	*
+24	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	25	obj	_	_	*
+25	retirer	retirer	VERB	_	VerbForm=Inf	23	xcomp	_	_	*
+26	à	à	ADP	_	_	25	advmod	_	_	*
+27	partir	partir	VERB	_	VerbForm=Inf	26	fixed	_	_	*
+28	de	de	ADP	_	_	30	case	_	_	*
+29	quinze	quinze	NUM	_	_	30	nummod	_	_	*
+30	heures	heure	NOUN	_	Gender=Fem|Number=Plur	26	obl:arg	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 4
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 5
+# text = à l' O M S
+1	à	à	ADP	_	_	4	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	O	O	NUM	_	_	4	nummod	_	_	*
+4	M	m	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+5	S	S	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 6
+# text = à l' O M S
+1	à	à	ADP	_	_	4	case	_	_	*
+2	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+3	O	O	NUM	_	_	4	nummod	_	_	*
+4	M	m	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*
+5	S	S	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 7
+# text = oui vous savez où c' est
+1	oui	oui	INTJ	_	_	3	mark	_	_	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+3	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	où	où	ADV	_	PronType=Rel	5	advmod	_	_	*
+5	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	5	punct	_	_	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 8
+# text = ouais merci
+1	ouais	ouais	NOUN	_	Gender=Masc|Number=Plur	2	nsubj	_	_	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0009.txt 9
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,114 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0033.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 1
+# text = j' aimerais savoir si vous pouviez me renseigner je cherche e à savoir le prix de la carte jeune
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpacesBefore=\n\n|SpaceAfter=No	*	0	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	0	*
+3	aimerais	aimer	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	savoir	savoir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	si	si	SCONJ	_	_	7	mark	_	_	*	*	*
+6	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	7	nsubj	_	_	*	1	*
+7	pouviez	pouvier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*	*	*
+8	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	9	obj	_	_	*	*	*
+9	renseigner	renseigner	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_	*	2	*
+11	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*	*	*
+12	e	e	CCONJ	_	_	16	cc	_	_	*	*	*
+13	à	à	ADP	_	_	16	advmod	_	_	*	*	*
+14	savoir	savoir	VERB	_	VerbForm=Inf	13	fixed	_	_	*	*	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	3	*
+16	prix	prix	NOUN	_	Gender=Masc|Number=Sing	11	conj	_	_	*	3	*
+17	de	de	ADP	_	_	19	case	_	_	*	3	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	3;4	*
+19	carte	carte	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	3;4	*
+20	jeune	jeune	ADJ	_	Gender=Fem|Number=Sing	19	amod	_	SpacesAfter=\s\n\n	*	3;4	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 2
+# text = alors il faut voir avec le CRIJ ou la FNAC
+1	alors	alors	ADV	_	_	3	advmod	_	_	*	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID	*	*
+3	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+4	voir	voir	VERB	_	VerbForm=Inf	3	ccomp	_	_	*	*	*
+5	avec	avec	ADP	_	_	7	case	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	5	0:5
+7	CRIJ	CRIJ	PROPN	_	_	4	obl:mod	_	_	*	5	0:5
+8	ou	ou	CCONJ	_	_	10	cc	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	6	1:6
+10	FNAC	FNAC	X	_	_	7	conj	_	SpacesAfter=\s\n\n	*	6	1:6
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 3
+# text = faut que j' aille au CRIJ ou à la FNAC
+1	faut	falloir	ADV	_	_	5	mark	_	_	*	*	*
+2	que	que	SCONJ	_	_	1	fixed	_	_	*	*	*
+3	j	j	X	_	_	5	nsubj	_	SpaceAfter=No	*	7	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*	7	*
+5	aille	ailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	8	0:8
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	8	0:8
+8	CRIJ	CRIJ	PROPN	_	_	5	obl:arg	_	_	*	8	0:8
+9	ou	ou	CCONJ	_	_	12	cc	_	_	*	*	*
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	9	1:9
+12	FNAC	FNAC	X	_	_	8	conj	_	SpacesAfter=\s\n\n	*	9;10	1:9
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 4
+# text = la FNAC c' est place Grenette et le CRIJ c' est rue Voltaire la petite rue avant d' arriver sur la place de Verdun
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	11	1:11
+2	FNAC	FNAC	X	_	_	6	nsubj	_	_	*	11	1:11
+3	c	ce	X	_	_	2	appos	_	SpaceAfter=No	*	12	1:12
+4	'	'	PUNCT	_	_	3	punct	_	_	*	12	1:12
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+6	place	place	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	13	*
+7	Grenette	Grenette	PROPN	_	_	6	appos	_	_	*	13;14	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	15	0:15
+10	CRIJ	CRIJ	PROPN	_	_	6	conj	_	_	*	15	0:15
+11	c	c	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	SpaceAfter=No	*	16	0:16
+12	'	'	PUNCT	_	_	11	punct	_	_	*	16	0:16
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_	*	*	*
+14	rue	raître	NOUN	_	Gender=Fem|Number=Sing	10	flat:name	_	_	*	17	2:17
+15	Voltaire	Voltaire	PROPN	_	_	10	flat:name	_	_	*	17;18	2:17
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	19	2:19
+17	petite	petit	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*	19	2:19
+18	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*	19	2:19
+19	avant	avant	ADP	_	_	20	case	_	_	*	*	*
+20	d	de	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*	*	*
+21	'	'	PUNCT	_	_	22	punct	_	_	*	*	*
+22	arriver	arriver	VERB	_	VerbForm=Inf	18	acl	_	_	*	*	*
+23	sur	sur	ADP	_	_	25	case	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	20	*
+25	place	place	NOUN	_	Gender=Fem|Number=Sing	22	obl	_	_	*	20	*
+26	de	de	ADP	_	_	27	case	_	_	*	20	*
+27	Verdun	Verdun	PROPN	_	_	25	nmod	_	SpacesAfter=\s\n\n	*	20;21	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 5
+# text = je connais
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	22	*
+2	connais	connaître	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 6
+# text = d' accord ben je vous remercie
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	*	*
+4	ben	ben	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	*	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*	23	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	iobj	_	_	*	24	*
+7	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 7
+# text = je vous en prie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	25	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	26	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0033.txt 8
+# text = mademoiselle
+1	mademoiselle	monsieur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n	*	27	*
+

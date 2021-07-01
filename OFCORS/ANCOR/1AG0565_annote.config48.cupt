@@ -1,0 +1,125 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0565.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 1
+# text = monsieur
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 2
+# text = je voudrais prendre la ligne trente-trois on n' a pas de prix non non il y a il y a il y a rien il y a rien
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*
+3	prendre	prendre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*
+5	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*
+6	trente-trois	trente-trois	NUM	_	_	3	obl	_	_	*
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	_	*
+8	n'	ne	ADV	_	Polarity=Neg	9	advmod	_	_	2:VID
+9	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2
+10	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	_	2
+11	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	2
+12	prix	prix	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	2
+13	non	non	ADV	_	_	17	advmod	_	_	*
+14	non	non	ADV	_	_	13	fixed	_	_	*
+15	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl:subj	_	_	1:VID
+16	y	y	PRON	_	_	17	expl:comp	_	_	1
+17	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	_	1
+18	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	case	_	_	*
+19	y	y	PRON	_	_	18	fixed	_	_	*
+20	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	fixed	_	_	*
+21	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	expl:subj	_	_	*
+22	y	y	PRON	_	_	23	expl:comp	_	_	*
+23	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*
+24	rien	rien	PRON	_	Number=Sing	23	obj	_	_	*
+25	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	case	_	_	*
+26	y	y	PRON	_	_	25	fixed	_	_	*
+27	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	fixed	_	_	*
+28	rien	rien	PRON	_	Number=Sing	23	obl:mod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 3
+# text = au TAG qu' il faut s' adresser
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	3	case	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*
+3	TAG	Tag	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*
+4	qu	qu	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	3	punct	_	_	*
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	_	1:VID
+7	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+8	s	s	X	_	_	7	nsubj	_	SpaceAfter=No	*
+9	'	'	PUNCT	_	_	8	punct	_	_	*
+10	adresser	adresser	VERB	_	VerbForm=Inf	7	ccomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 4
+# text = mais c' est pas c' est les TAG qui s' occupent de leur prospectus
+1	mais	mais	CCONJ	_	_	6	cc	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*
+6	c	ce	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*
+7	'	'	PUNCT	_	_	6	punct	_	_	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*
+10	TAG	Tag	PROPN	_	_	0	root	_	_	*
+11	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*
+12	s	s	X	_	_	11	appos	_	SpaceAfter=No	*
+13	'	'	PUNCT	_	_	12	punct	_	_	*
+14	occupent	occuper	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_	*
+15	de	de	ADP	_	_	17	case	_	_	*
+16	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*
+17	prospectus	prospectus	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 5
+# text = comment
+1	comment	comment	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 6
+# text = il faut voir avec les TAG
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	voir	voir	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+4	avec	avec	ADP	_	_	6	case	_	_	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*
+6	TAG	Tag	PROPN	_	_	3	obl:arg	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 7
+# text = ah les TAG
+1	ah	ah	INTJ	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*
+3	TAG	Tag	PROPN	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 8
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 9
+# text = parce qu' il y a un truc là mais il y a de
+1	parce	parce	ADV	_	_	6	advmod	_	_	*
+2	qu	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+5	y	y	PRON	_	_	6	expl:comp	_	_	1
+6	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	truc	truc	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	là	là	ADV	_	_	6	advmod	_	_	*
+10	mais	mais	CCONJ	_	_	13	cc	_	_	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl:subj	_	_	*
+12	y	y	PRON	_	_	13	expl:comp	_	_	*
+13	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	*
+14	de	un	ADP	_	_	13	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0565.txt 10
+# text = il faut leur demander ils en ont peut être en réserve
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	leur	lui	PRON	_	Number=Plur|Person=3|PronType=Prs	4	iobj	_	_	*
+4	demander	demander	VERB	_	VerbForm=Inf	7	expl:comp	_	_	*
+5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_	*
+6	en	en	PRON	_	Person=3	7	expl:comp	_	_	2:VID
+7	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	2
+8	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	xcomp	_	_	*
+9	être	être	VERB	_	VerbForm=Inf	8	xcomp	_	_	*
+10	en	en	ADP	_	_	11	case	_	_	*
+11	réserve	réserve	NOUN	_	Gender=Fem|Number=Sing	9	obl	_	SpacesAfter=\s\n	*
+

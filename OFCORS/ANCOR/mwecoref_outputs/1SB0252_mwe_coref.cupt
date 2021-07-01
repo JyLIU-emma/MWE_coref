@@ -1,0 +1,131 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0252.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 2
+# text = vous avez plus du tout plus rien sur la bibliothèque municipale des dépliants avec les horaires ou quoi que ce soit
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_	*	0	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	plus	plus	ADV	_	_	2	advmod	_	_	*	*	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	*	*
+6	tout	tout	PRON	_	Gender=Masc|Number=Sing	3	obl:arg	_	_	*	*	*
+7	plus	plus	ADV	_	_	8	advmod	_	_	*	*	*
+8	rien	rien	PRON	_	Number=Sing	6	appos	_	_	*	*	*
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	1	0:1
+11	bibliothèque	bibliothèque	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	1	0:1
+12	municipale	municipal	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	1	0:1
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	2	1:2
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	2	1:2
+15	dépliants	dépliant	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*	2	1:2
+16	avec	avec	ADP	_	_	18	case	_	_	*	*	*
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_	*	3	*
+18	horaires	horaire	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	_	*	3	*
+19	ou	ou	CCONJ	_	_	20	cc	_	_	*	*	*
+20	quoi	quoi	PRON	_	PronType=Rel	18	conj	_	_	*	*	*
+21	que	que	PRON	_	PronType=Rel	20	acl:relcl	_	_	*	*	*
+22	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	21	nsubj	_	_	*	*	*
+23	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 3
+# text = ma collègue vient de demander là je suis non j' en ai plus plus du tout
+1	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	2	det	_	_	*	4	*
+2	collègue	collègue	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*	4	*
+3	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	de	de	ADP	_	_	5	mark	_	_	*	*	*
+5	demander	demander	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	là	là	ADV	_	_	5	advmod	_	_	*	*	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	5	*
+8	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+9	non	non	ADV	_	Polarity=Neg	10	advmod	_	_	*	*	*
+10	j	j	X	_	_	5	ccomp	_	SpaceAfter=No	*	6	*
+11	'	'	PUNCT	_	_	18	punct	_	_	*	6	*
+12	en	en	PRON	_	Person=3	18	nmod	_	_	*	7	1:7
+13	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+14	plus	plus	ADV	_	_	15	advmod	_	_	*	*	*
+15	plus	plus	ADV	_	_	18	advmod	_	_	*	*	*
+16-17	du	_	_	_	_	_	_	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	*	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*	*	*
+18	tout	tout	PRON	_	Gender=Masc|Number=Sing	3	obl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 4
+# text = vous en aurez quand vous savez pas
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	8	*
+2	en	en	PRON	_	Person=3	3	expl:comp	_	_	1:VID	9	1:9
+3	aurez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_	1	*	*
+4	quand	quand	SCONJ	_	_	6	mark	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	10	*
+6	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	_	*	*	*
+7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 5
+# text = je sais pas quand e ben il faut qu' on passera il faudra qu' on passe à la bibliothèque
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	11	*
+2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*	*	*
+4	quand	quand	SCONJ	_	_	8	mark	_	_	*	*	*
+5	e	e	CCONJ	_	_	8	cc	_	_	*	*	*
+6	ben	ben	X	_	_	8	expl:subj	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	1:VID	*	*
+8	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	1	*	*
+9	qu	que	SCONJ	_	_	12	mark	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*	12	*
+12	passera	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	advcl	_	_	*	*	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	_	*	*	*
+14	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	ccomp	_	_	*	*	*
+15	qu	que	SCONJ	_	_	18	mark	_	SpaceAfter=No	*	*	*
+16	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	18	nsubj	_	_	*	13	*
+18	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	_	*	*	*
+19	à	à	ADP	_	_	21	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	14	0:14
+21	bibliothèque	bibliothèque	NOUN	_	Gender=Fem|Number=Sing	18	obl:arg	_	SpacesAfter=\s\n\n	*	14	0:14
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 6
+# text = la semaine prochaine normalement c' est possible
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	15	*
+2	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	_	*	15	*
+3	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	15	*
+4	normalement	normalement	ADV	_	_	5	advmod	_	_	*	*	*
+5	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*	*	*
+6	'	'	PUNCT	_	_	5	punct	_	_	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*	*	*
+8	possible	possible	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 7
+# text = e oui
+1	e	e	CCONJ	_	_	2	cc	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 8
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 9
+# text = oui oui ça peut être possible
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	4	advcl	_	_	*	*	*
+2	oui	oui	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	_	*	*	*
+4	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	être	être	AUX	_	VerbForm=Inf	6	cop	_	_	*	*	*
+6	possible	possible	ADJ	_	Gender=Fem|Number=Sing	4	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 10
+# text = oui merci
+1	oui	oui	ADV	_	_	2	advmod	_	_	*	*	*
+2	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0252.txt 11
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

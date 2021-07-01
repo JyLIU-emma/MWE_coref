@@ -1,0 +1,90 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1SB0185.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 1
+# text = monsieur
+1	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	0	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 2
+# text = bonjour oui bonjour si vous aviez ou si vous saviez où que où seraient les agences France Télécom sur Grenoble
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	oui	oui	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
+4	si	si	SCONJ	_	_	6	mark	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	1	*
+6	aviez	aver	VERB	_	Mood=Sub|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	acl	_	_	*	*	*
+7	ou	ou	CCONJ	_	_	10	cc	_	_	*	*	*
+8	si	si	SCONJ	_	_	10	mark	_	_	*	*	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*	2	*
+10	saviez	savier	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	conj	_	_	*	*	*
+11	où	où	ADV	_	PronType=Rel	10	advmod	_	_	*	*	*
+12	que	que	SCONJ	_	_	16	mark	_	_	*	*	*
+13	où	où	ADV	_	PronType=Rel	16	advmod	_	_	*	*	*
+14	seraient	être	AUX	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+15	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_	*	3	0:3
+16	agences	agence	NOUN	_	Gender=Fem|Number=Plur	11	ccomp	_	_	*	3	0:3
+17	France	France	PROPN	_	_	16	appos	_	_	*	3;4	0:3;1:4
+18	Télécom	Télécom	PROPN	_	_	17	flat:name	_	_	*	3;4	0:3;1:4
+19	sur	sur	ADP	_	_	20	case	_	_	*	*	*
+20	Grenoble	Grenoble	PROPN	_	_	17	nmod	_	SpacesAfter=\s\n\n	*	5	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 3
+# text = je venais voir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	6	*
+2	venais	venaître	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	voir	voir	VERB	_	VerbForm=Inf	2	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 4
+# text = où sont les agences France Télécom
+1	où	où	ADV	_	PronType=Rel	0	root	_	_	*	*	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_	*	*	*
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_	*	7;8	0:8
+4	agences	agence	NOUN	_	Gender=Fem|Number=Plur	1	nsubj	_	_	*	7;8	0:8
+5	France	France	PROPN	_	_	4	appos	_	_	*	8;9;10	0:8;1:10
+6	Télécom	Télécom	PROPN	_	_	5	flat:name	_	SpacesAfter=\s\n\n	*	8;10	0:8;1:10
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 5
+# text = ou la plus proche ou e
+1	ou	ou	CCONJ	_	_	4	cc	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	*	*
+3	plus	plus	ADV	_	_	4	advmod	_	_	*	*	*
+4	proche	proche	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+5	ou	ou	CCONJ	_	_	6	cc	_	_	*	*	*
+6	e	e	ADJ	_	Gender=Fem|Number=Sing	4	conj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 6
+# text = elles sont symbolisées symbolisées là par un petit un un petit astérisque un petit astérisque là c' est France Télécom là là voyez
+1	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	nsubj:pass	_	_	*	11	0:11
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_	*	*	*
+3	symbolisées	symboliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	symbolisées	symboliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	xcomp	_	_	*	*	*
+5	là	là	ADV	_	_	4	advmod	_	_	*	*	*
+6	par	par	ADP	_	_	12	case	_	_	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+8	petit	petit	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+11	petit	petit	ADJ	_	Gender=Masc|Number=Sing	12	amod	_	_	*	*	*
+12	astérisque	astérisque	NOUN	_	Gender=Masc|Number=Sing	4	obl:agent	_	_	*	*	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	12	*
+14	petit	petit	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	12	*
+15	astérisque	astérisque	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	12	*
+16	là	là	ADV	_	_	17	advmod	_	_	*	*	*
+17	c	ce	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	4	punct	_	_	*	*	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*	*	*
+20	France	France	PROPN	_	_	24	obj	_	_	*	13	1:13
+21	Télécom	Télécom	PROPN	_	_	20	flat:name	_	_	*	13	1:13
+22	là	là	ADV	_	_	20	advmod	_	_	*	*	*
+23	là	là	ADV	_	_	20	advmod	_	_	*	*	*
+24	voyez	vovoir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 7
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0185.txt 8
+# text = là
+1	là	là	ADV	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

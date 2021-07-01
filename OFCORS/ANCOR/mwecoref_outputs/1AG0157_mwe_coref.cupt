@@ -1,0 +1,57 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AG0157.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0157.txt 1
+# text = je vous avais pas vu
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	0	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obj	_	_	*	1	*
+3	avais	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+5	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0157.txt 2
+# text = je voudrais le le guide de de restaurants 96 de Grenoble
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	2	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	3	*
+5	guide	guide	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	3	*
+6	de	de	ADP	_	_	8	case	_	_	*	3	*
+7	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	3	*
+8	restaurants	restaurant	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	3;4	*
+9	96	96	NUM	_	_	8	nmod	_	_	*	3;4;5	*
+10	de	de	ADP	_	_	11	case	_	_	*	*	*
+11	Grenoble	Grenoble	PROPN	_	_	8	nmod	_	SpacesAfter=\s\n\n	*	6	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0157.txt 3
+# text = j' ai rien là rien du tout
+1	j	je	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	SpaceAfter=No	*	7	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	7	*
+3	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	rien	rien	PRON	_	Number=Sing	3	obj	_	_	*	*	*
+5	là	là	ADV	_	_	6	advmod	_	_	*	*	*
+6	rien	rien	PRON	_	Number=Sing	3	obl:arg	_	_	*	*	*
+7-8	du	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	6	advmod	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	fixed	_	_	*	*	*
+9	tout	tout	PRON	_	Gender=Masc|Number=Sing	7	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0157.txt 4
+# text = tout à fait et en vous remerciant au revoir
+1	tout	tout	ADV	_	_	7	advmod	_	_	*	*	*
+2	à	à	ADP	_	_	1	fixed	_	_	*	*	*
+3	fait	fait	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	_	*	*	*
+4	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+5	en	en	ADP	_	_	7	mark	_	_	*	*	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	7	obj	_	_	*	8	*
+7	remerciant	remercier	VERB	_	Tense=Pres|VerbForm=Part	0	root	_	_	*	*	*
+8-9	au	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	7	advmod	_	_	*	*	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	fixed	_	_	*	*	*
+10	revoir	revoir	VERB	_	VerbForm=Inf	8	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0157.txt 5
+# text = je vous remercie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	9	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*	10	*
+3	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*	*	*
+

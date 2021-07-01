@@ -1,0 +1,175 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 3SB0011.txt
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 1
+# text = est ce qu' on pourrait avoir cinq plans de Grenoble
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*	*	*
+3	qu	qu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	6	punct	_	_	*	*	*
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	_	*	0	*
+6	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	*	*	*
+7	avoir	avoir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+8	cinq	cinq	NUM	_	_	9	nummod	_	_	*	1	*
+9	plans	plan	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	_	*	1	*
+10	de	de	ADP	_	_	11	case	_	_	*	1	*
+11	Grenoble	Grenoble	PROPN	_	_	9	nmod	_	SpacesAfter=\s\n\n	*	1;2	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 2
+# text = hein cinq je sais pas hein
+1	hein	hein	ADV	_	_	2	advmod	_	_	*	*	*
+2	cinq	cinq	PRON	_	Number=Plur	0	root	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	3	*
+4	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+6	hein	hein	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 3
+# text = plus les pistes cyclables aussi
+1	plus	plus	ADV	_	_	3	advmod	_	_	*	*	*
+2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_	*	4	0:4
+3	pistes	piste	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	4	0:4
+4	cyclables	cyclable	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	_	*	4	0:4
+5	aussi	aussi	ADV	_	_	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 4
+# text = ils en ont plus
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	5	*
+2	en	en	PRON	_	Person=3	3	expl:comp	_	_	1:VID	6	0:6
+3	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+4	plus	plus	ADV	_	Polarity=Neg	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 5
+# text = plus
+1	plus	plus	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 6
+# text = donc ils reéditent leur stock donc d' ici un mois ils nous ont dit un peu plus je sais plus
+1	donc	donc	ADV	_	_	3	advmod	_	_	*	*	*
+2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	7	*
+3	reéditent	reéditer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	leur	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	_	*	8	*
+5	stock	stock	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	8	*
+6	donc	donc	CCONJ	_	_	7	cc	_	_	*	*	*
+7	d	de	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	SpaceAfter=No	*	*	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*	*	*
+9	ici	ici	ADV	_	_	11	advmod	_	_	*	*	*
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	9	*
+11	mois	mois	NOUN	_	Gender=Masc|Number=Sing	3	obl	_	_	*	9	*
+12	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_	*	10	*
+13	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	15	iobj	_	_	*	11	*
+14	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*	*	*
+15	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	_	*	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	advmod	_	_	*	*	*
+17	peu	peu	ADV	_	_	16	fixed	_	_	*	*	*
+18	plus	plus	ADV	_	_	19	advmod	_	_	*	*	*
+19	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	20	nsubj	_	_	*	12	*
+20	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	15	parataxis	_	_	*	*	*
+21	plus	plus	ADV	_	Polarity=Neg	20	obj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 7
+# text = et puis e des " sciences en fête " qu' arrivent e en septembre
+1	et	et	CCONJ	_	_	3	cc	_	_	*	*	*
+2	puis	puis	ADV	_	_	3	cc	_	_	*	*	*
+3	e	e	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	7	case	_	_	*	13	1:13
+5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_	*	13	1:13
+6	"	"	PUNCT	_	_	7	punct	_	_	*	13	1:13
+7	sciences	science	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*	13	1:13
+8	en	en	ADP	_	_	9	case	_	_	*	13	1:13
+9	fête	fête	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	13	1:13
+10	"	"	PUNCT	_	_	7	punct	_	_	*	*	*
+11	qu	que	SCONJ	_	_	13	mark	_	SpaceAfter=No	*	14	1:14
+12	'	'	PUNCT	_	_	13	punct	_	_	*	14	1:14
+13	arrivent	arriver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_	*	*	*
+14	e	e	CCONJ	_	_	13	punct	_	_	*	*	*
+15	en	en	ADP	_	_	16	case	_	_	*	*	*
+16	septembre	septembre	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	SpacesAfter=\s\n\n	*	15	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 8
+# text = cinq aussi
+1	cinq	cinq	PRON	_	Number=Plur	0	root	_	_	*	*	*
+2	aussi	aussi	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 9
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 10
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 11
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 12
+# text = ça c' est les marque-pages " sciences en fête " il nous en reste quelques uns
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	dislocated	_	_	*	*	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_	*	16	2:16
+6	marque-pages	marque-page	NOUN	_	Gender=Masc|Number=Plur	15	nsubj	_	_	*	16	2:16
+7	"	"	PUNCT	_	_	8	punct	_	_	*	16	2:16
+8	sciences	science	NOUN	_	Gender=Fem|Number=Plur	6	appos	_	_	*	16;17	2:16;1:17
+9	en	en	ADP	_	_	10	case	_	_	*	16;17	2:16;1:17
+10	fête	fête	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	16;17	2:16;1:17
+11	"	"	PUNCT	_	_	8	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	_	1:VID	*	*
+13	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	15	iobj	_	_	*	18	*
+14	en	en	PRON	_	Person=3	15	iobj	_	_	*	19	2:19
+15	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+16	quelques	quelque	DET	_	Gender=Masc|Number=Plur	17	det	_	_	*	20	2:20
+17	uns	un	PRON	_	Gender=Masc|Number=Plur	15	nsubj	_	SpacesAfter=\s\n\n	*	20	2:20
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 13
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 14
+# text = ça c' est les je peux pas vous en donner trop je vous en donne qu' une paire c' est pour observer la l' éclipse de lune
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	_	*	*	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	obl:mod	_	SpaceAfter=No	*	*	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	*	*
+6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_	*	21	*
+7	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*	*	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	11	iobj	_	_	*	22	*
+10	en	en	PRON	_	Person=3	11	iobj	_	_	*	23	3:23
+11	donner	donner	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+12	trop	trop	ADV	_	_	16	advmod	_	_	*	*	*
+13	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_	*	24	*
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	16	iobj	_	_	*	25	*
+15	en	en	PRON	_	Person=3	16	expl:comp	_	_	*	26	3:26
+16	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	_	_	*	*	*
+17	qu	que	SCONJ	_	_	23	mark	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	20	punct	_	_	*	*	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	27	3:27
+20	paire	paire	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	_	*	27	3:27
+21	c	c	X	_	_	20	appos	_	SpaceAfter=No	*	28	3:28
+22	'	'	PUNCT	_	_	20	punct	_	_	*	28	3:28
+23	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp	_	_	*	*	*
+24	pour	pour	ADP	_	_	25	mark	_	_	*	*	*
+25	observer	observer	VERB	_	VerbForm=Inf	23	advcl	_	_	*	*	*
+26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	*	*
+27	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	29	*
+28	éclipse	éclipse	NOUN	_	Gender=Fem|Number=Sing	25	obj	_	_	*	29	*
+29	de	de	ADP	_	_	30	case	_	_	*	29	*
+30	lune	lune	NOUN	_	Gender=Fem|Number=Sing	28	nmod	_	SpacesAfter=\s\n\n	*	29;30	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 15
+# text = je ne la donnerai pas merci
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	31	*
+2	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+3	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	*	32	3:32
+4	donnerai	donner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+6	merci	merci	INTJ	_	_	4	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 3SB0011.txt 16
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n	*	*	*
+

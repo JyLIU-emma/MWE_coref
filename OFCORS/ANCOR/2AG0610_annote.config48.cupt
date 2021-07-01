@@ -1,0 +1,79 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2AG0610.txt
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 2
+# text = bonjour est ce que je pourrais un plan de Grenoble s' il vous plaît
+1	bonjour	bonjour	INTJ	_	_	0	root	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	obl:arg	_	_	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	dislocated	_	_	*
+4	que	que	PRON	_	PronType=Rel	6	obj	_	_	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*
+6	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	plan	plan	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	Grenoble	Grenoble	PROPN	_	_	8	nmod	_	_	*
+11	s	s	X	_	_	10	flat:name	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	3	punct	_	_	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_	*
+14	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	obj	_	_	*
+15	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 3
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 4
+# text = et puis aussi e est ce que vous avez le programme de de s- la " science en fête " là
+1	et	et	CCONJ	_	_	6	cc	_	_	*
+2	puis	puis	ADV	_	_	6	cc	_	_	*
+3	aussi	aussi	ADV	_	_	6	advmod	_	_	*
+4	e	e	CCONJ	_	_	3	punct	_	_	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*
+6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+7	que	que	PRON	_	PronType=Rel	9	obj	_	_	*
+8	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	9	nsubj	_	_	*
+9	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	programme	programme	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+12	de	de	ADP	_	_	17	case	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	s-	s-	ADV	_	_	17	advmod	_	_	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*
+16	"	"	PUNCT	_	_	17	punct	_	_	*
+17	science	science	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*
+18	en	en	ADP	_	_	19	case	_	_	*
+19	fête	fête	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*
+20	"	"	PUNCT	_	_	17	punct	_	_	*
+21	là	là	ADV	_	_	11	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 5
+# text = non on l' a pas encore reçu
+1	non	non	ADV	_	_	7	advmod	_	_	*
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	1	fixed	_	_	*
+3	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obj	_	_	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*
+5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*
+6	encore	encore	ADV	_	_	7	advmod	_	_	*
+7	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 6
+# text = non d' accord merci
+1	non	non	ADV	_	_	4	advmod	_	_	*
+2	d	de	ADP	_	_	4	case	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	4	punct	_	_	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*
+5	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2AG0610.txt 7
+# text = de rien au revoir
+1	de	de	ADP	_	_	2	case	_	_	*
+2	rien	rien	PRON	_	Number=Sing	0	root	_	_	*
+3-4	au	_	_	_	_	_	_	_	_	*
+3	à	à	ADP	_	_	5	mark	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	*
+5	revoir	revoir	VERB	_	VerbForm=Inf	2	acl	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,52 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 2PF0437.txt
+# source_sent_id = http://my/newcorpus/uri 2PF0437.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0437.txt 2
+# text = je voudrais un plan sur le site touristique de la Clusaz et de Serre-Chevalier si vous avez
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*
+2	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*
+4	plan	plan	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*
+5	sur	sur	ADP	_	_	7	case	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*
+7	site	site	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*
+8	touristique	touristique	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*
+9	de	de	ADP	_	_	11	case	_	_	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+11	Clusaz	Clusaz	PROPN	_	_	7	nmod	_	_	*
+12	et	et	CCONJ	_	_	14	cc	_	_	*
+13	de	de	ADP	_	_	14	case	_	_	*
+14	Serre-Chevalier	Serre-Chevalier	PROPN	_	_	11	conj	_	_	*
+15	si	si	SCONJ	_	_	17	mark	_	_	*
+16	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	17	nsubj	_	_	*
+17	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	advcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0437.txt 3
+# text = la Clusaz Serre Serre-Chevalier
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*
+2	Clusaz	Clusaz	PROPN	_	_	0	root	_	_	*
+3	Serre	Serre	PROPN	_	_	2	flat:name	_	_	*
+4	Serre-Chevalier	Serre-Chevalier	PROPN	_	_	2	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0437.txt 4
+# text = parfait je vous remercie au revoir
+1	parfait	parfait	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	obj	_	_	*
+4	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5-6	au	_	_	_	_	_	_	_	_	*
+5	à	à	ADP	_	_	4	advmod	_	_	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 2PF0437.txt 5
+# text = moi au revoir
+1	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	_	*
+2-3	au	_	_	_	_	_	_	_	_	*
+2	à	à	ADP	_	_	1	advmod	_	_	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	fixed	_	_	*
+4	revoir	revoir	VERB	_	VerbForm=Inf	2	fixed	_	SpacesAfter=\s\n	*
+

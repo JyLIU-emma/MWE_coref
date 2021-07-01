@@ -1,0 +1,141 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0325.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 1
+# text = bonjour monsieur
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	monsieur	monsieur	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	SpacesAfter=\s\n\n	*	0	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 2
+# text = bonjour je veux me renseigner e pour avoir un bouquin on m' a dit qu' il existait un bouquin de e pour les les chalets les trucs comme ça dans la région les réservations
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	dislocated	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	1	*
+3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	5	obj	_	_	1:IRV	*	*
+5	renseigner	renseigner	VERB	_	VerbForm=Inf	3	xcomp	_	_	1	*	*
+6	e	e	CCONJ	_	_	14	cc	_	_	*	*	*
+7	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+8	avoir	avoir	VERB	_	VerbForm=Inf	14	advcl	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	2	0:2
+10	bouquin	bouquin	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	2	0:2
+11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_	*	3	*
+12	m'	le	PRON	_	Number=Sing|Person=1|PronType=Prs	14	iobj	_	_	*	4	*
+13	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_	*	*	*
+14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*	*	*
+15	qu	que	SCONJ	_	_	18	mark	_	SpaceAfter=No	*	*	*
+16	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_	*	*	*
+18	existait	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	35	acl	_	_	*	*	*
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	5	0:5
+20	bouquin	bouquin	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	_	*	5	0:5
+21	de	de	ADP	_	_	22	case	_	_	*	*	*
+22	e	e	SYM	_	_	20	nmod	_	_	*	*	*
+23	pour	pour	ADP	_	_	26	case	_	_	*	*	*
+24	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_	*	*	*
+25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_	*	6	2:6
+26	chalets	chalet	NOUN	_	Gender=Masc|Number=Plur	18	obl	_	_	*	6	2:6
+27	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_	*	7	2:7
+28	trucs	truc	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	_	*	7	2:7
+29	comme	comme	ADP	_	_	30	case	_	_	*	*	*
+30	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	28	nmod	_	_	*	*	*
+31	dans	dans	ADP	_	_	33	case	_	_	*	*	*
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_	*	8	*
+33	région	région	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	8	*
+34	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_	*	9	*
+35	réservations	réservation	NOUN	_	Gender=Fem|Number=Plur	14	obj	_	SpacesAfter=\s\n\n	*	9	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 3
+# text = c' est Cléconfort c' est Cléconfort
+1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	*	10	0:10
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	Cléconfort	Cléconfort	PROPN	_	_	0	root	_	_	*	11	1:11
+4	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	SpaceAfter=No	*	12	0:12
+5	'	'	PUNCT	_	_	4	punct	_	_	*	12	0:12
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	Cléconfort	Cléconfort	PROPN	_	_	3	flat:name	_	SpacesAfter=\s\n\n	*	13	1:13
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 4
+# text = ah ben voilà je crois que c' est ça il y a les numéros de téléphone c' est ça
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	*	*
+2	ben	ben	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	voilà	voilà	VERB	_	_	0	root	_	_	*	*	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	14	*
+5	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*	*	*
+6	que	que	SCONJ	_	_	10	mark	_	_	*	*	*
+7	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*	15	1:15
+8	'	'	PUNCT	_	_	7	punct	_	_	*	15	1:15
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*	*	*
+10	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	ccomp	_	_	*	16	1:16
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	case	_	_	1:VID	*	*
+12	y	y	PRON	_	_	11	fixed	_	_	1	*	*
+13	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	fixed	_	_	1	*	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*	17	*
+15	numéros	numéro	NOUN	_	Gender=Masc|Number=Plur	21	obl:mod	_	_	*	17	*
+16	de	de	ADP	_	_	17	case	_	_	*	17	*
+17	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	17;18	*
+18	c	c	X	_	_	21	nsubj	_	SpaceAfter=No	*	*	*
+19	'	'	PUNCT	_	_	18	punct	_	_	*	*	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*	*	*
+21	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 5
+# text = il y a tout à l' intérieur c' est classé par massif donc c' est sur les hauteurs de Grenoble en général hein dans les stations aussi
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	_	1:VID	*	*
+2	y	y	PRON	_	_	3	expl:comp	_	_	1	*	*
+3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+4	tout	tout	ADV	_	_	3	advmod	_	_	*	19	*
+5	à	à	ADP	_	_	8	case	_	_	*	*	*
+6	l	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	20	*
+7	'	'	PUNCT	_	_	8	punct	_	_	*	20	*
+8	intérieur	intérieur	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	20	*
+9	c	ce	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No	*	*	*
+10	'	'	PUNCT	_	_	8	punct	_	_	*	*	*
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	_	*	*	*
+12	classé	classer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	obj	_	_	*	*	*
+13	par	par	ADP	_	_	14	case	_	_	*	*	*
+14	massif	massif	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	_	*	21	*
+15	donc	donc	ADV	_	_	16	advmod	_	_	*	*	*
+16	c	ce	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*	*	*
+17	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_	*	*	*
+19	sur	sur	ADP	_	_	21	case	_	_	*	*	*
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*	22	*
+21	hauteurs	hauteur	NOUN	_	Gender=Fem|Number=Plur	3	obl	_	_	*	22	*
+22	de	de	ADP	_	_	23	case	_	_	*	22	*
+23	Grenoble	Grenoble	PROPN	_	_	21	nmod	_	_	*	22;23	*
+24	en	en	ADP	_	_	21	advmod	_	_	*	*	*
+25	général	général	ADJ	_	Gender=Masc|Number=Sing	24	fixed	_	_	*	*	*
+26	hein	hein	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	_	*	*	*
+27	dans	dans	ADP	_	_	29	case	_	_	*	*	*
+28	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_	*	24	*
+29	stations	station	NOUN	_	Gender=Fem|Number=Plur	26	nmod	_	_	*	24	*
+30	aussi	aussi	ADV	_	_	26	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 6
+# text = d' accord merci bien
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+4	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+5	bien	bien	ADV	_	_	4	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 7
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	25	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	26	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 8
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0325.txt 9
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*	*	*
+1	à	à	ADP	_	_	0	root	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

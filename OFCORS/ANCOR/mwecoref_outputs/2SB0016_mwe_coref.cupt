@@ -1,0 +1,51 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2SB0016.txt
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 2
+# text = bonjour ce serait pour avoir une carte de Grenoble
+1	bonjour	bonjour	INTJ	_	_	3	mark	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	_	*	*	*
+3	serait	être	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	pour	pour	ADP	_	_	5	mark	_	_	*	*	*
+5	avoir	avoir	VERB	_	VerbForm=Inf	3	advcl	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	0	*
+7	carte	carte	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	0	*
+8	de	de	ADP	_	_	9	case	_	_	*	0	*
+9	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	SpacesAfter=\s\n\n	*	0;1	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 3
+# text = oui voilà
+1	oui	oui	ADV	_	_	2	advmod	_	_	*	*	*
+2	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 4
+# text = et puis e une carte du réseau TAG
+1	et	et	CCONJ	_	_	3	cc	_	_	*	*	*
+2	puis	puis	ADV	_	_	3	cc	_	_	*	*	*
+3	e	e	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	2	*
+5	carte	carte	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*	2	*
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	2;3	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	2;3	*
+8	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	2;3	*
+9	TAG	Tag	PROPN	_	_	8	appos	_	SpacesAfter=\s\n\n	*	2;3;4	0:4
+
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 5
+# text = à la TAG
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	5	0:5
+3	TAG	Tag	X	_	_	0	root	_	SpacesAfter=\s\n\n	*	5	0:5
+
+# source_sent_id = http://my/newcorpus/uri 2SB0016.txt 6
+# text = à la TAG d' accord
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	6	0:6
+3	TAG	Tag	PROPN	_	_	0	root	_	_	*	6	0:6
+4	d	de	ADP	_	_	3	advmod	_	SpaceAfter=No	*	*	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*	*	*
+6	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	SpacesAfter=\s\n	*	*	*
+

@@ -1,0 +1,57 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 2AP0598.txt
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 1
+# text = bonsoir
+1	bonsoir	bonsoir	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 2
+# text = un plan de la ville s' il vous plaît
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	0	*
+2	plan	plan	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	_	_	*	0	*
+3	de	de	ADP	_	_	5	case	_	_	*	0	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	0;1	*
+5	ville	ville	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	0;1	*
+6	s	s	X	_	_	5	appos	_	SpaceAfter=No	*	*	*
+7	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_	*	*	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	obj	_	_	*	*	*
+10	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 3
+# text = oui bien sûr
+1	oui	oui	ADV	_	_	2	advmod	_	_	*	*	*
+2	bien	bien	ADV	_	_	3	advmod	_	_	*	*	*
+3	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 4
+# text = est ce que vous avez une liste des hôtels
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	2	*
+5	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	3	*
+7	liste	liste	NOUN	_	Gender=Fem|Number=Sing	5	xcomp	_	_	*	3	*
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	3;4	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*	3;4	*
+10	hôtels	hôtel	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpacesAfter=\s\n\n	*	3;4	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 5
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 6
+# text = merci beaucoup
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	beaucoup	beaucoup	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 2AP0598.txt 7
+# text = je vous en prie bonne soirée
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	5	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	6	iobj	_	_	*	6	*
+3	en	en	ADP	_	_	4	case	_	_	*	*	*
+4	prie	prie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	*	*
+5	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	7	*
+6	soirée	soiré	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n	*	7	*
+

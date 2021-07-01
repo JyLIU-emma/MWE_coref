@@ -1,0 +1,47 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0472.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 2
+# text = je pourrais avoir un plan de Gap s' il vous plaît
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	0	*
+2	pourrais	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	avoir	avoir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	1;2	*
+5	plan	plan	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	1;2	*
+6	de	de	ADP	_	_	7	case	_	_	*	1;2	*
+7	Gap	Gap	PROPN	_	_	5	nmod	_	_	*	2;3	*
+8	s	s	X	_	_	7	flat:name	_	SpaceAfter=No	*	*	*
+9	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_	*	*	*
+11	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	12	iobj	_	_	*	*	*
+12	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 3
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 5
+# text = c' est moi monsieur au revoir
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+4	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	_	*	4	*
+5	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	flat:name	_	_	*	5	*
+6-7	au	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_	*	*	*
+8	revoir	revoir	VERB	_	VerbForm=Inf	6	fixed	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0472.txt 6
+# text = on sait jamais
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	6	*
+2	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	jamais	jamais	ADV	_	Polarity=Neg	2	advmod	_	SpacesAfter=\s\n	*	*	*
+

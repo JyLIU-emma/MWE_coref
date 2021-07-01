@@ -1,0 +1,79 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1PF0444.txt
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 1
+# text = service
+1	service	service	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	0	1:0
+
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 2
+# text = un petit renseignement vous savez quelle est l' adresse de Eurauto
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	1	1:1
+2	petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	1	1:1
+3	renseignement	renseignement	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	1;2	1:1
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	obj	_	_	*	3	*
+5	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*	*	*
+6	quelle	quel	PRON	_	Gender=Fem|Number=Sing	9	nsubj	_	_	*	*	*
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	4	*
+9	adresse	adresse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	4	*
+10	de	de	ADP	_	_	11	case	_	_	*	4	*
+11	Eurauto	Eurauto	PROPN	_	_	9	nmod	_	SpacesAfter=\s\n\n	*	4;5	0:5
+
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 3
+# text = je sais même pas ce que c' est c' est un garage
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	6	*
+2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	même	même	ADV	_	_	4	advmod	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	_	*	*	*
+5	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	obj	_	_	*	*	*
+6	que	que	PRON	_	PronType=Rel	12	obj	_	_	*	*	*
+7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	_	*	7	0:7
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	_	*	8	0:8
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	9	*
+12	garage	garage	NOUN	_	Gender=Masc|Number=Sing	5	acl:relcl	_	SpacesAfter=\s\n\n	*	9	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 4
+# text = c' est un garage oui
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	10	0:10
+2	'	'	PUNCT	_	_	1	punct	_	_	*	10	0:10
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	11	*
+5	garage	garage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	11	*
+6	oui	oui	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 5
+# text = ah oui alors là je vous p- je vous passe " les pages jaunes " hein c' est malheureusement tous les garages de l' agglomération
+1	ah	ah	INTJ	_	_	10	discourse	_	_	*	*	*
+2	oui	oui	ADV	_	_	4	advmod	_	_	*	*	*
+3	alors	alors	ADV	_	_	2	fixed	_	_	*	*	*
+4	là	là	ADV	_	_	1	advmod	_	_	*	*	*
+5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	12	*
+6	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	obj	_	_	*	13	*
+7	p-	p-	SYM	_	_	10	mark	_	_	*	*	*
+8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*	14	*
+9	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	10	iobj	_	_	*	15	*
+10	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	"	"	PUNCT	_	_	13	punct	_	_	*	*	*
+12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_	*	16	*
+13	pages	page	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	_	*	16	*
+14	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*	16	*
+15	"	"	PUNCT	_	_	13	punct	_	_	*	*	*
+16	hein	hein	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*	*	*
+17	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	23	nsubj	_	SpaceAfter=No	*	*	*
+18	'	'	PUNCT	_	_	17	punct	_	_	*	*	*
+19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_	*	*	*
+20	malheureusement	malheureusement	ADV	_	_	23	advmod	_	_	*	*	*
+21	tous	tout	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	_	*	17	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*	17	*
+23	garages	garage	NOUN	_	Gender=Masc|Number=Plur	13	acl:relcl	_	_	*	17	*
+24	de	de	ADP	_	_	26	case	_	_	*	17	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	17;18	*
+26	agglomération	agglomération	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	SpacesAfter=\s\n\n	*	17;18	*
+
+# source_sent_id = http://my/newcorpus/uri 1PF0444.txt 6
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n	*	*	*
+

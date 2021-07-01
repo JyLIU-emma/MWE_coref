@@ -1,0 +1,71 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0317.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0317.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0317.txt 2
+# text = bonjour est ce que vous avez une liste des M J C e
+1	bonjour	bonjour	INTJ	_	_	3	nsubj	_	_	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*	*	*
+3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+4	que	que	PRON	_	PronType=Rel	14	obj	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	0	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	1	1:1
+8	liste	liste	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	1	1:1
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	1;2	1:1;0:2
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	1;2	1:1;0:2
+11	M	m	X	_	_	8	nmod	_	_	*	1;2	1:1;0:2
+12	J	J	X	_	_	13	nmod	_	_	*	1;2	1:1;0:2
+13	C	ce	X	_	_	11	nmod	_	_	*	1;2	1:1;0:2
+14	e	e	CCONJ	_	_	6	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0317.txt 3
+# text = oui ah donc là vous avez les listes des M J C avec leurs coordonnées et les ateliers qu' elles proposent hein
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	_	*	*	*
+2	ah	ah	NOUN	_	Gender=Masc|Number=Sing	1	xcomp	_	_	*	*	*
+3	donc	donc	ADV	_	_	1	advmod	_	_	*	*	*
+4	là	là	ADV	_	_	1	advmod	_	_	*	*	*
+5	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_	*	3	*
+6	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	4	1:4
+8	listes	liste	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	_	*	4	1:4
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	4;5	1:4;0:5
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	4;5	1:4;0:5
+11	M	m	X	_	Foreign=Yes	8	nmod	_	_	*	4;5	1:4;0:5
+12	J	J	X	_	Foreign=Yes	11	flat:foreign	_	_	*	4;5	1:4;0:5
+13	C	c	X	_	Foreign=Yes	11	flat:foreign	_	_	*	4;5	1:4;0:5
+14	avec	avec	ADP	_	_	16	case	_	_	*	*	*
+15	leurs	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*	6;7	2:7
+16	coordonnées	coordonnée	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	_	*	6;7	2:7
+17	et	et	CCONJ	_	_	19	cc	_	_	*	7	2:7
+18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_	*	7;8	2:7
+19	ateliers	atelier	NOUN	_	Gender=Masc|Number=Plur	16	conj	_	_	*	7;8	2:7
+20	qu	que	SCONJ	_	_	23	mark	_	SpaceAfter=No	*	9	2:9
+21	'	'	PUNCT	_	_	23	punct	_	_	*	9	2:9
+22	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_	*	10	0:10
+23	proposent	proposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl	_	_	*	*	*
+24	hein	hein	ADV	_	_	23	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0317.txt 4
+# text = d' accord merci beaucoup
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	merci	merci	INTJ	_	_	5	case	_	_	*	*	*
+5	beaucoup	beaucoup	ADV	_	_	3	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0317.txt 5
+# text = je vous en prie au revoir
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	11	*
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	12	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	4	advmod	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_	*	*	*
+7	revoir	revoir	VERB	_	VerbForm=Inf	5	fixed	_	SpacesAfter=\s\n	*	*	*
+

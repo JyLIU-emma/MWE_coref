@@ -1,0 +1,89 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 1AP0120.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 2
+# text = bonjour je recherche en fait une documentation sur e ce qu' il y a à visiter dans Grenoble
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	*	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*	0	*
+3	recherche	rechercher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*	*	*
+4	en	en	PRON	_	Person=3	5	iobj	_	_	*	*	*
+5	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	1	*
+7	documentation	documentation	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	1	*
+8	sur	sur	ADP	_	_	9	case	_	_	*	*	*
+9	e	e	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	*	*
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*	*	*
+11	qu	qu	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No	*	*	*
+12	'	'	PUNCT	_	_	15	punct	_	_	*	*	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	_	1:VID	*	*
+14	y	y	PRON	_	_	15	expl:comp	_	_	1	*	*
+15	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	parataxis	_	_	1	*	*
+16	à	à	ADP	_	_	17	mark	_	_	*	*	*
+17	visiter	visiter	VERB	_	VerbForm=Inf	15	xcomp	_	_	*	*	*
+18	dans	dans	ADP	_	_	19	case	_	_	*	*	*
+19	Grenoble	Grenoble	PROPN	_	_	17	obl:mod	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 3
+# text = ouais
+1	ouais	ouais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 4
+# text = ce que vous avez de plus complet si possible
+1	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*	*	*
+2	que	que	PRON	_	PronType=Rel	4	obj	_	_	*	*	*
+3	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*	3	*
+4	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*	*	*
+5	de	de	ADP	_	_	6	case	_	_	*	*	*
+6	plus	plus	ADV	_	_	7	advmod	_	_	*	*	*
+7	complet	complet	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	_	*	*	*
+8	si	si	SCONJ	_	_	9	mark	_	_	*	*	*
+9	possible	possible	ADJ	_	Gender=Masc|Number=Sing	4	advcl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 5
+# text = d' accord là et puis les alentours
+1	d	de	ADP	_	_	3	case	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	3	punct	_	_	*	*	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+4	là	là	ADV	_	_	3	advmod	_	_	*	*	*
+5	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+6	puis	puis	ADV	_	_	8	cc	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	4	*
+8	alentours	alentours	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	SpacesAfter=\s\n\n	*	4;5	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 6
+# text = oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 7
+# text = oui voilà
+1	oui	oui	ADV	_	_	2	advmod	_	_	*	*	*
+2	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 8
+# text = c' est super merci
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*	*	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*	*	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+4	super	super	ADV	_	_	5	advmod	_	_	*	*	*
+5	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0120.txt 9
+# text = et ben je vous en prie bonne fin de journée au revoir
+1	et	et	CCONJ	_	_	6	cc	_	_	*	*	*
+2	ben	ben	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	*	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_	*	6	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	6	iobj	_	_	*	7	*
+5	en	en	PRON	_	Person=3	6	expl:comp	_	_	*	*	*
+6	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	_	*	8;9	*
+8	fin	fin	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_	*	8;9	*
+9	de	de	ADP	_	_	10	case	_	_	*	9	*
+10	journée	journée	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	9;10	*
+11-12	au	_	_	_	_	_	_	_	_	*	*	*
+11	à	à	ADP	_	_	6	advmod	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	fixed	_	_	*	*	*
+13	revoir	revoir	VERB	_	VerbForm=Inf	11	fixed	_	SpacesAfter=\s\n	*	*	*
+

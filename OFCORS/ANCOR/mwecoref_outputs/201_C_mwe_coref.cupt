@@ -1,0 +1,202 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# newdoc = 201_C.txt
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 1
+# text = ah ils sont pas là hein ?
+1	ah	ah	INTJ	_	_	6	cc	_	SpacesBefore=\n\n	*	*	*
+2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_	*	0	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+5	là	là	ADV	_	_	6	advmod	_	_	*	*	*
+6	hein	hein	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+7	?	?	PUNCT	_	_	6	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 2
+# text = ils sont pas là en ce moment
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	*	1	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+4	là	là	ADV	_	_	0	root	_	_	*	*	*
+5	en	en	ADP	_	_	7	case	_	_	*	*	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_	*	2	*
+7	moment	moment	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	SpacesAfter=\s\n\n	*	2	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 3
+# text = ah bon ?
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	bon	bon	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	?	?	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 4
+# text = ils sont repartis en vacances ou ?
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	3	*
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_	*	*	*
+3	repartis	repartir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+4	en	en	ADP	_	_	5	case	_	_	*	*	*
+5	vacances	vacance	NOUN	_	Gender=Fem|Number=Plur	3	obl	_	_	*	4	*
+6	ou	ou	CCONJ	_	_	3	obl:mod	_	_	*	*	*
+7	?	?	PUNCT	_	_	6	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 5
+# text = pour huit jours je crois hein ?
+1	pour	pour	ADP	_	_	3	case	_	_	*	*	*
+2	huit	huit	NUM	_	_	3	nummod	_	_	*	5	0:5
+3	jours	jour	NOUN	_	Gender=Masc|Number=Plur	5	obl:mod	_	_	*	5	0:5
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*	6	*
+5	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	hein	hein	ADV	_	_	5	advmod	_	_	*	*	*
+7	?	?	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 6
+# text = ils reviendront que la semaine prochaine
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_	*	7	*
+2	reviendront	revenir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	que	que	SCONJ	_	_	5	case	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	8	*
+5	semaine	semaine	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	_	*	8	*
+6	prochaine	prochain	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	SpacesAfter=\s\n\n	*	8	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 7
+# text = ah oui d' accord
+1	ah	ah	INTJ	_	_	0	root	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*	*	*
+3	d	de	ADP	_	_	5	case	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	5	punct	_	_	*	*	*
+5	accord	accord	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 8
+# text = ah bon ?
+1	ah	ah	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	bon	bon	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	_	*	*	*
+3	?	?	PUNCT	_	_	1	punct	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 9
+# text = y a juste à au salon de coiffure que vous pourriez aller voir
+1	y	y	PRON	_	_	2	expl:comp	_	_	1:VID	*	*
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	juste	juste	ADV	_	_	7	advmod	_	_	*	*	*
+4	à	à	ADP	_	_	7	case	_	_	*	*	*
+5-6	au	_	_	_	_	_	_	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	9	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	9	*
+7	salon	salon	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	_	*	9	*
+8	de	de	ADP	_	_	9	case	_	_	*	9	*
+9	coiffure	coiffure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	9;10	*
+10	que	que	SCONJ	_	_	12	mark	_	_	*	*	*
+11	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_	*	11	*
+12	pourriez	pouroir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	*	*	*
+13	aller	aller	VERB	_	VerbForm=Inf	12	xcomp	_	_	*	*	*
+14	voir	voir	VERB	_	VerbForm=Inf	13	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 10
+# text = ah oui c' est vrai oui ah oui d' accord eh ben dans huit jours i- ils devront
+1	ah	ah	INTJ	_	_	7	nsubj	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	*	*
+3	c	ce	X	_	_	2	appos	_	SpaceAfter=No	*	*	*
+4	'	'	PUNCT	_	_	2	punct	_	_	*	*	*
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*	*	*
+7	oui	oui	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+8	ah	ah	NOUN	_	Gender=Masc|Number=Sing	7	appos	_	_	*	*	*
+9	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_	*	*	*
+10	d	de	ADP	_	_	12	case	_	SpaceAfter=No	*	*	*
+11	'	'	PUNCT	_	_	12	punct	_	_	*	*	*
+12	accord	accord	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*	*	*
+13	eh	eh	NUM	_	_	12	nmod	_	_	*	*	*
+14	ben	ben	ADV	_	_	20	advmod	_	_	*	*	*
+15	dans	dans	ADP	_	_	17	case	_	_	*	*	*
+16	huit	huit	NUM	_	_	17	nummod	_	_	*	12	0:12
+17	jours	jour	NOUN	_	Gender=Masc|Number=Plur	20	obl:mod	_	_	*	12	0:12
+18	i-	i-	PUNCT	_	_	17	punct	_	_	*	*	*
+19	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nsubj	_	_	*	13	*
+20	devront	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 11
+# text = ils seront r- de de retour
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_	*	14	*
+2	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	cop	_	_	*	*	*
+3	r-	r-	SYM	_	_	0	root	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	*	*
+5	de	de	ADP	_	_	6	case	_	_	*	*	*
+6	retour	retour	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 12
+# text = ben ils sont partis que pour les travaux alors vous pensez que
+1	ben	ben	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	*	15	*
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	partis	partir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	que	que	SCONJ	_	_	11	mark	_	_	*	*	*
+6	pour	pour	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	16	*
+8	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	11	obl:mod	_	_	*	16	*
+9	alors	alors	ADV	_	_	11	advmod	_	_	*	*	*
+10	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_	*	17	*
+11	pensez	penser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	ccomp	_	_	*	*	*
+12	que	que	SCONJ	_	_	11	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 13
+# text = ben sans quoi vous pouvez aller voir le fils là euh
+1	ben	ben	ADV	_	_	3	advmod	_	_	*	*	*
+2	sans	sans	ADP	_	_	3	case	_	_	*	*	*
+3	quoi	quoi	PRON	_	_	6	obl	_	_	*	*	*
+4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_	*	18	*
+5	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	aller	aller	VERB	_	VerbForm=Inf	5	xcomp	_	_	*	*	*
+7	voir	voir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	19	1:19
+9	fils	fils	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	*	19	1:19
+10	là	là	ADV	_	_	7	advmod	_	_	*	*	*
+11	euh	euh	NUM	_	_	5	obl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 14
+# text = oui oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 15
+# text = ben il est coiffeuse euh
+1	ben	ben	ADV	_	_	4	advmod	_	_	*	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj:pass	_	_	*	20	1:20
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*	*	*
+4	coiffeuse	coiffeux	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	21	*
+5	euh	euh	NUM	_	_	4	obl	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 16
+# text = oui oui
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+2	oui	oui	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 17
+# text = si vous voulez des des renseignements lui il pourra vous en donner
+1	si	si	SCONJ	_	_	3	mark	_	_	*	*	*
+2	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*	22	*
+3	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*	*	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	*	*
+5	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	3	obl:arg	_	_	*	*	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	23	2:23
+7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_	*	23	2:23
+8	renseignements	renseignement	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	23	2:23
+9	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	11	iobj	_	_	*	24	1:24
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*	25	1:25
+11	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+12	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	14	obj	_	_	*	26	*
+13	en	en	PRON	_	Person=3	14	iobj	_	_	*	27	2:27
+14	donner	donner	VERB	_	VerbForm=Inf	11	xcomp	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 18
+# text = merci monsieur
+1	merci	merci	INTJ	_	_	2	amod	_	_	*	*	*
+2	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*	28	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 19
+# text = merci beaucoup
+1	merci	merci	INTJ	_	_	0	root	_	_	*	*	*
+2	beaucoup	beaucoup	ADV	_	_	1	advmod	_	SpacesAfter=\s\n\n	*	*	*
+
+# source_sent_id = http://my/newcorpus/uri 201_C.txt 20
+# text = de rien
+1	de	de	ADP	_	_	2	case	_	_	*	*	*
+2	rien	rien	PRON	_	Number=Sing	0	root	_	SpacesAfter=\s\n	*	*	*
+

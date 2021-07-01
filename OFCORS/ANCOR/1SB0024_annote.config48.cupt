@@ -1,0 +1,106 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1SB0024.txt
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 1
+# text = oh et puis je vais recevoir e oh réserver
+1	oh	oh	INTJ	_	_	0	root	_	_	*
+2	et	et	CCONJ	_	_	5	cc	_	_	*
+3	puis	puis	ADV	_	_	5	cc	_	_	*
+4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+5	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	_	*
+6	recevoir	recevoir	VERB	_	VerbForm=Inf	5	xcomp	_	_	*
+7	e	e	CCONJ	_	_	8	cc	_	_	*
+8	oh	oh	X	_	_	6	conj	_	_	*
+9	réserver	réserver	VERB	_	VerbForm=Inf	6	xcomp	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 2
+# text = des billets d' avion
+1-2	des	_	_	_	_	_	_	_	_	*
+1	de	de	ADP	_	_	3	case	_	_	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*
+3	billets	billet	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*
+4	d'	de	ADP	_	_	5	case	_	_	*
+5	avion	avion	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 3
+# text = e en agence de voyages e
+1	e	e	CCONJ	_	_	3	cc	_	_	*
+2	en	en	ADP	_	_	3	case	_	_	*
+3	agence	agence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	de	de	ADP	_	_	5	case	_	_	*
+5	voyages	voyage	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*
+6	e	e	CCONJ	_	_	3	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 4
+# text = oui non mais il y a il y a un site Air Inter ici tout droit à Air Inter voilà vous allez me donner l' adresse c' est le numéro e
+1	oui	oui	ADV	_	_	6	advmod	_	_	*
+2	non	non	ADV	_	_	1	fixed	_	_	*
+3	mais	mais	CCONJ	_	_	6	cc	_	_	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:subj	_	_	1:VID
+5	y	y	PRON	_	_	6	expl:comp	_	_	1
+6	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_	1
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	_	*
+8	y	y	PRON	_	_	9	expl:comp	_	_	*
+9	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2:LVC.full
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*
+11	site	site	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	*
+12	Air	Air	PROPN	_	_	11	appos	_	_	*
+13	Inter	Inter	PROPN	_	_	12	flat:name	_	_	*
+14	ici	ici	ADV	_	_	9	advmod	_	_	*
+15	tout	tout	DET	_	Gender=Masc|Number=Sing	16	det	_	_	*
+16	droit	droit	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	_	2
+17	à	à	ADP	_	_	18	case	_	_	*
+18	Air	Air	PROPN	_	_	16	nmod	_	_	*
+19	Inter	Inter	PROPN	_	_	18	flat:name	_	_	*
+20	voilà	voilà	VERB	_	_	22	mark	_	_	*
+21	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	22	nsubj	_	_	*
+22	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	9	advcl	_	_	*
+23	me	le	PRON	_	Number=Sing|Person=1|PronType=Prs	24	iobj	_	_	*
+24	donner	donner	VERB	_	VerbForm=Inf	22	xcomp	_	_	*
+25	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*
+26	adresse	adresse	NOUN	_	Gender=Fem|Number=Sing	24	obj	_	_	*
+27	c	ce	X	_	_	26	appos	_	SpaceAfter=No	*
+28	'	'	PUNCT	_	_	27	punct	_	_	*
+29	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_	*
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_	*
+31	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	9	nsubj	_	_	*
+32	e	e	CCONJ	_	_	31	appos	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 5
+# text = cours Jean Jaurès
+1	cours	cours	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	Jean	Jean	PROPN	_	_	1	appos	_	_	*
+3	Jaurès	Jaurès	PROPN	_	_	2	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 6
+# text = e Air Inter c' est le numéro quarante-deux
+1	e	e	CCONJ	_	_	2	cc	_	_	*
+2	Air	Air	PROPN	_	_	8	nsubj	_	_	*
+3	Inter	Inter	PROPN	_	_	2	flat:name	_	_	*
+4	c	ce	X	_	_	2	flat:name	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	2	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*
+8	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+9	quarante-deux	quarante-deux	NUM	_	_	8	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 7
+# text = c' est marqué très bien merci au revoir
+1	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj:pass	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	*
+4	marqué	marquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+5	très	très	ADV	_	_	6	advmod	_	_	*
+6	bien	bien	ADV	_	_	4	advmod	_	_	*
+7	merci	merci	INTJ	_	_	4	xcomp	_	_	*
+8-9	au	_	_	_	_	_	_	_	_	*
+8	à	à	ADP	_	_	7	advmod	_	_	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	fixed	_	_	*
+10	revoir	revoir	VERB	_	VerbForm=Inf	8	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1SB0024.txt 8
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

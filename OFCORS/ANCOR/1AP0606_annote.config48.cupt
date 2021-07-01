@@ -1,0 +1,34 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AP0606.txt
+# source_sent_id = http://my/newcorpus/uri 1AP0606.txt 1
+# text = vous avez " le 38 " s' il vous plaît
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	SpacesBefore=\n\n	*
+2	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	advcl	_	_	*
+3	"	"	PUNCT	_	_	5	punct	_	_	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*
+5	38	38	NUM	_	_	2	obj	_	_	*
+6	"	"	PUNCT	_	_	7	punct	_	_	*
+7	s	s	X	_	_	5	appos	_	SpaceAfter=No	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*
+10	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	11	iobj	_	_	*
+11	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0606.txt 2
+# text = non plus monsieur
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	plus	plus	ADV	_	_	3	advmod	_	_	*
+3	monsieur	monsieur	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0606.txt 3
+# text = plus
+1	plus	plus	ADV	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AP0606.txt 4
+# text = on en a plus désolé
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*
+2	en	en	PRON	_	Person=3	5	iobj	_	_	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+4	plus	plus	ADV	_	Polarity=Neg	5	advmod	_	_	*
+5	désolé	désoler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n	*
+
