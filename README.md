@@ -188,6 +188,8 @@ Cette commande ne lance que la partie OFCORS.
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS sur les fichiers de `blabla/` se trouvent dans `blabla/ofcors_outputs`.
 
 ## Résultats
+
+### Fichier sorti
 ```
     FICHIER : frwiki_7_mwe_coref.cupt
     PHRASE : L'instruction a révélé l'existence d'une lettre datée de décembre 1993 et signée par Jacques Chirac, qui demande à son administration d'accorder une promotion à une employée municipale, Madeleine Farrad, qui, bien que rémunérée par la ville, travaille en fait au siège du RPR.
@@ -206,3 +208,28 @@ Les différentes expressions polylexicales faisant parties d'une chaîne de cor�
 * CHAINE(S) : Pour chaque chaîne à laquelle l'EP appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 13 qui contient les mentions 69 ("une promotion"), 70 ("une employée municipale") et 72 ("Madeleine Farrad").
 
 _Les résultats ne sont pas encore parfaits. La chaîne de coréférence présentée ici n'est pas correcte et ne sert que d'exemple pour les explications._
+
+### Annotation de validation
+Pour examiner les croisements des expressions polylexicales et les chaînes de coréférence, nous définissons le test de ces exemples sur 3 aspects corrélés : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE d'ERREUR*.
+
+- **"VALIDATION"**
+    - 3 valeurs possibles : "vrai", "faux" et "discutable"  
+    - **"vrai"** : Si l'exemple est utilisable pour notre hypothèse, c'est-à-dire le composant détecté dans l'expression polylexicale se trouve dans une vraie chaîne de coréférence (interprétation humaine), quelle que soit la performance du système.  
+    Par exemple, nous mettons "vrai" pour cette phrase: _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_ . Le composant "travaux" dans "accomplir travaux" est vraiment coréférent avec "qui", même si la mention détectée "une rétrospective des travaux" est fausse.
+    - **"faux"** : Cas contraire de précédent, l'exemple est trouvé à cause des fautes de système.
+    - **"discutable"** : Si l'exemple peut être vrai ou faux selon l'interprétation humaine.  
+    Par exemple, dans la phrase _"- Créé par la Fédération nationale qui perpétue le souvenir de l'homme d'Etat meusien qui fut ministre de la Guerre et l'initiateur d'un système de défense qui **porte** [son **nom**], le prix [André-Maginot] récompense des travaux liés au civisme et au devoir de mémoire."_ , la coréférence entre les deux mentions "son nom" et "André-Maginot" est difficile à déterminer, puisque le dernier est en effet le nom de ce prix au lieu du nom de cette personne.
+
+- **"DEGRE DE COMPOSITIONNALITE"(à compléter après)**
+
+"DEGRE DE COMPOSITIONNALITE" -> “faible” , “moyen” ou “fort” (“moyen/fort” etc…)
+(pas encore bien déterminé, seulement pour les exemples “vrais”)
+
+- **"SOURCE D'ERREUR"**
+    - Les erreurs proviennent de 2 côtés : expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 4 sources d'erreurs. 
+    - **"MWE incorrecte"** : l'expression détectée n'est pas une vrai expression polylexicale malgré les lemmes corrects.
+    - **"MWE littérale"** : un sous-cas de l'erreur précédent, l'expression détectée demande une lecture littérale dans ce contexte.  
+    eg. _"Nous travaillons en accord avec les organisateurs et proposons à chaque personne qui s'apprête à reprendre le volant de souffler dans le ballon pour voir où [il en est]."_
+    - **"chaîne incorrecte"** : Aucune des mentions de la chaîne n'est coréférente avec la mention de l'expression.
+    - **"mention incorrecte"** : la mention utilisée dans la chaîne détectée est incorrecte, mais la chaîne serait correcte si la mention était plus grande ou plus petite.  
+    eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changait `[une rétrospective des **travaux**]` à `[des **travaux**]`
