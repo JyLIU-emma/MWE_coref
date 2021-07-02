@@ -64,31 +64,45 @@ Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républica
     |-- README.md
     |-- seen2seen
     |   |-- udpipe_annote.py
-    |-- SEQUOIA
-    |   |-- EMEA_cupt
-    |   |-- EMEA_txt
-    |   |-- frwiki_cupt
-    |   |-- frwiki_txt
-    |   |-- z_fichier_intermediaire
-    |   |-- get_text_brut.py
-    |   |-- corpus_split2text.py
-    |   |-- couper_emea.py
-    |   |-- get_MWE_from_cupt.py
-    |   |-- mwe_all.py
-    |   |-- MWE_decompte_*.json
-    |   |-- ...
-    |-- OFCORS
-        |-- CuptParser.py
-        |-- OfcorsFilesParser.py
-        |-- merge_s2s_ofcors.py
-        |-- statistiques.py
-        |-- lanceur.sh
-        |-- blabla
-        |-- phrases
-        |-- SEQUOIA_EMEA
-        |-- SEQUOIA_frwiki
-        |-- z_oldies
-             ...
+    |   |-- seen2seen.py
+    |   |-- config.cfg
+    |   |-- model_udpipe
+    |-- 1_corpus
+    |   |-- SEQUOIA
+    |   |   |-- annodisER
+    |   |   |-- EMEA_cupt
+    |   |   |-- EMEA_txt
+    |   |   |-- frwiki_cupt
+    |   |   |-- frwiki_txt
+    |   |   |-- z_corpus_initial
+    |   |   |-- z_fichiers_intermediaires
+    |   |   |-- EMFR_corpus_split.py
+    |   |   |-- EMFR_txt_from_conllu.py
+    |   |   |-- ER_get_texte.py
+    |   |   |-- ER_get_date_title.py
+    |   |   |-- get_mwe_from_cupt.py
+    |   |   |-- MWE_decompte_*.json
+    |   |-- EST_REPUBLICAIN
+    |   |   |-- TXT2003
+    |   |   |-- TXT2003_len300_articles
+    |   |   |-- extract_text_er.py
+    |-- 2_traitements
+    |   |-- CuptParser.py
+    |   |-- OfcorsFilesParser.py
+    |   |-- ancor.py
+    |   |-- merge_s2s_ofcors.py
+    |   |-- statistiques.py
+    |   |-- lanceur.sh
+    |   |-- blabla
+    |   |-- ANCOR
+    |   |-- SEQUOIA_annodisER
+    |   |-- SEQUOIA_EMEA
+    |   |-- SEQUOIA_frwiki
+    |   |-- z_oldies
+    |-- 3_resultats
+        |-- frwiki_080621.json
+        ...
+
 ```
 
 ## Processus de travail
@@ -99,19 +113,20 @@ Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républica
     - Modification du script `seen2seen/seen2seen.py` en créant un mode "annotation_ONLY" qui permet de ne faire que l'annotation sans refaire l'entraînement. Ce mode est à spécifier dans le fichier de config (`seen2seen/config.cfg`) avec "annotation_ONLY = True".
 
 
-2. Utilisation du corpus SEQUOIA dans PARSEME, séparation des sous-corpus EMEA et frwiki selon les articles;
+2. Utilisation du corpus SEQUOIA dans PARSEME, séparation des sous-corpus EMEA, frwiki et annodis.er selon les articles;
 
     - Lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
-    - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `SEQUOIA/z_fichiers_intermediaires/sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `SEQUOIA/z_fichiers_intermediaires/emea.conllu` et `SEQUOIA/z_fichiers_intermediaires/frwiki.conllu`
-    - Utilisation du script `SEQUOIA/get_txt_from_conllu.py` pour extraire d'abord le texte brut et les sent_id des phrases qu'il contient dans les fichiers `SEQUOIA/z_fichiers_intermediaires/emea_textbrut.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut.txt`
-    - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `SEQUOIA/z_fichiers_intermediaires/emea_textbrut_annote.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut_annote.txt`
-    - À partir du contenu du fichier cupt, utilisation de `SEQUOIA/corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
-    - Répertoire du corpus obtenu: `OFCORS/SEQUOIA_EMEA` et `OFCORS/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `SEQUOIA`
+    - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `1_corpus/SEQUOIA/z_fichiers_intermediaires/sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea.conllu` et `1_corpus/SEQUOIA/z_fichiers_intermediaires/frwiki.conllu`
+    - Utilisation du script `1_corpus/SEQUOIA/EMFR_txt_from_conllu.py` pour extraire d'abord le texte brut et les sent_id des phrases qu'il contient dans les fichiers `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea_textbrut.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut.txt`
+    - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea_textbrut_annote.txt` et `1_corpus/SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut_annote.txt`
+    - À partir du contenu du fichier cupt, utilisation de `1_corpus/SEQUOIA/EMFR_corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
+    - Répertoire du corpus obtenu: `2_traitements/SEQUOIA_EMEA` et `2_traitements/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `1_corpus/SEQUOIA`
+    - Pour sous-cropus annodis.er, utiliser le script `ER_get_texte.py` pour obtenir le répertoire de corpus `annodisER`, ensuite le recopier dans `2_traitements` en le renommant à `SEQUOIA_annodisER`
 
 3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
-    - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `EST_REPUBLICAIN`
-    - Lancement du script `EST_REPUBLICAIN/extract_text_er.py` dans `EST_REPUBLICAIN` avec `python extract_texte_er.py <rep_corpus> <taille_min_article>`
-    - Le répertoire des articles est `EST_REPUBLICAIN/<rep_corpus>_len<taille>_articles`, et dans lequel chaque article est nommé comme `<date>_<indice_article>.txt`
+    - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `1_corpus/EST_REPUBLICAIN`
+    - Lancement du script `1_corpus/EST_REPUBLICAIN/extract_text_er.py` dans `1_corpus/EST_REPUBLICAIN` avec `python extract_texte_er.py <rep_corpus> <taille_min_article>`
+    - Le répertoire des articles est `1_corpus/EST_REPUBLICAIN/<rep_corpus>_len<taille>_articles`, et dans lequel chaque article est nommé comme `<date>_<indice_article>.txt`
     - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
 
 4. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
@@ -136,7 +151,7 @@ Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républica
     - Scripts pour les fusionner : `CuptParser.py`, `OfcorsFilesParser.py` et `merge_s2s_ofcors.py`
     - Script pour lancer tout :`lanceur.sh`
     - Script pour étudier le résultat :  `statistiques.py`
-    - Répertoires de test : `blabla`, `phrases`, `SEQUOIA_EMEA`, `SEQUOIA_frwiki`
+    - Répertoires de test : `blabla`, `SEQUOIA_EMEA`, `SEQUOIA_frwiki`
     - Anciens scripts : `z_oldies`
 
 ## Utilisation
@@ -168,7 +183,7 @@ Dans les deux cas seul le nom du répertoire sera pris en compte.
 Les résultats de l'annotation se trouvent dans `Seen2Seen/OUTPUT_seen/ANNOTATIONS/FR/{nom_repertoire_corpus}/` et se terminent par`_annote.config48.cupt`.
 
 ### Lancement d'OFCORS et de la fusion:
-Vous devez vous trouvez dans `MWE_coref/OFCORS/`.  
+Vous devez vous trouvez dans `MWE_coref/2_traitements/`.  
 
     ./lanceur.sh -os blabla/
     
@@ -187,7 +202,7 @@ Cette commande ne lance que la partie OFCORS.
 
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS sur les fichiers de `blabla/` se trouvent dans `blabla/ofcors_outputs`.
 
-## Résultats
+## Résultats  
 Légendes des exemples:
     - [mentions]
     - **expressions**
