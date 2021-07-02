@@ -229,7 +229,7 @@ Pour examiner les croisements des expressions polylexicales et les chaînes de c
     - Les erreurs proviennent de 2 côtés : expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 4 sources d'erreurs. 
     - **"MWE incorrecte"** : l'expression détectée n'est pas une vrai expression polylexicale malgré les lemmes corrects.
     - **"MWE littérale"** : un sous-cas de l'erreur précédent, l'expression détectée demande une lecture littérale dans ce contexte.  
-    eg. _"Nous travaillons en accord avec les organisateurs et proposons à chaque personne qui s'apprête à reprendre le volant de souffler dans le ballon pour voir où [il en est]."_
+    eg. _"Nous travaillons en accord avec les organisateurs et proposons à chaque personne qui s'apprête à reprendre le volant de souffler dans le ballon pour voir où **il en est**."_
     - **"chaîne incorrecte"** : Aucune des mentions de la chaîne n'est coréférente avec la mention de l'expression.
     - **"mention incorrecte"** : la mention utilisée dans la chaîne détectée est incorrecte, mais la chaîne serait correcte si la mention était plus grande ou plus petite.  
-    eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changait `[une rétrospective des **travaux**]` à `[des **travaux**]`
+    eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changait "une rétrospective des **travaux**" à "des **travaux**"
