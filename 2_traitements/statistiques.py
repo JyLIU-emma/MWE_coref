@@ -146,7 +146,7 @@ class ExprPoly():
                         cas = 4
                 else:
                     cas = 1
-    
+
             # SCHÉMAS IDENTIQUES
             # MWE:[1, 1, 1]MENT:[1, 1, 1] || MWE:[1, *, 1, 1]MENT:[*, *, 1, 1]
             elif debut_mwe == debut_ment and fin_mwe == fin_ment:
@@ -186,9 +186,9 @@ class ExprPoly():
             for element in liste_cas:
                 if element not in ["*", 2, 1]:
                     cas = element
-                elif element == 2: # Si on a 2 puis * alors c'est 3
+                elif element == 2:  # Si on a 2 puis * alors c'est 3
                     cas = 3
-                elif element == 1: # Si on a 1 puis * alors c'est 4
+                elif element == 1:  # Si on a 1 puis * alors c'est 4
                     cas = 4
 
         # Vérifications

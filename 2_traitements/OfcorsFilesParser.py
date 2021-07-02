@@ -12,14 +12,14 @@ class Mention():
     La classe contient tous les infos d'une mention:
 
     Attributes:
-        content (list): une liste de ses tokens text
-        start (int): l'indice de son premier token
-        end (int): l'indice de son dernier token
-        mid (str): l'id de mention dans fichier mention_output (commence par 1)
-        span (list): une liste des indice de tous les tokens dans cette mention
+        content (list): liste de ses tokens text
+        start (int): indice de son premier token
+        end (int): indice de son dernier token
+        mid (str): id de mention dans fichier mention_output (commence par 1)
+        span (list): liste des indice de tous les tokens dans cette mention
         is_coref (bool): montrer si une mention est dans une chaîne de
             coréférence, False par défaut
-        chaine_id (str): l'id de la chaîne qu'il fait partie
+        chaine_id (str): id de la chaîne qu'il fait partie
     """
     def __init__(self, content, start, end, mid):
         self.content = content
@@ -37,7 +37,8 @@ class Token():
 
     Attributes:
         text (str): texte de ce token
-        i_token (str): l'indice de token distribué par OFCORS(debut 0) mais unifié au cupt
+        i_token (str): l'indice de token distribué par OFCORS(debut 0) mais
+            unifié au cupt
         is_mention (bool): montre si le token fait partie d'une mention
         ment_list (list): une liste des Mention objets liés à ce token
         ment_coref_list (dict):
@@ -64,7 +65,7 @@ class Mentions():
             clé: id de token, valeur: liste des id de mention
         mentions (dict): dictionnaire de Mention objet
         ments_omis (dict): dictionnaire de mentions omises dans le résultat
-            (à cause de réalignement de phrases), 
+            (à cause de réalignement de phrases),
             respecter la structure du fichier json
     """
     def __init__(self, filepath, ofcors_output):
@@ -75,7 +76,7 @@ class Mentions():
         """
         self.tokens = {}
         self.mentions = {}
-        self.ments_omis = {} ##NEW
+        self.ments_omis = {}  # NEW
         with open(filepath, encoding="utf8") as mentions_file:
             text = mentions_file.read()
         dico_mentions = json.loads(text)
@@ -83,9 +84,9 @@ class Mentions():
         # transformer en l'indice de token de cupt
         dico_paral = ofcors_output.tokens_i_paral
 
-        ##NEW PRINT
-        # for i,j in dico_paral.items():
-        #     print(i,j)
+        # NEW PRINT
+        # for i, j in dico_paral.items():
+        #     print(i, j)
 
         for ment in dico_mentions.values():
             try:
@@ -98,13 +99,14 @@ class Mentions():
                 ment["END"] = "_"
 
         for cle, ment in dico_mentions.items():
-            ##NEW PRINT
+            # NEW PRINT
             # print(ment["CONTENT"], ment["START"], ment["END"], cle)
 
             if ment["START"] == "_" or ment["START"] == "_":
                 self.ments_omis[cle] = ment
             else:
-                mention = Mention(ment["CONTENT"], ment["START"], ment["END"], cle) # START & END : int
+                mention = Mention(ment["CONTENT"], ment["START"],
+                                  ment["END"], cle)  # START & END : int
                 self.mentions[mention.mid] = mention
         self.tokens2mentions()   # indice de cupt
 
@@ -178,9 +180,12 @@ class OfcorsOutput():
     Classe sert à fusionner tous les sortie de l'ofcors.
 
     Attributes:
-        tokens (dict): un dictionnaire des Token objets, clef: id, indice number: cupt
-        tokens_i_paral (dict): dictionnaire des indices: clé: indice dans tokens ofcors, valeur: liste des indices dans tokens cupt 
-            exemple: {'0': ['0'], '1': ['1'], '2': ['1'], '3': ['1'], '4': ['2'], '5': ['3'], '6': ['4'], '7': ['5', '6'], '8': ['7'], '9': ['8', '9']}
+        tokens (dict): un dictionnaire des Token objets,
+                       clef: id, indice number: cupt
+        tokens_i_paral (dict): dictionnaire des indices:
+            clé: indice dans tokens ofcors,
+            valeur: liste des indices dans tokens cupt
+            exemple: {'0': ['0'], '1': ['1'] ... '8': ['7'], '9': ['8', '9']}
     """
 
     def __init__(self, filepath, cupt_tokens):
@@ -212,7 +217,7 @@ class OfcorsOutput():
                     mention = mentions.mentions[ment_id]
                     token.ment_list.append(mention)
                     token.ment_coref_list[ment_id] = {"ment_id": mention.mid, "coref_id": mention.chaine_id}
-    
+
     def tokenisation_unify(self, tokens_ofcors, tokens_cupt):
         """
         tokens_ofcors : contenu du json file
@@ -231,7 +236,8 @@ class OfcorsOutput():
             token_o = delete_num_space(token_o)
 
             try:
-                # si le token est seulement retour à la ligne dans OFCORS, on saute ce token dans ofcors
+                # si le token est seulement retour à la ligne dans OFCORS,
+                # on saute ce token dans ofcors
                 if token_o == "\n":
                     i_o += 1
                     continue
@@ -263,7 +269,7 @@ class OfcorsOutput():
                             elif token == token_o:
                                 dico_o[str(i_o)] = [str(i)]
 
-                        else:  #  len(token) < len(token_o)
+                        else:  # len(token) < len(token_o)
                             while len(token) < len(token_o):
                                 if not dico_o.get(str(i_o)):
                                     dico_o[str(i_o)] = [str(i)]
@@ -272,7 +278,7 @@ class OfcorsOutput():
                                 i += 1
 
                                 token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
-                            
+
                             if len(token) != len(token_o) or token != token_o:
                                 raise Alignementerror(f"token:{token}\ttoken_o:{token_o}\nchaine de caractere combinee toujours differente, ne peut rien faire")
                             elif token == token_o:
@@ -281,27 +287,33 @@ class OfcorsOutput():
                 i += 1
                 i_o += 1
 
-            except Alignementerror as e:
-                print(e.msg)
+            except Alignementerror as err:
+                print(err.msg)
                 print("-----Recommencement depuis la phrase suivante-----")
                 # trouver le token au début de la phrase suivante (cupt)
                 while tokens_cupt.get(str(i))["indice_cupt"] != "1":
                     i += 1
                 token = delete_num_space(tokens_cupt.get(str(i))["token_form"])
-                
+
                 # comparer l'un après l'autre le token ofcors avec ce token débutant
                 while token != token_o:
                     i_o += 1
                     token_o = delete_num_space(tokens_ofcors.get(str(i_o)))
 
                 print(f"Nouveau début: token ({token}, {i}), token_o ({token_o}, {i_o})")
-            
-        self.tokens_i_paral = dico_o  # {'0': ['0'], '1': ['1'], '2': ['1'], '3': ['1'], '4': ['2'], '5': ['3'], '6': ['4'], '7': ['5', '6'], '8': ['7'], '9': ['8', '9']}
+
+        # {'0': ['0'], '1': ['1'], '2': ['1'],...'8': ['7'], '9': ['8', '9']}
+        self.tokens_i_paral = dico_o
+
 
 def delete_num_space(string):
+    """
+    Supprime l'espace dans les nombres.
+    """
     if re.match("[0-9 ]+", string):
         string = re.sub(" ", "", string)
     return string
+
 
 class Alignementerror(Exception):
     """
@@ -309,4 +321,3 @@ class Alignementerror(Exception):
     """
     def __init__(self, msg):
         self.msg = msg
-

@@ -49,8 +49,8 @@ def sep_texte(texte):
     Args:
         texte (str), le contenu d'un fichier.txt
     Returns:
-        dico (dict), avec comme clé le nom de l'article et en valeur son contenu
-                     textuel
+        dico (dict), avec comme clé le nom de l'article et en valeur son
+                     contenu textuel
     """
     articles = texte.split("\n\n")
     dico = {}

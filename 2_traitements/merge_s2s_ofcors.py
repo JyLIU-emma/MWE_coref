@@ -23,7 +23,7 @@ mention_file = f'{ofcors_rep}{filename}_mentions_output.json'
 coref_file = f'{ofcors_rep}{filename}_resulting_chains.json'
 token_file = f'{ofcors_rep}{filename}_tokens.json'
 
-##OLD
+# OLD
 # mentions = Mentions(mention_file)
 # coref = CorefChaines(coref_file)
 # mentions.chainer(coref.ment_cluster)
@@ -32,7 +32,7 @@ token_file = f'{ofcors_rep}{filename}_tokens.json'
 # cupt = Cupt(cupt_file)
 # cupt.add_ofcors_output(ofcors_out)
 
-##NEW
+# NEW
 cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
 
 cupt.write_to_file(f'{output_rep}{filename}_mwe_coref.cupt')
