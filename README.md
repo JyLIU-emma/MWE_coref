@@ -188,36 +188,38 @@ Cette commande ne lance que la partie OFCORS.
 Cette commande ne lance que les scripts `merge_s2s_ofcors.py` et `statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS sur les fichiers de `blabla/` se trouvent dans `blabla/ofcors_outputs`.
 
 ## Résultats
+Légendes des exemples:
+    - [mentions]
+    - **expressions**
 
-### Fichier sorti
+### Fichier de sortie
 ```
-    FICHIER : frwiki_7_mwe_coref.cupt
-    PHRASE : L'instruction a révélé l'existence d'une lettre datée de décembre 1993 et signée par Jacques Chirac, qui demande à son administration d'accorder une promotion à une employée municipale, Madeleine Farrad, qui, bien que rémunérée par la ville, travaille en fait au siège du RPR.
-    INFOS : tokens : ['accorder', 'promotion'], coref : ['*', '13:69'], cas : {'69': 4}
-    CHAÎNE(S) : 
-       - 13 : {'69': ['une', 'promotion'], '70': ['une', 'employée', 'municipale'], '72': ['Madeleine', 'Farrad', ',']}
-
+     "FICHIER": "emea_2_mwe_coref.cupt",
+     "PHRASE": "Aclasta ne doit être utilisé, chez les patients souffrant de la maladie osseuse de Paget, que par un médecin expérimenté dans le traitement de cette maladie.",
+     "TOKENS": "['souffrant', 'de', 'maladie']",
+     "COREF": "['*', '*', '68:131']",
+     "CAS": "{'131': 4}",
+     "CHAÎNE(S)": {
+        "68": "{'131': ['la', 'maladie', 'osseuse', 'de', 'Paget'], '135': ['cette', 'maladie'], '138': ['une', 'maladie'], '139': ['qui']}"
 ```
 Les différentes expressions polylexicales faisant parties d'une chaîne de coréférence sont regroupées par type (VID, LVC.full ...). Pour chaque type sont ensuite affichées les informations sur les expressions polylexicales comme ci-dessus.
 * FICHIER :  le fichier où se trouve l'EP.
 * PHRASE :  La phrase où se trouve l' EP.
 * INFOS : 
     - Les tokens qui composent l'EP.
-    - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si `*` alors il n'appartient pas à une chaîne, sinon `indice de chaine : indice de mention`. Dans l'exemple ci-dessus, "promotion" correspond à la mention 69 et fait partie de la chaîne de coréférence 13.
-    - Le cas correspondant pour chaque mention. (CAS 1 : la mention déborde de l'EP, CAS 2 : la mention et l'EP sont identiques, CAS 3 : la mention correspond à un élément de l'EP et CAS 4 : MWE = accorder(1) une(\*) promotion(1)/MENTION = accorder(\*) une(1) promotion(1))
-* CHAINE(S) : Pour chaque chaîne à laquelle l'EP appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 13 qui contient les mentions 69 ("une promotion"), 70 ("une employée municipale") et 72 ("Madeleine Farrad").
-
-_Les résultats ne sont pas encore parfaits. La chaîne de coréférence présentée ici n'est pas correcte et ne sert que d'exemple pour les explications._
+    - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si `*` alors il n'appartient pas à une chaîne, sinon `indice de chaine : indice de mention`. Dans l'exemple ci-dessus, "maladie" correspond à la mention 131 et fait partie de la chaîne de coréférence 68.
+    - Le cas correspondant pour chaque mention. (CAS 1 : EP incluse dans mention, CAS 2 : la mention et l'EP sont identiques, CAS 3 : mention incluse dans EP et CAS 4 : chevauchement)
+* CHAINE(S) : Pour chaque chaîne à laquelle l'EP appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 68 qui contient les mentions 131 ("la maladie osseuse de Paget"), 135 ("cette maladie"), 138 ("une maladie") et 139 ("qui").
 
 ### Annotation de validation
-Pour examiner les croisements des expressions polylexicales et les chaînes de coréférence, nous définissons le test de ces exemples sur 3 aspects corrélés : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE d'ERREUR*.
+Pour examiner les croisements des expressions polylexicales et des chaînes de coréférence, nous définissons le test de ces exemples sur 3 aspects corrélés : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE D'ERREUR*.
 
 - **"VALIDATION"**
     - 3 valeurs possibles : "vrai", "faux" et "discutable"  
-    - **"vrai"** : Si l'exemple est utilisable pour notre hypothèse, c'est-à-dire le composant détecté dans l'expression polylexicale se trouve dans une vraie chaîne de coréférence (interprétation humaine), quelle que soit la performance du système.  
+    - **"vrai"** : L'exemple est utilisable pour notre hypothèse, c'est-à-dire le composant détecté dans l'expression polylexicale se trouve dans une vraie chaîne de coréférence (interprétation humaine), quelle que soit la performance du système.  
     Par exemple, nous mettons "vrai" pour cette phrase: _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_ . Le composant "travaux" dans "accomplir travaux" est vraiment coréférent avec "qui", même si la mention détectée "une rétrospective des travaux" est fausse.
     - **"faux"** : Cas contraire de précédent, l'exemple est trouvé à cause des fautes de système.
-    - **"discutable"** : Si l'exemple peut être vrai ou faux selon l'interprétation humaine.  
+    - **"discutable"** : L'exemple peut être vrai ou faux selon l'interprétation humaine.  
     Par exemple, dans la phrase _"- Créé par la Fédération nationale qui perpétue le souvenir de l'homme d'Etat meusien qui fut ministre de la Guerre et l'initiateur d'un système de défense qui **porte** [son **nom**], le prix [André-Maginot] récompense des travaux liés au civisme et au devoir de mémoire."_ , la coréférence entre les deux mentions "son nom" et "André-Maginot" est difficile à déterminer, puisque le dernier est en effet le nom de ce prix au lieu du nom de cette personne.
 
 - **"DEGRE DE COMPOSITIONNALITE"(à compléter après)**
@@ -227,9 +229,21 @@ Pour examiner les croisements des expressions polylexicales et les chaînes de c
 
 - **"SOURCE D'ERREUR"**
     - Les erreurs proviennent de 2 côtés : expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 4 sources d'erreurs. 
-    - **"MWE incorrecte"** : l'expression détectée n'est pas une vrai expression polylexicale malgré les lemmes corrects.
-    - **"MWE littérale"** : un sous-cas de l'erreur précédent, l'expression détectée demande une lecture littérale dans ce contexte.  
+    - **"MWE incorrecte"** : l'expression détectée n'est pas une vraie expression polylexicale malgré les lemmes corrects.
+    - **"MWE littérale"** : un sous-cas de l'erreur précédente, l'expression détectée demande une lecture littérale dans ce contexte.  
     eg. _"Nous travaillons en accord avec les organisateurs et proposons à chaque personne qui s'apprête à reprendre le volant de souffler dans le ballon pour voir où **il en est**."_
     - **"chaîne incorrecte"** : Aucune des mentions de la chaîne n'est coréférente avec la mention de l'expression.
-    - **"mention incorrecte"** : la mention utilisée dans la chaîne détectée est incorrecte, mais la chaîne serait correcte si la mention était plus grande ou plus petite.  
-    eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changait "une rétrospective des **travaux**" à "des **travaux**"
+    - **"mention incorrecte"** : La mention utilisée dans la chaîne détectée est incorrecte, mais la chaîne serait correcte si la mention prenait en compte plus ou moins de mots.  
+    eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changait "une rétrospective des **travaux**" à "des **travaux**"  
+
+L'annotation a été réalisée lors de réunions, les annotateurs n'étaient donc pas indépendants des autres. Il y avait entre 2 et 7 annotateurs. Les phrases étaient lues et vérifiées puis les annotateurs discutaient entre eux de la validité ou non des exemples.
+
+### Quelques exemples corrects
+
+-  Dès la fin de la guerre, la veuve de Théophile Maupas, soutenue par la Ligue des droits de l'Homme contactée dès le mois d'avril 1915, entama [un combat] pour la réhabilitation de son époux et des autres caporaux fusillés de Souain ; [**combat**] contre les institutions, **mené** sans relâche, qui dura près de deux décennies et qui, en dehors de son activité d'institutrice, l'occupa à plein temps. (FRWIKI)
+- Aclasta ne doit être utilisé, chez les patients **souffrant de** [la **maladie** osseuse de Paget], que par un médecin expérimenté dans le traitement de [cette maladie]. (EMEA)
+- Dans le cas où vous avez **eu** récemment [une **fracture** de hanche], il est recommandé qu'Aclasta soit administré 2 semaines ou plus après réparation de [votre fracture]. (EMEA)
+- Il est utilisé en conjonction avec de l'aspirine et du clopidogel (médicaments contribuant à prévenir les caillots sanguins) chez les patients sur le point de **subir** [un **traitement**] pour leur SCA, comme un [traitement médicamenteux], subissant une angioplastie ou [un pontage coronarien]. (EMEA)
+- Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord une rétrospective [des **travaux**] [qui] ont été **accomplis** dans la commune. (Est Républicain)
+- Une course entamée à l'aube, 3 h 35, pour se terminer presque deux heures plus tard à l'hôtel de police... où sa cliente a avoué [le meurtre de l'homme] qui lui offrait l'hospitalité. [Un **crime**] **commis** une semaine plus tôt, dans un studio de la résidence Lemire. (Est Républicain)
+- D'ores et déjà, Guy Rolland se demande « si l'année prochaine nous n'allons pas **mener** [des **actions** plus ciblées] comme [celles] que nous menons en direction des boîtes de nuit. (Est Républicain)
