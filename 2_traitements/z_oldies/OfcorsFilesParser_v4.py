@@ -242,6 +242,7 @@ class OfcorsOutput():
                     i_o += 1
                     continue
                 # chaine identique
+                # elif token == token_o:  ####################################
                 if token == token_o:
                     dico_o[str(i_o)] = [str(i)]
                 # multi-word token, comme article contracte
@@ -257,32 +258,32 @@ class OfcorsOutput():
                 else:
                     if len(token) == len(token_o):
                         raise Alignementerror(f"Chaine de caractere differente (cupt: {token}, ofcors: {token_o})")
-                    # longueur differentes
-                    if len(token) > len(token_o):
-                        while len(token) > len(token_o):
-                            dico_o[str(i_o)] = [str(i)]
-                            i_o += 1
-                            token_o = token_o + delete_num_space(tokens_ofcors.get(str(i_o)))
-
-                        if len(token) != len(token_o) or token != token_o:
-                            raise Alignementerror(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})\nChaine de caractere combinee toujours differente")
-                        if token == token_o:
-                            dico_o[str(i_o)] = [str(i)]
-
-                    else:  # len(token) < len(token_o)
-                        while len(token) < len(token_o):
-                            if not dico_o.get(str(i_o)):
+                    else:  # longueur differentes
+                        if len(token) > len(token_o):
+                            while len(token) > len(token_o):
                                 dico_o[str(i_o)] = [str(i)]
-                            else:
+                                i_o += 1
+                                token_o = token_o + delete_num_space(tokens_ofcors.get(str(i_o)))
+
+                            if len(token) != len(token_o) or token != token_o:
+                                raise Alignementerror(f"token:{token}(indice: {i})\ttoken_o:{token_o}(indice dans l'ofcors: {i_o})\nChaine de caractere combinee toujours differente")
+                            elif token == token_o:
+                                dico_o[str(i_o)] = [str(i)]
+
+                        else:  # len(token) < len(token_o)
+                            while len(token) < len(token_o):
+                                if not dico_o.get(str(i_o)):
+                                    dico_o[str(i_o)] = [str(i)]
+                                else:
+                                    dico_o[str(i_o)].append(str(i))
+                                i += 1
+
+                                token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
+
+                            if len(token) != len(token_o) or token != token_o:
+                                raise Alignementerror(f"token:{token}\ttoken_o:{token_o}\nchaine de caractere combinee toujours differente, ne peut rien faire")
+                            elif token == token_o:
                                 dico_o[str(i_o)].append(str(i))
-                            i += 1
-
-                            token = token + delete_num_space(tokens_cupt.get(str(i))["token_form"])
-
-                        if len(token) != len(token_o) or token != token_o:
-                            raise Alignementerror(f"token:{token}\ttoken_o:{token_o}\nchaine de caractere combinee toujours differente, ne peut rien faire")
-                        if token == token_o:
-                            dico_o[str(i_o)].append(str(i))
                 
                 # dans la branche try
                 i += 1

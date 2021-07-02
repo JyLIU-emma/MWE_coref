@@ -2,7 +2,10 @@
 # Jianying Liu et Anaëlle Pierredon
 
 """
-A COMPLÉTER
+Script sert à :
+- parser les fichiers cupt,
+- les modifier en ajoutant l'information de coréférence,
+- écrire le résultat dans des fichiers sortis
 
 TODO: maintenant: 1 cupt -- 1 fichier; besoin de 1 cupt -- plusieurs fichier ?
 """
@@ -194,9 +197,9 @@ def main():
     """
     exemple d'usage
     """
-    cupt_file = "./SEQUOIA_emea/emea_2.cupt"
-    token_file = "./SEQUOIA_emea/ofcors_outputs/emea_2_tokens.json"
-    mention_file = "./SEQUOIA_emea/ofcors_outputs/emea_2_mentions_output.json"
+    cupt_file = "./SEQUOIA_emea/emea_1.cupt"
+    token_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_tokens.json"
+    mention_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_mentions_output.json"
     coref_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_resulting_chains.json"
     cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
     cupt.write_to_file("./a_debug_test.cuptmc")

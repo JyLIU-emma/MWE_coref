@@ -2,6 +2,8 @@
 # Jianying Liu et Anaëlle Pierredon
 
 """
+Ce scriprt sert à créer le répertoire de corpus pour annodis.er dans SEQUOIA
+
 Pour lancer ce script, il faut avoir le fichier z_fichiers_intermediaires/ER_info.json
 Ensuite:
 python3 ER_get_texte.py
