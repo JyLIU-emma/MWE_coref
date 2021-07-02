@@ -184,10 +184,12 @@ class ExprPoly():
         # On prend le dernier cas trouvé s'il y en a un
         if cas == "*":
             for element in liste_cas:
-                if element not in ["*", 2]:
+                if element not in ["*", 2, 1]:
                     cas = element
                 elif element == 2: # Si on a 2 puis * alors c'est 3
                     cas = 3
+                elif element == 1: # Si on a 1 puis * alors c'est 4
+                    cas = 4
 
         # Vérifications
         # print(ind_mentions)
