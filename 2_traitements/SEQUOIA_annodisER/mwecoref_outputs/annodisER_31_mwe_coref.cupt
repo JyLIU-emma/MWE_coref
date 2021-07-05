@@ -1,0 +1,824 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00389
+# text = Denise Jacquin n'est plus
+1	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	1	*
+2	Jacquin	Jacquin	PROPN	_	_	1	flat:name	_	_	*	1	*
+3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*	*	*
+4	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	plus	plus	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00390
+# text = Denise Jacquin s'est éteinte mercredi, à l'âge de 73 ans, à l'hôpital, des suites d'une pénible maladie contre laquelle elle a lutté courageusement.
+1	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	2	*
+2	Jacquin	Jacquin	PROPN	_	_	1	flat:name	_	_	*	2	*
+3	s'	se	PRON	_	Person=3|Reflex=Yes	5	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	éteinte	éteindre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+6	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	3	*
+7	,	,	PUNCT	_	_	5	punct	_	_	*	3	*
+8	à	à	ADP	_	_	10	case	_	_	*	*	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*	4;5	18: 5
+10	âge	âge	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*	4;5	18: 5
+11	de	de	ADP	_	_	13	case	_	_	*	4;5	18: 5
+12	73	73	NUM	_	NumType=Card	13	nummod	_	_	*	4;5;6	18: 5
+13	ans	an	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No	*	4;5;6	18: 5
+14	,	,	PUNCT	_	_	5	punct	_	_	*	5	18: 5
+15	à	à	ADP	_	_	17	case	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	7;8	18: 8
+17	hôpital	hôpital	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	7;8	18: 8
+18	,	,	PUNCT	_	_	5	punct	_	_	*	8	18: 8
+19-20	des	_	_	_	_	_	_	_	_	*	*	*
+19	de	de	ADP	_	_	21	case	_	_	*	9	*
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	_	*	9	*
+21	suites	suite	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	_	*	9	*
+22	d'	de	ADP	_	_	25	case	_	SpaceAfter=No	*	9	*
+23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	9;10	1: 10
+24	pénible	pénible	ADJ	_	Number=Sing	25	amod	_	_	*	9;10	1: 10
+25	maladie	maladie	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	_	*	9;10	1: 10
+26	contre	contre	ADP	_	_	27	case	_	_	*	*	*
+27	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	30	obl:arg	_	_	*	11	1: 11
+28	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	30	nsubj	_	_	*	12	1: 12
+29	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux:tense	_	_	*	*	*
+30	lutté	lutter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	acl:relcl	_	_	*	*	*
+31	courageusement	courageusement	ADV	_	_	30	advmod	_	SpaceAfter=No	*	*	*
+32	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00391
+# text = Denise Fachinetti est née à Mancenans au sein d'une famille de huit enfants.
+1	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	13	*
+2	Fachinetti	Fachinetti	PROPN	_	_	1	flat:name	_	_	*	13	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	née	naître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	à	à	ADP	_	_	6	case	_	_	*	*	*
+6	Mancenans	Mancenans	PROPN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	14	3: 14
+7-8	au	_	_	_	_	_	_	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	*	*
+9	sein	sein	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+10	d'	de	ADP	_	_	12	case	_	SpaceAfter=No	*	*	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	15	1: 15
+12	famille	famille	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*	15	1: 15
+13	de	de	ADP	_	_	15	case	_	_	*	15	1: 15
+14	huit	huit	NUM	_	NumType=Card	15	nummod	_	_	*	15;16	1: 15
+15	enfants	enfant	NOUN	_	Number=Plur	12	nmod	_	SpaceAfter=No	*	15;16	1: 15
+16	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00392
+# text = Mais elle a passé toute son enfance à Geney, où après avoir été à l'école communale, elle a gardé les vaches.
+1	Mais	mais	CCONJ	_	_	4	cc	_	_	*	*	*
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_	*	17	1: 17
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	passé	passer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	toute	tout	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	18	1: 18
+6	son	son	DET	_	Number=Sing|Poss=Yes	7	det	_	_	*	18	1: 18
+7	enfance	enfance	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	18	1: 18
+8	à	à	ADP	_	_	9	case	_	_	*	*	*
+9	Geney	Geney	PROPN	_	Gender=Masc|Number=Sing	4	obl:arg	_	SpaceAfter=No	*	19;20	3: 19;11: 20
+10	,	,	PUNCT	_	_	9	punct	_	_	*	20	11: 20
+11	où	où	PRON	_	PronType=Rel	22	iobj	_	_	*	21	11: 21
+12	après	après	ADP	_	_	14	mark	_	_	*	*	*
+13	avoir	avoir	AUX	_	VerbForm=Inf	14	aux:tense	_	_	*	*	*
+14	été	être	VERB	_	Tense=Past|VerbForm=Part	22	advcl	_	_	*	*	*
+15	à	à	ADP	_	_	17	case	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	22	*
+17	école	école	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*	22	*
+18	communale	communal	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	SpaceAfter=No	*	22	*
+19	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+20	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	22	nsubj	_	_	*	23	1: 23
+21	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux:tense	_	_	*	*	*
+22	gardé	garder	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl:relcl	_	_	*	*	*
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	24	*
+24	vaches	vache	NOUN	_	Gender=Fem|Number=Plur	22	obj	_	SpaceAfter=No	*	24	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00393
+# text = Alors qu'elle est adolescente, sa famille s'installe à l'Isle-sur-le-Doubs.
+1	Alors	alors	ADV	_	_	5	mark	_	EXTPOS=SCONJ|MWE=alors_que	*	*	*
+2	qu'	que	SCONJ	_	_	1	fixed	_	SpaceAfter=No	*	*	*
+3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_	*	25	1: 25
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
+5	adolescente	adolescent	NOUN	_	Gender=Fem|Number=Sing	10	advcl	_	SpaceAfter=No	*	26	1: 26
+6	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+7	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	8	det	_	_	*	27	1: 27
+8	famille	famille	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	27	1: 27
+9	s'	se	PRON	_	Person=3|Reflex=Yes	10	expl:comp	_	SpaceAfter=No	*	*	*
+10	installe	installer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	28	27: 28
+13	Isle-sur-le-Doubs	Isle-sur-le-Doubs	PROPN	_	Number=Sing	10	obl:arg	_	SpaceAfter=No	*	28	27: 28
+14	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00394
+# text = Le 19 juillet 1947, la défunte épouse René Jacquin, originaire de la commune.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	29	1: 29
+2	19	19	NUM	_	NumType=Card	8	obl:mod	_	_	*	29	1: 29
+3	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	29	1: 29
+4	1947	1947	NUM	_	NumType=Card	3	nmod	_	SpaceAfter=No	*	29	1: 29
+5	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	30	1: 30
+7	défunte	défunt	ADJ	_	Gender=Fem|Number=Sing	8	nsubj	_	_	*	30	1: 30
+8	épouse	épouser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+9	René	René	PROPN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	31	*
+10	Jacquin	Jacquin	PROPN	_	_	9	flat:name	_	SpaceAfter=No	*	31	*
+11	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+12	originaire	originaire	ADJ	_	Number=Sing	9	amod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	32	1: 32
+15	commune	commune	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	SpaceAfter=No	*	32	1: 32
+16	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00395
+# text = Denise travaille chez Japy jusqu'à la naissance de son premier enfant Christiane.
+1	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	2	nsubj	_	_	*	33	*
+2	travaille	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	chez	chez	ADP	_	_	4	case	_	_	*	*	*
+4	Japy	Japy	PROPN	_	_	2	obl:mod	_	_	*	34	27: 34
+5	jusqu'	jusque	ADP	_	_	8	case	_	SpaceAfter=No	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	35	1: 35
+8	naissance	naissance	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	_	*	35	1: 35
+9	de	de	ADP	_	_	12	case	_	_	*	35	1: 35
+10	son	son	DET	_	Number=Sing|Poss=Yes	12	det	_	_	*	35;36	1: 35
+11	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_	*	35;36	1: 35
+12	enfant	enfant	NOUN	_	Number=Sing	8	nmod	_	_	*	35;36	1: 35
+13	Christiane	Christiane	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*	37	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00396
+# text = Puis, elle décide de rester à la maison pour s'occuper de sa fille et de ses deux fils Denis et René.
+1	Puis	puis	CCONJ	_	_	4	cc	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_	*	38	1: 38
+4	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	6	mark	_	_	*	*	*
+6	rester	rester	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+7	à	à	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	39	1: 39
+9	maison	maison	NOUN	_	Gender=Fem|Number=Sing	6	obl:arg	_	_	*	39	1: 39
+10	pour	pour	ADP	_	_	12	mark	_	_	*	*	*
+11	s'	se	PRON	_	Person=3|Reflex=Yes	12	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+12	occuper	occuper	VERB	_	VerbForm=Inf	6	advcl	_	_	1	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	15	det	_	_	*	40;41	1: 40;1: 41
+15	fille	fille	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*	40;41	1: 40;1: 41
+16	et	et	CCONJ	_	_	20	cc	_	_	*	41	1: 41
+17	de	de	ADP	_	_	20	case	_	_	*	41	1: 41
+18	ses	son	DET	_	Number=Plur|Poss=Yes	20	det	_	_	*	41;42	1: 41
+19	deux	deux	NUM	_	NumType=Card	20	nummod	_	_	*	41;42	1: 41
+20	fils	fils	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	_	*	41;42	1: 41
+21	Denis	Denis	PROPN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*	43	9: 43
+22	et	et	CCONJ	_	_	23	cc	_	_	*	43	9: 43
+23	René	René	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	SpaceAfter=No	*	43	9: 43
+24	.	.	PUNCT	_	_	4	punct	_	_	*	43	9: 43
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00397
+# text = En 1968, Denise reprend un emploi à la fonderie de Colombier-Fontaine où elle restera jusqu'à sa retraite, en 1983.
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	1968	1968	NUM	_	NumType=Card	5	obl:mod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	44	*
+5	reprend	reprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	45;46	9: 45;9: 46
+7	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	45;46	9: 45;9: 46
+8	à	à	ADP	_	_	10	case	_	_	*	46	9: 46
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	46;47	9: 46;1: 47
+10	fonderie	fonderie	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*	46;47	9: 46;1: 47
+11	de	de	ADP	_	_	12	case	_	_	*	46;47	9: 46;1: 47
+12	Colombier-Fontaine	Colombier-Fontaine	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*	46;47;48	9: 46;1: 47;9: 48
+13	où	où	PRON	_	PronType=Rel	15	iobj	_	_	*	*	*
+14	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	15	nsubj	_	_	*	49	1: 49
+15	restera	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	acl:relcl	_	_	*	*	*
+16	jusqu'	jusque	ADP	_	_	19	case	_	SpaceAfter=No	*	*	*
+17	à	à	ADP	_	_	19	case	_	_	*	*	*
+18	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	19	det	_	_	*	50	1: 50
+19	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	SpaceAfter=No	*	50	1: 50
+20	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+21	en	en	ADP	_	_	22	case	_	_	*	*	*
+22	1983	1983	NUM	_	NumType=Card	19	nmod	_	SpaceAfter=No	*	51;52	9: 51
+23	.	.	PUNCT	_	_	5	punct	_	_	*	52	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00398
+# text = En parfaite femme d'intérieur, elle a pu, lors de ce repos bien mérité, s'occuper de sa maison, de ses fleurs.
+1	En	en	ADP	_	_	3	case	_	_	*	*	*
+2	parfaite	parfait	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_	*	53	1: 53
+3	femme	femme	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*	53	1: 53
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*	53	1: 53
+5	intérieur	intérieur	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No	*	53;54	1: 53;9: 54
+6	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+7	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	9	nsubj	_	_	*	55	1: 55
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+9	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+11	lors	lors	ADV	_	_	9	advmod	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	*	*
+13	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_	*	56	9: 56
+14	repos	repos	NOUN	_	Gender=Masc|Number=Sing	11	obl:arg	_	_	*	56	9: 56
+15	bien	bien	ADV	_	_	16	advmod	_	_	*	56	9: 56
+16	mérité	mérité	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*	56	9: 56
+17	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+18	s'	se	PRON	_	Person=3|Reflex=Yes	19	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+19	occuper	occuper	VERB	_	VerbForm=Inf	9	xcomp	_	_	1	*	*
+20	de	de	ADP	_	_	22	case	_	_	*	*	*
+21	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	22	det	_	_	*	57	1: 57
+22	maison	maison	NOUN	_	Gender=Fem|Number=Sing	19	obl:arg	_	SpaceAfter=No	*	57	1: 57
+23	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+24	de	de	ADP	_	_	26	case	_	_	*	*	*
+25	ses	son	DET	_	Number=Plur|Poss=Yes	26	det	_	_	*	58	13: 58
+26	fleurs	fleur	NOUN	_	Gender=Fem|Number=Plur	19	obl:arg	_	SpaceAfter=No	*	58	13: 58
+27	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00399
+# text = Elle aimait se promener avec ses amies et surtout passer du temps avec ses enfants, ses sept petits-enfants et ses sept arrière-petits-enfants.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	2	nsubj	_	_	*	59	1: 59
+2	aimait	aimer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+3	se	se	PRON	_	Person=3|Reflex=Yes	4	expl:comp	_	_	1:IRV	*	*
+4	promener	promener	VERB	_	VerbForm=Inf	2	xcomp	_	_	1	*	*
+5	avec	avec	ADP	_	_	7	case	_	_	*	*	*
+6	ses	son	DET	_	Number=Plur|Poss=Yes	7	det	_	_	*	60	13: 60
+7	amies	amie	NOUN	_	Gender=Fem|Number=Plur	4	obl:mod	_	_	*	60	13: 60
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	surtout	surtout	ADV	_	_	10	advmod	_	_	*	*	*
+10	passer	passer	VERB	_	VerbForm=Inf	4	conj	_	_	*	*	*
+11	du	du	DET	_	Gender=Masc|Number=Sing	12	det	_	_	*	61	*
+12	temps	temps	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*	61	*
+13	avec	avec	ADP	_	_	15	case	_	_	*	*	*
+14	ses	son	DET	_	Number=Plur|Poss=Yes	15	det	_	_	*	62;63	*
+15	enfants	enfant	NOUN	_	Number=Plur	10	obl:arg	_	SpaceAfter=No	*	62;63	*
+16	,	,	PUNCT	_	_	19	punct	_	_	*	63	*
+17	ses	son	DET	_	Number=Plur|Poss=Yes	19	det	_	_	*	63;64	*
+18	sept	sept	NUM	_	NumType=Card	19	nummod	_	_	*	63;64	*
+19	petits-enfants	petit-enfant	NOUN	_	Number=Plur	15	conj	_	_	*	63;64	*
+20	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+21	ses	son	DET	_	Number=Plur|Poss=Yes	23	det	_	_	*	65	12: 65
+22	sept	sept	NUM	_	NumType=Card	23	nummod	_	_	*	65	12: 65
+23	arrière-petits-enfants	arrière-petits-enfant	NOUN	_	Number=Plur	15	conj	_	SpaceAfter=No	*	65	12: 65
+24	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00400
+# text = Une famille qu'elle chérissait plus que tout et qu'elle avait toujours plaisir à recevoir.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	66	1: 66
+2	famille	famille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	66	1: 66
+3	qu'	que	PRON	_	PronType=Rel	5	obj	_	SpaceAfter=No	*	67	12: 67
+4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_	*	68	1: 68
+5	chérissait	chérir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	plus	plus	ADV	_	_	5	advmod	_	_	*	*	*
+7	que	que	SCONJ	_	_	8	mark	_	_	*	*	*
+8	tout	tout	PRON	_	Gender=Masc|Number=Sing	6	dep	_	_	*	*	*
+9	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+10	qu'	que	PRON	_	PronType=Rel	16	obj	_	SpaceAfter=No	*	69	12: 69
+11	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	12	nsubj	_	_	*	70	1: 70
+12	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	conj	_	_	1:LVC.full	*	*
+13	toujours	toujours	ADV	_	_	12	advmod	_	_	*	*	*
+14	plaisir	plaisir	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	1	71	*
+15	à	à	ADP	_	_	16	mark	_	_	*	*	*
+16	recevoir	recevoir	VERB	_	VerbForm=Inf	12	xcomp	_	SpaceAfter=No	*	*	*
+17	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00401
+# text = Denise et son époux René, ancien lieutenant des pompiers de l'Isle-sur-le-Doubs, faisaient aussi partie de l'Union nationale des combattants.
+1	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	16	nsubj	_	_	*	72	*
+2	et	et	CCONJ	_	_	4	cc	_	_	*	*	*
+3	son	son	DET	_	Number=Sing|Poss=Yes	4	det	_	_	*	73	*
+4	époux	époux	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	73	*
+5	René	René	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	*	*
+6	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+7	ancien	ancien	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	74;75	*
+8	lieutenant	lieutenant	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	_	*	74;75	*
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	74;75;76;77	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	74;75;76;77	*
+11	pompiers	pompier	NOUN	_	Number=Plur	8	nmod	_	_	*	74;75;76;77	*
+12	de	de	ADP	_	_	14	case	_	_	*	74;75;77	*
+13	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	74;75;77;78;79	*
+14	Isle-sur-le-Doubs	Isle-sur-le-Doubs	PROPN	_	Number=Sing	11	nmod	_	SpaceAfter=No	*	74;75;77;78;79	*
+15	,	,	PUNCT	_	_	16	punct	_	_	*	75;79	*
+16	faisaient	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:VID	*	*
+17	aussi	aussi	ADV	_	_	16	advmod	_	_	*	*	*
+18	partie	partie	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	1	*	*
+19	de	de	ADP	_	_	21	case	_	_	*	*	*
+20	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*	*	*
+21	Union	Union	PROPN	_	Number=Sing	16	obl:arg	_	_	*	*	*
+22	nationale	national	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	_	*	*	*
+23-24	des	_	_	_	_	_	_	_	_	*	*	*
+23	de	de	ADP	_	_	25	case	_	_	*	80;81	*
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	_	*	80;81	*
+25	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No	*	80;81	*
+26	.	.	PUNCT	_	_	16	punct	_	_	*	81	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00402
+# text = Pendant 15 ans, elle a été l'assistante efficace de son mari, René s'occupant du secrétariat et Denise de la trésorerie de la section l'isloise.
+1	Pendant	pendant	ADP	_	_	3	case	_	_	*	*	*
+2	15	15	NUM	_	NumType=Card	3	nummod	_	_	*	82	*
+3	ans	an	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	SpaceAfter=No	*	82	*
+4	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	9	nsubj	_	_	*	83	6: 83
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+7	été	être	AUX	_	Tense=Past|VerbForm=Part	9	cop	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	84	*
+9	assistante	assistant	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	84	*
+10	efficace	efficace	ADJ	_	Number=Sing	9	amod	_	_	*	84	*
+11	de	de	ADP	_	_	13	case	_	_	*	84	*
+12	son	son	DET	_	Number=Sing|Poss=Yes	13	det	_	_	*	84;85	*
+13	mari	mari	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No	*	84;85	*
+14	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+15	René	René	PROPN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*	86	*
+16	s'	se	PRON	_	Person=3|Reflex=Yes	17	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+17	occupant	occuper	VERB	_	Tense=Pres|VerbForm=Part	9	advcl	_	_	1	*	*
+18-19	du	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	87;88	29: 88
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	87;88	29: 88
+20	secrétariat	secrétariat	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	_	*	87;88	29: 88
+21	et	et	CCONJ	_	_	22	cc	_	_	*	88	29: 88
+22	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	17	conj	_	_	*	88;89	29: 88
+23	de	de	ADP	_	_	25	case	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	*	*
+25	trésorerie	trésorerie	NOUN	_	Gender=Fem|Number=Sing	22	orphan	_	_	*	*	*
+26	de	de	ADP	_	_	28	case	_	_	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	90;91	6: 90;6: 91
+28	section	section	NOUN	_	Gender=Fem|Number=Sing	25	nmod	_	_	*	90;91	6: 90;6: 91
+29	l'isloise	l'islois	ADJ	_	_	28	amod	_	SpaceAfter=No	*	91;92;93	6: 91
+30	.	.	PUNCT	_	_	9	punct	_	_	*	93	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00403
+# text = En témoignage de reconnaissance, elle avait d'ailleurs reçu la médaille du mérite UNC.
+1	En	en	ADP	_	_	2	case	_	_	*	*	*
+2	témoignage	témoignage	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	*	*
+3	de	de	ADP	_	_	4	case	_	_	*	*	*
+4	reconnaissance	reconnaissance	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No	*	94	4: 94
+5	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	10	nsubj	_	_	*	95	4: 95
+7	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*	*	*
+9	ailleurs	ailleurs	ADV	_	_	10	obl:mod	_	_	*	*	*
+10	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+12	médaille	médaille	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*	*	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	96	29: 96
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	96	29: 96
+15	mérite	mérite	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	96	29: 96
+16	UNC	UNC	PROPN	_	_	15	nmod	_	SpaceAfter=No	*	96;97;98	29: 96;4: 98
+17	.	.	PUNCT	_	_	10	punct	_	_	*	98	4: 98
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00404
+# text = Les obsèques de Denise Jacquin seront célébrées vendredi 10 janvier à 10h30 en l'église de l'Isle-sur-le-Doubs.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	99	*
+2	obsèques	obsèque	NOUN	_	Gender=Fem|Number=Plur	7	nsubj:pass	_	_	*	99	*
+3	de	de	ADP	_	_	4	case	_	_	*	99	*
+4	Denise	Denise	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	99;100	*
+5	Jacquin	Jacquin	PROPN	_	_	4	flat:name	_	_	*	99;100	*
+6	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+7	célébrées	célébrer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+8	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	101	16: 101
+9	10	10	NUM	_	NumType=Card	8	nmod	_	_	*	101	16: 101
+10	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	101	16: 101
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	10	10	NUM	_	NumType=Card	13	nummod	_	SpaceAfter=No	*	102	*
+13	h	h	NOUN	_	_	7	obl:mod	_	SpaceAfter=No	*	102	*
+14	30	30	NUM	_	NumType=Card	13	nummod	_	_	*	102	*
+15	en	en	ADP	_	_	17	case	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	103	*
+17	église	église	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*	103	*
+18	de	de	ADP	_	_	20	case	_	_	*	103	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*	103;104	*
+20	Isle-sur-le-Doubs	Isle-sur-le-Doubs	PROPN	_	Number=Sing	17	nmod	_	SpaceAfter=No	*	103;104	*
+21	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00405
+# text = à son époux, à ses enfants, ainsi qu'à toute sa famille, nous présentons nos sincères condoléances.
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	son	son	DET	_	Number=Sing|Poss=Yes	3	det	_	_	*	*	*
+3	époux	époux	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	SpaceAfter=No	*	*	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+5	à	à	ADP	_	_	7	case	_	_	*	*	*
+6	ses	son	DET	_	Number=Plur|Poss=Yes	7	det	_	_	*	105	*
+7	enfants	enfant	NOUN	_	Number=Plur	3	conj	_	SpaceAfter=No	*	105	*
+8	,	,	PUNCT	_	_	3	punct	_	_	*	*	*
+9	ainsi	ainsi	ADV	_	_	14	cc	_	EXTPOS=CCONJ|MWE=ainsi_que	*	*	*
+10	qu'	que	SCONJ	_	_	9	fixed	_	SpaceAfter=No	*	*	*
+11	à	à	ADP	_	_	14	case	_	_	*	*	*
+12	toute	tout	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	_	*	106	*
+13	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	14	det	_	_	*	106	*
+14	famille	famille	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No	*	106	*
+15	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+16	nous	il	PRON	_	Number=Plur|Person=1	17	nsubj	_	_	*	107	16: 107
+17	présentons	présenter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+18	nos	son	DET	_	Number=Plur|Poss=Yes	20	det	_	_	*	108	*
+19	sincères	sincère	ADJ	_	Number=Plur	20	amod	_	_	*	108	*
+20	condoléances	condoléances	NOUN	_	Gender=Fem|Number=Plur	17	obj	_	SpaceAfter=No	1	108	*
+21	.	.	PUNCT	_	_	17	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00406
+# text = Jardiniers de France : entre bilan et perspectives
+1	Jardiniers	jardinier	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	109	*
+2	de	de	ADP	_	_	3	case	_	_	*	109	*
+3	France	France	PROPN	_	Gender=Fem|Number=Sing	1	nmod	_	_	*	109;110	*
+4	:	:	PUNCT	_	_	1	punct	_	_	*	*	*
+5	entre	entre	ADP	_	_	6	case	_	_	*	*	*
+6	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	111;112	20: 111
+7	et	et	CCONJ	_	_	8	cc	_	_	*	112	*
+8	perspectives	perspective	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*	112;113	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00407
+# text = Une association qui compte aujourd'hui 39 passionnés.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	114	*
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	114	*
+3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	_	*	115	20: 115
+4	compte	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+5	aujourd'hui	aujourd'hui	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+6	39	39	NUM	_	NumType=Card	7	nummod	_	_	*	116	22: 116
+7	passionnés	passionné	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	SpaceAfter=No	*	116	22: 116
+8	.	.	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00408
+# text = Les passionnés de jardinage se réunissaient samedi, rue de la Justice, lors de l'assemblée générale de l'association des Jardiniers de France de Maxéville, afin de revenir sur les actions menées en 2002, et l'occasion également pour J.-P. Bruneau, son président, de présenter ses voeux à la dizaine d'adhérents présents.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	117	22: 117
+2	passionnés	passionné	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*	117	22: 117
+3	de	de	ADP	_	_	4	case	_	_	*	117	22: 117
+4	jardinage	jardinage	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	117;118	22: 117
+5	se	se	PRON	_	Person=3|Reflex=Yes	6	expl:comp	_	_	*	*	*
+6	réunissaient	réunir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+7	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	119	*
+8	,	,	PUNCT	_	_	6	punct	_	_	*	119	*
+9	rue	rue	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*	119;120;121	15: 120;10: 121
+10	de	de	ADP	_	_	12	case	_	_	*	119;120;121	15: 120;10: 121
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	119;120;121;122;123	15: 120;10: 121;2: 123
+12	Justice	Justice	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	119;120;121;122;123	15: 120;10: 121;2: 123
+13	,	,	PUNCT	_	_	6	punct	_	_	*	119;121;123	10: 121;2: 123
+14	lors	lors	ADV	_	_	6	advmod	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	124	10: 124
+17	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*	124	10: 124
+18	générale	général	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	_	*	124	10: 124
+19	de	de	ADP	_	_	21	case	_	_	*	124	10: 124
+20	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	21	det	_	SpaceAfter=No	*	124;125	10: 124;10: 125
+21	association	association	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	124;125	10: 124;10: 125
+22-23	des	_	_	_	_	_	_	_	_	*	*	*
+22	de	de	ADP	_	_	24	case	_	_	*	124;125;126	10: 124;10: 125
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	124;125;126	10: 124;10: 125
+24	Jardiniers	jardinier	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	_	*	124;125;126	10: 124;10: 125
+25	de	de	ADP	_	_	26	case	_	_	*	124;125;126	10: 124;10: 125
+26	France	France	PROPN	_	Gender=Fem|Number=Sing	24	nmod	_	_	*	124;125;126;127;128	10: 124;10: 125;15: 127;2: 128
+27	de	de	ADP	_	_	28	case	_	_	*	124;125;126;128	10: 124;10: 125;2: 128
+28	Maxéville	Maxéville	PROPN	_	_	21	nmod	_	SpaceAfter=No	*	124;125;126;128;129	10: 124;10: 125;2: 128
+29	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+30	afin	afin	ADV	_	_	6	advmod	_	_	*	*	*
+31	de	de	ADP	_	_	32	case	_	_	*	*	*
+32	revenir	revenir	VERB	_	VerbForm=Inf	30	obl:arg	_	_	*	*	*
+33	sur	sur	ADP	_	_	35	case	_	_	*	*	*
+34	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	35	det	_	_	*	130;131	*
+35	actions	action	NOUN	_	Gender=Fem|Number=Plur	32	obl:arg	_	_	1:LVC.full	130;131	*
+36	menées	mener	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	35	acl	_	_	1	131	*
+37	en	en	ADP	_	_	38	case	_	_	*	131	*
+38	2002	2002	NUM	_	NumType=Card	36	obl:mod	_	SpaceAfter=No	*	131;132	*
+39	,	,	PUNCT	_	_	30	punct	_	_	*	*	*
+40	et	et	CCONJ	_	_	42	cc	_	_	*	*	*
+41	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No	*	133	*
+42	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*	133	*
+43	également	également	ADV	_	_	42	advmod	_	_	*	*	*
+44	pour	pour	ADP	_	_	45	case	_	_	*	*	*
+45	J.-P.	J.-P.	PROPN	_	_	42	nmod	_	_	*	134	*
+46	Bruneau	Bruneau	PROPN	_	_	45	flat:name	_	SpaceAfter=No	*	134	*
+47	,	,	PUNCT	_	_	45	punct	_	_	*	*	*
+48	son	son	DET	_	Number=Sing|Poss=Yes	49	det	_	_	*	135;136	*
+49	président	président	NOUN	_	Gender=Masc|Number=Sing	45	appos	_	SpaceAfter=No	*	135;136	*
+50	,	,	PUNCT	_	_	42	punct	_	_	*	136	*
+51	de	de	ADP	_	_	52	mark	_	_	*	*	*
+52	présenter	présenter	VERB	_	VerbForm=Inf	42	acl	_	_	2:LVC.full	*	*
+53	ses	son	DET	_	Number=Plur|Poss=Yes	54	det	_	_	*	137	*
+54	voeux	voeu	NOUN	_	Gender=Masc|Number=Plur	52	obj	_	_	2	137	*
+55	à	à	ADP	_	_	57	case	_	_	*	*	*
+56	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_	*	138	*
+57	dizaine	dizaine	NOUN	_	Gender=Fem|Number=Sing	52	obl:arg	_	_	*	138	*
+58	d'	de	ADP	_	_	59	case	_	SpaceAfter=No	*	138;139	*
+59	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	57	nmod	_	_	*	138;139;140	*
+60	présents	présent	ADJ	_	Gender=Masc|Number=Plur	59	amod	_	SpaceAfter=No	*	*	*
+61	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00409
+# text = Cette association de jardiniers amateurs créée en 2000 à l'initiative de J.-P. Bruneau, passionné de jardinage et correspondant local des Jardiniers de France, comptait 17 adhérents en 2002.
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_	*	141	*
+2	association	association	NOUN	_	Gender=Fem|Number=Sing	28	nsubj	_	_	*	141	*
+3	de	de	ADP	_	_	4	case	_	_	*	141;142	*
+4	jardiniers	jardinier	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	141;142;143	*
+5	amateurs	amateur	ADJ	_	Number=Plur	4	amod	_	_	*	141;142;143	*
+6	créée	créer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+7	en	en	ADP	_	_	8	case	_	_	*	*	*
+8	2000	2000	NUM	_	NumType=Card	6	obl:mod	_	_	*	144	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	*	*
+11	initiative	initiative	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	_	*	*	*
+12	de	de	ADP	_	_	13	case	_	_	*	*	*
+13	J.-P.	J.-P.	PROPN	_	_	11	nmod	_	_	*	145	*
+14	Bruneau	Bruneau	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*	145	*
+15	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+16	passionné	passionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*	146	14: 146
+17	de	de	ADP	_	_	18	case	_	_	*	146	14: 146
+18	jardinage	jardinage	NOUN	_	Gender=Masc|Number=Sing	16	obl:agent	_	_	*	146;147;148	14: 146;14: 148
+19	et	et	CCONJ	_	_	20	cc	_	_	*	148	14: 148
+20	correspondant	correspondant	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*	148;149;150	14: 148;14: 149
+21	local	local	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*	148;149;150	14: 148;14: 149
+22-23	des	_	_	_	_	_	_	_	_	*	*	*
+22	de	de	ADP	_	_	24	case	_	_	*	150;151;152	*
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	150;151;152	*
+24	Jardiniers	jardinier	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	_	*	150;151;152	*
+25	de	de	ADP	_	_	26	case	_	_	*	150;151;152	*
+26	France	France	PROPN	_	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No	*	150;151;152;153	*
+27	,	,	PUNCT	_	_	28	punct	_	_	*	150;152	*
+28	comptait	compter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+29	17	17	NUM	_	NumType=Card	30	nummod	_	_	*	154	*
+30	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	28	obj	_	_	*	154	*
+31	en	en	ADP	_	_	32	case	_	_	*	*	*
+32	2002	2002	NUM	_	NumType=Card	28	obl:mod	_	SpaceAfter=No	*	155;156	*
+33	.	.	PUNCT	_	_	28	punct	_	_	*	156	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00410
+# text = Aujourd'hui 39 adhérents sont recensés, dont deux nouveaux venus accueillis lors de l'assemblée.
+1	Aujourd'hui	aujourd'hui	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	39	39	NUM	_	NumType=Card	3	nummod	_	_	*	157	*
+3	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	_	*	157	*
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+5	recensés	recenser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	*	*	*
+6	,	,	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	*	*
+7	dont	dont	PRON	_	PronType=Rel	10	nmod	_	_	*	*	*
+8	deux	deux	NUM	_	NumType=Card	10	nummod	_	_	*	158	*
+9	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*	158	*
+10	venus	venu	NOUN	_	Gender=Masc|Number=Plur	3	acl:relcl	_	_	*	158	*
+11	accueillis	accueillir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	10	acl	_	_	*	*	*
+12	lors	lors	ADV	_	_	11	advmod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	159;160	28: 159
+15	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	SpaceAfter=No	*	159;160	28: 159
+16	.	.	PUNCT	_	_	10	punct	_	SpaceAfter=No	*	160	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00411
+# text = Preuve que ce loisir se porte bien dans la commune.
+1	Preuve	preuve	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	161	*
+2	que	que	SCONJ	_	_	6	mark	_	_	*	*	*
+3	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_	*	162	*
+4	loisir	loisir	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	162	*
+5	se	se	PRON	_	Person=3|Reflex=Yes	6	expl:comp	_	_	1:IRV	*	*
+6	porte	porter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	_	1	*	*
+7	bien	bien	ADV	_	_	6	obl:arg	_	_	*	*	*
+8	dans	dans	ADP	_	_	10	case	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	163;164	*
+10	commune	commune	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	163;164	*
+11	.	.	PUNCT	_	_	1	punct	_	_	*	164	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00412
+# text = Du point de vue financier, l'association fonctionne essentiellement grâce à l'aide d'une subvention attribuée par le siège basé à Valenciennes ainsi qu'une cotisation de 17 euros par an et par adhérents.
+1-2	Du	_	_	_	_	_	_	_	_	*	*	*
+1	De	de	ADP	_	_	3	case	_	_	*	165;166	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	165;166	*
+3	point	point	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	165;166	*
+4	de	de	ADP	_	_	5	case	_	_	*	165;166	*
+5	vue	vue	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	165;166	*
+6	financier	financier	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No	*	165;166	*
+7	,	,	PUNCT	_	_	10	punct	_	_	*	166	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	166;167	28: 167
+9	association	association	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	166;167	28: 167
+10	fonctionne	fonctionner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	essentiellement	essentiellement	ADV	_	_	10	advmod	_	_	*	*	*
+12	grâce	grâce	NOUN	_	Gender=Fem|Number=Sing	15	case	_	EXTPOS=ADP|MWE=grâce_à	*	*	*
+13	à	à	ADP	_	_	12	fixed	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	168	*
+15	aide	aide	NOUN	_	Number=Sing	10	obl:mod	_	_	*	168	*
+16	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*	168	*
+17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	168;169	19: 169
+18	subvention	subvention	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	_	*	168;169	19: 169
+19	attribuée	attribuer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	18	acl	_	_	*	*	*
+20	par	par	ADP	_	_	22	case	_	_	*	*	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	170;171	*
+22	siège	siège	NOUN	_	Gender=Masc|Number=Sing	19	obl:agent	_	_	*	170;171	*
+23	basé	baser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl	_	_	*	171	*
+24	à	à	ADP	_	_	25	case	_	_	*	171	*
+25	Valenciennes	Valenciennes	PROPN	_	Gender=Masc|Number=Sing	23	obl:arg	_	_	*	171;172	*
+26	ainsi	ainsi	ADV	_	_	29	cc	_	EXTPOS=CCONJ|MWE=ainsi_que	*	*	*
+27	qu'	que	SCONJ	_	_	26	fixed	_	SpaceAfter=No	*	*	*
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	173	19: 173
+29	cotisation	cotisation	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*	173	19: 173
+30	de	de	ADP	_	_	32	case	_	_	*	173	19: 173
+31	17	17	NUM	_	NumType=Card	32	nummod	_	_	*	173;174;175	19: 173
+32	euros	euro	NOUN	_	Gender=Masc|Number=Plur	29	nmod	_	_	*	173;174;175	19: 173
+33	par	par	ADP	_	_	34	case	_	_	*	173;175	19: 173
+34	an	an	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	_	*	173;175;176	19: 173
+35	et	et	CCONJ	_	_	37	cc	_	_	*	*	*
+36	par	par	ADP	_	_	37	case	_	_	*	*	*
+37	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	34	conj	_	SpaceAfter=No	*	177	24: 177
+38	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00413
+# text = Cela permet de mettre en place différentes actions, dont la plus importante fut, cette année encore, la Bourse aux plantes organisée par la mairie, deux fois par an, le 29 mars et 11 octobre à la salle du Parc.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	*	178	*
+2	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	de	de	ADP	_	_	4	mark	_	_	*	*	*
+4	mettre	mettre	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	en	en	ADP	_	_	6	case	_	_	*	*	*
+6	place	place	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	*	*
+7	différentes	différent	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_	*	179;180	*
+8	actions	action	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	SpaceAfter=No	*	179;180	*
+9	,	,	PUNCT	_	_	8	punct	_	_	*	180	*
+10	dont	dont	PRON	_	PronType=Rel	13	dep	_	_	*	181	24: 181
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	182	0: 182
+12	plus	plus	ADV	_	_	13	advmod	_	_	*	182	0: 182
+13	importante	important	ADJ	_	Gender=Fem|Number=Sing	21	nsubj	_	_	*	182	0: 182
+14	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	SpaceAfter=No	*	*	*
+15	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+16	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	17	det	_	_	*	183;184	0: 183
+17	année	année	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	_	*	183;184	0: 183
+18	encore	encore	ADV	_	_	17	advmod	_	SpaceAfter=No	*	184	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	185	23: 185
+21	Bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	8	acl:relcl	_	_	*	185	23: 185
+22-23	aux	_	_	_	_	_	_	_	_	*	*	*
+22	à	à	ADP	_	_	24	case	_	_	*	185;186	23: 185
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	185;186	23: 185
+24	plantes	plante	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	_	*	185;186	23: 185
+25	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	21	acl	_	_	*	*	*
+26	par	par	ADP	_	_	28	case	_	_	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	187;188	23: 187;23: 188
+28	mairie	mairie	NOUN	_	Gender=Fem|Number=Sing	25	obl:agent	_	SpaceAfter=No	*	187;188	23: 187;23: 188
+29	,	,	PUNCT	_	_	25	punct	_	_	*	188	23: 188
+30	deux	deux	NUM	_	NumType=Card	31	nummod	_	_	*	189;190	*
+31	fois	fois	NOUN	_	Gender=Fem|Number=Plur	25	obl:mod	_	_	*	189;190	*
+32	par	par	ADP	_	_	33	case	_	_	*	190	*
+33	an	an	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No	*	190;191	26: 191
+34	,	,	PUNCT	_	_	31	punct	_	_	*	*	*
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_	*	192;193	*
+36	29	29	NUM	_	NumType=Card	31	appos	_	_	*	192;193	*
+37	mars	mars	NOUN	_	Gender=Masc|Number=Sing	36	nmod	_	_	*	192;193	*
+38	et	et	CCONJ	_	_	39	cc	_	_	*	193	*
+39	11	11	NUM	_	NumType=Card	36	conj	_	_	*	193;194	26: 194
+40	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	39	nmod	_	_	*	193;194	26: 194
+41	à	à	ADP	_	_	43	case	_	_	*	*	*
+42	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_	*	195	23: 195
+43	salle	salle	NOUN	_	Gender=Fem|Number=Sing	25	obl:mod	_	_	*	195	23: 195
+44-45	du	_	_	_	_	_	_	_	_	*	*	*
+44	de	de	ADP	_	_	46	case	_	_	*	195;196	23: 195;8: 196
+45	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_	*	195;196	23: 195;8: 196
+46	Parc	parc	NOUN	_	Gender=Masc|Number=Sing	43	nmod	_	SpaceAfter=No	*	195;196	23: 195;8: 196
+47	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00414
+# text = Bourse dédiée aux passionnés et amateurs reposant sur le principe du troc et qui remporte un vif succès.
+1	Bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	197	*
+2	dédiée	dédier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*	*	*
+3-4	aux	_	_	_	_	_	_	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	198;199	17: 199
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	198;199	17: 199
+5	passionnés	passionné	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	_	*	198;199	17: 199
+6	et	et	CCONJ	_	_	7	cc	_	_	*	199	17: 199
+7	amateurs	amateur	NOUN	_	Number=Plur	5	conj	_	_	*	199;200	17: 199
+8	reposant	reposer	VERB	_	Tense=Pres|VerbForm=Part	1	acl	_	_	*	*	*
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	201	8: 201
+11	principe	principe	NOUN	_	Gender=Masc|Number=Sing	8	obl:arg	_	_	*	201	8: 201
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	201;202	8: 201
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	201;202	8: 201
+14	troc	troc	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	201;202	8: 201
+15	et	et	CCONJ	_	_	17	cc	_	_	*	*	*
+16	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*	203	17: 203
+17	remporte	remporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_	1:LVC.full	*	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	204	*
+19	vif	vif	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	_	*	204	*
+20	succès	succès	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	SpaceAfter=No	1	204	*
+21	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00415
+# text = D'autres manifestations ont très bien fonctionné en terme d'affluence, notamment lors de la fête des Fraises organisée le 1er dimanche de juin, ou encore la journée des associations au Zénith, où 2.000 visiteurs étaient présents.
+1	D'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	3	det	_	SpaceAfter=No	*	205	*
+2	autres	autre	ADJ	_	Number=Plur	3	amod	_	_	*	205	*
+3	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	_	*	205	*
+4	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+5	très	très	ADV	_	_	6	advmod	_	_	*	*	*
+6	bien	bien	ADV	_	_	7	advmod	_	_	*	*	*
+7	fonctionné	fonctionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	terme	terme	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	206	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*	206	*
+11	affluence	affluence	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	206;207	*
+12	,	,	PUNCT	_	_	7	punct	_	_	*	206;207	*
+13	notamment	notamment	ADV	_	_	7	advmod	_	_	*	*	*
+14	lors	lors	ADV	_	_	7	advmod	_	_	*	*	*
+15	de	de	ADP	_	_	17	case	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	208	*
+17	fête	fête	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*	208	*
+18-19	des	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	208;209	5: 209
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*	208;209	5: 209
+20	Fraises	fraise	NOUN	_	Gender=Fem|Number=Plur	17	nmod	_	_	*	208;209	5: 209
+21	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_	*	*	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	210;211	*
+23	1er	1er	ADJ	_	NumType=Ord	24	amod	_	_	*	210;211	*
+24	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	_	*	210;211	*
+25	de	de	ADP	_	_	26	case	_	_	*	210;211	*
+26	juin	juin	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*	210;211;212	*
+27	,	,	PUNCT	_	_	17	punct	_	_	*	211	*
+28	ou	ou	CCONJ	_	_	31	cc	_	_	*	*	*
+29	encore	encore	ADV	_	_	31	advmod	_	_	*	*	*
+30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*	213	5: 213
+31	journée	journée	NOUN	_	Gender=Fem|Number=Sing	17	conj	_	_	*	213	5: 213
+32-33	des	_	_	_	_	_	_	_	_	*	*	*
+32	de	de	ADP	_	_	34	case	_	_	*	213;214	5: 213;5: 214
+33	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	34	det	_	_	*	213;214	5: 213;5: 214
+34	associations	association	NOUN	_	Gender=Fem|Number=Plur	31	nmod	_	_	*	213;214	5: 213;5: 214
+35-36	au	_	_	_	_	_	_	_	_	*	*	*
+35	à	à	ADP	_	_	37	case	_	_	*	215;216	*
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_	*	215;216	*
+37	Zénith	Zénith	PROPN	_	_	31	nmod	_	SpaceAfter=No	*	215;216	*
+38	,	,	PUNCT	_	_	31	punct	_	_	*	216	*
+39	où	où	PRON	_	PronType=Rel	43	iobj	_	_	*	217	*
+40	2.000	2.000	NUM	_	NumType=Card	41	nummod	_	_	*	218	*
+41	visiteurs	visiteur	NOUN	_	Gender=Masc|Number=Plur	43	nsubj	_	_	*	218	*
+42	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	43	cop	_	_	*	*	*
+43	présents	présent	ADJ	_	Gender=Masc|Number=Plur	31	acl:relcl	_	SpaceAfter=No	*	*	*
+44	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00416
+# text = La visite du jardin de J.-P. Bruneau est également un moment attendu, lors des portes ouvertes organisées en juin dans ses 1.100 m2 de verger et potager : "Cela permet d'échanger, transmettre un savoir et partager une passion".
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	219	*
+2	visite	visite	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*	219	*
+3-4	du	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	219;220	21: 220
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	219;220	21: 220
+5	jardin	jardin	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	219;220	21: 220
+6	de	de	ADP	_	_	7	case	_	_	*	219;220	21: 220
+7	J.-P.	J.-P.	PROPN	_	_	5	nmod	_	_	*	219;220;221	21: 220
+8	Bruneau	Bruneau	PROPN	_	_	7	flat:name	_	_	*	219;220;221	21: 220
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+10	également	également	ADV	_	_	12	advmod	_	_	*	*	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+12	moment	moment	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+13	attendu	attendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	acl	_	SpaceAfter=No	*	*	*
+14	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+15	lors	lors	ADV	_	_	12	advmod	_	_	*	*	*
+16-17	des	_	_	_	_	_	_	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	222	5: 222
+17	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*	222	5: 222
+18	portes	porte	NOUN	_	Gender=Fem|Number=Plur	15	obl:arg	_	_	*	222	5: 222
+19	ouvertes	ouvert	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	_	*	222	5: 222
+20	organisées	organiser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	18	acl	_	_	*	*	*
+21	en	en	ADP	_	_	22	case	_	_	*	*	*
+22	juin	juin	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*	223	*
+23	dans	dans	ADP	_	_	26	case	_	_	*	*	*
+24	ses	son	DET	_	Number=Plur|Poss=Yes	26	det	_	_	*	224	*
+25	1.100	1.100	NUM	_	NumType=Card	26	nummod	_	_	*	224	*
+26	m2	m2	NOUN	_	Gender=Masc|Number=Plur	20	obl:mod	_	_	*	224	*
+27	de	de	ADP	_	_	28	case	_	_	*	224;225;226	21: 225
+28	verger	verger	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*	224;225;226;227;228	21: 225;7: 227;21: 228
+29	et	et	CCONJ	_	_	30	cc	_	_	*	224;226;228	21: 228
+30	potager	potager	NOUN	_	Gender=Masc|Number=Sing	28	conj	_	_	*	224;226;228;229	21: 228
+31	:	:	PUNCT	_	_	12	punct	_	_	*	*	*
+32	"	"	PUNCT	_	_	34	punct	_	SpaceAfter=No	*	*	*
+33	Cela	cela	PRON	_	Number=Sing|PronType=Dem	34	nsubj	_	_	*	*	*
+34	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_	*	*	*
+35	d'	de	ADP	_	_	36	mark	_	SpaceAfter=No	*	*	*
+36	échanger	échanger	VERB	_	VerbForm=Inf	34	xcomp	_	SpaceAfter=No	*	*	*
+37	,	,	PUNCT	_	_	38	punct	_	_	*	*	*
+38	transmettre	transmettre	VERB	_	VerbForm=Inf	36	conj	_	_	*	*	*
+39	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*	230	7: 230
+40	savoir	savoir	NOUN	_	Gender=Masc|Number=Sing	38	obj	_	_	*	230	7: 230
+41	et	et	CCONJ	_	_	42	cc	_	_	*	*	*
+42	partager	partager	VERB	_	VerbForm=Inf	36	conj	_	_	*	*	*
+43	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_	*	231;232	25: 232
+44	passion	passion	NOUN	_	Gender=Fem|Number=Sing	42	obj	_	SpaceAfter=No	*	231;232	25: 232
+45	"	"	PUNCT	_	_	34	punct	_	SpaceAfter=No	*	232	25: 232
+46	.	.	PUNCT	_	_	12	punct	_	_	*	232	25: 232
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00417
+# text = Il fut également question d'évoquer les projets à mettre en place pour cette nouvelle année.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	4	expl:subj	_	_	1:VID	*	*
+2	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_	1	*	*
+3	également	également	ADV	_	_	4	advmod	_	_	*	*	*
+4	question	question	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	1	*	*
+5	d'	de	ADP	_	_	6	mark	_	SpaceAfter=No	*	*	*
+6	évoquer	évoquer	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	233	*
+8	projets	projet	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*	233	*
+9	à	à	ADP	_	_	10	mark	_	_	*	*	*
+10	mettre	mettre	VERB	_	VerbForm=Inf	8	acl	_	_	*	*	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	10	obl:arg	_	_	*	*	*
+13	pour	pour	ADP	_	_	16	case	_	_	*	*	*
+14	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	16	det	_	_	*	234	*
+15	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*	234	*
+16	année	année	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*	234	*
+17	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00418
+# text = Notamment, la visite guidée du siège à Valenciennes en soirée.
+1	Notamment	notamment	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	235;236	*
+4	visite	visite	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	235;236	*
+5	guidée	guidé	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	235;236	*
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	235;236;237;238	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	235;236;237;238	*
+8	siège	siège	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	235;236;237;238	*
+9	à	à	ADP	_	_	10	case	_	_	*	236;238	*
+10	Valenciennes	Valenciennes	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	236;238;239	*
+11	en	en	ADP	_	_	12	case	_	_	*	*	*
+12	soirée	soirée	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*	240	25: 240
+13	.	.	PUNCT	_	_	4	punct	_	_	*	240	25: 240
