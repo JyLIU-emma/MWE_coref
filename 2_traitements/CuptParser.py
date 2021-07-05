@@ -111,7 +111,7 @@ class Cupt():
                         ligne.content = ligne.content + "\t" + ";".join([m.mid for m in ment_list])
 
                         # ajouter la colonne de coreference
-                        col_coref = [f"{mention['coref_id']}: {m_id}" for m_id, mention in ligne.coref.items() if mention['coref_id'] != '']
+                        col_coref = [f"{mention['coref_id']}:{m_id}" for m_id, mention in ligne.coref.items() if mention['coref_id'] != '']
                         if col_coref == []:
                             ligne.content = ligne.content + "\t*"
                         else:
