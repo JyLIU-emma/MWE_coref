@@ -230,10 +230,11 @@ Les différentes expressions polylexicales faisant parties d'une chaîne de cor�
 Pour examiner les croisements des expressions polylexicales et des chaînes de coréférence, nous définissons le test de ces exemples sur 3 aspects corrélés : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE D'ERREUR*.
 
 - **"VALIDATION"**
-    - 3 valeurs possibles : "vrai", "faux" et "discutable"  
+    - 4 valeurs possibles : "vrai", "faux", "non concerné" et "discutable"
     - **"vrai"** : L'exemple est utilisable pour notre hypothèse, c'est-à-dire le composant détecté dans l'expression polylexicale se trouve dans une vraie chaîne de coréférence (interprétation humaine), quelle que soit la performance du système.  
     Par exemple, nous mettons "vrai" pour cette phrase: _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_ . Le composant "travaux" dans "accomplir travaux" est vraiment coréférent avec "qui", même si la mention détectée "une rétrospective des travaux" est fausse.
     - **"faux"** : Cas contraire de précédent, l'exemple est trouvé à cause des fautes de système.
+    - **"non concerné"** : Souvent distribué à un exemple de cas 1 (expression polylexicale inclue dans la mention détectée), qui ne fait pas partie de notre analyse.
     - **"discutable"** : L'exemple peut être vrai ou faux selon l'interprétation humaine.  
     Par exemple, dans la phrase _"- Créé par la Fédération nationale qui perpétue le souvenir de l'homme d'Etat meusien qui fut ministre de la Guerre et l'initiateur d'un système de défense qui **porte** [son **nom**], le prix [André-Maginot] récompense des travaux liés au civisme et au devoir de mémoire."_ , la coréférence entre les deux mentions "son nom" et "André-Maginot" est difficile à déterminer, puisque le dernier est en effet le nom de ce prix au lieu du nom de cette personne.
 
