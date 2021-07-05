@@ -73,6 +73,8 @@ class ExprPoly():
         for elt in self.coref:
             if elt != "*":
                 coref.extend(elt.split(";"))
+        print(self.coref)
+
         coref = list({elt.split(':')[1] for elt in coref if elt != "*"})
 
         if len(set(coref)) > 0:  # tout sauf ["*", "*"]
