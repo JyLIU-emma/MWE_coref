@@ -1,0 +1,341 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00322
+# text = Un acte malveillant ?
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	1	*
+2	acte	acte	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	1	*
+3	malveillant	malveillant	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	1	*
+4	?	?	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00323
+# text = Les services d'EDF-GDF ont pu rétablir l'électricité dans l'immeuble peu avant 21h.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	2	*
+2	services	service	NOUN	_	Gender=Masc|Number=Plur	6	nsubj	_	_	*	2	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	2	*
+4	EDF-GDF	EDF-GDF	PROPN	_	_	2	nmod	_	_	*	2;3	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*	*	*
+6	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+7	rétablir	rétablir	VERB	_	VerbForm=Inf	6	xcomp	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	4	*
+9	électricité	électricité	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*	4	*
+10	dans	dans	ADP	_	_	12	case	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	5	*
+12	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	5	*
+13	peu	peu	ADV	_	_	16	advmod	_	_	*	*	*
+14	avant	avant	ADP	_	_	16	case	_	_	*	*	*
+15	21	21	NUM	_	NumType=Card	16	nummod	_	SpaceAfter=No	*	6	*
+16	h	h	NOUN	_	_	7	obl:mod	_	SpaceAfter=No	*	6	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*	6	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00324
+# text = Pour le plus grand soulagement des locataires qui ont pu regagner leurs logements.
+1	Pour	pour	ADP	_	_	5	case	_	_	*	*	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	7	8: 7
+3	plus	plus	ADV	_	_	4	advmod	_	_	*	7	8: 7
+4	grand	grand	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	7	8: 7
+5	soulagement	soulagement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	7	8: 7
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	7;8	8: 7;2: 8
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	7;8	8: 7;2: 8
+8	locataires	locataire	NOUN	_	Number=Plur	5	nmod	_	_	*	7;8	8: 7;2: 8
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*	9	2: 9
+10	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+11	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*	*	*
+12	regagner	regagner	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+13	leurs	son	DET	_	Number=Plur|Poss=Yes	14	det	_	_	*	10	*
+14	logements	logement	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No	*	10	*
+15	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00325
+# text = Sur place vers 19h30, la situation critique poussait le maire Martial Bourquin à envisager une solution de relogement.
+1	Sur	sur	ADP	_	_	2	case	_	_	*	*	*
+2	place	place	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*	11	*
+3	vers	vers	ADP	_	_	5	case	_	_	*	*	*
+4	19	19	NUM	_	NumType=Card	5	nummod	_	SpaceAfter=No	*	12;13	*
+5	h	h	NOUN	_	_	11	obl:mod	_	SpaceAfter=No	*	12;13	*
+6	30	30	NUM	_	NumType=Card	5	nummod	_	SpaceAfter=No	*	12;13	*
+7	,	,	PUNCT	_	_	11	punct	_	_	*	13	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	13;14	*
+9	situation	situation	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	13;14	*
+10	critique	critique	ADJ	_	Number=Sing	9	amod	_	_	*	13;14	*
+11	poussait	pousser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	15;16	8: 15
+13	maire	maire	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	_	*	15;16	8: 15
+14	Martial	Martial	PROPN	_	_	13	flat:name	_	_	*	16;17	*
+15	Bourquin	Bourquin	PROPN	_	_	14	flat:name	_	_	*	16;17	*
+16	à	à	ADP	_	_	17	mark	_	_	*	*	*
+17	envisager	envisager	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	18;19	*
+19	solution	solution	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	_	*	18;19	*
+20	de	de	ADP	_	_	21	case	_	_	*	18;19	*
+21	relogement	relogement	NOUN	_	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No	*	18;19;20;21	*
+22	.	.	PUNCT	_	_	11	punct	_	_	*	19;21	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00326
+# text = Par téléphone, il contactait divers hôtels du secteur pouvant accueillir les éventuels sinistrés.
+1	Par	par	ADP	_	_	2	case	_	_	*	*	*
+2	téléphone	téléphone	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	22	0: 22
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*	23	0: 23
+5	contactait	contacter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+6	divers	divers	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*	24	*
+7	hôtels	hôtel	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	_	*	24	*
+8-9	du	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	24;25	0: 25
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	24;25	0: 25
+10	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	24;25	0: 25
+11	pouvant	pouvoir	VERB	_	Tense=Pres|VerbForm=Part	7	acl	_	_	*	*	*
+12	accueillir	accueillir	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	26	3: 26
+14	éventuels	éventuel	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*	26	3: 26
+15	sinistrés	sinistré	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No	*	26	3: 26
+16	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00327
+# text = La température affichant -6°C, il emmenait les gamins se réchauffer dans les camions des pompiers.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	27	*
+2	température	température	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	_	*	27	*
+3	affichant	afficher	VERB	_	Tense=Pres|VerbForm=Part	8	advcl	_	_	*	*	*
+4	-6	-6	NUM	_	NumType=Card	5	nummod	_	SpaceAfter=No	*	28	0: 28
+5	°C	°C	NOUN	_	_	3	obj	_	SpaceAfter=No	*	28	0: 28
+6	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_	*	29	0: 29
+8	emmenait	emmener	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	30	3: 30
+10	gamins	gamin	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	_	*	30	3: 30
+11	se	se	PRON	_	Person=3|Reflex=Yes	12	obj	_	_	*	*	*
+12	réchauffer	réchauffer	VERB	_	VerbForm=Inf	8	xcomp	_	_	*	*	*
+13	dans	dans	ADP	_	_	15	case	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	31	3: 31
+15	camions	camion	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	_	*	31	3: 31
+16-17	des	_	_	_	_	_	_	_	_	*	*	*
+16	de	de	ADP	_	_	18	case	_	_	*	31;32	3: 31
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	SpaceAfter=No	*	31;32	3: 31
+18	pompiers	pompier	NOUN	_	Number=Plur	15	nmod	_	SpaceAfter=No	*	31;32	3: 31
+19	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00328
+# text = "Si cela continue, je vais ouvrir une salle municipale" confiait le premier magistrat.
+1	"	"	PUNCT	_	_	7	punct	_	SpaceAfter=No	*	*	*
+2	Si	si	SCONJ	_	_	4	mark	_	_	*	*	*
+3	cela	cela	PRON	_	Number=Sing|PronType=Dem	4	nsubj	_	_	*	*	*
+4	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+6	je	il	PRON	_	Number=Sing|Person=1	7	nsubj	_	_	*	33	0: 33
+7	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	ouvrir	ouvrir	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	34	5: 34
+10	salle	salle	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	34	5: 34
+11	municipale	municipal	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	SpaceAfter=No	*	34	5: 34
+12	"	"	PUNCT	_	_	7	punct	_	_	*	*	*
+13	confiait	confier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	parataxis	_	_	*	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	35	0: 35
+15	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	16	amod	_	_	*	35	0: 35
+16	magistrat	magistrat	NOUN	_	Gender=Masc|Number=Sing	13	nsubj	_	SpaceAfter=No	*	35	0: 35
+17	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00329
+# text = Heureusement, tous sont rentrés chez eux après une belle frayeur.
+1	Heureusement	heureusement	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+3	tous	tout	PRON	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	_	*	36	3: 36
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+5	rentrés	rentrer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+6	chez	chez	ADP	_	_	7	case	_	_	*	*	*
+7	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	obl:arg	_	_	*	37	3: 37
+8	après	après	ADP	_	_	11	case	_	_	*	*	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	*	*
+10	belle	beau	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	_	*	*	*
+11	frayeur	frayeur	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00330
+# text = Les policiers ont ouvert une enquête afin de déterminer les causes exactes de cet incendie.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	38	3: 38
+2	policiers	policier	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*	38	3: 38
+3	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+4	ouvert	ouvrir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	39	5: 39
+6	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	39	5: 39
+7	afin	afin	ADV	_	_	4	advmod	_	_	*	*	*
+8	de	de	ADP	_	_	9	case	_	_	*	*	*
+9	déterminer	déterminer	VERB	_	VerbForm=Inf	7	obl:arg	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	*	*
+11	causes	cause	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	_	*	*	*
+12	exactes	exact	ADJ	_	Gender=Fem|Number=Plur	11	amod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	15	det	_	_	*	40	*
+15	incendie	incendie	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	40	*
+16	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00331
+# text = Et l'acte malveillant figure parmi les hypothèses.
+1	Et	et	CCONJ	_	_	5	cc	_	_	*	*	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	41	5: 41
+3	acte	acte	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	41	5: 41
+4	malveillant	malveillant	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	41	5: 41
+5	figure	figurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	parmi	parmi	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	42	*
+8	hypothèses	hypothèse	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	SpaceAfter=No	*	42	*
+9	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00332
+# text = "Si cet incendie est d'origine criminelle, il pourrait s'expliquer par la présence des CRS sur le quartier dans l'après-midi.
+1	"	"	PUNCT	_	_	11	punct	_	SpaceAfter=No	*	*	*
+2	Si	si	SCONJ	_	_	7	mark	_	_	*	*	*
+3	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_	*	43	1: 43
+4	incendie	incendie	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	43	1: 43
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
+7	origine	origine	NOUN	_	Gender=Fem|Number=Sing	11	advcl	_	_	*	*	*
+8	criminelle	criminel	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*	*	*
+9	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_	*	44	1: 44
+11	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+12	s'	se	PRON	_	Person=3|Reflex=Yes	13	expl:pass	_	SpaceAfter=No	*	*	*
+13	expliquer	expliquer	VERB	_	VerbForm=Inf	11	xcomp	_	_	*	*	*
+14	par	par	ADP	_	_	16	case	_	_	*	*	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	45	9: 45
+16	présence	présence	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*	45	9: 45
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	45;46	9: 45
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	45;46	9: 45
+19	CRS	CRS	NOUN	_	Number=Plur	16	nmod	_	_	*	45;46	9: 45
+20	sur	sur	ADP	_	_	22	case	_	_	*	*	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	47	1: 47
+22	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	16	nmod	_	_	*	47	1: 47
+23	dans	dans	ADP	_	_	25	case	_	_	*	*	*
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No	*	48	*
+25	après-midi	après-midi	NOUN	_	Number=Sing	16	nmod	_	SpaceAfter=No	*	48	*
+26	.	.	PUNCT	_	_	11	punct	_	_	*	48	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00333
+# text = Une sorte de réaction épidermique par rapport à leur présence" commentait le commissaire central.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	49	*
+2	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	49	*
+3	de	de	ADP	_	_	4	case	_	_	*	49;50	*
+4	réaction	réaction	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	49;50;51	*
+5	épidermique	épidermique	ADJ	_	Number=Sing	4	amod	_	_	*	49;50;51	*
+6	par	par	ADP	_	_	7	case	_	_	*	*	*
+7	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	*	*
+9	leur	son	DET	_	Number=Sing|Poss=Yes	10	det	_	_	*	52	9: 52
+10	présence	présence	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*	52	9: 52
+11	"	"	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
+12	commentait	commenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	parataxis	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	53;54	1: 53;1: 54
+14	commissaire	commissaire	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*	53;54	1: 53;1: 54
+15	central	central	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No	*	53;54	1: 53;1: 54
+16	.	.	PUNCT	_	_	4	punct	_	_	*	54	1: 54
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00334
+# text = Le premier magistrat de la commune n'écartait d'ailleurs pas cette thèse expliquant qu'un incendie comme celui-ci à une heure plus tardive aurait pu avoir des conséquences beaucoup plus graves.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	55	*
+2	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	_	*	55	*
+3	magistrat	magistrat	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	55	*
+4	de	de	ADP	_	_	6	case	_	_	*	55	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	55;56	*
+6	commune	commune	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	55;56	*
+7	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	SpaceAfter=No	*	*	*
+8	écartait	écarter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*	*	*
+10	ailleurs	ailleurs	ADV	_	_	8	obl:mod	_	_	*	*	*
+11	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+12	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	13	det	_	_	*	57	*
+13	thèse	thèse	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	_	*	57	*
+14	expliquant	expliquer	VERB	_	Tense=Pres|VerbForm=Part	8	advcl	_	_	*	*	*
+15	qu'	que	SCONJ	_	_	26	mark	_	SpaceAfter=No	*	*	*
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	58	7: 58
+17	incendie	incendie	NOUN	_	Gender=Masc|Number=Sing	26	nsubj	_	_	*	58	7: 58
+18	comme	comme	ADP	_	_	19	case	_	_	*	*	*
+19	celui-ci	celui-ci	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	17	nmod	_	_	*	59	7: 59
+20	à	à	ADP	_	_	22	case	_	_	*	*	*
+21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	60	*
+22	heure	heure	NOUN	_	Gender=Fem|Number=Sing	26	obl:mod	_	_	*	60	*
+23	plus	plus	ADV	_	_	24	advmod	_	_	*	60	*
+24	tardive	tardif	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*	60	*
+25	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:tense	_	_	*	*	*
+26	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	14	ccomp	_	_	*	*	*
+27	avoir	avoir	VERB	_	VerbForm=Inf	26	xcomp	_	_	1:LVC.full	*	*
+28	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	29	det	_	_	*	61	4: 61
+29	conséquences	conséquence	NOUN	_	Gender=Fem|Number=Plur	27	obj	_	_	1	61	4: 61
+30	beaucoup	beaucoup	ADV	_	_	31	advmod	_	_	*	61	4: 61
+31	plus	plus	ADV	_	_	32	advmod	_	_	*	61	4: 61
+32	graves	grave	ADJ	_	Number=Plur	29	amod	_	SpaceAfter=No	*	61	4: 61
+33	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00335
+# text = "Pompiers et policiers effectueront des rondes toute la nuit.
+1	"	"	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	62;63	6: 62
+2	Pompiers	pompier	NOUN	_	Number=Plur	5	nsubj	_	_	*	62;63;64;65	6: 62;6: 65
+3	et	et	CCONJ	_	_	4	cc	_	_	*	63;65	6: 65
+4	policiers	policier	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	_	*	63;65;66	6: 65
+5	effectueront	effectuer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+6	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	7	det	_	_	*	67	4: 67
+7	rondes	ronde	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	_	1	67	4: 67
+8	toute	tout	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	*	*
+10	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	*	*
+11	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00336
+# text = Pour éviter une reprise du feu mais aussi pour prévenir des actes malveillants" constatait Martial Bourquin.
+1	Pour	pour	ADP	_	_	2	mark	_	_	*	*	*
+2	éviter	éviter	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	68	10: 68
+4	reprise	reprise	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_	*	68	10: 68
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	68;69	10: 68
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	68;69	10: 68
+7	feu	feu	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	68;69	10: 68
+8	mais	mais	CCONJ	_	_	11	cc	_	_	*	*	*
+9	aussi	aussi	ADV	_	_	11	advmod	_	_	*	*	*
+10	pour	pour	ADP	_	_	11	mark	_	_	*	*	*
+11	prévenir	prévenir	VERB	_	VerbForm=Inf	2	conj	_	_	*	*	*
+12	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	13	det	_	_	*	70	*
+13	actes	acte	NOUN	_	Gender=Masc|Number=Plur	11	obj	_	_	*	70	*
+14	malveillants	malveillant	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	SpaceAfter=No	*	70	*
+15	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
+16	constatait	constater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	parataxis	_	_	*	*	*
+17	Martial	Martial	PROPN	_	_	16	nsubj	_	_	*	71	*
+18	Bourquin	Bourquin	PROPN	_	_	17	flat:name	_	SpaceAfter=No	*	71	*
+19	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00337
+# text = La poursuite des investigations policières permettra d'apporter une réponse quant à l'origine de ce sinistre qui a perturbé la tranquillité de dizaines de familles de l'immeuble.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	72	*
+2	poursuite	poursuite	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	72	*
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	5	case	_	_	*	72;73	4: 73
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	72;73	4: 73
+5	investigations	investigation	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	72;73	4: 73
+6	policières	policier	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	_	*	72;73	4: 73
+7	permettra	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+8	d'	de	ADP	_	_	9	mark	_	SpaceAfter=No	*	*	*
+9	apporter	apporter	VERB	_	VerbForm=Inf	7	xcomp	_	_	1:LVC.full	*	*
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	74	10: 74
+11	réponse	réponse	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	_	1	74	10: 74
+12	quant	quant	ADV	_	_	15	case	_	EXTPOS=ADP|MWE=quant_à	*	*	*
+13	à	à	ADP	_	_	12	fixed	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	75	*
+15	origine	origine	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	_	*	75	*
+16	de	de	ADP	_	_	18	case	_	_	*	75	*
+17	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	18	det	_	_	*	75;76	*
+18	sinistre	sinistre	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	75;76	*
+19	qui	qui	PRON	_	PronType=Rel	21	nsubj	_	_	*	77	*
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*	*	*
+21	perturbé	perturber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	acl:relcl	_	_	*	*	*
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_	*	78	*
+23	tranquillité	tranquillité	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	_	*	78	*
+24	de	de	ADP	_	_	25	case	_	_	*	78	*
+25	dizaines	dizaine	NOUN	_	Gender=Fem|Number=Plur	23	nmod	_	_	*	78	*
+26	de	de	ADP	_	_	27	case	_	_	*	78;79	*
+27	familles	famille	NOUN	_	Gender=Fem|Number=Plur	25	nmod	_	_	*	78;79	*
+28	de	de	ADP	_	_	30	case	_	_	*	78	*
+29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No	*	78;80;81	*
+30	immeuble	immeuble	NOUN	_	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No	*	78;80;81	*
+31	.	.	PUNCT	_	_	7	punct	_	_	*	81	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00338
+# text = C.L.
+1	C.L.	c.l.	NOUN	_	_	0	root	_	_	*	82	*

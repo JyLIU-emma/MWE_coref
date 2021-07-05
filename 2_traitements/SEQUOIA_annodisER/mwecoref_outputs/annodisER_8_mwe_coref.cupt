@@ -1,0 +1,337 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00083
+# text = Le président Simon : rien ne lui échappe !
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	1	3: 1
+2	président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	1	3: 1
+3	Simon	Simon	PROPN	_	Gender=Masc|Number=Sing	2	flat:name	_	_	*	1	3: 1
+4	:	:	PUNCT	_	_	2	punct	_	_	*	*	*
+5	rien	rien	PRON	_	Number=Sing	8	nsubj	_	_	*	2	*
+6	ne	ne	ADV	_	Polarity=Neg	8	advmod	_	_	*	*	*
+7	lui	lui	PRON	_	Number=Sing|Person=3	8	iobj	_	_	*	3	3: 3
+8	échappe	échapper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_	*	*	*
+9	!	!	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00084
+# text = Photos Jacques FISSIER
+1	Photos	photo	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	4	*
+2	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	5	*
+3	FISSIER	FISSIER	PROPN	_	_	2	flat:name	_	_	*	5	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00085
+# text = La première exposition avicole de Belfort date de 1922.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	6	*
+2	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_	*	6	*
+3	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	6	*
+4	avicole	avicole	ADJ	_	Number=Sing	3	amod	_	_	*	6	*
+5	de	de	ADP	_	_	6	case	_	_	*	6	*
+6	Belfort	Belfort	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	6;7	*
+7	date	dater	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	de	de	ADP	_	_	9	case	_	_	*	*	*
+9	1922	1922	NUM	_	NumType=Card	7	obl:arg	_	SpaceAfter=No	*	8	3: 8
+10	.	.	PUNCT	_	_	7	punct	_	_	*	8	3: 8
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00086
+# text = Cela fait donc plus de trois-quarts de siècle que la digne société du même nom encourage, dans la région, les éleveurs amateurs.
+1	Cela	cela	PRON	_	Number=Sing|PronType=Dem	2	nsubj	_	_	1:VID	*	*
+2	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	donc	donc	ADV	_	_	2	advmod	_	_	*	*	*
+4	plus	plus	ADV	_	_	2	obl:arg	_	_	*	*	*
+5	de	de	ADP	_	_	6	case	_	_	*	9	3: 9
+6	trois-quarts	trois-quarts	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	9	3: 9
+7	de	de	ADP	_	_	8	case	_	_	*	9	3: 9
+8	siècle	siècle	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	9;10	3: 9;3: 10
+9	que	que	SCONJ	_	_	17	mark	_	_	*	*	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	11	7: 11
+11	digne	digne	ADJ	_	Number=Sing	12	amod	_	_	*	11	7: 11
+12	société	société	NOUN	_	Gender=Fem|Number=Sing	17	nsubj	_	_	*	11	7: 11
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	16	case	_	_	*	11;12	7: 11;1: 12
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	11;12	7: 11;1: 12
+15	même	même	ADJ	_	Number=Sing	16	amod	_	_	*	11;12	7: 11;1: 12
+16	nom	nom	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	11;12	7: 11;1: 12
+17	encourage	encourager	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	SpaceAfter=No	*	*	*
+18	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+19	dans	dans	ADP	_	_	21	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_	*	13	7: 13
+21	région	région	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	SpaceAfter=No	*	13	7: 13
+22	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	*	*
+24	éleveurs	éleveur	NOUN	_	Gender=Masc|Number=Plur	17	obj	_	_	*	*	*
+25	amateurs	amateur	ADJ	_	Number=Plur	24	amod	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00087
+# text = On peut donc estimer de façon astronomique le nombre de poules, de canards et de lapins, puis logiquement de casseroles, qui auront profité de cet engouement général !
+1	On	il	PRON	_	Number=Sing|Person=3	2	nsubj	_	_	*	14	1: 14
+2	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	donc	donc	ADV	_	_	2	advmod	_	_	*	*	*
+4	estimer	estimer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	de	de	ADP	_	_	6	case	_	_	*	*	*
+6	façon	façon	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	15	*
+7	astronomique	astronomique	ADJ	_	Number=Sing	6	amod	_	_	*	15	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	16;17	1: 16;1: 17
+9	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	16;17	1: 16;1: 17
+10	de	de	ADP	_	_	11	case	_	_	*	16;17	1: 16;1: 17
+11	poules	poule	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No	*	16;17	1: 16;1: 17
+12	,	,	PUNCT	_	_	14	punct	_	_	*	16;17	1: 16;1: 17
+13	de	de	ADP	_	_	14	case	_	_	*	16;17;18	1: 16;1: 17;8: 18
+14	canards	canard	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*	16;17;18	1: 16;1: 17;8: 18
+15	et	et	CCONJ	_	_	17	cc	_	_	*	17	1: 17
+16	de	de	ADP	_	_	17	case	_	_	*	17;19	1: 17;8: 19
+17	lapins	lapin	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	SpaceAfter=No	*	17;19	1: 17;8: 19
+18	,	,	PUNCT	_	_	11	punct	_	_	*	17	1: 17
+19	puis	puis	CCONJ	_	_	22	cc	_	_	*	*	*
+20	logiquement	logiquement	ADV	_	_	22	advmod	_	_	*	*	*
+21	de	de	ADP	_	_	22	case	_	_	*	20;21	2: 21
+22	casseroles	casserole	NOUN	_	Gender=Fem|Number=Plur	11	conj	_	SpaceAfter=No	*	20;21	2: 21
+23	,	,	PUNCT	_	_	11	punct	_	_	*	21	2: 21
+24	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*	22	2: 22
+25	auront	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	26	aux:tense	_	_	*	*	*
+26	profité	profiter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	acl:relcl	_	_	*	*	*
+27	de	de	ADP	_	_	29	case	_	_	*	*	*
+28	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	29	det	_	_	*	23	*
+29	engouement	engouement	NOUN	_	Gender=Masc|Number=Sing	26	obl:arg	_	_	*	23	*
+30	général	général	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*	23	*
+31	!	!	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00088
+# text = Pour être précis, c'est autour de 1950 que la société d'aviculture de Belfort a vraiment pris sa réelle importance, avec la présidence de Claude Simon.
+1	Pour	pour	ADP	_	_	3	mark	_	_	*	*	*
+2	être	être	AUX	_	VerbForm=Inf	3	cop	_	_	*	*	*
+3	précis	précis	ADJ	_	Gender=Masc	7	advcl	_	SpaceAfter=No	*	*	*
+4	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+5	c'	ce	PRON	_	Number=Sing|Person=3	7	expl:subj	_	SpaceAfter=No	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
+7	autour	autour	ADV	_	_	0	root	_	_	*	*	*
+8	de	de	ADP	_	_	9	case	_	_	*	*	*
+9	1950	1950	NUM	_	NumType=Card	7	dep	_	_	*	24	*
+10	que	que	PRON	_	PronType=Rel	19	iobj	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	25	2: 25
+12	société	société	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*	25	2: 25
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*	25	2: 25
+14	aviculture	aviculture	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	25;26	2: 25;2: 26
+15	de	de	ADP	_	_	16	case	_	_	*	25;26	2: 25;2: 26
+16	Belfort	Belfort	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*	25;26;27	2: 25;2: 26
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*	*	*
+18	vraiment	vraiment	ADV	_	_	19	advmod	_	_	*	*	*
+19	pris	prendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	7	advcl:cleft	_	_	*	*	*
+20	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	22	det	_	_	*	*	*
+21	réelle	réel	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*	*	*
+22	importance	importance	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	SpaceAfter=No	*	*	*
+23	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+24	avec	avec	ADP	_	_	26	case	_	_	*	*	*
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_	*	28	2: 28
+26	présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*	28	2: 28
+27	de	de	ADP	_	_	28	case	_	_	*	28	2: 28
+28	Claude	Claude	PROPN	_	Number=Sing	26	nmod	_	_	*	28;29	2: 28
+29	Simon	Simon	PROPN	_	Gender=Masc|Number=Sing	28	flat:name	_	SpaceAfter=No	*	28;29	2: 28
+30	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00089
+# text = Voici un homme totalement dévoué à la cause de toutes ces petites bêtes, et qui a su rassembler des bénévoles aussi passionnés que lui, même quand certains d'entre eux n'ont même plus de poulailler.
+1	Voici	voici	VERB	_	Mood=Ind|VerbForm=Fin	0	root	_	_	*	*	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	30	0: 30
+3	homme	homme	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	_	*	30	0: 30
+4	totalement	totalement	ADV	_	_	5	advmod	_	_	*	30	0: 30
+5	dévoué	dévoué	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	30	0: 30
+6	à	à	ADP	_	_	8	case	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	*	31;32	2: 31;2: 32
+8	cause	cause	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	_	*	31;32	2: 31;2: 32
+9	de	de	ADP	_	_	13	case	_	_	*	32	2: 32
+10	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*	32;33	2: 32
+11	ces	ce	DET	_	Number=Plur|PronType=Dem	13	det	_	_	*	32;33	2: 32
+12	petites	petit	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*	32;33	2: 32
+13	bêtes	bête	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	SpaceAfter=No	*	32;33	2: 32
+14	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+15	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+16	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	34	*
+17	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+18	su	savoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_	*	*	*
+19	rassembler	rassembler	VERB	_	VerbForm=Inf	18	xcomp	_	_	*	*	*
+20	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	21	det	_	_	*	35;36	*
+21	bénévoles	bénévole	NOUN	_	Number=Plur	19	obj	_	_	*	35;36	*
+22	aussi	aussi	ADV	_	_	23	advmod	_	_	*	36	*
+23	passionnés	passionné	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*	36	*
+24	que	que	SCONJ	_	_	25	mark	_	_	*	*	*
+25	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	dep	_	SpaceAfter=No	*	37	0: 37
+26	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+27	même	même	ADV	_	_	34	advmod	_	_	*	*	*
+28	quand	quand	SCONJ	_	_	34	mark	_	_	*	*	*
+29	certains	certain	PRON	_	Gender=Masc|Number=Plur|Person=3	34	nsubj	_	_	*	38	9: 38
+30	d'	de	ADP	_	_	32	case	_	EXTPOS=ADP|MWE=d'entre|SpaceAfter=No	*	*	*
+31	entre	entre	ADP	_	_	30	fixed	_	_	*	*	*
+32	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	29	nmod	_	_	*	39	9: 39
+33	n'	ne	ADV	_	Polarity=Neg	34	advmod	_	SpaceAfter=No	*	*	*
+34	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	advcl	_	_	*	*	*
+35	même	même	ADV	_	_	36	advmod	_	_	*	*	*
+36	plus	plus	ADV	_	Polarity=Neg	34	advmod	_	_	*	*	*
+37	de	un	DET	_	Definite=Ind|Number=Sing|PronType=Art	38	det	_	_	*	40	0: 40
+38	poulailler	poulailler	NOUN	_	Gender=Masc|Number=Sing	34	obj	_	SpaceAfter=No	*	40	0: 40
+39	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00090
+# text = C'est le cas de ce brave Joseph Bari, toujours présent au comité, vedette de la colombophilie jusqu'en 1962, époque à laquelle il fut obligé de quitter son pigeonnier de Châtenois-les-Forges pour aller habiter un espace réduit à Grand-Charmont.
+1	C'	ce	PRON	_	Number=Sing|Person=3	4	nsubj	_	SpaceAfter=No	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	*	*
+4	cas	cas	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	8	case	_	_	*	*	*
+6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*	41;42	0: 41;0: 42
+7	brave	brave	ADJ	_	Number=Sing	8	amod	_	_	*	41;42	0: 41;0: 42
+8	Joseph	Joseph	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	41;42;43	0: 41;0: 42
+9	Bari	Bari	PROPN	_	_	8	flat:name	_	SpaceAfter=No	*	41;42;43	0: 41;0: 42
+10	,	,	PUNCT	_	_	8	punct	_	_	*	42	0: 42
+11	toujours	toujours	ADV	_	_	12	advmod	_	_	*	*	*
+12	présent	présent	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	*	*
+13-14	au	_	_	_	_	_	_	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	44	0: 44
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	44	0: 44
+15	comité	comité	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	SpaceAfter=No	*	44	0: 44
+16	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+17	vedette	vedette	NOUN	_	Gender=Fem|Number=Sing	8	appos	_	_	*	45	*
+18	de	de	ADP	_	_	20	case	_	_	*	45	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	45;46	4: 46
+20	colombophilie	colombophilie	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	45;46	4: 46
+21	jusqu'	jusque	ADP	_	_	23	case	_	SpaceAfter=No	*	*	*
+22	en	en	ADP	_	_	23	case	_	_	*	*	*
+23	1962	1962	NUM	_	NumType=Card	17	nmod	_	SpaceAfter=No	*	*	*
+24	,	,	PUNCT	_	_	23	punct	_	_	*	*	*
+25	époque	époque	NOUN	_	Gender=Fem|Number=Sing	23	appos	_	_	*	*	*
+26	à	à	ADP	_	_	27	case	_	_	*	*	*
+27	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	30	obl:mod	_	_	*	47	4: 47
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	30	nsubj:pass	_	_	*	48	0: 48
+29	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	aux:pass	_	_	*	*	*
+30	obligé	obliger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	25	acl:relcl	_	_	*	*	*
+31	de	de	ADP	_	_	32	mark	_	_	*	*	*
+32	quitter	quitter	VERB	_	VerbForm=Inf	30	xcomp	_	_	*	*	*
+33	son	son	DET	_	Number=Sing|Poss=Yes	34	det	_	_	*	49	0: 49
+34	pigeonnier	pigeonnier	NOUN	_	Gender=Masc|Number=Sing	32	obj	_	_	*	49	0: 49
+35	de	de	ADP	_	_	36	case	_	_	*	49	0: 49
+36	Châtenois-les-Forges	Châtenois-les-Forges	PROPN	_	_	34	nmod	_	_	*	49;50	0: 49
+37	pour	pour	ADP	_	_	38	mark	_	_	*	*	*
+38	aller	aller	VERB	_	VerbForm=Inf	32	advcl	_	_	*	*	*
+39	habiter	habiter	VERB	_	VerbForm=Inf	38	xcomp	_	_	*	*	*
+40	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	51	0: 51
+41	espace	espace	NOUN	_	Gender=Masc|Number=Sing	39	obj	_	_	*	51	0: 51
+42	réduit	réduit	ADJ	_	Gender=Masc|Number=Sing	41	amod	_	_	*	51	0: 51
+43	à	à	ADP	_	_	44	case	_	_	*	*	*
+44	Grand-Charmont	Grand-Charmont	PROPN	_	Gender=Masc|Number=Sing	39	obl:mod	_	SpaceAfter=No	*	*	*
+45	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00091
+# text = à l'époque, ce cher "Jo" élevait jusqu'à 120 pigeons voyageurs, et les spécialistes n'ont pas oublié que l'un de ses champions fut de loin le meilleur sur 500 kilomètres lors d'un retour d'Evreux et de Bayeux !
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	52	6: 52
+3	époque	époque	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*	52	6: 52
+4	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*	*	*
+6	cher	cher	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	*	*
+7	"	"	PUNCT	_	_	8	punct	_	SpaceAfter=No	*	*	*
+8	Jo	Jo	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	SpaceAfter=No	*	*	*
+9	"	"	PUNCT	_	_	8	punct	_	_	*	*	*
+10	élevait	élever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+11	jusqu'	jusque	ADP	_	_	14	case	_	SpaceAfter=No	*	*	*
+12	à	à	ADP	_	_	14	case	_	_	*	*	*
+13	120	120	NUM	_	NumType=Card	14	nummod	_	_	*	53	*
+14	pigeons	pigeon	NOUN	_	Gender=Masc|Number=Plur	10	obj	_	_	*	53	*
+15	voyageurs	voyageur	ADJ	_	_	14	amod	_	SpaceAfter=No	*	53	*
+16	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+17	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	54	*
+19	spécialistes	spécialiste	NOUN	_	Number=Plur	23	nsubj	_	_	*	54	*
+20	n'	ne	ADV	_	Polarity=Neg	23	advmod	_	SpaceAfter=No	*	*	*
+21	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	_	*	*	*
+22	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*	*	*
+23	oublié	oublier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	conj	_	_	*	*	*
+24	que	que	SCONJ	_	_	34	mark	_	_	*	*	*
+25	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*	55	6: 55
+26	un	un	PRON	_	Gender=Masc|Number=Sing	34	nsubj	_	_	*	55;56	6: 55;0: 56
+27	de	de	ADP	_	_	29	case	_	_	*	55;56	6: 55;0: 56
+28	ses	son	DET	_	Number=Plur|Poss=Yes	29	det	_	_	*	55;56;57	6: 55;0: 56
+29	champions	champion	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*	55;56;57	6: 55;0: 56
+30	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	cop	_	_	*	*	*
+31	de	de	ADP	_	_	34	advmod	_	EXTPOS=ADV|MWE=de_loin	*	*	*
+32	loin	loin	ADV	_	_	31	fixed	_	_	*	*	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	58	0: 58
+34	meilleur	meilleur	ADJ	_	Gender=Masc|Number=Sing	23	ccomp	_	_	*	58	0: 58
+35	sur	sur	ADP	_	_	37	case	_	_	*	*	*
+36	500	500	NUM	_	NumType=Card	37	nummod	_	_	*	59	*
+37	kilomètres	kilomètre	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	_	*	59	*
+38	lors	lors	ADV	_	_	34	nmod	_	_	*	*	*
+39	d'	de	ADP	_	_	41	case	_	SpaceAfter=No	*	*	*
+40	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	60	*
+41	retour	retour	NOUN	_	Gender=Masc|Number=Sing	38	obl:arg	_	_	*	60	*
+42	d'	de	ADP	_	_	43	case	_	SpaceAfter=No	*	60	*
+43	Evreux	Evreux	PROPN	_	Gender=Masc|Number=Sing	41	nmod	_	_	*	60;61;62	0: 62
+44	et	et	CCONJ	_	_	46	cc	_	_	*	60;62	0: 62
+45	de	de	ADP	_	_	46	case	_	_	*	60;62	0: 62
+46	Bayeux	Bayeux	PROPN	_	Gender=Masc|Number=Sing	43	conj	_	_	*	60;62;63	0: 62
+47	!	!	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00092
+# text = Joseph Bari n'a plus rien chez lui, que des souvenirs.
+1	Joseph	Joseph	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	64	*
+2	Bari	Bari	PROPN	_	_	1	flat:name	_	_	*	64	*
+3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*	*	*
+4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	plus	plus	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+6	rien	rien	PRON	_	Number=Sing	4	obj	_	_	*	*	*
+7	chez	chez	ADP	_	_	8	case	_	_	*	*	*
+8	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl:mod	_	SpaceAfter=No	*	65	0: 65
+9	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+10	que	que	ADV	_	_	12	advmod	_	_	*	*	*
+11	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	12	det	_	_	*	66	*
+12	souvenirs	souvenir	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*	66	*
+13	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00093
+# text = Heureusement, comme les autres amis de Claude Simon, il adore consacrer son temps à cette très belle exposition avicole qui résonne de mille chants de coqs heureux.
+1	Heureusement	heureusement	ADV	_	_	12	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+3	comme	comme	ADP	_	_	6	case	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	67	*
+5	autres	autre	ADJ	_	Number=Plur	6	amod	_	_	*	67	*
+6	amis	ami	NOUN	_	Gender=Masc|Number=Plur	12	obl:mod	_	_	*	67	*
+7	de	de	ADP	_	_	8	case	_	_	*	67	*
+8	Claude	Claude	PROPN	_	Number=Sing	6	nmod	_	_	*	67;68	*
+9	Simon	Simon	PROPN	_	Gender=Masc|Number=Sing	8	flat:name	_	SpaceAfter=No	*	67;68	*
+10	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*	69	0: 69
+12	adore	adorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	consacrer	consacrer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*	*	*
+14	son	son	DET	_	Number=Sing|Poss=Yes	15	det	_	_	*	70	0: 70
+15	temps	temps	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	*	70	0: 70
+16	à	à	ADP	_	_	20	case	_	_	*	*	*
+17	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_	*	71	5: 71
+18	très	très	ADV	_	_	19	advmod	_	_	*	71	5: 71
+19	belle	beau	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*	71	5: 71
+20	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*	71	5: 71
+21	avicole	avicole	ADJ	_	Number=Sing	20	amod	_	_	*	71	5: 71
+22	qui	qui	PRON	_	PronType=Rel	23	nsubj	_	_	*	72	5: 72
+23	résonne	résonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_	*	*	*
+24	de	de	ADP	_	_	26	case	_	_	*	*	*
+25	mille	mille	NUM	_	NumType=Card	26	nummod	_	_	*	73	*
+26	chants	chant	NOUN	_	Gender=Masc|Number=Plur	23	obl:arg	_	_	*	73	*
+27	de	de	ADP	_	_	28	case	_	_	*	73	*
+28	coqs	coq	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*	73;74	*
+29	heureux	heureux	ADJ	_	Gender=Masc	28	amod	_	SpaceAfter=No	*	73;74	*
+30	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00094
+# text = Il faut aller écouter et voir tout ça.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	expl:subj	_	_	1:VID	*	*
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+3	aller	aller	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	écouter	écouter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+5	et	et	CCONJ	_	_	6	cc	_	_	*	*	*
+6	voir	voir	VERB	_	VerbForm=Inf	4	conj	_	_	*	*	*
+7	tout	tout	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	_	*	*	*
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obj	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00095
+# text = Vivifiant en diable !
+1	Vivifiant	vivifiant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2	en	en	ADP	_	_	3	case	_	_	*	*	*
+3	diable	diable	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*	*	*
+4	!	!	PUNCT	_	_	1	punct	_	_	*	*	*

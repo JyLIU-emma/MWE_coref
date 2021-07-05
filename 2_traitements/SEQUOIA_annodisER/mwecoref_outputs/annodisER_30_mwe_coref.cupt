@@ -1,0 +1,278 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00375
+# text = COURCELLES-LES-MONTBELIARD
+1	COURCELLES-LES-MONTBELIARD	Courcelles-lès-Montbéliard	PROPN	_	_	0	root	_	_	*	1	11: 1
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00376
+# text = Importantes recherches pour retrouver la jeune disparue
+1	Importantes	important	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_	*	*	*
+2	recherches	recherche	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	*	*
+3	pour	pour	ADP	_	_	4	mark	_	_	*	*	*
+4	retrouver	retrouver	VERB	_	VerbForm=Inf	2	acl	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	2	12: 2
+6	jeune	jeune	ADJ	_	Number=Sing	7	amod	_	_	*	2	12: 2
+7	disparue	disparu	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	2	12: 2
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00377
+# text = L'alerte a été donnée mercredi soir vers 21h30.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	3	*
+2	alerte	alerte	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:pass	_	_	1:LVC.full	3	*
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	été	être	AUX	_	Tense=Past|VerbForm=Part	5	aux:pass	_	_	*	*	*
+5	donnée	donner	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	1	*	*
+6	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*	4	11: 4
+7	soir	soir	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	4	11: 4
+8	vers	vers	ADP	_	_	10	case	_	_	*	*	*
+9	21	21	NUM	_	NumType=Card	10	nummod	_	SpaceAfter=No	*	5	*
+10	h	h	NOUN	_	_	5	obl:mod	_	SpaceAfter=No	*	5	*
+11	30	30	NUM	_	NumType=Card	10	nummod	_	SpaceAfter=No	*	5	*
+12	.	.	PUNCT	_	_	5	punct	_	_	*	5	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00378
+# text = Une jeune fille de 25 ans hébergée chez des parents à Courcelles-lès-Montbéliard, était signalée disparue.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	6	12: 6
+2	jeune	jeune	ADJ	_	Number=Sing	3	amod	_	_	*	6	12: 6
+3	fille	fille	NOUN	_	Gender=Fem|Number=Sing	15	nsubj:pass	_	_	*	6	12: 6
+4	de	de	ADP	_	_	6	case	_	_	*	6	12: 6
+5	25	25	NUM	_	NumType=Card	6	nummod	_	_	*	6;7	12: 6
+6	ans	an	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*	6;7	12: 6
+7	hébergée	héberger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*	*	*
+8	chez	chez	ADP	_	_	10	case	_	_	*	*	*
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	_	*	8	10: 8
+10	parents	parent	NOUN	_	Gender=Masc|Number=Plur	7	obl:arg	_	_	*	8	10: 8
+11	à	à	ADP	_	_	12	case	_	_	*	*	*
+12	Courcelles-lès-Montbéliard	Courcelles-lès-Montbéliard	PROPN	_	_	7	obl:mod	_	SpaceAfter=No	*	9	*
+13	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+14	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux:pass	_	_	*	*	*
+15	signalée	signaler	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+16	disparue	disparaître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	15	xcomp	_	SpaceAfter=No	*	*	*
+17	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00379
+# text = Dans un premier temps, les policiers qui ont reçu l'appel de la famille inquiète, ont envoyé plusieurs patrouilles dans le quartier.
+1	Dans	dans	ADP	_	_	4	case	_	_	*	*	*
+2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	10	*
+3	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	4	amod	_	_	*	10	*
+4	temps	temps	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	SpaceAfter=No	*	10	*
+5	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	11	*
+7	policiers	policier	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*	11	*
+8	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	_	*	12	10: 12
+9	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	reçu	recevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl:relcl	_	_	1:LVC.full	*	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	*	*
+12	appel	appel	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	1	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	13	7: 13
+15	famille	famille	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	13	7: 13
+16	inquiète	inquiet	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*	13	7: 13
+17	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+18	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_	*	*	*
+19	envoyé	envoyer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+20	plusieurs	plusieurs	DET	_	Number=Plur	21	det	_	_	*	14	2: 14
+21	patrouilles	patrouille	NOUN	_	Gender=Fem|Number=Plur	19	obj	_	_	*	14	2: 14
+22	dans	dans	ADP	_	_	24	case	_	_	*	*	*
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	15;16	5: 16
+24	quartier	quartier	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	SpaceAfter=No	*	15;16	5: 16
+25	.	.	PUNCT	_	_	19	punct	_	_	*	16	5: 16
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00380
+# text = Malheureusement, elles ne trouvaient aucune trace de la jeune fille.
+1	Malheureusement	malheureusement	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+3	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3	5	nsubj	_	_	*	17	2: 17
+4	ne	ne	ADV	_	Polarity=Neg	5	advmod	_	_	*	*	*
+5	trouvaient	trouver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+6	aucune	aucun	DET	_	Gender=Fem|Number=Sing	7	det	_	_	*	*	*
+7	trace	trace	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	*	*
+8	de	de	ADP	_	_	11	case	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	18	7: 18
+10	jeune	jeune	ADJ	_	Number=Sing	11	amod	_	_	*	18	7: 18
+11	fille	fille	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*	18	7: 18
+12	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00381
+# text = Hier matin, ils alertaient la gendarmerie en charge du secteur de Courcelles.
+1	Hier	hier	ADV	_	_	5	advmod	_	_	*	19	5: 19
+2	matin	matin	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	SpaceAfter=No	*	19	5: 19
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	5	nsubj	_	_	*	20	3: 20
+5	alertaient	alerter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	21	7: 21
+7	gendarmerie	gendarmerie	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	*	21	7: 21
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	charge	charge	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	*	*
+10-11	du	_	_	_	_	_	_	_	_	*	*	*
+10	de	de	ADP	_	_	12	case	_	_	*	22	6: 22
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	22	6: 22
+12	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	22	6: 22
+13	de	de	ADP	_	_	14	case	_	_	*	22	6: 22
+14	Courcelles	Courcelles	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*	22;23;24	6: 22;6: 24
+15	.	.	PUNCT	_	_	5	punct	_	_	*	24	6: 24
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00382
+# text = Aussitôt, les gendarmes effectuaient une enquête de voisinage et s'informaient auprès des hôpitaux ou de tout autre endroit où aurait pu trouver refuge la jeune fille.
+1	Aussitôt	aussitôt	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	25	3: 25
+4	gendarmes	gendarme	NOUN	_	Gender=Masc|Number=Plur	5	nsubj	_	_	*	25	3: 25
+5	effectuaient	effectuer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	26	*
+7	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	_	1	26	*
+8	de	de	ADP	_	_	9	case	_	_	*	26	*
+9	voisinage	voisinage	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_	*	26;27	6: 27
+10	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+11	s'	se	PRON	_	Person=3|Reflex=Yes	12	expl:comp	_	SpaceAfter=No	2:IRV	*	*
+12	informaient	informer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	conj	_	_	2	*	*
+13	auprès	auprès	ADV	_	_	12	advmod	_	_	*	*	*
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	28	3: 28
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	28	3: 28
+16	hôpitaux	hôpital	NOUN	_	Gender=Masc|Number=Plur	13	obl:arg	_	_	*	28	3: 28
+17	ou	ou	CCONJ	_	_	21	cc	_	_	*	*	*
+18	de	de	ADP	_	_	21	case	_	_	*	*	*
+19	tout	tout	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	29	6: 29
+20	autre	autre	ADJ	_	Number=Sing	21	amod	_	_	*	29	6: 29
+21	endroit	endroit	NOUN	_	Gender=Masc|Number=Sing	16	conj	_	_	*	29	6: 29
+22	où	où	PRON	_	PronType=Rel	24	iobj	_	_	*	30	6: 30
+23	aurait	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*	*	*
+24	pu	pouvoir	VERB	_	Tense=Past|VerbForm=Part	21	acl:relcl	_	_	*	*	*
+25	trouver	trouver	VERB	_	VerbForm=Inf	24	xcomp	_	_	3:VID	*	*
+26	refuge	refuge	NOUN	_	Gender=Masc|Number=Sing	25	obj	_	_	3	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_	*	31	9: 31
+28	jeune	jeune	ADJ	_	Number=Sing	29	amod	_	_	*	31	9: 31
+29	fille	fille	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	_	SpaceAfter=No	*	31	9: 31
+30	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00383
+# text = Tout au plus ont-ils appris qu'elle était partie sans prendre soin de mettre des vêtements chauds malgré la rigueur hivernale.
+1	Tout	tout	ADV	_	_	7	advmod	_	EXTPOS=ADV|MWE=tout_au_plus	*	*	*
+2-3	au	_	_	_	_	_	_	_	_	*	*	*
+2	à	à	ADP	_	_	1	fixed	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*	*	*
+4	plus	plus	ADV	_	_	1	fixed	_	_	*	*	*
+5	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	SpaceAfter=No	*	*	*
+6	-ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	7	nsubj	_	_	*	32	3: 32
+7	appris	apprendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	qu'	que	SCONJ	_	_	11	mark	_	SpaceAfter=No	*	*	*
+9	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	11	nsubj	_	_	*	33	9: 33
+10	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux:tense	_	_	*	*	*
+11	partie	partir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	ccomp	_	_	*	*	*
+12	sans	sans	ADP	_	_	13	mark	_	_	*	*	*
+13	prendre	prendre	VERB	_	VerbForm=Inf	11	advcl	_	_	1:VID	*	*
+14	soin	soin	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	_	1	*	*
+15	de	de	ADP	_	_	16	mark	_	_	*	*	*
+16	mettre	mettre	VERB	_	VerbForm=Inf	13	xcomp	_	_	*	*	*
+17	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	18	det	_	_	*	34	3: 34
+18	vêtements	vêtement	NOUN	_	Gender=Masc|Number=Plur	16	obj	_	_	*	34	3: 34
+19	chauds	chaud	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*	34	3: 34
+20	malgré	malgré	ADP	_	_	22	case	_	_	*	*	*
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	*	*
+22	rigueur	rigueur	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*	*	*
+23	hivernale	hivernal	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	SpaceAfter=No	*	*	*
+24	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00384
+# text = Des fouilles dans le bois de Courcelles étaient effectuées.
+1	Des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	_	*	35	*
+2	fouilles	fouille	NOUN	_	Gender=Fem|Number=Plur	9	nsubj:pass	_	_	1:LVC.full	35	*
+3	dans	dans	ADP	_	_	5	case	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	36	*
+5	bois	bois	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	36	*
+6	de	de	ADP	_	_	7	case	_	_	*	36	*
+7	Courcelles	Courcelles	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	36;37	*
+8	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	aux:pass	_	_	*	*	*
+9	effectuées	effectuer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	1	*	*
+10	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00385
+# text = Un ratissage autour du domicile de sa famille était également entrepris, les gendarmes craignant que la jeune fille n'attente à ses jours.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	38	*
+2	ratissage	ratissage	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	_	_	*	38	*
+3	autour	autour	ADV	_	_	12	advmod	_	_	*	*	*
+4-5	du	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	39	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	39	*
+6	domicile	domicile	NOUN	_	Gender=Masc|Number=Sing	3	dep	_	_	*	39	*
+7	de	de	ADP	_	_	9	case	_	_	*	39	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	9	det	_	_	*	39;40	9: 40
+9	famille	famille	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	39;40	9: 40
+10	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	aux:pass	_	_	*	*	*
+11	également	également	ADV	_	_	12	advmod	_	_	*	*	*
+12	entrepris	entreprendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No	*	*	*
+13	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	41	*
+15	gendarmes	gendarme	NOUN	_	Gender=Masc|Number=Plur	16	nsubj	_	_	*	41	*
+16	craignant	craindre	VERB	_	Tense=Pres|VerbForm=Part	12	advcl	_	_	*	*	*
+17	que	que	SCONJ	_	_	22	mark	_	_	*	*	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	42	4: 42
+19	jeune	jeune	ADJ	_	Number=Sing	20	amod	_	_	*	42	4: 42
+20	fille	fille	NOUN	_	Gender=Fem|Number=Sing	22	nsubj	_	_	*	42	4: 42
+21	n'	ne	ADV	_	Polarity=Neg	22	advmod	_	SpaceAfter=No	*	*	*
+22	attente	attenter	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	ccomp	_	_	1:VID	*	*
+23	à	à	ADP	_	_	25	case	_	_	1	*	*
+24	ses	son	DET	_	Number=Plur|Poss=Yes	25	det	_	_	1	43	*
+25	jours	jour	NOUN	_	Gender=Masc|Number=Plur	22	obl:arg	_	SpaceAfter=No	1	43	*
+26	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00386
+# text = Pas moins d'une douzaine d'hommes étaient mobilisés dont l'équipe cynophile.
+1	Pas	pas	ADV	_	_	2	advmod	_	_	*	*	*
+2	moins	moins	ADV	_	_	4	advmod	_	_	*	*	*
+3	d'	de	ADP	_	_	2	fixed	_	SpaceAfter=No	*	44	*
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	44;45	1: 45
+5	douzaine	douzaine	NOUN	_	Gender=Fem|Number=Sing	9	nsubj:pass	_	_	*	44;45	1: 45
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	44;45;46	1: 45;4: 46
+7	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	44;45;46;47	1: 45;4: 46
+8	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	aux:pass	_	_	*	*	*
+9	mobilisés	mobiliser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+10	dont	dont	PRON	_	PronType=Rel	12	nmod	_	_	*	*	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	48	8: 48
+12	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	5	acl:relcl	_	_	*	48	8: 48
+13	cynophile	cynophile	ADJ	_	Number=Sing	12	amod	_	SpaceAfter=No	*	48	8: 48
+14	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00387
+# text = Plus d'une quinzaine étaient réquisitionnés pour poursuivre les recherches l'après-midi.
+1	Plus	plus	ADV	_	_	3	advmod	_	_	*	*	*
+2	d'	de	ADP	_	_	1	fixed	_	SpaceAfter=No	*	49	1: 49
+3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	49;50	1: 49;1: 50
+4	quinzaine	quinzaine	NOUN	_	Gender=Fem|Number=Sing	6	nsubj:pass	_	_	*	49;50	1: 49;1: 50
+5	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	6	aux:pass	_	_	*	*	*
+6	réquisitionnés	réquisitionner	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+7	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+8	poursuivre	poursuivre	VERB	_	VerbForm=Inf	6	advcl	_	_	*	*	*
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	51	*
+10	recherches	recherche	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*	51	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	52	8: 52
+12	après-midi	après-midi	NOUN	_	Number=Sing	8	obl:mod	_	SpaceAfter=No	*	52	8: 52
+13	.	.	PUNCT	_	_	6	punct	_	_	*	52	8: 52
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00388
+# text = Mais peu avant 14h, la jeune fille prévenait sa famille qu'elle était saine et sauve et qu'elle se trouvait à Lyon.
+1	Mais	mais	CCONJ	_	_	10	cc	_	_	*	*	*
+2	peu	peu	ADV	_	_	5	advmod	_	_	*	*	*
+3	avant	avant	ADP	_	_	5	case	_	_	*	*	*
+4	14	14	NUM	_	NumType=Card	5	nummod	_	SpaceAfter=No	*	53	*
+5	h	h	NOUN	_	_	10	obl:mod	_	SpaceAfter=No	*	53	*
+6	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	54	*
+8	jeune	jeune	ADJ	_	Number=Sing	9	amod	_	_	*	54	*
+9	fille	fille	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	54	*
+10	prévenait	prévenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+11	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	12	det	_	_	*	55	0: 55
+12	famille	famille	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	_	*	55	0: 55
+13	qu'	que	SCONJ	_	_	16	mark	_	SpaceAfter=No	*	*	*
+14	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	16	nsubj	_	_	*	56	0: 56
+15	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	_	_	*	*	*
+16	saine	sain	ADJ	_	Gender=Fem|Number=Sing	10	ccomp	_	_	*	*	*
+17	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+18	sauve	sauf	ADJ	_	Gender=Fem|Number=Sing	16	conj	_	_	*	*	*
+19	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+20	qu'	que	SCONJ	_	_	23	mark	_	SpaceAfter=No	*	*	*
+21	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	23	nsubj	_	_	*	57	0: 57
+22	se	se	PRON	_	Person=3|Reflex=Yes	23	expl:comp	_	_	1:IRV	*	*
+23	trouvait	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	conj	_	_	1	*	*
+24	à	à	ADP	_	_	25	case	_	_	*	*	*
+25	Lyon	Lyon	PROPN	_	Gender=Masc|Number=Sing	23	obl:arg	_	SpaceAfter=No	*	58;59	*
+26	.	.	PUNCT	_	_	10	punct	_	_	*	59	*

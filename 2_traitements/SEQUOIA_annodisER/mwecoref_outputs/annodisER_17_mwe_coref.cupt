@@ -1,0 +1,475 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00189
+# text = Que la lumière soit !
+1	Que	que	SCONJ	_	_	4	mark	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	1	7: 1
+3	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	1	7: 1
+4	soit	être	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	!	!	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00190
+# text = "Verdun, ville de lumière !"
+1	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
+2	Verdun	Verdun	PROPN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	ville	ville	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	_	*	2	7: 2
+5	de	de	ADP	_	_	6	case	_	_	*	2	7: 2
+6	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	2;3	7: 2;7: 3
+7	!	!	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	*	*
+8	"	"	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00191
+# text = Expression parue dans la revue n° 33 "Verdun la vie" et envoyée à tous les Verdunois, ne correspond pas à la réalité, ce que soulignent M. Christian Langlois et M. Patrice Lanini, délégués syndicaux CGT des Rapides de la Meuse.
+1	Expression	expression	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	_	_	*	4	*
+2	parue	paraître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_	*	*	*
+3	dans	dans	ADP	_	_	5	case	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	5;6	7: 5;7: 6
+5	revue	revue	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*	5;6	7: 5;7: 6
+6	n°	numéro	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	5;6	7: 5;7: 6
+7	33	33	NUM	_	NumType=Card	6	nummod	_	_	*	5;6	7: 5;7: 6
+8	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No	*	6;7	7: 6;15: 7
+9	Verdun	Verdun	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	6;7;8	7: 6;15: 7
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	9	7: 9
+11	vie	vie	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	9	7: 9
+12	"	"	PUNCT	_	_	9	punct	_	_	*	*	*
+13	et	et	CCONJ	_	_	14	cc	_	_	*	*	*
+14	envoyée	envoyer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	_	*	*	*
+15	à	à	ADP	_	_	18	case	_	_	*	*	*
+16	tous	tout	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	_	*	10	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*	10	*
+18	Verdunois	verdunois	NOUN	_	Number=Plur	14	obl:arg	_	SpaceAfter=No	*	10	*
+19	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+20	ne	ne	ADV	_	Polarity=Neg	21	advmod	_	_	*	*	*
+21	correspond	correspondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+22	pas	pas	ADV	_	Polarity=Neg	21	advmod	_	_	*	*	*
+23	à	à	ADP	_	_	25	case	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_	*	11	7: 11
+25	réalité	réalité	NOUN	_	Gender=Fem|Number=Sing	21	obl:arg	_	SpaceAfter=No	*	11	7: 11
+26	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+27	ce	ce	PRON	_	_	21	iobj	_	_	*	*	*
+28	que	que	PRON	_	PronType=Rel	29	obj	_	_	*	*	*
+29	soulignent	souligner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_	*	*	*
+30	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	29	nsubj	_	_	*	12;13	15: 12;15: 13
+31	Christian	Christian	PROPN	_	Gender=Masc|Number=Sing	30	flat:name	_	_	*	12;13;14	15: 12;15: 13;19: 14
+32	Langlois	Langlois	PROPN	_	_	30	flat:name	_	_	*	12;13;14	15: 12;15: 13;19: 14
+33	et	et	CCONJ	_	_	34	cc	_	_	*	13	15: 13
+34	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	30	conj	_	_	*	13;15;16	15: 13;15: 15;15: 16
+35	Patrice	Patrice	PROPN	_	Gender=Masc|Number=Sing	34	flat:name	_	_	*	13;15;16;17	15: 13;15: 15;15: 16;19: 17
+36	Lanini	Lanini	PROPN	_	_	34	flat:name	_	SpaceAfter=No	*	13;15;16;17	15: 13;15: 15;15: 16;19: 17
+37	,	,	PUNCT	_	_	30	punct	_	_	*	16	15: 16
+38	délégués	délégué	NOUN	_	Gender=Masc|Number=Plur	30	appos	_	_	*	18;19	*
+39	syndicaux	syndical	ADJ	_	Gender=Masc|Number=Plur	38	amod	_	_	*	18;19	*
+40	CGT	CGT	PROPN	_	Gender=Fem|Number=Sing	38	nmod	_	_	*	18;19;20	*
+41-42	des	_	_	_	_	_	_	_	_	*	*	*
+41	de	de	ADP	_	_	43	case	_	_	*	19;21	9: 21
+42	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	43	det	_	_	*	19;21	9: 21
+43	Rapides	rapide	NOUN	_	Gender=Masc|Number=Plur	38	nmod	_	_	*	19;21	9: 21
+44	de	de	ADP	_	_	46	case	_	_	*	19;21	9: 21
+45	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_	*	19;21;22	9: 21
+46	Meuse	Meuse	PROPN	_	Gender=Fem|Number=Sing	43	nmod	_	SpaceAfter=No	*	19;21;22	9: 21
+47	.	.	PUNCT	_	_	21	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00192
+# text = La gare routière attend toujours ses illuminations, pas des guirlandes, mais des lampadaires pour que scolaires, usagés et conducteurs se sentent en sécurité.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	23	*
+2	gare	gare	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	*	23	*
+3	routière	routier	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	23	*
+4	attend	attendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	toujours	toujours	ADV	_	_	4	advmod	_	_	*	*	*
+6	ses	son	DET	_	Number=Plur|Poss=Yes	7	det	_	_	*	24	18: 24
+7	illuminations	illumination	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	SpaceAfter=No	*	24	18: 24
+8	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+9	pas	pas	ADV	_	_	11	advmod	_	_	*	*	*
+10	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	11	det	_	_	*	25	*
+11	guirlandes	guirlande	NOUN	_	Gender=Fem|Number=Plur	7	conj	_	SpaceAfter=No	*	25	*
+12	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+13	mais	mais	CCONJ	_	_	15	cc	_	_	*	*	*
+14	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	15	det	_	_	*	26	9: 26
+15	lampadaires	lampadaire	NOUN	_	Gender=Masc|Number=Plur	11	conj	_	_	*	26	9: 26
+16	pour	pour	ADP	_	_	24	mark	_	_	*	*	*
+17	que	que	SCONJ	_	_	24	mark	_	_	*	*	*
+18	scolaires	scolaire	NOUN	_	Number=Plur	24	nsubj	_	SpaceAfter=No	*	*	*
+19	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+20	usagés	usagé	NOUN	_	Number=Plur	18	conj	_	_	*	*	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*	*	*
+22	conducteurs	conducteur	NOUN	_	Gender=Masc|Number=Plur	18	conj	_	_	*	27	*
+23	se	se	PRON	_	Person=3|Reflex=Yes	24	obj	_	_	*	*	*
+24	sentent	sentir	VERB	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_	*	*	*
+25	en	en	ADP	_	_	26	case	_	_	*	*	*
+26	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	24	xcomp	_	SpaceAfter=No	*	28	*
+27	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00193
+# text = Ces délégués remercient le maire pour avoir pris ses responsabilités en aménageant le parking de la Tour du Champ.
+1	Ces	ce	DET	_	Number=Plur|PronType=Dem	2	det	_	_	*	29	8: 29
+2	délégués	délégué	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*	29	8: 29
+3	remercient	remercier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	30	0: 30
+5	maire	maire	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	30	0: 30
+6	pour	pour	ADP	_	_	8	mark	_	_	*	*	*
+7	avoir	avoir	AUX	_	VerbForm=Inf	8	aux:tense	_	_	*	*	*
+8	pris	prendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	3	xcomp	_	_	1:VID	*	*
+9	ses	son	DET	_	Number=Plur|Poss=Yes	10	det	_	_	1	31	18: 31
+10	responsabilités	responsabilité	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	1	31	18: 31
+11	en	en	ADP	_	_	12	mark	_	_	*	*	*
+12	aménageant	aménager	VERB	_	Tense=Pres|VerbForm=Part	8	advcl	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	32	0: 32
+14	parking	parking	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	32	0: 32
+15	de	de	ADP	_	_	17	case	_	_	*	32	0: 32
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	32;33	0: 32
+17	Tour	tour	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	32;33	0: 32
+18-19	du	_	_	_	_	_	_	_	_	*	*	*
+18	de	de	ADP	_	_	20	case	_	_	*	32;33;34;35	0: 32
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_	*	32;33;34;35	0: 32
+20	Champ	champ	NOUN	_	_	17	nmod	_	SpaceAfter=No	*	32;33;34;35	0: 32
+21	.	.	PUNCT	_	_	3	punct	_	_	*	35	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00194
+# text = Hélas ce n'est pas satisfaisant.
+1	Hélas	hélas	INTJ	_	_	6	discourse	_	_	*	*	*
+2	ce	ce	PRON	_	Number=Sing|Person=3	6	nsubj	_	_	*	*	*
+3	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*	*	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
+6	satisfaisant	satisfaisant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+7	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00195
+# text = à ce jour, ils attendent que leur directeur en fasse tout autant.
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*	36	10: 36
+3	jour	jour	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No	*	36	10: 36
+4	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_	*	37	8: 37
+6	attendent	attendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	que	que	SCONJ	_	_	11	mark	_	_	*	*	*
+8	leur	son	DET	_	Number=Sing|Poss=Yes	9	det	_	_	*	38	12: 38
+9	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	11	nsubj	_	_	*	38	12: 38
+10	en	en	PRON	_	Person=3	13	dep	_	_	1:VID	39	10: 39
+11	fasse	faire	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_	1	*	*
+12	tout	tout	ADV	_	_	13	advmod	_	_	*	*	*
+13	autant	autant	ADV	_	_	11	obj	_	SpaceAfter=No	1	*	*
+14	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00196
+# text = M. le maire et M. le directeur des Rapides, il vous est demandé de régler le problème au plus vite.
+1	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	15	vocative	_	_	*	40	0: 40
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	40;41	0: 40;2: 41
+3	maire	maire	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	40;41	0: 40;2: 41
+4	et	et	CCONJ	_	_	5	cc	_	_	*	*	*
+5	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	42	2: 42
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	42;43	2: 42;2: 43
+7	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	42;43	2: 42;2: 43
+8-9	des	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	42;43;44	2: 42;2: 43;8: 44
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_	*	42;43;44	2: 42;2: 43;8: 44
+10	Rapides	rapide	NOUN	_	_	7	nmod	_	SpaceAfter=No	*	42;43;44	2: 42;2: 43;8: 44
+11	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	15	nsubj:pass	_	_	*	*	*
+13	vous	le	PRON	_	Number=Plur|Person=2	15	iobj	_	_	*	45	12: 45
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:pass	_	_	*	*	*
+15	demandé	demander	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+16	de	de	ADP	_	_	17	mark	_	_	*	*	*
+17	régler	régler	VERB	_	VerbForm=Inf	15	xcomp	_	_	*	*	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	46	2: 46
+19	problème	problème	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	_	*	46	2: 46
+20-21	au	_	_	_	_	_	_	_	_	*	*	*
+20	à	à	ADP	_	_	17	advmod	_	EXTPOS=ADV|MWE=au_plus_vite	*	*	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	fixed	_	_	*	*	*
+22	plus	plus	ADV	_	_	20	fixed	_	_	*	*	*
+23	vite	vite	ADV	_	_	20	fixed	_	SpaceAfter=No	*	*	*
+24	.	.	PUNCT	_	_	15	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00197
+# text = à titre de rappel : nos chers bambins sont toujours dans le noir, sans salle d'attente chauffée, sans toilettes et sans lumière.
+1	à	à	ADP	_	_	2	case	_	_	*	*	*
+2	titre	titre	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	_	*	47	*
+3	de	de	ADP	_	_	4	case	_	_	*	47	*
+4	rappel	rappel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	47;48	*
+5	:	:	PUNCT	_	_	9	punct	_	_	*	*	*
+6	nos	son	DET	_	Number=Plur|Poss=Yes	8	det	_	_	*	49	*
+7	chers	cher	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	_	*	49	*
+8	bambins	bambin	NOUN	_	Gender=Masc|Number=Plur	9	nsubj	_	_	*	49	*
+9	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+10	toujours	toujours	ADV	_	_	9	advmod	_	_	*	*	*
+11	dans	dans	ADP	_	_	13	case	_	_	*	*	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	50;51	2: 50;2: 51
+13	noir	noir	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	SpaceAfter=No	*	50;51	2: 50;2: 51
+14	,	,	PUNCT	_	_	16	punct	_	_	*	51	2: 51
+15	sans	sans	ADP	_	_	16	case	_	_	*	*	*
+16	salle	salle	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	_	*	*	*
+17	d'	de	ADP	_	_	18	case	_	SpaceAfter=No	*	*	*
+18	attente	attente	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	52;53	*
+19	chauffée	chauffer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	16	acl	_	SpaceAfter=No	*	52;53	*
+20	,	,	PUNCT	_	_	22	punct	_	_	*	53	*
+21	sans	sans	ADP	_	_	22	case	_	_	*	*	*
+22	toilettes	toilette	NOUN	_	Gender=Fem|Number=Plur	13	conj	_	_	*	54	*
+23	et	et	CCONJ	_	_	25	cc	_	_	*	*	*
+24	sans	sans	ADP	_	_	25	case	_	_	*	*	*
+25	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	13	conj	_	SpaceAfter=No	*	55	*
+26	.	.	PUNCT	_	_	9	punct	_	_	*	55	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00198
+# text = Les parents ne semblent pas connaître les dangers que côtoient leurs enfants en attendant leur bus.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	56	*
+2	parents	parent	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*	56	*
+3	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+4	semblent	sembler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+6	connaître	connaître	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	57	*
+8	dangers	danger	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	_	*	57	*
+9	que	que	PRON	_	PronType=Rel	10	obj	_	_	*	58	2: 58
+10	côtoient	côtoyer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+11	leurs	son	DET	_	Number=Plur|Poss=Yes	12	det	_	_	*	59	*
+12	enfants	enfant	NOUN	_	Number=Plur	10	nsubj	_	_	*	59	*
+13	en	en	ADP	_	_	14	mark	_	_	*	*	*
+14	attendant	attendre	VERB	_	Tense=Pres|VerbForm=Part	10	advcl	_	_	*	*	*
+15	leur	son	DET	_	Number=Sing|Poss=Yes	16	det	_	_	*	60	*
+16	bus	bus	NOUN	_	Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No	*	60	*
+17	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00199
+# text = Affaire à suivre !
+1	Affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	61	*
+2	à	à	ADP	_	_	3	mark	_	_	*	*	*
+3	suivre	suivre	VERB	_	VerbForm=Inf	1	acl	_	_	*	*	*
+4	!	!	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00200
+# text = Redoux.
+1	Redoux	redoux	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00201
+# text = Depuis quarante-huit heures, le redoux a fait son apparition.
+1	Depuis	depuis	ADP	_	_	3	case	_	_	*	*	*
+2	quarante-huit	quarante-huit	NUM	_	NumType=Card	3	nummod	_	_	*	62	*
+3	heures	heure	NOUN	_	Gender=Fem|Number=Plur	8	obl:mod	_	SpaceAfter=No	*	62	*
+4	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	63	*
+6	redoux	redoux	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	63	*
+7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+8	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:LVC.full	*	*
+9	son	son	DET	_	Number=Sing|Poss=Yes	10	det	_	_	*	64	*
+10	apparition	apparition	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	SpaceAfter=No	1	64	*
+11	.	.	PUNCT	_	_	8	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00202
+# text = Sur l'agglomération et les collines environnantes, la neige a complétement disparu avec pour conséquence immédiate une remontée de la Meuse et des canaux.
+1	Sur	sur	ADP	_	_	3	case	_	_	*	*	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	65;66	*
+3	agglomération	agglomération	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*	65;66	*
+4	et	et	CCONJ	_	_	6	cc	_	_	*	66	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	66;67	*
+6	collines	colline	NOUN	_	Gender=Fem|Number=Plur	3	conj	_	_	*	66;67	*
+7	environnantes	environnant	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	SpaceAfter=No	*	66;67	*
+8	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	68	5: 68
+10	neige	neige	NOUN	_	Gender=Fem|Number=Sing	13	nsubj	_	_	*	68	5: 68
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+12	complétement	complétement	ADV	_	_	13	advmod	_	_	*	*	*
+13	disparu	disparaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+14	avec	avec	ADP	_	_	19	case	_	_	*	*	*
+15	pour	pour	ADP	_	_	16	case	_	_	*	69	*
+16	conséquence	conséquence	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	69;70	3: 70
+17	immédiate	immédiat	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_	*	69;70	3: 70
+18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	71	5: 71
+19	remontée	remontée	NOUN	_	Gender=Fem|Number=Sing	13	obl:mod	_	_	*	71	5: 71
+20	de	de	ADP	_	_	22	case	_	_	*	71	5: 71
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	71;72;73	5: 71;3: 73
+22	Meuse	Meuse	PROPN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	71;72;73	5: 71;3: 73
+23	et	et	CCONJ	_	_	26	cc	_	_	*	71;73	5: 71;3: 73
+24-25	des	_	_	_	_	_	_	_	_	*	*	*
+24	de	de	ADP	_	_	26	case	_	_	*	71;73;74	5: 71;3: 73
+25	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	26	det	_	_	*	71;73;74	5: 71;3: 73
+26	canaux	canal	NOUN	_	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No	*	71;73;74	5: 71;3: 73
+27	.	.	PUNCT	_	_	13	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00203
+# text = Mais dans le secteur du Pré L'Evêque et les prés avoisinants, la glace est encore bien présente et risque d'être encore là pendant plusieurs jours.
+1	Mais	mais	CCONJ	_	_	20	cc	_	_	*	*	*
+2	dans	dans	ADP	_	_	4	case	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	75;76	*
+4	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	20	obl:mod	_	_	*	75;76	*
+5-6	du	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	75;76;77;78	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	75;76;77;78	*
+7	Pré	pré	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	75;76;77;78	*
+8	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	75;76;77;78;79	1: 79
+9	Evêque	Evêque	NOUN	_	Number=Sing	7	nmod	_	_	*	75;76;77;78;79	1: 79
+10	et	et	CCONJ	_	_	12	cc	_	_	*	76;78	*
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	_	*	76;78;80	13: 80
+12	prés	pré	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_	*	76;78;80	13: 80
+13	avoisinants	avoisinant	ADJ	_	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No	*	76;78;80	13: 80
+14	,	,	PUNCT	_	_	20	punct	_	_	*	*	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	81	3: 81
+16	glace	glace	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	_	*	81	3: 81
+17	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_	*	*	*
+18	encore	encore	ADV	_	_	20	advmod	_	_	*	*	*
+19	bien	bien	ADV	_	_	20	advmod	_	_	*	*	*
+20	présente	présent	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
+21	et	et	CCONJ	_	_	22	cc	_	_	*	*	*
+22	risque	risquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_	*	*	*
+23	d'	de	ADP	_	_	24	mark	_	SpaceAfter=No	*	*	*
+24	être	être	VERB	_	VerbForm=Inf	22	xcomp	_	_	*	*	*
+25	encore	encore	ADV	_	_	24	advmod	_	_	*	*	*
+26	là	là	ADV	_	_	24	obl:arg	_	_	*	*	*
+27	pendant	pendant	ADP	_	_	29	case	_	_	*	*	*
+28	plusieurs	plusieurs	DET	_	Number=Plur	29	det	_	_	*	82	*
+29	jours	jour	NOUN	_	Gender=Masc|Number=Plur	24	obl:mod	_	SpaceAfter=No	*	82	*
+30	.	.	PUNCT	_	_	20	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00204
+# text = Avec les dangers qu'elle peut receler, et dont nous n'avons pas conscience.
+1	Avec	avec	ADP	_	_	3	case	_	_	*	*	*
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*	83	13: 83
+3	dangers	danger	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	83	13: 83
+4	qu'	que	PRON	_	PronType=Rel	7	obj	_	SpaceAfter=No	*	84	1: 84
+5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	6	nsubj	_	_	*	85	3: 85
+6	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+7	receler	receler	VERB	_	VerbForm=Inf	6	xcomp	_	SpaceAfter=No	*	*	*
+8	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+9	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+10	dont	dont	PRON	_	PronType=Rel	15	nmod	_	_	*	86	13: 86
+11	nous	il	PRON	_	Number=Plur|Person=1	13	nsubj	_	_	*	87	3: 87
+12	n'	ne	ADV	_	Polarity=Neg	13	advmod	_	SpaceAfter=No	*	*	*
+13	avons	avoir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	conj	_	_	1:LVC.full	*	*
+14	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*	*	*
+15	conscience	conscience	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	SpaceAfter=No	1	*	*
+16	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00205
+# text = Dimanche en milieu d'après-midi, quelques enfants s'adonnaient à des glissades alors que l'eau, cachée, recouvrait encore tout le secteur.
+1	Dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	88	*
+2	en	en	ADP	_	_	3	case	_	_	*	*	*
+3	milieu	milieu	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	89;90	*
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*	89;90	*
+5	après-midi	après-midi	NOUN	_	Number=Sing	3	nmod	_	SpaceAfter=No	*	89;90;91	3: 91
+6	,	,	PUNCT	_	_	10	punct	_	_	*	90	*
+7	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	8	det	_	_	*	90;92	3: 92
+8	enfants	enfant	NOUN	_	Number=Plur	10	nsubj	_	_	*	90;92	3: 92
+9	s'	se	PRON	_	Person=3|Reflex=Yes	10	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+10	adonnaient	adonner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	1	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	13	det	_	_	*	93	*
+13	glissades	glissade	NOUN	_	Gender=Fem|Number=Plur	10	obl:arg	_	_	*	93	*
+14	alors	alors	ADV	_	_	21	mark	_	EXTPOS=SCONJ|MWE=alors_que	*	*	*
+15	que	que	SCONJ	_	_	14	fixed	_	_	*	*	*
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	94	16: 94
+17	eau	eau	NOUN	_	Gender=Fem|Number=Sing	21	nsubj	_	SpaceAfter=No	*	94	16: 94
+18	,	,	PUNCT	_	_	17	punct	_	_	*	94	16: 94
+19	cachée	cacher	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	SpaceAfter=No	*	*	*
+20	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+21	recouvrait	recouvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_	*	*	*
+22	encore	encore	ADV	_	_	21	advmod	_	_	*	*	*
+23	tout	tout	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*	95	14: 95
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	95	14: 95
+25	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	21	obj	_	SpaceAfter=No	*	95	14: 95
+26	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00206
+# text = Apollonies.
+1	Apollonies	Apollonies	PROPN	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00207
+# text = C'est l'effervescence parmi les bénévoles préparant en coulisses le festival Apollonies qui se déroulera du 23 au 26 avril prochain.
+1	C'	ce	PRON	_	Number=Sing|Person=3	4	nsubj	_	SpaceAfter=No	*	*	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	96	16: 96
+4	effervescence	effervescence	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	96	16: 96
+5	parmi	parmi	ADP	_	_	7	case	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	97	17: 97
+7	bénévoles	bénévole	NOUN	_	Number=Plur	4	obl:mod	_	_	*	97	17: 97
+8	préparant	préparer	VERB	_	Tense=Pres|VerbForm=Part	7	acl	_	_	*	*	*
+9	en	en	ADP	_	_	10	case	_	_	*	*	*
+10	coulisses	coulisse	NOUN	_	Gender=Fem|Number=Plur	8	obl:mod	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	98	14: 98
+12	festival	festival	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	98	14: 98
+13	Apollonies	Apollonies	PROPN	_	_	12	nmod	_	_	*	98;99	14: 98
+14	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*	100	17: 100
+15	se	se	PRON	_	Person=3|Reflex=Yes	16	expl:comp	_	_	1:IRV	*	*
+16	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	acl:relcl	_	_	1	*	*
+17-18	du	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	101	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	101	*
+19	23	23	PRON	_	NumType=Card	16	obl:mod	_	_	*	101	*
+20-21	au	_	_	_	_	_	_	_	_	*	*	*
+20	à	à	ADP	_	_	22	case	_	_	*	101;102	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	101;102	*
+22	26	26	NUM	_	NumType=Card	19	nmod	_	_	*	101;102	*
+23	avril	avril	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	101;102	*
+24	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	22	amod	_	SpaceAfter=No	*	101;102	*
+25	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00208
+# text = Montée par le collège Saint-Jean, cette grande première va draîner dans la cité de la Paix près de 700 jeunes venus des quatre coins de France, mais aussi du Canada, de Belgique et de Suisse.
+1	Montée	monter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_	*	*	*
+2	par	par	ADP	_	_	4	case	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	103	14: 103
+4	collège	collège	NOUN	_	Gender=Masc|Number=Sing	1	obl:agent	_	_	*	103	14: 103
+5	Saint-Jean	Saint-Jean	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	103;104	14: 103;11: 104
+6	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+7	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	9	det	_	_	*	105	6: 105
+8	grande	grand	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	_	*	105	6: 105
+9	première	première	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	105	6: 105
+10	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+11	draîner	draîner	VERB	_	VerbForm=Inf	10	xcomp	_	_	*	*	*
+12	dans	dans	ADP	_	_	14	case	_	_	*	*	*
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	106	6: 106
+14	cité	cité	NOUN	_	Gender=Fem|Number=Sing	11	obl:mod	_	_	*	106	6: 106
+15	de	de	ADP	_	_	17	case	_	_	*	106	6: 106
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	106;107	6: 106;6: 107
+17	Paix	paix	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	106;107	6: 106;6: 107
+18	près	près	ADV	_	_	21	advmod	_	_	*	108	*
+19	de	de	ADP	_	_	21	dep	_	_	*	108	*
+20	700	700	NUM	_	NumType=Card	21	nummod	_	_	*	108;109	*
+21	jeunes	jeune	NOUN	_	Number=Plur	11	obj	_	_	*	108;109	*
+22	venus	venir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	21	acl	_	_	*	*	*
+23-24	des	_	_	_	_	_	_	_	_	*	*	*
+23	de	de	ADP	_	_	26	case	_	_	*	*	*
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	26	det	_	_	*	*	*
+25	quatre	quatre	NUM	_	NumType=Card	26	nummod	_	_	*	*	*
+26	coins	coin	NOUN	_	Gender=Masc|Number=Plur	22	obl:arg	_	_	*	*	*
+27	de	de	ADP	_	_	28	case	_	_	*	*	*
+28	France	France	PROPN	_	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No	*	110	11: 110
+29	,	,	PUNCT	_	_	26	punct	_	_	*	*	*
+30	mais	mais	CCONJ	_	_	34	cc	_	_	*	*	*
+31	aussi	aussi	ADV	_	_	34	advmod	_	_	*	*	*
+32-33	du	_	_	_	_	_	_	_	_	*	*	*
+32	de	de	ADP	_	_	34	case	_	_	*	*	*
+33	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	*	*
+34	Canada	Canada	PROPN	_	Gender=Masc|Number=Sing	26	conj	_	SpaceAfter=No	*	*	*
+35	,	,	PUNCT	_	_	37	punct	_	_	*	*	*
+36	de	de	ADP	_	_	37	case	_	_	*	*	*
+37	Belgique	Belgique	PROPN	_	Gender=Fem|Number=Sing	34	conj	_	_	*	111	11: 111
+38	et	et	CCONJ	_	_	40	cc	_	_	*	*	*
+39	de	de	ADP	_	_	40	case	_	_	*	*	*
+40	Suisse	Suisse	PROPN	_	Gender=Fem|Number=Sing	34	conj	_	SpaceAfter=No	*	112;113	11: 112;6: 113
+41	.	.	PUNCT	_	_	10	punct	_	_	*	113	6: 113
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00209
+# text = Une entreprise dont on reparlera et qui nécessite un budget important.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	114	4: 114
+2	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	114	4: 114
+3	dont	dont	PRON	_	PronType=Rel	5	iobj	_	_	*	115	6: 115
+4	on	il	PRON	_	Number=Sing|Person=3	5	nsubj	_	_	*	116	4: 116
+5	reparlera	reparler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	117	6: 117
+8	nécessite	nécessiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*	*	*
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	*	*
+10	budget	budget	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	_	*	*	*
+11	important	important	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No	*	*	*
+12	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00210
+# text = Mais quel apport pour la cité !
+1	Mais	mais	CCONJ	_	_	3	cc	_	_	*	*	*
+2	quel	quel	DET	_	Gender=Masc|Number=Sing	3	det	_	_	*	118	*
+3	apport	apport	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	118	*
+4	pour	pour	ADP	_	_	6	case	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	119	6: 119
+6	cité	cité	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	119	6: 119
+7	!	!	PUNCT	_	_	3	punct	_	_	*	*	*

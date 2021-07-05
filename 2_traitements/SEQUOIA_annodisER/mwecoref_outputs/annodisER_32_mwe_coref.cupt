@@ -1,0 +1,375 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00419
+# text = Le voyage d'Arturo le corbeau
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	1	*
+2	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	1	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	1	*
+4	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	1;2;3	1: 3
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	1;3;4	1: 3
+6	corbeau	corbeau	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	1;3;4	1: 3
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00420
+# text = Le conteur a fait jouer les enfants.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	5	1: 5
+2	conteur	conteur	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:caus	_	_	*	5	1: 5
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:caus	_	_	*	*	*
+5	jouer	jouer	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	*	*
+7	enfants	enfant	NOUN	_	Number=Plur	5	obj:agent	_	SpaceAfter=No	*	*	*
+8	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00421
+# text = Dernièrement, les élèves de l'école maternelle ont assisté à un spectacle intitulé "Arturo aux quatre coins du monde".
+1	Dernièrement	dernièrement	ADV	_	_	10	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	6	*
+4	élèves	élève	NOUN	_	Number=Plur	10	nsubj	_	_	*	6	*
+5	de	de	ADP	_	_	7	case	_	_	*	6	*
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	6;7	*
+7	école	école	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	6;7	*
+8	maternelle	maternel	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*	6;7	*
+9	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	assisté	assister	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	8	*
+13	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*	8	*
+14	intitulé	intituler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	acl	_	_	*	8	*
+15	"	"	PUNCT	_	_	14	punct	_	SpaceAfter=No	*	8;9	1: 9
+16	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	14	xcomp	_	_	*	8;9;10	1: 9
+17-18	aux	_	_	_	_	_	_	_	_	*	*	*
+17	à	à	ADP	_	_	20	case	_	_	*	11	2: 11
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_	*	11	2: 11
+19	quatre	quatre	NUM	_	NumType=Card	20	nummod	_	_	*	11	2: 11
+20	coins	coin	NOUN	_	Gender=Masc|Number=Plur	16	nmod	_	_	*	11	2: 11
+21-22	du	_	_	_	_	_	_	_	_	*	*	*
+21	de	de	ADP	_	_	23	case	_	_	*	11;12	2: 11;7: 12
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	11;12	2: 11;7: 12
+23	monde	monde	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*	11;12	2: 11;7: 12
+24	"	"	PUNCT	_	_	14	punct	_	SpaceAfter=No	*	*	*
+25	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00422
+# text = Une agréable surprise qui attendait les enfants dès le matin.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	13	*
+2	agréable	agréable	ADJ	_	Number=Sing	3	amod	_	_	*	13	*
+3	surprise	surprise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	13	*
+4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*	14	2: 14
+5	attendait	attendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	acl:relcl	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	15	*
+7	enfants	enfant	NOUN	_	Number=Plur	5	obj	_	_	*	15	*
+8	dès	dès	ADP	_	_	10	case	_	_	*	*	*
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	*	*
+10	matin	matin	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	SpaceAfter=No	*	*	*
+11	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00423
+# text = Afin de raconter l'histoire qu'ils ont découverte, les petits et moyens de la classe de Chantal Hetzel, directrice, ont rédigé ce texte eux-mêmes.
+1	Afin	afin	ADV	_	_	25	advmod	_	_	*	*	*
+2	de	de	ADP	_	_	3	case	_	_	*	*	*
+3	raconter	raconter	VERB	_	VerbForm=Inf	1	obl:arg	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	16	*
+5	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	_	*	16	*
+6	qu'	que	PRON	_	PronType=Rel	9	obj	_	SpaceAfter=No	*	17	7: 17
+7	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	9	nsubj	_	_	*	18	2: 18
+8	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_	*	*	*
+9	découverte	découvrir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	SpaceAfter=No	*	*	*
+10	,	,	PUNCT	_	_	25	punct	_	_	*	*	*
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	_	*	19	2: 19
+12	petits	petit	ADJ	_	Gender=Masc|Number=Plur	25	nsubj	_	_	*	19	2: 19
+13	et	et	CCONJ	_	_	14	cc	_	_	*	19	2: 19
+14	moyens	moyen	ADJ	_	Gender=Masc|Number=Plur	12	conj	_	_	*	19	2: 19
+15	de	de	ADP	_	_	17	case	_	_	*	19	2: 19
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	19;20	2: 19
+17	classe	classe	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	19;20	2: 19
+18	de	de	ADP	_	_	19	case	_	_	*	19;20	2: 19
+19	Chantal	Chantal	PROPN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	19;20;21	2: 19
+20	Hetzel	Hetzel	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*	19;20;21	2: 19
+21	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+22	directrice	directrice	NOUN	_	Gender=Fem|Number=Sing	19	appos	_	SpaceAfter=No	*	22	*
+23	,	,	PUNCT	_	_	25	punct	_	_	*	*	*
+24	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux:tense	_	_	*	*	*
+25	rédigé	rédiger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+26	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	27	det	_	_	*	23	*
+27	texte	texte	NOUN	_	Gender=Masc|Number=Sing	25	obj	_	_	*	23	*
+28	eux-mêmes	lui-même	PRON	_	_	25	iobj	_	SpaceAfter=No	*	24	2: 24
+29	.	.	PUNCT	_	_	25	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00424
+# text = "Arturo est un petit corbeau qui s'ennuie.
+1	"	"	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	25	0: 25
+2	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	25;26	0: 25
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	27	0: 27
+5	petit	petit	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	27	0: 27
+6	corbeau	corbeau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	27	0: 27
+7	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*	28	*
+8	s'	se	PRON	_	Person=3|Reflex=Yes	9	expl:comp	_	SpaceAfter=No	*	*	*
+9	ennuie	ennuyer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00425
+# text = Il décide d'aller visiter le monde.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	29	0: 29
+2	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	d'	de	ADP	_	_	4	mark	_	SpaceAfter=No	*	*	*
+4	aller	aller	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	visiter	visiter	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	30	0: 30
+7	monde	monde	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No	*	30	0: 30
+8	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00426
+# text = D'abord, il arrive dans un pays où tout est blanc.
+1	D'	de	ADP	_	_	5	advmod	_	EXTPOS=ADV|MWE=d'abord|SpaceAfter=No	*	*	*
+2	abord	abord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*	31	0: 31
+5	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	dans	dans	ADP	_	_	8	case	_	_	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	32	0: 32
+8	pays	pays	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	32	0: 32
+9	où	où	PRON	_	PronType=Rel	12	iobj	_	_	*	33	0: 33
+10	tout	tout	PRON	_	Gender=Masc|Number=Sing	12	nsubj	_	_	*	34	0: 34
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_	*	*	*
+12	blanc	blanc	ADJ	_	Gender=Masc|Number=Sing	8	acl:relcl	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00427
+# text = Il y rencontre deux esquimaux qui ont pêché des poissons mais un ours polaire leur fait peur.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*	*	*
+2	y	y	PRON	_	Person=3	3	iobj	_	_	*	*	*
+3	rencontre	rencontrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	deux	deux	NUM	_	NumType=Card	5	nummod	_	_	*	35	6: 35
+5	esquimaux	esquimau	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	*	35	6: 35
+6	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	36	0: 36
+7	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
+8	pêché	pêcher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl:relcl	_	_	*	*	*
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	_	*	37	*
+10	poissons	poisson	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	_	*	37	*
+11	mais	mais	CCONJ	_	_	16	cc	_	_	*	*	*
+12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	38	0: 38
+13	ours	ours	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*	38	0: 38
+14	polaire	polaire	ADJ	_	Number=Sing	13	amod	_	_	*	38	0: 38
+15	leur	lui	PRON	_	Number=Plur|Person=3	16	iobj	_	_	*	39	0: 39
+16	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	1:VID	*	*
+17	peur	peur	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	SpaceAfter=No	1	*	*
+18	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00428
+# text = Les esquimaux s'enfuient mais Arturo a une idée : il appelle les pingouins qui chassent l'ours en lui lançant des boules de neige.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	40	6: 40
+2	esquimaux	esquimau	NOUN	_	Gender=Masc|Number=Plur	4	nsubj	_	_	*	40	6: 40
+3	s'	se	PRON	_	Person=3|Reflex=Yes	4	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+4	enfuient	enfuir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
+5	mais	mais	CCONJ	_	_	7	cc	_	_	*	*	*
+6	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	41	*
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	2:LVC.full	*	*
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	42	*
+9	idée	idée	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	2	42	*
+10	:	:	PUNCT	_	_	4	punct	_	_	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*	43	0: 43
+12	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_	*	*	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*	44	*
+14	pingouins	pingouin	NOUN	_	Gender=Masc|Number=Plur	12	obj	_	_	*	44	*
+15	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*	45	0: 45
+16	chassent	chasser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*	*	*
+17	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*	46	*
+18	ours	ours	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*	46	*
+19	en	en	ADP	_	_	21	mark	_	_	*	*	*
+20	lui	lui	PRON	_	Number=Sing|Person=3	21	iobj	_	_	*	47	0: 47
+21	lançant	lancer	VERB	_	Tense=Pres|VerbForm=Part	16	advcl	_	_	*	*	*
+22	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	23	det	_	_	*	*	*
+23	boules	boule	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*	*	*
+24	de	de	ADP	_	_	25	case	_	_	*	*	*
+25	neige	neige	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No	*	48	*
+26	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00429
+# text = Arturo continue son voyage et se pose en Amérique...
+1	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	49	*
+2	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	son	son	DET	_	Number=Sing|Poss=Yes	4	det	_	_	*	50	0: 50
+4	voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	50	0: 50
+5	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+6	se	se	PRON	_	Person=3|Reflex=Yes	7	expl:comp	_	_	1:IRV	*	*
+7	pose	poser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	1	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	Amérique	Amérique	PROPN	_	Gender=Fem|Number=Sing	7	obl:arg	_	SpaceAfter=No	*	51	4: 51
+10	...	...	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00430
+# text = puis il bat des ailes et arrive en Afrique où il découvre un lion qui se frotte le ventre.
+1	puis	puis	CCONJ	_	_	3	cc	_	_	*	*	*
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*	52	0: 52
+3	bat	battre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	_	*	53	*
+5	ailes	aile	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*	53	*
+6	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+7	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	Afrique	Afrique	PROPN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*	54	4: 54
+10	où	où	PRON	_	PronType=Rel	12	iobj	_	_	*	55	0: 55
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_	*	56	0: 56
+12	découvre	découvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_	*	*	*
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	57	0: 57
+14	lion	lion	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	57	0: 57
+15	qui	qui	PRON	_	PronType=Rel	17	nsubj	_	_	*	58	*
+16	se	se	PRON	_	Person=3|Reflex=Yes	17	iobj	_	_	*	*	*
+17	frotte	frotter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_	*	*	*
+18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	59	0: 59
+19	ventre	ventre	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	SpaceAfter=No	*	59	0: 59
+20	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00431
+# text = Le grand chef essaie de le chasser en tapant sur un bouclier, mais le lion continue à se frotter le ventre, il n'avait pas faim, il était seulement malade.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	60	0: 60
+2	grand	grand	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	_	*	60	0: 60
+3	chef	chef	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	60	0: 60
+4	essaie	essayer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	de	de	ADP	_	_	7	mark	_	_	*	*	*
+6	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3	7	obj	_	_	*	61	0: 61
+7	chasser	chasser	VERB	_	VerbForm=Inf	4	xcomp	_	_	*	*	*
+8	en	en	ADP	_	_	9	mark	_	_	*	*	*
+9	tapant	taper	VERB	_	Tense=Pres|VerbForm=Part	7	advcl	_	_	*	*	*
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	62	0: 62
+12	bouclier	bouclier	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	SpaceAfter=No	*	62	0: 62
+13	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+14	mais	mais	CCONJ	_	_	17	cc	_	_	*	*	*
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	63	0: 63
+16	lion	lion	NOUN	_	Gender=Masc|Number=Sing	17	nsubj	_	_	*	63	0: 63
+17	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_	*	*	*
+18	à	à	ADP	_	_	20	mark	_	_	*	*	*
+19	se	se	PRON	_	Person=3|Reflex=Yes	20	iobj	_	_	*	*	*
+20	frotter	frotter	VERB	_	VerbForm=Inf	17	xcomp	_	_	*	*	*
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_	*	64	0: 64
+22	ventre	ventre	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	SpaceAfter=No	*	64	0: 64
+23	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+24	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	26	nsubj	_	_	*	65	0: 65
+25	n'	ne	ADV	_	Polarity=Neg	26	advmod	_	SpaceAfter=No	*	*	*
+26	avait	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	_	_	1:LVC.full	*	*
+27	pas	pas	ADV	_	Polarity=Neg	26	advmod	_	_	*	*	*
+28	faim	faim	NOUN	_	Gender=Fem|Number=Sing	26	obj	_	SpaceAfter=No	1	*	*
+29	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+30	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	33	nsubj	_	_	*	66	0: 66
+31	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	33	cop	_	_	*	*	*
+32	seulement	seulement	ADV	_	_	33	advmod	_	_	*	*	*
+33	malade	malade	ADJ	_	Number=Sing	4	advcl	_	SpaceAfter=No	*	*	*
+34	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00432
+# text = Arturo et le sorcier soignent le lion et dansent avec les habitants.
+1	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	67;68	0: 68
+2	et	et	CCONJ	_	_	4	cc	_	_	*	68	0: 68
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	68;69	0: 68;0: 69
+4	sorcier	sorcier	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_	*	68;69	0: 68;0: 69
+5	soignent	soigner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	70	0: 70
+7	lion	lion	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	70	0: 70
+8	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+9	dansent	danser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*	*	*
+10	avec	avec	ADP	_	_	12	case	_	_	*	*	*
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	_	*	71;72	*
+12	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	9	obl:mod	_	SpaceAfter=No	*	71;72	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*	72	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00433
+# text = Arturo a de la chance, il arrive en Chine au moment de la fête de la nouvelle année.
+1	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	73	*
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+3	de	de	ADP	_	_	5	det	_	EXTPOS=DET|MWE=du	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	fixed	_	_	*	74	5: 74
+5	chance	chance	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No	1	74	5: 74
+6	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	_	*	75	0: 75
+8	arrive	arriver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_	*	*	*
+9	en	en	ADP	_	_	10	case	_	_	*	*	*
+10	Chine	Chine	PROPN	_	Gender=Fem|Number=Sing	8	obl:arg	_	_	*	76	*
+11-12	au	_	_	_	_	_	_	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	77;78	0: 77;0: 78
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	77;78	0: 77;0: 78
+13	moment	moment	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	_	*	77;78	0: 77;0: 78
+14	de	de	ADP	_	_	16	case	_	_	*	78	0: 78
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	78;79	0: 78;5: 79
+16	fête	fête	NOUN	_	Gender=Fem|Number=Sing	13	nmod	_	_	*	78;79	0: 78;5: 79
+17	de	de	ADP	_	_	20	case	_	_	*	78;79	0: 78;5: 79
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	78;79;80	0: 78;5: 79;5: 80
+19	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	20	amod	_	_	*	78;79;80	0: 78;5: 79;5: 80
+20	année	année	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*	78;79;80	0: 78;5: 79;5: 80
+21	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00434
+# text = Il y voit un énorme dragon mais c'est seulement une grosse marionnette.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	_	*	*	*
+2	y	y	PRON	_	Person=3	3	iobj	_	_	*	81	0: 81
+3	voit	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	82	0: 82
+5	énorme	énorme	ADJ	_	Number=Sing	6	amod	_	_	*	82	0: 82
+6	dragon	dragon	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	_	*	82	0: 82
+7	mais	mais	CCONJ	_	_	13	cc	_	_	*	*	*
+8	c'	ce	PRON	_	Number=Sing|Person=3	13	nsubj	_	SpaceAfter=No	*	83	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
+10	seulement	seulement	ADV	_	_	13	advmod	_	_	*	*	*
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	84	*
+12	grosse	gros	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*	84	*
+13	marionnette	marionnette	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	SpaceAfter=No	*	84	*
+14	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00435
+# text = Arturo décide alors de rentrer chez lui pour raconter à ses amis toutes ses aventures.
+1	Arturo	Arturo	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	85	*
+2	décide	décider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	alors	alors	ADV	_	_	2	advmod	_	_	*	*	*
+4	de	de	ADP	_	_	5	mark	_	_	*	*	*
+5	rentrer	rentrer	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+6	chez	chez	ADP	_	_	7	case	_	_	*	*	*
+7	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obl:arg	_	_	*	86	0: 86
+8	pour	pour	ADP	_	_	9	mark	_	_	*	*	*
+9	raconter	raconter	VERB	_	VerbForm=Inf	2	advcl	_	_	*	*	*
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	ses	son	DET	_	Number=Plur|Poss=Yes	12	det	_	_	*	87	3: 87
+12	amis	ami	NOUN	_	Gender=Masc|Number=Plur	9	obl:arg	_	_	*	87	3: 87
+13	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*	*	*
+14	ses	son	DET	_	Number=Plur|Poss=Yes	15	det	_	_	*	*	*
+15	aventures	aventure	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	SpaceAfter=No	*	*	*
+16	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00436
+# text = "
+1	"	"	PUNCT	_	_	0	root	_	SpaceAfter=No	*	88	0: 88
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00437
+# text = Le comédien a fait participer les enfants au spectacle.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	88;89	0: 88;0: 89
+2	comédien	comédien	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:caus	_	_	*	88;89	0: 88;0: 89
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+4	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:caus	_	_	*	*	*
+5	participer	participer	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	90	*
+7	enfants	enfant	NOUN	_	Number=Plur	5	obj:agent	_	_	*	90	*
+8-9	au	_	_	_	_	_	_	_	_	*	*	*
+8	à	à	ADP	_	_	10	case	_	_	*	91	0: 91
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	91	0: 91
+10	spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	SpaceAfter=No	*	91	0: 91
+11	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00438
+# text = Tous en avaient à raconter aux parents à l'heure du déjeuner.
+1	Tous	tout	PRON	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*	92	3: 92
+2	en	en	PRON	_	Person=3	3	obj	_	_	*	93	0: 93
+3	avaient	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+4	à	à	ADP	_	_	5	mark	_	_	*	*	*
+5	raconter	raconter	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6-7	aux	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	94	3: 94
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	94	3: 94
+8	parents	parent	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*	94	3: 94
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	*	*
+11	heure	heure	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	_	*	*	*
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	95	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	95	*
+14	déjeuner	déjeuner	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	95	*
+15	.	.	PUNCT	_	_	3	punct	_	_	*	*	*

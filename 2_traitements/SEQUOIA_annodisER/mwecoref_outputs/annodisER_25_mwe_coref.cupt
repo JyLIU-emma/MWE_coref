@@ -1,0 +1,299 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00309
+# text = Voyage au coeur d'un orage.
+1	Voyage	voyage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+2-3	au	_	_	_	_	_	_	_	_	*	*	*
+2	à	à	ADP	_	_	4	case	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	*	*
+4	coeur	coeur	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	*	*
+5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	1	*
+7	orage	orage	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	1	*
+8	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00310
+# text = L'oeil photographique de Fabrice Gillant tente de percer les mystères du ciel.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	2	*
+2	oeil	oeil	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	2	*
+3	photographique	photographique	ADJ	_	Number=Sing	2	amod	_	_	*	2	*
+4	de	de	ADP	_	_	5	case	_	_	*	2	*
+5	Fabrice	Fabrice	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	2;3	*
+6	Gillant	Gillant	PROPN	_	_	5	flat:name	_	_	*	2;3	*
+7	tente	tenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+8	de	de	ADP	_	_	9	mark	_	_	*	*	*
+9	percer	percer	VERB	_	VerbForm=Inf	7	xcomp	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	4	*
+11	mystères	mystère	NOUN	_	Gender=Masc|Number=Plur	9	obj	_	_	*	4	*
+12-13	du	_	_	_	_	_	_	_	_	*	*	*
+12	de	de	ADP	_	_	14	case	_	_	*	4;5	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	4;5	*
+14	ciel	ciel	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No	*	4;5	*
+15	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00311
+# text = à l'occasion de la fête des sciences, manifestation d'envergure nationale, la MJC Nomade propose, au centre commercial des Nations, une exposition photographique et commentée de Fabrice Gillant.
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	6	4: 6
+3	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*	6	4: 6
+4	de	de	ADP	_	_	6	case	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	7	13: 7
+6	fête	fête	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	7	13: 7
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	7;8	13: 7
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*	7;8	13: 7
+9	sciences	science	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	SpaceAfter=No	*	7;8	13: 7
+10	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+11	manifestation	manifestation	NOUN	_	Gender=Fem|Number=Sing	6	appos	_	_	*	9	*
+12	d'	de	ADP	_	_	13	case	_	SpaceAfter=No	*	9	*
+13	envergure	envergure	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	9;10	*
+14	nationale	national	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No	*	9;10	*
+15	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	11	13: 11
+17	MJC	MJC	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	_	*	11	13: 11
+18	Nomade	Nomade	PROPN	_	_	17	nmod	_	_	*	11;12	13: 11;4: 12
+19	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	*	*	*
+20	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+21-22	au	_	_	_	_	_	_	_	_	*	*	*
+21	à	à	ADP	_	_	23	case	_	_	*	13	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	13	*
+23	centre	centre	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	_	*	13	*
+24	commercial	commercial	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*	13	*
+25-26	des	_	_	_	_	_	_	_	_	*	*	*
+25	de	de	ADP	_	_	27	case	_	_	*	13;14	*
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*	13;14	*
+27	Nations	Nations	PROPN	_	_	23	nmod	_	SpaceAfter=No	*	13;14	*
+28	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*	*	*
+30	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	_	*	*	*
+31	photographique	photographique	ADJ	_	Number=Sing	30	amod	_	_	*	*	*
+32	et	et	CCONJ	_	_	33	cc	_	_	*	*	*
+33	commentée	commenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	31	conj	_	_	*	*	*
+34	de	de	ADP	_	_	35	case	_	_	*	*	*
+35	Fabrice	Fabrice	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*	15	*
+36	Gillant	Gillant	PROPN	_	_	35	flat:name	_	SpaceAfter=No	*	15	*
+37	.	.	PUNCT	_	_	19	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00312
+# text = Ce Meusien, passionné de météorologie depuis sa plus tendre enfance passe le plus clair de son temps à observer et à photographier les phénomènes climatiques.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*	16;17	8: 17
+2	Meusien	meusien	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	SpaceAfter=No	*	16;17	8: 17
+3	,	,	PUNCT	_	_	2	punct	_	_	*	17	8: 17
+4	passionné	passionné	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	_	*	17	8: 17
+5	de	de	ADP	_	_	6	case	_	_	*	17	8: 17
+6	météorologie	météorologie	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*	17;18	8: 17
+7	depuis	depuis	ADP	_	_	11	case	_	_	*	*	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	11	det	_	_	*	19	*
+9	plus	plus	ADV	_	_	10	advmod	_	_	*	19	*
+10	tendre	tendre	ADJ	_	Number=Sing	11	amod	_	_	*	19	*
+11	enfance	enfance	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	19	*
+12	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	20	8: 20
+14	plus	plus	ADV	_	_	15	advmod	_	_	*	20	8: 20
+15	clair	clair	ADJ	_	Gender=Masc|Number=Sing	12	obj	_	_	*	20	8: 20
+16	de	de	ADP	_	_	18	case	_	_	*	20	8: 20
+17	son	son	DET	_	Number=Sing|Poss=Yes	18	det	_	_	*	20;21	8: 20;6: 21
+18	temps	temps	NOUN	_	Gender=Masc|Number=Sing	15	dep	_	_	*	20;21	8: 20;6: 21
+19	à	à	ADP	_	_	20	mark	_	_	*	*	*
+20	observer	observer	VERB	_	VerbForm=Inf	12	xcomp	_	_	*	*	*
+21	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+22	à	à	ADP	_	_	23	mark	_	_	*	*	*
+23	photographier	photographier	VERB	_	VerbForm=Inf	20	conj	_	_	*	*	*
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	_	*	22	1: 22
+25	phénomènes	phénomène	NOUN	_	Gender=Masc|Number=Plur	20	obj	_	_	*	22	1: 22
+26	climatiques	climatique	ADJ	_	Number=Plur	25	amod	_	SpaceAfter=No	*	22	1: 22
+27	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00313
+# text = Plus particulièrement, les orages et les formations nuageuses qui les précèdent.
+1	Plus	plus	ADV	_	_	2	advmod	_	_	*	*	*
+2	particulièrement	particulièrement	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	23;24	1: 23;1: 24
+5	orages	orage	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	23;24	1: 23;1: 24
+6	et	et	CCONJ	_	_	8	cc	_	_	*	24	1: 24
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	24;25	1: 24
+8	formations	formation	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	_	*	24;25	1: 24
+9	nuageuses	nuageux	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	_	*	24;25	1: 24
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*	26	6: 26
+11	les	le	PRON	_	Number=Plur|Person=3	12	obj	_	_	*	27	6: 27
+12	précèdent	précéder	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	SpaceAfter=No	*	*	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00314
+# text = Le public pourra découvrir, à travers l'exposition de près de 30 clichés, le travail de ce correspondant de Météo France.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	28	8: 28
+2	public	public	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	28	8: 28
+3	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+4	découvrir	découvrir	VERB	_	VerbForm=Inf	3	xcomp	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+6	à	à	ADP	_	_	9	case	_	EXTPOS=ADP|MWE=à_travers	*	*	*
+7	travers	travers	NOUN	_	Gender=Masc	6	fixed	_	_	*	*	*
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No	*	29	*
+9	exposition	exposition	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	_	*	29	*
+10	de	de	ADP	_	_	14	case	_	_	*	29	*
+11	près	près	ADV	_	_	14	advmod	_	_	*	29;30	*
+12	de	de	ADP	_	_	14	dep	_	_	*	29;30	*
+13	30	30	NUM	_	NumType=Card	14	nummod	_	_	*	29;30;31	*
+14	clichés	cliché	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No	*	29;30;31	*
+15	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	32	*
+17	travail	travail	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	32	*
+18	de	de	ADP	_	_	20	case	_	_	*	32	*
+19	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	20	det	_	_	*	32;33	*
+20	correspondant	correspondant	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*	32;33	*
+21	de	de	ADP	_	_	22	case	_	_	*	32;33	*
+22	Météo	météo	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	_	*	32;33;34	*
+23	France	France	PROPN	_	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No	*	32;33;34	*
+24	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00315
+# text = De magnifiques photographies d'orages, prises pour la plupart depuis l'observatoire de Montsec, point de vue somptueux sur le Lac de Madine.
+1	De	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	3	det	_	_	*	35	8: 35
+2	magnifiques	magnifique	ADJ	_	Number=Plur	3	amod	_	_	*	35	8: 35
+3	photographies	photographie	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	1:LVC.full	35	8: 35
+4	d'	de	ADP	_	_	5	case	_	SpaceAfter=No	*	35;36;37	8: 35;12: 36
+5	orages	orage	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No	*	35;36;37;38;39	8: 35;12: 36;12: 39
+6	,	,	PUNCT	_	_	3	punct	_	_	*	35;37;39	8: 35;12: 39
+7	prises	prendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	1	*	*
+8	pour	pour	ADP	_	_	10	case	_	_	*	*	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	40	*
+10	plupart	plupart	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	_	*	40	*
+11	depuis	depuis	ADP	_	_	13	case	_	_	*	*	*
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	41	*
+13	observatoire	observatoire	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	41	*
+14	de	de	ADP	_	_	15	case	_	_	*	41	*
+15	Montsec	Montsec	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*	41;42	10: 42
+16	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+17	point	point	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	_	*	43	7: 43
+18	de	de	ADP	_	_	19	case	_	_	*	43	7: 43
+19	vue	vue	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	43	7: 43
+20	somptueux	somptueux	ADJ	_	Gender=Masc	17	amod	_	_	*	43	7: 43
+21	sur	sur	ADP	_	_	23	case	_	_	*	*	*
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	44	7: 44
+23	Lac	lac	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	_	*	44	7: 44
+24	de	de	ADP	_	_	25	case	_	_	*	44	7: 44
+25	Madine	Madine	PROPN	_	_	23	nmod	_	SpaceAfter=No	*	44;45	7: 44;10: 45
+26	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00316
+# text = Le visiteur pourra aussi découvrir un exposé sur l'histoire et le fonctionnement des planètes, sur l'astrologie en général.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	46	*
+2	visiteur	visiteur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	46	*
+3	pourra	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+4	aussi	aussi	ADV	_	_	3	advmod	_	_	*	*	*
+5	découvrir	découvrir	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	47	*
+7	exposé	exposé	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	*	47	*
+8	sur	sur	ADP	_	_	10	case	_	_	*	*	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*	48;49	9: 48
+10	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	48;49	9: 48
+11	et	et	CCONJ	_	_	13	cc	_	_	*	49	*
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	49;50	*
+13	fonctionnement	fonctionnement	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_	*	49;50	*
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	49;50;51	*
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*	49;50;51	*
+16	planètes	planète	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	SpaceAfter=No	*	49;50;51	*
+17	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+18	sur	sur	ADP	_	_	20	case	_	_	*	*	*
+19	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	20	det	_	SpaceAfter=No	*	52	9: 52
+20	astrologie	astrologie	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	_	*	52	9: 52
+21	en	en	ADP	_	_	20	advmod	_	EXTPOS=ADV|MWE=en_général	*	*	*
+22	général	général	ADJ	_	Gender=Masc|Number=Sing	21	fixed	_	SpaceAfter=No	*	*	*
+23	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00317
+# text = à voir jusqu'à vendredi.
+1	à	à	ADP	_	_	2	mark	_	_	*	*	*
+2	voir	voir	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+3	jusqu'	jusque	ADP	_	_	5	case	_	SpaceAfter=No	*	*	*
+4	à	à	ADP	_	_	5	case	_	_	*	*	*
+5	vendredi	vendredi	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	SpaceAfter=No	*	53	0: 53
+6	.	.	PUNCT	_	_	2	punct	_	_	*	53	0: 53
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00318
+# text = Cet après-midi, au niveau 1 du centre commercial Les Nations, la MJC accueillera les enfants.
+1	Cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*	54	5: 54
+2	après-midi	après-midi	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	SpaceAfter=No	*	54	5: 54
+3	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
+4-5	au	_	_	_	_	_	_	_	_	*	*	*
+4	à	à	ADP	_	_	6	case	_	_	*	55;56	3: 55
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	55;56	3: 55
+6	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	_	*	55;56	3: 55
+7	1	1	NUM	_	NumType=Card	6	nummod	_	_	*	55;56	3: 55
+8-9	du	_	_	_	_	_	_	_	_	*	*	*
+8	de	de	ADP	_	_	10	case	_	_	*	55;56;57;58	3: 55;3: 58
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	55;56;57;58	3: 55;3: 58
+10	centre	centre	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	55;56;57;58	3: 55;3: 58
+11	commercial	commercial	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*	55;56;57;58	3: 55;3: 58
+12	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*	55;56;57;58;59	3: 55;3: 58;0: 59
+13	Nations	Nations	PROPN	_	Number=Plur	10	nmod	_	SpaceAfter=No	*	55;56;57;58;59	3: 55;3: 58;0: 59
+14	,	,	PUNCT	_	_	17	punct	_	_	*	56;58	3: 58
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	56;58;60	3: 58
+16	MJC	MJC	PROPN	_	Gender=Fem|Number=Sing	17	nsubj	_	_	*	56;58;60	3: 58
+17	accueillera	accueillir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	61	5: 61
+19	enfants	enfant	NOUN	_	Number=Plur	17	obj	_	SpaceAfter=No	*	61	5: 61
+20	.	.	PUNCT	_	_	17	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00319
+# text = Ils pourront découvrir le "Planétarium" et partir à la rencontre du monde merveilleux des étoiles et des constellations.
+1	Ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	2	nsubj	_	_	*	62	*
+2	pourront	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	découvrir	découvrir	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	63	3: 63
+5	"	"	PUNCT	_	_	6	punct	_	SpaceAfter=No	*	63	3: 63
+6	Planétarium	planétarium	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*	63	3: 63
+7	"	"	PUNCT	_	_	6	punct	_	_	*	63	3: 63
+8	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+9	partir	partir	VERB	_	VerbForm=Inf	3	conj	_	_	*	*	*
+10	à	à	ADP	_	_	12	case	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	*	*
+12	rencontre	rencontre	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*	*	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	64	3: 64
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	64	3: 64
+15	monde	monde	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	64	3: 64
+16	merveilleux	merveilleux	ADJ	_	Gender=Masc	15	amod	_	_	*	64	3: 64
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	64;65;66	3: 64;11: 65;2: 66
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	64;65;66	3: 64;11: 65;2: 66
+19	étoiles	étoile	NOUN	_	Gender=Fem|Number=Plur	15	nmod	_	_	*	64;65;66	3: 64;11: 65;2: 66
+20	et	et	CCONJ	_	_	23	cc	_	_	*	66	2: 66
+21-22	des	_	_	_	_	_	_	_	_	*	*	*
+21	de	de	ADP	_	_	23	case	_	_	*	66;67;68	2: 66;11: 67;2: 68
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_	*	66;67;68	2: 66;11: 67;2: 68
+23	constellations	constellation	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	SpaceAfter=No	*	66;67;68	2: 66;11: 67;2: 68
+24	.	.	PUNCT	_	_	2	punct	_	_	*	68	2: 68
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00320
+# text = Une animation très ludique avec Maggie Jankowski.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	69	*
+2	animation	animation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	69	*
+3	très	très	ADV	_	_	4	advmod	_	_	*	69	*
+4	ludique	ludique	ADJ	_	Number=Sing	2	amod	_	_	*	69	*
+5	avec	avec	ADP	_	_	6	case	_	_	*	*	*
+6	Maggie	Maggie	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	70	*
+7	Jankowski	Jankowski	PROPN	_	_	6	flat:name	_	SpaceAfter=No	*	70	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00321
+# text = Trois séances de 45 minutes sont prévues : à 14h, 15h et 16h.
+1	Trois	trois	NUM	_	NumType=Card	2	nummod	_	_	*	71	*
+2	séances	séance	NOUN	_	Gender=Fem|Number=Plur	7	nsubj:pass	_	_	*	71	*
+3	de	de	ADP	_	_	5	case	_	_	*	71	*
+4	45	45	NUM	_	NumType=Card	5	nummod	_	_	*	71;72	*
+5	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	71;72	*
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+7	prévues	prévoir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+8	:	:	PUNCT	_	_	7	punct	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	14	14	NUM	_	NumType=Card	11	nummod	_	SpaceAfter=No	*	73	*
+11	h	h	NOUN	_	_	7	obl:mod	_	SpaceAfter=No	*	73	*
+12	,	,	PUNCT	_	_	14	punct	_	_	*	73	*
+13	15	15	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=No	*	73;74;75	*
+14	h	h	NOUN	_	_	11	conj	_	_	*	73;74;75	*
+15	et	et	CCONJ	_	_	17	cc	_	_	*	73;75	*
+16	16	16	NUM	_	NumType=Card	17	nummod	_	SpaceAfter=No	*	73;75;76	*
+17	h	h	NOUN	_	_	11	conj	_	SpaceAfter=No	*	73;75;76	*
+18	.	.	PUNCT	_	_	7	punct	_	_	*	73;75;76	*

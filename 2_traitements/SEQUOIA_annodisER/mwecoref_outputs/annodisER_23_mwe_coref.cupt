@@ -1,0 +1,599 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00278
+# text = Une première réunion a eu lieu sur la question de l'indemnisation.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	1	*
+2	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_	*	1	*
+3	réunion	réunion	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	_	*	1	*
+4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+5	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID	*	*
+6	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1	*	*
+7	sur	sur	ADP	_	_	9	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	2	*
+9	question	question	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*	2	*
+10	de	de	ADP	_	_	12	case	_	_	*	2	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	2;3	*
+12	indemnisation	indemnisation	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	2;3	*
+13	.	.	PUNCT	_	_	5	punct	_	_	*	2;3	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00279
+# text = Un groupe de travail, constitué par le secrétaire d'Etat aux anciens combattants Jacques Floch, s'est réuni une première fois pour analyser les propositions et revendications des associations qui protestent contre le décret du 13 juillet 2000 instituant une indemnité spécifique versée, sous certaines conditions, aux orphelins de déportés juifs.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	4	*
+2	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	21	nsubj	_	_	*	4	*
+3	de	de	ADP	_	_	4	case	_	_	*	4	*
+4	travail	travail	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No	*	4;5	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*	4;5	*
+6	constitué	constituer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_	*	4	*
+7	par	par	ADP	_	_	9	case	_	_	*	4	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	4;6	*
+9	secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	6	obl:agent	_	_	*	4;6	*
+10	d'	de	ADP	_	_	11	case	_	SpaceAfter=No	*	4;6	*
+11	Etat	état	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	4;6;7;8	2: 8
+12-13	aux	_	_	_	_	_	_	_	_	*	*	*
+12	à	à	ADP	_	_	15	case	_	_	*	4;6;8;9	2: 8
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	4;6;8;9	2: 8
+14	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	_	*	4;6;8;9	2: 8
+15	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*	4;6;8;9	2: 8
+16	Jacques	Jacques	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	10	*
+17	Floch	Floch	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*	10	*
+18	,	,	PUNCT	_	_	21	punct	_	_	*	*	*
+19	s'	se	PRON	_	Person=3|Reflex=Yes	21	expl:comp	_	SpaceAfter=No	*	*	*
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*	*	*
+21	réuni	réunir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*	11	11: 11
+23	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	24	amod	_	_	*	11	11: 11
+24	fois	fois	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	_	*	11	11: 11
+25	pour	pour	ADP	_	_	26	mark	_	_	*	*	*
+26	analyser	analyser	VERB	_	VerbForm=Inf	21	advcl	_	_	*	*	*
+27	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	28	det	_	_	*	12	*
+28	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	26	obj	_	_	*	12	*
+29	et	et	CCONJ	_	_	30	cc	_	_	*	12	*
+30	revendications	revendication	NOUN	_	Gender=Fem|Number=Plur	28	conj	_	_	*	12;13	*
+31-32	des	_	_	_	_	_	_	_	_	*	*	*
+31	de	de	ADP	_	_	33	case	_	_	*	12;13;14	*
+32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_	*	12;13;14	*
+33	associations	association	NOUN	_	Gender=Fem|Number=Plur	28	nmod	_	_	*	12;13;14	*
+34	qui	qui	PRON	_	PronType=Rel	35	nsubj	_	_	*	15	2: 15
+35	protestent	protester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_	*	*	*
+36	contre	contre	ADP	_	_	38	case	_	_	*	*	*
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_	*	16	*
+38	décret	décret	NOUN	_	Gender=Masc|Number=Sing	35	obl:arg	_	_	*	16	*
+39-40	du	_	_	_	_	_	_	_	_	*	*	*
+39	de	de	ADP	_	_	41	case	_	_	*	16;17	*
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_	*	16;17	*
+41	13	13	NUM	_	NumType=Card	38	nmod	_	_	*	16;17;18	*
+42	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	_	*	16;17;18	*
+43	2000	2000	NUM	_	NumType=Card	42	nmod	_	_	*	16;17;18	*
+44	instituant	instituer	VERB	_	Tense=Pres|VerbForm=Part	38	acl	_	_	*	*	*
+45	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_	*	19	11: 19
+46	indemnité	indemnité	NOUN	_	Gender=Fem|Number=Sing	44	obj	_	_	*	19	11: 19
+47	spécifique	spécifique	ADJ	_	Number=Sing	46	amod	_	_	*	19	11: 19
+48	versée	verser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	46	acl	_	SpaceAfter=No	*	*	*
+49	,	,	PUNCT	_	_	48	punct	_	_	*	*	*
+50	sous	sous	ADP	_	_	52	case	_	_	*	*	*
+51	certaines	certain	DET	_	Gender=Fem|Number=Plur	52	det	_	_	*	20	*
+52	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	48	obl:mod	_	SpaceAfter=No	*	20	*
+53	,	,	PUNCT	_	_	48	punct	_	_	*	*	*
+54-55	aux	_	_	_	_	_	_	_	_	*	*	*
+54	à	à	ADP	_	_	56	case	_	_	*	21	*
+55	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	56	det	_	_	*	21	*
+56	orphelins	orphelin	NOUN	_	Gender=Masc|Number=Plur	48	obl:arg	_	_	*	21	*
+57	de	de	ADP	_	_	58	case	_	_	*	21	*
+58	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	56	nmod	_	_	*	21;22	1: 22
+59	juifs	juif	ADJ	_	Gender=Masc|Number=Plur	58	amod	_	SpaceAfter=No	*	21;22	1: 22
+60	.	.	PUNCT	_	_	21	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00280
+# text = Plus particulièrement, l'association des orphelins de déportés de la vallée du Rabodeau, que préside Arsène Vauthier, a multiplié les revendications et manifestations.
+1	Plus	plus	ADV	_	_	2	advmod	_	_	*	*	*
+2	particulièrement	particulièrement	ADV	_	_	24	advmod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	24	punct	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	23;24	*
+5	association	association	NOUN	_	Gender=Fem|Number=Sing	24	nsubj	_	_	*	23;24	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	23;24;25;26	1: 25;1: 26
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	23;24;25;26	1: 25;1: 26
+8	orphelins	orphelin	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_	*	23;24;25;26	1: 25;1: 26
+9	de	de	ADP	_	_	10	case	_	_	*	23;24;25;26	1: 25;1: 26
+10	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	23;24;25;26;27;28	1: 25;1: 26;1: 27;1: 28
+11	de	de	ADP	_	_	13	case	_	_	*	23;24;25;26;27;28	1: 25;1: 26;1: 27;1: 28
+12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	23;24;25;26;27;28;29	1: 25;1: 26;1: 27;1: 28;10: 29
+13	vallée	vallée	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*	23;24;25;26;27;28;29	1: 25;1: 26;1: 27;1: 28;10: 29
+14-15	du	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	23;24;25;26;27;28;29;30	1: 25;1: 26;1: 27;1: 28;10: 29
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	23;24;25;26;27;28;29;30	1: 25;1: 26;1: 27;1: 28;10: 29
+16	Rabodeau	Rabodeau	PROPN	_	_	13	nmod	_	SpaceAfter=No	*	23;24;25;26;27;28;29;30	1: 25;1: 26;1: 27;1: 28;10: 29
+17	,	,	PUNCT	_	_	5	punct	_	_	*	24;26;28	1: 26;1: 28
+18	que	que	PRON	_	PronType=Rel	19	obj	_	_	*	31	1: 31
+19	préside	présider	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	*	*	*
+20	Arsène	Arsène	PROPN	_	_	19	nsubj	_	_	*	32	*
+21	Vauthier	Vauthier	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*	32	*
+22	,	,	PUNCT	_	_	24	punct	_	_	*	*	*
+23	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:tense	_	_	*	*	*
+24	multiplié	multiplier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+25	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	26	det	_	_	*	*	*
+26	revendications	revendication	NOUN	_	Gender=Fem|Number=Plur	24	obj	_	_	*	*	*
+27	et	et	CCONJ	_	_	28	cc	_	_	*	*	*
+28	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	26	conj	_	SpaceAfter=No	*	33;34	*
+29	.	.	PUNCT	_	_	24	punct	_	_	*	34	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00281
+# text = Elle avait notamment déployé ses banderoles sur le passage de Lionel Jospin, lors de sa récente visite à Lunéville.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_	*	35	10: 35
+2	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+3	notamment	notamment	ADV	_	_	4	advmod	_	_	*	*	*
+4	déployé	déployer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	ses	son	DET	_	Number=Plur|Poss=Yes	6	det	_	_	*	36	*
+6	banderoles	banderole	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	_	*	36	*
+7	sur	sur	ADP	_	_	9	case	_	_	*	*	*
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	*	*
+9	passage	passage	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	*	*
+10	de	de	ADP	_	_	11	case	_	_	*	*	*
+11	Lionel	Lionel	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	37	*
+12	Jospin	Jospin	PROPN	_	_	11	flat:name	_	SpaceAfter=No	*	37	*
+13	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+14	lors	lors	ADV	_	_	4	advmod	_	_	*	*	*
+15	de	de	ADP	_	_	18	case	_	_	*	*	*
+16	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	18	det	_	_	*	38	10: 38
+17	récente	récent	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*	38	10: 38
+18	visite	visite	NOUN	_	Gender=Fem|Number=Sing	14	obl:arg	_	_	*	38	10: 38
+19	à	à	ADP	_	_	20	case	_	_	*	*	*
+20	Lunéville	Lunéville	PROPN	_	_	18	nmod	_	SpaceAfter=No	*	39	*
+21	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00282
+# text = Ce dernier vient de répondre aux maires de la vallée et au député Claude Jacquot, qui lui avaient fait collectivement un courrier pour, de nouveau, attirer son attention sur ce dossier.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*	40	5: 40
+2	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	3	nsubj	_	_	*	40	5: 40
+3	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	de	de	ADP	_	_	5	mark	_	_	*	*	*
+5	répondre	répondre	VERB	_	VerbForm=Inf	3	xcomp	_	_	*	*	*
+6-7	aux	_	_	_	_	_	_	_	_	*	*	*
+6	à	à	ADP	_	_	8	case	_	_	*	41	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	41	*
+8	maires	maire	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	_	*	41	*
+9	de	de	ADP	_	_	11	case	_	_	*	41	*
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	41;42	10: 42
+11	vallée	vallée	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	41;42	10: 42
+12	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+13-14	au	_	_	_	_	_	_	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	43;44	5: 43;5: 44
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	43;44	5: 43;5: 44
+15	député	député	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	_	*	43;44	5: 43;5: 44
+16	Claude	Claude	PROPN	_	Number=Sing	15	appos	_	_	*	43;44;45;46	5: 43;5: 44;10: 46
+17	Jacquot	Jacquot	PROPN	_	_	16	flat:name	_	SpaceAfter=No	*	43;44;45;46	5: 43;5: 44;10: 46
+18	,	,	PUNCT	_	_	8	punct	_	_	*	44;46	5: 44;10: 46
+19	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	47	10: 47
+20	lui	lui	PRON	_	Number=Sing|Person=3	22	iobj	_	_	*	48	5: 48
+21	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	22	aux:tense	_	_	*	*	*
+22	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_	*	*	*
+23	collectivement	collectivement	ADV	_	_	22	advmod	_	_	*	*	*
+24	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_	*	49	5: 49
+25	courrier	courrier	NOUN	_	Gender=Masc|Number=Sing	22	obj	_	_	*	49	5: 49
+26	pour	pour	ADP	_	_	31	mark	_	SpaceAfter=No	*	*	*
+27	,	,	PUNCT	_	_	31	punct	_	_	*	*	*
+28	de	de	ADP	_	_	31	advmod	_	EXTPOS=ADV|MWE=de_nouveau	*	*	*
+29	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	28	fixed	_	SpaceAfter=No	*	*	*
+30	,	,	PUNCT	_	_	31	punct	_	_	*	*	*
+31	attirer	attirer	VERB	_	VerbForm=Inf	25	acl	_	_	1:VID	*	*
+32	son	son	DET	_	Number=Sing|Poss=Yes	33	det	_	_	*	50	*
+33	attention	attention	NOUN	_	Gender=Fem|Number=Sing	31	obj	_	_	1	50	*
+34	sur	sur	ADP	_	_	36	case	_	_	*	*	*
+35	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	36	det	_	_	*	51;52	5: 51;5: 52
+36	dossier	dossier	NOUN	_	Gender=Masc|Number=Sing	31	obl:arg	_	SpaceAfter=No	*	51;52	5: 51;5: 52
+37	.	.	PUNCT	_	_	3	punct	_	_	*	52	5: 52
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00283
+# text = Lionel Jospin répond -il faut le souligner- sur son papier à en-tête de candidat à la présidentielle, et ne signe pas "le premier ministre".
+1	Lionel	Lionel	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	53	*
+2	Jospin	Jospin	PROPN	_	_	1	flat:name	_	_	*	53	*
+3	répond	répondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	-	-	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	6	expl:subj	_	_	1:VID	*	*
+6	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_	1	*	*
+7	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3	8	obj	_	_	*	*	*
+8	souligner	souligner	VERB	_	VerbForm=Inf	6	xcomp	_	SpaceAfter=No	*	*	*
+9	-	-	PUNCT	_	_	3	punct	_	_	*	*	*
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	son	son	DET	_	Number=Sing|Poss=Yes	12	det	_	_	*	*	*
+12	papier	papier	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	*	*
+13	à	à	ADP	_	_	14	case	_	_	*	*	*
+14	en-tête	en-tête	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	54;55	5: 54;5: 55
+15	de	de	ADP	_	_	16	case	_	_	*	54;55	5: 54;5: 55
+16	candidat	candidat	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	54;55;56;57	5: 54;5: 55;5: 56;5: 57
+17	à	à	ADP	_	_	19	case	_	_	*	54;55;56;57	5: 54;5: 55;5: 56;5: 57
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	54;55;56;57;58;59	5: 54;5: 55;5: 56;5: 57;8: 59
+19	présidentielle	présidentielle	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No	*	54;55;56;57;58;59	5: 54;5: 55;5: 56;5: 57;8: 59
+20	,	,	PUNCT	_	_	3	punct	_	_	*	55;57;59	5: 55;5: 57;8: 59
+21	et	et	CCONJ	_	_	23	cc	_	_	*	*	*
+22	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	_	*	*	*
+23	signe	signer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_	*	*	*
+24	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	_	*	*	*
+25	"	"	PUNCT	_	_	28	punct	_	SpaceAfter=No	*	60	0: 60
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	*	60	0: 60
+27	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	28	amod	_	_	*	60	0: 60
+28	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	23	obj	_	SpaceAfter=No	*	60	0: 60
+29	"	"	PUNCT	_	_	28	punct	_	SpaceAfter=No	*	*	*
+30	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00284
+# text = Il rappelle néanmoins un certain nombre d'actions entreprises par le gouvernement, et plus particulièrement la mise en place du groupe de travail, réuni pour la première fois il y a quelques jours.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	61	0: 61
+2	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	néanmoins	néanmoins	ADV	_	_	2	advmod	_	_	*	*	*
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	62	0: 62
+5	certain	certain	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	62	0: 62
+6	nombre	nombre	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	62	0: 62
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	62;63	0: 62
+8	actions	action	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	1:LVC.full	62;63;64	0: 62
+9	entreprises	entreprendre	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	8	acl	_	_	1	*	*
+10	par	par	ADP	_	_	12	case	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	65;66	0: 65;0: 66
+12	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	9	obl:agent	_	SpaceAfter=No	*	65;66	0: 65;0: 66
+13	,	,	PUNCT	_	_	6	punct	_	_	*	66	0: 66
+14	et	et	CCONJ	_	_	18	cc	_	_	*	*	*
+15	plus	plus	ADV	_	_	16	advmod	_	_	*	*	*
+16	particulièrement	particulièrement	ADV	_	_	18	advmod	_	_	*	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	*	67	8: 67
+18	mise	mise	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	_	*	67	8: 67
+19	en	en	ADP	_	_	20	case	_	_	*	67	8: 67
+20	place	place	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	_	*	67	8: 67
+21-22	du	_	_	_	_	_	_	_	_	*	*	*
+21	de	de	ADP	_	_	23	case	_	_	*	67;68	8: 67;0: 68
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	67;68	8: 67;0: 68
+23	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*	67;68	8: 67;0: 68
+24	de	de	ADP	_	_	25	case	_	_	*	67;68	8: 67;0: 68
+25	travail	travail	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No	*	67;68;69;70	8: 67;0: 68;0: 69;0: 70
+26	,	,	PUNCT	_	_	23	punct	_	_	*	67;68;70	8: 67;0: 68;0: 70
+27	réuni	réunir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	acl	_	_	*	*	*
+28	pour	pour	ADP	_	_	31	case	_	_	*	*	*
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_	*	71	8: 71
+30	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	31	amod	_	_	*	71	8: 71
+31	fois	fois	NOUN	_	Gender=Fem	27	obl:mod	_	_	*	71	8: 71
+32	il	il	PRON	_	Number=Sing|Person=3	36	case	_	EXTPOS=ADP|MWE=il_y_a	*	*	*
+33	y	y	PRON	_	Person=3	32	fixed	_	_	*	*	*
+34	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	fixed	_	_	*	*	*
+35	quelques	quelque	DET	_	Definite=Ind|Number=Plur|PronType=Art	36	det	_	_	*	72	*
+36	jours	jour	NOUN	_	Gender=Masc|Number=Plur	27	obl:mod	_	SpaceAfter=No	*	72	*
+37	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00285
+# text = Lionel Jospin note que la mission de ce groupe est "de ne pas méconnaître les justes revendications des autres orphelins de victimes du nazisme" et de "trouver collectivement la meilleure façon de faire reconnaître par la Nation l'ampleur des souffrances subies".
+1	Lionel	Lionel	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	73	*
+2	Jospin	Jospin	PROPN	_	_	1	flat:name	_	_	*	73	*
+3	note	noter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	que	que	SCONJ	_	_	10	mark	_	_	*	*	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	74	8: 74
+6	mission	mission	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*	74	8: 74
+7	de	de	ADP	_	_	9	case	_	_	*	74	8: 74
+8	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_	*	74;75	8: 74;0: 75
+9	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	74;75	8: 74;0: 75
+10	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_	*	*	*
+11	"	"	PUNCT	_	_	15	punct	_	SpaceAfter=No	*	*	*
+12	de	de	ADP	_	_	15	mark	_	_	*	*	*
+13	ne	ne	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+14	pas	pas	ADV	_	Polarity=Neg	15	advmod	_	_	*	*	*
+15	méconnaître	méconnaître	VERB	_	VerbForm=Inf	10	xcomp	_	_	*	*	*
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*	76	13: 76
+17	justes	juste	ADJ	_	Number=Plur	18	amod	_	_	*	76	13: 76
+18	revendications	revendication	NOUN	_	Gender=Fem|Number=Plur	15	obj	_	_	*	76	13: 76
+19-20	des	_	_	_	_	_	_	_	_	*	*	*
+19	de	de	ADP	_	_	22	case	_	_	*	76;77	13: 76
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	22	det	_	_	*	76;77	13: 76
+21	autres	autre	ADJ	_	Number=Plur	22	amod	_	_	*	76;77	13: 76
+22	orphelins	orphelin	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*	76;77	13: 76
+23	de	de	ADP	_	_	24	case	_	_	*	76;77;78	13: 76
+24	victimes	victime	NOUN	_	Gender=Fem|Number=Plur	22	nmod	_	_	*	76;77;78;79	13: 76
+25-26	du	_	_	_	_	_	_	_	_	*	*	*
+25	de	de	ADP	_	_	27	case	_	_	*	76;77;78;79;80	13: 76;3: 80
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_	*	76;77;78;79;80	13: 76;3: 80
+27	nazisme	nazisme	NOUN	_	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No	*	76;77;78;79;80	13: 76;3: 80
+28	"	"	PUNCT	_	_	15	punct	_	_	*	*	*
+29	et	et	CCONJ	_	_	32	cc	_	_	*	*	*
+30	de	de	ADP	_	_	32	mark	_	_	*	*	*
+31	"	"	PUNCT	_	_	32	punct	_	SpaceAfter=No	*	*	*
+32	trouver	trouver	VERB	_	VerbForm=Inf	15	conj	_	_	*	*	*
+33	collectivement	collectivement	ADV	_	_	32	advmod	_	_	*	*	*
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_	*	81	14: 81
+35	meilleure	meilleur	ADJ	_	Gender=Fem|Number=Sing	36	amod	_	_	*	81	14: 81
+36	façon	façon	NOUN	_	Gender=Fem|Number=Sing	32	obj	_	_	*	81	14: 81
+37	de	de	ADP	_	_	39	mark	_	_	*	*	*
+38	faire	faire	AUX	_	VerbForm=Inf	39	aux:caus	_	_	*	*	*
+39	reconnaître	reconnaître	VERB	_	VerbForm=Inf	36	acl	_	_	*	*	*
+40	par	par	ADP	_	_	42	case	_	_	*	*	*
+41	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_	*	82	14: 82
+42	Nation	nation	NOUN	_	Gender=Fem|Number=Sing	39	obl:agent	_	_	*	82	14: 82
+43	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	44	det	_	SpaceAfter=No	*	83	15: 83
+44	ampleur	ampleur	NOUN	_	Gender=Fem|Number=Sing	39	obj	_	_	*	83	15: 83
+45-46	des	_	_	_	_	_	_	_	_	*	*	*
+45	de	de	ADP	_	_	47	case	_	_	*	83;84	15: 83;13: 84
+46	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	47	det	_	_	*	83;84	15: 83;13: 84
+47	souffrances	souffrance	NOUN	_	Gender=Fem|Number=Plur	44	nmod	_	_	1:LVC.full	83;84	15: 83;13: 84
+48	subies	subir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	47	acl	_	SpaceAfter=No	1	83;84	15: 83;13: 84
+49	"	"	PUNCT	_	_	32	punct	_	SpaceAfter=No	*	*	*
+50	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00286
+# text = Il n'en justifie pas moins le décret du 13 juillet 2000 qui "crée bien un dispositif particulier".
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_	*	85	3: 85
+2	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	SpaceAfter=No	*	*	*
+3	en	en	PRON	_	Person=3	4	expl:comp	_	_	*	*	*
+4	justifie	justifier	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+5	pas	pas	ADV	_	_	6	advmod	_	_	*	*	*
+6	moins	moins	ADV	_	_	4	advmod	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	86	3: 86
+8	décret	décret	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	_	*	86	3: 86
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	86;87	3: 86
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	86;87	3: 86
+11	13	13	NUM	_	NumType=Card	8	nmod	_	_	*	86;87;88	3: 86
+12	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	86;87;88	3: 86
+13	2000	2000	NUM	_	NumType=Card	12	nmod	_	_	*	86;87;88	3: 86
+14	qui	qui	PRON	_	PronType=Rel	16	nsubj	_	_	*	89	15: 89
+15	"	"	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	*	*
+16	crée	créer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_	*	*	*
+17	bien	bien	ADV	_	_	16	advmod	_	_	*	*	*
+18	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_	*	90	3: 90
+19	dispositif	dispositif	NOUN	_	Gender=Masc|Number=Sing	16	obj	_	_	*	90	3: 90
+20	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	19	amod	_	SpaceAfter=No	*	90	3: 90
+21	"	"	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	*	*
+22	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00287
+# text = Lionel Jospin écrit : "Il m'a été donné de dire à plusieurs reprises combien les persécutions antisémites et les actes qui en ont découlé revêtaient un caractère particulier aux yeux de l'histoire et de la morale".
+1	Lionel	Lionel	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	91	*
+2	Jospin	Jospin	PROPN	_	_	1	flat:name	_	_	*	91	*
+3	écrit	écrire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+4	:	:	PUNCT	_	_	3	punct	_	_	*	*	*
+5	"	"	PUNCT	_	_	3	punct	_	SpaceAfter=No	*	*	*
+6	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	10	nsubj:pass	_	_	*	*	*
+7	m'	le	PRON	_	Number=Sing|Person=1	10	iobj	_	SpaceAfter=No	*	92	*
+8	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+9	été	être	AUX	_	Tense=Past|VerbForm=Part	10	aux:pass	_	_	*	*	*
+10	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	3	ccomp	_	_	*	*	*
+11	de	de	ADP	_	_	12	mark	_	_	*	*	*
+12	dire	dire	VERB	_	VerbForm=Inf	10	xcomp	_	_	*	*	*
+13	à	à	ADP	_	_	15	case	_	_	*	*	*
+14	plusieurs	plusieurs	DET	_	Number=Plur	15	det	_	_	*	93	*
+15	reprises	reprise	NOUN	_	Gender=Fem|Number=Plur	12	obl:mod	_	_	*	93	*
+16	combien	combien	ADV	_	PronType=Int	27	advmod	_	_	*	*	*
+17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_	*	94;95	*
+18	persécutions	persécution	NOUN	_	Gender=Fem|Number=Plur	27	nsubj	_	_	*	94;95	*
+19	antisémites	antisémite	ADJ	_	Number=Plur	18	amod	_	_	*	94;95	*
+20	et	et	CCONJ	_	_	22	cc	_	_	*	95	*
+21	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	22	det	_	_	*	95;96	*
+22	actes	acte	NOUN	_	Gender=Masc|Number=Plur	18	conj	_	_	*	95;96	*
+23	qui	qui	PRON	_	PronType=Rel	26	nsubj	_	_	*	97	*
+24	en	en	PRON	_	Person=3	26	iobj	_	_	*	98	*
+25	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux:tense	_	_	*	*	*
+26	découlé	découler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	acl:relcl	_	_	*	*	*
+27	revêtaient	revêtir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	12	ccomp	_	_	1:LVC.full	*	*
+28	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	99	*
+29	caractère	caractère	NOUN	_	Gender=Masc|Number=Sing	27	obj	_	_	1	99	*
+30	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*	99	*
+31-32	aux	_	_	_	_	_	_	_	_	*	*	*
+31	à	à	ADP	_	_	33	case	_	_	*	100;101	*
+32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_	*	100;101	*
+33	yeux	oeil	NOUN	_	Gender=Masc|Number=Plur	27	obl:mod	_	_	*	100;101	*
+34	de	de	ADP	_	_	36	case	_	_	*	101	*
+35	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	36	det	_	SpaceAfter=No	*	101;102;103	*
+36	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_	*	101;102;103	*
+37	et	et	CCONJ	_	_	40	cc	_	_	*	101;103	*
+38	de	de	ADP	_	_	40	case	_	_	*	101;103	*
+39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_	*	101;103;104;105	4: 104
+40	morale	morale	NOUN	_	Gender=Fem|Number=Sing	36	conj	_	SpaceAfter=No	*	101;103;104;105	4: 104
+41	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No	*	105	*
+42	.	.	PUNCT	_	_	3	punct	_	_	*	105	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00288
+# text = Les associations représentées dans le groupe de travail sont les associations dites du "groupe des onze" ;
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	106;107	*
+2	associations	association	NOUN	_	Gender=Fem|Number=Plur	11	nsubj	_	_	*	106;107	*
+3	représentées	représenter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*	106;107	*
+4	dans	dans	ADP	_	_	6	case	_	_	*	107	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	107;108	*
+6	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	_	*	107;108	*
+7	de	de	ADP	_	_	8	case	_	_	*	107;108	*
+8	travail	travail	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	107;108;109	*
+9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	*	*
+11	associations	association	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	*	*
+12	dites	dire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	_	*	*	*
+13-14	du	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	16	case	_	_	*	110	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	110	*
+15	"	"	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	110	*
+16	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	12	xcomp	_	_	*	110	*
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	110	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	110	*
+19	onze	onze	PRON	_	NumType=Card	16	nmod	_	SpaceAfter=No	*	110	*
+20	"	"	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	110	*
+21	;	;	PUNCT	_	_	11	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00289
+# text = puis la Fondation de la Résistance et la Fondation pour la mémoire de la Déportation ;
+1	puis	puis	CCONJ	_	_	3	cc	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	111	4: 111
+3	Fondation	fondation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	111	4: 111
+4	de	de	ADP	_	_	6	case	_	_	*	111	4: 111
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	111;112	4: 111;4: 112
+6	Résistance	Résistance	PROPN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	111;112	4: 111;4: 112
+7	et	et	CCONJ	_	_	9	cc	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	113;114	4: 113;4: 114
+9	Fondation	fondation	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_	*	113;114	4: 113;4: 114
+10	pour	pour	ADP	_	_	12	case	_	_	*	114	4: 114
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	114;115	4: 114;4: 115
+12	mémoire	mémoire	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	_	*	114;115	4: 114;4: 115
+13	de	de	ADP	_	_	15	case	_	_	*	114;115	4: 114;4: 115
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	114;115;116	4: 114;4: 115;4: 116
+15	Déportation	déportation	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*	114;115;116	4: 114;4: 115;4: 116
+16	;	;	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00290
+# text = la Fédération nationale des fils de morts pour la France ;
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	117;118	4: 117;4: 118
+2	Fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	117;118	4: 117;4: 118
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	117;118	4: 117;4: 118
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	117;118;119;120	4: 117;4: 118;6: 120
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	117;118;119;120	4: 117;4: 118;6: 120
+6	fils	fils	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	117;118;119;120	4: 117;4: 118;6: 120
+7	de	de	ADP	_	_	8	case	_	_	*	117;118;119;120	4: 117;4: 118;6: 120
+8	morts	mort	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*	117;118;119;120;121	4: 117;4: 118;6: 120
+9	pour	pour	ADP	_	_	11	case	_	_	*	118;120	4: 118;6: 120
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	118;120;122	4: 118;6: 120
+11	France	France	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No	*	118;120;122	4: 118;6: 120
+12	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00291
+# text = l'Association d'entraide des veuves et orphelins de guerre ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	123	*
+2	Association	association	NOUN	_	Number=Sing	0	root	_	_	*	123	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	123	*
+4	entraide	entraide	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	123;124	*
+5-6	des	_	_	_	_	_	_	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	123;124;125;126	*
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	123;124;125;126	*
+7	veuves	veuve	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*	123;124;125;126	*
+8	et	et	CCONJ	_	_	9	cc	_	_	*	123;124;126	*
+9	orphelins	orphelin	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_	*	123;124;126;127	6: 127
+10	de	de	ADP	_	_	11	case	_	_	*	123;124;126;127	6: 127
+11	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*	123;124;126;127;128	6: 127;9: 128
+12	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00292
+# text = l'Union nationale des orphelins de déportés et fusillés ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	129	12: 129
+2	Union	Union	PROPN	_	Number=Sing	0	root	_	_	*	129	12: 129
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	129	12: 129
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	129;130	12: 129;6: 130
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	129;130	12: 129;6: 130
+6	orphelins	orphelin	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	129;130	12: 129;6: 130
+7	de	de	ADP	_	_	8	case	_	_	*	129;130	12: 129;6: 130
+8	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	_	*	129;130;131;132	12: 129;6: 130
+9	et	et	CCONJ	_	_	10	cc	_	_	*	129;130;132	12: 129;6: 130
+10	fusillés	fusillé	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	SpaceAfter=No	*	129;130;132;133	12: 129;6: 130
+11	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00293
+# text = l'Association nationale des anciens combattants de la Résistance ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	134	*
+2	Association	association	NOUN	_	Number=Sing	0	root	_	_	*	134	*
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	134	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	7	case	_	_	*	134;135	6: 135
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	*	134;135	6: 135
+6	anciens	ancien	ADJ	_	Gender=Masc|Number=Plur	7	amod	_	_	*	134;135	6: 135
+7	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	134;135	6: 135
+8	de	de	ADP	_	_	10	case	_	_	*	134;135	6: 135
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	134;135;136	6: 135;9: 136
+10	Résistance	Résistance	PROPN	_	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No	*	134;135;136	6: 135;9: 136
+11	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00294
+# text = l'Associations des anciennes internées et déportées de la Résistance ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	137	12: 137
+2	Associations	association	NOUN	_	Number=Sing	0	root	_	_	*	137	12: 137
+3-4	des	_	_	_	_	_	_	_	_	*	*	*
+3	de	de	ADP	_	_	6	case	_	_	*	137;138	12: 137;7: 138
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	137;138	12: 137;7: 138
+5	anciennes	ancien	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_	*	137;138	12: 137;7: 138
+6	internées	interné	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	137;138	12: 137;7: 138
+7	et	et	CCONJ	_	_	8	cc	_	_	*	137;138	12: 137;7: 138
+8	déportées	déporté	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*	137;138	12: 137;7: 138
+9	de	de	ADP	_	_	11	case	_	_	*	137;138	12: 137;7: 138
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*	137;138;139	12: 137;7: 138
+11	Résistance	Résistance	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*	137;138;139	12: 137;7: 138
+12	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00295
+# text = l'Union nationale des associations des déportés, internés et familles de disparus ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	140	*
+2	Union	Union	PROPN	_	Number=Sing	0	root	_	_	*	140	*
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	140	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	140;141	7: 141
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	140;141	7: 141
+6	associations	association	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	140;141	7: 141
+7-8	des	_	_	_	_	_	_	_	_	*	*	*
+7	de	de	ADP	_	_	9	case	_	_	*	140;141;142;143	7: 141;6: 143
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	_	*	140;141;142;143	7: 141;6: 143
+9	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No	*	140;141;142;143	7: 141;6: 143
+10	,	,	PUNCT	_	_	11	punct	_	_	*	140;141;142;143	7: 141;6: 143
+11	internés	interné	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	_	*	140;141;142;143	7: 141;6: 143
+12	et	et	CCONJ	_	_	13	cc	_	_	*	140;141;143	7: 141;6: 143
+13	familles	famille	NOUN	_	Gender=Fem|Number=Plur	9	conj	_	_	*	140;141;143;144	7: 141;6: 143;7: 144
+14	de	de	ADP	_	_	15	case	_	_	*	140;141;143;144	7: 141;6: 143;7: 144
+15	disparus	disparu	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	SpaceAfter=No	*	140;141;143;144;145	7: 141;6: 143;7: 144
+16	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00296
+# text = la Fédération nationale des déportés, internés, résistants et patriotes ;
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	146	7: 146
+2	Fédération	fédération	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	146	7: 146
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	146	7: 146
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	146;147	7: 146;6: 147
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	146;147	7: 146;6: 147
+6	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No	*	146;147	7: 146;6: 147
+7	,	,	PUNCT	_	_	8	punct	_	_	*	146;147	7: 146;6: 147
+8	internés	interné	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No	*	146;147	7: 146;6: 147
+9	,	,	PUNCT	_	_	10	punct	_	_	*	146;147	7: 146;6: 147
+10	résistants	résistant	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	_	*	146;147;148;149	7: 146;6: 147
+11	et	et	CCONJ	_	_	12	cc	_	_	*	146;147;149	7: 146;6: 147
+12	patriotes	patriote	NOUN	_	Number=Plur	6	conj	_	SpaceAfter=No	*	146;147;149;150	7: 146;6: 147
+13	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00297
+# text = la Confédération nationale des combattants volontaires de la Résistance ;
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	151	*
+2	Confédération	confédération	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	151	*
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	151	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	151;152	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	151;152	*
+6	combattants	combattant	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	151;152	*
+7	volontaires	volontaire	ADJ	_	Number=Plur	6	amod	_	_	*	151;152	*
+8	de	de	ADP	_	_	10	case	_	_	*	151;152	*
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	151;152;153	7: 153
+10	Résistance	Résistance	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No	*	151;152;153	7: 153
+11	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00298
+# text = l'Union nationale des déportés, internés et victimes de guerre ;
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	154	*
+2	Union	Union	PROPN	_	Number=Sing	0	root	_	_	*	154	*
+3	nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_	*	154	*
+4-5	des	_	_	_	_	_	_	_	_	*	*	*
+4	de	de	ADP	_	_	6	case	_	_	*	154;155	6: 155
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	154;155	6: 155
+6	déportés	déporté	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No	*	154;155	6: 155
+7	,	,	PUNCT	_	_	8	punct	_	_	*	154;155	6: 155
+8	internés	interné	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	_	*	154;155	6: 155
+9	et	et	CCONJ	_	_	10	cc	_	_	*	154;155	6: 155
+10	victimes	victime	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	_	*	154;155;156	6: 155
+11	de	de	ADP	_	_	12	case	_	_	*	154;155;156	6: 155
+12	guerre	guerre	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No	*	154;155;156;157	6: 155;7: 157
+13	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00299
+# text = enfin, l'Association nationale des familles de fusillés et massacrés de la Résistance française.
+1	enfin	enfin	ADV	_	_	4	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	*	*
+4	Association	association	NOUN	_	Number=Sing	0	root	_	_	*	*	*
+5	nationale	national	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	_	*	*	*
+6-7	des	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	*	*
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_	*	*	*
+8	familles	famille	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*	*	*
+9	de	de	ADP	_	_	10	case	_	_	*	*	*
+10	fusillés	fusillé	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	_	*	158	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*	158	*
+12	massacrés	massacré	NOUN	_	Number=Plur	10	conj	_	_	*	158	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	159	7: 159
+15	Résistance	Résistance	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	159	7: 159
+16	française	français	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No	*	159	7: 159
+17	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
