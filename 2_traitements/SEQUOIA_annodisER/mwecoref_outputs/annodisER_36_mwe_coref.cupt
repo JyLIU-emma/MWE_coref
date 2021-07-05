@@ -1,0 +1,406 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00511
+# text = Les anniversaires d'avril à la maison Belot
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	1;2	4:2
+2	anniversaires	anniversaire	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	1;2	4:2
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	1;2	4:2
+4	avril	avril	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	1;2;3	4:2
+5	à	à	ADP	_	_	7	case	_	_	*	2	4:2
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	2;4	4:2
+7	maison	maison	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	2;4	4:2
+8	Belot	Belot	PROPN	_	_	7	nmod	_	_	*	2;4;5	4:2
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00512
+# text = Les pensionnaires de la maison Belot nés en avril fêtaient mardi leur anniversaire.
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	_	*	6	*
+2	pensionnaires	pensionnaire	NOUN	_	Number=Plur	10	nsubj	_	_	*	6	*
+3	de	de	ADP	_	_	5	case	_	_	*	6	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	6;7	*
+5	maison	maison	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	6;7	*
+6	Belot	Belot	PROPN	_	_	5	nmod	_	_	*	6;7;8	*
+7	nés	naître	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_	*	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	avril	avril	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	_	*	9	4:9
+10	fêtaient	fêter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+11	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	10	*
+12	leur	son	DET	_	Number=Sing|Poss=Yes	13	det	_	_	*	*	*
+13	anniversaire	anniversaire	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No	*	*	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00513
+# text = Un rite incontournable qui dépend de l'état de santé des intéressés.
+1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	11	*
+2	rite	rite	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	11	*
+3	incontournable	incontournable	ADJ	_	Number=Sing	2	amod	_	_	*	11	*
+4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	_	*	12	4:12
+5	dépend	dépendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	*	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	*	*
+8	état	état	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	_	*	*	*
+9	de	de	ADP	_	_	10	case	_	_	*	*	*
+10	santé	santé	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	_	*	*	*
+11-12	des	_	_	_	_	_	_	_	_	*	*	*
+11	de	de	ADP	_	_	13	case	_	_	*	13	*
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*	13	*
+13	intéressés	intéressé	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No	*	13	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00514
+# text = Etaient conviés à la petite cérémonie, égayée de fleurs et biscuits, les sept personnes suivantes : Paulette Bertrand, née en 1926 ; Lucien Carillon (1928) ; Anita Dachaud (1921) ; Suzanne Grim (1903) ; Joséphine Conte (1912) ; Jeanne Fosse (1907) et M. Roseman (1929).
+1	Etaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	2	aux:pass	_	_	*	*	*
+2	conviés	convier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+3	à	à	ADP	_	_	6	case	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	14	*
+5	petite	petit	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_	*	14	*
+6	cérémonie	cérémonie	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	SpaceAfter=No	*	14	*
+7	,	,	PUNCT	_	_	6	punct	_	_	*	14	*
+8	égayée	égayer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_	*	14	*
+9	de	de	ADP	_	_	10	case	_	_	*	14;15	*
+10	fleurs	fleur	NOUN	_	Gender=Fem|Number=Plur	8	obl:agent	_	_	*	14;15;16	*
+11	et	et	CCONJ	_	_	12	cc	_	_	*	14;15;16	*
+12	biscuits	biscuit	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	SpaceAfter=No	*	14;15;16;17	*
+13	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*	18;19	*
+15	sept	sept	NUM	_	NumType=Card	16	nummod	_	_	*	18;19	*
+16	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	2	nsubj:pass	_	_	*	18;19	*
+17	suivantes	suivant	ADJ	_	Gender=Fem|Number=Plur	16	amod	_	_	*	19	*
+18	:	:	PUNCT	_	_	16	punct	_	_	*	*	*
+19	Paulette	Paulette	PROPN	_	Gender=Fem|Number=Sing	16	appos	_	_	*	20	9:20
+20	Bertrand	Bertrand	PROPN	_	_	19	flat:name	_	SpaceAfter=No	*	20	9:20
+21	,	,	PUNCT	_	_	19	punct	_	_	*	*	*
+22	née	naître	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	acl	_	_	*	*	*
+23	en	en	ADP	_	_	24	case	_	_	*	*	*
+24	1926	1926	NUM	_	NumType=Card	22	obl:mod	_	SpaceAfter=No	*	21	*
+25	;	;	PUNCT	_	_	26	punct	_	_	*	*	*
+26	Lucien	Lucien	PROPN	_	Gender=Masc|Number=Sing	19	conj	_	_	*	22	9:22
+27	Carillon	Carillon	PROPN	_	_	26	flat:name	_	_	*	22	9:22
+28	(	(	PUNCT	_	_	26	punct	_	SpaceAfter=No	*	*	*
+29	1928	1928	NUM	_	NumType=Card	26	nummod	_	SpaceAfter=No	*	*	*
+30	)	)	PUNCT	_	_	26	punct	_	SpaceAfter=No	*	*	*
+31	;	;	PUNCT	_	_	32	punct	_	_	*	*	*
+32	Anita	Anita	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	_	*	23;24	1:23;14:24
+33	Dachaud	Dachaud	PROPN	_	_	32	flat:name	_	_	*	23;24	1:23;14:24
+34	(	(	PUNCT	_	_	32	punct	_	SpaceAfter=No	*	24	14:24
+35	1921	1921	NUM	_	NumType=Card	32	nummod	_	SpaceAfter=No	*	24	14:24
+36	)	)	PUNCT	_	_	32	punct	_	SpaceAfter=No	*	*	*
+37	;	;	PUNCT	_	_	38	punct	_	_	*	*	*
+38	Suzanne	Suzanne	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	_	*	25;26	1:25;14:26
+39	Grim	Grim	PROPN	_	_	38	flat:name	_	_	*	25;26	1:25;14:26
+40	(	(	PUNCT	_	_	38	punct	_	SpaceAfter=No	*	26	14:26
+41	1903	1903	NUM	_	NumType=Card	38	nummod	_	SpaceAfter=No	*	26;27	14:26
+42	)	)	PUNCT	_	_	38	punct	_	SpaceAfter=No	*	*	*
+43	;	;	PUNCT	_	_	44	punct	_	_	*	*	*
+44	Joséphine	Joséphine	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	_	*	28	1:28
+45	Conte	Conte	PROPN	_	_	44	flat:name	_	_	*	28	1:28
+46	(	(	PUNCT	_	_	44	punct	_	SpaceAfter=No	*	*	*
+47	1912	1912	NUM	_	NumType=Card	44	nummod	_	SpaceAfter=No	*	29	*
+48	)	)	PUNCT	_	_	44	punct	_	SpaceAfter=No	*	*	*
+49	;	;	PUNCT	_	_	50	punct	_	_	*	*	*
+50	Jeanne	Jeanne	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	_	*	30	9:30
+51	Fosse	Fosse	PROPN	_	_	50	flat:name	_	_	*	30	9:30
+52	(	(	PUNCT	_	_	50	punct	_	SpaceAfter=No	*	*	*
+53	1907	1907	NUM	_	NumType=Card	50	nummod	_	SpaceAfter=No	*	*	*
+54	)	)	PUNCT	_	_	50	punct	_	_	*	*	*
+55	et	et	CCONJ	_	_	56	cc	_	_	*	*	*
+56	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	19	conj	_	_	*	31	*
+57	Roseman	Roseman	PROPN	_	_	56	flat:name	_	_	*	31	*
+58	(	(	PUNCT	_	_	56	punct	_	SpaceAfter=No	*	*	*
+59	1929	1929	NUM	_	NumType=Card	56	nummod	_	SpaceAfter=No	*	*	*
+60	)	)	PUNCT	_	_	56	punct	_	SpaceAfter=No	*	*	*
+61	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00515
+# text = Questionné sur son passé, Lucien Carillon s'est exécuté de bonne grâce.
+1	Questionné	questionner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_	*	*	*
+2	sur	sur	ADP	_	_	4	case	_	_	*	*	*
+3	son	son	DET	_	Number=Sing|Poss=Yes	4	det	_	_	*	32;33	2:33
+4	passé	passé	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	SpaceAfter=No	*	32;33	2:33
+5	,	,	PUNCT	_	_	10	punct	_	_	*	33	2:33
+6	Lucien	Lucien	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	_	*	33;34	2:33;9:34
+7	Carillon	Carillon	PROPN	_	_	6	flat:name	_	_	*	33;34	2:33;9:34
+8	s'	se	PRON	_	Person=3|Reflex=Yes	10	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	exécuté	exécuter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1	*	*
+11	de	de	ADP	_	_	13	case	_	_	*	*	*
+12	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*	35	*
+13	grâce	grâce	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	SpaceAfter=No	*	35	*
+14	.	.	PUNCT	_	_	10	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00516
+# text = Natif des Forges de Méziré, en 1928, il a fréquenté l'école de Morvillars jusqu'au CEP.
+1	Natif	natif	ADJ	_	_	13	advmod	_	_	*	36	*
+2-3	des	_	_	_	_	_	_	_	_	*	*	*
+2	de	de	ADP	_	_	4	case	_	_	*	36;37	2:37
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	36;37	2:37
+4	Forges	Forges	PROPN	_	Gender=Masc|Number=Sing	1	obl:arg	_	_	*	36;37	2:37
+5	de	de	ADP	_	_	6	case	_	_	*	36;37	2:37
+6	Méziré	Méziré	PROPN	_	_	4	nmod	_	SpaceAfter=No	*	36;37;38	2:37;5:38
+7	,	,	PUNCT	_	_	1	punct	_	_	*	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	1928	1928	NUM	_	NumType=Card	1	obl:mod	_	SpaceAfter=No	*	39	*
+10	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_	*	40	2:40
+12	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_	*	*	*
+13	fréquenté	fréquenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	41	*
+15	école	école	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	_	*	41	*
+16	de	de	ADP	_	_	17	case	_	_	*	41	*
+17	Morvillars	Morvillars	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	41;42	5:42
+18	jusqu'	jusque	ADP	_	_	21	case	_	SpaceAfter=No	*	*	*
+19-20	au	_	_	_	_	_	_	_	_	*	*	*
+19	à	à	ADP	_	_	21	case	_	_	*	43	2:43
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	43	2:43
+21	CEP	cep	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	SpaceAfter=No	*	43	2:43
+22	.	.	PUNCT	_	_	13	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00517
+# text = Resté célibataire, il poursuit : "J'ai travaillé à l'usine des hameçons à Morvillars, jusqu'au service militaire", se souvient-il, visiblement marqué favorablement par cette période au 8e Chasseurs d'Afrique à Roanne.
+1	Resté	rester	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl	_	_	*	44	2:44
+2	célibataire	célibataire	ADJ	_	Number=Sing	1	xcomp	_	SpaceAfter=No	*	44	2:44
+3	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	_	*	45	2:45
+5	poursuit	poursuivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+6	:	:	PUNCT	_	_	5	punct	_	_	*	*	*
+7	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No	*	*	*
+8	J'	il	PRON	_	Number=Sing|Person=1	10	nsubj	_	SpaceAfter=No	*	46	*
+9	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_	*	*	*
+10	travaillé	travailler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	ccomp	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	*	*
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	47	7:47
+13	usine	usine	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*	47	7:47
+14-15	des	_	_	_	_	_	_	_	_	*	*	*
+14	de	de	ADP	_	_	16	case	_	_	*	47;48	7:47
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	_	*	47;48	7:47
+16	hameçons	hameçon	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*	47;48	7:47
+17	à	à	ADP	_	_	18	case	_	_	*	*	*
+18	Morvillars	Morvillars	PROPN	_	Gender=Masc|Number=Sing	10	obl:mod	_	SpaceAfter=No	*	49	12:49
+19	,	,	PUNCT	_	_	10	punct	_	_	*	*	*
+20	jusqu'	jusque	ADP	_	_	23	case	_	SpaceAfter=No	*	*	*
+21-22	au	_	_	_	_	_	_	_	_	*	*	*
+21	à	à	ADP	_	_	23	case	_	_	*	50	2:50
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_	*	50	2:50
+23	service	service	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	_	*	50	2:50
+24	militaire	militaire	ADJ	_	Number=Sing	23	amod	_	SpaceAfter=No	*	50	2:50
+25	"	"	PUNCT	_	_	10	punct	_	SpaceAfter=No	*	*	*
+26	,	,	PUNCT	_	_	28	punct	_	_	*	*	*
+27	se	se	PRON	_	Person=3|Reflex=Yes	28	expl:comp	_	_	1:IRV	*	*
+28	souvient	souvenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	SpaceAfter=No	1	*	*
+29	-il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	28	nsubj	_	SpaceAfter=No	*	*	*
+30	,	,	PUNCT	_	_	28	punct	_	_	*	*	*
+31	visiblement	visiblement	ADV	_	_	32	advmod	_	_	*	*	*
+32	marqué	marquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	28	advcl	_	_	*	*	*
+33	favorablement	favorablement	ADV	_	_	32	advmod	_	_	*	*	*
+34	par	par	ADP	_	_	36	case	_	_	*	*	*
+35	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	36	det	_	_	*	51	8:51
+36	période	période	NOUN	_	Gender=Fem|Number=Sing	32	obl:agent	_	_	*	51	8:51
+37-38	au	_	_	_	_	_	_	_	_	*	*	*
+37	à	à	ADP	_	_	40	case	_	_	*	52	7:52
+38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*	52	7:52
+39	8e	8e	ADJ	_	NumType=Ord	40	amod	_	_	*	52	7:52
+40	Chasseurs	Chasseurs	PROPN	_	_	36	nmod	_	_	*	52	7:52
+41	d'	de	ADP	_	_	42	case	_	SpaceAfter=No	*	52;53	7:52;8:53
+42	Afrique	Afrique	PROPN	_	Gender=Fem|Number=Sing	40	nmod	_	_	*	52;53;54	7:52;8:53;12:54
+43	à	à	ADP	_	_	44	case	_	_	*	*	*
+44	Roanne	Roanne	PROPN	_	Gender=Masc|Number=Sing	36	nmod	_	SpaceAfter=No	*	55	2:55
+45	.	.	PUNCT	_	_	5	punct	_	_	*	55	2:55
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00518
+# text = à son retour et jusqu'en 1980, il se fait apprécier à GFD avant de devenir pensionnaire à Bavilliers de "La Charmeuse".
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	son	son	DET	_	Number=Sing|Poss=Yes	3	det	_	_	*	56	2:56
+3	retour	retour	NOUN	_	Gender=Masc|Number=Sing	12	obl:mod	_	_	*	56	2:56
+4	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+5	jusqu'	jusque	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
+6	en	en	ADP	_	_	7	case	_	_	*	*	*
+7	1980	1980	NUM	_	NumType=Card	3	conj	_	SpaceAfter=No	*	57	*
+8	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj:caus	_	_	*	58	2:58
+10	se	se	PRON	_	Person=3|Reflex=Yes	12	obj	_	_	*	*	*
+11	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:caus	_	_	*	*	*
+12	apprécier	apprécier	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+13	à	à	ADP	_	_	14	case	_	_	*	*	*
+14	GFD	GFD	PROPN	_	_	12	obl:mod	_	_	*	59	*
+15	avant	avant	ADP	_	_	17	mark	_	_	*	*	*
+16	de	de	ADP	_	_	17	mark	_	_	*	*	*
+17	devenir	devenir	VERB	_	VerbForm=Inf	12	advcl	_	_	*	*	*
+18	pensionnaire	pensionnaire	NOUN	_	Number=Sing	17	xcomp	_	_	*	60	8:60
+19	à	à	ADP	_	_	20	case	_	_	*	*	*
+20	Bavilliers	Bavilliers	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	_	*	61	12:61
+21	de	de	ADP	_	_	24	case	_	_	*	*	*
+22	"	"	PUNCT	_	_	24	punct	_	SpaceAfter=No	*	*	*
+23	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*	62	*
+24	Charmeuse	charmeuse	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No	*	62	*
+25	"	"	PUNCT	_	_	24	punct	_	SpaceAfter=No	*	*	*
+26	.	.	PUNCT	_	_	12	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00519
+# text = Il est à la maison Belot depuis dix ans où il s'adonne à la belote avec son copain Pierre Brungard.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	63	2:63
+2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	à	à	ADP	_	_	5	case	_	_	*	*	*
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	64	3:64
+5	maison	maison	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	_	*	64	3:64
+6	Belot	Belot	PROPN	_	_	5	nmod	_	_	*	64;65	3:64
+7	depuis	depuis	ADP	_	_	9	case	_	_	*	*	*
+8	dix	dix	NUM	_	NumType=Card	9	nummod	_	_	*	66	*
+9	ans	an	NOUN	_	Gender=Masc|Number=Plur	2	obl:mod	_	_	*	66	*
+10	où	où	PRON	_	PronType=Rel	13	iobj	_	_	*	67	8:67
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	13	nsubj	_	_	*	68	13:68
+12	s'	se	PRON	_	Person=3|Reflex=Yes	13	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+13	adonne	adonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_	1	*	*
+14	à	à	ADP	_	_	16	case	_	_	*	*	*
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_	*	69	3:69
+16	belote	belote	NOUN	_	Gender=Fem|Number=Sing	13	obl:arg	_	_	*	69	3:69
+17	avec	avec	ADP	_	_	19	case	_	_	*	*	*
+18	son	son	DET	_	Number=Sing|Poss=Yes	19	det	_	_	*	70	13:70
+19	copain	copain	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	70	13:70
+20	Pierre	Pierre	PROPN	_	Gender=Masc|Number=Sing	19	appos	_	_	*	71	*
+21	Brungard	Brungard	PROPN	_	_	20	flat:name	_	SpaceAfter=No	*	71	*
+22	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00520
+# text = Anita Dachaud est quant à elle arrivée en famille, et très jeune, de sa chère Italie (Cesano).
+1	Anita	Anita	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	_	_	*	72	*
+2	Dachaud	Dachaud	PROPN	_	_	1	flat:name	_	_	*	72	*
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+4	quant	quant	ADV	_	_	6	case	_	EXTPOS=ADP|MWE=quant_à	*	*	*
+5	à	à	ADP	_	_	4	fixed	_	_	*	*	*
+6	elle	soi	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obl:mod	_	_	*	73	3:73
+7	arrivée	arriver	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	en	en	ADP	_	_	9	case	_	_	*	*	*
+9	famille	famille	NOUN	_	Gender=Fem|Number=Sing	7	obl:mod	_	SpaceAfter=No	*	74	3:74
+10	,	,	PUNCT	_	_	13	punct	_	_	*	74	3:74
+11	et	et	CCONJ	_	_	13	cc	_	_	*	*	*
+12	très	très	ADV	_	_	13	advmod	_	_	*	*	*
+13	jeune	jeune	ADJ	_	Number=Sing	9	conj	_	SpaceAfter=No	*	*	*
+14	,	,	PUNCT	_	_	7	punct	_	_	*	*	*
+15	de	de	ADP	_	_	18	case	_	_	*	*	*
+16	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	18	det	_	_	*	75;76	3:75;3:76
+17	chère	cher	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	_	*	75;76	3:75;3:76
+18	Italie	Italie	PROPN	_	Gender=Fem|Number=Sing	7	obl:arg	_	_	*	75;76	3:75;3:76
+19	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	76;77	3:76;3:77
+20	Cesano	Cesano	PROPN	_	_	18	nmod	_	SpaceAfter=No	*	76;77;78	3:76;3:77
+21	)	)	PUNCT	_	_	18	punct	_	SpaceAfter=No	*	*	*
+22	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00521
+# text = Elle a beaucoup voyagé et surtout changé d'employeur.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_	*	79	3:79
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
+3	beaucoup	beaucoup	ADV	_	_	4	advmod	_	_	*	*	*
+4	voyagé	voyager	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+5	et	et	CCONJ	_	_	7	cc	_	_	*	*	*
+6	surtout	surtout	ADV	_	_	7	advmod	_	_	*	*	*
+7	changé	changer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_	*	*	*
+8	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*	*	*
+9	employeur	employeur	NOUN	_	Gender=Masc|Number=Sing	7	obl:arg	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00522
+# text = Chez Peugeot d'abord, puis successivement à Héricourt (filature), ouvreuse de cinéma, vendeuse de magasins (maroquinerie à Montbéliard), avant de revenir au contrôle chez Peugeot.
+1	Chez	chez	ADP	_	_	2	case	_	_	*	80	0:80
+2	Peugeot	Peugeot	PROPN	_	Gender=Masc|Number=Sing	0	root	_	_	*	80;81	0:80
+3	d'	de	ADP	_	_	2	advmod	_	EXTPOS=ADV|MWE=d'abord|SpaceAfter=No	*	*	*
+4	abord	abord	NOUN	_	Gender=Masc|Number=Sing	3	fixed	_	SpaceAfter=No	*	*	*
+5	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+6	puis	puis	CCONJ	_	_	14	cc	_	_	*	*	*
+7	successivement	successivement	ADV	_	_	14	advmod	_	_	*	*	*
+8	à	à	ADP	_	_	9	case	_	_	*	*	*
+9	Héricourt	Héricourt	PROPN	_	_	14	orphan	_	_	*	82;83	0:83
+10	(	(	PUNCT	_	_	9	punct	_	SpaceAfter=No	*	83;84	0:83;3:84
+11	filature	filature	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No	*	83;84;85	0:83;3:84;3:85
+12	)	)	PUNCT	_	_	9	punct	_	SpaceAfter=No	*	*	*
+13	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+14	ouvreuse	ouvreuse	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_	*	86	3:86
+15	de	de	ADP	_	_	16	case	_	_	*	86	3:86
+16	cinéma	cinéma	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No	*	86;87	3:86;0:87
+17	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+18	vendeuse	vendeur	NOUN	_	Gender=Fem|Number=Sing	14	orphan	_	_	*	88;89	11:88;3:89
+19	de	de	ADP	_	_	20	case	_	_	*	88;89;90	11:88;3:89;0:90
+20	magasins	magasin	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	_	*	88;89;90;91	11:88;3:89;0:90;0:91
+21	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No	*	89;92	3:89;11:92
+22	maroquinerie	maroquinerie	NOUN	_	Gender=Fem|Number=Sing	20	appos	_	_	*	89;92;93;94	3:89;11:92;3:93;3:94
+23	à	à	ADP	_	_	24	case	_	_	*	94	3:94
+24	Montbéliard	Montbéliard	PROPN	_	_	22	nmod	_	SpaceAfter=No	*	94;95	3:94
+25	)	)	PUNCT	_	_	20	punct	_	SpaceAfter=No	*	*	*
+26	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+27	avant	avant	ADP	_	_	29	mark	_	_	*	*	*
+28	de	de	ADP	_	_	29	mark	_	_	*	*	*
+29	revenir	revenir	VERB	_	VerbForm=Inf	2	acl	_	_	*	*	*
+30-31	au	_	_	_	_	_	_	_	_	*	*	*
+30	à	à	ADP	_	_	32	case	_	_	*	96	10:96
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_	*	96	10:96
+32	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	29	obl:arg	_	_	*	96	10:96
+33	chez	chez	ADP	_	_	34	case	_	_	*	*	*
+34	Peugeot	Peugeot	PROPN	_	Gender=Masc|Number=Sing	29	obl:mod	_	SpaceAfter=No	*	97;98	10:98
+35	.	.	PUNCT	_	_	2	punct	_	_	*	98	10:98
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00523
+# text = Elle avait entre temps donné le jour à trois enfants, dont Mimi, présente pour l'occasion, et reste fière d'être grand-mère et arrière-grand-mère.
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	5	nsubj	_	_	*	99	3:99
+2	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:tense	_	_	*	*	*
+3	entre	entre	ADP	_	_	4	case	_	_	*	*	*
+4	temps	temps	NOUN	_	Gender=Masc	5	obl:mod	_	_	*	*	*
+5	donné	donner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	1:VID	*	*
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	1	100	*
+7	jour	jour	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1	100	*
+8	à	à	ADP	_	_	10	case	_	_	*	*	*
+9	trois	trois	NUM	_	NumType=Card	10	nummod	_	_	*	101;102	6:102
+10	enfants	enfant	NOUN	_	Number=Plur	5	obl:arg	_	SpaceAfter=No	*	101;102	6:102
+11	,	,	PUNCT	_	_	10	punct	_	_	*	102	6:102
+12	dont	dont	PRON	_	PronType=Rel	13	nmod	_	_	*	103	6:103
+13	Mimi	Mimi	PROPN	_	Gender=Fem|Number=Sing	10	acl:relcl	_	SpaceAfter=No	*	104	3:104
+14	,	,	PUNCT	_	_	13	punct	_	_	*	104	3:104
+15	présente	présent	ADJ	_	Gender=Fem|Number=Sing	13	amod	_	_	*	*	*
+16	pour	pour	ADP	_	_	18	case	_	_	*	*	*
+17	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No	*	105	*
+18	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	SpaceAfter=No	*	105	*
+19	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+20	et	et	CCONJ	_	_	21	cc	_	_	*	*	*
+21	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	*	*	*
+22	fière	fier	ADJ	_	Gender=Fem|Number=Sing	21	xcomp	_	_	*	*	*
+23	d'	de	ADP	_	_	25	mark	_	SpaceAfter=No	*	*	*
+24	être	être	AUX	_	VerbForm=Inf	25	cop	_	_	*	*	*
+25	grand-mère	grand-mère	NOUN	_	Gender=Fem|Number=Sing	22	xcomp	_	_	*	106;107	3:106;3:107
+26	et	et	CCONJ	_	_	27	cc	_	_	*	107	3:107
+27	arrière-grand-mère	arrière-grand-mère	NOUN	_	Gender=Fem|Number=Sing	25	conj	_	SpaceAfter=No	*	107;108	3:107;3:108
+28	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00524
+# text = à la maison Belot, elle s'est très vite fait remarquer par sa coquetterie, son envie de participer aux "Jeux olympiques inter-établissements" et bien sûr à l'incontournable belote.
+1	à	à	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	109	3:109
+3	maison	maison	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	_	*	109	3:109
+4	Belot	Belot	PROPN	_	_	3	nmod	_	SpaceAfter=No	*	109;110	3:109
+5	,	,	PUNCT	_	_	12	punct	_	_	*	*	*
+6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	12	nsubj:caus	_	_	*	111	3:111
+7	s'	se	PRON	_	Person=3|Reflex=Yes	12	obj	_	SpaceAfter=No	1:VID	*	*
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_	*	*	*
+9	très	très	ADV	_	_	10	advmod	_	_	*	*	*
+10	vite	vite	ADV	_	_	12	advmod	_	_	*	*	*
+11	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:caus	_	_	1	*	*
+12	remarquer	remarquer	VERB	_	VerbForm=Inf	0	root	_	_	1	*	*
+13	par	par	ADP	_	_	15	case	_	_	*	*	*
+14	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	15	det	_	_	*	112	3:112
+15	coquetterie	coquetterie	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	SpaceAfter=No	*	112	3:112
+16	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+17	son	son	DET	_	Number=Sing|Poss=Yes	18	det	_	_	*	113	3:113
+18	envie	envie	NOUN	_	Gender=Fem|Number=Sing	15	conj	_	_	*	113	3:113
+19	de	de	ADP	_	_	20	mark	_	_	*	*	*
+20	participer	participer	VERB	_	VerbForm=Inf	18	acl	_	_	*	*	*
+21-22	aux	_	_	_	_	_	_	_	_	*	*	*
+21	à	à	ADP	_	_	24	case	_	_	*	114;115	*
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_	*	114;115	*
+23	"	"	PUNCT	_	_	24	punct	_	SpaceAfter=No	*	114;115	*
+24	Jeux	jeu	NOUN	_	Gender=Masc|Number=Plur	20	obl:arg	_	_	*	114;115	*
+25	olympiques	olympique	ADJ	_	Number=Plur	24	amod	_	_	*	114;115	*
+26	inter-établissements	inter-établissement	ADJ	_	_	24	amod	_	SpaceAfter=No	*	114;115	*
+27	"	"	PUNCT	_	_	24	punct	_	_	*	115	*
+28	et	et	CCONJ	_	_	34	cc	_	_	*	*	*
+29	bien	bien	ADV	_	_	34	advmod	_	EXTPOS=ADV|MWE=bien_sûr	*	*	*
+30	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	29	fixed	_	_	*	*	*
+31	à	à	ADP	_	_	34	case	_	_	*	*	*
+32	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No	*	*	*
+33	incontournable	incontournable	ADJ	_	Number=Sing	34	amod	_	_	*	*	*
+34	belote	belote	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	SpaceAfter=No	*	*	*
+35	.	.	PUNCT	_	_	12	punct	_	_	*	*	*

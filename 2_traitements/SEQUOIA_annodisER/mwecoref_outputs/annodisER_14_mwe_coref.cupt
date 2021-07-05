@@ -1,0 +1,298 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00150
+# text = Une pluie d'étoiles
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	1	*
+2	pluie	pluie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1	*
+3	d'	de	ADP	_	_	4	case	_	SpaceAfter=No	*	1;2	*
+4	étoiles	étoile	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	_	*	1;2;3	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00151
+# text = Non !
+1	Non	non	ADV	_	_	0	root	_	_	*	*	*
+2	!	!	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00152
+# text = Il ne s'agit pas d'un phénomène météorologique accompagnant le solstice d'été.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	4	expl:subj	_	_	1:VID	*	*
+2	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+3	s'	se	PRON	_	Person=3|Reflex=Yes	4	expl:comp	_	SpaceAfter=No	1	*	*
+4	agit	agir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1	*	*
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	_	*	*	*
+6	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	*	*
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	4	*
+8	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	4	obl:arg	_	_	*	4	*
+9	météorologique	météorologique	ADJ	_	Number=Sing	8	amod	_	_	*	4	*
+10	accompagnant	accompagner	VERB	_	Tense=Pres|VerbForm=Part	8	acl	_	_	*	*	*
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	5	*
+12	solstice	solstice	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	_	*	5	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*	5	*
+14	été	été	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No	*	5;6;7	*
+15	.	.	PUNCT	_	_	4	punct	_	_	*	7	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00153
+# text = Plus simplement, les hasards du calendrier du Comité départemental d'action touristique a fait coïncider la promotion de l'Office de tourisme avec le nouveau classement de l'hôtel-restaurant Le Relais à Arc-et-Senans.
+1	Plus	plus	ADV	_	_	2	advmod	_	_	*	*	*
+2	simplement	simplement	ADV	_	_	18	advmod	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	8	*
+5	hasards	hasard	NOUN	_	Gender=Masc|Number=Plur	18	nsubj:caus	_	_	*	8	*
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	8	case	_	_	*	8;9	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	*	8;9	*
+8	calendrier	calendrier	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_	*	8;9	*
+9-10	du	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	8;9;10	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	8;9;10	*
+11	Comité	comité	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	8;9;10	*
+12	départemental	départemental	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	8;9;10	*
+13	d'	de	ADP	_	_	14	case	_	SpaceAfter=No	*	8;9;10	*
+14	action	action	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	8;9;10;11	*
+15	touristique	touristique	ADJ	_	Number=Sing	14	amod	_	_	*	8;9;10;11	*
+16	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_	*	*	*
+17	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	aux:caus	_	_	*	*	*
+18	coïncider	coïncider	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	12	*
+20	promotion	promotion	NOUN	_	Gender=Fem|Number=Sing	18	obj:agent	_	_	*	12	*
+21	de	de	ADP	_	_	23	case	_	_	*	12	*
+22	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*	12;13	*
+23	Office	office	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	_	*	12;13	*
+24	de	de	ADP	_	_	25	case	_	_	*	12;13	*
+25	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	_	*	12;13;14	*
+26	avec	avec	ADP	_	_	29	case	_	_	*	*	*
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_	*	15	*
+28	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_	*	15	*
+29	classement	classement	NOUN	_	Gender=Masc|Number=Sing	18	obl:arg	_	_	*	15	*
+30	de	de	ADP	_	_	32	case	_	_	*	15	*
+31	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	32	det	_	SpaceAfter=No	*	15;16	*
+32	hôtel-restaurant	hôtel-restaurant	NOUN	_	Number=Sing	29	nmod	_	_	*	15;16	*
+33	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_	*	15;16;17	7:17
+34	Relais	relais	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	_	*	15;16;17	7:17
+35	à	à	ADP	_	_	36	case	_	_	*	*	*
+36	Arc-et-Senans	Arc-et-Senans	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No	*	18	*
+37	.	.	PUNCT	_	_	18	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00154
+# text = Le double événement était fêté comme il se doit et conjointement par les deux établissements, mercredi 23 juin, à l'occasion de l'assemblée générale décentralisée des Offices de tourisme et Syndicats d'initiative du Doubs qui se tenait le même jour, sous la présidence d'Edmond Maire, à la Saline Royale.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	19	7:19
+2	double	double	ADJ	_	Number=Sing	3	amod	_	_	*	19	7:19
+3	événement	événement	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	_	*	19	7:19
+4	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux:pass	_	_	*	*	*
+5	fêté	fêter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+6	comme	comme	SCONJ	_	_	9	mark	_	_	*	*	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	9	expl:subj	_	_	*	*	*
+8	se	se	PRON	_	Person=3|Reflex=Yes	9	expl:comp	_	_	*	*	*
+9	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_	*	*	*
+10	et	et	CCONJ	_	_	15	cc	_	_	*	*	*
+11	conjointement	conjointement	ADV	_	_	15	advmod	_	_	*	*	*
+12	par	par	ADP	_	_	15	case	_	_	*	*	*
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	20;21	*
+14	deux	deux	NUM	_	NumType=Card	15	nummod	_	_	*	20;21	*
+15	établissements	établissement	NOUN	_	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No	*	20;21	*
+16	,	,	PUNCT	_	_	5	punct	_	_	*	21	*
+17	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	_	*	22;23	*
+18	23	23	NUM	_	NumType=Card	17	nmod	_	_	*	22;23	*
+19	juin	juin	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No	*	22;23	*
+20	,	,	PUNCT	_	_	5	punct	_	_	*	23	*
+21	à	à	ADP	_	_	23	case	_	_	*	*	*
+22	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No	*	24	*
+23	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*	24	*
+24	de	de	ADP	_	_	26	case	_	_	*	24	*
+25	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No	*	24;25	*
+26	assemblée	assemblée	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	1:LVC.full	24;25	*
+27	générale	général	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*	24;25	*
+28	décentralisée	décentralisé	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*	24;25	*
+29-30	des	_	_	_	_	_	_	_	_	*	*	*
+29	de	de	ADP	_	_	31	case	_	_	*	24;25;26;27	*
+30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_	*	24;25;26;27	*
+31	Offices	office	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	_	*	24;25;26;27	*
+32	de	de	ADP	_	_	33	case	_	_	*	24;25;26;27	*
+33	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*	24;25;26;27;28	*
+34	et	et	CCONJ	_	_	35	cc	_	_	*	24;25;27	*
+35	Syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	31	conj	_	_	*	24;25;27;29	*
+36	d'	de	ADP	_	_	37	case	_	SpaceAfter=No	*	24;25;27;29	*
+37	initiative	initiative	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	_	*	24;25;27;29;30;31	2:31
+38-39	du	_	_	_	_	_	_	_	_	*	*	*
+38	de	de	ADP	_	_	40	case	_	_	*	24;25;27;29;31;32	2:31
+39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_	*	24;25;27;29;31;32	2:31
+40	Doubs	Doubs	PROPN	_	Gender=Masc|Number=Sing	31	nmod	_	_	*	24;25;27;29;31;32	2:31
+41	qui	qui	PRON	_	PronType=Rel	43	nsubj	_	_	*	33	2:33
+42	se	se	PRON	_	Person=3|Reflex=Yes	43	expl:pass	_	_	*	*	*
+43	tenait	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl:relcl	_	_	1	*	*
+44	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_	*	34;35	6:34;8:35
+45	même	même	ADJ	_	Number=Sing	46	amod	_	_	*	34;35	6:34;8:35
+46	jour	jour	NOUN	_	Gender=Masc|Number=Sing	43	obl:mod	_	SpaceAfter=No	*	34;35	6:34;8:35
+47	,	,	PUNCT	_	_	43	punct	_	_	*	35	8:35
+48	sous	sous	ADP	_	_	50	case	_	_	*	*	*
+49	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_	*	36;37	5:37
+50	présidence	présidence	NOUN	_	Gender=Fem|Number=Sing	43	obl:mod	_	_	*	36;37	5:37
+51	d'	de	ADP	_	_	52	case	_	SpaceAfter=No	*	36;37	5:37
+52	Edmond	Edmond	PROPN	_	Gender=Masc|Number=Sing	50	nmod	_	_	*	36;37;38;39	5:37;6:39
+53	Maire	Maire	PROPN	_	Gender=Masc|Number=Sing	52	flat:name	_	SpaceAfter=No	*	36;37;38;39	5:37;6:39
+54	,	,	PUNCT	_	_	43	punct	_	_	*	37;39	5:37;6:39
+55	à	à	ADP	_	_	57	case	_	_	*	*	*
+56	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_	*	40	5:40
+57	Saline	saline	NOUN	_	Gender=Fem|Number=Sing	43	obl:mod	_	_	*	40	5:40
+58	Royale	royal	ADJ	_	Gender=Fem|Number=Sing	57	amod	_	SpaceAfter=No	*	40	5:40
+59	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00155
+# text = Deux étoiles pour l'hôtel Le Relais, situé sur la place de l'Eglise ;
+1	Deux	deux	NUM	_	NumType=Card	2	nummod	_	_	*	41	*
+2	étoiles	étoile	NOUN	_	Gender=Fem|Number=Plur	0	root	_	_	*	41	*
+3	pour	pour	ADP	_	_	5	case	_	_	*	*	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	*	*
+5	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	*	*
+6	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	42;43	6:42;8:43
+7	Relais	relais	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*	42;43	6:42;8:43
+8	,	,	PUNCT	_	_	5	punct	_	_	*	43	8:43
+9	situé	situer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*	*	*
+10	sur	sur	ADP	_	_	12	case	_	_	*	*	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*	44	5:44
+12	place	place	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	_	*	44	5:44
+13	de	de	ADP	_	_	15	case	_	_	*	44	5:44
+14	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	15	det	_	SpaceAfter=No	*	44;45	5:44;4:45
+15	Eglise	église	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No	*	44;45	5:44;4:45
+16	;	;	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00156
+# text = une étoile pour le restaurant du même nom, bien connu des habitants et des touristes.
+1	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	46	*
+2	étoile	étoile	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	46	*
+3	pour	pour	ADP	_	_	5	case	_	_	*	*	*
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	*	*
+5	restaurant	restaurant	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	*	*
+6-7	du	_	_	_	_	_	_	_	_	*	*	*
+6	de	de	ADP	_	_	9	case	_	_	*	47	6:47
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	47	6:47
+8	même	même	ADJ	_	Number=Sing	9	amod	_	_	*	47	6:47
+9	nom	nom	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*	47	6:47
+10	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
+11	bien	bien	ADV	_	_	12	advmod	_	_	*	*	*
+12	connu	connaître	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_	*	*	*
+13-14	des	_	_	_	_	_	_	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	48	*
+14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_	*	48	*
+15	habitants	habitant	NOUN	_	Gender=Masc|Number=Plur	12	obl:agent	_	_	*	48	*
+16	et	et	CCONJ	_	_	19	cc	_	_	*	*	*
+17-18	des	_	_	_	_	_	_	_	_	*	*	*
+17	de	de	ADP	_	_	19	case	_	_	*	49	*
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_	*	49	*
+19	touristes	touriste	NOUN	_	Number=Plur	15	conj	_	SpaceAfter=No	*	49	*
+20	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00157
+# text = Une juste récompense pour les efforts de qualité entrepris par Jeanine et Willy Schaer, jeune couple d'hôteliers originaires de Haute-Saône et installés à Arc-et-Senans depuis maintenant treize ans.
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	50	*
+2	juste	juste	ADJ	_	Number=Sing	3	amod	_	_	*	50	*
+3	récompense	récompense	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	50	*
+4	pour	pour	ADP	_	_	6	case	_	_	*	*	*
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_	*	51	*
+6	efforts	effort	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	_	*	51	*
+7	de	de	ADP	_	_	8	case	_	_	*	51	*
+8	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	_	*	51;52	0:52
+9	entrepris	entreprendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	6	acl	_	_	*	*	*
+10	par	par	ADP	_	_	11	case	_	_	*	*	*
+11	Jeanine	Jeanine	PROPN	_	Gender=Fem|Number=Sing	9	obl:agent	_	_	*	53	4:53
+12	et	et	CCONJ	_	_	13	cc	_	_	*	53	4:53
+13	Willy	Willy	PROPN	_	Gender=Masc|Number=Sing	11	conj	_	_	*	53;54	4:53
+14	Schaer	Schaer	PROPN	_	_	13	flat:name	_	SpaceAfter=No	*	53;54	4:53
+15	,	,	PUNCT	_	_	11	punct	_	_	*	*	*
+16	jeune	jeune	ADJ	_	Number=Sing	17	amod	_	_	*	55;56	*
+17	couple	couple	NOUN	_	Number=Sing	11	appos	_	_	*	55;56	*
+18	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*	55;56;57	4:57
+19	hôteliers	hôtelier	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	_	*	55;56;57;58	4:57
+20	originaires	originaire	ADJ	_	Number=Plur	19	amod	_	_	*	56	*
+21	de	de	ADP	_	_	22	case	_	_	*	56;59	0:59
+22	Haute-Saône	Haute-Saône	PROPN	_	Gender=Fem|Number=Sing	20	obl:arg	_	_	*	56;59;60	0:59
+23	et	et	CCONJ	_	_	24	cc	_	_	*	*	*
+24	installés	installer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	20	conj	_	_	*	*	*
+25	à	à	ADP	_	_	26	case	_	_	*	*	*
+26	Arc-et-Senans	Arc-et-Senans	PROPN	_	Gender=Masc|Number=Sing	24	obl:arg	_	_	*	61	*
+27	depuis	depuis	ADP	_	_	30	case	_	_	*	*	*
+28	maintenant	maintenant	ADV	_	_	30	advmod	_	_	*	*	*
+29	treize	treize	NUM	_	NumType=Card	30	nummod	_	_	*	62	*
+30	ans	an	NOUN	_	Gender=Masc|Number=Plur	24	obl:mod	_	SpaceAfter=No	*	62	*
+31	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00158
+# text = Deux étoiles aussi, c'est le nouveau classement de l'Office de tourisme d'Arc-et-Senans qui prend ainsi sa place dans la cour des grands, juste derrière les offices de Besançon et Montbéliard.
+1	Deux	deux	NUM	_	NumType=Card	2	nummod	_	_	*	63	*
+2	étoiles	étoile	NOUN	_	Gender=Fem|Number=Plur	9	dislocated	_	_	*	63	*
+3	aussi	aussi	ADV	_	_	2	advmod	_	SpaceAfter=No	*	*	*
+4	,	,	PUNCT	_	_	9	punct	_	_	*	*	*
+5	c'	ce	PRON	_	Number=Sing|Person=3	9	expl:subj	_	SpaceAfter=No	*	*	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	64	*
+8	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	64	*
+9	classement	classement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	64	*
+10	de	de	ADP	_	_	12	case	_	_	*	64	*
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	SpaceAfter=No	*	64;65	*
+12	Office	office	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	_	*	64;65	*
+13	de	de	ADP	_	_	14	case	_	_	*	64;65	*
+14	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	64;65;66	*
+15	d'	de	ADP	_	_	16	case	_	SpaceAfter=No	*	64;65;66	*
+16	Arc-et-Senans	Arc-et-Senans	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	_	*	64;65;66;67	3:67
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	68	*
+18	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_	1:VID	*	*
+19	ainsi	ainsi	ADV	_	_	18	advmod	_	_	*	*	*
+20	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	21	det	_	_	1	69	*
+21	place	place	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	_	1	69	*
+22	dans	dans	ADP	_	_	24	case	_	_	*	*	*
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_	*	*	*
+24	cour	cour	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	*	*
+25-26	des	_	_	_	_	_	_	_	_	*	*	*
+25	de	de	ADP	_	_	27	case	_	_	*	70	1:70
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_	*	70	1:70
+27	grands	grand	ADJ	_	Gender=Masc|Number=Plur	24	nmod	_	SpaceAfter=No	*	70	1:70
+28	,	,	PUNCT	_	_	18	punct	_	_	*	*	*
+29	juste	juste	ADV	_	_	32	advmod	_	_	*	*	*
+30	derrière	derrière	ADP	_	_	32	case	_	_	*	*	*
+31	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	32	det	_	_	*	71	1:71
+32	offices	offices	NOUN	_	Gender=Masc|Number=Plur	18	obl:mod	_	_	*	71	1:71
+33	de	de	ADP	_	_	34	case	_	_	*	71	1:71
+34	Besançon	Besançon	PROPN	_	_	32	nmod	_	_	*	71;72	1:71;3:72
+35	et	et	CCONJ	_	_	36	cc	_	_	*	71	1:71
+36	Montbéliard	Montbéliard	PROPN	_	_	34	conj	_	SpaceAfter=No	*	71;73	1:71;3:73
+37	.	.	PUNCT	_	_	9	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00159
+# text = Sur des critères très stricts de compétence et d'accueil, c'est le premier établissement en France qui reçoit cette promotion selon la toute nouvelle loi du 16 décembre 1998 sur les Offices de tourisme.
+1	Sur	sur	ADP	_	_	3	case	_	_	*	*	*
+2	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	3	det	_	_	*	*	*
+3	critères	critère	NOUN	_	Gender=Masc|Number=Plur	16	obl:mod	_	_	*	*	*
+4	très	très	ADV	_	_	5	advmod	_	_	*	*	*
+5	stricts	strict	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	_	*	*	*
+6	de	de	ADP	_	_	7	case	_	_	*	*	*
+7	compétence	compétence	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	_	*	74	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	d'	de	ADP	_	_	10	case	_	SpaceAfter=No	*	*	*
+10	accueil	accueil	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	SpaceAfter=No	*	75	*
+11	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+12	c'	ce	PRON	_	Number=Sing|Person=3	16	nsubj	_	SpaceAfter=No	*	*	*
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_	*	*	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	*	76;77	*
+15	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	16	amod	_	_	*	76;77	*
+16	établissement	établissement	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*	76;77	*
+17	en	en	ADP	_	_	18	case	_	_	*	77	*
+18	France	France	PROPN	_	Gender=Fem|Number=Sing	16	nmod	_	_	*	77;78	3:78
+19	qui	qui	PRON	_	PronType=Rel	20	nsubj	_	_	*	79	*
+20	reçoit	recevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	1:LVC.full	*	*
+21	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	22	det	_	_	*	80	*
+22	promotion	promotion	NOUN	_	Gender=Fem|Number=Sing	20	obj	_	_	1	80	*
+23	selon	selon	ADP	_	_	27	case	_	_	*	*	*
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*	81	*
+25	toute	toute	ADV	_	_	26	advmod	_	_	*	81	*
+26	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	27	amod	_	_	*	81	*
+27	loi	loi	NOUN	_	Gender=Fem|Number=Sing	20	obl:mod	_	_	*	81	*
+28-29	du	_	_	_	_	_	_	_	_	*	*	*
+28	de	de	ADP	_	_	30	case	_	_	*	81;82	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*	81;82	*
+30	16	16	NUM	_	NumType=Card	27	nmod	_	_	*	81;82	*
+31	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	_	*	81;82	*
+32	1998	1998	NUM	_	NumType=Card	31	nmod	_	_	*	81;82	*
+33	sur	sur	ADP	_	_	35	case	_	_	*	*	*
+34	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	35	det	_	_	*	83;84	*
+35	Offices	office	NOUN	_	Gender=Masc|Number=Plur	27	nmod	_	_	*	83;84	*
+36	de	de	ADP	_	_	37	case	_	_	*	83;84	*
+37	tourisme	tourisme	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	SpaceAfter=No	*	83;84;85	*
+38	.	.	PUNCT	_	_	16	punct	_	_	*	84	*

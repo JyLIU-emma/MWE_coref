@@ -1,0 +1,243 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00232
+# text = Rixe à Montbéliard : un Belfortain ivre interpellé.
+1	Rixe	rixe	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	1;2	9:1;4:2
+2	à	à	ADP	_	_	3	case	_	_	*	2	4:2
+3	Montbéliard	Montbéliard	PROPN	_	_	1	nmod	_	_	*	2;3	4:2;9:3
+4	:	:	PUNCT	_	_	1	punct	_	_	*	*	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	4;5	*
+6	Belfortain	belfortain	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	_	*	4;5	*
+7	ivre	ivre	ADJ	_	Number=Sing	6	amod	_	_	*	5	*
+8	interpellé	interpeller	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	SpaceAfter=No	*	*	*
+9	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00233
+# text = Dans la nuit de dimanche à lundi, peu après minuit, les services de police de Montbéliard reçoivent un appel téléphonique les informant qu'une rixe est en train de dégénérer, place Ferrer, à Montbéliard.
+1	Dans	dans	ADP	_	_	3	case	_	_	*	*	*
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	6	4:6
+3	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	19	obl:mod	_	_	*	6	4:6
+4	de	de	ADP	_	_	5	case	_	_	*	6	4:6
+5	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	6;7;8	4:6;8:8
+6	à	à	ADP	_	_	7	case	_	_	*	6;8	4:6;8:8
+7	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No	*	6;8;9;10	4:6;8:8;8:10
+8	,	,	PUNCT	_	_	19	punct	_	_	*	6;8;9;10	4:6;8:8;8:10
+9	peu	peu	ADV	_	_	11	advmod	_	_	*	6;10	4:6;8:10
+10	après	après	ADP	_	_	11	case	_	_	*	6;10	4:6;8:10
+11	minuit	minuit	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	SpaceAfter=No	*	6;10;11	4:6;8:10;2:11
+12	,	,	PUNCT	_	_	19	punct	_	_	*	6;10	4:6;8:10
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	_	*	6;10;12	4:6;8:10
+14	services	service	NOUN	_	Gender=Masc|Number=Plur	19	nsubj	_	_	*	6;10;12	4:6;8:10
+15	de	de	ADP	_	_	16	case	_	_	*	6;10;12	4:6;8:10
+16	police	police	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	6;10;12;13	4:6;8:10
+17	de	de	ADP	_	_	18	case	_	_	*	6;10;12;13	4:6;8:10
+18	Montbéliard	Montbéliard	PROPN	_	_	14	nmod	_	_	*	6;10;12;13;14	4:6;8:10
+19	reçoivent	recevoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	15	6:15
+21	appel	appel	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	_	1	15	6:15
+22	téléphonique	téléphonique	ADJ	_	Number=Sing	21	amod	_	_	*	15	6:15
+23	les	le	PRON	_	Number=Plur|Person=3	24	obj	_	_	*	16	2:16
+24	informant	informer	VERB	_	Tense=Pres|VerbForm=Part	21	acl	_	_	*	*	*
+25	qu'	que	SCONJ	_	_	30	mark	_	SpaceAfter=No	*	*	*
+26	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_	*	17	*
+27	rixe	rixe	NOUN	_	Gender=Fem|Number=Sing	30	nsubj	_	_	*	17	*
+28	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	_	_	*	*	*
+29	en	en	ADP	_	_	30	case	_	_	*	*	*
+30	train	train	NOUN	_	Gender=Masc|Number=Sing	24	ccomp	_	_	*	*	*
+31	de	de	ADP	_	_	32	mark	_	_	*	*	*
+32	dégénérer	dégénérer	VERB	_	VerbForm=Inf	30	acl	_	SpaceAfter=No	*	*	*
+33	,	,	PUNCT	_	_	30	punct	_	_	*	*	*
+34	place	place	NOUN	_	Gender=Fem|Number=Sing	30	obl:mod	_	_	*	18;19	*
+35	Ferrer	Ferrer	PROPN	_	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No	*	18;19;20;21	6:21
+36	,	,	PUNCT	_	_	30	punct	_	_	*	19;21	6:21
+37	à	à	ADP	_	_	38	case	_	_	*	*	*
+38	Montbéliard	Montbéliard	PROPN	_	_	30	obl:mod	_	SpaceAfter=No	*	22	*
+39	.	.	PUNCT	_	_	19	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00234
+# text = Lorsque les représentants de l'ordre se présentent sur les lieux, il n'y a plus trace de la moindre bagarre.
+1	Lorsque	lorsque	SCONJ	_	_	8	mark	_	_	*	*	*
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_	*	23	10:23
+3	représentants	représentant	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	_	*	23	10:23
+4	de	de	ADP	_	_	6	case	_	_	*	23	10:23
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	23;24	10:23
+6	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	_	*	23;24	10:23
+7	se	se	PRON	_	Person=3|Reflex=Yes	8	expl:comp	_	_	1:IRV	*	*
+8	présentent	présenter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_	1	*	*
+9	sur	sur	ADP	_	_	11	case	_	_	*	*	*
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	25	10:25
+11	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	8	obl:arg	_	SpaceAfter=No	*	25	10:25
+12	,	,	PUNCT	_	_	16	punct	_	_	*	*	*
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	16	expl:subj	_	_	2:VID	*	*
+14	n'	ne	ADV	_	Polarity=Neg	16	advmod	_	SpaceAfter=No	*	*	*
+15	y	y	PRON	_	Person=3	16	expl:comp	_	_	2	*	*
+16	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	2	*	*
+17	plus	plus	ADV	_	Polarity=Neg	16	advmod	_	_	*	26	3:26
+18	trace	trace	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	*	26	3:26
+19	de	de	ADP	_	_	22	case	_	_	*	*	*
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	*	*
+21	moindre	moindre	ADJ	_	Number=Sing	22	amod	_	_	*	*	*
+22	bagarre	bagarre	NOUN	_	Gender=Fem|Number=Sing	16	obl:arg	_	SpaceAfter=No	*	*	*
+23	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00235
+# text = Néanmoins, un témoin leur assure qu'un des protagonistes de la rixe a pris la fuite en voiture.
+1	Néanmoins	néanmoins	ADV	_	_	6	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	27	6:27
+4	témoin	témoin	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	_	*	27	6:27
+5	leur	lui	PRON	_	Number=Plur|Person=3	6	iobj	_	_	*	28	3:28
+6	assure	assurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+7	qu'	que	SCONJ	_	_	16	mark	_	SpaceAfter=No	*	*	*
+8	un	un	PRON	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*	29	6:29
+9-10	des	_	_	_	_	_	_	_	_	*	*	*
+9	de	de	ADP	_	_	11	case	_	_	*	29;30	6:29
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_	*	29;30	6:29
+11	protagonistes	protagoniste	NOUN	_	Number=Plur	8	nmod	_	_	*	29;30	6:29
+12	de	de	ADP	_	_	14	case	_	_	*	29;30	6:29
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_	*	29;30;31	6:29;1:31
+14	rixe	rixe	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	29;30;31	6:29;1:31
+15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_	*	*	*
+16	pris	prendre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	6	ccomp	_	_	1:LVC.full	*	*
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_	1	32	1:32
+18	fuite	fuite	NOUN	_	Gender=Fem|Number=Sing	16	obj	_	_	1	32	1:32
+19	en	en	ADP	_	_	20	case	_	_	*	*	*
+20	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	SpaceAfter=No	*	33	*
+21	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00236
+# text = Il donne le signalement de la voiture.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	34	6:34
+2	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	*	*	*
+4	signalement	signalement	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	*	*
+7	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No	*	*	*
+8	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00237
+# text = Le véhicule en question est rapidement localisée et est immobilisée à hauteur de la succursale Peugeot.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	35	6:35
+2	véhicule	véhicule	NOUN	_	Gender=Masc|Number=Sing	7	nsubj:pass	_	_	*	35	6:35
+3	en	en	ADP	_	_	4	case	_	_	*	35	6:35
+4	question	question	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	_	*	35	6:35
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*	*	*
+6	rapidement	rapidement	ADV	_	_	7	advmod	_	_	*	*	*
+7	localisée	localiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	_	*	*	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*	*	*
+10	immobilisée	immobiliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	conj	_	_	*	*	*
+11	à	à	ADP	_	_	12	case	_	_	*	*	*
+12	hauteur	hauteur	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	_	*	*	*
+13	de	de	ADP	_	_	15	case	_	_	*	*	*
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	36	1:36
+15	succursale	succursale	NOUN	_	Gender=Fem|Number=Sing	12	nmod	_	_	*	36	1:36
+16	Peugeot	Peugeot	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No	*	36;37;38	1:36;6:38
+17	.	.	PUNCT	_	_	7	punct	_	_	*	36;38	1:36;6:38
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00238
+# text = Le conducteur présente des signes d'ivresse et est conduit au commissariat central où son taux d'alcoolémie est fixé à 1,74 gramme par litre de sang.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	39	6:39
+2	conducteur	conducteur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	39	6:39
+3	présente	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1:LVC.full	*	*
+4	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	_	*	40	7:40
+5	signes	signe	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	_	1	40	7:40
+6	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	40	7:40
+7	ivresse	ivresse	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*	40;41	7:40
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_	*	*	*
+10	conduit	conduire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	3	conj	_	_	*	*	*
+11-12	au	_	_	_	_	_	_	_	_	*	*	*
+11	à	à	ADP	_	_	13	case	_	_	*	42	6:42
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_	*	42	6:42
+13	commissariat	commissariat	NOUN	_	Gender=Masc|Number=Sing	10	obl:arg	_	_	*	42	6:42
+14	central	central	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_	*	42	6:42
+15	où	où	PRON	_	PronType=Rel	21	iobj	_	_	*	43	7:43
+16	son	son	DET	_	Number=Sing|Poss=Yes	17	det	_	_	*	44	6:44
+17	taux	taux	NOUN	_	Gender=Masc|Number=Sing	21	nsubj:pass	_	_	*	44	6:44
+18	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*	44	6:44
+19	alcoolémie	alcoolémie	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	_	*	44;45	6:44
+20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	_	*	*	*
+21	fixé	fixer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	13	acl:relcl	_	_	*	*	*
+22	à	à	ADP	_	_	24	case	_	_	*	*	*
+23	1,74	1,74	NUM	_	NumType=Card	24	nummod	_	_	*	46	6:46
+24	gramme	gramme	NOUN	_	Gender=Masc|Number=Sing	21	obl:arg	_	_	*	46	6:46
+25	par	par	ADP	_	_	26	case	_	_	*	*	*
+26	litre	litre	NOUN	_	Number=Sing	24	nmod	_	_	*	47	*
+27	de	de	ADP	_	_	28	case	_	_	*	47	*
+28	sang	sang	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No	*	47;48	*
+29	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00239
+# text = Ce Belfortain de 27 ans a recouvré sa liberté après avoir passé le restant de la nuit dans une cellule de dégrisement.
+1	Ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_	*	49	*
+2	Belfortain	belfortain	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*	49	*
+3	de	de	ADP	_	_	5	case	_	_	*	49	*
+4	27	27	NUM	_	NumType=Card	5	nummod	_	_	*	49;50	*
+5	ans	an	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	_	*	49;50	*
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_	*	*	*
+7	recouvré	recouvrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes	9	det	_	_	*	51	*
+9	liberté	liberté	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	_	*	51	*
+10	après	après	ADP	_	_	12	mark	_	_	*	*	*
+11	avoir	avoir	AUX	_	VerbForm=Inf	12	aux:tense	_	_	*	*	*
+12	passé	passer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	advcl	_	_	*	*	*
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	*	52	*
+14	restant	restant	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	_	*	52	*
+15	de	de	ADP	_	_	17	case	_	_	*	52	*
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	52;53	*
+17	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_	*	52;53	*
+18	dans	dans	ADP	_	_	20	case	_	_	*	*	*
+19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_	*	54	*
+20	cellule	cellule	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*	54	*
+21	de	de	ADP	_	_	22	case	_	_	*	54	*
+22	dégrisement	dégrisement	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No	*	54;55	0:55
+23	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00240
+# text = Il comparaîtra prochainement devant le tribunal correctionnel de Montbéliard pour y répondre d'une conduite en état d'ivresse.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_	*	56	0:56
+2	comparaîtra	comparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
+3	prochainement	prochainement	ADV	_	_	2	advmod	_	_	*	*	*
+4	devant	devant	ADP	_	_	6	case	_	_	*	*	*
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	57	0:57
+6	tribunal	tribunal	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	57	0:57
+7	correctionnel	correctionnel	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	57	0:57
+8	de	de	ADP	_	_	9	case	_	_	*	57	0:57
+9	Montbéliard	Montbéliard	PROPN	_	_	6	nmod	_	_	*	57;58	0:57
+10	pour	pour	ADP	_	_	12	mark	_	_	*	*	*
+11	y	y	PRON	_	Person=3	12	iobj	_	_	*	*	*
+12	répondre	répondre	VERB	_	VerbForm=Inf	2	advcl	_	_	*	*	*
+13	d'	de	ADP	_	_	15	case	_	SpaceAfter=No	*	*	*
+14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	*	59	*
+15	conduite	conduite	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	_	*	59	*
+16	en	en	ADP	_	_	17	case	_	_	*	59	*
+17	état	état	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*	59;60	0:60
+18	d'	de	ADP	_	_	19	case	_	SpaceAfter=No	*	59;60	0:60
+19	ivresse	ivresse	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No	*	59;60;61	0:60
+20	.	.	PUNCT	_	_	2	punct	_	_	*	59	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00241
+# text = Pour ce qui est de la bagarre, l'enquête de police se poursuit afin de savoir qui a fait quoi.
+1	Pour	pour	ADP	_	_	7	case	_	EXTPOS=ADP|MWE=pour_ce_qui_est	*	*	*
+2	ce	ce	PRON	_	_	1	fixed	_	_	*	*	*
+3	qui	qui	PRON	_	PronType=Rel	1	fixed	_	_	*	*	*
+4	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_	*	*	*
+5	de	de	ADP	_	_	7	case	_	_	*	*	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	62	*
+7	bagarre	bagarre	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	SpaceAfter=No	*	62	*
+8	,	,	PUNCT	_	_	14	punct	_	_	*	*	*
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No	*	63	5:63
+10	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	_	*	63	5:63
+11	de	de	ADP	_	_	12	case	_	_	*	63	5:63
+12	police	police	NOUN	_	Gender=Fem|Number=Sing	10	nmod	_	_	*	63;64	5:63
+13	se	se	PRON	_	Person=3|Reflex=Yes	14	expl:pass	_	_	*	*	*
+14	poursuit	poursuivre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+15	afin	afin	ADV	_	_	14	advmod	_	_	*	*	*
+16	de	de	ADP	_	_	17	case	_	_	*	*	*
+17	savoir	savoir	VERB	_	VerbForm=Inf	15	obl:arg	_	_	*	*	*
+18	qui	qui	PRON	_	PronType=Int	20	nsubj	_	_	*	65	5:65
+19	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_	*	*	*
+20	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	ccomp	_	_	*	*	*
+21	quoi	quoi	PRON	_	PronType=Int	20	obj	_	SpaceAfter=No	*	*	*
+22	.	.	PUNCT	_	_	14	punct	_	_	*	*	*

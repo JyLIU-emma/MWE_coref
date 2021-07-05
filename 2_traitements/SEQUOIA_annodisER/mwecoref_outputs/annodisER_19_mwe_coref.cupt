@@ -1,0 +1,254 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE MENTION COREF
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00220
+# text = à Soleuvre : des hauts et des bas
+1	à	à	ADP	_	_	2	case	_	_	*	*	*
+2	Soleuvre	Soleuvre	PROPN	_	_	5	nmod	_	_	*	1	8:1
+3	:	:	PUNCT	_	_	5	punct	_	_	*	*	*
+4	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	_	*	2	5:2
+5	hauts	hauts	NOUN	_	Gender=Masc|Number=Plur	0	root	_	_	*	2	5:2
+6	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+7	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	8	det	_	_	*	3	5:3
+8	bas	bas	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	_	*	3	5:3
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-test.conllu annodis.er_00221
+# text = SOLEUVRE.
+1	SOLEUVRE	Soleuvre	PROPN	_	_	0	root	_	SpaceAfter=No	*	*	*
+2	.	.	PUNCT	_	_	1	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00222
+# text = L'Effort Basket de Mirecourt participait ce dimanche au tournoi international de Soleuvre au Luxembourg où étaient présentées des équipes de haut niveau telle Utrecht (N1 hollandaise).
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	4	8:4
+2	Effort	Effort	PROPN	_	Number=Sing	6	nsubj	_	_	*	4	8:4
+3	Basket	Basket	PROPN	_	_	2	flat:name	_	_	*	4	8:4
+4	de	de	ADP	_	_	5	case	_	_	*	4	8:4
+5	Mirecourt	Mirecourt	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	4;5	8:4;8:5
+6	participait	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_	*	*	*
+7	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*	6	0:6
+8	dimanche	dimanche	NOUN	_	Gender=Masc|Number=Sing	6	obl:mod	_	_	*	6	0:6
+9-10	au	_	_	_	_	_	_	_	_	*	*	*
+9	à	à	ADP	_	_	11	case	_	_	*	*	*
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	*	*
+11	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	6	obl:arg	_	_	*	*	*
+12	international	international	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	_	*	*	*
+13	de	de	ADP	_	_	14	case	_	_	*	*	*
+14	Soleuvre	Soleuvre	PROPN	_	_	11	nmod	_	_	*	7;8	8:7
+15-16	au	_	_	_	_	_	_	_	_	*	*	*
+15	à	à	ADP	_	_	17	case	_	_	*	8;9	0:9
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	*	8;9	0:9
+17	Luxembourg	Luxembourg	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	_	*	8;9	0:9
+18	où	où	PRON	_	PronType=Rel	20	iobj	_	_	*	10	0:10
+19	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	20	aux:pass	_	_	*	*	*
+20	présentées	présenter	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	11	acl:relcl	_	_	*	*	*
+21	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	22	det	_	_	*	11	*
+22	équipes	équipe	NOUN	_	Gender=Fem|Number=Plur	20	nsubj:pass	_	_	*	11	*
+23	de	de	ADP	_	_	25	case	_	_	*	11;12	*
+24	haut	haut	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	_	*	11;12;13	7:13
+25	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_	*	11;12;13	7:13
+26	telle	tel	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	_	*	*	*
+27	Utrecht	Utrecht	PROPN	_	_	26	obl:mod	_	_	*	14;15	8:14;0:15
+28	(	(	PUNCT	_	_	27	punct	_	SpaceAfter=No	*	15;16	0:15;0:16
+29	N1	N1	NOUN	_	Number=Sing	27	nmod	_	_	*	15;16;17	0:15;0:16
+30	hollandaise	hollandais	ADJ	_	Gender=Fem|Number=Sing	29	amod	_	SpaceAfter=No	*	15;16;17	0:15;0:16
+31	)	)	PUNCT	_	_	27	punct	_	SpaceAfter=No	*	*	*
+32	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00223
+# text = D'abord, les Mirecurtiens rencontrèrent Utrecht qu'ils accrochèrent longtemps pour finalement céder par 36-32.
+1	D'	de	ADP	_	_	6	advmod	_	EXTPOS=ADV|MWE=d'abord|SpaceAfter=No	*	*	*
+2	abord	abord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	6	punct	_	_	*	*	*
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_	*	18	6:18
+5	Mirecurtiens	Mirecurtien	NOUN	_	Number=Plur	6	nsubj	_	_	*	18	6:18
+6	rencontrèrent	rencontrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*	*	*
+7	Utrecht	Utrecht	PROPN	_	_	6	obj	_	_	*	19	9:19
+8	qu'	que	PRON	_	PronType=Rel	10	obj	_	SpaceAfter=No	*	20	7:20
+9	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	10	nsubj	_	_	*	21	2:21
+10	accrochèrent	accrocher	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_	*	*	*
+11	longtemps	longtemps	ADV	_	_	10	advmod	_	_	*	*	*
+12	pour	pour	ADP	_	_	14	mark	_	_	*	*	*
+13	finalement	finalement	ADV	_	_	14	advmod	_	_	*	*	*
+14	céder	céder	VERB	_	VerbForm=Inf	10	advcl	_	_	*	*	*
+15	par	par	ADP	_	_	16	case	_	_	*	*	*
+16	36-32	36-32	NOUN	_	NumType=Card	14	obl:mod	_	SpaceAfter=No	*	22;23	*
+17	.	.	PUNCT	_	_	6	punct	_	_	*	23	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00224
+# text = Deuxième match, contre Sarrelouis (N2 allemande).
+1	Deuxième	deuxième	ADJ	_	Number=Sing|NumType=Ord	2	amod	_	_	*	*	*
+2	match	match	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*	*	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+4	contre	contre	ADP	_	_	5	case	_	_	*	*	*
+5	Sarrelouis	Sarrelouis	PROPN	_	_	2	nmod	_	_	*	24;25	9:24;2:25
+6	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	25	2:25
+7	N2	N2	NOUN	_	Number=Sing	5	nmod	_	_	*	25;26	2:25;6:26
+8	allemande	allemand	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No	*	25;26	2:25;6:26
+9	)	)	PUNCT	_	_	5	punct	_	SpaceAfter=No	*	*	*
+10	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00225
+# text = Là, les hommes de Franck Renard, bien en jambes se montrèrent plus sûrs notamment à l'intérieur de la raquette et ils l'emportèrent par 45-36.
+1	Là	là	ADV	_	_	13	advmod	_	SpaceAfter=No	*	*	*
+2	,	,	PUNCT	_	_	13	punct	_	_	*	*	*
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	_	*	27;28	2:27;2:28
+4	hommes	homme	NOUN	_	Gender=Masc|Number=Plur	13	nsubj	_	_	*	27;28	2:27;2:28
+5	de	de	ADP	_	_	6	case	_	_	*	27;28	2:27;2:28
+6	Franck	Franck	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	_	*	27;28;29	2:27;2:28
+7	Renard	Renard	PROPN	_	Gender=Masc|Number=Sing	6	flat:name	_	SpaceAfter=No	*	27;28;29	2:27;2:28
+8	,	,	PUNCT	_	_	4	punct	_	_	*	28	2:28
+9	bien	bien	ADV	_	_	11	advmod	_	_	*	28	2:28
+10	en	en	ADP	_	_	11	case	_	_	*	28	2:28
+11	jambes	jambe	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	_	*	28;30	2:28
+12	se	se	PRON	_	Person=3|Reflex=Yes	13	expl:comp	_	_	1:IRV	*	*
+13	montrèrent	montrer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1	*	*
+14	plus	plus	ADV	_	_	15	advmod	_	_	*	*	*
+15	sûrs	sûr	ADJ	_	Gender=Masc|Number=Plur	13	xcomp	_	_	*	*	*
+16	notamment	notamment	ADV	_	_	19	advmod	_	_	*	*	*
+17	à	à	ADP	_	_	19	case	_	_	*	*	*
+18	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	19	det	_	SpaceAfter=No	*	31	11:31
+19	intérieur	intérieur	NOUN	_	Gender=Masc|Number=Sing	13	obl:mod	_	_	*	31	11:31
+20	de	de	ADP	_	_	22	case	_	_	*	31	11:31
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_	*	31;32	11:31
+22	raquette	raquette	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_	*	31;32	11:31
+23	et	et	CCONJ	_	_	26	cc	_	_	*	*	*
+24	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	26	nsubj	_	_	*	33	2:33
+25	l'	le	PRON	_	Number=Sing|Person=3	26	expl:comp	_	SpaceAfter=No	2:VID	34	11:34
+26	emportèrent	emporter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_	2	*	*
+27	par	par	ADP	_	_	28	case	_	_	*	*	*
+28	45-36	45-36	NOUN	_	NumType=Card	26	obl:arg	_	SpaceAfter=No	*	35;36	*
+29	.	.	PUNCT	_	_	13	punct	_	_	*	36	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00226
+# text = L'après-midi, rencontre entre Lorrains pour la 3e place contre les voisins de Joeuf, mais la fatigue commençait à se faire sentir.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	37;38	*
+2	après-midi	après-midi	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No	*	37;38	*
+3	,	,	PUNCT	_	_	2	punct	_	_	*	38	*
+4	rencontre	rencontre	NOUN	_	Number=Sing	2	nmod	_	_	*	38;39;40	*
+5	entre	entre	ADP	_	_	6	case	_	_	*	40	*
+6	Lorrains	lorrain	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	_	*	40;41	*
+7	pour	pour	ADP	_	_	10	case	_	_	*	*	*
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_	*	42	4:42
+9	3e	3e	ADJ	_	NumType=Ord	10	amod	_	_	*	42	4:42
+10	place	place	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_	*	42	4:42
+11	contre	contre	ADP	_	_	13	case	_	_	*	*	*
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_	*	43	10:43
+13	voisins	voisins	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	_	*	43	10:43
+14	de	de	ADP	_	_	15	case	_	_	*	43	10:43
+15	Joeuf	Joeuf	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*	43;44	10:43
+16	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
+17	mais	mais	CCONJ	_	_	20	cc	_	_	*	*	*
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_	*	45	4:45
+19	fatigue	fatigue	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	_	*	45	4:45
+20	commençait	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_	*	*	*
+21	à	à	ADP	_	_	24	mark	_	_	*	*	*
+22	se	se	PRON	_	Person=3|Reflex=Yes	24	obj	_	_	*	*	*
+23	faire	faire	AUX	_	VerbForm=Inf	24	aux:caus	_	_	*	*	*
+24	sentir	sentir	VERB	_	VerbForm=Inf	20	xcomp	_	SpaceAfter=No	*	*	*
+25	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00227
+# text = Mirecourt perdit trop de ballons et sur ces mini-rencontres cela ne pardonne pas.
+1	Mirecourt	Mirecourt	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	_	*	46	3:46
+2	perdit	perdre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*	*	*
+3	trop	trop	ADV	_	_	2	obj	_	_	*	*	*
+4	de	de	ADP	_	_	5	case	_	_	*	47	10:47
+5	ballons	ballon	NOUN	_	Gender=Masc|Number=Plur	3	obl:arg	_	_	*	47	10:47
+6	et	et	CCONJ	_	_	12	cc	_	_	*	*	*
+7	sur	sur	ADP	_	_	9	case	_	_	*	*	*
+8	ces	ce	DET	_	Number=Plur|PronType=Dem	9	det	_	_	*	48	*
+9	mini-rencontres	mini-rencontre	NOUN	_	Number=Plur	12	obl:mod	_	_	*	48	*
+10	cela	cela	PRON	_	Number=Sing|PronType=Dem	12	nsubj	_	_	*	49	4:49
+11	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*	*	*
+12	pardonne	pardonner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_	*	*	*
+13	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	SpaceAfter=No	*	*	*
+14	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-dev.conllu annodis.er_00228
+# text = L'EBM s'inclina devant Joeuf par 70-61.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	50	*
+2	EBM	EBM	PROPN	_	Number=Sing	4	nsubj	_	_	*	50	*
+3	s'	se	PRON	_	Person=3|Reflex=Yes	4	expl:comp	_	SpaceAfter=No	1:IRV	*	*
+4	inclina	incliner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1	*	*
+5	devant	devant	ADP	_	_	6	case	_	_	*	*	*
+6	Joeuf	Joeuf	PROPN	_	Gender=Masc|Number=Sing	4	obl:mod	_	_	*	51	*
+7	par	par	ADP	_	_	8	case	_	_	*	*	*
+8	70-61	70-61	NOUN	_	NumType=Card	4	obl:mod	_	SpaceAfter=No	*	52	*
+9	.	.	PUNCT	_	_	4	punct	_	_	*	52	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00229
+# text = La finale se joua entre Utrecht et Soleuvre.
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	53	*
+2	finale	finale	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_	1:LVC.full	53	*
+3	se	se	PRON	_	Person=3|Reflex=Yes	4	expl:pass	_	_	*	*	*
+4	joua	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	1	*	*
+5	entre	entre	ADP	_	_	6	case	_	_	*	*	*
+6	Utrecht	Utrecht	PROPN	_	_	4	obl:arg	_	_	*	54	3:54
+7	et	et	CCONJ	_	_	8	cc	_	_	*	*	*
+8	Soleuvre	Soleuvre	PROPN	_	_	6	conj	_	SpaceAfter=No	*	55	3:55
+9	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00230
+# text = Le bilan de l'entraîneur à l'issue de ce tournoi de préparation était assez mitigé : "On a montré de très bonnes choses durant la matinée mais physiquement notre jeu s'est affaibli au fur et à mesure du tournoi.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	*	56;57	*
+2	bilan	bilan	NOUN	_	Gender=Masc|Number=Sing	16	nsubj	_	_	*	56;57	*
+3	de	de	ADP	_	_	5	case	_	_	*	56;57	*
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	56;57;58	*
+5	entraîneur	entraîneur	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_	*	56;57;58	*
+6	à	à	ADP	_	_	8	case	_	_	*	57	*
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No	*	57;59	3:59
+8	issue	issue	NOUN	_	Gender=Fem|Number=Sing	16	obl:mod	_	_	*	57;59	3:59
+9	de	de	ADP	_	_	11	case	_	_	*	57;59	3:59
+10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_	*	57;59;60	3:59;1:60
+11	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	_	*	57;59;60	3:59;1:60
+12	de	de	ADP	_	_	13	case	_	_	*	57;59;60	3:59;1:60
+13	préparation	préparation	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_	*	57;59;60;61	3:59;1:60
+14	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	_	_	*	*	*
+15	assez	assez	ADV	_	_	16	advmod	_	_	*	*	*
+16	mitigé	mitigé	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*	*	*
+17	:	:	PUNCT	_	_	16	punct	_	_	*	*	*
+18	"	"	PUNCT	_	_	16	punct	_	SpaceAfter=No	*	*	*
+19	On	il	PRON	_	Gender=Masc|Number=Sing|Person=3	21	nsubj	_	_	*	62	1:62
+20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_	*	*	*
+21	montré	montrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	16	advcl	_	_	*	*	*
+22	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	25	det	_	_	*	63	*
+23	très	très	ADV	_	_	24	advmod	_	_	*	63	*
+24	bonnes	bon	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	_	*	63	*
+25	choses	chose	NOUN	_	Gender=Fem|Number=Plur	21	obj	_	_	*	63	*
+26	durant	durant	ADP	_	_	28	case	_	_	*	*	*
+27	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_	*	64	*
+28	matinée	matinée	NOUN	_	Gender=Fem|Number=Sing	21	obl:mod	_	_	*	64	*
+29	mais	mais	CCONJ	_	_	35	cc	_	_	*	*	*
+30	physiquement	physiquement	ADV	_	_	35	advmod	_	_	*	*	*
+31	notre	son	DET	_	Number=Sing|Poss=Yes	32	det	_	_	*	65	1:65
+32	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	35	nsubj	_	_	*	65	1:65
+33	s'	se	PRON	_	Person=3|Reflex=Yes	35	expl:pass	_	SpaceAfter=No	*	*	*
+34	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux:tense	_	_	*	*	*
+35	affaibli	affaiblir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	conj	_	_	*	*	*
+36-37	au	_	_	_	_	_	_	_	_	*	*	*
+36	à	à	ADP	_	_	35	advmod	_	EXTPOS=ADV|MWE=au_fur_et_à_mesure	*	66	1:66
+37	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	fixed	_	_	*	66	1:66
+38	fur	fur	NOUN	_	Gender=Masc|Number=Sing	36	fixed	_	_	*	66	1:66
+39	et	et	CCONJ	_	_	36	fixed	_	_	*	*	*
+40	à	à	ADP	_	_	36	fixed	_	_	*	*	*
+41	mesure	mesure	NOUN	_	Gender=Fem|Number=Sing	36	fixed	_	_	*	*	*
+42-43	du	_	_	_	_	_	_	_	_	*	*	*
+42	de	de	ADP	_	_	44	case	_	_	*	67	1:67
+43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_	*	67	1:67
+44	tournoi	tournoi	NOUN	_	Gender=Masc|Number=Sing	36	dep	_	SpaceAfter=No	*	67	1:67
+45	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
+
+# source_sent_id = http://hdl.handle.net/11234/1-3105 UD_French-Sequoia/fr_sequoia-ud-train.conllu annodis.er_00231
+# text = On continue à optimiser nos points forts et à travailler nos faiblesses."
+1	On	il	PRON	_	Number=Sing|Person=3	2	nsubj	_	_	*	68	1:68
+2	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
+3	à	à	ADP	_	_	4	mark	_	_	*	*	*
+4	optimiser	optimiser	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
+5	nos	son	DET	_	Number=Plur|Poss=Yes	6	det	_	_	*	69	*
+6	points	point	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	_	*	69	*
+7	forts	fort	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	_	*	69	*
+8	et	et	CCONJ	_	_	10	cc	_	_	*	*	*
+9	à	à	ADP	_	_	10	mark	_	_	*	*	*
+10	travailler	travailler	VERB	_	VerbForm=Inf	4	conj	_	_	*	*	*
+11	nos	son	DET	_	Number=Plur|Poss=Yes	12	det	_	_	*	70;71	*
+12	faiblesses	faiblesse	NOUN	_	Gender=Fem|Number=Plur	10	obj	_	SpaceAfter=No	*	70;71	*
+13	.	.	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	71	*
+14	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No	*	71	*
