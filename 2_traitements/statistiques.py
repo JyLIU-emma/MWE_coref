@@ -73,7 +73,6 @@ class ExprPoly():
         for elt in self.coref:
             if elt != "*":
                 coref.extend(elt.split(";"))
-        print(self.coref)
 
         coref = list({elt.split(':')[1] for elt in coref if elt != "*"})
 
@@ -183,8 +182,12 @@ class ExprPoly():
                 cas = "*"
             liste_cas.append(cas)
 
-        # On prend le dernier cas trouvé s'il y en a un
-        if cas == "*":
+        # Si le dernier cas trouvé est un cas 1 alors il faut vérifier
+        # que les cas précédents sont des cas 1 sinon c'est un cas 4
+        if cas == 1 and len(list(set(liste_cas))) > 1:
+            cas = 4
+        # On prend le dernier cas trouvé s'il y en a un pour cas = "*"
+        elif cas == "*":
             for element in liste_cas:
                 if element not in ["*", 2, 1]:
                     cas = element
@@ -194,10 +197,10 @@ class ExprPoly():
                     cas = 4
 
         # Vérifications
-        # print(ind_mentions)
-        # print(ind_mwes)
-        # print(f"LISTE : {liste_cas}")
-        # print(f"CAS : {cas}")
+        print(ind_mentions)
+        print(ind_mwes)
+        print(f"LISTE : {liste_cas}")
+        print(f"CAS : {cas}")
 
         return cas
 
