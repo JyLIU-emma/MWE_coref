@@ -197,10 +197,10 @@ class ExprPoly():
                     cas = 4
 
         # Vérifications
-        print(ind_mentions)
-        print(ind_mwes)
-        print(f"LISTE : {liste_cas}")
-        print(f"CAS : {cas}")
+        # print(ind_mentions)
+        # print(ind_mwes)
+        # print(f"LISTE : {liste_cas}")
+        # print(f"CAS : {cas}")
 
         return cas
 

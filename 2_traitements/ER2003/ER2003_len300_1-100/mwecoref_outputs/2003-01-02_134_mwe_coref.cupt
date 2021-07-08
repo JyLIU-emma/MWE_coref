@@ -18,7 +18,7 @@
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 2
 # text = Ginandrée le voit dans ses cartes.
 1	Ginandrée	Ginandrée	PROPN	_	_	3	nsubj	_	_	*	3	*
-2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_	*	4	21:4
+2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_	*	4	20:4
 3	voit	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 4	dans	dans	ADP	_	_	6	case	_	_	*	*	*
 5	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	_	*	*	*
@@ -34,21 +34,21 @@
 4	de	de	ADP	_	_	6	case	_	_	*	5	*
 5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_	*	5	*
 6	fermetures	fermeture	NOUN	_	Gender=Fem|Number=Plur	3	obl:arg	_	_	*	5	*
-7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	5	*
-8	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*	5	*
+7	d'	de	ADP	_	_	8	case	_	SpaceAfter=No	*	5;6	*
+8	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	_	*	5;6;7	*
 9	dans	dans	ADP	_	_	11	case	_	_	*	*	*
-10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	6	21:6
-11	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	6	21:6
-12	de	de	ADP	_	_	13	case	_	_	*	6	21:6
-13	Besançon	Besançon	PROPN	_	_	11	nmod	_	SpaceAfter=No	*	6	21:6
-14	.	.	PUNCT	_	_	3	punct	_	_	*	6	21:6
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_	*	8	20:8
+11	secteur	secteur	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	_	*	8	20:8
+12	de	de	ADP	_	_	13	case	_	_	*	8	20:8
+13	Besançon	Besançon	PROPN	_	_	11	nmod	_	SpaceAfter=No	*	8;9	20:8;17:9
+14	.	.	PUNCT	_	_	3	punct	_	_	*	8	20:8
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 4
 # text = Et les petits patrons seront secoués.
 1	Et	et	CCONJ	_	_	6	cc	_	_	*	*	*
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*	7	*
-3	petits	petit	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*	7	*
-4	patrons	patron	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*	7	*
+2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	*	10	*
+3	petits	petit	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*	10	*
+4	patrons	patron	NOUN	_	Gender=Masc|Number=Plur	6	nsubj:pass	_	_	*	10	*
 5	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	_	_	*	*	*
 6	secoués	secouer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No	*	*	*
 7	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
@@ -57,61 +57,61 @@
 # text = « A l'image de ce qui se passera en France, l'année ne sera pas bonne sur le plan du travail.
 1	«	«	PUNCT	_	_	18	punct	_	_	*	*	*
 2	A	à	ADP	_	_	4	case	_	_	*	*	*
-3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	8	8:8
-4	image	image	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	8	8:8
+3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No	*	11	19:11
+4	image	image	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	_	*	11	19:11
 5	de	de	ADP	_	_	6	case	_	_	*	*	*
 6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nmod	_	_	*	*	*
 7	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	_	*	*	*
 8	se	se	PRON	_	Person=3|PronType=Prs	9	expl:comp	_	_	1:IRV	*	*
 9	passera	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	acl:relcl	_	_	1	*	*
 10	en	en	ADP	_	_	11	case	_	_	*	*	*
-11	France	France	PROPN	_	_	9	obl	_	SpaceAfter=No	*	9	*
+11	France	France	PROPN	_	_	9	obl	_	SpaceAfter=No	*	12	17:12
 12	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
-13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	10	*
-14	année	année	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	_	_	*	10	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	13	*
+14	année	année	NOUN	_	Gender=Fem|Number=Sing	18	nsubj	_	_	*	13	*
 15	ne	ne	ADV	_	Polarity=Neg	18	advmod	_	_	*	*	*
 16	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	cop	_	_	*	*	*
 17	pas	pas	ADV	_	Polarity=Neg	18	advmod	_	_	*	*	*
 18	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
 19	sur	sur	ADP	_	_	21	case	_	_	*	*	*
-20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	11	20:11
-21	plan	plan	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	*	11	20:11
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	*	14	*
+21	plan	plan	NOUN	_	Gender=Masc|Number=Sing	18	obl	_	_	*	14	*
 22-23	du	_	_	_	_	_	_	_	_	*	*	*
-22	de	de	ADP	_	_	24	case	_	_	*	11	20:11
-23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	11	20:11
-24	travail	travail	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No	*	11	20:11
+22	de	de	ADP	_	_	24	case	_	_	*	14;15	14:15
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_	*	14;15	14:15
+24	travail	travail	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No	*	14;15	14:15
 25	.	.	PUNCT	_	_	18	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 6
 # text = 2003 ne sera pas l'année où la banque de France va être remplie par l'argent des petits entrepreneurs.
-1	2003	2003	NUM	_	_	6	nsubj	_	_	*	12	8:12
+1	2003	2003	NUM	_	_	6	nsubj	_	_	*	16	19:16
 2	ne	ne	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
 3	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	cop	_	_	*	*	*
 4	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	_	*	*	*
-5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	13	*
-6	année	année	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	13	*
-7	où	où	ADV	_	PronType=Rel	12	advmod	_	_	*	14	20:14
-8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	15	*
-9	banque	banque	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*	15	*
-10	de	de	ADP	_	_	11	case	_	_	*	15	*
-11	France	France	PROPN	_	_	9	nmod	_	_	*	15	*
+5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No	*	17	*
+6	année	année	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	17	*
+7	où	où	ADV	_	PronType=Rel	12	advmod	_	_	*	18	14:18
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	19	*
+9	banque	banque	NOUN	_	Gender=Fem|Number=Sing	12	nsubj	_	_	*	19	*
+10	de	de	ADP	_	_	11	case	_	_	*	19	*
+11	France	France	PROPN	_	_	9	nmod	_	_	*	19;20	*
 12	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_	*	*	*
 13	être	être	AUX	_	VerbForm=Inf	14	aux:pass	_	_	*	*	*
 14	remplie	remplir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	12	xcomp	_	_	*	*	*
 15	par	par	ADP	_	_	17	case	_	_	*	*	*
-16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	16	*
-17	argent	argent	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	_	*	16	*
+16	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	SpaceAfter=No	*	21	*
+17	argent	argent	NOUN	_	Gender=Masc|Number=Sing	14	obl:arg	_	_	*	21	*
 18-19	des	_	_	_	_	_	_	_	_	*	*	*
-18	de	de	ADP	_	_	21	case	_	_	*	16	*
-19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*	16	*
-20	petits	petit	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*	16	*
-21	entrepreneurs	entrepreneur	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*	16	*
+18	de	de	ADP	_	_	21	case	_	_	*	21;22	*
+19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_	*	21;22	*
+20	petits	petit	ADJ	_	Gender=Masc|Number=Plur	21	amod	_	_	*	21;22	*
+21	entrepreneurs	entrepreneur	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No	*	21;22	*
 22	.	.	PUNCT	_	_	6	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 7
 # text = L'argent coulera mal.
-1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	17	*
-2	argent	argent	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	17	*
+1	L'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No	*	23	*
+2	argent	argent	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	_	*	23	*
 3	coulera	couler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
 4	mal	mal	ADV	_	_	3	advmod	_	SpaceAfter=No	*	*	*
 5	.	.	PUNCT	_	_	3	punct	_	_	*	*	*
@@ -129,8 +129,8 @@
 # text = « Beaucoup de lois vont être écrites cette année.
 1	«	«	PUNCT	_	_	5	punct	_	_	*	*	*
 2	Beaucoup	beaucoup	ADV	_	_	5	nsubj	_	_	*	*	*
-3	de	de	ADP	_	_	4	case	_	_	*	18	5:18
-4	lois	loi	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*	18	5:18
+3	de	de	ADP	_	_	4	case	_	_	*	24	15:24
+4	lois	loi	NOUN	_	Gender=Fem|Number=Plur	2	obl:arg	_	_	*	24	15:24
 5	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 6	être	être	AUX	_	VerbForm=Inf	7	aux:pass	_	_	*	*	*
 7	écrites	écrire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	5	xcomp	_	_	*	*	*
@@ -141,19 +141,19 @@
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 10
 # text = Et certaines concernent l'emploi...
 1	Et	et	CCONJ	_	_	3	cc	_	_	*	*	*
-2	certaines	certain	PRON	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*	19	5:19
+2	certaines	certain	PRON	_	Gender=Fem|Number=Plur	3	nsubj	_	_	*	25	15:25
 3	concernent	concerner	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	20	7:20
-5	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*	20	7:20
+4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*	26	5:26
+5	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*	26	5:26
 6	...	...	PUNCT	_	_	3	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 11
 # text = Et puis le deuxième semestre sera plus facile que le premier.
 1	Et	et	CCONJ	_	_	8	cc	_	_	*	*	*
 2	puis	puis	ADV	_	_	8	cc	_	_	*	*	*
-3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	21	*
-4	deuxième	deuxième	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	21	*
-5	semestre	semestre	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	21	*
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	27	*
+4	deuxième	deuxième	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	_	*	27	*
+5	semestre	semestre	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	_	*	27	*
 6	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	cop	_	_	*	*	*
 7	plus	plus	ADV	_	_	8	advmod	_	_	*	*	*
 8	facile	facile	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
@@ -164,8 +164,8 @@
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 12
 # text = Les patrons retrouveront le sourire.
-1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	22	*
-2	patrons	patron	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*	22	*
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_	*	28	*
+2	patrons	patron	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_	*	28	*
 3	retrouveront	retrouver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	*	*	*
 5	sourire	sourire	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	*	*	*
@@ -175,24 +175,24 @@
 # text = » « De façon générale, en France, l'année qui s'annonce sera plus douce que celle qui s'achève.
 1	»	»	PUNCT	_	_	4	punct	_	_	*	*	*
 2	«	«	PUNCT	_	_	4	punct	_	_	*	*	*
-3	De	de	ADP	_	_	4	case	_	_	*	23	11:23
-4	façon	façon	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*	23	11:23
-5	générale	général	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*	23	11:23
+3	De	de	ADP	_	_	4	case	_	_	*	29	10:29
+4	façon	façon	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*	29	10:29
+5	générale	général	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No	*	29	10:29
 6	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
 7	en	en	ADP	_	_	8	case	_	_	*	*	*
-8	France	France	PROPN	_	_	17	obl:mod	_	SpaceAfter=No	*	24	*
+8	France	France	PROPN	_	_	17	obl:mod	_	SpaceAfter=No	*	30	*
 9	,	,	PUNCT	_	_	8	punct	_	_	*	*	*
-10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	25	7:25
-11	année	année	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*	25	7:25
-12	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*	26	*
+10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	SpaceAfter=No	*	31	5:31
+11	année	année	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	_	*	31	5:31
+12	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	_	*	32	5:32
 13	s'	se	PRON	_	Person=3|PronType=Prs	14	expl:pass	_	SpaceAfter=No	1:IRV	*	*
 14	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_	1	*	*
 15	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	cop	_	_	*	*	*
 16	plus	plus	ADV	_	_	17	advmod	_	_	*	*	*
 17	douce	doux	ADJ	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
 18	que	que	SCONJ	_	_	19	case	_	_	*	*	*
-19	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	17	obl:mod	_	_	*	27	11:27
-20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	28	*
+19	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	17	obl:mod	_	_	*	33	10:33
+20	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	_	*	34	5:34
 21	s'	se	PRON	_	Person=3|PronType=Prs	22	expl:pass	_	SpaceAfter=No	*	*	*
 22	achève	achever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	SpaceAfter=No	*	*	*
 23	.	.	PUNCT	_	_	17	punct	_	_	*	*	*
@@ -211,23 +211,23 @@
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 15
 # text = Avec quelques petits incidents.
 1	Avec	avec	ADP	_	_	4	case	_	_	*	*	*
-2	quelques	quelque	DET	_	Gender=Masc|Number=Plur	4	det	_	_	*	29	1:29
-3	petits	petit	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*	29	1:29
-4	incidents	incident	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*	29	1:29
+2	quelques	quelque	DET	_	Gender=Masc|Number=Plur	4	det	_	_	*	35	13:35
+3	petits	petit	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	_	*	35	13:35
+4	incidents	incident	NOUN	_	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No	*	35	13:35
 5	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 16
 # text = « L'Etat va avoir besoin d'une aide qui ne viendra pas.
-1	«	«	PUNCT	_	_	4	punct	_	_	*	30	*
-2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	30	*
-3	Etat	Etat	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	30	*
+1	«	«	PUNCT	_	_	4	punct	_	_	*	36	*
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	SpaceAfter=No	*	36;37	*
+3	Etat	Etat	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	_	*	36;37	*
 4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 5	avoir	avoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	1:LVC.full	*	*
 6	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	_	1	*	*
 7	d'	de	ADP	_	_	9	case	_	SpaceAfter=No	*	*	*
-8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	31	11:31
-9	aide	aide	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*	31	11:31
-10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*	32	1:32
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	38	10:38
+9	aide	aide	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	_	*	38	10:38
+10	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	_	*	39	13:39
 11	ne	ne	ADV	_	Polarity=Neg	12	advmod	_	_	*	*	*
 12	viendra	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	acl:relcl	_	_	*	*	*
 13	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	SpaceAfter=No	*	*	*
@@ -235,15 +235,15 @@
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 17
 # text = La France se retrouve seule face à ses partenaires.
-1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	33	*
-2	France	France	PROPN	_	_	4	nsubj	_	_	*	33	*
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_	*	40	*
+2	France	France	PROPN	_	_	4	nsubj	_	_	*	40	*
 3	se	se	PRON	_	Person=3|PronType=Prs	4	obj	_	_	1:IRV	*	*
 4	retrouve	retrouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
 5	seule	seul	ADJ	_	Gender=Fem|Number=Sing	4	xcomp	_	_	*	*	*
 6	face	face	ADV	_	_	4	advmod	_	_	*	*	*
 7	à	à	ADP	_	_	9	case	_	_	*	*	*
-8	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*	34	*
-9	partenaires	partenaire	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	SpaceAfter=No	*	34	*
+8	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	9	det	_	_	*	41	*
+9	partenaires	partenaire	NOUN	_	Gender=Masc|Number=Plur	6	obl:arg	_	SpaceAfter=No	*	41	*
 10	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 18
@@ -253,15 +253,15 @@
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	*	*
 4	mort	mort	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	*	*
 5	d'	de	ADP	_	_	7	case	_	SpaceAfter=No	*	*	*
-6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	35	13:35
-7	appui	appui	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	35	13:35
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	42	9:42
+7	appui	appui	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*	42	9:42
 8	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 19
 # text = » La voyante n'en dira pas plus.
 1	»	»	PUNCT	_	_	6	punct	_	_	*	*	*
-2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	36	4:36
-3	voyante	voyant	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	36	4:36
+2	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*	43	2:43
+3	voyante	voyant	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*	43	2:43
 4	n'	ne	ADV	_	Polarity=Neg	6	advmod	_	SpaceAfter=No	*	*	*
 5	en	en	PRON	_	Person=3	6	expl:comp	_	_	*	*	*
 6	dira	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
@@ -274,11 +274,11 @@
 1	Mais	mais	CCONJ	_	_	2	cc	_	_	*	*	*
 2	partira	partir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_	*	*	*
 3	d'	de	ADP	_	_	6	case	_	SpaceAfter=No	*	*	*
-4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	37	13:37
-5	grand	grand	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	37	13:37
-6	éclat	éclat	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	37	13:37
-7	de	de	ADP	_	_	8	mark	_	_	*	37	13:37
-8	rire	rire	VERB	_	VerbForm=Inf	6	acl	_	_	*	37	13:37
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	*	44	9:44
+5	grand	grand	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	_	*	44	9:44
+6	éclat	éclat	NOUN	_	Gender=Masc|Number=Sing	2	obl:arg	_	_	*	44	9:44
+7	de	de	ADP	_	_	8	mark	_	_	*	44	9:44
+8	rire	rire	VERB	_	VerbForm=Inf	6	acl	_	_	*	44;45	9:44
 9	après	après	ADP	_	_	11	mark	_	_	*	*	*
 10	avoir	avoir	AUX	_	VerbForm=Inf	11	aux:tense	_	_	*	*	*
 11	tiré	tirer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	advcl	_	_	*	*	*
@@ -286,8 +286,8 @@
 13	cartes	carte	NOUN	_	Gender=Fem|Number=Plur	11	obj	_	_	*	*	*
 14	supplémentaires	supplémentaire	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_	*	*	*
 15	de	de	ADP	_	_	17	case	_	_	*	*	*
-16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*	38	9:38
-17	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*	38	9:38
+16	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	17	det	_	_	*	46	4:46
+17	jeu	jeu	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No	*	46	4:46
 18	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 21
@@ -297,24 +297,24 @@
 3	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	SpaceAfter=No	*	*	*
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*	*	*
 5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	_	*	*	*
-6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	39	14:39
-7	fin	fin	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	39	14:39
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*	47	12:47
+7	fin	fin	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	47	12:47
 8-9	du	_	_	_	_	_	_	_	_	*	*	*
-8	de	de	ADP	_	_	10	case	_	_	*	39	14:39
-9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	39	14:39
-10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*	39	14:39
+8	de	de	ADP	_	_	10	case	_	_	*	47;48	12:47
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*	47;48	12:47
+10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No	*	47;48	12:47
 11	...	...	PUNCT	_	_	7	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 22
 # text = Je vous l'affirme : l'année 2003 sera moins contrariante que l'année 2002.
-1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	40	4:40
-2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	41	9:41
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*	49	2:49
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	50	4:50
 3	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No	*	*	*
 4	affirme	affirmer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
 5	:	:	PUNCT	_	_	11	punct	_	_	*	*	*
-6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	42	*
-7	année	année	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	42	*
-8	2003	2003	NUM	_	_	7	nmod	_	_	*	42	*
+6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No	*	51	2:51
+7	année	année	NOUN	_	Gender=Fem|Number=Sing	11	nsubj	_	_	*	51	2:51
+8	2003	2003	NUM	_	_	7	nmod	_	_	*	51	2:51
 9	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	cop	_	_	*	*	*
 10	moins	moins	ADV	_	_	11	advmod	_	_	*	*	*
 11	contrariante	contrariant	ADJ	_	Gender=Fem|Number=Sing	4	parataxis	_	_	*	*	*
@@ -327,9 +327,9 @@
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 23
 # text = » Eric DAVIATTE Ginandrée : tél.
 1	»	»	PUNCT	_	_	2	punct	_	SpacesAfter=\s\s\s	*	*	*
-2	Eric	Eric	PROPN	_	_	0	root	_	_	*	43	*
-3	DAVIATTE	DAVIATTE	PROPN	_	_	2	flat:name	_	SpacesAfter=\s\s\s\s\s	*	43	*
-4	Ginandrée	Ginandrée	PROPN	_	_	2	flat:name	_	_	*	43	*
+2	Eric	Eric	PROPN	_	_	0	root	_	_	*	52	*
+3	DAVIATTE	DAVIATTE	PROPN	_	_	2	flat:name	_	SpacesAfter=\s\s\s\s\s	*	52	*
+4	Ginandrée	Ginandrée	PROPN	_	_	2	flat:name	_	_	*	52;53	*
 5	:	:	PUNCT	_	_	6	punct	_	_	*	*	*
 6	tél.	tél.	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*	*	*
 
@@ -340,15 +340,15 @@
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 25
 # text = Elle n'est à Besançon que depuis quatre ans.
-1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	44	14:44
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	54	12:54
 2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	SpaceAfter=No	*	*	*
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
 4	à	à	ADP	_	_	5	case	_	_	*	*	*
-5	Besançon	Besançon	PROPN	_	_	0	root	_	_	*	45	*
+5	Besançon	Besançon	PROPN	_	_	0	root	_	_	*	55	*
 6	que	que	SCONJ	_	_	9	case	_	_	*	*	*
 7	depuis	depuis	ADP	_	_	9	case	_	_	*	*	*
-8	quatre	quatre	NUM	_	_	9	nummod	_	_	*	46	*
-9	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	obl:mod	_	SpaceAfter=No	*	46	*
+8	quatre	quatre	NUM	_	_	9	nummod	_	_	*	56	*
+9	ans	an	NOUN	_	Gender=Masc|Number=Plur	5	obl:mod	_	SpaceAfter=No	*	56	*
 10	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 26
@@ -356,10 +356,10 @@
 1	Et	et	CCONJ	_	_	5	cc	_	_	*	*	*
 2	pourtant	pourtant	ADV	_	_	5	advmod	_	SpaceAfter=No	*	*	*
 3	,	,	PUNCT	_	_	2	punct	_	_	*	*	*
-4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	47	6:47
+4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_	*	57	0:57
 5	adore	adorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-6	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_	*	48	6:48
-7	ville	ville	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No	*	48	6:48
+6	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_	*	58	0:58
+7	ville	ville	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No	*	58	0:58
 8	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 27
@@ -369,19 +369,19 @@
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
 4	ici	ici	ADV	_	_	16	ccomp	_	_	*	*	*
 5	que	que	SCONJ	_	_	8	mark	_	_	*	*	*
-6	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	SpaceAfter=No	*	49	3:49
+6	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	SpaceAfter=No	*	59	18:59
 7	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_	*	*	*
 8	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advcl:cleft	_	_	*	*	*
-9	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*	50	*
-10	voyances	voyance	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*	50	*
-11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	advmod	_	_	*	50	*
-12	plus	plus	ADV	_	_	11	fixed	_	_	*	50	*
-13	extraordinaires	extraordinaire	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*	50	*
+9	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	10	det	_	_	*	60	*
+10	voyances	voyance	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	_	*	60	*
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	advmod	_	_	*	60	*
+12	plus	plus	ADV	_	_	11	fixed	_	_	*	60	*
+13	extraordinaires	extraordinaire	ADJ	_	Gender=Masc|Number=Plur	10	amod	_	_	*	60	*
 14	»	»	PUNCT	_	_	4	punct	_	SpaceAfter=No	*	*	*
 15	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
-16	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	51	6:51
-17	Ginandrée	Ginandrée	PROPN	_	_	16	nsubj	_	_	*	51	6:51
-18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*	52	3:52
+16	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	61	0:61
+17	Ginandrée	Ginandrée	PROPN	_	_	16	nsubj	_	_	*	61;62	0:61
+18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	_	*	63	18:63
 19	exerce	exercer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_	*	*	*
 20-21	au	_	_	_	_	_	_	_	_	*	*	*
 20	à	à	ADP	_	_	23	case	_	_	*	*	*
@@ -389,21 +389,21 @@
 22	premier	premier	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	_	*	*	*
 23	étage	étage	NOUN	_	Gender=Masc|Number=Sing	19	obl:arg	_	_	*	*	*
 24	de	de	ADP	_	_	26	case	_	_	*	*	*
-25	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*	53	*
-26	boutique	boutique	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*	53	*
-27	ésotérique	ésotérique	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*	53	*
+25	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	26	det	_	_	*	64	0:64
+26	boutique	boutique	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	_	*	64	0:64
+27	ésotérique	ésotérique	ADJ	_	Gender=Fem|Number=Sing	26	amod	_	_	*	64	0:64
 28-29	du	_	_	_	_	_	_	_	_	*	*	*
-28	de	de	ADP	_	_	30	case	_	_	*	54	*
-29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*	54	*
-30	pont	pont	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*	54	*
-31	Battant	battant	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	SpaceAfter=No	*	54	*
+28	de	de	ADP	_	_	30	case	_	_	*	65	*
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_	*	65	*
+30	pont	pont	NOUN	_	Gender=Masc|Number=Sing	26	nmod	_	_	*	65	*
+31	Battant	battant	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	SpaceAfter=No	*	65	*
 32	.	.	PUNCT	_	_	16	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 28
 # text = « Les lieux ici sont tellement chargés... » Du coup, c'est avec passion que Ginandrée sort ses cartes pour voir le destin 2003 de la cité bisontine.
-1	«	«	PUNCT	_	_	7	punct	_	_	*	55	*
-2	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*	55	*
-3	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_	*	55	*
+1	«	«	PUNCT	_	_	7	punct	_	_	*	66	0:66
+2	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	*	66;67	0:66
+3	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	7	nsubj:pass	_	_	*	66;67	0:66
 4	ici	ici	ADV	_	_	3	advmod	_	_	*	*	*
 5	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_	*	*	*
 6	tellement	tellement	ADV	_	_	7	advmod	_	_	*	*	*
@@ -411,46 +411,46 @@
 8	...	...	PUNCT	_	_	7	punct	_	_	*	*	*
 9	»	»	PUNCT	_	_	7	punct	_	_	*	*	*
 10-11	Du	_	_	_	_	_	_	_	_	*	*	*
-10	De	de	ADP	_	_	12	case	_	_	*	56	10:56
-11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	56	10:56
-12	coup	coup	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No	*	56	10:56
+10	De	de	ADP	_	_	12	case	_	_	*	68	21:68
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	*	68	21:68
+12	coup	coup	NOUN	_	Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No	*	68	21:68
 13	,	,	PUNCT	_	_	17	punct	_	_	*	*	*
 14	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	17	nsubj	_	SpaceAfter=No	*	*	*
 15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_	*	*	*
 16	avec	avec	ADP	_	_	17	case	_	_	*	*	*
-17	passion	passion	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	57	18:57
-18	que	que	SCONJ	_	_	20	mark	_	_	*	58	18:58
-19	Ginandrée	Ginandrée	PROPN	_	_	20	nsubj	_	_	*	58	18:58
+17	passion	passion	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	_	*	69	16:69
+18	que	que	SCONJ	_	_	20	mark	_	_	*	70	16:70
+19	Ginandrée	Ginandrée	PROPN	_	_	20	nsubj	_	_	*	70;71	16:70
 20	sort	sortir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl	_	_	*	*	*
-21	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*	59	*
-22	cartes	carte	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*	59	*
+21	ses	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	22	det	_	_	*	72	*
+22	cartes	carte	NOUN	_	Gender=Fem|Number=Plur	20	obj	_	_	*	72	*
 23	pour	pour	ADP	_	_	24	mark	_	_	*	*	*
 24	voir	voir	VERB	_	VerbForm=Inf	20	advcl	_	_	*	*	*
-25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*	60	12:60
-26	destin	destin	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*	60	12:60
-27	2003	2003	NUM	_	_	26	nmod	_	_	*	60	12:60
-28	de	de	ADP	_	_	30	case	_	_	*	60	12:60
-29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*	60	12:60
-30	cité	cité	NOUN	_	Gender=Fem|Number=Sing	24	obl:arg	_	_	*	60	12:60
-31	bisontine	bisontin	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	SpaceAfter=No	*	60	12:60
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_	*	73	11:73
+26	destin	destin	NOUN	_	Gender=Masc|Number=Sing	24	obj	_	_	*	73	11:73
+27	2003	2003	NUM	_	_	26	nmod	_	_	*	73	11:73
+28	de	de	ADP	_	_	30	case	_	_	*	73	11:73
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_	*	73;74	11:73
+30	cité	cité	NOUN	_	Gender=Fem|Number=Sing	24	obl:arg	_	_	*	73;74	11:73
+31	bisontine	bisontin	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	SpaceAfter=No	*	73;74	11:73
 32	.	.	PUNCT	_	_	7	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 29
 # text = « Besançon est une ville qui se réveille, c'est une ville qui bouge.
-1	«	«	PUNCT	_	_	5	punct	_	_	*	61	10:61
-2	Besançon	Besançon	PROPN	_	_	5	nsubj	_	_	*	61	10:61
+1	«	«	PUNCT	_	_	5	punct	_	_	*	75	21:75
+2	Besançon	Besançon	PROPN	_	_	5	nsubj	_	_	*	75;76	21:75
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
-4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	62	*
-5	ville	ville	NOUN	_	Gender=Fem|Number=Sing	13	dislocated	_	_	*	62	*
-6	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	63	12:63
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_	*	77	*
+5	ville	ville	NOUN	_	Gender=Fem|Number=Sing	13	dislocated	_	_	*	77	*
+6	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	78	11:78
 7	se	se	PRON	_	Person=3|PronType=Prs	8	expl:pass	_	_	*	*	*
 8	réveille	réveiller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	SpaceAfter=No	*	*	*
 9	,	,	PUNCT	_	_	5	punct	_	_	*	*	*
-10	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*	64	17:64
+10	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	SpaceAfter=No	*	79	8:79
 11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
-12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	65	*
-13	ville	ville	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	65	*
-14	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*	66	*
+12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_	*	80	*
+13	ville	ville	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	80	*
+14	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	_	*	81	11:81
 15	bouge	bouger	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	SpaceAfter=No	*	*	*
 16	.	.	PUNCT	_	_	13	punct	_	_	*	*	*
 
@@ -462,19 +462,19 @@
 4	y	y	PRON	_	_	5	expl:comp	_	_	1	*	*
 5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1	*	*
 6-7	des	_	_	_	_	_	_	_	_	*	*	*
-6	de	de	ADP	_	_	9	case	_	_	*	67	*
-7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*	67	*
-8	vieilles	vieux	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*	67	*
-9	pierres	pierre	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	SpaceAfter=No	*	67	*
+6	de	de	ADP	_	_	9	case	_	_	*	82	*
+7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_	*	82	*
+8	vieilles	vieux	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	_	*	82	*
+9	pierres	pierre	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	SpaceAfter=No	*	82	*
 10	,	,	PUNCT	_	_	15	punct	_	_	*	*	*
 11	mais	mais	CCONJ	_	_	15	cc	_	_	*	*	*
 12	avec	avec	ADP	_	_	15	case	_	_	*	*	*
 13-14	du	_	_	_	_	_	_	_	_	*	*	*
-13	de	de	ADP	_	_	15	case	_	_	*	68	*
-14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	68	*
-15	sang	sang	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*	68	*
-16	neuf	neuf	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	68	*
-17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	69	17:69
+13	de	de	ADP	_	_	15	case	_	_	*	83	*
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	*	83	*
+15	sang	sang	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_	*	83	*
+16	neuf	neuf	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	_	*	83	*
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	84	8:84
 18	coule	couler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_	*	*	*
 19	dedans	dedans	NOUN	_	Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No	*	*	*
 20	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
@@ -483,67 +483,67 @@
 # text = » Pour la voyante, c'est la jeunesse qui donnera de l'âme à la cité.
 1	»	»	PUNCT	_	_	9	punct	_	_	*	*	*
 2	Pour	pour	ADP	_	_	4	case	_	_	*	*	*
-3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	70	2:70
-4	voyante	voyant	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	SpaceAfter=No	*	70	2:70
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	85	6:85
+4	voyante	voyant	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	SpaceAfter=No	*	85	6:85
 5	,	,	PUNCT	_	_	4	punct	_	_	*	*	*
 6	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	SpaceAfter=No	*	*	*
 7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_	*	*	*
-8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	71	2:71
-9	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	71	2:71
-10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*	72	2:72
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*	86	6:86
+9	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	86	6:86
+10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_	*	87	6:87
 11	donnera	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	acl:relcl	_	_	*	*	*
 12	de	de	ADP	_	_	14	case	_	_	*	*	*
-13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	73	*
-14	âme	âme	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*	73	*
+13	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No	*	88	*
+14	âme	âme	NOUN	_	Gender=Fem|Number=Sing	11	obl:arg	_	_	*	88	*
 15	à	à	ADP	_	_	17	case	_	_	*	*	*
-16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	74	2:74
-17	cité	cité	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*	74	2:74
-18	.	.	PUNCT	_	_	9	punct	_	_	*	74	2:74
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_	*	89;90	6:89;6:90
+17	cité	cité	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	SpaceAfter=No	*	89;90	6:89;6:90
+18	.	.	PUNCT	_	_	9	punct	_	_	*	90	6:90
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 32
 # text = « Besançon reste Besançon.
-1	«	«	PUNCT	_	_	3	punct	_	_	*	75	2:75
-2	Besançon	Besançon	PROPN	_	_	3	nsubj	_	_	*	75	2:75
+1	«	«	PUNCT	_	_	3	punct	_	_	*	91	6:91
+2	Besançon	Besançon	PROPN	_	_	3	nsubj	_	_	*	91;92	6:91
 3	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-4	Besançon	Besançon	PROPN	_	_	3	xcomp	_	SpaceAfter=No	*	76	*
-5	.	.	PUNCT	_	_	3	punct	_	_	*	76	*
+4	Besançon	Besançon	PROPN	_	_	3	xcomp	_	SpaceAfter=No	*	93;94	*
+5	.	.	PUNCT	_	_	3	punct	_	_	*	94	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 33
 # text = C'est la façon de penser qui va changer.
 1	C'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	SpaceAfter=No	*	*	*
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_	*	*	*
-3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	77	2:77
-4	façon	façon	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	77	2:77
-5	de	de	ADP	_	_	6	mark	_	_	*	77	2:77
-6	penser	penser	VERB	_	VerbForm=Inf	4	acl	_	_	*	77	2:77
-7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	78	2:78
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_	*	95	6:95
+4	façon	façon	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*	95	6:95
+5	de	de	ADP	_	_	6	mark	_	_	*	95	6:95
+6	penser	penser	VERB	_	VerbForm=Inf	4	acl	_	_	*	95	6:95
+7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	_	*	96	6:96
 8	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_	*	*	*
 9	changer	changer	VERB	_	VerbForm=Inf	8	xcomp	_	SpaceAfter=No	*	*	*
 10	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 34
 # text = Je peux vous dire une chose : ce ne sont pas les papys et les mamys qui vont tenir les rênes.
-1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	79	19:79
+1	Je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_	*	97	*
 2	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*	*	*
-3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	80	16:80
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	98	7:98
 4	dire	dire	VERB	_	VerbForm=Inf	2	xcomp	_	_	*	*	*
-5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	81	*
-6	chose	chose	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	81	*
+5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*	99	*
+6	chose	chose	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	_	*	99	*
 7	:	:	PUNCT	_	_	13	punct	_	_	*	*	*
 8	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	13	nsubj	_	_	*	*	*
 9	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	_	*	*	*
 10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_	*	*	*
 11	pas	pas	ADV	_	Polarity=Neg	13	advmod	_	_	*	*	*
-12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	82	*
-13	papys	papys	NOUN	_	Gender=Masc|Number=Plur	4	parataxis	_	_	*	82	*
-14	et	et	CCONJ	_	_	16	cc	_	_	*	82	*
-15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*	82	*
-16	mamys	mamys	NOUN	_	Gender=Masc|Number=Plur	13	conj	_	_	*	82	*
-17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	83	19:83
+12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_	*	100;101	*
+13	papys	papys	NOUN	_	Gender=Masc|Number=Plur	4	parataxis	_	_	*	100;101	*
+14	et	et	CCONJ	_	_	16	cc	_	_	*	101	*
+15	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_	*	101;102	*
+16	mamys	mamys	NOUN	_	Gender=Masc|Number=Plur	13	conj	_	_	*	101;102	*
+17	qui	qui	PRON	_	PronType=Rel	18	nsubj	_	_	*	103	7:103
 18	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_	*	*	*
 19	tenir	tenir	VERB	_	VerbForm=Inf	18	xcomp	_	_	*	*	*
-20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*	84	0:84
-21	rênes	rêne	NOUN	_	Gender=Fem|Number=Plur	19	obj	_	SpaceAfter=No	*	84	0:84
+20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_	*	104	3:104
+21	rênes	rêne	NOUN	_	Gender=Fem|Number=Plur	19	obj	_	SpaceAfter=No	*	104	3:104
 22	.	.	PUNCT	_	_	2	punct	_	_	*	*	*
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 35
@@ -560,13 +560,13 @@
 
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 36
 # text = « Besançon est resté un sacré temps à dormir.
-1	«	«	PUNCT	_	_	4	punct	_	_	*	85	16:85
-2	Besançon	Besançon	PROPN	_	_	4	nsubj	_	_	*	85	16:85
+1	«	«	PUNCT	_	_	4	punct	_	_	*	105	7:105
+2	Besançon	Besançon	PROPN	_	_	4	nsubj	_	_	*	105;106	7:105
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_	*	*	*
 4	resté	rester	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*	*	*
-5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	86	*
-6	sacré	sacré	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*	86	*
-7	temps	temps	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*	86	*
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	*	107	*
+6	sacré	sacré	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	_	*	107	*
+7	temps	temps	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	_	*	107	*
 8	à	à	ADP	_	_	9	mark	_	_	*	*	*
 9	dormir	dormir	VERB	_	VerbForm=Inf	4	xcomp	_	SpaceAfter=No	*	*	*
 10	.	.	PUNCT	_	_	4	punct	_	_	*	*	*
@@ -574,8 +574,8 @@
 # source_sent_id = http://my/newcorpus/uri 2003-01-02_134.txt 37
 # text = Mais le renouveau est là.
 1	Mais	mais	CCONJ	_	_	5	cc	_	_	*	*	*
-2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	87	15:87
-3	renouveau	renouveau	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	87	15:87
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	*	108	1:108
+3	renouveau	renouveau	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*	108	1:108
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*	*	*
 5	là	là	ADV	_	_	0	root	_	SpaceAfter=No	*	*	*
 6	.	.	PUNCT	_	_	5	punct	_	_	*	*	*
@@ -584,14 +584,14 @@
 # text = Et autant vous dire qu'il aura un impact réel dans l'avenir.
 1	Et	et	CCONJ	_	_	4	cc	_	_	*	*	*
 2	autant	autant	ADV	_	_	4	advmod	_	_	*	*	*
-3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	88	0:88
+3	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*	109	3:109
 4	dire	dire	VERB	_	VerbForm=Inf	0	root	_	_	*	*	*
 5	qu'	que	SCONJ	_	_	7	mark	_	SpaceAfter=No	*	*	*
-6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_	*	89	15:89
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_	*	110	1:110
 7	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	_	_	1:LVC.full	*	*
-8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	90	15:90
-9	impact	impact	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	1	90	15:90
-10	réel	réel	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	90	15:90
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*	111	1:111
+9	impact	impact	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	_	1	111	1:111
+10	réel	réel	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_	*	111	1:111
 11	dans	dans	ADP	_	_	13	case	_	_	*	*	*
 12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	SpaceAfter=No	*	*	*
 13	avenir	avenir	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	SpaceAfter=No	*	*	*
