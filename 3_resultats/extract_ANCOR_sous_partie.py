@@ -66,7 +66,7 @@ souscorpus = {"ESLO_CO2":(eslo_old_format,eslo_new_liste),
 
 # écrire dans les fichiers sortis
 for name,data in souscorpus.items():
-    with open(f"{rep}/{name}_old_format.json", "w", encoding="utf8") as out1:
+    with open(f"{rep}/{name}.json", "w", encoding="utf8") as out1:
         json.dump(data[0], out1, indent=4, ensure_ascii=False, sort_keys=False)
     with open(f"{rep}/{name}_new_format.json", "w", encoding="utf8") as out2:
         json.dump(data[1], out2, indent=4, ensure_ascii=False, sort_keys=False)
