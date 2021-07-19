@@ -1,10 +1,10 @@
 # MWE_coref
 
-Ce repository sert à collecter les travaux réalisés pour étudier les expressions polylexicales et la coréférence.
+Ce dépôt sert à collecter les travaux réalisés pour étudier les expressions polylexicales et la coréférence.
 
 ## Sujet
 
-Ce repository a été créé dans le cadre d'un stage dont l'objectif est de vérifer de manière expérimentale l'hypothèse selon laquelle les composants individuels d'une expression polylexicale sont rarement susceptibles d'appartenir à des chaînes de coréférences.
+Ce dépôt a été créé dans le cadre d'un stage dont l'objectif est de vérifer de manière expérimentale l'hypothèse selon laquelle les composants individuels d'une expression polylexicale sont rarement susceptibles d'appartenir à des chaînes de coréférences.
 
 **Expressions polylexicales** : Termes complexes composés de plusieurs mots tels que "blanc d'œuf", "mémoire vive", "prendre une pause", "prendre le temps", "retourner sa veste" ou "prendre le taureau par les cornes" etc. Elles présentent des comportements linguistiques irréguliers et notamment la non-compositionnalité sémantique, qui signifie que le sens global de l'expression n'est pas déductible de manière régulière à partir des sens des composants et des liens syntaxiques qui les relient.  
 **Chaînes de coréférence** : Procédé linguistique dans lequel plusieurs éléments d'un discours réfèrent à un même élément du discours.
@@ -17,12 +17,12 @@ Pour vérifier cette hypothèse, nous avons à disposition un outil pour l'annot
 
 ## Installation des outils
 
-Pour pouvoir utiliser notre repository, il faut installer Seen2seen et OFCORS. Il est conseillé d'utiliser un environnement virtuel.
+Pour pouvoir utiliser notre dépôt, il faut installer Seen2seen et OFCORS. Il est conseillé d'utiliser un environnement virtuel.
 
 ### Installation de Seen2seen
 Pour plus de détails, référez-vous au README de Seen2seen : [Lien vers Seen2seen](https://gitlab.com/cpasquer/st_2020).
-* Clonez le repository de Seen2seen: `git clone https://gitlab.com/cpasquer/st_2020 Seen2Seen`
-* Clonez ce repository : `git clone https://github.com/anaelle-p/MWE_coref`
+* Clonez le dépôt de Seen2seen: `git clone https://gitlab.com/cpasquer/st_2020 Seen2Seen`
+* Clonez ce dépôt : `git clone https://github.com/anaelle-p/MWE_coref`
 * Supprimez l'ancien code et l'ancien fichier config : `rm Seen2Seen/CODE/seen2seen.py Seen2Seen/config.cfg`
 * Copiez-collez le nouveau code : `cp MWE_coref/seen2seen/seen2seen.py Seen2Seen/CODE/seen2seen.py`
 * Copiez-collez le nouveau fichier config : `cp MWE_coref/seen2seen/config.cfg Seen2Seen/config.cfg`
@@ -32,7 +32,7 @@ Vous pouvez maintenant utiliser Seen2seen pour l'annotation ! Le lancement est e
 
 ### Installation d'OFCORS
 Pour plus de détails, référez-vous au README d'OFCORS : [Lien vers OFCORS](https://gitlab.com/Stanoy/ofcors/-/tree/master).
-* Clonez le repository d'OFCORS : `git clone https://gitlab.com/Stanoy/ofcors.git`
+* Clonez le dépôt d'OFCORS : `git clone https://gitlab.com/Stanoy/ofcors.git`
 * Installez flit si besoin : `pip install flit`
 * Rendez-vous dans le répertoire ofcors : `cd ofcors`
 * `pip install -r requirements.txt`
@@ -42,13 +42,13 @@ Pour plus de détails, référez-vous au README d'OFCORS : [Lien vers OFCORS](ht
 * Déplacez le dossier `models` dans `ofcors/models`
 * N'oubliez pas d'installer les modèles de Spacy (`python -m spacy download fr_core_news_lg`) et de Stanza (`python3`, `import stanza`, `stanza.download('fr')`)  
 Ofcors est installé!
-* Si vous n'avez pas cloné notre repository : sortez du repository d'OFCORS et `git clone https://github.com/anaelle-p/MWE_coref`  
-Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est expliqué plus bas.
+* Si vous n'avez pas cloné notre dépôt : sortez du dépôt d'OFCORS et `git clone https://github.com/anaelle-p/MWE_coref`  
+Vous pouvez maintenant utiliser OFCORS dans notre dépôt! Le lancement est expliqué plus bas.
 
 ## Choix de corpus
 ### Première expérience : sous-corpus de PARSEME
 Pour traiter correctement la coréférence, il est nécessaire de connaître les frontières de textes dans un corpus. En effet, la coréférence ne peut être traitée qu'à l'intérieur d'une même unité discursive.  
-Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429).  
+Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/dépôt/xmlui/handle/11234/1-3429).  
 Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA pour lesquels les phrases se suivent selon l'ordre du document initial :
 * 2 rapports de l'agence européenne du médicament pour la partie EMEA (\~ 1 000 phrases en tout)
 * 19 articles Wikipédia sur des affaires sociale ou politiques pour la partie frwiki (\~ 1 000 phrases en tout)
@@ -70,12 +70,13 @@ Enfin, nous avons réalisé notre expérience sur le corpus ANCOR(téléchargé 
 
 Ce corpus étant annoté en chaînes de coréférence, les erreurs d'annotation ne peuvent venir que des expressions polylexicales. 
 
-## Structure du repository
+## Structure du dépôt
 
 ```
 |-- MWE_coref
     |-- .gitignore
     |-- README.md
+    |-- presentation_MWE_coref.pdf
     |-- seen2seen
     |   |-- udpipe_annote.py
     |   |-- seen2seen.py
@@ -83,9 +84,10 @@ Ce corpus étant annoté en chaînes de coréférence, les erreurs d'annotation 
     |   |-- model_udpipe
     |-- 1_corpus
     |   |-- SEQUOIA
-    |   |   |-- annodisER
-    |   |   |-- EMEA_cupt
-    |   |   |-- EMEA_txt
+    |   |   |-- annodisER_cupt
+    |   |   |-- annodisER_txt
+    |   |   |-- emea_cupt
+    |   |   |-- emea_txt
     |   |   |-- frwiki_cupt
     |   |   |-- frwiki_txt
     |   |   |-- z_corpus_initial
@@ -107,11 +109,10 @@ Ce corpus étant annoté en chaînes de coréférence, les erreurs d'annotation 
     |   |-- merge_s2s_ofcors.py
     |   |-- statistiques.py
     |   |-- lanceur.sh
-    |   |-- blabla
     |   |-- ANCOR
-    |   |-- SEQUOIA_annodisER
-    |   |-- SEQUOIA_EMEA
-    |   |-- SEQUOIA_frwiki
+    |   |-- blabla
+    |   |-- ER2003
+    |   |-- SEQUOIA
     |   |-- z_oldies
     |-- 3_resultats
         |-- frwiki_080621.json
@@ -129,21 +130,25 @@ Ce corpus étant annoté en chaînes de coréférence, les erreurs d'annotation 
 
 2. Utilisation du corpus SEQUOIA dans PARSEME, séparation des sous-corpus EMEA, frwiki et annodis.er selon les articles;
 
-    - Lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429)
+    - Lien pour télécharger le [corpus](https://lindat.mff.cuni.cz/dépôt/xmlui/handle/11234/1-3429)
     - Sélection manuelle des parties "emea" et "frwiki" dans le fichier `1_corpus/SEQUOIA/z_fichiers_intermediaires/sequoia-ud.conllu` (puisqu'il est ordonné) pour créer deux fichiers `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea.conllu` et `1_corpus/SEQUOIA/z_fichiers_intermediaires/frwiki.conllu`
     - Utilisation du script `1_corpus/SEQUOIA/EMFR_txt_from_conllu.py` pour extraire d'abord le texte brut et les sent_id des phrases qu'il contient dans les fichiers `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea_textbrut.txt` et `SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut.txt`
     - Division manuelle du corpus en articles, avec l'annotation "## DEBUT DOC" et "## FIN DOC" dans `1_corpus/SEQUOIA/z_fichiers_intermediaires/emea_textbrut_annote.txt` et `1_corpus/SEQUOIA/z_fichiers_intermediaires/frwiki_textbrut_annote.txt`
     - À partir du contenu du fichier cupt, utilisation de `1_corpus/SEQUOIA/EMFR_corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
     - Répertoire du corpus obtenu: `2_traitements/SEQUOIA_EMEA` et `2_traitements/SEQUOIA_frwiki`, ou `*_cupt` et `*_txt` dans `1_corpus/SEQUOIA`
-    - Pour sous-cropus annodis.er, utiliser le script `ER_get_texte.py` pour obtenir le répertoire de corpus `annodisER`, ensuite le recopier dans `2_traitements` en le renommant à `SEQUOIA_annodisER`
+    - Pour sous-corpus annodis.er, utiliser le script `ER_get_texte.py` pour obtenir le répertoire de corpus `annodisER`, ensuite le recopier dans `2_traitements` en le renommant à `SEQUOIA_annodisER`
+    - - **N'oubliez de l'annoter avec OFCORS avant la fusion des résultats.**
 
 3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
     - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `1_corpus/EST_REPUBLICAIN`
     - Lancement du script `1_corpus/EST_REPUBLICAIN/extract_text_er.py` dans `1_corpus/EST_REPUBLICAIN` avec `python extract_texte_er.py <rep_corpus> <taille_min_article>`
     - Le répertoire des articles est `1_corpus/EST_REPUBLICAIN/<rep_corpus>_len<taille>_articles`, et dans lequel chaque article est nommé comme `<date>_<indice_article>.txt`
-    - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
+    - **N'oubliez de l'annoter avec Seen2seen et OFCORS avant la fusion des résultats.**
 
-4. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
+4. Utilisation du corpus ANCOR, conversion des fichiers TEI en fichiers txt;
+    - ...
+
+5. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
     - Format : colonne des mentions : id de mentions séparés par `;`
                colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`Exemple :

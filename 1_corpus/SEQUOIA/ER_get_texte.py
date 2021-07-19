@@ -101,8 +101,11 @@ def create_corpus_folder(liste_debut, new_l, path):
         path(str) : chemin du répertoire de corpus à créer
     """
     # creation du répertoire de corpus
-    if not os.path.exists(path):
-        os.makedirs(path)
+    if not os.path.exists(f"{path}_txt"):
+        os.makedirs(f"{path}_txt")
+
+    if not os.path.exists(f"{path}_cupt"):
+        os.makedirs(f"{path}_cupt")
 
     article_i = 1
     # pour chaque article
@@ -121,9 +124,9 @@ def create_corpus_folder(liste_debut, new_l, path):
             debut += 1
         cupt = "# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE\n" + "\n\n".join(article_cupt)
         txt = "\n".join(article_txt)
-        with open(f"{path}/annodisER_{article_i}.cupt", "w", encoding="utf8") as cuptfile:
+        with open(f"{path}_cupt/annodisER_{article_i}.cupt", "w", encoding="utf8") as cuptfile:
             cuptfile.write(cupt)
-        with open(f"{path}/annodisER_{article_i}.txt", "w", encoding="utf8") as txtfile:
+        with open(f"{path}_txt/annodisER_{article_i}.txt", "w", encoding="utf8") as txtfile:
             txtfile.write(txt)
 
         article_txt = []
