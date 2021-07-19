@@ -49,12 +49,26 @@ Vous pouvez maintenant utiliser OFCORS dans notre repository! Le lancement est e
 ### Première expérience : sous-corpus de PARSEME
 Pour traiter correctement la coréférence, il est nécessaire de connaître les frontières de textes dans un corpus. En effet, la coréférence ne peut être traitée qu'à l'intérieur d'une même unité discursive.  
 Le [corpus PARSEME](https://gitlab.com/parseme/parseme_corpus_fr) est annoté en expressions polylexicales mais les frontières des textes ne sont pas annotées. Ce corpus contient quatre sous-corpus (SEQUOIA, GSD, PARTUT et PUD) et il n'est possible de retrouver l'ordre des phrases que pour un seul sous-corpus : [SEQUOIA](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3429).  
-Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA pour lesquels les phrases se suivent selon l'ordre du document initial:
-* 2 documents de l'agence européenne du médicament pour la partie EMEA (\~ 1000 phrases en tout)
-* 19 pages Wikipédia pour la partie frwiki (\~ 1000 phrases en tout)  
+Nous avons donc isolé les différents documents présents dans le corpus SEQUOIA pour lesquels les phrases se suivent selon l'ordre du document initial :
+* 2 rapports de l'agence européenne du médicament pour la partie EMEA (\~ 1 000 phrases en tout)
+* 19 articles Wikipédia sur des affaires sociale ou politiques pour la partie frwiki (\~ 1 000 phrases en tout)
+* 36 articles de journaux courts avec des thèmes variés pour la partie annodisER (\~ 500 phrases en tout)  
+
+Ce corpus étant annoté en expressions polylexicales, les erreurs d'annotation ne peuvent venir que des chaînes de coréférence.  
 
 ### Deuxième expérience : Est Républicain
-Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républicain](http://redac.univ-tlse2.fr/corpus/estRepublicain.html), un recueil des articles paru en 1999, 2002 et les deux premiers mois de 2003 sur le journal régional Est Républicain. Considérant la taille énorme de corpus, pour l'instant, nous limitons notre test sur les 100 premiers articles ayant plus de 300 mots de l'année 2003.
+Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républicain](http://redac.univ-tlse2.fr/corpus/estRepublicain.html), un recueil des articles paru en 1999, 2002 et les deux premiers mois de 2003 sur le journal régional Est Républicain. Considérant la taille énorme de corpus, pour l'instant, nous limitons notre test sur les 100 premiers articles ayant plus de 300 mots de l'année 2003 (\~ 3 000 phrases en tout).  
+
+Ce corpus étant composé de fichiers texte brut, les erreurs d'annotation peuvent venir des chaînes de coréférence ou des expressions polylexicales. 
+
+### Troisième expérience : ANCOR
+Enfin, nous avons réalisé notre expérience sur le corpus ANCOR(téléchargé depuis le [lien donné par DECOFRE](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt)). C'est un corpus d'oral transcrit composé de 4 sous-corpus :
+* ESLO_ANCOR : des entretiens divisés en sous dialogues thématiques cohérents (\~ 25 000 phrases en tout).
+* ESLO_CO2 : trois entretiens complets (\~ 2 500 phrases en tout).
+* OTG : des dialogues interactifs entre des individus et le personnel d’accueil de l’office de tourisme de Grenoble (\~ 2 800 phrases en tout).
+* UBS : des dialogues interactifs par téléphone recueillis auprès du standard téléphonique d’une université (\~ 700 phrases en tout).
+
+Ce corpus étant annoté en chaînes de coréférence, les erreurs d'annotation ne peuvent venir que des expressions polylexicales. 
 
 ## Structure du repository
 
