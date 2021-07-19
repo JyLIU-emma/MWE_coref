@@ -237,6 +237,7 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
     - **"non concerné"** : Souvent distribué à un exemple de cas 1 (expression polylexicale inclue dans la mention détectée), qui ne fait pas partie de notre analyse.
     - **"discutable"** : L'exemple peut être vrai ou faux selon l'interprétation humaine.  
     Par exemple, dans la phrase _"- Créé par la Fédération nationale qui perpétue le souvenir de l'homme d'Etat meusien qui fut ministre de la Guerre et l'initiateur d'un système de défense qui **porte** [son **nom**], le prix [André-Maginot] récompense des travaux liés au civisme et au devoir de mémoire."_ , la coréférence entre les deux mentions "son nom" et "André-Maginot" est difficile à déterminer, puisque le dernier est en effet le nom de ce prix au lieu du nom de cette personne.
+    - **"répétitions"** : des répétitions simples des MWE dans le texte suivant.
 
 - **"DEGRE DE COMPOSITIONNALITE"(à compléter après)**
 
