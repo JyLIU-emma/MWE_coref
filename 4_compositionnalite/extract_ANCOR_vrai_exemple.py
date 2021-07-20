@@ -80,15 +80,16 @@ def extract_exemple_from_jsonfile(files):
             eslo_old_repetition[cle] = {"TYPE": cle, "Nombre_COREF": len(repe_eslo),
                                     "MWES": repe_eslo}
         # Écrire dans les fichiers de sortie
-        with open(f"{rep}/ancor_{corpus}.json", "w", encoding="utf8") as out1:
-            json.dump(eslo_old_format, out1, indent=4, ensure_ascii=False, sort_keys=False)
+        
+        # with open(f"{rep}/ancor_{corpus}.json", "w", encoding="utf8") as out1:
+        #     json.dump(eslo_old_format, out1, indent=4, ensure_ascii=False, sort_keys=False)
         with open(f"{rep}/ancor_{corpus}_new_format.json", "w", encoding="utf8") as out2:
             json.dump(eslo_new_liste, out2, indent=4, ensure_ascii=False, sort_keys=False)
 
-        with open(f"{rep}/ancor_{corpus}_repe.json", "w", encoding="utf8") as out1:
-            json.dump(eslo_old_repetition, out1, indent=4, ensure_ascii=False, sort_keys=False)
-        with open(f"{rep}/ancor_{corpus}_new_format_repe.json", "w", encoding="utf8") as out2:
-            json.dump(eslo_new_repetition, out2, indent=4, ensure_ascii=False, sort_keys=False)
+        # with open(f"{rep}/ancor_{corpus}_repe.json", "w", encoding="utf8") as out1:
+        #     json.dump(eslo_old_repetition, out1, indent=4, ensure_ascii=False, sort_keys=False)
+        # with open(f"{rep}/ancor_{corpus}_new_format_repe.json", "w", encoding="utf8") as out2:
+        #     json.dump(eslo_new_repetition, out2, indent=4, ensure_ascii=False, sort_keys=False)
     return new_liste
 
 
