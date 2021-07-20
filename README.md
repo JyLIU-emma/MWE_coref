@@ -100,10 +100,14 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     |   |   |-- TXT2003
     |   |   |-- TXT2003_len300_articles
     |   |   |-- extract_text_er.py
+    |   |-- ANCOR
+    |   |   |-- ESLO_ANCOR
+    |   |   |-- ESLO_CO2
+    |   |   |-- OTG
+    |   |   |-- UBS
     |-- 2_traitements
     |   |-- CuptParser.py
     |   |-- OfcorsFilesParser.py
-    |   |-- ancor.py
     |   |-- merge_s2s_ofcors.py
     |   |-- statistiques.py
     |   |-- lanceur.sh
@@ -144,8 +148,9 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     - **N'oubliez de l'annoter avec Seen2seen et OFCORS avant la fusion des résultats.**
 
 4. Utilisation du corpus ANCOR, conversion des fichiers TEI en fichiers txt;
-    - [Téléchargement](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt) et décompression du corpus dans le répertoire `2_traitements/ANCOR`. Supprimez les fichiers `2_traitements/ANCOR/*-syntax.tei` et séparez les sous-corpus en différents sous-dossiers.
-    - Lancement de la commande `./lanceur -a <DOSSIER>` sur les 4 sous-corpus (`ANCOR/ESLO_ANCOR` `ANCOR/ESLO_CO2` `ANCOR/OTG` et `ANCOR/UBS`) depuis le répertoire `2_traitements`.
+    - [Téléchargement](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt) et décompression du corpus dans le répertoire `1_corpus/ANCOR`. Supprimez les fichiers `1_corpus/ANCOR/*-syntax.tei` et séparez les sous-corpus en différents sous-dossiers.
+    - Lancement du script `1_corpus/ANCOR/ancor.py` sur les 4 sous-corpus (`ANCOR/ESLO_ANCOR` `ANCOR/ESLO_CO2` `ANCOR/OTG` et `ANCOR/UBS`) depuis `1_corpus/ANCOR/` avec `python ancor.py <rep_corpus>`
+    - Vous pouvez ensuite déplacer chaque sous-corpus (`1_corpus/ANCOR/<sous-corpus>`) dans le répertoire `2_traitements/ANCOR/<sous-corpus>` sans les fichiers TEI (ils ne seront pas utiles pour les traitements).
     - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
 
 5. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
@@ -167,7 +172,6 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
         ```
     Ici, La mention n°31 est "Le trajet" et la mention n°32 est "20 minutes".
     La chaîne n°1 contient (entre autres) la mention 31. La mention 32 n'appartient à aucune chaîne de coréférence.
-    - Script pour récupérer les annotations d'ANCOR en imitant les fichiers de sortie d'OFCORS : `2_traitements/ancor.py`
     - Scripts pour les fusionner : `2_traitements/CuptParser.py`, `2_traitements/OfcorsFilesParser.py` et `2_traitements/merge_s2s_ofcors.py`
     - Script pour lancer tout :`2_traitements/lanceur.sh`
     - Script pour étudier le résultat :  `2_traitements/statistiques.py`
@@ -219,11 +223,6 @@ Cette commande ne lance que la partie OFCORS.
 OFCORS est lancé avec le tokenizer stanza, en mode fenêtre (taille de 8).
 
 
-    ./lanceur.sh -a ANCOR/OTG
-
-Cette commande crée des fichiers semblables à ceux d'OFCORS à partir des annotations de ANCOR.
-
-
     ./lanceur.sh -s blabla/
 
 Cette commande ne lance que les scripts `2_traitements/merge_s2s_ofcors.py` et `2_traitements/statistiques.py`. Elle nécessite que les fichiers résultats de OFCORS sur les fichiers de `2_traitements/blabla/` se trouvent dans `2_traitements/blabla/ofcors_outputs`.
@@ -271,7 +270,7 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
 
 - **"DEGRE DE COMPOSITIONNALITE"**
     - Cette valeur n'est renseignée que pour les exemples vrais. 3 valeurs sont possibles : "faible", "moyen" ou "fort".
-    - Nous nous sommes inspirées de l'article 
+    - Nous nous sommes inspirées de l'article [_"Unsupervised Compositionality Prediction of Nominal Compounds"_](https://hal-univ-tln.archives-ouvertes.fr/hal-02318196/)(Cordeiro et al. 2019) pour créer un test de compositionnalité adapté aux expressions polylexicales verbales. Vous pouvez retrouver ce test et les annotations dans le dossier `4_compositionnalite`. Les expressions ont été annotées par 4 annotateurs indépendants.
 
 - **"SOURCE D'ERREUR"**
     - Les erreurs peuvent venir de deux côtés : l'expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 5 sources d'erreurs : 
