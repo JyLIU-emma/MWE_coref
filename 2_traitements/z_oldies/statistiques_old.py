@@ -25,7 +25,6 @@ class ExprPoly():
         type_mwe (str): Type de la MWE (LVC.full, VID...)
         phrase (str): Texte de la phrase où se trouve la MWE
         tokens (liste de str): Liste des tokens composant la MWE
-        lemmes (liste de str): Liste des lemma composant la MWE
         coref (liste de str): Appartenance ou non à une chaîne de coréférence
                               pour chaque token ("*" = pas dans une chaîne)
         schema_mwe (liste de str): Liste représentant les tokens de la phrase
@@ -39,14 +38,13 @@ class ExprPoly():
                    d'une mention dans une MWE avec en clé la mention concernée
         chaines (liste de dict): Les chaines de coreférences de la MWE
     """
-    def __init__(self, id_fichier, id_mwe, type_mwe, phrase, tokens, lemmes, coref):
+    def __init__(self, id_fichier, id_mwe, type_mwe, phrase, tokens, coref):
         # Définis immédiatement
         self.id_fichier = id_fichier  # frwiki_8_mwe_coref.cupt
         self.id_mwe = id_mwe  # 1 ou 2 (par phrase)
         self.type_mwe = type_mwe  # LVC.full
         self.phrase = phrase  # Merci de me donner l'occasion de...
         self.tokens = [tokens]  # ['me', 'donner']
-        self.lemmes = [lemmes]
         self.coref = [coref]  # ['*', '3']
 
         # Définis plus tard
@@ -303,13 +301,12 @@ def phrase_mwe(phrase, id_fichier, dico_coref):
                 id_mwe = int(infos[0])
                 if len(infos) == 2:
                     expoly = ExprPoly(id_fichier, id_mwe, infos[1], texte,
-                                      ligne[1], ligne[2], ligne[12])
+                                      ligne[1], ligne[12])
                     liste_expoly.append(expoly)
                 else:
                     for expoly in liste_expoly:
                         if expoly.id_mwe == id_mwe:
                             expoly.tokens.append(ligne[1])
-                            expoly.lemmes.append(ligne[2])
                             expoly.coref.append(ligne[12])
         if corefs != "*":
             for coref in corefs.split(';'):
@@ -459,7 +456,6 @@ def ecriture_stats_coref(liste_typexp, fichier):
                              "FICHIER": expoly.id_fichier,
                              "PHRASE": expoly.phrase,
                              "TOKENS": str(expoly.tokens),
-                             "LEMME": expoly.lemmes,
                              "COREF": str(expoly.coref),
                              "CAS": str(expoly.cas),
                              "CHAINE(S)": infos_chaines

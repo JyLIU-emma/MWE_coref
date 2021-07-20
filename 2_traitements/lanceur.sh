@@ -7,6 +7,9 @@
 # La sortie de merge_s2s_ofcors se trouve dans phrases/mwecoref_outputs/
 # Le fichier de résultats est optionnel
 
+# exemple de lancement:
+# bash ./lanceur.sh -s ER2003/ER2003_len300_1-100/ ../3_resultats/ER_0-100_080721.json
+
 ofcors()
 {
     for fichier in `ls $1*.txt`
