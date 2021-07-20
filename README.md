@@ -29,7 +29,7 @@ Pour plus de détails, référez-vous au README de Seen2seen : [Lien vers Seen2s
 * Ajoutez le script de conversion udpipe : `cp MWE_coref/seen2seen/udpipe_annote.py Seen2Seen/CODE/udpipe_annote.py`
 * Téléchargez le modèle utilisé par le script de conversion : [french-gsd-ud-2.5-191206.udpipe](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3131)
 * Créez un répertoire `model_udpipe` : `mkdir Seen2Seen/CODE/model_udpipe/`
-* Déplacez le modèle dans ce répertoire 
+* Déplacez le modèle dans ce répertoire  
 Vous pouvez maintenant utiliser Seen2seen pour l'annotation ! Le lancement est expliqué plus bas.
 
 ### Installation d'OFCORS
@@ -64,7 +64,7 @@ Dans un deuxième temps, l'expérience se réalise sur le [corpus Est Républica
 Ce corpus étant composé de fichiers texte brut, les erreurs d'annotation peuvent venir des chaînes de coréférence ou des expressions polylexicales. 
 
 ### Troisième expérience : ANCOR
-Enfin, nous avons réalisé notre expérience sur le corpus ANCOR(téléchargé depuis le [lien donné par DECOFRE](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt)). C'est un corpus d'oral transcrit composé de 4 sous-corpus :
+Enfin, nous avons réalisé notre expérience sur le corpus ANCOR (téléchargé depuis le [lien donné par DECOFRE](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt)). C'est un corpus d'oral transcrit composé de 4 sous-corpus :
 * ESLO_ANCOR : des entretiens divisés en sous dialogues thématiques cohérents (\~ 25 000 phrases en tout).
 * ESLO_CO2 : trois entretiens complets (\~ 2 500 phrases en tout).
 * OTG : des dialogues interactifs entre des individus et le personnel d’accueil de l’office de tourisme de Grenoble (\~ 2 800 phrases en tout).
@@ -135,7 +135,7 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     - À partir du contenu du fichier cupt, utilisation de `1_corpus/SEQUOIA/EMFR_corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
     - Répertoire obtenus : `1_corpus/SEQUOIA/emea/` et `1_corpus/SEQUOIA/frwiki` à recopier dans `2_traitements/SEQUOIA/emea` et `2_traitements/SEQUOIA/frwiki`. Ils contiennent les fichiers `*.cupt` et `*.txt`.
     - Pour le sous-corpus annodis.er, utiliser le script `ER_get_texte.py` pour obtenir le répertoire de corpus `1_corpus/SEQUOIA/annodisER` à recopier dans `2_traitements/SEQUOIA/annodisER`. Il contient les fichiers `*.cupt` et `*.txt`.
-    - - **N'oubliez de l'annoter avec OFCORS avant la fusion des résultats.**
+    - **N'oubliez de l'annoter avec OFCORS avant la fusion des résultats.**
 
 3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
     - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `1_corpus/EST_REPUBLICAIN`
@@ -145,7 +145,7 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
 
 4. Utilisation du corpus ANCOR, conversion des fichiers TEI en fichiers txt;
     - [Téléchargement](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt) et décompression du corpus dans le répertoire `2_traitements/ANCOR`. Supprimez les fichiers `2_traitements/ANCOR/*-syntax.tei` et séparez les sous-corpus en différents sous-dossiers.
-    - Lancement de la commande `./lanceur -a <DOSSIER>` sur les 4 sous-corpus (`ANCOR/ESLO_ANCOR` `ANCOR/ESLO_CO2` `ANCOR/OTG` et `ANCOR/UBS`)
+    - Lancement de la commande `./lanceur -a <DOSSIER>` sur les 4 sous-corpus (`ANCOR/ESLO_ANCOR` `ANCOR/ESLO_CO2` `ANCOR/OTG` et `ANCOR/UBS`) depuis le répertoire `2_traitements`.
     - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
 
 5. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
@@ -210,13 +210,13 @@ Vous devez vous trouvez dans `MWE_coref/2_traitements/`.
   
 Cette commande lance tout le processus sur les fichiers contenus dans le répertoire `2_traitements/blabla/`. Ce répertoire doit contenir les fichiers textes et les fichiers cupt annotés en MWEs (passés dans Seen2seen) du corpus.
 Les fichiers textes sont d'abord passés dans OFCORS et les fichiers résultats (`<nom>_resulting_chains.json`, `<nom>_mentions_output.json` et `<nom>_token.json`) sont créés dans `2_traitements/blabla/ofcors_outputs`. Ensuite, le script `2_traitements/merge_s2s_ofcors.py` est appelé pour créer les fichiers cupt avec les deux colonnes supplémentaires dans le dossier `2_traitements/blabla/mwecoref_outputs` à partir des sorties d'OFCORS et des fichiers cupt. Enfin, le script `2_traitements/statistiques.py` affiche les résultats dans le terminal.  
-OFCORS est lancé avec le tokenizer stanza, en mode fenêtre avec une taille de 8.
+OFCORS est lancé avec le tokenizer stanza, en mode fenêtre (taille de 8).
 
 
     ./lanceur.sh -o blabla/
 
-Cette commande ne lance que la partie OFCORS.
-OFCORS est lancé avec le tokenizer stanza, en mode fenêtre avec une taille de 8.
+Cette commande ne lance que la partie OFCORS.  
+OFCORS est lancé avec le tokenizer stanza, en mode fenêtre (taille de 8).
 
 
     ./lanceur.sh -a ANCOR/OTG
@@ -254,7 +254,7 @@ Les différentes expressions polylexicales faisant parties d'une chaîne de cor�
 * CHAINE(S) : Pour chaque chaîne à laquelle l'expression appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 68 qui contient les mentions 131 ("la maladie osseuse de Paget"), 135 ("cette maladie"), 138 ("une maladie") et 139 ("qui").
 
 ### Annotation de validation
-Pour examiner les croisements des expressions polylexicales et des chaînes de coréférence, nous annotons 3 aspects : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE D'ERREUR*.
+Pour examiner les croisements des expressions polylexicales et des chaînes de coréférence, nous annotons trois aspects : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE D'ERREUR*.
 
 - **"VALIDATION"**
     - 5 valeurs possibles : "vrai", "faux", "non concerné", "discutable" et "répétitions".
@@ -269,10 +269,9 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
     - **"répétitions"** : Disfluences ou répétitions simples des expressions complètes dans le texte (courant dans le corpus oral ANCOR).  
     Par exemple nous mettons "répétitions" pour ces phrases : _"cinq kilomètres d' ici ? ah non je crois que si j' **ai** [**le temps**] j' irai la voir" "oui mais vous préférez vous déplacer plutôt oui si j' ai [le temps] j' aime mieux j' aime mieux aller aller les voir"_ et _"je **ferais** [un **détour**] pour aller à Chambord je ferais [un détour] vous voyez ça c' est c' est c' est c' est sans doute dans mon tempérament vous comprenez ça c' est c' est c' est personnel ça"_
 
-- **"DEGRE DE COMPOSITIONNALITE"(à compléter après)**
-
-"DEGRE DE COMPOSITIONNALITE" -> “faible” , “moyen” ou “fort” (“moyen/fort” etc…)
-(pas encore bien déterminé, seulement pour les exemples “vrais”)
+- **"DEGRE DE COMPOSITIONNALITE"**
+    - Cette valeur n'est renseignée que pour les exemples vrais. 3 valeurs sont possibles : "faible", "moyen" ou "fort".
+    - Nous nous sommes inspirées de l'article 
 
 - **"SOURCE D'ERREUR"**
     - Les erreurs peuvent venir de deux côtés : l'expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 5 sources d'erreurs : 
