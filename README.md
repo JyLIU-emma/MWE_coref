@@ -139,19 +139,19 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     - À partir du contenu du fichier cupt, utilisation de `1_corpus/SEQUOIA/EMFR_corpus_split.py` pour former le fichier `cupt` et `txt` de chaque article selon le sent_id choisi et le source_sent_id dans le fichier cupt (téléchargement de cupt de [PARSEME](https://gitlab.com/parseme/parseme_corpus_fr)), un article par fichier
     - Répertoire obtenus : `1_corpus/SEQUOIA/emea/` et `1_corpus/SEQUOIA/frwiki` à recopier dans `2_traitements/SEQUOIA/emea` et `2_traitements/SEQUOIA/frwiki`. Ils contiennent les fichiers `*.cupt` et `*.txt`.
     - Pour le sous-corpus annodis.er, utiliser le script `ER_get_texte.py` pour obtenir le répertoire de corpus `1_corpus/SEQUOIA/annodisER` à recopier dans `2_traitements/SEQUOIA/annodisER`. Il contient les fichiers `*.cupt` et `*.txt`.
-    - **N'oubliez de l'annoter avec OFCORS avant la fusion des résultats.**
+    - **N'oubliez pas de l'annoter avec OFCORS avant la fusion des résultats.**
 
 3. Utilisation du corpus Est Républicain, séparation des articles en fichiers;
     - [Téléchargement](http://redac.univ-tlse2.fr/corpus/estRepublicain.html) et décompression du corpus dans le répertoire `1_corpus/EST_REPUBLICAIN`
     - Lancement du script `1_corpus/EST_REPUBLICAIN/extract_text_er.py` dans `1_corpus/EST_REPUBLICAIN` avec `python extract_texte_er.py <rep_corpus> <taille_min_article>`
     - Le répertoire des articles est `1_corpus/EST_REPUBLICAIN/<rep_corpus>_len<taille>_articles`, et dans lequel chaque article est nommé comme `<date>_<indice_article>.txt`
-    - **N'oubliez de l'annoter avec Seen2seen et OFCORS avant la fusion des résultats.**
+    - **N'oubliez pas de l'annoter avec Seen2seen et OFCORS avant la fusion des résultats.**
 
 4. Utilisation du corpus ANCOR, conversion des fichiers TEI en fichiers txt;
-    - [Téléchargement](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt) et décompression du corpus dans le répertoire `1_corpus/ANCOR`. Supprimez les fichiers `1_corpus/ANCOR/*-syntax.tei` et séparez les sous-corpus en différents sous-dossiers.
+    - [Téléchargement](https://sharedocs.huma-num.fr/wl/?id=omxQyO3MkOgUgfEVwOlBygZZHYAocTDt) et décompression du corpus dans le répertoire `1_corpus/ANCOR/`. Supprimez les fichiers `1_corpus/ANCOR/*-syntax.tei` et séparez les sous-corpus en différents sous-dossiers.
     - Lancement du script `1_corpus/ANCOR/ancor.py` sur les 4 sous-corpus (`ANCOR/ESLO_ANCOR` `ANCOR/ESLO_CO2` `ANCOR/OTG` et `ANCOR/UBS`) depuis `1_corpus/ANCOR/` avec `python ancor.py <rep_corpus>`
-    - Vous pouvez ensuite déplacer chaque sous-corpus (`1_corpus/ANCOR/<sous-corpus>`) dans le répertoire `2_traitements/ANCOR/<sous-corpus>` sans les fichiers TEI (ils ne seront pas utiles pour les traitements).
-    - **N'oubliez de l'annoter avec Seen2seen avant la fusion des résultats.**
+    - Vous pouvez ensuite recopier chaque sous-corpus (`1_corpus/ANCOR/<sous-corpus>`) dans le répertoire `2_traitements/ANCOR/<sous-corpus>` sans les fichiers TEI (ils ne seront pas utiles pour les traitements).
+    - **N'oubliez pas de l'annoter avec Seen2seen avant la fusion des résultats.**
 
 5. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
@@ -270,7 +270,7 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
 
 - **"DEGRE DE COMPOSITIONNALITE"**
     - Cette valeur n'est renseignée que pour les exemples vrais. 3 valeurs sont possibles : "faible", "moyen" ou "fort".
-    - Nous nous sommes inspirées de l'article [_"Unsupervised Compositionality Prediction of Nominal Compounds"_](https://hal-univ-tln.archives-ouvertes.fr/hal-02318196/)(Cordeiro et al. 2019) pour créer un test de compositionnalité adapté aux expressions polylexicales verbales. Vous pouvez retrouver ce test et les annotations dans le dossier `4_compositionnalite`. Les expressions ont été annotées par 4 annotateurs indépendants.
+    - Nous nous sommes inspirées de l'article [_Unsupervised Compositionality Prediction of Nominal Compounds_](https://hal-univ-tln.archives-ouvertes.fr/hal-02318196/)(Cordeiro et al. 2019) pour créer un test de compositionnalité adapté aux expressions polylexicales verbales. Vous pouvez retrouver ce test et les annotations dans le dossier `4_compositionnalite/`. Les expressions ont été annotées par 4 annotateurs indépendants.
 
 - **"SOURCE D'ERREUR"**
     - Les erreurs peuvent venir de deux côtés : l'expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 5 sources d'erreurs : 
