@@ -11,6 +11,7 @@ Arg:
 """
 
 import argparse
+import os
 
 
 def get_liste_of_sentid(corpus):
@@ -68,10 +69,14 @@ def main():
     all_texts = get_liste_of_sentid(corpus)
     sents_dico = get_sents_dico()
 
+    # creation du répertoire de corpus
+    if not os.path.exists(corpus):
+        os.makedirs(corpus)
+
     # Fichiers cupt
     i = 1
     for text in all_texts:
-        filename = f'{corpus}_cupt/{corpus}_' + str(i) + '.cupt'
+        filename = f'{corpus}/{corpus}_' + str(i) + '.cupt'
         with open(filename, "w") as fileout:
             fileout.write("# global.columns = ID FORM LEMMA UPOS XPOS FEATS"
                           " HEAD DEPREL DEPS MISC PARSEME:MWE\n")
@@ -83,7 +88,7 @@ def main():
     # Fichiers txt
     i = 1
     for text in all_texts:
-        filename = f'{corpus}_txt/{corpus}_' + str(i) + '.txt'
+        filename = f'{corpus}/{corpus}_' + str(i) + '.txt'
         with open(filename, "w") as fileout:
             for sent_id in text:
                 fileout.write(sents_dico[sent_id][0])

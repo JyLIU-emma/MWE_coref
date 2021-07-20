@@ -48,22 +48,10 @@ mwecoref()
         done
 }
 
-ancor()
-{
-    for fichier in `ls $1*.tei`
-        do
-            python3 ancor.py $fichier
-        done
-}
-
 if [ $1 == "-o" ]
 then
     mkdir ./$2ofcors_outputs/
     ofcors "$2"
-elif [ $1 == "-a" ]
-then
-    mkdir ./$2ofcors_outputs/
-    ancor "$2"
 elif [ $1 == "-s" ]
 then
     mkdir ./$2mwecoref_outputs/
@@ -91,7 +79,6 @@ then
 else
     echo " Cette option n'existe pas. "
     echo " -o : lance ofcors-infer "
-    echo " -a : lance ancor.py "
     echo " -s : lance merge_s2s_ofcors.py et statistiques.py "
     echo " -os : lance ofcors-infer, merge_s2s_ofcors.py et statistiques.py "
 fi
