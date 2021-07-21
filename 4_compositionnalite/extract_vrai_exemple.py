@@ -18,7 +18,7 @@ import sys
 from collections import Counter
 
 # Créer le répertoire
-rep = f"{sys.path[0]}/z_fichiers_intermediaires"
+rep = f"{sys.path[0]}/resultats_croisements"
 rep_result = f"{sys.path[0]}/../3_resultats"
 if not os.path.exists(rep):
     os.makedirs(rep)
@@ -75,7 +75,7 @@ def get_mwe_diff(new_liste, corpus_name):
                 flag_trouve = True
                 dico_mwe[mwe]['indice'].append(i['indice'])
                 dico_mwe[mwe]['nbre_occurrence'] += 1
-                dico_mwe[mwe]['contextes'].append((i['TOKENS'], i['PHRASE']))
+                dico_mwe[mwe]['contextes'].append((i['TOKENS'], i['PHRASE'], i['FICHIER']))
                 if i['sous_corpus'] not in dico_mwe[mwe]['sous_corpus']:
                     dico_mwe[mwe]['sous_corpus'].append(i['sous_corpus'])
                 break
