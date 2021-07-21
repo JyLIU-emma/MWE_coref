@@ -440,7 +440,7 @@ def ecriture_stats_coref(liste_typexp, fichier):
     """
     Écrit le nombre de MWEs faisant partie d'une chaîne de coréférence par
     type et total, ainsi que les information sur ces MWEs (texte, tokens,
-    coref, cas et chaines) dans un fichier json.
+    coref, lemmes, cas et chaines) dans un fichier json.
     """
     dico_final = {}
     for typexp in liste_typexp:
@@ -459,7 +459,7 @@ def ecriture_stats_coref(liste_typexp, fichier):
                              "FICHIER": expoly.id_fichier,
                              "PHRASE": expoly.phrase,
                              "TOKENS": str(expoly.tokens),
-                             "LEMME": expoly.lemmes,
+                             "LEMMES": expoly.lemmes,
                              "COREF": str(expoly.coref),
                              "CAS": str(expoly.cas),
                              "CHAINE(S)": infos_chaines

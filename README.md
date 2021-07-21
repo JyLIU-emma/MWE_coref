@@ -126,7 +126,7 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     |   |-- ancor_compositionnalite_vide.csv
     |   |-- ancor_croisement_annote.json
     |   |-- ...
-    |   |-- z_fichiers_intermediaires
+    |   |-- resultats_croisements
     |   |   |-- ...
 
 ```
@@ -248,7 +248,7 @@ Légendes des exemples:
         "FICHIER": "emea_2_mwe_coref.cupt",
         "PHRASE": "Aclasta ne doit être utilisé, chez les patients souffrant de la maladie osseuse de Paget, que par un médecin expérimenté dans le traitement de cette maladie.",
         "TOKENS": "['souffrant', 'de', 'maladie']",
-        "LEMME": [
+        "LEMMES": [
             "souffrir",
             "de",
             "maladie"
@@ -287,7 +287,7 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
 
 - **"DEGRE DE COMPOSITIONNALITE"**
     - Cette valeur n'est renseignée que pour les exemples vrais. 3 valeurs sont possibles : "faible", "moyen" ou "fort".
-    - Nous nous sommes inspirées de l'article [_Unsupervised Compositionality Prediction of Nominal Compounds_](https://hal-univ-tln.archives-ouvertes.fr/hal-02318196/)(Cordeiro et al. 2019) pour créer un test de compositionnalité adapté aux expressions polylexicales verbales. Vous pouvez retrouver ce test et les annotations dans le dossier `4_compositionnalite/`. Les expressions ont été annotées par 4 annotateurs indépendants.
+    - Nous nous sommes inspirées de l'article [_Unsupervised Compositionality Prediction of Nominal Compounds_](https://hal-univ-tln.archives-ouvertes.fr/hal-02318196/) (Cordeiro et al. 2019) pour créer un test de compositionnalité adapté aux expressions polylexicales verbales. Vous pouvez retrouver ce test et les annotations dans le dossier `4_compositionnalite/`. Les expressions ont été annotées par 4 annotateurs indépendants.
 
 - **"SOURCE D'ERREUR"**
     - Les erreurs peuvent venir de deux côtés : l'expression polylexicale ou la chaîne de coréférence. Nous les définissons avec 5 sources d'erreurs : 
