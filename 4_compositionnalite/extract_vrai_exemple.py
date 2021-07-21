@@ -19,10 +19,14 @@ from collections import Counter
 
 # Créer le répertoire
 repParent = sys.path[0]
-rep = f"{sys.path[0]}/resultats_croisements"
+rep_res = f"{sys.path[0]}/resultats_croisements"
+rep_z = f"{sys.path[0]}/z_fichiers_intermediaires"
 rep_result = f"{sys.path[0]}/../3_resultats"
-if not os.path.exists(rep):
-    os.makedirs(rep)
+if not os.path.exists(rep_res):
+    os.makedirs(rep_res)
+
+if not os.path.exists(rep_z):
+    os.makedirs(rep_z)
 
 
 def extract_exemple_from_jsonfile(files, corpus_global_name):
@@ -58,7 +62,7 @@ def extract_exemple_from_jsonfile(files, corpus_global_name):
                     mwe_new_liste.append(i_new)
                     new_liste.append(i_new)
         # Écrire dans les fichiers de sortie
-        with open(f"{rep}/{corpus_global_name}_{corpus}_mwelist.json", "w", encoding="utf8") as out2:
+        with open(f"{rep_res}/{corpus_global_name}_{corpus}_mwelist.json", "w", encoding="utf8") as out2:
             json.dump(mwe_new_liste, out2, indent=4, ensure_ascii=False,
                       sort_keys=False)
     return new_liste
@@ -90,7 +94,7 @@ def get_mwe_diff(new_liste, corpus_name):
                                   'contextes': [(i['TOKENS'], i['PHRASE'], i['FICHIER'])],
                                   'indice': [i['indice']], 'nbre_occurrence': 1}
 
-    with open(f"{rep}/{corpus_name}_croisement_mwe.json", "w", encoding="utf8") as out3:
+    with open(f"{repParent}/{corpus_name}_croisement_mwe.json", "w", encoding="utf8") as out3:
         json.dump(dico_mwe, out3, indent=4, ensure_ascii=False,
                   sort_keys=False)
     return dico_mwe
@@ -100,7 +104,7 @@ def transform_to_csv(dico_mwe, corpus_name):
     """
     Générer le fichier csv pour google doc
     """
-    with open(f"{rep}/{corpus_name}_compositionnalite_vide.csv", "w", newline="", encoding="utf8") as csvfile:
+    with open(f"{rep_z}/{corpus_name}_compositionnalite_vide.csv", "w", newline="", encoding="utf8") as csvfile:
         fieldnames = ["sous_corpus", "expression", "Phrase(s)"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=",",
                                 quotechar='"', quoting=csv.QUOTE_ALL)
