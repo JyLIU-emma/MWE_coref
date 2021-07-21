@@ -5,7 +5,7 @@
 Ce script sert à extraire les vrai exemples
 pour le lancement:
 - premier argument à choisir entre "ancor", "sequoia" et "ER";
-- ajouter le 2e s'il faut lire directement depuis un fichier
+- ajouter le 2e s'il faut lire directement depuis un fichier (chemin depuis le 4_compositionnalite)
 
 exemple :
 python extract_vrai_exemple.py ancor [ancor_croisement_valid.json]
@@ -18,6 +18,7 @@ import sys
 from collections import Counter
 
 # Créer le répertoire
+repParent = sys.path[0]
 rep = f"{sys.path[0]}/resultats_croisements"
 rep_result = f"{sys.path[0]}/../3_resultats"
 if not os.path.exists(rep):
@@ -89,7 +90,7 @@ def get_mwe_diff(new_liste, corpus_name):
                                   'contextes': [(i['TOKENS'], i['PHRASE'], i['FICHIER'])],
                                   'indice': [i['indice']], 'nbre_occurrence': 1}
 
-    with open(f"{rep}/{corpus_name}_croisement_valid.json", "w", encoding="utf8") as out3:
+    with open(f"{rep}/{corpus_name}_croisement_mwe.json", "w", encoding="utf8") as out3:
         json.dump(dico_mwe, out3, indent=4, ensure_ascii=False,
                   sort_keys=False)
     return dico_mwe
@@ -138,7 +139,7 @@ def main():
     if valide:
         try:
             filename = sys.argv[2]
-            with open(f"{rep}/{filename}", "r", encoding="utf8") as fic:
+            with open(f"{repParent}/{filename}", "r", encoding="utf8") as fic:
                 dico_mwe = json.load(fic)
         except IndexError:
             new_liste = extract_exemple_from_jsonfile(files_dico, corpus_name)
