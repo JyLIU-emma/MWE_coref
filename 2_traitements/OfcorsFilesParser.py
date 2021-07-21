@@ -283,7 +283,7 @@ class OfcorsOutput():
                             raise Alignementerror(f"token:{token}\ttoken_o:{token_o}\nchaine de caractere combinee toujours differente, ne peut rien faire")
                         if token == token_o:
                             dico_o[str(i_o)].append(str(i))
-                
+
                 # dans la branche try
                 i += 1
                 i_o += 1
