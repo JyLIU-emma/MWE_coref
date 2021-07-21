@@ -117,8 +117,17 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     |   |-- SEQUOIA
     |   |-- z_oldies
     |-- 3_resultats
-        |-- frwiki_080621.json
-        ...
+    |   |-- visualisations.ipynb
+    |   |-- sequoia_frwiki_050721.json
+    |   |-- sequoia_frwiki_050721_validation.json
+    |-- |-- ...
+    |   4_compositionnalite
+    |   |-- extract_vrai_exemple.py
+    |   |-- ancor_compositionnalite_vide.csv
+    |   |-- ancor_croisement_annote.json
+    |   |-- ...
+    |   |-- z_fichiers_intermediaires
+    |   |   |-- ...
 
 ```
 
@@ -155,8 +164,9 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
 
 5. Fusion du résultat de OFCORS et de celui de Seen2seen au format cupt : ajout de 2 colonnes : la colonne des mentions et celle des chaînes de coréférences;
 
-    - Format : colonne des mentions : id de mentions séparés par `;`
-               colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`Exemple :
+    - Format : colonne des mentions : id de mentions séparés par `;`  
+               colonnes des coréférences : `id_de_chaînes:id_de_mention`, séparés par `;`  
+               Exemple :
 
         ```
         ...
@@ -235,22 +245,29 @@ Légendes des exemples:
 
 ### Fichier de sortie
 ```
-     "FICHIER": "emea_2_mwe_coref.cupt",
-     "PHRASE": "Aclasta ne doit être utilisé, chez les patients souffrant de la maladie osseuse de Paget, que par un médecin expérimenté dans le traitement de cette maladie.",
-     "TOKENS": "['souffrant', 'de', 'maladie']",
-     "COREF": "['*', '*', '68:131']",
-     "CAS": "{'131': 4}",
-     "CHAÎNE(S)": {
-        "68": "{'131': ['la', 'maladie', 'osseuse', 'de', 'Paget'], '135': ['cette', 'maladie'], '138': ['une', 'maladie'], '139': ['qui']}"
+        "FICHIER": "emea_2_mwe_coref.cupt",
+        "PHRASE": "Aclasta ne doit être utilisé, chez les patients souffrant de la maladie osseuse de Paget, que par un médecin expérimenté dans le traitement de cette maladie.",
+        "TOKENS": "['souffrant', 'de', 'maladie']",
+        "LEMME": [
+            "souffrir",
+            "de",
+            "maladie"
+        ],
+        "COREF": "['*', '*', '58:131']",
+        "CAS": "{'131': 4}",
+        "CHAINE(S)": {
+            "58": "{'131': ['la', 'maladie', 'osseuse', 'de', 'Paget'], '135': ['cette', 'maladie'], '138': ['une', 'maladie'], '139': ['qui']}"
+        }
 ```
 Les différentes expressions polylexicales faisant parties d'une chaîne de coréférence sont regroupées par type (VID, LVC.full ...). Pour chaque type sont ensuite affichées les informations sur les expressions polylexicales comme ci-dessus.
 * FICHIER :  le fichier où se trouve l'expression.
 * PHRASE :  La phrase où se trouve l'expression.
 * INFOS : 
     - Les tokens qui composent l'expression.
+    - Les lemmes des tokens qui composent l'expression.
     - Pour chaque token : son appartenance ou non à une chaîne de coréférence. Si `*` alors il n'appartient pas à une chaîne, sinon `indice de chaine : indice de mention`. Dans l'exemple ci-dessus, "maladie" correspond à la mention 131 et fait partie de la chaîne de coréférence 68.
     - Le cas correspondant pour chaque mention. (CAS 1 : expression incluse dans mention, CAS 2 : la mention et l'expression sont identiques, CAS 3 : mention incluse dans l'expression et CAS 4 : chevauchement)
-* CHAINE(S) : Pour chaque chaîne à laquelle l'expression appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 68 qui contient les mentions 131 ("la maladie osseuse de Paget"), 135 ("cette maladie"), 138 ("une maladie") et 139 ("qui").
+* CHAINE(S) : Pour chaque chaîne à laquelle l'expression appartient, on affiche l'ensemble des mentions de la chaîne. Dans l'exemple ci-dessus une seule chaîne a été trouvée, on affiche donc uniquement la chaîne 58 qui contient les mentions 131 ("la maladie osseuse de Paget"), 135 ("cette maladie"), 138 ("une maladie") et 139 ("qui").
 
 ### Annotation de validation
 Pour examiner les croisements des expressions polylexicales et des chaînes de coréférence, nous annotons trois aspects : *VALIDATION*, *DEGRE DE COMPOSITIONNALITE* et *SOURCE D'ERREUR*.
@@ -265,7 +282,7 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
     Par exemple, nous mettons "non concerné" pour cette phrase : _"[De nombreux patients **atteints** d'**ostéoporose**] n'ont aucun symptôme, mais [ils] présentent néanmoins un risque de fracture osseuse car l'ostéoporose a fragilisé leurs os."_ car on s'intéresse seulement à la reprise des composants d'une expression.
     - **"discutable"** : L'exemple peut être vrai ou faux selon l'interprétation humaine.  
     Par exemple, dans la phrase _"- Créé par la Fédération nationale qui perpétue le souvenir de l'homme d'Etat meusien qui fut ministre de la Guerre et l'initiateur d'un système de défense qui **porte** [son **nom**], le prix [André-Maginot] récompense des travaux liés au civisme et au devoir de mémoire."_ , la coréférence entre les deux mentions "son nom" et "André-Maginot" est difficile à déterminer, puisque le dernier est le nom du prix et non le nom de la personne.
-    - **"répétitions"** : Disfluences ou répétitions simples des expressions complètes dans le texte (courant dans le corpus oral ANCOR).  
+    - **"répétitions"** : Répétitions simples à cause des disfluences ou réutilisations des expressions complètes dans le texte (courant dans le corpus oral ANCOR).  
     Par exemple nous mettons "répétitions" pour ces phrases : _"cinq kilomètres d' ici ? ah non je crois que si j' **ai** [**le temps**] j' irai la voir" "oui mais vous préférez vous déplacer plutôt oui si j' ai [le temps] j' aime mieux j' aime mieux aller aller les voir"_ et _"je **ferais** [un **détour**] pour aller à Chambord je ferais [un détour] vous voyez ça c' est c' est c' est c' est sans doute dans mon tempérament vous comprenez ça c' est c' est c' est personnel ça"_
 
 - **"DEGRE DE COMPOSITIONNALITE"**

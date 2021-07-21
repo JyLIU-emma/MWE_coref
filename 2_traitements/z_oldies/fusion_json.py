@@ -1,9 +1,13 @@
+# -*- coding: utf-8 -*-
+# Jianying Liu et Anaëlle Pierredon
+
 """
 Script sert à fusionner les fichiers sorties json, en ajoutant les nouveaux infos de lemma dans les fichiers déjà manuellement annoter.
-"""
+Pour l'utiliser, il faut le mettre d'abord dans 3_resultats
 
-# exemple de lancement:
-# python fusion_json.py ER_0-100_080721.json ER_0-100_080721_validation.json
+exemple de lancement:
+python fusion_json.py ER_0-100_080721.json ER_0-100_080721_validation.json
+"""
 
 import json
 import argparse
