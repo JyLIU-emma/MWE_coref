@@ -19,11 +19,16 @@ from collections import Counter
 
 # Créer le répertoire
 repParent = sys.path[0]
-rep_res = f"{sys.path[0]}/resultats_croisements"
+rep_croisements = f"{sys.path[0]}/resultats_croisements"
+rep_mwes = f"{sys.path[0]}/resultats_mwes"
 rep_z = f"{sys.path[0]}/z_fichiers_intermediaires"
 rep_result = f"{sys.path[0]}/../3_resultats"
-if not os.path.exists(rep_res):
-    os.makedirs(rep_res)
+
+if not os.path.exists(rep_croisements):
+    os.makedirs(rep_croisements)
+
+if not os.path.exists(rep_mwes):
+    os.makedirs(rep_mwes)
 
 if not os.path.exists(rep_z):
     os.makedirs(rep_z)
@@ -62,7 +67,7 @@ def extract_exemple_from_jsonfile(files, corpus_global_name):
                     mwe_new_liste.append(i_new)
                     new_liste.append(i_new)
         # Écrire dans les fichiers de sortie
-        with open(f"{rep_res}/{corpus_global_name}_{corpus}_mwelist.json", "w", encoding="utf8") as out2:
+        with open(f"{rep_croisements}/{corpus_global_name}_{corpus}_mwelist.json", "w", encoding="utf8") as out2:
             json.dump(mwe_new_liste, out2, indent=4, ensure_ascii=False,
                       sort_keys=False)
     return new_liste
@@ -94,7 +99,7 @@ def get_mwe_diff(new_liste, corpus_name):
                                   'contextes': [(i['TOKENS'], i['PHRASE'], i['FICHIER'])],
                                   'indice': [i['indice']], 'nbre_occurrence': 1}
 
-    with open(f"{repParent}/{corpus_name}_croisement_mwe.json", "w", encoding="utf8") as out3:
+    with open(f"{rep_mwes}/{corpus_name}_croisement_mwe.json", "w", encoding="utf8") as out3:
         json.dump(dico_mwe, out3, indent=4, ensure_ascii=False,
                   sort_keys=False)
     return dico_mwe
