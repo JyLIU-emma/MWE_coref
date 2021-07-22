@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 # Jianying Liu et Anaëlle Pierredon
 
+# Pour le lancement:
+# python extract_mwe_faux_cas.py 25
+# 25 c'est le nombre de faux cas à prendre
+
 import json
 import csv
 import os
