@@ -22,9 +22,18 @@ def ajouter_annotations(file, dico_mwe_degre):
         validation = json.load(filein)
     for mwe_type in validation:
         for mwe in validation[mwe_type]["MWES"]:
-            lemmes = ' '.join(mwe['LEMMES'])
-            if lemmes in dico_mwe_degre:
-                mwe['DEGRE DE COMPOSITIONNALITE'] = dico_mwe_degre[lemmes]
+            lemmas = ' '.join(mwe['LEMMES'])
+
+            if len(mwe['LEMMES']) == 2:
+                reversed_lemmas = ' '.join([mwe['LEMMES'][1], mwe['LEMMES'][0]])
+            else:
+                reversed_lemmas = lemmas
+
+            if lemmas in dico_mwe_degre:
+                mwe['DEGRE DE COMPOSITIONNALITE'] = dico_mwe_degre[lemmas]
+            elif reversed_lemmas in dico_mwe_degre:
+                mwe['DEGRE DE COMPOSITIONNALITE'] = dico_mwe_degre[reversed_lemmas]
+
     return validation
 
 
@@ -37,7 +46,7 @@ def main():
     degre_df = pd.read_csv("test_compositionnalite_resultats.csv")
     dico_mwe_degre = {}
     for ind in degre_df.index:
-        dico_mwe_degre[degre_df['forme canonique'][ind]] = degre_df['Degré'][ind]
+        dico_mwe_degre[degre_df['Expression'][ind]] = degre_df['Degré'][ind]
 
     # Trouver les expressions et ajouter les annotations
     for file in glb.glob("../3_resultats/z_anciens/*_validation.json"):
