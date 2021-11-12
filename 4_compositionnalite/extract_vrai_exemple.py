@@ -120,6 +120,39 @@ def transform_to_csv(dico_mwe, corpus_name):
             writer.writerow({"sous_corpus": sous_corpus,
                              "expression": mwe,
                              "Phrase(s)": phrases})
+                             
+def renouvellement(corpus_name):
+    """
+    Extraire les vrai exemples modifié.
+    """
+
+    # Fichier d'entrée
+    valide = True
+    if corpus_name == "ancor":
+        files_dico = {"ESLO_ANCOR": "ancor_ESLO_ANCOR_080721_validation.json",
+                      "ESLO_CO2": "ancor_ESLO_CO2_080721_validation.json",
+                      "OTG": "ancor_OTG_080721_validation.json",
+                      "UBS": "ancor_UBS_080721_validation.json"}
+    elif corpus_name == "sequoia":
+        files_dico = {"frwiki": "sequoia_frwiki_050721_validation.json",
+                      "emea": "sequoia_emea_080721_validation.json",
+                      "annodisER": "sequoia_annodisER_050721_validation.json"}
+    elif corpus_name == "ER":
+        files_dico = {"0-100": "ER_0-100_080721_validation.json"}
+    else:
+        print("Corpus name invalide.")
+        valide = False
+
+    if valide:
+        try:
+            filename = sys.argv[2]
+            with open(f"{repParent}/{filename}", "r", encoding="utf8") as fic:
+                dico_mwe = json.load(fic)
+        except IndexError:
+            new_liste = extract_exemple_from_jsonfile(files_dico, corpus_name)
+            dico_mwe = get_mwe_diff(new_liste, corpus_name)
+
+        transform_to_csv(dico_mwe, corpus_name)
 
 
 def main():
