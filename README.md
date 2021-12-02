@@ -118,15 +118,20 @@ Ce corpus étant annoté manuellement en chaînes de coréférence, les erreurs 
     |   |-- z_oldies
     |-- 3_resultats
     |   |-- visualisations.ipynb
+    |   |-- visualisations_jyliu.ipynb
     |   |-- sequoia_frwiki_050721.json
     |   |-- sequoia_frwiki_050721_validation.json
     |-- |-- ...
     |   4_compositionnalite
     |   |-- extract_vrai_exemple.py
-    |   |-- ancor_compositionnalite_vide.csv
-    |   |-- ancor_croisement_annote.json
+    |   |-- extract_faux_exemple.py
+    |   |-- degre_to_annotations.py
+    |   |-- consignes_annotation.pdf
+    |   |-- test_compositionnalite_resultats.xlsx
     |   |-- ...
     |   |-- resultats_croisements
+    |   |   |-- ...
+    |   |-- resultats_mwes
     |   |   |-- ...
 
 ```
@@ -300,6 +305,17 @@ Pour examiner les croisements des expressions polylexicales et des chaînes de c
     eg. _"Pour la fin de l'année et après avoir distribué les colis aux anciens, M. Didier Louis, lors de son allocution, a fait tout d'abord [une rétrospective des **travaux**] [qui] ont été **accomplis** dans la commune."_, la chaîne serait correcte si on changeait "une rétrospective des **travaux**" par "des **travaux**"  
 
 L'annotation a été réalisée lors de réunions, les annotateurs n'étaient donc pas indépendants des autres. Il y avait entre 2 et 7 annotateurs. Les phrases étaient lues et vérifiées puis les annotateurs discutaient entre eux de la validité ou non des exemples.
+
+### Nombres des croisements
+| Type | Nombre de croisements vrais | Nombre de EPV détectés |
+| --- | --------- | --------- |
+| VID | 29 | 5266 |
+| LVC.full | 245 | 1726 |
+| LVC.cause | 1 | 18 |
+| IRV | 1 | 996 |
+| MVC | 0 | 41 |
+| TOTAL | 276 | 8047 |
+
 
 ### Quelques exemples corrects
 

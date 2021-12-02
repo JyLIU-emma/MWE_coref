@@ -77,7 +77,6 @@ def get_article_begin(liste_sent):
             if titre == texte_sent:
                 compteur += 1
                 flag = True
-                # print(sent["numero_sent"], titre)
                 liste_debut.append(sent["numero_sent"])
                 break
         if not flag:

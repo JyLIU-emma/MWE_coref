@@ -171,7 +171,7 @@ class CorefChaines():
                 for id_mention in ments:
                     self.ment_cluster[id_mention] = no_cluster
             self.has_coref = True
-        else:  # TODO: need or not?
+        else:  # attribut non utilisé finalement
             self.has_coref = False
 
 

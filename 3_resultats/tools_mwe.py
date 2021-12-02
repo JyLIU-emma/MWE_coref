@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+# Jianying LIU
 
 """
-Fonction utilisés pour extraitre les EPV depuis le fichier cupt
+Fonctions utilisés pour extraitre les EPV depuis le fichier cupt
+Utilisés dans visualisation_jyliu.ipynb
 """
 
 import re

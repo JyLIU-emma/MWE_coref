@@ -28,9 +28,7 @@ for filepath in liste:
     date = filepath.split("_")[-1][:-4]
     date = date.split("-")
     jour, mois, an = date[0], date[1], date[2]
-    # print(jour, mois, an)
     date = "-".join([an, mois, jour])
-    # dates.append(date)
     with open(filepath, "r", encoding="utf8") as fic:
         texte = fic.read()
     match = re.search(r"\[(.+?)\]_1", texte)
@@ -40,4 +38,3 @@ for filepath in liste:
 
 with open("ER_info_a_corriger.json", "w", encoding="utf8") as sortie:
     sortie.write(json.dumps(info, indent=4))
-# print(info)

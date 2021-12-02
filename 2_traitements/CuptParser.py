@@ -7,7 +7,6 @@ Script sert à :
 - les modifier en ajoutant l'information de coréférence,
 - écrire le résultat dans des fichiers sortis
 
-TODO: maintenant: 1 cupt -- 1 fichier; besoin de 1 cupt -- plusieurs fichier ?
 """
 
 import re
@@ -37,7 +36,7 @@ class Cupt():
         Args:
             filepath (str): chemin vers le fichier cupt
         """
-        self.type = "cupt"  # TODO
+        self.type = "cupt"  # pas utilié maintenant
         self.lignes = {}
         self.tokens = {}  # NEW_V2
         numero_ligne = 0
@@ -96,7 +95,6 @@ class Cupt():
         Args:
             filepath (str) : chemin vers fichier sortie
         """
-        # TODO: Spécifier cette fonction à cupt? (pas cupt+)
         with open(filepath, "w") as file_out:
             for ligne in self.lignes.values():
                 # c'est un token
@@ -156,7 +154,7 @@ def merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file):
     """
     cupt = Cupt(cupt_file)
 
-    # NEW PRINT
+    # NEW PRINT (pour debug)
     # for key, value in cupt.tokens.items():
     #     print(key, value)
 
@@ -188,7 +186,7 @@ def main2():
     for key, value in cupt.tokens.items():
         print(key, value)
 
-    # Cupt.lignes
+    # Cupt.lignes (pour debug)
     # for i_ligne, ligne in cupt.lignes.items():
     #     print(i_ligne, ligne.i_token, ligne.token_form, ligne.coref)
 
@@ -197,6 +195,7 @@ def main():
     """
     exemple d'usage
     """
+    # test avec emea
     cupt_file = "./SEQUOIA_emea/emea_1.cupt"
     token_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_tokens.json"
     mention_file = "./SEQUOIA_emea/ofcors_outputs/emea_1_mentions_output.json"
@@ -204,6 +203,7 @@ def main():
     cupt = merge_cupt_ofcors(cupt_file, token_file, mention_file, coref_file)
     cupt.write_to_file("./a_debug_test.cuptmc")
 
+    ## test avec frwiki
     # cupt_file = "./SEQUOIA_frwiki/frwiki_1.cupt"
     # token_file = "./SEQUOIA_frwiki/ofcors_outputs/frwiki_1_tokens.json"
     # mention_file = "./SEQUOIA_frwiki/ofcors_outputs/frwiki_1_mentions_output.json"
