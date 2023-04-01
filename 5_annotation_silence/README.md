@@ -21,15 +21,15 @@ Observations:
   `MWE-based: P=150/181=0.8287 R=150/259=0.5792 F=0.6818`
   `Tok-based: P=382/437=0.8741 R=382/644=0.5932 F=0.7068`
 * The missed VMWE annotations which should have been anotated as true:
-  * /j' ai **eu** un <ins>**accident**</ins> qui aurait pu être un accident grave et c'est-à-dire que j' ai **fait** <ins>un **saut** de six mètres en contrebas de la Nationale vingt</ins>/
-  * /est -ce que vous **avez** des <ins>**préférences**</ins> côté papier ? bah j' ai- n- j' **ai <ins>horreur</ins>** des papiers de mauvaises qualité
-  * /mon père est a dû **poursuivre** des <ins>**études**</ins> jusque il était licencié en droit euh il a du **poursuivre** ses <ins>**études**</ins> jusque je ne sais pas oui trois ans
-  * /pendant l' évacuation j' ai été <ins>un trimestre à l' école euh laïque et obligatoire</ins> et dont j' ai gardé un souvenir euh tout à fait remarquable [...] très positifs par rapport à l' <ins>**enseignement**</ins> dont j' avais de j' avais **bénéficié** et avant et après/
-  
-  * /mais enfin je crois que <ins>ça</ins> c ' est c ' est de les <ins>**supputations**</ins> qui euh qui ne se **posent** pas hein/
-  * /sauf euh lorsque le malade **pose** de les <ins>**exigences**</ins> <ins>qui</ins> ne sont pas les exigences habituelles si vous voulez/
-  * /elle a **fait** un **choix** <ins>qui</ins> fait protester un certain nombre de ses consultants/
-  * /pour euh revendiquer sur le le **statut** <ins>que</ins> nous pouvons **avoir** vis-à-vis de la Sécurité Sociale/
-* A nice literal occurrence: /je voudrais prendre la ligne trente-trois on **n' a pas de prix** non non il y a il y a il y a rien il y a rien/
+  * [true] _j' ai **eu** <ins>un **accident**</ins> <ins>qui</ins> aurait pu être <ins>un accident grave</ins>_
+  * [repeated] _mon père est a dû **poursuivre** <ins>des **études**</ins> jusque il était licencié en droit euh il a du **poursuivre** <ins>ses **études**</ins> jusque je ne sais pas oui trois ans_
+  * _mais enfin je crois que ça c ' est c ' est de <ins>les **supputations**</ins> <ins>qui</ins> euh <ins>qui</ins> ne se **posent** pas hein_
+  * _sauf euh lorsque le malade **pose** de <ins>les **exigences**</ins> <ins>qui</ins> ne sont pas les exigences habituelles si vous voulez_
+  * _elle a **fait** <ins>un **choix**</ins> <ins>qui</ins> fait protester un certain nombre de ses consultants_
+  * _pour euh revendiquer sur <ins>le le **statut**</ins> <ins>que</ins> nous pouvons **avoir** vis-à-vis de la Sécurité Sociale_
+* Annotations with a possible non-trivial chain, but not annotated as such in ANCOR:
+  * _est -ce que vous **avez** <ins>des **préférences**</ins> côté papier ? bah j' ai- n- j' **ai <ins>horreur</ins>** des papiers de mauvaises qualité_
+  * _pendant l' évacuation j' ai été <ins>un trimestre à l' école euh laïque et obligatoire</ins> et dont j' ai gardé un souvenir euh tout à fait remarquable [...] très positifs par rapport à <ins>l' **enseignement**</ins> dont j' avais de j' avais **bénéficié** et avant et après_
+* A nice literal occurrence: _je voudrais prendre la ligne trente-trois on **n' a pas de prix** non non il y a il y a il y a rien il y a rien_
 
 
