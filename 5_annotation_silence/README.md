@@ -23,10 +23,10 @@ Observations:
 * The missed VMWE annotations which should have been anotated as true:
   * [true] _j' ai **eu** <ins>un **accident**</ins> <ins>qui</ins> aurait pu être <ins>un accident grave</ins>_
   * [repeated] _mon père est a dû **poursuivre** <ins>des **études**</ins> jusque il était licencié en droit euh il a du **poursuivre** <ins>ses **études**</ins> jusque je ne sais pas oui trois ans_
-  * _mais enfin je crois que ça c ' est c ' est de <ins>les **supputations**</ins> <ins>qui</ins> euh <ins>qui</ins> ne se **posent** pas hein_
-  * _sauf euh lorsque le malade **pose** de <ins>les **exigences**</ins> <ins>qui</ins> ne sont pas les exigences habituelles si vous voulez_
-  * _elle a **fait** <ins>un **choix**</ins> <ins>qui</ins> fait protester un certain nombre de ses consultants_
-  * _pour euh revendiquer sur <ins>le le **statut**</ins> <ins>que</ins> nous pouvons **avoir** vis-à-vis de la Sécurité Sociale_
+  * [true] _mais enfin je crois que ça c ' est c ' est de <ins>les **supputations**</ins> <ins>qui</ins> euh <ins>qui</ins> ne se **posent** pas hein_
+  * [true] _sauf euh lorsque le malade **pose** de <ins>les **exigences**</ins> <ins>qui</ins> ne sont pas les exigences habituelles si vous voulez_
+  * [true] _elle a **fait** <ins>un **choix**</ins> <ins>qui</ins> fait protester un certain nombre de ses consultants_
+  * [true] _pour euh revendiquer sur <ins>le le **statut**</ins> <ins>que</ins> nous pouvons **avoir** vis-à-vis de la Sécurité Sociale_
 * Annotations with a possible non-trivial chain, but not annotated as such in ANCOR:
   * _est -ce que vous **avez** <ins>des **préférences**</ins> côté papier ? bah j' ai- n- j' **ai <ins>horreur</ins>** des papiers de mauvaises qualité_
   * _pendant l' évacuation j' ai été <ins>un trimestre à l' école euh laïque et obligatoire</ins> et dont j' ai gardé un souvenir euh tout à fait remarquable [...] très positifs par rapport à <ins>l' **enseignement**</ins> dont j' avais de j' avais **bénéficié** et avant et après_
