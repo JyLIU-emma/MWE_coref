@@ -1,0 +1,90 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0536.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 1
+# text = bonjour bonjour
+1	bonjour	bonjour	INTJ	_	_	2	amod	_	_	*
+2	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 2
+# text = est ce que ça existe toujours " l' officiel des spectacles " de Grenoble
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_	*
+2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+3	que	que	PRON	_	PronType=Rel	5	obj	_	_	*
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	_	*
+5	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_	*
+6	toujours	toujours	ADV	_	_	5	advmod	_	_	*
+7	"	"	PUNCT	_	_	9	punct	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	*
+9	officiel	officiel	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	_	*
+10-11	des	_	_	_	_	_	_	_	_	*
+10	de	de	ADP	_	_	12	case	_	_	*
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_	*
+12	spectacles	spectacle	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	_	*
+13	"	"	PUNCT	_	_	9	punct	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Grenoble	Grenoble	PROPN	_	_	9	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 3
+# text = e maintenant ça s' appelle e " contact " excusez moi je ne trouve plus le nom et
+1	e	e	CCONJ	_	_	6	cc	_	_	*
+2	maintenant	maintenant	ADV	_	_	3	advmod	_	_	*
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	_	*
+4	s	s	X	_	_	3	nmod	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	3	punct	_	_	*
+6	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	e	e	CCONJ	_	_	15	cc	_	_	*
+8	"	"	PUNCT	_	_	9	punct	_	_	*
+9	contact	contact	NOUN	_	Gender=Masc|Number=Sing	11	parataxis	_	_	*
+10	"	"	PUNCT	_	_	9	punct	_	_	*
+11	excusez	excuser	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	15	advcl	_	_	*
+12	moi	soi	PRON	_	Number=Sing|Person=1	11	obj	_	_	*
+13	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_	*
+14	ne	ne	ADV	_	Polarity=Neg	15	advmod	_	_	*
+15	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_	*
+16	plus	plus	ADV	_	Polarity=Neg	15	advmod	_	_	*
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_	*
+18	nom	nom	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	_	*
+19	et	et	CCONJ	_	_	15	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 4
+# text = oui non mais c' est ce ce de celui d' octobre que je voulais
+1	oui	oui	ADV	_	_	8	advmod	_	_	*
+2	non	non	ADV	_	_	1	fixed	_	_	*
+3	mais	mais	CCONJ	_	_	8	cc	_	_	*
+4	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	SpaceAfter=No	*
+5	'	'	PUNCT	_	_	4	punct	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_	*
+7	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_	*
+8	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+9	de	de	ADP	_	_	10	case	_	_	*
+10	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	nmod	_	_	*
+11	d	de	ADP	_	_	13	case	_	SpaceAfter=No	*
+12	'	'	PUNCT	_	_	13	punct	_	_	*
+13	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	_	*
+14	que	que	PRON	_	PronType=Rel	16	obj	_	_	*
+15	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_	*
+16	voulais	voulais	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	10	acl:relcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 5
+# text = il est pas encore arrivé
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj:pass	_	_	*
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_	*
+3	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	_	*
+4	encore	encore	ADV	_	_	5	advmod	_	_	*
+5	arrivé	arriver	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 6
+# text = ah d' accord
+1	ah	ah	INTJ	_	_	2	amod	_	_	*
+2	d	de	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	2	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 7
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0536.txt 8
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

@@ -1,0 +1,45 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0523.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0523.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0523.txt 2
+# text = bonjour j' aurais voulu un " 38 " s' il vous en reste
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+2	j	je	X	_	_	1	appos	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	1	punct	_	_	*
+4	aurais	avoir	AUX	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_	*
+5	voulu	vouloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	*
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_	*
+7	"	"	PUNCT	_	_	8	punct	_	_	*
+8	38	38	NUM	_	_	10	nummod	_	_	*
+9	"	"	PUNCT	_	_	8	punct	_	_	*
+10	s	s	X	_	_	5	obj	_	SpaceAfter=No	*
+11	'	'	PUNCT	_	_	15	punct	_	_	*
+12	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	_	*
+13	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	15	iobj	_	_	*
+14	en	en	PRON	_	Person=3	15	iobj	_	_	*
+15	reste	reste	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0523.txt 3
+# text = non deux rue Narvik
+1	non	non	ADV	_	_	2	advmod	_	_	*
+2	deux	deux	NUM	_	_	3	nummod	_	_	*
+3	rue	rue	NOUN	_	Gender=Fem|Number=Sing	0	root	_	_	*
+4	Narvik	Narvik	PROPN	_	_	3	appos	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0523.txt 4
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0523.txt 5
+# text = au revoir
+1-2	au	_	_	_	_	_	_	_	_	*
+1	à	à	ADP	_	_	0	root	_	_	*
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_	*
+3	revoir	revoir	VERB	_	VerbForm=Inf	1	fixed	_	SpacesAfter=\s\n	*
+

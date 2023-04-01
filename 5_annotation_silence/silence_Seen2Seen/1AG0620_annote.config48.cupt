@@ -1,0 +1,76 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0620.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 1
+# text = bonjour je peux déposer des programmes des programmes
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	dislocated	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	déposer	déposer	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5-6	des	_	_	_	_	_	_	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	*
+7	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+8-9	des	_	_	_	_	_	_	_	_	*
+8	de	de	ADP	_	_	10	case	_	_	*
+9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_	*
+10	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 2
+# text = de
+1	de	de	ADP	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 3
+# text = de " l' équipe de création centrale " de Prénom Nom nous sommes adhérent oui
+1	de	de	ADP	_	_	15	mark	_	_	*
+2	"	"	PUNCT	_	_	15	punct	_	_	*
+3	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	3	punct	_	_	*
+5	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	_	*
+6	de	de	ADP	_	_	7	case	_	_	*
+7	création	création	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	_	*
+8	centrale	central	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	_	*
+9	"	"	PUNCT	_	_	5	punct	_	_	*
+10	de	de	ADP	_	_	11	case	_	_	*
+11	Prénom	prénom	PROPN	_	_	5	nmod	_	_	*
+12	Nom	Nom	PROPN	_	_	11	flat:name	_	_	*
+13	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	15	nsubj	_	_	*
+14	sommes	être	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_	*
+15	adhérent	adhérent	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_	*
+16	oui	oui	NOUN	_	Gender=Masc|Number=Sing	15	obj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 4
+# text = vous êtes adhérent oui ok ben c' est parfait ben vous pouvez non non
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_	*
+2	êtes	être	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	cop	_	_	*
+3	adhérent	adhérent	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+4	oui	oui	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	_	_	*
+5	ok	ok	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+6	ben	ben	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	_	*
+7	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	SpaceAfter=No	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_	*
+10	parfait	parfait	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+11	ben	ben	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	_	*
+12	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_	*
+13	pouvez	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	10	parataxis	_	_	*
+14	non	non	ADV	_	_	10	advmod	_	_	*
+15	non	non	ADV	_	_	14	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 5
+# text = je vous les donne à vous je les mets directement
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	*
+4	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+5	à	à	ADP	_	_	9	case	_	_	*
+6	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	9	iobj	_	_	*
+7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_	*
+8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_	*
+9	mets	mets	NOUN	_	Gender=Masc|Number=Plur	4	obl:arg	_	_	*
+10	directement	directement	ADV	_	_	9	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0620.txt 6
+# text = voilà oui
+1	voilà	voilà	VERB	_	_	0	root	_	_	*
+2	oui	oui	ADV	_	_	1	advmod	_	SpacesAfter=\s\n	*
+

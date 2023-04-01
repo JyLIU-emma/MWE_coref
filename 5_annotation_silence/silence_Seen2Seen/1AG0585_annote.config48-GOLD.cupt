@@ -1,0 +1,35 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0585.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0585.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0585.txt 2
+# text = bonjour je viens chercher de la documentation sur Grenoble
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	3	advcl	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+4	chercher	chercher	VERB	_	VerbForm=Inf	3	xcomp	_	_	*
+5	de	de	ADP	_	_	7	case	_	_	*
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_	*
+7	documentation	documentation	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	_	*
+8	sur	sur	ADP	_	_	9	case	_	_	*
+9	Grenoble	Grenoble	PROPN	_	_	7	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0585.txt 3
+# text = oui voilà madame
+1	oui	oui	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_	*
+2	voilà	voilà	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_	*
+3	madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0585.txt 4
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0585.txt 5
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	1:VID
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	1
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	1
+

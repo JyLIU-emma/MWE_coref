@@ -1,0 +1,111 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0511.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 1
+# text = excusez moi il y a il y a une un hôtel Balladin près de Grenoble mais
+1	excusez	excuser	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	1	obj	_	_	*
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	case	_	_	1:VID
+4	y	y	PRON	_	_	3	fixed	_	_	1
+5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	fixed	_	_	1
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl:subj	_	_	*
+7	y	y	PRON	_	_	8	expl:comp	_	_	*
+8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	fixed	_	_	*
+9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_	*
+10	un	un	NUM	_	_	11	nummod	_	_	*
+11	hôtel	hôtel	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	_	*
+12	Balladin	Balladin	PROPN	_	_	11	appos	_	_	*
+13	près	près	ADV	_	_	11	advmod	_	_	*
+14	de	de	ADP	_	_	15	case	_	_	*
+15	Grenoble	Grenoble	PROPN	_	_	13	obl:arg	_	_	*
+16	mais	mais	CCONJ	_	_	1	punct	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 2
+# text = e c' est possible mais s' il ne fait pas partie de nos adhérents on ne l' a pas sur les listes
+1	e	e	CCONJ	_	_	5	cc	_	_	*
+2	c	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	*
+5	possible	possible	ADJ	_	Gender=Masc|Number=Sing	0	root	_	_	*
+6	mais	mais	CCONJ	_	_	11	cc	_	_	*
+7	s	s	X	_	_	11	obl:mod	_	SpaceAfter=No	*
+8	'	'	PUNCT	_	_	7	punct	_	_	*
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_	*
+10	ne	ne	ADV	_	Polarity=Neg	11	advmod	_	_	*
+11	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_	1:VID
+12	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	_	*
+13	partie	partie	NOUN	_	Gender=Fem|Number=Sing	11	obj	_	_	1
+14	de	de	ADP	_	_	16	case	_	_	*
+15	nos	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	16	det	_	_	*
+16	adhérents	adhérent	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_	*
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj	_	_	*
+18	ne	ne	ADV	_	Polarity=Neg	20	advmod	_	_	*
+19	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	20	expl:comp	_	_	*
+20	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_	*
+21	pas	pas	ADV	_	Polarity=Neg	20	advmod	_	_	*
+22	sur	sur	ADP	_	_	24	case	_	_	*
+23	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_	*
+24	listes	liste	NOUN	_	Gender=Fem|Number=Plur	20	obl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 3
+# text = d' accord
+1	d	de	ADP	_	_	0	root	_	SpaceAfter=No	*
+2	'	'	PUNCT	_	_	1	punct	_	_	*
+3	accord	accord	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 4
+# text = il faut voir e " pages jaunes " je peux vous donner " les pages jaunes " si vous voulez
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	voir	voir	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+4	e	e	CCONJ	_	_	10	cc	_	_	*
+5	"	"	PUNCT	_	_	6	punct	_	_	*
+6	pages	page	NOUN	_	Gender=Fem|Number=Plur	10	parataxis	_	_	*
+7	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	_	*
+8	"	"	PUNCT	_	_	6	punct	_	_	*
+9	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_	*
+10	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_	*
+11	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	12	iobj	_	_	*
+12	donner	donner	VERB	_	VerbForm=Inf	10	xcomp	_	_	*
+13	"	"	PUNCT	_	_	10	punct	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_	*
+15	pages	page	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	_	*
+16	jaunes	jaune	ADJ	_	Gender=Fem|Number=Plur	15	amod	_	_	*
+17	"	"	PUNCT	_	_	20	punct	_	_	*
+18	si	si	SCONJ	_	_	20	mark	_	_	*
+19	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	20	nsubj	_	_	*
+20	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 5
+# text = oui je veux bien s' il vous plaît
+1	oui	oui	NOUN	_	Gender=Masc|Number=Sing	0	root	_	_	*
+2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+4	bien	bien	ADV	_	_	5	advmod	_	_	*
+5	s	s	X	_	_	3	obj	_	SpaceAfter=No	*
+6	'	'	PUNCT	_	_	9	punct	_	_	*
+7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_	*
+8	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	9	iobj	_	_	*
+9	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 6
+# text = voilà
+1	voilà	voilà	VERB	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 7
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 8
+# text = de rien je vous laisse ça hein
+1	de	de	ADP	_	_	2	case	_	_	*
+2	rien	rien	PRON	_	Number=Sing	5	obj	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_	*
+4	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	5	iobj	_	_	*
+5	laisse	laisser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	_	_	*
+7	hein	hein	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0511.txt 9
+# text = merci
+1	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n	*
+

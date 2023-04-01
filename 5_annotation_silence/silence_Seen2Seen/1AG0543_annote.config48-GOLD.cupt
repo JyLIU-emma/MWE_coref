@@ -1,0 +1,68 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0543.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0543.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0543.txt 2
+# text = bonjour moi je voudrais savoir est ce que vous avez la liste des clubs de vélo sur Grenoble et aux alentours
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	_	*
+2	moi	soi	PRON	_	Number=Sing|Person=1	1	nsubj	_	_	*
+3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	*
+4	voudrais	vouloir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_	*
+5	savoir	savoir	VERB	_	VerbForm=Inf	4	xcomp	_	_	*
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	_	*
+8	que	que	PRON	_	PronType=Rel	10	obj	_	_	*
+9	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_	*
+10	avez	avoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_	*
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_	*
+12	liste	liste	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	_	*
+13-14	des	_	_	_	_	_	_	_	_	*
+13	de	de	ADP	_	_	15	case	_	_	*
+14	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_	*
+15	clubs	club	NOUN	_	Gender=Masc|Number=Plur	12	nmod	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	_	*
+18	sur	sur	ADP	_	_	19	case	_	_	*
+19	Grenoble	Grenoble	PROPN	_	_	15	nmod	_	_	*
+20	et	et	CCONJ	_	_	23	cc	_	_	*
+21-22	aux	_	_	_	_	_	_	_	_	*
+21	à	à	ADP	_	_	23	case	_	_	*
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_	*
+23	alentours	alentours	NOUN	_	Gender=Masc|Number=Plur	19	conj	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0543.txt 3
+# text = e non j' ai peut être l' association qui s' occupe de voilà de clubs de vélo
+1	e	e	CCONJ	_	_	2	advmod	_	_	*
+2	non	non	ADV	_	_	6	advmod	_	_	*
+3	j	j	X	_	_	2	fixed	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	2	punct	_	_	*
+5	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_	*
+6	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	*
+7	être	être	AUX	_	VerbForm=Inf	9	cop	_	_	*
+8	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_	*
+9	association	association	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	_	*
+10	qui	qui	PRON	_	PronType=Rel	13	nsubj	_	_	*
+11	s	s	X	_	_	13	nmod	_	SpaceAfter=No	1:IRV
+12	'	'	PUNCT	_	_	11	punct	_	_	*
+13	occupe	occuper	NOUN	_	Gender=Fem|Number=Sing	9	acl:relcl	_	_	1
+14	de	de	ADP	_	_	15	mark	_	_	*
+15	voilà	voilà	VERB	_	_	13	acl	_	_	*
+16	de	de	ADP	_	_	17	case	_	_	*
+17	clubs	club	NOUN	_	Gender=Masc|Number=Plur	15	obl:arg	_	_	*
+18	de	de	ADP	_	_	19	case	_	_	*
+19	vélo	vélo	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0543.txt 4
+# text = je vous remercie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_	*
+2	vous	lui	PRON	_	Number=Plur|Person=2|PronType=Prs	3	iobj	_	_	*
+3	remercie	remercier	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0543.txt 5
+# text = vous en prie
+1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_	*
+2	en	en	PRON	_	Person=3	3	obj	_	_	*
+3	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	*
+

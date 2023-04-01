@@ -1,0 +1,59 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# newdoc = 1AG0566.txt
+# source_sent_id = http://my/newcorpus/uri 1AG0566.txt 1
+# text = bonjour
+1	bonjour	bonjour	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0566.txt 2
+# text = est ce qu' il serait possible d' avoir e des horaires de train Grenoble Genève
+1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_	*
+2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_	*
+3	qu	qu	NOUN	_	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	*
+4	'	'	PUNCT	_	_	7	punct	_	_	*
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	_	*
+6	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	*
+7	possible	possible	ADJ	_	Gender=Masc|Number=Sing	3	parataxis	_	_	*
+8	d	de	ADP	_	_	10	mark	_	SpaceAfter=No	*
+9	'	'	PUNCT	_	_	10	punct	_	_	*
+10	avoir	avoir	VERB	_	VerbForm=Inf	7	csubj	_	_	*
+11	e	e	CCONJ	_	_	14	cc	_	_	*
+12-13	des	_	_	_	_	_	_	_	_	*
+12	de	de	ADP	_	_	14	case	_	_	*
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_	*
+14	horaires	horaire	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	_	*
+15	de	de	ADP	_	_	16	case	_	_	*
+16	train	train	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	_	*
+17	Grenoble	Grenoble	PROPN	_	_	14	appos	_	_	*
+18	Genève	Genève	PROPN	_	_	17	flat:name	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0566.txt 3
+# text = il faut demander à la SNCF tout de suite sur votre gauche là
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	_	1:VID
+2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	1
+3	demander	demander	VERB	_	VerbForm=Inf	2	ccomp	_	_	*
+4	à	à	ADP	_	_	6	case	_	_	*
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	*
+6	SNCF	SNCF	PROPN	_	_	3	obl:arg	_	_	*
+7	tout	tout	ADV	_	_	12	advmod	_	_	*
+8	de	de	ADP	_	_	7	fixed	_	_	*
+9	suite	suite	NOUN	_	Gender=Fem|Number=Sing	7	fixed	_	_	*
+10	sur	sur	ADP	_	_	12	case	_	_	*
+11	votre	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	12	det	_	_	*
+12	gauche	gauche	NOUN	_	Gender=Fem|Number=Sing	3	obl	_	_	*
+13	là	là	ADV	_	_	12	advmod	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0566.txt 4
+# text = ah d' accord merci
+1	ah	ah	INTJ	_	_	2	amod	_	_	*
+2	d	de	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No	*
+3	'	'	PUNCT	_	_	2	punct	_	_	*
+4	accord	accord	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	_	*
+5	merci	merci	INTJ	_	_	0	root	_	SpacesAfter=\s\n\n	*
+
+# source_sent_id = http://my/newcorpus/uri 1AG0566.txt 5
+# text = je vous en prie
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_	1:VID
+2	vous	vous	PRON	_	Number=Plur|Person=2|PronType=Prs	4	iobj	_	_	*
+3	en	en	PRON	_	Person=3	4	obj	_	_	1
+4	prie	prie	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpacesAfter=\s\n	1
+
